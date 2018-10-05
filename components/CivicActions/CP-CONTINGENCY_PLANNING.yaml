@@ -1,0 +1,156 @@
+name: CivicActions
+family: CONTINGENCY PLANNING
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: CP-01
+  control_key_part: ~
+  control_name: CONTINGENCY PLANNING POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions has developed, documented and disseminated to personnel a contingency
+    planning policy that addresses purpose, scope, roles, responsibilities, management
+    commitment, coordination among organizational entities, and compliance; and procedures
+    to facilitate the implementation of the policy and associated controls. This information
+    is maintained in Contingency Planning (CP) Policy and Procedure that  can be found in
+    the CivicActions Github repository at
+    <https://github.com/NuCivic/healthdata/wiki/contingency-plan> also:
+    <https://github.com/NuCivic/healthdata/wiki/contingency-plan-word>
+
+- control_key: CP-02
+  control_key_part: c
+  control_name: CONTINGENCY PLAN
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The Information System Contingency Plan (ISCP) is closely integrated with the
+    Incident Response Plan (IRP). Coordination is the responsibility of the ISCP Director
+    and IRP Director.
+
+- control_key: CP-02
+  control_key_part: d
+  control_name: CONTINGENCY PLAN
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The ISCP Director and CivicActions Security Team are responsible to review the ISCP
+    annually and when a change to the system occurs.
+
+- control_key: CP-02
+  control_key_part: e
+  control_name: CONTINGENCY PLAN
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The CivicActions and ISCP Director are required to update the ISCP to address
+    changes to the organization, information system, or environment of operation and
+    problems encountered during contingency plan implementation, execution, or testing.
+
+- control_key: CP-02
+  control_key_part: f
+  control_name: CONTINGENCY PLAN
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The ISCP requires that changes to the plan be communicated to those on the
+    Contingency Plan Contact List (Appendix A).
+
+- control_key: CP-02
+  control_key_part: g
+  control_name: CONTINGENCY PLAN
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The ISCP is available on CivicActions Github repository.  This repository provides
+    the configuration management capabilities for the ISCP to be protected from unauthorized
+    disclosure and modification.
+
+- control_key: CP-03
+  control_key_part: ~
+  control_name: CONTINGENCY TRAINING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The ISCP stipulates that all CivicActions employee’s HDG system assigned roles
+    in the Contingency Plan Team are trained in their duties within three months of
+    first being assigned a role in the CP, and then annually thereafter or when changes
+    are required. CivicActions uses the Contingency Plan as described in controls
+    CP-1 and CP-2 as a basis for personnel contingency training.
+
+- control_key: CP-04
+  control_key_part: ~
+  control_name: CONTINGENCY PLAN TESTING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    Real world tests of the contingency plan will be held at least annually, with
+    supplemental tests (checklist/table-top) as needed for specific scenarios. The
+    ISCP Coordinator is responsible to facilitate annual testing exercises. The testing
+    process for the CP includes review of the CP exercise and identification of corrective
+    actions and other improvements.
+
+- control_key: CP-09
+  control_key_part: a
+  control_name: INFORMATION SYSTEM BACKUP
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions conducts system user-level information backup in accordance with
+    requirements (at a minimum, incremental backups must be conducted at least
+    weekly and full backups must be conducted at least monthly).
+
+- control_key: CP-09
+  control_key_part: b
+  control_name: INFORMATION SYSTEM BACKUP
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    System level information for the application is replicated and backed up in the same way
+    as user-level information – see Part (a) above.
+  
+- control_key: CP-09
+  control_key_part: c
+  control_name: INFORMATION SYSTEM BACKUP
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    System documentation is backed up from the Git repository on a daily basis
+    with a minimum two-week retention period and off-site storage.
+
+- control_key: CP-09
+  control_key_part: d
+  control_name: INFORMATION SYSTEM BACKUP
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions employees must authenticate prior to being granted access to the
+    Github repository. Roles and responsibilities within Github determine the proper
+    level of access for the documentation being accessed. The folder structure of
+    Github protects though permissions and ownership prohibiting users from accessing
+    unauthorized documentation.

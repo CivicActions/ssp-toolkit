@@ -1,0 +1,168 @@
+name: CivicActions
+family: SECURITY ASSESSMENT AND AUTHORIZATION
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: CA-01
+  control_key_part: ~
+  control_name: SECURITY ASSESSMENT AND AUTHORIZATION POLICIES AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions has developed, documented and disseminated to personnel a certification,
+    accreditation, and security assessment policy that addresses purpose, scope, roles,
+    responsibilities, management commitment, coordination among organizational entities,
+    and compliance; and procedures to facilitate the implementation of the policy
+    and associated controls. This information is maintained in the CivicActions Security
+    Assessment and Authorization Policy. This document can be found in the CivicActions
+    Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+
+- control_key: CA-02
+  control_key_part: a
+  control_name: SECURITY ASSESSMENTS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Planned
+  narrative: >
+    CivicActions will create internally or work with an independent Third Party Auditor
+    to develop a security assessment plan (SAP) when required by FISMA and NIST.
+    Risks identified during the security assessment are tracked in CivicActions' ticket
+    tracking or software control repository system.
+
+- control_key: CA-02
+  control_key_part: b
+  control_name: SECURITY ASSESSMENTS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Planned
+  narrative: >
+    All controls assigned and documented in this System Security Plan (SSP) will be tested
+    at least annually or when there is a major change to the system.
+
+- control_key: CA-03
+  control_key_part: ~
+  control_name: SYSTEM INTERCONNECTIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: System Specific Control
+  implementation_status: Not Applicable
+  narrative: >
+    This control is not applicable. CivicActions systems do not have system interconnections.
+    The only communication conducted to CivicActions systems is through the Internet.
+
+- control_key: CA-05
+  control_key_part: ~
+  control_name: PLAN OF ACTION AND MILESTONES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    CivicActions documents all deficiencies and vulnerabilities identified during
+    the security certification and/or continuous monitoring phase (via security assessment,
+    vulnerability scanning, risk assessment, etc.) within the Plan of Action and Milestones
+    (POA&M).
+
+    The POA&M document provides a platform for CivicActions to monitor and track the
+    deficiency and its mitigation strategy. POA&M items will include:
+
+    • The description of the deficiency,
+
+    • Dedicated point of contact for this deficiency.
+
+    • Cost of the mitigation strategy
+
+    • Associated risk and NIST control
+
+    • Recommended mitigation strategy
+
+    POA&Ms are tracked throughout the lifecycle of the system until its mitigation.
+    All POA&Ms are reviewed on a monthly basis by CivicActions Information System
+    Security Officer to ensure all mitigation strategies are continuing as documented.
+
+- control_key: CA-07
+  control_key_part: a
+  control_name: CONTINUOUS MONITORING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions will implemented a continuous monitoring strategy that incorporates
+    configuration management processes including the assessment of security impact
+    analyses of all changes, ongoing security control assessments, and a reporting
+    mechanism of basic information security and privacy effectiveness metrics to
+    designated CivicActions teams.
+
+- control_key: CA-07
+  control_key_part: b
+  control_name: CONTINUOUS MONITORING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    Quarterly review of the control assessments supporting the monitoring is conducted
+    by the CivicActions ISSO.
+
+- control_key: CA-07
+  control_key_part: d
+  control_name: CONTINUOUS MONITORING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    CivicActions conducts or oversees continuous system security monitoring.
+
+- control_key: CA-07
+  control_key_part: e
+  control_name: CONTINUOUS MONITORING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The CivicActions Security Team reviews the results of the security scans and security
+    assessments with associated JIRA and/or Github Issue tickets created to correlate
+    and analyze security related information generated from the monitoring tools becoming
+    POA&M items for tracking.
+
+- control_key: CA-07
+  control_key_part: f
+  control_name: CONTINUOUS MONITORING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    POA&M items are tracked by the CivicActions Security team though Github Issue
+    tickets with a Security categorization assigned.  Information included in the
+    POA&M item include the severity, the due date, the weakness source identifier,
+    and the plugin ID that identified the vulnerability.
+
+- control_key: CA-07
+  control_key_part: g
+  control_name: CONTINUOUS MONITORING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The security status of the system is reported up to the CivicActions Security
+    team to be reviewed alongside other security issues relating to CivicActions.
+
+- control_key: CA-09
+  control_key_part: ~
+  control_name: INTERNAL SYSTEM CONNECTIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: System Specific Control
+  implementation_status: Not Applicable
+  narrative: >
+    Not applicable: There are currently no internal systems that connect to CivicActions systems.

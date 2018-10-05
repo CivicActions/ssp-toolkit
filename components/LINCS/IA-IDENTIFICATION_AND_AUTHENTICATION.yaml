@@ -1,0 +1,362 @@
+name: LINCS
+family: IDENTIFICATION AND AUTHENTICATION
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: IA-01
+  control_key_part: ~
+  control_name: IDENTIFICATION AND AUTHENTICATION POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The Department of Health and Human Service developed, documented and disseminated
+    to personnel an identification and authentication policy that addresses purpose,
+    scope, roles, responsibilities, management committment, coordination among organizational
+    entities, and compliance, and developed, documented and disseminated to personnel
+    procedures to facilitate the implementation of the policy and associated controls.The
+    policy is stated in the Office of the Secretary Information Security Policy dated
+    July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures
+    Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents
+    will be reviewed periodically. These policies and procedures are applicable to
+    the LINCS personnel using the lincs.ed.gov information system.
+
+    The CivicActions ISSO is responsible for reviewing and updating
+    Identification and Authentication Policy and Procedures annually. The Chief Operating
+    Officer is responsible for approving Identification and Authentication. All procedures
+    are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive
+    orders, directives, policies, regulations, standards, and guidance. These policies
+    and procedures are applicable to the CivicActions staff administering the lincs.ed.gov
+    information system.
+
+- control_key: IA-02
+  control_key_part: ~
+  control_name: IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS)
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    LINCS Access: Site Managers and End Users
+
+    • Site Manager access to web-accessible components of lincs.ed.gov is limited.
+    Full access to web-accessible components is only available to CivicActions
+    administrators.
+    
+    • End Users, typically members of the public, have read-only access to view
+    and download data resources published on lincs.ed.gov and do not need or receive
+    user accounts. End users are also allowed to submit website feedback, but all
+    submitted feedback is moderated by an LINCS Site Manager before it is published.
+
+- control_key: IA-02 (1)
+  control_key_part: ~
+  control_name: NETWORK ACCESS TO PRIVILEGED ACCOUNTS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Planned
+  narrative: >
+    Multifactor Authentication is a planned control for organization users of HDG with
+    privileged accounts.
+
+- control_key: IA-02 (2)
+  control_key_part: ~
+  control_name: NETWORK ACCESS TO NON-PRIVILEGED ACCOUNTS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Not Applicable
+  narrative: >
+    All accounts within HDG’s PaaS provider (AWS ACE) and IaaS provider (AWS) are
+    privileged accounts as described in FedRAMP Provisional ATO granted to the AWS
+    Cloud dated 17 March 2016.
+
+- control_key: IA-04
+  control_key_part: a
+  control_name: IDENTIFIER MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    HDG/DKANusers are assigned a unique identifier in the form of a unique username,
+    password and email address for the HDG system based on the system for allocating user
+    accounts described in AC-2. Each request must be based on a business need and is
+    limited to only the access requirements for that individual to perform his/her
+    identified role within HDG. Requests for identifier assignment follows the process
+    described in AC-2 and are authorized to perform actions according to the user account
+    roles described in AC-3.
+
+- control_key: IA-04
+  control_key_part: b
+  control_name: IDENTIFIER MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    Users assigned to system requiring access to the lincs.ed.gov system require
+    authorization by the employee’s manager with HDG’s admin group completing the
+    the creation of the account.
+
+- control_key: IA-04
+  control_key_part: c
+  control_name: IDENTIFIER MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    Once the initial Site Manager accounts are created for LINCS, they subsequently are
+    responsible for assigning accounts and privileges to other customer users in their
+    organization.
+
+    Identifiers for devices that access the system use the same username, email address
+    and password protocol as the identifiers provided to human users of the system
+    and undergo the same process of review by the HDG admin group. The HDG admin group
+    is responsible for assigning a unique username that identifies the device as well
+    as an email address that can be used for account verification.
+
+- control_key: IA-04
+  control_key_part: e
+  control_name: IDENTIFIER MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    All user accounts are required to change their passwords every 90 days. The website
+    will automatically block the accounts of users who fail to change their password
+    within that time period, after which the account may only be unblocked by a website
+    Administrator or Site Manager.
+
+- control_key: IA-05
+  control_key_part: a
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    Authentication for HDG internal personnel are created during the personnel
+    assignment process where requests are made to the HDG admin group for proper access
+    levels.  The HDG admin group verifies the identity of the user. The website performs
+    further verification by sending an email to the user's mailbox containing a single-use
+    activation link which must be used to log in to the account for the first time
+    and to create a password.
+
+    Prior to issuing initial Drupal Site Manager (highest level of Client User Account)
+    system credentials (user ID and initial password),  the CivicActions Implementation
+    staff verifies the user’s request for access, typically during the initial kick-off
+    call when all stakeholders are present. New Site Managers are able to provide
+    additional Site Manager access at their own discretion, and are ultimately responsible
+    for managing their own Site Manager and other user accounts that they create.
+
+- control_key: IA-05
+  control_key_part: b
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    Initial authenticator content (a unique email address – not previously used in
+    any other account) is provided by the customer. CivicActions Implementation staff
+    use that email address to provide the new user with Admin access. Before the Admin
+    has access, they are required to create their own passwords; however, the passwords
+    Admins choose must conform to the password criteria defined:
+
+    • Enforce password history = 24
+
+    • Minimum password length = 15
+
+- control_key: IA-05
+  control_key_part: c
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    When entering a user account password upon initial login to lincs.ed.gov, all
+    users must comply with the following strict password policies, which are enforced
+    by the website's software configuration:
+
+    • Password must contain at least one punctuation (not whitespace or an alphanumeric)
+    character.
+
+    • Password must contain at least one uppercase character.
+
+    • Password must contain at least one lowercase character.
+
+    • Password must be at least 15 characters in length.
+
+    • Password must contain at least one digit.
+
+- control_key: IA-05
+  control_key_part: d
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    LINCS Site Managers have the ability to add additional Site Managers to their account.
+    The Site Manager needs only a unique email address to do so. All password requirements
+    are set at the account level, and will apply to all user accounts. Password requirements
+    are not editable for Site Managers.
+
+    Disabling the access of Site Managers to lincs.ed.gov is the responsibility of LINCS.
+
+    HDG is responsible for provisioning and de-provisioning end user accounts,
+    which must comply with the strict password policies that are enforced by the website's
+    software configuration, as described above
+
+    In accordance with lincs.ed.gov site configuration, the following implementation
+    administrative procedures exist for initial authenticator distribution, for
+    lost/compromised/damaged authenticators, and for revoking authenticators.
+
+    • Initial authenticator distribution:  Users receive a one-time login link by
+    email upon creating of their user account. They use that link to log in and then
+    must enter a password themselves which complies with the password complexity requirements
+    described in IA-4(b).
+
+    • Lost/compromised/damaged authenticators:  Users who have forgotten their password
+    may request a new password by submitting their username or email address. The
+    website responds by emailing a one-time login link to the user's email address.
+    After using the link to log in, the user is required to enter a new password.
+
+    • Revoking authenticators: Users who have not changed their password in the last
+    90 days are automatically blocked. Administrators and Site Managers may block
+    any user account if they believe there is a reason to do so.
+
+- control_key: IA-05
+  control_key_part: e
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    CivicActions application password re-use requirements are configurable in accordance
+    with LINCS own security requirements. However, changing the password age requirement
+    requires a code setting change that therefore needs to be planned and approved
+    by CivicActions' Change Control Board before being implemented.
+
+- control_key: IA-05
+  control_key_part: f
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    HDG DKAN users follow the following requirements:
+
+    • Maximum password age = 90
+
+    • Minimum password age = 1
+
+- control_key: IA-05
+  control_key_part: g
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    CivicActions internal users for HDG uses Group Policy to enforce password lifetime
+    restrictions.  The password lifetime settings for internal accounts is as follows:
+
+    • Minimum restriction of zero (0) days and
+
+    • Maximum restriction of ninety (90) days before a password change is required.
+
+    The HDG application has no interaction with Active Directory; all password requirements
+    are managed within the application itself.
+
+- control_key: IA-05
+  control_key_part: i
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    LINCS internal users are required to take appropriate measures in the handling
+    of passwords including:
+
+    • Not transmitting user names and passwords together in an unencrypted format
+
+    • Not permitting the sending of passwords in an unencrypted format via email
+
+    • Not listing passwords in tickets
+
+    • Not writing down or storing passwords in a readable form in any physical or
+    logical location where they may be discoverable by unauthorized persons.
+
+- control_key: IA-05 (1)
+  control_key_part: b
+  control_name: PASSWORD-BASED AUTHENTICATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    LINCS: All password requirements are set at the application level, and will apply
+    to all website user accounts. Password requirements are not editable by Site Managers.
+
+- control_key: IA-05 (1)
+  control_key_part: d
+  control_name: PASSWORD-BASED AUTHENTICATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    LINCS: Password age requirements are configurable at the application level. The
+    minimum age is set to 1 day, and the maximum age can be set to whatever LINCS requires
+    to meet its own security requirements. However, changing the password age requirement
+    requires a code setting change that therefore needs to be planned and approved
+    by CivicActions' Change Control Board before being implemented.
+
+- control_key: IA-05(1)
+  control_key_part: e
+  control_name: PASSWORD-BASED AUTHENTICATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Planned
+  narrative: >
+    This will be completed in CY2018.
+
+    This control is planned but not yet fully implemented. The system does enforces
+    password minimum and maximum lifetime, and prohibits reuse of the 6 previous passwords,
+    but does not prohibit reuse of the 24 previous passwords. Enforcement of the 24
+    previous password restriction will be implemented by the end of 2016.
+
+- control_key: IA-05 (11)
+  control_key_part: ~
+  control_name: HARDWARE TOKEN-BASED AUTHENTICATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: System Specific Control
+  implementation_status: Not Applicable
+  narrative: >
+    HDG DKAN does not support physical hardware token-based authentication.
+    Therefore this control is Not Applicable.
+
+- control_key: IA-08
+  control_key_part: ~
+  control_name: IDENTIFICATION AND AUTHENTICATION (NON-ORGANIZATIONAL USERS)
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    HDG is a publically accessible solution that allows government organizations to
+    share open data resources with the general public. Non-organizational users have
+    read-only access to the open data resources which are shared on lincs.ed.gov
+    as documented in control AC-14.

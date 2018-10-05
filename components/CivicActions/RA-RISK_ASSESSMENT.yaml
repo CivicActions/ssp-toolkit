@@ -1,0 +1,53 @@
+name: CivicActions
+family: RISK ASSESSMENT
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: RA-01
+  control_key_part: ~
+  control_name: RISK ASSESSMENT POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions has developed, documented and disseminated to personnel a risk assessment
+    policy that addresses purpose, scope, roles, responsibilities, management commitment,
+    coordination among organizational entities, and compliance; and procedures to
+    facilitate the implementation of the policy and associated controls. This information
+    is maintained in the CivicActions Risk Assessment (RA) Policy and Procedure
+    CivicActions that can be found in the CivicActions Github repository at
+    <https://github.com/CivicActions/compliance-docs/>.
+
+- control_key: RA-05
+  control_key_part: c
+  control_name: VULNERABILITY SCANNING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    CivicActions Security team reviews all vulnerabilities identified from automated
+    scans and security assessments.  Vulnerabilities found and deemed legitimate are
+    assigned an impact rating and response time thought creation of an issue or ticket.
+    The CivicActions Security team reviews current scans and compare with older scans
+    to identify trends and to verify previous vulnerabilities have been mitigated.
+
+- control_key: RA-05
+  control_key_part: d
+  control_name: VULNERABILITY SCANNING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    CivicActions identified and reported vulnerabilities are assigned by the CivicActions
+    Security team an impact rating and response time and must be remediated according to
+    the following time requirements.
+    
+    • High - Within 30 days of discovery
+    
+    • Moderate - Within 90 days of discovery
+    
+    • Low - Within 240 days of discovery

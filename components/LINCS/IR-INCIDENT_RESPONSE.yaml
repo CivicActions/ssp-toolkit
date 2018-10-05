@@ -1,0 +1,147 @@
+name: LINCS
+family: INCIDENT RESPONSE
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: IR-01
+  control_key_part: ~
+  control_name: INCIDENT RESPONSE POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The Department of Health and Human Service developed, documented and disseminated
+    to personnel an incident response policy that addresses purpose, scope, roles,
+    responsibilities, management committment, coordination among organizational entities,
+    and compliance, and developed, documented and disseminated to personnel procedures
+    to facilitate the implementation of the policy and associated controls.The policy
+    is stated in the Office of the Secretary Information Security Policy dated July
+    17, 2013 and the procedures are defined in the Office of the Secretary Procedures
+    Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents
+    will be reviewed periodically. These policies and procedures are applicable to
+    the LINCS personnel using the lincs.ed.gov information system.
+
+    The CivicActions ISSO is responsible for reviewing and updating the Incident Response
+    Plan Policy and Procedures annually. The Chief Operating Officer is responsible for
+    approving Incident Response Plan.  All procedures are consistent with requirements of
+    FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies,
+    regulations, standards, and guidance. These policies and procedures are applicable to
+    the CivicActions staff administering the lincs.ed.gov information system.
+
+    The DKAN Incident Response (IR) Policy and Procedures can be found in the CivicActions
+    Github repository at
+    <https://github.com/NuCivic/healthdata/wiki/incident-response-plan>.
+
+- control_key: IR-02
+  control_key_part: a
+  control_name: INCIDENT RESPONSE TRAINING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    All CivicActions users of the HDG system with incident response responsibilities
+    are required to participate in incident response training once the role is assumed
+    within 10 days, as required by HDG changes, and annually. The Incident Response
+    Plan (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>) is the basis
+    for the training and the incident response workflow created by the Security team.
+    Upon a review of past incidents, the training is updated to ensure processes and
+    workflows are updated.
+
+- control_key: IR-04
+  control_key_part: a
+  control_name: INCIDENT HANDLING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The Incident Response Plan
+    (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>) explains the
+    process for incident handling, and discusses preparation, detection and analysis,
+    containment, eradication, and recovery.
+
+    Preparation activities includes all CivicActions and HDG internal users are trained if
+    their role includes incident response. Detection monitoring tools providing
+    notification to incident response personnel for analysis and action. Containment,
+    eradication and recovery activities include AWS (ACE) inherited fixes and HDG
+    system administrators blocking IP address at the source of the incident and clearing
+    caches.
+
+- control_key: IR-07
+  control_key_part: ~
+  control_name: INCIDENT RESPONSE ASSISTANCE
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions Customer Support team provides first response assistance to any external
+    users of the HDG system. Response time for external reporting of incidents through
+    e-mail is one business day. Internal users are able to request support thought the
+    same process or initiate the incident response workflow.  Tickets created in the Jira
+    (customer ticketing system) and Github (internal ticketing system) documents all
+    details related to the incident to assist the incident response teams in handling the
+    incident.
+
+- control_key: IR-08
+  control_key_part: a
+  control_name: INCIDENT RESPONSE PLAN
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    DKAN/HDG Incident Response Plan
+    (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>), includes a
+    comprehensive incident response program, which details the implementation of
+    procedures and tools required for incident handling. The incident response program
+    details the roles and responsibilities of CivicActions IR Team. The IR Team includes
+    members from Security, Engineering, and Drupal Engineering teams.  Incident
+    response plays a pivotal role in monitoring, detecting and handling security incidents
+    of the entire information system. The IRP details categorization of incidents in
+    accordance with NIST 800-61 and accordingly documents and reports incidents. The IRP
+    is reviewed annually and updated as needed by ISSO, with the assistance of the
+    incident response team.
+
+- control_key: IR-08
+  control_key_part: b
+  control_name: INCIDENT RESPONSE PLAN
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The DKAN/HDG Incident Response Plan
+    (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>) is stored in the
+    CivicActions Github repository. CivicActions personnel who are a part of the incident
+    response team will have access to the plan in order to review any updates made to the
+    IR Plan, including CivicActions Security, DKAN Engineering, and Engineering teams.
+
+- control_key: IR-08
+  control_key_part: c
+  control_name: INCIDENT RESPONSE PLAN
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The HDG ISSO and the CivicActions IR team is responsible for reviewing the Incident
+    Response Plan (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>)
+    annually.  The entire incident response team will sit down and review the plan and
+    update it as necessary. Ultimately, the ISSO has final say and will approve all
+    updates to the plan team.
+
+- control_key: IR-08
+  control_key_part: e
+  control_name: INCIDENT RESPONSE PLAN
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    Modifications to the IR Plan are conducted by the IR team (CivicActions Security,
+    DKAN Engineering, and Engineering teams) and communicated to the IR team and LINCS
+    designated personnel, including the System Owner and ISSO.

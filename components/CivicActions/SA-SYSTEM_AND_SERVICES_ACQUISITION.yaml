@@ -1,0 +1,278 @@
+name: CivicActions
+family: SYSTEM AND SERVICES ACQUISITION
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: SA-01
+  control_key_part: ~
+  control_name: SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions has developed, documented and disseminated to personnel a system and
+    services acquisition policy that addresses purpose, scope, roles, responsibilities,
+    management commitment, coordination among organizational entities, and compliance; and
+    procedures to facilitate the implementation of the policy and associated controls.
+    This information is maintained the CivicActions System and Services Acquisition (SA)
+    Policy document that can be found in the CivicActions Github repository at
+    <https://github.com/CivicActions/compliance-docs/>.
+
+- control_key: SA-04
+  control_key_part: ~
+  control_name: ACQUISITIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    CivicActions' System and Services Acquisition Policy affects all personnel with
+    purchasing authorization, and applies to all infrastructure purchases or deployments
+    including software (e.g., SaaS, development tools, administration tools, hosting
+    providers) or hardware (e.g., laptops, desktop computers, smartphones, tablets,
+    servers, and external storage).
+
+- control_key: SA-04
+  control_key_part: a
+  control_name: ACQUISITIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The Acquisition security policy includes a list of questions to be reviewed in
+    scoring each information system or service prior to acquisition. This assessment
+    evaluates the product based on the vendor’s security practices, policies, and
+    past performance. It also details the potential maintenance and end-of-life ramifications
+    with regards to security. Questions asked include:
+
+    • Does the product meet any security standards set by independent laboratories,
+    such as ISO/IEC?
+
+    • Does the product meet federal government security standards, such as FedRAMP
+    or individual FIPS criteria?
+
+    • Does the product support encrypted connections for any online transactions required
+    to use the product?
+
+    • Does the software store its data in a secure format?
+
+    Based on responses to the questions, the acquisition is given a security score
+    which is then reviewed by CivicActions' Open Data Platform Engineering and Security
+    teams prior to purchase.
+
+- control_key: SA-04
+  control_key_part: b
+  control_name: ACQUISITIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    Answered in SA-4(a).
+
+- control_key: SA-04
+  control_key_part: c
+  control_name: ACQUISITIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    CivicActions requires all software and hardware products undergo a security risk
+    assessment prior to purchase. This assessment evaluates the product based on the
+    vendor’s security practices, policies, and past performance. It also details the
+    potential maintenance and end-of-life ramifications with regards to security.
+
+- control_key: SA-04
+  control_key_part: d
+  control_name: ACQUISITIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The CivicActions ISSO is responsible for determining the security documentation
+    that must be included in information system or services acquisition contracts.
+    In determining these requirements the CivicActions ISSO coordinates with the Development
+    Operations Manager, Customer Support Engineering Manager, the Contracts Manager,
+    and if necessary the Chief Operating Officer.
+  
+- control_key: SA-04
+  control_key_part: e
+  control_name: ACQUISITIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The CivicActions ISSO is responsible for determining the requirements for protecting
+    security-related documentation that is included in CivicActions acquisition contracts.
+    This determination is based on an assessment of risk and in accordance with applicable
+    federal laws, Executive Orders, directives, policies, regulations, and standards for
+    requirements for protecting security-related documentation.  In determining these
+    requirements the CivicActions ISSO coordinates with the Development Operations
+    Manager, Customer Support Engineering Manager, the Contracts Manager, and if necessary
+    the Chief Operating Officer.
+
+    The CivicActions System and Services Acquisition Policy is only accessible to
+    authorized roles via the Github repository tool.  Access to Github is role based and
+    maintained through the access management and enforcement controls (AC-2 and AC-3).
+
+- control_key: SA-04
+  control_key_part: f
+  control_name: ACQUISITIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    Configuration and design of the development and production environments are hosted
+    in the CivicActions Github service and Git repository service. All documentation
+    are strictly controlled regarding transportation and storage in accordance with
+    applicable federal laws, Executive Orders, directives, policies, regulations,
+    standards, guidelines, and organizational mission/business needs.
+
+- control_key: SA-04
+  control_key_part: g
+  control_name: ACQUISITIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The CivicActions Acquisition Security Policy contains the process for determining
+    acceptance criteria for all system software and application services.
+
+- control_key: SA-05
+  control_key_part: d
+  control_name: INFORMATION SYSTEM DOCUMENTATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    All administrator documentation is housed on Github. User documentation is posted in Github.
+- control_key: SA-05
+  control_key_part: e
+  control_name: INFORMATION SYSTEM DOCUMENTATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    As needed and approved by the CivicActions Security team, documentation is available
+    to appropriate personnel by granting access to the private github repository.
+
+- control_key: SA-08
+  control_key_part: ~
+  control_name: SECURITY ENGINEERING PRINCIPLES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: System Specific Control
+  implementation_status: In Place
+  narrative: >
+    Information system security engineering principles are applied in the specification,
+    design, development, implementation, and modification of the application system.
+
+    Sound security policy, developing layered protections, and controls have been
+    established as the foundation for design throughout the SDLC defined in control
+    SA-3. Security requirements are incorporated into that SDLC, as described previously.
+
+    CivicActions uses a development-stage-production testing and management workflow
+    as part of the CivicActions development model. Changes are first tested on a development
+    environment, then moved to a staging environment for further testing. Once the
+    client approves the changes, a backup is made of the production environment, and
+    the changes are then deployed. More information regarding this model can be found
+    in CM-3 and CM-4.The CivicActions organization ensures that all its developers
+    are trained on how to build secure software, that security controls have been
+    tailored to meet business and operational needs.
+
+- control_key: SA-10
+  control_key_part: a
+  control_name: DEVELOPER CONFIGURATION MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions performs configuration management during information system design,
+    development, implementation, and operation in accordance with CM-9.  Developers and
+    System Administrators working on the HDG system are required to work within the bounds
+    of CivicActions' configuration management process. This defines the process for moving
+    any change from lower (i.e. development and test) environments to higher ones
+    (i.e. production).
+
+- control_key: SA-10
+  control_key_part: b
+  control_name: DEVELOPER CONFIGURATION MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions uses a version control system to track all changes made to the source
+    code, Drupal application, and Drupal modules. Using a development-stage-production
+    testing and management workflow as part of the CivicActions development model.
+    Configuration changes are first tested on a development environment, then moved
+    to a staging environment for further testing and client approval. Once the client
+    approves the changes, a backup is made of the production environment, and the
+    changes are then deployed. This application receives the HDG’s source code from
+    the code repository stored in GitHub, a web storage collaboration site.
+
+- control_key: SA-10
+  control_key_part: c
+  control_name: DEVELOPER CONFIGURATION MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    All changes must begin with a Github ticket initiating the CCB process for review,
+    analysis, and approval by the CCB.
+
+- control_key: SA-10
+  control_key_part: d
+  control_name: DEVELOPER CONFIGURATION MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    All changes to the HDG system are documented in Github and conducted in accordance
+    with the Configuration Management Policy.
+
+- control_key: SA-10
+  control_key_part: e
+  control_name: DEVELOPER CONFIGURATION MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    When security flaws and flaw resolution are addressed, the CivicActions Security Team
+    reports, assigns, and tracks each issues through the issue ticketing tool within
+    Github.
+
+    More information regarding this model can be found in CM-3 and CM-4.
+
+- control_key: SA-11 (1)
+  control_key_part: ~
+  control_name: STATIC CODE ANALYSIS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: System Specific Control
+  implementation_status: Planned
+  narrative: >
+    The CivicActions team develops, tests, validates, and documents proposed changes prior
+    to implementation to assess the impact to the security and privacy risk posture of the
+    system.  Approval for any change as a result of the identifying flaws to the
+    system will be processed by CivicActions Security, Open Data Platform Engineering,
+    DKAN Product Engineering, and the Open source support engineering teams.
+
+    CivicActions developed in-house code requires a peer review of any change to the
+    source code. All change requests are organized into code release tickets in Github,
+    which are approved and reviewed by the Change Control Board (CCB) prior to deployment
+    to production.

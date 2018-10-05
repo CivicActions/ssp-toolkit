@@ -1,0 +1,46 @@
+name: CivicActions
+family: AUDIT AND ACCOUNTABILITY
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+- control_key: AU-01
+  control_key_part: ~
+  control_name: AUDIT AND ACCOUNTABILITY POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions has developed, documented and disseminated to personnel an audit
+    and accountability policy that addresses purpose, scope, roles, responsibilities,
+    management commitment, coordination among organizational entities, and compliance;
+    and procedures to facilitate the implementation of the policy and associated controls.
+    This information is maintained in the CivicActions Audit and Accountability (AU)
+    Policy.  This document can be found in the CivicActions Compliance Docs GitHub
+    repository at <https://github.com/CivicActions/compliance-docs>.
+
+- control_key: AU-02
+  control_key_part: a
+  control_name: AUDITABLE EVENTS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions' Security Policy provides information about auditing and logging of
+    CivicActions internal users and end-user activity on the servers and within the
+    system application.
+
+- control_key: AU-02
+  control_key_part: b
+  control_name: AUDITABLE EVENTS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    Auditable events may change due to changes in the threat environment. CivicActions
+    teams collaborate internally and also communicate with customers and partner organizations
+    to identify and select auditable events. The teams that participate in this process
+    are described in control SA-3(b).
+

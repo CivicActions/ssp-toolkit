@@ -1,0 +1,49 @@
+name: AWS-ACE
+family: AWARENESS AND TRAINING
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: AT-01
+  control_key_part: ~
+  control_name: SECURITY AWARENESS AND TRAINING POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud Cloud Service Providers dated 17 March 2016.
+
+- control_key: AT-02
+  control_key_part: c
+  control_name: SECURITY AWARENESS TRAINING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATOs granted
+    to both the ACE and AWS Cloud Service Providers.
+
+- control_key: AT-03
+  control_key_part: c
+  control_name: ROLE-BASED SECURITY TRAINING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATOs granted
+    to both the ACE and AWS Cloud Service Providers.
+
+- control_key: AT-04
+  control_key_part: b
+  control_name: SECURITY TRAINING RECORDS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATOs granted
+    to both the ACE and AWS Cloud Service Providers.

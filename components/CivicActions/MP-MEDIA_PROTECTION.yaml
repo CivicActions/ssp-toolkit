@@ -1,0 +1,21 @@
+name: CivicActions
+family: MEDIA PROTECTION
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: MP-01
+  control_key_part: ~
+  control_name: MEDIA PROTECTION POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions has developed, documented and disseminated to personnel a media
+    protection policy that addresses purpose, scope, roles, responsibilities, management
+    commitment, coordination among organizational entities, and compliance; and procedures
+    to facilitate the implementation of the policy and associated controls. This
+    information is maintained in CivicActions Media Protection (MP) Policy and Procedure
+    document that can be found in the CivicActions Github repository at
+    <https://github.com/CivicActions/compliance-docs>.

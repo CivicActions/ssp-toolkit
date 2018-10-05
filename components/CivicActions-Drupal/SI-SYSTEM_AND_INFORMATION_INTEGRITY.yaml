@@ -1,0 +1,243 @@
+name: CivicActions-Drupal
+family: SYSTEM AND INFORMATION INTEGRITY
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: SI-02
+  control_key_part: b
+  control_name: FLAW REMEDIATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions testing of the system as a result of security flaw remediation are done
+    through a development environment though use of internal software and automated
+    testing that ensures the system is working as intended. When a change is made by a
+    developer, testing though a peer review is conducted as part of the Change Request
+    process to ensure the correct analysis is completed. Tracking of the testing is
+    documented in the Github ticketing tool.
+
+- control_key: SI-02
+  control_key_part: c
+  control_name: FLAW REMEDIATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions security-software updates are tested prior to place to production.  The
+    CivicActions Security team framework for installation requires updates to be made
+    within 30 days for high vulnerabilities, 90 days for moderate vulnerabilities, and 240
+    for low vulnerabilities.  An issue ticket is created to track the any updates made to
+    the system.
+
+- control_key: SI-02
+  control_key_part: d
+  control_name: FLAW REMEDIATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    Flaw remediation is part of the CivicActions configuration management process.  Any
+    security issues found are ticketed through the Github ticketing tool. The CivicActions
+    Security team prioritizes the high findings within the Drupal application. Changes
+    made to correct the system as a result of the system flaws are scheduled and
+    coordinated through the CCB Change Request Process and appropriate approvals required
+    from the CCB Chair as implemented in CM-3.
+
+- control_key: SI-03
+  control_key_part: a
+  control_name: MALICIOUS CODE PROTECTION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    Virus scans are performed by ClamAV is a server-hosted tool protecting the application
+    from Trojans, Viruses and other malicious cyber-threats. Real-time scans are conducted
+    whenever files are uploaded from any external source and malicious code is blocked
+    or quarantined when detected. All traffic traversing the server is sanitized before
+    being delivered.
+
+- control_key: SI-03
+  control_key_part: b
+  control_name: MALICIOUS CODE PROTECTION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    Anti-virus definitions and malicious code protection mechanisms are configured
+    and updated automatically.
+
+- control_key: SI-03
+  control_key_part: c
+  control_name: MALICIOUS CODE PROTECTION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The Cloud Operations Team receives information system security alerts, advisories
+    and notifications in response to malicious code detection. These messages are
+    sent to group email distribution lists to ensure all members of the team receive
+    the proper information in a timely manner.
+
+- control_key: SI-03
+  control_key_part: d
+  control_name: MALICIOUS CODE PROTECTION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    False positives during malicious code detection and eradication are dealt with
+    on a case by case basis. Potential impacts on the availability of the information
+    system are detailed in a false positive report depending on if the report is for
+    the OS, database or web application.
+
+- control_key: SI-05
+  control_key_part: a
+  control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions / Drupal engineering and operations teams receive the following security
+    alerts, advisories and directives on an ongoing basis:
+
+    • Mailing lists relevant to Drupal and web application security
+
+    • US-CERT
+
+    • Technical Cyber Security Alerts
+
+    • Drupal Security Advisories
+
+- control_key: SI-05
+  control_key_part: b
+  control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions utilizes StatusCake for front line monitoring for real-time system status
+    and events of the application.
+
+- control_key: SI-05
+  control_key_part: c
+  control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions Security team disseminates security alerts, advisories, advisories, and
+    directives to all CivicActions internal personnel and client personnel as directed.
+
+- control_key: SI-05
+  control_key_part: d
+  control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions Security team is responsible for ensuring the dissemination and
+    implementation of relevant security alerts and advisories.
+
+- control_key: SI-07
+  control_key_part: ~
+  control_name: SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions employ the GitHub system to monitor source code, Drupal, and Drupal
+    Modules version control ensuring system integrity and prevents unauthorized changes.
+    The PHP-authenticator tool is perform a format check on source code prior to entering
+    production. Per implementation of CM-3, any changes to the source code of the system
+    requires the CCB Change Request process. A peer review as part of the Change Request
+    process is conducted to ensure the requested change is verified prior to entering
+    production.
+
+- control_key: SI-07 (1)
+  control_key_part: ~
+  control_name: INTEGRITY CHECKS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The integrity check implementation of SI-7 is conducted though the GitHub system
+    and verified monthly by redeploying the system codebase from GitHub.
+
+- control_key: SI-07 (7)
+  control_key_part: ~
+  control_name: INTEGRATION OF DETECTION AND RESPONSE
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    CivicActions incident response and configuration capabilities include the detection of
+    unauthorized changes to the system though the IR Plan and CCB Change Request process
+    and the implementation of IR-4 and IR-5. In the event of an unauthorized security
+    change to the system, CivicActions support would roll back to and restore from the
+    most recent authorized database set.
+
+- control_key: SI-10
+  control_key_part: ~
+  control_name: INFORMATION INPUT VALIDATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: System Specific Control
+  implementation_status: In Place
+  narrative: >
+    The linked data component and information submitted via web forms of the system are
+    the only component vulnerable to code insertion attacks, and has been hardened to
+    prevent them. Third party scans of the system verify the linked data component is not
+    susceptible to cross-site scripting attacks. Information submitted are checked from
+    the execution of the inputs and will disable any script entered in the text.
+
+- control_key: SI-11
+  control_key_part: a
+  control_name: ERROR HANDLING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    Drupal system error logs do not contain passwords, personal information, encryption
+    keys or other sensitive information.
+
+- control_key: SI-11
+  control_key_part: b
+  control_name: ERROR HANDLING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    Drupal system error logs are only available to authenticated administrators and
+    viewable within the administrative interface.
+
+- control_key: SI-12
+  control_key_part: ~
+  control_name: INFORMATION OUTPUT HANDLING AND RETENTION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The CivicActions organization retains all information, system-related information,
+    incident-related information, and system output in accordance with customers’
+    requirements retention periods and other NIST guidance and standards, Federal
+    policies, procedures, Federal laws and executive orders. Audit records are retained
+    for 365 days.

@@ -1,0 +1,52 @@
+name: AWS-ACE
+family: MEDIA PROTECTION
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: MP-01
+  control_key_part: ~
+  control_name: MEDIA PROTECTION POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud Cloud Service Providers dated 17 March 2016.
+
+- control_key: MP-02
+  control_key_part: ~
+  control_name: MEDIA ACCESS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  implementation_status: In Place
+  narrative: >
+    The system inherits this control from the FedRAMP Provisional ATO granted to the
+    AWS Cloud dated 17 March 2016 as the system is entirely within the FedRAMP
+    Provisional ATO granted to the AWS Cloud boundary.
+
+- control_key: MP-06
+  control_key_part: ~
+  control_name: MEDIA SANITIZATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  implementation_status: In Place
+  narrative: >
+    The system inherits this control from the FedRAMP Provisional ATO granted to the
+    AWS Cloud dated 17 March 2016 as the system is entirely within the FedRAMP
+    Provisional ATO granted to the AWS Cloud boundary.
+
+- control_key: MP-07
+  control_key_part: ~
+  control_name: MEDIA USE
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  implementation_status: In Place
+  narrative: >
+    The system inherits this control from the FedRAMP Provisional ATO granted to the
+    AWS Cloud dated 17 March 2016 as the system is entirely within the FedRAMP
+    Provisional ATO granted to the AWS Cloud boundary.

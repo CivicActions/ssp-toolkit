@@ -1,0 +1,70 @@
+name: CivicActions
+family: PLANNING
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: PL-01
+  control_key_part: ~
+  control_name: SECURITY PLANNING POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions has developed, documented and disseminated to personnel a system planning
+    policy that addresses purpose, scope, roles, responsibilities, management commitment,
+    coordination among organizational entities, and compliance; and procedures to
+    facilitate the implementation of the policy and associated controls. This information
+    is maintained in the CivicActions Planning (PL) Policy and Procedure document that can
+    be found in the CivicActions Github repository at
+    <https://github.com/CivicActions/compliance-docs/>.
+
+- control_key: PL-04
+  control_key_part: a
+  control_name: RULES OF BEHAVIOR
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions maintains an Acceptable Use Policy that all CivicActions personnel are
+    required to abide by when working with CivicActions operated systems. This information
+    is available on CivicActions Github system under Security Policy".
+
+- control_key: PL-04
+  control_key_part: b
+  control_name: RULES OF BEHAVIOR
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    All CivicActions employees are required to read and sign the Security Policy
+    <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/> which
+    includes the Acceptable Use Policy, prior to being authorized access to CivicActions
+    operated systems. This is part of the onboarding Security Training process:
+    <https://civicactions-handbook.readthedocs.io/en/latest/01-welcome-to-civicactions/training/security-training/>
+
+- control_key: PL-04
+  control_key_part: c
+  control_name: RULES OF BEHAVIOR
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The CivicActions Acceptable Use Policy/Rules of Behavior are reviewed by the Director
+    of Human resources at least annually and is updated at least every three years.
+
+- control_key: PL-04
+  control_key_part: d
+  control_name: RULES OF BEHAVIOR
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions employees re-sign the revised/updated Acceptable Use Policy/Rules
+    of Behavior policy document. The Director of Human Resources retains the signed
+    acknowledgements.

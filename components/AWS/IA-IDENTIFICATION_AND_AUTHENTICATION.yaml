@@ -1,0 +1,259 @@
+name: AWS-ACE
+family: IDENTIFICATION AND AUTHENTICATION
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: IA-01
+  control_key_part: ~
+  control_name: IDENTIFICATION AND AUTHENTICATION POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud Cloud Service Providers dated 17 March 2016.
+
+- control_key: IA-02
+  control_key_part: ~
+  control_name: IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS)
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following:  Identification and
+    Authentication procedures for CivicActions personnel who have rights to AWS
+    platform.
+
+- control_key: IA-04
+  control_key_part: a
+  control_name: IDENTIFIER MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following:  AWS identifier
+    authorization to assign information system CivicActions identifiers.
+
+- control_key: IA-04
+  control_key_part: b
+  control_name: IDENTIFIER MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following:  selection of individual
+    accounts identifiers for CivicActions admins within the AWS platform.
+
+- control_key: IA-04
+  control_key_part: c
+  control_name: IDENTIFIER MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following:  assignment of identifiers
+    for CivicActions admins within the AWS platform.
+
+- control_key: IA-05
+  control_key_part: a
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: identity verification
+    of the CivicActions admins.
+
+- control_key: IA-05
+  control_key_part: b
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following:  internal authentication
+    for CivicActions admins.
+
+    Customer Requirement
+
+    HDG customers are responsible for provisioning and de-provisioning end user accounts
+    in compliance with the authentication requirements described above (i.e., password
+    strengths).
+
+- control_key: IA-05
+  control_key_part: c
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following:  sufficient strength
+    of authentication.
+
+- control_key: IA-05
+  control_key_part: d
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following:  administrative procedures
+    for initial authenticator distribution, for lost/compromised or damaged authenticators,
+    and for revoking authenticators for CivicActions admin users of AWS.
+
+- control_key: IA-05
+  control_key_part: e
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following:  changing default content
+    of authenticators prior to information system installation for CivicActions admin
+    users of AWS.
+
+- control_key: IA-05
+  control_key_part: f
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following:  establishing minimum
+    and maximum lifetime restrictions and reuse conditions for authenticators.
+
+- control_key: IA-05
+  control_key_part: g
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: changing/refreshing
+    authenticator requirements.
+
+- control_key: IA-05
+  control_key_part: h
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following:  protecting authenticator
+    content from unauthorized disclosure and modification.
+
+- control_key: IA-05
+  control_key_part: i
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following:  security safeguards
+    to protect authenticators under CivicActions admin possession.
+
+- control_key: IA-05 (1)
+  control_key_part: a
+  control_name: PASSWORD-BASED AUTHENTICATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: password complexity
+    requirements for CivicActions admin users of the platform.
+
+    Customer Requirement
+
+    HDG customers are responsible for provisioning and de-provisioning end user accounts,
+    which must comply with the strict password policies that are enforced by the website's
+    software configuration, as described above.
+
+- control_key: IA-05 (1)
+  control_key_part: b
+  control_name: PASSWORD-BASED AUTHENTICATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: password complexity
+    requirements for CivicActions admin users of the platform.
+
+- control_key: IA-05 (1)
+  control_key_part: c
+  control_name: PASSWORD-BASED AUTHENTICATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: storing and transmitting
+    only cryptographically-protected passwords.
+
+- control_key: IA-05 (1)
+  control_key_part: c
+  control_name: PASSWORD-BASED AUTHENTICATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: enforcement for minimum
+    and maximum lifetime restrictions.
+
+- control_key: IA-05 (1)
+  control_key_part: e
+  control_name: PASSWORD-BASED AUTHENTICATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: prohibiting password
+    reuse.
+
+- control_key: IA-05 (1)
+  control_key_part: f
+  control_name: PASSWORD-BASED AUTHENTICATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: use of temporary password
+    for system logons.

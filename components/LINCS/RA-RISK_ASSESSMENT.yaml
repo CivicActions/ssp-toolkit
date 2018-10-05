@@ -1,0 +1,199 @@
+name: LINCS
+family: RISK ASSESSMENT
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+- control_key: RA-01
+  control_key_part: ~
+  control_name: RISK ASSESSMENT POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The Department of Health and Human Service developed, documented and disseminated
+    to personnel a risk assessment policy that addresses purpose, scope, roles, responsibilities,
+    management committment, coordination among organizational entities, and compliance,
+    and developed, documented and disseminated to personnel procedures to facilitate
+    the implementation of the policy and associated controls.The policy is stated
+    in the Office of the Secretary Information Security Policy dated July 17, 2013
+    and the procedures are defined in the Office of the Secretary Procedures Handbook
+    for Information Security, Version 1.1 dated July 30, 2014. These documents will
+    be reviewed periodically. These policies and procedures are applicable to the
+    LINCS personnel using the lincs.ed.gov information system.
+
+    The CivicActions ISSO is responsible for reviewing and updating the Risk Assessment
+    Policy and Procedures annually. The Chief Operating Officer is responsible for
+    approving Risk Assessment.  All procedures are consistent with requirements of
+    FISMA, applicable executive orders, directives, policies, regulations, standards,
+    and guidance. These policies and procedures are applicable to the CivicActions
+    staff administering the lincs.ed.gov information system.
+
+- control_key: RA-02
+  control_key_part: a
+  control_name: SECURITY CATEGORIZATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    In accordance with FIPS 199 requirement and guidelines provided in NIST SP800-60
+    Rev.1, the organization categorized the system as a Low system: Confidentiality
+    (Low), Integrity (Low), Availability (Low). This categorization was accepted by
+    the Authorizing Official.
+
+- control_key: RA-02
+  control_key_part: b
+  control_name: SECURITY CATEGORIZATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The outcome of the security categorization and related information types are reflected
+    in section 2 (Information System Categorization) of the lincs.ed.gov System
+    Security Plan (SSP).
+
+- control_key: RA-02
+  control_key_part: c
+  control_name: SECURITY CATEGORIZATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The CivicActions organization ensures the FIPS 199 security categorization decision
+    is reviewed and approved by the LINCS Authorizing Official when considering authorizing
+    the CivicActions HDG system.
+
+- control_key: RA-03
+  control_key_part: ~
+  control_name: RISK ASSESSMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Planned
+  narrative: >
+    This was completed in CY2016.
+
+- control_key: RA-03
+  control_key_part: a
+  control_name: RISK ASSESSMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Planned
+  narrative: >
+    CivicActions will perform risk assessments for the HDG system based on SP 800-30
+    Rev. 1 Guide for Conducting Risk Assessments at least annually and part of the
+    change management activities for the HDG system that warrant a new or updated
+    risk assessment. The results of risk assessments will be compiled into a risk
+    assessment report to be reviewed by CivicActions Management and relevant personnel,
+    and also added to the GitHub system for the HDG system.
+
+- control_key: RA-03
+  control_key_part: b
+  control_name: RISK ASSESSMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Planned
+  narrative: >
+    CivicActions will perform risk assessments for the HDG system based on SP 800-30
+    Rev. 1 Guide for Conducting Risk Assessments at least annually, or whenever changes
+    to the HDG system warrant a new or updated risk assessment. The results of risk
+    assessments will be compiled into a risk assessment report to be reviewed by CivicActions
+    Management and relevant personnel.
+
+- control_key: RA-03
+  control_key_part: c
+  control_name: RISK ASSESSMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Planned
+  narrative: >
+    CivicActions will perform risk assessments for the HDG system based on SP 800-30
+    Rev. 1 Guide for Conducting Risk Assessments at least annually, or whenever changes
+    to the HDG system warrant a new or updated risk assessment. The results of risk
+    assessments will be compiled into a risk assessment report.
+
+- control_key: RA-03
+  control_key_part: d
+  control_name: RISK ASSESSMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Planned
+  narrative: >
+    The Risk Assessment report will be disseminated to the appropriate personnel through
+    the CivicActions Security team at least annually.
+
+- control_key: RA-03
+  control_key_part: e
+  control_name: RISK ASSESSMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Planned
+  narrative: >
+    Risk assessments are conducted annually or whenever there are significant changes
+    to the information system or environment of operation (including the identification
+    of new threats and vulnerabilities), or other conditions that may impact the security
+    state of the system, as defined in NIST Special Publication 800-37 Revision 1,
+    Appendix F.
+
+    A significant change includes:
+
+    • Changing authentication or access control implementations;
+
+    • Changing storage implementations;
+
+    • Changing a COTS product to another product;
+
+    • Changing the backup mechanisms and process; and,
+
+    • Adding new interconnections to an outside service provide.
+
+- control_key: RA-05
+  control_key_part: a
+  control_name: VULNERABILITY SCANNING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    In addition to the fully inherited IaaS and PaaS scanning conducted by AWS ACE as
+    reported to FedRAMP, the CivicActions Security team uses the OWASP ZAP application
+    scanning tool to scan the HDG application for vulnerabilities on a monthly basis.  All
+    vulnerability findings are documented for remediation though the CivicActions Security
+    team by creating a GitHub issue and assigning the ticket to the appropriate
+    CivicActions team. Vulnerability assessments will be archived and be tracked on a
+    quarterly Plan of Action & Milestones (POA&M) and submitted to LINCS personnel
+    responsible for the HDG system.
+
+- control_key: RA-05
+  control_key_part: b
+  control_name: VULNERABILITY SCANNING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    CivicActions uses the automated vulnerability scanning tool OWASP ZAP to scan the HDG
+    system application. ZAP updates the list of known vulnerabilities automatically and
+    describes the risk of each vulnerability.
+
+- control_key: RA-05
+  control_key_part: e
+  control_name: VULNERABILITY SCANNING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    Results of the vulnerability scans and security assessments are shared with all
+    appropriate CivicActions personnel and appropriate LINCS personnel supporting continuous
+    monitoring requirements. CivicActions Security team assigns each vulnerability an
+    impact rating and response time though the GitHub issue tool for tracking to the
+    established remediation deadlines listed in RA-5(d).

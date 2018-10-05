@@ -1,0 +1,16 @@
+name: CivicActions-Drupal
+family: SYSTEM AND COMMUNICATIONS PROTECTION
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: SC-05
+  control_key_part: ~
+  control_name: DENIAL OF SERVICE PROTECTION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    Drupal has a manual ability to block IP addresses in cases where attacks bypass cloud
+    protection. This is managed by the support team.

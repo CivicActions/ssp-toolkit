@@ -1,0 +1,16 @@
+name: AWS-ACE
+family: PERSONNEL SECURITY
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: PS-01
+  control_key_part: ~
+  control_name: PERSONNEL SECURITY POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud Cloud Service Providers dated 17 March 2016.

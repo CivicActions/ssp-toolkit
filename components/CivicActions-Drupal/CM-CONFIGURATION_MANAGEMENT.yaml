@@ -1,0 +1,62 @@
+name: CivicActions-Drupal
+family: CONFIGURATION MANAGEMENT
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+    
+- control_key: CM-05 (1)
+  control_key_part: ~
+  control_name: AUTOMATED ACCESS ENFORCEMENT / AUDITING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    HDG access enforcement is monitored within Drupal, which records an entry in the
+    Drupal watchdog log for every successful or failed login attempt to the system.
+    Each successful login or logout event is logged with an entry that includes the
+    username of the account being used.
+
+    All access to server environments is via encrypted
+    SSH sessions with public-key authentication, and all server access is logged.
+    Specific implementation of auditing events are captured in AU-2. The same access
+    control procedures and need-to-know and accountability principles are enforced
+    for all systems storing baseline configuration policies.
+
+- control_key: CM-05 (5)
+  control_key_part: a
+  control_name: LIMIT PRODUCTION / OPERATIONAL PRIVILEGES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    Configuration changes that do not entail software code changes can only be
+    performed by CivicActions internal administrators with privileges implemented
+    by access enforcement (AC-3) and least privilege (AC-6).
+
+- control_key: CM-06
+  control_key_part: a
+  control_name: CONFIGURATION SETTINGS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions configuration settings for Drupal are guided by the Drupal Security
+    Coding Standards <https://www.drupal.org/docs/develop/security> for the security
+    configuration management processes and tools.
+
+- control_key: CM-08
+  control_key_part: ~
+  control_name: UPDATES DURING INSTALLATIONS / REMOVALS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions stores all software code for the lincs.ed.gov application in a
+    git source version control repository. Website content is backed up daily by the
+    AWS Managed Cloud hosting system, which is configured to take daily database
+    snapshots. This allows CivicActions to build an inventory of the HDG system on
+    demand.

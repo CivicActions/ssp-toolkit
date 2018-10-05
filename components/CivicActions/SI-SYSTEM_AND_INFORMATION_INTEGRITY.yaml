@@ -1,0 +1,48 @@
+name: CivicActions
+family: SYSTEM AND INFORMATION INTEGRITY
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: SI-01
+  control_key_part: ~
+  control_name: SYSTEM AND INFORMATION INTEGRITY POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions has developed, documented and disseminated to personnel a system and
+    information integrity policy that addresses purpose, scope, roles, responsibilities,
+    management commitment, coordination among organizational entities, and compliance; and
+    procedures to facilitate the implementation of the policy and associated controls.
+    This information is maintained in the CivicActions System and Information Integrity
+    (SI) Policy document that can be found in the CivicActions Github repository at
+    <https://github.com/CivicActions/compliance-docs/>.
+
+- control_key: SI-04
+  control_key_part: e
+  control_name: INFORMATION SYSTEM MONITORING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    In the event of a performance score lower than CivicActions standards, a notification
+    is sent to the CivicActions Open Source Support Engineering team. CivicActions
+    subscribes to security mailing lists in the event the monitoring activity is required
+    based on law enforcement information, intelligence information, or other credible
+    sources of information.
+
+- control_key: SI-04
+  control_key_part: f
+  control_name: INFORMATION SYSTEM MONITORING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    Internal legal counsel is utilized as required when system notifications indicate
+    such action based on user and/or malicious activity.  Legal counsel is engaged
+    for any actions that may necessitate increased user monitoring, or evidence/forensic
+    actions.

@@ -1,0 +1,102 @@
+name: AWS-ACE
+family: SYSTEM AND COMMUNICATIONS PROTECTION
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: SC-01
+  control_key_part: ~
+  control_name: SYSTEM AND COMMUNICATIONS PROTECTION POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud Cloud Service Providers dated 17 March 2016.
+
+- control_key: SC-05
+  control_key_part: ~
+  control_name: DENIAL OF SERVICE PROTECTION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 17 March 2016 for the following: denial of service protection.
+
+    Monitoring is conducted though AWS Operations in analyzing capacity and traffic
+    patterns in potential DoS attacks.
+
+- control_key: SC-07
+  control_key_part: a
+  control_name: BOUNDARY PROTECTION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 17 March 2016 for the following: monitoring and controlling at
+    the external boundary and key internal boundaries.
+
+- control_key: SC-07
+  control_key_part: b
+  control_name: BOUNDARY PROTECTION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 17 March 2016 for the following: implementation of subnetworks
+    for publically accessible system components.
+
+- control_key: SC-07
+  control_key_part: c
+  control_name: BOUNDARY PROTECTION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 17 March 2016 for the following: monitoring and controlling at
+    the external boundary and key internal boundaries.
+
+- control_key: SC-13
+  control_key_part: ~
+  control_name: USE OF CRYPTOGRAPHY
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 17 March 2016 for the following: use of cryptography for data
+    in motion (with SSH and HTTPS/SSL) and for data at rest (with Elastic Block Store
+    (EBS) volumnes).
+
+- control_key: SC-22
+  control_key_part: ~
+  control_name: ARCHITECTURE AND PROVISIONING FOR NAME / ADDRESS RESOLUTION SERVICE
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  implementation_status: In Place
+  narrative: >
+    The system inherits this control from the FedRAMP Provisional ATO granted to the
+    AWS Cloud dated 17 March 2016 for the following: architecture and provisioning
+    for name / address resolution service.
+
+- control_key: SC-39
+  control_key_part: ~
+  control_name: PROCESS ISOLATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  implementation_status: Not in Place
+  narrative: >
+    The system inherits this control from the FedRAMP Provisional ATO granted to the
+    AWS Cloud dated 17 March 2016 for the following: Process isolation.

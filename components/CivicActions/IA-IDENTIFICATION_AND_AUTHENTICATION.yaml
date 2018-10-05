@@ -1,0 +1,41 @@
+name: CivicActions
+family: IDENTIFICATION AND AUTHENTICATION
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: IA-01
+  control_key_part: ~
+  control_name: IDENTIFICATION AND AUTHENTICATION POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions has developed, documented and disseminated to personnel an identification
+    and authentication policy that addresses purpose, scope, roles, responsibilities,
+    management commitment, coordination among organizational entities, and compliance;
+    and procedures to facilitate the implementation of the policy and associated controls.
+    This information is maintained the CivicActions Identification and Authentication (IA)
+    Policy. This document can be found in the CivicActions Github repository at
+    <https://github.com/CivicActions/compliance-docs>.
+
+- control_key: IA-03
+  control_key_part: ~
+  control_name: DEVICE IDENTIFICATION AND AUTHENTICATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Not Applicable
+  narrative: >
+    CivicActions systems do not support or allow device-to-device communications.
+
+- control_key: IA-04
+  control_key_part: d
+  control_name: IDENTIFIER MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    CivicActions internal users' usernames may not be re-used for at least two years.

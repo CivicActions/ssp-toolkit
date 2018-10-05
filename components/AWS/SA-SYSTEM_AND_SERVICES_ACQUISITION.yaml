@@ -1,0 +1,231 @@
+name: AWS-ACE
+family: SYSTEM AND SERVICES ACQUISITION
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: SA-01
+  control_key_part: ~
+  control_name: SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud Cloud Service Providers dated 17 March 2016.
+
+- control_key: SA-02
+  control_key_part: a
+  control_name: ALLOCATION OF RESOURCES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: allocation of physical
+    resources.
+
+- control_key: SA-02
+  control_key_part: b
+  control_name: ALLOCATION OF RESOURCES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: allocation of physical
+    resources.
+
+- control_key: SA-02
+  control_key_part: c
+  control_name: ALLOCATION OF RESOURCES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: allocation of physical
+    resources.
+
+- control_key: SA-03
+  control_key_part: a
+  control_name: SYSTEM DEVELOPMENT LIFE CYCLE
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: system development
+    life cycle requirements.
+- control_key: SA-03
+  control_key_part: b
+  control_name: SYSTEM DEVELOPMENT LIFE CYCLE
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: system development
+    life cycle requirements.
+
+- control_key: SA-04
+  control_key_part: a
+  control_name: ACQUISITIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: acquisitions of physical
+    components making up the HDG system.
+
+- control_key: SA-04
+  control_key_part: b
+  control_name: ACQUISITIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: acquisitions of physical
+    components making up the HDG system.
+
+- control_key: SA-04
+  control_key_part: c
+  control_name: ACQUISITIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: acquisitions of physical
+    components making up the HDG system.
+
+- control_key: SA-04
+  control_key_part: g
+  control_name: ACQUISITIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: acquisitions of physical
+    components making up the HDG system.
+
+- control_key: SA-04
+  control_key_part: e
+  control_name: ACQUISITIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: acquisitions of physical
+    components making up the HDG system.
+
+- control_key: SA-04
+  control_key_part: f
+  control_name: ACQUISITIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: description of the
+    AWS environ running the HDG system.
+
+- control_key: SA-04
+  control_key_part: g
+  control_name: ACQUISITIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: acceptance criteria
+    for AWS and the system components representing the HDG system.
+
+- control_key: SA-05
+  control_key_part: a
+  control_name: INFORMATION SYSTEM DOCUMENTATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: administrator documentation
+    to the platform where the HDG system resides.
+
+- control_key: SA-05
+  control_key_part: b
+  control_name: INFORMATION SYSTEM DOCUMENTATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: user documentation
+    to the platform where the HDG system resides.
+
+- control_key: SA-10
+  control_key_part: e
+  control_name: DEVELOPER CONFIGURATION MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: developer configuration
+    management for physical components of the HDG system.
+
+- control_key: SA-10 (1)
+  control_key_part: ~
+  control_name: SOFTWARE / FIRMWARE INTEGRITY VERIFICATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: developer firmware
+    integrity verification of the physical components of the HDG system.
+
+- control_key: SA-11
+  control_key_part: a
+  control_name: DEVELOPER SECURITY TESTING AND EVALUATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: AWS security assessment
+    plan.
+
+- control_key: SA-11
+  control_key_part: b
+  control_name: DEVELOPER SECURITY TESTING AND EVALUATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: AWS security assessment
+    plan.

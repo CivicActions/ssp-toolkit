@@ -1,0 +1,32 @@
+name: CivicActions
+family: ACCESS CONTROL
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: AC-01
+  control_key_part: a
+  control_name: ACCESS CONTROL POLICY AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions has developed, documented and disseminated to personnel an access
+    control policy that addresses purpose, scope, roles, responsibilities, management
+    commitment, coordination among organizational entities, and compliance; and procedures
+    to facilitate the implementation of the policy and associated controls. This information
+    is maintained in the CivicActions Access Control (AC) Policy.  This document can
+    be found in the CivicActions Compliance Docs GitHub repository at
+    <https://github.com/CivicActions/compliance-docs>.
+
+- control_key: AC-06
+  control_key_part: ~
+  control_name: LEAST PRIVILEGE
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions performs regular audits of privileged users as part of the practice of
+    enforcing least privilege.

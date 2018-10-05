@@ -1,0 +1,43 @@
+name: AWS-ACE
+family: SECURITY ASSESSMENT AND AUTHORIZATION
+documentation_complete: false
+schema_version: 3.0.0
+satisfies:
+
+- control_key: CA-01
+  control_key_part: ~
+  control_name: SECURITY ASSESSMENT AND AUTHORIZATION POLICIES AND PROCEDURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud Cloud Service Providers dated 17 March 2016.
+
+- control_key: CA-07
+  control_key_part: b
+  control_name: CONTINUOUS MONITORING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: continuous monitoring
+    for security events’ metrics for AWS monitoring tools.
+
+    CivicActions' continuous monitoring for security events metrics will occur in
+    real-time using existing AWS monitoring tools tools.
+
+- control_key: CA-07
+  control_key_part: d
+  control_name: CONTINUOUS MONITORING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 17 March 2016 for the following: ongoing security status
+    monitoring.
