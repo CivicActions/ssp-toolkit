@@ -3,7 +3,8 @@
 # Make a SSP doc with a table of contents
 # Requires: https://github.com/ekalinin/github-markdown-toc
 
-./recombineControls.py -d > /tmp/ssp.md
+# Add '-d' option for full RMF description.
+./recombineControls.py > /tmp/ssp.md
 
 mkdir -p outputs
 

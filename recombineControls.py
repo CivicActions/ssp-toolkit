@@ -48,8 +48,8 @@ component_names = collections.OrderedDict([
   (None, None),
   ("CivicActions",        "CivicActions Responsibility"),
   ("CivicActions-Drupal", "CivicActions / Drupal control support"),
-  ("HHS",                 "DKAN/HDG specific control or HHS Responsibility"),
-  ("Acquia-ACE",          "Acquia (ACE) control support"),
+  ("LINCS",               "LINCS specific control or LINCS Responsibility"),
+  ("AWS",                 "Amazon Web Services (AWS) US-East/West control support"),
 ])
 component_order = { component: i for i, component in enumerate(component_names) }
 

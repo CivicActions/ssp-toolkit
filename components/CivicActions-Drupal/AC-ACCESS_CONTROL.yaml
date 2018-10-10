@@ -16,7 +16,7 @@ satisfies:
     contributing to and administering the site with the following roles:
 
     • Anonymous user – readers of the site who either do not have an account or are not
-      logged in.
+    logged in.
 
     • Authenticated user – All non-anonymous users inherit the "authenticated user role."
 

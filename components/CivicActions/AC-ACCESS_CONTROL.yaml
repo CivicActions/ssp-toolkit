@@ -5,7 +5,7 @@ schema_version: 3.0.0
 satisfies:
 
 - control_key: AC-01
-  control_key_part: a
+  control_key_part: ~
   control_name: ACCESS CONTROL POLICY AND PROCEDURES
   standard_key: NIST-800-53
   covered_by: []
