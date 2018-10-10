@@ -12,7 +12,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The Department of Health and Human Service developed, documented and disseminated
+    The Department of Education developed, documented and disseminated
     to personnel a configuration management policy  that addresses purpose, scope,
     roles, responsibilities, management committment, coordination among organizational
     entities, and compliance, and developed, documented and disseminated to personnel
@@ -75,20 +75,20 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The baseline configuration is described in Section 3.2 of the Configuration Management
-    Plan, which describes the approved configuration of the HDG system including all
+    Plan, which describes the approved configuration of the LINCS system including all
     of its hardware, software, and firmware components and the physical and logical
     locations of each. In the context of Security Configuration Management, the baseline
     configuration is a collection of formally approved configuration state(s) of one
-    or more configuration items ("features") that compose the HDG system. The baseline
-    configuration is used by HDG to restore and serves as the basis against which
-    the next change or set of changes to the HDG is made.
+    or more configuration items ("features") that compose the LINCS system. The baseline
+    configuration is used by LINCS to restore and serves as the basis against which
+    the next change or set of changes to the LINCS is made.
 
-    The features for the HDG system are maintained in the website's source code, which
+    The features for the LINCS system are maintained in the website's source code, which
     is managed in git, a source code version control system. Once the source code
     is updated, git maintains the new version of staged code once committed in the
     git repository as the new baseline. All code prior to it being staged is documented,
     tested and approved by CivicActions' DKAN Engineering team, which is described
-    in control SA-3. The HDG production environment is configured to take database
+    in control SA-3. The LINCS production environment is configured to take database
     snapshots daily.
 
 - control_key: CM-02 (1)
@@ -111,9 +111,9 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    Review of the CM baselines for the HDG system is conducted and approved by the
+    Review of the CM baselines for the LINCS system is conducted and approved by the
     DKAN Engineering team. Any changes made to the production environment are
-    approved prior to deployment by the HDG CCB. Changes that may require updates
+    approved prior to deployment by the LINCS CCB. Changes that may require updates
     to the baseline configuration for the lincs.ed.gov application include:
 
     • Significant upgrades or changes to applications or database software
@@ -132,7 +132,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    HDG configuration settings use automated mechanisms to automate code deployment
+    LINCS configuration settings use automated mechanisms to automate code deployment
     and baseline settings changes. The website's baseline configuration may be reapplied
     to the site at any time by manually retriggering a code deployment using the AWS
     dashboard.
@@ -157,11 +157,11 @@ satisfies:
   narrative: >
     The Change Control Board (CCB) is a group containing two individuals (at a minimum)
     that have the collective responsibility and authority to review and approve proposed
-    change to the HDG system. The LINCS OCIO Policy for Information Systems Security
+    change to the LINCS system. The LINCS OCIO Policy for Information Systems Security
     and Privacy Handbook requires that the configuration management process include
     the system CA (Certification Authority) or a representative from that system as
-    a member of the CCB. The HDG CCB shall meet regularly at a time and place set
-    by the HDG CCB Chair.  In addition, the HDG CCB Chair may convene the HDG CCB
+    a member of the CCB. The LINCS CCB shall meet regularly at a time and place set
+    by the LINCS CCB Chair.  In addition, the LINCS CCB Chair may convene the LINCS CCB
     in an emergency session to address time-critical topics as deemed necessary.
 
 - control_key: CM-06
@@ -217,7 +217,7 @@ satisfies:
     • Custom code written for lincs.ed.gov by CivicActions' developers
 
     The inventory is reviewed monthly by CivicActions' DKAN Product Engineering and
-    Open Data Platform Engineering teams. In accordance with the HDG Configuration
+    Open Data Platform Engineering teams. In accordance with the LINCS Configuration
     Management Plan, section 3.
 
 - control_key: CM-09
@@ -228,7 +228,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The HDG Configuration Management Plan addresses roles, responsibilities, and
+    The LINCS Configuration Management Plan addresses roles, responsibilities, and
     configuration management processes and procedures. It defines the configuration items
     for the information system and when in the system development life cycle the
     configuration items are placed under configuration management (section 3.1.1); and
@@ -246,7 +246,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The HDG system is built using CivicActions' DKAN distribution of Drupal which
+    The LINCS system is built using CivicActions' DKAN distribution of Drupal which
     is licensed under the Free Software Foundation's General Public License (GPL),
     version 2 or later.
 
@@ -258,8 +258,8 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The HDG Configuration Management Plan, section 3.2.1., notes the software, function,
-    and version for the software components of the HDG system. DKAN, Drupal core,
+    The LINCS Configuration Management Plan, section 3.2.1., notes the software, function,
+    and version for the software components of the LINCS system. DKAN, Drupal core,
     and all third-party Drupal modules are licensed under the Free Software Foundation's
     General Public License (GPL), version 2 or later.
 
@@ -281,7 +281,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    All software installed in the HDG system environment must be first approved via
+    All software installed in the LINCS system environment must be first approved via
     the CCB resulting in a Change Request (CR) being initiated and executed. No government-furnished
     equipment (GFE) is within the authorization boundary for the system. Software
     installation on the computing nodes within the authorization boundary is restricted

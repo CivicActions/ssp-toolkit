@@ -200,7 +200,7 @@ satisfies:
   narrative: >
     CivicActions performs configuration management during information system design,
     development, implementation, and operation in accordance with CM-9.  Developers and
-    System Administrators working on the HDG system are required to work within the bounds
+    System Administrators working on the LINCS system are required to work within the bounds
     of CivicActions' configuration management process. This defines the process for moving
     any change from lower (i.e. development and test) environments to higher ones
     (i.e. production).
@@ -219,7 +219,7 @@ satisfies:
     Configuration changes are first tested on a development environment, then moved
     to a staging environment for further testing and client approval. Once the client
     approves the changes, a backup is made of the production environment, and the
-    changes are then deployed. This application receives the HDG’s source code from
+    changes are then deployed. This application receives the LINCS’s source code from
     the code repository stored in GitHub, a web storage collaboration site.
 
 - control_key: SA-10
@@ -241,7 +241,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    All changes to the HDG system are documented in Github and conducted in accordance
+    All changes to the LINCS system are documented in Github and conducted in accordance
     with the Configuration Management Policy.
 
 - control_key: SA-10

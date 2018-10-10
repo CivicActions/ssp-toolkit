@@ -17,7 +17,7 @@ satisfies:
     downloading the publicly available website content that is available to all anonymous
     website visitors. Users who are assigned to CivicActions require the appropriate
     authorization described in AC-2. CivicActions users authenticate using the standard
-    Drupal login protocol prior to using the HDG services. HDG user roles are described
+    Drupal login protocol prior to using the LINCS services. LINCS user roles are described
     in AC-3.
 
     To access the website as an authenticated user, front-end users of the application must first
@@ -69,7 +69,7 @@ satisfies:
   implementation_status: Partially in Place
   narrative: >
     Identifiers for CivicActions internal personnel include a username based on the
-    individual's full first and last name and are reviewed for uniqueness by the HDG
+    individual's full first and last name and are reviewed for uniqueness by the LINCS
     admin group when it approves creation of the user account.
 
 - control_key: IA-04

@@ -1,4 +1,4 @@
-name: AWS-ACE
+name: AWS
 family: SYSTEM AND COMMUNICATIONS PROTECTION
 documentation_complete: false
 schema_version: 3.0.0
@@ -13,7 +13,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Cloud Service Providers dated 17 March 2016.
+    to the AWS Cloud Service Providers dated 1 May 2013.
 
 - control_key: SC-05
   control_key_part: ~
@@ -24,7 +24,7 @@ satisfies:
   implementation_status: Partially in Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 17 March 2016 for the following: denial of service protection.
+    the AWS Cloud dated 1 May 2013 for the following: denial of service protection.
 
     Monitoring is conducted though AWS Operations in analyzing capacity and traffic
     patterns in potential DoS attacks.
@@ -38,7 +38,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 17 March 2016 for the following: monitoring and controlling at
+    the AWS Cloud dated 1 May 2013 for the following: monitoring and controlling at
     the external boundary and key internal boundaries.
 
 - control_key: SC-07
@@ -50,7 +50,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 17 March 2016 for the following: implementation of subnetworks
+    the AWS Cloud dated 1 May 2013 for the following: implementation of subnetworks
     for publically accessible system components.
 
 - control_key: SC-07
@@ -62,7 +62,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 17 March 2016 for the following: monitoring and controlling at
+    the AWS Cloud dated 1 May 2013 for the following: monitoring and controlling at
     the external boundary and key internal boundaries.
 
 - control_key: SC-13
@@ -74,7 +74,7 @@ satisfies:
   implementation_status: Partially in Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 17 March 2016 for the following: use of cryptography for data
+    the AWS Cloud dated 1 May 2013 for the following: use of cryptography for data
     in motion (with SSH and HTTPS/SSL) and for data at rest (with Elastic Block Store
     (EBS) volumnes).
 
@@ -87,7 +87,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 17 March 2016 for the following: architecture and provisioning
+    AWS Cloud dated 1 May 2013 for the following: architecture and provisioning
     for name / address resolution service.
 
 - control_key: SC-39
@@ -99,4 +99,4 @@ satisfies:
   implementation_status: Not in Place
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 17 March 2016 for the following: Process isolation.
+    AWS Cloud dated 1 May 2013 for the following: Process isolation.

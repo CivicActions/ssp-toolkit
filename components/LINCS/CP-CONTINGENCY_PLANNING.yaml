@@ -12,7 +12,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The Department of Health and Human Service developed, documented and disseminated
+    The Department of Education developed, documented and disseminated
     to personnel a contingency planning policy that addresses purpose, scope, roles,
     responsibilities, management committment, coordination among organizational entities,
     and compliance, and developed, documented and disseminated to personnel procedures
@@ -40,7 +40,7 @@ satisfies:
   narrative: >
     An Information System Contingency Plan (ISCP)
     (<https://github.com/NuCivic/healthdata/wiki/contingency-plan>)
-    has been developed and is maintained for the HDG system. The CivicActions ISSO
+    has been developed and is maintained for the LINCS system. The CivicActions ISSO
     details the following elements that are critical for a successful recovery and
     resumption of operations in the event of a contingency scenario:
 

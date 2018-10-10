@@ -1,4 +1,4 @@
-name: AWS-ACE
+name: AWS
 family: ACCESS CONTROL
 documentation_complete: false
 schema_version: 3.0.0
@@ -9,118 +9,22 @@ satisfies:
   control_name: ACCESS CONTROL POLICY AND PROCEDURES
   standard_key: NIST-800-53
   covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Partially Inheritable
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Cloud Service Providers dated 17 March 2016.
-
-- control_key: AC-01
-  control_key_part: b
-  control_name: ACCESS CONTROL POLICY AND PROCEDURES
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Cloud Service Providers dated 17 March 2016.
+    to the AWS Cloud Service Providers dated 1 May 2013.
 
 - control_key: AC-02
-  control_key_part: a
+  control_key_part: ~
   control_name: ACCOUNT MANAGEMENT
   standard_key: NIST-800-53
   covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Partially Inheritable
   implementation_status: In Place
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: AWS privileged and
-    unprivileged admin accounts for the AWS Cloud Enterprise (ACE) granted to HDG
-    admins.
-
-    AWS privileged admin accounts for the AWS Cloud Enterprise (ACE) granted to
-    CivicActions Security and Operations admins on an as-needed basis.
-
-- control_key: AC-02
-  control_key_part: d
-  control_name: ACCOUNT MANAGEMENT
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: attributes described
-    in AC-2(d).
-
-- control_key: AC-02
-  control_key_part: g
-  control_name: ACCOUNT MANAGEMENT
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    AWS monitors the use of information systems and
-    system accounts. User access events are sent to AWS’s Security Information
-    Event Management (SIEM) System. The SIEM is configured to alert on information
-    system account events. There is procedure in place for monitoring and review of
-    ACE account usage by AWS personnel. AWS’s central logging is internal, not
-    customer-facing. This tool is used to audit account usage for items such as failures
-    and has the ability to monitor for certain trends. Actions performed by users
-    are captured by the system in several logs, including an access log that logs
-    all HTTP requests received by the system, a Drupal requests log which records
-    all requests processed by the Drupalsoftware, and a Drupal watchdog log, which
-    provides additional information about noteworthy events such as user login/logouts.
-
-- control_key: AC-02
-  control_key_part: e
-  control_name: ACCOUNT MANAGEMENT
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: approvals by for requests
-    to create information system accounts.
-
-- control_key: AC-02
-  control_key_part: f
-  control_name: ACCOUNT MANAGEMENT
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: creates, enables, modifies,
-    disables, and removes information system accounts.
-
-- control_key: AC-02
-  control_key_part: i
-  control_name: ACCOUNT MANAGEMENT
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: authorized access to
-    ACE.
-
-- control_key: AC-02
-  control_key_part: j
-  control_name: ACCOUNT MANAGEMENT
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: reviewing accounts
-    for compliance with account management requirements at least every 180 days.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: AWS account management.
 
 - control_key: AC-03
   control_key_part: ~
@@ -130,22 +34,8 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    CivicActions personnel create user accounts on the AWS Cloud Enterprise
-    platform that is used to manage server hosting. AWS user
-    accounts are only provided to CivicActions developers who need access to the server
-    so they can perform site updates and maintenance. Access to the system
-    servers is provided to developers by adding them as members to an "AWS team"
-    which allows them to log in to the platform using an AWS user account that
-    is managed by AWS. AWS defines the following roles and permissions for members
-    of this team:
-
-    • Team lead — Has full access to subscriptions and can invite other members to a team
-    and assign roles.
-
-    • Senior Developer — Has full access to all environments of the site (Dev, Stage, and Prod).
-
-    • Developer — Has access only to the Dev and Stage environments, and therefore cannot
-    elevate code to Production.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: AWS account management.
 
 - control_key: AC-06
   control_key_part: ~
@@ -155,36 +45,22 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: application of least
-    privilege of Drupal users in the ACE environment.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: application of least privilege.
 
 - control_key: AC-07
-  control_key_part: a
+  control_key_part: ~
   control_name: UNSUCCESSFUL LOGIN ATTEMPTS
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: unsuccessful logon
-    attempts.
-
-- control_key: AC-07
-  control_key_part: b
-  control_name: UNSUCCESSFUL LOGIN ATTEMPTS
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: unsuccessful logon
-    attempts.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: unsuccessful logon attempts.
 
 - control_key: AC-17
-  control_key_part: a
+  control_key_part: ~
   control_name: REMOTE ACCESS
   standard_key: NIST-800-53
   covered_by: []
@@ -192,18 +68,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: remote access.
-
-- control_key: AC-17
-  control_key_part: b
-  control_name: REMOTE ACCESS
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: remote access.
+    to the AWS Cloud dated 1 May 2013 for the following: remote access.
 
 - control_key: AC-18
   control_key_part: ~
@@ -214,7 +79,7 @@ satisfies:
   implementation_status: Not Applicable
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 17 March 2016 for the following: wireless access.
+    AWS Cloud dated 1 May 2013 for the following: wireless access.
 
 - control_key: AC-19
   control_key_part: ~
@@ -225,17 +90,15 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 17 March 2016 for the following: Mobile device restrictions
-    for accounts provisioned as described in AC-2(a).
+    AWS Cloud dated 1 May 2013 for the following: mobile device restrictions.
 
 - control_key: AC-20
   control_key_part: ~
   control_name: USE OF EXTERNAL INFORMATION SYSTEMS
   standard_key: NIST-800-53
   covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Not in Place
+  security_control_type: Inherited (Cloud Service Provider)
+  implementation_status: In Place
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 17 March 2016 for the following: use of hosting system’s SMTP
-    email server.
+    AWS Cloud dated 1 May 2013 for the following: use of external information systems.

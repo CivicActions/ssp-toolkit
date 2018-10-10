@@ -1,4 +1,4 @@
-name: AWS-ACE
+name: AWS
 family: AWARENESS AND TRAINING
 documentation_complete: false
 schema_version: 3.0.0
@@ -13,7 +13,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Cloud Service Providers dated 17 March 2016.
+    to the AWS Cloud Service Providers dated 1 May 2013.
 
 - control_key: AT-02
   control_key_part: c

@@ -11,7 +11,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The Department of Health and Human Service developed, documented and disseminated
+    The Department of Education developed, documented and disseminated
     to personnel a certification, accreditation, and security assessment policy that
     addresses purpose, scope, roles, responsibilities, management committment, coordination
     among organizational entities, and compliance, and developed, documented and disseminated
@@ -41,7 +41,7 @@ satisfies:
     This will be completed in CY2018.
 
     An independent Third Party Auditor will develop a security assessment plan (SAP)
-    for the HDG system in support of FISMA and NIST requirements selected by LINCS.
+    for the LINCS system in support of FISMA and NIST requirements selected by LINCS.
     Risks identified during the security assessment are tracked in the lincs.ed.gov
     Github repository. The scope of the assessment includes:
 
@@ -60,7 +60,7 @@ satisfies:
   implementation_status: Planned
   narrative: >
     All controls as assigned by LINCS and documented in this System Security Plan (SSP)
-    will be tested at least annually or when there is a major change to the HDG system,
+    will be tested at least annually or when there is a major change to the LINCS system,
     or as directed by LINCS.
 
 - control_key: CA-02
@@ -71,7 +71,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Planned
   narrative: >
-    An independent Third Party Auditor of the HDG System will create a Security Assessment
+    An independent Third Party Auditor of the LINCS System will create a Security Assessment
     Report (SAR) that will be provided to the internal authorizing official and the
     LINCS authorizing official.
 
@@ -109,9 +109,9 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    The Authorizing Official (AO) for HDG is LINCS' CIO. The AO will authorize the use
-    of HDG and this authorization will be reviewed and updated every three years or
-    when there is a significant change to the HDG system. The HDG security package to
+    The Authorizing Official (AO) for LINCS is LINCS' CIO. The AO will authorize the use
+    of LINCS and this authorization will be reviewed and updated every three years or
+    when there is a significant change to the LINCS system. The LINCS security package to
     be submitted to the AO for authorization include:
 
     • System Security Plan
@@ -138,7 +138,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    CivicActions will implement an ongoing security control assessment of the HDG
+    CivicActions will implement an ongoing security control assessment of the LINCS
     system as part of the continuous monitoring strategy. Items to be found to be
     not implemented or planned will be documented as POA&M items for remediation.
 

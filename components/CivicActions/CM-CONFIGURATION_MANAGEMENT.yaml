@@ -164,7 +164,7 @@ satisfies:
   narrative: >
     CivicActions tests and validates changes to the system before implementing
     the changes in production. Changes are documented as comments in the git source
-    code version control system. Any changes made to HDG are first captured in a separate
+    code version control system. Any changes made to LINCS are first captured in a separate
     development branch of git that is used to create a pull request, which is reviewed
     for quality control before being merged into the master branch of the repository.
 

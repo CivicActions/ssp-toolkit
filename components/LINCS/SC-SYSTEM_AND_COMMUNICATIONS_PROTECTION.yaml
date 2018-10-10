@@ -12,7 +12,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The Department of Health and Human Service developed, documented and disseminated
+    The Department of Education developed, documented and disseminated
     to personnel a system and communication policy  that addresses purpose, scope,
     roles, responsibilities, management committment, coordination among organizational
     entities, and compliance, and developed, documented and disseminated to personnel
@@ -40,7 +40,7 @@ satisfies:
   implementation_status: Partially in Place
   narrative: >
     Denial of service (DoS) attacks impair the performance of network devices and
-    server hosts, and thence the application itself.  HDG relies on the AWS platform
+    server hosts, and thence the application itself.  LINCS relies on the AWS platform
     for the protection of DoS attacks defined by LINCS SC-5.
 
 - control_key: SC-07
@@ -52,12 +52,12 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The lincs.ed.gov authorization boundary is completely contained within the AWS
-    (ACE) Platform as a Service.
+    Platform as a Service.
 
     The Drupal Server and Static Files computing nodes are the only computing nodes
-    in the system that are exposed to the Internet. HDG employs both the AWS platform
+    in the system that are exposed to the Internet. LINCS employs both the AWS platform
     safeguards and the Drupal Watchdog module in monitoring and recording system events.
-    All other computing nodes used in the system are isolated within AWS (ACE).
+    All other computing nodes used in the system are isolated within AWS.
 
 - control_key: SC-07
   control_key_part: b
@@ -68,7 +68,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The lincs.ed.gov authorization boundary is completely contained within the AWS
-    (ACE) Platform as a Service.
+    Platform as a Service.
 
     Internal organizational networks (e.g. CivicActions private networks) are physically
     separate from the AWS platform and are protected by managed boundary devices that
@@ -83,7 +83,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The lincs.ed.gov authorization boundary is completely contained within the AWS
-    (ACE) Platform as a Service.
+    Platform as a Service.
 
 - control_key: SC-12
   control_key_part: ~
@@ -93,11 +93,11 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Planned
   narrative: >
-    This is a planned control. Use of cryptographic key management for the HDG system
+    This is a planned control. Use of cryptographic key management for the LINCS system
     is not in use for at the time of implementation for authentication. CivicActions
     does not utilize customer agency supplied PIV credentials for access to customer
-    instances of the HDG. Access enforcement and authentication requirements for HDG
-    are described in AC-2 & IA-2. AWS (ACE) platform does not utilize or manage
+    instances of the LINCS. Access enforcement and authentication requirements for LINCS
+    are described in AC-2 & IA-2. AWS platform does not utilize or manage
     cryptographic keys within the ACE boundary.
 
 - control_key: SC-13
@@ -108,8 +108,8 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    HDG servers use SSH data is encrypted during transit. HDG utilizes HTTPS for any
-    inbound traffic accessing the HDG and must authenticate according to established HDG
+    LINCS servers use SSH data is encrypted during transit. LINCS utilizes HTTPS for any
+    inbound traffic accessing the LINCS and must authenticate according to established LINCS
     access enforcement and authentication rules described in AC-2 & IA-2. AWS Cloud
     data volumes are encrypted with FIPS-142 encryption.
 
@@ -121,7 +121,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Not Applicable
   narrative: >
-    This control is not applicable, as the HDG system does not employ any collaborative
+    This control is not applicable, as the LINCS system does not employ any collaborative
     computing devices.
 
 - control_key: SC-20
@@ -133,10 +133,10 @@ satisfies:
   implementation_status: Not Applicable
   narrative: >
     This control is inherited from AWS and currently does not employ a distributed,
-    hierarchical namespace. HDG does not provide additional data origin authentication
+    hierarchical namespace. LINCS does not provide additional data origin authentication
     and integrity verification artifacts along with the authoritative name resolution
     data the system returns in response to external name/address resolution queries.
-    HDG does not provide the means to indicate the security status of child zones
+    LINCS does not provide the means to indicate the security status of child zones
     and (if the child supports secure resolution services) to enable verification
     of a chain of trust among parent and child domains, when operating as part of
     a distributed, hierarchical namespace.

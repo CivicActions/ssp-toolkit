@@ -12,7 +12,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The Department of Health and Human Service developed, documented and disseminated to
+    The Department of Education developed, documented and disseminated to
     personnel a system maintenance policy that addresses purpose, scope, roles,
     responsibilities, management committment, coordination among organizational entities,
     and compliance, and developed, documented and disseminated to personnel procedures to
@@ -39,11 +39,11 @@ satisfies:
   implementation_status: In Place
   narrative: >
     CivicActions directly manages and controls all maintenance activities pertaining to
-    the software components of the HDG system, including DKAN, Drupal Core, and Drupal
-    Modules. All maintenance is nonlocal to the HDG system. Approval, QA, and monitoring
+    the software components of the LINCS system, including DKAN, Drupal Core, and Drupal
+    Modules. All maintenance is nonlocal to the LINCS system. Approval, QA, and monitoring
     is conducted by the team the specific maintenance is being performed.  Github tickets
     are assigned, QA, approved, and monitored by the DKAN Product Engineering team and
-    DKAN team for the software components of the HDG system before being ultimately
+    DKAN team for the software components of the LINCS system before being ultimately
     approved by the Change Control Board.
 
 - control_key: MA-04
@@ -55,13 +55,13 @@ satisfies:
   implementation_status: In Place
   narrative: >
     CivicActions directly manages and controls all maintenance activities pertaining
-    to the software components of the HDG system, including DKAN, Drupal Core, and
-    Drupal Modules. All maintenance is nonlocal to the HDG system. Approval, QA, and
+    to the software components of the LINCS system, including DKAN, Drupal Core, and
+    Drupal Modules. All maintenance is nonlocal to the LINCS system. Approval, QA, and
     monitoring is conducted by the team the specific maintenance is being performed.
     JIRA tickets are assigned, QA, approved, and monitored by the DKAN Product Engineering
-    team and DKAN team for the software components of the HDG system. For any nonlocal
+    team and DKAN team for the software components of the LINCS system. For any nonlocal
     maintenance requires the same authentication requirements to perform the maintenance
-    activities as to access the HDG system as defined in controls AC-3 and IA-2.
+    activities as to access the LINCS system as defined in controls AC-3 and IA-2.
 
 - control_key: MA-04
   control_key_part: c
@@ -72,7 +72,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     All nonlocal maintenance requires the same authentication requirements to perform
-    the maintenance activities as to access the HDG system as defined in controls
+    the maintenance activities as to access the LINCS system as defined in controls
     AC-3 and IA-2.
 
 - control_key: MA-04
@@ -86,8 +86,8 @@ satisfies:
     CivicActions records for nonlocal maintenance is conducted through the Github
     ticketing system tool as well as normal system logs. Github tickets are assigned,
     QA, approved, and monitored by the DKAN Product Engineering team and DKAN team
-    for the software components of the HDG system. Any CivicActions administrator
-    activity to the HDG system is also logged though the implementation of the AU-2
+    for the software components of the LINCS system. Any CivicActions administrator
+    activity to the LINCS system is also logged though the implementation of the AU-2
     (Audit Events) and AU-3 (Content of Audit Records).
 
 - control_key: MA-04
@@ -98,9 +98,9 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    Any session for internal HDG maintenance activities are terminated when the user
-    completes their session, disconnects from the HDG system, or logs out form the
-    HDG system.
+    Any session for internal LINCS maintenance activities are terminated when the user
+    completes their session, disconnects from the LINCS system, or logs out form the
+    LINCS system.
 
 - control_key: MA-05
   control_key_part: ~
@@ -110,8 +110,8 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    Non-local maintenance on the HDG system and applications can only be performed by
-    personnel designated as having HDG internal administrator privileges and
-    responsibilities.  Access rights for the HDG internal administrators are assigned and
+    Non-local maintenance on the LINCS system and applications can only be performed by
+    personnel designated as having LINCS internal administrator privileges and
+    responsibilities.  Access rights for the LINCS internal administrators are assigned and
     granted access to perform their specific job responsibilities. All local maintenance
-    requirements are inherited from AWS (ACE).
+    requirements are inherited from AWS.

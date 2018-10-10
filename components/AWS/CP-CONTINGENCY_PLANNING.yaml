@@ -1,4 +1,4 @@
-name: AWS-ACE
+name: AWS
 family: CONTINGENCY PLANNING
 documentation_complete: false
 schema_version: 3.0.0
@@ -13,7 +13,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Cloud Service Providers dated 17 March 2016.
+    to the AWS Cloud Service Providers dated 1 May 2013.
 
 - control_key: CP-02
   control_key_part: a
@@ -24,7 +24,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following:  contingency plan.
+    to the AWS Cloud dated 1 May 2013 for the following:  contingency plan.
 
 - control_key: CP-03
   control_key_part: ~
@@ -35,7 +35,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: contingency plan training.
+    to the AWS Cloud dated 1 May 2013 for the following: contingency plan training.
 
 - control_key: CP-04
   control_key_part: ~
@@ -46,7 +46,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: contingency plan testing.
+    to the AWS Cloud dated 1 May 2013 for the following: contingency plan testing.
 
 - control_key: CP-06
   control_key_part: ~
@@ -57,7 +57,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 17 March 2016 for the following:  alternate storage site in
+    AWS Cloud dated 1 May 2013 for the following:  alternate storage site in
     conjunction with their IaaS provider, AWS.
 
 - control_key: CP-06 (1)
@@ -69,7 +69,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 17 March 2016 for the following: alternate storage site separation
+    AWS Cloud dated 1 May 2013 for the following: alternate storage site separation
     from primary site in conjunction with their IaaS provider, AWS.
 
 - control_key: CP-09
@@ -81,7 +81,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: user level backup requirements.
+    to the AWS Cloud dated 1 May 2013 for the following: user level backup requirements.
 
     AWS functionally makes full backups completed daily and incremental backups in
     real time.  In addition, transactional logging is conducted by AWS in real time.
@@ -95,7 +95,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: system level backup
+    to the AWS Cloud dated 1 May 2013 for the following: system level backup
     requirements.
 
 - control_key: CP-09
@@ -107,7 +107,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: protection of the confidentiality,
+    to the AWS Cloud dated 1 May 2013 for the following: protection of the confidentiality,
     integrity, and availability of backup information at storage locations in conjunction
     with AWS.
 
@@ -120,5 +120,5 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 17 March 2016 for the following: information system recovery
+    AWS Cloud dated 1 May 2013 for the following: information system recovery
     and reconstitution.

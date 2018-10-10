@@ -1,4 +1,4 @@
-name: AWS-ACE
+name: AWS
 family: INCIDENT RESPONSE
 documentation_complete: false
 schema_version: 3.0.0
@@ -13,7 +13,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Provider dated 17 March 2016.
+    to the AWS Cloud Service Provider dated 1 May 2013.
 
 - control_key: IR-02
   control_key_part: ~
@@ -24,7 +24,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: incident response training.
+    to the AWS Cloud dated 1 May 2013 for the following: incident response training.
     
 - control_key: IR-04
   control_key_part: a
@@ -35,7 +35,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: incident handling.
+    to the AWS Cloud dated 1 May 2013 for the following: incident handling.
 
 - control_key: IR-04
   control_key_part: b
@@ -46,7 +46,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: incident handling.
+    to the AWS Cloud dated 1 May 2013 for the following: incident handling.
 
 - control_key: IR-04
   control_key_part: c
@@ -57,7 +57,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: incident handling.
+    to the AWS Cloud dated 1 May 2013 for the following: incident handling.
 
 - control_key: IR-05
   control_key_part: ~
@@ -68,7 +68,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following:  incident monitoring
+    to the AWS Cloud dated 1 May 2013 for the following:  incident monitoring
     of infrastructure and platform.
 
 - control_key: IR-06
@@ -80,7 +80,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following:  incident reporting.
+    to the AWS Cloud dated 1 May 2013 for the following:  incident reporting.
 
 - control_key: IR-06
   control_key_part: b
@@ -91,7 +91,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following:  incident reporting.
+    to the AWS Cloud dated 1 May 2013 for the following:  incident reporting.
 
 - control_key: IR-08
   control_key_part: a
@@ -102,7 +102,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following:  incident response
+    to the AWS Cloud dated 1 May 2013 for the following:  incident response
     plan.
 
 - control_key: IR-08
@@ -114,7 +114,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following:  incident response
+    to the AWS Cloud dated 1 May 2013 for the following:  incident response
     plan.
 
 - control_key: IR-08
@@ -126,7 +126,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following:  incident response
+    to the AWS Cloud dated 1 May 2013 for the following:  incident response
     plan.
 - control_key: IR-08
   control_key_part: d
@@ -137,7 +137,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following:  incident response
+    to the AWS Cloud dated 1 May 2013 for the following:  incident response
     plan.
 
 - control_key: IR-08
@@ -149,7 +149,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following:  incident response
+    to the AWS Cloud dated 1 May 2013 for the following:  incident response
     plan.
 
 - control_key: IR-08
@@ -161,5 +161,5 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following:  incident response
+    to the AWS Cloud dated 1 May 2013 for the following:  incident response
     plan.

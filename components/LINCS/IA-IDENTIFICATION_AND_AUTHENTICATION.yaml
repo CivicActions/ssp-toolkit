@@ -12,7 +12,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The Department of Health and Human Service developed, documented and disseminated
+    The Department of Education developed, documented and disseminated
     to personnel an identification and authentication policy that addresses purpose,
     scope, roles, responsibilities, management committment, coordination among organizational
     entities, and compliance, and developed, documented and disseminated to personnel
@@ -58,7 +58,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Planned
   narrative: >
-    Multifactor Authentication is a planned control for organization users of HDG with
+    Multifactor Authentication is a planned control for organization users of LINCS with
     privileged accounts.
 
 - control_key: IA-02 (2)
@@ -69,7 +69,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Not Applicable
   narrative: >
-    All accounts within HDG’s PaaS provider (AWS ACE) and IaaS provider (AWS) are
+    All accounts within LINCS’s PaaS provider (AWS ACE) and IaaS provider (AWS) are
     privileged accounts as described in FedRAMP Provisional ATO granted to the AWS
     Cloud dated 17 March 2016.
 
@@ -81,11 +81,11 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    HDG/DKANusers are assigned a unique identifier in the form of a unique username,
-    password and email address for the HDG system based on the system for allocating user
+    LINCS/DKANusers are assigned a unique identifier in the form of a unique username,
+    password and email address for the LINCS system based on the system for allocating user
     accounts described in AC-2. Each request must be based on a business need and is
     limited to only the access requirements for that individual to perform his/her
-    identified role within HDG. Requests for identifier assignment follows the process
+    identified role within LINCS. Requests for identifier assignment follows the process
     described in AC-2 and are authorized to perform actions according to the user account
     roles described in AC-3.
 
@@ -98,7 +98,7 @@ satisfies:
   implementation_status: Partially in Place
   narrative: >
     Users assigned to system requiring access to the lincs.ed.gov system require
-    authorization by the employee’s manager with HDG’s admin group completing the
+    authorization by the employee’s manager with LINCS’s admin group completing the
     the creation of the account.
 
 - control_key: IA-04
@@ -115,7 +115,7 @@ satisfies:
 
     Identifiers for devices that access the system use the same username, email address
     and password protocol as the identifiers provided to human users of the system
-    and undergo the same process of review by the HDG admin group. The HDG admin group
+    and undergo the same process of review by the LINCS admin group. The LINCS admin group
     is responsible for assigning a unique username that identifies the device as well
     as an email address that can be used for account verification.
 
@@ -140,9 +140,9 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    Authentication for HDG internal personnel are created during the personnel
-    assignment process where requests are made to the HDG admin group for proper access
-    levels.  The HDG admin group verifies the identity of the user. The website performs
+    Authentication for LINCS internal personnel are created during the personnel
+    assignment process where requests are made to the LINCS admin group for proper access
+    levels.  The LINCS admin group verifies the identity of the user. The website performs
     further verification by sending an email to the user's mailbox containing a single-use
     activation link which must be used to log in to the account for the first time
     and to create a password.
@@ -210,7 +210,7 @@ satisfies:
 
     Disabling the access of Site Managers to lincs.ed.gov is the responsibility of LINCS.
 
-    HDG is responsible for provisioning and de-provisioning end user accounts,
+    LINCS is responsible for provisioning and de-provisioning end user accounts,
     which must comply with the strict password policies that are enforced by the website's
     software configuration, as described above
 
@@ -253,7 +253,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    HDG DKAN users follow the following requirements:
+    LINCS DKAN users follow the following requirements:
 
     • Maximum password age = 90
 
@@ -267,14 +267,14 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    CivicActions internal users for HDG uses Group Policy to enforce password lifetime
+    CivicActions internal users for LINCS uses Group Policy to enforce password lifetime
     restrictions.  The password lifetime settings for internal accounts is as follows:
 
     • Minimum restriction of zero (0) days and
 
     • Maximum restriction of ninety (90) days before a password change is required.
 
-    The HDG application has no interaction with Active Directory; all password requirements
+    The LINCS application has no interaction with Active Directory; all password requirements
     are managed within the application itself.
 
 - control_key: IA-05
@@ -345,7 +345,7 @@ satisfies:
   security_control_type: System Specific Control
   implementation_status: Not Applicable
   narrative: >
-    HDG DKAN does not support physical hardware token-based authentication.
+    LINCS DKAN does not support physical hardware token-based authentication.
     Therefore this control is Not Applicable.
 
 - control_key: IA-08
@@ -356,7 +356,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    HDG is a publically accessible solution that allows government organizations to
+    LINCS is a publically accessible solution that allows government organizations to
     share open data resources with the general public. Non-organizational users have
     read-only access to the open data resources which are shared on lincs.ed.gov
     as documented in control AC-14.

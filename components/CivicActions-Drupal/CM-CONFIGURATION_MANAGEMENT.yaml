@@ -12,7 +12,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    HDG access enforcement is monitored within Drupal, which records an entry in the
+    LINCS access enforcement is monitored within Drupal, which records an entry in the
     Drupal watchdog log for every successful or failed login attempt to the system.
     Each successful login or logout event is logged with an entry that includes the
     username of the account being used.
@@ -58,5 +58,5 @@ satisfies:
     CivicActions stores all software code for the lincs.ed.gov application in a
     git source version control repository. Website content is backed up daily by the
     AWS Managed Cloud hosting system, which is configured to take daily database
-    snapshots. This allows CivicActions to build an inventory of the HDG system on
+    snapshots. This allows CivicActions to build an inventory of the LINCS system on
     demand.

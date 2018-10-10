@@ -12,7 +12,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The Department of Health and Human Service developed, documented and disseminated
+    The Department of Education developed, documented and disseminated
     to personnel a system and services acquisition policy that addresses purpose,
     scope, roles, responsibilities, management committment, coordination among organizational
     entities, and compliance, and developed, documented and disseminated to personnel
@@ -40,7 +40,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     LINCS in collaboration with CivicActions determines, designates, documents, and
-    allocates the resources required to protect the HDG system as part of its capital
+    allocates the resources required to protect the LINCS system as part of its capital
     planning and investment control processes. These individuals and groups act and/or
     meet on a pre-determined basis to determine information system security requirements
     and to develop implementation budgets and plans.
@@ -82,7 +82,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    CivicActions manages the HDG system, based on CivicActions' DKAN software, which
+    CivicActions manages the LINCS system, based on CivicActions' DKAN software, which
     is based on the open source Drupal platform. lincs.ed.gov is managed by CivicActions
     using the Agile software development methodology, which provides a continuous
     System Development Life Cycle (SDLC) methodology that is consistent with the LINCS
@@ -206,13 +206,13 @@ satisfies:
     • Perform configuration management during information system design, development,
     implementation, and operation;
 
-    • Manage and control changes to the to the HDG system;
+    • Manage and control changes to the to the LINCS system;
 
     • Implement only organization-approved changes;
 
-    • Document approved changes to the HDG system;
+    • Document approved changes to the LINCS system;
 
-    • Fully test all changes to the HDG, taking into account security considerations
+    • Fully test all changes to the LINCS, taking into account security considerations
     as well as other functional requirements;
 
     • Track security flaws and flaw resolution; and
@@ -254,7 +254,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    HDG requires all software and hardware products undergo a security risk
+    LINCS requires all software and hardware products undergo a security risk
     assessment prior to purchase. This assessment evaluates the product based on the
     vendor’s security practices, policies, and past performance. It also details the
     potential maintenance and end-of-life ramifications with regards to security.
@@ -267,13 +267,13 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    The HDG ISSO is responsible for determining the security documentation that must be
+    The LINCS ISSO is responsible for determining the security documentation that must be
     included in information system or services acquisition contracts.  In determining
-    these requirements the HDG ISSO coordinates with the Development Operations Manager,
+    these requirements the LINCS ISSO coordinates with the Development Operations Manager,
     Customer Support Engineering Manager, the Contracts Manager, and if necessary the
     Chief Operating Officer.
 
-    The HDG ISSO ensures all components of the HDG system system boundary are properly
+    The LINCS ISSO ensures all components of the LINCS system system boundary are properly
     documented to meet the CivicActions Acquisition Security Policy. Prior to testing
     and deployment to production.
 
@@ -285,10 +285,10 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    The HDG System and Services Acquisition Policy contains the process for determining
-    acceptance criteria for all HDG system software and services.
+    The LINCS System and Services Acquisition Policy contains the process for determining
+    acceptance criteria for all LINCS system software and services.
 
-    The HDG organization includes the use of Common Criteria (ISO/IEC 15408) evaluated
+    The LINCS organization includes the use of Common Criteria (ISO/IEC 15408) evaluated
     products in all acquisition contracts in accordance with applicable federal laws,
     Executive Orders, directives, policies, regulations, standards, guidelines, and
     organizational mission/business needs.
@@ -301,9 +301,9 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Not Applicable
   narrative: >
-    CivicActions/HDG and AWS (ACE) describes this control as “not applicable”,
-    as PIV credentials are not applicable to the HDG system. Access and Authentication
-    requirements for the HDG system for internal CivicActions and customer are implemented
+    CivicActions/LINCS and AWS describes this control as “not applicable”,
+    as PIV credentials are not applicable to the LINCS system. Access and Authentication
+    requirements for the LINCS system for internal CivicActions and customer are implemented
     under access management and enforcement (AC-2 and AC-3) and identification and
     authentication for all users (IA-2 and IA-8).
 
@@ -318,7 +318,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The HDG system is configured based on the DKAN distribution of Drupal. Administrator
+    The LINCS system is configured based on the DKAN distribution of Drupal. Administrator
     documentation for the Drupal application framework and contributed modules are
     located at http://drupal.org/documentation. The Drupal documentation repository
     is maintained by the Drupal Documentation Team: http://drupal.org/contribute/documentation.
@@ -410,9 +410,9 @@ satisfies:
     in accordance with applicable federal laws, Executive Orders, directives, policies,
     regulations, standards, and guidance.
 
-    HDG is hosted on the AWS Cloud (ACE) platform, which was approved under the
+    LINCS is hosted on the AWS Cloud platform, which was approved under the
     FedRAMP Provisional ATO granted to the AWS Cloud dated 17 March 2016. As such,
-    AWS (ACE) is already a FedRAMP-approved CSP and currently meets the FedRAMP
+    AWS is already a FedRAMP-approved CSP and currently meets the FedRAMP
     requirements.
 
 - control_key: SA-10 (1)
@@ -423,12 +423,12 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    In accordance with the HDG/DKAN Configuration Management Plan
+    In accordance with the LINCS/DKAN Configuration Management Plan
     (<https://github.com/NuCivic/healthdata/wiki/configuration-management-plan>),
-    integrity verification tools are employed on the HDG system to detect unauthorized
+    integrity verification tools are employed on the LINCS system to detect unauthorized
     changes. The first line of monitoring is that CivicActions developers use the git
     source code version control system to manage all source code running on
-    lincs.ed.gov.  The git repository is hosted by AWS Cloud (ACE) as part of its
+    lincs.ed.gov.  The git repository is hosted by AWS Cloud as part of its
     PaaS hosting service. CivicActions maintains its own separate clone of the git
     repository which mirrors the AWS repository and is hosted on GitHub. All code
     objects, branches and git commits are check-summed before they are stored and can then
@@ -455,7 +455,7 @@ satisfies:
     Security Assessment Plan (SAP). The SAP is outlined within the Software Release
     Process document on the CivicActions Wiki. All activities that impact the system,
     including all developer security testing activities, are recorded in GitHub throughout
-    the phases of the system development lifecycle. In accordance with the HDG/DKAN
+    the phases of the system development lifecycle. In accordance with the LINCS/DKAN
     Configuration Management Plan
     (<https://github.com/NuCivic/healthdata/wiki/configuration-management-plan>), section
     4, a security impact of change is conducted during the request for change.
@@ -476,7 +476,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    As described in CM-2, CM-4, and SA-3, CivicActions manages the HDG system development
+    As described in CM-2, CM-4, and SA-3, CivicActions manages the LINCS system development
     life cycle (SDLC) methodology that includes developer information security
     considerations including:
 
@@ -511,12 +511,12 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The steps in flaw remediation for CivicActions, including developers, follow the
-    Configuration Change Control described in the HDG/DKAN Configuration Management Plan
+    Configuration Change Control described in the LINCS/DKAN Configuration Management Plan
     (<https://github.com/NuCivic/healthdata/wiki/configuration-management-plan>), section
-    3.3 and implementation of SI-10. The HDG team develops, tests, validates, and
+    3.3 and implementation of SI-10. The LINCS team develops, tests, validates, and
     documents proposed changes prior to implementation to assess the impact to the
     security and privacy risk posture of the system.  Approval for any change as a result
-    of the identifying flaws to the HDG system will be processed by CivicActions Security,
+    of the identifying flaws to the LINCS system will be processed by CivicActions Security,
     Open Data Platform Engineering, DKAN Product Engineering, and the Open source support
     engineering teams. All change requests are organized into code release tickets in
     Github, which are approved and reviewed by the Change Control Board (CCB) prior to

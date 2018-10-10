@@ -11,7 +11,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The Department of Health and Human Service developed, documented and disseminated
+    The Department of Education developed, documented and disseminated
     to personnel a personnel security policy that addresses purpose, scope, roles,
     responsibilities, management committment, coordination among organizational entities,
     and compliance, and developed, documented and disseminated to personnel procedures
@@ -37,9 +37,9 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    HDG users are required to read and sign access agreements, including acknowledgement
+    LINCS users are required to read and sign access agreements, including acknowledgement
     signature page for the Acceptable Use Policy (AUP), provided in the Rules of Behavior
-    (RoB) document prior to gaining access to the HDG. The acknowledgment signature page
+    (RoB) document prior to gaining access to the LINCS. The acknowledgment signature page
     is a separate document provided within the referenced (RoB) document.
 
 - control_key: PS-06
@@ -63,7 +63,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    Prior to gaining access to key systems, HDG users are required to read
+    Prior to gaining access to key systems, LINCS users are required to read
     and sign access agreements, including the Acceptable Use Policy.
 
     Access agreements, including the Acceptable Use Policy, are reviewed at least
@@ -119,7 +119,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    For personnel transfers and terminations of employees with access to the HDG systems,
+    For personnel transfers and terminations of employees with access to the LINCS systems,
     third parties must notify the LINCS Director of Human Resources the same day. The
     Director of Human Resources follows the same employee transfer and/or termination
     procedure(s) as if the Third Party Personnel were LINCS employees.

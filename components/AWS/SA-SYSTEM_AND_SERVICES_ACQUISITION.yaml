@@ -1,4 +1,4 @@
-name: AWS-ACE
+name: AWS
 family: SYSTEM AND SERVICES ACQUISITION
 documentation_complete: false
 schema_version: 3.0.0
@@ -13,7 +13,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Cloud Service Providers dated 17 March 2016.
+    to the AWS Cloud Service Providers dated 1 May 2013.
 
 - control_key: SA-02
   control_key_part: a
@@ -24,7 +24,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: allocation of physical
+    to the AWS Cloud dated 1 May 2013 for the following: allocation of physical
     resources.
 
 - control_key: SA-02
@@ -36,7 +36,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: allocation of physical
+    to the AWS Cloud dated 1 May 2013 for the following: allocation of physical
     resources.
 
 - control_key: SA-02
@@ -48,7 +48,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: allocation of physical
+    to the AWS Cloud dated 1 May 2013 for the following: allocation of physical
     resources.
 
 - control_key: SA-03
@@ -60,7 +60,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: system development
+    to the AWS Cloud dated 1 May 2013 for the following: system development
     life cycle requirements.
 - control_key: SA-03
   control_key_part: b
@@ -71,7 +71,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: system development
+    to the AWS Cloud dated 1 May 2013 for the following: system development
     life cycle requirements.
 
 - control_key: SA-04
@@ -83,8 +83,8 @@ satisfies:
   implementation_status: Partially in Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: acquisitions of physical
-    components making up the HDG system.
+    to the AWS Cloud dated 1 May 2013 for the following: acquisitions of physical
+    components making up the LINCS system.
 
 - control_key: SA-04
   control_key_part: b
@@ -95,8 +95,8 @@ satisfies:
   implementation_status: Partially in Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: acquisitions of physical
-    components making up the HDG system.
+    to the AWS Cloud dated 1 May 2013 for the following: acquisitions of physical
+    components making up the LINCS system.
 
 - control_key: SA-04
   control_key_part: c
@@ -107,8 +107,8 @@ satisfies:
   implementation_status: Partially in Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: acquisitions of physical
-    components making up the HDG system.
+    to the AWS Cloud dated 1 May 2013 for the following: acquisitions of physical
+    components making up the LINCS system.
 
 - control_key: SA-04
   control_key_part: g
@@ -119,8 +119,8 @@ satisfies:
   implementation_status: Partially in Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: acquisitions of physical
-    components making up the HDG system.
+    to the AWS Cloud dated 1 May 2013 for the following: acquisitions of physical
+    components making up the LINCS system.
 
 - control_key: SA-04
   control_key_part: e
@@ -131,8 +131,8 @@ satisfies:
   implementation_status: Partially in Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: acquisitions of physical
-    components making up the HDG system.
+    to the AWS Cloud dated 1 May 2013 for the following: acquisitions of physical
+    components making up the LINCS system.
 
 - control_key: SA-04
   control_key_part: f
@@ -143,8 +143,8 @@ satisfies:
   implementation_status: Partially in Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: description of the
-    AWS environ running the HDG system.
+    to the AWS Cloud dated 1 May 2013 for the following: description of the
+    AWS environ running the LINCS system.
 
 - control_key: SA-04
   control_key_part: g
@@ -155,8 +155,8 @@ satisfies:
   implementation_status: Partially in Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: acceptance criteria
-    for AWS and the system components representing the HDG system.
+    to the AWS Cloud dated 1 May 2013 for the following: acceptance criteria
+    for AWS and the system components representing the LINCS system.
 
 - control_key: SA-05
   control_key_part: a
@@ -167,8 +167,8 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: administrator documentation
-    to the platform where the HDG system resides.
+    to the AWS Cloud dated 1 May 2013 for the following: administrator documentation
+    to the platform where the LINCS system resides.
 
 - control_key: SA-05
   control_key_part: b
@@ -179,8 +179,8 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: user documentation
-    to the platform where the HDG system resides.
+    to the AWS Cloud dated 1 May 2013 for the following: user documentation
+    to the platform where the LINCS system resides.
 
 - control_key: SA-10
   control_key_part: e
@@ -191,8 +191,8 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: developer configuration
-    management for physical components of the HDG system.
+    to the AWS Cloud dated 1 May 2013 for the following: developer configuration
+    management for physical components of the LINCS system.
 
 - control_key: SA-10 (1)
   control_key_part: ~
@@ -203,8 +203,8 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: developer firmware
-    integrity verification of the physical components of the HDG system.
+    to the AWS Cloud dated 1 May 2013 for the following: developer firmware
+    integrity verification of the physical components of the LINCS system.
 
 - control_key: SA-11
   control_key_part: a
@@ -215,7 +215,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: AWS security assessment
+    to the AWS Cloud dated 1 May 2013 for the following: AWS security assessment
     plan.
 
 - control_key: SA-11
@@ -227,5 +227,5 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: AWS security assessment
+    to the AWS Cloud dated 1 May 2013 for the following: AWS security assessment
     plan.

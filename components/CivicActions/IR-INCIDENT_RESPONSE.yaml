@@ -30,7 +30,7 @@ satisfies:
   narrative: >
     All CivicActions employees with incident response responsibilities are required to
     participate in incident response training once the role is assumed within 10 days, as
-    required by HDG changes, and annually. The CivicActions Incident Response Plan
+    required by LINCS changes, and annually. The CivicActions Incident Response Plan
     (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>)
     is the basis for the training and the incident response workflow created by the
     Security team.  Upon a review of past incidents, the training is updated to ensure

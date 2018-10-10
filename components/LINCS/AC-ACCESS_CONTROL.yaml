@@ -5,38 +5,25 @@ schema_version: 3.0.0
 satisfies:
 
 - control_key: AC-01
-  control_key_part: a
+  control_key_part: ~
   control_name: ACCESS CONTROL POLICY AND PROCEDURES
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The Department of Health and Human Service developed, documented and disseminated
-    to personnel an access control policy that addresses purpose, scope, roles, responsibilities,
-    management committment, coordination among organizational entities, and compliance,
-    and developed, documented and disseminated to personnel procedures to facilitate
-    the implementation of the policy and associated controls.The policy is stated
-    in the Office of the Secretary Information Security Policy dated July 17, 2013
-    and the procedures are defined in the Office of the Secretary Procedures Handbook
-    for Information Security, Version 1.1 dated July 30, 2014. These documents will
-    be reviewed periodically. These policies and procedures are applicable to the
-    LINCS personnel using the lincs.ed.gov information system.
+    This is Agency common control. More data about implementation can be obtained from the
+    Agency common control catalog.
 
-- control_key: AC-01
-  control_key_part: b
-  control_name: ACCESS CONTROL POLICY AND PROCEDURES
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The CivicActions ISSO is responsible for reviewing and updating the Access Control
-    Policy and Procedures annually. The Chief Operating Officer is responsible for
-    approving Access Control. All procedures are consistent with requirements of FISMA,
-    FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations,
-    standards, and guidance. These policies and procedures are applicable to the CivicActions
-    staff administering the lincs.ed.gov information system.
+    Access control policy and procedures are documented in the LINCS SSP. Access to LINCS
+    Technology Project operational information or system resources is limited to only
+    authorized users, programs or processes. The Department enforces access control
+    policies to protect the integrity of the LINCS Technology Project system. This
+    Department reviews and updates this policy as necessary and it has been being updated,
+    as necessary, since April 2008.
+
+    Additional information is contained within the Department of Education, OCIO-01,
+    Handbook for Information Assurance Cybersecurity Policy.
 
 - control_key: AC-02
   control_key_part: a
@@ -46,36 +33,27 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    HDG extends the basic Drupal accounts providing user accounts for individuals who
-    participate in the workflow of submitting and publishing datasets as well as blog
-    about HDG-related activities. These HDG specific roles include:
+    SSH system accounts are provided to contractors on an as-needed basis.
+    
+    Access privileges are used to ensure that only authorized personnel access certain
+    areas of the LINCS Technology Project system. User access is controlled by the
+    completion and submission of LINCS Technology Project System Rules of Behavior and New
+    User Account Request forms by the user and management. These items are completed and
+    submitted whenever a new user requires access or an existing user requires access
+    changes. The system administrator, based on need-to-know, assigns the proper
+    permissions. The employee’s manager approves the access rights before the initial
+    account is created. Finally, the system administrator implements the access rights
+    according to the New User Account Request form. The security staff and the support
+    contractor review accounts periodically. Accounts no longer in use are removed from
+    the system by the system administrator.
 
-    • Public Read-Access User: Anonymous account with read only access to datasets.
-    The account also facilitates a feedback loop for federal dataset owners and dataset
-    users. Public comment is available for discussing the government open data ecosystem.
+    The LINCS Technology Project has implemented user account procedures to disable
+    inactive user accounts after 90-days of inactivity. The LINCS support staff monitors
+    all user accounts to ensure this procedure is enforced. Section 6.3, Authentication
+    Management, of the LINCS SSP illustrates the exact procedures the contractor support
+    staff follows to ensure accounts are properly managed.
 
-    • Editor - Has the ability to edit and delete content, including content created by other users.
-
-    • Blogger - Has the ability to create blog posts.
-
-    • Content Creator - Can add datasets and data resources to the website.
-
-    • Site Manager - Can perform common website configuration tasks but does not have
-    the full range of permissions that are only given to users with the Administrator role.
-
-    • Workflow Contributor - Has the ability to create content that is "moderated,"
-    meaning it is not published for general public viewing until it has been reviewed
-    and approved by a moderator.
-
-    • Workflow Moderator - Has the ability to review and approve moderated content.
-
-    • Workflow Supervisor - Has the ability to assign and remove Workflow Contributor
-    and Workflow Moderator roles to other users.
-
-    • API Consumer:  HDG provides a read-only API that lets API consumers retrieve metadata
-    about datasets stored in the system and allows programmatic retrieval of the data,
-    which is stored in each dataset. Individual administrative users are created as
-    members of the "admin" group using the Identity and Access Management (IAM) feature.
+    The LINCS Technology Project system does not have guest or anonymous accounts.
 
 - control_key: AC-02
   control_key_part: b
@@ -85,13 +63,8 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    While Site Managers have oversight with regards to lower level Site Managers,
-    the designated government contracting official responsible for approving the purchase
-    of CivicActions' services is empowered to designate Site Managers, define their
-    access and permission levels and terminate access when it is no longer required.
-    Site Managers can also configure access for their authenticated users by assigning
-    them roles of Editor, Blogger, Content Creator, Site Manager, Workflow Contributor,
-    Workflow Moderator or Workflow Supervisor using the Administration >> People page.
+    The Project Owner has oversight over all permissions that the Project Manager and
+    Operations Staff manages.
 
 - control_key: AC-02
   control_key_part: c
@@ -101,12 +74,10 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    In accordance with Office of the Secretary Procedures Handbook for Information
-    Security, Version 1.0, HDG group membership is determined according to the individual’s
-    position and role within the organization. A ticket request is used to request
-    accounts and group membership. The request is authorized by the appropriate manager.
-
-    LINCS shall maintain required password updates every 60 days.
+    In accordance with LINCS Access Control Policy, LINCS group membership is determined
+    according to the individual's position and role within the organization. A ticket
+    request is used to request accounts and group membership. The request is authorized by
+    the appropriate manager.
 
 - control_key: AC-02
   control_key_part: d
@@ -165,15 +136,13 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The designated government contracting official responsible for approving the purchase
-    of CivicActions' services, or authorized representative, is empowered to designate
-    and approve Site Managers. It is left to the discretion of the designated government
-    contracting official or authorized representative to determine if a Site Manager
-    is considered to have a valid reason for accessing Communications Cloud. Logical
-    access is authorized at the application layer.
-
-    LINCS personnel who have the role of Site Manager are responsible for approving,
-    creating and managing all user accounts on the website.
+    The LINCS Technology Project ensures that assigned authorizations for controlling
+    access to the system is enforced in accordance with the user definitions noted in
+    Section 1.1.1 of the LINCS SSP. The technical support staff ensures that access to
+    security functions and protected information is restricted to authorized
+    personnel. Access will be controlled with access control list used on each
+    instance. Members of one group cannot access resources defined for other groups unless
+    explicitly permitted.
 
 - control_key: AC-06
   control_key_part: ~
@@ -183,195 +152,117 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    Site Managers are designated by LINCS. CivicActions’ clients are responsible for
-    determining who in their respective organizations will have Site Manager privileges,
-    and Site Managers have the ability to create other user accounts, including user
-    accounts with the role of Site Manager.
+    Drupal privileged access roles are designated by LINCS which is responsible for
+    determining who will have administrator privileges and the ability to create other
+    user accounts, including user accounts with the role of "administrator".
 
 - control_key: AC-07
-  control_key_part: a
+  control_key_part: ~
   control_name: UNSUCCESSFUL LOGIN ATTEMPTS
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    In accordance with the Office of the Secretary Procedures Handbook for Information
-    Security, Version 1.0 and Health and Human Services (LINCS) requirements, lincs.ed.gov
-    is configured to lock the account after five (5) invalid login attempts within
-    one hundred twenty (120) minute time period.
-
-- control_key: AC-07
-  control_key_part: b
-  control_name: UNSUCCESSFUL LOGIN ATTEMPTS
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    When a user exceeds the limit of invalid logon attempts, their account is automatically
-    locked for a six hours and requires administrator action to unlock the account
-    before the lockout period expires.
-    LINCS is responsible to provide lock down parameters if they change as this is
-    configurable by CivicActions administrators.
+    The LINCS Technology Project system locks out users after three unsuccessful login
+    attempts. The information system automatically locks the account permanently, unless
+    an administrator unlocks the account before then, when the maximum number of
+    unsuccessful attempts (3) is exceeded.
 
 - control_key: AC-08
-  control_key_part: a
-  control_name: SYSTEM USE NOTIFICATION
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Partially in Place
-  narrative: >
-    LINCS Site Managers are permitted to configure their own System Use Banners to maintain
-    compliance with their own internal System Use Notification policies and requirements,
-    but must communicate the request in writing to CivicActions. CivicActions will
-    then execute the change on the customer’s behalf.
-
-    By using this information system, you understand and consent to the following:
-
-    • You have no reasonable expectation of privacy regarding any communication or data
-    transiting or stored on this information system. At any time, and for any lawful
-    Government purpose, the government may monitor, intercept, and search and seize
-    any communication or data transiting or stored on this information system.
-
-    • Any communication or data transiting or stored on this information system may be
-    disclosed or used for any lawful Government purpose.”
-
-    The web interface and secure shell logins are configured to display a warning
-    banner before granting access to users.
-
-    "You are accessing a U.S. Government information system, which includes (1) this
-    computer, (2) this computer network, (3) all computers connected to this network,
-    and (4) all devices and storage media attached to this network or to a computer
-    on this network. This information system is provided for U.S. Government-authorized
-    use only. Unauthorized or improper use of this system may result in disciplinary
-    action, as well as civil and criminal penalties."
-
-- control_key: AC-08
-  control_key_part: b
-  control_name: SYSTEM USE NOTIFICATION
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Partially in Place
-  narrative: >
-    LINCS Site Managers are permitted to configure their own System Use Banners to maintain
-    compliance with their own internal System Use Notification policies and requirements,
-    but must communicate the request in writing to CivicActions. CivicActions will
-    then execute the change on the customer’s behalf.
-
-    The notification message in the warning banner appears at the top of the user
-    login page and remains there until the user logs in or goes to a different page
-    on the website.
-
-- control_key: AC-08
-  control_key_part: c
-  control_name: SYSTEM USE NOTIFICATION
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Partially in Place
-  narrative: >
-    As a publically accessible system, the HDG warning banner discussed in AC-8(a)
-    is displayed to non-users who access the system’s login features via any Internet-based
-    connections.
-
-- control_key: AC-09
   control_key_part: ~
-  control_name: PREVIOUS LOGON (ACCESS) NOTIFICATION
+  control_name: SYSTEM USE NOTIFICATION
   standard_key: NIST-800-53
   covered_by: []
-  security_control_type: System Specific Control
-  implementation_status: Planned
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
   narrative: >
-    This will be completed in CY2019.
-    This is a planned control.
+    A warning banner ensures that all persons attempting to gain access to the system know
+    that the system and its information are “Authorized User Only” and that attempts to
+    illegally log on to the system could lead to criminal prosecution. The warning message
+    displayed notifies unauthorized users that they have accessed a U.S. Government
+    computer system and continued, unauthorized use can be punishable by fines or
+    imprisonment. Each device logged into will display a system use notification message
+    before the log in window is displayed. The system use notification banner will remain
+    on the screen until the user takes an explicit action to log on to the device. The
+    following is the notification banner displayed on all Department instances:
 
-- control_key: AC-09 (1)
-  control_key_part: ~
-  control_name: UNSUCCESSFUL LOGONS
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: System Specific Control
-  implementation_status: Planned
-  narrative: >
-    This will be completed in CY2019.
-    This is a planned control.
+    "You are accessing a U.S. Federal Government computer system intended to be solely
+    accessed by individual users expressly authorized to access the system by the
+    U.S. Department of Education. Usage may be monitored, recorded, and/or subject to
+    audit. For security purposes and in order to ensure that the system remains available
+    to all expressly authorized users, the U.S. Department of Education monitors the
+    system to identify unauthorized users. Anyone using this system expressly consents to
+    such monitoring and recording. Unauthorized use of this information system is
+    prohibited and subject to criminal and civil penalties. Except as expressly authorized
+    by the U.S. Department of Education, unauthorized attempts to access, obtain, upload,
+    modify, change, and/or delete information on this system are strictly prohibited and
+    are subject to criminal prosecution under 18 U.S.C § 1030, and other applicable
+    statutes, which may result in fines and imprisonment. For purposes of this system,
+    unauthorized access includes, but is not limited to:
+
+    • Any access by an employee or agent of a commercial entity, or other third party, who
+      is not the individual user, for purposes of commercial advantage or private
+      financial gain (regardless of whether the commercial entity or third party is
+      providing a service to an authorized user of the system); and
+
+    • Any access in furtherance of any criminal or tortious act in violation of the
+      Constitution or laws of the United States or any State.
+
+    If system monitoring reveals information indicating possible criminal activity, such
+    evidence may be provided to law enforcement personnel."
 
 - control_key: AC-14
-  control_key_part: a
+  control_key_part: ~
   control_name: PERMITTED ACTIONS WITHOUT IDENTIFICATION OR AUTHENTICATION
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: System Specific Control
   implementation_status: In Place
   narrative: >
-    The following user actions can be performed on the system without identification
-    and authentication:
-
-    • Requesting a password reset (new temporary login page is sent to registered
-    account owner).
-
-    • View publicly-shared datasets and download data resource files.
-
-    • Submitting an anonymous “Question,” “Idea”, or “Dataset Suggestion” piece of
-    content. Submitted content is flagged for moderation before public display,
-    and submission requires successful completion of a CAPTCHA.
-
-- control_key: AC-14
-  control_key_part: b
-  control_name: PERMITTED ACTIONS WITHOUT IDENTIFICATION OR AUTHENTICATION
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: System Specific Control
-  implementation_status: In Place
-  narrative: >
-    HDG has identified actions an anonymous user is permitted to perform, without
-    identification or authentication, complying with HDG mission/business functions.
-    These mission/business functions include serving as a turnkey solution for government
-    organizations wanting to provide open data resources to the general public. The
-    actions reviewed by the CivicActions ISSO and approved by the HDG Product Owner.
+    The Department of Education allows the general public user to read the web pages, do
+    searches on the resource database and to review online forum information without
+    identification and authentication for the public web site. Program and Privilege users
+    cannot access LINCS Technology Project system without identification or
+    authentication.
 
 - control_key: AC-17
-  control_key_part: a
+  control_key_part: ~
   control_name: REMOTE ACCESS
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   implementation_status: In Place
   narrative: >
-    The following encryption methods, restrictions, requirements, and guidance are in
-    place for access to the servers:
+    The LINCS Technology Project permits remote access for privileged functions to support
+    operational needs. The technical staff documents, monitors, and controls all methods
+    of remote access to the information system including remote access for privileged
+    functions. Privileged user access is only permitted through the use of Secure Shell
+    (SSH) or the Remote Desktop Protocol (RDP) where the user will authenticate to the
+    device through this secure channel. Virtual Private Networking (VPN) is not enabled in
+    any form within the LINCS accreditation boundary.
 
-    • HTTPS – HDG internal users and LINCS user must authenticate though the login portal:
-      <https://www.lincs.ed.gov/user> prior to access to the HDG system.
-
-    • Secure Shell – AWS permits connections to the HDG server for administration
-    via an encrypted channel on TCP port 22 (SSH). Public key authorization is required.
-
-- control_key: AC-17
-  control_key_part: a
-  control_name: REMOTE ACCESS
+- control_key: AC-19
+  control_key_part: ~
+  control_name: ACCESS CONTROL FOR MOBILE DEVICES
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   implementation_status: In Place
   narrative: >
-    LINCS authorizes access to remote systems in accordance with Least Privilege access
-    guidelines.
+    This control is not applicable. LINCS does not maintain a facility in which mobile
+    device access limitations are required.
 
 - control_key: AC-20
   control_key_part: ~
   control_name: USE OF EXTERNAL INFORMATION SYSTEMS
   standard_key: NIST-800-53
   covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Inherited (Cloud Service Provider)
   implementation_status: In Place
   narrative: >
-    This is a planned control. HDG system utilizes the AWS hosting system's SMTP
-    email server to send account-related messages, such as responses to password reset
-    requests and moderation-relation reports.
+    This control is not applicable. LINCS does not connect with external information
+    systems.
 
 - control_key: AC-22
   control_key_part: a
@@ -381,16 +272,16 @@ satisfies:
   security_control_type: System Specific Control
   implementation_status: In Place
   narrative: >
-    It is the LINCS responsibility to designate authorized individuals to post information
-    onto a publicly accessible HDG website.
-
-    LINCS users with the Content Creator role have been authorized by LINCS personnel
-    for creation of publicly accessible content with publishing authority from an
-    Administrator or Site Manager role. The publishing authority ensures the information
-    being published does not contain nonpublic information.  HDG publishes automated
-    and system-related content where the administrator has the approving authority.
-    All description for user roles of the HDG website are listed within the implementation
-    of AC-3.
+    The Department of Education grants certain LINCS support staff members the authority
+    to post publicly accessible content. These individuals must complete LINCS system
+    security training before being granted access to the LINCS and before they can post
+    publicly accessible content within the LINCS. Furthermore, each authorized individual
+    must follow the procedures delineated within the “Using Drupal” Instruction to ensure
+    they are following a verifiable procedure throughout the entire process. This covers
+    the LINCS Discussion Lists administration areas, Wiki.lincs.ed.gov, LINCS Quarterly
+    Reporting and training tools, and Drupal Content Management systems. Public content is
+    only edited via the Drupal Content Management System. All other content is only
+    viewable by LINCS system users and protected by hardened access controls.
 
 - control_key: AC-22
   control_key_part: b
@@ -418,7 +309,7 @@ satisfies:
     LINCS users with the Content Creator role have been authorized by LINCS personnel
     for creation of publicly accessible content with publishing authority from an
     Administrator or Site Manager role. The publishing authority ensures the information
-    being published does not contain nonpublic information.  HDG publishes automated
+    being published does not contain nonpublic information.  LINCS publishes automated
     and system-related content where the administrator has the approving authority.
 
 - control_key: AC-22

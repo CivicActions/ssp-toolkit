@@ -12,7 +12,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The Department of Health and Human Service developed, documented and disseminated
+    The Department of Education developed, documented and disseminated
     to personnel an incident response policy that addresses purpose, scope, roles,
     responsibilities, management committment, coordination among organizational entities,
     and compliance, and developed, documented and disseminated to personnel procedures
@@ -42,9 +42,9 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    All CivicActions users of the HDG system with incident response responsibilities
+    All CivicActions users of the LINCS system with incident response responsibilities
     are required to participate in incident response training once the role is assumed
-    within 10 days, as required by HDG changes, and annually. The Incident Response
+    within 10 days, as required by LINCS changes, and annually. The Incident Response
     Plan (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>) is the basis
     for the training and the incident response workflow created by the Security team.
     Upon a review of past incidents, the training is updated to ensure processes and
@@ -63,10 +63,10 @@ satisfies:
     process for incident handling, and discusses preparation, detection and analysis,
     containment, eradication, and recovery.
 
-    Preparation activities includes all CivicActions and HDG internal users are trained if
+    Preparation activities includes all CivicActions and LINCS internal users are trained if
     their role includes incident response. Detection monitoring tools providing
     notification to incident response personnel for analysis and action. Containment,
-    eradication and recovery activities include AWS (ACE) inherited fixes and HDG
+    eradication and recovery activities include AWS inherited fixes and LINCS
     system administrators blocking IP address at the source of the incident and clearing
     caches.
 
@@ -79,7 +79,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     CivicActions Customer Support team provides first response assistance to any external
-    users of the HDG system. Response time for external reporting of incidents through
+    users of the LINCS system. Response time for external reporting of incidents through
     e-mail is one business day. Internal users are able to request support thought the
     same process or initiate the incident response workflow.  Tickets created in the Jira
     (customer ticketing system) and Github (internal ticketing system) documents all
@@ -94,7 +94,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    DKAN/HDG Incident Response Plan
+    DKAN/LINCS Incident Response Plan
     (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>), includes a
     comprehensive incident response program, which details the implementation of
     procedures and tools required for incident handling. The incident response program
@@ -114,7 +114,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The DKAN/HDG Incident Response Plan
+    The DKAN/LINCS Incident Response Plan
     (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>) is stored in the
     CivicActions Github repository. CivicActions personnel who are a part of the incident
     response team will have access to the plan in order to review any updates made to the
@@ -128,7 +128,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The HDG ISSO and the CivicActions IR team is responsible for reviewing the Incident
+    The LINCS ISSO and the CivicActions IR team is responsible for reviewing the Incident
     Response Plan (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>)
     annually.  The entire incident response team will sit down and review the plan and
     update it as necessary. Ultimately, the ISSO has final say and will approve all

@@ -1,4 +1,4 @@
-name: AWS-ACE
+name: AWS
 family: RISK ASSESSMENT
 documentation_complete: false
 schema_version: 3.0.0
@@ -13,7 +13,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Cloud Service Providers dated 17 March 2016.
+    to the AWS Cloud Service Providers dated 1 May 2013.
 
 - control_key: RA-05
   control_key_part: a
@@ -24,7 +24,7 @@ satisfies:
   implementation_status: Partially in Place
   narrative: >
     The system fully inherits this control to fully cover the AWS managed cloud
-    from the FedRAMP Provisional ATO granted to the AWS Cloud dated 17 March 2016
+    from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013
     for the following:  vulnerability scanning for operating system/infrastructure
     and database servers. AWS monthly scan results can be monitored via FedRAMP
     to verify the control’s implementation was adequate such as OS-level scans.
@@ -39,7 +39,7 @@ satisfies:
   narrative: >
     The system fully inherits this control to fully cover this control for the AWS
     managed cloud from the FedRAMP Provisional ATO granted to the AWS Cloud dated
-    17 March 2016 for the following:  vulnerability scanning for operating system/infrastructure
+    1 May 2013 for the following:  vulnerability scanning for operating system/infrastructure
     and database servers. AWS monthly scan results can be monitored via FedRAMP
     to verify the control’s implementation was adequate such as OS-level scans.
 
@@ -53,7 +53,7 @@ satisfies:
   narrative: >
     The system fully inherits this control to fully cover this control for the AWS
     managed cloud from the FedRAMP Provisional ATO granted to the AWS Cloud dated
-    17 March 2016 for the following:  vulnerability scanning for operating system/infrastructure
+    1 May 2013 for the following:  vulnerability scanning for operating system/infrastructure
     and database servers. AWS monthly scan results can be monitored via FedRAMP
     to verify the control’s implementation was adequate such as OS-level scans.
 
@@ -67,7 +67,7 @@ satisfies:
   narrative: >
     The system fully inherits this control to fully cover this control for the AWS
     managed cloud from the FedRAMP Provisional ATO granted to the AWS Cloud dated
-    17 March 2016 for the following:  vulnerability scanning for operating system/infrastructure
+    1 May 2013 for the following:  vulnerability scanning for operating system/infrastructure
     and database servers. AWS monthly scan results can be monitored via FedRAMP
     to verify the control’s implementation was adequate such as OS-level scans.
 
@@ -81,9 +81,9 @@ satisfies:
   narrative: >
     The system fully inherits this control to fully cover this control for the AWS
     managed cloud from the FedRAMP Provisional ATO granted to the AWS Cloud dated
-    17 March 2016 for the following:  vulnerability scanning for operating system/infrastructure
+    1 May 2013 for the following:  vulnerability scanning for operating system/infrastructure
     and database servers. AWS monthly scan results can be monitored via FedRAMP
     to verify the control’s implementation was adequate such as OS-level scans.
 
     Results of vulnerability scans and security assesments and related continuous
-    montioring of AWS (ACE) is available to LINCS through FedRAMP.
+    montioring of AWS is available to LINCS through FedRAMP.

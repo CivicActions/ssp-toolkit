@@ -1,4 +1,4 @@
-name: AWS-ACE
+name: AWS
 family: SECURITY ASSESSMENT AND AUTHORIZATION
 documentation_complete: false
 schema_version: 3.0.0
@@ -13,7 +13,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Cloud Service Providers dated 17 March 2016.
+    to the AWS Cloud Service Providers dated 1 May 2013.
 
 - control_key: CA-07
   control_key_part: b
@@ -24,7 +24,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: continuous monitoring
+    to the AWS Cloud dated 1 May 2013 for the following: continuous monitoring
     for security events’ metrics for AWS monitoring tools.
 
     CivicActions' continuous monitoring for security events metrics will occur in
@@ -39,5 +39,5 @@ satisfies:
   implementation_status: Partially in Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 17 March 2016 for the following: ongoing security status
+    to the AWS Cloud dated 1 May 2013 for the following: ongoing security status
     monitoring.

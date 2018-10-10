@@ -11,7 +11,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The Department of Health and Human Service developed, documented and disseminated
+    The Department of Education developed, documented and disseminated
     to personnel a system planning  policy that addresses purpose, scope, roles, responsibilities,
     management committment, coordination among organizational entities, and compliance,
     and developed, documented and disseminated to personnel procedures to facilitate
@@ -37,7 +37,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    CivicActions has developed the system security plan (SSP) for the HDG system and
+    CivicActions has developed the system security plan (SSP) for the LINCS system and
     compliant to NIST 800-53 and FIPS 199. The SSP defines the security categorization,
     system boundary, and security requirements and controls meeting NIST requirements
     as required by LINCS. Specifically the SSP:
@@ -98,8 +98,8 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The CivicActions ISSO updates the system description and control descriptions
-    within the HDG SSP as needed to verify the SSP is an accurate description of the
-    HDG system.
+    within the LINCS SSP as needed to verify the SSP is an accurate description of the
+    LINCS system.
 
 - control_key: PL-02
   control_key_part: e
