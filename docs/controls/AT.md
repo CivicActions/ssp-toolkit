@@ -17,9 +17,7 @@ CivicActions has developed, documented and disseminated to personnel awareness a
 
 #### LINCS specific control or LINCS Responsibility
 
-The Department of Education developed, documented and disseminated to personnel a personnel awareness and training policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
-
-The CivicActions ISSO is responsible for reviewing and updating the Awareness and Training Policy and Procedures annually. The Chief Operating Officer is responsible for approving Awareness and Training. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+Security awareness and training policy and procedures are formally documented in Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01), which provides the roles and responsibilities as it pertains to security awareness and training. The Department will ensure all users, including managers and senior executives, are exposed to basic information system security awareness materials before authorizing access to the system and at least annually thereafter. The Department documents and monitors all individual information system security training activities including basic security awareness training. The Department reviews and updates the policy as necessary.
 
 
 
@@ -38,23 +36,43 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
+#### LINCS specific control or LINCS Responsibility
+
+The Department personnel and contractor employees involved with the management, operation, programming, maintenance, or use of LINCS Technology Project system receive training in acceptable computer security practices prior to system access.
+
+All Department employees and contractors are required to complete annual IT security awareness training. This security awareness training covers issues and policies associated with information security, including end user security roles and responsibilities and rules of behavior. Some topics addressed in the training are:
+
+* Password protection
+
+* System rules of behavior
+
+* Protection of hardware, software, and data
+
+* Proper handling of copyrighted materials
+
+* Reporting of security breaches and violations
+
+* Proper procedures for software installation, uploading, and use on workstations. 
+
+The security and awareness training is consistent with Department of Education IT Security Training Program Plan and the guidance in NIST Special Publication 800-50.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+
+
+
 ### Part a)
 
 #### CivicActions Responsibility
 
-Both regular and ad hoc training to all CivicActions personnel, including those who support the system infrastructure and applications, is provided. All employees and contractors must complete Security Awareness and Insider Threat trainings upon being hired and at least annually thereafter. The CivicActions Help Desk will not create accounts for individuals until the Director of Human Resources confirms they have successfully completed the trainings. In addition, training compliance reports are run on a monthly basis and discussed during monthly meetings to ensure training compliance is met for all CivicActions personnel. Additional training will be provided as required by system changes. Training takes the following forms:
+Both regular and ad hoc training to all CivicActions personnel, including those who support the system infrastructure and applications, is provided. All employees and contractors must complete Security Awareness trainings upon being hired and at least annually thereafter. CivicActions Operations will not create accounts for individuals until they have successfully completed the trainings. Additional training will be provided as required by system changes. Training takes the following forms:
 
-Annual Knowledge Survey (i.e., Security Awareness and Insider Threat Trainings): All employees are required to review trainings covering Security Awareness and Insider Threat. After the training, a survey-style security awareness test is taken by employees. All CivicActions personnel are required to complete and pass the survey, and new employees are required to pass before being granted access to the Information System. In order to successfully pass the test, a score of 80% is required. This survey tests CivicActions personnel’s knowledge of critical security subjects, policies and procedures. Results from this survey are compiled by the Director of Human Resources and used to refine future training efforts.
+Annual Knowledge Survey (i.e., Security Awareness Training): All employees are required to review trainings covering Security Awareness. After the training, a survey-style security awareness test is taken by employees. All CivicActions personnel are required to complete and pass the survey, and new employees are required to pass before being granted access to the Information System. In order to successfully pass the test, a score of 80% is required. This survey tests CivicActions personnel’s knowledge of critical security subjects, policies and procedures. Results from this survey are compiled by the Director of Human Resources and used to refine future training efforts.
 
 Ad Hoc Security Awareness: The CivicActions ISSO oversees the approximately bi-monthly distribution of security awareness tips and articles to the all CivicActions employees. This can include general tips as well as articles tailored to the specific requirements of CivicActions users.
-
-Refresher Training: A learning management system is used to track training activities and to notify personnel when their training has expired and must be refreshed. Training must be refreshed at least annually. The Director of Human Resources is responsible for ensuring that the trainings are completed.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-LINCS personnel are required to complete information security awareness training when hired before being granted access to LINCS information systems.
 
 
 
@@ -62,7 +80,7 @@ LINCS personnel are required to complete information security awareness training
 
 #### CivicActions Responsibility
 
-In the event of a major system change, the ISMS Manager is responsible for delivering additional training to impacted personnel. Specific training type, medium and delivery method is dependent upon the nature of the system change.
+In the event of a major system change, the Project Manager is responsible for delivering additional training to impacted personnel. Specific training type, medium and delivery method is dependent upon the nature of the system change.
 
 
 
@@ -70,23 +88,7 @@ In the event of a major system change, the ISMS Manager is responsible for deliv
 
 #### CivicActions Responsibility
 
-CivicActions provides annual security awareness training to its personnel. This training includes:
-
-Annual Knowledge Survey (Security Awareness and Insider Threat Trainings): A survey-style security awareness test is submitted to all CivicActions personnel at least annually. All CivicActions personnel are required to complete the survey. This survey tests CivicActions personnel’s knowledge of critical security subjects, policies and procedures. Results from this survey are compiled by the Director of Human Resources and used to refine future training efforts.
-
-Refresher Training: A learning management system is used to track training activities and to notify personnel when their training has expired and must be refreshed. Training must be refreshed at least annually. The Director of Human Resources is responsible for ensuring that the trainings are completed.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-LINCS provides annual security awareness training to all personnel.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATOs granted to both the ACE and AWS Cloud Service Providers.
+CivicActions provides annual security awareness training to its personnel.
 
 
 
@@ -99,17 +101,23 @@ The system partially inherits this control from the FedRAMP Provisional ATOs gra
 > Security control type: Hybrid
 
 
+#### LINCS specific control or LINCS Responsibility
+
+Completion of role-based training is an annual requirement for personnel in roles with significant information security responsibilities that require specialized role-based training. Role-based cybersecurity training is developed and implemented to meet identified training needs and competencies associated with the various target audiences/functional roles (federal and contractor employees) that comprise the Department workforce, as is identified in and required by the FISMA and OMB A-130, Appendix III. The appropriate content of security training is determined based on the assigned roles and responsibilities of individuals and the specific security requirements of the Department, PO and the information systems to which personnel have authorized access. Annual training requirements may be met by completing one or more course(s) within the Department’s learning management systems, participating in instructor-led training provided by the OCIO, or completing an external role-based course or courses offered within their specific functional area of expertise.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+
+
+
 ### Part a)
 
 #### CivicActions Responsibility
 
-CivicActions personnel with security responsibilities are required to complete role-based security training before being provided with access to the information system. The CivicActions ISSO is responsible for creating the content of the training. The role-based training is provided and tracked by the Director of Human Resources.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-LINCS provides role-based training for system administrator and manager roles and requires personnel assigned those roles to complete the associated training.
+CivicActions personnel with security responsibilities are required to complete role-based security training before being provided with access to the information system. The CivicActions ISSO is responsible for creating the content of the training. The role-based training is provided and tracked by the CivicActions Information Security Office.
 
 
 
@@ -117,7 +125,7 @@ LINCS provides role-based training for system administrator and manager roles an
 
 #### CivicActions Responsibility
 
-The CivicActions ISSO determines whether a change to the information system requires any modifications and updates to the security awareness training program and if so, works with the Director of Human Resources to implement the change.
+The Project manager in collaboration with CivicActions Security determines whether a change to the information system requires any modifications and updates to the security awareness training program and if so, works with the CivicActions Security to implement the change.
 
 
 
@@ -125,19 +133,7 @@ The CivicActions ISSO determines whether a change to the information system requ
 
 #### CivicActions Responsibility
 
-CivicActions' Director of Human Resources provides users with security responsibilities role-based security training on an annual basis. The training is provided and tracked by the CivicActions Information Security Office.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-LINCS requires system administrator and managers to complete the associated role-based training annually.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATOs granted to both the ACE and AWS Cloud Service Providers.
+CivicActions' Security provides users with security responsibilities role-based security training on an annual basis. The training is provided and tracked by the CivicActions Information Security Office.
 
 
 
@@ -154,13 +150,13 @@ The system partially inherits this control from the FedRAMP Provisional ATOs gra
 
 #### CivicActions Responsibility
 
-The Director of Human Resources tracks all security awareness training within the organization and ensures that all employees have successfully completed training when required. The training records are stored and tracked in a spreadsheet maintained by the CivicActions Information Security Office.
+The CivicActions Information Security Office tracks all security awareness training within the organization and ensures that all employees have successfully completed training when required. The training records are stored and tracked in a spreadsheet maintained by the CivicActions Information Security Office.
 
 
 
 #### LINCS specific control or LINCS Responsibility
 
-The Office of Information Security tracks security awareness training for LINCS personnel.
+The Department documents and monitors all individual information system security training activities including basic security awareness training. New users are required to take security training within 30 days of hire. This information is kept in the appropriate personnel files to verify users have met the training requirements. Training requirement notifications are sent to individuals as deadline for re-training approaches.
 
 
 
@@ -180,7 +176,7 @@ The Office of Information Secuity maintains training certifications for the spec
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATOs granted to both the ACE and AWS Cloud Service Providers.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
 
 
 

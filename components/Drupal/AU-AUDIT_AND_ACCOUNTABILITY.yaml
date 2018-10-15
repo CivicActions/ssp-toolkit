@@ -20,8 +20,8 @@ satisfies:
     bypassed Varnish. These requests include pages, theme files, and static media files.
 
     • Apache error log :: Records any Apache-level issues. The issues reported here are
-    usually caused by general server issues, including capacity problems, .htaccess problems,
-    and missing files.
+    usually caused by general server issues, including capacity problems, .htaccess
+    problems, and missing files.
 
     • Drupal page request log :: Records all Drupal page loads on your website.
 
@@ -71,22 +71,8 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    All CivicActions Drupal sites have access to several different server log types.
-    Transactions are captured in several different log types, including the following:
-
-    • Access logs: Captures all requests passed to the web server
-
-    • Drupal request logs: Captures all requests passed to the Drupal application
-
-    • Drupal watchdog: Captures additional details of significant transactions
-    processed by Drupal, such as the username of a login attempts
-
-    • PHP error logs: Captures any errors logged during execution of the PHP programming language
-
-    • Node revision history: Captures each revision made to a piece of content on the website
-    
-    Information captured in the transaction logs includes, but is not limited to, the following
-    auditable events:
+    Information captured in the transaction logs includes, but is not limited to, the
+    following auditable events:
 
     • Failed login attempts
 
@@ -126,6 +112,11 @@ satisfies:
 
     • System administration activities
 
+    • Slow query logs.
+
+    • PHP error logs: Captures any errors logged during execution of the PHP programming
+      language.
+
 - control_key: AU-03
   control_key_part: ~
   control_name: CONTENT OF AUDIT RECORDS
@@ -151,119 +142,8 @@ satisfies:
     • Unique numerical ID of the content being modified (for content creation,
     modification and deletion events)
 
-    When auditing a Drupal incident, CivicActions' developers aggregate log sources
-    from multiple servers into spreadsheets so that all log entries for a single managed
-    security incident can be analyzed in a single document.  Log sources are manually
+    When auditing a Drupal incident, CivicActions' developers aggregate log sources from
+    multiple servers into the Graylog dashboard so that all log entries for a single
+    managed security incident can be analyzed in a single document. Log sources are
     sorted, filtered and reviewed.  Application logs are maintained primarily for
     after-the-fact investigation of critical system or security events.
-
-- control_key: AU-04
-  control_key_part: ~
-  control_name: AUDIT STORAGE CAPACITY
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
-  implementation_status: In Place
-  narrative: >
-    CivicActions ensures adequate storage capability requirements listed in AU-11 for all
-    events from the application, database, and hosting environment.
-
-- control_key: AU-05
-  control_key_part: b
-  control_name: RESPONSE TO AUDIT PROCESSING FAILURES
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    When an auditing processing failure occurs, the Drupal system will overwrite the
-    oldest audit records. The Drupal watchdog module is used in both the server and
-    a log file created by the AWS and record details of significant transactions
-    processed by Drupal.
-
-- control_key: AU-06
-  control_key_part: a
-  control_name: AUDIT REVIEW, ANALYSIS, AND REPORTING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Planned
-  narrative: >
-    CivicActions security audit data is collected and collated by CivicActions personnel
-    weekly or as required to support an after-the-fact investigation at the application
-    level for the following:
-
-    • Indications of inappropriate or unusual activity
-
-    • Assurance that logging is functioning properly
-
-    • Adherence to logging standards identified in this procedure
-
-- control_key: AU-06
-  control_key_part: b
-  control_name: AUDIT REVIEW, ANALYSIS, AND REPORTING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Planned
-  narrative: >
-    Any significant findings observed during the inspection are reported to the CivicActions
-    security team.  If these are considered to constitute a security incident, then
-    the Incident Response process is invoked as described in the implementation of
-    the Incident Response Plan (IR-8).
-    
-- control_key: AU-09
-  control_key_part: ~
-  control_name: PROTECTION OF AUDIT INFORMATION
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
-  implementation_status: Planned
-  narrative: >
-    CivicActions ensures that audit logs are created, stored and maintained. Developers
-    who have been assigned as members of the CivicActions Security Team are the only
-    CivicActions personnel with logical permission to access and download audit logs.
-
-- control_key: AU-11
-  control_key_part: ~
-  control_name: AUDIT RECORD RETENTION
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
-  implementation_status: In Place
-  narrative: >
-    CivicActions audits events from the application, database, and hosting environment,
-    and retains these records for at least 180 days.
-
-- control_key: AU-12
-  control_key_part: a
-  control_name: AUDIT GENERATION
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions ensures audit records are generated for its web and event logs as required
-    in AU-2 and AU-3 for servers, application, database and network components.
-
-- control_key: AU-12
-  control_key_part: b
-  control_name: AUDIT GENERATION
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The selected auditable events described in AU-2 are coordinated by CivicActions
-    internal admins and client security/operations officers for each component of the
-    production system.
-
-- control_key: AU-12
-  control_key_part: c
-  control_name: AUDIT GENERATION
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Drupal generates audit records for its web and event logs as described in AU-2 and AU-3.

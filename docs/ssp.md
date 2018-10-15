@@ -665,9 +665,7 @@ CivicActions has developed, documented and disseminated to personnel awareness a
 
 #### LINCS specific control or LINCS Responsibility
 
-The Department of Education developed, documented and disseminated to personnel a personnel awareness and training policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
-
-The CivicActions ISSO is responsible for reviewing and updating the Awareness and Training Policy and Procedures annually. The Chief Operating Officer is responsible for approving Awareness and Training. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+Security awareness and training policy and procedures are formally documented in Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01), which provides the roles and responsibilities as it pertains to security awareness and training. The Department will ensure all users, including managers and senior executives, are exposed to basic information system security awareness materials before authorizing access to the system and at least annually thereafter. The Department documents and monitors all individual information system security training activities including basic security awareness training. The Department reviews and updates the policy as necessary.
 
 
 
@@ -686,23 +684,43 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
+#### LINCS specific control or LINCS Responsibility
+
+The Department personnel and contractor employees involved with the management, operation, programming, maintenance, or use of LINCS Technology Project system receive training in acceptable computer security practices prior to system access.
+
+All Department employees and contractors are required to complete annual IT security awareness training. This security awareness training covers issues and policies associated with information security, including end user security roles and responsibilities and rules of behavior. Some topics addressed in the training are:
+
+* Password protection
+
+* System rules of behavior
+
+* Protection of hardware, software, and data
+
+* Proper handling of copyrighted materials
+
+* Reporting of security breaches and violations
+
+* Proper procedures for software installation, uploading, and use on workstations. 
+
+The security and awareness training is consistent with Department of Education IT Security Training Program Plan and the guidance in NIST Special Publication 800-50.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+
+
+
 ### Part a)
 
 #### CivicActions Responsibility
 
-Both regular and ad hoc training to all CivicActions personnel, including those who support the system infrastructure and applications, is provided. All employees and contractors must complete Security Awareness and Insider Threat trainings upon being hired and at least annually thereafter. The CivicActions Help Desk will not create accounts for individuals until the Director of Human Resources confirms they have successfully completed the trainings. In addition, training compliance reports are run on a monthly basis and discussed during monthly meetings to ensure training compliance is met for all CivicActions personnel. Additional training will be provided as required by system changes. Training takes the following forms:
+Both regular and ad hoc training to all CivicActions personnel, including those who support the system infrastructure and applications, is provided. All employees and contractors must complete Security Awareness trainings upon being hired and at least annually thereafter. CivicActions Operations will not create accounts for individuals until they have successfully completed the trainings. Additional training will be provided as required by system changes. Training takes the following forms:
 
-Annual Knowledge Survey (i.e., Security Awareness and Insider Threat Trainings): All employees are required to review trainings covering Security Awareness and Insider Threat. After the training, a survey-style security awareness test is taken by employees. All CivicActions personnel are required to complete and pass the survey, and new employees are required to pass before being granted access to the Information System. In order to successfully pass the test, a score of 80% is required. This survey tests CivicActions personnel’s knowledge of critical security subjects, policies and procedures. Results from this survey are compiled by the Director of Human Resources and used to refine future training efforts.
+Annual Knowledge Survey (i.e., Security Awareness Training): All employees are required to review trainings covering Security Awareness. After the training, a survey-style security awareness test is taken by employees. All CivicActions personnel are required to complete and pass the survey, and new employees are required to pass before being granted access to the Information System. In order to successfully pass the test, a score of 80% is required. This survey tests CivicActions personnel’s knowledge of critical security subjects, policies and procedures. Results from this survey are compiled by the Director of Human Resources and used to refine future training efforts.
 
 Ad Hoc Security Awareness: The CivicActions ISSO oversees the approximately bi-monthly distribution of security awareness tips and articles to the all CivicActions employees. This can include general tips as well as articles tailored to the specific requirements of CivicActions users.
-
-Refresher Training: A learning management system is used to track training activities and to notify personnel when their training has expired and must be refreshed. Training must be refreshed at least annually. The Director of Human Resources is responsible for ensuring that the trainings are completed.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-LINCS personnel are required to complete information security awareness training when hired before being granted access to LINCS information systems.
 
 
 
@@ -710,7 +728,7 @@ LINCS personnel are required to complete information security awareness training
 
 #### CivicActions Responsibility
 
-In the event of a major system change, the ISMS Manager is responsible for delivering additional training to impacted personnel. Specific training type, medium and delivery method is dependent upon the nature of the system change.
+In the event of a major system change, the Project Manager is responsible for delivering additional training to impacted personnel. Specific training type, medium and delivery method is dependent upon the nature of the system change.
 
 
 
@@ -718,23 +736,7 @@ In the event of a major system change, the ISMS Manager is responsible for deliv
 
 #### CivicActions Responsibility
 
-CivicActions provides annual security awareness training to its personnel. This training includes:
-
-Annual Knowledge Survey (Security Awareness and Insider Threat Trainings): A survey-style security awareness test is submitted to all CivicActions personnel at least annually. All CivicActions personnel are required to complete the survey. This survey tests CivicActions personnel’s knowledge of critical security subjects, policies and procedures. Results from this survey are compiled by the Director of Human Resources and used to refine future training efforts.
-
-Refresher Training: A learning management system is used to track training activities and to notify personnel when their training has expired and must be refreshed. Training must be refreshed at least annually. The Director of Human Resources is responsible for ensuring that the trainings are completed.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-LINCS provides annual security awareness training to all personnel.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATOs granted to both the ACE and AWS Cloud Service Providers.
+CivicActions provides annual security awareness training to its personnel.
 
 
 
@@ -747,17 +749,23 @@ The system partially inherits this control from the FedRAMP Provisional ATOs gra
 > Security control type: Hybrid
 
 
+#### LINCS specific control or LINCS Responsibility
+
+Completion of role-based training is an annual requirement for personnel in roles with significant information security responsibilities that require specialized role-based training. Role-based cybersecurity training is developed and implemented to meet identified training needs and competencies associated with the various target audiences/functional roles (federal and contractor employees) that comprise the Department workforce, as is identified in and required by the FISMA and OMB A-130, Appendix III. The appropriate content of security training is determined based on the assigned roles and responsibilities of individuals and the specific security requirements of the Department, PO and the information systems to which personnel have authorized access. Annual training requirements may be met by completing one or more course(s) within the Department’s learning management systems, participating in instructor-led training provided by the OCIO, or completing an external role-based course or courses offered within their specific functional area of expertise.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+
+
+
 ### Part a)
 
 #### CivicActions Responsibility
 
-CivicActions personnel with security responsibilities are required to complete role-based security training before being provided with access to the information system. The CivicActions ISSO is responsible for creating the content of the training. The role-based training is provided and tracked by the Director of Human Resources.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-LINCS provides role-based training for system administrator and manager roles and requires personnel assigned those roles to complete the associated training.
+CivicActions personnel with security responsibilities are required to complete role-based security training before being provided with access to the information system. The CivicActions ISSO is responsible for creating the content of the training. The role-based training is provided and tracked by the CivicActions Information Security Office.
 
 
 
@@ -765,7 +773,7 @@ LINCS provides role-based training for system administrator and manager roles an
 
 #### CivicActions Responsibility
 
-The CivicActions ISSO determines whether a change to the information system requires any modifications and updates to the security awareness training program and if so, works with the Director of Human Resources to implement the change.
+The Project manager in collaboration with CivicActions Security determines whether a change to the information system requires any modifications and updates to the security awareness training program and if so, works with the CivicActions Security to implement the change.
 
 
 
@@ -773,19 +781,7 @@ The CivicActions ISSO determines whether a change to the information system requ
 
 #### CivicActions Responsibility
 
-CivicActions' Director of Human Resources provides users with security responsibilities role-based security training on an annual basis. The training is provided and tracked by the CivicActions Information Security Office.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-LINCS requires system administrator and managers to complete the associated role-based training annually.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATOs granted to both the ACE and AWS Cloud Service Providers.
+CivicActions' Security provides users with security responsibilities role-based security training on an annual basis. The training is provided and tracked by the CivicActions Information Security Office.
 
 
 
@@ -802,13 +798,13 @@ The system partially inherits this control from the FedRAMP Provisional ATOs gra
 
 #### CivicActions Responsibility
 
-The Director of Human Resources tracks all security awareness training within the organization and ensures that all employees have successfully completed training when required. The training records are stored and tracked in a spreadsheet maintained by the CivicActions Information Security Office.
+The CivicActions Information Security Office tracks all security awareness training within the organization and ensures that all employees have successfully completed training when required. The training records are stored and tracked in a spreadsheet maintained by the CivicActions Information Security Office.
 
 
 
 #### LINCS specific control or LINCS Responsibility
 
-The Office of Information Security tracks security awareness training for LINCS personnel.
+The Department documents and monitors all individual information system security training activities including basic security awareness training. New users are required to take security training within 30 days of hire. This information is kept in the appropriate personnel files to verify users have met the training requirements. Training requirement notifications are sent to individuals as deadline for re-training approaches.
 
 
 
@@ -828,7 +824,7 @@ The Office of Information Secuity maintains training certifications for the spec
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATOs granted to both the ACE and AWS Cloud Service Providers.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
 
 
 
@@ -851,9 +847,7 @@ CivicActions has developed, documented and disseminated to personnel an audit an
 
 #### LINCS specific control or LINCS Responsibility
 
-The Department of Education developed, documented and disseminated to personnel an audit and accountability policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
-
-The CivicActions ISSO is responsible for reviewing and updating the Audit and Accountability Policy and Procedures annually. The Chief Operating Officer is responsible for approving Audit and Accountability. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+The LINCS Technology Project maintains a record of system activity by application process and by user activity. Audit and accountability policy and procedures are documented within the LINCS SSP. Security software features are used to automatically generate and store security audit log records for use in monitoring security-related events on all multi-user systems. The Department reviews and updates this policy as necessary and it was last updated in April 2008.
 
 
 
@@ -870,6 +864,12 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > 
 > 
 > Security control type: Hybrid
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
+
 
 
 ### Part a)
@@ -898,26 +898,6 @@ Transaction logs are generated by the Apache web server, Drupal CMS, MySQL datab
 
 
 
-#### Amazon Web Services (AWS) US-East/West control support
-
-Transaction logs are generated by the AWS Cloud, so this system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  audit events for the AWS platform. Specifically, AWS is responsible for logging the following server, application, database and network device audit log events:
-
-* Apache access log :: standard Drupal logging practices apply
-
-* Apache error log :: standard Drupal logging practices apply
-
-* Drupal page request log :: standard Drupal logging practices apply
-
-* Drupal watchdog log :: standard Drupal logging practices apply
-
-* PHP error log :: standard Drupal logging practices apply
-
-* MySQL slow query log :: Since slow query logs are stored in a root-only MySQL directory on your servers, you can only download them using the Cloud > Logs page, and you cannot access them directly on the server. For more information, see Downloading your slow query log and Tools for parsing a slow query log.
-
-* Varnish log :: Notes which requests have been served by Varnish cache and which were not. Since most customers use shared load balancers, Varnish logs are only available via the Log Streaming feature and cannot be downloaded from either the Insight website or your servers.
-
-
-
 ### Part b)
 
 #### CivicActions Responsibility
@@ -940,27 +920,9 @@ CivicActions has extensive experience and specialization as a host of websites t
 
 
 
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: automatic event logging is largely the responsibility of the AWS Cloud vendor.
-
-
-
 ### Part d)
 
 #### Drupal specific control support
-
-All CivicActions Drupal sites have access to several different server log types. Transactions are captured in several different log types, including the following:
-
-* Access logs: Captures all requests passed to the web server
-
-* Drupal request logs: Captures all requests passed to the Drupal application
-
-* Drupal watchdog: Captures additional details of significant transactions processed by Drupal, such as the username of a login attempts
-
-* PHP error logs: Captures any errors logged during execution of the PHP programming language
-
-* Node revision history: Captures each revision made to a piece of content on the website
 
 Information captured in the transaction logs includes, but is not limited to, the following auditable events:
 
@@ -1002,11 +964,11 @@ Information captured in the transaction logs includes, but is not limited to, th
 
 * System administration activities
 
+* Slow query logs.
 
+* PHP error logs: Captures any errors logged during execution of the PHP programming
 
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: all standard Drupal transaction log types plus: server, database, varnish logs.
+  language.
 
 
 
@@ -1037,7 +999,7 @@ The logs collected for Drupal sites include the following types of information:
 
 * Unique numerical ID of the content being modified (for content creation, modification and deletion events)
 
-When auditing a Drupal incident, CivicActions' developers aggregate log sources from multiple servers into spreadsheets so that all log entries for a single managed security incident can be analyzed in a single document.  Log sources are manually sorted, filtered and reviewed.  Application logs are maintained primarily for after-the-fact investigation of critical system or security events.
+When auditing a Drupal incident, CivicActions' developers aggregate log sources from multiple servers into the Graylog dashboard so that all log entries for a single managed security incident can be analyzed in a single document. Log sources are sorted, filtered and reviewed.  Application logs are maintained primarily for after-the-fact investigation of critical system or security events.
 
 
 
@@ -1056,7 +1018,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Inherited (Cloud Service Provider)
 
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
 CivicActions ensures adequate storage capability requirements listed in AU-11 for all events from the application, database, and hosting environment.
 
@@ -1064,7 +1026,7 @@ CivicActions ensures adequate storage capability requirements listed in AU-11 fo
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: disk space availability.
 
 
 
@@ -1077,19 +1039,17 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-### Part a)
+#### CivicActions Responsibility
+
+When notified (e.g., via CloudWatch) of an auditing failure, CivicActions Operations will review the causes and take corrective action.
+
+
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS notifies CivicActions through AWS's ticketing system in the event of a storage failure.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013: response to audit processing failures.
 
-
-
-### Part b)
-
-#### Drupal specific control support
-
-When an auditing processing failure occurs, the Drupal system will overwrite the oldest audit records. The Drupal watchdog module is used in both the server and a log file created by the AWS and record details of significant transactions processed by Drupal.
+In the event of low storage or other system issues affecting audit, the AWS CloudWatch monitoring system will alert CivicActions Operations via real-time alert mechanism such as OpsGenie.
 
 
 
@@ -1102,11 +1062,17 @@ When an auditing processing failure occurs, the Drupal system will overwrite the
 > Security control type: Hybrid
 
 
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
+
+
+
 ### Part a)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
-CivicActions security audit data is collected and collated by CivicActions personnel weekly or as required to support an after-the-fact investigation at the application level for the following:
+CivicActions security audit data is collected by a Graylog Security and Event Management (SIEM) ashboard to support real-time and after-the-fact investigation at the application level for the following:
 
 * Indications of inappropriate or unusual activity
 
@@ -1116,23 +1082,11 @@ CivicActions security audit data is collected and collated by CivicActions perso
 
 
 
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS reviews and analyzes information system audit records on at least a weekly basis for indications of inappropriate or unusual activity.
-
-
-
 ### Part b)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
-Any significant findings observed during the inspection are reported to the CivicActions security team.  If these are considered to constitute a security incident, then the Incident Response process is invoked as described in the implementation of the Incident Response Plan (IR-8).
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  The logging tool sends security event alert notifications to AWS Security personnel.
+Any significant findings observed during the inspection are reported to CivicActions Security. If these are considered to constitute a security incident, then the Incident Response process is invoked as described in the implementation of the Incident Response Plan (IR-8).
 
 
 
@@ -1145,25 +1099,9 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Inherited (Cloud Service Provider)
 
 
-### Part a)
-
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: The authoritative time source used by AWS include:
-
-* usno.navy.mil
-
-* ics.mit.edu, and
-
-* nist.netservicesgroup.com
-
-
-
-### Part b)
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: AWS uses UTC for timestamps by default to time stamp audit records. AWS meets a degree of synchronization between system time and reference time UTC within 128 milliseconds.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
 
 
 
@@ -1176,17 +1114,15 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Inherited (Cloud Service Provider)
 
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
-CivicActions ensures that audit logs are created, stored and maintained. Developers who have been assigned as members of the CivicActions Security Team are the only CivicActions personnel with logical permission to access and download audit logs.
+CivicActions ensures that audit logs are created, stored and maintained. Developers who have been assigned as members of the CivicActions Security Team are the only CivicActions personnel with logical permission to access and review audit logs.
 
 
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-This system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: audit events for the AWS platform.
-
-Audit logs are created, stored and maintained by the AWS Cloud. Developers who have been assigned as members of the AWS team for LINCS are the only CivicActions personnel with logical permission to access and download audit logs. No CivicActions personnel have the ability to modify or delete audit logs.
+This system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
 
 
 
@@ -1199,7 +1135,7 @@ Audit logs are created, stored and maintained by the AWS Cloud. Developers who h
 > Security control type: Inherited (Cloud Service Provider)
 
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
 CivicActions audits events from the application, database, and hosting environment, and retains these records for at least 180 days.
 
@@ -1207,7 +1143,7 @@ CivicActions audits events from the application, database, and hosting environme
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS’s SIEM tool, Sumo Logic, is capable of retaining audit records for up to 365 days (90 days available online and 275 days archived).
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
 
 
 
@@ -1220,23 +1156,23 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-### Part a)
-
-#### Drupal specific control support
-
-CivicActions ensures audit records are generated for its web and event logs as required in AU-2 and AU-3 for servers, application, database and network components.
-
-
-
 #### Amazon Web Services (AWS) US-East/West control support
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
 
 
 
+### Part a)
+
+#### CivicActions Responsibility
+
+CivicActions ensures audit records are generated for its web and event logs as required in AU-2 and AU-3 for servers, application, database and network components.
+
+
+
 ### Part b)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
 The selected auditable events described in AU-2 are coordinated by CivicActions internal admins and client security/operations officers for each component of the production system.
 
@@ -1244,9 +1180,9 @@ The selected auditable events described in AU-2 are coordinated by CivicActions 
 
 ### Part c)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
-Drupal generates audit records for its web and event logs as described in AU-2 and AU-3.
+CivicActions maintained applications generate audit records for their web and event logs as described in AU-2 and AU-3.
 
 
 
@@ -1269,9 +1205,9 @@ CivicActions has developed, documented and disseminated to personnel a certifica
 
 #### LINCS specific control or LINCS Responsibility
 
-The Department of Education developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
+The Department has published the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01) and U. S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05). Both of these publications are revised periodically. The LINCS System Security Policy (SSP) provides guidance on all aspects of security for the protection of LINCS information technology resources.
 
-The CivicActions ISSO is responsible for reviewing and updating the Security Assessment and Authorization Policy and Procedures annually. The Chief Operating Officer is responsible for approving Security Assessment and Authorization.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+The Department will periodically review and update the SSP when there is a significant change to the regulatory, operational, or technical environment.
 
 
 

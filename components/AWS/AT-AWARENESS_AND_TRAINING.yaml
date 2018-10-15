@@ -16,26 +16,26 @@ satisfies:
     to the AWS Cloud Service Providers dated 1 May 2013.
 
 - control_key: AT-02
-  control_key_part: c
+  control_key_part: ~
   control_name: SECURITY AWARENESS TRAINING
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATOs granted
-    to both the ACE and AWS Cloud Service Providers.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud Service Providers dated 1 May 2013.
 
 - control_key: AT-03
-  control_key_part: c
+  control_key_part: ~
   control_name: ROLE-BASED SECURITY TRAINING
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATOs granted
-    to both the ACE and AWS Cloud Service Providers.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud Service Providers dated 1 May 2013.
 
 - control_key: AT-04
   control_key_part: b
@@ -45,5 +45,5 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATOs granted
-    to both the ACE and AWS Cloud Service Providers.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud Service Providers dated 1 May 2013.

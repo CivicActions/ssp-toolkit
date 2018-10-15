@@ -40,7 +40,116 @@ satisfies:
   implementation_status: In Place
   narrative: >
     Auditable events may change due to changes in the threat environment. CivicActions
-    teams collaborate internally and also communicate with customers and partner organizations
-    to identify and select auditable events. The teams that participate in this process
-    are described in control SA-3(b).
+    teams collaborate internally and also communicate with customers and partner
+    organizations to identify and select auditable events. The teams that participate in
+    this process are described in control SA-3(b).
 
+- control_key: AU-04
+  control_key_part: ~
+  control_name: AUDIT STORAGE CAPACITY
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  implementation_status: In Place
+  narrative: >
+    CivicActions ensures adequate storage capability requirements listed in AU-11 for all
+    events from the application, database, and hosting environment.
+
+- control_key: AU-05
+  control_key_part: ~
+  control_name: RESPONSE TO AUDIT PROCESSING FAILURES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    When notified (e.g., via CloudWatch) of an auditing failure, CivicActions Operations
+    will review the causes and take corrective action.
+
+- control_key: AU-06
+  control_key_part: a
+  control_name: AUDIT REVIEW, ANALYSIS, AND REPORTING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Planned
+  narrative: >
+    CivicActions security audit data is collected by a Graylog Security and Event
+    Management (SIEM) ashboard to support real-time and after-the-fact investigation at
+    the application level for the following:
+
+    • Indications of inappropriate or unusual activity
+
+    • Assurance that logging is functioning properly
+
+    • Adherence to logging standards identified in this procedure
+
+- control_key: AU-06
+  control_key_part: b
+  control_name: AUDIT REVIEW, ANALYSIS, AND REPORTING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Planned
+  narrative: >
+    Any significant findings observed during the inspection are reported to CivicActions
+    Security. If these are considered to constitute a security incident, then the
+    Incident Response process is invoked as described in the implementation of the
+    Incident Response Plan (IR-8).
+
+- control_key: AU-09
+  control_key_part: ~
+  control_name: PROTECTION OF AUDIT INFORMATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  implementation_status: Planned
+  narrative: >
+    CivicActions ensures that audit logs are created, stored and maintained. Developers
+    who have been assigned as members of the CivicActions Security Team are the only
+    CivicActions personnel with logical permission to access and review audit logs.
+
+- control_key: AU-11
+  control_key_part: ~
+  control_name: AUDIT RECORD RETENTION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  implementation_status: In Place
+  narrative: >
+    CivicActions audits events from the application, database, and hosting environment,
+    and retains these records for at least 180 days.
+
+- control_key: AU-12
+  control_key_part: a
+  control_name: AUDIT GENERATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions ensures audit records are generated for its web and event logs as required
+    in AU-2 and AU-3 for servers, application, database and network components.
+
+- control_key: AU-12
+  control_key_part: b
+  control_name: AUDIT GENERATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The selected auditable events described in AU-2 are coordinated by CivicActions
+    internal admins and client security/operations officers for each component of the
+    production system.
+
+- control_key: AU-12
+  control_key_part: c
+  control_name: AUDIT GENERATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions maintained applications generate audit records for their web and event
+    logs as described in AU-2 and AU-3.
