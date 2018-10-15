@@ -5,6 +5,18 @@ schema_version: 3.0.0
 satisfies:
 
 - control_key: CA-07
+  control_key_part: a
+  control_name: CONTINUOUS MONITORING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions follows recommendations and best practices developed by the Drupal
+    community for monitoring. Examples of specific logs and metrics are included in AU-2
+    and AU-3.
+
+- control_key: CA-07
   control_key_part: c
   control_name: CONTINUOUS MONITORING
   standard_key: NIST-800-53

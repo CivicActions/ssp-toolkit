@@ -1230,15 +1230,13 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### CivicActions Responsibility
 
-CivicActions will create internally or work with an independent Third Party Auditor to develop a security assessment plan (SAP) when required by FISMA and NIST. Risks identified during the security assessment are tracked in CivicActions' ticket tracking or software control repository system.
+CivicActions will develop a security assessment plan (SAP) that describes the security controls and control enhancements under assessment, assessment procedures used to determine effectiveness, the assessment environment, the assessment team, and the assessment roles and responsibilities.
 
 
 
 #### LINCS specific control or LINCS Responsibility
 
-This will be completed in CY2018.
-
-An independent Third Party Auditor will develop a security assessment plan (SAP) for the LINCS system in support of FISMA and NIST requirements selected by LINCS. Risks identified during the security assessment are tracked in the lincs.ed.gov Github repository. The scope of the assessment includes:
+The LINCS Technology Project follows the U. S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures.  The LINCS Technology Project will conduct annual security assessments to comply with FISMA and NIST regulations. The Department will draw on NIST Special Publications 800-53A security controls to complete the assessment. All controls and sub-set security controls will be evaluated and a risk assessment will be conducted. The scope of the assessment includes:
 
 1. Security controls and control enhancements under assessment
 
@@ -1252,29 +1250,31 @@ An independent Third Party Auditor will develop a security assessment plan (SAP)
 
 #### CivicActions Responsibility
 
+CivicActions will assess the security controls in their system and its environment of operation to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security requirements,
+
 All controls assigned and documented in this System Security Plan (SSP) will be tested at least annually or when there is a major change to the system.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-All controls as assigned by LINCS and documented in this System Security Plan (SSP) will be tested at least annually or when there is a major change to the LINCS system, or as directed by LINCS.
 
 
 
 ### Part c)
 
+#### CivicActions Responsibility
+
+CivicActions will produce a security assessment report that documents the results of the assessment. The Security Assessment Report must contain the results of the assessment, and may also contain recommendations and suggestions for plans of actions and milestones (POA&Ms).
+
+
+
 #### LINCS specific control or LINCS Responsibility
 
-An independent Third Party Auditor of the LINCS System will create a Security Assessment Report (SAR) that will be provided to the internal authorizing official and the LINCS authorizing official.
+The LINCS Authorizing Official or Designated Representative will create a Security Assessment Report (SAR). A full assessment shall be conducted by an independent third party assessor at least every three years.
 
 
 
 ### Part d)
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-CivicActions provides the results from the security control assessment package to the appropriate LINCS authorized official as required. The following security control assessment package includes the following:
+CivicActions will provide the results of the security control assessment to the System Owner, Project Manager, CivicActions Security, and the Authorization Official (AO)). The security control assessment package includes the following:
 
 * Security Control Matrix
 
@@ -1336,6 +1336,12 @@ POA&Ms are tracked throughout the lifecycle of the system until its mitigation. 
 
 
 
+#### LINCS specific control or LINCS Responsibility
+
+The LINCS Technology Project follows the U.S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures in managing POA&Ms.
+
+
+
 ## CA-06 SECURITY AUTHORIZATION
 
 > Control description: <http://800-53.govready.com/control?id=CA-6>
@@ -1347,23 +1353,9 @@ POA&Ms are tracked throughout the lifecycle of the system until its mitigation. 
 
 #### LINCS specific control or LINCS Responsibility
 
-The Authorizing Official (AO) for LINCS is LINCS' CIO. The AO will authorize the use of LINCS and this authorization will be reviewed and updated every three years or when there is a significant change to the LINCS system. The LINCS security package to be submitted to the AO for authorization include:
+The LINCS Technology Project follows the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01) and U. S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures. The LINCS Technology Project system received its first three-year security accreditation on March 3, 2009, and most recently received an ATO on February 5, 2016.
 
-* System Security Plan
-
-* LINCS Privacy Impact Assessment (Form)
-
-* Contingency Plan
-
-* Configuration Management Plan
-
-* System Rules of Behavior
-
-* Incident Response Plan
-
-* Minimum Selected Security Controls and Implementation Statements.
-
-* E-Authentication
+ATO re-assessment will be performed every three years or when there is a major change to the application, in which a senior organizational official will sign and approve the security accreditation.
 
 
 
@@ -1380,7 +1372,27 @@ The Authorizing Official (AO) for LINCS is LINCS' CIO. The AO will authorize the
 
 #### CivicActions Responsibility
 
-CivicActions will implemented a continuous monitoring strategy that incorporates configuration management processes including the assessment of security impact analyses of all changes, ongoing security control assessments, and a reporting mechanism of basic information security and privacy effectiveness metrics to designated CivicActions teams.
+CivicActions implements a continuous monitoring strategy that incorporates configuration management, system scanning and log analysis processes:
+
+* Configuration management includes the assessment of security impact analyses of
+
+  proposed and implemented changes.
+
+
+
+* System scanning is managed by running the OpanSCAP vulnerability scanner using the
+
+  DISA STIG profile.
+
+
+
+* Log analysis is managed by feeding logs to a Graylog dashboard for analysis.
+
+
+
+#### Drupal specific control support
+
+CivicActions follows recommendations and best practices developed by the Drupal community for monitoring. Examples of specific logs and metrics are included in AU-2 and AU-3.
 
 
 
@@ -1388,15 +1400,15 @@ CivicActions will implemented a continuous monitoring strategy that incorporates
 
 #### CivicActions Responsibility
 
-Quarterly review of the control assessments supporting the monitoring is conducted by the CivicActions ISSO.
+Configuration management and log analysis is real time. OpenSCAP security scans are performed and reviewed monthly.
+
+Quarterly review of the control assessments supporting the monitoring is conducted by CivicActions Operations in collaboration with CivicActions Security.
 
 
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: continuous monitoring for security events’ metrics for AWS monitoring tools.
-
-CivicActions' continuous monitoring for security events metrics will occur in real-time using existing AWS monitoring tools tools.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: continuous monitoring.
 
 
 
@@ -1405,12 +1417,6 @@ CivicActions' continuous monitoring for security events metrics will occur in re
 #### Drupal specific control support
 
 CivicActions works closely with the Drupal security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-CivicActions will implement an ongoing security control assessment of the LINCS system as part of the continuous monitoring strategy. Items to be found to be not implemented or planned will be documented as POA&M items for remediation.
 
 
 
@@ -1432,7 +1438,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### CivicActions Responsibility
 
-The CivicActions Security Team reviews the results of the security scans and security assessments with associated JIRA and/or Github Issue tickets created to correlate and analyze security related information generated from the monitoring tools becoming POA&M items for tracking.
+CivicActions Security reviews the results of the security scans and security assessments with associated JIRA and/or GitLab Issue tickets created to correlate and analyze security related information generated from the monitoring tools becoming POA&M items for tracking.
 
 
 
@@ -1440,7 +1446,7 @@ The CivicActions Security Team reviews the results of the security scans and sec
 
 #### CivicActions Responsibility
 
-POA&M items are tracked by the CivicActions Security team though Github Issue tickets with a Security categorization assigned.  Information included in the POA&M item include the severity, the due date, the weakness source identifier, and the plugin ID that identified the vulnerability.
+POA&M items are tracked by CivicActions Security though JIRA tickets with a security categorization assigned.  Information included in the POA&M item include the severity, the due date, the weakness source identifier, and the plugin ID that identified the vulnerability.
 
 
 
@@ -1448,7 +1454,7 @@ POA&M items are tracked by the CivicActions Security team though Github Issue ti
 
 #### CivicActions Responsibility
 
-The security status of the system is reported up to the CivicActions Security team to be reviewed alongside other security issues relating to CivicActions.
+The security status of the system is reported up to the Porgram Owner and Project Manager via CivicActions Security to be reviewed alongside other security issues relating to CivicActions.
 
 
 
@@ -1458,12 +1464,12 @@ The security status of the system is reported up to the CivicActions Security te
 > 
 > 
 > 
-> Security control type: System Specific Control
+> Security control type: Inherited
 
 
-#### CivicActions Responsibility
+#### Amazon Web Services (AWS) US-East/West control support
 
-Not applicable: There are currently no internal systems that connect to CivicActions systems.
+Not applicable: There are no internal systems that connect to the FedRAMP certified AWS cloud.
 
 
 

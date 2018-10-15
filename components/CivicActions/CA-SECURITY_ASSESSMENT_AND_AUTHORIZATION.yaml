@@ -28,10 +28,10 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Planned
   narrative: >
-    CivicActions will create internally or work with an independent Third Party Auditor
-    to develop a security assessment plan (SAP) when required by FISMA and NIST.
-    Risks identified during the security assessment are tracked in CivicActions' ticket
-    tracking or software control repository system.
+    CivicActions will develop a security assessment plan (SAP) that describes the security
+    controls and control enhancements under assessment, assessment procedures used to
+    determine effectiveness, the assessment environment, the assessment team, and the
+    assessment roles and responsibilities.
 
 - control_key: CA-02
   control_key_part: b
@@ -41,8 +41,52 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Planned
   narrative: >
+    CivicActions will assess the security controls in their system and its environment of
+    operation to determine the extent to which the controls are implemented correctly,
+    operating as intended, and producing the desired outcome with respect to meeting
+    established security requirements,
+    
     All controls assigned and documented in this System Security Plan (SSP) will be tested
     at least annually or when there is a major change to the system.
+
+- control_key: CA-02
+  control_key_part: c
+  control_name: SECURITY ASSESSMENTS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Planned
+  narrative: >
+    CivicActions will produce a security assessment report that documents the results of
+    the assessment. The Security Assessment Report must contain the results of the
+    assessment, and may also contain recommendations and suggestions for plans of actions
+    and milestones (POA&Ms).
+
+- control_key: CA-02
+  control_key_part: d
+  control_name: SECURITY ASSESSMENTS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Planned
+  narrative: >
+    CivicActions will provide the results of the security control assessment to the System
+    Owner, Project Manager, CivicActions Security, and the Authorization Official (AO)).
+    The security control assessment package includes the following:
+
+    • Security Control Matrix
+
+    • Privacy Impact Assessment
+
+    • E-Authentication
+
+    • Contingency Plan
+
+    • Configuration Management Plan
+
+    • Rules of Behavior
+
+    • Incident Response Plan
 
 - control_key: CA-03
   control_key_part: ~
@@ -61,7 +105,7 @@ satisfies:
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: Partially in Place
+  implementation_status: In Place
   narrative: >
     CivicActions documents all deficiencies and vulnerabilities identified during
     the security certification and/or continuous monitoring phase (via security assessment,
@@ -93,11 +137,16 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    CivicActions will implemented a continuous monitoring strategy that incorporates
-    configuration management processes including the assessment of security impact
-    analyses of all changes, ongoing security control assessments, and a reporting
-    mechanism of basic information security and privacy effectiveness metrics to
-    designated CivicActions teams.
+    CivicActions implements a continuous monitoring strategy that incorporates
+    configuration management, system scanning and log analysis processes:
+
+    • Configuration management includes the assessment of security impact analyses of
+      proposed and implemented changes.
+
+    • System scanning is managed by running the OpanSCAP vulnerability scanner using the
+      DISA STIG profile.
+
+    • Log analysis is managed by feeding logs to a Graylog dashboard for analysis.
 
 - control_key: CA-07
   control_key_part: b
@@ -107,8 +156,11 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
+    Configuration management and log analysis is real time. OpenSCAP security scans are
+    performed and reviewed monthly.
+    
     Quarterly review of the control assessments supporting the monitoring is conducted
-    by the CivicActions ISSO.
+    by CivicActions Operations in collaboration with CivicActions Security.
 
 - control_key: CA-07
   control_key_part: d
@@ -128,9 +180,9 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    The CivicActions Security Team reviews the results of the security scans and security
-    assessments with associated JIRA and/or Github Issue tickets created to correlate
-    and analyze security related information generated from the monitoring tools becoming
+    CivicActions Security reviews the results of the security scans and security
+    assessments with associated JIRA and/or GitLab Issue tickets created to correlate and
+    analyze security related information generated from the monitoring tools becoming
     POA&M items for tracking.
 
 - control_key: CA-07
@@ -141,10 +193,10 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    POA&M items are tracked by the CivicActions Security team though Github Issue
-    tickets with a Security categorization assigned.  Information included in the
-    POA&M item include the severity, the due date, the weakness source identifier,
-    and the plugin ID that identified the vulnerability.
+    POA&M items are tracked by CivicActions Security though JIRA tickets with a security
+    categorization assigned.  Information included in the POA&M item include the severity,
+    the due date, the weakness source identifier, and the plugin ID that identified the
+    vulnerability.
 
 - control_key: CA-07
   control_key_part: g
@@ -154,15 +206,6 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    The security status of the system is reported up to the CivicActions Security
-    team to be reviewed alongside other security issues relating to CivicActions.
-
-- control_key: CA-09
-  control_key_part: ~
-  control_name: INTERNAL SYSTEM CONNECTIONS
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: System Specific Control
-  implementation_status: Not Applicable
-  narrative: >
-    Not applicable: There are currently no internal systems that connect to CivicActions systems.
+    The security status of the system is reported up to the Porgram Owner and Project
+    Manager via CivicActions Security to be reviewed alongside other security issues
+    relating to CivicActions.
