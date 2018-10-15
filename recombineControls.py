@@ -53,10 +53,10 @@ components_glob = components_dir.rstrip('/') + "/*"
 # OrderedDict to maintain a preferred component order.
 component_names = collections.OrderedDict([
   (None, None),
-  ("CivicActions",        "CivicActions Responsibility"),
-  ("CivicActions-Drupal", "CivicActions / Drupal control support"),
-  ("LINCS",               "LINCS specific control or LINCS Responsibility"),
-  ("AWS",                 "Amazon Web Services (AWS) US-East/West control support"),
+  ("CivicActions", "CivicActions Responsibility"),
+  ("Drupal",       "Drupal specific control support"),
+  ("LINCS",        "LINCS specific control or LINCS Responsibility"),
+  ("AWS",          "Amazon Web Services (AWS) US-East/West control support"),
 ])
 component_order = { component: i for i, component in enumerate(component_names) }
 

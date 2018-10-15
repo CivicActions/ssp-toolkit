@@ -38,7 +38,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions users of the system are required to identify and authenticate in order to access any functions of the information system beyond viewing and downloading the publicly available website content that is available to all anonymous website visitors. Users who are assigned to CivicActions require the appropriate authorization described in AC-2. CivicActions users authenticate using the standard Drupal login protocol prior to using the LINCS services. LINCS user roles are described in AC-3.
 
@@ -118,7 +118,7 @@ CivicActions systems do not support or allow device-to-device communications.
 
 ### Part a)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Upon account creation, the Drupal software assigns each user account a unique numerical user ID (uid). This uid is used internally by the system to track user actions such as content creation or editing. The numerical user IDs are never reused even if their user accounts are subsequently blocked or deleted.
 
@@ -138,7 +138,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part b)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 In accordance with CivicActions Identification and Authentication (IA) Policy <https://github.com/CivicActions/compliance-docs/blob/master/IA-Policy.md>, CivicActions internal users are uniquely identified by creation of an organizational account with a username based on each user's full first and last name.
 
@@ -160,7 +160,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part c)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Identifiers for CivicActions internal personnel include a username based on the individual's full first and last name and are reviewed for uniqueness by the LINCS admin group when it approves creation of the user account.
 
@@ -188,7 +188,7 @@ CivicActions internal users' usernames may not be re-used for at least two years
 
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Drupal users unique identifier (the numeric user id, or uid) is never reused.
 
@@ -213,7 +213,7 @@ All user accounts are required to change their passwords every 90 days. The webs
 
 ### Part a)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Refer to control AC-2 in this SSP for further details on account provisioning.
 
@@ -237,7 +237,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part b)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Internal initial password requirements set by CivicActions admins and ongoing password refreshes by internal user follow the requirements set in the Identification and Authentication Policy.
 
@@ -265,7 +265,7 @@ LINCS customers are responsible for provisioning and de-provisioning end user ac
 
 ### Part c)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 The system partially inherits this control from Drupal standard password strength mechanisms.
 
@@ -295,7 +295,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part d)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 The system partially inherits this control from Drupal standard password management.
 
@@ -329,7 +329,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part e)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions/Drupal requires users to change their password upon initial login, and the application website enforces this. User accounts are assigned a randomly-generated and unguessable default password that is not shared with anyone, including site Administrators. Once the user logs in and creates a new password, the default password erased from the website's database.
 
@@ -387,7 +387,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part h)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 For all Drupal users, passwords are protected by the website's software, which only stores an encrypted string based on the password. This means that even if the website's database should be compromised, an attacker would still be unable to know users' actual passwords. Internal users receive training in security awareness and acceptable use and are instructed never to reveal their passwords to anyone.
 
@@ -401,7 +401,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part i)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions internal users are required to take appropriate measures in the handling of passwords including:
 
@@ -437,7 +437,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part j)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 This control is not applicable due to the fact that group accounts are not created within the Drupal application per IA Policy.
 
@@ -454,7 +454,7 @@ This control is not applicable due to the fact that group accounts are not creat
 
 ### Part a)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Drupal supports the requirement for password based authentication complexity. New users of Drupal are required to specify their password authentication as soon as they log in to the website for the first.  The website requires all submitted passwords to comply with validation rules, as described above in IA-5(c).
 
@@ -472,7 +472,7 @@ LINCS customers are responsible for provisioning and de-provisioning end user ac
 
 ### Part b)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 When required to change passwords, Drupal users are required to change their authenticator password by changing at least one character. Enforcement of this control is implemented through the website's software configuration.
 
@@ -492,7 +492,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part c)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 All Drupal passwords are encrypted in storage, using the SHA-512 hashing algorithm with a salt. The hash function is performed repeatedly to further obfuscate the password via key stretching. In transmission, passwords are encrypted using SSL via HTTPS.
 
@@ -512,7 +512,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part d)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 The website requires all submitted passwords to comply with lifetime rules, as described above in IA-5(g).
 
@@ -534,7 +534,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part f)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 When website users request a password reset, the website sends a temporary login link to the email address associated with their user account. After a user logs in via the temporary login link, the website requires the user to enter a new password before proceeding further.
 
@@ -589,7 +589,7 @@ This control is planned but not yet fully implemented. The system does enforces 
 > Security control type: System Specific Control
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Feedback of authentication information is obscured during the authentication process into the Drupal application by displaying “dots” in the place of a password, as is standard for web-based applications. In transmission, passwords are encrypted using SSL via HTTPS.
 
@@ -604,7 +604,7 @@ Feedback of authentication information is obscured during the authentication pro
 > Security control type: System Specific Control
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 All Drupal passwords are encrypted in storage, using the SHA-512 hashing algorithm with a salt. SHA-512 is an approved security function under FIPS PUB 140-2. The hash function is performed repeatedly to further obfuscate the password via key stretching. In transmission, passwords are encrypted using SSL via HTTPS.
 
@@ -634,7 +634,7 @@ LINCS is a publically accessible solution that allows government organizations t
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions does not utilize customer agency supplied PIV credentials for access to customer instances of Drupal.
 
@@ -649,7 +649,7 @@ CivicActions does not utilize customer agency supplied PIV credentials for acces
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions does not utilize customer agency supplied PIV credentials for access to customer instances of Drupal.
 
@@ -664,7 +664,7 @@ CivicActions does not utilize customer agency supplied PIV credentials for acces
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions does not utilize customer agency supplied PIV credentials for access to customer instances of Drupal.
 
@@ -679,7 +679,7 @@ CivicActions does not utilize customer agency supplied PIV credentials for acces
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions does not utilize customer agency supplied PIV credentials for access to customer instances of Drupal.
 

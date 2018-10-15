@@ -214,7 +214,7 @@ CivicActions' continuous monitoring for security events metrics will occur in re
 
 ### Part c)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions works closely with the Drupal security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed.
 

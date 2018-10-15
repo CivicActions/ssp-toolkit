@@ -308,7 +308,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 LINCS access enforcement is monitored within Drupal, which records an entry in the Drupal watchdog log for every successful or failed login attempt to the system. Each successful login or logout event is logged with an entry that includes the username of the account being used.
 
@@ -333,7 +333,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part a)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Configuration changes that do not entail software code changes can only be performed by CivicActions internal administrators with privileges implemented by access enforcement (AC-3) and least privilege (AC-6).
 
@@ -364,7 +364,7 @@ CivicActions internal administrators user access rights are reviewed at least qu
 
 ### Part a)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions configuration settings for Drupal are guided by the Drupal Security Coding Standards <https://www.drupal.org/docs/develop/security> for the security configuration management processes and tools.
 
@@ -480,7 +480,7 @@ lincs.ed.gov is hosted on the AWS platform. The system therefore inherits the pl
 
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions stores all software code for the lincs.ed.gov application in a git source version control repository. Website content is backed up daily by the AWS Managed Cloud hosting system, which is configured to take daily database snapshots. This allows CivicActions to build an inventory of the LINCS system on demand.
 

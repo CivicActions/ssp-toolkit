@@ -38,7 +38,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Drupal has a manual ability to block IP addresses in cases where attacks bypass cloud protection. This is managed by the support team.
 

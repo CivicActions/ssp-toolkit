@@ -16,6 +16,11 @@ Table of Contents
    * [AC-19 ACCESS CONTROL FOR MOBILE DEVICES](#ac-19-access-control-for-mobile-devices)
    * [AC-20 USE OF EXTERNAL INFORMATION SYSTEMS](#ac-20-use-of-external-information-systems)
    * [AC-22 PUBLICLY ACCESSIBLE CONTENT](#ac-22-publicly-accessible-content)
+* [AWARENESS AND TRAINING](#awareness-and-training)
+   * [AT-01 SECURITY AWARENESS AND TRAINING POLICY AND PROCEDURES](#at-01-security-awareness-and-training-policy-and-procedures)
+   * [AT-02 SECURITY AWARENESS TRAINING](#at-02-security-awareness-training)
+   * [AT-03 ROLE-BASED SECURITY TRAINING](#at-03-role-based-security-training)
+   * [AT-04 SECURITY TRAINING RECORDS](#at-04-security-training-records)
 * [AUDIT AND ACCOUNTABILITY](#audit-and-accountability)
    * [AU-01 AUDIT AND ACCOUNTABILITY POLICY AND PROCEDURES](#au-01-audit-and-accountability-policy-and-procedures)
    * [AU-02 AUDITABLE EVENTS](#au-02-auditable-events)
@@ -27,11 +32,14 @@ Table of Contents
    * [AU-09 PROTECTION OF AUDIT INFORMATION](#au-09-protection-of-audit-information)
    * [AU-11 AUDIT RECORD RETENTION](#au-11-audit-record-retention)
    * [AU-12 AUDIT GENERATION](#au-12-audit-generation)
-* [AWARENESS AND TRAINING](#awareness-and-training)
-   * [AT-01 SECURITY AWARENESS AND TRAINING POLICY AND PROCEDURES](#at-01-security-awareness-and-training-policy-and-procedures)
-   * [AT-02 SECURITY AWARENESS TRAINING](#at-02-security-awareness-training)
-   * [AT-03 ROLE-BASED SECURITY TRAINING](#at-03-role-based-security-training)
-   * [AT-04 SECURITY TRAINING RECORDS](#at-04-security-training-records)
+* [SECURITY ASSESSMENT AND AUTHORIZATION](#security-assessment-and-authorization)
+   * [CA-01 SECURITY ASSESSMENT AND AUTHORIZATION POLICIES AND PROCEDURES](#ca-01-security-assessment-and-authorization-policies-and-procedures)
+   * [CA-02 SECURITY ASSESSMENTS](#ca-02-security-assessments)
+   * [CA-03 SYSTEM INTERCONNECTIONS](#ca-03-system-interconnections)
+   * [CA-05 PLAN OF ACTION AND MILESTONES](#ca-05-plan-of-action-and-milestones)
+   * [CA-06 SECURITY AUTHORIZATION](#ca-06-security-authorization)
+   * [CA-07 CONTINUOUS MONITORING](#ca-07-continuous-monitoring)
+   * [CA-09 INTERNAL SYSTEM CONNECTIONS](#ca-09-internal-system-connections)
 * [CONFIGURATION MANAGEMENT](#configuration-management)
    * [CM-01 CONFIGURATION MANAGEMENT POLICY AND PROCEDURES](#cm-01-configuration-management-policy-and-procedures)
    * [CM-02 BASELINE CONFIGURATION](#cm-02-baseline-configuration)
@@ -96,15 +104,6 @@ Table of Contents
    * [MP-02 MEDIA ACCESS](#mp-02-media-access)
    * [MP-06 MEDIA SANITIZATION](#mp-06-media-sanitization)
    * [MP-07 MEDIA USE](#mp-07-media-use)
-* [PERSONNEL SECURITY](#personnel-security)
-   * [PS-01 PERSONNEL SECURITY POLICY AND PROCEDURES](#ps-01-personnel-security-policy-and-procedures)
-   * [PS-02 POSITION CATEGORIZATION](#ps-02-position-categorization)
-   * [PS-03 PERSONNEL SCREENING](#ps-03-personnel-screening)
-   * [PS-04 PERSONNEL TERMINATION](#ps-04-personnel-termination)
-   * [PS-05 PERSONNEL TRANSFER](#ps-05-personnel-transfer)
-   * [PS-06 ACCESS AGREEMENTS](#ps-06-access-agreements)
-   * [PS-07 THIRD-PARTY PERSONNEL SECURITY](#ps-07-third-party-personnel-security)
-   * [PS-08 PERSONNEL SANCTIONS](#ps-08-personnel-sanctions)
 * [PHYSICAL AND ENVIRONMENTAL PROTECTION](#physical-and-environmental-protection)
    * [PE-01 PHYSICAL AND ENVIRONMENTAL PROTECTION POLICY AND PROCEDURES](#pe-01-physical-and-environmental-protection-policy-and-procedures)
    * [PE-02 PHYSICAL ACCESS AUTHORIZATIONS](#pe-02-physical-access-authorizations)
@@ -120,19 +119,33 @@ Table of Contents
    * [PL-01 SECURITY PLANNING POLICY AND PROCEDURES](#pl-01-security-planning-policy-and-procedures)
    * [PL-02 SYSTEM SECURITY PLAN](#pl-02-system-security-plan)
    * [PL-04 RULES OF BEHAVIOR](#pl-04-rules-of-behavior)
+* [PERSONNEL SECURITY](#personnel-security)
+   * [PS-01 PERSONNEL SECURITY POLICY AND PROCEDURES](#ps-01-personnel-security-policy-and-procedures)
+   * [PS-02 POSITION CATEGORIZATION](#ps-02-position-categorization)
+   * [PS-03 PERSONNEL SCREENING](#ps-03-personnel-screening)
+   * [PS-04 PERSONNEL TERMINATION](#ps-04-personnel-termination)
+   * [PS-05 PERSONNEL TRANSFER](#ps-05-personnel-transfer)
+   * [PS-06 ACCESS AGREEMENTS](#ps-06-access-agreements)
+   * [PS-07 THIRD-PARTY PERSONNEL SECURITY](#ps-07-third-party-personnel-security)
+   * [PS-08 PERSONNEL SANCTIONS](#ps-08-personnel-sanctions)
 * [RISK ASSESSMENT](#risk-assessment)
    * [RA-01 RISK ASSESSMENT POLICY AND PROCEDURES](#ra-01-risk-assessment-policy-and-procedures)
    * [RA-02 SECURITY CATEGORIZATION](#ra-02-security-categorization)
    * [RA-03 RISK ASSESSMENT](#ra-03-risk-assessment)
    * [RA-05 VULNERABILITY SCANNING](#ra-05-vulnerability-scanning)
-* [SECURITY ASSESSMENT AND AUTHORIZATION](#security-assessment-and-authorization)
-   * [CA-01 SECURITY ASSESSMENT AND AUTHORIZATION POLICIES AND PROCEDURES](#ca-01-security-assessment-and-authorization-policies-and-procedures)
-   * [CA-02 SECURITY ASSESSMENTS](#ca-02-security-assessments)
-   * [CA-03 SYSTEM INTERCONNECTIONS](#ca-03-system-interconnections)
-   * [CA-05 PLAN OF ACTION AND MILESTONES](#ca-05-plan-of-action-and-milestones)
-   * [CA-06 SECURITY AUTHORIZATION](#ca-06-security-authorization)
-   * [CA-07 CONTINUOUS MONITORING](#ca-07-continuous-monitoring)
-   * [CA-09 INTERNAL SYSTEM CONNECTIONS](#ca-09-internal-system-connections)
+* [SYSTEM AND SERVICES ACQUISITION](#system-and-services-acquisition)
+   * [SA-01 SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES](#sa-01-system-and-services-acquisition-policy-and-procedures)
+   * [SA-02 ALLOCATION OF RESOURCES](#sa-02-allocation-of-resources)
+   * [SA-03 SYSTEM DEVELOPMENT LIFE CYCLE](#sa-03-system-development-life-cycle)
+   * [SA-04 ACQUISITIONS](#sa-04-acquisitions)
+   * [SA-04 (10) USE OF APPROVED PIV PRODUCTS](#sa-04-10-use-of-approved-piv-products)
+   * [SA-05 INFORMATION SYSTEM DOCUMENTATION](#sa-05-information-system-documentation)
+   * [SA-08 SECURITY ENGINEERING PRINCIPLES](#sa-08-security-engineering-principles)
+   * [SA-09 EXTERNAL INFORMATION SYSTEM SERVICES](#sa-09-external-information-system-services)
+   * [SA-10 DEVELOPER CONFIGURATION MANAGEMENT](#sa-10-developer-configuration-management)
+   * [SA-10 (1) SOFTWARE / FIRMWARE INTEGRITY VERIFICATION](#sa-10-1-software--firmware-integrity-verification)
+   * [SA-11 DEVELOPER SECURITY TESTING AND EVALUATION](#sa-11-developer-security-testing-and-evaluation)
+   * [SA-11 (1) STATIC CODE ANALYSIS](#sa-11-1-static-code-analysis)
 * [SYSTEM AND COMMUNICATIONS PROTECTION](#system-and-communications-protection)
    * [SC-01 SYSTEM AND COMMUNICATIONS PROTECTION POLICY AND PROCEDURES](#sc-01-system-and-communications-protection-policy-and-procedures)
    * [SC-05 DENIAL OF SERVICE PROTECTION](#sc-05-denial-of-service-protection)
@@ -159,19 +172,6 @@ Table of Contents
    * [SI-11 ERROR HANDLING](#si-11-error-handling)
    * [SI-12 INFORMATION OUTPUT HANDLING AND RETENTION](#si-12-information-output-handling-and-retention)
    * [SI-16 MEMORY PROTECTION](#si-16-memory-protection)
-* [SYSTEM AND SERVICES ACQUISITION](#system-and-services-acquisition)
-   * [SA-01 SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES](#sa-01-system-and-services-acquisition-policy-and-procedures)
-   * [SA-02 ALLOCATION OF RESOURCES](#sa-02-allocation-of-resources)
-   * [SA-03 SYSTEM DEVELOPMENT LIFE CYCLE](#sa-03-system-development-life-cycle)
-   * [SA-04 ACQUISITIONS](#sa-04-acquisitions)
-   * [SA-04 (10) USE OF APPROVED PIV PRODUCTS](#sa-04-10-use-of-approved-piv-products)
-   * [SA-05 INFORMATION SYSTEM DOCUMENTATION](#sa-05-information-system-documentation)
-   * [SA-08 SECURITY ENGINEERING PRINCIPLES](#sa-08-security-engineering-principles)
-   * [SA-09 EXTERNAL INFORMATION SYSTEM SERVICES](#sa-09-external-information-system-services)
-   * [SA-10 DEVELOPER CONFIGURATION MANAGEMENT](#sa-10-developer-configuration-management)
-   * [SA-10 (1) SOFTWARE / FIRMWARE INTEGRITY VERIFICATION](#sa-10-1-software--firmware-integrity-verification)
-   * [SA-11 DEVELOPER SECURITY TESTING AND EVALUATION](#sa-11-developer-security-testing-and-evaluation)
-   * [SA-11 (1) STATIC CODE ANALYSIS](#sa-11-1-static-code-analysis)
 
 <!-- Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc) -->
 
@@ -225,7 +225,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part a)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Drupal provides user accounts for individuals who participate in visiting, contributing to and administering the site with the following roles:
 
@@ -251,7 +251,7 @@ The LINCS Technology Project system does not have guest or anonymous accounts.
 
 ### Part b)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions' Project Manager assigns the "admininstrator" role for the management of all accounts issued to internal admin roles supporting the information system. Account requests are initiated by the Project Manager by completing a ticket request and the CivicActions Operation Team manages the entire account creation process.
 
@@ -273,7 +273,7 @@ In accordance with LINCS Access Control Policy, LINCS group membership is determ
 
 ### Part d)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 All accounts issued for Drupal administrators and SSH are documented in CivicActions' ticketing system. Account request tickets contain details that explain the attributes for the account including authorized users of Drupal, system infrastructure, group and role membership, and access authorizations.
 
@@ -287,7 +287,7 @@ LINCS user privileges vary depending on the type of user role assigned. Only use
 
 ### Part e)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 All accounts issued for the admin management of Drupal or SSH access must be approved by the Project Owner or Project Manager who must create an account request. The CivicActions Operations Team applies appropriate account permissions and settings based on the job role and function documented within the request ticket using processes defined by the CivicActions Security Team.
 
@@ -301,7 +301,7 @@ CivicActions sets up the initial Site Manager account for LINCS; however, any su
 
 ### Part f)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 The CivicActions Operations Team is responsible for the following account management activities for both internal administrative users and customer accounts:
 
@@ -321,7 +321,7 @@ The CivicActions Operations Team is responsible for the following account manage
 
 ### Part h)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 In accordance with the CivicActions Access Control (AC) Policy when a CivicActions employee's account is no longer required, the employee’s manager notifies the Security Team to immediately disable all access. Users upon reassignment, change in roles, termination, or leaving employment are initially removed from all groups, effectively denying them all access to LINCS privileged accounts.
 
@@ -329,7 +329,7 @@ In accordance with the CivicActions Access Control (AC) Policy when a CivicActio
 
 ### Part i)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions Drupal administration accounts require access authorizations prior to accounts being created. Employee managers must initiate an access request for an account to be created. The CivicActions Operations Team reviews the request to ensure accuracy, including intended system usage and other attributes of the user access being requested.
 
@@ -343,7 +343,7 @@ LINCS governs their own administrative access. The designated government contrac
 
 ### Part j)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 All privileged accounts are reviewed by the CivicActions Operations Team every 180 days.
 
@@ -357,7 +357,7 @@ Site Managers are empowered to and responsible for reviewing their own accounts 
 
 ### Part k)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 In accordance with standard security best practices and CivicActions policy, shared and reissued accounts for internal accounts of any kind are not created nor used for any purpose in any system.
 
@@ -372,7 +372,7 @@ In accordance with standard security best practices and CivicActions policy, sha
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Access control in Drupal is enforced by authentication via unique username/password for every type of user except Anonymous user. The user’s privileges, permissions and access are provided on "least privilege" principle.
 
@@ -407,7 +407,7 @@ CivicActions performs regular audits of privileged users as part of the practice
 
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions implements the policy of least privilege for all logical components of Drupal by allowing only authorized access for users, which are necessary to accomplish assigned tasks in accordance with business functions and organizational need.
 
@@ -438,7 +438,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions, at least quarterly, audits all team accounts based on the concept of least privilege. Each member of the developer team is assigned a role of which defines access needed to perform only the member’s job function.  The audit of accounts is reported and reviewed by the LINCS admin group and evaluated to determine whether roles or membership within the developer team should be changed. 
 
@@ -467,7 +467,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part a)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Drupal can be configured to lock an account after a specified number of invalid login attempts within specified time period.
 
@@ -475,7 +475,7 @@ Drupal can be configured to lock an account after a specified number of invalid 
 
 ### Part b)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Lock down following unsuccessful attempts is configurable by Drupal administrators to conform to defined requirements.  When a user exceeds the limit of invalid logon attempts, their account is automatically locked for a specfied time and requires administrator action to unlock the account before the lockout period expires.
 
@@ -528,7 +528,7 @@ The Department of Education allows the general public user to read the web pages
 > Security control type: Inherited (Cloud Service Provider)
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 The CivicActions Access Control (AC) policy defines policy for remote usage restrictions.  The Project Manager or Project Owner may additionally provision users according to their Access Control policies.
 
@@ -643,424 +643,6 @@ LINCS users with the Content Creator role have been authorized by LINCS personne
 #### LINCS specific control or LINCS Responsibility
 
 It is the LINCS responsibility for LINCS to review the content on the publicly accessible information system for nonpublic information at least every 365 days and removes such information.
-
-
-
-# AUDIT AND ACCOUNTABILITY
-
-## AU-01 AUDIT AND ACCOUNTABILITY POLICY AND PROCEDURES
-
-> Control description: <http://800-53.govready.com/control?id=AU-1>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel an audit and accountability policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Audit and Accountability (AU) Policy.  This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-The Department of Education developed, documented and disseminated to personnel an audit and accountability policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
-
-The CivicActions ISSO is responsible for reviewing and updating the Audit and Accountability Policy and Procedures annually. The Chief Operating Officer is responsible for approving Audit and Accountability. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
-
-
-
-## AU-02 AUDITABLE EVENTS
-
-> Control description: <http://800-53.govready.com/control?id=AU-2>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### CivicActions Responsibility
-
-CivicActions' Security Policy provides information about auditing and logging of CivicActions internal users and end-user activity on the servers and within the system application.
-
-
-
-#### CivicActions / Drupal control support
-
-Transaction logs are generated by the Apache web server, Drupal CMS, MySQL database and PHP page processing.  Specifically, the following server, application, database and network device audit log events are captured:
-
-* Apache access log :: Contains a list of requests for your website that have bypassed Varnish. These requests include pages, theme files, and static media files.
-
-* Apache error log :: Records any Apache-level issues. The issues reported here are usually caused by general server issues, including capacity problems, .htaccess problems, and missing files.
-
-* Drupal page request log :: Records all Drupal page loads on your website.
-
-* Drupal watchdog log :: Records Drupal-related actions on your website. The watchdog log is recorded on your server if you have enabled the syslog module.
-
-* MySQL slow query log :: Contains a list of MySQL queries that have taken longer than one second to complete.
-
-* PHP error log :: Records any issues that occur during the PHP processing portion of a page load. Issues reported here are usually caused by a website’s code, configuration, or content.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-Transaction logs are generated by the AWS Cloud, so this system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  audit events for the AWS platform. Specifically, AWS is responsible for logging the following server, application, database and network device audit log events:
-
-* Apache access log :: standard Drupal logging practices apply
-
-* Apache error log :: standard Drupal logging practices apply
-
-* Drupal page request log :: standard Drupal logging practices apply
-
-* Drupal watchdog log :: standard Drupal logging practices apply
-
-* PHP error log :: standard Drupal logging practices apply
-
-* MySQL slow query log :: Since slow query logs are stored in a root-only MySQL directory on your servers, you can only download them using the Cloud > Logs page, and you cannot access them directly on the server. For more information, see Downloading your slow query log and Tools for parsing a slow query log.
-
-* Varnish log :: Notes which requests have been served by Varnish cache and which were not. Since most customers use shared load balancers, Varnish logs are only available via the Log Streaming feature and cannot be downloaded from either the Insight website or your servers.
-
-
-
-### Part b)
-
-#### CivicActions Responsibility
-
-Auditable events may change due to changes in the threat environment. CivicActions teams collaborate internally and also communicate with customers and partner organizations to identify and select auditable events. The teams that participate in this process are described in control SA-3(b).
-
-
-
-#### CivicActions / Drupal control support
-
-All security-related issues and events, including requests for server log analysis, are recorded in CivicActions' JIRA tracking system.
-
-
-
-### Part c)
-
-#### CivicActions / Drupal control support
-
-CivicActions has extensive experience and specialization as a host of websites that are built using the Drupal web hosting platform. Our list of auditable events is also informed by the experience and advice of Drupal's security team, which receives security vulnerability reports and publishes security updates related to Drupal and the more than 1 million websites that use the Drupal platform.  Should the need for additional logging become evident, we have the ability to do so by modifying the website's source code to insert additional Drupal watchdog hooks.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: automatic event logging is largely the responsibility of the AWS Cloud vendor.
-
-
-
-### Part d)
-
-#### CivicActions / Drupal control support
-
-All CivicActions Drupal sites have access to several different server log types. Transactions are captured in several different log types, including the following:
-
-* Access logs: Captures all requests passed to the web server
-
-* Drupal request logs: Captures all requests passed to the Drupal application
-
-* Drupal watchdog: Captures additional details of significant transactions processed by Drupal, such as the username of a login attempts
-
-* PHP error logs: Captures any errors logged during execution of the PHP programming language
-
-* Node revision history: Captures each revision made to a piece of content on the website
-
-Information captured in the transaction logs includes, but is not limited to, the following auditable events:
-
-* Failed login attempts
-
-* Successful login attempts
-
-* User account deletions
-
-* User account blocking/unblocking
-
-* Changes in user role assignments
-
-* Unauthorized attempts to alter protected user fields
-
-* New user account creation
-
-* Password reset instructions mailed
-
-* User logins via one-time login link
-
-* User logouts
-
-* Content creation (datasets, resources and other content types)
-
-* Content modification
-
-* Content deletion
-
-* Content publishing
-
-* Content unpublishing
-
-* File uploads
-
-* Web page not found
-
-* Website configuration changes
-
-* System administration activities
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: all standard Drupal transaction log types plus: server, database, varnish logs.
-
-
-
-## AU-03 CONTENT OF AUDIT RECORDS
-
-> Control description: <http://800-53.govready.com/control?id=AU-3>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### CivicActions / Drupal control support
-
-The logs collected for Drupal sites include the following types of information:
-
-* IP number of the request originator
-
-* Timestamp
-
-* Request URL
-
-* HTTP status code returned
-
-* Username
-
-* Drupal watchdog message (if applicable)
-
-* Unique numerical ID of the content being modified (for content creation, modification and deletion events)
-
-When auditing a Drupal incident, CivicActions' developers aggregate log sources from multiple servers into spreadsheets so that all log entries for a single managed security incident can be analyzed in a single document.  Log sources are manually sorted, filtered and reviewed.  Application logs are maintained primarily for after-the-fact investigation of critical system or security events.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-
-
-
-## AU-04 AUDIT STORAGE CAPACITY
-
-> Control description: <http://800-53.govready.com/control?id=AU-4>
-> 
-> 
-> 
-> Security control type: Inherited (Cloud Service Provider)
-
-
-#### CivicActions / Drupal control support
-
-CivicActions ensures adequate storage capability requirements listed in AU-11 for all events from the application, database, and hosting environment.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-
-
-
-## AU-05 RESPONSE TO AUDIT PROCESSING FAILURES
-
-> Control description: <http://800-53.govready.com/control?id=AU-5>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS notifies CivicActions through AWS's ticketing system in the event of a storage failure.
-
-
-
-### Part b)
-
-#### CivicActions / Drupal control support
-
-When an auditing processing failure occurs, the Drupal system will overwrite the oldest audit records. The Drupal watchdog module is used in both the server and a log file created by the AWS and record details of significant transactions processed by Drupal.
-
-
-
-## AU-06 AUDIT REVIEW, ANALYSIS, AND REPORTING
-
-> Control description: <http://800-53.govready.com/control?id=AU-6>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### CivicActions / Drupal control support
-
-CivicActions security audit data is collected and collated by CivicActions personnel weekly or as required to support an after-the-fact investigation at the application level for the following:
-
-* Indications of inappropriate or unusual activity
-
-* Assurance that logging is functioning properly
-
-* Adherence to logging standards identified in this procedure
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS reviews and analyzes information system audit records on at least a weekly basis for indications of inappropriate or unusual activity.
-
-
-
-### Part b)
-
-#### CivicActions / Drupal control support
-
-Any significant findings observed during the inspection are reported to the CivicActions security team.  If these are considered to constitute a security incident, then the Incident Response process is invoked as described in the implementation of the Incident Response Plan (IR-8).
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  The logging tool sends security event alert notifications to AWS Security personnel.
-
-
-
-## AU-08 TIME STAMPS
-
-> Control description: <http://800-53.govready.com/control?id=AU-8>
-> 
-> 
-> 
-> Security control type: Inherited (Cloud Service Provider)
-
-
-### Part a)
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: The authoritative time source used by AWS include:
-
-* usno.navy.mil
-
-* ics.mit.edu, and
-
-* nist.netservicesgroup.com
-
-
-
-### Part b)
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: AWS uses UTC for timestamps by default to time stamp audit records. AWS meets a degree of synchronization between system time and reference time UTC within 128 milliseconds.
-
-
-
-## AU-09 PROTECTION OF AUDIT INFORMATION
-
-> Control description: <http://800-53.govready.com/control?id=AU-9>
-> 
-> 
-> 
-> Security control type: Inherited (Cloud Service Provider)
-
-
-#### CivicActions / Drupal control support
-
-CivicActions ensures that audit logs are created, stored and maintained. Developers who have been assigned as members of the CivicActions Security Team are the only CivicActions personnel with logical permission to access and download audit logs.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-This system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: audit events for the AWS platform.
-
-Audit logs are created, stored and maintained by the AWS Cloud. Developers who have been assigned as members of the AWS team for LINCS are the only CivicActions personnel with logical permission to access and download audit logs. No CivicActions personnel have the ability to modify or delete audit logs.
-
-
-
-## AU-11 AUDIT RECORD RETENTION
-
-> Control description: <http://800-53.govready.com/control?id=AU-11>
-> 
-> 
-> 
-> Security control type: Inherited (Cloud Service Provider)
-
-
-#### CivicActions / Drupal control support
-
-CivicActions audits events from the application, database, and hosting environment, and retains these records for at least 180 days.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS’s SIEM tool, Sumo Logic, is capable of retaining audit records for up to 365 days (90 days available online and 275 days archived).
-
-
-
-## AU-12 AUDIT GENERATION
-
-> Control description: <http://800-53.govready.com/control?id=AU-12>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### CivicActions / Drupal control support
-
-CivicActions ensures audit records are generated for its web and event logs as required in AU-2 and AU-3 for servers, application, database and network components.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-
-
-
-### Part b)
-
-#### CivicActions / Drupal control support
-
-The selected auditable events described in AU-2 are coordinated by CivicActions internal admins and client security/operations officers for each component of the production system.
-
-
-
-### Part c)
-
-#### CivicActions / Drupal control support
-
-Drupal generates audit records for its web and event logs as described in AU-2 and AU-3.
 
 
 
@@ -1247,6 +829,705 @@ The Office of Information Secuity maintains training certifications for the spec
 #### Amazon Web Services (AWS) US-East/West control support
 
 The system partially inherits this control from the FedRAMP Provisional ATOs granted to both the ACE and AWS Cloud Service Providers.
+
+
+
+# AUDIT AND ACCOUNTABILITY
+
+## AU-01 AUDIT AND ACCOUNTABILITY POLICY AND PROCEDURES
+
+> Control description: <http://800-53.govready.com/control?id=AU-1>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel an audit and accountability policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Audit and Accountability (AU) Policy.  This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+
+
+
+#### LINCS specific control or LINCS Responsibility
+
+The Department of Education developed, documented and disseminated to personnel an audit and accountability policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
+
+The CivicActions ISSO is responsible for reviewing and updating the Audit and Accountability Policy and Procedures annually. The Chief Operating Officer is responsible for approving Audit and Accountability. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+
+
+
+## AU-02 AUDITABLE EVENTS
+
+> Control description: <http://800-53.govready.com/control?id=AU-2>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### CivicActions Responsibility
+
+CivicActions' Security Policy provides information about auditing and logging of CivicActions internal users and end-user activity on the servers and within the system application.
+
+
+
+#### Drupal specific control support
+
+Transaction logs are generated by the Apache web server, Drupal CMS, MySQL database and PHP page processing.  Specifically, the following server, application, database and network device audit log events are captured:
+
+* Apache access log :: Contains a list of requests for your website that have bypassed Varnish. These requests include pages, theme files, and static media files.
+
+* Apache error log :: Records any Apache-level issues. The issues reported here are usually caused by general server issues, including capacity problems, .htaccess problems, and missing files.
+
+* Drupal page request log :: Records all Drupal page loads on your website.
+
+* Drupal watchdog log :: Records Drupal-related actions on your website. The watchdog log is recorded on your server if you have enabled the syslog module.
+
+* MySQL slow query log :: Contains a list of MySQL queries that have taken longer than one second to complete.
+
+* PHP error log :: Records any issues that occur during the PHP processing portion of a page load. Issues reported here are usually caused by a website’s code, configuration, or content.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+Transaction logs are generated by the AWS Cloud, so this system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  audit events for the AWS platform. Specifically, AWS is responsible for logging the following server, application, database and network device audit log events:
+
+* Apache access log :: standard Drupal logging practices apply
+
+* Apache error log :: standard Drupal logging practices apply
+
+* Drupal page request log :: standard Drupal logging practices apply
+
+* Drupal watchdog log :: standard Drupal logging practices apply
+
+* PHP error log :: standard Drupal logging practices apply
+
+* MySQL slow query log :: Since slow query logs are stored in a root-only MySQL directory on your servers, you can only download them using the Cloud > Logs page, and you cannot access them directly on the server. For more information, see Downloading your slow query log and Tools for parsing a slow query log.
+
+* Varnish log :: Notes which requests have been served by Varnish cache and which were not. Since most customers use shared load balancers, Varnish logs are only available via the Log Streaming feature and cannot be downloaded from either the Insight website or your servers.
+
+
+
+### Part b)
+
+#### CivicActions Responsibility
+
+Auditable events may change due to changes in the threat environment. CivicActions teams collaborate internally and also communicate with customers and partner organizations to identify and select auditable events. The teams that participate in this process are described in control SA-3(b).
+
+
+
+#### Drupal specific control support
+
+All security-related issues and events, including requests for server log analysis, are recorded in CivicActions' JIRA tracking system.
+
+
+
+### Part c)
+
+#### Drupal specific control support
+
+CivicActions has extensive experience and specialization as a host of websites that are built using the Drupal web hosting platform. Our list of auditable events is also informed by the experience and advice of Drupal's security team, which receives security vulnerability reports and publishes security updates related to Drupal and the more than 1 million websites that use the Drupal platform.  Should the need for additional logging become evident, we have the ability to do so by modifying the website's source code to insert additional Drupal watchdog hooks.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: automatic event logging is largely the responsibility of the AWS Cloud vendor.
+
+
+
+### Part d)
+
+#### Drupal specific control support
+
+All CivicActions Drupal sites have access to several different server log types. Transactions are captured in several different log types, including the following:
+
+* Access logs: Captures all requests passed to the web server
+
+* Drupal request logs: Captures all requests passed to the Drupal application
+
+* Drupal watchdog: Captures additional details of significant transactions processed by Drupal, such as the username of a login attempts
+
+* PHP error logs: Captures any errors logged during execution of the PHP programming language
+
+* Node revision history: Captures each revision made to a piece of content on the website
+
+Information captured in the transaction logs includes, but is not limited to, the following auditable events:
+
+* Failed login attempts
+
+* Successful login attempts
+
+* User account deletions
+
+* User account blocking/unblocking
+
+* Changes in user role assignments
+
+* Unauthorized attempts to alter protected user fields
+
+* New user account creation
+
+* Password reset instructions mailed
+
+* User logins via one-time login link
+
+* User logouts
+
+* Content creation (datasets, resources and other content types)
+
+* Content modification
+
+* Content deletion
+
+* Content publishing
+
+* Content unpublishing
+
+* File uploads
+
+* Web page not found
+
+* Website configuration changes
+
+* System administration activities
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: all standard Drupal transaction log types plus: server, database, varnish logs.
+
+
+
+## AU-03 CONTENT OF AUDIT RECORDS
+
+> Control description: <http://800-53.govready.com/control?id=AU-3>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### Drupal specific control support
+
+The logs collected for Drupal sites include the following types of information:
+
+* IP number of the request originator
+
+* Timestamp
+
+* Request URL
+
+* HTTP status code returned
+
+* Username
+
+* Drupal watchdog message (if applicable)
+
+* Unique numerical ID of the content being modified (for content creation, modification and deletion events)
+
+When auditing a Drupal incident, CivicActions' developers aggregate log sources from multiple servers into spreadsheets so that all log entries for a single managed security incident can be analyzed in a single document.  Log sources are manually sorted, filtered and reviewed.  Application logs are maintained primarily for after-the-fact investigation of critical system or security events.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
+
+
+
+## AU-04 AUDIT STORAGE CAPACITY
+
+> Control description: <http://800-53.govready.com/control?id=AU-4>
+> 
+> 
+> 
+> Security control type: Inherited (Cloud Service Provider)
+
+
+#### Drupal specific control support
+
+CivicActions ensures adequate storage capability requirements listed in AU-11 for all events from the application, database, and hosting environment.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
+
+
+
+## AU-05 RESPONSE TO AUDIT PROCESSING FAILURES
+
+> Control description: <http://800-53.govready.com/control?id=AU-5>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS notifies CivicActions through AWS's ticketing system in the event of a storage failure.
+
+
+
+### Part b)
+
+#### Drupal specific control support
+
+When an auditing processing failure occurs, the Drupal system will overwrite the oldest audit records. The Drupal watchdog module is used in both the server and a log file created by the AWS and record details of significant transactions processed by Drupal.
+
+
+
+## AU-06 AUDIT REVIEW, ANALYSIS, AND REPORTING
+
+> Control description: <http://800-53.govready.com/control?id=AU-6>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### Drupal specific control support
+
+CivicActions security audit data is collected and collated by CivicActions personnel weekly or as required to support an after-the-fact investigation at the application level for the following:
+
+* Indications of inappropriate or unusual activity
+
+* Assurance that logging is functioning properly
+
+* Adherence to logging standards identified in this procedure
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS reviews and analyzes information system audit records on at least a weekly basis for indications of inappropriate or unusual activity.
+
+
+
+### Part b)
+
+#### Drupal specific control support
+
+Any significant findings observed during the inspection are reported to the CivicActions security team.  If these are considered to constitute a security incident, then the Incident Response process is invoked as described in the implementation of the Incident Response Plan (IR-8).
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  The logging tool sends security event alert notifications to AWS Security personnel.
+
+
+
+## AU-08 TIME STAMPS
+
+> Control description: <http://800-53.govready.com/control?id=AU-8>
+> 
+> 
+> 
+> Security control type: Inherited (Cloud Service Provider)
+
+
+### Part a)
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: The authoritative time source used by AWS include:
+
+* usno.navy.mil
+
+* ics.mit.edu, and
+
+* nist.netservicesgroup.com
+
+
+
+### Part b)
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: AWS uses UTC for timestamps by default to time stamp audit records. AWS meets a degree of synchronization between system time and reference time UTC within 128 milliseconds.
+
+
+
+## AU-09 PROTECTION OF AUDIT INFORMATION
+
+> Control description: <http://800-53.govready.com/control?id=AU-9>
+> 
+> 
+> 
+> Security control type: Inherited (Cloud Service Provider)
+
+
+#### Drupal specific control support
+
+CivicActions ensures that audit logs are created, stored and maintained. Developers who have been assigned as members of the CivicActions Security Team are the only CivicActions personnel with logical permission to access and download audit logs.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+This system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: audit events for the AWS platform.
+
+Audit logs are created, stored and maintained by the AWS Cloud. Developers who have been assigned as members of the AWS team for LINCS are the only CivicActions personnel with logical permission to access and download audit logs. No CivicActions personnel have the ability to modify or delete audit logs.
+
+
+
+## AU-11 AUDIT RECORD RETENTION
+
+> Control description: <http://800-53.govready.com/control?id=AU-11>
+> 
+> 
+> 
+> Security control type: Inherited (Cloud Service Provider)
+
+
+#### Drupal specific control support
+
+CivicActions audits events from the application, database, and hosting environment, and retains these records for at least 180 days.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS’s SIEM tool, Sumo Logic, is capable of retaining audit records for up to 365 days (90 days available online and 275 days archived).
+
+
+
+## AU-12 AUDIT GENERATION
+
+> Control description: <http://800-53.govready.com/control?id=AU-12>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### Drupal specific control support
+
+CivicActions ensures audit records are generated for its web and event logs as required in AU-2 and AU-3 for servers, application, database and network components.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
+
+
+
+### Part b)
+
+#### Drupal specific control support
+
+The selected auditable events described in AU-2 are coordinated by CivicActions internal admins and client security/operations officers for each component of the production system.
+
+
+
+### Part c)
+
+#### Drupal specific control support
+
+Drupal generates audit records for its web and event logs as described in AU-2 and AU-3.
+
+
+
+# SECURITY ASSESSMENT AND AUTHORIZATION
+
+## CA-01 SECURITY ASSESSMENT AND AUTHORIZATION POLICIES AND PROCEDURES
+
+> Control description: <http://800-53.govready.com/control?id=CA-1>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Security Assessment and Authorization Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+
+
+
+#### LINCS specific control or LINCS Responsibility
+
+The Department of Education developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
+
+The CivicActions ISSO is responsible for reviewing and updating the Security Assessment and Authorization Policy and Procedures annually. The Chief Operating Officer is responsible for approving Security Assessment and Authorization.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+
+
+
+## CA-02 SECURITY ASSESSMENTS
+
+> Control description: <http://800-53.govready.com/control?id=CA-2>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### CivicActions Responsibility
+
+CivicActions will create internally or work with an independent Third Party Auditor to develop a security assessment plan (SAP) when required by FISMA and NIST. Risks identified during the security assessment are tracked in CivicActions' ticket tracking or software control repository system.
+
+
+
+#### LINCS specific control or LINCS Responsibility
+
+This will be completed in CY2018.
+
+An independent Third Party Auditor will develop a security assessment plan (SAP) for the LINCS system in support of FISMA and NIST requirements selected by LINCS. Risks identified during the security assessment are tracked in the lincs.ed.gov Github repository. The scope of the assessment includes:
+
+1. Security controls and control enhancements under assessment
+
+2. Assessment procedures to be used to determine security control effectiveness
+
+3. Assessment environment, assessment team, and assessment roles and responsibilities
+
+
+
+### Part b)
+
+#### CivicActions Responsibility
+
+All controls assigned and documented in this System Security Plan (SSP) will be tested at least annually or when there is a major change to the system.
+
+
+
+#### LINCS specific control or LINCS Responsibility
+
+All controls as assigned by LINCS and documented in this System Security Plan (SSP) will be tested at least annually or when there is a major change to the LINCS system, or as directed by LINCS.
+
+
+
+### Part c)
+
+#### LINCS specific control or LINCS Responsibility
+
+An independent Third Party Auditor of the LINCS System will create a Security Assessment Report (SAR) that will be provided to the internal authorizing official and the LINCS authorizing official.
+
+
+
+### Part d)
+
+#### LINCS specific control or LINCS Responsibility
+
+CivicActions provides the results from the security control assessment package to the appropriate LINCS authorized official as required. The following security control assessment package includes the following:
+
+* Security Control Matrix
+
+* Privacy Impact Assessment
+
+* E-Authentication
+
+* Contingency Plan
+
+* Configuration Management Plan
+
+* Rules of Behavior
+
+* Incident Response Plan
+
+
+
+## CA-03 SYSTEM INTERCONNECTIONS
+
+> Control description: <http://800-53.govready.com/control?id=CA-3>
+> 
+> 
+> 
+> Security control type: System Specific Control
+
+
+#### CivicActions Responsibility
+
+This control is not applicable. CivicActions systems do not have system interconnections. The only communication conducted to CivicActions systems is through the Internet.
+
+
+
+## CA-05 PLAN OF ACTION AND MILESTONES
+
+> Control description: <http://800-53.govready.com/control?id=CA-5>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### CivicActions Responsibility
+
+CivicActions documents all deficiencies and vulnerabilities identified during the security certification and/or continuous monitoring phase (via security assessment, vulnerability scanning, risk assessment, etc.) within the Plan of Action and Milestones (POA&M).
+
+The POA&M document provides a platform for CivicActions to monitor and track the deficiency and its mitigation strategy. POA&M items will include:
+
+* The description of the deficiency,
+
+* Dedicated point of contact for this deficiency.
+
+* Cost of the mitigation strategy
+
+* Associated risk and NIST control
+
+* Recommended mitigation strategy
+
+POA&Ms are tracked throughout the lifecycle of the system until its mitigation. All POA&Ms are reviewed on a monthly basis by CivicActions Information System Security Officer to ensure all mitigation strategies are continuing as documented.
+
+
+
+## CA-06 SECURITY AUTHORIZATION
+
+> Control description: <http://800-53.govready.com/control?id=CA-6>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### LINCS specific control or LINCS Responsibility
+
+The Authorizing Official (AO) for LINCS is LINCS' CIO. The AO will authorize the use of LINCS and this authorization will be reviewed and updated every three years or when there is a significant change to the LINCS system. The LINCS security package to be submitted to the AO for authorization include:
+
+* System Security Plan
+
+* LINCS Privacy Impact Assessment (Form)
+
+* Contingency Plan
+
+* Configuration Management Plan
+
+* System Rules of Behavior
+
+* Incident Response Plan
+
+* Minimum Selected Security Controls and Implementation Statements.
+
+* E-Authentication
+
+
+
+## CA-07 CONTINUOUS MONITORING
+
+> Control description: <http://800-53.govready.com/control?id=CA-7>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### CivicActions Responsibility
+
+CivicActions will implemented a continuous monitoring strategy that incorporates configuration management processes including the assessment of security impact analyses of all changes, ongoing security control assessments, and a reporting mechanism of basic information security and privacy effectiveness metrics to designated CivicActions teams.
+
+
+
+### Part b)
+
+#### CivicActions Responsibility
+
+Quarterly review of the control assessments supporting the monitoring is conducted by the CivicActions ISSO.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: continuous monitoring for security events’ metrics for AWS monitoring tools.
+
+CivicActions' continuous monitoring for security events metrics will occur in real-time using existing AWS monitoring tools tools.
+
+
+
+### Part c)
+
+#### Drupal specific control support
+
+CivicActions works closely with the Drupal security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed.
+
+
+
+#### LINCS specific control or LINCS Responsibility
+
+CivicActions will implement an ongoing security control assessment of the LINCS system as part of the continuous monitoring strategy. Items to be found to be not implemented or planned will be documented as POA&M items for remediation.
+
+
+
+### Part d)
+
+#### CivicActions Responsibility
+
+CivicActions conducts or oversees continuous system security monitoring.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: ongoing security status monitoring.
+
+
+
+### Part e)
+
+#### CivicActions Responsibility
+
+The CivicActions Security Team reviews the results of the security scans and security assessments with associated JIRA and/or Github Issue tickets created to correlate and analyze security related information generated from the monitoring tools becoming POA&M items for tracking.
+
+
+
+### Part f)
+
+#### CivicActions Responsibility
+
+POA&M items are tracked by the CivicActions Security team though Github Issue tickets with a Security categorization assigned.  Information included in the POA&M item include the severity, the due date, the weakness source identifier, and the plugin ID that identified the vulnerability.
+
+
+
+### Part g)
+
+#### CivicActions Responsibility
+
+The security status of the system is reported up to the CivicActions Security team to be reviewed alongside other security issues relating to CivicActions.
+
+
+
+## CA-09 INTERNAL SYSTEM CONNECTIONS
+
+> Control description: <http://800-53.govready.com/control?id=CA-9>
+> 
+> 
+> 
+> Security control type: System Specific Control
+
+
+#### CivicActions Responsibility
+
+Not applicable: There are currently no internal systems that connect to CivicActions systems.
 
 
 
@@ -1560,7 +1841,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 LINCS access enforcement is monitored within Drupal, which records an entry in the Drupal watchdog log for every successful or failed login attempt to the system. Each successful login or logout event is logged with an entry that includes the username of the account being used.
 
@@ -1585,7 +1866,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part a)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Configuration changes that do not entail software code changes can only be performed by CivicActions internal administrators with privileges implemented by access enforcement (AC-3) and least privilege (AC-6).
 
@@ -1616,7 +1897,7 @@ CivicActions internal administrators user access rights are reviewed at least qu
 
 ### Part a)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions configuration settings for Drupal are guided by the Drupal Security Coding Standards <https://www.drupal.org/docs/develop/security> for the security configuration management processes and tools.
 
@@ -1732,7 +2013,7 @@ lincs.ed.gov is hosted on the AWS platform. The system therefore inherits the pl
 
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions stores all software code for the lincs.ed.gov application in a git source version control repository. Website content is backed up daily by the AWS Managed Cloud hosting system, which is configured to take daily database snapshots. This allows CivicActions to build an inventory of the LINCS system on demand.
 
@@ -2174,7 +2455,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions users of the system are required to identify and authenticate in order to access any functions of the information system beyond viewing and downloading the publicly available website content that is available to all anonymous website visitors. Users who are assigned to CivicActions require the appropriate authorization described in AC-2. CivicActions users authenticate using the standard Drupal login protocol prior to using the LINCS services. LINCS user roles are described in AC-3.
 
@@ -2254,7 +2535,7 @@ CivicActions systems do not support or allow device-to-device communications.
 
 ### Part a)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Upon account creation, the Drupal software assigns each user account a unique numerical user ID (uid). This uid is used internally by the system to track user actions such as content creation or editing. The numerical user IDs are never reused even if their user accounts are subsequently blocked or deleted.
 
@@ -2274,7 +2555,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part b)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 In accordance with CivicActions Identification and Authentication (IA) Policy <https://github.com/CivicActions/compliance-docs/blob/master/IA-Policy.md>, CivicActions internal users are uniquely identified by creation of an organizational account with a username based on each user's full first and last name.
 
@@ -2296,7 +2577,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part c)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Identifiers for CivicActions internal personnel include a username based on the individual's full first and last name and are reviewed for uniqueness by the LINCS admin group when it approves creation of the user account.
 
@@ -2324,7 +2605,7 @@ CivicActions internal users' usernames may not be re-used for at least two years
 
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Drupal users unique identifier (the numeric user id, or uid) is never reused.
 
@@ -2349,7 +2630,7 @@ All user accounts are required to change their passwords every 90 days. The webs
 
 ### Part a)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Refer to control AC-2 in this SSP for further details on account provisioning.
 
@@ -2373,7 +2654,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part b)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Internal initial password requirements set by CivicActions admins and ongoing password refreshes by internal user follow the requirements set in the Identification and Authentication Policy.
 
@@ -2401,7 +2682,7 @@ LINCS customers are responsible for provisioning and de-provisioning end user ac
 
 ### Part c)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 The system partially inherits this control from Drupal standard password strength mechanisms.
 
@@ -2431,7 +2712,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part d)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 The system partially inherits this control from Drupal standard password management.
 
@@ -2465,7 +2746,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part e)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions/Drupal requires users to change their password upon initial login, and the application website enforces this. User accounts are assigned a randomly-generated and unguessable default password that is not shared with anyone, including site Administrators. Once the user logs in and creates a new password, the default password erased from the website's database.
 
@@ -2523,7 +2804,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part h)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 For all Drupal users, passwords are protected by the website's software, which only stores an encrypted string based on the password. This means that even if the website's database should be compromised, an attacker would still be unable to know users' actual passwords. Internal users receive training in security awareness and acceptable use and are instructed never to reveal their passwords to anyone.
 
@@ -2537,7 +2818,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part i)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions internal users are required to take appropriate measures in the handling of passwords including:
 
@@ -2573,7 +2854,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part j)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 This control is not applicable due to the fact that group accounts are not created within the Drupal application per IA Policy.
 
@@ -2590,7 +2871,7 @@ This control is not applicable due to the fact that group accounts are not creat
 
 ### Part a)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Drupal supports the requirement for password based authentication complexity. New users of Drupal are required to specify their password authentication as soon as they log in to the website for the first.  The website requires all submitted passwords to comply with validation rules, as described above in IA-5(c).
 
@@ -2608,7 +2889,7 @@ LINCS customers are responsible for provisioning and de-provisioning end user ac
 
 ### Part b)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 When required to change passwords, Drupal users are required to change their authenticator password by changing at least one character. Enforcement of this control is implemented through the website's software configuration.
 
@@ -2628,7 +2909,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part c)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 All Drupal passwords are encrypted in storage, using the SHA-512 hashing algorithm with a salt. The hash function is performed repeatedly to further obfuscate the password via key stretching. In transmission, passwords are encrypted using SSL via HTTPS.
 
@@ -2648,7 +2929,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part d)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 The website requires all submitted passwords to comply with lifetime rules, as described above in IA-5(g).
 
@@ -2670,7 +2951,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part f)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 When website users request a password reset, the website sends a temporary login link to the email address associated with their user account. After a user logs in via the temporary login link, the website requires the user to enter a new password before proceeding further.
 
@@ -2725,7 +3006,7 @@ This control is planned but not yet fully implemented. The system does enforces 
 > Security control type: System Specific Control
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Feedback of authentication information is obscured during the authentication process into the Drupal application by displaying “dots” in the place of a password, as is standard for web-based applications. In transmission, passwords are encrypted using SSL via HTTPS.
 
@@ -2740,7 +3021,7 @@ Feedback of authentication information is obscured during the authentication pro
 > Security control type: System Specific Control
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 All Drupal passwords are encrypted in storage, using the SHA-512 hashing algorithm with a salt. SHA-512 is an approved security function under FIPS PUB 140-2. The hash function is performed repeatedly to further obfuscate the password via key stretching. In transmission, passwords are encrypted using SSL via HTTPS.
 
@@ -2770,7 +3051,7 @@ LINCS is a publically accessible solution that allows government organizations t
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions does not utilize customer agency supplied PIV credentials for access to customer instances of Drupal.
 
@@ -2785,7 +3066,7 @@ CivicActions does not utilize customer agency supplied PIV credentials for acces
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions does not utilize customer agency supplied PIV credentials for access to customer instances of Drupal.
 
@@ -2800,7 +3081,7 @@ CivicActions does not utilize customer agency supplied PIV credentials for acces
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions does not utilize customer agency supplied PIV credentials for access to customer instances of Drupal.
 
@@ -2815,7 +3096,7 @@ CivicActions does not utilize customer agency supplied PIV credentials for acces
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions does not utilize customer agency supplied PIV credentials for access to customer instances of Drupal.
 
@@ -3374,326 +3655,6 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 
 
 
-# PERSONNEL SECURITY
-
-## PS-01 PERSONNEL SECURITY POLICY AND PROCEDURES
-
-> Control description: <http://800-53.govready.com/control?id=PS-1>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Personnel Security (PS) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-The Department of Education developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
-
-The CivicActions ISSO is responsible for reviewing and updating the Personnel Security Policy and Procedures annually. The Chief Operating Officer is responsible for approving Personnel Security.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
-
-
-
-## PS-02 POSITION CATEGORIZATION
-
-> Control description: <http://800-53.govready.com/control?id=PS-2>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### CivicActions Responsibility
-
-Risk designations are assigned to all CivicActions positions. The CivicActions Director of Human Resources works in coordination with the CivicActions ISSO and the Chief Operating Officer to assign risk designations.
-
-
-
-### Part b)
-
-#### CivicActions Responsibility
-
-The CivicActions Director of Human Resources works in coordination with the CivicActions ISSO and the Chief Operating Officer to establish screening criteria for all CivicActions positions.
-
-
-
-### Part c)
-
-#### CivicActions Responsibility
-
-At least every three (3) years, the CivicActions Director of Human Resources reviews and revises position risk designations. If the Director of Human Resources determines that significant changes must be made to the position risk descriptions the Director of Human Resources works in coordination with the CivicActions ISSO and the Chief Operating Officer to implement changes as required.
-
-
-
-## PS-03 PERSONNEL SCREENING
-
-> Control description: <http://800-53.govready.com/control?id=PS-3>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### CivicActions Responsibility
-
-Prospective CivicActions employees undergo background checks commensurate with the individual’s job duties, the classification of the information they will access, and the risks associated with the role. At the discretion of the Chief Operating Officer these checks may also be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public.  In these instances, the Chief Operating Officer will instruct the Director of Human Resources to conduct a background check before granting access to the information system.
-
-
-
-### Part b)
-
-#### CivicActions Responsibility
-
-Rescreening is conducted as required by the individual’s job duties, the classification of the information they will access, and the risks associated with the role. A basic background check is performed for all CivicActions employees.
-
-
-
-## PS-04 PERSONNEL TERMINATION
-
-> Control description: <http://800-53.govready.com/control?id=PS-4>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### CivicActions Responsibility
-
-Information system access is terminated immediately upon the voluntary or involuntary departure of an employee. In the case of involuntary departure, in addition to immediate termination of system access, at no point is a departing employee allowed access to any part of the CivicActions infrastructure.
-
-In the case of voluntary departure, employees are permitted access to the information system for the duration of their off boarding period. The departing employee’s manager is responsible for informing the Information Technology department when the employee off boarding period concludes. At this time system and facility access is terminated.
-
-
-
-### Part b)
-
-#### CivicActions Responsibility
-
-The terminated user’s accounts are disabled and all access associated with the individual is revoked.
-
-
-
-### Part c)
-
-#### CivicActions Responsibility
-
-The Director of Human Resources conducts exit interviews with all employees who leave CivicActions voluntarily. There is a general discussion about the process of turning in any/all company issued devices, laptops, etc.  All of these items are collected before the employee exits CivicActions.  In the case of an involuntary termination, the Director of Human Resources works to collect company issued devices and provides paperwork highlighting confidential protections for customers.
-
-
-
-### Part d)
-
-#### CivicActions Responsibility
-
-CivicActions employees provide their own equipment that must be hardened to security reqirements depending upon their role and duties. CivicActions supplies two factor authentication tokens that become the property of the employee. Therefore, this control is not applicable.
-
-
-
-### Part f)
-
-#### CivicActions Responsibility
-
-When a person is terminated, a standard process is used to notify management and IT and to track the process of disabling access to the information system/information system components. The CivicActions Help Desk is given at least a four hour notice to schedule the deactivation of access upon termination. Deactivation is a manual process that is tracked via a Trello card in order to meet the four hour turnaround time before termination.
-
-
-
-## PS-05 PERSONNEL TRANSFER
-
-> Control description: <http://800-53.govready.com/control?id=PS-5>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### CivicActions Responsibility
-
-When an employee, third party personnel and / or contractor is transferred to a new project or position within CivicActions, they may maintain access to the previous system they were working on in order to facilitate the process of maintenance and knowledge transfer. However, as part of the practices of account management (AC-02) and least privilege (AC-06), regular audits of privileged users are conducted and access privileges may be removed when no longer needed. Additionally, adherence to specific client SLAs may enhance the frequency of such audits or the timeliness of privilege removal during personnel transfer.
-
-
-
-### Part b)
-
-#### CivicActions Responsibility
-
-When an employee, third party personnel and / or contractor is transferred to a new position within CivicActions and there is a requirement for access change, such access changes are normally completed within five business days.
-
-
-
-### Part c)
-
-#### CivicActions Responsibility
-
-Access authorizations are modified as needed for the new employee duties based on transfer or reassignment.
-
-
-
-### Part d)
-
-#### CivicActions Responsibility
-
-The CivicActions operations team is informed of transfers that require access authorization modifications within five business days by the Project Manager, Product Owner or Director of Human Resources.
-
-
-
-## PS-06 ACCESS AGREEMENTS
-
-> Control description: <http://800-53.govready.com/control?id=PS-6>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### LINCS specific control or LINCS Responsibility
-
-LINCS users are required to read and sign access agreements, including acknowledgement signature page for the Acceptable Use Policy (AUP), provided in the Rules of Behavior (RoB) document prior to gaining access to the LINCS. The acknowledgment signature page is a separate document provided within the referenced (RoB) document.
-
-
-
-### Part b)
-
-#### LINCS specific control or LINCS Responsibility
-
-Access agreements, including the Acceptable Use Policy, are reviewed at least annually or when a significant change occurs. In the event that a major update is made to the Acceptable Use Policy, employees are required to read and sign the updated policy document and Human Resources stores the information.
-
-
-
-### Part c)
-
-#### LINCS specific control or LINCS Responsibility
-
-Prior to gaining access to key systems, LINCS users are required to read and sign access agreements, including the Acceptable Use Policy.
-
-Access agreements, including the Acceptable Use Policy, are reviewed at least annually. This review also takes place when a significant change occurs. In the event that a major update is made to the Acceptable Use Policy, employees are required to meet with the Director of Human Resources to review and sign the revised agreement.
-
-
-
-## PS-07 THIRD-PARTY PERSONNEL SECURITY
-
-> Control description: <http://800-53.govready.com/control?id=PS-7>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### CivicActions Responsibility
-
-Third party personnel are required to following the same process and requirements as CivicActions employees. The Chief Operating Officer may also require that a background check be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public. In these instances, the Chief Operating Officer will instruct the Director of Human Resources to conduct a background check before granting access to the information system.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-Third party personnel are required to following the same process and requirements as LINCS employees. The Chief Operating Officer may also require that a background check be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public. In these instances, the Chief Operating Officer will instruct the Director of Human Resources to conduct a background check before granting access to the information system.
-
-
-
-### Part b)
-
-#### CivicActions Responsibility
-
-CivicActions HR reviews and updates the access agreements annually or whenever there is a significant change to the information system or information being processed; and whenever there is a change to the agreements’ verbiage.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-LINCS HR reviews and updates the access agreements annually or whenever there is a significant change to the information system or information being processed; and whenever there is a change to the agreements’ verbiage.
-
-
-
-### Part c)
-
-#### CivicActions Responsibility
-
-All personnel security requirements are documented and include things such as signing the Acceptable Use Policy (AUP) and taking security awareness training.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-All personnel security requirements are documented within the SSP and include things such as signing the Acceptable Use Policy (AUP) and taking security awareness training.
-
-
-
-### Part d)
-
-#### CivicActions Responsibility
-
-For personnel transfers and terminations of third-party personnel with access to the CivicActions systems, third parties must notify the CivicActions Director of Human Resources the same day. The Director of Human Resources follows the same employee transfer and/or termination procedure(s) as if the Third Party Personnel were CivicActions employees.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-For personnel transfers and terminations of employees with access to the LINCS systems, third parties must notify the LINCS Director of Human Resources the same day. The Director of Human Resources follows the same employee transfer and/or termination procedure(s) as if the Third Party Personnel were LINCS employees.
-
-
-
-### Part e)
-
-#### CivicActions Responsibility
-
-Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. The CivicActions ISSO is responsible for coordinating with the Contracts Manager and managers of external systems to include appropriate and tailored compliance verification language in contracts as required. Third-party personnel are continuously monitored to ensure compliance with personnel security requirements.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. The LINCS ISSO is responsible for coordinating with the Cloud Operations Manager and the Contracts Manager to include appropriate and tailored compliance verification language in contracts as required.  Third-party personnel are continuously monitored to ensure compliance with personnel security requirements.
-
-
-
-## PS-08 PERSONNEL SANCTIONS
-
-> Control description: <http://800-53.govready.com/control?id=PS-8>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### CivicActions Responsibility
-
-The Director of Human Resources is responsible for determining and enforcing sanctions for failing to comply with established information security policies and procedures. Coaching may be considered prior to sanctions. Sanctions may include but are not limited to written warnings, reduction in system access, demotion, or termination. Additional details regarding personnel sanctions can be found in the CivicActions 'Discipline Procedures,' an internal document that is available for review onsite or as required for audits and assessments.
-
-
-
-### Part b)
-
-#### CivicActions Responsibility
-
-When employee sanctions processes are initiated, the Director of Human Resources notifies the respective supervisor/manager and physical security within five business days.
-
-
-
 # PHYSICAL AND ENVIRONMENTAL PROTECTION
 
 ## PE-01 PHYSICAL AND ENVIRONMENTAL PROTECTION POLICY AND PROCEDURES
@@ -4015,6 +3976,326 @@ CivicActions employees re-sign the revised/updated Acceptable Use Policy/Rules o
 
 
 
+# PERSONNEL SECURITY
+
+## PS-01 PERSONNEL SECURITY POLICY AND PROCEDURES
+
+> Control description: <http://800-53.govready.com/control?id=PS-1>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Personnel Security (PS) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
+
+
+
+#### LINCS specific control or LINCS Responsibility
+
+The Department of Education developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
+
+The CivicActions ISSO is responsible for reviewing and updating the Personnel Security Policy and Procedures annually. The Chief Operating Officer is responsible for approving Personnel Security.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+
+
+
+## PS-02 POSITION CATEGORIZATION
+
+> Control description: <http://800-53.govready.com/control?id=PS-2>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### CivicActions Responsibility
+
+Risk designations are assigned to all CivicActions positions. The CivicActions Director of Human Resources works in coordination with the CivicActions ISSO and the Chief Operating Officer to assign risk designations.
+
+
+
+### Part b)
+
+#### CivicActions Responsibility
+
+The CivicActions Director of Human Resources works in coordination with the CivicActions ISSO and the Chief Operating Officer to establish screening criteria for all CivicActions positions.
+
+
+
+### Part c)
+
+#### CivicActions Responsibility
+
+At least every three (3) years, the CivicActions Director of Human Resources reviews and revises position risk designations. If the Director of Human Resources determines that significant changes must be made to the position risk descriptions the Director of Human Resources works in coordination with the CivicActions ISSO and the Chief Operating Officer to implement changes as required.
+
+
+
+## PS-03 PERSONNEL SCREENING
+
+> Control description: <http://800-53.govready.com/control?id=PS-3>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### CivicActions Responsibility
+
+Prospective CivicActions employees undergo background checks commensurate with the individual’s job duties, the classification of the information they will access, and the risks associated with the role. At the discretion of the Chief Operating Officer these checks may also be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public.  In these instances, the Chief Operating Officer will instruct the Director of Human Resources to conduct a background check before granting access to the information system.
+
+
+
+### Part b)
+
+#### CivicActions Responsibility
+
+Rescreening is conducted as required by the individual’s job duties, the classification of the information they will access, and the risks associated with the role. A basic background check is performed for all CivicActions employees.
+
+
+
+## PS-04 PERSONNEL TERMINATION
+
+> Control description: <http://800-53.govready.com/control?id=PS-4>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### CivicActions Responsibility
+
+Information system access is terminated immediately upon the voluntary or involuntary departure of an employee. In the case of involuntary departure, in addition to immediate termination of system access, at no point is a departing employee allowed access to any part of the CivicActions infrastructure.
+
+In the case of voluntary departure, employees are permitted access to the information system for the duration of their off boarding period. The departing employee’s manager is responsible for informing the Information Technology department when the employee off boarding period concludes. At this time system and facility access is terminated.
+
+
+
+### Part b)
+
+#### CivicActions Responsibility
+
+The terminated user’s accounts are disabled and all access associated with the individual is revoked.
+
+
+
+### Part c)
+
+#### CivicActions Responsibility
+
+The Director of Human Resources conducts exit interviews with all employees who leave CivicActions voluntarily. There is a general discussion about the process of turning in any/all company issued devices, laptops, etc.  All of these items are collected before the employee exits CivicActions.  In the case of an involuntary termination, the Director of Human Resources works to collect company issued devices and provides paperwork highlighting confidential protections for customers.
+
+
+
+### Part d)
+
+#### CivicActions Responsibility
+
+CivicActions employees provide their own equipment that must be hardened to security reqirements depending upon their role and duties. CivicActions supplies two factor authentication tokens that become the property of the employee. Therefore, this control is not applicable.
+
+
+
+### Part f)
+
+#### CivicActions Responsibility
+
+When a person is terminated, a standard process is used to notify management and IT and to track the process of disabling access to the information system/information system components. The CivicActions Help Desk is given at least a four hour notice to schedule the deactivation of access upon termination. Deactivation is a manual process that is tracked via a Trello card in order to meet the four hour turnaround time before termination.
+
+
+
+## PS-05 PERSONNEL TRANSFER
+
+> Control description: <http://800-53.govready.com/control?id=PS-5>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### CivicActions Responsibility
+
+When an employee, third party personnel and / or contractor is transferred to a new project or position within CivicActions, they may maintain access to the previous system they were working on in order to facilitate the process of maintenance and knowledge transfer. However, as part of the practices of account management (AC-02) and least privilege (AC-06), regular audits of privileged users are conducted and access privileges may be removed when no longer needed. Additionally, adherence to specific client SLAs may enhance the frequency of such audits or the timeliness of privilege removal during personnel transfer.
+
+
+
+### Part b)
+
+#### CivicActions Responsibility
+
+When an employee, third party personnel and / or contractor is transferred to a new position within CivicActions and there is a requirement for access change, such access changes are normally completed within five business days.
+
+
+
+### Part c)
+
+#### CivicActions Responsibility
+
+Access authorizations are modified as needed for the new employee duties based on transfer or reassignment.
+
+
+
+### Part d)
+
+#### CivicActions Responsibility
+
+The CivicActions operations team is informed of transfers that require access authorization modifications within five business days by the Project Manager, Product Owner or Director of Human Resources.
+
+
+
+## PS-06 ACCESS AGREEMENTS
+
+> Control description: <http://800-53.govready.com/control?id=PS-6>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### LINCS specific control or LINCS Responsibility
+
+LINCS users are required to read and sign access agreements, including acknowledgement signature page for the Acceptable Use Policy (AUP), provided in the Rules of Behavior (RoB) document prior to gaining access to the LINCS. The acknowledgment signature page is a separate document provided within the referenced (RoB) document.
+
+
+
+### Part b)
+
+#### LINCS specific control or LINCS Responsibility
+
+Access agreements, including the Acceptable Use Policy, are reviewed at least annually or when a significant change occurs. In the event that a major update is made to the Acceptable Use Policy, employees are required to read and sign the updated policy document and Human Resources stores the information.
+
+
+
+### Part c)
+
+#### LINCS specific control or LINCS Responsibility
+
+Prior to gaining access to key systems, LINCS users are required to read and sign access agreements, including the Acceptable Use Policy.
+
+Access agreements, including the Acceptable Use Policy, are reviewed at least annually. This review also takes place when a significant change occurs. In the event that a major update is made to the Acceptable Use Policy, employees are required to meet with the Director of Human Resources to review and sign the revised agreement.
+
+
+
+## PS-07 THIRD-PARTY PERSONNEL SECURITY
+
+> Control description: <http://800-53.govready.com/control?id=PS-7>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### CivicActions Responsibility
+
+Third party personnel are required to following the same process and requirements as CivicActions employees. The Chief Operating Officer may also require that a background check be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public. In these instances, the Chief Operating Officer will instruct the Director of Human Resources to conduct a background check before granting access to the information system.
+
+
+
+#### LINCS specific control or LINCS Responsibility
+
+Third party personnel are required to following the same process and requirements as LINCS employees. The Chief Operating Officer may also require that a background check be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public. In these instances, the Chief Operating Officer will instruct the Director of Human Resources to conduct a background check before granting access to the information system.
+
+
+
+### Part b)
+
+#### CivicActions Responsibility
+
+CivicActions HR reviews and updates the access agreements annually or whenever there is a significant change to the information system or information being processed; and whenever there is a change to the agreements’ verbiage.
+
+
+
+#### LINCS specific control or LINCS Responsibility
+
+LINCS HR reviews and updates the access agreements annually or whenever there is a significant change to the information system or information being processed; and whenever there is a change to the agreements’ verbiage.
+
+
+
+### Part c)
+
+#### CivicActions Responsibility
+
+All personnel security requirements are documented and include things such as signing the Acceptable Use Policy (AUP) and taking security awareness training.
+
+
+
+#### LINCS specific control or LINCS Responsibility
+
+All personnel security requirements are documented within the SSP and include things such as signing the Acceptable Use Policy (AUP) and taking security awareness training.
+
+
+
+### Part d)
+
+#### CivicActions Responsibility
+
+For personnel transfers and terminations of third-party personnel with access to the CivicActions systems, third parties must notify the CivicActions Director of Human Resources the same day. The Director of Human Resources follows the same employee transfer and/or termination procedure(s) as if the Third Party Personnel were CivicActions employees.
+
+
+
+#### LINCS specific control or LINCS Responsibility
+
+For personnel transfers and terminations of employees with access to the LINCS systems, third parties must notify the LINCS Director of Human Resources the same day. The Director of Human Resources follows the same employee transfer and/or termination procedure(s) as if the Third Party Personnel were LINCS employees.
+
+
+
+### Part e)
+
+#### CivicActions Responsibility
+
+Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. The CivicActions ISSO is responsible for coordinating with the Contracts Manager and managers of external systems to include appropriate and tailored compliance verification language in contracts as required. Third-party personnel are continuously monitored to ensure compliance with personnel security requirements.
+
+
+
+#### LINCS specific control or LINCS Responsibility
+
+Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. The LINCS ISSO is responsible for coordinating with the Cloud Operations Manager and the Contracts Manager to include appropriate and tailored compliance verification language in contracts as required.  Third-party personnel are continuously monitored to ensure compliance with personnel security requirements.
+
+
+
+## PS-08 PERSONNEL SANCTIONS
+
+> Control description: <http://800-53.govready.com/control?id=PS-8>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### CivicActions Responsibility
+
+The Director of Human Resources is responsible for determining and enforcing sanctions for failing to comply with established information security policies and procedures. Coaching may be considered prior to sanctions. Sanctions may include but are not limited to written warnings, reduction in system access, demotion, or termination. Additional details regarding personnel sanctions can be found in the CivicActions 'Discipline Procedures,' an internal document that is available for review onsite or as required for audits and assessments.
+
+
+
+### Part b)
+
+#### CivicActions Responsibility
+
+When employee sanctions processes are initiated, the Director of Human Resources notifies the respective supervisor/manager and physical security within five business days.
+
+
+
 # RISK ASSESSMENT
 
 ## RA-01 RISK ASSESSMENT POLICY AND PROCEDURES
@@ -4230,1023 +4511,6 @@ Results of the vulnerability scans and security assessments are shared with all 
 The system fully inherits this control to fully cover this control for the AWS managed cloud from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  vulnerability scanning for operating system/infrastructure and database servers. AWS monthly scan results can be monitored via FedRAMP to verify the control’s implementation was adequate such as OS-level scans.
 
 Results of vulnerability scans and security assesments and related continuous montioring of AWS is available to LINCS through FedRAMP.
-
-
-
-# SECURITY ASSESSMENT AND AUTHORIZATION
-
-## CA-01 SECURITY ASSESSMENT AND AUTHORIZATION POLICIES AND PROCEDURES
-
-> Control description: <http://800-53.govready.com/control?id=CA-1>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Security Assessment and Authorization Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-The Department of Education developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
-
-The CivicActions ISSO is responsible for reviewing and updating the Security Assessment and Authorization Policy and Procedures annually. The Chief Operating Officer is responsible for approving Security Assessment and Authorization.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
-
-
-
-## CA-02 SECURITY ASSESSMENTS
-
-> Control description: <http://800-53.govready.com/control?id=CA-2>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### CivicActions Responsibility
-
-CivicActions will create internally or work with an independent Third Party Auditor to develop a security assessment plan (SAP) when required by FISMA and NIST. Risks identified during the security assessment are tracked in CivicActions' ticket tracking or software control repository system.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-This will be completed in CY2018.
-
-An independent Third Party Auditor will develop a security assessment plan (SAP) for the LINCS system in support of FISMA and NIST requirements selected by LINCS. Risks identified during the security assessment are tracked in the lincs.ed.gov Github repository. The scope of the assessment includes:
-
-1. Security controls and control enhancements under assessment
-
-2. Assessment procedures to be used to determine security control effectiveness
-
-3. Assessment environment, assessment team, and assessment roles and responsibilities
-
-
-
-### Part b)
-
-#### CivicActions Responsibility
-
-All controls assigned and documented in this System Security Plan (SSP) will be tested at least annually or when there is a major change to the system.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-All controls as assigned by LINCS and documented in this System Security Plan (SSP) will be tested at least annually or when there is a major change to the LINCS system, or as directed by LINCS.
-
-
-
-### Part c)
-
-#### LINCS specific control or LINCS Responsibility
-
-An independent Third Party Auditor of the LINCS System will create a Security Assessment Report (SAR) that will be provided to the internal authorizing official and the LINCS authorizing official.
-
-
-
-### Part d)
-
-#### LINCS specific control or LINCS Responsibility
-
-CivicActions provides the results from the security control assessment package to the appropriate LINCS authorized official as required. The following security control assessment package includes the following:
-
-* Security Control Matrix
-
-* Privacy Impact Assessment
-
-* E-Authentication
-
-* Contingency Plan
-
-* Configuration Management Plan
-
-* Rules of Behavior
-
-* Incident Response Plan
-
-
-
-## CA-03 SYSTEM INTERCONNECTIONS
-
-> Control description: <http://800-53.govready.com/control?id=CA-3>
-> 
-> 
-> 
-> Security control type: System Specific Control
-
-
-#### CivicActions Responsibility
-
-This control is not applicable. CivicActions systems do not have system interconnections. The only communication conducted to CivicActions systems is through the Internet.
-
-
-
-## CA-05 PLAN OF ACTION AND MILESTONES
-
-> Control description: <http://800-53.govready.com/control?id=CA-5>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### CivicActions Responsibility
-
-CivicActions documents all deficiencies and vulnerabilities identified during the security certification and/or continuous monitoring phase (via security assessment, vulnerability scanning, risk assessment, etc.) within the Plan of Action and Milestones (POA&M).
-
-The POA&M document provides a platform for CivicActions to monitor and track the deficiency and its mitigation strategy. POA&M items will include:
-
-* The description of the deficiency,
-
-* Dedicated point of contact for this deficiency.
-
-* Cost of the mitigation strategy
-
-* Associated risk and NIST control
-
-* Recommended mitigation strategy
-
-POA&Ms are tracked throughout the lifecycle of the system until its mitigation. All POA&Ms are reviewed on a monthly basis by CivicActions Information System Security Officer to ensure all mitigation strategies are continuing as documented.
-
-
-
-## CA-06 SECURITY AUTHORIZATION
-
-> Control description: <http://800-53.govready.com/control?id=CA-6>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### LINCS specific control or LINCS Responsibility
-
-The Authorizing Official (AO) for LINCS is LINCS' CIO. The AO will authorize the use of LINCS and this authorization will be reviewed and updated every three years or when there is a significant change to the LINCS system. The LINCS security package to be submitted to the AO for authorization include:
-
-* System Security Plan
-
-* LINCS Privacy Impact Assessment (Form)
-
-* Contingency Plan
-
-* Configuration Management Plan
-
-* System Rules of Behavior
-
-* Incident Response Plan
-
-* Minimum Selected Security Controls and Implementation Statements.
-
-* E-Authentication
-
-
-
-## CA-07 CONTINUOUS MONITORING
-
-> Control description: <http://800-53.govready.com/control?id=CA-7>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### CivicActions Responsibility
-
-CivicActions will implemented a continuous monitoring strategy that incorporates configuration management processes including the assessment of security impact analyses of all changes, ongoing security control assessments, and a reporting mechanism of basic information security and privacy effectiveness metrics to designated CivicActions teams.
-
-
-
-### Part b)
-
-#### CivicActions Responsibility
-
-Quarterly review of the control assessments supporting the monitoring is conducted by the CivicActions ISSO.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: continuous monitoring for security events’ metrics for AWS monitoring tools.
-
-CivicActions' continuous monitoring for security events metrics will occur in real-time using existing AWS monitoring tools tools.
-
-
-
-### Part c)
-
-#### CivicActions / Drupal control support
-
-CivicActions works closely with the Drupal security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-CivicActions will implement an ongoing security control assessment of the LINCS system as part of the continuous monitoring strategy. Items to be found to be not implemented or planned will be documented as POA&M items for remediation.
-
-
-
-### Part d)
-
-#### CivicActions Responsibility
-
-CivicActions conducts or oversees continuous system security monitoring.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: ongoing security status monitoring.
-
-
-
-### Part e)
-
-#### CivicActions Responsibility
-
-The CivicActions Security Team reviews the results of the security scans and security assessments with associated JIRA and/or Github Issue tickets created to correlate and analyze security related information generated from the monitoring tools becoming POA&M items for tracking.
-
-
-
-### Part f)
-
-#### CivicActions Responsibility
-
-POA&M items are tracked by the CivicActions Security team though Github Issue tickets with a Security categorization assigned.  Information included in the POA&M item include the severity, the due date, the weakness source identifier, and the plugin ID that identified the vulnerability.
-
-
-
-### Part g)
-
-#### CivicActions Responsibility
-
-The security status of the system is reported up to the CivicActions Security team to be reviewed alongside other security issues relating to CivicActions.
-
-
-
-## CA-09 INTERNAL SYSTEM CONNECTIONS
-
-> Control description: <http://800-53.govready.com/control?id=CA-9>
-> 
-> 
-> 
-> Security control type: System Specific Control
-
-
-#### CivicActions Responsibility
-
-Not applicable: There are currently no internal systems that connect to CivicActions systems.
-
-
-
-# SYSTEM AND COMMUNICATIONS PROTECTION
-
-## SC-01 SYSTEM AND COMMUNICATIONS PROTECTION POLICY AND PROCEDURES
-
-> Control description: <http://800-53.govready.com/control?id=SC-1>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel a system and communication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Communications Protection (SC) Policy CivicActions document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-The Department of Education developed, documented and disseminated to personnel a system and communication policy  that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
-
-The CivicActions ISSO is responsible for reviewing and updating the System and Communications Protection Policy and Procedures annually.  The Chief Operating Officer is responsible for approving System and Communications Protection. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
-
-
-
-## SC-05 DENIAL OF SERVICE PROTECTION
-
-> Control description: <http://800-53.govready.com/control?id=SC-5>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### CivicActions / Drupal control support
-
-Drupal has a manual ability to block IP addresses in cases where attacks bypass cloud protection. This is managed by the support team.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-Denial of service (DoS) attacks impair the performance of network devices and server hosts, and thence the application itself.  LINCS relies on the AWS platform for the protection of DoS attacks defined by LINCS SC-5.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: denial of service protection.
-
-Monitoring is conducted though AWS Operations in analyzing capacity and traffic patterns in potential DoS attacks.
-
-
-
-## SC-07 BOUNDARY PROTECTION
-
-> Control description: <http://800-53.govready.com/control?id=SC-7>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### LINCS specific control or LINCS Responsibility
-
-The lincs.ed.gov authorization boundary is completely contained within the AWS Platform as a Service.
-
-The Drupal Server and Static Files computing nodes are the only computing nodes in the system that are exposed to the Internet. LINCS employs both the AWS platform safeguards and the Drupal Watchdog module in monitoring and recording system events. All other computing nodes used in the system are isolated within AWS.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: monitoring and controlling at the external boundary and key internal boundaries.
-
-
-
-### Part b)
-
-#### LINCS specific control or LINCS Responsibility
-
-The lincs.ed.gov authorization boundary is completely contained within the AWS Platform as a Service.
-
-Internal organizational networks (e.g. CivicActions private networks) are physically separate from the AWS platform and are protected by managed boundary devices that include FIPS 140-2 validated encryption modules at all entry points.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: implementation of subnetworks for publically accessible system components.
-
-
-
-### Part c)
-
-#### LINCS specific control or LINCS Responsibility
-
-The lincs.ed.gov authorization boundary is completely contained within the AWS Platform as a Service.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: monitoring and controlling at the external boundary and key internal boundaries.
-
-
-
-## SC-12 CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT
-
-> Control description: <http://800-53.govready.com/control?id=SC-12>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### LINCS specific control or LINCS Responsibility
-
-This is a planned control. Use of cryptographic key management for the LINCS system is not in use for at the time of implementation for authentication. CivicActions does not utilize customer agency supplied PIV credentials for access to customer instances of the LINCS. Access enforcement and authentication requirements for LINCS are described in AC-2 & IA-2. AWS platform does not utilize or manage cryptographic keys within the ACE boundary.
-
-
-
-## SC-13 USE OF CRYPTOGRAPHY
-
-> Control description: <http://800-53.govready.com/control?id=SC-13>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### LINCS specific control or LINCS Responsibility
-
-LINCS servers use SSH data is encrypted during transit. LINCS utilizes HTTPS for any inbound traffic accessing the LINCS and must authenticate according to established LINCS access enforcement and authentication rules described in AC-2 & IA-2. AWS Cloud data volumes are encrypted with FIPS-142 encryption.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: use of cryptography for data in motion (with SSH and HTTPS/SSL) and for data at rest (with Elastic Block Store (EBS) volumnes).
-
-
-
-## SC-15 COLLABORATIVE COMPUTING DEVICES
-
-> Control description: <http://800-53.govready.com/control?id=SC-15>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### LINCS specific control or LINCS Responsibility
-
-This control is not applicable, as the LINCS system does not employ any collaborative computing devices.
-
-
-
-## SC-20 SECURE NAME / ADDRESS RESOLUTION SERVICE (AUTHORITATIVE SOURCE)
-
-> Control description: <http://800-53.govready.com/control?id=SC-20>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### LINCS specific control or LINCS Responsibility
-
-This control is inherited from AWS and currently does not employ a distributed, hierarchical namespace. LINCS does not provide additional data origin authentication and integrity verification artifacts along with the authoritative name resolution data the system returns in response to external name/address resolution queries. LINCS does not provide the means to indicate the security status of child zones and (if the child supports secure resolution services) to enable verification of a chain of trust among parent and child domains, when operating as part of a distributed, hierarchical namespace.
-
-
-
-## SC-21 SECURE NAME / ADDRESS RESOLUTION SERVICE (RECURSIVE OR CACHING RESOLVER)
-
-> Control description: <http://800-53.govready.com/control?id=SC-21>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### LINCS specific control or LINCS Responsibility
-
-This control is inherited from AWS and currently and does not employ the measures to request and perform data origin authentication and data integrity verification on the name/address resolution responses the system receives from authoritative sources.
-
-
-
-## SC-22 ARCHITECTURE AND PROVISIONING FOR NAME / ADDRESS RESOLUTION SERVICE
-
-> Control description: <http://800-53.govready.com/control?id=SC-22>
-> 
-> 
-> 
-> Security control type: Inherited (Cloud Service Provider)
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: architecture and provisioning for name / address resolution service.
-
-
-
-## SC-39 PROCESS ISOLATION
-
-> Control description: <http://800-53.govready.com/control?id=SC-39>
-> 
-> 
-> 
-> Security control type: Inherited (Cloud Service Provider)
-
-
-#### CivicActions Responsibility
-
-Process isolation is maintained on the Linux platform. Linux is the only operating system that is part of the boundary.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: Process isolation.
-
-
-
-# SYSTEM AND INFORMATION INTEGRITY
-
-## SI-01 SYSTEM AND INFORMATION INTEGRITY POLICY AND PROCEDURES
-
-> Control description: <http://800-53.govready.com/control?id=SI-1>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Information Integrity (SI) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-The Department of Education developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
-
-The CivicActions ISSO is responsible for reviewing and updating the System and Information Integrity Policy and Procedures annually. The Chief Operating Officer is responsible for approving System and Information Integrity. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
-
-
-
-## SI-02 FLAW REMEDIATION
-
-> Control description: <http://800-53.govready.com/control?id=SI-2>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### LINCS specific control or LINCS Responsibility
-
-Identification of LINCS security flaws are detected as early as possible by the following methods:
-
-* The CivicActions LINCS system environment uses the OWASP ZAP open-source web application security scanner to report on needed updates based on known flaws. The CivicActions Open Data Team performs the scans on a monthly basis. A report created from the OWASP ZAP scanner lists vulnerabilities and ranks them per severity.
-
-* Service flaw notifications are received by the CivicActions Open Data team.
-
-Any security issues found are ticketed through the Github ticketing tool. The CivicActions Open Data team prioritizes the high findings within Drupal. Changes made to correct the LINCS system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB as implemented in CM-3.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  flaw remediation.
-
-
-
-### Part b)
-
-#### CivicActions / Drupal control support
-
-CivicActions testing of the system as a result of security flaw remediation are done through a development environment though use of internal software and automated testing that ensures the system is working as intended. When a change is made by a developer, testing though a peer review is conducted as part of the Change Request process to ensure the correct analysis is completed. Tracking of the testing is documented in the Github ticketing tool.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  flaw remediation.
-
-
-
-### Part c)
-
-#### CivicActions / Drupal control support
-
-CivicActions security-software updates are tested prior to place to production.  The CivicActions Security team framework for installation requires updates to be made within 30 days for high vulnerabilities, 90 days for moderate vulnerabilities, and 240 for low vulnerabilities.  An issue ticket is created to track the any updates made to the system.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  flaw remediation.
-
-
-
-### Part d)
-
-#### CivicActions / Drupal control support
-
-Flaw remediation is part of the CivicActions configuration management process.  Any security issues found are ticketed through the Github ticketing tool. The CivicActions Security team prioritizes the high findings within the Drupal application. Changes made to correct the system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB Chair as implemented in CM-3.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: flaw remediation.
-
-
-
-## SI-02(2) AUTOMATED FLAW REMEDIATION STATUS
-
-> Control description: <http://800-53.govready.com/control?id=SI-2>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### LINCS specific control or LINCS Responsibility
-
-The OWASP ZAP open-source web application security scanner is used to perform monthly vulnerability scans of all LINCS system components and assess web application interfaces to identify any performance or security issues/flaws. Vulnerabilities and findings identified are handled and remediated in accordance with the implementation of RA-5. Reports are generated to the CivicActions Open Data team for review, analysis, and remediation.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: automated flaw remediation status.
-
-
-
-## SI-03 MALICIOUS CODE PROTECTION
-
-> Control description: <http://800-53.govready.com/control?id=SI-3>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### CivicActions / Drupal control support
-
-Virus scans are performed by ClamAV is a server-hosted tool protecting the application from Trojans, Viruses and other malicious cyber-threats. Real-time scans are conducted whenever files are uploaded from any external source and malicious code is blocked or quarantined when detected. All traffic traversing the server is sanitized before being delivered.
-
-
-
-### Part b)
-
-#### CivicActions / Drupal control support
-
-Anti-virus definitions and malicious code protection mechanisms are configured and updated automatically.
-
-
-
-### Part c)
-
-#### CivicActions / Drupal control support
-
-The Cloud Operations Team receives information system security alerts, advisories and notifications in response to malicious code detection. These messages are sent to group email distribution lists to ensure all members of the team receive the proper information in a timely manner.
-
-
-
-### Part d)
-
-#### CivicActions / Drupal control support
-
-False positives during malicious code detection and eradication are dealt with on a case by case basis. Potential impacts on the availability of the information system are detailed in a false positive report depending on if the report is for the OS, database or web application.
-
-
-
-## SI-04 INFORMATION SYSTEM MONITORING
-
-> Control description: <http://800-53.govready.com/control?id=SI-4>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
-
-AWS host-based intrusion detection system (HIDS) monitors the AWS boundary and unauthorized local, network, and remote connections to the LINCS system; see inheritance below.
-
-
-
-### Part b)
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
-
-The AWS host-based intrusion detection system (HIDS) monitors the perimeter of the AWS boundary and events of the system boundary. Logs from the HIDS are forwarded to the AWS SIEM tool.
-
-
-
-### Part c)
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
-
-CivicActions leverages the AWS platform and a host-based intrusion detection system (HIDS) for monitoring strategically within the information system to collect organization-determined essential information and at ad hoc locations within the system; see inheritance below.
-
-
-
-### Part d)
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
-
-
-
-### Part e)
-
-#### CivicActions Responsibility
-
-In the event of a performance score lower than CivicActions standards, a notification is sent to the CivicActions Open Source Support Engineering team. CivicActions subscribes to security mailing lists in the event the monitoring activity is required based on law enforcement information, intelligence information, or other credible sources of information.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
-
-
-
-### Part f)
-
-#### CivicActions Responsibility
-
-Internal legal counsel is utilized as required when system notifications indicate such action based on user and/or malicious activity.  Legal counsel is engaged for any actions that may necessitate increased user monitoring, or evidence/forensic actions.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
-
-
-
-### Part g)
-
-#### LINCS specific control or LINCS Responsibility
-
-LINCS system alerts generated by CivicActions internal monitors (AWS Insight, StatusCake, OWASP ZAP, and Drupal ClamAV) are sent to the Incident Response team.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
-
-AWS’s monitoring mechanisms provide notification including audit records, input from malicious code protection mechanisms, data from intrusion detection and prevention mechanisms, and boundary protection devices to the AWS Security Team on a daily basis.
-
-
-
-## SI-05 SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
-
-> Control description: <http://800-53.govready.com/control?id=SI-5>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### CivicActions / Drupal control support
-
-CivicActions / Drupal engineering and operations teams receive the following security alerts, advisories and directives on an ongoing basis:
-
-* Mailing lists relevant to Drupal and web application security
-
-* US-CERT
-
-* Technical Cyber Security Alerts
-
-* Drupal Security Advisories
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS security alerts, advisories, and directives.
-
-The AWS Insight control panel provides direct access to the monitored systems.
-
-
-
-### Part b)
-
-#### CivicActions / Drupal control support
-
-CivicActions utilizes StatusCake for front line monitoring for real-time system status and events of the application.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS security alerts, advisories, and directives.
-
-The AWS host-based intrusion detection system (HIDS) monitors the events of the system boundary.
-
-
-
-### Part c)
-
-#### CivicActions / Drupal control support
-
-CivicActions Security team disseminates security alerts, advisories, advisories, and directives to all CivicActions internal personnel and client personnel as directed.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS security alerts, advisories, and directives.
-
-
-
-### Part d)
-
-#### CivicActions / Drupal control support
-
-CivicActions Security team is responsible for ensuring the dissemination and implementation of relevant security alerts and advisories.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS security alerts, advisories, and directives.
-
-
-
-## SI-07 SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY
-
-> Control description: <http://800-53.govready.com/control?id=SI-7>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### CivicActions / Drupal control support
-
-CivicActions employ the GitHub system to monitor source code, Drupal, and Drupal Modules version control ensuring system integrity and prevents unauthorized changes. The PHP-authenticator tool is perform a format check on source code prior to entering production. Per implementation of CM-3, any changes to the source code of the system requires the CCB Change Request process. A peer review as part of the Change Request process is conducted to ensure the requested change is verified prior to entering production.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  software, firmware, and information integrity.
-
-
-
-## SI-07 (1) INTEGRITY CHECKS
-
-> Control description: <http://800-53.govready.com/control?id=SI-7>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### CivicActions / Drupal control support
-
-The integrity check implementation of SI-7 is conducted though the GitHub system and verified monthly by redeploying the system codebase from GitHub.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  integrity checks.
-
-
-
-## SI-07 (7) INTEGRATION OF DETECTION AND RESPONSE
-
-> Control description: <http://800-53.govready.com/control?id=SI-7>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### CivicActions / Drupal control support
-
-CivicActions incident response and configuration capabilities include the detection of unauthorized changes to the system though the IR Plan and CCB Change Request process and the implementation of IR-4 and IR-5. In the event of an unauthorized security change to the system, CivicActions support would roll back to and restore from the most recent authorized database set.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  integration of detection and response. AWS has deployed OSSEC HIDS to all AWS Enterprise hosts which continuously monitors and alerts for software changes as they occur throughout the AWS platform.
-
-
-
-## SI-07(5) AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS
-
-> Control description: <http://800-53.govready.com/control?id=SI-7>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### LINCS specific control or LINCS Responsibility
-
-The LINCS system does not shut down in the event of an integrity violation is discovered. If an integrity violation is found, CivicActions conducts frequent backups of the LINCS system to support rollback of the LINCS system.
-
-
-
-## SI-10 INFORMATION INPUT VALIDATION
-
-> Control description: <http://800-53.govready.com/control?id=SI-10>
-> 
-> 
-> 
-> Security control type: System Specific Control
-
-
-#### CivicActions / Drupal control support
-
-The linked data component and information submitted via web forms of the system are the only component vulnerable to code insertion attacks, and has been hardened to prevent them. Third party scans of the system verify the linked data component is not susceptible to cross-site scripting attacks. Information submitted are checked from the execution of the inputs and will disable any script entered in the text.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-None.
-
-
-
-## SI-11 ERROR HANDLING
-
-> Control description: <http://800-53.govready.com/control?id=SI-11>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-### Part a)
-
-#### CivicActions / Drupal control support
-
-Drupal system error logs do not contain passwords, personal information, encryption keys or other sensitive information.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  error handling.
-
-
-
-### Part b)
-
-#### CivicActions / Drupal control support
-
-Drupal system error logs are only available to authenticated administrators and viewable within the administrative interface.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  error handling.
-
-
-
-## SI-12 INFORMATION OUTPUT HANDLING AND RETENTION
-
-> Control description: <http://800-53.govready.com/control?id=SI-12>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### CivicActions / Drupal control support
-
-The CivicActions organization retains all information, system-related information, incident-related information, and system output in accordance with customers’ requirements retention periods and other NIST guidance and standards, Federal policies, procedures, Federal laws and executive orders. Audit records are retained for 365 days.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information output handling and retention.
-
-
-
-## SI-16 MEMORY PROTECTION
-
-> Control description: <http://800-53.govready.com/control?id=SI-16>
-> 
-> 
-> 
-> Security control type: Inherited (Cloud Service Provider)
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  data execution prevention an address space layout randomization]to protect its memory from unauthorized code execution.
 
 
 
@@ -5889,6 +5153,742 @@ Flaws identified by the CivicActions Security team are logged in Github issues, 
 The CivicActions team develops, tests, validates, and documents proposed changes prior to implementation to assess the impact to the security and privacy risk posture of the system.  Approval for any change as a result of the identifying flaws to the system will be processed by CivicActions Security, Open Data Platform Engineering, DKAN Product Engineering, and the Open source support engineering teams.
 
 CivicActions developed in-house code requires a peer review of any change to the source code. All change requests are organized into code release tickets in Github, which are approved and reviewed by the Change Control Board (CCB) prior to deployment to production.
+
+
+
+# SYSTEM AND COMMUNICATIONS PROTECTION
+
+## SC-01 SYSTEM AND COMMUNICATIONS PROTECTION POLICY AND PROCEDURES
+
+> Control description: <http://800-53.govready.com/control?id=SC-1>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel a system and communication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Communications Protection (SC) Policy CivicActions document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
+
+
+
+#### LINCS specific control or LINCS Responsibility
+
+The Department of Education developed, documented and disseminated to personnel a system and communication policy  that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
+
+The CivicActions ISSO is responsible for reviewing and updating the System and Communications Protection Policy and Procedures annually.  The Chief Operating Officer is responsible for approving System and Communications Protection. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+
+
+
+## SC-05 DENIAL OF SERVICE PROTECTION
+
+> Control description: <http://800-53.govready.com/control?id=SC-5>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### Drupal specific control support
+
+Drupal has a manual ability to block IP addresses in cases where attacks bypass cloud protection. This is managed by the support team.
+
+
+
+#### LINCS specific control or LINCS Responsibility
+
+Denial of service (DoS) attacks impair the performance of network devices and server hosts, and thence the application itself.  LINCS relies on the AWS platform for the protection of DoS attacks defined by LINCS SC-5.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: denial of service protection.
+
+Monitoring is conducted though AWS Operations in analyzing capacity and traffic patterns in potential DoS attacks.
+
+
+
+## SC-07 BOUNDARY PROTECTION
+
+> Control description: <http://800-53.govready.com/control?id=SC-7>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### LINCS specific control or LINCS Responsibility
+
+The lincs.ed.gov authorization boundary is completely contained within the AWS Platform as a Service.
+
+The Drupal Server and Static Files computing nodes are the only computing nodes in the system that are exposed to the Internet. LINCS employs both the AWS platform safeguards and the Drupal Watchdog module in monitoring and recording system events. All other computing nodes used in the system are isolated within AWS.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: monitoring and controlling at the external boundary and key internal boundaries.
+
+
+
+### Part b)
+
+#### LINCS specific control or LINCS Responsibility
+
+The lincs.ed.gov authorization boundary is completely contained within the AWS Platform as a Service.
+
+Internal organizational networks (e.g. CivicActions private networks) are physically separate from the AWS platform and are protected by managed boundary devices that include FIPS 140-2 validated encryption modules at all entry points.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: implementation of subnetworks for publically accessible system components.
+
+
+
+### Part c)
+
+#### LINCS specific control or LINCS Responsibility
+
+The lincs.ed.gov authorization boundary is completely contained within the AWS Platform as a Service.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: monitoring and controlling at the external boundary and key internal boundaries.
+
+
+
+## SC-12 CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT
+
+> Control description: <http://800-53.govready.com/control?id=SC-12>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### LINCS specific control or LINCS Responsibility
+
+This is a planned control. Use of cryptographic key management for the LINCS system is not in use for at the time of implementation for authentication. CivicActions does not utilize customer agency supplied PIV credentials for access to customer instances of the LINCS. Access enforcement and authentication requirements for LINCS are described in AC-2 & IA-2. AWS platform does not utilize or manage cryptographic keys within the ACE boundary.
+
+
+
+## SC-13 USE OF CRYPTOGRAPHY
+
+> Control description: <http://800-53.govready.com/control?id=SC-13>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### LINCS specific control or LINCS Responsibility
+
+LINCS servers use SSH data is encrypted during transit. LINCS utilizes HTTPS for any inbound traffic accessing the LINCS and must authenticate according to established LINCS access enforcement and authentication rules described in AC-2 & IA-2. AWS Cloud data volumes are encrypted with FIPS-142 encryption.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: use of cryptography for data in motion (with SSH and HTTPS/SSL) and for data at rest (with Elastic Block Store (EBS) volumnes).
+
+
+
+## SC-15 COLLABORATIVE COMPUTING DEVICES
+
+> Control description: <http://800-53.govready.com/control?id=SC-15>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### LINCS specific control or LINCS Responsibility
+
+This control is not applicable, as the LINCS system does not employ any collaborative computing devices.
+
+
+
+## SC-20 SECURE NAME / ADDRESS RESOLUTION SERVICE (AUTHORITATIVE SOURCE)
+
+> Control description: <http://800-53.govready.com/control?id=SC-20>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### LINCS specific control or LINCS Responsibility
+
+This control is inherited from AWS and currently does not employ a distributed, hierarchical namespace. LINCS does not provide additional data origin authentication and integrity verification artifacts along with the authoritative name resolution data the system returns in response to external name/address resolution queries. LINCS does not provide the means to indicate the security status of child zones and (if the child supports secure resolution services) to enable verification of a chain of trust among parent and child domains, when operating as part of a distributed, hierarchical namespace.
+
+
+
+## SC-21 SECURE NAME / ADDRESS RESOLUTION SERVICE (RECURSIVE OR CACHING RESOLVER)
+
+> Control description: <http://800-53.govready.com/control?id=SC-21>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### LINCS specific control or LINCS Responsibility
+
+This control is inherited from AWS and currently and does not employ the measures to request and perform data origin authentication and data integrity verification on the name/address resolution responses the system receives from authoritative sources.
+
+
+
+## SC-22 ARCHITECTURE AND PROVISIONING FOR NAME / ADDRESS RESOLUTION SERVICE
+
+> Control description: <http://800-53.govready.com/control?id=SC-22>
+> 
+> 
+> 
+> Security control type: Inherited (Cloud Service Provider)
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: architecture and provisioning for name / address resolution service.
+
+
+
+## SC-39 PROCESS ISOLATION
+
+> Control description: <http://800-53.govready.com/control?id=SC-39>
+> 
+> 
+> 
+> Security control type: Inherited (Cloud Service Provider)
+
+
+#### CivicActions Responsibility
+
+Process isolation is maintained on the Linux platform. Linux is the only operating system that is part of the boundary.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: Process isolation.
+
+
+
+# SYSTEM AND INFORMATION INTEGRITY
+
+## SI-01 SYSTEM AND INFORMATION INTEGRITY POLICY AND PROCEDURES
+
+> Control description: <http://800-53.govready.com/control?id=SI-1>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Information Integrity (SI) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
+
+
+
+#### LINCS specific control or LINCS Responsibility
+
+The Department of Education developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
+
+The CivicActions ISSO is responsible for reviewing and updating the System and Information Integrity Policy and Procedures annually. The Chief Operating Officer is responsible for approving System and Information Integrity. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+
+
+
+## SI-02 FLAW REMEDIATION
+
+> Control description: <http://800-53.govready.com/control?id=SI-2>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### LINCS specific control or LINCS Responsibility
+
+Identification of LINCS security flaws are detected as early as possible by the following methods:
+
+* The CivicActions LINCS system environment uses the OWASP ZAP open-source web application security scanner to report on needed updates based on known flaws. The CivicActions Open Data Team performs the scans on a monthly basis. A report created from the OWASP ZAP scanner lists vulnerabilities and ranks them per severity.
+
+* Service flaw notifications are received by the CivicActions Open Data team.
+
+Any security issues found are ticketed through the Github ticketing tool. The CivicActions Open Data team prioritizes the high findings within Drupal. Changes made to correct the LINCS system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB as implemented in CM-3.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  flaw remediation.
+
+
+
+### Part b)
+
+#### Drupal specific control support
+
+CivicActions testing of the system as a result of security flaw remediation are done through a development environment though use of internal software and automated testing that ensures the system is working as intended. When a change is made by a developer, testing though a peer review is conducted as part of the Change Request process to ensure the correct analysis is completed. Tracking of the testing is documented in the Github ticketing tool.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  flaw remediation.
+
+
+
+### Part c)
+
+#### Drupal specific control support
+
+CivicActions security-software updates are tested prior to place to production.  The CivicActions Security team framework for installation requires updates to be made within 30 days for high vulnerabilities, 90 days for moderate vulnerabilities, and 240 for low vulnerabilities.  An issue ticket is created to track the any updates made to the system.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  flaw remediation.
+
+
+
+### Part d)
+
+#### Drupal specific control support
+
+Flaw remediation is part of the CivicActions configuration management process.  Any security issues found are ticketed through the Github ticketing tool. The CivicActions Security team prioritizes the high findings within the Drupal application. Changes made to correct the system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB Chair as implemented in CM-3.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: flaw remediation.
+
+
+
+## SI-02(2) AUTOMATED FLAW REMEDIATION STATUS
+
+> Control description: <http://800-53.govready.com/control?id=SI-2>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### LINCS specific control or LINCS Responsibility
+
+The OWASP ZAP open-source web application security scanner is used to perform monthly vulnerability scans of all LINCS system components and assess web application interfaces to identify any performance or security issues/flaws. Vulnerabilities and findings identified are handled and remediated in accordance with the implementation of RA-5. Reports are generated to the CivicActions Open Data team for review, analysis, and remediation.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: automated flaw remediation status.
+
+
+
+## SI-03 MALICIOUS CODE PROTECTION
+
+> Control description: <http://800-53.govready.com/control?id=SI-3>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### Drupal specific control support
+
+Virus scans are performed by ClamAV is a server-hosted tool protecting the application from Trojans, Viruses and other malicious cyber-threats. Real-time scans are conducted whenever files are uploaded from any external source and malicious code is blocked or quarantined when detected. All traffic traversing the server is sanitized before being delivered.
+
+
+
+### Part b)
+
+#### Drupal specific control support
+
+Anti-virus definitions and malicious code protection mechanisms are configured and updated automatically.
+
+
+
+### Part c)
+
+#### Drupal specific control support
+
+The Cloud Operations Team receives information system security alerts, advisories and notifications in response to malicious code detection. These messages are sent to group email distribution lists to ensure all members of the team receive the proper information in a timely manner.
+
+
+
+### Part d)
+
+#### Drupal specific control support
+
+False positives during malicious code detection and eradication are dealt with on a case by case basis. Potential impacts on the availability of the information system are detailed in a false positive report depending on if the report is for the OS, database or web application.
+
+
+
+## SI-04 INFORMATION SYSTEM MONITORING
+
+> Control description: <http://800-53.govready.com/control?id=SI-4>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
+
+AWS host-based intrusion detection system (HIDS) monitors the AWS boundary and unauthorized local, network, and remote connections to the LINCS system; see inheritance below.
+
+
+
+### Part b)
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
+
+The AWS host-based intrusion detection system (HIDS) monitors the perimeter of the AWS boundary and events of the system boundary. Logs from the HIDS are forwarded to the AWS SIEM tool.
+
+
+
+### Part c)
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
+
+CivicActions leverages the AWS platform and a host-based intrusion detection system (HIDS) for monitoring strategically within the information system to collect organization-determined essential information and at ad hoc locations within the system; see inheritance below.
+
+
+
+### Part d)
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
+
+
+
+### Part e)
+
+#### CivicActions Responsibility
+
+In the event of a performance score lower than CivicActions standards, a notification is sent to the CivicActions Open Source Support Engineering team. CivicActions subscribes to security mailing lists in the event the monitoring activity is required based on law enforcement information, intelligence information, or other credible sources of information.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
+
+
+
+### Part f)
+
+#### CivicActions Responsibility
+
+Internal legal counsel is utilized as required when system notifications indicate such action based on user and/or malicious activity.  Legal counsel is engaged for any actions that may necessitate increased user monitoring, or evidence/forensic actions.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
+
+
+
+### Part g)
+
+#### LINCS specific control or LINCS Responsibility
+
+LINCS system alerts generated by CivicActions internal monitors (AWS Insight, StatusCake, OWASP ZAP, and Drupal ClamAV) are sent to the Incident Response team.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
+
+AWS’s monitoring mechanisms provide notification including audit records, input from malicious code protection mechanisms, data from intrusion detection and prevention mechanisms, and boundary protection devices to the AWS Security Team on a daily basis.
+
+
+
+## SI-05 SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
+
+> Control description: <http://800-53.govready.com/control?id=SI-5>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### Drupal specific control support
+
+CivicActions / Drupal engineering and operations teams receive the following security alerts, advisories and directives on an ongoing basis:
+
+* Mailing lists relevant to Drupal and web application security
+
+* US-CERT
+
+* Technical Cyber Security Alerts
+
+* Drupal Security Advisories
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS security alerts, advisories, and directives.
+
+The AWS Insight control panel provides direct access to the monitored systems.
+
+
+
+### Part b)
+
+#### Drupal specific control support
+
+CivicActions utilizes StatusCake for front line monitoring for real-time system status and events of the application.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS security alerts, advisories, and directives.
+
+The AWS host-based intrusion detection system (HIDS) monitors the events of the system boundary.
+
+
+
+### Part c)
+
+#### Drupal specific control support
+
+CivicActions Security team disseminates security alerts, advisories, advisories, and directives to all CivicActions internal personnel and client personnel as directed.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS security alerts, advisories, and directives.
+
+
+
+### Part d)
+
+#### Drupal specific control support
+
+CivicActions Security team is responsible for ensuring the dissemination and implementation of relevant security alerts and advisories.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS security alerts, advisories, and directives.
+
+
+
+## SI-07 SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY
+
+> Control description: <http://800-53.govready.com/control?id=SI-7>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### Drupal specific control support
+
+CivicActions employ the GitHub system to monitor source code, Drupal, and Drupal Modules version control ensuring system integrity and prevents unauthorized changes. The PHP-authenticator tool is perform a format check on source code prior to entering production. Per implementation of CM-3, any changes to the source code of the system requires the CCB Change Request process. A peer review as part of the Change Request process is conducted to ensure the requested change is verified prior to entering production.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  software, firmware, and information integrity.
+
+
+
+## SI-07 (1) INTEGRITY CHECKS
+
+> Control description: <http://800-53.govready.com/control?id=SI-7>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### Drupal specific control support
+
+The integrity check implementation of SI-7 is conducted though the GitHub system and verified monthly by redeploying the system codebase from GitHub.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  integrity checks.
+
+
+
+## SI-07 (7) INTEGRATION OF DETECTION AND RESPONSE
+
+> Control description: <http://800-53.govready.com/control?id=SI-7>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### Drupal specific control support
+
+CivicActions incident response and configuration capabilities include the detection of unauthorized changes to the system though the IR Plan and CCB Change Request process and the implementation of IR-4 and IR-5. In the event of an unauthorized security change to the system, CivicActions support would roll back to and restore from the most recent authorized database set.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  integration of detection and response. AWS has deployed OSSEC HIDS to all AWS Enterprise hosts which continuously monitors and alerts for software changes as they occur throughout the AWS platform.
+
+
+
+## SI-07(5) AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS
+
+> Control description: <http://800-53.govready.com/control?id=SI-7>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### LINCS specific control or LINCS Responsibility
+
+The LINCS system does not shut down in the event of an integrity violation is discovered. If an integrity violation is found, CivicActions conducts frequent backups of the LINCS system to support rollback of the LINCS system.
+
+
+
+## SI-10 INFORMATION INPUT VALIDATION
+
+> Control description: <http://800-53.govready.com/control?id=SI-10>
+> 
+> 
+> 
+> Security control type: System Specific Control
+
+
+#### Drupal specific control support
+
+The linked data component and information submitted via web forms of the system are the only component vulnerable to code insertion attacks, and has been hardened to prevent them. Third party scans of the system verify the linked data component is not susceptible to cross-site scripting attacks. Information submitted are checked from the execution of the inputs and will disable any script entered in the text.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+None.
+
+
+
+## SI-11 ERROR HANDLING
+
+> Control description: <http://800-53.govready.com/control?id=SI-11>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+### Part a)
+
+#### Drupal specific control support
+
+Drupal system error logs do not contain passwords, personal information, encryption keys or other sensitive information.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  error handling.
+
+
+
+### Part b)
+
+#### Drupal specific control support
+
+Drupal system error logs are only available to authenticated administrators and viewable within the administrative interface.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  error handling.
+
+
+
+## SI-12 INFORMATION OUTPUT HANDLING AND RETENTION
+
+> Control description: <http://800-53.govready.com/control?id=SI-12>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### Drupal specific control support
+
+The CivicActions organization retains all information, system-related information, incident-related information, and system output in accordance with customers’ requirements retention periods and other NIST guidance and standards, Federal policies, procedures, Federal laws and executive orders. Audit records are retained for 365 days.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information output handling and retention.
+
+
+
+## SI-16 MEMORY PROTECTION
+
+> Control description: <http://800-53.govready.com/control?id=SI-16>
+> 
+> 
+> 
+> Security control type: Inherited (Cloud Service Provider)
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  data execution prevention an address space layout randomization]to protect its memory from unauthorized code execution.
 
 
 

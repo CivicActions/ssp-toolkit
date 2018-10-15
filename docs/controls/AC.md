@@ -48,7 +48,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part a)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Drupal provides user accounts for individuals who participate in visiting, contributing to and administering the site with the following roles:
 
@@ -74,7 +74,7 @@ The LINCS Technology Project system does not have guest or anonymous accounts.
 
 ### Part b)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions' Project Manager assigns the "admininstrator" role for the management of all accounts issued to internal admin roles supporting the information system. Account requests are initiated by the Project Manager by completing a ticket request and the CivicActions Operation Team manages the entire account creation process.
 
@@ -96,7 +96,7 @@ In accordance with LINCS Access Control Policy, LINCS group membership is determ
 
 ### Part d)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 All accounts issued for Drupal administrators and SSH are documented in CivicActions' ticketing system. Account request tickets contain details that explain the attributes for the account including authorized users of Drupal, system infrastructure, group and role membership, and access authorizations.
 
@@ -110,7 +110,7 @@ LINCS user privileges vary depending on the type of user role assigned. Only use
 
 ### Part e)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 All accounts issued for the admin management of Drupal or SSH access must be approved by the Project Owner or Project Manager who must create an account request. The CivicActions Operations Team applies appropriate account permissions and settings based on the job role and function documented within the request ticket using processes defined by the CivicActions Security Team.
 
@@ -124,7 +124,7 @@ CivicActions sets up the initial Site Manager account for LINCS; however, any su
 
 ### Part f)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 The CivicActions Operations Team is responsible for the following account management activities for both internal administrative users and customer accounts:
 
@@ -144,7 +144,7 @@ The CivicActions Operations Team is responsible for the following account manage
 
 ### Part h)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 In accordance with the CivicActions Access Control (AC) Policy when a CivicActions employee's account is no longer required, the employee’s manager notifies the Security Team to immediately disable all access. Users upon reassignment, change in roles, termination, or leaving employment are initially removed from all groups, effectively denying them all access to LINCS privileged accounts.
 
@@ -152,7 +152,7 @@ In accordance with the CivicActions Access Control (AC) Policy when a CivicActio
 
 ### Part i)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions Drupal administration accounts require access authorizations prior to accounts being created. Employee managers must initiate an access request for an account to be created. The CivicActions Operations Team reviews the request to ensure accuracy, including intended system usage and other attributes of the user access being requested.
 
@@ -166,7 +166,7 @@ LINCS governs their own administrative access. The designated government contrac
 
 ### Part j)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 All privileged accounts are reviewed by the CivicActions Operations Team every 180 days.
 
@@ -180,7 +180,7 @@ Site Managers are empowered to and responsible for reviewing their own accounts 
 
 ### Part k)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 In accordance with standard security best practices and CivicActions policy, shared and reissued accounts for internal accounts of any kind are not created nor used for any purpose in any system.
 
@@ -195,7 +195,7 @@ In accordance with standard security best practices and CivicActions policy, sha
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Access control in Drupal is enforced by authentication via unique username/password for every type of user except Anonymous user. The user’s privileges, permissions and access are provided on "least privilege" principle.
 
@@ -230,7 +230,7 @@ CivicActions performs regular audits of privileged users as part of the practice
 
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions implements the policy of least privilege for all logical components of Drupal by allowing only authorized access for users, which are necessary to accomplish assigned tasks in accordance with business functions and organizational need.
 
@@ -261,7 +261,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions, at least quarterly, audits all team accounts based on the concept of least privilege. Each member of the developer team is assigned a role of which defines access needed to perform only the member’s job function.  The audit of accounts is reported and reviewed by the LINCS admin group and evaluated to determine whether roles or membership within the developer team should be changed. 
 
@@ -290,7 +290,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part a)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Drupal can be configured to lock an account after a specified number of invalid login attempts within specified time period.
 
@@ -298,7 +298,7 @@ Drupal can be configured to lock an account after a specified number of invalid 
 
 ### Part b)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Lock down following unsuccessful attempts is configurable by Drupal administrators to conform to defined requirements.  When a user exceeds the limit of invalid logon attempts, their account is automatically locked for a specfied time and requires administrator action to unlock the account before the lockout period expires.
 
@@ -351,7 +351,7 @@ The Department of Education allows the general public user to read the web pages
 > Security control type: Inherited (Cloud Service Provider)
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 The CivicActions Access Control (AC) policy defines policy for remote usage restrictions.  The Project Manager or Project Owner may additionally provision users according to their Access Control policies.
 

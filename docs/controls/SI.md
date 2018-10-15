@@ -60,7 +60,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part b)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions testing of the system as a result of security flaw remediation are done through a development environment though use of internal software and automated testing that ensures the system is working as intended. When a change is made by a developer, testing though a peer review is conducted as part of the Change Request process to ensure the correct analysis is completed. Tracking of the testing is documented in the Github ticketing tool.
 
@@ -74,7 +74,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part c)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions security-software updates are tested prior to place to production.  The CivicActions Security team framework for installation requires updates to be made within 30 days for high vulnerabilities, 90 days for moderate vulnerabilities, and 240 for low vulnerabilities.  An issue ticket is created to track the any updates made to the system.
 
@@ -88,7 +88,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part d)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Flaw remediation is part of the CivicActions configuration management process.  Any security issues found are ticketed through the Github ticketing tool. The CivicActions Security team prioritizes the high findings within the Drupal application. Changes made to correct the system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB Chair as implemented in CM-3.
 
@@ -132,7 +132,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part a)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Virus scans are performed by ClamAV is a server-hosted tool protecting the application from Trojans, Viruses and other malicious cyber-threats. Real-time scans are conducted whenever files are uploaded from any external source and malicious code is blocked or quarantined when detected. All traffic traversing the server is sanitized before being delivered.
 
@@ -140,7 +140,7 @@ Virus scans are performed by ClamAV is a server-hosted tool protecting the appli
 
 ### Part b)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Anti-virus definitions and malicious code protection mechanisms are configured and updated automatically.
 
@@ -148,7 +148,7 @@ Anti-virus definitions and malicious code protection mechanisms are configured a
 
 ### Part c)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 The Cloud Operations Team receives information system security alerts, advisories and notifications in response to malicious code detection. These messages are sent to group email distribution lists to ensure all members of the team receive the proper information in a timely manner.
 
@@ -156,7 +156,7 @@ The Cloud Operations Team receives information system security alerts, advisorie
 
 ### Part d)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 False positives during malicious code detection and eradication are dealt with on a case by case basis. Potential impacts on the availability of the information system are detailed in a false positive report depending on if the report is for the OS, database or web application.
 
@@ -264,7 +264,7 @@ AWS’s monitoring mechanisms provide notification including audit records, inpu
 
 ### Part a)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions / Drupal engineering and operations teams receive the following security alerts, advisories and directives on an ongoing basis:
 
@@ -288,7 +288,7 @@ The AWS Insight control panel provides direct access to the monitored systems.
 
 ### Part b)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions utilizes StatusCake for front line monitoring for real-time system status and events of the application.
 
@@ -304,7 +304,7 @@ The AWS host-based intrusion detection system (HIDS) monitors the events of the 
 
 ### Part c)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions Security team disseminates security alerts, advisories, advisories, and directives to all CivicActions internal personnel and client personnel as directed.
 
@@ -318,7 +318,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part d)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions Security team is responsible for ensuring the dissemination and implementation of relevant security alerts and advisories.
 
@@ -339,7 +339,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions employ the GitHub system to monitor source code, Drupal, and Drupal Modules version control ensuring system integrity and prevents unauthorized changes. The PHP-authenticator tool is perform a format check on source code prior to entering production. Per implementation of CM-3, any changes to the source code of the system requires the CCB Change Request process. A peer review as part of the Change Request process is conducted to ensure the requested change is verified prior to entering production.
 
@@ -360,7 +360,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 The integrity check implementation of SI-7 is conducted though the GitHub system and verified monthly by redeploying the system codebase from GitHub.
 
@@ -381,7 +381,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 CivicActions incident response and configuration capabilities include the detection of unauthorized changes to the system though the IR Plan and CCB Change Request process and the implementation of IR-4 and IR-5. In the event of an unauthorized security change to the system, CivicActions support would roll back to and restore from the most recent authorized database set.
 
@@ -417,7 +417,7 @@ The LINCS system does not shut down in the event of an integrity violation is di
 > Security control type: System Specific Control
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 The linked data component and information submitted via web forms of the system are the only component vulnerable to code insertion attacks, and has been hardened to prevent them. Third party scans of the system verify the linked data component is not susceptible to cross-site scripting attacks. Information submitted are checked from the execution of the inputs and will disable any script entered in the text.
 
@@ -440,7 +440,7 @@ None.
 
 ### Part a)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Drupal system error logs do not contain passwords, personal information, encryption keys or other sensitive information.
 
@@ -454,7 +454,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part b)
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 Drupal system error logs are only available to authenticated administrators and viewable within the administrative interface.
 
@@ -475,7 +475,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### CivicActions / Drupal control support
+#### Drupal specific control support
 
 The CivicActions organization retains all information, system-related information, incident-related information, and system output in accordance with customers’ requirements retention periods and other NIST guidance and standards, Federal policies, procedures, Federal laws and executive orders. Audit records are retained for 365 days.
 
