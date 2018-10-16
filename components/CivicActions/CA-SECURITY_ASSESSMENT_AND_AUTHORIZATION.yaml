@@ -206,6 +206,6 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    The security status of the system is reported up to the Porgram Owner and Project
+    The security status of the system is reported up to the Program Owner and Project
     Manager via CivicActions Security to be reviewed alongside other security issues
-    relating to CivicActions.
+    relating to the system.

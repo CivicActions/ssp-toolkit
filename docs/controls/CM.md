@@ -17,9 +17,9 @@ CivicActions has developed, documented and disseminated to personnel a configura
 
 #### LINCS specific control or LINCS Responsibility
 
-The Department of Education developed, documented and disseminated to personnel a configuration management policy  that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
+The configuration management policy and procedures are formally documented in the LINCS Technology Project Configuration Management Plan (CMP), which provides the roles and responsibilities as it pertains to physical and environmental protection. It defines responsibilities for the implementation and oversight of the guidance contained herein. The Department reviews and updates the policy as necessary.
 
-The CivicActions ISSO is responsible for reviewing and updating the Configuration Management Policy and Procedures annually. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system. The DKAN SSP Configuration Management Plan can be found in the CivicActions HealthData GitHub repository wiki at <https://github.com/NuCivic/healthdata/wiki/configuration-management-plan>.
+Additional information is contained within the Department of Education, Handbook forInformation Technology Security Configuration Management Planning Procedures (Handbook OCIO-11).
 
 
 
@@ -38,29 +38,23 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### LINCS specific control or LINCS Responsibility
+#### Drupal specific control support
 
-The application software component of lincs.ed.gov consists of (1) the DKAN distribution of the Drupal web application platform, with (2) additional software features that were developed expressly for lincs.ed.gov based on specifications provided by LINCS.
+The baseline configuration is maintained in Git and described in the Configuration Management Plan, which describes the change workflow and software configuration. In the context of Security Configuration Management, the baseline configuration is a collection of formally approved configuration state(s) of one or more configuration items ("features") that compose the system. The baseline configuration is used to restore and serves as the basis against which the next change or set of changes to the system is made.
 
-Baseline configuration for the website's standard DKAN features is stored in the website's codebase and managed using the Features module for Drupal (<https://www.drupal.org/project/features>). Site administrators can view the list of features by visiting the site's features management page at https://www.lincs.ed.gov/admin/structure/features. Most of the configuration for additional features that were developed specifically for lincs.ed.gov is also managed using the Drupal Features module.
-
-The Features module makes it possible to override configuration for individual features without modifying the codebase. It stores those overridden features in the website's MySQL database. The features management page referenced above shows which components of each feature are based on the default configuration stored in code, and shows which components have been overridden in the database. Most components of lincs.ed.gov are based on the default configuration stored in code, but there are approximately a dozen components that have overrides stored in the database.
-
-CivicActions maintains documentation describing each custom feature for lincs.ed.gov that is not standard DKAN, as well as documentation describing feature components that have overrides stored in the database.
+The features for the system are maintained in the website's source code, which is managed in git, a source code version control system. Once the source code is updated, git maintains the new version of staged code once committed in the git repository as the new baseline. All code prior to it being staged is documented, tested and approved by CivicActions Development, which is described in control SA-3. The production environment is configured to take database snapshots daily.
 
 
 
 #### LINCS specific control or LINCS Responsibility
 
-The baseline configuration is described in Section 3.2 of the Configuration Management Plan, which describes the approved configuration of the LINCS system including all of its hardware, software, and firmware components and the physical and logical locations of each. In the context of Security Configuration Management, the baseline configuration is a collection of formally approved configuration state(s) of one or more configuration items ("features") that compose the LINCS system. The baseline configuration is used by LINCS to restore and serves as the basis against which the next change or set of changes to the LINCS is made.
-
-The features for the LINCS system are maintained in the website's source code, which is managed in git, a source code version control system. Once the source code is updated, git maintains the new version of staged code once committed in the git repository as the new baseline. All code prior to it being staged is documented, tested and approved by CivicActions' DKAN Engineering team, which is described in control SA-3. The LINCS production environment is configured to take database snapshots daily.
+A CM process has been established and documented in the LINCS Technology Project CMP. All updates are made in accordance with the procedures outlined in the CMP.  The CM process establishes a baseline of hardware, software, firmware and documentation, as well as changes thereto, throughout the development and life cycle of the information system. CM ensures the control of the information system through its life cycle. It assures that additions, deletions, or changes made to the LINCS Technology Project system do not unintentionally or unknowingly diminish security. If the change is major, the security of the system must be re-analyzed.
 
 
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system therefore inherits server configuration aspects of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: baseline configuration for IaaS components.
+The system inherits server configuration aspects of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: baseline configuration for IaaS components.
 
 Hardware Baselines
 
@@ -81,19 +75,11 @@ AWS maintains the baseline software configuration for the server components requ
 > Security control type: Hybrid
 
 
-### Part a)
+#### Drupal specific control support
 
-#### LINCS specific control or LINCS Responsibility
+CivicActions reviews and updates baseline configurations for the system at least annually, when requested by the Program Owner or required by law, and as an integral part of information system component installations, upgrades and maintenance.
 
-CivicActions reviews and updates baseline configurations for lincs.ed.gov at least annually, as an integral part of information system component installations, upgrades and maintenance.
-
-
-
-### Part b)
-
-#### LINCS specific control or LINCS Responsibility
-
-Review of the CM baselines for the LINCS system is conducted and approved by the DKAN Engineering team. Any changes made to the production environment are approved prior to deployment by the LINCS CCB. Changes that may require updates to the baseline configuration for the lincs.ed.gov application include:
+Review of the CM baselines for the system is conducted and approved by CivicActions Development. Any changes made to the production environment are approved prior to deployment by the CCB or agile scrum process. Changes that may require updates to the baseline configuration for the application include:
 
 * Significant upgrades or changes to applications or database software
 
@@ -122,13 +108,13 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### LINCS specific control or LINCS Responsibility
+#### Drupal specific control support
 
-LINCS configuration settings use automated mechanisms to automate code deployment and baseline settings changes. The website's baseline configuration may be reapplied to the site at any time by manually retriggering a code deployment using the AWS dashboard.
+Drupal configuration settings use automated mechanisms to automate code deployment and baseline settings changes. The website's baseline configuration may be reapplied to the site at any time by manually retriggering a tagged code deployment.
 
 The source code, which contains the site’s baseline configuration, is managed using git, a source code version control system. Git is used to track source code which allows administrators to easily deploy and roll back changes on production hosting environments.
 
-The Features module (described above under "Application Configuration") is used to export configuration settings from the website's MySQL database and stores them as code so that the configuration settings can be managed within the git source code version control system.
+The Features module is used to export configuration settings from the website's MySQL database and stores them as code so that the configuration settings can be managed within the git source code version control system.
 
 
 
@@ -141,7 +127,7 @@ The Features module (described above under "Application Configuration") is used 
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
+#### Drupal specific control support
 
 Previous baseline configurations are retained in git, which implements unlimited revision control. Each version of the codebase is given a unique tag when it is deployed to production. When new features are ready for deployment to production, the new code release is given a new tag. This makes it possible to roll back to a previous version of the baseline configuration if needed by redeploying the older release tag.
 
@@ -156,11 +142,9 @@ Previous baseline configurations are retained in git, which implements unlimited
 > Security control type: Hybrid
 
 
-### Part a)
-
 #### CivicActions Responsibility
 
-In accordance with the Configuration Management Plan and control SA-3, CivicActions releases changes to the baseline configuration of the application through planned point releases, which bundle multiple new features, and feature changes into a single planned code releases. Point releases occur roughly every two months. Since they bundle multiple new features into a single release, Examples of the types of changes that may be introduced through a code release include the following, ordered by increasing level of possible security risk:
+In accordance with the Configuration Management Plan and control SA-3, CivicActions manages changes to the baseline configuration of the application through an agile scrum-based process. Examples of the types of changes that may be introduced through a code release include the following, ordered by increasing level of possible security risk:
 
 1. Minor application code changes
 
@@ -170,13 +154,15 @@ In accordance with the Configuration Management Plan and control SA-3, CivicActi
 
 4. Major application modification
 
+The CCB meets bi-weekly during the sprint planning and backlog grooming meetings. In addition, the Program Owner or Project Manager may convene the CCB in an emergency session to address time-critical topics as deemed necessary.
+
 
 
 ### Part b)
 
 #### CivicActions Responsibility
 
-In accordance with the Configuration Management Plan, CivicActions performs security impact analysis of all planned code releases. Level of impact is assessed by the Engineering team before the planned code release is presented to the Change Control Board (CCB) for final approval. Significant software enhancements and major application modifications require approval from the Tech Lead of the Engineering team. Once a code release is considered ready for deployment, a CCB Review is done before scheduling deployment of the code release to production, in accordance with the Agile-based System Development Life Cycle methodology described
+In accordance with the Configuration Management Plan, CivicActions performs security impact analysis of all planned code releases. Level of impact is assessed by CivicActions Development in collaboration with CivicActions Security before the planned code updates are presented at the sprint planning meeting for approval. Significant software enhancements and major application modifications require approval from the Tech Lead of the Development team. Once a code release is considered ready for deployment, a Security Review is done before scheduling deployment of the code release to production, in accordance with the Agile-based System Development Life Cycle methodology described in SA-3.
 
 
 
@@ -184,7 +170,7 @@ In accordance with the Configuration Management Plan, CivicActions performs secu
 
 #### CivicActions Responsibility
 
-Configuration changes follow the CivicActions CCB process. The changes themselves are documented clearly within a Change Request (CR) ticket in the CivicActions (JIRA or Git) ticketing system. The CR ticket has an approval step built into the ticketing workflow that is required before the implementation phase. The CCB is responsible for reviewing the change and either approving (all members of the CCB must come to a consensus) or rejecting the proposal. These workflow changes are captured within an audit log in the ticket, and are available to anyone viewing the ticket.
+Configuration changes follow the CivicActions sprint planning process. The changes themselves are documented within a JIRA ticket tracking system. The JIRA ticket has an approval step built into the ticketing workflow that is required before the implementation phase. The CCB (agile sprint planning process) is responsible for reviewing the change and either approving or rejecting the proposal. These workflow changes are captured within an audit log in the ticket, and are available to anyone viewing the ticket.
 
 
 
@@ -194,17 +180,15 @@ Configuration changes follow the CivicActions CCB process. The changes themselve
 
 See part b). Configuration changes are captured within tickets in the CivicActions ticketing system. Each CR follows a specific workflow within the ticketing system that follows our process:
 
-1. Open
+1. Open (Backlog)
 
-2. In testing
+2. To Do
 
-3. In peer review
+3. In Progress
 
-4. Waiting for approval
+4. QA
 
-5. Approved OR Rejected
-
-6. Successful OR Unsuccessful
+5. Signoff
 
 All CRs must be approved before they are applied to the information system.
 
@@ -230,13 +214,7 @@ All changes are logged and retained for a minimum of three years in the ticketin
 
 #### CivicActions Responsibility
 
-The CivicActions Change Control Board meets weekly, or when operational or security imperatives require, to address requested changes to the application.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-The Change Control Board (CCB) is a group containing two individuals (at a minimum) that have the collective responsibility and authority to review and approve proposed change to the LINCS system. The LINCS OCIO Policy for Information Systems Security and Privacy Handbook requires that the configuration management process include the system CA (Certification Authority) or a representative from that system as a member of the CCB. The LINCS CCB shall meet regularly at a time and place set by the LINCS CCB Chair.  In addition, the LINCS CCB Chair may convene the LINCS CCB in an emergency session to address time-critical topics as deemed necessary.
+The CivicActions Change Control Board (or agile Sprint Planning team) meets bi-weekly, or when operational or security imperatives require, to address requested changes to the application.
 
 
 
@@ -251,13 +229,7 @@ The Change Control Board (CCB) is a group containing two individuals (at a minim
 
 #### CivicActions Responsibility
 
-CivicActions tests and validates changes to the system before implementing the changes in production. Changes are documented as comments in the git source code version control system. Any changes made to LINCS are first captured in a separate development branch of git that is used to create a pull request, which is reviewed for quality control before being merged into the master branch of the repository.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-Before deployment to production, the code in the master branch of the repository is deployed to a staging server hosted by AWS where it the code changes are reviewed again. After all code changes have been reviewed and tested on the staging server, the code release is presented to the CCB for approval before the code is tagged for release and deployed to the production server.
+CivicActions tests and validates changes to the system before implementing the changes in production. Changes are documented as code and comments in the git source code version control system. Any changes made to system are first captured in a separate development branch of git that is used to create a pull request, which is reviewed for quality and security control before being merged into the master branch of the repository.
 
 
 
@@ -273,6 +245,12 @@ Before deployment to production, the code in the master branch of the repository
 #### CivicActions Responsibility
 
 Security impact analysis is conducted and documented within the Change Request (CR) process described in in CM-3(b). All proposed configuration-controlled changes to the application are tested first in a sandboxed development environment before being pushed to a staging environment to be tested by another developer and by the Engineering team prior to final approval from CCB to move changes to the production environment.
+
+
+
+#### LINCS specific control or LINCS Responsibility
+
+An Information Security Program is in place to ensure all security-centric impacts to the LINCS Technology Project are properly analyzed and conducted by personnel with information security responsibilities (i.e., LINCS SSO, IT Security Officer, etc.). These individuals have the appropriate skills and technical expertise to analyze the changes to the LINCS Technology Project and their associated security ramifications. In support of continuous monitoring and to ensure the LINCS Technology system lifecycle is fully sustained, a risk assessment process, be it formal or informal, is performed when changes are occur. This ensures the Department understands the security impacts and can determine if additional security controls are required.
 
 
 
@@ -295,7 +273,7 @@ All access to server environments is via encrypted SSH session with public-key a
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: physical access restrictions with changes to LINCS. Development and staging environments is logged by default as part of the AWS Managed Cloud system.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: physical and logical access restrictions to server instances. Development and staging environments are logged by default as part of the AWS Cloud system.
 
 
 
@@ -310,9 +288,9 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### Drupal specific control support
 
-LINCS access enforcement is monitored within Drupal, which records an entry in the Drupal watchdog log for every successful or failed login attempt to the system. Each successful login or logout event is logged with an entry that includes the username of the account being used.
+Access enforcement is monitored within Drupal, which records an entry in the Drupal watchdog log for every successful or failed login attempt to the system.  Each successful login or logout event is logged with an entry that includes the username of the account being used.
 
-All access to server environments is via encrypted SSH sessions with public-key authentication, and all server access is logged. Specific implementation of auditing events are captured in AU-2. The same access control procedures and need-to-know and accountability principles are enforced for all systems storing baseline configuration policies.
+All access to server environments is via encrypted SSH sessions with public-key authentication, and all server access is logged.  Specific implementation of auditing events are captured in AU-2. The same access control procedures and need-to-know and accountability principles are enforced for all systems storing baseline configuration policies.
 
 
 
@@ -339,17 +317,11 @@ Configuration changes that do not entail software code changes can only be perfo
 
 
 
-#### Amazon Web Services (AWS) US-East/West control support
-
-CivicActions personnel cannot modify hardware or firmware components because they have no physical access to the servers. Software changes can only be performed by CivicActions developers with Senior Developer or Team Leader roles as defined by AWS.
-
-
-
 ### Part b)
 
 #### CivicActions Responsibility
 
-CivicActions internal administrators user access rights are reviewed at least quarterly by the CivicActions Information Security group, which is responsible for approving all user account assignments to CivicActions developers.
+CivicActions internal administrators user access rights are reviewed at least quarterly by CivicActions Information Security, which is responsible for approving all user account assignments to CivicActions developers.
 
 
 
@@ -362,8 +334,6 @@ CivicActions internal administrators user access rights are reviewed at least qu
 > Security control type: Hybrid
 
 
-### Part a)
-
 #### Drupal specific control support
 
 CivicActions configuration settings for Drupal are guided by the Drupal Security Coding Standards <https://www.drupal.org/docs/develop/security> for the security configuration management processes and tools.
@@ -372,7 +342,15 @@ CivicActions configuration settings for Drupal are guided by the Drupal Security
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: configuration settings for the system software components for the security configuration management processes and tools.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: configuration settings.
+
+
+
+### Part a)
+
+#### LINCS specific control or LINCS Responsibility
+
+The LINCS Technology Project is configured in compliance with the applicable baseline security standards. The Department and its technical support staff configure the security settings of all IT products to the most restrictive mode consistent with information system operational requirements. The Department utilizes the NIST Special Publication 800-70 for guidance on configuration settings (checklists) for information technology products. When security setting checklist are not available from NIST for a particular device, good security engineering practices along with manufacture guidelines is used to develop the security settings. The CM Manager conducts configuration audits to ensure baseline compliance and documentation of hardware/software configurations throughout the system lifecycle.
 
 
 
@@ -386,13 +364,7 @@ CivicActions developers follow security best practices according to the guidelin
 
 #### LINCS specific control or LINCS Responsibility
 
-Configuration settings are implemented, monitored, and controlled in accordance with the organizational Configuration Management Plan, section 2, for the security configuration management processes and tools.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
+Configuration settings are implemented, monitored, and controlled in accordance with the organizational Configuration Management Plan for the security configuration management processes and tools.
 
 
 
@@ -402,13 +374,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 Currently, deviations do not exist for established configuration settings. In the event this changes, the following notes the process that will take place.
 
-The CivicActions CCB, identifies, approves, and documents exceptions to mandatory configuration settings for individual components within its cloud offering only when operationally necessary.  All variances identified during the monthly and annual system testing scans that must be accepted for operational purposes are tracked.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  explicit operational requirements for AWS managed components.
+The CivicActions CCB, identifies, approves, and documents exceptions to mandatory configuration settings for individual components within its cloud offering only when operationally necessary. All variances identified during the monthly and annual system testing scans that must be accepted for operational purposes are tracked.
 
 
 
@@ -439,9 +405,15 @@ Access from the internet to the application running on AWS Managed Cloud is perm
 
 ### Part b)
 
+#### LINCS specific control or LINCS Responsibility
+
+The LINCS Technology Project maintains strict default deny policy with on access controls at the firewall, and on individual systems. Inbound access across the system boundary is only allowed on ports 22 (ssh), 80 (http) and 443 (https), with an additional port, 25 (smtp) open on the mail server.
+
+
+
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  least functionality.
+The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: least functionality.
 
 
 
@@ -454,21 +426,23 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 > Security control type: Hybrid
 
 
-#### LINCS specific control or LINCS Responsibility
+#### Drupal specific control support
 
-Application software
-
-The software inventory for the lincs.ed.gov application is maintained in the codebase stored CivicActions' git source code version control system. It consists of the following components:
+The software inventory for the application is maintained in the codebase stored CivicActions' git source code version control system. It consists of the following components:
 
 * The Drupal open source web content management system
 
-* The DKAN distribution of Drupal
+* Drupal add-on modules, themes and libraries available from the Drupal.org website
 
-* Drupal add-on modules, themes and libraries available from the Drupal.org website which extend Drupal core
+  which extend Drupal core
 
-* Custom code written for lincs.ed.gov by CivicActions' developers
 
-The inventory is reviewed monthly by CivicActions' DKAN Product Engineering and Open Data Platform Engineering teams. In accordance with the LINCS Configuration Management Plan, section 3.
+
+* Custom code written by CivicActions' developers
+
+The inventory is reviewed monthly by CivicActions Product Engineering teams in accordance with the Configuration Management Plan.
+
+Website content is backed up daily using CPM snapshots. This allows CivicActions to build an inventory of the system on demand.
 
 
 
@@ -476,13 +450,7 @@ The inventory is reviewed monthly by CivicActions' DKAN Product Engineering and 
 
 Platform Software
 
-lincs.ed.gov is hosted on the AWS platform. The system therefore inherits the platform software components of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system component inventory.
-
-
-
-#### Drupal specific control support
-
-CivicActions stores all software code for the lincs.ed.gov application in a git source version control repository. Website content is backed up daily by the AWS Managed Cloud hosting system, which is configured to take daily database snapshots. This allows CivicActions to build an inventory of the LINCS system on demand.
+The system inherits the platform software components of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: information system component inventory.
 
 
 
@@ -497,7 +465,7 @@ CivicActions stores all software code for the lincs.ed.gov application in a git 
 
 #### CivicActions Responsibility
 
-CivicActions stores all software code in a git source version control repository. This allows CivicActions to build an inventory of the system on demand.
+CivicActions stores all software code in a git source version control repository which is updated for all component installations, removals, and information system updates. This allows CivicActions to build an inventory of the system on demand.
 
 
 
@@ -505,7 +473,7 @@ CivicActions stores all software code in a git source version control repository
 
 Website content is backed up daily by the AWS Managed Cloud hosting system, which is configured to take daily database snapshots
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: hardware components inventory updates.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: components inventory updates.
 
 
 
@@ -520,7 +488,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### LINCS specific control or LINCS Responsibility
 
-The LINCS Configuration Management Plan addresses roles, responsibilities, and configuration management processes and procedures. It defines the configuration items for the information system and when in the system development life cycle the configuration items are placed under configuration management (section 3.1.1); and establishes the means for identifying configuration items throughout the system development life cycle (section 3.1.2) and a process for managing the configuration of the configuration items (section 4). This document can be found in the CivicActions HealthData GitHub repository at <https://github.com/NuCivic/healthdata/wiki/configuration-management-plan>.
+The LINCS Configuration Management Plan addresses roles, responsibilities, and configuration management processes and procedures. It defines the configuration items for the information system throughout the system development life cycle and a process for managing the configuration of the configuration items.
 
 
 
@@ -533,39 +501,15 @@ The LINCS Configuration Management Plan addresses roles, responsibilities, and c
 > Security control type: Hybrid
 
 
-### Part a)
+#### Drupal specific control support
 
-#### LINCS specific control or LINCS Responsibility
-
-The LINCS system is built using CivicActions' DKAN distribution of Drupal which is licensed under the Free Software Foundation's General Public License (GPL), version 2 or later.
+Drupal is hosted on a LAMP platform (Linux, Apache, MySQL and PHP). These are all compatible with the Free Software Foundation's General Public License (GPL) version 2 or later and are freely available for use under copyright law.
 
 
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-lincs.ed.gov is hosted on a LAMP platform (Linux, Apache, MySQL and PHP) that is managed by AWS. The system therefore inherits the platform software components of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  software usage restrictions (CM-10).
-
-
-
-### Part b)
-
-#### LINCS specific control or LINCS Responsibility
-
-The LINCS Configuration Management Plan, section 3.2.1., notes the software, function, and version for the software components of the LINCS system. DKAN, Drupal core, and all third-party Drupal modules are licensed under the Free Software Foundation's General Public License (GPL), version 2 or later.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system therefore inherits the platform software components of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  software usage restrictions (CM-10).
-
-
-
-### Part c)
-
-#### LINCS specific control or LINCS Responsibility
-
-Not Applicable. Peer-to-peer and file sharing are not included in the authorization boundary.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013 for the following: software usage restrictions.
 
 
 
@@ -580,15 +524,15 @@ Not Applicable. Peer-to-peer and file sharing are not included in the authorizat
 
 ### Part a)
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-All software installed in the LINCS system environment must be first approved via the CCB resulting in a Change Request (CR) being initiated and executed. No government-furnished equipment (GFE) is within the authorization boundary for the system. Software installation on the computing nodes within the authorization boundary is restricted to administrators. All CivicActions internal administrators are informed of this during their initial training and as part of the rules of behavior document.
+All software installed in the system environment must be first approved via the CCB resulting in a Change Request (CR) being initiated and executed. Software installation on the computing nodes within the authorization boundary is restricted to administrators. All CivicActions internal administrators are informed of this during their initial training and as part of the rules of behavior document.
 
 
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-lincs.ed.gov is hosted on the AWS platform. The system therefore inherits the platform software components of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  Governing installation of software by users
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013 for the following: governing user installed software.
 
 
 
@@ -596,13 +540,13 @@ lincs.ed.gov is hosted on the AWS platform. The system therefore inherits the pl
 
 #### CivicActions Responsibility
 
-CivicActions enforces software installation policies through required acknowledgement and sign-off on acceptable use policy by CivicActions personnel. CivicActions' Engineering team is responsible for enforcing compliance with the acceptable use policy.
+CivicActions enforces software installation policies through required acknowledgement and sign-off on acceptable use policy by CivicActions personnel. CivicActions Development is responsible for enforcing compliance with the acceptable use policy.
 
 
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-lincs.ed.gov is hosted on the AWS platform. The system therefore inherits the platform software components of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  Enforcing software installation policies.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013 for the following: enforcing software installation policies.
 
 
 
@@ -616,7 +560,7 @@ CivicActions monitors policy compliance continuously via the code release planni
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-lincs.ed.gov is hosted on the AWS platform. The system therefore inherits the platform software components of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  Monitoring compliance.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013 for the following: monitoring compliance.
 
 
 

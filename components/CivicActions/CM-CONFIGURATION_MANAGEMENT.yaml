@@ -20,23 +20,8 @@ satisfies:
     can be found in the CivicActions Compliance Docs GitHub repository at
     <https://github.com/CivicActions/compliance-docs>.
 
-- control_key: CM-02 (3)
-  control_key_part: ~
-  control_name: RETENTION OF PREVIOUS CONFIGURATIONS
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Previous baseline configurations are retained in git, which implements unlimited
-    revision control. Each version of the codebase is given a unique tag when it is
-    deployed to production. When new features are ready for deployment to production,
-    the new code release is given a new tag. This makes it possible to roll back to
-    a previous version of the baseline configuration if needed by redeploying the
-    older release tag.
-
 - control_key: CM-03
-  control_key_part: a
+  control_key_part: ~
   control_name: CONFIGURATION CHANGE CONTROL
   standard_key: NIST-800-53
   covered_by: []
@@ -44,12 +29,10 @@ satisfies:
   implementation_status: In Place
   narrative: >
     In accordance with the Configuration Management Plan and control SA-3, CivicActions
-    releases changes to the baseline configuration of the application through planned
-    point releases, which bundle multiple new features, and feature changes into a
-    single planned code releases. Point releases occur roughly every two months. Since
-    they bundle multiple new features into a single release, Examples of the types
-    of changes that may be introduced through a code release include the following,
-    ordered by increasing level of possible security risk:
+    manages changes to the baseline configuration of the application through an agile
+    scrum-based process. Examples of the types of changes that may be introduced through a
+    code release include the following, ordered by increasing level of possible security
+    risk:
 
     1. Minor application code changes
 
@@ -60,6 +43,10 @@ satisfies:
 
     4. Major application modification
 
+    The CCB meets bi-weekly during the sprint planning and backlog grooming meetings. In
+    addition, the Program Owner or Project Manager may convene the CCB in an emergency
+    session to address time-critical topics as deemed necessary.
+
 - control_key: CM-03
   control_key_part: b
   control_name: CONFIGURATION CHANGE CONTROL
@@ -69,13 +56,14 @@ satisfies:
   implementation_status: In Place
   narrative: >
     In accordance with the Configuration Management Plan, CivicActions performs security
-    impact analysis of all planned code releases. Level of impact is assessed by the
-    Engineering team before the planned code release is presented to the Change
-    Control Board (CCB) for final approval. Significant software enhancements and
-    major application modifications require approval from the Tech Lead of the
-    Engineering team. Once a code release is considered ready for deployment, a CCB
-    Review is done before scheduling deployment of the code release to production,
-    in accordance with the Agile-based System Development Life Cycle methodology described
+    impact analysis of all planned code releases. Level of impact is assessed by
+    CivicActions Development in collaboration with CivicActions Security before the
+    planned code updates are presented at the sprint planning meeting for
+    approval. Significant software enhancements and major application modifications
+    require approval from the Tech Lead of the Development team. Once a code release is
+    considered ready for deployment, a Security Review is done before scheduling
+    deployment of the code release to production, in accordance with the Agile-based
+    System Development Life Cycle methodology described in SA-3.
 
 - control_key: CM-03
   control_key_part: c
@@ -85,13 +73,13 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    Configuration changes follow the CivicActions CCB process. The changes themselves
-    are documented clearly within a Change Request (CR) ticket in the CivicActions
-    (JIRA or Git) ticketing system. The CR ticket has an approval step built into the ticketing
-    workflow that is required before the implementation phase. The CCB is responsible
-    for reviewing the change and either approving (all members of the CCB must come
-    to a consensus) or rejecting the proposal. These workflow changes are captured
-    within an audit log in the ticket, and are available to anyone viewing the ticket.
+    Configuration changes follow the CivicActions sprint planning process. The changes
+    themselves are documented within a JIRA ticket tracking system. The JIRA ticket has an
+    approval step built into the ticketing workflow that is required before the
+    implementation phase. The CCB (agile sprint planning process) is responsible for
+    reviewing the change and either approving or rejecting the proposal. These workflow
+    changes are captured within an audit log in the ticket, and are available to anyone
+    viewing the ticket.
 
 - control_key: CM-03
   control_key_part: d
@@ -105,17 +93,15 @@ satisfies:
     Configuration changes are captured within tickets in the CivicActions ticketing system.
     Each CR follows a specific workflow within the ticketing system that follows our process:
 
-    1. Open
+    1. Open (Backlog)
 
-    2. In testing
+    2. To Do
 
-    3. In peer review
+    3. In Progress
 
-    4. Waiting for approval
+    4. QA
 
-    5. Approved OR Rejected
-
-    6. Successful OR Unsuccessful
+    5. Signoff
 
     All CRs must be approved before they are applied to the information system.
 
@@ -151,8 +137,9 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The CivicActions Change Control Board meets weekly, or when operational or security
-    imperatives require, to address requested changes to the application.
+    The CivicActions Change Control Board (or agile Sprint Planning team) meets bi-weekly,
+    or when operational or security imperatives require, to address requested changes to
+    the application.
 
 - control_key: CM-03 (2)
   control_key_part: ~
@@ -162,11 +149,12 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    CivicActions tests and validates changes to the system before implementing
-    the changes in production. Changes are documented as comments in the git source
-    code version control system. Any changes made to LINCS are first captured in a separate
-    development branch of git that is used to create a pull request, which is reviewed
-    for quality control before being merged into the master branch of the repository.
+    CivicActions tests and validates changes to the system before implementing the changes
+    in production. Changes are documented as code and comments in the git source code
+    version control system. Any changes made to system are first captured in a separate
+    development branch of git that is used to create a pull request, which is reviewed for
+    quality and security control before being merged into the master branch of the
+    repository.
 
 - control_key: CM-04
   control_key_part: ~
@@ -208,8 +196,8 @@ satisfies:
   implementation_status: In Place
   narrative: >
     CivicActions internal administrators user access rights are reviewed at least
-    quarterly by the CivicActions Information Security group, which is responsible
-    for approving all user account assignments to CivicActions developers.
+    quarterly by CivicActions Information Security, which is responsible for approving all
+    user account assignments to CivicActions developers.
 
 - control_key: CM-06
   control_key_part: b
@@ -243,8 +231,23 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    CivicActions stores all software code in a git source version control repository.
+    CivicActions stores all software code in a git source version control repository which
+    is updated for all component installations, removals, and information system updates.
     This allows CivicActions to build an inventory of the system on demand.
+
+- control_key: CM-11
+  control_key_part: a
+  control_name: USER-INSTALLED SOFTWARE
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    All software installed in the system environment must be first approved via the CCB
+    resulting in a Change Request (CR) being initiated and executed. Software installation
+    on the computing nodes within the authorization boundary is restricted to
+    administrators. All CivicActions internal administrators are informed of this during
+    their initial training and as part of the rules of behavior document.
 
 - control_key: CM-11
   control_key_part: b
@@ -255,9 +258,8 @@ satisfies:
   implementation_status: In Place
   narrative: >
     CivicActions enforces software installation policies through required acknowledgement
-    and sign-off on acceptable use policy by CivicActions personnel. CivicActions'
-    Engineering team is responsible for enforcing compliance with the acceptable
-    use policy.
+    and sign-off on acceptable use policy by CivicActions personnel. CivicActions
+    Development is responsible for enforcing compliance with the acceptable use policy.
 
 - control_key: CM-11
   control_key_part: c

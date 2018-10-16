@@ -23,15 +23,15 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system therefore inherits server configuration aspects of this control from
-    the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for
-    the following: baseline configuration for IaaS components.
+    The system inherits server configuration aspects of this control from the FedRAMP
+    Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: baseline
+    configuration for IaaS components.
 
     Hardware Baselines
 
-    All hardware is maintained by AWS Cloud. The system therefore inherits
-    hardware configuration aspects of this control from the FedRAMP Provisional ATO
-    granted to the AWS Cloud dated 1 May 2013 for the following: baseline configuration.
+    All hardware is maintained by AWS Cloud. The system therefore inherits hardware
+    configuration aspects of this control from the FedRAMP Provisional ATO granted to the
+    AWS Cloud dated 1 May 2013 for the following: baseline configuration.
 
     Server Configuration
 
@@ -49,20 +49,6 @@ satisfies:
     The system partially inherits this control from the FedRAMP Provisional ATO granted
     to the AWS Cloud Service Providers dated 1 May 2013.
 
-- control_key: CM-03 (2)
-  control_key_part: ~
-  control_name: TEST / VALIDATE / DOCUMENT CHANGES
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Before deployment to production, the code in the master branch of the repository
-    is deployed to a staging server hosted by AWS where it the code changes are
-    reviewed again. After all code changes have been reviewed and tested on the staging
-    server, the code release is presented to the CCB for approval before the code
-    is tagged for release and deployed to the production server.
-
 - control_key: CM-05
   control_key_part: ~
   control_name: ACCESS RESTRICTIONS FOR CHANGE
@@ -71,10 +57,10 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following: physical access restrictions
-    with changes to LINCS. Development and staging environments is logged by default
-    as part of the AWS Managed Cloud system.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: physical and logical access
+    restrictions to server instances. Development and staging environments are logged by
+    default as part of the AWS Cloud system.
 
 - control_key: CM-05 (1)
   control_key_part: ~
@@ -84,24 +70,12 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:
-    automated access enforcement / access.
-
-- control_key: CM-05 (5)
-  control_key_part: a
-  control_name: LIMIT PRODUCTION / OPERATIONAL PRIVILEGES
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions personnel cannot modify hardware or firmware components because they have
-    no physical access to the servers. Software changes can only be performed by CivicActions
-    developers with Senior Developer or Team Leader roles as defined by AWS.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: automated access enforcement /
+    access.
 
 - control_key: CM-06
-  control_key_part: a
+  control_key_part: ~
   control_name: CONFIGURATION SETTINGS
   standard_key: NIST-800-53
   covered_by: []
@@ -109,32 +83,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following: configuration settings
-    for the system software components for the security configuration management
-    processes and tools.
-
-- control_key: CM-06
-  control_key_part: b
-  control_name: CONFIGURATION SETTINGS
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Partially in Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013.
-
-- control_key: CM-06
-  control_key_part: c
-  control_name: CONFIGURATION SETTINGS
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Partially in Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  explicit operational
-    requirements for AWS managed components.
+    to the AWS Cloud dated 1 May 2013 for the following: configuration settings.
 
 - control_key: CM-07
   control_key_part: a
@@ -159,7 +108,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 1 May 2013 for the following:  least functionality.
+    AWS Cloud dated 1 May 2013 for the following: least functionality.
 
 - control_key: CM-08
   control_key_part: ~
@@ -171,9 +120,8 @@ satisfies:
   narrative: >
     Platform Software
 
-    lincs.ed.gov is hosted on the AWS platform. The system
-    therefore inherits the platform software components of this control from the FedRAMP
-    Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: 
+    The system inherits the platform software components of this control from the FedRAMP
+    Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:
     information system component inventory.
 
 - control_key: CM-08 (1)
@@ -188,33 +136,20 @@ satisfies:
     is configured to take daily database snapshots
 
     The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 1 May 2013 for the following: hardware components inventory
+    the AWS Cloud dated 1 May 2013 for the following: components inventory
     updates.
 
 - control_key: CM-10
-  control_key_part: a
+  control_key_part: ~
   control_name: SOFTWARE USAGE RESTRICTIONS
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    lincs.ed.gov is hosted on a LAMP platform (Linux, Apache, MySQL and PHP) that
-    is managed by AWS. The system therefore inherits the platform software components
-    of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated
-    1 May 2013 for the following:  software usage restrictions (CM-10).
-
-- control_key: CM-10
-  control_key_part: b
-  control_name: SOFTWARE USAGE RESTRICTIONS
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system therefore inherits the platform software components of this control
-    from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013
-    for the following:  software usage restrictions (CM-10).
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud Service Providers dated 1 May 2013 for the following: software usage
+    restrictions.
 
 - control_key: CM-11
   control_key_part: a
@@ -224,10 +159,9 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    lincs.ed.gov is hosted on the AWS platform. The system
-    therefore inherits the platform software components of this control from the FedRAMP
-    Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: 
-    Governing installation of software by users
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud Service Providers dated 1 May 2013 for the following: governing user
+    installed software.
 
 - control_key: CM-11
   control_key_part: b
@@ -237,10 +171,9 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    lincs.ed.gov is hosted on the AWS platform. The system
-    therefore inherits the platform software components of this control from the FedRAMP
-    Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: 
-    Enforcing software installation policies.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud Service Providers dated 1 May 2013 for the following: enforcing software
+    installation policies.
 
 - control_key: CM-11
   control_key_part: c
@@ -250,7 +183,6 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    lincs.ed.gov is hosted on the AWS platform. The system
-    therefore inherits the platform software components of this control from the FedRAMP
-    Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: 
-    Monitoring compliance.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud Service Providers dated 1 May 2013 for the following: monitoring
+    compliance.
