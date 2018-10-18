@@ -9,12 +9,6 @@
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel an incident response policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Incident Response (IR) Policy and Procedure that can be found in the CivicActions Handbook Github repository at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan/>
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department of Education developed, documented and disseminated to personnel an incident response policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
@@ -22,6 +16,12 @@ The Department of Education developed, documented and disseminated to personnel 
 The CivicActions ISSO is responsible for reviewing and updating the Incident Response Plan Policy and Procedures annually. The Chief Operating Officer is responsible for approving Incident Response Plan.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
 
 The DKAN Incident Response (IR) Policy and Procedures can be found in the CivicActions Github repository at <https://github.com/NuCivic/healthdata/wiki/incident-response-plan>.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel an incident response policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Incident Response (IR) Policy and Procedure that can be found in the CivicActions Handbook Github repository at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan/>
 
 
 
@@ -71,19 +71,19 @@ All CivicActions users of the LINCS system with incident response responsibiliti
 
 ### Part a)
 
-#### CivicActions Responsibility
-
-The Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) explains the process for incident handling, and discusses preparation, detection and analysis, containment, eradication, and recovery.
-
-Preparation activities includes all CivicActions internal users are trained if their role includes incident response. Detection monitoring tools providing notification to incident response personnel for analysis and action.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Incident Response Plan (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>) explains the process for incident handling, and discusses preparation, detection and analysis, containment, eradication, and recovery.
 
 Preparation activities includes all CivicActions and LINCS internal users are trained if their role includes incident response. Detection monitoring tools providing notification to incident response personnel for analysis and action. Containment, eradication and recovery activities include AWS inherited fixes and LINCS system administrators blocking IP address at the source of the incident and clearing caches.
+
+
+
+#### CivicActions Responsibility
+
+The Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) explains the process for incident handling, and discusses preparation, detection and analysis, containment, eradication, and recovery.
+
+Preparation activities includes all CivicActions internal users are trained if their role includes incident response. Detection monitoring tools providing notification to incident response personnel for analysis and action.
 
 
 
@@ -213,15 +213,15 @@ CivicActions Customer Support team provides first response assistance to any ext
 
 ### Part a)
 
-#### CivicActions Responsibility
-
-CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>), includes a comprehensive incident response program, which details the implementation of procedures and tools required for incident handling. The incident response program details the roles and responsibilities of CivicActions IR Team. The IR Team includes members from Security, Engineering, and Drupal Engineering teams.  Incident response plays a pivotal role in monitoring, detecting and handling security incidents of the entire information system. The IRP details categorization of incidents in accordance with NIST 800-61 and accordingly documents and reports incidents. The IRP is reviewed annually and updated as needed by ISSO, with the assistance of the incident response team.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 DKAN/LINCS Incident Response Plan (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>), includes a comprehensive incident response program, which details the implementation of procedures and tools required for incident handling. The incident response program details the roles and responsibilities of CivicActions IR Team. The IR Team includes members from Security, Engineering, and Drupal Engineering teams.  Incident response plays a pivotal role in monitoring, detecting and handling security incidents of the entire information system. The IRP details categorization of incidents in accordance with NIST 800-61 and accordingly documents and reports incidents. The IRP is reviewed annually and updated as needed by ISSO, with the assistance of the incident response team.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>), includes a comprehensive incident response program, which details the implementation of procedures and tools required for incident handling. The incident response program details the roles and responsibilities of CivicActions IR Team. The IR Team includes members from Security, Engineering, and Drupal Engineering teams.  Incident response plays a pivotal role in monitoring, detecting and handling security incidents of the entire information system. The IRP details categorization of incidents in accordance with NIST 800-61 and accordingly documents and reports incidents. The IRP is reviewed annually and updated as needed by ISSO, with the assistance of the incident response team.
 
 
 
@@ -232,6 +232,12 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 
 ### Part b)
+
+#### LINCS specific control or LINCS Responsibility
+
+The DKAN/LINCS Incident Response Plan (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>) is stored in the CivicActions Github repository. CivicActions personnel who are a part of the incident response team will have access to the plan in order to review any updates made to the IR Plan, including CivicActions Security, DKAN Engineering, and Engineering teams.
+
+
 
 #### CivicActions Responsibility
 
@@ -249,12 +255,6 @@ The CivicActions Incident Response Plan
 
 
 
-#### LINCS specific control or LINCS Responsibility
-
-The DKAN/LINCS Incident Response Plan (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>) is stored in the CivicActions Github repository. CivicActions personnel who are a part of the incident response team will have access to the plan in order to review any updates made to the IR Plan, including CivicActions Security, DKAN Engineering, and Engineering teams.
-
-
-
 #### Amazon Web Services (AWS) US-East/West control support
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  incident response plan.
@@ -263,15 +263,15 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part c)
 
-#### CivicActions Responsibility
-
-The CivicActions CISO and IR team is responsible for reviewing the Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) annually.  The entire incident response team will sit down and review the plan and update it as necessary. Ultimately, the CISO has final say and will approve all updates to the plan team.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The LINCS ISSO and the CivicActions IR team is responsible for reviewing the Incident Response Plan (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>) annually.  The entire incident response team will sit down and review the plan and update it as necessary. Ultimately, the ISSO has final say and will approve all updates to the plan team.
+
+
+
+#### CivicActions Responsibility
+
+The CivicActions CISO and IR team is responsible for reviewing the Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) annually.  The entire incident response team will sit down and review the plan and update it as necessary. Ultimately, the CISO has final say and will approve all updates to the plan team.
 
 
 
@@ -297,15 +297,15 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part e)
 
-#### CivicActions Responsibility
-
-Modifications to the IR Plan are conducted by the IR team (CivicActions Security, Operations and Engineering teams) and communicated to the IR team and designated personnel, including the System Owner and ISSO.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 Modifications to the IR Plan are conducted by the IR team (CivicActions Security, DKAN Engineering, and Engineering teams) and communicated to the IR team and LINCS designated personnel, including the System Owner and ISSO.
+
+
+
+#### CivicActions Responsibility
+
+Modifications to the IR Plan are conducted by the IR team (CivicActions Security, Operations and Engineering teams) and communicated to the IR team and designated personnel, including the System Owner and ISSO.
 
 
 

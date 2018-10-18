@@ -9,15 +9,15 @@
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel an audit and accountability policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Audit and Accountability (AU) Policy.  This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The LINCS Technology Project maintains a record of system activity by application process and by user activity. Audit and accountability policy and procedures are documented within the LINCS SSP. Security software features are used to automatically generate and store security audit log records for use in monitoring security-related events on all multi-user systems. The Department reviews and updates this policy as necessary and it was last updated in April 2008.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel an audit and accountability policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Audit and Accountability (AU) Policy.  This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 

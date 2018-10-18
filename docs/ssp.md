@@ -186,12 +186,6 @@ Table of Contents
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel an access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Access Control (AC) Policy.  This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
@@ -199,6 +193,12 @@ This is Agency common control. More data about implementation can be obtained fr
 Access control policy and procedures are documented in the LINCS SSP. Access to LINCS Technology Project operational information or system resources is limited to only authorized users, programs or processes. The Department enforces access control policies to protect the integrity of the LINCS Technology Project system. This Department reviews and updates this policy as necessary and it has been being updated, as necessary, since April 2008.
 
 Additional information is contained within the Department of Education, OCIO-01, Handbook for Information Assurance Cybersecurity Policy.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel an access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Access Control (AC) Policy.  This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 
@@ -225,18 +225,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part a)
 
-#### Drupal specific control support
-
-Drupal provides user accounts for individuals who participate in visiting, contributing to and administering the site with the following roles:
-
-* Anonymous user – readers of the site who either do not have an account or are not logged in.
-
-* Authenticated user – All non-anonymous users inherit the "authenticated user role."
-
-* Administrator - This role has all permissions enabled by default.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 SSH system accounts are provided to contractors on an as-needed basis.
@@ -249,17 +237,39 @@ The LINCS Technology Project system does not have guest or anonymous accounts.
 
 
 
-### Part b)
+#### CivicActions Responsibility
+
+CivicActions Operations, in collaboration with CivicActions Security, will set up privileged accounts accounts for the following roles:
+
+* Developer - user level account that has access to application features and sanitized databases
+
+* System Administrator - user accounts that enjoy full system administrator access
+
+
 
 #### Drupal specific control support
 
-CivicActions' Project Manager assigns the "admininstrator" role for the management of all accounts issued to internal admin roles supporting the information system. Account requests are initiated by the Project Manager by completing a ticket request and the CivicActions Operation Team manages the entire account creation process.
+Drupal provides user accounts for individuals who participate in visiting, contributing to and administering the site with the following roles:
+
+* Anonymous user – readers of the site who either do not have an account or are not logged in.
+
+* Authenticated user – All non-anonymous users inherit the "authenticated user role."
+
+* Administrator - This role has all permissions enabled by default.
 
 
+
+### Part b)
 
 #### LINCS specific control or LINCS Responsibility
 
 The Project Owner has oversight over all permissions that the Project Manager and Operations Staff manages.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions' Project Manager assigns the "admininstrator" role for the management of all accounts issued to internal admin roles supporting the information system. Account requests are initiated by the Project Manager by completing a ticket request and the CivicActions Operation Team manages the entire account creation process.
 
 
 
@@ -273,25 +283,25 @@ In accordance with LINCS Access Control Policy, LINCS group membership is determ
 
 ### Part d)
 
-#### Drupal specific control support
-
-All accounts issued for Drupal administrators and SSH are documented in CivicActions' ticketing system. Account request tickets contain details that explain the attributes for the account including authorized users of Drupal, system infrastructure, group and role membership, and access authorizations.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 LINCS user privileges vary depending on the type of user role assigned. Only users with the role of Site Manager have the ability to create and modify user roles for other users.
 
 
 
-### Part e)
+#### CivicActions Responsibility
+
+All accounts issued for application administrators and SSH are documented in CivicActions' ticketing system. Account request tickets contain details that explain the attributes for the account including authorized users of Drupal, system infrastructure, group and role membership, and access authorizations.
+
+
 
 #### Drupal specific control support
 
-All accounts issued for the admin management of Drupal or SSH access must be approved by the Project Owner or Project Manager who must create an account request. The CivicActions Operations Team applies appropriate account permissions and settings based on the job role and function documented within the request ticket using processes defined by the CivicActions Security Team.
+Drupal has a sophisticated permissions and role-based access control built in. Each role within Drupal can only access the documents and controls for which their privilege allows.
 
 
+
+### Part e)
 
 #### LINCS specific control or LINCS Responsibility
 
@@ -299,11 +309,17 @@ CivicActions sets up the initial Site Manager account for LINCS; however, any su
 
 
 
+#### CivicActions Responsibility
+
+All accounts issued for the admin management of Application or SSH access must be approved by the Project Owner or Project Manager who must create an account request. The CivicActions Operations Team applies appropriate account permissions and settings based on the job role and function documented within the request ticket using processes defined by the CivicActions Security Team.
+
+
+
 ### Part f)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
-The CivicActions Operations Team is responsible for the following account management activities for both internal administrative users and customer accounts:
+CivicActions Operations is responsible for the following account management activities for both internal administrative users and customer accounts:
 
 * Establishing account justification
 
@@ -319,21 +335,29 @@ The CivicActions Operations Team is responsible for the following account manage
 
 
 
-### Part h)
+### Part g)
+
+#### CivicActions Responsibility
+
+All CivicActions systems log the usage of information accounts.
+
+
 
 #### Drupal specific control support
 
-In accordance with the CivicActions Access Control (AC) Policy when a CivicActions employee's account is no longer required, the employee’s manager notifies the Security Team to immediately disable all access. Users upon reassignment, change in roles, termination, or leaving employment are initially removed from all groups, effectively denying them all access to LINCS privileged accounts.
+Drupal monitors the usage of information accounts in the watchdog.log.
+
+
+
+### Part h)
+
+#### CivicActions Responsibility
+
+In accordance with the CivicActions Access Control (AC-01) Policy when an account is no longer required, the Project Manager notifies the Operations Team to immediately disable all access. Users upon reassignment, change in roles, termination, or leaving employment are initially removed from all roles and groups, effectively denying them all access to privileged accounts.
 
 
 
 ### Part i)
-
-#### Drupal specific control support
-
-CivicActions Drupal administration accounts require access authorizations prior to accounts being created. Employee managers must initiate an access request for an account to be created. The CivicActions Operations Team reviews the request to ensure accuracy, including intended system usage and other attributes of the user access being requested.
-
-
 
 #### LINCS specific control or LINCS Responsibility
 
@@ -341,13 +365,13 @@ LINCS governs their own administrative access. The designated government contrac
 
 
 
+#### CivicActions Responsibility
+
+System accounts require access authorizations prior to accounts being created. The Project Manager must initiate an access request for an account to be created. CivicActions Operations reviews the request to ensure accuracy, including intended system usage and other attributes of the user access being requested.
+
+
+
 ### Part j)
-
-#### Drupal specific control support
-
-All privileged accounts are reviewed by the CivicActions Operations Team every 180 days.
-
-
 
 #### LINCS specific control or LINCS Responsibility
 
@@ -355,9 +379,15 @@ Site Managers are empowered to and responsible for reviewing their own accounts 
 
 
 
+#### CivicActions Responsibility
+
+All privileged accounts are reviewed by CivicActions Operations every 180 days.
+
+
+
 ### Part k)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
 In accordance with standard security best practices and CivicActions policy, shared and reissued accounts for internal accounts of any kind are not created nor used for any purpose in any system.
 
@@ -372,17 +402,17 @@ In accordance with standard security best practices and CivicActions policy, sha
 > Security control type: Hybrid
 
 
+#### LINCS specific control or LINCS Responsibility
+
+The LINCS Technology Project ensures that assigned authorizations for controlling access to the system is enforced in accordance with the user definitions noted in Section 1.1.1 of the LINCS SSP. The technical support staff ensures that access to security functions and protected information is restricted to authorized personnel. Access will be controlled with access control list used on each instance. Members of one group cannot access resources defined for other groups unless explicitly permitted.
+
+
+
 #### Drupal specific control support
 
 Access control in Drupal is enforced by authentication via unique username/password for every type of user except Anonymous user. The user’s privileges, permissions and access are provided on "least privilege" principle.
 
-The anonymous user role has the least access to the site of all roles. The website does not allow anonymous users to register an account for themselves. Administrators and Site Managers are the only user roles that can create new user accounts.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-The LINCS Technology Project ensures that assigned authorizations for controlling access to the system is enforced in accordance with the user definitions noted in Section 1.1.1 of the LINCS SSP. The technical support staff ensures that access to security functions and protected information is restricted to authorized personnel. Access will be controlled with access control list used on each instance. Members of one group cannot access resources defined for other groups unless explicitly permitted.
+The anonymous user role has the least access to the site of all roles. The website does not allow anonymous users to register an account for themselves. Drupal Administrators are the only user roles that can create new user accounts.
 
 
 
@@ -401,6 +431,12 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
+#### LINCS specific control or LINCS Responsibility
+
+Drupal privileged access roles are designated by LINCS which is responsible for determining who will have administrator privileges and the ability to create other user accounts, including user accounts with the role of "administrator".
+
+
+
 #### CivicActions Responsibility
 
 CivicActions performs regular audits of privileged users as part of the practice of enforcing least privilege.
@@ -414,12 +450,6 @@ CivicActions implements the policy of least privilege for all logical components
 At the application layer, Drupal is designed with a role based user access system, a least privileged approach based on assignment of privileges to roles. Drupal‘s permission systems enables control of what users can do and see on the site. In consultation with LINCS, CivicActions has defined a specific set of permissions for each of the user roles mentioned in control AC-5.
 
 SSH access is provided on a least privilege basis and analyzed on an ongoing basis, at least quarterly. Findings related to these audits of accounts are reported and reviewed by the CivicActions Data team and evaluated to determine roles that need to be revoked.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-Drupal privileged access roles are designated by LINCS which is responsible for determining who will have administrator privileges and the ability to create other user accounts, including user accounts with the role of "administrator".
 
 
 
@@ -519,6 +549,12 @@ The Department of Education allows the general public user to read the web pages
 
 
 
+#### Drupal specific control support
+
+The anonymous user role has the least access to the site of all roles. The website does not allow anonymous users to register an account for themselves.
+
+
+
 ## AC-17 REMOTE ACCESS
 
 > Control description: <http://800-53.govready.com/control?id=AC-17>
@@ -528,15 +564,15 @@ The Department of Education allows the general public user to read the web pages
 > Security control type: Inherited (Cloud Service Provider)
 
 
-#### Drupal specific control support
-
-The CivicActions Access Control (AC) policy defines policy for remote usage restrictions.  The Project Manager or Project Owner may additionally provision users according to their Access Control policies.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The LINCS Technology Project permits remote access for privileged functions to support operational needs. The technical staff documents, monitors, and controls all methods of remote access to the information system including remote access for privileged functions. Privileged user access is only permitted through the use of Secure Shell (SSH) or the Remote Desktop Protocol (RDP) where the user will authenticate to the device through this secure channel. Virtual Private Networking (VPN) is not enabled in any form within the LINCS accreditation boundary.
+
+
+
+#### Drupal specific control support
+
+The CivicActions Access Control (AC) policy defines policy for remote usage restrictions.  The Project Manager or Project Owner may additionally provision users according to their Access Control policies.
 
 
 
@@ -555,6 +591,12 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Inherited (Cloud Service Provider)
 
 
+#### CivicActions Responsibility
+
+This control is not applicable. The system does not provide wireless access points.
+
+
+
 #### Amazon Web Services (AWS) US-East/West control support
 
 The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: wireless access.
@@ -570,9 +612,9 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 > Security control type: Inherited (Cloud Service Provider)
 
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-This control is not applicable. LINCS does not maintain a facility in which mobile device access limitations are required.
+This control is not applicable. The system does not maintain a facility in which mobile device access limitations are required.
 
 
 
@@ -591,9 +633,9 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 > Security control type: Inherited (Cloud Service Provider)
 
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-This control is not applicable. LINCS does not connect with external information systems.
+This control is not applicable. The system does not connect with external information systems.
 
 
 
@@ -657,15 +699,15 @@ It is the LINCS responsibility for LINCS to review the content on the publicly a
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel awareness and training policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Awareness and Training (AT) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 Security awareness and training policy and procedures are formally documented in Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01), which provides the roles and responsibilities as it pertains to security awareness and training. The Department will ensure all users, including managers and senior executives, are exposed to basic information system security awareness materials before authorizing access to the system and at least annually thereafter. The Department documents and monitors all individual information system security training activities including basic security awareness training. The Department reviews and updates the policy as necessary.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel awareness and training policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Awareness and Training (AT) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 
@@ -796,29 +838,29 @@ CivicActions' Security provides users with security responsibilities role-based 
 
 ### Part a)
 
-#### CivicActions Responsibility
-
-The CivicActions Information Security Office tracks all security awareness training within the organization and ensures that all employees have successfully completed training when required. The training records are stored and tracked in a spreadsheet maintained by the CivicActions Information Security Office.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department documents and monitors all individual information system security training activities including basic security awareness training. New users are required to take security training within 30 days of hire. This information is kept in the appropriate personnel files to verify users have met the training requirements. Training requirement notifications are sent to individuals as deadline for re-training approaches.
 
 
 
-### Part b)
-
 #### CivicActions Responsibility
 
-Training records are tracked and maintained by the CivicActions Information Security Office. Records are maintained permanently.
+The CivicActions Information Security Office tracks all security awareness training within the organization and ensures that all employees have successfully completed training when required. The training records are stored and tracked in a spreadsheet maintained by the CivicActions Information Security Office.
 
 
+
+### Part b)
 
 #### LINCS specific control or LINCS Responsibility
 
 The Office of Information Secuity maintains training certifications for the specified period.
+
+
+
+#### CivicActions Responsibility
+
+Training records are tracked and maintained by the CivicActions Information Security Office. Records are maintained permanently.
 
 
 
@@ -839,15 +881,15 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel an audit and accountability policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Audit and Accountability (AU) Policy.  This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The LINCS Technology Project maintains a record of system activity by application process and by user activity. Audit and accountability policy and procedures are documented within the LINCS SSP. Security software features are used to automatically generate and store security audit log records for use in monitoring security-related events on all multi-user systems. The Department reviews and updates this policy as necessary and it was last updated in April 2008.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel an audit and accountability policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Audit and Accountability (AU) Policy.  This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 
@@ -1197,17 +1239,17 @@ CivicActions maintained applications generate audit records for their web and ev
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Security Assessment and Authorization Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department has published the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01) and U. S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05). Both of these publications are revised periodically. The LINCS System Security Policy (SSP) provides guidance on all aspects of security for the protection of LINCS information technology resources.
 
 The Department will periodically review and update the SSP when there is a significant change to the regulatory, operational, or technical environment.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Security Assessment and Authorization Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 
@@ -1228,12 +1270,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part a)
 
-#### CivicActions Responsibility
-
-CivicActions will develop a security assessment plan (SAP) that describes the security controls and control enhancements under assessment, assessment procedures used to determine effectiveness, the assessment environment, the assessment team, and the assessment roles and responsibilities.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The LINCS Technology Project follows the U. S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures.  The LINCS Technology Project will conduct annual security assessments to comply with FISMA and NIST regulations. The Department will draw on NIST Special Publications 800-53A security controls to complete the assessment. All controls and sub-set security controls will be evaluated and a risk assessment will be conducted. The scope of the assessment includes:
@@ -1243,6 +1279,12 @@ The LINCS Technology Project follows the U. S. Department of Education Informati
 2. Assessment procedures to be used to determine security control effectiveness
 
 3. Assessment environment, assessment team, and assessment roles and responsibilities
+
+
+
+#### CivicActions Responsibility
+
+CivicActions will develop a security assessment plan (SAP) that describes the security controls and control enhancements under assessment, assessment procedures used to determine effectiveness, the assessment environment, the assessment team, and the assessment roles and responsibilities.
 
 
 
@@ -1258,15 +1300,15 @@ All controls assigned and documented in this System Security Plan (SSP) will be 
 
 ### Part c)
 
-#### CivicActions Responsibility
-
-CivicActions will produce a security assessment report that documents the results of the assessment. The Security Assessment Report must contain the results of the assessment, and may also contain recommendations and suggestions for plans of actions and milestones (POA&Ms).
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The LINCS Authorizing Official or Designated Representative will create a Security Assessment Report (SAR). A full assessment shall be conducted by an independent third party assessor at least every three years.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions will produce a security assessment report that documents the results of the assessment. The Security Assessment Report must contain the results of the assessment, and may also contain recommendations and suggestions for plans of actions and milestones (POA&Ms).
 
 
 
@@ -1316,6 +1358,12 @@ This control is not applicable. CivicActions systems do not have system intercon
 > Security control type: Hybrid
 
 
+#### LINCS specific control or LINCS Responsibility
+
+The LINCS Technology Project follows the U.S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures in managing POA&Ms.
+
+
+
 #### CivicActions Responsibility
 
 CivicActions documents all deficiencies and vulnerabilities identified during the security certification and/or continuous monitoring phase (via security assessment, vulnerability scanning, risk assessment, etc.) within the Plan of Action and Milestones (POA&M).
@@ -1333,12 +1381,6 @@ The POA&M document provides a platform for CivicActions to monitor and track the
 * Recommended mitigation strategy
 
 POA&Ms are tracked throughout the lifecycle of the system until its mitigation. All POA&Ms are reviewed on a monthly basis by CivicActions Information System Security Officer to ensure all mitigation strategies are continuing as documented.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-The LINCS Technology Project follows the U.S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures in managing POA&Ms.
 
 
 
@@ -1484,17 +1526,17 @@ Not applicable: There are no internal systems that connect to the FedRAMP certif
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel a configuration management policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Configuration Management (CM) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The configuration management policy and procedures are formally documented in the LINCS Technology Project Configuration Management Plan (CMP), which provides the roles and responsibilities as it pertains to physical and environmental protection. It defines responsibilities for the implementation and oversight of the guidance contained herein. The Department reviews and updates the policy as necessary.
 
 Additional information is contained within the Department of Education, Handbook forInformation Technology Security Configuration Management Planning Procedures (Handbook OCIO-11).
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel a configuration management policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Configuration Management (CM) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 
@@ -1513,17 +1555,17 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
+#### LINCS specific control or LINCS Responsibility
+
+A CM process has been established and documented in the LINCS Technology Project CMP. All updates are made in accordance with the procedures outlined in the CMP.  The CM process establishes a baseline of hardware, software, firmware and documentation, as well as changes thereto, throughout the development and life cycle of the information system. CM ensures the control of the information system through its life cycle. It assures that additions, deletions, or changes made to the LINCS Technology Project system do not unintentionally or unknowingly diminish security. If the change is major, the security of the system must be re-analyzed.
+
+
+
 #### Drupal specific control support
 
 The baseline configuration is maintained in Git and described in the Configuration Management Plan, which describes the change workflow and software configuration. In the context of Security Configuration Management, the baseline configuration is a collection of formally approved configuration state(s) of one or more configuration items ("features") that compose the system. The baseline configuration is used to restore and serves as the basis against which the next change or set of changes to the system is made.
 
 The features for the system are maintained in the website's source code, which is managed in git, a source code version control system. Once the source code is updated, git maintains the new version of staged code once committed in the git repository as the new baseline. All code prior to it being staged is documented, tested and approved by CivicActions Development, which is described in control SA-3. The production environment is configured to take database snapshots daily.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-A CM process has been established and documented in the LINCS Technology Project CMP. All updates are made in accordance with the procedures outlined in the CMP.  The CM process establishes a baseline of hardware, software, firmware and documentation, as well as changes thereto, throughout the development and life cycle of the information system. CM ensures the control of the information system through its life cycle. It assures that additions, deletions, or changes made to the LINCS Technology Project system do not unintentionally or unknowingly diminish security. If the change is major, the security of the system must be re-analyzed.
 
 
 
@@ -1717,15 +1759,15 @@ CivicActions tests and validates changes to the system before implementing the c
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-Security impact analysis is conducted and documented within the Change Request (CR) process described in in CM-3(b). All proposed configuration-controlled changes to the application are tested first in a sandboxed development environment before being pushed to a staging environment to be tested by another developer and by the Engineering team prior to final approval from CCB to move changes to the production environment.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 An Information Security Program is in place to ensure all security-centric impacts to the LINCS Technology Project are properly analyzed and conducted by personnel with information security responsibilities (i.e., LINCS SSO, IT Security Officer, etc.). These individuals have the appropriate skills and technical expertise to analyze the changes to the LINCS Technology Project and their associated security ramifications. In support of continuous monitoring and to ensure the LINCS Technology system lifecycle is fully sustained, a risk assessment process, be it formal or informal, is performed when changes are occur. This ensures the Department understands the security impacts and can determine if additional security controls are required.
+
+
+
+#### CivicActions Responsibility
+
+Security impact analysis is conducted and documented within the Change Request (CR) process described in in CM-3(b). All proposed configuration-controlled changes to the application are tested first in a sandboxed development environment before being pushed to a staging environment to be tested by another developer and by the Engineering team prior to final approval from CCB to move changes to the production environment.
 
 
 
@@ -1831,15 +1873,15 @@ The LINCS Technology Project is configured in compliance with the applicable bas
 
 ### Part b)
 
-#### CivicActions Responsibility
-
-CivicActions developers follow security best practices according to the guidelines set by CivicActions Information Security.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 Configuration settings are implemented, monitored, and controlled in accordance with the organizational Configuration Management Plan for the security configuration management processes and tools.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions developers follow security best practices according to the guidelines set by CivicActions Information Security.
 
 
 
@@ -2050,17 +2092,17 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel a contingency planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Contingency Planning (CP) Policy and Procedure that  can be found in the CivicActions Github repository at <https://github.com/NuCivic/healthdata/wiki/contingency-plan> also: <https://github.com/NuCivic/healthdata/wiki/contingency-plan-word>
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department of Education developed, documented and disseminated to personnel a contingency planning policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls. The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
 
 The CivicActions ISSO is responsible for reviewing and updating the Contingency Planning Policy and Procedures annually. The Chief Operating Officer is responsible for approving Contingency Planning.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel a contingency planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Contingency Planning (CP) Policy and Procedure that  can be found in the CivicActions Github repository at <https://github.com/NuCivic/healthdata/wiki/contingency-plan> also: <https://github.com/NuCivic/healthdata/wiki/contingency-plan-word>
 
 
 
@@ -2312,17 +2354,17 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel an identification and authentication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained the CivicActions Identification and Authentication (IA) Policy. This document can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department of Education developed, documented and disseminated to personnel an identification and authentication policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
 
 The CivicActions ISSO is responsible for reviewing and updating Identification and Authentication Policy and Procedures annually. The Chief Operating Officer is responsible for approving Identification and Authentication. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel an identification and authentication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained the CivicActions Identification and Authentication (IA) Policy. This document can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 
@@ -2341,14 +2383,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### Drupal specific control support
-
-CivicActions users of the system are required to identify and authenticate in order to access any functions of the information system beyond viewing and downloading the publicly available website content that is available to all anonymous website visitors. Users who are assigned to CivicActions require the appropriate authorization described in AC-2. CivicActions users authenticate using the standard Drupal login protocol prior to using the LINCS services. LINCS user roles are described in AC-3.
-
-To access the website as an authenticated user, front-end users of the application must first request and be given a login account with a unique username, password and email address. Login accounts can only be created by existing website users with the role of either Administrator or Site Manager. Users with those roles also assign roles to each login account that govern the user's ability to create, publish, update or delete website content such as blog entries, datasets and data resource files.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 LINCS Access: Site Managers and End Users
@@ -2356,6 +2390,14 @@ LINCS Access: Site Managers and End Users
 * Site Manager access to web-accessible components of lincs.ed.gov is limited. Full access to web-accessible components is only available to CivicActions administrators.
 
 * End Users, typically members of the public, have read-only access to view and download data resources published on lincs.ed.gov and do not need or receive user accounts. End users are also allowed to submit website feedback, but all submitted feedback is moderated by an LINCS Site Manager before it is published.
+
+
+
+#### Drupal specific control support
+
+CivicActions users of the system are required to identify and authenticate in order to access any functions of the information system beyond viewing and downloading the publicly available website content that is available to all anonymous website visitors. Users who are assigned to CivicActions require the appropriate authorization described in AC-2. CivicActions users authenticate using the standard Drupal login protocol prior to using the LINCS services. LINCS user roles are described in AC-3.
+
+To access the website as an authenticated user, front-end users of the application must first request and be given a login account with a unique username, password and email address. Login accounts can only be created by existing website users with the role of either Administrator or Site Manager. Users with those roles also assign roles to each login account that govern the user's ability to create, publish, update or delete website content such as blog entries, datasets and data resource files.
 
 
 
@@ -2421,15 +2463,15 @@ CivicActions systems do not support or allow device-to-device communications.
 
 ### Part a)
 
-#### Drupal specific control support
-
-Upon account creation, the Drupal software assigns each user account a unique numerical user ID (uid). This uid is used internally by the system to track user actions such as content creation or editing. The numerical user IDs are never reused even if their user accounts are subsequently blocked or deleted.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 LINCS/DKANusers are assigned a unique identifier in the form of a unique username, password and email address for the LINCS system based on the system for allocating user accounts described in AC-2. Each request must be based on a business need and is limited to only the access requirements for that individual to perform his/her identified role within LINCS. Requests for identifier assignment follows the process described in AC-2 and are authorized to perform actions according to the user account roles described in AC-3.
+
+
+
+#### Drupal specific control support
+
+Upon account creation, the Drupal software assigns each user account a unique numerical user ID (uid). This uid is used internally by the system to track user actions such as content creation or editing. The numerical user IDs are never reused even if their user accounts are subsequently blocked or deleted.
 
 
 
@@ -2441,17 +2483,17 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part b)
 
+#### LINCS specific control or LINCS Responsibility
+
+Users assigned to system requiring access to the lincs.ed.gov system require authorization by the employee’s manager with LINCS’s admin group completing the the creation of the account.
+
+
+
 #### Drupal specific control support
 
 In accordance with CivicActions Identification and Authentication (IA) Policy <https://github.com/CivicActions/compliance-docs/blob/master/IA-Policy.md>, CivicActions internal users are uniquely identified by creation of an organizational account with a username based on each user's full first and last name.
 
 When Drupal user accounts are created, users' email addresses are verified by sending a single-use activation link to the user’s mailbox. The email recipient then uses the activation link to log in to the website and supply a password which must meet the system's password complexity requirements.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-Users assigned to system requiring access to the lincs.ed.gov system require authorization by the employee’s manager with LINCS’s admin group completing the the creation of the account.
 
 
 
@@ -2463,17 +2505,17 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part c)
 
-#### Drupal specific control support
-
-Identifiers for CivicActions internal personnel include a username based on the individual's full first and last name and are reviewed for uniqueness by the LINCS admin group when it approves creation of the user account.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 Once the initial Site Manager accounts are created for LINCS, they subsequently are responsible for assigning accounts and privileges to other customer users in their organization.
 
 Identifiers for devices that access the system use the same username, email address and password protocol as the identifiers provided to human users of the system and undergo the same process of review by the LINCS admin group. The LINCS admin group is responsible for assigning a unique username that identifies the device as well as an email address that can be used for account verification.
+
+
+
+#### Drupal specific control support
+
+Identifiers for CivicActions internal personnel include a username based on the individual's full first and last name and are reviewed for uniqueness by the LINCS admin group when it approves creation of the user account.
 
 
 
@@ -2516,19 +2558,19 @@ All user accounts are required to change their passwords every 90 days. The webs
 
 ### Part a)
 
-#### Drupal specific control support
-
-Refer to control AC-2 in this SSP for further details on account provisioning.
-
-CivicActions will create and maintain an initial Drupal Administrator (highest level of Drupal Account). New Administrators are able to provide additional Administrator access at their own discretion, and are ultimately responsible for managing their own Administrator and other user accounts that they create.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 Authentication for LINCS internal personnel are created during the personnel assignment process where requests are made to the LINCS admin group for proper access levels.  The LINCS admin group verifies the identity of the user. The website performs further verification by sending an email to the user's mailbox containing a single-use activation link which must be used to log in to the account for the first time and to create a password.
 
 Prior to issuing initial Drupal Site Manager (highest level of Client User Account) system credentials (user ID and initial password),  the CivicActions Implementation staff verifies the user’s request for access, typically during the initial kick-off call when all stakeholders are present. New Site Managers are able to provide additional Site Manager access at their own discretion, and are ultimately responsible for managing their own Site Manager and other user accounts that they create.
+
+
+
+#### Drupal specific control support
+
+Refer to control AC-2 in this SSP for further details on account provisioning.
+
+CivicActions will create and maintain an initial Drupal Administrator (highest level of Drupal Account). New Administrators are able to provide additional Administrator access at their own discretion, and are ultimately responsible for managing their own Administrator and other user accounts that they create.
 
 
 
@@ -2540,12 +2582,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part b)
 
-#### Drupal specific control support
-
-Internal initial password requirements set by CivicActions admins and ongoing password refreshes by internal user follow the requirements set in the Identification and Authentication Policy.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 Initial authenticator content (a unique email address – not previously used in any other account) is provided by the customer. CivicActions Implementation staff use that email address to provide the new user with Admin access. Before the Admin has access, they are required to create their own passwords; however, the passwords Admins choose must conform to the password criteria defined:
@@ -2553,6 +2589,12 @@ Initial authenticator content (a unique email address – not previously used in
 * Enforce password history = 24
 
 * Minimum password length = 15
+
+
+
+#### Drupal specific control support
+
+Internal initial password requirements set by CivicActions admins and ongoing password refreshes by internal user follow the requirements set in the Identification and Authentication Policy.
 
 
 
@@ -2567,12 +2609,6 @@ LINCS customers are responsible for provisioning and de-provisioning end user ac
 
 
 ### Part c)
-
-#### Drupal specific control support
-
-The system partially inherits this control from Drupal standard password strength mechanisms.
-
-
 
 #### LINCS specific control or LINCS Responsibility
 
@@ -2590,6 +2626,12 @@ When entering a user account password upon initial login to lincs.ed.gov, all us
 
 
 
+#### Drupal specific control support
+
+The system partially inherits this control from Drupal standard password strength mechanisms.
+
+
+
 #### Amazon Web Services (AWS) US-East/West control support
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  sufficient strength of authentication.
@@ -2597,14 +2639,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 
 ### Part d)
-
-#### Drupal specific control support
-
-The system partially inherits this control from Drupal standard password management.
-
-All password changes/resets are recorded in the website's "Drupal watchdog" logs.
-
-
 
 #### LINCS specific control or LINCS Responsibility
 
@@ -2624,6 +2658,14 @@ In accordance with lincs.ed.gov site configuration, the following implementation
 
 
 
+#### Drupal specific control support
+
+The system partially inherits this control from Drupal standard password management.
+
+All password changes/resets are recorded in the website's "Drupal watchdog" logs.
+
+
+
 #### Amazon Web Services (AWS) US-East/West control support
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  administrative procedures for initial authenticator distribution, for lost/compromised or damaged authenticators, and for revoking authenticators for CivicActions admin users of AWS.
@@ -2632,15 +2674,15 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part e)
 
-#### Drupal specific control support
-
-CivicActions/Drupal requires users to change their password upon initial login, and the application website enforces this. User accounts are assigned a randomly-generated and unguessable default password that is not shared with anyone, including site Administrators. Once the user logs in and creates a new password, the default password erased from the website's database.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 CivicActions application password re-use requirements are configurable in accordance with LINCS own security requirements. However, changing the password age requirement requires a code setting change that therefore needs to be planned and approved by CivicActions' Change Control Board before being implemented.
+
+
+
+#### Drupal specific control support
+
+CivicActions/Drupal requires users to change their password upon initial login, and the application website enforces this. User accounts are assigned a randomly-generated and unguessable default password that is not shared with anyone, including site Administrators. Once the user logs in and creates a new password, the default password erased from the website's database.
 
 
 
@@ -2704,9 +2746,9 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part i)
 
-#### Drupal specific control support
+#### LINCS specific control or LINCS Responsibility
 
-CivicActions internal users are required to take appropriate measures in the handling of passwords including:
+LINCS internal users are required to take appropriate measures in the handling of passwords including:
 
 * Not transmitting user names and passwords together in an unencrypted format
 
@@ -2718,9 +2760,9 @@ CivicActions internal users are required to take appropriate measures in the han
 
 
 
-#### LINCS specific control or LINCS Responsibility
+#### Drupal specific control support
 
-LINCS internal users are required to take appropriate measures in the handling of passwords including:
+CivicActions internal users are required to take appropriate measures in the handling of passwords including:
 
 * Not transmitting user names and passwords together in an unencrypted format
 
@@ -2775,15 +2817,15 @@ LINCS customers are responsible for provisioning and de-provisioning end user ac
 
 ### Part b)
 
-#### Drupal specific control support
-
-When required to change passwords, Drupal users are required to change their authenticator password by changing at least one character. Enforcement of this control is implemented through the website's software configuration.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 LINCS: All password requirements are set at the application level, and will apply to all website user accounts. Password requirements are not editable by Site Managers.
+
+
+
+#### Drupal specific control support
+
+When required to change passwords, Drupal users are required to change their authenticator password by changing at least one character. Enforcement of this control is implemented through the website's software configuration.
 
 
 
@@ -2815,15 +2857,15 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part d)
 
-#### Drupal specific control support
-
-The website requires all submitted passwords to comply with lifetime rules, as described above in IA-5(g).
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 LINCS: Password age requirements are configurable at the application level. The minimum age is set to 1 day, and the maximum age can be set to whatever LINCS requires to meet its own security requirements. However, changing the password age requirement requires a code setting change that therefore needs to be planned and approved by CivicActions' Change Control Board before being implemented.
+
+
+
+#### Drupal specific control support
+
+The website requires all submitted passwords to comply with lifetime rules, as described above in IA-5(g).
 
 
 
@@ -2999,12 +3041,6 @@ CivicActions does not utilize customer agency supplied PIV credentials for acces
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel an incident response policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Incident Response (IR) Policy and Procedure that can be found in the CivicActions Handbook Github repository at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan/>
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department of Education developed, documented and disseminated to personnel an incident response policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
@@ -3012,6 +3048,12 @@ The Department of Education developed, documented and disseminated to personnel 
 The CivicActions ISSO is responsible for reviewing and updating the Incident Response Plan Policy and Procedures annually. The Chief Operating Officer is responsible for approving Incident Response Plan.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
 
 The DKAN Incident Response (IR) Policy and Procedures can be found in the CivicActions Github repository at <https://github.com/NuCivic/healthdata/wiki/incident-response-plan>.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel an incident response policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Incident Response (IR) Policy and Procedure that can be found in the CivicActions Handbook Github repository at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan/>
 
 
 
@@ -3061,19 +3103,19 @@ All CivicActions users of the LINCS system with incident response responsibiliti
 
 ### Part a)
 
-#### CivicActions Responsibility
-
-The Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) explains the process for incident handling, and discusses preparation, detection and analysis, containment, eradication, and recovery.
-
-Preparation activities includes all CivicActions internal users are trained if their role includes incident response. Detection monitoring tools providing notification to incident response personnel for analysis and action.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Incident Response Plan (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>) explains the process for incident handling, and discusses preparation, detection and analysis, containment, eradication, and recovery.
 
 Preparation activities includes all CivicActions and LINCS internal users are trained if their role includes incident response. Detection monitoring tools providing notification to incident response personnel for analysis and action. Containment, eradication and recovery activities include AWS inherited fixes and LINCS system administrators blocking IP address at the source of the incident and clearing caches.
+
+
+
+#### CivicActions Responsibility
+
+The Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) explains the process for incident handling, and discusses preparation, detection and analysis, containment, eradication, and recovery.
+
+Preparation activities includes all CivicActions internal users are trained if their role includes incident response. Detection monitoring tools providing notification to incident response personnel for analysis and action.
 
 
 
@@ -3203,15 +3245,15 @@ CivicActions Customer Support team provides first response assistance to any ext
 
 ### Part a)
 
-#### CivicActions Responsibility
-
-CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>), includes a comprehensive incident response program, which details the implementation of procedures and tools required for incident handling. The incident response program details the roles and responsibilities of CivicActions IR Team. The IR Team includes members from Security, Engineering, and Drupal Engineering teams.  Incident response plays a pivotal role in monitoring, detecting and handling security incidents of the entire information system. The IRP details categorization of incidents in accordance with NIST 800-61 and accordingly documents and reports incidents. The IRP is reviewed annually and updated as needed by ISSO, with the assistance of the incident response team.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 DKAN/LINCS Incident Response Plan (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>), includes a comprehensive incident response program, which details the implementation of procedures and tools required for incident handling. The incident response program details the roles and responsibilities of CivicActions IR Team. The IR Team includes members from Security, Engineering, and Drupal Engineering teams.  Incident response plays a pivotal role in monitoring, detecting and handling security incidents of the entire information system. The IRP details categorization of incidents in accordance with NIST 800-61 and accordingly documents and reports incidents. The IRP is reviewed annually and updated as needed by ISSO, with the assistance of the incident response team.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>), includes a comprehensive incident response program, which details the implementation of procedures and tools required for incident handling. The incident response program details the roles and responsibilities of CivicActions IR Team. The IR Team includes members from Security, Engineering, and Drupal Engineering teams.  Incident response plays a pivotal role in monitoring, detecting and handling security incidents of the entire information system. The IRP details categorization of incidents in accordance with NIST 800-61 and accordingly documents and reports incidents. The IRP is reviewed annually and updated as needed by ISSO, with the assistance of the incident response team.
 
 
 
@@ -3222,6 +3264,12 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 
 ### Part b)
+
+#### LINCS specific control or LINCS Responsibility
+
+The DKAN/LINCS Incident Response Plan (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>) is stored in the CivicActions Github repository. CivicActions personnel who are a part of the incident response team will have access to the plan in order to review any updates made to the IR Plan, including CivicActions Security, DKAN Engineering, and Engineering teams.
+
+
 
 #### CivicActions Responsibility
 
@@ -3239,12 +3287,6 @@ The CivicActions Incident Response Plan
 
 
 
-#### LINCS specific control or LINCS Responsibility
-
-The DKAN/LINCS Incident Response Plan (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>) is stored in the CivicActions Github repository. CivicActions personnel who are a part of the incident response team will have access to the plan in order to review any updates made to the IR Plan, including CivicActions Security, DKAN Engineering, and Engineering teams.
-
-
-
 #### Amazon Web Services (AWS) US-East/West control support
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  incident response plan.
@@ -3253,15 +3295,15 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part c)
 
-#### CivicActions Responsibility
-
-The CivicActions CISO and IR team is responsible for reviewing the Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) annually.  The entire incident response team will sit down and review the plan and update it as necessary. Ultimately, the CISO has final say and will approve all updates to the plan team.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The LINCS ISSO and the CivicActions IR team is responsible for reviewing the Incident Response Plan (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>) annually.  The entire incident response team will sit down and review the plan and update it as necessary. Ultimately, the ISSO has final say and will approve all updates to the plan team.
+
+
+
+#### CivicActions Responsibility
+
+The CivicActions CISO and IR team is responsible for reviewing the Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) annually.  The entire incident response team will sit down and review the plan and update it as necessary. Ultimately, the CISO has final say and will approve all updates to the plan team.
 
 
 
@@ -3287,15 +3329,15 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part e)
 
-#### CivicActions Responsibility
-
-Modifications to the IR Plan are conducted by the IR team (CivicActions Security, Operations and Engineering teams) and communicated to the IR team and designated personnel, including the System Owner and ISSO.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 Modifications to the IR Plan are conducted by the IR team (CivicActions Security, DKAN Engineering, and Engineering teams) and communicated to the IR team and LINCS designated personnel, including the System Owner and ISSO.
+
+
+
+#### CivicActions Responsibility
+
+Modifications to the IR Plan are conducted by the IR team (CivicActions Security, Operations and Engineering teams) and communicated to the IR team and designated personnel, including the System Owner and ISSO.
 
 
 
@@ -3330,17 +3372,17 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel a system maintenance policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in in the CivicActions Maintenance (MA) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department of Education developed, documented and disseminated to personnel a system maintenance policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
 
 The CivicActions ISSO is responsible for reviewing and updating the Maintenance Policy and Procedures annually. The Chief Operating Officer is responsible for approving Maintenance. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel a system maintenance policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in in the CivicActions Maintenance (MA) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 
@@ -3476,17 +3518,17 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel a media protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Media Protection (MP) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department of Education developed, documented and disseminated to personnel a media protection policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
 
 The CivicActions ISSO is responsible for reviewing and updating the Media Protection Policy and Procedures annually. The Chief Operating Officer is responsible for approving Media Protection.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel a media protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Media Protection (MP) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 
@@ -3704,17 +3746,17 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel a system planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Planning (PL) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department of Education developed, documented and disseminated to personnel a system planning  policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
 
 The CivicActions ISSO is responsible for reviewing and updating the Planning Policy and Procedures annually. The Chief Operating Officer is responsible for approving Planning.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel a system planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Planning (PL) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
 
@@ -3873,17 +3915,17 @@ CivicActions employees re-sign the revised/updated Acceptable Use Policy/Rules o
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Personnel Security (PS) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department of Education developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
 
 The CivicActions ISSO is responsible for reviewing and updating the Personnel Security Policy and Procedures annually. The Chief Operating Officer is responsible for approving Personnel Security.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Personnel Security (PS) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 
@@ -4089,25 +4131,19 @@ Access agreements, including the Acceptable Use Policy, are reviewed at least an
 
 ### Part a)
 
-#### CivicActions Responsibility
-
-Third party personnel are required to following the same process and requirements as CivicActions employees. The Chief Operating Officer may also require that a background check be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public. In these instances, the Chief Operating Officer will instruct the Director of Human Resources to conduct a background check before granting access to the information system.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 Third party personnel are required to following the same process and requirements as LINCS employees. The Chief Operating Officer may also require that a background check be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public. In these instances, the Chief Operating Officer will instruct the Director of Human Resources to conduct a background check before granting access to the information system.
 
 
 
-### Part b)
-
 #### CivicActions Responsibility
 
-CivicActions HR reviews and updates the access agreements annually or whenever there is a significant change to the information system or information being processed; and whenever there is a change to the agreements’ verbiage.
+Third party personnel are required to following the same process and requirements as CivicActions employees. The Chief Operating Officer may also require that a background check be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public. In these instances, the Chief Operating Officer will instruct the Director of Human Resources to conduct a background check before granting access to the information system.
 
 
+
+### Part b)
 
 #### LINCS specific control or LINCS Responsibility
 
@@ -4115,13 +4151,13 @@ LINCS HR reviews and updates the access agreements annually or whenever there is
 
 
 
-### Part c)
-
 #### CivicActions Responsibility
 
-All personnel security requirements are documented and include things such as signing the Acceptable Use Policy (AUP) and taking security awareness training.
+CivicActions HR reviews and updates the access agreements annually or whenever there is a significant change to the information system or information being processed; and whenever there is a change to the agreements’ verbiage.
 
 
+
+### Part c)
 
 #### LINCS specific control or LINCS Responsibility
 
@@ -4129,13 +4165,13 @@ All personnel security requirements are documented within the SSP and include th
 
 
 
-### Part d)
-
 #### CivicActions Responsibility
 
-For personnel transfers and terminations of third-party personnel with access to the CivicActions systems, third parties must notify the CivicActions Director of Human Resources the same day. The Director of Human Resources follows the same employee transfer and/or termination procedure(s) as if the Third Party Personnel were CivicActions employees.
+All personnel security requirements are documented and include things such as signing the Acceptable Use Policy (AUP) and taking security awareness training.
 
 
+
+### Part d)
 
 #### LINCS specific control or LINCS Responsibility
 
@@ -4143,17 +4179,23 @@ For personnel transfers and terminations of employees with access to the LINCS s
 
 
 
-### Part e)
-
 #### CivicActions Responsibility
 
-Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. The CivicActions ISSO is responsible for coordinating with the Contracts Manager and managers of external systems to include appropriate and tailored compliance verification language in contracts as required. Third-party personnel are continuously monitored to ensure compliance with personnel security requirements.
+For personnel transfers and terminations of third-party personnel with access to the CivicActions systems, third parties must notify the CivicActions Director of Human Resources the same day. The Director of Human Resources follows the same employee transfer and/or termination procedure(s) as if the Third Party Personnel were CivicActions employees.
 
 
+
+### Part e)
 
 #### LINCS specific control or LINCS Responsibility
 
 Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. The LINCS ISSO is responsible for coordinating with the Cloud Operations Manager and the Contracts Manager to include appropriate and tailored compliance verification language in contracts as required.  Third-party personnel are continuously monitored to ensure compliance with personnel security requirements.
+
+
+
+#### CivicActions Responsibility
+
+Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. The CivicActions ISSO is responsible for coordinating with the Contracts Manager and managers of external systems to include appropriate and tailored compliance verification language in contracts as required. Third-party personnel are continuously monitored to ensure compliance with personnel security requirements.
 
 
 
@@ -4193,17 +4235,17 @@ When employee sanctions processes are initiated, the Director of Human Resources
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel a risk assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Risk Assessment (RA) Policy and Procedure CivicActions that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department of Education developed, documented and disseminated to personnel a risk assessment policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
 
 The CivicActions ISSO is responsible for reviewing and updating the Risk Assessment Policy and Procedures annually. The Chief Operating Officer is responsible for approving Risk Assessment.  All procedures are consistent with requirements of FISMA, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel a risk assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Risk Assessment (RA) Policy and Procedure CivicActions that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
 
@@ -4411,17 +4453,17 @@ Results of vulnerability scans and security assesments and related continuous mo
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained the CivicActions System and Services Acquisition (SA) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department of Education developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
 
 The CivicActions ISSO is responsible for reviewing and updating the System and Services Acquisition Policy and Procedures annually. The Chief Operating Officer is responsible for approving System and Services Acquisition.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained the CivicActions System and Services Acquisition (SA) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
 
@@ -4654,15 +4696,15 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part c)
 
-#### CivicActions Responsibility
-
-CivicActions requires all software and hardware products undergo a security risk assessment prior to purchase. This assessment evaluates the product based on the vendor’s security practices, policies, and past performance. It also details the potential maintenance and end-of-life ramifications with regards to security.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 LINCS requires all software and hardware products undergo a security risk assessment prior to purchase. This assessment evaluates the product based on the vendor’s security practices, policies, and past performance. It also details the potential maintenance and end-of-life ramifications with regards to security.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions requires all software and hardware products undergo a security risk assessment prior to purchase. This assessment evaluates the product based on the vendor’s security practices, policies, and past performance. It also details the potential maintenance and end-of-life ramifications with regards to security.
 
 
 
@@ -4674,17 +4716,17 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part d)
 
-#### CivicActions Responsibility
-
-The CivicActions ISSO is responsible for determining the security documentation that must be included in information system or services acquisition contracts. In determining these requirements the CivicActions ISSO coordinates with the Development Operations Manager, Customer Support Engineering Manager, the Contracts Manager, and if necessary the Chief Operating Officer.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The LINCS ISSO is responsible for determining the security documentation that must be included in information system or services acquisition contracts.  In determining these requirements the LINCS ISSO coordinates with the Development Operations Manager, Customer Support Engineering Manager, the Contracts Manager, and if necessary the Chief Operating Officer.
 
 The LINCS ISSO ensures all components of the LINCS system system boundary are properly documented to meet the CivicActions Acquisition Security Policy. Prior to testing and deployment to production.
+
+
+
+#### CivicActions Responsibility
+
+The CivicActions ISSO is responsible for determining the security documentation that must be included in information system or services acquisition contracts. In determining these requirements the CivicActions ISSO coordinates with the Development Operations Manager, Customer Support Engineering Manager, the Contracts Manager, and if necessary the Chief Operating Officer.
 
 
 
@@ -4720,17 +4762,17 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part g)
 
-#### CivicActions Responsibility
-
-The CivicActions Acquisition Security Policy contains the process for determining acceptance criteria for all system software and application services.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The LINCS System and Services Acquisition Policy contains the process for determining acceptance criteria for all LINCS system software and services.
 
 The LINCS organization includes the use of Common Criteria (ISO/IEC 15408) evaluated products in all acquisition contracts in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs.
+
+
+
+#### CivicActions Responsibility
+
+The CivicActions Acquisition Security Policy contains the process for determining acceptance criteria for all system software and application services.
 
 
 
@@ -5053,17 +5095,17 @@ CivicActions developed in-house code requires a peer review of any change to the
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel a system and communication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Communications Protection (SC) Policy CivicActions document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department of Education developed, documented and disseminated to personnel a system and communication policy  that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
 
 The CivicActions ISSO is responsible for reviewing and updating the System and Communications Protection Policy and Procedures annually.  The Chief Operating Officer is responsible for approving System and Communications Protection. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel a system and communication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Communications Protection (SC) Policy CivicActions document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
 
@@ -5082,15 +5124,15 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### Drupal specific control support
-
-Drupal has a manual ability to block IP addresses in cases where attacks bypass cloud protection. This is managed by the support team.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 Denial of service (DoS) attacks impair the performance of network devices and server hosts, and thence the application itself.  LINCS relies on the AWS platform for the protection of DoS attacks defined by LINCS SC-5.
+
+
+
+#### Drupal specific control support
+
+Drupal has a manual ability to block IP addresses in cases where attacks bypass cloud protection. This is managed by the support team.
 
 
 
@@ -5285,17 +5327,17 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Information Integrity (SI) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department of Education developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
 
 The CivicActions ISSO is responsible for reviewing and updating the System and Information Integrity Policy and Procedures annually. The Chief Operating Officer is responsible for approving System and Information Integrity. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Information Integrity (SI) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
 

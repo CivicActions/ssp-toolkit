@@ -9,17 +9,17 @@
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel an identification and authentication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained the CivicActions Identification and Authentication (IA) Policy. This document can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department of Education developed, documented and disseminated to personnel an identification and authentication policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
 
 The CivicActions ISSO is responsible for reviewing and updating Identification and Authentication Policy and Procedures annually. The Chief Operating Officer is responsible for approving Identification and Authentication. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel an identification and authentication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained the CivicActions Identification and Authentication (IA) Policy. This document can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 
@@ -38,14 +38,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### Drupal specific control support
-
-CivicActions users of the system are required to identify and authenticate in order to access any functions of the information system beyond viewing and downloading the publicly available website content that is available to all anonymous website visitors. Users who are assigned to CivicActions require the appropriate authorization described in AC-2. CivicActions users authenticate using the standard Drupal login protocol prior to using the LINCS services. LINCS user roles are described in AC-3.
-
-To access the website as an authenticated user, front-end users of the application must first request and be given a login account with a unique username, password and email address. Login accounts can only be created by existing website users with the role of either Administrator or Site Manager. Users with those roles also assign roles to each login account that govern the user's ability to create, publish, update or delete website content such as blog entries, datasets and data resource files.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 LINCS Access: Site Managers and End Users
@@ -53,6 +45,14 @@ LINCS Access: Site Managers and End Users
 * Site Manager access to web-accessible components of lincs.ed.gov is limited. Full access to web-accessible components is only available to CivicActions administrators.
 
 * End Users, typically members of the public, have read-only access to view and download data resources published on lincs.ed.gov and do not need or receive user accounts. End users are also allowed to submit website feedback, but all submitted feedback is moderated by an LINCS Site Manager before it is published.
+
+
+
+#### Drupal specific control support
+
+CivicActions users of the system are required to identify and authenticate in order to access any functions of the information system beyond viewing and downloading the publicly available website content that is available to all anonymous website visitors. Users who are assigned to CivicActions require the appropriate authorization described in AC-2. CivicActions users authenticate using the standard Drupal login protocol prior to using the LINCS services. LINCS user roles are described in AC-3.
+
+To access the website as an authenticated user, front-end users of the application must first request and be given a login account with a unique username, password and email address. Login accounts can only be created by existing website users with the role of either Administrator or Site Manager. Users with those roles also assign roles to each login account that govern the user's ability to create, publish, update or delete website content such as blog entries, datasets and data resource files.
 
 
 
@@ -118,15 +118,15 @@ CivicActions systems do not support or allow device-to-device communications.
 
 ### Part a)
 
-#### Drupal specific control support
-
-Upon account creation, the Drupal software assigns each user account a unique numerical user ID (uid). This uid is used internally by the system to track user actions such as content creation or editing. The numerical user IDs are never reused even if their user accounts are subsequently blocked or deleted.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 LINCS/DKANusers are assigned a unique identifier in the form of a unique username, password and email address for the LINCS system based on the system for allocating user accounts described in AC-2. Each request must be based on a business need and is limited to only the access requirements for that individual to perform his/her identified role within LINCS. Requests for identifier assignment follows the process described in AC-2 and are authorized to perform actions according to the user account roles described in AC-3.
+
+
+
+#### Drupal specific control support
+
+Upon account creation, the Drupal software assigns each user account a unique numerical user ID (uid). This uid is used internally by the system to track user actions such as content creation or editing. The numerical user IDs are never reused even if their user accounts are subsequently blocked or deleted.
 
 
 
@@ -138,17 +138,17 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part b)
 
+#### LINCS specific control or LINCS Responsibility
+
+Users assigned to system requiring access to the lincs.ed.gov system require authorization by the employee’s manager with LINCS’s admin group completing the the creation of the account.
+
+
+
 #### Drupal specific control support
 
 In accordance with CivicActions Identification and Authentication (IA) Policy <https://github.com/CivicActions/compliance-docs/blob/master/IA-Policy.md>, CivicActions internal users are uniquely identified by creation of an organizational account with a username based on each user's full first and last name.
 
 When Drupal user accounts are created, users' email addresses are verified by sending a single-use activation link to the user’s mailbox. The email recipient then uses the activation link to log in to the website and supply a password which must meet the system's password complexity requirements.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-Users assigned to system requiring access to the lincs.ed.gov system require authorization by the employee’s manager with LINCS’s admin group completing the the creation of the account.
 
 
 
@@ -160,17 +160,17 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part c)
 
-#### Drupal specific control support
-
-Identifiers for CivicActions internal personnel include a username based on the individual's full first and last name and are reviewed for uniqueness by the LINCS admin group when it approves creation of the user account.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 Once the initial Site Manager accounts are created for LINCS, they subsequently are responsible for assigning accounts and privileges to other customer users in their organization.
 
 Identifiers for devices that access the system use the same username, email address and password protocol as the identifiers provided to human users of the system and undergo the same process of review by the LINCS admin group. The LINCS admin group is responsible for assigning a unique username that identifies the device as well as an email address that can be used for account verification.
+
+
+
+#### Drupal specific control support
+
+Identifiers for CivicActions internal personnel include a username based on the individual's full first and last name and are reviewed for uniqueness by the LINCS admin group when it approves creation of the user account.
 
 
 
@@ -213,19 +213,19 @@ All user accounts are required to change their passwords every 90 days. The webs
 
 ### Part a)
 
-#### Drupal specific control support
-
-Refer to control AC-2 in this SSP for further details on account provisioning.
-
-CivicActions will create and maintain an initial Drupal Administrator (highest level of Drupal Account). New Administrators are able to provide additional Administrator access at their own discretion, and are ultimately responsible for managing their own Administrator and other user accounts that they create.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 Authentication for LINCS internal personnel are created during the personnel assignment process where requests are made to the LINCS admin group for proper access levels.  The LINCS admin group verifies the identity of the user. The website performs further verification by sending an email to the user's mailbox containing a single-use activation link which must be used to log in to the account for the first time and to create a password.
 
 Prior to issuing initial Drupal Site Manager (highest level of Client User Account) system credentials (user ID and initial password),  the CivicActions Implementation staff verifies the user’s request for access, typically during the initial kick-off call when all stakeholders are present. New Site Managers are able to provide additional Site Manager access at their own discretion, and are ultimately responsible for managing their own Site Manager and other user accounts that they create.
+
+
+
+#### Drupal specific control support
+
+Refer to control AC-2 in this SSP for further details on account provisioning.
+
+CivicActions will create and maintain an initial Drupal Administrator (highest level of Drupal Account). New Administrators are able to provide additional Administrator access at their own discretion, and are ultimately responsible for managing their own Administrator and other user accounts that they create.
 
 
 
@@ -237,12 +237,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part b)
 
-#### Drupal specific control support
-
-Internal initial password requirements set by CivicActions admins and ongoing password refreshes by internal user follow the requirements set in the Identification and Authentication Policy.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 Initial authenticator content (a unique email address – not previously used in any other account) is provided by the customer. CivicActions Implementation staff use that email address to provide the new user with Admin access. Before the Admin has access, they are required to create their own passwords; however, the passwords Admins choose must conform to the password criteria defined:
@@ -250,6 +244,12 @@ Initial authenticator content (a unique email address – not previously used in
 * Enforce password history = 24
 
 * Minimum password length = 15
+
+
+
+#### Drupal specific control support
+
+Internal initial password requirements set by CivicActions admins and ongoing password refreshes by internal user follow the requirements set in the Identification and Authentication Policy.
 
 
 
@@ -264,12 +264,6 @@ LINCS customers are responsible for provisioning and de-provisioning end user ac
 
 
 ### Part c)
-
-#### Drupal specific control support
-
-The system partially inherits this control from Drupal standard password strength mechanisms.
-
-
 
 #### LINCS specific control or LINCS Responsibility
 
@@ -287,6 +281,12 @@ When entering a user account password upon initial login to lincs.ed.gov, all us
 
 
 
+#### Drupal specific control support
+
+The system partially inherits this control from Drupal standard password strength mechanisms.
+
+
+
 #### Amazon Web Services (AWS) US-East/West control support
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  sufficient strength of authentication.
@@ -294,14 +294,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 
 ### Part d)
-
-#### Drupal specific control support
-
-The system partially inherits this control from Drupal standard password management.
-
-All password changes/resets are recorded in the website's "Drupal watchdog" logs.
-
-
 
 #### LINCS specific control or LINCS Responsibility
 
@@ -321,6 +313,14 @@ In accordance with lincs.ed.gov site configuration, the following implementation
 
 
 
+#### Drupal specific control support
+
+The system partially inherits this control from Drupal standard password management.
+
+All password changes/resets are recorded in the website's "Drupal watchdog" logs.
+
+
+
 #### Amazon Web Services (AWS) US-East/West control support
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  administrative procedures for initial authenticator distribution, for lost/compromised or damaged authenticators, and for revoking authenticators for CivicActions admin users of AWS.
@@ -329,15 +329,15 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part e)
 
-#### Drupal specific control support
-
-CivicActions/Drupal requires users to change their password upon initial login, and the application website enforces this. User accounts are assigned a randomly-generated and unguessable default password that is not shared with anyone, including site Administrators. Once the user logs in and creates a new password, the default password erased from the website's database.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 CivicActions application password re-use requirements are configurable in accordance with LINCS own security requirements. However, changing the password age requirement requires a code setting change that therefore needs to be planned and approved by CivicActions' Change Control Board before being implemented.
+
+
+
+#### Drupal specific control support
+
+CivicActions/Drupal requires users to change their password upon initial login, and the application website enforces this. User accounts are assigned a randomly-generated and unguessable default password that is not shared with anyone, including site Administrators. Once the user logs in and creates a new password, the default password erased from the website's database.
 
 
 
@@ -401,9 +401,9 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part i)
 
-#### Drupal specific control support
+#### LINCS specific control or LINCS Responsibility
 
-CivicActions internal users are required to take appropriate measures in the handling of passwords including:
+LINCS internal users are required to take appropriate measures in the handling of passwords including:
 
 * Not transmitting user names and passwords together in an unencrypted format
 
@@ -415,9 +415,9 @@ CivicActions internal users are required to take appropriate measures in the han
 
 
 
-#### LINCS specific control or LINCS Responsibility
+#### Drupal specific control support
 
-LINCS internal users are required to take appropriate measures in the handling of passwords including:
+CivicActions internal users are required to take appropriate measures in the handling of passwords including:
 
 * Not transmitting user names and passwords together in an unencrypted format
 
@@ -472,15 +472,15 @@ LINCS customers are responsible for provisioning and de-provisioning end user ac
 
 ### Part b)
 
-#### Drupal specific control support
-
-When required to change passwords, Drupal users are required to change their authenticator password by changing at least one character. Enforcement of this control is implemented through the website's software configuration.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 LINCS: All password requirements are set at the application level, and will apply to all website user accounts. Password requirements are not editable by Site Managers.
+
+
+
+#### Drupal specific control support
+
+When required to change passwords, Drupal users are required to change their authenticator password by changing at least one character. Enforcement of this control is implemented through the website's software configuration.
 
 
 
@@ -512,15 +512,15 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part d)
 
-#### Drupal specific control support
-
-The website requires all submitted passwords to comply with lifetime rules, as described above in IA-5(g).
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 LINCS: Password age requirements are configurable at the application level. The minimum age is set to 1 day, and the maximum age can be set to whatever LINCS requires to meet its own security requirements. However, changing the password age requirement requires a code setting change that therefore needs to be planned and approved by CivicActions' Change Control Board before being implemented.
+
+
+
+#### Drupal specific control support
+
+The website requires all submitted passwords to comply with lifetime rules, as described above in IA-5(g).
 
 
 

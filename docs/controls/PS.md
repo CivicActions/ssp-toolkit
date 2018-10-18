@@ -9,17 +9,17 @@
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Personnel Security (PS) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department of Education developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
 
 The CivicActions ISSO is responsible for reviewing and updating the Personnel Security Policy and Procedures annually. The Chief Operating Officer is responsible for approving Personnel Security.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Personnel Security (PS) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 
@@ -225,25 +225,19 @@ Access agreements, including the Acceptable Use Policy, are reviewed at least an
 
 ### Part a)
 
-#### CivicActions Responsibility
-
-Third party personnel are required to following the same process and requirements as CivicActions employees. The Chief Operating Officer may also require that a background check be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public. In these instances, the Chief Operating Officer will instruct the Director of Human Resources to conduct a background check before granting access to the information system.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 Third party personnel are required to following the same process and requirements as LINCS employees. The Chief Operating Officer may also require that a background check be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public. In these instances, the Chief Operating Officer will instruct the Director of Human Resources to conduct a background check before granting access to the information system.
 
 
 
-### Part b)
-
 #### CivicActions Responsibility
 
-CivicActions HR reviews and updates the access agreements annually or whenever there is a significant change to the information system or information being processed; and whenever there is a change to the agreements’ verbiage.
+Third party personnel are required to following the same process and requirements as CivicActions employees. The Chief Operating Officer may also require that a background check be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public. In these instances, the Chief Operating Officer will instruct the Director of Human Resources to conduct a background check before granting access to the information system.
 
 
+
+### Part b)
 
 #### LINCS specific control or LINCS Responsibility
 
@@ -251,13 +245,13 @@ LINCS HR reviews and updates the access agreements annually or whenever there is
 
 
 
-### Part c)
-
 #### CivicActions Responsibility
 
-All personnel security requirements are documented and include things such as signing the Acceptable Use Policy (AUP) and taking security awareness training.
+CivicActions HR reviews and updates the access agreements annually or whenever there is a significant change to the information system or information being processed; and whenever there is a change to the agreements’ verbiage.
 
 
+
+### Part c)
 
 #### LINCS specific control or LINCS Responsibility
 
@@ -265,13 +259,13 @@ All personnel security requirements are documented within the SSP and include th
 
 
 
-### Part d)
-
 #### CivicActions Responsibility
 
-For personnel transfers and terminations of third-party personnel with access to the CivicActions systems, third parties must notify the CivicActions Director of Human Resources the same day. The Director of Human Resources follows the same employee transfer and/or termination procedure(s) as if the Third Party Personnel were CivicActions employees.
+All personnel security requirements are documented and include things such as signing the Acceptable Use Policy (AUP) and taking security awareness training.
 
 
+
+### Part d)
 
 #### LINCS specific control or LINCS Responsibility
 
@@ -279,17 +273,23 @@ For personnel transfers and terminations of employees with access to the LINCS s
 
 
 
-### Part e)
-
 #### CivicActions Responsibility
 
-Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. The CivicActions ISSO is responsible for coordinating with the Contracts Manager and managers of external systems to include appropriate and tailored compliance verification language in contracts as required. Third-party personnel are continuously monitored to ensure compliance with personnel security requirements.
+For personnel transfers and terminations of third-party personnel with access to the CivicActions systems, third parties must notify the CivicActions Director of Human Resources the same day. The Director of Human Resources follows the same employee transfer and/or termination procedure(s) as if the Third Party Personnel were CivicActions employees.
 
 
+
+### Part e)
 
 #### LINCS specific control or LINCS Responsibility
 
 Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. The LINCS ISSO is responsible for coordinating with the Cloud Operations Manager and the Contracts Manager to include appropriate and tailored compliance verification language in contracts as required.  Third-party personnel are continuously monitored to ensure compliance with personnel security requirements.
+
+
+
+#### CivicActions Responsibility
+
+Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. The CivicActions ISSO is responsible for coordinating with the Contracts Manager and managers of external systems to include appropriate and tailored compliance verification language in contracts as required. Third-party personnel are continuously monitored to ensure compliance with personnel security requirements.
 
 
 

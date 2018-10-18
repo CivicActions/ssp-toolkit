@@ -1,4 +1,4 @@
-# LINCS Controls (compiled: 2018.10.15 at 2356)
+# LINCS Controls (compiled: 2018.10.17 at 2026)
 
 * [ACCESS CONTROL](controls/AC.md#access-control)
    * [AC-01 ACCESS CONTROL POLICY AND PROCEDURES](controls/AC.md#ac-01-access-control-policy-and-procedures)
@@ -62,129 +62,28 @@
    * [CM-10 SOFTWARE USAGE RESTRICTIONS](controls/CM.md#cm-10-software-usage-restrictions)
    * [CM-11 USER-INSTALLED SOFTWARE](controls/CM.md#cm-11-user-installed-software)
 
-* [CONTINGENCY PLANNING](controls/CP.md#contingency-planning)
-   * [CP-01 CONTINGENCY PLANNING POLICY AND PROCEDURES](controls/CP.md#cp-01-contingency-planning-policy-and-procedures)
-   * [CP-02 CONTINGENCY PLAN](controls/CP.md#cp-02-contingency-plan)
-   * [CP-03 CONTINGENCY TRAINING](controls/CP.md#cp-03-contingency-training)
-   * [CP-04 CONTINGENCY PLAN TESTING](controls/CP.md#cp-04-contingency-plan-testing)
-   * [CP-06 ALTERNATE STORAGE SITE](controls/CP.md#cp-06-alternate-storage-site)
-   * [CP-06 (1) SEPARATION FROM PRIMARY SITE](controls/CP.md#cp-06-1-separation-from-primary-site)
-   * [CP-09 INFORMATION SYSTEM BACKUP](controls/CP.md#cp-09-information-system-backup)
-   * [CP-10 INFORMATION SYSTEM RECOVERY AND RECONSTITUTION](controls/CP.md#cp-10-information-system-recovery-and-reconstitution)
 
-* [IDENTIFICATION AND AUTHENTICATION](controls/IA.md#identification-and-authentication)
-   * [IA-01 IDENTIFICATION AND AUTHENTICATION POLICY AND PROCEDURES](controls/IA.md#ia-01-identification-and-authentication-policy-and-procedures)
-   * [IA-02 IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS)](controls/IA.md#ia-02-identification-and-authentication-organizational-users)
-   * [IA-02 (1) NETWORK ACCESS TO PRIVILEGED ACCOUNTS](controls/IA.md#ia-02-1-network-access-to-privileged-accounts)
-   * [IA-02 (2) NETWORK ACCESS TO NON-PRIVILEGED ACCOUNTS](controls/IA.md#ia-02-2-network-access-to-non-privileged-accounts)
-   * [IA-03 DEVICE IDENTIFICATION AND AUTHENTICATION](controls/IA.md#ia-03-device-identification-and-authentication)
-   * [IA-04 IDENTIFIER MANAGEMENT](controls/IA.md#ia-04-identifier-management)
-   * [IA-05 AUTHENTICATOR MANAGEMENT](controls/IA.md#ia-05-authenticator-management)
-   * [IA-05 (1) PASSWORD-BASED AUTHENTICATION](controls/IA.md#ia-05-1-password-based-authentication)
-   * [IA-05 (11) HARDWARE TOKEN-BASED AUTHENTICATION](controls/IA.md#ia-05-11-hardware-token-based-authentication)
-   * [IA-05(1) PASSWORD-BASED AUTHENTICATION](controls/IA.md#ia-051-password-based-authentication)
-   * [IA-06 AUTHENTICATOR FEEDBACK](controls/IA.md#ia-06-authenticator-feedback)
-   * [IA-07 CRYPTOGRAPHIC MODULE AUTHENTICATION](controls/IA.md#ia-07-cryptographic-module-authentication)
-   * [IA-08 IDENTIFICATION AND AUTHENTICATION (NON-ORGANIZATIONAL USERS)](controls/IA.md#ia-08-identification-and-authentication-non-organizational-users)
-   * [IA-08 (1) ACCEPTANCE OF PIV CREDENTIALS FROM OTHER AGENCIES](controls/IA.md#ia-08-1-acceptance-of-piv-credentials-from-other-agencies)
-   * [IA-08 (2) ACCEPTANCE OF THIRD-PARTY CREDENTIALS](controls/IA.md#ia-08-2-acceptance-of-third-party-credentials)
-   * [IA-08 (3) USE OF FICAM-APPROVED PRODUCTS](controls/IA.md#ia-08-3-use-of-ficam-approved-products)
-   * [IA-08 (4) USE OF FICAM-ISSUED PROFILES](controls/IA.md#ia-08-4-use-of-ficam-issued-profiles)
 
-* [INCIDENT RESPONSE](controls/IR.md#incident-response)
-   * [IR-01 INCIDENT RESPONSE POLICY AND PROCEDURES](controls/IR.md#ir-01-incident-response-policy-and-procedures)
-   * [IR-02 INCIDENT RESPONSE TRAINING](controls/IR.md#ir-02-incident-response-training)
-   * [IR-04 INCIDENT HANDLING](controls/IR.md#ir-04-incident-handling)
-   * [IR-05 INCIDENT MONITORING](controls/IR.md#ir-05-incident-monitoring)
-   * [IR-06 INCIDENT REPORTING](controls/IR.md#ir-06-incident-reporting)
-   * [IR-07 INCIDENT RESPONSE ASSISTANCE](controls/IR.md#ir-07-incident-response-assistance)
-   * [IR-08 INCIDENT RESPONSE PLAN](controls/IR.md#ir-08-incident-response-plan)
 
-* [MAINTENANCE](controls/MA.md#maintenance)
-   * [MA-01 SYSTEM MAINTENANCE POLICY AND PROCEDURES](controls/MA.md#ma-01-system-maintenance-policy-and-procedures)
-   * [MA-02 CONTROLLED MAINTENANCE](controls/MA.md#ma-02-controlled-maintenance)
-   * [MA-04 NON-LOCAL MAINTENANCE](controls/MA.md#ma-04-non-local-maintenance)
-   * [MA-05 MAINTENANCE PERSONNEL](controls/MA.md#ma-05-maintenance-personnel)
 
-* [MEDIA PROTECTION](controls/MP.md#media-protection)
-   * [MP-01 MEDIA PROTECTION POLICY AND PROCEDURES](controls/MP.md#mp-01-media-protection-policy-and-procedures)
-   * [MP-02 MEDIA ACCESS](controls/MP.md#mp-02-media-access)
-   * [MP-06 MEDIA SANITIZATION](controls/MP.md#mp-06-media-sanitization)
-   * [MP-07 MEDIA USE](controls/MP.md#mp-07-media-use)
 
-* [PHYSICAL AND ENVIRONMENTAL PROTECTION](controls/PE.md#physical-and-environmental-protection)
-   * [PE-01 PHYSICAL AND ENVIRONMENTAL PROTECTION POLICY AND PROCEDURES](controls/PE.md#pe-01-physical-and-environmental-protection-policy-and-procedures)
-   * [PE-02 PHYSICAL ACCESS AUTHORIZATIONS](controls/PE.md#pe-02-physical-access-authorizations)
-   * [PE-03 PHYSICAL ACCESS CONTROL](controls/PE.md#pe-03-physical-access-control)
-   * [PE-06 MONITORING PHYSICAL ACCESS](controls/PE.md#pe-06-monitoring-physical-access)
-   * [PE-08 VISITOR ACCESS RECORDS](controls/PE.md#pe-08-visitor-access-records)
-   * [PE-12 EMERGENCY LIGHTING](controls/PE.md#pe-12-emergency-lighting)
-   * [PE-13 FIRE PROTECTION](controls/PE.md#pe-13-fire-protection)
-   * [PE-14 TEMPERATURE AND HUMIDITY CONTROLS](controls/PE.md#pe-14-temperature-and-humidity-controls)
-   * [PE-15 WATER DAMAGE PROTECTION](controls/PE.md#pe-15-water-damage-protection)
-   * [PE-16 DELIVERY AND REMOVAL](controls/PE.md#pe-16-delivery-and-removal)
 
-* [PLANNING](controls/PL.md#planning)
-   * [PL-01 SECURITY PLANNING POLICY AND PROCEDURES](controls/PL.md#pl-01-security-planning-policy-and-procedures)
-   * [PL-02 SYSTEM SECURITY PLAN](controls/PL.md#pl-02-system-security-plan)
-   * [PL-04 RULES OF BEHAVIOR](controls/PL.md#pl-04-rules-of-behavior)
 
-* [PERSONNEL SECURITY](controls/PS.md#personnel-security)
-   * [PS-01 PERSONNEL SECURITY POLICY AND PROCEDURES](controls/PS.md#ps-01-personnel-security-policy-and-procedures)
-   * [PS-02 POSITION CATEGORIZATION](controls/PS.md#ps-02-position-categorization)
-   * [PS-03 PERSONNEL SCREENING](controls/PS.md#ps-03-personnel-screening)
-   * [PS-04 PERSONNEL TERMINATION](controls/PS.md#ps-04-personnel-termination)
-   * [PS-05 PERSONNEL TRANSFER](controls/PS.md#ps-05-personnel-transfer)
-   * [PS-06 ACCESS AGREEMENTS](controls/PS.md#ps-06-access-agreements)
-   * [PS-07 THIRD-PARTY PERSONNEL SECURITY](controls/PS.md#ps-07-third-party-personnel-security)
-   * [PS-08 PERSONNEL SANCTIONS](controls/PS.md#ps-08-personnel-sanctions)
 
-* [RISK ASSESSMENT](controls/RA.md#risk-assessment)
-   * [RA-01 RISK ASSESSMENT POLICY AND PROCEDURES](controls/RA.md#ra-01-risk-assessment-policy-and-procedures)
-   * [RA-02 SECURITY CATEGORIZATION](controls/RA.md#ra-02-security-categorization)
-   * [RA-03 RISK ASSESSMENT](controls/RA.md#ra-03-risk-assessment)
-   * [RA-05 VULNERABILITY SCANNING](controls/RA.md#ra-05-vulnerability-scanning)
 
-* [SYSTEM AND SERVICES ACQUISITION](controls/SA.md#system-and-services-acquisition)
-   * [SA-01 SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES](controls/SA.md#sa-01-system-and-services-acquisition-policy-and-procedures)
-   * [SA-02 ALLOCATION OF RESOURCES](controls/SA.md#sa-02-allocation-of-resources)
-   * [SA-03 SYSTEM DEVELOPMENT LIFE CYCLE](controls/SA.md#sa-03-system-development-life-cycle)
-   * [SA-04 ACQUISITIONS](controls/SA.md#sa-04-acquisitions)
-   * [SA-04 (10) USE OF APPROVED PIV PRODUCTS](controls/SA.md#sa-04-10-use-of-approved-piv-products)
-   * [SA-05 INFORMATION SYSTEM DOCUMENTATION](controls/SA.md#sa-05-information-system-documentation)
-   * [SA-08 SECURITY ENGINEERING PRINCIPLES](controls/SA.md#sa-08-security-engineering-principles)
-   * [SA-09 EXTERNAL INFORMATION SYSTEM SERVICES](controls/SA.md#sa-09-external-information-system-services)
-   * [SA-10 DEVELOPER CONFIGURATION MANAGEMENT](controls/SA.md#sa-10-developer-configuration-management)
-   * [SA-10 (1) SOFTWARE / FIRMWARE INTEGRITY VERIFICATION](controls/SA.md#sa-10-1-software--firmware-integrity-verification)
-   * [SA-11 DEVELOPER SECURITY TESTING AND EVALUATION](controls/SA.md#sa-11-developer-security-testing-and-evaluation)
-   * [SA-11 (1) STATIC CODE ANALYSIS](controls/SA.md#sa-11-1-static-code-analysis)
 
-* [SYSTEM AND COMMUNICATIONS PROTECTION](controls/SC.md#system-and-communications-protection)
-   * [SC-01 SYSTEM AND COMMUNICATIONS PROTECTION POLICY AND PROCEDURES](controls/SC.md#sc-01-system-and-communications-protection-policy-and-procedures)
-   * [SC-05 DENIAL OF SERVICE PROTECTION](controls/SC.md#sc-05-denial-of-service-protection)
-   * [SC-07 BOUNDARY PROTECTION](controls/SC.md#sc-07-boundary-protection)
-   * [SC-12 CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT](controls/SC.md#sc-12-cryptographic-key-establishment-and-management)
-   * [SC-13 USE OF CRYPTOGRAPHY](controls/SC.md#sc-13-use-of-cryptography)
-   * [SC-15 COLLABORATIVE COMPUTING DEVICES](controls/SC.md#sc-15-collaborative-computing-devices)
-   * [SC-20 SECURE NAME / ADDRESS RESOLUTION SERVICE (AUTHORITATIVE SOURCE)](controls/SC.md#sc-20-secure-name--address-resolution-service-authoritative-source)
-   * [SC-21 SECURE NAME / ADDRESS RESOLUTION SERVICE (RECURSIVE OR CACHING RESOLVER)](controls/SC.md#sc-21-secure-name--address-resolution-service-recursive-or-caching-resolver)
-   * [SC-22 ARCHITECTURE AND PROVISIONING FOR NAME / ADDRESS RESOLUTION SERVICE](controls/SC.md#sc-22-architecture-and-provisioning-for-name--address-resolution-service)
-   * [SC-39 PROCESS ISOLATION](controls/SC.md#sc-39-process-isolation)
 
-* [SYSTEM AND INFORMATION INTEGRITY](controls/SI.md#system-and-information-integrity)
-   * [SI-01 SYSTEM AND INFORMATION INTEGRITY POLICY AND PROCEDURES](controls/SI.md#si-01-system-and-information-integrity-policy-and-procedures)
-   * [SI-02 FLAW REMEDIATION](controls/SI.md#si-02-flaw-remediation)
-   * [SI-02(2) AUTOMATED FLAW REMEDIATION STATUS](controls/SI.md#si-022-automated-flaw-remediation-status)
-   * [SI-03 MALICIOUS CODE PROTECTION](controls/SI.md#si-03-malicious-code-protection)
-   * [SI-04 INFORMATION SYSTEM MONITORING](controls/SI.md#si-04-information-system-monitoring)
-   * [SI-05 SECURITY ALERTS, ADVISORIES, AND DIRECTIVES](controls/SI.md#si-05-security-alerts-advisories-and-directives)
-   * [SI-07 SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY](controls/SI.md#si-07-software-firmware-and-information-integrity)
-   * [SI-07 (1) INTEGRITY CHECKS](controls/SI.md#si-07-1-integrity-checks)
-   * [SI-07 (7) INTEGRATION OF DETECTION AND RESPONSE](controls/SI.md#si-07-7-integration-of-detection-and-response)
-   * [SI-07(5) AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS](controls/SI.md#si-075-automated-response-to-integrity-violations)
-   * [SI-10 INFORMATION INPUT VALIDATION](controls/SI.md#si-10-information-input-validation)
-   * [SI-11 ERROR HANDLING](controls/SI.md#si-11-error-handling)
-   * [SI-12 INFORMATION OUTPUT HANDLING AND RETENTION](controls/SI.md#si-12-information-output-handling-and-retention)
-   * [SI-16 MEMORY PROTECTION](controls/SI.md#si-16-memory-protection)
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc) -->

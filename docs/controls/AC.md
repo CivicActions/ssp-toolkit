@@ -9,12 +9,6 @@
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel an access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Access Control (AC) Policy.  This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
@@ -22,6 +16,12 @@ This is Agency common control. More data about implementation can be obtained fr
 Access control policy and procedures are documented in the LINCS SSP. Access to LINCS Technology Project operational information or system resources is limited to only authorized users, programs or processes. The Department enforces access control policies to protect the integrity of the LINCS Technology Project system. This Department reviews and updates this policy as necessary and it has been being updated, as necessary, since April 2008.
 
 Additional information is contained within the Department of Education, OCIO-01, Handbook for Information Assurance Cybersecurity Policy.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel an access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Access Control (AC) Policy.  This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 
@@ -48,18 +48,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part a)
 
-#### Drupal specific control support
-
-Drupal provides user accounts for individuals who participate in visiting, contributing to and administering the site with the following roles:
-
-* Anonymous user – readers of the site who either do not have an account or are not logged in.
-
-* Authenticated user – All non-anonymous users inherit the "authenticated user role."
-
-* Administrator - This role has all permissions enabled by default.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 SSH system accounts are provided to contractors on an as-needed basis.
@@ -72,17 +60,39 @@ The LINCS Technology Project system does not have guest or anonymous accounts.
 
 
 
-### Part b)
+#### CivicActions Responsibility
+
+CivicActions Operations, in collaboration with CivicActions Security, will set up privileged accounts accounts for the following roles:
+
+* Developer - user level account that has access to application features and sanitized databases
+
+* System Administrator - user accounts that enjoy full system administrator access
+
+
 
 #### Drupal specific control support
 
-CivicActions' Project Manager assigns the "admininstrator" role for the management of all accounts issued to internal admin roles supporting the information system. Account requests are initiated by the Project Manager by completing a ticket request and the CivicActions Operation Team manages the entire account creation process.
+Drupal provides user accounts for individuals who participate in visiting, contributing to and administering the site with the following roles:
+
+* Anonymous user – readers of the site who either do not have an account or are not logged in.
+
+* Authenticated user – All non-anonymous users inherit the "authenticated user role."
+
+* Administrator - This role has all permissions enabled by default.
 
 
+
+### Part b)
 
 #### LINCS specific control or LINCS Responsibility
 
 The Project Owner has oversight over all permissions that the Project Manager and Operations Staff manages.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions' Project Manager assigns the "admininstrator" role for the management of all accounts issued to internal admin roles supporting the information system. Account requests are initiated by the Project Manager by completing a ticket request and the CivicActions Operation Team manages the entire account creation process.
 
 
 
@@ -96,25 +106,25 @@ In accordance with LINCS Access Control Policy, LINCS group membership is determ
 
 ### Part d)
 
-#### Drupal specific control support
-
-All accounts issued for Drupal administrators and SSH are documented in CivicActions' ticketing system. Account request tickets contain details that explain the attributes for the account including authorized users of Drupal, system infrastructure, group and role membership, and access authorizations.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 LINCS user privileges vary depending on the type of user role assigned. Only users with the role of Site Manager have the ability to create and modify user roles for other users.
 
 
 
-### Part e)
+#### CivicActions Responsibility
+
+All accounts issued for application administrators and SSH are documented in CivicActions' ticketing system. Account request tickets contain details that explain the attributes for the account including authorized users of Drupal, system infrastructure, group and role membership, and access authorizations.
+
+
 
 #### Drupal specific control support
 
-All accounts issued for the admin management of Drupal or SSH access must be approved by the Project Owner or Project Manager who must create an account request. The CivicActions Operations Team applies appropriate account permissions and settings based on the job role and function documented within the request ticket using processes defined by the CivicActions Security Team.
+Drupal has a sophisticated permissions and role-based access control built in. Each role within Drupal can only access the documents and controls for which their privilege allows.
 
 
+
+### Part e)
 
 #### LINCS specific control or LINCS Responsibility
 
@@ -122,11 +132,17 @@ CivicActions sets up the initial Site Manager account for LINCS; however, any su
 
 
 
+#### CivicActions Responsibility
+
+All accounts issued for the admin management of Application or SSH access must be approved by the Project Owner or Project Manager who must create an account request. The CivicActions Operations Team applies appropriate account permissions and settings based on the job role and function documented within the request ticket using processes defined by the CivicActions Security Team.
+
+
+
 ### Part f)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
-The CivicActions Operations Team is responsible for the following account management activities for both internal administrative users and customer accounts:
+CivicActions Operations is responsible for the following account management activities for both internal administrative users and customer accounts:
 
 * Establishing account justification
 
@@ -142,21 +158,29 @@ The CivicActions Operations Team is responsible for the following account manage
 
 
 
-### Part h)
+### Part g)
+
+#### CivicActions Responsibility
+
+All CivicActions systems log the usage of information accounts.
+
+
 
 #### Drupal specific control support
 
-In accordance with the CivicActions Access Control (AC) Policy when a CivicActions employee's account is no longer required, the employee’s manager notifies the Security Team to immediately disable all access. Users upon reassignment, change in roles, termination, or leaving employment are initially removed from all groups, effectively denying them all access to LINCS privileged accounts.
+Drupal monitors the usage of information accounts in the watchdog.log.
+
+
+
+### Part h)
+
+#### CivicActions Responsibility
+
+In accordance with the CivicActions Access Control (AC-01) Policy when an account is no longer required, the Project Manager notifies the Operations Team to immediately disable all access. Users upon reassignment, change in roles, termination, or leaving employment are initially removed from all roles and groups, effectively denying them all access to privileged accounts.
 
 
 
 ### Part i)
-
-#### Drupal specific control support
-
-CivicActions Drupal administration accounts require access authorizations prior to accounts being created. Employee managers must initiate an access request for an account to be created. The CivicActions Operations Team reviews the request to ensure accuracy, including intended system usage and other attributes of the user access being requested.
-
-
 
 #### LINCS specific control or LINCS Responsibility
 
@@ -164,13 +188,13 @@ LINCS governs their own administrative access. The designated government contrac
 
 
 
+#### CivicActions Responsibility
+
+System accounts require access authorizations prior to accounts being created. The Project Manager must initiate an access request for an account to be created. CivicActions Operations reviews the request to ensure accuracy, including intended system usage and other attributes of the user access being requested.
+
+
+
 ### Part j)
-
-#### Drupal specific control support
-
-All privileged accounts are reviewed by the CivicActions Operations Team every 180 days.
-
-
 
 #### LINCS specific control or LINCS Responsibility
 
@@ -178,9 +202,15 @@ Site Managers are empowered to and responsible for reviewing their own accounts 
 
 
 
+#### CivicActions Responsibility
+
+All privileged accounts are reviewed by CivicActions Operations every 180 days.
+
+
+
 ### Part k)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
 In accordance with standard security best practices and CivicActions policy, shared and reissued accounts for internal accounts of any kind are not created nor used for any purpose in any system.
 
@@ -195,17 +225,17 @@ In accordance with standard security best practices and CivicActions policy, sha
 > Security control type: Hybrid
 
 
+#### LINCS specific control or LINCS Responsibility
+
+The LINCS Technology Project ensures that assigned authorizations for controlling access to the system is enforced in accordance with the user definitions noted in Section 1.1.1 of the LINCS SSP. The technical support staff ensures that access to security functions and protected information is restricted to authorized personnel. Access will be controlled with access control list used on each instance. Members of one group cannot access resources defined for other groups unless explicitly permitted.
+
+
+
 #### Drupal specific control support
 
 Access control in Drupal is enforced by authentication via unique username/password for every type of user except Anonymous user. The user’s privileges, permissions and access are provided on "least privilege" principle.
 
-The anonymous user role has the least access to the site of all roles. The website does not allow anonymous users to register an account for themselves. Administrators and Site Managers are the only user roles that can create new user accounts.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-The LINCS Technology Project ensures that assigned authorizations for controlling access to the system is enforced in accordance with the user definitions noted in Section 1.1.1 of the LINCS SSP. The technical support staff ensures that access to security functions and protected information is restricted to authorized personnel. Access will be controlled with access control list used on each instance. Members of one group cannot access resources defined for other groups unless explicitly permitted.
+The anonymous user role has the least access to the site of all roles. The website does not allow anonymous users to register an account for themselves. Drupal Administrators are the only user roles that can create new user accounts.
 
 
 
@@ -224,6 +254,12 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
+#### LINCS specific control or LINCS Responsibility
+
+Drupal privileged access roles are designated by LINCS which is responsible for determining who will have administrator privileges and the ability to create other user accounts, including user accounts with the role of "administrator".
+
+
+
 #### CivicActions Responsibility
 
 CivicActions performs regular audits of privileged users as part of the practice of enforcing least privilege.
@@ -237,12 +273,6 @@ CivicActions implements the policy of least privilege for all logical components
 At the application layer, Drupal is designed with a role based user access system, a least privileged approach based on assignment of privileges to roles. Drupal‘s permission systems enables control of what users can do and see on the site. In consultation with LINCS, CivicActions has defined a specific set of permissions for each of the user roles mentioned in control AC-5.
 
 SSH access is provided on a least privilege basis and analyzed on an ongoing basis, at least quarterly. Findings related to these audits of accounts are reported and reviewed by the CivicActions Data team and evaluated to determine roles that need to be revoked.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-Drupal privileged access roles are designated by LINCS which is responsible for determining who will have administrator privileges and the ability to create other user accounts, including user accounts with the role of "administrator".
 
 
 
@@ -342,6 +372,12 @@ The Department of Education allows the general public user to read the web pages
 
 
 
+#### Drupal specific control support
+
+The anonymous user role has the least access to the site of all roles. The website does not allow anonymous users to register an account for themselves.
+
+
+
 ## AC-17 REMOTE ACCESS
 
 > Control description: <http://800-53.govready.com/control?id=AC-17>
@@ -351,15 +387,15 @@ The Department of Education allows the general public user to read the web pages
 > Security control type: Inherited (Cloud Service Provider)
 
 
-#### Drupal specific control support
-
-The CivicActions Access Control (AC) policy defines policy for remote usage restrictions.  The Project Manager or Project Owner may additionally provision users according to their Access Control policies.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The LINCS Technology Project permits remote access for privileged functions to support operational needs. The technical staff documents, monitors, and controls all methods of remote access to the information system including remote access for privileged functions. Privileged user access is only permitted through the use of Secure Shell (SSH) or the Remote Desktop Protocol (RDP) where the user will authenticate to the device through this secure channel. Virtual Private Networking (VPN) is not enabled in any form within the LINCS accreditation boundary.
+
+
+
+#### Drupal specific control support
+
+The CivicActions Access Control (AC) policy defines policy for remote usage restrictions.  The Project Manager or Project Owner may additionally provision users according to their Access Control policies.
 
 
 
@@ -378,6 +414,12 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Inherited (Cloud Service Provider)
 
 
+#### CivicActions Responsibility
+
+This control is not applicable. The system does not provide wireless access points.
+
+
+
 #### Amazon Web Services (AWS) US-East/West control support
 
 The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: wireless access.
@@ -393,9 +435,9 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 > Security control type: Inherited (Cloud Service Provider)
 
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-This control is not applicable. LINCS does not maintain a facility in which mobile device access limitations are required.
+This control is not applicable. The system does not maintain a facility in which mobile device access limitations are required.
 
 
 
@@ -414,9 +456,9 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 > Security control type: Inherited (Cloud Service Provider)
 
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-This control is not applicable. LINCS does not connect with external information systems.
+This control is not applicable. The system does not connect with external information systems.
 
 
 

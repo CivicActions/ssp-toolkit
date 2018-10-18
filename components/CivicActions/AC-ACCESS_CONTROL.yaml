@@ -20,6 +20,144 @@ satisfies:
     be found in the CivicActions Compliance Docs GitHub repository at
     <https://github.com/CivicActions/compliance-docs>.
 
+- control_key: AC-02
+  control_key_part: a
+  control_name: ACCOUNT MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions Operations, in collaboration with CivicActions Security, will set up
+    privileged accounts accounts for the following roles:
+
+    • Developer - user level account that has access to application features and sanitized
+    databases
+
+    • System Administrator - user accounts that enjoy full system administrator access
+
+- control_key: AC-02
+  control_key_part: b
+  control_name: ACCOUNT MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions' Project Manager assigns the "admininstrator" role for the management of
+    all accounts issued to internal admin roles supporting the information system. Account
+    requests are initiated by the Project Manager by completing a ticket request and the
+    CivicActions Operation Team manages the entire account creation process.
+
+- control_key: AC-02
+  control_key_part: d
+  control_name: ACCOUNT MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    All accounts issued for application administrators and SSH are documented in
+    CivicActions' ticketing system. Account request tickets contain details that explain
+    the attributes for the account including authorized users of Drupal, system
+    infrastructure, group and role membership, and access authorizations.
+
+- control_key: AC-02
+  control_key_part: e
+  control_name: ACCOUNT MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    All accounts issued for the admin management of Application or SSH access must be
+    approved by the Project Owner or Project Manager who must create an account
+    request. The CivicActions Operations Team applies appropriate account permissions and
+    settings based on the job role and function documented within the request ticket using
+    processes defined by the CivicActions Security Team.
+
+- control_key: AC-02
+  control_key_part: f
+  control_name: ACCOUNT MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions Operations is responsible for the following account management activities
+    for both internal administrative users and customer accounts:
+
+    • Establishing account justification
+
+    • Activating accounts
+
+    • Modifying accounts
+
+    • Expiring accounts
+
+    • Disabling accounts
+
+    • Removing accounts
+
+- control_key: AC-02
+  control_key_part: g
+  control_name: ACCOUNT MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    All CivicActions systems log the usage of information accounts.
+
+- control_key: AC-02
+  control_key_part: h
+  control_name: ACCOUNT MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    In accordance with the CivicActions Access Control (AC-01) Policy when an account is
+    no longer required, the Project Manager notifies the Operations Team to immediately
+    disable all access. Users upon reassignment, change in roles, termination, or leaving
+    employment are initially removed from all roles and groups, effectively denying them
+    all access to privileged accounts.
+
+- control_key: AC-02
+  control_key_part: i
+  control_name: ACCOUNT MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    System accounts require access authorizations prior to accounts being created. The
+    Project Manager must initiate an access request for an account to be created.
+    CivicActions Operations reviews the request to ensure accuracy, including intended
+    system usage and other attributes of the user access being requested.
+
+- control_key: AC-02
+  control_key_part: j
+  control_name: ACCOUNT MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    All privileged accounts are reviewed by CivicActions Operations every 180 days.
+
+- control_key: AC-02
+  control_key_part: k
+  control_name: ACCOUNT MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    In accordance with standard security best practices and CivicActions policy, shared
+    and reissued accounts for internal accounts of any kind are not created nor used for
+    any purpose in any system.
+
 - control_key: AC-06
   control_key_part: ~
   control_name: LEAST PRIVILEGE
@@ -30,3 +168,35 @@ satisfies:
   narrative: >
     CivicActions performs regular audits of privileged users as part of the practice of
     enforcing least privilege.
+
+- control_key: AC-18
+  control_key_part: ~
+  control_name: WIRELESS ACCESS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  implementation_status: In Place
+  narrative: >
+    This control is not applicable. The system does not provide wireless access points.
+
+- control_key: AC-19
+  control_key_part: ~
+  control_name: ACCESS CONTROL FOR MOBILE DEVICES
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  implementation_status: In Place
+  narrative: >
+    This control is not applicable. The system does not maintain a facility in which mobile
+    device access limitations are required.
+
+- control_key: AC-20
+  control_key_part: ~
+  control_name: USE OF EXTERNAL INFORMATION SYSTEMS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  implementation_status: In Place
+  narrative: >
+    This control is not applicable. The system does not connect with external information
+    systems.

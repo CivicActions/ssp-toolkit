@@ -9,17 +9,17 @@
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained the CivicActions System and Services Acquisition (SA) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department of Education developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
 
 The CivicActions ISSO is responsible for reviewing and updating the System and Services Acquisition Policy and Procedures annually. The Chief Operating Officer is responsible for approving System and Services Acquisition.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained the CivicActions System and Services Acquisition (SA) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
 
@@ -252,15 +252,15 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part c)
 
-#### CivicActions Responsibility
-
-CivicActions requires all software and hardware products undergo a security risk assessment prior to purchase. This assessment evaluates the product based on the vendor’s security practices, policies, and past performance. It also details the potential maintenance and end-of-life ramifications with regards to security.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 LINCS requires all software and hardware products undergo a security risk assessment prior to purchase. This assessment evaluates the product based on the vendor’s security practices, policies, and past performance. It also details the potential maintenance and end-of-life ramifications with regards to security.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions requires all software and hardware products undergo a security risk assessment prior to purchase. This assessment evaluates the product based on the vendor’s security practices, policies, and past performance. It also details the potential maintenance and end-of-life ramifications with regards to security.
 
 
 
@@ -272,17 +272,17 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part d)
 
-#### CivicActions Responsibility
-
-The CivicActions ISSO is responsible for determining the security documentation that must be included in information system or services acquisition contracts. In determining these requirements the CivicActions ISSO coordinates with the Development Operations Manager, Customer Support Engineering Manager, the Contracts Manager, and if necessary the Chief Operating Officer.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The LINCS ISSO is responsible for determining the security documentation that must be included in information system or services acquisition contracts.  In determining these requirements the LINCS ISSO coordinates with the Development Operations Manager, Customer Support Engineering Manager, the Contracts Manager, and if necessary the Chief Operating Officer.
 
 The LINCS ISSO ensures all components of the LINCS system system boundary are properly documented to meet the CivicActions Acquisition Security Policy. Prior to testing and deployment to production.
+
+
+
+#### CivicActions Responsibility
+
+The CivicActions ISSO is responsible for determining the security documentation that must be included in information system or services acquisition contracts. In determining these requirements the CivicActions ISSO coordinates with the Development Operations Manager, Customer Support Engineering Manager, the Contracts Manager, and if necessary the Chief Operating Officer.
 
 
 
@@ -318,17 +318,17 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part g)
 
-#### CivicActions Responsibility
-
-The CivicActions Acquisition Security Policy contains the process for determining acceptance criteria for all system software and application services.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The LINCS System and Services Acquisition Policy contains the process for determining acceptance criteria for all LINCS system software and services.
 
 The LINCS organization includes the use of Common Criteria (ISO/IEC 15408) evaluated products in all acquisition contracts in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs.
+
+
+
+#### CivicActions Responsibility
+
+The CivicActions Acquisition Security Policy contains the process for determining acceptance criteria for all system software and application services.
 
 
 

@@ -23,19 +23,6 @@ satisfies:
     • Administrator - This role has all permissions enabled by default.
 
 - control_key: AC-02
-  control_key_part: b
-  control_name: ACCOUNT MANAGEMENT
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions' Project Manager assigns the "admininstrator" role for the management of
-    all accounts issued to internal admin roles supporting the information system. Account
-    requests are initiated by the Project Manager by completing a ticket request and the
-    CivicActions Operation Team manages the entire account creation process.
-
-- control_key: AC-02
   control_key_part: d
   control_name: ACCOUNT MANAGEMENT
   standard_key: NIST-800-53
@@ -43,97 +30,19 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    All accounts issued for Drupal administrators and SSH are documented in CivicActions'
-    ticketing system. Account request tickets contain details that explain the attributes
-    for the account including authorized users of Drupal, system infrastructure, group
-    and role membership, and access authorizations.
+    Drupal has a sophisticated permissions and role-based access control built in. Each
+    role within Drupal can only access the documents and controls for which their
+    privilege allows.
 
 - control_key: AC-02
-  control_key_part: e
+  control_key_part: g
   control_name: ACCOUNT MANAGEMENT
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    All accounts issued for the admin management of Drupal or SSH access must be approved
-    by the Project Owner or Project Manager who must create an account request. The
-    CivicActions Operations Team applies appropriate account permissions and settings based
-    on the job role and function documented within the request ticket using processes
-    defined by the CivicActions Security Team.
-
-- control_key: AC-02
-  control_key_part: f
-  control_name: ACCOUNT MANAGEMENT
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The CivicActions Operations Team is responsible for the following account management
-    activities for both internal administrative users and customer accounts:
-
-    • Establishing account justification
-
-    • Activating accounts
-
-    • Modifying accounts
-
-    • Expiring accounts
-
-    • Disabling accounts
-
-    • Removing accounts
-
-- control_key: AC-02
-  control_key_part: h
-  control_name: ACCOUNT MANAGEMENT
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    In accordance with the CivicActions Access Control (AC) Policy when a CivicActions
-    employee's account is no longer required, the employee’s manager notifies the
-    Security Team to immediately disable all access. Users upon reassignment, change
-    in roles, termination, or leaving employment are initially removed from all groups,
-    effectively denying them all access to LINCS privileged accounts.
-
-- control_key: AC-02
-  control_key_part: i
-  control_name: ACCOUNT MANAGEMENT
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions Drupal administration accounts require access authorizations prior to
-    accounts being created. Employee managers must initiate an access request for an
-    account to be created. The CivicActions Operations Team reviews the request to ensure
-    accuracy, including intended system usage and other attributes of the user access
-    being requested.
-
-- control_key: AC-02
-  control_key_part: j
-  control_name: ACCOUNT MANAGEMENT
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    All privileged accounts are reviewed by the CivicActions Operations Team every 180 days.
-
-- control_key: AC-02
-  control_key_part: k
-  control_name: ACCOUNT MANAGEMENT
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    In accordance with standard security best practices and CivicActions policy, shared
-    and reissued accounts for internal accounts of any kind are not created nor used for
-    any purpose in any system.
+    Drupal monitors the usage of information accounts in the watchdog.log.
 
 - control_key: AC-03
   control_key_part: ~
@@ -148,8 +57,8 @@ satisfies:
     access are provided on "least privilege" principle.
 
     The anonymous user role has the least access to the site of all roles. The website
-    does not allow anonymous users to register an account for themselves. Administrators
-    and Site Managers are the only user roles that can create new user accounts.
+    does not allow anonymous users to register an account for themselves. Drupal
+    Administrators are the only user roles that can create new user accounts.
 
 - control_key: AC-06
   control_key_part: ~
@@ -212,6 +121,17 @@ satisfies:
     conform to defined requirements.  When a user exceeds the limit of invalid logon
     attempts, their account is automatically locked for a specfied time and requires
     administrator action to unlock the account before the lockout period expires.
+
+- control_key: AC-14
+  control_key_part: ~
+  control_name: PERMITTED ACTIONS WITHOUT IDENTIFICATION OR AUTHENTICATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: System Specific Control
+  implementation_status: In Place
+  narrative: >
+    The anonymous user role has the least access to the site of all roles. The website
+    does not allow anonymous users to register an account for themselves.
 
 - control_key: AC-17
   control_key_part: ~

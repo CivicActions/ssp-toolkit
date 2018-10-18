@@ -9,15 +9,15 @@
 > Security control type: Hybrid
 
 
-#### CivicActions Responsibility
-
-CivicActions has developed, documented and disseminated to personnel awareness and training policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Awareness and Training (AT) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 Security awareness and training policy and procedures are formally documented in Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01), which provides the roles and responsibilities as it pertains to security awareness and training. The Department will ensure all users, including managers and senior executives, are exposed to basic information system security awareness materials before authorizing access to the system and at least annually thereafter. The Department documents and monitors all individual information system security training activities including basic security awareness training. The Department reviews and updates the policy as necessary.
+
+
+
+#### CivicActions Responsibility
+
+CivicActions has developed, documented and disseminated to personnel awareness and training policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Awareness and Training (AT) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 
@@ -148,29 +148,29 @@ CivicActions' Security provides users with security responsibilities role-based 
 
 ### Part a)
 
-#### CivicActions Responsibility
-
-The CivicActions Information Security Office tracks all security awareness training within the organization and ensures that all employees have successfully completed training when required. The training records are stored and tracked in a spreadsheet maintained by the CivicActions Information Security Office.
-
-
-
 #### LINCS specific control or LINCS Responsibility
 
 The Department documents and monitors all individual information system security training activities including basic security awareness training. New users are required to take security training within 30 days of hire. This information is kept in the appropriate personnel files to verify users have met the training requirements. Training requirement notifications are sent to individuals as deadline for re-training approaches.
 
 
 
-### Part b)
-
 #### CivicActions Responsibility
 
-Training records are tracked and maintained by the CivicActions Information Security Office. Records are maintained permanently.
+The CivicActions Information Security Office tracks all security awareness training within the organization and ensures that all employees have successfully completed training when required. The training records are stored and tracked in a spreadsheet maintained by the CivicActions Information Security Office.
 
 
+
+### Part b)
 
 #### LINCS specific control or LINCS Responsibility
 
 The Office of Information Secuity maintains training certifications for the specified period.
+
+
+
+#### CivicActions Responsibility
+
+Training records are tracked and maintained by the CivicActions Information Security Office. Records are maintained permanently.
 
 
 

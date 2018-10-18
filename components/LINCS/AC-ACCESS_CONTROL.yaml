@@ -202,9 +202,9 @@ satisfies:
     unauthorized access includes, but is not limited to:
 
     • Any access by an employee or agent of a commercial entity, or other third party, who
-    is not the individual user, for purposes of commercial advantage or private
-    financial gain (regardless of whether the commercial entity or third party is
-    providing a service to an authorized user of the system); and
+    is not the individual user, for purposes of commercial advantage or private financial
+    gain (regardless of whether the commercial entity or third party is providing a
+    service to an authorized user of the system); and
 
     • Any access in furtherance of any criminal or tortious act in violation of the
     Constitution or laws of the United States or any State.
@@ -241,28 +241,6 @@ satisfies:
     (SSH) or the Remote Desktop Protocol (RDP) where the user will authenticate to the
     device through this secure channel. Virtual Private Networking (VPN) is not enabled in
     any form within the LINCS accreditation boundary.
-
-- control_key: AC-19
-  control_key_part: ~
-  control_name: ACCESS CONTROL FOR MOBILE DEVICES
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
-  implementation_status: In Place
-  narrative: >
-    This control is not applicable. LINCS does not maintain a facility in which mobile
-    device access limitations are required.
-
-- control_key: AC-20
-  control_key_part: ~
-  control_name: USE OF EXTERNAL INFORMATION SYSTEMS
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
-  implementation_status: In Place
-  narrative: >
-    This control is not applicable. LINCS does not connect with external information
-    systems.
 
 - control_key: AC-22
   control_key_part: a
