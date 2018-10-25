@@ -23,7 +23,7 @@ satisfies:
     security training activities including basic security awareness training. The
     Department reviews and updates the policy as necessary.
   summary: |
-    Security awareness and training policy and procedures documented in Handbook OCIO-01.
+    This is an Agency Common Control. Security awareness and training policy and procedures documented in Handbook OCIO-01.
 
 - control_key: AT-02
   control_key_part: ~
@@ -56,7 +56,7 @@ satisfies:
 
     The security and awareness training is consistent with Department of Education IT
     Security Training Program Plan and the guidance in NIST Special Publication 800-50.
-  summary: Department personnel and contractor receive security awareness training.
+  summary: This is an Agency Common Control. Department personnel and contractors receive security awareness training.
 
 - control_key: AT-03
   control_key_part: ~
