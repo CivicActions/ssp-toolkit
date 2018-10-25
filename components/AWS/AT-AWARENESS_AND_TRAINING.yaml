@@ -13,7 +13,8 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Providers dated 1 May 2013.
+    to the AWS Cloud Service Provider dated 1 May 2013.
+  summary: Partially inherited from AWS (FedRAMP).
 
 - control_key: AT-02
   control_key_part: ~
@@ -24,7 +25,8 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Providers dated 1 May 2013.
+    to the AWS Cloud Service Provider dated 1 May 2013.
+  summary: Partially inherited from AWS (FedRAMP).
 
 - control_key: AT-03
   control_key_part: ~
@@ -35,7 +37,8 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Providers dated 1 May 2013.
+    to the AWS Cloud Service Provider dated 1 May 2013.
+  summary: Partially inherited from AWS (FedRAMP).
 
 - control_key: AT-04
   control_key_part: b
@@ -46,4 +49,4 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Providers dated 1 May 2013.
+    to the AWS Cloud Service Provider dated 1 May 2013.
