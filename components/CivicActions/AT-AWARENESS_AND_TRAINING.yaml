@@ -19,7 +19,9 @@ satisfies:
     is maintained in the CivicActions Awareness and Training (AT) Policy. This document
     can be found in the CivicActions Compliance Docs GitHub repository at
     <https://github.com/CivicActions/compliance-docs>.
-summary: CivicActions develops, documents, and disseminates Security Awareness Training policy and procedures.
+  summary: |
+    CivicActions develops, documents, and disseminates Security Awareness Training policy
+    and procedures.
     
 - control_key: AT-02
   control_key_part: a

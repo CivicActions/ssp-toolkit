@@ -123,7 +123,7 @@ The ISCP is available on CivicActions Github repository.  This repository provid
 
 #### CivicActions Responsibility
 
-The ISCP stipulates that all CivicActions employee’s LINCS system assigned roles in the Contingency Plan Team are trained in their duties within three months of first being assigned a role in the CP, and then annually thereafter or when changes are required. CivicActions uses the Contingency Plan as described in controls CP-1 and CP-2 as a basis for personnel contingency training.
+The ISCP stipulates that all CivicActions system assigned roles in the Contingency Plan Team are trained in their duties within three months of first being assigned a role in the CP, and then annually thereafter or when changes are required. CivicActions uses the Contingency Plan as described in controls CP-1 and CP-2 as a basis for personnel contingency training.
 
 
 
