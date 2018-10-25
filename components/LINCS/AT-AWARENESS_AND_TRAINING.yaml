@@ -22,6 +22,8 @@ satisfies:
     thereafter. The Department documents and monitors all individual information system
     security training activities including basic security awareness training. The
     Department reviews and updates the policy as necessary.
+  summary: |
+    Security awareness and training policy and procedures documented in Handbook OCIO-01.
 
 - control_key: AT-02
   control_key_part: ~
@@ -54,6 +56,7 @@ satisfies:
 
     The security and awareness training is consistent with Department of Education IT
     Security Training Program Plan and the guidance in NIST Special Publication 800-50.
+  summary: Department personnel and contractor receive security awareness training.
 
 - control_key: AT-03
   control_key_part: ~
@@ -76,6 +79,9 @@ satisfies:
     course(s) within the Department’s learning management systems, participating in
     instructor-led training provided by the OCIO, or completing an external role-based
     course or courses offered within their specific functional area of expertise.
+  summary: |
+    Role-based training is a requirement for personnel  with
+    significant information security responsibilities.
 
 - control_key: AT-04
   control_key_part: a
@@ -91,6 +97,9 @@ satisfies:
     the appropriate personnel files to verify users have met the training
     requirements. Training requirement notifications are sent to individuals as deadline
     for re-training approaches.
+  summary: |
+    Department documents and monitors all individual information system security
+    training activities
 
 - control_key: AT-04
   control_key_part: b
@@ -102,3 +111,4 @@ satisfies:
   narrative: >
     The Office of Information Secuity maintains training certifications for the specified
     period.
+  summary: Office of Information Secuity maintains training certifications.
