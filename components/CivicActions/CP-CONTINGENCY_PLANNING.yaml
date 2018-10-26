@@ -21,6 +21,45 @@ satisfies:
     <https://github.com/CivicActions/compliance-docs>. 
 
 - control_key: CP-02
+  control_key_part: a
+  control_name: CONTINGENCY PLAN
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions has developed a contingincy plan for that addresses:
+
+    1. Essential missions, business functions and associated contingency requirements
+
+    2. Recovery objectives, restoration priorities, and metrics
+
+    3. Roles and responsibilities are identified in the CP and includes
+    the ISCP Director, Incident Commander (IC), CivicActions Coordinator,
+    and CivicActions Information System Security Officer (ISSO).
+
+    4. Maintaining essential missions and business functions despite an information
+    system disruption, compromise, or failure
+
+    5. Full information system restoration without deterioration of the security
+    safeguards originally planned and implemented
+
+    6. The ISCP is reviewed and approved by ISCP Director, Incident Commander (IC),
+    CivicActions ISSO and the System Owner annually.
+
+- control_key: CP-02
+  control_key_part: b
+  control_name: CONTINGENCY PLAN
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The CivicActions Information System Contingency Plan (ISCP) has been distributed to
+    all CivicActons team members. The ISCP can be found in the CivicActions Handbook at
+    <https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan/>.
+
+- control_key: CP-02
   control_key_part: c
   control_name: CONTINGENCY PLAN
   standard_key: NIST-800-53
@@ -155,8 +194,8 @@ satisfies:
     unauthorized documentation.
 
 - control_key: CP-10
-  control_key_part: d
-  control_name: INFORMATION SYSTEM BACKUP
+  control_key_part: ~
+  control_name: INFORMATION SYSTEM RECOVERY AND RECONSTITUTION
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid

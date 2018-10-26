@@ -24,34 +24,6 @@ satisfies:
     was last updated in July 2012.
 
 - control_key: CP-02
-  control_key_part: a
-  control_name: CONTINGENCY PLAN
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions has developed a contingincy plan for LINCS that addresses:
-
-    1. Essential missions, business functions and associated contingency requirements
-
-    2. Recovery objectives, restoration priorities, and metrics
-
-    3. Roles and responsibilities are identified in Section 2.3 of the CP and includes
-    the ISCP Director (ISCPD), ISCP Coordinator (ISCPC), CivicActions ISCP Coordinator
-    (GD_CPC), CivicActions System Administrator, AWS CP Coordinator (AWS_CPC),
-    and Information System Security Officer (ISSO).
-
-    4. Maintaining essential missions and business functions despite an information
-    system disruption, compromise, or failure
-
-    5. Full information system restoration without deterioration of the security
-    safeguards originally planned and implemented
-
-    6. The ISCP is reviewed and approved by ISCP Director (ISCPD), ISCP Coordinator
-    (ISCPC), CivicActions ISCP Coordinator (GD_CPC)and system owner annually.
-
-- control_key: CP-02
   control_key_part: b
   control_name: CONTINGENCY PLAN
   standard_key: NIST-800-53
@@ -61,7 +33,6 @@ satisfies:
   narrative: >
     The LINCS Information System Contingency Plan (ISCP) has been distributed to all
     members who have roles in Contingency Planning and Incident Response team. Direction
-    by the System Owner will updated who is required to receive a copy of the contingency
+    by the System Owner will update who is required to receive a copy of the contingency
     plan. The ISCP can be found in the LINCS GitHub wiki at
-    <https://github.com/NuCivic/healthdata/wiki/contingency-plan> and
-    <https://github.com/NuCivic/healthdata/wiki/contingency-plan-word>.
+    <https://git.civicactions.net/lincs/compliance/blob/master/docs/contingency-plan.md>.

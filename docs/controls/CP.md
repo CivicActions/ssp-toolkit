@@ -40,21 +40,21 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part a)
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-CivicActions has developed a contingincy plan for LINCS that addresses:
+CivicActions has developed a contingincy plan for that addresses:
 
 1. Essential missions, business functions and associated contingency requirements
 
 2. Recovery objectives, restoration priorities, and metrics
 
-3. Roles and responsibilities are identified in Section 2.3 of the CP and includes the ISCP Director (ISCPD), ISCP Coordinator (ISCPC), CivicActions ISCP Coordinator (GD_CPC), CivicActions System Administrator, AWS CP Coordinator (AWS_CPC), and Information System Security Officer (ISSO).
+3. Roles and responsibilities are identified in the CP and includes the ISCP Director, Incident Commander (IC), CivicActions Coordinator, and CivicActions Information System Security Officer (ISSO).
 
 4. Maintaining essential missions and business functions despite an information system disruption, compromise, or failure
 
 5. Full information system restoration without deterioration of the security safeguards originally planned and implemented
 
-6. The ISCP is reviewed and approved by ISCP Director (ISCPD), ISCP Coordinator (ISCPC), CivicActions ISCP Coordinator (GD_CPC)and system owner annually.
+6. The ISCP is reviewed and approved by ISCP Director, Incident Commander (IC), CivicActions ISSO and the System Owner annually.
 
 
 
@@ -68,7 +68,13 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### LINCS specific control or LINCS Responsibility
 
-The LINCS Information System Contingency Plan (ISCP) has been distributed to all members who have roles in Contingency Planning and Incident Response team. Direction by the System Owner will updated who is required to receive a copy of the contingency plan. The ISCP can be found in the LINCS GitHub wiki at <https://github.com/NuCivic/healthdata/wiki/contingency-plan> and <https://github.com/NuCivic/healthdata/wiki/contingency-plan-word>.
+The LINCS Information System Contingency Plan (ISCP) has been distributed to all members who have roles in Contingency Planning and Incident Response team. Direction by the System Owner will update who is required to receive a copy of the contingency plan. The ISCP can be found in the LINCS GitHub wiki at <https://git.civicactions.net/lincs/compliance/blob/master/docs/contingency-plan.md>.
+
+
+
+#### CivicActions Responsibility
+
+The CivicActions Information System Contingency Plan (ISCP) has been distributed to all CivicActons team members. The ISCP can be found in the CivicActions Handbook at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan/>.
 
 
 
@@ -243,7 +249,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 
 
-## CP-10 INFORMATION SYSTEM BACKUP
+## CP-10 INFORMATION SYSTEM RECOVERY AND RECONSTITUTION
 
 > Control description: <http://800-53.govready.com/control?id=CP-10>
 > 
@@ -251,8 +257,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > 
 > Security control type: Hybrid
 
-
-### Part d)
 
 #### CivicActions Responsibility
 

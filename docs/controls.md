@@ -1,4 +1,4 @@
-# LINCS Controls (compiled: 2018.10.26 at 1045)
+# LINCS Controls (compiled: 2018.10.26 at 1449)
 
 * [ACCESS CONTROL](controls/AC.md#access-control)
    * [AC-01 ACCESS CONTROL POLICY AND PROCEDURES](controls/AC.md#ac-01-access-control-policy-and-procedures)
@@ -70,7 +70,7 @@
    * [CP-06 ALTERNATE STORAGE SITE](controls/CP.md#cp-06-alternate-storage-site)
    * [CP-06 (1) SEPARATION FROM PRIMARY SITE](controls/CP.md#cp-06-1-separation-from-primary-site)
    * [CP-09 INFORMATION SYSTEM BACKUP](controls/CP.md#cp-09-information-system-backup)
-   * [CP-10 INFORMATION SYSTEM BACKUP](controls/CP.md#cp-10-information-system-backup)
+   * [CP-10 INFORMATION SYSTEM RECOVERY AND RECONSTITUTION](controls/CP.md#cp-10-information-system-recovery-and-reconstitution)
 
 * [IDENTIFICATION AND AUTHENTICATION](controls/IA.md#identification-and-authentication)
    * [IA-01 IDENTIFICATION AND AUTHENTICATION POLICY AND PROCEDURES](controls/IA.md#ia-01-identification-and-authentication-policy-and-procedures)
@@ -96,7 +96,7 @@
    * [IR-04 INCIDENT HANDLING](controls/IR.md#ir-04-incident-handling)
    * [IR-05 INCIDENT MONITORING](controls/IR.md#ir-05-incident-monitoring)
    * [IR-06 INCIDENT REPORTING](controls/IR.md#ir-06-incident-reporting)
-   * [IR-07 INCIDENT RESPONSE ASSISTANCE](controls/IR.md#ir-07-incident-response-assistance)
+   * [IR-07 INCIDENT RESONSE ASSISTANCE](controls/IR.md#ir-07-incident-resonse-assistance)
    * [IR-08 INCIDENT RESPONSE PLAN](controls/IR.md#ir-08-incident-response-plan)
 
 * [MAINTENANCE](controls/MA.md#maintenance)

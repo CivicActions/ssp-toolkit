@@ -12,136 +12,117 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The Department of Education developed, documented and disseminated
-    to personnel an incident response policy that addresses purpose, scope, roles,
-    responsibilities, management committment, coordination among organizational entities,
-    and compliance, and developed, documented and disseminated to personnel procedures
-    to facilitate the implementation of the policy and associated controls.The policy
-    is stated in the Office of the Secretary Information Security Policy dated July
-    17, 2013 and the procedures are defined in the Office of the Secretary Procedures
-    Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents
-    will be reviewed periodically. These policies and procedures are applicable to
-    the LINCS personnel using the lincs.ed.gov information system.
+    This is Agency common control.  More data about implementation can be obtained from
+    the Agency common control catalog.
+    
+    The LINCS Technology Project maintains an Incident Response Plan (IRP), consistent
+    with Department of Education Directives and NIST 800-61, which addresses purpose,
+    scope, roles, and responsibilities. The incident response procedures address any
+    activity or occurrence that compromises the integrity of a system, denies access to or
+    use of IT resources, and compromises the sensitivity of the information stored in,
+    processed by or transmitted by a system.
 
-    The CivicActions ISSO is responsible for reviewing and updating the Incident Response
-    Plan Policy and Procedures annually. The Chief Operating Officer is responsible for
-    approving Incident Response Plan.  All procedures are consistent with requirements of
-    FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies,
-    regulations, standards, and guidance. These policies and procedures are applicable to
-    the CivicActions staff administering the lincs.ed.gov information system.
+    Additionally, the IRP includes procedures to respond to waste, fraud, misuse, or abuse
+    of any departmental IT system, damage or loss of software or data contained in any
+    system, Use of unlicensed (pirated) software products, discovery of hardware or
+    software vulnerabilities
 
-    The DKAN Incident Response (IR) Policy and Procedures can be found in the CivicActions
-    Github repository at
-    <https://github.com/NuCivic/healthdata/wiki/incident-response-plan>.
+    The LINCS Incident Response Plan can be found in the CivicActions Github repository at
+    <https://git.civicactions.net/lincs/compliance/blob/master/docs/security-irp.md>
 
+    Additional information is contained within the Department of Education, Handbook for
+    Information Assurance Security Policy (Handbook OCIO-01) and the Department of
+    Education, Handbook for Information Security Incident Response and Reporting
+    Procedures (Handbook OCIO-14).
+    
 - control_key: IR-02
-  control_key_part: a
+  control_key_part: ~
   control_name: INCIDENT RESPONSE TRAINING
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    All CivicActions users of the LINCS system with incident response responsibilities
-    are required to participate in incident response training once the role is assumed
-    within 10 days, as required by LINCS changes, and annually. The Incident Response
-    Plan (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>) is the basis
-    for the training and the incident response workflow created by the Security team.
-    Upon a review of past incidents, the training is updated to ensure processes and
-    workflows are updated.
+    CivicActions Operations and users of the LINCS system with incident response
+    responsibilities are required to participate in incident response training once the
+    role is assumed within 10 days, as required by LINCS changes, and annually. The
+    Incident Response Plan
+    (<https://git.civicactions.net/lincs/compliance/blob/master/docs/security-irp.md>) is
+    the basis for the training and the incident response workflow created by the Security
+    team.  Upon a review of past incidents, the training is updated to ensure processes
+    and workflows are updated.
 
 - control_key: IR-04
-  control_key_part: a
+  control_key_part: ~
   control_name: INCIDENT HANDLING
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The Incident Response Plan
-    (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>) explains the
-    process for incident handling, and discusses preparation, detection and analysis,
-    containment, eradication, and recovery.
+    The LINCS Technology Project’s Computer Security Officer (CSO) handles all incidents
+    for the LINCS Technology Project. The CSO is prepared to report all incidents to The
+    Department Computer Incident Response Capability (EDCIRC) and United States Computer
+    Emergency Readiness Team (US-CERT) as necessary.
 
-    Preparation activities includes all CivicActions and LINCS internal users are trained if
-    their role includes incident response. Detection monitoring tools providing
+    The LINCS Technology Project utilizes proven incident handling methodologies for
+    security incidents that includes preparation, detection and analysis, containment,
+    eradication, and recovery. The Department maintains a list of lessons learned from
+    ongoing incident handling activities and uses those lessons to update the incident
+    response procedures accordingly.
+
+    Preparation activities includes all CivicActions and LINCS internal users are trained
+    if their role includes incident response. Detection monitoring tools providing
     notification to incident response personnel for analysis and action. Containment,
-    eradication and recovery activities include AWS inherited fixes and LINCS
-    system administrators blocking IP address at the source of the incident and clearing
-    caches.
+    eradication and recovery activities include AWS and LAMP-stack inherited fixes and
+    LINCS system administrators adjusting IP port blocking security groups and SELinux
+    policies.
 
-- control_key: IR-07
+- control_key: IR-05
   control_key_part: ~
-  control_name: INCIDENT RESPONSE ASSISTANCE
+  control_name: INCIDENT MONITORING
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    CivicActions Customer Support team provides first response assistance to any external
-    users of the LINCS system. Response time for external reporting of incidents through
-    e-mail is one business day. Internal users are able to request support thought the
-    same process or initiate the incident response workflow.  Tickets created in the Jira
-    (customer ticketing system) and Github (internal ticketing system) documents all
-    details related to the incident to assist the incident response teams in handling the
-    incident.
+    The LINCS Technology project utilizes network and host-based intrusion detection
+    systems, monitoring the system and application logs for anomalous events.  Incidents
+    are tracked using the same ticketing system that is used to track all system-related
+    changes and events.
+
+- control_key: IR-06
+  control_key_part: ~
+  control_name: INCIDENT REPORTING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    If an incident involves suspicious activity, CivicActions Operations will contact the
+    LINCS Program Owner who may then contact the LINCS CSO.
+    
+    The LINCS Technology Project’s Computer Security Officer (CSO) handles all incidents
+    for the LINCS Technology Project. The CSO is prepared to report all incidents to The
+    Department Computer Incident Response Capability (EDCIRC) and United States Computer
+    Emergency Readiness Team (US-CERT) as necessary.
 
 - control_key: IR-08
-  control_key_part: a
+  control_key_part: ~
   control_name: INCIDENT RESPONSE PLAN
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    DKAN/LINCS Incident Response Plan
-    (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>), includes a
-    comprehensive incident response program, which details the implementation of
-    procedures and tools required for incident handling. The incident response program
-    details the roles and responsibilities of CivicActions IR Team. The IR Team includes
-    members from Security, Engineering, and Drupal Engineering teams.  Incident
-    response plays a pivotal role in monitoring, detecting and handling security incidents
-    of the entire information system. The IRP details categorization of incidents in
-    accordance with NIST 800-61 and accordingly documents and reports incidents. The IRP
-    is reviewed annually and updated as needed by ISSO, with the assistance of the
-    incident response team.
-
-- control_key: IR-08
-  control_key_part: b
-  control_name: INCIDENT RESPONSE PLAN
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The DKAN/LINCS Incident Response Plan
-    (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>) is stored in the
-    CivicActions Github repository. CivicActions personnel who are a part of the incident
-    response team will have access to the plan in order to review any updates made to the
-    IR Plan, including CivicActions Security, DKAN Engineering, and Engineering teams.
-
-- control_key: IR-08
-  control_key_part: c
-  control_name: INCIDENT RESPONSE PLAN
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The LINCS ISSO and the CivicActions IR team is responsible for reviewing the Incident
-    Response Plan (<https://github.com/NuCivic/healthdata/wiki/incident-response-plan>)
-    annually.  The entire incident response team will sit down and review the plan and
-    update it as necessary. Ultimately, the ISSO has final say and will approve all
-    updates to the plan team.
-
-- control_key: IR-08
-  control_key_part: e
-  control_name: INCIDENT RESPONSE PLAN
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Modifications to the IR Plan are conducted by the IR team (CivicActions Security,
-    DKAN Engineering, and Engineering teams) and communicated to the IR team and LINCS
-    designated personnel, including the System Owner and ISSO.
+    The LINCS Incident Response Plan
+    (<https://git.civicactions.net/lincs/compliance/blob/master/docs/security-irp.md>)
+    includes a comprehensive incident response program, which details the implementation
+    of procedures and tools required for incident handling. The incident response program
+    details the roles and responsibilities of LINCS/CivicActions IR Team. The IR Team
+    includes members from CivicActions Security and Operations teams.  Incident response
+    plays a pivotal role in monitoring, detecting and handling security incidents of the
+    entire information system. The IRP details categorization of incidents in accordance
+    with NIST 800-61 and accordingly documents and reports incidents. The IRP is reviewed
+    annually and updated as needed by ISSO, with the assistance of the incident response
+    team.
