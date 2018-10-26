@@ -11,9 +11,13 @@
 
 #### LINCS specific control or LINCS Responsibility
 
-The Department of Education developed, documented and disseminated to personnel a system maintenance policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
+System maintenance policy and procedures are formally documented in the LINCS SSP, which provides the roles and responsibilities as it pertains to software and systems maintennance and updates. The LINCS Technology Project ensures that maintenance controls are developed, disseminated, reviewed, and updated as necessary.
 
-The CivicActions ISSO is responsible for reviewing and updating the Maintenance Policy and Procedures annually. The Chief Operating Officer is responsible for approving Maintenance. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+Physical and environmental protection is fully inherited from the AWS FedRAMP certified us-east cloud.
+
+Additional information is contained within the Department of Education, Handbook for Information Assurance Security Policy (Handbook OCIO-01).
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
 
 
 
@@ -38,9 +42,25 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
+#### LINCS specific control or LINCS Responsibility
+
+The LINCS Technology Project schedules, performs, and documents regular maintenance on the software components of all systems, including but not limited to:
+
+* Hourly automated snapshot backups
+
+* Daily disaster recovery remote backups
+
+* Daily Intrusion Detection (OSSEC) / Data Integrity Assurance (AIDE)
+
+* As needed HelpDesk support
+
+* Twice-monthly OS updates/patches
+
+
+
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  maintenance performed on the physical components in conjunction with their IaaS provider, AWS.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: controlled maintenance.
 
 
 
@@ -53,73 +73,49 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 > Security control type: Hybrid
 
 
-### Part a)
-
-#### LINCS specific control or LINCS Responsibility
-
-CivicActions directly manages and controls all maintenance activities pertaining to the software components of the LINCS system, including DKAN, Drupal Core, and Drupal Modules. All maintenance is nonlocal to the LINCS system. Approval, QA, and monitoring is conducted by the team the specific maintenance is being performed.  Github tickets are assigned, QA, approved, and monitored by the DKAN Product Engineering team and DKAN team for the software components of the LINCS system before being ultimately approved by the Change Control Board.
-
-
-
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: nonlocal maintenance.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: non-local maintenance.
+
+
+
+### Part a)
+
+#### CivicActions Responsibility
+
+System maintenance is done from remote sites as there is no direct access to the server instances in the AWS cloud; this is the government-approved method of doing business. Approval, QA, and monitoring is conducted by the team performing the specific maintenance.
 
 
 
 ### Part b)
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-CivicActions directly manages and controls all maintenance activities pertaining to the software components of the LINCS system, including DKAN, Drupal Core, and Drupal Modules. All maintenance is nonlocal to the LINCS system. Approval, QA, and monitoring is conducted by the team the specific maintenance is being performed. JIRA tickets are assigned, QA, approved, and monitored by the DKAN Product Engineering team and DKAN team for the software components of the LINCS system. For any nonlocal maintenance requires the same authentication requirements to perform the maintenance activities as to access the LINCS system as defined in controls AC-3 and IA-2.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  nonlocal maintenance.
+Remote diagnostic tools, such as OSSEC, AIDE, fail2ban and OpenSCAP are used to verify the integrity of files, perform log analysis, monitor login attempts and check for root kits and other vulnerabilies.
 
 
 
 ### Part c)
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-All nonlocal maintenance requires the same authentication requirements to perform the maintenance activities as to access the LINCS system as defined in controls AC-3 and IA-2.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  nonlocal maintenance.
+All nonlocal maintenance requires the same authentication requirements to perform the maintenance activities as to access the system as defined in controls AC-3 and IA-2. SSH is used to secure all communications between the remote user and the components located in the AWS cloud.
 
 
 
 ### Part d)
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-CivicActions records for nonlocal maintenance is conducted through the Github ticketing system tool as well as normal system logs. Github tickets are assigned, QA, approved, and monitored by the DKAN Product Engineering team and DKAN team for the software components of the LINCS system. Any CivicActions administrator activity to the LINCS system is also logged though the implementation of the AU-2 (Audit Events) and AU-3 (Content of Audit Records).
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  nonlocal maintenance 
+CivicActions records for nonlocal maintenance is managed through JIRA tickets and the Git issue queue as well as normal system logs. CivicActions administrator activity to the system is also logged though the implementation of the AU-2 (Audit Events) and AU-3 (Content of Audit Records).
 
 
 
 ### Part e)
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-Any session for internal LINCS maintenance activities are terminated when the user completes their session, disconnects from the LINCS system, or logs out form the LINCS system.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  nonlocal maintenance.
+Any session for internal maintenance activities is terminated when the user completes their session, disconnects from the system, or logs out. In addition, sessions are terminated after 15 minutes of inactivity.
 
 
 
@@ -134,13 +130,19 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### LINCS specific control or LINCS Responsibility
 
-Non-local maintenance on the LINCS system and applications can only be performed by personnel designated as having LINCS internal administrator privileges and responsibilities.  Access rights for the LINCS internal administrators are assigned and granted access to perform their specific job responsibilities. All local maintenance requirements are inherited from AWS.
+The Department maintains a list of authorized contract (CivicActions) personnel who perform maintenance and repair activities on the LINCS Technology Project system components, and only these authorized personnel may perform the maintenance. All maintenance personnel have the required personnel security elements in place.
+
+
+
+#### CivicActions Responsibility
+
+Maintenance on the system and applications can only be performed by personnel designated as having internal administrator privileges and responsibilities.  Access rights for the internal administrators are assigned and granted access to perform their specific job responsibilities. All physical maintenance requirements are inherited from AWS.
 
 
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: maintenance personnel for the physical components in conjunction with their IaaS provider, AWS.
+The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: maintenance personnel.
 
 
 

@@ -11,10 +11,11 @@ satisfies:
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
+  summary: Partially inherited from AWS (FedRAMP).
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
     to the AWS Cloud Service Providers dated 1 May 2013.
-
+  
 - control_key: MA-02
   control_key_part: ~
   control_name: CONTROLLED MAINTENANCE
@@ -22,65 +23,22 @@ satisfies:
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
+  summary: Partially inherited from AWS (FedRAMP).
   narrative: >
-    The system inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  maintenance performed
-    on the physical components in conjunction with their IaaS provider, AWS.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted
+    to the AWS Cloud dated 1 May 2013 for the following: controlled maintenance.
 
 - control_key: MA-04
-  control_key_part: a
+  control_key_part: ~
   control_name: NON-LOCAL MAINTENANCE
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
+  summary: Partially inherited from AWS (FedRAMP).
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following: nonlocal maintenance.
-
-- control_key: MA-04
-  control_key_part: b
-  control_name: NON-LOCAL MAINTENANCE
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  nonlocal maintenance.
-
-- control_key: MA-04
-  control_key_part: c
-  control_name: NON-LOCAL MAINTENANCE
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  nonlocal maintenance.
-
-- control_key: MA-04
-  control_key_part: d
-  control_name: NON-LOCAL MAINTENANCE
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  nonlocal maintenance 
-
-- control_key: MA-04
-  control_key_part: e
-  control_name: NON-LOCAL MAINTENANCE
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  nonlocal maintenance.
+    to the AWS Cloud dated 1 May 2013 for the following: non-local maintenance.
 
 - control_key: MA-05
   control_key_part: ~
@@ -89,7 +47,7 @@ satisfies:
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
+  summary: Partially inherited from AWS (FedRAMP).
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 1 May 2013 for the following: maintenance personnel for the
-    physical components in conjunction with their IaaS provider, AWS.
+    AWS Cloud dated 1 May 2013 for the following: maintenance personnel.
