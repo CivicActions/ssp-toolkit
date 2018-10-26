@@ -477,6 +477,14 @@ All Drupal passwords are encrypted in storage, using the SHA-512 hashing algorit
 
 
 
+### Part j)
+
+#### CivicActions Responsibility
+
+CivicActions systems employ authentication methods consistent with NIST FIPS 140-2 requirements. General public access to system web pages does not require cryptographic authentication. Privileged users accessing systems use the public-key cryptographic functionality of Secure Shell (SSH) to encrypt the exchange of information (including the password) between the remote user and the server. Where Transport Layer Security (TLS, aka SSL) is used, cryptographic modules will be configured in accordance with FIPS 140-2.
+
+
+
 ## IA-08 IDENTIFICATION AND AUTHENTICATION (NON-ORGANIZATIONAL USERS)
 
 > Control description: <http://800-53.govready.com/control?id=IA-8>
@@ -488,7 +496,7 @@ All Drupal passwords are encrypted in storage, using the SHA-512 hashing algorit
 
 #### LINCS specific control or LINCS Responsibility
 
-LINCS is a publically accessible solution that allows government organizations to share data resources with the general public. Non-organizational users have read-only access to the open data resources which are shared on lincs.ed.gov as documented in control AC-14.
+All non-organization users must follow procedures for access privileges as described in AC-2. Any non-organizational user must receive written permission from a Department representative to access the LINCS. In addition, only temporary access of a specified duration is allowed for non-organizational users directly accessing the system. Once the time period is over or the task completed, the temporary user accounts are removed immediately.
 
 
 
