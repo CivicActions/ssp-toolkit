@@ -113,29 +113,13 @@ CivicActions systems do not support or allow device-to-device communications.
 
 
 
-## IA-04 AUTHENTICATOR MANAGEMENT
+## IA-04 IDENTIFIER MANAGEMENT
 
 > Control description: <http://800-53.govready.com/control?id=IA-4>
 > 
 > 
 > 
 > Security control type: Hybrid
-
-
-### Part i)
-
-#### CivicActions Responsibility
-
-CivicActions users are required to take appropriate measures in the handling of passwords including:
-
-* Not transmitting user names and passwords together in an unencrypted format
-
-* Not permitting the sending of passwords in an unencrypted format via email
-
-* Not listing passwords in tickets
-
-* Not writing down or storing passwords in a readable form in any physical or logical location where they may be discoverable by unauthorized persons.
-
 
 
 #### Amazon Web Services (AWS) US-East/West control support
@@ -190,9 +174,23 @@ Identifiers for CivicActions internal personnel include a username based on the 
 
 ### Part d)
 
+#### CivicActions Responsibility
+
+Account usernames may not be re-used for at least two years.
+
+
+
 #### Drupal specific control support
 
 Drupal users unique identifier (the numeric user id, or uid) is never reused.
+
+
+
+### Part e)
+
+#### CivicActions Responsibility
+
+All user accounts are required to change their passwords every 90 days. The website will automatically block the accounts of users who fail to change their password within that time period, after which the account may only be unblocked by a website Administrator or CivicActions Operations.
 
 
 
@@ -332,6 +330,20 @@ For all Drupal users, passwords are protected by the website's software, which o
 
 
 ### Part i)
+
+#### CivicActions Responsibility
+
+CivicActions users are required to take appropriate measures in the handling of passwords including:
+
+* Not transmitting user names and passwords together in an unencrypted format
+
+* Not permitting the sending of passwords in an unencrypted format via email
+
+* Not listing passwords in tickets
+
+* Not writing down or storing passwords in a readable form in any physical or logical location where they may be discoverable by unauthorized persons.
+
+
 
 #### Drupal specific control support
 

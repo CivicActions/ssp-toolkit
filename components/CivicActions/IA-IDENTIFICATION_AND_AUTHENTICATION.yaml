@@ -94,7 +94,7 @@ satisfies:
   narrative: >
     Account usernames may not be re-used for at least two years.
 
-    - control_key: IA-04
+- control_key: IA-04
   control_key_part: e
   control_name: IDENTIFIER MANAGEMENT
   standard_key: NIST-800-53
@@ -107,7 +107,7 @@ satisfies:
     within that time period, after which the account may only be unblocked by a website
     Administrator or CivicActions Operations.
 
-    - control_key: IA-05
+- control_key: IA-05
   control_key_part: i
   control_name: AUTHENTICATOR MANAGEMENT
   standard_key: NIST-800-53

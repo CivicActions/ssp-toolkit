@@ -1,4 +1,4 @@
-# LINCS Controls (compiled: 2018.10.26 at 1449)
+# LINCS Controls (compiled: 2018.10.26 at 1458)
 
 * [ACCESS CONTROL](controls/AC.md#access-control)
    * [AC-01 ACCESS CONTROL POLICY AND PROCEDURES](controls/AC.md#ac-01-access-control-policy-and-procedures)
@@ -78,7 +78,7 @@
    * [IA-02 (1) NETWORK ACCESS TO PRIVILEGED ACCOUNTS](controls/IA.md#ia-02-1-network-access-to-privileged-accounts)
    * [IA-02 (12) ACCEPTANCE OF PIV CREDENTIALS](controls/IA.md#ia-02-12-acceptance-of-piv-credentials)
    * [IA-03 DEVICE IDENTIFICATION AND AUTHENTICATION](controls/IA.md#ia-03-device-identification-and-authentication)
-   * [IA-04 AUTHENTICATOR MANAGEMENT](controls/IA.md#ia-04-authenticator-management)
+   * [IA-04 IDENTIFIER MANAGEMENT](controls/IA.md#ia-04-identifier-management)
    * [IA-05 AUTHENTICATOR MANAGEMENT](controls/IA.md#ia-05-authenticator-management)
    * [IA-05 (1) PASSWORD-BASED AUTHENTICATION](controls/IA.md#ia-05-1-password-based-authentication)
    * [IA-05 (11) HARDWARE TOKEN-BASED AUTHENTICATION](controls/IA.md#ia-05-11-hardware-token-based-authentication)
