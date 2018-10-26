@@ -208,10 +208,12 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    LINCS is a publically accessible solution that allows government organizations to
-    share data resources with the general public. Non-organizational users have read-only
-    access to the open data resources which are shared on lincs.ed.gov as documented in
-    control AC-14.
+    All non-organization users must follow procedures for access privileges as described
+    in AC-2. Any non-organizational user must receive written permission from a Department
+    representative to access the LINCS. In addition, only temporary access of a specified
+    duration is allowed for non-organizational users directly accessing the system. Once
+    the time period is over or the task completed, the temporary user accounts are removed
+    immediately.
 
 - control_key: IA-08 (1)
   control_key_part: ~
