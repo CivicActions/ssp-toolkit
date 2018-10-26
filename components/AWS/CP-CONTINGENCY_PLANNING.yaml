@@ -13,7 +13,8 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Providers dated 1 May 2013.
+    to the AWS Cloud Service Provider dated 1 May 2013.
+  summary: Partially inherited from AWS (FedRAMP).
 
 - control_key: CP-02
   control_key_part: a
@@ -24,7 +25,8 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  contingency plan.
+    to the AWS Cloud dated 1 May 2013 for the following: contingency plan.
+  summary: Partially inherited from AWS (FedRAMP).
 
 - control_key: CP-03
   control_key_part: ~
@@ -36,6 +38,7 @@ satisfies:
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
     to the AWS Cloud dated 1 May 2013 for the following: contingency plan training.
+  summary: Partially inherited from AWS (FedRAMP).
 
 - control_key: CP-04
   control_key_part: ~
@@ -47,6 +50,7 @@ satisfies:
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
     to the AWS Cloud dated 1 May 2013 for the following: contingency plan testing.
+  summary: Partially inherited from AWS (FedRAMP).
 
 - control_key: CP-06
   control_key_part: ~
@@ -56,9 +60,9 @@ satisfies:
   security_control_type: Inherited (Cloud Service Provider)
   implementation_status: In Place
   narrative: >
-    The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 1 May 2013 for the following:  alternate storage site in
-    conjunction with their IaaS provider, AWS.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: alternate storage site
+  summary: Partially inherited from AWS (FedRAMP).
 
 - control_key: CP-06 (1)
   control_key_part: ~
@@ -68,9 +72,9 @@ satisfies:
   security_control_type: Inherited (Cloud Service Provider)
   implementation_status: In Place
   narrative: >
-    The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 1 May 2013 for the following: alternate storage site separation
-    from primary site in conjunction with their IaaS provider, AWS.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: alternate storage site separation.
+  summary: Partially inherited from AWS (FedRAMP).
 
 - control_key: CP-09
   control_key_part: a
@@ -80,11 +84,9 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following: user level backup requirements.
-
-    AWS functionally makes full backups completed daily and incremental backups in
-    real time.  In addition, transactional logging is conducted by AWS in real time.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: user level backup requirements.
+  summary: Partially inherited from AWS (FedRAMP).
 
 - control_key: CP-09
   control_key_part: b
@@ -94,9 +96,9 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following: system level backup
-    requirements.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: system level backup requirements.
+  summary: Partially inherited from AWS (FedRAMP).
 
 - control_key: CP-09
   control_key_part: d
@@ -106,10 +108,9 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following: protection of the confidentiality,
-    integrity, and availability of backup information at storage locations in conjunction
-    with AWS.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: protection of backup information.
+  summary: Partially inherited from AWS (FedRAMP).
 
 - control_key: CP-10
   control_key_part: ~
@@ -119,6 +120,7 @@ satisfies:
   security_control_type: Inherited (Cloud Service Provider)
   implementation_status: In Place
   narrative: >
-    The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 1 May 2013 for the following: information system recovery
-    and reconstitution.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: information system recovery and
+    reconstitution.
+  summary: Partially inherited from AWS (FedRAMP).

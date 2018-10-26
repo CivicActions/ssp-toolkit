@@ -20,6 +20,20 @@ satisfies:
     Policy. This document can be found in the CivicActions Github repository at
     <https://github.com/CivicActions/compliance-docs>.
 
+- control_key: IA-02
+  control_key_part: ~
+  control_name: IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS)
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    Privileged users of the system are required to identify and authenticate in order to
+    access any functions of the information system beyond viewing and downloading the
+    publicly available website content that is available to all anonymous website
+    visitors. Privileged users require the appropriate authorization described in
+    AC-2.
+
 - control_key: IA-03
   control_key_part: ~
   control_name: DEVICE IDENTIFICATION AND AUTHENTICATION
@@ -31,6 +45,46 @@ satisfies:
     CivicActions systems do not support or allow device-to-device communications.
 
 - control_key: IA-04
+  control_key_part: a
+  control_name: IDENTIFIER MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    Access to the system is authorized by the Product Owner or Project Manager for each
+    role as described in AC-2.
+
+- control_key: IA-04
+  control_key_part: b
+  control_name: IDENTIFIER MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    User accounts are assigned a unique identifier in the form of a unique username,
+    password and email address based on the system for allocating user accounts described
+    in AC-2.
+
+    In accordance with CivicActions Identification and Authentication (IA) Policy
+    <https://github.com/CivicActions/compliance-docs/blob/master/IA-Policy.md>,
+    CivicActions internal users are uniquely identified by creation of an organizational
+    account with a username based on each user's first and last names.
+
+- control_key: IA-04
+  control_key_part: c
+  control_name: IDENTIFIER MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    User accounts are assigned a unique identifier in the form of a unique username,
+    password and email address based on the system for allocating user accounts described
+    in AC-2.
+
+- control_key: IA-04
   control_key_part: d
   control_name: IDENTIFIER MANAGEMENT
   standard_key: NIST-800-53
@@ -38,4 +92,48 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    CivicActions internal users' usernames may not be re-used for at least two years.
+    Account usernames may not be re-used for at least two years.
+
+    - control_key: IA-04
+  control_key_part: e
+  control_name: IDENTIFIER MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    All user accounts are required to change their passwords every 90 days. The website
+    will automatically block the accounts of users who fail to change their password
+    within that time period, after which the account may only be unblocked by a website
+    Administrator or CivicActions Operations.
+
+    - control_key: IA-05
+  control_key_part: i
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions users are required to take appropriate measures in the handling of
+    passwords including:
+
+    • Not transmitting user names and passwords together in an unencrypted format
+
+    • Not permitting the sending of passwords in an unencrypted format via email
+
+    • Not listing passwords in tickets
+
+    • Not writing down or storing passwords in a readable form in any physical or
+    logical location where they may be discoverable by unauthorized persons.
+
+- control_key: IA-05
+  control_key_part: j
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Not Applicable
+  narrative: >
+    This control is not applicable due to the fact that group accounts are not created
+    within CivicActions Operations per IA Policy.

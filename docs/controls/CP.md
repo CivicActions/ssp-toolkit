@@ -11,21 +11,21 @@
 
 #### LINCS specific control or LINCS Responsibility
 
-The Department of Education developed, documented and disseminated to personnel a contingency planning policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls. The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
 
-The CivicActions ISSO is responsible for reviewing and updating the Contingency Planning Policy and Procedures annually. The Chief Operating Officer is responsible for approving Contingency Planning.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+The LINCS Technology Project has developed a contingency planning policy consistent with Department of Education, Handbook for Information Technology Security Contingency Planning Procedures (Handbook OCIO-10) and NIST 800-34. Contingency planning procedures are formally documented within the LINCS Technology Project Contingency Plan, which provides the roles and responsibilities as it pertains to contingency planning. The Department reviews and updates the policy as necessary and the policy was last updated in July 2012.
 
 
 
 #### CivicActions Responsibility
 
-CivicActions has developed, documented and disseminated to personnel a contingency planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Contingency Planning (CP) Policy and Procedure that  can be found in the CivicActions Github repository at <https://github.com/NuCivic/healthdata/wiki/contingency-plan> also: <https://github.com/NuCivic/healthdata/wiki/contingency-plan-word>
+CivicActions has developed, documented and disseminated to personnel a contingency planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Contingency Planning (CP) Policy and Procedure that can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>. 
 
 
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
 
 
 
@@ -40,17 +40,9 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part a)
 
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  contingency plan.
-
-
-
-### Part b)
-
 #### LINCS specific control or LINCS Responsibility
 
-An Information System Contingency Plan (ISCP) (<https://github.com/NuCivic/healthdata/wiki/contingency-plan>) has been developed and is maintained for the LINCS system. The CivicActions ISSO details the following elements that are critical for a successful recovery and resumption of operations in the event of a contingency scenario:
+CivicActions has developed a contingincy plan for LINCS that addresses:
 
 1. Essential missions, business functions and associated contingency requirements
 
@@ -66,9 +58,17 @@ An Information System Contingency Plan (ISCP) (<https://github.com/NuCivic/healt
 
 
 
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: contingency plan.
+
+
+
+### Part b)
+
 #### LINCS specific control or LINCS Responsibility
 
-ISCP Coordinator (ISCPC) distributes the CP plan to all members who have roles in Contingency Planning and Incident Response team. Direction by the System Owner will updated who is required to receive a copy of the contingency plan.
+The LINCS Information System Contingency Plan (ISCP) has been distributed to all members who have roles in Contingency Planning and Incident Response team. Direction by the System Owner will updated who is required to receive a copy of the contingency plan. The ISCP can be found in the LINCS GitHub wiki at <https://github.com/NuCivic/healthdata/wiki/contingency-plan> and <https://github.com/NuCivic/healthdata/wiki/contingency-plan-word>.
 
 
 
@@ -76,7 +76,7 @@ ISCP Coordinator (ISCPC) distributes the CP plan to all members who have roles i
 
 #### CivicActions Responsibility
 
-The Information System Contingency Plan (ISCP) is closely integrated with the Incident Response Plan (IRP). Coordination is the responsibility of the ISCP Director and IRP Director.
+The Information System Contingency Plan (ISCP) is closely integrated with the Incident Response Plan (IRP). Coordination is the responsibility of the ISCP Director and CivicActions Operations.
 
 
 
@@ -84,7 +84,7 @@ The Information System Contingency Plan (ISCP) is closely integrated with the In
 
 #### CivicActions Responsibility
 
-The ISCP Director and CivicActions Security Team are responsible to review the ISCP annually and when a change to the system occurs.
+The ISCP Director and CivicActions Security are responsible to review the ISCP annually and when a change to the system occurs.
 
 
 
@@ -92,7 +92,7 @@ The ISCP Director and CivicActions Security Team are responsible to review the I
 
 #### CivicActions Responsibility
 
-The CivicActions and ISCP Director are required to update the ISCP to address changes to the organization, information system, or environment of operation and problems encountered during contingency plan implementation, execution, or testing.
+CivicActions Operations and ISCP Director are required to update the ISCP to address changes to the organization, information system, or environment of operation and problems encountered during contingency plan implementation, execution, or testing.
 
 
 
@@ -100,7 +100,7 @@ The CivicActions and ISCP Director are required to update the ISCP to address ch
 
 #### CivicActions Responsibility
 
-The ISCP requires that changes to the plan be communicated to those on the Contingency Plan Contact List (Appendix A).
+The ISCP requires that changes to the plan be communicated to those on the Incident Response / Contingency Plan Contact List.
 
 
 
@@ -144,7 +144,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### CivicActions Responsibility
 
-Real world tests of the contingency plan will be held at least annually, with supplemental tests (checklist/table-top) as needed for specific scenarios. The ISCP Coordinator is responsible to facilitate annual testing exercises. The testing process for the CP includes review of the CP exercise and identification of corrective actions and other improvements.
+Real world tests of the contingency plan will be held at least annually, with supplemental tests (checklist/table-top) as needed for specific scenarios. The ISCP Coordinator is responsible to facilitate annual testing exercises. The testing process for the ISCP includes review of the ISCP, exercise and identification of corrective actions and other improvements.
 
 
 
@@ -165,7 +165,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  alternate storage site in conjunction with their IaaS provider, AWS.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: alternate storage site
 
 
 
@@ -180,7 +180,7 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: alternate storage site separation from primary site in conjunction with their IaaS provider, AWS.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: alternate storage site separation.
 
 
 
@@ -205,15 +205,13 @@ CivicActions conducts system user-level information backup in accordance with re
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: user level backup requirements.
 
-AWS functionally makes full backups completed daily and incremental backups in real time.  In addition, transactional logging is conducted by AWS in real time.
-
 
 
 ### Part b)
 
 #### CivicActions Responsibility
 
-System level information for the application is replicated and backed up in the same way as user-level information – see Part (a) above.
+System level information for the application is replicated and backed up in the same way as user-level information as defined in CP-9(a).
 
 
 
@@ -227,7 +225,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### CivicActions Responsibility
 
-System documentation is backed up from the Git repository on a daily basis with a minimum two-week retention period and off-site storage.
+System documentation is backed up from the GitHub repository on a daily basis with a minimum two-week retention period and off-site storage.
 
 
 
@@ -235,28 +233,36 @@ System documentation is backed up from the Git repository on a daily basis with 
 
 #### CivicActions Responsibility
 
-CivicActions employees must authenticate prior to being granted access to the Github repository. Roles and responsibilities within Github determine the proper level of access for the documentation being accessed. The folder structure of Github protects though permissions and ownership prohibiting users from accessing unauthorized documentation.
+CivicActions employees must authenticate prior to being granted access to the GitHub repository. Roles and responsibilities within GitHub determine the proper level of access for the documentation being accessed. The folder structure of GitHub protects though permissions and ownership prohibiting users from accessing unauthorized documentation.
 
 
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: protection of the confidentiality, integrity, and availability of backup information at storage locations in conjunction with AWS.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: protection of backup information.
 
 
 
-## CP-10 INFORMATION SYSTEM RECOVERY AND RECONSTITUTION
+## CP-10 INFORMATION SYSTEM BACKUP
 
 > Control description: <http://800-53.govready.com/control?id=CP-10>
 > 
 > 
 > 
-> Security control type: Inherited (Cloud Service Provider)
+> Security control type: Hybrid
+
+
+### Part d)
+
+#### CivicActions Responsibility
+
+The Contingency Plan documents the mechanisms with supporting procedures that allow all system components to be recovered and reconstituted to the system’s original state after a disruption or failure. This original state means that all system parameters (either default or organization-established) are reset, patches are reinstalled, system and security configuration settings are reestablished, system documentation and operating procedures are available, application and system software is reinstalled, information from the most recent backups is available and the system is fully tested.
+
 
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: information system recovery and reconstitution.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: information system recovery and reconstitution.
 
 
 

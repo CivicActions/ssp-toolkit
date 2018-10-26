@@ -16,10 +16,9 @@ satisfies:
     planning policy that addresses purpose, scope, roles, responsibilities, management
     commitment, coordination among organizational entities, and compliance; and procedures
     to facilitate the implementation of the policy and associated controls. This information
-    is maintained in Contingency Planning (CP) Policy and Procedure that  can be found in
-    the CivicActions Github repository at
-    <https://github.com/NuCivic/healthdata/wiki/contingency-plan> also:
-    <https://github.com/NuCivic/healthdata/wiki/contingency-plan-word>
+    is maintained in Contingency Planning (CP) Policy and Procedure that can be found in
+    the CivicActions Compliance Docs GitHub repository at
+    <https://github.com/CivicActions/compliance-docs>. 
 
 - control_key: CP-02
   control_key_part: c
@@ -31,7 +30,7 @@ satisfies:
   narrative: >
     The Information System Contingency Plan (ISCP) is closely integrated with the
     Incident Response Plan (IRP). Coordination is the responsibility of the ISCP Director
-    and IRP Director.
+    and CivicActions Operations.
 
 - control_key: CP-02
   control_key_part: d
@@ -41,7 +40,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The ISCP Director and CivicActions Security Team are responsible to review the ISCP
+    The ISCP Director and CivicActions Security are responsible to review the ISCP
     annually and when a change to the system occurs.
 
 - control_key: CP-02
@@ -52,7 +51,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The CivicActions and ISCP Director are required to update the ISCP to address
+    CivicActions Operations and ISCP Director are required to update the ISCP to address
     changes to the organization, information system, or environment of operation and
     problems encountered during contingency plan implementation, execution, or testing.
 
@@ -65,7 +64,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The ISCP requires that changes to the plan be communicated to those on the
-    Contingency Plan Contact List (Appendix A).
+    Incident Response / Contingency Plan Contact List.
 
 - control_key: CP-02
   control_key_part: g
@@ -75,8 +74,8 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The ISCP is available on CivicActions Github repository.  This repository provides
-    the configuration management capabilities for the ISCP to be protected from unauthorized
+    The ISCP is available on CivicActions Github repository.  This repository provides the
+    configuration management capabilities for the ISCP to be protected from unauthorized
     disclosure and modification.
 
 - control_key: CP-03
@@ -102,9 +101,9 @@ satisfies:
   implementation_status: In Place
   narrative: >
     Real world tests of the contingency plan will be held at least annually, with
-    supplemental tests (checklist/table-top) as needed for specific scenarios. The
-    ISCP Coordinator is responsible to facilitate annual testing exercises. The testing
-    process for the CP includes review of the CP exercise and identification of corrective
+    supplemental tests (checklist/table-top) as needed for specific scenarios. The ISCP
+    Coordinator is responsible to facilitate annual testing exercises. The testing process
+    for the ISCP includes review of the ISCP, exercise and identification of corrective
     actions and other improvements.
 
 - control_key: CP-09
@@ -128,7 +127,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     System level information for the application is replicated and backed up in the same way
-    as user-level information – see Part (a) above.
+    as user-level information as defined in CP-9(a).
   
 - control_key: CP-09
   control_key_part: c
@@ -138,7 +137,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    System documentation is backed up from the Git repository on a daily basis
+    System documentation is backed up from the GitHub repository on a daily basis
     with a minimum two-week retention period and off-site storage.
 
 - control_key: CP-09
@@ -150,7 +149,23 @@ satisfies:
   implementation_status: In Place
   narrative: >
     CivicActions employees must authenticate prior to being granted access to the
-    Github repository. Roles and responsibilities within Github determine the proper
+    GitHub repository. Roles and responsibilities within GitHub determine the proper
     level of access for the documentation being accessed. The folder structure of
-    Github protects though permissions and ownership prohibiting users from accessing
+    GitHub protects though permissions and ownership prohibiting users from accessing
     unauthorized documentation.
+
+- control_key: CP-10
+  control_key_part: d
+  control_name: INFORMATION SYSTEM BACKUP
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The Contingency Plan documents the mechanisms with supporting procedures that allow
+    all system components to be recovered and reconstituted to the system’s original state
+    after a disruption or failure. This original state means that all system parameters
+    (either default or organization-established) are reset, patches are reinstalled,
+    system and security configuration settings are reestablished, system documentation and
+    operating procedures are available, application and system software is reinstalled,
+    information from the most recent backups is available and the system is fully tested.

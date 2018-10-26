@@ -12,21 +12,12 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    CivicActions users of the system are required to identify and authenticate
-    in order to access any functions of the information system beyond viewing and
-    downloading the publicly available website content that is available to all anonymous
-    website visitors. Users who are assigned to CivicActions require the appropriate
-    authorization described in AC-2. CivicActions users authenticate using the standard
-    Drupal login protocol prior to using the LINCS services. LINCS user roles are described
-    in AC-3.
+    Drupal users authenticate using the standard login protocol prior to using application
+    services. User roles are described in AC-3.
 
-    To access the website as an authenticated user, front-end users of the application must first
-    request and be given a login account with a unique username, password and email
-    address. Login accounts can only be created by existing website users with the
-    role of either Administrator or Site Manager. Users with those roles also assign
-    roles to each login account that govern the user's ability to create, publish,
-    update or delete website content such as blog entries, datasets and data resource
-    files.
+    Privileged Drupal accounts can only be created by existing website users with the role
+    of "administrator". Administrator users assign roles to each login account that govern
+    the user's ability to create, publish, update or delete website content.
 
 - control_key: IA-04
   control_key_part: a
@@ -49,12 +40,6 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    In accordance with CivicActions Identification and Authentication (IA) Policy
-    <https://github.com/CivicActions/compliance-docs/blob/master/IA-Policy.md>,
-    CivicActions internal users are uniquely identified by
-    creation of an organizational account with a username based on each user's full
-    first and last name.
-    
     When Drupal user accounts are created, users' email addresses are verified by sending
     a single-use activation link to the user’s mailbox. The email recipient then uses
     the activation link to log in to the website and supply a password which must
@@ -105,9 +90,10 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    Internal initial password requirements set by CivicActions admins and ongoing password
-    refreshes by internal user follow the requirements set in the Identification and
-    Authentication Policy.
+    Initial authenticator content (a unique email address – not previously used in any
+    other account) is provided by the user. Internal initial password requirements set by
+    CivicActions Operations and ongoing password refreshes by internal user follow the
+    requirements set in the Identification and Authentication Policy.
 
 - control_key: IA-05
   control_key_part: c
@@ -130,7 +116,8 @@ satisfies:
   narrative: >
     The system partially inherits this control from Drupal standard password management.
     
-    All password changes/resets are recorded in the website's "Drupal watchdog" logs.
+    All password creation/change/reset operations are recorded in the website's "Drupal
+    watchdog" logs.
     
 - control_key: IA-05
   control_key_part: e
@@ -140,11 +127,11 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    CivicActions/Drupal requires users to change their password upon initial login, and the
-    application website enforces this. User accounts are assigned a randomly-generated
-    and unguessable default password that is not shared with anyone, including site
-    Administrators. Once the user logs in and creates a new password, the default
-    password erased from the website's database.
+    Drupal requires users to change their password upon initial login, and the application
+    website enforces this. User accounts are assigned a randomly-generated and unguessable
+    default password that is not shared with anyone, including site Administrators. Once
+    the user logs in and creates a new password, the default password erased from the
+    website's database.
 
 - control_key: IA-05
   control_key_part: h
@@ -154,11 +141,11 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    For all Drupal users, passwords are protected by the website's software,
-    which only stores an encrypted string based on the password. This means that even
-    if the website's database should be compromised, an attacker would still be unable
-    to know users' actual passwords. Internal users receive training in security awareness
-    and acceptable use and are instructed never to reveal their passwords to anyone.
+    For all Drupal users, passwords are protected by the website's software, which only
+    stores an encrypted string based on the password. This means that even if the
+    website's database should be compromised, an attacker would still be unable to know
+    users' actual passwords. Internal users receive training in security awareness and
+    acceptable use and are instructed never to reveal their passwords to anyone.
 
 - control_key: IA-05
   control_key_part: i
@@ -168,8 +155,8 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    CivicActions internal users are required to take appropriate measures in the handling
-    of passwords including:
+    Drupal users are required to take appropriate measures in the handling of passwords
+    including:
 
     • Not transmitting user names and passwords together in an unencrypted format
 
@@ -204,6 +191,10 @@ satisfies:
     log in to the website for the first.  The website requires all submitted passwords to
     comply with validation rules, as described above in IA-5(c).
 
+    Changing password lifetime, length, reuse or strength requirements requires a code
+    setting change that therefore needs to be planned and approved by CivicActions' Change
+    Control Board before being implemented.
+
 - control_key: IA-05 (1)
   control_key_part: b
   control_name: PASSWORD-BASED AUTHENTICATION
@@ -212,9 +203,9 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    When required to change passwords, Drupal users are required to
-    change their authenticator password by changing at least one character. Enforcement
-    of this control is implemented through the website's software configuration.
+    When required to change passwords, Drupal users are required to change their
+    authenticator password by changing at least one character. Enforcement of this control
+    is implemented through the website's software configuration.
 
 - control_key: IA-05 (1)
   control_key_part: c 
@@ -224,10 +215,10 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    All Drupal passwords are encrypted in storage, using the SHA-512 hashing
-    algorithm with a salt. The hash function is performed repeatedly to further obfuscate
-    the password via key stretching. In transmission, passwords are encrypted using
-    SSL via HTTPS.
+    All Drupal passwords are encrypted in storage, using the SHA-512 hashing algorithm
+    with a salt. The hash function is performed repeatedly to further obfuscate the
+    password via key stretching. In transmission, passwords are encrypted using SSL via
+    HTTPS.
 
 - control_key: IA-05 (1)
   control_key_part: d
@@ -237,8 +228,18 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The website requires all submitted passwords to comply with lifetime rules,
-    as described above in IA-5(g).
+    The website requires all submitted passwords to comply with lifetime rules, as
+    described above in IA-5(g).
+
+- control_key: IA-05 (1)
+  control_key_part: e
+  control_name: PASSWORD-BASED AUTHENTICATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    Password reuse is limited through software configuration.
 
 - control_key: IA-05 (1)
   control_key_part: f
@@ -248,10 +249,10 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    When website users request a password reset, the website sends a temporary login
-    link to the email address associated with their user account. After a user logs
-    in via the temporary login link, the website requires the user to enter a new
-    password before proceeding further.
+    When website users request a password reset, the website sends a temporary login link
+    to the email address associated with their user account. After a user logs in via the
+    temporary login link, the website requires the user to enter a new password before
+    proceeding further.
 
 - control_key: IA-06
   control_key_part: ~
@@ -274,51 +275,7 @@ satisfies:
   security_control_type: System Specific Control
   implementation_status: In Place
   narrative: >
-    All Drupal passwords are encrypted in storage, using the SHA-512 hashing
-    algorithm with a salt. SHA-512 is an approved security function under FIPS PUB
-    140-2. The hash function is performed repeatedly to further obfuscate the password
-    via key stretching. In transmission, passwords are encrypted using SSL via HTTPS.
-
-- control_key: IA-08 (1)
-  control_key_part: ~
-  control_name: ACCEPTANCE OF PIV CREDENTIALS FROM OTHER AGENCIES
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Not Applicable
-  narrative: >
-    CivicActions does not utilize customer agency supplied PIV credentials for access
-    to customer instances of Drupal.
-
-- control_key: IA-08 (2)
-  control_key_part: ~
-  control_name: ACCEPTANCE OF THIRD-PARTY CREDENTIALS
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Not Applicable
-  narrative: >
-    CivicActions does not utilize customer agency supplied PIV credentials for access
-    to customer instances of Drupal.
-
-- control_key: IA-08 (3)
-  control_key_part: ~
-  control_name: USE OF FICAM-APPROVED PRODUCTS
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Not Applicable
-  narrative: >
-    CivicActions does not utilize customer agency supplied PIV credentials for access
-    to customer instances of Drupal.
-
-- control_key: IA-08 (4)
-  control_key_part: ~
-  control_name: USE OF FICAM-ISSUED PROFILES
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Not Applicable
-  narrative: >
-    CivicActions does not utilize customer agency supplied PIV credentials for access
-    to customer instances of Drupal.
+    All Drupal passwords are encrypted in storage, using the SHA-512 hashing algorithm
+    with a salt. SHA-512 is an approved security function under FIPS PUB 140-2. The hash
+    function is performed repeatedly to further obfuscate the password via key
+    stretching. In transmission, passwords are encrypted using SSL via HTTPS.
