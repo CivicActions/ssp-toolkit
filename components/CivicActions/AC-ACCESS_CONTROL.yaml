@@ -169,6 +169,19 @@ satisfies:
     CivicActions performs regular audits of privileged users as part of the practice of
     enforcing least privilege.
 
+- control_key: AC-17
+  control_key_part: ~
+  control_name: REMOTE ACCESS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The CivicActions Access Control (AC) policy defines policy for remote usage
+    restrictions.  The Project Manager or Project Owner may additionally provision users
+    according to their Access Control policies.
+  summary: CivicActions Access Control (AC) policy defines remote usage restrictions.
+
 - control_key: AC-18
   control_key_part: ~
   control_name: WIRELESS ACCESS

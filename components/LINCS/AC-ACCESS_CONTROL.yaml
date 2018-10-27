@@ -143,6 +143,7 @@ satisfies:
     personnel. Access will be controlled with access control list used on each
     instance. Members of one group cannot access resources defined for other groups unless
     explicitly permitted.
+  summary: LINCS ensures access authorizations enforced in accordance with user definitions.
 
 - control_key: AC-06
   control_key_part: ~
@@ -168,6 +169,8 @@ satisfies:
     attempts. The information system automatically locks the account permanently, unless
     an administrator unlocks the account before then, when the maximum number of
     unsuccessful attempts (3) is exceeded.
+  summary: The LINCS Technology Project system locks out users after three unsuccessful login
+    attempts.
 
 - control_key: AC-08
   control_key_part: ~
@@ -211,6 +214,8 @@ satisfies:
 
     If system monitoring reveals information indicating possible criminal activity, such
     evidence may be provided to law enforcement personnel."
+  summary:
+    LINCS shows all persons who log into system "Authorized User Only" warning banner.
 
 - control_key: AC-14
   control_key_part: ~
@@ -225,6 +230,7 @@ satisfies:
     identification and authentication for the public web site. Program and Privilege users
     cannot access LINCS Technology Project system without identification or
     authentication.
+  summary: General public can read web pages without authentication; privileged users require identification and authentication to log in.
 
 - control_key: AC-17
   control_key_part: ~
@@ -241,6 +247,7 @@ satisfies:
     (SSH) or the Remote Desktop Protocol (RDP) where the user will authenticate to the
     device through this secure channel. Virtual Private Networking (VPN) is not enabled in
     any form within the LINCS accreditation boundary.
+  summary: LINCS Technology Project permits remote access for privileged functions to support operational needs.
 
 - control_key: AC-22
   control_key_part: a
@@ -260,6 +267,9 @@ satisfies:
     Reporting and training tools, and Drupal Content Management systems. Public content is
     only edited via the Drupal Content Management System. All other content is only
     viewable by LINCS system users and protected by hardened access controls.
+  summary: >
+    Department of Education grants certain LINCS support staff members the authority
+    to post publicly accessible content.
 
 - control_key: AC-22
   control_key_part: b
