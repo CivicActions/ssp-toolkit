@@ -16,4 +16,21 @@ satisfies:
     documented within the LINCS SSP. Security software features are used to automatically
     generate and store security audit log records for use in monitoring security-related
     events on all multi-user systems. The Department reviews and updates this policy as
-    necessary and it was last updated in April 2008.
+    necessary and it was last updated in April 2008. Additional information is contained
+    within the Department of Education Handbook for Information Assurance Security policy
+    (Handbook OCIO-01).
+  summary: LINCS Technology Project maintains a record of system activity by application
+    process and by user activity and follows Department of Education Handbook for Information
+    Assurance Security Policy.
+
+- control_key: AU-08
+  control_key_part: ~
+  control_name: TIME STAMPS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The LINCS Technology Project system clocks are synchronized system-wide and provide
+    time stamps with audit records.
+  summary: LINCS Technology Project system clocks are synchronized system-wide.

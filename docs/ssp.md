@@ -882,7 +882,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### LINCS specific control or LINCS Responsibility
 
-The LINCS Technology Project maintains a record of system activity by application process and by user activity. Audit and accountability policy and procedures are documented within the LINCS SSP. Security software features are used to automatically generate and store security audit log records for use in monitoring security-related events on all multi-user systems. The Department reviews and updates this policy as necessary and it was last updated in April 2008.
+The LINCS Technology Project maintains a record of system activity by application process and by user activity. Audit and accountability policy and procedures are documented within the LINCS SSP. Security software features are used to automatically generate and store security audit log records for use in monitoring security-related events on all multi-user systems. The Department reviews and updates this policy as necessary and it was last updated in April 2008. Additional information is contained within the Department of Education Handbook for Information Assurance Security policy (Handbook OCIO-01).
 
 
 
@@ -1113,7 +1113,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### CivicActions Responsibility
 
-CivicActions security audit data is collected by a Graylog Security and Event Management (SIEM) ashboard to support real-time and after-the-fact investigation at the application level for the following:
+CivicActions security audit data is collected by a Graylog Security and Event Management (SIEM) dashboard to support real-time and after-the-fact investigation at the application level for the following:
 
 * Indications of inappropriate or unusual activity
 
@@ -1137,7 +1137,13 @@ Any significant findings observed during the inspection are reported to CivicAct
 > 
 > 
 > 
-> Security control type: Inherited (Cloud Service Provider)
+> Security control type: Hybrid
+
+
+#### LINCS specific control or LINCS Responsibility
+
+The LINCS Technology Project system clocks are synchronized system-wide and provide time stamps with audit records.
+
 
 
 #### Amazon Web Services (AWS) US-East/West control support
@@ -3843,20 +3849,6 @@ The CivicActions Director of Human Resources works in coordination with the Civi
 #### CivicActions Responsibility
 
 At least every three (3) years, the CivicActions Director of Human Resources reviews and revises position risk designations. If the Director of Human Resources determines that significant changes must be made to the position risk descriptions the Director of Human Resources works in coordination with the CivicActions ISSO and the Chief Operating Officer to implement changes as required.
-
-
-
-#### LINCS specific control or LINCS Responsibility
-
-The LINCS Technology Project’s position sensitivity levels are assigned by the Department of Education and National Classification Center (NCC) as part of the position designation required by OPM under 5 CFR 731.106. Each Department position designation is documented on the Standard Position Description (SPD) and assigned a risk level (or sensitivity level) commensurate with the sensitivity of the information, the risk to that information and the system maintaining that information. The levels of risk still need to be designated by the Department for employee and contractor positions but since the LINCS Technology Project system does not have any sensitive data, a low risk scenario can be assumed.
-
-* Employee risk levels and background investigations are: Low Risk= NACI, Moderate Risk= LBI, High Risk= BI.
-
-* Contractor risk levels and background investigations are: Low Risk= NACI, Moderate Risk= NACC, High Risk= BI.
-
-In order to ensure every employee is assigned to a position, which has been reviewed for sensitivity by the NCC, the SPD is a required data attribute of an employee’s HR record. Position risks designations are reviewed and revised when NCC or OPM publish changes to sensitivity levels.
-
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog
 
 
 
