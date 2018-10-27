@@ -3622,9 +3622,9 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 
 #### LINCS specific control or LINCS Responsibility
 
-The Department of Education developed, documented and disseminated to personnel a system planning  policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
+This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
 
-The CivicActions ISSO is responsible for reviewing and updating the Planning Policy and Procedures annually. The Chief Operating Officer is responsible for approving Planning.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+The LINCS Technology Project developed its security policy planning and procedures based on the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01), guidance from NIST, the Office of Management and Budget and industry best practices. Security policies and procedures are formally documented within the LINCS SSP, which provides the roles and responsibilities as it pertains to security planning. It provides guidance on all aspects of security for the protection of LINCS information technology resources. It defines responsibilities for the implementation and oversight of the guidance contained herein. The plan was last updated in December, 2015.
 
 
 
@@ -3636,7 +3636,7 @@ CivicActions has developed, documented and disseminated to personnel a system pl
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
 
 
 
@@ -3649,11 +3649,23 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-### Part a)
-
 #### LINCS specific control or LINCS Responsibility
 
-CivicActions has developed the system security plan (SSP) for the LINCS system and compliant to NIST 800-53 and FIPS 199. The SSP defines the security categorization, system boundary, and security requirements and controls meeting NIST requirements as required by LINCS. Specifically the SSP:
+The System Security Plan (SSP) was developed and implemented for LINCS Technology Project system in accordance with the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01), Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05), NIST SP 800-18 and NIST SP 800-37. The SSP includes a description of the management, operational, and technical controls in place or planned for the application. The SSP is included as a key document in an application’s C&A package and is reviewed and approved by designated officials. The SSP identifies the system owner and responsible parties for managing system access and the overall security of the system. The Chief Information Security Officer reviews and approves the SSP.  The SSP will be reviewed at least annually and updated to account for any changes to the LINCS system and to address any changes in security controls.
+
+
+
+#### Amazon Web Services (AWS) US-East/West control support
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: AWS system security plan.
+
+
+
+### Part a)
+
+#### CivicActions Responsibility
+
+CivicActions has developed this system security plan (SSP) for the information system as part of compliance with NIST 800-53 and FIPS 199. The SSP defines the security categorization, system boundary, and security requirements and controls meeting the requirements of the NIST Risk Management Framework (RMF). Specifically the SSP:
 
 1. Is consistent with the organization’s enterprise architecture
 
@@ -3675,65 +3687,35 @@ CivicActions has developed the system security plan (SSP) for the LINCS system a
 
 
 
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS system security plan.
-
-
-
 ### Part b)
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-The SSP is reviewed and approved by the authorizing official prior to plan implementation. A copy of the SSP is provided to authorized CivicActions and LINCS personnel including the System Owner, Authorizing Official, Information System Security Officer, System/Network Administrator. The SSP is maintained by CivicActions' Security team.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS system security plan.
+The SSP is reviewed and approved by the authorizing official prior to plan implementation. A copy of the SSP is provided to authorized CivicActions and assessing personnel including the System Owner, Authorizing Official, Information System Security Officer, System/Network Administrator and CivicActions Operations. The SSP is maintained by CivicActions Security.
 
 
 
 ### Part c)
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-The SSP is reviewed at least annually with updates made if necessary. The SSP is maintained by CivicActions' Security team.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS system security plan.
+The SSP is reviewed at least annually by the Product Owner and CivicActions Operations in collaboration with CivicActions Security.
 
 
 
 ### Part d)
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-The CivicActions ISSO updates the system description and control descriptions within the LINCS SSP as needed to verify the SSP is an accurate description of the LINCS system.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS system security plan.
+CivicActions Operations in collaboration with CivicActions Security updates the system description and control descriptions within the SSP as needed to verify the SSP is an accurate description of the system.
 
 
 
 ### Part e)
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-The SSP is currently available to authorized users on Github. Per the Acceptable Use Policy, all entities granted access to CivicActions information assets are required to complete a non-disclosure agreement (NDA) to uphold information confidentiality. The SSP provides the configuration management capabilities for the SSP to be protected from unauthorized disclosure and modification.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  AWS system security plan.
+The SSP is currently available to authorized users on GitLab. Per the Acceptable Use Policy, all entities granted access to CivicActions information assets are required to complete a non-disclosure agreement (NDA) to uphold information confidentiality. GitLab provides the configuration management capabilities for the SSP to be protected from unauthorized disclosure and modification.
 
 
 
@@ -3746,11 +3728,17 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
+#### LINCS specific control or LINCS Responsibility
+
+All users (privileged and program account users) requesting access to the LINCS Technology Project system are required to read the LINCS’ Rules of Behaviors, complete an account request form and sign both documents. Appendix B includes the Rules of Behavior, describing the user’s responsibilities and expected behavior when using the application and also includes the User Acknowledgement form. Account management procedures are described in detail in the SSP.
+
+
+
 ### Part a)
 
 #### CivicActions Responsibility
 
-CivicActions maintains an Acceptable Use Policy that all CivicActions personnel are required to abide by when working with CivicActions operated systems. This information is available on CivicActions Github system under Security Policy".
+CivicActions maintains an Acceptable Use Policy that all CivicActions personnel are required to abide by when working with CivicActions operated systems. This information is available in the CivicActions Handbook under Security Policy here: <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy>.
 
 
 
@@ -3760,13 +3748,15 @@ CivicActions maintains an Acceptable Use Policy that all CivicActions personnel 
 
 All CivicActions employees are required to read and sign the Security Policy <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/> which includes the Acceptable Use Policy, prior to being authorized access to CivicActions operated systems. This is part of the onboarding Security Training process: <https://civicactions-handbook.readthedocs.io/en/latest/01-welcome-to-civicactions/training/security-training/>
 
+If CivicActions staff fail to comply with CivicActions security awareness and training requirements, their access to CivicActions information systems may be terminated.
+
 
 
 ### Part c)
 
 #### CivicActions Responsibility
 
-The CivicActions Acceptable Use Policy/Rules of Behavior are reviewed by the Director of Human resources at least annually and is updated at least every three years.
+The CivicActions Acceptable Use Policy/Rules of Behavior are reviewed by CivicActions Security and Operations at least annually and is updated at least every three years.
 
 
 

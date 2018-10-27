@@ -12,65 +12,17 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Providers dated 1 May 2013.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud Service Provider dated 1 May 2013.
 
 - control_key: PL-02
-  control_key_part: a
+  control_key_part: ~
   control_name: SYSTEM SECURITY PLAN
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  AWS system
-    security plan.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: AWS system security plan.
 
-- control_key: PL-02
-  control_key_part: b
-  control_name: SYSTEM SECURITY PLAN
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  AWS system
-    security plan.
-
-- control_key: PL-02
-  control_key_part: c
-  control_name: SYSTEM SECURITY PLAN
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  AWS system
-    security plan.
-
-- control_key: PL-02
-  control_key_part: d
-  control_name: SYSTEM SECURITY PLAN
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  AWS system
-    security plan.
-
-- control_key: PL-02
-  control_key_part: e
-  control_name: SYSTEM SECURITY PLAN
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  AWS system
-    security plan.

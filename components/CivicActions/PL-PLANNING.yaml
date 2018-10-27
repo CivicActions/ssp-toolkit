@@ -20,6 +20,93 @@ satisfies:
     be found in the CivicActions Github repository at
     <https://github.com/CivicActions/compliance-docs/>.
 
+- control_key: PL-02
+  control_key_part: a
+  control_name: SYSTEM SECURITY PLAN
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions has developed this system security plan (SSP) for the information system
+    as part of compliance with NIST 800-53 and FIPS 199. The SSP defines the security
+    categorization, system boundary, and security requirements and controls meeting the
+    requirements of the NIST Risk Management Framework (RMF). Specifically the SSP:
+
+    1. Is consistent with the organization’s enterprise architecture
+
+    2. Explicitly defines the authorization boundary for the system
+
+    3. Describes the operational context of the information system in terms of missions
+    and business processes
+
+    4. Provides the security categorization of the information system including supporting
+    rationale
+
+    5. Describes the operational environment for the information system and relationships
+    with or connections to other information systems
+
+    6. Provides an overview of the security requirements for the system
+
+    7. Identifies any relevant overlays, if applicable
+
+    8. Describes the security controls in place or planned for meeting those requirements
+    including a rationale for the tailoring decisions
+
+    9. Is reviewed and approved by the authorizing official or designated representative
+    prior to plan implementation
+
+- control_key: PL-02
+  control_key_part: b
+  control_name: SYSTEM SECURITY PLAN
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The SSP is reviewed and approved by the authorizing official prior to plan
+    implementation. A copy of the SSP is provided to authorized CivicActions and assessing
+    personnel including the System Owner, Authorizing Official, Information System
+    Security Officer, System/Network Administrator and CivicActions Operations. The SSP is
+    maintained by CivicActions Security.
+
+- control_key: PL-02
+  control_key_part: c
+  control_name: SYSTEM SECURITY PLAN
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The SSP is reviewed at least annually by the Product Owner and CivicActions Operations
+    in collaboration with CivicActions Security.
+
+- control_key: PL-02
+  control_key_part: d
+  control_name: SYSTEM SECURITY PLAN
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions Operations in collaboration with CivicActions Security updates the system
+    description and control descriptions within the SSP as needed to verify the SSP is an
+    accurate description of the system.
+
+- control_key: PL-02
+  control_key_part: e
+  control_name: SYSTEM SECURITY PLAN
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The SSP is currently available to authorized users on GitLab. Per the Acceptable Use
+    Policy, all entities granted access to CivicActions information assets are required to
+    complete a non-disclosure agreement (NDA) to uphold information
+    confidentiality. GitLab provides the configuration management capabilities for the SSP
+    to be protected from unauthorized disclosure and modification.
+
 - control_key: PL-04
   control_key_part: a
   control_name: RULES OF BEHAVIOR
@@ -30,7 +117,8 @@ satisfies:
   narrative: >
     CivicActions maintains an Acceptable Use Policy that all CivicActions personnel are
     required to abide by when working with CivicActions operated systems. This information
-    is available on CivicActions Github system under Security Policy".
+    is available in the CivicActions Handbook under Security Policy here:
+    <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy>.
 
 - control_key: PL-04
   control_key_part: b
@@ -46,6 +134,9 @@ satisfies:
     operated systems. This is part of the onboarding Security Training process:
     <https://civicactions-handbook.readthedocs.io/en/latest/01-welcome-to-civicactions/training/security-training/>
 
+    If CivicActions staff fail to comply with CivicActions security awareness and training
+    requirements, their access to CivicActions information systems may be terminated.
+
 - control_key: PL-04
   control_key_part: c
   control_name: RULES OF BEHAVIOR
@@ -54,8 +145,8 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The CivicActions Acceptable Use Policy/Rules of Behavior are reviewed by the Director
-    of Human resources at least annually and is updated at least every three years.
+    The CivicActions Acceptable Use Policy/Rules of Behavior are reviewed by CivicActions
+    Security and Operations at least annually and is updated at least every three years.
 
 - control_key: PL-04
   control_key_part: d
