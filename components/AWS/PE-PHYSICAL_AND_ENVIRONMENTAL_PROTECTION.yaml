@@ -11,6 +11,7 @@ satisfies:
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   implementation_status: In Place
+  summary: Fully inherited from AWS (FedRAMP).
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
     AWS Cloud dated 1 May 2013 for all physical and environmental protection
@@ -23,6 +24,7 @@ satisfies:
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   implementation_status: In Place
+  summary: Fully inherited from AWS (FedRAMP).
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
     AWS Cloud dated 1 May 2013 for all physical and environmental protection
@@ -47,6 +49,7 @@ satisfies:
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   implementation_status: In Place
+  summary: Fully inherited from AWS (FedRAMP).
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
     AWS Cloud dated 1 May 2013 for all physical and environmental protection
@@ -59,6 +62,7 @@ satisfies:
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   implementation_status: In Place
+  summary: Fully inherited from AWS (FedRAMP).
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
     AWS Cloud dated 1 May 2013 for all physical and environmental protection
@@ -71,6 +75,7 @@ satisfies:
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   implementation_status: In Place
+  summary: Fully inherited from AWS (FedRAMP).
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
     AWS Cloud dated 1 May 2013 for all physical and environmental protection
@@ -83,6 +88,7 @@ satisfies:
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   implementation_status: In Place
+  summary: Fully inherited from AWS (FedRAMP).
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
     AWS Cloud dated 1 May 2013 for all physical and environmental protection
@@ -95,6 +101,7 @@ satisfies:
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   implementation_status: In Place
+  summary: Fully inherited from AWS (FedRAMP).
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
     AWS Cloud dated 1 May 2013 for all physical and environmental protection
@@ -107,6 +114,7 @@ satisfies:
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   implementation_status: In Place
+  summary: Fully inherited from AWS (FedRAMP).
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
     AWS Cloud dated 1 May 2013 for all physical and environmental protection
@@ -119,6 +127,7 @@ satisfies:
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   implementation_status: In Place
+  summary: Fully inherited from AWS (FedRAMP).
   narrative: >
     The system inherits this control from the FedRAMP Provisional ATO granted to the
     AWS Cloud dated 1 May 2013 for all physical and environmental protection

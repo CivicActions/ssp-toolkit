@@ -11,107 +11,53 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The Department of Education developed, documented and disseminated
-    to personnel a system planning  policy that addresses purpose, scope, roles, responsibilities,
-    management committment, coordination among organizational entities, and compliance,
-    and developed, documented and disseminated to personnel procedures to facilitate
-    the implementation of the policy and associated controls.The policy is stated
-    in the Office of the Secretary Information Security Policy dated July 17, 2013
-    and the procedures are defined in the Office of the Secretary Procedures Handbook
-    for Information Security, Version 1.1 dated July 30, 2014. These documents will
-    be reviewed periodically. These policies and procedures are applicable to the
-    LINCS personnel using the lincs.ed.gov information system.
-
-    The CivicActions ISSO is responsible for reviewing and updating the Planning Policy
-    and Procedures annually. The Chief Operating Officer is responsible for approving
-    Planning.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO
-    27001, applicable executive orders, directives, policies, regulations, standards, and
-    guidance. These policies and procedures are applicable to the CivicActions staff
-    administering the lincs.ed.gov information system.
+    This is Agency common control.  More data about implementation can be obtained from
+    the Agency common control catalog.
+    
+    The LINCS Technology Project developed its security policy planning and procedures
+    based on the Department of Education, Office of the Chief Information Officer,
+    Handbook for Information Assurance Security Policy, Information Assurance Program
+    (Handbook OCIO-01), guidance from NIST, the Office of Management and Budget and
+    industry best practices. Security policies and procedures are formally documented
+    within the LINCS SSP, which provides the roles and responsibilities as it pertains to
+    security planning. It provides guidance on all aspects of security for the protection
+    of LINCS information technology resources. It defines responsibilities for the
+    implementation and oversight of the guidance contained herein. The plan was last
+    updated in December, 2015.
 
 - control_key: PL-02
-  control_key_part: a
+  control_key_part: ~
   control_name: SYSTEM SECURITY PLAN
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    CivicActions has developed the system security plan (SSP) for the LINCS system and
-    compliant to NIST 800-53 and FIPS 199. The SSP defines the security categorization,
-    system boundary, and security requirements and controls meeting NIST requirements
-    as required by LINCS. Specifically the SSP:
+    The System Security Plan (SSP) was developed and implemented for LINCS Technology
+    Project system in accordance with the Department of Education, Office of the Chief
+    Information Officer, Handbook for Information Assurance Security Policy, Information
+    Assurance Program (Handbook OCIO-01), Department of Education Information Technology
+    Security, Handbook for Information Technology Security, Certification and
+    Accreditation Procedures (Handbook OCIO-05), NIST SP 800-18 and NIST SP 800-37. The
+    SSP includes a description of the management, operational, and technical controls in
+    place or planned for the application. The SSP is included as a key document in an
+    application’s C&A package and is reviewed and approved by designated officials. The
+    SSP identifies the system owner and responsible parties for managing system access and
+    the overall security of the system. The Chief Information Security Officer reviews and
+    approves the SSP.  The SSP will be reviewed at least annually and updated to account
+    for any changes to the LINCS system and to address any changes in security controls.
 
-    1. Is consistent with the organization’s enterprise architecture
-
-    2. Explicitly defines the authorization boundary for the system
-
-    3. Describes the operational context of the information system in terms of missions
-    and business processes
-
-    4. Provides the security categorization of the information system including supporting
-    rationale
-
-    5. Describes the operational environment for the information system and relationships
-    with or connections to other information systems
-
-    6. Provides an overview of the security requirements for the system
-
-    7. Identifies any relevant overlays, if applicable
-
-    8. Describes the security controls in place or planned for meeting those requirements
-    including a rationale for the tailoring decisions
-
-    9. Is reviewed and approved by the authorizing official or designated representative
-    prior to plan implementation
-
-- control_key: PL-02
-  control_key_part: b
-  control_name: SYSTEM SECURITY PLAN
+- control_key: PL-04
+  control_key_part: ~
+  control_name: RULES OF BEHAVIOR
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The SSP is reviewed and approved by the authorizing official prior to plan implementation.
-    A copy of the SSP is provided to authorized CivicActions and LINCS personnel including
-    the System Owner, Authorizing Official, Information System Security Officer, System/Network
-    Administrator. The SSP is maintained by CivicActions' Security team.
-
-- control_key: PL-02
-  control_key_part: c
-  control_name: SYSTEM SECURITY PLAN
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The SSP is reviewed at least annually with updates made if necessary. The SSP is
-    maintained by CivicActions' Security team.
-
-- control_key: PL-02
-  control_key_part: d
-  control_name: SYSTEM SECURITY PLAN
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The CivicActions ISSO updates the system description and control descriptions
-    within the LINCS SSP as needed to verify the SSP is an accurate description of the
-    LINCS system.
-
-- control_key: PL-02
-  control_key_part: e
-  control_name: SYSTEM SECURITY PLAN
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The SSP is currently available to authorized users on Github. Per the Acceptable Use
-    Policy, all entities granted access to CivicActions information assets are required to
-    complete a non-disclosure agreement (NDA) to uphold information confidentiality. The
-    SSP provides the configuration management capabilities for the SSP to be protected
-    from unauthorized disclosure and modification.
-
+    All users (privileged and program account users) requesting access to the LINCS
+    Technology Project system are required to read the LINCS’ Rules of Behaviors, complete
+    an account request form and sign both documents. Appendix B includes the Rules of
+    Behavior, describing the user’s responsibilities and expected behavior when using the
+    application and also includes the User Acknowledgement form. Account management
+    procedures are described in detail in the SSP.
