@@ -393,7 +393,7 @@ The LINCS Technology Project permits remote access for privileged functions to s
 
 
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
 The CivicActions Access Control (AC) policy defines policy for remote usage restrictions.  The Project Manager or Project Owner may additionally provision users according to their Access Control policies.
 
