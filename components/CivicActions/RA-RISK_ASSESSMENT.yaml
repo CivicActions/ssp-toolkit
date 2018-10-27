@@ -21,6 +21,32 @@ satisfies:
     <https://github.com/CivicActions/compliance-docs/>.
 
 - control_key: RA-05
+  control_key_part: a
+  control_name: VULNERABILITY SCANNING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    CivicActions Operations uses vulnerability scanning software to document and determine
+    risks to the system.  These scans are being run on a regular basis and the results of
+    these scans are being used to inform changes to the system and verify that security
+    controls are working correctly.  These scans are used to document the current state of
+    the system, and to analyze security trends as changes are made over time.
+
+- control_key: RA-05
+  control_key_part: b
+  control_name: VULNERABILITY SCANNING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    CivicActions uses the automated vulnerability scanning tools OpenSCAP and OWASP ZAP to
+    scan systems and applications. Both tools update the list of known vulnerabilities
+    automatically and describes the risk of each vulnerability.
+
+- control_key: RA-05
   control_key_part: c
   control_name: VULNERABILITY SCANNING
   standard_key: NIST-800-53
@@ -28,11 +54,11 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    CivicActions Security team reviews all vulnerabilities identified from automated
-    scans and security assessments.  Vulnerabilities found and deemed legitimate are
-    assigned an impact rating and response time thought creation of an issue or ticket.
-    The CivicActions Security team reviews current scans and compare with older scans
-    to identify trends and to verify previous vulnerabilities have been mitigated.
+    CivicActions Security reviews all vulnerabilities identified from automated scans and
+    security assessments.  Vulnerabilities found and deemed legitimate are assigned an
+    impact rating and response time thought creation of an issue or ticket.  CivicActions
+    Operations reviews current scans and compare with older scans to identify trends and
+    to verify previous vulnerabilities have been mitigated.
 
 - control_key: RA-05
   control_key_part: d
@@ -42,12 +68,26 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    CivicActions identified and reported vulnerabilities are assigned by the CivicActions
-    Security team an impact rating and response time and must be remediated according to
-    the following time requirements.
+    Identified and reported vulnerabilities are assigned an impact rating and response
+    time by CivicActions Security and must be remediated according to the following time
+    requirements:
     
     • High - Within 30 days of discovery
     
     • Moderate - Within 90 days of discovery
     
     • Low - Within 240 days of discovery
+
+- control_key: RA-05
+  control_key_part: e
+  control_name: VULNERABILITY SCANNING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: Partially in Place
+  narrative: >
+    Results of the vulnerability scans and security assessments are shared with all
+    appropriate CivicActions personnel supporting continuous monitoring
+    requirements. CivicActions Security assigns each vulnerability an impact rating and
+    response time though JIRA or the Git issue tool for tracking to the established
+    remediation deadlines listed in RA-5(d).

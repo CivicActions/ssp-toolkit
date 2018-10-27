@@ -13,77 +13,16 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Providers dated 1 May 2013.
+    to the AWS Cloud Service Provider dated 1 May 2013.
 
 - control_key: RA-05
-  control_key_part: a
+  control_key_part: ~
   control_name: VULNERABILITY SCANNING
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: Partially in Place
+  implementation_status: In Place
   narrative: >
-    The system fully inherits this control to fully cover the AWS managed cloud
-    from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013
-    for the following:  vulnerability scanning for operating system/infrastructure
-    and database servers. AWS monthly scan results can be monitored via FedRAMP
-    to verify the control’s implementation was adequate such as OS-level scans.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: vulnerability scanning.
 
-- control_key: RA-05
-  control_key_part: b
-  control_name: VULNERABILITY SCANNING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Partially in Place
-  narrative: >
-    The system fully inherits this control to fully cover this control for the AWS
-    managed cloud from the FedRAMP Provisional ATO granted to the AWS Cloud dated
-    1 May 2013 for the following:  vulnerability scanning for operating system/infrastructure
-    and database servers. AWS monthly scan results can be monitored via FedRAMP
-    to verify the control’s implementation was adequate such as OS-level scans.
-
-- control_key: RA-05
-  control_key_part: c
-  control_name: VULNERABILITY SCANNING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Partially in Place
-  narrative: >
-    The system fully inherits this control to fully cover this control for the AWS
-    managed cloud from the FedRAMP Provisional ATO granted to the AWS Cloud dated
-    1 May 2013 for the following:  vulnerability scanning for operating system/infrastructure
-    and database servers. AWS monthly scan results can be monitored via FedRAMP
-    to verify the control’s implementation was adequate such as OS-level scans.
-
-- control_key: RA-05
-  control_key_part: d
-  control_name: VULNERABILITY SCANNING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Partially in Place
-  narrative: >
-    The system fully inherits this control to fully cover this control for the AWS
-    managed cloud from the FedRAMP Provisional ATO granted to the AWS Cloud dated
-    1 May 2013 for the following:  vulnerability scanning for operating system/infrastructure
-    and database servers. AWS monthly scan results can be monitored via FedRAMP
-    to verify the control’s implementation was adequate such as OS-level scans.
-
-- control_key: RA-05
-  control_key_part: e
-  control_name: VULNERABILITY SCANNING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Partially in Place
-  narrative: >
-    The system fully inherits this control to fully cover this control for the AWS
-    managed cloud from the FedRAMP Provisional ATO granted to the AWS Cloud dated
-    1 May 2013 for the following:  vulnerability scanning for operating system/infrastructure
-    and database servers. AWS monthly scan results can be monitored via FedRAMP
-    to verify the control’s implementation was adequate such as OS-level scans.
-
-    Results of vulnerability scans and security assesments and related continuous
-    montioring of AWS is available to LINCS through FedRAMP.

@@ -11,9 +11,9 @@
 
 #### LINCS specific control or LINCS Responsibility
 
-The Department of Education developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
+The LINCS Technology Project documents the security policy and procedures in addressing position categorization, personnel screening, personnel termination, personnel transfer, and access agreements within the LINCS SSP. The LINCS Technology Project adopts the Department of Education personnel security standards and determines position risks levels based on public trust responsibilities.
 
-The CivicActions ISSO is responsible for reviewing and updating the Personnel Security Policy and Procedures annually. The Chief Operating Officer is responsible for approving Personnel Security.  All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
 
 
 
@@ -25,7 +25,7 @@ CivicActions has developed, documented and disseminated to personnel a personnel
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
 
 
 
@@ -62,6 +62,20 @@ At least every three (3) years, the CivicActions Director of Human Resources rev
 
 
 
+#### LINCS specific control or LINCS Responsibility
+
+The LINCS Technology Project’s position sensitivity levels are assigned by the Department of Education and National Classification Center (NCC) as part of the position designation required by OPM under 5 CFR 731.106. Each Department position designation is documented on the Standard Position Description (SPD) and assigned a risk level (or sensitivity level) commensurate with the sensitivity of the information, the risk to that information and the system maintaining that information. The levels of risk still need to be designated by the Department for employee and contractor positions but since the LINCS Technology Project system does not have any sensitive data, a low risk scenario can be assumed.
+
+* Employee risk levels and background investigations are: Low Risk= NACI, Moderate Risk= LBI, High Risk= BI.
+
+* Contractor risk levels and background investigations are: Low Risk= NACI, Moderate Risk= NACC, High Risk= BI.
+
+In order to ensure every employee is assigned to a position, which has been reviewed for sensitivity by the NCC, the SPD is a required data attribute of an employee’s HR record. Position risks designations are reviewed and revised when NCC or OPM publish changes to sensitivity levels.
+
+This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog
+
+
+
 ## PS-03 PERSONNEL SCREENING
 
 > Control description: <http://800-53.govready.com/control?id=PS-3>
@@ -69,6 +83,14 @@ At least every three (3) years, the CivicActions Director of Human Resources rev
 > 
 > 
 > Security control type: Hybrid
+
+
+#### LINCS specific control or LINCS Responsibility
+
+Minimum background investigations are conducted, since all data is non-sensitive, for individuals requiring access to LINCS Technology Project information and information systems. The type of background investigation conducted for an individual is determined by the individual’s position risk categorization noted in control PS-2. The Department conducts periodic reinvestigations in accordance with OPM and NIST guidelines.
+
+This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
+
 
 
 ### Part a)
@@ -96,6 +118,14 @@ Rescreening is conducted as required by the individual’s job duties, the class
 > Security control type: Hybrid
 
 
+#### LINCS specific control or LINCS Responsibility
+
+The Department’s HR policy states that managers or designated officials are responsible for recovering and properly securing employee badges and returning it to the local physical security office. The Department executes termination procedures that remove personnel access privileges, computer accounts. When an employee is terminated, the employee’s manager or designated official completes a form requesting termination of access for the user. Local management and the security manager coordinate disabling or removing LINCS Technology Project privileged access with the system administrator. The employee’s manager or designated official is responsible for recovering and properly securing his/her ID badge and returning it to the local physical security office. The employee’s manager or designated official ensures that any information on the system that the employee was responsible for will be available to the appropriate personnel.
+
+This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
+
+
+
 ### Part a)
 
 #### CivicActions Responsibility
@@ -118,7 +148,7 @@ The terminated user’s accounts are disabled and all access associated with the
 
 #### CivicActions Responsibility
 
-The Director of Human Resources conducts exit interviews with all employees who leave CivicActions voluntarily. There is a general discussion about the process of turning in any/all company issued devices, laptops, etc.  All of these items are collected before the employee exits CivicActions.  In the case of an involuntary termination, the Director of Human Resources works to collect company issued devices and provides paperwork highlighting confidential protections for customers.
+The employee's manager or the Director of Human Resources conducts exit interviews with all employees who leave CivicActions voluntarily. There is a general discussion about the process of turning in any/all company issued devices, laptops, etc.
 
 
 
@@ -126,7 +156,17 @@ The Director of Human Resources conducts exit interviews with all employees who 
 
 #### CivicActions Responsibility
 
-CivicActions employees provide their own equipment that must be hardened to security reqirements depending upon their role and duties. CivicActions supplies two factor authentication tokens that become the property of the employee. Therefore, this control is not applicable.
+CivicActions employees provide their own equipment that must be hardened to security reqirements depending upon their role and duties. CivicActions supplies two factor authentication tokens that become the property of the employee.
+
+Some employees may receive company-issued hardware for working on poarticular projects. These items are collected before the employee exits CivicActions.  In the case of an involuntary termination, the Director of Human Resources works to collect company issued devices and provides paperwork highlighting confidential protections for customers.
+
+
+
+### Part e)
+
+#### CivicActions Responsibility
+
+Access to CivicActions information and information systems is always shared, so that the termination of an individual will not prevent CivicActions from having access to needed resources.
 
 
 
@@ -134,7 +174,7 @@ CivicActions employees provide their own equipment that must be hardened to secu
 
 #### CivicActions Responsibility
 
-When a person is terminated, a standard process is used to notify management and IT and to track the process of disabling access to the information system/information system components. The CivicActions Help Desk is given at least a four hour notice to schedule the deactivation of access upon termination. Deactivation is a manual process that is tracked via a Trello card in order to meet the four hour turnaround time before termination.
+When a person is terminated, a standard off-boarding process is used to notify management and IT and to track the process of disabling access to the information system/information system components. CivicActions IT Operations and Security is given at least a four hour notice to schedule the deactivation of access upon termination. Deactivation is a manual process that is tracked via a Trello card in order to meet the four hour turnaround time before termination.
 
 
 
@@ -145,6 +185,16 @@ When a person is terminated, a standard process is used to notify management and
 > 
 > 
 > Security control type: Hybrid
+
+
+#### LINCS specific control or LINCS Responsibility
+
+When an employee is reassigned or transferred, the employee’s manager or designated official is required to request transfer of access (as appropriate) for the user.
+
+In accordance with the Department’s HR policy, the employee’s manager or designated official is responsible for recovering and properly securing his/her ID badge and returning it to the local physical security office. The manager provides prompt notification to the LINCS Technology Project system/security administrator when an employee changes assignments and/or location. This includes taking prompt and appropriate action to change employee access profile and/or remove employee from the system; and ensure that users’ system access is cancelled when the need no longer exists.
+
+This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
+
 
 
 ### Part a)
@@ -167,7 +217,7 @@ When an employee, third party personnel and / or contractor is transferred to a 
 
 #### CivicActions Responsibility
 
-Access authorizations are modified as needed for the new employee duties based on transfer or reassignment.
+Access authorizations are modified as needed to coincide with changes in duties or operational need upon personnel transfer or reassignment.
 
 
 
@@ -175,7 +225,7 @@ Access authorizations are modified as needed for the new employee duties based o
 
 #### CivicActions Responsibility
 
-The CivicActions operations team is informed of transfers that require access authorization modifications within five business days by the Project Manager, Product Owner or Director of Human Resources.
+CivicActions Operations is informed of transfers that require access authorization modifications within five business days by the Project Manager, Product Owner or Director of Human Resources.
 
 
 
@@ -188,29 +238,33 @@ The CivicActions operations team is informed of transfers that require access au
 > Security control type: Hybrid
 
 
-### Part a)
-
 #### LINCS specific control or LINCS Responsibility
 
-LINCS users are required to read and sign access agreements, including acknowledgement signature page for the Acceptable Use Policy (AUP), provided in the Rules of Behavior (RoB) document prior to gaining access to the LINCS. The acknowledgment signature page is a separate document provided within the referenced (RoB) document.
+The Department has implemented a formalized process for user account administration using the approved and signed Rules of Behavior and User Acknowledgement forms. All new users requesting access to the LINCS Technology Project system must complete these forms and the security manager will keep them on file and reviewed bi-annually.
+
+
+
+### Part a)
+
+#### CivicActions Responsibility
+
+CivicActions has developed and documented an Acceptable Use Policy that covers access and use of all CivicActiuons systems.
 
 
 
 ### Part b)
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-Access agreements, including the Acceptable Use Policy, are reviewed at least annually or when a significant change occurs. In the event that a major update is made to the Acceptable Use Policy, employees are required to read and sign the updated policy document and Human Resources stores the information.
+The Acceptable Use Policy is reviewed at least annually or when a significant change occurs. In the event that a major update is made to the Acceptable Use Policy, employees are required to read and sign the updated policy document and Human Resources stores the information.
 
 
 
 ### Part c)
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-Prior to gaining access to key systems, LINCS users are required to read and sign access agreements, including the Acceptable Use Policy.
-
-Access agreements, including the Acceptable Use Policy, are reviewed at least annually. This review also takes place when a significant change occurs. In the event that a major update is made to the Acceptable Use Policy, employees are required to meet with the Director of Human Resources to review and sign the revised agreement.
+All CivicActions team members are required to read and sign the Acceptable Use Policy (AUP) provided in the Security Policy document prior to gaining access to the any CivicActions system. The acknowledgment signature page is a separate document collected and recorded by the Director of Human Resources.
 
 
 
@@ -223,41 +277,29 @@ Access agreements, including the Acceptable Use Policy, are reviewed at least an
 > Security control type: Hybrid
 
 
-### Part a)
-
 #### LINCS specific control or LINCS Responsibility
 
-Third party personnel are required to following the same process and requirements as LINCS employees. The Chief Operating Officer may also require that a background check be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public. In these instances, the Chief Operating Officer will instruct the Director of Human Resources to conduct a background check before granting access to the information system.
+All contractor support personnel are required to meet the same personnel security policy requirements as Department personnel who have privileged access to the LINCS Technology Project system. Third party providers are required to review and sign the Rules of Behavior prior to being granted access to the system.
 
 
+
+### Part a)
 
 #### CivicActions Responsibility
 
-Third party personnel are required to following the same process and requirements as CivicActions employees. The Chief Operating Officer may also require that a background check be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public. In these instances, the Chief Operating Officer will instruct the Director of Human Resources to conduct a background check before granting access to the information system.
+Third party personnel are required to following the same process and requirements as CivicActions employees.
 
 
 
 ### Part b)
 
-#### LINCS specific control or LINCS Responsibility
-
-LINCS HR reviews and updates the access agreements annually or whenever there is a significant change to the information system or information being processed; and whenever there is a change to the agreements’ verbiage.
-
-
-
 #### CivicActions Responsibility
 
-CivicActions HR reviews and updates the access agreements annually or whenever there is a significant change to the information system or information being processed; and whenever there is a change to the agreements’ verbiage.
+Third party personnel are required to following the same process and requirements as CivicActions employees. CivicActions Operations or Security may require that a background check be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public.
 
 
 
 ### Part c)
-
-#### LINCS specific control or LINCS Responsibility
-
-All personnel security requirements are documented within the SSP and include things such as signing the Acceptable Use Policy (AUP) and taking security awareness training.
-
-
 
 #### CivicActions Responsibility
 
@@ -267,29 +309,17 @@ All personnel security requirements are documented and include things such as si
 
 ### Part d)
 
-#### LINCS specific control or LINCS Responsibility
-
-For personnel transfers and terminations of employees with access to the LINCS systems, third parties must notify the LINCS Director of Human Resources the same day. The Director of Human Resources follows the same employee transfer and/or termination procedure(s) as if the Third Party Personnel were LINCS employees.
-
-
-
 #### CivicActions Responsibility
 
-For personnel transfers and terminations of third-party personnel with access to the CivicActions systems, third parties must notify the CivicActions Director of Human Resources the same day. The Director of Human Resources follows the same employee transfer and/or termination procedure(s) as if the Third Party Personnel were CivicActions employees.
+For personnel transfers and terminations of third-party personnel with access to the CivicActions systems, third parties must notify the CivicActions Operations an/or Director of Human Resources the same day. The same employee transfer and/or termination procedure(s) are folloed as if the third party personnel were CivicActions employees.
 
 
 
 ### Part e)
 
-#### LINCS specific control or LINCS Responsibility
-
-Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. The LINCS ISSO is responsible for coordinating with the Cloud Operations Manager and the Contracts Manager to include appropriate and tailored compliance verification language in contracts as required.  Third-party personnel are continuously monitored to ensure compliance with personnel security requirements.
-
-
-
 #### CivicActions Responsibility
 
-Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. The CivicActions ISSO is responsible for coordinating with the Contracts Manager and managers of external systems to include appropriate and tailored compliance verification language in contracts as required. Third-party personnel are continuously monitored to ensure compliance with personnel security requirements.
+Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. CivicActions Security is responsible for coordinating with the managers of external systems to include appropriate and tailored compliance verification language in contracts as required.  Third-party personnel are continuously monitored to ensure compliance with personnel security requirements.
 
 
 
@@ -302,11 +332,17 @@ Compliance measures for assessing third-party personnel and/or contractors are d
 > Security control type: Hybrid
 
 
+#### LINCS specific control or LINCS Responsibility
+
+The disciplinary sanctions for personnel failing to comply with establish IT security policies and procedures are included in the Department’s HR policy. If an employee violates the Department’s information security policies and procedures, the employee may be subject to disciplinary action at the discretion of management. Actions may range from verbal or written warning, removal of system access for a specific period of time, reassignment to other duties, or termination, depending on the severity of the violation. Disciplinary sanctions are reported to the OCIO.
+
+
+
 ### Part a)
 
 #### CivicActions Responsibility
 
-The Director of Human Resources is responsible for determining and enforcing sanctions for failing to comply with established information security policies and procedures. Coaching may be considered prior to sanctions. Sanctions may include but are not limited to written warnings, reduction in system access, demotion, or termination. Additional details regarding personnel sanctions can be found in the CivicActions 'Discipline Procedures,' an internal document that is available for review onsite or as required for audits and assessments.
+The Director of Human Resources is responsible for determining and enforcing sanctions for failing to comply with established information security policies and procedures. Coaching may be considered prior to sanctions. Sanctions may include but are not limited to written warnings, reduction in system access, demotion, or termination.
 
 
 
@@ -314,7 +350,7 @@ The Director of Human Resources is responsible for determining and enforcing san
 
 #### CivicActions Responsibility
 
-When employee sanctions processes are initiated, the Director of Human Resources notifies the respective supervisor/manager and physical security within five business days.
+When employee sanctions processes are initiated, the Director of Human Resources notifies the respective Project Manager(s) and CivicActions Security within five business days.
 
 
 

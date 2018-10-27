@@ -29,8 +29,8 @@ satisfies:
   implementation_status: In Place
   narrative: >
     Risk designations are assigned to all CivicActions positions. The CivicActions
-    Director of Human Resources works in coordination with the CivicActions ISSO and
-    the Chief Operating Officer to assign risk designations.
+    Director of Human Resources works in coordination with the CivicActions ISSO and the
+    Chief Operating Officer to assign risk designations.
 
 - control_key: PS-02
   control_key_part: b
@@ -125,12 +125,9 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The Director of Human Resources conducts exit interviews with all employees who leave
-    CivicActions voluntarily. There is a general discussion about the process of turning
-    in any/all company issued devices, laptops, etc.  All of these items are collected
-    before the employee exits CivicActions.  In the case of an involuntary termination,
-    the Director of Human Resources works to collect company issued devices and provides
-    paperwork highlighting confidential protections for customers.
+    The employee's manager or the Director of Human Resources conducts exit interviews
+    with all employees who leave CivicActions voluntarily. There is a general discussion
+    about the process of turning in any/all company issued devices, laptops, etc.
 
 - control_key: PS-04
   control_key_part: d
@@ -142,8 +139,25 @@ satisfies:
   narrative: >
     CivicActions employees provide their own equipment that must be hardened to security
     reqirements depending upon their role and duties. CivicActions supplies two factor
-    authentication tokens that become the property of the employee. Therefore, this
-    control is not applicable.
+    authentication tokens that become the property of the employee.
+
+    Some employees may receive company-issued hardware for working on poarticular
+    projects. These items are collected before the employee exits CivicActions.  In
+    the case of an involuntary termination, the Director of Human Resources works to
+    collect company issued devices and provides paperwork highlighting confidential
+    protections for customers.
+
+- control_key: PS-04
+  control_key_part: e
+  control_name: PERSONNEL TERMINATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    Access to CivicActions information and information systems is always shared, so that
+    the termination of an individual will not prevent CivicActions from having access to
+    needed resources.
 
 - control_key: PS-04
   control_key_part: f
@@ -153,12 +167,12 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    When a person is terminated, a standard process is used to notify management and IT
-    and to track the process of disabling access to the information system/information
-    system components. The CivicActions Help Desk is given at least a four hour notice to
-    schedule the deactivation of access upon termination. Deactivation is a manual process
-    that is tracked via a Trello card in order to meet the four hour turnaround time
-    before termination.
+    When a person is terminated, a standard off-boarding process is used to notify
+    management and IT and to track the process of disabling access to the information
+    system/information system components. CivicActions IT Operations and Security is given
+    at least a four hour notice to schedule the deactivation of access upon
+    termination. Deactivation is a manual process that is tracked via a Trello card in
+    order to meet the four hour turnaround time before termination.
 
 - control_key: PS-05
   control_key_part: a
@@ -197,8 +211,8 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    Access authorizations are modified as needed for the new employee duties based
-    on transfer or reassignment.
+    Access authorizations are modified as needed to coincide with changes in duties or
+    operational need upon personnel transfer or reassignment.
 
 - control_key: PS-05
   control_key_part: d
@@ -208,9 +222,46 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The CivicActions operations team is informed of transfers that require access
-    authorization modifications within five business days by the Project Manager,
-    Product Owner or Director of Human Resources.
+    CivicActions Operations is informed of transfers that require access authorization
+    modifications within five business days by the Project Manager, Product Owner or
+    Director of Human Resources.
+
+- control_key: PS-06
+  control_key_part: a
+  control_name: ACCESS AGREEMENTS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    CivicActions has developed and documented an Acceptable Use Policy that covers access
+    and use of all CivicActiuons systems.
+
+- control_key: PS-06
+  control_key_part: b
+  control_name: ACCESS AGREEMENTS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The Acceptable Use Policy is reviewed at least annually or when a significant change
+    occurs. In the event that a major update is made to the Acceptable Use Policy,
+    employees are required to read and sign the updated policy document and Human
+    Resources stores the information.
+
+- control_key: PS-06
+  control_key_part: c
+  control_name: ACCESS AGREEMENTS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    All CivicActions team members are required to read and sign the Acceptable Use Policy
+    (AUP) provided in the Security Policy document prior to gaining access to the any
+    CivicActions system. The acknowledgment signature page is a separate document
+    collected and recorded by the Director of Human Resources.
 
 - control_key: PS-07
   control_key_part: a
@@ -220,13 +271,8 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    Third party personnel are required to following the same process and requirements
-    as CivicActions employees. The Chief Operating Officer may also require that a
-    background check be conducted on contractors and / or third party users in cases
-    where they will have access to application data that is not meant to be consumed
-    by the public. In these instances, the Chief Operating Officer will instruct the
-    Director of Human Resources to conduct a background check before granting access
-    to the information system.
+    Third party personnel are required to following the same process and requirements as
+    CivicActions employees.
 
 - control_key: PS-07
   control_key_part: b
@@ -236,9 +282,11 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    CivicActions HR reviews and updates the access agreements annually or whenever
-    there is a significant change to the information system or information being processed;
-    and whenever there is a change to the agreements’ verbiage.
+    Third party personnel are required to following the same process and requirements as
+    CivicActions employees. CivicActions Operations or Security may require that a
+    background check be conducted on contractors and / or third party users in cases where
+    they will have access to application data that is not meant to be consumed by the
+    public.
 
 - control_key: PS-07
   control_key_part: c
@@ -260,10 +308,10 @@ satisfies:
   implementation_status: In Place
   narrative: >
     For personnel transfers and terminations of third-party personnel with access to the
-    CivicActions systems, third parties must notify the CivicActions Director of Human
-    Resources the same day. The Director of Human Resources follows the same employee
-    transfer and/or termination procedure(s) as if the Third Party Personnel were
-    CivicActions employees.
+    CivicActions systems, third parties must notify the CivicActions Operations an/or
+    Director of Human Resources the same day. The same employee transfer and/or
+    termination procedure(s) are folloed as if the third party personnel were CivicActions
+    employees.
 
 - control_key: PS-07
   control_key_part: e
@@ -274,11 +322,10 @@ satisfies:
   implementation_status: In Place
   narrative: >
     Compliance measures for assessing third-party personnel and/or contractors are
-    determined on a case-by-case basis. The CivicActions ISSO is responsible for
-    coordinating with the Contracts Manager and managers of external systems to include
-    appropriate and tailored compliance verification language in contracts as required.
-    Third-party personnel are continuously monitored to ensure compliance with personnel
-    security requirements.
+    determined on a case-by-case basis. CivicActions Security is responsible for
+    coordinating with the managers of external systems to include appropriate and tailored
+    compliance verification language in contracts as required.  Third-party personnel are
+    continuously monitored to ensure compliance with personnel security requirements.
 
 - control_key: PS-08
   control_key_part: a
@@ -292,9 +339,6 @@ satisfies:
     for failing to comply with established information security policies and procedures.
     Coaching may be considered prior to sanctions. Sanctions may include but are not
     limited to written warnings, reduction in system access, demotion, or termination.
-    Additional details regarding personnel sanctions can be found in the CivicActions
-    'Discipline Procedures,' an internal document that is available for review onsite or
-    as required for audits and assessments.
 
 - control_key: PS-08
   control_key_part: b
@@ -305,5 +349,5 @@ satisfies:
   implementation_status: In Place
   narrative: >
     When employee sanctions processes are initiated, the Director of Human Resources
-    notifies the respective supervisor/manager and physical security within five business
-    days.
+    notifies the respective Project Manager(s) and CivicActions Security within five
+    business days.
