@@ -120,7 +120,7 @@ Table of Contents
    * [PL-04 RULES OF BEHAVIOR](#pl-04-rules-of-behavior)
 * [PERSONNEL SECURITY](#personnel-security)
    * [PS-01 PERSONNEL SECURITY POLICY AND PROCEDURES](#ps-01-personnel-security-policy-and-procedures)
-   * [PS-02 POSITION CATEGORIZATION](#ps-02-position-categorization)
+   * [PS-02 POSITION RISK DESIGNATION](#ps-02-position-risk-designation)
    * [PS-03 PERSONNEL SCREENING](#ps-03-personnel-screening)
    * [PS-04 PERSONNEL TERMINATION](#ps-04-personnel-termination)
    * [PS-05 PERSONNEL TRANSFER](#ps-05-personnel-transfer)
@@ -569,7 +569,7 @@ The LINCS Technology Project permits remote access for privileged functions to s
 
 
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
 The CivicActions Access Control (AC) policy defines policy for remote usage restrictions.  The Project Manager or Project Owner may additionally provision users according to their Access Control policies.
 
@@ -3799,13 +3799,27 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 
 
-## PS-02 POSITION CATEGORIZATION
+## PS-02 POSITION RISK DESIGNATION
 
 > Control description: <http://800-53.govready.com/control?id=PS-2>
 > 
 > 
 > 
 > Security control type: Hybrid
+
+
+#### LINCS specific control or LINCS Responsibility
+
+The LINCS Technology Project’s position sensitivity levels are assigned by the Department of Education and National Classification Center (NCC) as part of the position designation required by OPM under 5 CFR 731.106. Each Department position designation is documented on the Standard Position Description (SPD) and assigned a risk level (or sensitivity level) commensurate with the sensitivity of the information, the risk to that information and the system maintaining that information. The levels of risk still need to be designated by the Department for employee and contractor positions but since the LINCS Technology Project system does not have any sensitive data, a low risk scenario can be assumed.
+
+* Employee risk levels and background investigations are: Low Risk= NACI, Moderate Risk= LBI, High Risk= BI.
+
+* Contractor risk levels and background investigations are: Low Risk= NACI, Moderate Risk= NACC, High Risk= BI.
+
+In order to ensure every employee is assigned to a position, which has been reviewed for sensitivity by the NCC, the SPD is a required data attribute of an employee’s HR record. Position risks designations are reviewed and revised when NCC or OPM publish changes to sensitivity levels.
+
+This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog
+
 
 
 ### Part a)

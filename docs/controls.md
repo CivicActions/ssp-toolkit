@@ -1,4 +1,4 @@
-# LINCS Controls (compiled: 2018.10.27 at 1418)
+# LINCS Controls (compiled: 2018.10.27 at 1437)
 
 * [ACCESS CONTROL](controls/AC.md#access-control)
    * [AC-01 ACCESS CONTROL POLICY AND PROCEDURES](controls/AC.md#ac-01-access-control-policy-and-procedures)
@@ -130,7 +130,7 @@
 
 * [PERSONNEL SECURITY](controls/PS.md#personnel-security)
    * [PS-01 PERSONNEL SECURITY POLICY AND PROCEDURES](controls/PS.md#ps-01-personnel-security-policy-and-procedures)
-   * [PS-02 POSITION CATEGORIZATION](controls/PS.md#ps-02-position-categorization)
+   * [PS-02 POSITION RISK DESIGNATION](controls/PS.md#ps-02-position-risk-designation)
    * [PS-03 PERSONNEL SCREENING](controls/PS.md#ps-03-personnel-screening)
    * [PS-04 PERSONNEL TERMINATION](controls/PS.md#ps-04-personnel-termination)
    * [PS-05 PERSONNEL TRANSFER](controls/PS.md#ps-05-personnel-transfer)
