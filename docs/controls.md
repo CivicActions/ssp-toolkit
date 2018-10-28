@@ -1,4 +1,4 @@
-# LINCS Controls (compiled: 2018.10.27 at 2020)
+# LINCS Controls (compiled: 2018.10.28 at 1748)
 
 * [ACCESS CONTROL](controls/AC.md#access-control)
    * [AC-01 ACCESS CONTROL POLICY AND PROCEDURES](controls/AC.md#ac-01-access-control-policy-and-procedures)
@@ -148,15 +148,11 @@
    * [SA-01 SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES](controls/SA.md#sa-01-system-and-services-acquisition-policy-and-procedures)
    * [SA-02 ALLOCATION OF RESOURCES](controls/SA.md#sa-02-allocation-of-resources)
    * [SA-03 SYSTEM DEVELOPMENT LIFE CYCLE](controls/SA.md#sa-03-system-development-life-cycle)
-   * [SA-04 ACQUISITIONS](controls/SA.md#sa-04-acquisitions)
+   * [SA-04 ACQUISITION PROCESS](controls/SA.md#sa-04-acquisition-process)
    * [SA-04 (10) USE OF APPROVED PIV PRODUCTS](controls/SA.md#sa-04-10-use-of-approved-piv-products)
    * [SA-05 INFORMATION SYSTEM DOCUMENTATION](controls/SA.md#sa-05-information-system-documentation)
    * [SA-08 SECURITY ENGINEERING PRINCIPLES](controls/SA.md#sa-08-security-engineering-principles)
    * [SA-09 EXTERNAL INFORMATION SYSTEM SERVICES](controls/SA.md#sa-09-external-information-system-services)
-   * [SA-10 DEVELOPER CONFIGURATION MANAGEMENT](controls/SA.md#sa-10-developer-configuration-management)
-   * [SA-10 (1) SOFTWARE / FIRMWARE INTEGRITY VERIFICATION](controls/SA.md#sa-10-1-software--firmware-integrity-verification)
-   * [SA-11 DEVELOPER SECURITY TESTING AND EVALUATION](controls/SA.md#sa-11-developer-security-testing-and-evaluation)
-   * [SA-11 (1) STATIC CODE ANALYSIS](controls/SA.md#sa-11-1-static-code-analysis)
 
 * [SYSTEM AND COMMUNICATIONS PROTECTION](controls/SC.md#system-and-communications-protection)
    * [SC-01 SYSTEM AND COMMUNICATIONS PROTECTION POLICY AND PROCEDURES](controls/SC.md#sc-01-system-and-communications-protection-policy-and-procedures)
