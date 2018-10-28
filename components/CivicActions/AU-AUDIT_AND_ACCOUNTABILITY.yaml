@@ -18,6 +18,8 @@ satisfies:
     This information is maintained in the CivicActions Audit and Accountability (AU)
     Policy.  This document can be found in the CivicActions Compliance Docs GitHub
     repository at <https://github.com/CivicActions/compliance-docs>.
+  summary: CivicActions has developed, documented and disseminated to personnel an audit
+    and accountability policy.
 
 - control_key: AU-02
   control_key_part: a
@@ -30,6 +32,7 @@ satisfies:
     CivicActions' Security Policy provides information about auditing and logging of
     CivicActions internal users and end-user activity on the servers and within the
     system application.
+  summary: CivicActions' Security Policy provides information about auditing and logging.
 
 - control_key: AU-02
   control_key_part: b
@@ -54,6 +57,7 @@ satisfies:
   narrative: >
     CivicActions ensures adequate storage capability requirements listed in AU-11 for all
     events from the application, database, and hosting environment.
+  summary: CivicActions ensures adequate storage capability requirements for all events.
 
 - control_key: AU-05
   control_key_part: ~
@@ -65,6 +69,9 @@ satisfies:
   narrative: >
     When notified (e.g., via CloudWatch) of an auditing failure, CivicActions Operations
     will review the causes and take corrective action.
+  summary: >
+    CivicActions Operations reviews causes adn takes corrective action when notified via CloudWatch
+    of auditing failures.
 
 - control_key: AU-06
   control_key_part: a
@@ -75,7 +82,7 @@ satisfies:
   implementation_status: Planned
   narrative: >
     CivicActions security audit data is collected by a Graylog Security and Event
-    Management (SIEM) ashboard to support real-time and after-the-fact investigation at
+    Management (SIEM) dashboard to support real-time and after-the-fact investigation at
     the application level for the following:
 
     • Indications of inappropriate or unusual activity
@@ -83,6 +90,9 @@ satisfies:
     • Assurance that logging is functioning properly
 
     • Adherence to logging standards identified in this procedure
+  summary: >
+    CivicActions security audit data is collected by a Graylog Security and Event
+    Management (SIEM) dashboard to support real-time and after-the-fact investigation.
 
 - control_key: AU-06
   control_key_part: b
@@ -108,6 +118,7 @@ satisfies:
     CivicActions ensures that audit logs are created, stored and maintained. Developers
     who have been assigned as members of the CivicActions Security Team are the only
     CivicActions personnel with logical permission to access and review audit logs.
+  summary: CivicActions ensures that audit logs are created, stored and maintained.
 
 - control_key: AU-11
   control_key_part: ~
@@ -119,6 +130,7 @@ satisfies:
   narrative: >
     CivicActions audits events from the application, database, and hosting environment,
     and retains these records for at least 180 days.
+  summary: CivicActions retains audit records for at least  180 days.
 
 - control_key: AU-12
   control_key_part: a
@@ -130,6 +142,7 @@ satisfies:
   narrative: >
     CivicActions ensures audit records are generated for its web and event logs as required
     in AU-2 and AU-3 for servers, application, database and network components.
+  summary: CivicActions ensures audit records are generated for its web and event logs as required.
 
 - control_key: AU-12
   control_key_part: b

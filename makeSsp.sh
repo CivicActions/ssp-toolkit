@@ -8,7 +8,7 @@
 
 mkdir -p outputs
 
-gh-md-toc /tmp/ssp.md|sed '/^         /d' | sed 's/^   //' | \
+./gh-md-toc /tmp/ssp.md|sed '/^         /d' | sed 's/^   //' | \
   sed 's/^\(Created by \[gh-md-toc\].*$\)/<!-- \1 -->/' > docs/ssp.md
 
 echo "" >> docs/ssp.md

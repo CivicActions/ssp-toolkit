@@ -22,7 +22,7 @@ satisfies:
     thereafter. The Department documents and monitors all individual information system
     security training activities including basic security awareness training. The
     Department reviews and updates the policy as necessary.
-  summary: |
+  summary: >
     This is an Agency Common Control. Security awareness and training policy and procedures documented in Handbook OCIO-01.
 
 - control_key: AT-02
@@ -79,7 +79,7 @@ satisfies:
     course(s) within the Department’s learning management systems, participating in
     instructor-led training provided by the OCIO, or completing an external role-based
     course or courses offered within their specific functional area of expertise.
-  summary: |
+  summary: >
     Role-based training is a requirement for personnel  with
     significant information security responsibilities.
 
@@ -97,7 +97,7 @@ satisfies:
     the appropriate personnel files to verify users have met the training
     requirements. Training requirement notifications are sent to individuals as deadline
     for re-training approaches.
-  summary: |
+  summary: >
     Department documents and monitors all individual information system security
     training activities
 

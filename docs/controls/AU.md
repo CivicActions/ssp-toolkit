@@ -11,7 +11,7 @@
 
 #### LINCS specific control or LINCS Responsibility
 
-The LINCS Technology Project maintains a record of system activity by application process and by user activity. Audit and accountability policy and procedures are documented within the LINCS SSP. Security software features are used to automatically generate and store security audit log records for use in monitoring security-related events on all multi-user systems. The Department reviews and updates this policy as necessary and it was last updated in April 2008.
+The LINCS Technology Project maintains a record of system activity by application process and by user activity. Audit and accountability policy and procedures are documented within the LINCS SSP. Security software features are used to automatically generate and store security audit log records for use in monitoring security-related events on all multi-user systems. The Department reviews and updates this policy as necessary and it was last updated in April 2008. Additional information is contained within the Department of Education Handbook for Information Assurance Security policy (Handbook OCIO-01).
 
 
 
@@ -242,7 +242,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### CivicActions Responsibility
 
-CivicActions security audit data is collected by a Graylog Security and Event Management (SIEM) ashboard to support real-time and after-the-fact investigation at the application level for the following:
+CivicActions security audit data is collected by a Graylog Security and Event Management (SIEM) dashboard to support real-time and after-the-fact investigation at the application level for the following:
 
 * Indications of inappropriate or unusual activity
 
@@ -266,7 +266,13 @@ Any significant findings observed during the inspection are reported to CivicAct
 > 
 > 
 > 
-> Security control type: Inherited (Cloud Service Provider)
+> Security control type: Hybrid
+
+
+#### LINCS specific control or LINCS Responsibility
+
+The LINCS Technology Project system clocks are synchronized system-wide and provide time stamps with audit records.
+
 
 
 #### Amazon Web Services (AWS) US-East/West control support
