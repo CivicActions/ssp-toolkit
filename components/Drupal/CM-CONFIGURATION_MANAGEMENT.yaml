@@ -145,8 +145,7 @@ satisfies:
 
     • The Drupal open source web content management system
 
-    • Drupal add-on modules, themes and libraries available from the Drupal.org website
-      which extend Drupal core
+    • Drupal add-on modules, themes and libraries available from the Drupal.org website which extend Drupal core
 
     • Custom code written by CivicActions' developers
 
@@ -155,6 +154,7 @@ satisfies:
 
     Website content is backed up daily using CPM snapshots. This allows CivicActions to
     build an inventory of the system on demand.
+  summary: The application's software inventory is maintained in the CivicActions' git source code repository.
 
 - control_key: CM-10
   control_key_part: ~
@@ -167,3 +167,4 @@ satisfies:
     Drupal is hosted on a LAMP platform (Linux, Apache, MySQL and PHP). These are all
     compatible with the Free Software Foundation's General Public License (GPL) version 2
     or later and are freely available for use under copyright law.
+  summary: Drupal uses Linux, Apache, MySQL and PHP software compatible with the GPL.

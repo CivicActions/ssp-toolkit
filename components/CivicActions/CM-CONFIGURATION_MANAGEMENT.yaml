@@ -18,7 +18,7 @@ satisfies:
     to facilitate the implementation of the policy and associated controls. This information
     is maintained in the CivicActions Configuration Management (CM) Policy. This document
     can be found in the CivicActions Compliance Docs GitHub repository at
-    <https://github.com/CivicActions/compliance-docs>.
+    <https://github.com/CivicActions/compliance-docs>.d
 
 - control_key: CM-03
   control_key_part: ~
@@ -170,6 +170,7 @@ satisfies:
     being pushed to a staging environment to be tested by another developer and by the
     Engineering team prior to final approval from CCB to move changes to the production
     environment.
+  summary: CivicActions tests and validates changes to the system before implementing the changes in production.
 
 - control_key: CM-05
   control_key_part: ~
@@ -248,6 +249,9 @@ satisfies:
     on the computing nodes within the authorization boundary is restricted to
     administrators. All CivicActions internal administrators are informed of this during
     their initial training and as part of the rules of behavior document.
+  summary: >
+    All software installed in the system environment must be first approved via the CCB
+    resulting in a Change Request.
 
 - control_key: CM-11
   control_key_part: b

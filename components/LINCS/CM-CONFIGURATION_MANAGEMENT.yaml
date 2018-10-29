@@ -21,6 +21,9 @@ satisfies:
     Additional information is contained within the Department of Education, Handbook
     forInformation Technology Security Configuration Management Planning Procedures
     (Handbook OCIO-11).
+  summary: >
+    Configuration management policy and procedures documented in the
+    LINCS Technology Project Configuration Management Plan
 
 - control_key: CM-02
   control_key_part: ~
@@ -38,6 +41,7 @@ satisfies:
     cycle. It assures that additions, deletions, or changes made to the LINCS Technology
     Project system do not unintentionally or unknowingly diminish security. If the change
     is major, the security of the system must be re-analyzed.
+  summary: A CM process has been established and documented in the LINCS Technology Project CMP.
 
 - control_key: CM-04
   control_key_part: ~
@@ -117,6 +121,7 @@ satisfies:
     controls at the firewall, and on individual systems. Inbound access across the system
     boundary is only allowed on ports 22 (ssh), 80 (http) and 443 (https), with an
     additional port, 25 (smtp) open on the mail server.
+  summary: The LINCS Technology Project maintains strict default deny policy.
 
 - control_key: CM-09
   control_key_part: ~
