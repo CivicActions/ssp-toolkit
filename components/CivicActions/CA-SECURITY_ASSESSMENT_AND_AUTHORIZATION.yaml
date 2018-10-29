@@ -98,6 +98,8 @@ satisfies:
   narrative: >
     This control is not applicable. CivicActions systems do not have system interconnections.
     The only communication conducted to CivicActions systems is through the Internet.
+  summary: >
+    Control not applicable. CivicActions systems do not have system interconnections.
 
 - control_key: CA-05
   control_key_part: ~
@@ -147,6 +149,9 @@ satisfies:
       DISA STIG profile.
 
     • Log analysis is managed by feeding logs to a Graylog dashboard for analysis.
+  summary: >
+    CivicActions implements a continuous monitoring strategy that incorporates
+    configuration management, system scanning and log analysis processes:
 
 - control_key: CA-07
   control_key_part: b

@@ -21,6 +21,7 @@ satisfies:
 
     The Department will periodically review and update the SSP when there is a significant
     change to the regulatory, operational, or technical environment.
+  summary: The Department of Education has published the Handbook OCIO-01 and Handbook OCIO-05.
 
 - control_key: CA-02
   control_key_part: a
@@ -44,6 +45,10 @@ satisfies:
     2. Assessment procedures to be used to determine security control effectiveness
 
     3. Assessment environment, assessment team, and assessment roles and responsibilities
+  summary: >
+    The LINCS Technology Project
+    will conduct annual security assessments to comply with FISMA and NIST
+    regulations.
 
 - control_key: CA-02
   control_key_part: c
@@ -68,6 +73,7 @@ satisfies:
     The LINCS Technology Project follows the U.S. Department of Education Information
     Technology Security, Handbook for Information Technology Security, Certification and
     Accreditation Procedures (Handbook OCIO-05) procedures in managing POA&Ms.
+  summary: The LINCS Technology Project follows teh Department of Education Handbook OCIO-05 procedures in managing POA&Ms.
 
 - control_key: CA-06
   control_key_part: ~
@@ -88,3 +94,4 @@ satisfies:
     ATO re-assessment will be performed every three years or when there is a major change
     to the application, in which a senior organizational official will sign and approve
     the security accreditation.
+  summary: The LINCS Technology Project follows teh Department of Education Handbook OCIO-05 and Handbook OCIO-05 procedures.

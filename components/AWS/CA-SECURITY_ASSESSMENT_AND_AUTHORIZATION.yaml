@@ -48,3 +48,4 @@ satisfies:
   narrative: >
     Not applicable: There are no internal systems that connect to the FedRAMP certified
     AWS cloud.
+  summary: Not applicable. No internal systems connect to the FedRAMP certified AWS cloud.
