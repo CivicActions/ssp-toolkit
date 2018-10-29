@@ -13,10 +13,10 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Providers dated 1 May 2013.
+    to the AWS Cloud Service Provider dated 1 May 2013.
 
 - control_key: SI-02
-  control_key_part: a
+  control_key_part: ~
   control_name: FLAW REMEDIATION
   standard_key: NIST-800-53
   covered_by: []
@@ -25,39 +25,6 @@ satisfies:
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted
     to the AWS Cloud dated 1 May 2013 for the following:  flaw remediation.
-
-- control_key: SI-02
-  control_key_part: b
-  control_name: FLAW REMEDIATION
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  flaw remediation.
-
-- control_key: SI-02
-  control_key_part: c
-  control_name: FLAW REMEDIATION
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  flaw remediation.
-
-- control_key: SI-02
-  control_key_part: d
-  control_name: FLAW REMEDIATION
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following: flaw remediation.
 
 - control_key: SI-02(2)
   control_key_part: ~
@@ -72,36 +39,15 @@ satisfies:
     status.
 
 - control_key: SI-04
-  control_key_part: a
+  control_key_part: ~
   control_name: INFORMATION SYSTEM MONITORING
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  information system
-    monitoring.
-
-    AWS host-based intrusion detection system (HIDS) monitors the AWS boundary
-    and unauthorized local, network, and remote connections to the LINCS system; see
-    inheritance below.
-
-- control_key: SI-04
-  control_key_part: b
-  control_name: INFORMATION SYSTEM MONITORING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  information system
-    monitoring.
-
-    The AWS host-based intrusion detection system (HIDS) monitors the perimeter
-    of the AWS boundary and events of the system boundary. Logs from the HIDS are
-    forwarded to the AWS SIEM tool.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: information system monitoring.
 
 - control_key: SI-04
   control_key_part: c

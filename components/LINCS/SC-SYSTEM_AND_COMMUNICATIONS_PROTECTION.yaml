@@ -12,24 +12,13 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The Department of Education developed, documented and disseminated
-    to personnel a system and communication policy  that addresses purpose, scope,
-    roles, responsibilities, management committment, coordination among organizational
-    entities, and compliance, and developed, documented and disseminated to personnel
-    procedures to facilitate the implementation of the policy and associated controls.The
-    policy is stated in the Office of the Secretary Information Security Policy dated
-    July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures
-    Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents
-    will be reviewed periodically. These policies and procedures are applicable to
-    the LINCS personnel using the lincs.ed.gov information system.
+    System and communications protection policy and procedures are formally documented in
+    the Department of Education, Handbook for Information Assurance Security Policy
+    (Handbook OCIO-01) and the LINCS SSP. The Department reviews and updates the policy as
+    necessary and has been continually updated since April 2008.
 
-    The CivicActions ISSO is responsible for reviewing and updating the System and
-    Communications Protection Policy and Procedures annually.  The Chief Operating Officer
-    is responsible for approving System and Communications Protection. All procedures are
-    consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive
-    orders, directives, policies, regulations, standards, and guidance. These policies and
-    procedures are applicable to the CivicActions staff administering the lincs.ed.gov
-    information system.
+    This is Agency common control.  More data about implementation can be obtained from
+    the Agency common control catalog.
 
 - control_key: SC-05
   control_key_part: ~
@@ -39,51 +28,27 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    Denial of service (DoS) attacks impair the performance of network devices and
-    server hosts, and thence the application itself.  LINCS relies on the AWS platform
-    for the protection of DoS attacks defined by LINCS SC-5.
+    The LINCS Technology Project system is configured to reduce vulnerabilities in its
+    operating system and applications to protect against Denial of Service (DoS) attacks.
+
+    The LINCS support staff ensures the system is protected against or limits the effect
+    of DoS attacks as specified in the Department of Education, Handbook for Information
+    Security Incident Response and Reporting Procedures (Handbook OCIO-14).
 
 - control_key: SC-07
-  control_key_part: a
+  control_key_part: ~
   control_name: BOUNDARY PROTECTION
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The lincs.ed.gov authorization boundary is completely contained within the AWS
-    Platform as a Service.
-
-    The Drupal Server and Static Files computing nodes are the only computing nodes
-    in the system that are exposed to the Internet. LINCS employs both the AWS platform
-    safeguards and the Drupal Watchdog module in monitoring and recording system events.
-    All other computing nodes used in the system are isolated within AWS.
-
-- control_key: SC-07
-  control_key_part: b
-  control_name: BOUNDARY PROTECTION
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The lincs.ed.gov authorization boundary is completely contained within the AWS
-    Platform as a Service.
-
-    Internal organizational networks (e.g. CivicActions private networks) are physically
-    separate from the AWS platform and are protected by managed boundary devices that
-    include FIPS 140-2 validated encryption modules at all entry points.
-
-- control_key: SC-07
-  control_key_part: c
-  control_name: BOUNDARY PROTECTION
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The lincs.ed.gov authorization boundary is completely contained within the AWS
-    Platform as a Service.
+    The LINCS Technology Project system has monitored and controlled communications at the
+    external boundary of the information system and at key internal boundaries within the
+    system, where appropriate. The LINCS allocates publicly accessible information system
+    components (e.g., public web servers) specific IP address and port combinations.
+    Public access into the organization’s internal networks is prevented except as
+    appropriately mediated.
 
 - control_key: SC-12
   control_key_part: ~
@@ -91,27 +56,14 @@ satisfies:
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: Planned
+  implementation_status: Not Applicable
   narrative: >
-    This is a planned control. Use of cryptographic key management for the LINCS system
-    is not in use for at the time of implementation for authentication. CivicActions
-    does not utilize customer agency supplied PIV credentials for access to customer
-    instances of the LINCS. Access enforcement and authentication requirements for LINCS
-    are described in AC-2 & IA-2. AWS platform does not utilize or manage
-    cryptographic keys within the ACE boundary.
-
-- control_key: SC-13
-  control_key_part: ~
-  control_name: USE OF CRYPTOGRAPHY
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Partially in Place
-  narrative: >
-    LINCS servers use SSH data is encrypted during transit. LINCS utilizes HTTPS for any
-    inbound traffic accessing the LINCS and must authenticate according to established LINCS
-    access enforcement and authentication rules described in AC-2 & IA-2. AWS Cloud
-    data volumes are encrypted with FIPS-142 encryption.
+    Use of cryptographic key management for the LINCS system is not in use for at the time
+    of implementation for authentication. CivicActions does not utilize customer agency
+    supplied PIV credentials for access to customer instances of the LINCS. Access
+    enforcement and authentication requirements for LINCS are described in AC-2 &
+    IA-2. AWS platform does not utilize or manage cryptographic keys within the ACE
+    boundary.
 
 - control_key: SC-15
   control_key_part: ~
@@ -124,32 +76,3 @@ satisfies:
     This control is not applicable, as the LINCS system does not employ any collaborative
     computing devices.
 
-- control_key: SC-20
-  control_key_part: ~
-  control_name: SECURE NAME / ADDRESS RESOLUTION SERVICE (AUTHORITATIVE SOURCE)
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Not Applicable
-  narrative: >
-    This control is inherited from AWS and currently does not employ a distributed,
-    hierarchical namespace. LINCS does not provide additional data origin authentication
-    and integrity verification artifacts along with the authoritative name resolution
-    data the system returns in response to external name/address resolution queries.
-    LINCS does not provide the means to indicate the security status of child zones
-    and (if the child supports secure resolution services) to enable verification
-    of a chain of trust among parent and child domains, when operating as part of
-    a distributed, hierarchical namespace.
-
-- control_key: SC-21
-  control_key_part: ~
-  control_name: SECURE NAME / ADDRESS RESOLUTION SERVICE (RECURSIVE OR CACHING RESOLVER)
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Not Applicable
-  narrative: >
-    This control is inherited from AWS and currently and does not employ the measures
-    to request and perform data origin authentication and data integrity verification
-    on the name/address resolution responses the system receives from authoritative
-    sources.

@@ -11,9 +11,11 @@
 
 #### LINCS specific control or LINCS Responsibility
 
-The Department of Education developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
+System and information integrity policy and procedures for the LINCS Technology Project system are formally documented in the LINCS SSP, which provides the roles and responsibilities as it pertains to physical and environmental protection systems. The LINCS Technology Project system support staff monitors the network on a daily basis and employs up-to-date patches to protect the integrity of the system.
 
-The CivicActions ISSO is responsible for reviewing and updating the System and Information Integrity Policy and Procedures annually. The Chief Operating Officer is responsible for approving System and Information Integrity. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+Additional information is contained within the Department of Education, Handbook for Information Assurance Security Policy (Handbook OCIO-01.
+
+This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
 
 
 
@@ -25,7 +27,7 @@ CivicActions has developed, documented and disseminated to personnel a system an
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
 
 
 
@@ -38,65 +40,55 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-### Part a)
+#### Drupal specific control support
 
-#### LINCS specific control or LINCS Responsibility
-
-Identification of LINCS security flaws are detected as early as possible by the following methods:
-
-* The CivicActions LINCS system environment uses the OWASP ZAP open-source web application security scanner to report on needed updates based on known flaws. The CivicActions Open Data Team performs the scans on a monthly basis. A report created from the OWASP ZAP scanner lists vulnerabilities and ranks them per severity.
-
-* Service flaw notifications are received by the CivicActions Open Data team.
-
-Any security issues found are ticketed through the Github ticketing tool. The CivicActions Open Data team prioritizes the high findings within Drupal. Changes made to correct the LINCS system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB as implemented in CM-3.
+Drupal contains built-in security status monitoring of the core application and contributed modules.
 
 
 
 #### Amazon Web Services (AWS) US-East/West control support
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  flaw remediation.
+
+
+
+### Part a)
+
+#### CivicActions Responsibility
+
+Identification of information system security flaws are detected as early as possible by the following methods:
+
+* The CivicActions system environment employs the OpenSCAP scsnner with the DISA STIB baseline to check for vulnerabilities. CivicActions Operations has automated the process to perform the scans on a monthly basis. A report created from the OpenSCAP scanner lists vulnerabilities and ranks them per severity.
+
+* The CivicActions applicate environment is tested by the penetration tester OWASP ZAP, an open-source web application security scanner to report on needed updates based on known flaws. CivicActions Operations has automated the process to perform the scans on a monthly basis. A report created from the OWASP ZAP scanner lists vulnerabilities and ranks them per severity.
+
+* Service flaw notifications (CVEs, etc.) are received by CivicActions Security and passed on to CicvicActions Operations when relevant.
+
+Any security issues found are ticketed through JIRA and/or the Git issue queue. CivicActions Operations prioritizes the high findings.  Changes made to correct the information system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB as implemented in CM-3.
 
 
 
 ### Part b)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
-CivicActions testing of the system as a result of security flaw remediation are done through a development environment though use of internal software and automated testing that ensures the system is working as intended. When a change is made by a developer, testing though a peer review is conducted as part of the Change Request process to ensure the correct analysis is completed. Tracking of the testing is documented in the Github ticketing tool.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  flaw remediation.
+CivicActions testing of the system as a result of security flaw remediation are done through a development environment though use of internal software and automated testing that ensures the system is working as intended. When a change is made by a developer, testing though a peer review is conducted as part of the Change Request process to ensure the correct analysis is completed. Then changed code is tested in an automatic test environment as described in Configuration Management Plan (CMP). Tracking of the testing is documented in JIRA and/or the Git issue queue.
 
 
 
 ### Part c)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
-CivicActions security-software updates are tested prior to place to production.  The CivicActions Security team framework for installation requires updates to be made within 30 days for high vulnerabilities, 90 days for moderate vulnerabilities, and 240 for low vulnerabilities.  An issue ticket is created to track the any updates made to the system.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  flaw remediation.
+CivicActions security-software updates are tested prior to place to production. The CivicActions Security framework for installation requires updates to be made within 30 days for high vulnerabilities, 90 days for moderate vulnerabilities, and 240 for low vulnerabilities. An issue ticket is created to track the any updates made to the system.
 
 
 
 ### Part d)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
-Flaw remediation is part of the CivicActions configuration management process.  Any security issues found are ticketed through the Github ticketing tool. The CivicActions Security team prioritizes the high findings within the Drupal application. Changes made to correct the system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB Chair as implemented in CM-3.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: flaw remediation.
+Flaw remediation is part of the CivicActions configuration management process.  Any security issues found are ticketed through JIRA or the Git issue queue. CivicActions Security prioritizes the high findings within the application. Changes made to correct the system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB Chair as implemented in CM-3.
 
 
 
@@ -109,9 +101,9 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-The OWASP ZAP open-source web application security scanner is used to perform monthly vulnerability scans of all LINCS system components and assess web application interfaces to identify any performance or security issues/flaws. Vulnerabilities and findings identified are handled and remediated in accordance with the implementation of RA-5. Reports are generated to the CivicActions Open Data team for review, analysis, and remediation.
+The OpenSCAP and OWASP ZAP security scanners are used to perform monthly vulnerability scans of all system components and assess web application interfaces to identify any performance or security issues/flaws. Vulnerabilities and findings identified are handled and remediated in accordance with the implementation of RA-5. Reports are generated to CivicActions Security and Operations for review, analysis, and remediation.
 
 
 
@@ -132,31 +124,31 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part a)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
-Virus scans are performed by ClamAV is a server-hosted tool protecting the application from Trojans, Viruses and other malicious cyber-threats. Real-time scans are conducted whenever files are uploaded from any external source and malicious code is blocked or quarantined when detected. All traffic traversing the server is sanitized before being delivered.
+Virus scans are performed by ClamAV, a server-hosted tool protecting the application from Trojans, Viruses and other malicious cyber-threats. Real-time scans are conducted whenever files are uploaded from any external source and malicious code is blocked or quarantined when detected. All file-based traffic traversing the server is sanitized before being delivered. All input form text is validated and sanitized.
 
 
 
 ### Part b)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
-Anti-virus definitions and malicious code protection mechanisms are configured and updated automatically.
+Anti-virus definitions and malicious code protection mechanisms are configured and updated automatically on a nightly basis.
 
 
 
 ### Part c)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
-The Cloud Operations Team receives information system security alerts, advisories and notifications in response to malicious code detection. These messages are sent to group email distribution lists to ensure all members of the team receive the proper information in a timely manner.
+CivicActions Operations receives information system security alerts, advisories and notifications in response to malicious code detection. These messages are sent to group email distribution lists to ensure all members of the team receive the proper information in a timely manner.
 
 
 
 ### Part d)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
 False positives during malicious code detection and eradication are dealt with on a case by case basis. Potential impacts on the availability of the information system are detailed in a false positive report depending on if the report is for the OS, database or web application.
 
@@ -171,27 +163,53 @@ False positives during malicious code detection and eradication are dealt with o
 > Security control type: Hybrid
 
 
-### Part a)
-
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: information system monitoring.
 
-AWS host-based intrusion detection system (HIDS) monitors the AWS boundary and unauthorized local, network, and remote connections to the LINCS system; see inheritance below.
+
+
+### Part a)
+
+#### CivicActions Responsibility
+
+CivicActions systems use a collection of monitoring systems, including:
+
+* ClamAV - provides signature based malware detection/quarantine
+
+* OSSEC host-based intrusion detection system (HIDS)
+
+* AIDE Advanced Intrusion Detection Environment (IDS))
+
+* fail2ban, an intrusion prevention system (IPS) framework
+
+* SELinux - a Mandatory Access Control (MAC) IPS
+
+* auditd - a secure system audit daemon
+
+* CloudWatch - AWS monitoring and measurement system
+
+* StatusCake - website monitoring tool
+
+* OpsGenie - a slack/email/text/phone incident escalation tool
 
 
 
 ### Part b)
 
-#### Amazon Web Services (AWS) US-East/West control support
+#### CivicActions Responsibility
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
-
-The AWS host-based intrusion detection system (HIDS) monitors the perimeter of the AWS boundary and events of the system boundary. Logs from the HIDS are forwarded to the AWS SIEM tool.
+Logs from the systems described in SI-4(a) are sent to the CivicActions SIEM tool for analysis. These logs can identify unauthorized use of the information system.
 
 
 
 ### Part c)
+
+#### CivicActions Responsibility
+
+Monitoring and log collection occurs throughout the system.
+
+
 
 #### Amazon Web Services (AWS) US-East/West control support
 
@@ -203,6 +221,12 @@ CivicActions leverages the AWS platform and a host-based intrusion detection sys
 
 ### Part d)
 
+#### CivicActions Responsibility
+
+The Configuration Management process, remote log gathering and SELinux MAC protects information obtained from intrusion-monitoring tools from unauthorized access, modification, and deletion.
+
+
+
 #### Amazon Web Services (AWS) US-East/West control support
 
 The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
@@ -213,7 +237,7 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 
 #### CivicActions Responsibility
 
-In the event of a performance score lower than CivicActions standards, a notification is sent to the CivicActions Open Source Support Engineering team. CivicActions subscribes to security mailing lists in the event the monitoring activity is required based on law enforcement information, intelligence information, or other credible sources of information.
+In the event of a performance score lower than CivicActions standards, a notification is sent to CivicActions Security. CivicActions subscribes to security mailing lists in the event the monitoring activity is required based on law enforcement information, intelligence information, or other credible sources of information.
 
 
 
@@ -239,9 +263,9 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part g)
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-LINCS system alerts generated by CivicActions internal monitors (AWS Insight, StatusCake, OWASP ZAP, and Drupal ClamAV) are sent to the Incident Response team.
+System alerts generated by CivicActions internal monitors (StatusCake, OSSEC, ClamAV, others) are sent to the Incident Response team via OpsGenie.
 
 
 
@@ -262,13 +286,25 @@ AWS’s monitoring mechanisms provide notification including audit records, inpu
 > Security control type: Hybrid
 
 
-### Part a)
+#### LINCS specific control or LINCS Responsibility
+
+LINCS Technology Project representatives and system administrators receive alerts from US-CERT on a regular basis. Support personnel take appropriate action in response to relevant areas of concern.
+
+
 
 #### Drupal specific control support
 
-CivicActions / Drupal engineering and operations teams receive the following security alerts, advisories and directives on an ongoing basis:
+CivicActions Security and Operations receive Drupal Security Advisories on a regular basis.
 
-* Mailing lists relevant to Drupal and web application security
+
+
+### Part a)
+
+#### CivicActions Responsibility
+
+CivicActions Security and Operations receive the following security alerts, advisories and directives on an ongoing basis:
+
+* Mailing lists relevant to web application security
 
 * US-CERT
 
@@ -288,9 +324,9 @@ The AWS Insight control panel provides direct access to the monitored systems.
 
 ### Part b)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
-CivicActions utilizes StatusCake for front line monitoring for real-time system status and events of the application.
+CivicActions utilizes StatusCake for front line monitoring for real-time system status and events of the application. StatusCake can feed to the OpsGenie incident escalation system.
 
 
 
@@ -304,9 +340,9 @@ The AWS host-based intrusion detection system (HIDS) monitors the events of the 
 
 ### Part c)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
-CivicActions Security team disseminates security alerts, advisories, advisories, and directives to all CivicActions internal personnel and client personnel as directed.
+CivicActions Security disseminates security alerts, advisories, advisories, and directives to all CivicActions internal personnel and client personnel as directed.
 
 
 
@@ -318,9 +354,9 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ### Part d)
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
-CivicActions Security team is responsible for ensuring the dissemination and implementation of relevant security alerts and advisories.
+CivicActions Security is responsible for ensuring the dissemination and implementation of relevant security alerts and advisories.
 
 
 
@@ -339,9 +375,9 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
-CivicActions employ the GitHub system to monitor source code, Drupal, and Drupal Modules version control ensuring system integrity and prevents unauthorized changes. The PHP-authenticator tool is perform a format check on source code prior to entering production. Per implementation of CM-3, any changes to the source code of the system requires the CCB Change Request process. A peer review as part of the Change Request process is conducted to ensure the requested change is verified prior to entering production.
+CivicActions employ the GitHub system to monitor source code and version control ensuring system integrity and prevents unauthorized changes.  The PHP-authenticator tool is perform a format check on source code prior to entering production. Per implementation of CM-3, any changes to the source code of the system requires the CCB Change Request process. A peer review as part of the Change Request process is conducted to ensure the requested change is verified prior to entering production.
 
 
 
@@ -360,7 +396,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
 The integrity check implementation of SI-7 is conducted though the GitHub system and verified monthly by redeploying the system codebase from GitHub.
 
@@ -381,7 +417,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### Drupal specific control support
+#### CivicActions Responsibility
 
 CivicActions incident response and configuration capabilities include the detection of unauthorized changes to the system though the IR Plan and CCB Change Request process and the implementation of IR-4 and IR-5. In the event of an unauthorized security change to the system, CivicActions support would roll back to and restore from the most recent authorized database set.
 
@@ -419,7 +455,7 @@ The LINCS system does not shut down in the event of an integrity violation is di
 
 #### Drupal specific control support
 
-The linked data component and information submitted via web forms of the system are the only component vulnerable to code insertion attacks, and has been hardened to prevent them. Third party scans of the system verify the linked data component is not susceptible to cross-site scripting attacks. Information submitted are checked from the execution of the inputs and will disable any script entered in the text.
+All Drupal form input text is subject to format verification and input validation.
 
 
 
@@ -466,7 +502,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 
 
-## SI-12 INFORMATION OUTPUT HANDLING AND RETENTION
+## SI-12 INFORMATION HANDLING AND RETENTION
 
 > Control description: <http://800-53.govready.com/control?id=SI-12>
 > 
@@ -475,7 +511,13 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 > Security control type: Hybrid
 
 
-#### Drupal specific control support
+#### LINCS specific control or LINCS Responsibility
+
+LINCS Technology Project representatives and systems administrators receive annual training from the Department regarding information assurance and information handling requirements. These personnel are required to operate the system and handle system data and output in accordance with legal requirements. Personnel training and system guidelines ensure that data and programs are handled appropriately.
+
+
+
+#### CivicActions Responsibility
 
 The CivicActions organization retains all information, system-related information, incident-related information, and system output in accordance with customers’ requirements retention periods and other NIST guidance and standards, Federal policies, procedures, Federal laws and executive orders. Audit records are retained for 365 days.
 

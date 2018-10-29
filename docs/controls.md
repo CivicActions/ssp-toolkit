@@ -1,4 +1,4 @@
-# LINCS Controls (compiled: 2018.10.28 at 1748)
+# LINCS Controls (compiled: 2018.10.28 at 2356)
 
 * [ACCESS CONTROL](controls/AC.md#access-control)
    * [AC-01 ACCESS CONTROL POLICY AND PROCEDURES](controls/AC.md#ac-01-access-control-policy-and-procedures)
@@ -159,7 +159,7 @@
    * [SC-05 DENIAL OF SERVICE PROTECTION](controls/SC.md#sc-05-denial-of-service-protection)
    * [SC-07 BOUNDARY PROTECTION](controls/SC.md#sc-07-boundary-protection)
    * [SC-12 CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT](controls/SC.md#sc-12-cryptographic-key-establishment-and-management)
-   * [SC-13 USE OF CRYPTOGRAPHY](controls/SC.md#sc-13-use-of-cryptography)
+   * [SC-13 CRYPTOGRAPHIC PROTECTION](controls/SC.md#sc-13-cryptographic-protection)
    * [SC-15 COLLABORATIVE COMPUTING DEVICES](controls/SC.md#sc-15-collaborative-computing-devices)
    * [SC-20 SECURE NAME / ADDRESS RESOLUTION SERVICE (AUTHORITATIVE SOURCE)](controls/SC.md#sc-20-secure-name--address-resolution-service-authoritative-source)
    * [SC-21 SECURE NAME / ADDRESS RESOLUTION SERVICE (RECURSIVE OR CACHING RESOLVER)](controls/SC.md#sc-21-secure-name--address-resolution-service-recursive-or-caching-resolver)
@@ -179,7 +179,7 @@
    * [SI-07(5) AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS](controls/SI.md#si-075-automated-response-to-integrity-violations)
    * [SI-10 INFORMATION INPUT VALIDATION](controls/SI.md#si-10-information-input-validation)
    * [SI-11 ERROR HANDLING](controls/SI.md#si-11-error-handling)
-   * [SI-12 INFORMATION OUTPUT HANDLING AND RETENTION](controls/SI.md#si-12-information-output-handling-and-retention)
+   * [SI-12 INFORMATION HANDLING AND RETENTION](controls/SI.md#si-12-information-handling-and-retention)
    * [SI-16 MEMORY PROTECTION](controls/SI.md#si-16-memory-protection)
 
 <!-- Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc) -->

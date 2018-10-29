@@ -54,8 +54,8 @@ satisfies:
   implementation_status: Partially in Place
   narrative: >
     Identifiers for CivicActions internal personnel include a username based on the
-    individual's full first and last name and are reviewed for uniqueness by the LINCS
-    admin group when it approves creation of the user account.
+    individual's full first and last name and are reviewed for uniqueness by the admin
+    group when it approves creation of the user account.
 
 - control_key: IA-04
   control_key_part: d

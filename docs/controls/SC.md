@@ -11,9 +11,9 @@
 
 #### LINCS specific control or LINCS Responsibility
 
-The Department of Education developed, documented and disseminated to personnel a system and communication policy  that addresses purpose, scope, roles, responsibilities, management committment, coordination among organizational entities, and compliance, and developed, documented and disseminated to personnel procedures to facilitate the implementation of the policy and associated controls.The policy is stated in the Office of the Secretary Information Security Policy dated July 17, 2013 and the procedures are defined in the Office of the Secretary Procedures Handbook for Information Security, Version 1.1 dated July 30, 2014. These documents will be reviewed periodically. These policies and procedures are applicable to the LINCS personnel using the lincs.ed.gov information system.
+System and communications protection policy and procedures are formally documented in the Department of Education, Handbook for Information Assurance Security Policy (Handbook OCIO-01) and the LINCS SSP. The Department reviews and updates the policy as necessary and has been continually updated since April 2008.
 
-The CivicActions ISSO is responsible for reviewing and updating the System and Communications Protection Policy and Procedures annually.  The Chief Operating Officer is responsible for approving System and Communications Protection. All procedures are consistent with requirements of FISMA, FedRAMP, ISO 27001, applicable executive orders, directives, policies, regulations, standards, and guidance. These policies and procedures are applicable to the CivicActions staff administering the lincs.ed.gov information system.
+This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
 
 
 
@@ -40,21 +40,21 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### LINCS specific control or LINCS Responsibility
 
-Denial of service (DoS) attacks impair the performance of network devices and server hosts, and thence the application itself.  LINCS relies on the AWS platform for the protection of DoS attacks defined by LINCS SC-5.
+The LINCS Technology Project system is configured to reduce vulnerabilities in its operating system and applications to protect against Denial of Service (DoS) attacks.
+
+The LINCS support staff ensures the system is protected against or limits the effect of DoS attacks as specified in the Department of Education, Handbook for Information Security Incident Response and Reporting Procedures (Handbook OCIO-14).
 
 
 
 #### Drupal specific control support
 
-Drupal has a manual ability to block IP addresses in cases where attacks bypass cloud protection. This is managed by the support team.
+Drupal has a manual ability to block IP addresses in cases where attacks bypass cloud protection. This is managed by CivicActions Operations.
 
 
 
 #### Amazon Web Services (AWS) US-East/West control support
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: denial of service protection.
-
-Monitoring is conducted though AWS Operations in analyzing capacity and traffic patterns in potential DoS attacks.
 
 
 
@@ -67,49 +67,43 @@ Monitoring is conducted though AWS Operations in analyzing capacity and traffic 
 > Security control type: Hybrid
 
 
-### Part a)
-
 #### LINCS specific control or LINCS Responsibility
 
-The lincs.ed.gov authorization boundary is completely contained within the AWS Platform as a Service.
-
-The Drupal Server and Static Files computing nodes are the only computing nodes in the system that are exposed to the Internet. LINCS employs both the AWS platform safeguards and the Drupal Watchdog module in monitoring and recording system events. All other computing nodes used in the system are isolated within AWS.
+The LINCS Technology Project system has monitored and controlled communications at the external boundary of the information system and at key internal boundaries within the system, where appropriate. The LINCS allocates publicly accessible information system components (e.g., public web servers) specific IP address and port combinations. Public access into the organization’s internal networks is prevented except as appropriately mediated.
 
 
+
+#### Drupal specific control support
+
+Drupal, when deployed on SELinux in full enforcing mode, minimizes the number of services and computing nodes that are exposed to the Internet. Drupal employs both the AWS platform safeguards and the Drupal Watchdog module in monitoring and recording system events. All other computing nodes used in the system are isolated within AWS.
+
+
+
+### Part a)
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: monitoring and controlling at the external boundary and key internal boundaries.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: boundary protection.
 
 
 
 ### Part b)
 
-#### LINCS specific control or LINCS Responsibility
-
-The lincs.ed.gov authorization boundary is completely contained within the AWS Platform as a Service.
-
-Internal organizational networks (e.g. CivicActions private networks) are physically separate from the AWS platform and are protected by managed boundary devices that include FIPS 140-2 validated encryption modules at all entry points.
-
-
-
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: implementation of subnetworks for publically accessible system components.
+The authorization boundary is completely contained within a Virtual Private Cloud (VPC) created and managed by the AWS Infrastructure as a Service (IaaS). External connections must be explicitly configured via the AWS Security Groups (SG) mechanism.
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: boundary protection.
 
 
 
 ### Part c)
 
-#### LINCS specific control or LINCS Responsibility
-
-The lincs.ed.gov authorization boundary is completely contained within the AWS Platform as a Service.
-
-
-
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: monitoring and controlling at the external boundary and key internal boundaries.
+Internal organizational networks (e.g. CivicActions private networks) are physically separate from the AWS platform and are protected by managed boundary devices that include FIPS 140-2 validated encryption modules at all entry points.
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: boundary protection.
 
 
 
@@ -124,11 +118,11 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### LINCS specific control or LINCS Responsibility
 
-This is a planned control. Use of cryptographic key management for the LINCS system is not in use for at the time of implementation for authentication. CivicActions does not utilize customer agency supplied PIV credentials for access to customer instances of the LINCS. Access enforcement and authentication requirements for LINCS are described in AC-2 & IA-2. AWS platform does not utilize or manage cryptographic keys within the ACE boundary.
+Use of cryptographic key management for the LINCS system is not in use for at the time of implementation for authentication. CivicActions does not utilize customer agency supplied PIV credentials for access to customer instances of the LINCS. Access enforcement and authentication requirements for LINCS are described in AC-2 & IA-2. AWS platform does not utilize or manage cryptographic keys within the ACE boundary.
 
 
 
-## SC-13 USE OF CRYPTOGRAPHY
+## SC-13 CRYPTOGRAPHIC PROTECTION
 
 > Control description: <http://800-53.govready.com/control?id=SC-13>
 > 
@@ -137,15 +131,23 @@ This is a planned control. Use of cryptographic key management for the LINCS sys
 > Security control type: Hybrid
 
 
-#### LINCS specific control or LINCS Responsibility
+#### CivicActions Responsibility
 
-LINCS servers use SSH data is encrypted during transit. LINCS utilizes HTTPS for any inbound traffic accessing the LINCS and must authenticate according to established LINCS access enforcement and authentication rules described in AC-2 & IA-2. AWS Cloud data volumes are encrypted with FIPS-142 encryption.
+The information system implements:
+
+* cryptographic modules through Secure Shell (SSH) to allow administrators to securely logon to the various system components
+
+* HTTPS/SSL (TLS) for connection to web-based services
+
+* TLS for connection to email services
+
+* AES-256 (FIPS 140-2 validated) for data at rest (with Elastic Block Store (EBS) volumnes)
 
 
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: use of cryptography for data in motion (with SSH and HTTPS/SSL) and for data at rest (with Elastic Block Store (EBS) volumnes).
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: cryptographic protection for data in motion (with SSH and HTTPS/SSL) and for data at rest (with Elastic Block Store (EBS) volumnes).
 
 
 
@@ -170,12 +172,12 @@ This control is not applicable, as the LINCS system does not employ any collabor
 > 
 > 
 > 
-> Security control type: Hybrid
+> Security control type: Inherited (Cloud Service Provider)
 
 
-#### LINCS specific control or LINCS Responsibility
+#### Amazon Web Services (AWS) US-East/West control support
 
-This control is inherited from AWS and currently does not employ a distributed, hierarchical namespace. LINCS does not provide additional data origin authentication and integrity verification artifacts along with the authoritative name resolution data the system returns in response to external name/address resolution queries. LINCS does not provide the means to indicate the security status of child zones and (if the child supports secure resolution services) to enable verification of a chain of trust among parent and child domains, when operating as part of a distributed, hierarchical namespace.
+The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: secure name / address resolution service (authoritative source)
 
 
 
@@ -185,12 +187,12 @@ This control is inherited from AWS and currently does not employ a distributed, 
 > 
 > 
 > 
-> Security control type: Hybrid
+> Security control type: Inherited (Cloud Service Provider)
 
 
-#### LINCS specific control or LINCS Responsibility
+#### Amazon Web Services (AWS) US-East/West control support
 
-This control is inherited from AWS and currently and does not employ the measures to request and perform data origin authentication and data integrity verification on the name/address resolution responses the system receives from authoritative sources.
+The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: secure name / address resolution service (recursive or caching resolver)
 
 
 
@@ -221,12 +223,6 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 #### CivicActions Responsibility
 
 Process isolation is maintained on the Linux platform. Linux is the only operating system that is part of the boundary.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: Process isolation.
 
 
 

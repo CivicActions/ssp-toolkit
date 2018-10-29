@@ -168,7 +168,7 @@ User accounts are assigned a unique identifier in the form of a unique username,
 
 #### Drupal specific control support
 
-Identifiers for CivicActions internal personnel include a username based on the individual's full first and last name and are reviewed for uniqueness by the LINCS admin group when it approves creation of the user account.
+Identifiers for CivicActions internal personnel include a username based on the individual's full first and last name and are reviewed for uniqueness by the admin group when it approves creation of the user account.
 
 
 
