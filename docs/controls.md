@@ -1,4 +1,4 @@
-# LINCS Controls (compiled: 2018.10.28 at 2356)
+# LINCS Controls (compiled: 2018.10.29 at 0933)
 
 * [ACCESS CONTROL](controls/AC.md#access-control)
    * [AC-01 ACCESS CONTROL POLICY AND PROCEDURES](controls/AC.md#ac-01-access-control-policy-and-procedures)
@@ -180,6 +180,5 @@
    * [SI-10 INFORMATION INPUT VALIDATION](controls/SI.md#si-10-information-input-validation)
    * [SI-11 ERROR HANDLING](controls/SI.md#si-11-error-handling)
    * [SI-12 INFORMATION HANDLING AND RETENTION](controls/SI.md#si-12-information-handling-and-retention)
-   * [SI-16 MEMORY PROTECTION](controls/SI.md#si-16-memory-protection)
 
 <!-- Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc) -->

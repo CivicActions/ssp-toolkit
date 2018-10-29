@@ -48,6 +48,18 @@ satisfies:
     If an integrity violation is found, CivicActions conducts frequent backups of
     the LINCS system to support rollback of the LINCS system.
 
+- control_key: SI-11
+  control_key_part: a
+  control_name: ERROR HANDLING
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    Drupal in production operation mode does not display application errors to the user
+    but instead displays a predefined page indication that a request cannot be handled as
+    requested and logs all errors to the watchdog.log file.
+
 - control_key: SI-12
   control_key_part: ~
   control_name: INFORMATION HANDLING AND RETENTION

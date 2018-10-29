@@ -208,16 +208,6 @@ satisfies:
     continuously monitors and alerts for software changes as they occur throughout
     the AWS platform.
 
-- control_key: SI-10
-  control_key_part: ~
-  control_name: INFORMATION INPUT VALIDATION
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: System Specific Control
-  implementation_status: In Place
-  narrative: >
-    None.
-
 - control_key: SI-11
   control_key_part: a
   control_name: ERROR HANDLING
@@ -226,8 +216,8 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  error handling.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: error handling.
 
 - control_key: SI-11
   control_key_part: b
@@ -237,8 +227,8 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  error handling.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: error handling.
 
 - control_key: SI-12
   control_key_part: ~
@@ -248,19 +238,6 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  information output
-    handling and retention.
-
-- control_key: SI-16
-  control_key_part: ~
-  control_name: MEMORY PROTECTION
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
-  implementation_status: In Place
-  narrative: >
-    The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 1 May 2013 for the following:  data execution prevention
-    an address space layout randomization]to protect its memory from unauthorized
-    code execution.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: information output handling and
+    retention.

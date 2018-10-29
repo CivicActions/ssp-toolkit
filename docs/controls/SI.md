@@ -459,12 +459,6 @@ All Drupal form input text is subject to format verification and input validatio
 
 
 
-#### Amazon Web Services (AWS) US-East/West control support
-
-None.
-
-
-
 ## SI-11 ERROR HANDLING
 
 > Control description: <http://800-53.govready.com/control?id=SI-11>
@@ -476,6 +470,12 @@ None.
 
 ### Part a)
 
+#### LINCS specific control or LINCS Responsibility
+
+Drupal in production operation mode does not display application errors to the user but instead displays a predefined page indication that a request cannot be handled as requested and logs all errors to the watchdog.log file.
+
+
+
 #### Drupal specific control support
 
 Drupal system error logs do not contain passwords, personal information, encryption keys or other sensitive information.
@@ -484,7 +484,7 @@ Drupal system error logs do not contain passwords, personal information, encrypt
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  error handling.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: error handling.
 
 
 
@@ -498,7 +498,7 @@ Drupal system error logs are only available to authenticated administrators and 
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  error handling.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: error handling.
 
 
 
@@ -525,22 +525,7 @@ The CivicActions organization retains all information, system-related informatio
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  information output handling and retention.
-
-
-
-## SI-16 MEMORY PROTECTION
-
-> Control description: <http://800-53.govready.com/control?id=SI-16>
-> 
-> 
-> 
-> Security control type: Inherited (Cloud Service Provider)
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  data execution prevention an address space layout randomization]to protect its memory from unauthorized code execution.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: information output handling and retention.
 
 
 

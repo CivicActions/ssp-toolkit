@@ -19,7 +19,7 @@ Additional information is contained within the Department of Education, Handbook
 
 #### CivicActions Responsibility
 
-CivicActions has developed, documented and disseminated to personnel a configuration management policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Configuration Management (CM) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+CivicActions has developed, documented and disseminated to personnel a configuration management policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Configuration Management (CM) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.d
 
 
 
@@ -432,11 +432,7 @@ The software inventory for the application is maintained in the codebase stored 
 
 * The Drupal open source web content management system
 
-* Drupal add-on modules, themes and libraries available from the Drupal.org website
-
-  which extend Drupal core
-
-
+* Drupal add-on modules, themes and libraries available from the Drupal.org website which extend Drupal core
 
 * Custom code written by CivicActions' developers
 
