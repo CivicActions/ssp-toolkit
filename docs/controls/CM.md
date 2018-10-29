@@ -19,7 +19,9 @@ Additional information is contained within the Department of Education, Handbook
 
 #### CivicActions Responsibility
 
-CivicActions has developed, documented and disseminated to personnel a configuration management policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Configuration Management (CM) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.d
+CivicActions has developed, documented and disseminated to personnel a configuration management policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Configuration Management (CM) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+
+Configuration changes are overseen by the Change Control Board (CCB) consisting of the System Owner, Project Manager and CivicActions Development.
 
 
 
@@ -41,6 +43,12 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 #### LINCS specific control or LINCS Responsibility
 
 A CM process has been established and documented in the LINCS Technology Project CMP. All updates are made in accordance with the procedures outlined in the CMP.  The CM process establishes a baseline of hardware, software, firmware and documentation, as well as changes thereto, throughout the development and life cycle of the information system. CM ensures the control of the information system through its life cycle. It assures that additions, deletions, or changes made to the LINCS Technology Project system do not unintentionally or unknowingly diminish security. If the change is major, the security of the system must be re-analyzed.
+
+
+
+#### CivicActions Responsibility
+
+A current baseline configuration is always available - stored as a tag in the Git repository - such that the site can be regenerated or rolled back should unauthorized or failing changes be applied.
 
 
 
@@ -77,7 +85,7 @@ AWS maintains the baseline software configuration for the server components requ
 
 #### Drupal specific control support
 
-CivicActions reviews and updates baseline configurations for the system at least annually, when requested by the Program Owner or required by law, and as an integral part of information system component installations, upgrades and maintenance.
+CivicActions reviews and updates baseline configurations for the system at least annually, when requested by the System Owner or required by law, and as an integral part of information system component installations, upgrades and maintenance.
 
 Review of the CM baselines for the system is conducted and approved by CivicActions Development. Any changes made to the production environment are approved prior to deployment by the CCB or agile scrum process. Changes that may require updates to the baseline configuration for the application include:
 
@@ -144,7 +152,7 @@ Previous baseline configurations are retained in git, which implements unlimited
 
 #### CivicActions Responsibility
 
-In accordance with the Configuration Management Plan and control SA-3, CivicActions manages changes to the baseline configuration of the application through an agile scrum-based process. Examples of the types of changes that may be introduced through a code release include the following, ordered by increasing level of possible security risk:
+In accordance with the Configuration Management Plan and control SA-3, CivicActions manages changes to the baseline configuration of the application through an agile scrum-based process.  Examples of the types of changes that may be introduced through a code release include the following, ordered by increasing level of possible security risk:
 
 1. Minor application code changes
 
@@ -154,7 +162,7 @@ In accordance with the Configuration Management Plan and control SA-3, CivicActi
 
 4. Major application modification
 
-The CCB meets bi-weekly during the sprint planning and backlog grooming meetings. In addition, the Program Owner or Project Manager may convene the CCB in an emergency session to address time-critical topics as deemed necessary.
+The CCB meets bi-weekly during the sprint planning and backlog grooming meetings. In addition, the System Owner or Project Manager may convene the CCB in an emergency session to address time-critical topics as deemed necessary.
 
 
 

@@ -88,7 +88,7 @@ The SSP is reviewed and approved by the authorizing official prior to plan imple
 
 #### CivicActions Responsibility
 
-The SSP is reviewed at least annually by the Product Owner and CivicActions Operations in collaboration with CivicActions Security.
+The SSP is reviewed at least annually by the System Owner and CivicActions Operations in collaboration with CivicActions Security.
 
 
 

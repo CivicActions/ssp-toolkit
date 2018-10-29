@@ -132,7 +132,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### CivicActions Responsibility
 
-Access to the system is authorized by the Product Owner or Project Manager for each role as described in AC-2.
+Access to the system is authorized by the System Owner or Project Manager for each role as described in AC-2.
 
 
 

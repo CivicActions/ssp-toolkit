@@ -78,7 +78,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The SSP is reviewed at least annually by the Product Owner and CivicActions Operations
+    The SSP is reviewed at least annually by the System Owner and CivicActions Operations
     in collaboration with CivicActions Security.
 
 - control_key: PL-02

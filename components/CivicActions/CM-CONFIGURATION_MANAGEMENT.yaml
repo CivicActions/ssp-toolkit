@@ -18,7 +18,22 @@ satisfies:
     to facilitate the implementation of the policy and associated controls. This information
     is maintained in the CivicActions Configuration Management (CM) Policy. This document
     can be found in the CivicActions Compliance Docs GitHub repository at
-    <https://github.com/CivicActions/compliance-docs>.d
+    <https://github.com/CivicActions/compliance-docs>.
+
+    Configuration changes are overseen by the Change Control Board (CCB) consisting of the
+    System Owner, Project Manager and CivicActions Development.
+
+- control_key: CM-02
+  control_key_part: ~
+  control_name: BASELINE CONFIGURATION
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    A current baseline configuration is always available - stored as a tag in the Git
+    repository - such that the site can be regenerated or rolled back should unauthorized
+    or failing changes be applied.
 
 - control_key: CM-03
   control_key_part: ~
@@ -30,12 +45,12 @@ satisfies:
   narrative: >
     In accordance with the Configuration Management Plan and control SA-3, CivicActions
     manages changes to the baseline configuration of the application through an agile
-    scrum-based process. Examples of the types of changes that may be introduced through a
-    code release include the following, ordered by increasing level of possible security
+    scrum-based process.  Examples of the types of changes that may be introduced through
+    a code release include the following, ordered by increasing level of possible security
     risk:
 
     1. Minor application code changes
-
+    
     2. New software releases for Drupal core, contributed Drupal modules, or other
     software components that are supplied by outside open source vendors
 
@@ -44,7 +59,7 @@ satisfies:
     4. Major application modification
 
     The CCB meets bi-weekly during the sprint planning and backlog grooming meetings. In
-    addition, the Program Owner or Project Manager may convene the CCB in an emergency
+    addition, the System Owner or Project Manager may convene the CCB in an emergency
     session to address time-critical topics as deemed necessary.
 
 - control_key: CM-03

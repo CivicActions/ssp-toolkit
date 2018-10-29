@@ -33,11 +33,11 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The LINCS Product Owner is responsible for leading the annual budgeting process and
-    for tracking organizational spending. The Product Owner coordinates with the
+    The LINCS System Owner is responsible for leading the annual budgeting process and
+    for tracking organizational spending. The System Owner coordinates with the
     CivicActions Project Manager and CivicActions Security on at least monthly basis to
     track security priorities and spending patterns and determine financial
-    requirements. The Product Owner also coordinates the approval process for interim
+    requirements. The System Owner also coordinates the approval process for interim
     increases to the security budget, if required. This data is used to support the
     development of the annual budget.
 

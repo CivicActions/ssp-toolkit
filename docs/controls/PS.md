@@ -225,7 +225,7 @@ Access authorizations are modified as needed to coincide with changes in duties 
 
 #### CivicActions Responsibility
 
-CivicActions Operations is informed of transfers that require access authorization modifications within five business days by the Project Manager, Product Owner or Director of Human Resources.
+CivicActions Operations is informed of transfers that require access authorization modifications within five business days by the Project Manager, System Owner or Director of Human Resources.
 
 
 

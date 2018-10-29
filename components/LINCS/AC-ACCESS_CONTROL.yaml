@@ -63,7 +63,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The Project Owner has oversight over all permissions that the Project Manager and
+    The System Owner has oversight over all permissions that the Project Manager and
     Operations Staff manages.
 
 - control_key: AC-02

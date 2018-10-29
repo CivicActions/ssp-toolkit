@@ -71,7 +71,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     All accounts issued for the admin management of Application or SSH access must be
-    approved by the Project Owner or Project Manager who must create an account
+    approved by the System Owner or Project Manager who must create an account
     request. The CivicActions Operations Team applies appropriate account permissions and
     settings based on the job role and function documented within the request ticket using
     processes defined by the CivicActions Security Team.
@@ -178,7 +178,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The CivicActions Access Control (AC) policy defines policy for remote usage
-    restrictions.  The Project Manager or Project Owner may additionally provision users
+    restrictions.  The Project Manager or System Owner may additionally provision users
     according to their Access Control policies.
   summary: CivicActions Access Control (AC) policy defines remote usage restrictions.
 

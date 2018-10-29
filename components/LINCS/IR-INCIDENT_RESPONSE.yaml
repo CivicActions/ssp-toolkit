@@ -100,7 +100,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     If an incident involves suspicious activity, CivicActions Operations will contact the
-    LINCS Program Owner who may then contact the LINCS CSO.
+    LINCS System Owner who may then contact the LINCS CSO.
     
     The LINCS Technology Project’s Computer Security Officer (CSO) handles all incidents
     for the LINCS Technology Project. The CSO is prepared to report all incidents to The

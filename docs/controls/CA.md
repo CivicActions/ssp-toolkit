@@ -266,7 +266,7 @@ POA&M items are tracked by CivicActions Security though JIRA tickets with a secu
 
 #### CivicActions Responsibility
 
-The security status of the system is reported up to the Program Owner and Project Manager via CivicActions Security to be reviewed alongside other security issues relating to the system.
+The security status of the system is reported up to the System Owner and Project Manager via CivicActions Security to be reviewed alongside other security issues relating to the system.
 
 
 

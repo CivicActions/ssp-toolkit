@@ -36,7 +36,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     CivicActions reviews and updates baseline configurations for the system at least
-    annually, when requested by the Program Owner or required by law, and as an integral
+    annually, when requested by the System Owner or required by law, and as an integral
     part of information system component installations, upgrades and maintenance.
 
     Review of the CM baselines for the system is conducted and approved by CivicActions

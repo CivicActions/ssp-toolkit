@@ -86,7 +86,7 @@ Drupal provides user accounts for individuals who participate in visiting, contr
 
 #### LINCS specific control or LINCS Responsibility
 
-The Project Owner has oversight over all permissions that the Project Manager and Operations Staff manages.
+The System Owner has oversight over all permissions that the Project Manager and Operations Staff manages.
 
 
 
@@ -134,7 +134,7 @@ CivicActions sets up the initial Site Manager account for LINCS; however, any su
 
 #### CivicActions Responsibility
 
-All accounts issued for the admin management of Application or SSH access must be approved by the Project Owner or Project Manager who must create an account request. The CivicActions Operations Team applies appropriate account permissions and settings based on the job role and function documented within the request ticket using processes defined by the CivicActions Security Team.
+All accounts issued for the admin management of Application or SSH access must be approved by the System Owner or Project Manager who must create an account request. The CivicActions Operations Team applies appropriate account permissions and settings based on the job role and function documented within the request ticket using processes defined by the CivicActions Security Team.
 
 
 
@@ -395,7 +395,7 @@ The LINCS Technology Project permits remote access for privileged functions to s
 
 #### CivicActions Responsibility
 
-The CivicActions Access Control (AC) policy defines policy for remote usage restrictions.  The Project Manager or Project Owner may additionally provision users according to their Access Control policies.
+The CivicActions Access Control (AC) policy defines policy for remote usage restrictions.  The Project Manager or System Owner may additionally provision users according to their Access Control policies.
 
 
 

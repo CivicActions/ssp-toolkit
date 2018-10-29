@@ -40,7 +40,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### LINCS specific control or LINCS Responsibility
 
-The LINCS Product Owner is responsible for leading the annual budgeting process and for tracking organizational spending. The Product Owner coordinates with the CivicActions Project Manager and CivicActions Security on at least monthly basis to track security priorities and spending patterns and determine financial requirements. The Product Owner also coordinates the approval process for interim increases to the security budget, if required. This data is used to support the development of the annual budget.
+The LINCS System Owner is responsible for leading the annual budgeting process and for tracking organizational spending. The System Owner coordinates with the CivicActions Project Manager and CivicActions Security on at least monthly basis to track security priorities and spending patterns and determine financial requirements. The System Owner also coordinates the approval process for interim increases to the security budget, if required. This data is used to support the development of the annual budget.
 
 Security costs are included in either a specific Exhibit 300 or Exhibit 53 in order to provide adequate business case information for budget purposes. Security costs are represented across the life cycle in the business case (Exhibit 300) for major investments and (Exhibit 53) for non-major projects. Security costs are summarized and listed as a line item on the Exhibit 53 in the budget submitted to Treasury. Costs for providing security at the infrastructure level are contained in the business cases for infrastructure supporting computing platforms, desktop processing, the network environment, and web capability. Since the Exhibit 300 includes projections for multiple fiscal years, its intention is to identify and anticipate security resources required.
 
@@ -56,7 +56,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### CivicActions Responsibility
 
-CivicActions Security in collaboration with the Product Owner act and/or meet on a pre-determined basis to determine information system security requirements and to develop implementation budgets and plans.
+CivicActions Security in collaboration with the System Owner act and/or meet on a pre-determined basis to determine information system security requirements and to develop implementation budgets and plans.
 
 
 
@@ -64,7 +64,7 @@ CivicActions Security in collaboration with the Product Owner act and/or meet on
 
 #### CivicActions Responsibility
 
-CivicActions Security in collaboration with the Product Owner determines, designates, documents, and allocates the resources required to protect the system as part of its capital planning and investment control processes.
+CivicActions Security in collaboration with the System Owner determines, designates, documents, and allocates the resources required to protect the system as part of its capital planning and investment control processes.
 
 
 
@@ -72,7 +72,7 @@ CivicActions Security in collaboration with the Product Owner determines, design
 
 #### CivicActions Responsibility
 
-The annual budget developed by the Product Owner includes explicit budgetary line items for FISMA security requirements. Additional security-related expenditures that fall outside of explicit compliance requirements are addressed in sub-lines under the CivicActions Information Technology budget.
+The annual budget developed by the System Owner includes explicit budgetary line items for FISMA security requirements. Additional security-related expenditures that fall outside of explicit compliance requirements are addressed in sub-lines under the CivicActions Information Technology budget.
 
 
 
@@ -101,9 +101,23 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### CivicActions Responsibility
 
-The system and application(s) are managed by CivicActions using the Agile software development methodology, which provides a continuous System Development Life Cycle (SDLC) methodology. CivicActions' Agile management continues to improve the software through ongoing planned code releases. Each point release introduces code and configuration changes to the website through the following SDLC methodology:
+The system and application(s) are managed by CivicActions using the Agile software development methodology, which provides a continuous System Development Life Cycle (SDLC) methodology. CivicActions Agile management continues to improve the software through ongoing planned code releases. The process is overseen by the Change Control Board (CCB) as described in CM-1. Each point release introduces code and configuration changes to the website through the following SDLC methodology:
 
-* Code release planning: A code release ticket is created in the Change Request project of CivicActions' ticketing system which describes the overall goals of the code release. The code release ticket is linked to other tickets in CivicActions' Github ticketing system which describe issues to be addressed by the planned code release. Those issues may include bug fixes and feature enhancements as well as upgrades to newer versions of the software packages that have been used to build the website.
+* Code release planning: A code release ticket is created in the Change Request project of the CivicActions ticketing system which describes the overall goals of the code release. The code release ticket is linked to other tickets in the ticketing system which describe issues to be addressed by the planned code release. Those issues may include bug fixes and feature enhancements as well as upgrades to newer versions of the software packages that have been used to build the website.
+
+* Sprints: The tickets covered by the planned code release are then implemented through a series of planned sprints, each of which typically lasts two weeks.  Each sprint begins with a sprint planning session at which the the CCB selects a list of tickets to be implemented. CivicActions Development holds daily coordination meetings throughout the sprint to share information and resolve any problems that may be blocking progress toward completion. At the end of the sprint, a retrospective is performed in which progress is reviewed to determine which issues have been resolved and which need further work.
+
+* Development/unit testing: Work on each ticket is performed within a separate code branch within the CivicActions git repository for and tested using the CircleCI continuous integration platform. Developers also write unit tests to prove their code behaves as expected and address security considerations such as information leakage, bounds checking, and input validation. Once work on a ticket is completed, the developer creates a pull request, and the changes are submitted to at least one other developer for review to ensure they meet functional requirements and address security considerations before the pull request is merged into the git repository's development branch for the planned code release.
+
+* Integration testing: Once all work tickets have been completed, the code and configuration necessary to implement the changes is merged into the website's staging server, where it undergoes additional testing to ensure there are no conflicts between the work that has been done on individual tickets.
+
+* User acceptance testing (UAT): The code release undergoes manual testing against a checklist of expected site behaviors and options each of the website's defined user roles to further verify that the functional changes work as expected and to identify any changes in user experience that need to be documented in release notes to be shared with the customer.
+
+* Approval for deployment: After all the planned code release has passed all of the above tests, the code release is scheduled for deployment to production and presented to CivicActions' Change Control Board (CCB) for review and approval.
+
+* Deployment to production: A full backup of the website is performed immediately prior to the deployment.
+
+* Security scan: After the deployment to production, the website undergoes a security scan using the a web vulnerability scanner.
 
 Security issues to be addressed in the planned code release may come from a variety of sources:
 
@@ -120,20 +134,6 @@ Security issues to be addressed in the planned code release may come from a vari
 * Issues reported by CivicActions Security, Operations and Development
 
 * Security issues reported through continuous monitoring
-
-* Sprints: The tickets covered by the planned code release are then implemented through a series of planned sprints, each of which typically lasts two weeks.  Each sprint begins with a sprint planning session at which CivicActions developers select a list of tickets to be implemented. The developer team holds daily coordination meetings throughout the sprint to share information and resolve any problems that may be blocking progress toward completion. At the end of the sprint, a retrospective is performed in which progress is reviewed to determine which issues have been resolved and which need further work.
-
-* Development/unit testing: Work on each ticket is performed within a separate code branch within the CivicActions git repository for and tested using the CircleCI continuous integration platform. Developers also write unit tests to prove their code behaves as expected and address security considerations such as information leakage, bounds checking, and input validation. Once work on a ticket is completed, the developer creates a pull request, and the changes are submitted to at least one other developer for review to ensure they meet functional requirements and address security considerations before the pull request is merged into the git repository's development branch for the planned code release.
-
-* Integration testing: Once all work tickets have been completed, the code and configuration necessary to implement the changes is merged into the website's staging server, where it undergoes additional testing to ensure there are no conflicts between the work that has been done on individual tickets.
-
-* User acceptance testing (UAT): The code release undergoes manual testing against a checklist of expected site behaviors and options each of the website's defined user roles to further verify that the functional changes work as expected and to identify any changes in user experience that need to be documented in release notes to be shared with the customer.
-
-* Approval for deployment: After all the planned code release has passed all of the above tests, the code release is scheduled for deployment to production and presented to CivicActions' Change Control Board (CCB) for review and approval.
-
-* Deployment to production: A full backup of the website is performed immediately prior to the deployment.
-
-* Security scan: After the deployment to production, the website undergoes a security scan using the a web vulnerability scanner.
 
 
 

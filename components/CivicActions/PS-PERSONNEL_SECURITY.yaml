@@ -223,7 +223,7 @@ satisfies:
   implementation_status: In Place
   narrative: >
     CivicActions Operations is informed of transfers that require access authorization
-    modifications within five business days by the Project Manager, Product Owner or
+    modifications within five business days by the Project Manager, System Owner or
     Director of Human Resources.
 
 - control_key: PS-06

@@ -52,7 +52,7 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
-    Access to the system is authorized by the Product Owner or Project Manager for each
+    Access to the system is authorized by the System Owner or Project Manager for each
     role as described in AC-2.
 
 - control_key: IA-04
