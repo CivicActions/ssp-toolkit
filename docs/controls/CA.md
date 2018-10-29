@@ -212,7 +212,7 @@ CivicActions follows recommendations and best practices developed by the Drupal 
 
 #### CivicActions Responsibility
 
-Configuration management and log analysis is real time. OpenSCAP security scans are performed and reviewed monthly.
+Configuration management and log analysis is real time. OpenSCAP security scans are performed and reviewed monthly. See also: RA-5 and SI-4.
 
 Quarterly review of the control assessments supporting the monitoring is conducted by CivicActions Operations in collaboration with CivicActions Security.
 

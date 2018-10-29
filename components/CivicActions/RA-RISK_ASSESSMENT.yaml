@@ -29,10 +29,23 @@ satisfies:
   implementation_status: Partially in Place
   narrative: >
     CivicActions Operations uses vulnerability scanning software to document and determine
-    risks to the system.  These scans are being run on a regular basis and the results of
-    these scans are being used to inform changes to the system and verify that security
-    controls are working correctly.  These scans are used to document the current state of
-    the system, and to analyze security trends as changes are made over time.
+    risks to the system. Operating system and application vulnerability scans include:
+
+    • The CivicActions system environment employs the OpenSCAP scsnner with the DISA STIB
+    baseline to check for vulnerabilities. CivicActions Operations has automated the
+    process to perform the scans on a monthly basis. A report created from the OpenSCAP
+    scanner lists vulnerabilities and ranks them per severity.
+
+    • The CivicActions applicate environment is tested by the penetration tester OWASP
+    ZAP, an open-source web application security scanner to report on needed updates based
+    on known flaws. CivicActions Operations has automated the process to perform the scans
+    on a monthly basis. A report created from the OWASP ZAP scanner lists vulnerabilities
+    and ranks them per severity.
+
+    These scans are being run on a regular basis and the results of these scans are being
+    used to inform changes to the system and verify that security controls are working
+    correctly.  These scans are used to document the current state of the system, and to
+    analyze security trends as changes are made over time.
 
 - control_key: RA-05
   control_key_part: b

@@ -1442,7 +1442,7 @@ CivicActions follows recommendations and best practices developed by the Drupal 
 
 #### CivicActions Responsibility
 
-Configuration management and log analysis is real time. OpenSCAP security scans are performed and reviewed monthly.
+Configuration management and log analysis is real time. OpenSCAP security scans are performed and reviewed monthly. See also: RA-5 and SI-4.
 
 Quarterly review of the control assessments supporting the monitoring is conducted by CivicActions Operations in collaboration with CivicActions Security.
 
@@ -4283,7 +4283,13 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### CivicActions Responsibility
 
-CivicActions Operations uses vulnerability scanning software to document and determine risks to the system.  These scans are being run on a regular basis and the results of these scans are being used to inform changes to the system and verify that security controls are working correctly.  These scans are used to document the current state of the system, and to analyze security trends as changes are made over time.
+CivicActions Operations uses vulnerability scanning software to document and determine risks to the system. Operating system and application vulnerability scans include:
+
+* The CivicActions system environment employs the OpenSCAP scsnner with the DISA STIB baseline to check for vulnerabilities. CivicActions Operations has automated the process to perform the scans on a monthly basis. A report created from the OpenSCAP scanner lists vulnerabilities and ranks them per severity.
+
+* The CivicActions applicate environment is tested by the penetration tester OWASP ZAP, an open-source web application security scanner to report on needed updates based on known flaws. CivicActions Operations has automated the process to perform the scans on a monthly basis. A report created from the OWASP ZAP scanner lists vulnerabilities and ranks them per severity.
+
+These scans are being run on a regular basis and the results of these scans are being used to inform changes to the system and verify that security controls are working correctly.  These scans are used to document the current state of the system, and to analyze security trends as changes are made over time.
 
 
 
@@ -5043,9 +5049,9 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 Identification of information system security flaws are detected as early as possible by the following methods:
 
-* The CivicActions system environment employs the OpenSCAP scsnner with the DISA STIB baseline to check for vulnerabilities. CivicActions Operations has automated the process to perform the scans on a monthly basis. A report created from the OpenSCAP scanner lists vulnerabilities and ranks them per severity.
+* Vulnerability scans, as described in RA-5.
 
-* The CivicActions applicate environment is tested by the penetration tester OWASP ZAP, an open-source web application security scanner to report on needed updates based on known flaws. CivicActions Operations has automated the process to perform the scans on a monthly basis. A report created from the OWASP ZAP scanner lists vulnerabilities and ranks them per severity.
+* Log analysis from monitoring described in SI-4.
 
 * Service flaw notifications (CVEs, etc.) are received by CivicActions Security and passed on to CicvicActions Operations when relevant.
 
