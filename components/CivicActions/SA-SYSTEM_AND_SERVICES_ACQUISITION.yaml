@@ -89,11 +89,11 @@ satisfies:
     and which need further work.
 
     • Development/unit testing: Work on each ticket is performed within a separate code
-    branch within the CivicActions git repository for and tested using the CircleCI
+    branch within the CivicActions git repository, and tested using the Gitlab Runner
     continuous integration platform. Developers also write unit tests to prove their code
     behaves as expected and address security considerations such as information leakage,
     bounds checking, and input validation. Once work on a ticket is completed, the
-    developer creates a pull request, and the changes are submitted to at least one other
+    developer creates a merge request, and the changes are submitted to at least one other
     developer for review to ensure they meet functional requirements and address security
     considerations before the pull request is merged into the git repository's development
     branch for the planned code release.
@@ -155,8 +155,8 @@ satisfies:
     reports with customers
 
     • CivicActions Security: Receives security notifications from the Drupal security team
-    and other software vendors; performs security scans; uses CivicActions JIRA and/or Git
-    ticketing system to request mitigation of all reported vulnerabilities
+    and other software vendors; performs security scans; uses CivicActions JIRA ticketing
+    system to request mitigation of all reported vulnerabilities
 
     • CivicActions Development: Performs server log analysis when security incidents are
     reported; assists in root cause analysis

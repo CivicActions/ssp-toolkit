@@ -4440,7 +4440,7 @@ The system and application(s) are managed by CivicActions using the Agile softwa
 
 * Sprints: The tickets covered by the planned code release are then implemented through a series of planned sprints, each of which typically lasts two weeks.  Each sprint begins with a sprint planning session at which the the CCB selects a list of tickets to be implemented. CivicActions Development holds daily coordination meetings throughout the sprint to share information and resolve any problems that may be blocking progress toward completion. At the end of the sprint, a retrospective is performed in which progress is reviewed to determine which issues have been resolved and which need further work.
 
-* Development/unit testing: Work on each ticket is performed within a separate code branch within the CivicActions git repository for and tested using the CircleCI continuous integration platform. Developers also write unit tests to prove their code behaves as expected and address security considerations such as information leakage, bounds checking, and input validation. Once work on a ticket is completed, the developer creates a pull request, and the changes are submitted to at least one other developer for review to ensure they meet functional requirements and address security considerations before the pull request is merged into the git repository's development branch for the planned code release.
+* Development/unit testing: Work on each ticket is performed within a separate code branch within the CivicActions git repository, and tested using the Gitlab Runner continuous integration platform. Developers also write unit tests to prove their code behaves as expected and address security considerations such as information leakage, bounds checking, and input validation. Once work on a ticket is completed, the developer creates a merge request, and the changes are submitted to at least one other developer for review to ensure they meet functional requirements and address security considerations before the pull request is merged into the git repository's development branch for the planned code release.
 
 * Integration testing: Once all work tickets have been completed, the code and configuration necessary to implement the changes is merged into the website's staging server, where it undergoes additional testing to ensure there are no conflicts between the work that has been done on individual tickets.
 
@@ -4478,7 +4478,7 @@ The CivicActions organization defines and documents information security roles a
 
 * Customer Support: Files tickets when incidents are reported and shares incident reports with customers
 
-* CivicActions Security: Receives security notifications from the Drupal security team and other software vendors; performs security scans; uses CivicActions JIRA and/or Git ticketing system to request mitigation of all reported vulnerabilities
+* CivicActions Security: Receives security notifications from the Drupal security team and other software vendors; performs security scans; uses CivicActions JIRA ticketing system to request mitigation of all reported vulnerabilities
 
 * CivicActions Development: Performs server log analysis when security incidents are reported; assists in root cause analysis
 
