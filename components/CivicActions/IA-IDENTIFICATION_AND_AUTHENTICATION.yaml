@@ -19,6 +19,9 @@ satisfies:
     This information is maintained the CivicActions Identification and Authentication (IA)
     Policy. This document can be found in the CivicActions Github repository at
     <https://github.com/CivicActions/compliance-docs>.
+  summary: >
+    CivicActions has developed, documented and disseminated to personnel an identification
+    and authentication policy.
 
 - control_key: IA-02
   control_key_part: ~
@@ -33,6 +36,7 @@ satisfies:
     publicly available website content that is available to all anonymous website
     visitors. Privileged users require the appropriate authorization described in
     AC-2.
+  summary: Privileged users are required to identify and authenticate to privileged features. 
 
 - control_key: IA-03
   control_key_part: ~
@@ -42,6 +46,8 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Not Applicable
   narrative: >
+    CivicActions systems do not support or allow device-to-device communications.
+  summary: >
     CivicActions systems do not support or allow device-to-device communications.
 
 - control_key: IA-04
@@ -54,6 +60,8 @@ satisfies:
   narrative: >
     Access to the system is authorized by the System Owner or Project Manager for each
     role as described in AC-2.
+  summary: >
+    Access to the system is authorized by the System Owner or Project Manager for each role.
 
 - control_key: IA-04
   control_key_part: b
@@ -71,6 +79,7 @@ satisfies:
     <https://github.com/CivicActions/compliance-docs/blob/master/IA-Policy.md>,
     CivicActions internal users are uniquely identified by creation of an organizational
     account with a username based on each user's first and last names.
+  summary: User accounts are assigned unique identifier of a username, password, and email.
 
 - control_key: IA-04
   control_key_part: c
@@ -83,6 +92,7 @@ satisfies:
     User accounts are assigned a unique identifier in the form of a unique username,
     password and email address based on the system for allocating user accounts described
     in AC-2.
+ summary: User accounts are assigned unique identifier of a username, password, and email.
 
 - control_key: IA-04
   control_key_part: d
@@ -92,6 +102,8 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: Partially in Place
   narrative: >
+    Account usernames may not be re-used for at least two years.
+  summary: >
     Account usernames may not be re-used for at least two years.
 
 - control_key: IA-04
@@ -106,6 +118,8 @@ satisfies:
     will automatically block the accounts of users who fail to change their password
     within that time period, after which the account may only be unblocked by a website
     Administrator or CivicActions Operations.
+  summary: >
+    All user accounts are required to change their passwords every 90 days.
 
 - control_key: IA-05
   control_key_part: i
@@ -126,6 +140,7 @@ satisfies:
 
     • Not writing down or storing passwords in a readable form in any physical or
     logical location where they may be discoverable by unauthorized persons.
+  summary: CivicActions required to take appropriate password handling measures.
 
 - control_key: IA-05
   control_key_part: j
@@ -137,6 +152,8 @@ satisfies:
   narrative: >
     This control is not applicable due to the fact that group accounts are not created
     within CivicActions Operations per IA Policy.
+  summary: >
+    Not applicable. Group accounts are not created within CivicActions Operations per IA Policy.
 
 - control_key: IA-07
   control_key_part: j
@@ -153,3 +170,4 @@ satisfies:
     the password) between the remote user and the server. Where Transport Layer Security
     (TLS, aka SSL) is used, cryptographic modules will be configured in accordance with
     FIPS 140-2.
+  summary: CivicActions systems employ authentication methods consistent with NIST FIPS 140-2 requirements.
