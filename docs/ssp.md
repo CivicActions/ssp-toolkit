@@ -4285,11 +4285,11 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 CivicActions Operations uses vulnerability scanning software to document and determine risks to the system. Operating system and application vulnerability scans include:
 
-* The CivicActions system environment employs the OpenSCAP scsnner with the DISA STIB baseline to check for vulnerabilities. CivicActions Operations has automated the process to perform the scans on a monthly basis. A report created from the OpenSCAP scanner lists vulnerabilities and ranks them per severity.
+* The CivicActions system environment employs the OpenSCAP scanner with the Red Hat STIG baseline to check for vulnerabilities.
 
-* The CivicActions applicate environment is tested by the penetration tester OWASP ZAP, an open-source web application security scanner to report on needed updates based on known flaws. CivicActions Operations has automated the process to perform the scans on a monthly basis. A report created from the OWASP ZAP scanner lists vulnerabilities and ranks them per severity.
+* The CivicActions application environment is tested by the penetration tester OWASP ZAP, an open-source web application security scanner to report on needed updates based on known flaws.
 
-These scans are being run on a regular basis and the results of these scans are being used to inform changes to the system and verify that security controls are working correctly.  These scans are used to document the current state of the system, and to analyze security trends as changes are made over time.
+CivicActions Operations has automated the process to perform the scans on a monthly basis. The resulting reports list vulnerabilities and ranks them by severity. These reports are stored on an audit server and are used to inform changes to the system and verify that security controls are working correctly.  These scans are used to document the current state of the system, and to analyze security trends as changes are made over time.
 
 
 
@@ -4297,7 +4297,7 @@ These scans are being run on a regular basis and the results of these scans are 
 
 #### CivicActions Responsibility
 
-CivicActions uses the automated vulnerability scanning tools OpenSCAP and OWASP ZAP to scan systems and applications. Both tools update the list of known vulnerabilities automatically and describes the risk of each vulnerability.
+CivicActions uses the automated vulnerability scanning tools OpenSCAP and OWASP ZAP are interoperable with standard web browsers, the Open Source Ansible infrastructure provisioning system and other Open Source tools employed by CivicActions.
 
 
 
@@ -4305,7 +4305,7 @@ CivicActions uses the automated vulnerability scanning tools OpenSCAP and OWASP 
 
 #### CivicActions Responsibility
 
-CivicActions Security reviews all vulnerabilities identified from automated scans and security assessments.  Vulnerabilities found and deemed legitimate are assigned an impact rating and response time thought creation of an issue or ticket.  CivicActions Operations reviews current scans and compare with older scans to identify trends and to verify previous vulnerabilities have been mitigated.
+CivicActions Security reviews all vulnerabilities identified from automated scans and security assessments. Vulnerabilities found and deemed legitimate are assigned an impact rating and response time thought creation of an issue or ticket.  CivicActions Operations reviews current scans and compare with older scans to identify trends and to verify previous vulnerabilities have been mitigated.
 
 
 
@@ -4315,9 +4315,9 @@ CivicActions Security reviews all vulnerabilities identified from automated scan
 
 Identified and reported vulnerabilities are assigned an impact rating and response time by CivicActions Security and must be remediated according to the following time requirements:
 
-* High - Within 30 days of discovery
+* High - Within 30 days of discovery (usually within 1 week))
 
-* Moderate - Within 90 days of discovery
+* Moderate - Within 90 days of discovery (usually within 2 weeks)
 
 * Low - Within 240 days of discovery
 
