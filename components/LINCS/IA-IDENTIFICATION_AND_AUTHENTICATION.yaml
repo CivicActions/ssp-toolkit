@@ -143,8 +143,8 @@ satisfies:
     the link to log in, the user is required to enter a new password.
 
     • Revoking authenticators: Users who have not changed their password in the last 90
-    days are automatically blocked. Administrators and Site Managers may block any user
-    account if they believe there is a reason to do so.
+    days are automatically blocked. Administrators may block any user account if they
+    believe there is a reason to do so.
 
 - control_key: IA-05
   control_key_part: f

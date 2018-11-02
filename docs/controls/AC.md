@@ -108,7 +108,7 @@ In accordance with LINCS Access Control Policy, LINCS group membership is determ
 
 #### LINCS specific control or LINCS Responsibility
 
-LINCS user privileges vary depending on the type of user role assigned. Only users with the role of Site Manager have the ability to create and modify user roles for other users.
+LINCS user privileges vary depending on the type of user role assigned. Only users with the role of Administrator have the ability to create and modify user roles for other users.
 
 
 
@@ -128,7 +128,7 @@ Drupal has a sophisticated permissions and role-based access control built in. E
 
 #### LINCS specific control or LINCS Responsibility
 
-CivicActions sets up the initial Site Manager account for LINCS; however, any subsequent client access and related approvals are managed by LINCS.
+The System Owner approves, and CivicActions Operations set up the initial Administrator account for LINCS. Subsequent client access and related approvals are managed by CivicActions Operations in collaboaration with the System Owner.
 
 
 
@@ -184,7 +184,7 @@ In accordance with the CivicActions Access Control (AC-01) Policy when an accoun
 
 #### LINCS specific control or LINCS Responsibility
 
-LINCS governs their own administrative access. The designated government contracting official responsible for approving the purchase of CivicActions' services, or authorized representative, is empowered to designate and approve Site Managers. It is left to the discretion of the designated government contracting official or authorized representative to determine if a Site Manager is considered to have a valid reason for accessing the CC application.
+LINCS governs their own administrative access. Users with the Administrator roles are empowered to designate and approve Administrators.
 
 
 
@@ -198,7 +198,7 @@ System accounts require access authorizations prior to accounts being created. T
 
 #### LINCS specific control or LINCS Responsibility
 
-Site Managers are empowered to and responsible for reviewing their own accounts and determining whether the accounts should still be authorized.
+Administrators are empowered to and responsible for reviewing their own accounts and determining whether the accounts should still be authorized.
 
 
 
@@ -481,7 +481,7 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 
 #### LINCS specific control or LINCS Responsibility
 
-The Department of Education grants certain LINCS support staff members the authority to post publicly accessible content. These individuals must complete LINCS system security training before being granted access to the LINCS and before they can post publicly accessible content within the LINCS. Furthermore, each authorized individual must follow the procedures delineated within the “Using Drupal” Instruction to ensure they are following a verifiable procedure throughout the entire process. This covers the LINCS Discussion Lists administration areas, Wiki.lincs.ed.gov, LINCS Quarterly Reporting and training tools, and Drupal Content Management systems. Public content is only edited via the Drupal Content Management System. All other content is only viewable by LINCS system users and protected by hardened access controls.
+The Department of Education grants certain LINCS support staff members the authority to post publicly accessible content. These individuals must complete LINCS system security training before being granted access to the LINCS and before they can post publicly accessible content within the LINCS. Furthermore, each authorized individual must follow the procedures delineated within the “Using Drupal” Instruction to ensure they are following a verifiable procedure throughout the entire process. This covers the LINCS Discussion Lists administration areas, LINCS Quarterly Reporting and training tools, and Drupal Content Management systems. Public content is only edited via the Drupal Content Management System. All other content is only viewable by LINCS system users and protected by hardened access controls.
 
 
 
@@ -497,9 +497,9 @@ It is the LINCS responsibility to train authorized LINCS individuals ensuring pu
 
 #### LINCS specific control or LINCS Responsibility
 
-It is the LINCS responsibility for LINCS authorized individuals to review the proposed content of information prior to posting onto the publicly accessible information system to ensure that nonpublic information is not included.
+Authorized LINCS individuals review the proposed content of information prior to posting onto the publicly accessible information system to ensure that nonpublic information is not included.
 
-LINCS users with the Content Creator role have been authorized by LINCS personnel for creation of publicly accessible content with publishing authority from an Administrator or Site Manager role. The publishing authority ensures the information being published does not contain nonpublic information.  LINCS publishes automated and system-related content where the administrator has the approving authority.
+LINCS Program Users have been authorized for creation of publicly accessible content with publishing authority from an Administrator role. The publishing authority ensures the information being published does not contain nonpublic information.
 
 
 
@@ -507,7 +507,7 @@ LINCS users with the Content Creator role have been authorized by LINCS personne
 
 #### LINCS specific control or LINCS Responsibility
 
-It is the LINCS responsibility for LINCS to review the content on the publicly accessible information system for nonpublic information at least every 365 days and removes such information.
+Authorized LINCS individuals review the content on the publicly accessible information system for nonpublic information at least every 365 days and removes such information.
 
 
 

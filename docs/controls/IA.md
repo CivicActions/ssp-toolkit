@@ -275,7 +275,7 @@ In accordance with LINCS site configuration, the following administrative proced
 
 * Lost/compromised/damaged authenticators: Users who have forgotten their password may request a new password by submitting their username or email address. The website responds by emailing a one-time login link to the user's email address. After using the link to log in, the user is required to enter a new password.
 
-* Revoking authenticators: Users who have not changed their password in the last 90 days are automatically blocked. Administrators and Site Managers may block any user account if they believe there is a reason to do so.
+* Revoking authenticators: Users who have not changed their password in the last 90 days are automatically blocked. Administrators may block any user account if they believe there is a reason to do so.
 
 
 

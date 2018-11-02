@@ -1,4 +1,4 @@
-# LINCS Controls (compiled: 2018.10.31 at 2054)
+# LINCS Controls (compiled: 2018.11.01 at 2317)
 
 * [ACCESS CONTROL](controls/AC.md#access-control)
    * [AC-01 ACCESS CONTROL POLICY AND PROCEDURES](controls/AC.md#ac-01-access-control-policy-and-procedures)

@@ -92,7 +92,8 @@ satisfies:
     User accounts are assigned a unique identifier in the form of a unique username,
     password and email address based on the system for allocating user accounts described
     in AC-2.
- summary: User accounts are assigned unique identifier of a username, password, and email.
+  summary: >
+    User accounts are assigned unique identifier of a username, password, and email.
 
 - control_key: IA-04
   control_key_part: d
