@@ -11,7 +11,7 @@
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls in conjunction with their IaaS provider, AWS.
+The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls.
 
 
 
@@ -26,7 +26,7 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls in conjunction with their IaaS provider, AWS.
+The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls.
 
 
 
@@ -56,7 +56,7 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls in conjunction with their IaaS provider, AWS.
+The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls.
 
 
 
@@ -71,7 +71,7 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls in conjunction with their IaaS provider, AWS.
+The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls.
 
 
 
@@ -86,7 +86,7 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls in conjunction with their IaaS provider, AWS.
+The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls.
 
 
 
@@ -101,7 +101,7 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls in conjunction with their IaaS provider, AWS.
+The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls.
 
 
 
@@ -116,7 +116,7 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls in conjunction with their IaaS provider, AWS.
+The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls.
 
 
 
@@ -131,7 +131,7 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls in conjunction with their IaaS provider, AWS.
+The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls.
 
 
 
@@ -146,7 +146,7 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls in conjunction with their IaaS provider, AWS.
+The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for all physical and environmental protection controls.
 
 
 

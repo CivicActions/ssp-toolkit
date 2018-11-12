@@ -9,12 +9,13 @@ satisfies:
   control_name: MEDIA PROTECTION POLICY AND PROCEDURES
   standard_key: NIST-800-53
   covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Inherited (Cloud Service Provider)
   implementation_status: In Place
-  summary: Partially inherited from AWS (FedRAMP).
+  summary: Fully inherited from AWS (FedRAMP).
   narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud Service Provider dated 1 May 2013.
+    The system inherits this control from the FedRAMP Provisional ATO granted to the AWS
+    Cloud dated 1 May 2013 for media protection controls as the system is entirely within
+    the AWS Cloud boundary.
 
 - control_key: MP-02
   control_key_part: ~
@@ -25,9 +26,9 @@ satisfies:
   implementation_status: In Place
   summary: Fully inherited from AWS (FedRAMP).
   narrative: >
-    The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 1 May 2013 as the system is entirely within the FedRAMP
-    Provisional ATO granted to the AWS Cloud boundary.
+    The system inherits this control from the FedRAMP Provisional ATO granted to the AWS
+    Cloud dated 1 May 2013 for media protection controls as the system is entirely within
+    the AWS Cloud boundary.
 
 - control_key: MP-06
   control_key_part: ~
@@ -38,9 +39,9 @@ satisfies:
   implementation_status: In Place
   summary: Fully inherited from AWS (FedRAMP).
   narrative: >
-    The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 1 May 2013 as the system is entirely within the FedRAMP
-    Provisional ATO granted to the AWS Cloud boundary.
+    The system inherits this control from the FedRAMP Provisional ATO granted to the AWS
+    Cloud dated 1 May 2013 for media protection controls as the system is entirely within
+    the AWS Cloud boundary.
 
 - control_key: MP-07
   control_key_part: ~
@@ -51,6 +52,6 @@ satisfies:
   implementation_status: In Place
   summary: Fully inherited from AWS (FedRAMP).
   narrative: >
-    The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 1 May 2013 as the system is entirely within the FedRAMP
-    Provisional ATO granted to the AWS Cloud boundary.
+    The system inherits this control from the FedRAMP Provisional ATO granted to the AWS
+    Cloud dated 1 May 2013 for media protection controls as the system is entirely within
+    the AWS Cloud boundary.
