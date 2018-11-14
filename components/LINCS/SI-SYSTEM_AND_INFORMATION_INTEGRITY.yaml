@@ -36,18 +36,6 @@ satisfies:
     US-CERT on a regular basis. Support personnel take appropriate action in response to
     relevant areas of concern.
 
-- control_key: SI-07(5)
-  control_key_part: ~
-  control_name: AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The LINCS system does not shut down in the event of an integrity violation is discovered.
-    If an integrity violation is found, CivicActions conducts frequent backups of
-    the LINCS system to support rollback of the LINCS system.
-
 - control_key: SI-11
   control_key_part: a
   control_name: ERROR HANDLING

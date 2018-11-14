@@ -1,4 +1,4 @@
-# LINCS Controls (compiled: 2018.11.12 at 1356)
+# LINCS Controls (compiled: 2018.11.14 at 1107)
 
 * [ACCESS CONTROL](controls/AC.md#access-control)
    * [AC-01 ACCESS CONTROL POLICY AND PROCEDURES](controls/AC.md#ac-01-access-control-policy-and-procedures)
@@ -175,8 +175,8 @@
    * [SI-05 SECURITY ALERTS, ADVISORIES, AND DIRECTIVES](controls/SI.md#si-05-security-alerts-advisories-and-directives)
    * [SI-07 SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY](controls/SI.md#si-07-software-firmware-and-information-integrity)
    * [SI-07 (1) INTEGRITY CHECKS](controls/SI.md#si-07-1-integrity-checks)
+   * [SI-07 (5) AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS](controls/SI.md#si-07-5-automated-response-to-integrity-violations)
    * [SI-07 (7) INTEGRATION OF DETECTION AND RESPONSE](controls/SI.md#si-07-7-integration-of-detection-and-response)
-   * [SI-07(5) AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS](controls/SI.md#si-075-automated-response-to-integrity-violations)
    * [SI-10 INFORMATION INPUT VALIDATION](controls/SI.md#si-10-information-input-validation)
    * [SI-11 ERROR HANDLING](controls/SI.md#si-11-error-handling)
    * [SI-12 INFORMATION HANDLING AND RETENTION](controls/SI.md#si-12-information-handling-and-retention)

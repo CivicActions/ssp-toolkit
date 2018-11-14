@@ -6,7 +6,7 @@ satisfies:
 
 - control_key: SA-05
   control_key_part: a
-  control_name: SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES
+  control_name: INFORMATION SYSTEM DOCUMENTATION
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
@@ -24,7 +24,7 @@ satisfies:
 
 - control_key: SA-05
   control_key_part: b
-  control_name: SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES
+  control_name: INFORMATION SYSTEM DOCUMENTATION
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
@@ -43,7 +43,7 @@ satisfies:
 
 - control_key: SA-05
   control_key_part: c
-  control_name: SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES
+  control_name: INFORMATION SYSTEM DOCUMENTATION
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
@@ -56,7 +56,7 @@ satisfies:
     
 - control_key: SA-05
   control_key_part: d
-  control_name: SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES
+  control_name: INFORMATION SYSTEM DOCUMENTATION
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
@@ -66,7 +66,7 @@ satisfies:
 
 - control_key: SA-05
   control_key_part: e
-  control_name: SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES
+  control_name: INFORMATION SYSTEM DOCUMENTATION
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid

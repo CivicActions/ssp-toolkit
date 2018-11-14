@@ -62,15 +62,9 @@ The features for the system are maintained in the website's source code, which i
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system inherits server configuration aspects of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: baseline configuration for IaaS components.
-
 Hardware Baselines
 
 All hardware is maintained by AWS Cloud. The system therefore inherits hardware configuration aspects of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: baseline configuration.
-
-Server Configuration
-
-AWS maintains the baseline software configuration for the server components required to run the Drupal platform upon which the system is built.
 
 
 
@@ -96,14 +90,6 @@ Review of the CM baselines for the system is conducted and approved by CivicActi
 * Changes in internal/external security requirements
 
 * A new security threat, incident, or event
-
-
-
-### Part c)
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
 
 
 
@@ -403,11 +389,17 @@ All changes to the configuration settings are logged in the Git source code vers
 > Security control type: Hybrid
 
 
-### Part a)
-
 #### Amazon Web Services (AWS) US-East/West control support
 
-Access from the internet to the application running on AWS Managed Cloud is permitted only on port 80 TCP (HTTP) and port 443 TCP (HTTPS) for Drupal, and on port 22 TCP (SSH) for the underlying web server. AWS has access to all open ports on all other computing nodes within AWS Managed Cloud to monitor internal-facing services.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: least functionality.
+
+
+
+### Part a)
+
+#### LINCS specific control or LINCS Responsibility
+
+Services are limited to provide only essential capabilities.
 
 
 
@@ -415,13 +407,7 @@ Access from the internet to the application running on AWS Managed Cloud is perm
 
 #### LINCS specific control or LINCS Responsibility
 
-The LINCS Technology Project maintains strict default deny policy with on access controls at the firewall, and on individual systems. Inbound access across the system boundary is only allowed on ports 22 (ssh), 80 (http) and 443 (https), with an additional port, 25 (smtp) open on the mail server.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: least functionality.
+The LINCS Technology Project maintains strict default deny policy with access controls at the firewall, and on individual systems. Inbound access across the system boundary is only allowed on ports 22 (ssh), 80 (http) and 443 (https), with an additional port, 25 (smtp) open on the mail server.
 
 
 
@@ -451,8 +437,6 @@ Website content is backed up daily using CPM snapshots. This allows CivicActions
 
 
 #### Amazon Web Services (AWS) US-East/West control support
-
-Platform Software
 
 The system inherits the platform software components of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: information system component inventory.
 

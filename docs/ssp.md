@@ -161,8 +161,8 @@ Table of Contents
    * [SI-05 SECURITY ALERTS, ADVISORIES, AND DIRECTIVES](#si-05-security-alerts-advisories-and-directives)
    * [SI-07 SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY](#si-07-software-firmware-and-information-integrity)
    * [SI-07 (1) INTEGRITY CHECKS](#si-07-1-integrity-checks)
+   * [SI-07 (5) AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS](#si-07-5-automated-response-to-integrity-violations)
    * [SI-07 (7) INTEGRATION OF DETECTION AND RESPONSE](#si-07-7-integration-of-detection-and-response)
-   * [SI-07(5) AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS](#si-075-automated-response-to-integrity-violations)
    * [SI-10 INFORMATION INPUT VALIDATION](#si-10-information-input-validation)
    * [SI-11 ERROR HANDLING](#si-11-error-handling)
    * [SI-12 INFORMATION HANDLING AND RETENTION](#si-12-information-handling-and-retention)
@@ -1579,15 +1579,9 @@ The features for the system are maintained in the website's source code, which i
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system inherits server configuration aspects of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: baseline configuration for IaaS components.
-
 Hardware Baselines
 
 All hardware is maintained by AWS Cloud. The system therefore inherits hardware configuration aspects of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: baseline configuration.
-
-Server Configuration
-
-AWS maintains the baseline software configuration for the server components required to run the Drupal platform upon which the system is built.
 
 
 
@@ -1613,14 +1607,6 @@ Review of the CM baselines for the system is conducted and approved by CivicActi
 * Changes in internal/external security requirements
 
 * A new security threat, incident, or event
-
-
-
-### Part c)
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
 
 
 
@@ -1920,11 +1906,17 @@ All changes to the configuration settings are logged in the Git source code vers
 > Security control type: Hybrid
 
 
-### Part a)
-
 #### Amazon Web Services (AWS) US-East/West control support
 
-Access from the internet to the application running on AWS Managed Cloud is permitted only on port 80 TCP (HTTP) and port 443 TCP (HTTPS) for Drupal, and on port 22 TCP (SSH) for the underlying web server. AWS has access to all open ports on all other computing nodes within AWS Managed Cloud to monitor internal-facing services.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: least functionality.
+
+
+
+### Part a)
+
+#### LINCS specific control or LINCS Responsibility
+
+Services are limited to provide only essential capabilities.
 
 
 
@@ -1932,13 +1924,7 @@ Access from the internet to the application running on AWS Managed Cloud is perm
 
 #### LINCS specific control or LINCS Responsibility
 
-The LINCS Technology Project maintains strict default deny policy with on access controls at the firewall, and on individual systems. Inbound access across the system boundary is only allowed on ports 22 (ssh), 80 (http) and 443 (https), with an additional port, 25 (smtp) open on the mail server.
-
-
-
-#### Amazon Web Services (AWS) US-East/West control support
-
-The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: least functionality.
+The LINCS Technology Project maintains strict default deny policy with access controls at the firewall, and on individual systems. Inbound access across the system boundary is only allowed on ports 22 (ssh), 80 (http) and 443 (https), with an additional port, 25 (smtp) open on the mail server.
 
 
 
@@ -1968,8 +1954,6 @@ Website content is backed up daily using CPM snapshots. This allows CivicActions
 
 
 #### Amazon Web Services (AWS) US-East/West control support
-
-Platform Software
 
 The system inherits the platform software components of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: information system component inventory.
 
@@ -4619,44 +4603,6 @@ Some application features are built on a custom basis and are not part of standa
 
 
 
-### Part b)
-
-#### CivicActions Responsibility
-
-The publicly-available FOSS package documentation described in control SA-5(a) also includes user documentation for non-administrators as described in control AC-3. This includes documentation on how to create and manage user accounts as well as how to create, update and delete content.
-
-CivicActions follows the user docuemntation standard practice to provide context-sensitive help as well as access to a HelpDesk in publicly facing applications.
-
-CivicActions' Customer Support team, described in control SA-3(b), handles questions about how to use the system. Questions are submitted by sending an email to support@civicactions.com, which triggers creation of a ticket in CivicActions' customer support ticketing system.
-
-
-
-### Part c)
-
-#### CivicActions Responsibility
-
-If the information needed to answer a question is not already included in the website's public-facing documentation, a ticket is created to determine whether the question is sufficiently general in nature to warrant adding the answer to the website's documentation.
-
-
-
-### Part d)
-
-#### CivicActions Responsibility
-
-All administrator documentation is housed in a protected Git repository. User documentation is publicly available..
-
-
-
-### Part e)
-
-#### CivicActions Responsibility
-
-As needed and approved by CivicActions Security, documentation is available to appropriate personnel by granting access to the private Git repository.
-
-
-
-### Part a)
-
 #### Drupal specific control support
 
 Public documentation related to Drupal is maintained by the Drupal Association and is located at: <https://drupal.org/documentation>. This documentation contains administrator documentation for the information system that describes:
@@ -4670,6 +4616,16 @@ Public documentation related to Drupal is maintained by the Drupal Association a
 
 
 ### Part b)
+
+#### CivicActions Responsibility
+
+The publicly-available FOSS package documentation described in control SA-5(a) also includes user documentation for non-administrators as described in control AC-3. This includes documentation on how to create and manage user accounts as well as how to create, update and delete content.
+
+CivicActions follows the user docuemntation standard practice to provide context-sensitive help as well as access to a HelpDesk in publicly facing applications.
+
+CivicActions' Customer Support team, described in control SA-3(b), handles questions about how to use the system. Questions are submitted by sending an email to support@civicactions.com, which triggers creation of a ticket in CivicActions' customer support ticketing system.
+
+
 
 #### Drupal specific control support
 
@@ -4693,6 +4649,12 @@ The public documentation at drupal.org contains user documentation for the infor
 
 ### Part c)
 
+#### CivicActions Responsibility
+
+If the information needed to answer a question is not already included in the website's public-facing documentation, a ticket is created to determine whether the question is sufficiently general in nature to warrant adding the answer to the website's documentation.
+
+
+
 #### Drupal specific control support
 
 As a popular and well-used and maintained free and open source (FOSS) project, in the event that sought after documentation is not available on Drupal.org, it can usually be found in one of the many forums, mailing lists or StackExchange sites covering Drupal and its many contributed modules.
@@ -4701,6 +4663,12 @@ As a popular and well-used and maintained free and open source (FOSS) project, i
 
 ### Part d)
 
+#### CivicActions Responsibility
+
+All administrator documentation is housed in a protected Git repository. User documentation is publicly available..
+
+
+
 #### Drupal specific control support
 
 The Drupal.org documentation is multi-sourced on github and private repositories.
@@ -4708,6 +4676,12 @@ The Drupal.org documentation is multi-sourced on github and private repositories
 
 
 ### Part e)
+
+#### CivicActions Responsibility
+
+As needed and approved by CivicActions Security, documentation is available to appropriate personnel by granting access to the private Git repository.
+
+
 
 #### Drupal specific control support
 
@@ -4759,7 +4733,7 @@ CivicActions does not have any dedicated interconnections between information sy
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: information system documentation.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: external information system services.
 
 
 
@@ -5372,6 +5346,8 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 CivicActions employ the GitHub system to monitor source code and version control ensuring system integrity and prevents unauthorized changes.  The PHP-authenticator tool is perform a format check on source code prior to entering production. Per implementation of CM-3, any changes to the source code of the system requires the CCB Change Request process. A peer review as part of the Change Request process is conducted to ensure the requested change is verified prior to entering production.
 
+CivicActions employs additional integrity checks on production systems as described in SI-4.
+
 
 
 #### Amazon Web Services (AWS) US-East/West control support
@@ -5401,6 +5377,21 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 
 
+## SI-07 (5) AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS
+
+> Control description: <http://800-53.govready.com/control?id=SI-7>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### CivicActions Responsibility
+
+The system maintains an audit log of all operations including integrity violations. When an integrity violation occurs, CivicActions Operations will be alerted via email with escalations to text and phone as needed.
+
+
+
 ## SI-07 (7) INTEGRATION OF DETECTION AND RESPONSE
 
 > Control description: <http://800-53.govready.com/control?id=SI-7>
@@ -5419,21 +5410,6 @@ CivicActions incident response and configuration capabilities include the detect
 #### Amazon Web Services (AWS) US-East/West control support
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  integration of detection and response. AWS has deployed OSSEC HIDS to all AWS Enterprise hosts which continuously monitors and alerts for software changes as they occur throughout the AWS platform.
-
-
-
-## SI-07(5) AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS
-
-> Control description: <http://800-53.govready.com/control?id=SI-7>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### LINCS specific control or LINCS Responsibility
-
-The LINCS system does not shut down in the event of an integrity violation is discovered. If an integrity violation is found, CivicActions conducts frequent backups of the LINCS system to support rollback of the LINCS system.
 
 
 

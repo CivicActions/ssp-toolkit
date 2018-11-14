@@ -321,6 +321,9 @@ satisfies:
     Change Request process. A peer review as part of the Change Request process is
     conducted to ensure the requested change is verified prior to entering production.
 
+    CivicActions employs additional integrity checks on production systems as described in
+    SI-4.
+
 - control_key: SI-07 (1)
   control_key_part: ~
   control_name: INTEGRITY CHECKS
@@ -331,6 +334,18 @@ satisfies:
   narrative: >
     The integrity check implementation of SI-7 is conducted though the GitHub system
     and verified monthly by redeploying the system codebase from GitHub.
+
+- control_key: SI-07 (5)
+  control_key_part: ~
+  control_name: AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  narrative: >
+    The system maintains an audit log of all operations including integrity violations.
+    When an integrity violation occurs, CivicActions Operations will be alerted via email
+    with escalations to text and phone as needed.
 
 - control_key: SI-07 (7)
   control_key_part: ~

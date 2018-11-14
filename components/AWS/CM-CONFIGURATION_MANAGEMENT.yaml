@@ -23,31 +23,11 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The system inherits server configuration aspects of this control from the FedRAMP
-    Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: baseline
-    configuration for IaaS components.
-
     Hardware Baselines
 
     All hardware is maintained by AWS Cloud. The system therefore inherits hardware
     configuration aspects of this control from the FedRAMP Provisional ATO granted to the
     AWS Cloud dated 1 May 2013 for the following: baseline configuration.
-
-    Server Configuration
-
-    AWS maintains the baseline software configuration for the server components
-    required to run the Drupal platform upon which the system is built.
-
-- control_key: CM-02 (1)
-  control_key_part: c
-  control_name: REVIEWS AND UPDATES
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Providers dated 1 May 2013.
 
 - control_key: CM-05
   control_key_part: ~
@@ -86,29 +66,15 @@ satisfies:
     to the AWS Cloud dated 1 May 2013 for the following: configuration settings.
 
 - control_key: CM-07
-  control_key_part: a
+  control_key_part: ~
   control_name: LEAST FUNCTIONALITY
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    Access from the internet to the application running on AWS Managed Cloud is
-    permitted only on port 80 TCP (HTTP) and port 443 TCP (HTTPS) for Drupal,
-    and on port 22 TCP (SSH) for the underlying web server. AWS has access to
-    all open ports on all other computing nodes within AWS Managed Cloud to
-    monitor internal-facing services.
-
-- control_key: CM-07
-  control_key_part: b
-  control_name: LEAST FUNCTIONALITY
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 1 May 2013 for the following: least functionality.
+    The system partially inherits this control from the FedRAMP Provisional ATO granted to
+    the AWS Cloud dated 1 May 2013 for the following: least functionality.
 
 - control_key: CM-08
   control_key_part: ~
@@ -118,8 +84,6 @@ satisfies:
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    Platform Software
-
     The system inherits the platform software components of this control from the FedRAMP
     Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:
     information system component inventory.

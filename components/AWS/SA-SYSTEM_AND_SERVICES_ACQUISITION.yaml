@@ -68,4 +68,4 @@ satisfies:
   implementation_status: In Place
   narrative: >
     The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 1 May 2013 for the following: information system documentation.
+    the AWS Cloud dated 1 May 2013 for the following: external information system services.

@@ -110,18 +110,28 @@ satisfies:
     tracked.
 
 - control_key: CM-07
-  control_key_part: b
+  control_key_part: a
   control_name: LEAST FUNCTIONALITY
   standard_key: NIST-800-53
   covered_by: []
   security_control_type: Hybrid
   implementation_status: In Place
   narrative: >
-    The LINCS Technology Project maintains strict default deny policy with on access
+    Services are limited to provide only essential capabilities.
+    
+- control_key: CM-07
+  control_key_part: b
+  control_name: LEAST FUNCTIONALITY
+  standard_key: NIST-800-53
+  covered_by: []
+  security_control_type: Hybrid
+  implementation_status: In Place
+  summary: The LINCS Technology Project maintains strict default deny policy.
+  narrative: >
+    The LINCS Technology Project maintains strict default deny policy with access
     controls at the firewall, and on individual systems. Inbound access across the system
     boundary is only allowed on ports 22 (ssh), 80 (http) and 443 (https), with an
     additional port, 25 (smtp) open on the mail server.
-  summary: The LINCS Technology Project maintains strict default deny policy.
 
 - control_key: CM-09
   control_key_part: ~

@@ -379,6 +379,8 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 CivicActions employ the GitHub system to monitor source code and version control ensuring system integrity and prevents unauthorized changes.  The PHP-authenticator tool is perform a format check on source code prior to entering production. Per implementation of CM-3, any changes to the source code of the system requires the CCB Change Request process. A peer review as part of the Change Request process is conducted to ensure the requested change is verified prior to entering production.
 
+CivicActions employs additional integrity checks on production systems as described in SI-4.
+
 
 
 #### Amazon Web Services (AWS) US-East/West control support
@@ -408,6 +410,21 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 
 
+## SI-07 (5) AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS
+
+> Control description: <http://800-53.govready.com/control?id=SI-7>
+> 
+> 
+> 
+> Security control type: Hybrid
+
+
+#### CivicActions Responsibility
+
+The system maintains an audit log of all operations including integrity violations. When an integrity violation occurs, CivicActions Operations will be alerted via email with escalations to text and phone as needed.
+
+
+
 ## SI-07 (7) INTEGRATION OF DETECTION AND RESPONSE
 
 > Control description: <http://800-53.govready.com/control?id=SI-7>
@@ -426,21 +443,6 @@ CivicActions incident response and configuration capabilities include the detect
 #### Amazon Web Services (AWS) US-East/West control support
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:  integration of detection and response. AWS has deployed OSSEC HIDS to all AWS Enterprise hosts which continuously monitors and alerts for software changes as they occur throughout the AWS platform.
-
-
-
-## SI-07(5) AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS
-
-> Control description: <http://800-53.govready.com/control?id=SI-7>
-> 
-> 
-> 
-> Security control type: Hybrid
-
-
-#### LINCS specific control or LINCS Responsibility
-
-The LINCS system does not shut down in the event of an integrity violation is discovered. If an integrity violation is found, CivicActions conducts frequent backups of the LINCS system to support rollback of the LINCS system.
 
 
 

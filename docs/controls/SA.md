@@ -286,44 +286,6 @@ Some application features are built on a custom basis and are not part of standa
 
 
 
-### Part b)
-
-#### CivicActions Responsibility
-
-The publicly-available FOSS package documentation described in control SA-5(a) also includes user documentation for non-administrators as described in control AC-3. This includes documentation on how to create and manage user accounts as well as how to create, update and delete content.
-
-CivicActions follows the user docuemntation standard practice to provide context-sensitive help as well as access to a HelpDesk in publicly facing applications.
-
-CivicActions' Customer Support team, described in control SA-3(b), handles questions about how to use the system. Questions are submitted by sending an email to support@civicactions.com, which triggers creation of a ticket in CivicActions' customer support ticketing system.
-
-
-
-### Part c)
-
-#### CivicActions Responsibility
-
-If the information needed to answer a question is not already included in the website's public-facing documentation, a ticket is created to determine whether the question is sufficiently general in nature to warrant adding the answer to the website's documentation.
-
-
-
-### Part d)
-
-#### CivicActions Responsibility
-
-All administrator documentation is housed in a protected Git repository. User documentation is publicly available..
-
-
-
-### Part e)
-
-#### CivicActions Responsibility
-
-As needed and approved by CivicActions Security, documentation is available to appropriate personnel by granting access to the private Git repository.
-
-
-
-### Part a)
-
 #### Drupal specific control support
 
 Public documentation related to Drupal is maintained by the Drupal Association and is located at: <https://drupal.org/documentation>. This documentation contains administrator documentation for the information system that describes:
@@ -337,6 +299,16 @@ Public documentation related to Drupal is maintained by the Drupal Association a
 
 
 ### Part b)
+
+#### CivicActions Responsibility
+
+The publicly-available FOSS package documentation described in control SA-5(a) also includes user documentation for non-administrators as described in control AC-3. This includes documentation on how to create and manage user accounts as well as how to create, update and delete content.
+
+CivicActions follows the user docuemntation standard practice to provide context-sensitive help as well as access to a HelpDesk in publicly facing applications.
+
+CivicActions' Customer Support team, described in control SA-3(b), handles questions about how to use the system. Questions are submitted by sending an email to support@civicactions.com, which triggers creation of a ticket in CivicActions' customer support ticketing system.
+
+
 
 #### Drupal specific control support
 
@@ -360,6 +332,12 @@ The public documentation at drupal.org contains user documentation for the infor
 
 ### Part c)
 
+#### CivicActions Responsibility
+
+If the information needed to answer a question is not already included in the website's public-facing documentation, a ticket is created to determine whether the question is sufficiently general in nature to warrant adding the answer to the website's documentation.
+
+
+
 #### Drupal specific control support
 
 As a popular and well-used and maintained free and open source (FOSS) project, in the event that sought after documentation is not available on Drupal.org, it can usually be found in one of the many forums, mailing lists or StackExchange sites covering Drupal and its many contributed modules.
@@ -368,6 +346,12 @@ As a popular and well-used and maintained free and open source (FOSS) project, i
 
 ### Part d)
 
+#### CivicActions Responsibility
+
+All administrator documentation is housed in a protected Git repository. User documentation is publicly available..
+
+
+
 #### Drupal specific control support
 
 The Drupal.org documentation is multi-sourced on github and private repositories.
@@ -375,6 +359,12 @@ The Drupal.org documentation is multi-sourced on github and private repositories
 
 
 ### Part e)
+
+#### CivicActions Responsibility
+
+As needed and approved by CivicActions Security, documentation is available to appropriate personnel by granting access to the private Git repository.
+
+
 
 #### Drupal specific control support
 
@@ -426,7 +416,7 @@ CivicActions does not have any dedicated interconnections between information sy
 
 #### Amazon Web Services (AWS) US-East/West control support
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: information system documentation.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: external information system services.
 
 
 
