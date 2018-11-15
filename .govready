@@ -1,0 +1,36 @@
+hgrc_version: 0.3.0
+mode: local workstation
+standard_controls_dir: standards
+components_dir: components
+organization:
+  name: Dept of Ed
+system:
+  name: LINCS 
+  src_repo: https://git.civicactions.net/lincs/ssp-cvs-to-yaml
+  primary_standard: 800-53r4
+standards:
+- standard: 800-53r4
+  standard_file: nist-800-53-rev4.yaml
+components:
+- name: CivicActions
+  directory: CivicActions
+- name: Drupal
+  directory: Drupal
+- name: LINCS
+  directory: LINCS
+- name: AWS
+  directory: AWS
+documents:
+- name: docs
+  directory: docs
+  description: markdown versions of documents
+- name: docx
+  directory: docx
+  description: MS Word versions of control family documents
+- name: outputs
+  directory: outputs
+  description: Not being used
+team:
+  user: 
+    name: Anonymous (workstation mode)
+
