@@ -41,23 +41,23 @@ team:
 - name: Mary Jo Maralit
   role: ISO
   phone: (202) 245-6593
-  email: Maryjo.Maralit@ed.gov 
+  email: Maryjo.Maralit@ed.gov
 - name: James A. Holmquist
   role: ISSO
   phone: (202) 245-7757
-  email: James.Holmquist@ed.gov 
+  email: James.Holmquist@ed.gov
 - name: Hanan Abu Lebdeh
   role: ED ISSM
   phone: (202) 245-7666
-  email: Hanan.AbuLebdeh@ed.gov 
+  email: Hanan.AbuLebdeh@ed.gov
 - name: Omar Dennis
   role: CRMF Team Lead
   phone: (202) 245-7523
-  email: Omar.Dennis@ed.gov 
-- name: Eric Amaechi 
+  email: Omar.Dennis@ed.gov
+- name: Eric Amaechi
   role: Lead Assessor
   phone: (202) 245-6693
-  email: Eric.Amaechi@ed.gov 
+  email: Eric.Amaechi@ed.gov
 - name: Ed Sec Auth
   role: Ed Security Authorization
   phone: ~
