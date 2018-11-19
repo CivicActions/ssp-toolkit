@@ -1,4 +1,4 @@
-hgrc_version: 0.3.0
+hgrc_version: 0.3.1
 mode: local workstation
 standard_controls_dir: standards
 components_dir: components
@@ -11,6 +11,7 @@ system:
 standards:
 - standard: 800-53r4
   standard_file: nist-800-53-rev4.yaml
+  standard_controls_dir: ../standards
 components:
 - name: CivicActions
   directory: CivicActions
@@ -30,7 +31,34 @@ documents:
 - name: outputs
   directory: outputs
   description: Not being used
+users:
+- name: Anonymous (workstation mode)
 team:
-  user: 
-    name: Anonymous (workstation mode)
-
+- name: Trina Shields
+  role: AO
+  phone: (202) 245-6950
+  email: Trina.Shields@ed.gov
+- name: Mary Jo Maralit
+  role: ISO
+  phone: (202) 245-6593
+  email: Maryjo.Maralit@ed.gov 
+- name: James A. Holmquist
+  role: ISSO
+  phone: (202) 245-7757
+  email: James.Holmquist@ed.gov 
+- name: Hanan Abu Lebdeh
+  role: ED ISSM
+  phone: (202) 245-7666
+  email: Hanan.AbuLebdeh@ed.gov 
+- name: Omar Dennis
+  role: CRMF Team Lead
+  phone: (202) 245-7523
+  email: Omar.Dennis@ed.gov 
+- name: Eric Amaechi 
+  role: Lead Assessor
+  phone: (202) 245-6693
+  email: Eric.Amaechi@ed.gov 
+- name: Ed Sec Auth
+  role: Ed Security Authorization
+  phone: ~
+  email: ED_SEC_AUTH@ED.GOV
