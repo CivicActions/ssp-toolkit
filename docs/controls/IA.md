@@ -79,7 +79,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 The LINCS Technology Project system does not process sensitive information, thus it does not employ multifactor authentication.
 
-Access to system services - SSH for GNU/Linux instances, RDP for Windows - is managed by a set of firewall rules on the systems. The network firewall is configured to only allow users to connect to these services from a configured and audited IP addres.
+Access to system services - SSH for GNU/Linux instances, RDP for Windows - is managed by a set of firewall rules on the systems. The network firewall is configured to only allow users to connect to these services from a configured and audited IP address.
 
 
 
@@ -325,7 +325,7 @@ LINCS enforces password lifetime restrictions.  The password lifetime settings f
 
 #### Drupal specific control support
 
-For all Drupal users, passwords are protected by the website's software, which only stores an encrypted string based on the password. This means that even if the website's database should be compromised, an attacker would still be unable to know users' actual passwords. Internal users receive training in security awareness and acceptable use and are instructed never to reveal their passwords to anyone.
+For all Drupal users, passwords are protected by the website's software, which only stores an encrypted string based on the password. This means that even if the websites database should be compromised, an attacker would still be unable to know users actual passwords. Internal users receive training in security awareness and acceptable use and are instructed never to reveal their passwords to anyone.
 
 
 

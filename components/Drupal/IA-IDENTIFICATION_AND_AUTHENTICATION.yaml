@@ -143,8 +143,8 @@ satisfies:
   narrative: >
     For all Drupal users, passwords are protected by the website's software, which only
     stores an encrypted string based on the password. This means that even if the
-    website's database should be compromised, an attacker would still be unable to know
-    users' actual passwords. Internal users receive training in security awareness and
+    websites database should be compromised, an attacker would still be unable to know
+    users actual passwords. Internal users receive training in security awareness and
     acceptable use and are instructed never to reveal their passwords to anyone.
 
 - control_key: IA-05
