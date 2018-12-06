@@ -9,7 +9,7 @@ system:
   name: LINCS 
   src_repo: https://git.civicactions.net/lincs/ssp-cvs-to-yaml
   primary_standard: 800-53r4
-  primary_certification: FISMA Low Impact 
+  primary_certification: LINCS FISMA Low Impact 
 standards:
 - standard: 800-53r4
   standard_file: nist-800-53-rev4.yaml
@@ -17,6 +17,8 @@ standards:
 certifications:
 - name: FISMA Low Impact
   certification_file: fisma-low-impact.yaml
+- name: LINCS FISMA Low Impact
+  certification_file: LINCS-fisma-low-impact.yaml
 components:
 - name: CivicActions
   directory: CivicActions
