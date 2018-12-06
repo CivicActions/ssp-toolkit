@@ -5,7 +5,7 @@
 # Found on Page D-2 of NIST 800-53 rev 4:
 # https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf
 #
-name: FISMA Low Impact
+name: LINCS FISMA Low Impact
 standards:
 
   NIST-800-53:
