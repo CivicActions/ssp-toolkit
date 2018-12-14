@@ -1,0 +1,14 @@
+schema_version: "1.0.0"
+name: LINCS
+metadata:
+  description: LINCS SSP by Civic Actions.
+  organization:
+    name: U.S. Department of Education
+    abbreviation: DeptEd
+components:
+  - ./components/AWS
+  - ./components/CivicActions
+  - ./components/Drupal
+  - ./components/LINCS
+standards:
+  - ./standards

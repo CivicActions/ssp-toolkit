@@ -1,119 +1,99 @@
-name: AWS
 family: AUDIT AND ACCOUNTABILITY
 documentation_complete: false
-schema_version: 3.0.0
 satisfies:
-
-- control_key: AU-01
-  control_key_part: ~
+- control_key: AU-1
   control_name: AUDIT AND ACCOUNTABILITY POLICY AND PROCEDURES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Providers dated 1 May 2013.
-
-- control_key: AU-02
-  control_key_part: ~
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+    implementation_status: In Place
+- control_key: AU-2
   control_name: AUDITABLE EVENTS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013.
-
-- control_key: AU-03
-  control_key_part: ~
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
+    implementation_status: In Place
+- control_key: AU-3
   control_name: CONTENT OF AUDIT RECORDS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013.
-
-- control_key: AU-04
-  control_key_part: ~
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
+    implementation_status: In Place
+- control_key: AU-4
   control_name: AUDIT STORAGE CAPACITY
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following: disk space availability.
-
-- control_key: AU-05
-  control_key_part: ~
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: disk space availability.
+    implementation_status: In Place
+- control_key: AU-5
   control_name: RESPONSE TO AUDIT PROCESSING FAILURES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 1 May 2013: response to audit processing failures.
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013: response to audit processing failures.
 
-    In the event of low storage or other system issues affecting audit, the AWS CloudWatch
-    monitoring system will alert CivicActions Operations via real-time alert mechanism
-    such as OpsGenie.
-
-- control_key: AU-06
-  control_key_part: ~
+      In the event of low storage or other system issues affecting audit, the AWS
+      CloudWatch monitoring system will alert CivicActions Operations via real-time
+      alert mechanism such as OpsGenie.
+    implementation_status: In Place
+- control_key: AU-6
   control_name: AUDIT REVIEW, ANALYSIS, AND REPORTING
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: Planned
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013.
-
-- control_key: AU-08
-  control_key_part: ~
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
+    implementation_status: Planned
+- control_key: AU-8
   control_name: TIME STAMPS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013.
-
-- control_key: AU-09
-  control_key_part: ~
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
+    implementation_status: In Place
+- control_key: AU-9
   control_name: PROTECTION OF AUDIT INFORMATION
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
-  implementation_status: Planned
-  narrative: >
-    This system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013.
-
+  narrative:
+  - text: |
+      This system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
+    implementation_status: Planned
 - control_key: AU-11
-  control_key_part: ~
   control_name: AUDIT RECORD RETENTION
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013.
-
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
+    implementation_status: In Place
 - control_key: AU-12
-  control_key_part: ~
   control_name: AUDIT GENERATION
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013.
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
+    implementation_status: In Place

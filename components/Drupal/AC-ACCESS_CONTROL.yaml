@@ -1,135 +1,113 @@
-name: Drupal
 family: ACCESS CONTROL
 documentation_complete: false
-schema_version: 3.0.0
 satisfies:
-
-- control_key: AC-02
-  control_key_part: a
+- control_key: AC-2
   control_name: ACCOUNT MANAGEMENT
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Drupal provides user accounts for individuals who participate in visiting,
-    contributing to and administering the site with the following roles:
+  narrative:
+  - key: a
+    text: >
+      Drupal provides user accounts for individuals who participate in visiting, contributing
+      to and administering the site with the following roles:
 
-    • Anonymous user – readers of the site who either do not have an account or are not
-    logged in.
+      • Anonymous user – readers of the site who either do not have an account or
+      are not logged in.
 
-    • Authenticated user – All non-anonymous users inherit the "authenticated user role."
+      • Authenticated user – All non-anonymous users inherit the "authenticated user
+      role."
 
-    • Administrator - This role has all permissions enabled by default.
-
-- control_key: AC-02
-  control_key_part: d
-  control_name: ACCOUNT MANAGEMENT
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Drupal has a sophisticated permissions and role-based access control built in. Each
-    role within Drupal can only access the documents and controls for which their
-    privilege allows.
-
-- control_key: AC-02
-  control_key_part: g
-  control_name: ACCOUNT MANAGEMENT
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Drupal monitors the usage of information accounts in the watchdog.log.
-
-- control_key: AC-03
-  control_key_part: ~
+      • Administrator - This role has all permissions enabled by default.
+    implementation_status: In Place
+  - key: d
+    text: >
+      Drupal has a sophisticated permissions and role-based access control built in.
+      Each role within Drupal can only access the documents and controls for which
+      their privilege allows.
+    implementation_status: In Place
+  - key: g
+    text: |
+      Drupal monitors the usage of information accounts in the watchdog.log.
+    implementation_status: In Place
+- control_key: AC-3
   control_name: ACCESS ENFORCEMENT
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Access control in Drupal is enforced by authentication via unique username/password
-    for every type of user except Anonymous user. The user’s privileges, permissions and
-    access are provided on "least privilege" principle.
+  narrative:
+  - text: >
+      Access control in Drupal is enforced by authentication via unique username/password
+      for every type of user except Anonymous user. The user’s privileges, permissions
+      and access are provided on "least privilege" principle.
 
-    The anonymous user role has the least access to the site of all roles. The website
-    does not allow anonymous users to register an account for themselves. Drupal
-    Administrators are the only user roles that can create new user accounts.
-
-- control_key: AC-06
-  control_key_part: ~
+      The anonymous user role has the least access to the site of all roles. The website
+      does not allow anonymous users to register an account for themselves. Drupal
+      Administrators are the only user roles that can create new user accounts.
+    implementation_status: In Place
+- control_key: AC-6
   control_name: LEAST PRIVILEGE
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions implements the policy of least privilege for all logical components
-    of Drupal by allowing only authorized access for users, which are necessary to
-    accomplish assigned tasks in accordance with business functions and organizational
-    need.
+  narrative:
+  - text: >
+      CivicActions implements the policy of least privilege for all logical components
+      of Drupal by allowing only authorized access for users, which are necessary
+      to accomplish assigned tasks in accordance with business functions and organizational
+      need.
 
-    At the application layer, Drupal is designed with a role based user access system, a
-    least privileged approach based on assignment of privileges to roles. Drupal‘s
-    permission systems enables control of what users can do and see on the
-    site. CivicActions has defined a specific set of permissions for each of the user
-    roles mentioned in control AC-5.
+      At the application layer, Drupal is designed with a role based user access system,
+      a least privileged approach based on assignment of privileges to roles. Drupal‘s
+      permission systems enables control of what users can do and see on the site.
+      CivicActions has defined a specific set of permissions for each of the user
+      roles mentioned in control AC-5.
 
-    SSH access is provided on a least privilege basis and analyzed on an ongoing
-    basis, at least quarterly. Findings related to these audits of accounts are reported
-    and reviewed by the CivicActions Data team and evaluated to determine roles that
-    need to be revoked.
-
-- control_key: AC-06 (9)
-  control_key_part: ~
+      SSH access is provided on a least privilege basis and analyzed on an ongoing
+      basis, at least quarterly. Findings related to these audits of accounts are
+      reported and reviewed by the CivicActions Data team and evaluated to determine
+      roles that need to be revoked.
+    implementation_status: In Place
+- control_key: AC-6 (9)
   control_name: AUDITING USE OF PRIVILEGED FUNCTIONS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions, at least quarterly, audits all team accounts based on the concept of
-    least privilege. Each member of the developer team is assigned a role of which defines
-    access needed to perform only the member’s job function.  The audit of accounts is
-    reported and reviewed by the CivicActions Operations and evaluated to determine
-    whether roles or membership within the developer team should be changed.
-
-- control_key: AC-07
-  control_key_part: a
+  narrative:
+  - text: >
+      CivicActions, at least quarterly, audits all team accounts based on the concept
+      of least privilege. Each member of the developer team is assigned a role of
+      which defines access needed to perform only the member’s job function.  The
+      audit of accounts is reported and reviewed by the CivicActions Operations and
+      evaluated to determine whether roles or membership within the developer team
+      should be changed.
+    implementation_status: In Place
+- control_key: AC-7
   control_name: UNSUCCESSFUL LOGIN ATTEMPTS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Drupal can be configured to lock an account after a specified number of invalid login
-    attempts within specified time period.
-
-- control_key: AC-07
-  control_key_part: b
-  control_name: UNSUCCESSFUL LOGIN ATTEMPTS
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Lock down following unsuccessful attempts is configurable by Drupal administrators to
-    conform to defined requirements.  When a user exceeds the limit of invalid logon
-    attempts, their account is automatically locked for a specfied time and requires
-    administrator action to unlock the account before the lockout period expires.
-
+  narrative:
+  - key: a
+    text: |
+      Drupal can be configured to lock an account after a specified number of invalid login attempts within specified time period.
+    implementation_status: In Place
+  - key: b
+    text: >
+      Lock down following unsuccessful attempts is configurable by Drupal administrators
+      to conform to defined requirements.  When a user exceeds the limit of invalid
+      logon attempts, their account is automatically locked for a specfied time and
+      requires administrator action to unlock the account before the lockout period
+      expires.
+    implementation_status: In Place
 - control_key: AC-14
-  control_key_part: ~
   control_name: PERMITTED ACTIONS WITHOUT IDENTIFICATION OR AUTHENTICATION
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: System Specific Control
-  implementation_status: In Place
-  narrative: >
-    The anonymous user role has the least access to the site of all roles. The website
-    does not allow anonymous users to register an account for themselves.
+  narrative:
+  - text: >
+      The anonymous user role has the least access to the site of all roles. The website
+      does not allow anonymous users to register an account for themselves.
+    implementation_status: In Place
   summary: The website does not allow anonymous users to register an account for themselves.

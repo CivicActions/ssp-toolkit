@@ -1,59 +1,44 @@
-name: Drupal
 family: SYSTEM AND INFORMATION INTEGRITY
 documentation_complete: false
-schema_version: 3.0.0
 satisfies:
-
-- control_key: SI-02
-  control_key_part: ~
+- control_key: SI-2
   control_name: FLAW REMEDIATION
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Drupal contains built-in security status monitoring of the core application and
-    contributed modules.
-
-- control_key: SI-05
-  control_key_part: ~
+  narrative:
+  - text: |
+      Drupal contains built-in security status monitoring of the core application and contributed modules.
+    implementation_status: In Place
+- control_key: SI-5
   control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions Security and Operations receive Drupal Security Advisories on a regular
-    basis.
-
+  narrative:
+  - text: |
+      CivicActions Security and Operations receive Drupal Security Advisories on a regular basis.
+    implementation_status: In Place
 - control_key: SI-10
-  control_key_part: ~
   control_name: INFORMATION INPUT VALIDATION
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: System Specific Control
-  implementation_status: In Place
-  narrative: >
-    All Drupal form input text is subject to format verification and input validation.
-
+  narrative:
+  - text: |
+      All Drupal form input text is subject to format verification and input validation.
+    implementation_status: In Place
 - control_key: SI-11
-  control_key_part: a
   control_name: ERROR HANDLING
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Drupal system error logs do not contain passwords, personal information, encryption
-    keys or other sensitive information.
-
-- control_key: SI-11
-  control_key_part: b
-  control_name: ERROR HANDLING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Drupal system error logs are only available to authenticated administrators and
-    viewable within the administrative interface.
+  narrative:
+  - key: a
+    text: |
+      Drupal system error logs do not contain passwords, personal information, encryption keys or other sensitive information.
+    implementation_status: In Place
+  - key: b
+    text: |
+      Drupal system error logs are only available to authenticated administrators and viewable within the administrative interface.
+    implementation_status: In Place

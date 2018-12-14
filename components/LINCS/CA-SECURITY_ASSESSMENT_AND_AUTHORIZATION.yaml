@@ -1,97 +1,89 @@
-name: LINCS
 family: SECURITY ASSESSMENT AND AUTHORIZATION
 documentation_complete: false
-schema_version: 3.0.0
 satisfies:
-- control_key: CA-01
-  control_key_part: ~
+- control_key: CA-1
   control_name: SECURITY ASSESSMENT AND AUTHORIZATION POLICIES AND PROCEDURES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The Department has published the Department of Education, Office of the Chief
-    Information Officer, Handbook for Information Assurance Security Policy, Information
-    Assurance Program (Handbook OCIO-01) and U. S. Department of Education Information
-    Technology Security, Handbook for Information Technology Security, Certification and
-    Accreditation Procedures (Handbook OCIO-05). Both of these publications are revised
-    periodically. The LINCS System Security Policy (SSP) provides guidance on all aspects
-    of security for the protection of LINCS information technology resources.
+  narrative:
+  - text: >
+      The Department has published the Department of Education, Office of the Chief
+      Information Officer, Handbook for Information Assurance Security Policy, Information
+      Assurance Program (Handbook OCIO-01) and U. S. Department of Education Information
+      Technology Security, Handbook for Information Technology Security, Certification
+      and Accreditation Procedures (Handbook OCIO-05). Both of these publications
+      are revised periodically. The LINCS System Security Policy (SSP) provides guidance
+      on all aspects of security for the protection of LINCS information technology
+      resources.
 
-    The Department will periodically review and update the SSP when there is a significant
-    change to the regulatory, operational, or technical environment.
-  summary: The Department of Education has published the Handbook OCIO-01 and Handbook OCIO-05.
-
-- control_key: CA-02
-  control_key_part: a
+      The Department will periodically review and update the SSP when there is a significant
+      change to the regulatory, operational, or technical environment.
+    implementation_status: In Place
+  summary: The Department of Education has published the Handbook OCIO-01 and Handbook
+    OCIO-05.
+- control_key: CA-2
   control_name: SECURITY ASSESSMENTS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The LINCS Technology Project follows the U. S. Department of Education Information
-    Technology Security, Handbook for Information Technology Security, Certification and
-    Accreditation Procedures (Handbook OCIO-05) procedures.  The LINCS Technology Project
-    will conduct annual security assessments to comply with FISMA and NIST
-    regulations. The Department will draw on NIST Special Publications 800-53A security
-    controls to complete the assessment. All controls and sub-set security controls will
-    be evaluated and a risk assessment will be conducted. The scope of the assessment
-    includes:
+  narrative:
+  - key: a
+    text: >
+      The LINCS Technology Project follows the U. S. Department of Education Information
+      Technology Security, Handbook for Information Technology Security, Certification
+      and Accreditation Procedures (Handbook OCIO-05) procedures.  The LINCS Technology
+      Project will conduct annual security assessments to comply with FISMA and NIST
+      regulations. The Department will draw on NIST Special Publications 800-53A security
+      controls to complete the assessment. All controls and sub-set security controls
+      will be evaluated and a risk assessment will be conducted. The scope of the
+      assessment includes:
 
-    1. Security controls and control enhancements under assessment
+      1. Security controls and control enhancements under assessment
 
-    2. Assessment procedures to be used to determine security control effectiveness
+      2. Assessment procedures to be used to determine security control effectiveness
 
-    3. Assessment environment, assessment team, and assessment roles and responsibilities
-  summary: >
-    The LINCS Technology Project
-    will conduct annual security assessments to comply with FISMA and NIST
-    regulations.
-
-- control_key: CA-02
-  control_key_part: c
-  control_name: SECURITY ASSESSMENTS
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: Planned
-  narrative: >
-    The LINCS Authorizing Official or Designated Representative will create a Security
-    Assessment Report (SAR). A full assessment shall be conducted by an independent third
-    party assessor at least every three years.
-
-- control_key: CA-05
-  control_key_part: ~
+      3. Assessment environment, assessment team, and assessment roles and responsibilities
+    implementation_status: In Place
+  - key: c
+    text: >
+      The LINCS Authorizing Official or Designated Representative will create a Security
+      Assessment Report (SAR). A full assessment shall be conducted by an independent
+      third party assessor at least every three years.
+    implementation_status: Planned
+  summary: |
+    The LINCS Technology Project will conduct annual security assessments to comply with FISMA and NIST regulations.
+- control_key: CA-5
   control_name: PLAN OF ACTION AND MILESTONES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The LINCS Technology Project follows the U.S. Department of Education Information
-    Technology Security, Handbook for Information Technology Security, Certification and
-    Accreditation Procedures (Handbook OCIO-05) procedures in managing POA&Ms.
-  summary: The LINCS Technology Project follows teh Department of Education Handbook OCIO-05 procedures in managing POA&Ms.
-
-- control_key: CA-06
-  control_key_part: ~
+  narrative:
+  - text: >
+      The LINCS Technology Project follows the U.S. Department of Education Information
+      Technology Security, Handbook for Information Technology Security, Certification
+      and Accreditation Procedures (Handbook OCIO-05) procedures in managing POA&Ms.
+    implementation_status: In Place
+  summary: The LINCS Technology Project follows teh Department of Education Handbook
+    OCIO-05 procedures in managing POA&Ms.
+- control_key: CA-6
   control_name: SECURITY AUTHORIZATION
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: Partially in Place
-  narrative: >
-    The LINCS Technology Project follows the Department of Education, Office of the Chief
-    Information Officer, Handbook for Information Assurance Security Policy, Information
-    Assurance Program (Handbook OCIO-01) and U. S. Department of Education Information
-    Technology Security, Handbook for Information Technology Security, Certification and
-    Accreditation Procedures (Handbook OCIO-05) procedures. The LINCS Technology Project
-    system received its first three-year security accreditation on March 3, 2009, and most
-    recently received an ATO on February 5, 2016.
+  narrative:
+  - text: >
+      The LINCS Technology Project follows the Department of Education, Office of
+      the Chief Information Officer, Handbook for Information Assurance Security Policy,
+      Information Assurance Program (Handbook OCIO-01) and U. S. Department of Education
+      Information Technology Security, Handbook for Information Technology Security,
+      Certification and Accreditation Procedures (Handbook OCIO-05) procedures. The
+      LINCS Technology Project system received its first three-year security accreditation
+      on March 3, 2009, and most recently received an ATO on February 5, 2016.
 
-    ATO re-assessment will be performed every three years or when there is a major change
-    to the application, in which a senior organizational official will sign and approve
-    the security accreditation.
-  summary: The LINCS Technology Project follows teh Department of Education Handbook OCIO-05 and Handbook OCIO-05 procedures.
+      ATO re-assessment will be performed every three years or when there is a major
+      change to the application, in which a senior organizational official will sign
+      and approve the security accreditation.
+    implementation_status: Partially in Place
+  summary: The LINCS Technology Project follows teh Department of Education Handbook
+    OCIO-05 and Handbook OCIO-05 procedures.

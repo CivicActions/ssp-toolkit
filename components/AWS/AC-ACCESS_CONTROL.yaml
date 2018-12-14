@@ -1,104 +1,95 @@
-name: AWS
 family: ACCESS CONTROL
 documentation_complete: false
-schema_version: 3.0.0
 satisfies:
-
-- control_key: AC-01
-  control_key_part: ~
+- control_key: AC-1
   control_name: ACCESS CONTROL POLICY AND PROCEDURES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Partially Inheritable
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Providers dated 1 May 2013.
-
-- control_key: AC-02
-  control_key_part: ~
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+    implementation_status: In Place
+- control_key: AC-2
   control_name: ACCOUNT MANAGEMENT
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Partially Inheritable
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 1 May 2013 for the following: AWS account management.
-
-- control_key: AC-03
-  control_key_part: ~
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: AWS account management.
+    implementation_status: In Place
+- control_key: AC-3
   control_name: ACCESS ENFORCEMENT
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 1 May 2013 for the following: AWS account management.
-
-- control_key: AC-06
-  control_key_part: ~
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: AWS account management.
+    implementation_status: In Place
+- control_key: AC-6
   control_name: LEAST PRIVILEGE
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 1 May 2013 for the following: application of least privilege.
-
-- control_key: AC-07
-  control_key_part: ~
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: application of
+      least privilege.
+    implementation_status: In Place
+- control_key: AC-7
   control_name: UNSUCCESSFUL LOGIN ATTEMPTS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 1 May 2013 for the following: unsuccessful logon attempts.
-
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: unsuccessful logon
+      attempts.
+    implementation_status: In Place
 - control_key: AC-17
-  control_key_part: ~
   control_name: REMOTE ACCESS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following: remote access.
-
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: remote access.
+    implementation_status: In Place
 - control_key: AC-18
-  control_key_part: ~
   control_name: WIRELESS ACCESS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
-  implementation_status: Not Applicable
-  narrative: >
-    The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 1 May 2013 for the following: wireless access.
-
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for the following: wireless access.
+    implementation_status: Not Applicable
 - control_key: AC-19
-  control_key_part: ~
   control_name: ACCESS CONTROL FOR MOBILE DEVICES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
-  implementation_status: In Place
-  narrative: >
-    The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 1 May 2013 for the following: mobile device restrictions.
-
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for the following: mobile device restrictions.
+    implementation_status: In Place
 - control_key: AC-20
-  control_key_part: ~
   control_name: USE OF EXTERNAL INFORMATION SYSTEMS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
-  implementation_status: In Place
-  narrative: >
-    The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 1 May 2013 for the following: use of external information systems.
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for the following: use of external information
+      systems.
+    implementation_status: In Place

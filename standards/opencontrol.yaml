@@ -1,0 +1,5 @@
+schema_version: "1.0.0"
+name: Standards for Civic Actions
+standards:
+  - nist-sp-800-53-rev4.yaml
+

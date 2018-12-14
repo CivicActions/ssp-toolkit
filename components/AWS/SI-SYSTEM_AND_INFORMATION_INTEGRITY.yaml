@@ -1,243 +1,179 @@
-name: AWS
 family: SYSTEM AND INFORMATION INTEGRITY
 documentation_complete: false
-schema_version: 3.0.0
 satisfies:
-
-- control_key: SI-01
-  control_key_part: ~
+- control_key: SI-1
   control_name: SYSTEM AND INFORMATION INTEGRITY POLICY AND PROCEDURES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Provider dated 1 May 2013.
-
-- control_key: SI-02
-  control_key_part: ~
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+    implementation_status: In Place
+- control_key: SI-2
   control_name: FLAW REMEDIATION
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  flaw remediation.
-
-- control_key: SI-02(2)
-  control_key_part: ~
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following:  flaw remediation.
+    implementation_status: In Place
+- control_key: SI-2(2)
   control_name: AUTOMATED FLAW REMEDIATION STATUS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following: automated flaw remediation
-    status.
-
-- control_key: SI-04
-  control_key_part: ~
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: automated flaw
+      remediation status.
+    implementation_status: In Place
+- control_key: SI-4
   control_name: INFORMATION SYSTEM MONITORING
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 1 May 2013 for the following: information system monitoring.
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: information system
+      monitoring.
+    implementation_status: In Place
+  - key: c
+    text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following:  information system
+      monitoring.
 
-- control_key: SI-04
-  control_key_part: c
-  control_name: INFORMATION SYSTEM MONITORING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  information system
-    monitoring.
+      CivicActions leverages the AWS platform and a host-based intrusion detection
+      system (HIDS) for monitoring strategically within the information system to
+      collect organization-determined essential information and at ad hoc locations
+      within the system; see inheritance below.
+    implementation_status: In Place
+  - key: d
+    text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
+    implementation_status: In Place
+  - key: e
+    text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following:  information system
+      monitoring.
+    implementation_status: In Place
+  - key: f
+    text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following:  information system
+      monitoring.
+    implementation_status: In Place
+  - key: g
+    text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following:  information system
+      monitoring.
 
-    CivicActions leverages the AWS platform and a host-based intrusion detection
-    system (HIDS) for monitoring strategically within the information system to collect
-    organization-determined essential information and at ad hoc locations within the
-    system; see inheritance below.
-
-- control_key: SI-04
-  control_key_part: d
-  control_name: INFORMATION SYSTEM MONITORING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system inherits this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 1 May 2013 for the following:  information system monitoring.
-
-- control_key: SI-04
-  control_key_part: e
-  control_name: INFORMATION SYSTEM MONITORING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  information system
-    monitoring.
-
-- control_key: SI-04
-  control_key_part: f
-  control_name: INFORMATION SYSTEM MONITORING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  information system
-    monitoring.
-
-- control_key: SI-04
-  control_key_part: g
-  control_name: INFORMATION SYSTEM MONITORING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  information system
-    monitoring.
-
-    AWS’s monitoring mechanisms provide notification including audit records,
-    input from malicious code protection mechanisms, data from intrusion detection and
-    prevention mechanisms, and boundary protection devices to the AWS Security Team on
-    a daily basis.
-
-- control_key: SI-05
-  control_key_part: a
+      AWS’s monitoring mechanisms provide notification including audit records, input
+      from malicious code protection mechanisms, data from intrusion detection and
+      prevention mechanisms, and boundary protection devices to the AWS Security Team
+      on a daily basis.
+    implementation_status: In Place
+- control_key: SI-5
   control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  AWS security
-    alerts, advisories, and directives.
+  narrative:
+  - key: a
+    text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following:  AWS security alerts,
+      advisories, and directives.
 
-    The AWS Insight control panel provides direct access to the monitored systems.
+      The AWS Insight control panel provides direct access to the monitored systems.
+    implementation_status: In Place
+  - key: b
+    text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following:  AWS security alerts,
+      advisories, and directives.
 
-- control_key: SI-05
-  control_key_part: b
-  control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  AWS security
-    alerts, advisories, and directives.
-
-    The AWS host-based intrusion detection system (HIDS) monitors the events
-    of the system boundary.
-
-- control_key: SI-05
-  control_key_part: c
-  control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  AWS security
-    alerts, advisories, and directives.
-
-- control_key: SI-05
-  control_key_part: d
-  control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  AWS security
-    alerts, advisories, and directives.
-
-- control_key: SI-07
-  control_key_part: ~
+      The AWS host-based intrusion detection system (HIDS) monitors the events of
+      the system boundary.
+    implementation_status: In Place
+  - key: c
+    text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following:  AWS security alerts,
+      advisories, and directives.
+    implementation_status: In Place
+  - key: d
+    text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following:  AWS security alerts,
+      advisories, and directives.
+    implementation_status: In Place
+- control_key: SI-7
   control_name: SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  software, firmware,
-    and information integrity.
-
-- control_key: SI-07 (1)
-  control_key_part: ~
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following:  software, firmware,
+      and information integrity.
+    implementation_status: In Place
+- control_key: SI-7 (1)
   control_name: INTEGRITY CHECKS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: Partially in Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  integrity checks.
-
-- control_key: SI-07 (7)
-  control_key_part: ~
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following:  integrity checks.
+    implementation_status: Partially in Place
+- control_key: SI-7 (7)
   control_name: INTEGRATION OF DETECTION AND RESPONSE
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: Partially in Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following:  integration of detection
-    and response. AWS has deployed OSSEC HIDS to all AWS Enterprise hosts which
-    continuously monitors and alerts for software changes as they occur throughout
-    the AWS platform.
-
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following:  integration of
+      detection and response. AWS has deployed OSSEC HIDS to all AWS Enterprise hosts
+      which continuously monitors and alerts for software changes as they occur throughout
+      the AWS platform.
+    implementation_status: Partially in Place
 - control_key: SI-11
-  control_key_part: a
   control_name: ERROR HANDLING
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 1 May 2013 for the following: error handling.
-
-- control_key: SI-11
-  control_key_part: b
-  control_name: ERROR HANDLING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 1 May 2013 for the following: error handling.
-
+  narrative:
+  - key: a
+    text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: error handling.
+    implementation_status: In Place
+  - key: b
+    text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: error handling.
+    implementation_status: In Place
 - control_key: SI-12
-  control_key_part: ~
   control_name: INFORMATION OUTPUT HANDLING AND RETENTION
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 1 May 2013 for the following: information output handling and
-    retention.
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: information output
+      handling and retention.
+    implementation_status: In Place

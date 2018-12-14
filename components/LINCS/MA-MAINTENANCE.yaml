@@ -1,61 +1,50 @@
-name: LINCS
 family: MAINTENANCE
 documentation_complete: false
-schema_version: 3.0.0
 satisfies:
-
-- control_key: MA-01
-  control_key_part: ~
+- control_key: MA-1
   control_name: SYSTEM MAINTENANCE POLICY AND PROCEDURES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    System maintenance policy and procedures are formally documented in the LINCS SSP,
-    which provides the roles and responsibilities as it pertains to software and systems
-    maintennance and updates. The LINCS Technology Project ensures that maintenance
-    controls are developed, disseminated, reviewed, and updated as necessary.
+  narrative:
+  - text: >
+      System maintenance policy and procedures are formally documented in the LINCS
+      SSP, which provides the roles and responsibilities as it pertains to software
+      and systems maintennance and updates. The LINCS Technology Project ensures that
+      maintenance controls are developed, disseminated, reviewed, and updated as necessary.
 
-    Physical and environmental protection is fully inherited from the AWS FedRAMP
-    certified us-east cloud.
+      Physical and environmental protection is fully inherited from the AWS FedRAMP
+      certified us-east cloud.
 
-    Additional information is contained within the Department of Education, Handbook for
-    Information Assurance Security Policy (Handbook OCIO-01).
+      Additional information is contained within the Department of Education, Handbook
+      for Information Assurance Security Policy (Handbook OCIO-01).
 
-    This is Agency common control. More data about implementation can be obtained from
-    the Agency common control catalog.
-
-- control_key: MA-02
-  control_key_part: ~
+      This is Agency common control. More data about implementation can be obtained
+      from the Agency common control catalog.
+    implementation_status: In Place
+- control_key: MA-2
   control_name: CONTROLLED MAINTENANCE
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The LINCS Technology Project schedules, performs, and documents regular maintenance on
-    the software components of all systems, including but not limited to:
-
-    • Hourly automated snapshot backups
-    
-    • Daily disaster recovery remote backups
-    
-    • Daily Intrusion Detection (OSSEC) / Data Integrity Assurance (AIDE)
-
-    • As needed HelpDesk support
-
-    • Twice-monthly OS updates/patches
-
-- control_key: MA-05
-  control_key_part: ~
+  narrative:
+  - text: |
+      The LINCS Technology Project schedules, performs, and documents regular maintenance on the software components of all systems, including but not limited to:
+      • Hourly automated snapshot backups
+      • Daily disaster recovery remote backups
+      • Daily Intrusion Detection (OSSEC) / Data Integrity Assurance (AIDE)
+      • As needed HelpDesk support
+      • Twice-monthly OS updates/patches
+    implementation_status: In Place
+- control_key: MA-5
   control_name: MAINTENANCE PERSONNEL
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The Department maintains a list of authorized contract (CivicActions) personnel
-    who perform maintenance and repair activities on the LINCS Technology Project system
-    components, and only these authorized personnel may perform the maintenance. All
-    maintenance personnel have the required personnel security elements in place.
+  narrative:
+  - text: >
+      The Department maintains a list of authorized contract (CivicActions) personnel
+      who perform maintenance and repair activities on the LINCS Technology Project
+      system components, and only these authorized personnel may perform the maintenance.
+      All maintenance personnel have the required personnel security elements in place.
+    implementation_status: In Place
