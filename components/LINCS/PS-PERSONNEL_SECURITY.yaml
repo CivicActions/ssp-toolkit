@@ -1,160 +1,154 @@
-name: LINCS
 family: PERSONNEL SECURITY
 documentation_complete: false
-schema_version: 3.0.0
 satisfies:
-- control_key: PS-01
-  control_key_part: ~
+- control_key: PS-1
   control_name: PERSONNEL SECURITY POLICY AND PROCEDURES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The LINCS Technology Project documents the security policy and procedures in
-    addressing position categorization, personnel screening, personnel termination,
-    personnel transfer, and access agreements within the LINCS SSP. The LINCS Technology
-    Project adopts the Department of Education personnel security standards and determines
-    position risks levels based on public trust responsibilities.
+  narrative:
+  - text: >
+      The LINCS Technology Project documents the security policy and procedures in
+      addressing position categorization, personnel screening, personnel termination,
+      personnel transfer, and access agreements within the LINCS SSP. The LINCS Technology
+      Project adopts the Department of Education personnel security standards and
+      determines position risks levels based on public trust responsibilities.
 
-    This is Agency common control.  More data about implementation can be obtained from
-    the Agency common control catalog.
-
-- control_key: PS-02
-  control_key_part: ~
+      This is Agency common control.  More data about implementation can be obtained
+      from the Agency common control catalog.
+    implementation_status: In Place
+- control_key: PS-2
   control_name: POSITION RISK DESIGNATION
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The LINCS Technology Project’s position sensitivity levels are assigned by the
-    Department of Education and National Classification Center (NCC) as part of the
-    position designation required by OPM under 5 CFR 731.106. Each Department position
-    designation is documented on the Standard Position Description (SPD) and assigned a
-    risk level (or sensitivity level) commensurate with the sensitivity of the
-    information, the risk to that information and the system maintaining that
-    information. The levels of risk still need to be designated by the Department for
-    employee and contractor positions but since the LINCS Technology Project system does
-    not have any sensitive data, a low risk scenario can be assumed.
+  narrative:
+  - text: >
+      The LINCS Technology Project’s position sensitivity levels are assigned by the
+      Department of Education and National Classification Center (NCC) as part of
+      the position designation required by OPM under 5 CFR 731.106. Each Department
+      position designation is documented on the Standard Position Description (SPD)
+      and assigned a risk level (or sensitivity level) commensurate with the sensitivity
+      of the information, the risk to that information and the system maintaining
+      that information. The levels of risk still need to be designated by the Department
+      for employee and contractor positions but since the LINCS Technology Project
+      system does not have any sensitive data, a low risk scenario can be assumed.
 
-    • Employee risk levels and background investigations are: Low Risk= NACI, Moderate Risk=
-    LBI, High Risk= BI.
+      • Employee risk levels and background investigations are: Low Risk= NACI, Moderate
+      Risk= LBI, High Risk= BI.
 
-    • Contractor risk levels and background investigations are: Low Risk= NACI, Moderate
-    Risk= NACC, High Risk= BI.
+      • Contractor risk levels and background investigations are: Low Risk= NACI,
+      Moderate Risk= NACC, High Risk= BI.
 
-    In order to ensure every employee is assigned to a position, which has been reviewed
-    for sensitivity by the NCC, the SPD is a required data attribute of an employee’s HR
-    record. Position risks designations are reviewed and revised when NCC or OPM publish
-    changes to sensitivity levels.
+      In order to ensure every employee is assigned to a position, which has been
+      reviewed for sensitivity by the NCC, the SPD is a required data attribute of
+      an employee’s HR record. Position risks designations are reviewed and revised
+      when NCC or OPM publish changes to sensitivity levels.
 
-    This is Agency common control.  More data about implementation can be obtained from
-    the Agency common control catalog
-
-- control_key: PS-03
-  control_key_part: ~
+      This is Agency common control.  More data about implementation can be obtained
+      from the Agency common control catalog
+    implementation_status: In Place
+- control_key: PS-3
   control_name: PERSONNEL SCREENING
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Minimum background investigations are conducted, since all data is non-sensitive, for
-    individuals requiring access to LINCS Technology Project information and information
-    systems. The type of background investigation conducted for an individual is
-    determined by the individual’s position risk categorization noted in control PS-2. The
-    Department conducts periodic reinvestigations in accordance with OPM and NIST
-    guidelines.
+  narrative:
+  - text: >
+      Minimum background investigations are conducted, since all data is non-sensitive,
+      for individuals requiring access to LINCS Technology Project information and
+      information systems. The type of background investigation conducted for an individual
+      is determined by the individual’s position risk categorization noted in control
+      PS-2. The Department conducts periodic reinvestigations in accordance with OPM
+      and NIST guidelines.
 
-    This is Agency common control.  More data about implementation can be obtained from
-    the Agency common control catalog.
-
-- control_key: PS-04
-  control_key_part: ~
+      This is Agency common control.  More data about implementation can be obtained
+      from the Agency common control catalog.
+    implementation_status: In Place
+- control_key: PS-4
   control_name: PERSONNEL TERMINATION
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The Department’s HR policy states that managers or designated officials are
-    responsible for recovering and properly securing employee badges and returning it to
-    the local physical security office. The Department executes termination procedures
-    that remove personnel access privileges, computer accounts. When an employee is
-    terminated, the employee’s manager or designated official completes a form requesting
-    termination of access for the user. Local management and the security manager
-    coordinate disabling or removing LINCS Technology Project privileged access with the
-    system administrator. The employee’s manager or designated official is responsible for
-    recovering and properly securing his/her ID badge and returning it to the local
-    physical security office. The employee’s manager or designated official ensures that
-    any information on the system that the employee was responsible for will be available
-    to the appropriate personnel.
+  narrative:
+  - text: >
+      The Department’s HR policy states that managers or designated officials are
+      responsible for recovering and properly securing employee badges and returning
+      it to the local physical security office. The Department executes termination
+      procedures that remove personnel access privileges, computer accounts. When
+      an employee is terminated, the employee’s manager or designated official completes
+      a form requesting termination of access for the user. Local management and the
+      security manager coordinate disabling or removing LINCS Technology Project privileged
+      access with the system administrator. The employee’s manager or designated official
+      is responsible for recovering and properly securing his/her ID badge and returning
+      it to the local physical security office. The employee’s manager or designated
+      official ensures that any information on the system that the employee was responsible
+      for will be available to the appropriate personnel.
 
-    This is Agency common control.  More data about implementation can be obtained from
-    the Agency common control catalog.
-
-- control_key: PS-05
-  control_key_part: ~
+      This is Agency common control.  More data about implementation can be obtained
+      from the Agency common control catalog.
+    implementation_status: In Place
+- control_key: PS-5
   control_name: PERSONNEL TRANSFER
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    When an employee is reassigned or transferred, the employee’s manager or designated
-    official is required to request transfer of access (as appropriate) for the user.
+  narrative:
+  - text: >
+      When an employee is reassigned or transferred, the employee’s manager or designated
+      official is required to request transfer of access (as appropriate) for the
+      user.
 
-    In accordance with the Department’s HR policy, the employee’s manager or designated
-    official is responsible for recovering and properly securing his/her ID badge and
-    returning it to the local physical security office. The manager provides prompt
-    notification to the LINCS Technology Project system/security administrator when an
-    employee changes assignments and/or location. This includes taking prompt and
-    appropriate action to change employee access profile and/or remove employee from the
-    system; and ensure that users’ system access is cancelled when the need no longer
-    exists.
+      In accordance with the Department’s HR policy, the employee’s manager or designated
+      official is responsible for recovering and properly securing his/her ID badge
+      and returning it to the local physical security office. The manager provides
+      prompt notification to the LINCS Technology Project system/security administrator
+      when an employee changes assignments and/or location. This includes taking prompt
+      and appropriate action to change employee access profile and/or remove employee
+      from the system; and ensure that users’ system access is cancelled when the
+      need no longer exists.
 
-    This is Agency common control.  More data about implementation can be obtained from
-    the Agency common control catalog.
-
-- control_key: PS-06
-  control_key_part: ~
+      This is Agency common control.  More data about implementation can be obtained
+      from the Agency common control catalog.
+    implementation_status: In Place
+- control_key: PS-6
   control_name: ACCESS AGREEMENTS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The Department has implemented a formalized process for user account administration
-    using the approved and signed Rules of Behavior and User Acknowledgement forms. All
-    new users requesting access to the LINCS Technology Project system must complete these
-    forms and the security manager will keep them on file and reviewed bi-annually.
-
-- control_key: PS-07
-  control_key_part: ~
+  narrative:
+  - text: >
+      The Department has implemented a formalized process for user account administration
+      using the approved and signed Rules of Behavior and User Acknowledgement forms.
+      All new users requesting access to the LINCS Technology Project system must
+      complete these forms and the security manager will keep them on file and reviewed
+      bi-annually.
+    implementation_status: In Place
+- control_key: PS-7
   control_name: THIRD-PARTY PERSONNEL SECURITY
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    All contractor support personnel are required to meet the same personnel security
-    policy requirements as Department personnel who have privileged access to the LINCS
-    Technology Project system. Third party providers are required to review and sign the
-    Rules of Behavior prior to being granted access to the system.
-
-- control_key: PS-08
-  control_key_part: ~
+  narrative:
+  - text: >
+      All contractor support personnel are required to meet the same personnel security
+      policy requirements as Department personnel who have privileged access to the
+      LINCS Technology Project system. Third party providers are required to review
+      and sign the Rules of Behavior prior to being granted access to the system.
+    implementation_status: In Place
+- control_key: PS-8
   control_name: PERSONNEL SANCTIONS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The disciplinary sanctions for personnel failing to comply with establish IT security
-    policies and procedures are included in the Department’s HR policy. If an employee
-    violates the Department’s information security policies and procedures, the employee
-    may be subject to disciplinary action at the discretion of management. Actions may
-    range from verbal or written warning, removal of system access for a specific period
-    of time, reassignment to other duties, or termination, depending on the severity of
-    the violation. Disciplinary sanctions are reported to the OCIO.
+  narrative:
+  - text: >
+      The disciplinary sanctions for personnel failing to comply with establish IT
+      security policies and procedures are included in the Department’s HR policy.
+      If an employee violates the Department’s information security policies and procedures,
+      the employee may be subject to disciplinary action at the discretion of management.
+      Actions may range from verbal or written warning, removal of system access for
+      a specific period of time, reassignment to other duties, or termination, depending
+      on the severity of the violation. Disciplinary sanctions are reported to the
+      OCIO.
+    implementation_status: In Place

@@ -1,38 +1,34 @@
-name: LINCS
 family: CONTINGENCY PLANNING
 documentation_complete: false
-schema_version: 3.0.0
 satisfies:
-
-- control_key: CP-01
-  control_key_part: ~
+- control_key: CP-1
   control_name: CONTINGENCY PLANNING POLICY AND PROCEDURES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    This is Agency common control. More data about implementation can be obtained from the
-    Agency common control catalog.
-    
-    The LINCS Technology Project has developed a contingency planning policy consistent
-    with Department of Education, Handbook for Information Technology Security Contingency
-    Planning Procedures (Handbook OCIO-10) and NIST 800-34. Contingency planning
-    procedures are formally documented within the LINCS Technology Project Contingency
-    Plan, which provides the roles and responsibilities as it pertains to contingency
-    planning. The Department reviews and updates the policy as necessary and the policy
-    was last updated in July 2012.
+  narrative:
+  - text: >
+      This is Agency common control. More data about implementation can be obtained
+      from the Agency common control catalog.
 
-- control_key: CP-02
-  control_key_part: b
+      The LINCS Technology Project has developed a contingency planning policy consistent
+      with Department of Education, Handbook for Information Technology Security Contingency
+      Planning Procedures (Handbook OCIO-10) and NIST 800-34. Contingency planning
+      procedures are formally documented within the LINCS Technology Project Contingency
+      Plan, which provides the roles and responsibilities as it pertains to contingency
+      planning. The Department reviews and updates the policy as necessary and the
+      policy was last updated in July 2012.
+    implementation_status: In Place
+- control_key: CP-2
   control_name: CONTINGENCY PLAN
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The LINCS Information System Contingency Plan (ISCP) has been distributed to all
-    members who have roles in Contingency Planning and Incident Response team. Direction
-    by the System Owner will update who is required to receive a copy of the contingency
-    plan. The ISCP can be found in the LINCS GitHub wiki at
-    <https://git.civicactions.net/lincs/compliance/blob/master/docs/contingency-plan.md>.
+  narrative:
+  - key: b
+    text: >
+      The LINCS Information System Contingency Plan (ISCP) has been distributed to
+      all members who have roles in Contingency Planning and Incident Response team.
+      Direction by the System Owner will update who is required to receive a copy
+      of the contingency plan. The ISCP can be found in the LINCS GitHub wiki at <https://git.civicactions.net/lincs/compliance/blob/master/docs/contingency-plan.md>.
+    implementation_status: In Place

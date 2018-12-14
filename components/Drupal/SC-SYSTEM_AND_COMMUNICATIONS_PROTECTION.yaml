@@ -1,29 +1,26 @@
-name: Drupal
 family: SYSTEM AND COMMUNICATIONS PROTECTION
 documentation_complete: false
-schema_version: 3.0.0
 satisfies:
-
-- control_key: SC-05
-  control_key_part: ~
+- control_key: SC-5
   control_name: DENIAL OF SERVICE PROTECTION
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: Partially in Place
-  narrative: >
-    Drupal has a manual ability to block IP addresses in cases where attacks bypass cloud
-    protection. This is managed by CivicActions Operations.
-
-- control_key: SC-07
-  control_key_part: ~
+  narrative:
+  - text: >
+      Drupal has a manual ability to block IP addresses in cases where attacks bypass
+      cloud protection. This is managed by CivicActions Operations.
+    implementation_status: Partially in Place
+- control_key: SC-7
   control_name: BOUNDARY PROTECTION
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Drupal, when deployed on SELinux in full enforcing mode, minimizes the number of
-    services and computing nodes that are exposed to the Internet. Drupal employs both the
-    AWS platform safeguards and the Drupal Watchdog module in monitoring and recording
-    system events. All other computing nodes used in the system are isolated within AWS.
+  narrative:
+  - text: >
+      Drupal, when deployed on SELinux in full enforcing mode, minimizes the number
+      of services and computing nodes that are exposed to the Internet. Drupal employs
+      both the AWS platform safeguards and the Drupal Watchdog module in monitoring
+      and recording system events. All other computing nodes used in the system are
+      isolated within AWS.
+    implementation_status: In Place

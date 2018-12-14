@@ -1,29 +1,21 @@
-name: Drupal
 family: SECURITY ASSESSMENT AND AUTHORIZATION
 documentation_complete: false
-schema_version: 3.0.0
 satisfies:
-
-- control_key: CA-07
-  control_key_part: a
+- control_key: CA-7
   control_name: CONTINUOUS MONITORING
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions follows recommendations and best practices developed by the Drupal
-    community for monitoring. Examples of specific logs and metrics are included in AU-2
-    and AU-3.
-
-- control_key: CA-07
-  control_key_part: c
-  control_name: CONTINUOUS MONITORING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions works closely with the Drupal security community and reviews security
-    announcements as part of the continuous monitoring strategy. Items found to require
-    immediate remediation will be addressed.
+  narrative:
+  - key: a
+    text: >
+      CivicActions follows recommendations and best practices developed by the Drupal
+      community for monitoring. Examples of specific logs and metrics are included
+      in AU-2 and AU-3.
+    implementation_status: In Place
+  - key: c
+    text: >
+      CivicActions works closely with the Drupal security community and reviews security
+      announcements as part of the continuous monitoring strategy. Items found to
+      require immediate remediation will be addressed.
+    implementation_status: In Place

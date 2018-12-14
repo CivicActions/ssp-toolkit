@@ -1,152 +1,128 @@
-name: AWS
 family: CONFIGURATION MANAGEMENT
 documentation_complete: false
-schema_version: 3.0.0
 satisfies:
-
-- control_key: CM-01
-  control_key_part: ~
+- control_key: CM-1
   control_name: CONFIGURATION MANAGEMENT POLICY AND PROCEDURES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Providers dated 1 May 2013.
-
-- control_key: CM-02
-  control_key_part: ~
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+    implementation_status: In Place
+- control_key: CM-2
   control_name: BASELINE CONFIGURATION
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Hardware Baselines
+  narrative:
+  - text: >
+      Hardware Baselines
 
-    All hardware is maintained by AWS Cloud. The system therefore inherits hardware
-    configuration aspects of this control from the FedRAMP Provisional ATO granted to the
-    AWS Cloud dated 1 May 2013 for the following: baseline configuration.
-
-- control_key: CM-05
-  control_key_part: ~
+      All hardware is maintained by AWS Cloud. The system therefore inherits hardware
+      configuration aspects of this control from the FedRAMP Provisional ATO granted
+      to the AWS Cloud dated 1 May 2013 for the following: baseline configuration.
+    implementation_status: In Place
+- control_key: CM-5
   control_name: ACCESS RESTRICTIONS FOR CHANGE
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 1 May 2013 for the following: physical and logical access
-    restrictions to server instances. Development and staging environments are logged by
-    default as part of the AWS Cloud system.
-
-- control_key: CM-05 (1)
-  control_key_part: ~
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: physical and logical
+      access restrictions to server instances. Development and staging environments
+      are logged by default as part of the AWS Cloud system.
+    implementation_status: In Place
+- control_key: CM-5 (1)
   control_name: AUTOMATED ACCESS ENFORCEMENT / AUDITING
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 1 May 2013 for the following: automated access enforcement /
-    access.
-
-- control_key: CM-06
-  control_key_part: ~
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: automated access
+      enforcement / access.
+    implementation_status: In Place
+- control_key: CM-6
   control_name: CONFIGURATION SETTINGS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud dated 1 May 2013 for the following: configuration settings.
-
-- control_key: CM-07
-  control_key_part: ~
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: configuration settings.
+    implementation_status: In Place
+- control_key: CM-7
   control_name: LEAST FUNCTIONALITY
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 1 May 2013 for the following: least functionality.
-
-- control_key: CM-08
-  control_key_part: ~
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: least functionality.
+    implementation_status: In Place
+- control_key: CM-8
   control_name: INFORMATION SYSTEM COMPONENT INVENTORY
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system inherits the platform software components of this control from the FedRAMP
-    Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:
-    information system component inventory.
-
-- control_key: CM-08 (1)
-  control_key_part: ~
+  narrative:
+  - text: >
+      The system inherits the platform software components of this control from the
+      FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:
+      information system component inventory.
+    implementation_status: In Place
+- control_key: CM-8 (1)
   control_name: UPDATES DURING INSTALLATIONS / REMOVALS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Website content is backed up daily by the AWS Managed Cloud hosting system, which
-    is configured to take daily database snapshots
+  narrative:
+  - text: >
+      Website content is backed up daily by the AWS Managed Cloud hosting system,
+      which is configured to take daily database snapshots
 
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud dated 1 May 2013 for the following: components inventory
-    updates.
-
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: components inventory
+      updates.
+    implementation_status: In Place
 - control_key: CM-10
-  control_key_part: ~
   control_name: SOFTWARE USAGE RESTRICTIONS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud Service Providers dated 1 May 2013 for the following: software usage
-    restrictions.
-
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud Service Providers dated 1 May 2013 for the following:
+      software usage restrictions.
+    implementation_status: In Place
 - control_key: CM-11
-  control_key_part: a
   control_name: USER-INSTALLED SOFTWARE
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud Service Providers dated 1 May 2013 for the following: governing user
-    installed software.
-
-- control_key: CM-11
-  control_key_part: b
-  control_name: USER-INSTALLED SOFTWARE
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud Service Providers dated 1 May 2013 for the following: enforcing software
-    installation policies.
-
-- control_key: CM-11
-  control_key_part: c
-  control_name: USER-INSTALLED SOFTWARE
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted to
-    the AWS Cloud Service Providers dated 1 May 2013 for the following: monitoring
-    compliance.
+  narrative:
+  - key: a
+    text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud Service Providers dated 1 May 2013 for the following:
+      governing user installed software.
+    implementation_status: In Place
+  - key: b
+    text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud Service Providers dated 1 May 2013 for the following:
+      enforcing software installation policies.
+    implementation_status: In Place
+  - key: c
+    text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud Service Providers dated 1 May 2013 for the following:
+      monitoring compliance.
+    implementation_status: In Place

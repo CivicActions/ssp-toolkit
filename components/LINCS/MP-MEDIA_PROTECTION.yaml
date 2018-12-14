@@ -1,18 +1,14 @@
-name: LINCS
 family: MEDIA PROTECTION
 documentation_complete: false
-schema_version: 3.0.0
 satisfies:
-- control_key: MP-01
-  control_key_part: ~
+- control_key: MP-1
   control_name: MEDIA PROTECTION POLICY AND PROCEDURES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
   summary: Fully inherited from AWS (FedRAMP).
-  narrative: >
-    This is Agency common control. More data about implementation can be obtained from
-    the Agency common control catalog.
-    
-    Media protection policy and procedures are fully inherited from AWS Cloud.
+  narrative:
+  - text: |
+      This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+      Media protection policy and procedures are fully inherited from AWS Cloud.
+    implementation_status: In Place

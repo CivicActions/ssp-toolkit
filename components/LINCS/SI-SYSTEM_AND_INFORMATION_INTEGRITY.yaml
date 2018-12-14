@@ -1,64 +1,59 @@
-name: LINCS
 family: SYSTEM AND INFORMATION INTEGRITY
 documentation_complete: false
-schema_version: 3.0.0
 satisfies:
-
-- control_key: SI-01
-  control_key_part: ~
+- control_key: SI-1
   control_name: SYSTEM AND INFORMATION INTEGRITY POLICY AND PROCEDURES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    System and information integrity policy and procedures for the LINCS Technology
-    Project system are formally documented in the LINCS SSP, which provides the roles and
-    responsibilities as it pertains to physical and environmental protection systems. The
-    LINCS Technology Project system support staff monitors the network on a daily basis
-    and employs up-to-date patches to protect the integrity of the system.
+  narrative:
+  - text: >
+      System and information integrity policy and procedures for the LINCS Technology
+      Project system are formally documented in the LINCS SSP, which provides the
+      roles and responsibilities as it pertains to physical and environmental protection
+      systems. The LINCS Technology Project system support staff monitors the network
+      on a daily basis and employs up-to-date patches to protect the integrity of
+      the system.
 
-    Additional information is contained within the Department of Education, Handbook for
-    Information Assurance Security Policy (Handbook OCIO-01.
+      Additional information is contained within the Department of Education, Handbook
+      for Information Assurance Security Policy (Handbook OCIO-01.
 
-    This is Agency common control.  More data about implementation can be obtained from
-    the Agency common control catalog.
-
-- control_key: SI-05
-  control_key_part: ~
+      This is Agency common control.  More data about implementation can be obtained
+      from the Agency common control catalog.
+    implementation_status: In Place
+- control_key: SI-5
   control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    LINCS Technology Project representatives and system administrators receive alerts from
-    US-CERT on a regular basis. Support personnel take appropriate action in response to
-    relevant areas of concern.
-
+  narrative:
+  - text: >
+      LINCS Technology Project representatives and system administrators receive alerts
+      from US-CERT on a regular basis. Support personnel take appropriate action in
+      response to relevant areas of concern.
+    implementation_status: In Place
 - control_key: SI-11
-  control_key_part: a
   control_name: ERROR HANDLING
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Drupal in production operation mode does not display application errors to the user
-    but instead displays a predefined page indication that a request cannot be handled as
-    requested and logs all errors to the watchdog.log file.
-
+  narrative:
+  - key: a
+    text: >
+      Drupal in production operation mode does not display application errors to the
+      user but instead displays a predefined page indication that a request cannot
+      be handled as requested and logs all errors to the watchdog.log file.
+    implementation_status: In Place
 - control_key: SI-12
-  control_key_part: ~
   control_name: INFORMATION HANDLING AND RETENTION
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    LINCS Technology Project representatives and systems administrators receive annual
-    training from the Department regarding information assurance and information handling
-    requirements. These personnel are required to operate the system and handle system
-    data and output in accordance with legal requirements. Personnel training and system
-    guidelines ensure that data and programs are handled appropriately.
-
+  narrative:
+  - text: >
+      LINCS Technology Project representatives and systems administrators receive
+      annual training from the Department regarding information assurance and information
+      handling requirements. These personnel are required to operate the system and
+      handle system data and output in accordance with legal requirements. Personnel
+      training and system guidelines ensure that data and programs are handled appropriately.
+    implementation_status: In Place

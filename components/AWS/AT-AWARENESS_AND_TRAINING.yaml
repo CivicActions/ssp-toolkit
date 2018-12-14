@@ -1,52 +1,43 @@
-name: AWS
 family: AWARENESS AND TRAINING
 documentation_complete: false
-schema_version: 3.0.0
 satisfies:
-
-- control_key: AT-01
-  control_key_part: ~
+- control_key: AT-1
   control_name: SECURITY AWARENESS AND TRAINING POLICY AND PROCEDURES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Provider dated 1 May 2013.
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+    implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
-
-- control_key: AT-02
-  control_key_part: ~
+- control_key: AT-2
   control_name: SECURITY AWARENESS TRAINING
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Provider dated 1 May 2013.
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+    implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
-
-- control_key: AT-03
-  control_key_part: ~
+- control_key: AT-3
   control_name: ROLE-BASED SECURITY TRAINING
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Provider dated 1 May 2013.
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+    implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
-
-- control_key: AT-04
-  control_key_part: b
+- control_key: AT-4
   control_name: SECURITY TRAINING RECORDS
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The system partially inherits this control from the FedRAMP Provisional ATO granted
-    to the AWS Cloud Service Provider dated 1 May 2013.
+  narrative:
+  - key: b
+    text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+    implementation_status: In Place

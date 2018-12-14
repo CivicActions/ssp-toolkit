@@ -1,243 +1,188 @@
-name: CivicActions
 family: INCIDENT RESPONSE
 documentation_complete: false
-schema_version: 3.0.0
 satisfies:
-
-- control_key: IR-01
-  control_key_part: ~
+- control_key: IR-1
   control_name: INCIDENT RESPONSE POLICY AND PROCEDURES
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions has developed, documented and disseminated to personnel an incident
-    response planning policy that addresses purpose, scope, roles, responsibilities,
-    management commitment, coordination among organizational entities, and compliance; and
-    procedures to facilitate the implementation of the policy and associated
-    controls. This information is maintained in Incident Response (IR) Policy and
-    Procedure that can be found in the CivicActions Compliance Docs GitHub repository at
-    <https://github.com/CivicActions/compliance-docs>.
-
-- control_key: IR-02
-  control_key_part: ~
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel an incident
+      response planning policy that addresses purpose, scope, roles, responsibilities,
+      management commitment, coordination among organizational entities, and compliance;
+      and procedures to facilitate the implementation of the policy and associated
+      controls. This information is maintained in Incident Response (IR) Policy and
+      Procedure that can be found in the CivicActions Compliance Docs GitHub repository
+      at <https://github.com/CivicActions/compliance-docs>.
+    implementation_status: In Place
+- control_key: IR-2
   control_name: INCIDENT RESPONSE TRAINING
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    All CivicActions employees are required to participate in incident response training,
-    as required by Incident Response Plan changes, and annually. The CivicActions Incident
-    Response Plan
-    (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>)
-    is the basis for the training and the incident response workflow created by the
-    Security team.  Upon a review of past incidents, the training is updated to ensure
-    processes and workflows are updated.
-
-- control_key: IR-04
-  control_key_part: a
+  narrative:
+  - text: >
+      All CivicActions employees are required to participate in incident response
+      training, as required by Incident Response Plan changes, and annually. The CivicActions
+      Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>)
+      is the basis for the training and the incident response workflow created by
+      the Security team.  Upon a review of past incidents, the training is updated
+      to ensure processes and workflows are updated.
+    implementation_status: In Place
+- control_key: IR-4
   control_name: INCIDENT HANDLING
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions has implemented an Incident Response Plan
-    (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>)
-    that explains the process for incident handling, and discusses preparation, detection
-    and analysis, containment, eradication, and recovery.
+  narrative:
+  - key: a
+    text: >
+      CivicActions has implemented an Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>)
+      that explains the process for incident handling, and discusses preparation,
+      detection and analysis, containment, eradication, and recovery.
 
-    Preparation activities includes all CivicActions team members are trained in incident
-    response. Detection and monitoring tools providing notification to incident response
-    personnel for analysis and action.
-
-- control_key: IR-04
-  control_key_part: b
-  control_name: INCIDENT HANDLING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions Operations and Security team leads are members of the CivicActions
-    Contingency and Incident Response Plan teams which coordinates activities accordingly
-    through the life of the incident event.
-
-- control_key: IR-04
-  control_key_part: c
-  control_name: INCIDENT HANDLING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions Operations and Security conduct a post-incident analysis to assist in
-    documenting lessons learned and suggesting changes to improve the incident response
-    process. Tickets created in response to the incident event are reviewed upon
-    completion by Engineering and Security teams. Changes to the Incident Response Plan
-    (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>)
-    require a team review session for approval.
-
-- control_key: IR-05
-  control_key_part: ~
+      Preparation activities includes all CivicActions team members are trained in
+      incident response. Detection and monitoring tools providing notification to
+      incident response personnel for analysis and action.
+    implementation_status: In Place
+  - key: b
+    text: >
+      CivicActions Operations and Security team leads are members of the CivicActions
+      Contingency and Incident Response Plan teams which coordinates activities accordingly
+      through the life of the incident event.
+    implementation_status: In Place
+  - key: c
+    text: >
+      CivicActions Operations and Security conduct a post-incident analysis to assist
+      in documenting lessons learned and suggesting changes to improve the incident
+      response process. Tickets created in response to the incident event are reviewed
+      upon completion by Engineering and Security teams. Changes to the Incident Response
+      Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>)
+      require a team review session for approval.
+    implementation_status: In Place
+- control_key: IR-5
   control_name: INCIDENT MONITORING
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions utilizes the JIRA ticketing tool for tracking and reporting of incident
-    events from reporting to resolution and post-incident analysis. Initial reporting can
-    come from continuous monitoring tools as well as client and public submissions made to
-    support@civicactions.com. Jira processes the tickets for the public submissions and
-    CivicActions' Support Team creates associated GitHub Issues. Internal incidents
-    reported are processed within the GitHub Issue queue. Details of the handling
-    procedures are included in the CivicActions Incident Response Plan
-    (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan/#response-process>) Response Process.
-
-- control_key: IR-06
-  control_key_part: a
+  narrative:
+  - text: >
+      CivicActions utilizes the JIRA ticketing tool for tracking and reporting of
+      incident events from reporting to resolution and post-incident analysis. Initial
+      reporting can come from continuous monitoring tools as well as client and public
+      submissions made to support@civicactions.com. Jira processes the tickets for
+      the public submissions and CivicActions' Support Team creates associated GitHub
+      Issues. Internal incidents reported are processed within the GitHub Issue queue.
+      Details of the handling procedures are included in the CivicActions Incident
+      Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan/#response-process>)
+      Response Process.
+    implementation_status: In Place
+- control_key: IR-6
   control_name: INCIDENT REPORTING
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions personnel, as soon as an incident event is detected and/or communicated,
-    are required to report the incident event to CivicActions Security. Methods of
-    detection and/or communication may include one or more of:
+  narrative:
+  - key: a
+    text: >
+      CivicActions personnel, as soon as an incident event is detected and/or communicated,
+      are required to report the incident event to CivicActions Security. Methods
+      of detection and/or communication may include one or more of:
 
-    • Though continuous monitoring tools (StatusCake, OSSEC, others).
+      • Though continuous monitoring tools (StatusCake, OSSEC, others).
 
-    • As a result of application notifications where CivicActions Security receives
-    notifications (AIDE, OpsGenie, others).
+      • As a result of application notifications where CivicActions Security receives
+      notifications (AIDE, OpsGenie, others).
 
-    • Event logging described in AC-2
+      • Event logging described in AC-2
 
-    • Host based alerts from the cloud infrastructure or platform.
-
-- control_key: IR-06
-  control_key_part: b
-  control_name: INCIDENT REPORTING
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions personnel, as soon as the incident event is detected and/or communicated,
-    are required to report the incident event to CivicActions Security.
-
-- control_key: IR-07
-  control_key_part: ~
+      • Host based alerts from the cloud infrastructure or platform.
+    implementation_status: In Place
+  - key: b
+    text: >
+      CivicActions personnel, as soon as the incident event is detected and/or communicated,
+      are required to report the incident event to CivicActions Security.
+    implementation_status: In Place
+- control_key: IR-7
   control_name: INCIDENT RESPONSE ASSISTANCE
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions HelpDesk team provides first response assistance to any users of the
-    system. Response time for external reporting of incidents through e-mail is one
-    business day. Internal users are able to request support thought the same process or
-    initiate the incident response workflow.  Tickets created in the Jira (customer
-    ticketing system) and GitLab (internal ticketing system) documents all details related
-    to the incident to assist the incident response teams in handling the incident.
-
-- control_key: IR-08
-  control_key_part: a
+  narrative:
+  - text: >
+      CivicActions HelpDesk team provides first response assistance to any users of
+      the system. Response time for external reporting of incidents through e-mail
+      is one business day. Internal users are able to request support thought the
+      same process or initiate the incident response workflow.  Tickets created in
+      the Jira (customer ticketing system) and GitLab (internal ticketing system)
+      documents all details related to the incident to assist the incident response
+      teams in handling the incident.
+    implementation_status: In Place
+- control_key: IR-8
   control_name: INCIDENT RESPONSE PLAN
-  standard_key: NIST-800-53
+  standard_key: nist-sp-800-53-rev4
   covered_by: []
   security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Incident response plays a pivotal role in monitoring, detecting and handling security
-    incidents of the entire information system. CivicActions has developed an Incident
-    Response Plan
-    (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>)
-    that:
+  narrative:
+  - key: a
+    text: >
+      Incident response plays a pivotal role in monitoring, detecting and handling
+      security incidents of the entire information system. CivicActions has developed
+      an Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>)
+      that:
 
-    1. provides CivicActions with procedures and tools required for incident handling;
-    
-    2. describes the structure and organization of the incident response capability;
-    
-    3. provides a high-level approach for how the incident response capability fits into
-    CivicActions and the systems it maintains;
-    
-    4. meets the mission, size, structure, and functions of CivicActions;
+      1. provides CivicActions with procedures and tools required for incident handling;
 
-    5. defines reportable incidents;
+      2. describes the structure and organization of the incident response capability;
 
-    6. provides metrics for measuring the incident response capability and details
-      categorization of incidents in accordance with NIST 800-61;
-    
-    7. defines the roles and responsibilities of CivicActions IR Team;
-    
-    8. is reviewed annually and updated as needed by CivicActions Security, with the
-    assistance of the Incident Response team.
+      3. provides a high-level approach for how the incident response capability fits
+      into CivicActions and the systems it maintains;
 
-- control_key: IR-08
-  control_key_part: b
-  control_name: INCIDENT RESPONSE PLAN
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The CivicActions Incident Response Plan is distributed to all CivicActions team
-     members as part of the CivicActions Handbook
-     (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>).
-     The Incident Response team includes members from Security, Engineering, and Drupal
-     Engineering teams.
+      4. meets the mission, size, structure, and functions of CivicActions;
 
-- control_key: IR-08
-  control_key_part: c
-  control_name: INCIDENT RESPONSE PLAN
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions Security and the Incident Response team is responsible for reviewing the
-    Incident Response Plan annually. The entire incident response team will review the
-    plan and update it as necessary. Ultimately, the CISO has final say and will approve
-    all updates to the plan.
+      5. defines reportable incidents;
 
-- control_key: IR-08
-  control_key_part: d
-  control_name: INCIDENT RESPONSE PLAN
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    CivicActions Security is responsible for managing the IR Plan, including annual
-    reviews and updates. The IR Plan is updated to reflect any changes to processes,
-    systems or applications. In addition, any concerns or difficulties encountered during
-    IR Plan implementation, execution, or testing are addressed in an update to the IR
-    Plan.
+      6. provides metrics for measuring the incident response capability and details
+        categorization of incidents in accordance with NIST 800-61;
 
-- control_key: IR-08
-  control_key_part: e
-  control_name: INCIDENT RESPONSE PLAN
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    Modifications to the IR Plan are conducted by the IR team (CivicActions Security,
-    Operations and Engineering teams) and communicated to the CivicActions team.
+      7. defines the roles and responsibilities of CivicActions IR Team;
 
-- control_key: IR-08
-  control_key_part: f
-  control_name: INCIDENT RESPONSE PLAN
-  standard_key: NIST-800-53
-  covered_by: []
-  security_control_type: Hybrid
-  implementation_status: In Place
-  narrative: >
-    The IR Plan is available in the CivicActions Handbook and is maintained in the
-    CivicActions Github repository. Github provides the configuration management
-    capabilities for the IR Plan to be protected from unauthorized disclosure and
-    modification.
+      8. is reviewed annually and updated as needed by CivicActions Security, with
+      the assistance of the Incident Response team.
+    implementation_status: In Place
+  - key: b
+    text: |
+      The CivicActions Incident Response Plan is distributed to all CivicActions team
+       members as part of the CivicActions Handbook
+       (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>).
+       The Incident Response team includes members from Security, Engineering, and Drupal
+       Engineering teams.
+    implementation_status: In Place
+  - key: c
+    text: >
+      CivicActions Security and the Incident Response team is responsible for reviewing
+      the Incident Response Plan annually. The entire incident response team will
+      review the plan and update it as necessary. Ultimately, the CISO has final say
+      and will approve all updates to the plan.
+    implementation_status: In Place
+  - key: d
+    text: >
+      CivicActions Security is responsible for managing the IR Plan, including annual
+      reviews and updates. The IR Plan is updated to reflect any changes to processes,
+      systems or applications. In addition, any concerns or difficulties encountered
+      during IR Plan implementation, execution, or testing are addressed in an update
+      to the IR Plan.
+    implementation_status: In Place
+  - key: e
+    text: >
+      Modifications to the IR Plan are conducted by the IR team (CivicActions Security,
+      Operations and Engineering teams) and communicated to the CivicActions team.
+    implementation_status: In Place
+  - key: f
+    text: >
+      The IR Plan is available in the CivicActions Handbook and is maintained in the
+      CivicActions Github repository. Github provides the configuration management
+      capabilities for the IR Plan to be protected from unauthorized disclosure and
+      modification.
+    implementation_status: In Place
