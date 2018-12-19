@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: SA-1
   control_name: SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -23,7 +23,7 @@ satisfies:
     implementation_status: In Place
 - control_key: SA-2
   control_name: ALLOCATION OF RESOURCES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -52,7 +52,7 @@ satisfies:
     implementation_status: In Place
 - control_key: SA-3
   control_name: SYSTEM DEVELOPMENT LIFE CYCLE
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -67,7 +67,7 @@ satisfies:
     implementation_status: In Place
 - control_key: SA-4
   control_name: ACQUISITIONS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -90,7 +90,7 @@ satisfies:
     implementation_status: Partially in Place
 - control_key: SA-4 (10)
   control_name: USE OF APPROVED PIV PRODUCTS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -106,7 +106,7 @@ satisfies:
     implementation_status: Not Applicable
 - control_key: SA-5
   control_name: INFORMATION SYSTEM DOCUMENTATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -123,7 +123,7 @@ satisfies:
     implementation_status: In Place
 - control_key: SA-9
   control_name: EXTERNAL INFORMATION SYSTEM SERVICES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:

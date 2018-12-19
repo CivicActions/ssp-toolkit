@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: IA-2
   control_name: IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS)
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -18,7 +18,7 @@ satisfies:
     implementation_status: In Place
 - control_key: IA-4
   control_name: IDENTIFIER MANAGEMENT
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -48,7 +48,7 @@ satisfies:
     implementation_status: Partially in Place
 - control_key: IA-5
   control_name: AUTHENTICATOR MANAGEMENT
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -114,7 +114,7 @@ satisfies:
     implementation_status: Not Applicable
 - control_key: IA-5 (1)
   control_name: PASSWORD-BASED AUTHENTICATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -159,7 +159,7 @@ satisfies:
     implementation_status: Partially in Place
 - control_key: IA-6
   control_name: AUTHENTICATOR FEEDBACK
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: System Specific Control
   narrative:
@@ -171,7 +171,7 @@ satisfies:
     implementation_status: In Place
 - control_key: IA-7
   control_name: CRYPTOGRAPHIC MODULE AUTHENTICATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: System Specific Control
   narrative:

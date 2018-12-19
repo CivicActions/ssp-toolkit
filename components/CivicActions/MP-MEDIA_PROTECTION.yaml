@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: MP-1
   control_name: MEDIA PROTECTION POLICY AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:

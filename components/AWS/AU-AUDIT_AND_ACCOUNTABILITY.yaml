@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: AU-1
   control_name: AUDIT AND ACCOUNTABILITY POLICY AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -12,7 +12,7 @@ satisfies:
     implementation_status: In Place
 - control_key: AU-2
   control_name: AUDITABLE EVENTS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -21,7 +21,7 @@ satisfies:
     implementation_status: In Place
 - control_key: AU-3
   control_name: CONTENT OF AUDIT RECORDS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -30,7 +30,7 @@ satisfies:
     implementation_status: In Place
 - control_key: AU-4
   control_name: AUDIT STORAGE CAPACITY
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
@@ -40,7 +40,7 @@ satisfies:
     implementation_status: In Place
 - control_key: AU-5
   control_name: RESPONSE TO AUDIT PROCESSING FAILURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -54,7 +54,7 @@ satisfies:
     implementation_status: In Place
 - control_key: AU-6
   control_name: AUDIT REVIEW, ANALYSIS, AND REPORTING
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -63,7 +63,7 @@ satisfies:
     implementation_status: Planned
 - control_key: AU-8
   control_name: TIME STAMPS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
@@ -72,7 +72,7 @@ satisfies:
     implementation_status: In Place
 - control_key: AU-9
   control_name: PROTECTION OF AUDIT INFORMATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
@@ -81,7 +81,7 @@ satisfies:
     implementation_status: Planned
 - control_key: AU-11
   control_name: AUDIT RECORD RETENTION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
@@ -90,7 +90,7 @@ satisfies:
     implementation_status: In Place
 - control_key: AU-12
   control_name: AUDIT GENERATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:

@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: AC-1
   control_name: ACCESS CONTROL POLICY AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Partially Inheritable
   narrative:
@@ -12,7 +12,7 @@ satisfies:
     implementation_status: In Place
 - control_key: AC-2
   control_name: ACCOUNT MANAGEMENT
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Partially Inheritable
   narrative:
@@ -22,7 +22,7 @@ satisfies:
     implementation_status: In Place
 - control_key: AC-3
   control_name: ACCESS ENFORCEMENT
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -32,7 +32,7 @@ satisfies:
     implementation_status: In Place
 - control_key: AC-6
   control_name: LEAST PRIVILEGE
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -43,7 +43,7 @@ satisfies:
     implementation_status: In Place
 - control_key: AC-7
   control_name: UNSUCCESSFUL LOGIN ATTEMPTS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -54,7 +54,7 @@ satisfies:
     implementation_status: In Place
 - control_key: AC-17
   control_name: REMOTE ACCESS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
@@ -64,7 +64,7 @@ satisfies:
     implementation_status: In Place
 - control_key: AC-18
   control_name: WIRELESS ACCESS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
@@ -74,7 +74,7 @@ satisfies:
     implementation_status: Not Applicable
 - control_key: AC-19
   control_name: ACCESS CONTROL FOR MOBILE DEVICES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
@@ -84,7 +84,7 @@ satisfies:
     implementation_status: In Place
 - control_key: AC-20
   control_name: USE OF EXTERNAL INFORMATION SYSTEMS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:

@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: SC-1
   control_name: SYSTEM AND COMMUNICATIONS PROTECTION POLICY AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -18,7 +18,7 @@ satisfies:
     implementation_status: In Place
 - control_key: SC-5
   control_name: DENIAL OF SERVICE PROTECTION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -34,7 +34,7 @@ satisfies:
     implementation_status: Partially in Place
 - control_key: SC-7
   control_name: BOUNDARY PROTECTION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -48,7 +48,7 @@ satisfies:
     implementation_status: In Place
 - control_key: SC-12
   control_name: CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -62,7 +62,7 @@ satisfies:
     implementation_status: Not Applicable
 - control_key: SC-15
   control_name: COLLABORATIVE COMPUTING DEVICES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:

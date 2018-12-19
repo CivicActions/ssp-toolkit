@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: CA-1
   control_name: SECURITY ASSESSMENT AND AUTHORIZATION POLICIES AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -24,7 +24,7 @@ satisfies:
     OCIO-05.
 - control_key: CA-2
   control_name: SECURITY ASSESSMENTS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -55,7 +55,7 @@ satisfies:
     The LINCS Technology Project will conduct annual security assessments to comply with FISMA and NIST regulations.
 - control_key: CA-5
   control_name: PLAN OF ACTION AND MILESTONES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -68,7 +68,7 @@ satisfies:
     OCIO-05 procedures in managing POA&Ms.
 - control_key: CA-6
   control_name: SECURITY AUTHORIZATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:

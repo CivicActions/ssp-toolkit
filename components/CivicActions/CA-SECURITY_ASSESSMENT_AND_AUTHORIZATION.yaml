@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: CA-1
   control_name: SECURITY ASSESSMENT AND AUTHORIZATION POLICIES AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -18,7 +18,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CA-2
   control_name: SECURITY ASSESSMENTS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -59,7 +59,7 @@ satisfies:
     implementation_status: Planned
 - control_key: CA-3
   control_name: SYSTEM INTERCONNECTIONS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: System Specific Control
   narrative:
@@ -71,7 +71,7 @@ satisfies:
     Control not applicable. CivicActions systems do not have system interconnections.
 - control_key: CA-5
   control_name: PLAN OF ACTION AND MILESTONES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -100,7 +100,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CA-7
   control_name: CONTINUOUS MONITORING
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:

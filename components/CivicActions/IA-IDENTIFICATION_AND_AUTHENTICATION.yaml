@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: IA-1
   control_name: IDENTIFICATION AND AUTHENTICATION POLICY AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -20,7 +20,7 @@ satisfies:
     CivicActions has developed, documented and disseminated to personnel an identification and authentication policy.
 - control_key: IA-2
   control_name: IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS)
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -35,7 +35,7 @@ satisfies:
     features.
 - control_key: IA-3
   control_name: DEVICE IDENTIFICATION AND AUTHENTICATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -46,7 +46,7 @@ satisfies:
     CivicActions systems do not support or allow device-to-device communications.
 - control_key: IA-4
   control_name: IDENTIFIER MANAGEMENT
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -86,7 +86,7 @@ satisfies:
     Access to the system is authorized by the System Owner or Project Manager for each role.
 - control_key: IA-5
   control_name: AUTHENTICATOR MANAGEMENT
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -111,7 +111,7 @@ satisfies:
   summary: CivicActions required to take appropriate password handling measures.
 - control_key: IA-7
   control_name: CRYPTOGRAPHIC MODULE AUTHENTICATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:

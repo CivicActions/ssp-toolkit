@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: CA-1
   control_name: SECURITY ASSESSMENT AND AUTHORIZATION POLICIES AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -12,7 +12,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CA-7
   control_name: CONTINUOUS MONITORING
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -29,7 +29,7 @@ satisfies:
     implementation_status: Partially in Place
 - control_key: CA-9
   control_name: INTERNAL SYSTEM CONNECTIONS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited
   narrative:

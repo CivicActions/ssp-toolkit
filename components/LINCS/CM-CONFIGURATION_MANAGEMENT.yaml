@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: CM-1
   control_name: CONFIGURATION MANAGEMENT POLICY AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -23,7 +23,7 @@ satisfies:
     Configuration management policy and procedures documented in the LINCS Technology Project Configuration Management Plan
 - control_key: CM-2
   control_name: BASELINE CONFIGURATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -42,7 +42,7 @@ satisfies:
     Project CMP.
 - control_key: CM-4
   control_name: SECURITY IMPACT ANALYSIS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -60,7 +60,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-6
   control_name: CONFIGURATION SETTINGS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -97,7 +97,7 @@ satisfies:
     implementation_status: Partially in Place
 - control_key: CM-7
   control_name: LEAST FUNCTIONALITY
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -114,7 +114,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-9
   control_name: CONFIGURATION MANAGEMENT PLAN
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:

@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: PS-1
   control_name: PERSONNEL SECURITY POLICY AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -19,7 +19,7 @@ satisfies:
     implementation_status: In Place
 - control_key: PS-2
   control_name: POSITION RISK DESIGNATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -50,7 +50,7 @@ satisfies:
     implementation_status: In Place
 - control_key: PS-3
   control_name: PERSONNEL SCREENING
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -67,7 +67,7 @@ satisfies:
     implementation_status: In Place
 - control_key: PS-4
   control_name: PERSONNEL TERMINATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -90,7 +90,7 @@ satisfies:
     implementation_status: In Place
 - control_key: PS-5
   control_name: PERSONNEL TRANSFER
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -113,7 +113,7 @@ satisfies:
     implementation_status: In Place
 - control_key: PS-6
   control_name: ACCESS AGREEMENTS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -126,7 +126,7 @@ satisfies:
     implementation_status: In Place
 - control_key: PS-7
   control_name: THIRD-PARTY PERSONNEL SECURITY
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -138,7 +138,7 @@ satisfies:
     implementation_status: In Place
 - control_key: PS-8
   control_name: PERSONNEL SANCTIONS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:

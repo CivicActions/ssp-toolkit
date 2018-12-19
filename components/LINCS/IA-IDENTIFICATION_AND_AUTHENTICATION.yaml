@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: IA-1
   control_name: IDENTIFICATION AND AUTHENTICATION POLICY AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -22,7 +22,7 @@ satisfies:
     implementation_status: In Place
 - control_key: IA-2
   control_name: IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS)
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -36,7 +36,7 @@ satisfies:
     implementation_status: In Place
 - control_key: IA-2 (1)
   control_name: NETWORK ACCESS TO PRIVILEGED ACCOUNTS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -51,7 +51,7 @@ satisfies:
     implementation_status: Not Applicable
 - control_key: IA-2 (12)
   control_name: ACCEPTANCE OF PIV CREDENTIALS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -62,7 +62,7 @@ satisfies:
     implementation_status: Not Applicable
 - control_key: IA-5
   control_name: AUTHENTICATOR MANAGEMENT
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -137,7 +137,7 @@ satisfies:
     implementation_status: Partially in Place
 - control_key: IA-5 (1)
   control_name: PASSWORD-BASED AUTHENTICATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -148,7 +148,7 @@ satisfies:
     implementation_status: Partially in Place
 - control_key: IA-5 (11)
   control_name: HARDWARE TOKEN-BASED AUTHENTICATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: System Specific Control
   narrative:
@@ -157,7 +157,7 @@ satisfies:
     implementation_status: Not Applicable
 - control_key: IA-8
   control_name: IDENTIFICATION AND AUTHENTICATION (NON-ORGANIZATIONAL USERS)
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -171,7 +171,7 @@ satisfies:
     implementation_status: In Place
 - control_key: IA-8 (1)
   control_name: ACCEPTANCE OF PIV CREDENTIALS FROM OTHER AGENCIES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -180,7 +180,7 @@ satisfies:
     implementation_status: Not Applicable
 - control_key: IA-8 (2)
   control_name: ACCEPTANCE OF THIRD-PARTY CREDENTIALS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -189,7 +189,7 @@ satisfies:
     implementation_status: Not Applicable
 - control_key: IA-8 (3)
   control_name: USE OF FICAM-APPROVED PRODUCTS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -198,7 +198,7 @@ satisfies:
     implementation_status: Not Applicable
 - control_key: IA-8 (4)
   control_name: USE OF FICAM-ISSUED PROFILES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:

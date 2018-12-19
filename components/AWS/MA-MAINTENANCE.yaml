@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: MA-1
   control_name: SYSTEM MAINTENANCE POLICY AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   summary: Partially inherited from AWS (FedRAMP).
@@ -13,7 +13,7 @@ satisfies:
     implementation_status: In Place
 - control_key: MA-2
   control_name: CONTROLLED MAINTENANCE
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   summary: Partially inherited from AWS (FedRAMP).
@@ -24,7 +24,7 @@ satisfies:
     implementation_status: In Place
 - control_key: MA-4
   control_name: NON-LOCAL MAINTENANCE
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   summary: Partially inherited from AWS (FedRAMP).
@@ -35,7 +35,7 @@ satisfies:
     implementation_status: In Place
 - control_key: MA-5
   control_name: MAINTENANCE PERSONNEL
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   summary: Partially inherited from AWS (FedRAMP).

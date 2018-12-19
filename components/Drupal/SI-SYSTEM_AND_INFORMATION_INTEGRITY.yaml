@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: SI-2
   control_name: FLAW REMEDIATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -12,7 +12,7 @@ satisfies:
     implementation_status: In Place
 - control_key: SI-5
   control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -21,7 +21,7 @@ satisfies:
     implementation_status: In Place
 - control_key: SI-10
   control_name: INFORMATION INPUT VALIDATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: System Specific Control
   narrative:
@@ -30,7 +30,7 @@ satisfies:
     implementation_status: In Place
 - control_key: SI-11
   control_name: ERROR HANDLING
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:

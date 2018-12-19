@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: MP-1
   control_name: MEDIA PROTECTION POLICY AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   summary: Fully inherited from AWS (FedRAMP).
@@ -15,7 +15,7 @@ satisfies:
     implementation_status: In Place
 - control_key: MP-2
   control_name: MEDIA ACCESS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   summary: Fully inherited from AWS (FedRAMP).
@@ -27,7 +27,7 @@ satisfies:
     implementation_status: In Place
 - control_key: MP-6
   control_name: MEDIA SANITIZATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   summary: Fully inherited from AWS (FedRAMP).
@@ -39,7 +39,7 @@ satisfies:
     implementation_status: In Place
 - control_key: MP-7
   control_name: MEDIA USE
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   summary: Fully inherited from AWS (FedRAMP).

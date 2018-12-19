@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: CP-1
   control_name: CONTINGENCY PLANNING POLICY AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -13,7 +13,7 @@ satisfies:
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: CP-2
   control_name: CONTINGENCY PLAN
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -25,7 +25,7 @@ satisfies:
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: CP-3
   control_name: CONTINGENCY TRAINING
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -37,7 +37,7 @@ satisfies:
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: CP-4
   control_name: CONTINGENCY PLAN TESTING
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -49,7 +49,7 @@ satisfies:
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: CP-6
   control_name: ALTERNATE STORAGE SITE
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
@@ -61,7 +61,7 @@ satisfies:
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: CP-6 (1)
   control_name: SEPARATION FROM PRIMARY SITE
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
@@ -73,7 +73,7 @@ satisfies:
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: CP-9
   control_name: INFORMATION SYSTEM BACKUP
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -98,7 +98,7 @@ satisfies:
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: CP-10
   control_name: INFORMATION SYSTEM RECOVERY AND RECONSTITUTION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:

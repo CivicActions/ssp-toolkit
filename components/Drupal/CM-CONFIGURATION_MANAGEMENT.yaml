@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: CM-2
   control_name: BASELINE CONFIGURATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -25,7 +25,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-2 (1)
   control_name: REVIEWS AND UPDATES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -49,7 +49,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-2 (2)
   control_name: AUTOMATION SUPPORT FOR ACCURACY / CURRENCY
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -69,7 +69,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-2 (3)
   control_name: RETENTION OF PREVIOUS CONFIGURATIONS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -83,7 +83,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-5 (1)
   control_name: AUTOMATED ACCESS ENFORCEMENT / AUDITING
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -101,7 +101,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-5 (5)
   control_name: LIMIT PRODUCTION / OPERATIONAL PRIVILEGES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -113,7 +113,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-6
   control_name: CONFIGURATION SETTINGS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -124,7 +124,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-8
   control_name: INFORMATION SYSTEM COMPONENT INVENTORY
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -150,7 +150,7 @@ satisfies:
     git source code repository.
 - control_key: CM-10
   control_name: SOFTWARE USAGE RESTRICTIONS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:

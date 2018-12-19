@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: AC-1
   control_name: ACCESS CONTROL POLICY AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -23,7 +23,7 @@ satisfies:
     implementation_status: In Place
 - control_key: AC-2
   control_name: ACCOUNT MANAGEMENT
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -85,7 +85,7 @@ satisfies:
     implementation_status: In Place
 - control_key: AC-3
   control_name: ACCESS ENFORCEMENT
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -101,7 +101,7 @@ satisfies:
   summary: LINCS ensures access authorizations enforced in accordance with user definitions.
 - control_key: AC-6
   control_name: LEAST PRIVILEGE
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -112,7 +112,7 @@ satisfies:
     implementation_status: In Place
 - control_key: AC-7
   control_name: UNSUCCESSFUL LOGIN ATTEMPTS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -126,7 +126,7 @@ satisfies:
     login attempts.
 - control_key: AC-8
   control_name: SYSTEM USE NOTIFICATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -172,7 +172,7 @@ satisfies:
     banner.
 - control_key: AC-14
   control_name: PERMITTED ACTIONS WITHOUT IDENTIFICATION OR AUTHENTICATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: System Specific Control
   narrative:
@@ -187,7 +187,7 @@ satisfies:
     require identification and authentication to log in.
 - control_key: AC-17
   control_name: REMOTE ACCESS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
@@ -204,7 +204,7 @@ satisfies:
     to support operational needs.
 - control_key: AC-22
   control_name: PUBLICLY ACCESSIBLE CONTENT
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: System Specific Control
   narrative:

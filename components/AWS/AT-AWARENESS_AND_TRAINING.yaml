@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: AT-1
   control_name: SECURITY AWARENESS AND TRAINING POLICY AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -13,7 +13,7 @@ satisfies:
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: AT-2
   control_name: SECURITY AWARENESS TRAINING
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -23,7 +23,7 @@ satisfies:
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: AT-3
   control_name: ROLE-BASED SECURITY TRAINING
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -33,7 +33,7 @@ satisfies:
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: AT-4
   control_name: SECURITY TRAINING RECORDS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:

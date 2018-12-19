@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: SC-1
   control_name: SYSTEM AND COMMUNICATIONS PROTECTION POLICY AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -18,7 +18,7 @@ satisfies:
     implementation_status: In Place
 - control_key: SC-13
   control_name: CRYPTOGRAPHIC PROTECTION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -31,7 +31,7 @@ satisfies:
     implementation_status: Not Applicable
 - control_key: SC-39
   control_name: PROCESS ISOLATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:

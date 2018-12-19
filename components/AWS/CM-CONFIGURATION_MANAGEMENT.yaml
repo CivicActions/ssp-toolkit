@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: CM-1
   control_name: CONFIGURATION MANAGEMENT POLICY AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -12,7 +12,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-2
   control_name: BASELINE CONFIGURATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -25,7 +25,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-5
   control_name: ACCESS RESTRICTIONS FOR CHANGE
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -37,7 +37,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-5 (1)
   control_name: AUTOMATED ACCESS ENFORCEMENT / AUDITING
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -48,7 +48,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-6
   control_name: CONFIGURATION SETTINGS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -58,7 +58,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-7
   control_name: LEAST FUNCTIONALITY
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -68,7 +68,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-8
   control_name: INFORMATION SYSTEM COMPONENT INVENTORY
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -79,7 +79,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-8 (1)
   control_name: UPDATES DURING INSTALLATIONS / REMOVALS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -93,7 +93,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-10
   control_name: SOFTWARE USAGE RESTRICTIONS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -104,7 +104,7 @@ satisfies:
     implementation_status: In Place
 - control_key: CM-11
   control_name: USER-INSTALLED SOFTWARE
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:

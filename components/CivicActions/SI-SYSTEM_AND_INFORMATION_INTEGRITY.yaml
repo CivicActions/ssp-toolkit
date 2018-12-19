@@ -3,7 +3,7 @@ documentation_complete: false
 satisfies:
 - control_key: SI-1
   control_name: SYSTEM AND INFORMATION INTEGRITY POLICY AND PROCEDURES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -18,7 +18,7 @@ satisfies:
     implementation_status: In Place
 - control_key: SI-2
   control_name: FLAW REMEDIATION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -70,7 +70,7 @@ satisfies:
     implementation_status: In Place
 - control_key: SI-2(2)
   control_name: AUTOMATED FLAW REMEDIATION STATUS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -84,7 +84,7 @@ satisfies:
     implementation_status: In Place
 - control_key: SI-3
   control_name: MALICIOUS CODE PROTECTION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -117,7 +117,7 @@ satisfies:
     implementation_status: Partially in Place
 - control_key: SI-4
   control_name: INFORMATION SYSTEM MONITORING
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -171,7 +171,7 @@ satisfies:
     implementation_status: In Place
 - control_key: SI-5
   control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -201,7 +201,7 @@ satisfies:
     implementation_status: In Place
 - control_key: SI-7
   control_name: SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -219,7 +219,7 @@ satisfies:
     implementation_status: In Place
 - control_key: SI-7 (1)
   control_name: INTEGRITY CHECKS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -229,7 +229,7 @@ satisfies:
     implementation_status: Partially in Place
 - control_key: SI-7 (5)
   control_name: AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -240,7 +240,7 @@ satisfies:
     implementation_status: In Place
 - control_key: SI-7 (7)
   control_name: INTEGRATION OF DETECTION AND RESPONSE
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
@@ -253,7 +253,7 @@ satisfies:
     implementation_status: Partially in Place
 - control_key: SI-12
   control_name: INFORMATION OUTPUT HANDLING AND RETENTION
-  standard_key: nist-sp-800-53-rev4
+  standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
