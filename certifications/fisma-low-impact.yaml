@@ -8,7 +8,7 @@
 name: FISMA Low Impact
 standards:
 
-  NIST-800-53:
+  NIST SP 800-53 Revision 4:
     AC-1: {}
     AC-2: {}
     AC-3: {}

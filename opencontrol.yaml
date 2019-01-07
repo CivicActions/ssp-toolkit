@@ -12,3 +12,5 @@ components:
   - ./components/LINCS
 standards:
   - ./standards
+certifications:
+  - ./certifications/LINCS-fisma-low-impact.yaml
