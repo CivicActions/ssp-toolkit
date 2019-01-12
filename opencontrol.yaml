@@ -11,6 +11,6 @@ components:
   - ./components/Drupal
   - ./components/LINCS
 standards:
-  - ./standards
+  - ./standards/nist-sp-800-53-rev4.yaml
 certifications:
   - ./certifications/LINCS-fisma-low-impact.yaml
