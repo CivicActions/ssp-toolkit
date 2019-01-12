@@ -63,7 +63,7 @@ component_order = { component: i for i, component in enumerate(component_names) 
 # Store all the controls from NIST 800-53 rev4 standard
 # TODO: Shocked, shocked I am to see hardcoding a path and file.
 standard_controls_dir = "standards"
-standard_file = "nist-800-53-rev4.yaml"
+standard_file = "nist-sp-800-53-rev4.yaml"
 
 # Read in all the controls
 with open(os.path.join(standard_controls_dir, standard_file)) as f:
