@@ -1,0 +1,337 @@
+# AP
+family: AUTHORITY AND PURPOSE
+documentation_complete: false
+satisfies:
+- control_key: AP-1
+  control_name: AUTHORITY TO COLLECT
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      Under Title II of the Workforce Innovation and Opportunity Act (WIOA; PL 113-128),
+      Section 242, OCTAE carries out a program of national leadership activities to
+      enhance the quality and outcomes of adult education and literacy activities and
+      programs nationwide. OCTAE uses these funds to provide technical assistance and
+      professional development to programs and contribute to research and evaluations of
+      adult education programs and activities.
+    implementation_status: In Place
+- control_key: AP-2
+  control_name: PURPOSE SPECIFICATION
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect PII other than that covered by the "Roladex exception".
+      Anonymous access is possible, but courses and community participation require an
+      account for which these fields are required:
+
+      * Email address -  used for identification.
+
+      * First name, last name - used for addressing a logged in user.
+
+      Any additional information is entered by the user at will as part of coursework or
+      to enhance community participation in forums.
+    implementation_status: In Place
+
+
+# AR
+family: ACCOUNTABILITY, AUDIT, AND RISK MANAGEMENT
+documentation_complete: false
+satisfies:
+- control_key: AR-1
+  control_name: GOVERNANCE AND PRIVACY PROGRAM
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+- control_key: AR-2
+  control_name: PRIVACY IMPACT AND RISK ASSESSMENT
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+- control_key: AR-3
+  control_name: PRIVACY REQUIREMENTS FOR CONTRACTORS AND SERVICE PROVIDERS
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+- control_key: AR-4
+  control_name: PRIVACY MONITORING AND AUDITING
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+- control_key: AR-5
+  control_name: PRIVACY AWARENESS AND TRAINING
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+- control_key: AR-6
+  control_name: PRIVACY REPORTING
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+- control_key: AR-7
+  control_name: PRIVACY-ENHANCED SYSTEM DESIGN AND DEVELOPMENT
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+- control_key: AR-8
+  control_name: ACCOUNTING OF DISCLOSURES
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+
+
+# DI
+family: DATA QUALITY AND INTEGRITY
+documentation_complete: false
+satisfies:
+- control_key: DI-1
+  control_name: DATA QUALITY
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly. Users enter and have full access to
+      update or delete any information they input.
+    implementation_status: Not Applicable
+- control_key: DI-2
+  control_name: DATA INTEGRITY AND DATA INTEGRITY BOARD
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly. Users enter and have full access to
+      update or delete any information they input.
+    implementation_status: Not Applicable
+
+
+# DM
+family: DATA MINIMIZATION AND RETENTION
+documentation_complete: false
+satisfies:
+- control_key: DM-1
+  control_name: MINIMIZATION OF PERSONALLY IDENTIFIABLE INFORMATION
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly. The data collected (email address, first
+      and last name) is demonstrably a minimum.
+    implementation_status: Not Applicable
+- control_key: DM-2
+  control_name: DATA RETENTION AND DISPOSAL
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+- control_key: DM-3
+  control_name: MINIMIZATION OF PII USED IN TESTING, TRAINING, AND RESEARCH
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+
+
+# IP
+family: INDIVIDUAL PARTICIPATION AND REDRESS
+documentation_complete: false
+satisfies:
+- control_key: IP-1
+  control_name: CONSENT
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly. Users enter and have full access to
+      update or delete any information they input.
+    implementation_status: Not Applicable
+- control_key: IP-2
+  control_name: INDIVIDUAL ACCESS
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly. Users enter and have full access to
+      update or delete any information they input.
+    implementation_status: Not Applicable
+- control_key: IP-3
+  control_name: REDRESS
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly. Users enter and have full access to
+      update or delete any information they input.
+    implementation_status: Not Applicable
+- control_key: IP-4
+  control_name: COMPLAINT MANAGEMENT
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly. Users enter and have full access to
+      update or delete any information they input.
+    implementation_status: Not Applicable
+
+
+# SE
+family: SECURITY
+documentation_complete: false
+satisfies:
+- control_key: SE-1
+  control_name: INVENTORY OF PERSONALLY IDENTIFIABLE INFORMATION
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+- control_key: SE-2
+  control_name: PRIVACY INCIDENT RESPONSE
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+
+# TR
+family: TRANSPARENCY
+documentation_complete: false
+satisfies:
+- control_key: TR-1
+  control_name: PRIVACY NOTICE
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS publishes a privacy policy in the footer of every  page. Further, upon login,
+      the user must accept a detailed Terms and Conditions of Use.
+    implementation_status: In Place
+- control_key: TR-2
+  control_name: SYSTEM OF RECORDS NOTICES AND PRIVACY ACT STATEMENTS
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not publish a SORN.
+    implementation_status: In Place
+- control_key: TR-3
+  control_name: DISSEMINATION OF PRIVACY PROGRAM INFORMATION
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS publishes a privacy policy in the footer of every page. Further, upon login,
+      the user must accept a detailed Terms and Conditions of Use.
+    implementation_status: In Place
+
+# UL
+family: USE LIMITATION
+documentation_complete: false
+satisfies:
+- control_key: UL-1
+  control_name: INTERNAL USE
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      The information is collected on the LINCS Community is for identification and
+      authentication purposes, allowing individuals to:
+
+      * Identify themselves to the system
+
+      * Authenticate with the system to prove that they are the same person when they
+      return
+
+      * Enable emailed password reset
+
+      * Access control (e.g. updating notification settings, following a moderation of a
+      discussion, etc.)
+
+      * Carry out actions that impact that individual (e.g. joining a course or signing up
+      for a mailing list subscription)
+
+      * Publish information to make it available to others (e.g. forum posting, comment on
+      publications of learning resources, etc.)
+    implementation_status: In Place
+- control_key: UL-2
+  control_name: INFORMATION SHARING WITH THIRD PARTIES
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not share any collected information with any third parties.
+    implementation_status: In Place
