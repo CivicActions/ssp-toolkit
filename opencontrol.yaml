@@ -1,5 +1,5 @@
 schema_version: "1.0.0"
-name: LINCS
+name: LINCS2
 metadata:
   description: LINCS SSP by Civic Actions.
   organization:
