@@ -1,7 +1,35 @@
 name: NIST SP 800-53 Revision 4 Privacy
 source: https://github.com/opencontrol/standards/blob/master/nist-800-53-rev4-privacy.yaml
 license: ~
+# this block is not conformant with OpenControl but provides
+# the names of control families
+AP:
+  type: family
+  name: Authority and Purpose
+AR:
+  type: family
+  name: Accountability, Audit, and Risk Management
+DI:
+  type: family
+  name: Data Quality and Integrity
+DM:
+  type: family
+  name: Data Minimization and Retention
+IP:
+  type: family
+  name: Individual Participation and Redress
+SE:
+  type: family
+  name: Security
+TR:
+  type: family
+  name: Transparency
+UL:
+  type: family
+  name: Use Limitation
+
 AR-1:
+  family: AR
   name: GOVERNANCE AND PRIVACY PROGRAM
   description: |-
     "The organization:
@@ -56,6 +84,7 @@ AR-1:
     § 3541; OMB Memoranda 03-22, 05-08, 07-16; OMB Circular A-130; Federal Enterprise
     Architecture Security and Privacy Profile.
 AR-2:
+  family: AR
   name: PRIVACY IMPACT AND RISK ASSESSMENT
   description: |-
     "The organization:
@@ -102,6 +131,7 @@ AR-2:
     Management Act (FISMA) of 2002, 44 U.S.C. § 3541; OMB Memoranda 03-22, 05-08,
     10-23.
 AR-3:
+  family: AR
   name: PRIVACY REQUIREMENTS FOR CONTRACTORS AND SERVICE PROVIDERS
   description: |-
     "The organization:
@@ -123,6 +153,7 @@ AR-3:
     The Privacy Act of 1974, 5 U.S.C. § 552a(m); Federal Acquisition Regulation, 48
     C.F.R. Part 24; OMB Circular A-130.
 AR-4:
+  family: AR
   name: PRIVACY MONITORING AND AUDITING
   description: >-
     "The organization monitors and audits privacy controls and internal privacy policy
@@ -172,6 +203,7 @@ AR-4:
 
     OMB Memoranda 03-22, 05-08, 06-16, 07-16; OMB Circular A-130.
 AR-5:
+  family: AR
   name: PRIVACY AWARENESS AND TRAINING
   description: |-
     "The organization:
@@ -223,6 +255,7 @@ AR-5:
     The Privacy Act of 1974, 5 U.S.C. § 552a(e); Section 208, E-Government Act of 2002
     (P.L. 107-347); OMB Memoranda 03-22, 07-16.
 AR-6:
+  family: AR
   name: PRIVACY REPORTING
   description: |-
     The organization develops, disseminates, and updates reports to the Office of
@@ -268,6 +301,7 @@ AR-6:
 
     OMB Memoranda 03-22; OMB Circular A-130.
 AR-7:
+  family: AR
   name: PRIVACY-ENHANCED SYSTEM DESIGN AND DEVELOPMENT
   description: Control:The organization designs information systems to support privacy
     by automating privacy controls.
@@ -290,6 +324,7 @@ AR-7:
     The Privacy Act of 1974, 5 U.S.C. § 552a(e)(10); Sections 208(b) and(c), E-
          Government Act of 2002 (P.L. 107-347); OMB Memorandum 03-22.
 AR-8:
+  family: AR
   name: ACCOUNTING OF DISCLOSURES
   description: |-
     "The organization:
@@ -323,6 +358,7 @@ AR-8:
          individuals. Related control: IP-2.
   references: The Privacy Act of 1974, 5 U.S.C. § 552a (c)(1), (c)(3), (j), (k).
 DI-1:
+  family: DI
   name: DATA QUALITY
   description: |-
     "The organization:
@@ -369,11 +405,13 @@ DI-1:
 
     Federal Agencies (October 2001); OMB Memorandum 07-16.
 DI-1 (1):
+  family: DI
   name: DATA QUALITY | VALIDATE PII
   description: |-
     The organization requests that the individual or individual’s authorized representative validate PII
      during the collection process.
 DI-1 (2):
+  family: DI
   name: DATA QUALITY | RE-VALIDATE PII
   description: >-
     The organization requests that the individual or individual’s authorized representative
@@ -381,6 +419,7 @@ DI-1 (2):
 
     that PII collected is still accurate [Assignment: organization-defined frequency].
 DI-2:
+  family: DI
   name: DATA INTEGRITY AND DATA INTEGRITY BOARD
   description: |-
     "The organization:
@@ -407,6 +446,7 @@ DI-2:
     The Privacy Act of 1974, 5 U.S.C. §§ 552a (a)(8)(A), (o), (p), (u); OMB Circular A-
     130, Appendix I.
 DI-2 (1):
+  family: DI
   name: DATA INTEGRITY AND DATA INTEGRITY BOARD | PUBLISH AGREEMENTS ON WEBSITE
   description: The organization publishes Computer Matching Agreements on its public
     website.
@@ -414,6 +454,7 @@ DI-2 (1):
     The Privacy Act of 1974, 5 U.S.C. §§ 552a (a)(8)(A), (o), (p), (u); OMB Circular A-
     130, Appendix I.
 DM-1:
+  family: DM
   name: MINIMIZATION OF PERSONALLY IDENTIFIABLE INFORMATION
   description: |-
     "The organization:
@@ -461,6 +502,7 @@ DM-1:
     The Privacy Act of 1974, 5 U.S.C. §552a (e); Section 208(b), E-Government Act of
     2002 (P.L. 107-347); OMB Memoranda 03-22, 07-16.
 DM-1 (1):
+  family: DM
   name: MINIMIZATION OF PERSONALLY IDENTIFIABLE INFORMATION | LOCATE / REMOVE / REDACT
     / ANONYMIZE PII
   description: >-
@@ -478,6 +520,7 @@ DM-1 (1):
     The Privacy Act of 1974, 5 U.S.C. §552a (e); Section 208(b), E-Government Act of
     2002 (P.L. 107-347); OMB Memoranda 03-22, 07-16.
 DM-2:
+  family: DM
   name: DATA RETENTION AND DISPOSAL
   description: "\"The organization:\n     a. Retains each collection of personally\
     \ identifiable information (PII)\n        for [Assignment: organization-defined\
@@ -508,6 +551,7 @@ DM-2:
   related controls: AR-4, AU-11, DM-1, MP-1, MP-2, MP-3, MP-4, MP-5, MP-6, MP-7, MP-8,
     SI-12, TR-1.
 DM-2 (1):
+  family: DM
   name: DATA RETENTION AND DISPOSAL | SYSTEM CONFIGURATION
   description: >-
     The organization, where feasible, configures its information systems to
@@ -520,6 +564,7 @@ DM-2 (1):
     (e), E-Government Act of 2002 (P.L. 107-347); 44 U.S.C. Chapters 29, 31, 33; OMB
     Memorandum 07-16; OMB Circular A-130; NIST Special Publication 800-88.
 DM-3:
+  family: DM
   name: MINIMIZATION OF PII USED IN TESTING, TRAINING, AND RESEARCH
   description: |-
     "The organization:
@@ -540,6 +585,7 @@ DM-3:
     in testing, training, and
          research is compatible with the original purpose for which it was collected.
 DM-3 (1):
+  family: DM
   name: MINIMIZATION OF PII USED IN TESTING, TRAINING, AND RESEARCH | RISK MINIMIZATION
     TECHNIQUES
   description: The organization, where feasible, uses techniques to minimize the risk
@@ -548,6 +594,7 @@ DM-3 (1):
     techniques such as de-identification.
   references: NIST Special Publication 800-122.
 IP-1:
+  family: IP
   name: CONSENT
   description: |-
     "The organization:
@@ -577,6 +624,7 @@ IP-1:
         with individual choices.
   related controls: AC-2, AP-1, TR-1, TR-2.
 IP -1 (1):
+  family: IP
   name: CONSENT | MECHANISMS SUPPORTING ITEMIZED OR TIERED CONSENT
   description: The organization implements mechanisms to support itemized or tiered
     consent for specific uses of data.
@@ -584,6 +632,7 @@ IP -1 (1):
     The Privacy Act of 1974, 5 U.S.C. § 552a (b), (e)(3); Section 208(c), E-Government
     Act of 2002 (P.L. 107-347); OMB Memoranda 03-22, 10-22.
 IP-2:
+  family: IP
   name: INDIVIDUAL ACCESS
   description: |-
     "The organization:
@@ -611,6 +660,7 @@ IP-2:
          AR-8, IP-3, TR-1, TR-2. References:The Privacy Act of 1974, 5 U.S.C. §§ 552a (c)(3),
     (d)(5), (e) (4); (j), (k), (t); OMB Circular A-130.
 IP-3:
+  family: IP
   name: REDRESS
   description: '"The organization: a.   Provides a process for individuals to have
     inaccurate personally identifiable information (PII) maintained by the organization
@@ -659,6 +709,7 @@ IP-3:
   related controls: IP-2, TR-1, TR-2, UL-2.
   references: The Privacy Act of 1974, 5 U.S.C. § 552a (d), (c)(4); OMB Circular A-130.
 IP-4:
+  family: IP
   name: COMPLAINT MANAGEMENT
   description: >-
     "The organization implements a process for receiving and responding to complaints,
@@ -676,12 +727,14 @@ IP-4:
     \ in a timely\n     manner. "
   related controls: AR-6, IP-3.
 IP-4 (1):
+  family: IP
   name: COMPLAINT MANAGEMENT | RESPONSE TIMES
   description: |-
     The organization responds to complaints, concerns, or questions from individuals within
     [Assignment: organization-defined time period].
   references: OMB Circular A-130; OMB Memoranda 07-16, 08-09.
 SE-1:
+  family: SE
   name: INVENTORY OF PERSONALLY IDENTIFIABLE INFORMATION
   description: |-
     "The organization:
@@ -718,6 +771,7 @@ SE-1:
     I; FIPS
          Publication 199; NIST Special Publications 800-37, 800-122.
 SE-2:
+  family: SE
   name: PRIVACY INCIDENT RESPONSE
   description: |-
     "The organization:
@@ -753,6 +807,7 @@ SE-2:
          Security Management Act (FISMA) of 2002, 44 U.S.C. § 3541; OMB Memoranda 06-19, 07-16;
          NIST Special Publication 800-37.
 TR-1:
+  family: TR
   name: PRIVACY NOTICE
   description: |-
     "The organization:
@@ -806,6 +861,7 @@ TR-1:
     \ and counsel. "
   related controls: AP-1, AP-2, AR-1, AR-2, IP-1, IP-2, IP-3, UL-1, UL-2.
 TR-1 (1):
+  family: TR
   name: PRIVACY NOTICE | REAL-TIME OR LAYERED NOTICE
   description: The organization provides real-time and/or layered notice when it collects
     PII.
@@ -819,6 +875,7 @@ TR-1 (1):
     Government Act of 2002 (P.L. 107-347); OMB Memoranda 03-22, 07-16, 10-22, 10-23; ISE
     Privacy Guidelines.
 TR-2:
+  family: TR
   name: SYSTEM OF RECORDS NOTICES AND PRIVACY ACT STATEMENTS
   description: |-
     "The organization:
@@ -856,10 +913,12 @@ TR-2:
     of PII (for example,
         when conducting telephone interviews or surveys). Related control: DI-2.
 TR-2 (1):
+  family: TR
   name: SYSTEM OF RECORDS NOTICES AND PRIVACY ACT STATEMENTS | PUBLIC WEBSITE PUBLICATION
   description: The organization publishes SORNs on its public website.
   references: The Privacy Act of 1974, 5 U.S.C. § 552a (e)(3); OMB Circular A-130.
 TR-3:
+  family: TR
   name: DISSEMINATION OF PRIVACY PROGRAM INFORMATION
   description: |-
     "The organization:
@@ -884,6 +943,7 @@ TR-3:
     The Privacy Act of 1974, 5 U.S.C. § 552a; Section 208, E-Government Act of 2002
     (P.L. 107-347); OMB Memoranda 03-22, 10-23.
 UL-1:
+  family: UL
   name: INTERNAL USE
   description: >-
     "The organization uses personally identifiable information (PII) internally only
@@ -907,6 +967,7 @@ UL-1:
   related controls: AP-2, AR-2, AR-3, AR-4, AR-5, IP-1, TR-1, TR-2.
   references: The Privacy Act of 1974, 5 U.S.C. § 552a (b)(1).
 UL-2:
+  family: UL
   name: INFORMATION SHARING WITH THIRD PARTIES
   description: |-
     "The organization:
