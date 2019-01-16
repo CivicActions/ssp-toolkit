@@ -1,0 +1,4 @@
+name: Privacy
+schema_version: 3.0.0
+satisfies:
+- appendix_j.yaml
