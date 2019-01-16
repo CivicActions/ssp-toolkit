@@ -2,7 +2,8 @@ Much of this is covered in the PIA (which we should upload to CSAM as an artifac
 
 # AP Authority and Purpose
 - name: AP-1 Authority to Collect
-  narrative: |
+  narrative:
+  - text: |
     Under Title II of the Workforce Innovation and Opportunity Act (WIOA; PL 113-128),
     Section 242, OCTAE carries out a program of national leadership activities to enhance
     the quality and outcomes of adult education and literacy activities and programs
@@ -11,7 +12,8 @@ Much of this is covered in the PIA (which we should upload to CSAM as an artifac
     programs and activities.
     
 - name: AP-2 Purpose Specification
-  narrative: |
+  narrative:
+  - text: |
     LINCS does not collect PII other than that covered by the "Roladex exception".
     Anonymous access is possible, but courses and community participation require an
     account for which these fields are required:
@@ -27,7 +29,8 @@ Much of this is covered in the PIA (which we should upload to CSAM as an artifac
 # AR Accountability, Audit, and Risk Management
 - control_family_name: Accountability, Audit, and Risk Management
   control_family_status: Not Applicable
-  narrative: |
+  narrative:
+  - text: |
     LINCS does not collent or maintain PII and therefore does not directly address the
     controls of the AR family, though it may address the controls indirectly.
 
@@ -35,17 +38,20 @@ Much of this is covered in the PIA (which we should upload to CSAM as an artifac
 # CA Security Assessment and Authorization
 - name: CA-03 System Interconnections
   implementation_status: Not Applicable
-  narrative: (See control implementation in CSAM.)
+  narrative:
+  - text: (See control implementation in CSAM.)
     
 - name: CA-09 Internal System Connections
   implementation_status: Not Applicable
-  narrative: (See control implementation in CSAM.)
+  narrative:
+  - text: (See control implementation in CSAM.)
 
 
 # DI Data Quality and Integrity
 - control_family_name: Accountability, Audit, and Risk Management
   control_family_status: Not Applicable
-  narrative: |
+  narrative:
+  - text: |
     LINCS does not collent or maintain PII and therefore does not directly address the
     controls of the DI family, though it may address the controls indirectly. Users enter
     and have full access to update or delete any information they input.
@@ -53,44 +59,53 @@ Much of this is covered in the PIA (which we should upload to CSAM as an artifac
 # DM Data Minimization and Retention
 - control_family_name: Accountability, Audit, and Risk Management
   control_family_status: Not Applicable
-  narrative: |
+  narrative:
+  - text: |
     LINCS does not collent or maintain PII and therefore does not directly address the
     controls of the DM family, though it may address the controls indirectly. The data
     collected (email address, first and last name) is demonstrably a minimum.
 
 # IA Identification and Authentication
 - name: IA-02(1) Network Access to Privileged Accounts
-  narrative: (See control implementation in CSAM.)
+  narrative:
+  - text: (See control implementation in CSAM.)
 
 - name: IA-02(12) Acceptance of PIV Credentials
   implementation_status: Not Applicable
-  narrative: (See control implementation in CSAM.)
+  narrative:
+  - text: (See control implementation in CSAM.)
 
 - name: IA-05(11) Hardware Token-Based Authentication
   implementation_status: Not Applicable
-  narrative: (See control implementation in CSAM.)
+  narrative:
+  - text: (See control implementation in CSAM.)
 
 - name: IA-08(1) Acceptance of PIV Credentials from Other Agencies
   implementation_status: Not Applicable
-  narrative: (See control implementation in CSAM.)
+  narrative:
+  - text: (See control implementation in CSAM.)
 
 - name: IA-08(2) Acceptance of Third-Party Credentials
   implementation_status: Not Applicable
-  narrative: (See control implementation in CSAM.)
+  narrative:
+  - text: (See control implementation in CSAM.)
 
 - name: IA-08(3) Use of FICAM-Approved Products
   implementation_status: Not Applicable
-  narrative: (See control implementation in CSAM.)
+  narrative:
+  - text: (See control implementation in CSAM.)
 
 - name: IA-08(4) Use of FICAM-Issued Profiles
   implementation_status: Not Applicable
-  narrative: (See control implementation in CSAM.)
+  narrative:
+  - text: (See control implementation in CSAM.)
 
 
 # IP Individual Participation and Redress
 - control_family_name: Accountability, Audit, and Risk Management
   control_family_status: Not Applicable
-  narrative: |
+  narrative:
+  - text: |
     LINCS does not collent or maintain PII and therefore does not directly address the
     controls of the IP family, though it may address the controls indirectly. Users enter
     and have full access to update or delete any information they input.
@@ -98,49 +113,58 @@ Much of this is covered in the PIA (which we should upload to CSAM as an artifac
 
 # PL Planning
 - name: PL-04 Rules of Behavior
-  narrative: (See control implementation in CSAM.)
+  narrative:
+  - text: (See control implementation in CSAM.)
 
 
 # PS Personnel Security
 - name: PS-06 Access Agreements
-  narrative: (See control implementation in CSAM.)
+  narrative:
+  - text: (See control implementation in CSAM.)
 
 - name: PS-07 Third-Party Personnel Security
-  narrative: (See control implementation in CSAM.)
+  narrative:
+  - text: (See control implementation in CSAM.)
 
 
 # SC System and Communications Protection
 - name: SC-12 Cryptographic Key Establishment and Management
   implementation_status: Not Applicable
-  narrative: (See control implementation in CSAM.)
+  narrative:
+  - text: (See control implementation in CSAM.)
     
 
 # SE Security
 - control_family_name: Accountability, Audit, and Risk Management
   control_family_status: Not Applicable
-  narrative: |
+  narrative:
+  - text: |
     LINCS does not collent or maintain PII and therefore does not directly address the
     controls of the SE family, though it may address the controls indirectly.
     
 
 # TR Transparency
 - name: TR-1 Privacy Notice
-  narrative: |
+  narrative:
+  - text: |
     LINCS publishes a privacy policy in the footer of every page. Further, upon login, the
     user must accept a detailed Terms and Conditions of Use.
     
 - name: TR-2 System of Records Notices and Privacy Act Statements
-  narrative: |
+  narrative:
+  - text: |
     LINCS does not collent or maintain PII and therefore does not publish a SORN.
     
 - name: TR-3 Dissemination of Privacy Program Information
-  narrative: |
+  narrative:
+  - text: |
     LINCS publishes a privacy policy in the footer of every page. Further, upon login, the
     user must accept a detailed Terms and Conditions of Use.
 
 # UL Use Limitation
 - name: UL-1 Internal Use
-  narrative: |
+  narrative:
+  - text: |
     The information is collected on the LINCS Community is for identification and
     authentication purposes, allowing individuals to:
       
@@ -161,7 +185,8 @@ Much of this is covered in the PIA (which we should upload to CSAM as an artifac
     
 - name: UL-2 Information Sharing with Third Parties
   implementation_status: Not Applicable
-  narrative: |
+  narrative:
+  - text: |
     LINCS does not share any collected information with any third parties.
 
 ---
@@ -169,66 +194,85 @@ Much of this is covered in the PIA (which we should upload to CSAM as an artifac
 # Not applicable control families
 
 - name: AR-1 Governance and Privacy Program
-  narrative: |
+  narrative:
+  - text: |
     
 - name: AR-2 Privacy Impact and Risk Assessment
-  narrative: |
+  narrative:
+  - text: |
     
 - name: AR-3 Privacy Requirements for Contractors and Service Providers
-  narrative: |
+  narrative:
+  - text: |
     
 - name: AR-4 Privacy Monitoring and Auditing
-  narrative: |
+  narrative:
+  - text: |
     
 - name: AR-5 Privacy Awareness and Training
-  narrative: |
+  narrative:
+  - text: |
     
 - name: AR-6 Privacy Reporting
-  narrative: |
+  narrative:
+  - text: |
     
 - name: AR-7 Privacy-Enhanced System Design and Development
-  narrative: |
+  narrative:
+  - text: |
     
 - name: AR-8 Accounting of Disclosures
-  narrative: |
+  narrative:
+  - text: |
     
 ---
 
 - name: DI-1 Data Quality
-  narrative: |
+  narrative:
+  - text: |
     
 - name: DI-2 Data Integrity and Data Integrity Board
-  narrative: |
+  narrative:
+  - text: |
     
 ---
 
 - name: DM-1 Minimization of Personally Identifiable Information
-  narrative: |
+  narrative:
+  - text: |
     
 - name: DM-2 Data Retention and Disposal
-  narrative: |
+  narrative:
+  - text: |
     
 - name: DM-3 Minimization of PII Used in Testing, Training, and Research
-  narrative: |
+  narrative:
+  - text: |
 
 ---
 
 - name: IP-1 Consent
-  narrative: |
+  narrative:
+  - text: |
     
 - name: IP-2 Individual Access
-  narrative: |
+  narrative:
+  - text: |
     
 - name: IP-3 Redress
-  narrative: |
+  narrative:
+  - text: |
     
 - name: IP-4 Complaint Management
-  narrative: |
+  narrative:
+  - text: |
     
 ---
 
 - name: SE-1 Inventory of Personally Identifiable Information
-  narrative: |
+  narrative:
+  - text: |
     
 - name: SE-2 Privacy Incident Response
-  narrative: |
+  narrative:
+  - text: |
