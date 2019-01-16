@@ -1,4 +1,4 @@
-Much of this is covered in the PIA (which we should upload to CSAM as an artifact).
+# Much of this is covered in the PIA (which we should upload to CSAM as an artifact).
 
 # AP Authority and Purpose
 - name: AP-1 Authority to Collect
@@ -23,7 +23,7 @@ Much of this is covered in the PIA (which we should upload to CSAM as an artifac
     * First name, last name - used for addressing a logged in user.
 
     Any additional information is entered by the user at will as part of coursework or to
-    enhance community participation in forums. Information collected includes:
+    enhance community participation in forums.
 
 
 # AR Accountability, Audit, and Risk Management
