@@ -12,5 +12,6 @@ components:
   - ./components/LINCS
 standards:
   - ./standards/nist-sp-800-53-rev4.yaml
+  - ./standards/NIST-SP-800-53-rev4-privacy.yaml
 certifications:
   - ./certifications/LINCS-fisma-low-impact.yaml
