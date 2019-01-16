@@ -1,5 +1,5 @@
 schema_version: "1.0.0"
-name: LINCS2
+name: LINCS
 metadata:
   description: LINCS SSP by Civic Actions.
   organization:
@@ -10,7 +10,7 @@ components:
   - ./components/CivicActions
   - ./components/Drupal
   - ./components/LINCS
-  - ./components/privacy
+  - ./components/Privacy
 standards:
   - ./standards/nist-sp-800-53-rev4.yaml
   - ./standards/NIST-SP-800-53-rev4-privacy.yaml

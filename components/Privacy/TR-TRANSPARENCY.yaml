@@ -1,0 +1,32 @@
+family: TRANSPARENCY
+documentation_complete: false
+satisfies:
+- control_key: TR-1
+  control_name: PRIVACY NOTICE
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS publishes a privacy policy in the footer of every  page. Further, upon login,
+      the user must accept a detailed Terms and Conditions of Use.
+    implementation_status: In Place
+- control_key: TR-2
+  control_name: SYSTEM OF RECORDS NOTICES AND PRIVACY ACT STATEMENTS
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS does not collect or maintain PII and therefore does not publish a SORN.
+    implementation_status: In Place
+- control_key: TR-3
+  control_name: DISSEMINATION OF PRIVACY PROGRAM INFORMATION
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      LINCS publishes a privacy policy in the footer of every page. Further, upon login,
+      the user must accept a detailed Terms and Conditions of Use.
+    implementation_status: In Place
