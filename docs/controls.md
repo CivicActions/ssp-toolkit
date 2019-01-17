@@ -1,4 +1,4 @@
-# LINCS Controls (compiled: 2019.01.16 at 1838)
+# LINCS Controls (compiled: 2019.01.17 at 1032)
 
 * [AC: Access Control](controls/AC.md#ac-access-control)
    * [AC-1: Access Control Policy And Procedures](controls/AC.md#ac-1-access-control-policy-and-procedures)
@@ -15,9 +15,9 @@
    * [AC-20: Use Of External Information Systems](controls/AC.md#ac-20-use-of-external-information-systems)
    * [AC-22: Publicly Accessible Content](controls/AC.md#ac-22-publicly-accessible-content)
 
-* [AP: AP](controls/AP.md#ap-ap)
-   * [AP-1: AP-1](controls/AP.md#ap-1-ap-1)
-   * [AP-2: AP-2](controls/AP.md#ap-2-ap-2)
+* [AP: Authority and Purpose](controls/AP.md#ap-authority-and-purpose)
+   * [AP-1: AUTHORITY TO COLLECT](controls/AP.md#ap-1-authority-to-collect)
+   * [AP-2: PURPOSE SPECIFICATION](controls/AP.md#ap-2-purpose-specification)
 
 * [AR: Accountability, Audit, and Risk Management](controls/AR.md#ar-accountability-audit-and-risk-management)
    * [AR-1: GOVERNANCE AND PRIVACY PROGRAM](controls/AR.md#ar-1-governance-and-privacy-program)

@@ -2,9 +2,14 @@
 
 # NIST SP 800-53 Revision 4 Privacy
 
-## AP: AP
+## AP: Authority and Purpose
 
-### AP-1: AP-1
+### AP-1: AUTHORITY TO COLLECT
+
+> "The organization determines and documents the legal authority that permits the
+> collection, use, maintenance, and sharing of personally identifiable information
+> (PII), either generally or in support of a specific program or information system
+> need."
 
 ##### Privacy
 
@@ -16,7 +21,10 @@ professional development to programs and contribute to research and evaluations 
 adult education programs and activities.
 
 
-### AP-2: AP-2
+### AP-2: PURPOSE SPECIFICATION
+
+> "The organization describes the purpose(s) for which personally identifiable
+> information (PII) is collected, used, maintained, and shared in its privacy notices."
 
 ##### Privacy
 

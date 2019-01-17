@@ -28,6 +28,49 @@ UL:
   type: family
   name: Use Limitation
 
+AP-1:
+  family: AP
+  name: AUTHORITY TO COLLECT
+  description: |-
+    "The organization determines and documents the legal authority that permits the
+    collection, use, maintenance, and sharing of personally identifiable information
+    (PII), either generally or in support of a specific program or information system
+    need."
+  supplemental_guidance: |-
+    "Before collecting PII, the organization determines whether the contemplated
+    collection of PII is legally authorized. Program officials consult with the Senior
+    Agency Official for Privacy (SAOP)/Chief Privacy Officer (CPO) and legal counsel
+    regarding the authority of any program or activity to collect PII. The authority to
+    collect PII is documented in the System of Records Notice (SORN) and/or Privacy Impact
+    Assessment (PIA) or other applicable documentation such as Privacy Act Statements or
+    Computer Matching Agreements."
+  related_controls: AR-2, DM-1, TR-1, TR-2.
+  control_enhancements: None.
+  references: |
+    The Privacy Act of 1974, 5 U.S.C. § 552a (e); Section 208(c), E-Government Act of 2002
+    (P.L. 107-347); OMB Circular A-130, Appendix I.
+AP-2:
+  family: AP
+  name: PURPOSE SPECIFICATION
+  description: |-
+    "The organization describes the purpose(s) for which personally identifiable
+    information (PII) is collected, used, maintained, and shared in its privacy notices."
+  supplemental_guidance: |-
+    "Often, statutory language expressly authorizes specific collections and uses of
+    PII. When statutory language is written broadly and thus subject to interpretation,
+    organizations ensure, in consultation with the Senior Agency Official for Privacy
+    (SAOP)/Chief Privacy Officer (CPO) and legal counsel, that there is a close nexus
+    between the general authorization and any specific collection of PII. Once the
+    specific purposes have been identified, the purposes are clearly described in the
+    related privacy compliance documentation, including but not limited to Privacy Impact
+    Assessments (PIAs), System of Records Notices (SORNs), and Privacy Act Statements
+    provided at the time of collection (e.g., on forms organizations use to collect
+    PII). Further, in order to avoid unauthorized collections or uses of PII, personnel
+    who handle PII receive training on the organizational authorities for collecting PII,
+    authorized uses of PII, and on the contents of the notice."
+  related_controls: AR-2, AR-4, AR-5, DM-1, DM-2, TR-1, TR-2, UL-1, UL-2.
+  control_enhancements: None.
+  references: The Privacy Act of 1974, 5 U.S.C. § 552a (e)(3)(A)-(B); Sections 208(b), (c), EGovernment Act of 2002 (P.L. 107-347).
 AR-1:
   family: AR
   name: GOVERNANCE AND PRIVACY PROGRAM
@@ -79,7 +122,7 @@ AR-1:
     requirements; (iv) requirements for contractors processing PII; (v) plans for
     eliminating unnecessary PII holdings; and (vi) a framework for measuring annual
     performance goals and objectives for implementing identified privacy controls.'
-  referenees: The Privacy Act of 1974, 5 U.S.C. § 552a; E-Government Act of 2002 (P.L.
+  references: The Privacy Act of 1974, 5 U.S.C. § 552a; E-Government Act of 2002 (P.L.
     107- 347); Federal Information Security Management Act (FISMA) of 2002, 44 U.S.C.
     § 3541; OMB Memoranda 03-22, 05-08, 07-16; OMB Circular A-130; Federal Enterprise
     Architecture Security and Privacy Profile.
