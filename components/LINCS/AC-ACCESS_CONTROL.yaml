@@ -192,13 +192,13 @@ satisfies:
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
   - text: >
-      The LINCS Technology Project permits remote access for privileged functions
-      to support operational needs. The technical staff documents, monitors, and controls
-      all methods of remote access to the information system including remote access
-      for privileged functions. Privileged user access is only permitted through the
-      use of Secure Shell (SSH) or the Remote Desktop Protocol (RDP) where the user
-      will authenticate to the device through this secure channel. Virtual Private
-      Networking (VPN) is not enabled in any form within the LINCS accreditation boundary.
+      The LINCS Technology Project permits remote access for privileged functions to
+      support operational needs. The technical staff documents, monitors, and controls all
+      methods of remote access to the information system including remote access for
+      privileged functions. Privileged user access is only permitted through the use of
+      Secure Shell (SSH) where the user will authenticate to the device through this
+      secure channel. Virtual Private Networking (VPN) is not enabled in any form within
+      the LINCS accreditation boundary.
     implementation_status: In Place
   summary: LINCS Technology Project permits remote access for privileged functions
     to support operational needs.

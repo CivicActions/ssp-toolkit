@@ -24,7 +24,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel an access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Access Control (AC) Policy.  This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+CivicActions has developed, documented and disseminated to personnel an access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Access Control (AC) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 ##### LINCS
@@ -71,16 +71,27 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-CivicActions Operations, in collaboration with CivicActions Security, will set up privileged accounts accounts for the following roles:
-• Developer - user level account that has access to application features and sanitized databases
-• System Administrator - user accounts that enjoy full system administrator access
+CivicActions Operations, in collaboration with CivicActions Security, will set
+up privileged accounts accounts for the following roles:
+
+• Developer - user level account that has access to application features and
+sanitized databases
+
+• System Administrator - user accounts that enjoy full system administrator
+access
 
 
 ##### Drupal
 
-Drupal provides user accounts for individuals who participate in visiting, contributing to and administering the site with the following roles:
-• Anonymous user – readers of the site who either do not have an account or are not logged in.
-• Authenticated user – All non-anonymous users inherit the "authenticated user role."
+Drupal provides user accounts for individuals who participate in visiting, contributing
+to and administering the site with the following roles:
+
+• Anonymous user – readers of the site who either do not have an account or
+are not logged in.
+
+• Authenticated user – All non-anonymous users inherit the "authenticated user
+role."
+
 • Administrator - This role has all permissions enabled by default.
 
 
@@ -356,7 +367,7 @@ The CivicActions Access Control (AC) policy defines policy for remote usage rest
 
 ##### LINCS
 
-The LINCS Technology Project permits remote access for privileged functions to support operational needs. The technical staff documents, monitors, and controls all methods of remote access to the information system including remote access for privileged functions. Privileged user access is only permitted through the use of Secure Shell (SSH) or the Remote Desktop Protocol (RDP) where the user will authenticate to the device through this secure channel. Virtual Private Networking (VPN) is not enabled in any form within the LINCS accreditation boundary.
+The LINCS Technology Project permits remote access for privileged functions to support operational needs. The technical staff documents, monitors, and controls all methods of remote access to the information system including remote access for privileged functions. Privileged user access is only permitted through the use of Secure Shell (SSH) where the user will authenticate to the device through this secure channel. Virtual Private Networking (VPN) is not enabled in any form within the LINCS accreditation boundary.
 
 
 ### AC-18: Wireless Access

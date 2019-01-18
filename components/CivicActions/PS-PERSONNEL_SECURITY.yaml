@@ -99,9 +99,9 @@ satisfies:
       security reqirements depending upon their role and duties. CivicActions supplies
       two factor authentication tokens that become the property of the employee.
 
-      Some employees may receive company-issued hardware for working on poarticular
-      projects. These items are collected before the employee exits CivicActions.  In
-      the case of an involuntary termination, the Director of Human Resources works
+      Some employees may receive company-issued hardware for working on particular
+      projects. These items are collected before the employee exits CivicActions.
+      In the case of an involuntary termination, the Director of Human Resources works
       to collect company issued devices and provides paperwork highlighting confidential
       protections for customers.
     implementation_status: In Place

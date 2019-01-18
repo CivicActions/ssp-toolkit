@@ -12,8 +12,8 @@ satisfies:
       control policy that addresses purpose, scope, roles, responsibilities, management
       commitment, coordination among organizational entities, and compliance; and
       procedures to facilitate the implementation of the policy and associated controls.
-      This information is maintained in the CivicActions Access Control (AC) Policy.  This
-      document can be found in the CivicActions Compliance Docs GitHub repository
+      This information is maintained in the CivicActions Access Control (AC) Policy.
+      This document can be found in the CivicActions Compliance Docs GitHub repository
       at <https://github.com/CivicActions/compliance-docs>.
     implementation_status: In Place
 - control_key: AC-2
@@ -23,7 +23,7 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - key: a
-    text: >
+    text: |
       CivicActions Operations, in collaboration with CivicActions Security, will set
       up privileged accounts accounts for the following roles:
 

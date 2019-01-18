@@ -48,7 +48,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel an access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Access Control (AC) Policy.  This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+CivicActions has developed, documented and disseminated to personnel an access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Access Control (AC) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 ##### LINCS
@@ -69,16 +69,27 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-CivicActions Operations, in collaboration with CivicActions Security, will set up privileged accounts accounts for the following roles:
-• Developer - user level account that has access to application features and sanitized databases
-• System Administrator - user accounts that enjoy full system administrator access
+CivicActions Operations, in collaboration with CivicActions Security, will set
+up privileged accounts accounts for the following roles:
+
+• Developer - user level account that has access to application features and
+sanitized databases
+
+• System Administrator - user accounts that enjoy full system administrator
+access
 
 
 ##### Drupal
 
-Drupal provides user accounts for individuals who participate in visiting, contributing to and administering the site with the following roles:
-• Anonymous user – readers of the site who either do not have an account or are not logged in.
-• Authenticated user – All non-anonymous users inherit the "authenticated user role."
+Drupal provides user accounts for individuals who participate in visiting, contributing
+to and administering the site with the following roles:
+
+• Anonymous user – readers of the site who either do not have an account or
+are not logged in.
+
+• Authenticated user – All non-anonymous users inherit the "authenticated user
+role."
+
 • Administrator - This role has all permissions enabled by default.
 
 
@@ -313,7 +324,7 @@ The CivicActions Access Control (AC) policy defines policy for remote usage rest
 
 ##### LINCS
 
-The LINCS Technology Project permits remote access for privileged functions to support operational needs. The technical staff documents, monitors, and controls all methods of remote access to the information system including remote access for privileged functions. Privileged user access is only permitted through the use of Secure Shell (SSH) or the Remote Desktop Protocol (RDP) where the user will authenticate to the device through this secure channel. Virtual Private Networking (VPN) is not enabled in any form within the LINCS accreditation boundary.
+The LINCS Technology Project permits remote access for privileged functions to support operational needs. The technical staff documents, monitors, and controls all methods of remote access to the information system including remote access for privileged functions. Privileged user access is only permitted through the use of Secure Shell (SSH) where the user will authenticate to the device through this secure channel. Virtual Private Networking (VPN) is not enabled in any form within the LINCS accreditation boundary.
 
 
 ### AC-18: Wireless Access
@@ -1496,17 +1507,30 @@ Password requirements are listed under security control IA-5.
 
 ### IA-2 (1): Network Access To Privileged Accounts
 
+##### CivicActions
+
+CivicActions system administrators employ a personal public-key pair for basic access and must originate from a whitelisted IP address. To access root (sudo) privileges an additional password is required.
+
+
+##### Drupal
+
+Drupal administrators and other roles with unrestricted access to user data are
+required to use two factor authentication.
+
+
 ##### LINCS
 
-The LINCS Technology Project system does not process sensitive information, thus it does not employ multifactor authentication.
-Access to system services - SSH for GNU/Linux instances, RDP for Windows - is managed by a set of firewall rules on the systems. The network firewall is configured to only allow users to connect to these services from a configured and audited IP address.
+The LINCS Technology Project employs multi-factor authentication for privileged
+users.
 
 
 ### IA-2 (12): Acceptance Of Piv Credentials
 
 ##### LINCS
 
-The LINCS Technology Project system does not implement logical access control systems (LACS) or physical access control systems (PACS). Therefore Personal Identity Verification (PIV) credentials have not been issued for users.
+The LINCS Technology Project system does not implement logical access control
+systems (LACS) or physical access control systems (PACS). Therefore Personal
+Identity Verification (PIV) credentials have not been issued for users.
 
 
 ### IA-3: Device Identification And Authentication
@@ -2464,7 +2488,7 @@ The employee's manager or the Director of Human Resources conducts exit intervie
 ##### CivicActions
 
 CivicActions employees provide their own equipment that must be hardened to security reqirements depending upon their role and duties. CivicActions supplies two factor authentication tokens that become the property of the employee.
-Some employees may receive company-issued hardware for working on poarticular projects. These items are collected before the employee exits CivicActions.  In the case of an involuntary termination, the Director of Human Resources works to collect company issued devices and provides paperwork highlighting confidential protections for customers.
+Some employees may receive company-issued hardware for working on particular projects. These items are collected before the employee exits CivicActions. In the case of an involuntary termination, the Director of Human Resources works to collect company issued devices and provides paperwork highlighting confidential protections for customers.
 
 
 #### e

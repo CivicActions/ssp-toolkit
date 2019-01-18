@@ -65,10 +65,21 @@ Password requirements are listed under security control IA-5.
 
 > The information system implements multifactor authentication for network access to privileged accounts.
 
+##### CivicActions
+
+CivicActions system administrators employ a personal public-key pair for basic access and must originate from a whitelisted IP address. To access root (sudo) privileges an additional password is required.
+
+
+##### Drupal
+
+Drupal administrators and other roles with unrestricted access to user data are
+required to use two factor authentication.
+
+
 ##### LINCS
 
-The LINCS Technology Project system does not process sensitive information, thus it does not employ multifactor authentication.
-Access to system services - SSH for GNU/Linux instances, RDP for Windows - is managed by a set of firewall rules on the systems. The network firewall is configured to only allow users to connect to these services from a configured and audited IP address.
+The LINCS Technology Project employs multi-factor authentication for privileged
+users.
 
 
 ### IA-2 (12): Acceptance Of Piv Credentials
@@ -77,7 +88,9 @@ Access to system services - SSH for GNU/Linux instances, RDP for Windows - is ma
 
 ##### LINCS
 
-The LINCS Technology Project system does not implement logical access control systems (LACS) or physical access control systems (PACS). Therefore Personal Identity Verification (PIV) credentials have not been issued for users.
+The LINCS Technology Project system does not implement logical access control
+systems (LACS) or physical access control systems (PACS). Therefore Personal
+Identity Verification (PIV) credentials have not been issued for users.
 
 
 ### IA-3: Device Identification And Authentication

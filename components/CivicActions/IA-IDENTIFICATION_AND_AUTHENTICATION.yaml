@@ -33,6 +33,17 @@ satisfies:
     implementation_status: In Place
   summary: Privileged users are required to identify and authenticate to privileged
     features.
+- control_key: IA-2 (1)
+  control_name: NETWORK ACCESS TO PRIVILEGED ACCOUNTS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      CivicActions system administrators employ a personal public-key pair for basic
+      access and must originate from a whitelisted IP address. To access root (sudo)
+      privileges an additional password is required.
+    implementation_status: In Place
 - control_key: IA-3
   control_name: DEVICE IDENTIFICATION AND AUTHENTICATION
   standard_key: NIST SP 800-53 Revision 4
