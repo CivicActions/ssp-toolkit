@@ -65,6 +65,11 @@ Password requirements are listed under security control IA-5.
 
 > The information system implements multifactor authentication for network access to privileged accounts.
 
+##### AWS
+
+The AWS Management Console is configured to require two factor authentication.
+
+
 ##### CivicActions
 
 CivicActions system administrators employ a personal public-key pair for basic access and must originate from a whitelisted IP address. To access root (sudo) privileges an additional password is required.
