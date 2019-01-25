@@ -4,14 +4,17 @@ from collections import OrderedDict
 import rtyaml
 
 '''
-Read CSV file of controls and output a few columns.
+Read CSV file of controls and output a few columns into YAML files
+in a modified OpenControl format where we break out the control
+implementations into separate YAML files by family.
+
 CSV is better than TSV because newlines *within* cell text values
 are preserved and quoted in CSV but they are eliminated in TSV.
 '''
 
 # Ensure an argument was passed.
 if len(sys.argv) < 2:
-  print("Usage:", sys.argv[0], "exported_controls.tsv")
+  print("Usage:", sys.argv[0], "exported_controls.csv")
   sys.exit()
 
 # Ensure the passed argument is a file that exists.
@@ -20,12 +23,16 @@ if not os.path.exists(fn_tsv):
   print("Can't find file:", fn_tsv)
   sys.exit()
 
-# Format long text with word wrap and prefix.
-def formatImplementation(prefix, text):
-  if not prefix[0] == '#':
-    text = '\'' + text + '\''
-  return textwrap.indent(
-    textwrap.fill(text, width=80), prefix, lambda line: True)
+def cleanup_text(s):
+  # In order for YAML flow-style strings, i.e. "key: >" followed
+  # by lines of text, to work, the string must end with a newline,
+  # so we'll strip trailing whitespace and then add back a newline
+  # to ensure all entries do. The string must also not have spaces
+  # immediately before the newline, which are usually mistakes anyway,
+  # so we'll just remove those.
+  s = s.rstrip() + "\n"
+  s = re.sub(r"[ \t]+\n", "\n", s)
+  return s
 
 # Open and parse the /.tsv file and write Low controls to yaml files.
 controls = { }
@@ -60,54 +67,52 @@ with open(fn_tsv, 'r') as csvfile:
         parts_text[-1][1] += line + "\n"
 
     # Create separate control entries for each component.
-    for (part, component), text in parts_text:
-      # If there was no text for this component, don't write anything.
-      if not text.strip():
-        continue
-
+    components = set(component for ((part, component), text) in parts_text)
+    for component in components:
       # The first time we see a (component, control family) pair, create a dict to
       # hold its full name and the controls within it.
       control_family = row['Family of Control'].rstrip("-") # take off trailing dash
-      key = (component, control_family)
+      control_family_dir = control_family + "-" + row["Family"].replace(" ", "_") + '.yaml'
+      key = (component or "Other", control_family_dir)
       if key not in controls:
-        controls[key] = {
-          "name": row['Family'],
-          "controls": [],
-        }
+        controls[key] = []
 
-      # Add this row as a control to its control family.
+      # Add a record for this control.
       # Use an OrderedDict to hold the keys so that when we output
       # it to disk we get the same order on each run.
-      def cleanup_text(s):
-        # In order for YAML flow-style strings, i.e. "key: >" followed
-        # by lines of text, to work, the string must end with a newline,
-        # so we'll strip trailing whitespace and then add back a newline
-        # to ensure all entries do. The string must also not have spaces
-        # immediately before the newline, which are usually mistakes anyway,
-        # so we'll just remove those.
-        s = s.rstrip() + "\n"
-        s = re.sub(r"\s+\n", "\n", s)
-        return s
       control = OrderedDict([
-        ('control_key', row['Control']),
-        ('control_key_part', part.strip() if part else None),
-        ('control_name', row['Control Name']),
-        ('standard_key', 'NIST-800-53'),
+        # OpenControl fields
+        ('control_key', row['Control'].replace("-0", "-")), # convert e.g. AC-01 to just the canonical form AC-1
+        ('standard_key', 'NIST SP 800-53 Revision 4'),
         ('covered_by', []),
+        ('narrative', []),
+
+        # Other fields that might be handy.
+        ('control_name', row['Control Name']),
         ('security_control_type', row['Security Control Type']),
         ('implementation_status', row['Control Status']),
-        ('narrative', cleanup_text(text)),
         ('control_description', cleanup_text(row['Control Description'])),
       ])
-      controls[key]["controls"].append(control)
+      controls[key].append(control)
 
-# Write out the controls by control family.
-for (component, control_family), control_family_data in controls.items():
-  # Construct a file name for the component-control family file.
+      # Add all of the parts for this control & component pair into the narrative.
+      for (part, _), text in parts_text:
+        if _ != component: continue
+        if not text.strip(): continue
+        n = OrderedDict()
+        if part and part.strip():
+          n["key"] = part.strip()
+        n["text"] = cleanup_text(text)
+        control["narrative"].append(n)
+
+# Write out the component.yaml files.
+components = set(component_dir for (component_dir, control_family_fn) in controls.keys())
+for component_dir in components:
+  # Construct a file name for the component.yaml file.
   fn_yaml = os.path.join(
     'components',
-    component or "Other",
-    control_family + "-" + control_family_data["name"].replace(" ", "_") + '.yaml'
+    component_dir,
+    "component.yaml"
   )
 
   # Make directory.
@@ -116,10 +121,30 @@ for (component, control_family), control_family_data in controls.items():
   # Write out.
   with open(fn_yaml, 'w') as yaml_file:
     doc = OrderedDict([
-      ("name", component),
-      ("family", control_family_data["name"]),
-      ("documentation_complete", False),
+      ("name", component_dir),
       ("schema_version", "3.0.0"),
-      ("satisfies", control_family_data["controls"])
+      ("satisfies", [
+        # OpenControl requires a list of controls, but in our extension we list
+        # YAML filenames that contain controls by family.
+        control_family_fn for (_, control_family_fn) in controls.keys()
+           if _ == component_dir
+      ])
+    ])
+    rtyaml.dump(doc, yaml_file)
+
+# Write out the controls by control family and component.
+for (component_dir, control_family_fn), control_family_data in controls.items():
+  # Construct a file name for the component-control family file.
+  fn_yaml = os.path.join(
+    'components',
+    component_dir,
+    control_family_fn
+  )
+
+  # Write out.
+  with open(fn_yaml, 'w') as yaml_file:
+    doc = OrderedDict([
+      ("schema_version", "3.0.0"),
+      ("satisfies", control_family_data)
     ])
     rtyaml.dump(doc, yaml_file)
