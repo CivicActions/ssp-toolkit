@@ -1,2 +1,5 @@
 inputs/
 outputs/
+.vscode/
+team/
+repos.conf
