@@ -35,10 +35,10 @@ satisfies:
       system does not have any sensitive data, a low risk scenario can be assumed.
 
       • Employee risk levels and background investigations are: Low Risk= NACI, Moderate
-      Risk= LBI, High Risk= BI.
+        Risk= LBI, High Risk= BI.
 
       • Contractor risk levels and background investigations are: Low Risk= NACI,
-      Moderate Risk= NACC, High Risk= BI.
+        Moderate Risk= NACC, High Risk= BI.
 
       In order to ensure every employee is assigned to a position, which has been
       reviewed for sensitivity by the NCC, the SPD is a required data attribute of
@@ -117,12 +117,22 @@ satisfies:
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: >
-      The Department has implemented a formalized process for user account administration
-      using the approved and signed Rules of Behavior and User Acknowledgement forms.
-      All new users requesting access to the LINCS Technology Project system must
-      complete these forms and the security manager will keep them on file and reviewed
-      bi-annually.
+  - key: a
+    text: |
+      All users of the LINCS system must read and accept access agreements upon every
+      login. The access agreement can be found at http://courses.lincs.ed.gov a copy of
+      which has been uploaded to CSAM as artifact: AccessAgreements.txt
+    implementation_status: In Place
+  - key: b
+    text: >
+      The Access Agreements are reviewed at least annually or when a significant
+      change occurs.
+    implementation_status: In Place
+  - key: c
+    text: >
+      All individuals requiring access to the LINCS system are required to sign the
+      Access Agreements before login is granted. When the Access Agreements are updated,
+      the individual will be required to sign the new copy before regaining access.
     implementation_status: In Place
 - control_key: PS-7
   control_name: THIRD-PARTY PERSONNEL SECURITY
@@ -130,11 +140,32 @@ satisfies:
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: >
-      All contractor support personnel are required to meet the same personnel security
-      policy requirements as Department personnel who have privileged access to the
-      LINCS Technology Project system. Third party providers are required to review
-      and sign the Rules of Behavior prior to being granted access to the system.
+  - key: a
+    text: >
+      Personnel security requirements including security roles and responsibilities that
+      apply to primary contracting organizations flow down to their subcontractors.
+    implementation_status: In Place
+  - key: b
+    text: >
+      Personnel security policies and procedures that apply to primary contracting
+      organizations flow down to their subcontractors.
+    implementation_status: In Place
+  - key: c
+    text: >
+      All personnel security requirements are documented in PS-1 and other related
+      Personnel Security controls.
+    implementation_status: In Place
+  - key: d
+    text: >
+      For personnel transfers and terminations of third-party personnel, the procedures
+      defined in employee termination (PS-4) and employee transfer (PS-5) flow down to
+      subcontractors.
+    implementation_status: In Place
+  - key: e
+    text: >
+      Compliance measures for assessing third-party personnel and/or contractors are
+      determined on a case-by-case basis. Third-party personnel are monitored to ensure
+      compliance with personnel security requirements.
     implementation_status: In Place
 - control_key: PS-8
   control_name: PERSONNEL SANCTIONS

@@ -132,7 +132,7 @@ satisfies:
       a new project or position within CivicActions, they may maintain access to the
       previous system they were working on in order to facilitate the process of maintenance
       and knowledge transfer. However, as part of the practices of account management
-      (AC-02) and least privilege (AC-06), regular audits of privileged users are
+      (AC-2) and least privilege (AC-6), regular audits of privileged users are
       conducted and access privileges may be removed when no longer needed. Additionally,
       adherence to specific client SLAs may enhance the frequency of such audits or
       the timeliness of privilege removal during personnel transfer.
@@ -145,77 +145,14 @@ satisfies:
     implementation_status: In Place
   - key: c
     text: |
-      Access authorizations are modified as needed to coincide with changes in duties or operational need upon personnel transfer or reassignment.
+      Access authorizations are modified as needed to coincide with changes in duties or
+      operational need upon personnel transfer or reassignment.
     implementation_status: In Place
   - key: d
     text: >
       CivicActions Operations is informed of transfers that require access authorization
       modifications within five business days by the Project Manager, System Owner
       or Director of Human Resources.
-    implementation_status: In Place
-- control_key: PS-6
-  control_name: ACCESS AGREEMENTS
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - key: a
-    text: |
-      CivicActions has developed and documented an Acceptable Use Policy that covers access and use of all CivicActiuons systems.
-    implementation_status: In Place
-  - key: b
-    text: >
-      The Acceptable Use Policy is reviewed at least annually or when a significant
-      change occurs. In the event that a major update is made to the Acceptable Use
-      Policy, employees are required to read and sign the updated policy document
-      and Human Resources stores the information.
-    implementation_status: In Place
-  - key: c
-    text: >
-      All CivicActions team members are required to read and sign the Acceptable Use
-      Policy (AUP) provided in the Security Policy document prior to gaining access
-      to the any CivicActions system. The acknowledgment signature page is a separate
-      document collected and recorded by the Director of Human Resources.
-    implementation_status: In Place
-- control_key: PS-7
-  control_name: THIRD-PARTY PERSONNEL SECURITY
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - key: a
-    text: |
-      Third party personnel are required to following the same process and requirements as CivicActions employees.
-    implementation_status: In Place
-  - key: b
-    text: >
-      Third party personnel are required to following the same process and requirements
-      as CivicActions employees. CivicActions Operations or Security may require that
-      a background check be conducted on contractors and / or third party users in
-      cases where they will have access to application data that is not meant to be
-      consumed by the public.
-    implementation_status: In Place
-  - key: c
-    text: >
-      All personnel security requirements are documented and include things such as
-      signing the Acceptable Use Policy (AUP) and taking security awareness training.
-    implementation_status: In Place
-  - key: d
-    text: >
-      For personnel transfers and terminations of third-party personnel with access
-      to the CivicActions systems, third parties must notify the CivicActions Operations
-      an/or Director of Human Resources the same day. The same employee transfer and/or
-      termination procedure(s) are folloed as if the third party personnel were CivicActions
-      employees.
-    implementation_status: In Place
-  - key: e
-    text: >
-      Compliance measures for assessing third-party personnel and/or contractors are
-      determined on a case-by-case basis. CivicActions Security is responsible for
-      coordinating with the managers of external systems to include appropriate and
-      tailored compliance verification language in contracts as required.  Third-party
-      personnel are continuously monitored to ensure compliance with personnel security
-      requirements.
     implementation_status: In Place
 - control_key: PS-8
   control_name: PERSONNEL SANCTIONS
@@ -225,11 +162,11 @@ satisfies:
   narrative:
   - key: a
     text: >
-      The Director of Human Resources is responsible for determining and enforcing
-      sanctions for failing to comply with established information security policies
-      and procedures. Coaching may be considered prior to sanctions. Sanctions may
-      include but are not limited to written warnings, reduction in system access,
-      demotion, or termination.
+      CivicActions Security and/or the Director of Human Resources is responsible for
+      determining and enforcing sanctions for failing to comply with established
+      information security policies and procedures. Coaching may be considered prior to
+      sanctions. Sanctions may include but are not limited to written warnings, reduction
+      in system access, demotion, or termination.
     implementation_status: In Place
   - key: b
     text: >
