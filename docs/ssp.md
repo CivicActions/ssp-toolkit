@@ -5,22 +5,22 @@ Table of Contents
 * [LINCS System Security Plan](#lincs-system-security-plan)
 * [NIST SP 800-53 Revision 4](#nist-sp-800-53-revision-4)
    * [AC: Access Control](#ac-access-control)
-   * [AT: Awareness and Training](#at-awareness-and-training)
    * [AU: Audit and Accountability](#au-audit-and-accountability)
-   * [CA: Security Assessment and Authorization](#ca-security-assessment-and-authorization)
+   * [AT: Awareness and Training](#at-awareness-and-training)
    * [CM: Configuration Management](#cm-configuration-management)
    * [CP: Contingency Planning](#cp-contingency-planning)
    * [IA: Identification and Authentication](#ia-identification-and-authentication)
    * [IR: Incident Response](#ir-incident-response)
    * [MA: Maintenance](#ma-maintenance)
    * [MP: Media Protection](#mp-media-protection)
+   * [PS: Personnel Security](#ps-personnel-security)
    * [PE: Physical and Environmental Protection](#pe-physical-and-environmental-protection)
    * [PL: Planning](#pl-planning)
-   * [PS: Personnel Security](#ps-personnel-security)
    * [RA: Risk Assessment](#ra-risk-assessment)
-   * [SA: System and Services Acquisition](#sa-system-and-services-acquisition)
+   * [CA: Security Assessment and Authorization](#ca-security-assessment-and-authorization)
    * [SC: System and Communications Protection](#sc-system-and-communications-protection)
    * [SI: System and Information Integrity](#si-system-and-information-integrity)
+   * [SA: System and Services Acquisition](#sa-system-and-services-acquisition)
 * [NIST SP 800-53 Revision 4 Privacy](#nist-sp-800-53-revision-4-privacy)
    * [AP: Authority and Purpose](#ap-authority-and-purpose)
    * [AR: Accountability, Audit, and Risk Management](#ar-accountability-audit-and-risk-management)
@@ -394,132 +394,6 @@ LINCS Program Users have been authorized for creation of publicly accessible con
 Authorized LINCS individuals review the content on the publicly accessible information system for nonpublic information at least every 365 days and removes such information.
 
 
-## AT: Awareness and Training
-
-### AT-1: Security Awareness And Training Policy And Procedures
-
-##### AWS
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
-
-
-##### CivicActions
-
-CivicActions has developed, documented and disseminated to personnel awareness and training policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Awareness and Training (AT) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-##### LINCS
-
-Security awareness and training policy and procedures are formally documented in Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01), which provides the roles and responsibilities as it pertains to security awareness and training. The Department will ensure all users, including managers and senior executives, are exposed to basic information system security awareness materials before authorizing access to the system and at least annually thereafter. The Department documents and monitors all individual information system security training activities including basic security awareness training. The Department reviews and updates the policy as necessary.
-
-
-### AT-2: Security Awareness Training
-
-##### AWS
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
-
-
-##### LINCS
-
-The Department personnel and contractor employees involved with the management, operation, programming, maintenance, or use of LINCS Technology Project system receive training in acceptable computer security practices prior to system access.
-All Department employees and contractors are required to complete annual IT security awareness training. This security awareness training covers issues and policies associated with information security, including end user security roles and responsibilities and rules of behavior. Some topics addressed in the training are:
-* Password protection
-* System rules of behavior
-* Protection of hardware, software, and data
-* Proper handling of copyrighted materials
-* Reporting of security breaches and violations
-* Proper procedures for software installation, uploading, and use on workstations. 
-The security and awareness training is consistent with Department of Education IT Security Training Program Plan and the guidance in NIST Special Publication 800-50.
-
-
-#### a
-
-##### CivicActions
-
-Both regular and ad hoc training to all CivicActions personnel, including those who support the system infrastructure and applications, is provided. All employees and contractors must complete Security Awareness trainings upon being hired and at least annually thereafter. CivicActions Operations will not create accounts for individuals until they have successfully completed the trainings. Additional training will be provided as required by system changes. Training takes the following forms:
-Annual Knowledge Survey (i.e., Security Awareness Training): All employees are required to review trainings covering Security Awareness. After the training, a survey-style security awareness test is taken by employees. All CivicActions personnel are required to complete and pass the survey, and new employees are required to pass before being granted access to the Information System. In order to successfully pass the test, a score of 80% is required. This survey tests CivicActions personnel’s knowledge of critical security subjects, policies and procedures. Results from this survey are compiled by the Director of Human Resources and used to refine future training efforts.
-Ad Hoc Security Awareness: The CivicActions ISSO oversees the approximately bi-monthly distribution of security awareness tips and articles to the all CivicActions employees. This can include general tips as well as articles tailored to the specific requirements of CivicActions users.
-
-
-#### b
-
-##### CivicActions
-
-In the event of a major system change, the Project Manager is responsible for delivering additional training to impacted personnel. Specific training type, medium and delivery method is dependent upon the nature of the system change.
-
-
-#### c
-
-##### CivicActions
-
-CivicActions provides annual security awareness training to its personnel.
-
-
-### AT-3: Role-Based Security Training
-
-##### AWS
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
-
-
-##### LINCS
-
-Completion of role-based training is an annual requirement for personnel in roles with significant information security responsibilities that require specialized role-based training. Role-based cybersecurity training is developed and implemented to meet identified training needs and competencies associated with the various target audiences/functional roles (federal and contractor employees) that comprise the Department workforce, as is identified in and required by the FISMA and OMB A-130, Appendix III. The appropriate content of security training is determined based on the assigned roles and responsibilities of individuals and the specific security requirements of the Department, PO and the information systems to which personnel have authorized access. Annual training requirements may be met by completing one or more course(s) within the Department’s learning management systems, participating in instructor-led training provided by the OCIO, or completing an external role-based course or courses offered within their specific functional area of expertise.
-
-
-#### a
-
-##### CivicActions
-
-CivicActions personnel with security responsibilities are required to complete role-based security training before being provided with access to the information system. The CivicActions ISSO is responsible for creating the content of the training. The role-based training is provided and tracked by the CivicActions Information Security Office.
-
-
-#### b
-
-##### CivicActions
-
-The Project manager in collaboration with CivicActions Security determines whether a change to the information system requires any modifications and updates to the security awareness training program and if so, works with the CivicActions Security to implement the change.
-
-
-#### c
-
-##### CivicActions
-
-CivicActions' Security provides users with security responsibilities role-based security training on an annual basis. The training is provided and tracked by the CivicActions Information Security Office.
-
-
-### AT-4: Security Training Records
-
-#### a
-
-##### CivicActions
-
-The CivicActions Information Security Office tracks all security awareness training within the organization and ensures that all employees have successfully completed training when required. The training records are stored and tracked in a spreadsheet maintained by the CivicActions Information Security Office.
-
-
-##### LINCS
-
-The Department documents and monitors all individual information system security training activities including basic security awareness training. New users are required to take security training within 30 days of hire. This information is kept in the appropriate personnel files to verify users have met the training requirements. Training requirement notifications are sent to individuals as deadline for re-training approaches.
-
-
-#### b
-
-##### AWS
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
-
-
-##### CivicActions
-
-Training records are tracked and maintained by the CivicActions Information Security Office. Records are maintained permanently.
-
-
-##### LINCS
-
-The Office of Information Secuity maintains training certifications for the specified period.
-
-
 ## AU: Audit and Accountability
 
 ### AU-1: Audit And Accountability Policy And Procedures
@@ -745,190 +619,130 @@ The selected auditable events described in AU-2 are coordinated by CivicActions 
 CivicActions maintained applications generate audit records for their web and event logs as described in AU-2 and AU-3.
 
 
-## CA: Security Assessment and Authorization
+## AT: Awareness and Training
 
-### CA-1: Security Assessment And Authorization Policy And Procedures
+### AT-1: Security Awareness And Training Policy And Procedures
 
 ##### AWS
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
 
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Security Assessment and Authorization Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+CivicActions has developed, documented and disseminated to personnel awareness and training policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Awareness and Training (AT) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 ##### LINCS
 
-The Department has published the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01) and U. S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05). Both of these publications are revised periodically. The LINCS System Security Policy (SSP) provides guidance on all aspects of security for the protection of LINCS information technology resources.
-The Department will periodically review and update the SSP when there is a significant change to the regulatory, operational, or technical environment.
+Security awareness and training policy and procedures are formally documented in Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01), which provides the roles and responsibilities as it pertains to security awareness and training. The Department will ensure all users, including managers and senior executives, are exposed to basic information system security awareness materials before authorizing access to the system and at least annually thereafter. The Department documents and monitors all individual information system security training activities including basic security awareness training. The Department reviews and updates the policy as necessary.
 
 
-### CA-2: Security Assessments
+### AT-2: Security Awareness Training
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+
+
+##### LINCS
+
+The Department personnel and contractor employees involved with the management, operation, programming, maintenance, or use of LINCS Technology Project system receive training in acceptable computer security practices prior to system access.
+All Department employees and contractors are required to complete annual IT security awareness training. This security awareness training covers issues and policies associated with information security, including end user security roles and responsibilities and rules of behavior. Some topics addressed in the training are:
+* Password protection
+* System rules of behavior
+* Protection of hardware, software, and data
+* Proper handling of copyrighted materials
+* Reporting of security breaches and violations
+* Proper procedures for software installation, uploading, and use on workstations. 
+The security and awareness training is consistent with Department of Education IT Security Training Program Plan and the guidance in NIST Special Publication 800-50.
+
 
 #### a
 
 ##### CivicActions
 
-CivicActions will develop a security assessment plan (SAP) that describes the security controls and control enhancements under assessment, assessment procedures used to determine effectiveness, the assessment environment, the assessment team, and the assessment roles and responsibilities.
-
-
-##### LINCS
-
-The LINCS Technology Project follows the U. S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures.  The LINCS Technology Project will conduct annual security assessments to comply with FISMA and NIST regulations. The Department will draw on NIST Special Publications 800-53A security controls to complete the assessment. All controls and sub-set security controls will be evaluated and a risk assessment will be conducted. The scope of the assessment includes:
-1. Security controls and control enhancements under assessment
-2. Assessment procedures to be used to determine security control effectiveness
-3. Assessment environment, assessment team, and assessment roles and responsibilities
+Both regular and ad hoc training to all CivicActions personnel, including those who support the system infrastructure and applications, is provided. All employees and contractors must complete Security Awareness trainings upon being hired and at least annually thereafter. CivicActions Operations will not create accounts for individuals until they have successfully completed the trainings. Additional training will be provided as required by system changes. Training takes the following forms:
+Annual Knowledge Survey (i.e., Security Awareness Training): All employees are required to review trainings covering Security Awareness. After the training, a survey-style security awareness test is taken by employees. All CivicActions personnel are required to complete and pass the survey, and new employees are required to pass before being granted access to the Information System. In order to successfully pass the test, a score of 80% is required. This survey tests CivicActions personnel’s knowledge of critical security subjects, policies and procedures. Results from this survey are compiled by the Director of Human Resources and used to refine future training efforts.
+Ad Hoc Security Awareness: The CivicActions ISSO oversees the approximately bi-monthly distribution of security awareness tips and articles to the all CivicActions employees. This can include general tips as well as articles tailored to the specific requirements of CivicActions users.
 
 
 #### b
 
 ##### CivicActions
 
-CivicActions will assess the security controls in their system and its environment of operation to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security requirements,
-All controls assigned and documented in this System Security Plan (SSP) will be tested at least annually or when there is a major change to the system.
+In the event of a major system change, the Project Manager is responsible for delivering additional training to impacted personnel. Specific training type, medium and delivery method is dependent upon the nature of the system change.
 
 
 #### c
 
 ##### CivicActions
 
-CivicActions will produce a security assessment report that documents the results of the assessment. The Security Assessment Report must contain the results of the assessment, and may also contain recommendations and suggestions for plans of actions and milestones (POA&Ms).
+CivicActions provides annual security awareness training to its personnel.
+
+
+### AT-3: Role-Based Security Training
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
 
 
 ##### LINCS
 
-The LINCS Authorizing Official or Designated Representative will create a Security Assessment Report (SAR). A full assessment shall be conducted by an independent third party assessor at least every three years.
+Completion of role-based training is an annual requirement for personnel in roles with significant information security responsibilities that require specialized role-based training. Role-based cybersecurity training is developed and implemented to meet identified training needs and competencies associated with the various target audiences/functional roles (federal and contractor employees) that comprise the Department workforce, as is identified in and required by the FISMA and OMB A-130, Appendix III. The appropriate content of security training is determined based on the assigned roles and responsibilities of individuals and the specific security requirements of the Department, PO and the information systems to which personnel have authorized access. Annual training requirements may be met by completing one or more course(s) within the Department’s learning management systems, participating in instructor-led training provided by the OCIO, or completing an external role-based course or courses offered within their specific functional area of expertise.
 
-
-#### d
-
-##### CivicActions
-
-CivicActions will provide the results of the security control assessment to the System Owner, Project Manager, CivicActions Security, and the Authorization Official (AO)). The security control assessment package includes the following:
-• Security Control Matrix
-• Privacy Impact Assessment
-• E-Authentication
-• Contingency Plan
-• Configuration Management Plan
-• Rules of Behavior
-• Incident Response Plan
-
-
-### CA-3: System Interconnections
-
-##### CivicActions
-
-This control is not applicable. CivicActions systems do not have system interconnections. The only communication conducted to CivicActions systems is through the Internet.
-
-
-### CA-5: Plan Of Action And Milestones
-
-##### CivicActions
-
-CivicActions documents all deficiencies and vulnerabilities identified during the security certification and/or continuous monitoring phase (via security assessment, vulnerability scanning, risk assessment, etc.) within the Plan of Action and Milestones (POA&M).
-The POA&M document provides a platform for CivicActions to monitor and track the deficiency and its mitigation strategy. POA&M items will include:
-• The description of the deficiency,
-• Dedicated point of contact for this deficiency.
-• Cost of the mitigation strategy
-• Associated risk and NIST control
-• Recommended mitigation strategy
-POA&Ms are tracked throughout the lifecycle of the system until its mitigation. All POA&Ms are reviewed on a monthly basis by CivicActions Information System Security Officer to ensure all mitigation strategies are continuing as documented.
-
-
-##### LINCS
-
-The LINCS Technology Project follows the U.S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures in managing POA&Ms.
-
-
-### CA-6: Security Authorization
-
-##### LINCS
-
-The LINCS Technology Project follows the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01) and U. S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures. The LINCS Technology Project system received its first three-year security accreditation on March 3, 2009, and most recently received an ATO on February 5, 2016.
-ATO re-assessment will be performed every three years or when there is a major change to the application, in which a senior organizational official will sign and approve the security accreditation.
-
-
-### CA-7: Continuous Monitoring
 
 #### a
 
 ##### CivicActions
 
-CivicActions implements a continuous monitoring strategy that incorporates configuration management, system scanning and log analysis processes:
-• Configuration management includes the assessment of security impact analyses of
-  proposed and implemented changes.
-
-• System scanning is managed by running the OpanSCAP vulnerability scanner using the
-  DISA STIG profile.
-
-• Log analysis is managed by feeding logs to a Graylog dashboard for analysis.
+CivicActions personnel with security responsibilities are required to complete role-based security training before being provided with access to the information system. The CivicActions ISSO is responsible for creating the content of the training. The role-based training is provided and tracked by the CivicActions Information Security Office.
 
 
-##### Drupal
+#### b
 
-CivicActions follows recommendations and best practices developed by the Drupal community for monitoring. Examples of specific logs and metrics are included in AU-2 and AU-3.
+##### CivicActions
+
+The Project manager in collaboration with CivicActions Security determines whether a change to the information system requires any modifications and updates to the security awareness training program and if so, works with the CivicActions Security to implement the change.
+
+
+#### c
+
+##### CivicActions
+
+CivicActions' Security provides users with security responsibilities role-based security training on an annual basis. The training is provided and tracked by the CivicActions Information Security Office.
+
+
+### AT-4: Security Training Records
+
+#### a
+
+##### CivicActions
+
+The CivicActions Information Security Office tracks all security awareness training within the organization and ensures that all employees have successfully completed training when required. The training records are stored and tracked in a spreadsheet maintained by the CivicActions Information Security Office.
+
+
+##### LINCS
+
+The Department documents and monitors all individual information system security training activities including basic security awareness training. New users are required to take security training within 30 days of hire. This information is kept in the appropriate personnel files to verify users have met the training requirements. Training requirement notifications are sent to individuals as deadline for re-training approaches.
 
 
 #### b
 
 ##### AWS
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: continuous monitoring.
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
 
 
 ##### CivicActions
 
-Configuration management and log analysis is real time. OpenSCAP security scans are performed and reviewed monthly. See also: RA-5 and SI-4.
-Quarterly review of the control assessments supporting the monitoring is conducted by CivicActions Operations in collaboration with CivicActions Security.
+Training records are tracked and maintained by the CivicActions Information Security Office. Records are maintained permanently.
 
 
-#### c
+##### LINCS
 
-##### Drupal
-
-CivicActions works closely with the Drupal security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed.
-
-
-#### d
-
-##### AWS
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: ongoing security status monitoring.
-
-
-##### CivicActions
-
-CivicActions conducts or oversees continuous system security monitoring.
-
-
-#### e
-
-##### CivicActions
-
-CivicActions Security reviews the results of the security scans and security assessments with associated JIRA and/or GitLab Issue tickets created to correlate and analyze security related information generated from the monitoring tools becoming POA&M items for tracking.
-
-
-#### f
-
-##### CivicActions
-
-POA&M items are tracked by CivicActions Security though JIRA tickets with a security categorization assigned.  Information included in the POA&M item include the severity, the due date, the weakness source identifier, and the plugin ID that identified the vulnerability.
-
-
-#### g
-
-##### CivicActions
-
-The security status of the system is reported up to the System Owner and Project Manager via CivicActions Security to be reviewed alongside other security issues relating to the system.
-
-
-### CA-9: Internal System Connections
-
-##### AWS
-
-Not applicable: There are no internal systems that connect to the FedRAMP certified AWS cloud.
+The Office of Information Secuity maintains training certifications for the specified period.
 
 
 ## CM: Configuration Management
@@ -2200,6 +2014,257 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for media protection controls as the system is entirely within the AWS Cloud boundary.
 
 
+## PS: Personnel Security
+
+### PS-1: Personnel Security Policy And Procedures
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+
+
+##### CivicActions
+
+CivicActions has developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Personnel Security (PS) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
+
+
+##### LINCS
+
+The LINCS Technology Project documents the security policy and procedures in addressing position categorization, personnel screening, personnel termination, personnel transfer, and access agreements within the LINCS SSP. The LINCS Technology Project adopts the Department of Education personnel security standards and determines position risks levels based on public trust responsibilities.
+This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
+
+
+### PS-2: Position Risk Designation
+
+##### LINCS
+
+The LINCS Technology Project’s position sensitivity levels are assigned by the Department of Education and National Classification Center (NCC) as part of the position designation required by OPM under 5 CFR 731.106. Each Department position designation is documented on the Standard Position Description (SPD) and assigned a risk level (or sensitivity level) commensurate with the sensitivity of the information, the risk to that information and the system maintaining that information. The levels of risk still need to be designated by the Department for employee and contractor positions but since the LINCS Technology Project system does not have any sensitive data, a low risk scenario can be assumed.
+• Employee risk levels and background investigations are: Low Risk= NACI, Moderate
+  Risk= LBI, High Risk= BI.
+
+• Contractor risk levels and background investigations are: Low Risk= NACI,
+  Moderate Risk= NACC, High Risk= BI.
+
+In order to ensure every employee is assigned to a position, which has been reviewed for sensitivity by the NCC, the SPD is a required data attribute of an employee’s HR record. Position risks designations are reviewed and revised when NCC or OPM publish changes to sensitivity levels.
+This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog
+
+
+#### a
+
+##### CivicActions
+
+Risk designations are assigned to all CivicActions positions. The CivicActions Director of Human Resources works in coordination with the CivicActions ISSO and the Chief Operating Officer to assign risk designations.
+
+
+#### b
+
+##### CivicActions
+
+The CivicActions Director of Human Resources works in coordination with the CivicActions ISSO and the Chief Operating Officer to establish screening criteria for all CivicActions positions.
+
+
+#### c
+
+##### CivicActions
+
+At least every three (3) years, the CivicActions Director of Human Resources reviews and revises position risk designations. If the Director of Human Resources determines that significant changes must be made to the position risk descriptions the Director of Human Resources works in coordination with the CivicActions ISSO and the Chief Operating Officer to implement changes as required.
+
+
+### PS-3: Personnel Screening
+
+##### LINCS
+
+Minimum background investigations are conducted, since all data is non-sensitive, for individuals requiring access to LINCS Technology Project information and information systems. The type of background investigation conducted for an individual is determined by the individual’s position risk categorization noted in control PS-2. The Department conducts periodic reinvestigations in accordance with OPM and NIST guidelines.
+This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
+
+
+#### a
+
+##### CivicActions
+
+Prospective CivicActions employees undergo background checks commensurate with the individual’s job duties, the classification of the information they will access, and the risks associated with the role. At the discretion of the Chief Operating Officer these checks may also be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public.  In these instances, the Chief Operating Officer will instruct the Director of Human Resources to conduct a background check before granting access to the information system.
+
+
+#### b
+
+##### CivicActions
+
+Rescreening is conducted as required by the individual’s job duties, the classification of the information they will access, and the risks associated with the role. A basic background check is performed for all CivicActions employees.
+
+
+### PS-4: Personnel Termination
+
+##### LINCS
+
+The Department’s HR policy states that managers or designated officials are responsible for recovering and properly securing employee badges and returning it to the local physical security office. The Department executes termination procedures that remove personnel access privileges, computer accounts. When an employee is terminated, the employee’s manager or designated official completes a form requesting termination of access for the user. Local management and the security manager coordinate disabling or removing LINCS Technology Project privileged access with the system administrator. The employee’s manager or designated official is responsible for recovering and properly securing his/her ID badge and returning it to the local physical security office. The employee’s manager or designated official ensures that any information on the system that the employee was responsible for will be available to the appropriate personnel.
+This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
+
+
+#### a
+
+##### CivicActions
+
+Information system access is terminated immediately upon the voluntary or involuntary departure of an employee. In the case of involuntary departure, in addition to immediate termination of system access, at no point is a departing employee allowed access to any part of the CivicActions infrastructure.
+In the case of voluntary departure, employees are permitted access to the information system for the duration of their off boarding period. The departing employee’s manager is responsible for informing the Information Technology department when the employee off boarding period concludes. At this time system and facility access is terminated.
+
+
+#### b
+
+##### CivicActions
+
+The terminated user’s accounts are disabled and all access associated with the individual is revoked.
+
+
+#### c
+
+##### CivicActions
+
+The employee's manager or the Director of Human Resources conducts exit interviews with all employees who leave CivicActions voluntarily. There is a general discussion about the process of turning in any/all company issued devices, laptops, etc.
+
+
+#### d
+
+##### CivicActions
+
+CivicActions employees provide their own equipment that must be hardened to security reqirements depending upon their role and duties. CivicActions supplies two factor authentication tokens that become the property of the employee.
+Some employees may receive company-issued hardware for working on particular projects. These items are collected before the employee exits CivicActions. In the case of an involuntary termination, the Director of Human Resources works to collect company issued devices and provides paperwork highlighting confidential protections for customers.
+
+
+#### e
+
+##### CivicActions
+
+Access to CivicActions information and information systems is always shared, so that the termination of an individual will not prevent CivicActions from having access to needed resources.
+
+
+#### f
+
+##### CivicActions
+
+When a person is terminated, a standard off-boarding process is used to notify management and IT and to track the process of disabling access to the information system/information system components. CivicActions IT Operations and Security is given at least a four hour notice to schedule the deactivation of access upon termination. Deactivation is a manual process that is tracked via a Trello card in order to meet the four hour turnaround time before termination.
+
+
+### PS-5: Personnel Transfer
+
+##### LINCS
+
+When an employee is reassigned or transferred, the employee’s manager or designated official is required to request transfer of access (as appropriate) for the user.
+In accordance with the Department’s HR policy, the employee’s manager or designated official is responsible for recovering and properly securing his/her ID badge and returning it to the local physical security office. The manager provides prompt notification to the LINCS Technology Project system/security administrator when an employee changes assignments and/or location. This includes taking prompt and appropriate action to change employee access profile and/or remove employee from the system; and ensure that users’ system access is cancelled when the need no longer exists.
+This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
+
+
+#### a
+
+##### CivicActions
+
+When an employee, third party personnel and / or contractor is transferred to a new project or position within CivicActions, they may maintain access to the previous system they were working on in order to facilitate the process of maintenance and knowledge transfer. However, as part of the practices of account management (AC-2) and least privilege (AC-6), regular audits of privileged users are conducted and access privileges may be removed when no longer needed. Additionally, adherence to specific client SLAs may enhance the frequency of such audits or the timeliness of privilege removal during personnel transfer.
+
+
+#### b
+
+##### CivicActions
+
+When an employee, third party personnel and / or contractor is transferred to a new position within CivicActions and there is a requirement for access change, such access changes are normally completed within five business days.
+
+
+#### c
+
+##### CivicActions
+
+Access authorizations are modified as needed to coincide with changes in duties or
+operational need upon personnel transfer or reassignment.
+
+
+#### d
+
+##### CivicActions
+
+CivicActions Operations is informed of transfers that require access authorization modifications within five business days by the Project Manager, System Owner or Director of Human Resources.
+
+
+### PS-6: Access Agreements
+
+#### a
+
+##### LINCS
+
+All users of the LINCS system must read and accept access agreements upon every
+login. The access agreement can be found at http://courses.lincs.ed.gov a copy of
+which has been uploaded to CSAM as artifact: AccessAgreements.txt
+
+
+#### b
+
+##### LINCS
+
+The Access Agreements are reviewed at least annually or when a significant change occurs.
+
+
+#### c
+
+##### LINCS
+
+All individuals requiring access to the LINCS system are required to sign the Access Agreements before login is granted. When the Access Agreements are updated, the individual will be required to sign the new copy before regaining access.
+
+
+### PS-7: Third-Party Personnel Security
+
+#### a
+
+##### LINCS
+
+Personnel security requirements including security roles and responsibilities that apply to primary contracting organizations flow down to their subcontractors.
+
+
+#### b
+
+##### LINCS
+
+Personnel security policies and procedures that apply to primary contracting organizations flow down to their subcontractors.
+
+
+#### c
+
+##### LINCS
+
+All personnel security requirements are documented in PS-1 and other related Personnel Security controls.
+
+
+#### d
+
+##### LINCS
+
+For personnel transfers and terminations of third-party personnel, the procedures defined in employee termination (PS-4) and employee transfer (PS-5) flow down to subcontractors.
+
+
+#### e
+
+##### LINCS
+
+Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. Third-party personnel are monitored to ensure compliance with personnel security requirements.
+
+
+### PS-8: Personnel Sanctions
+
+##### LINCS
+
+The disciplinary sanctions for personnel failing to comply with establish IT security policies and procedures are included in the Department’s HR policy. If an employee violates the Department’s information security policies and procedures, the employee may be subject to disciplinary action at the discretion of management. Actions may range from verbal or written warning, removal of system access for a specific period of time, reassignment to other duties, or termination, depending on the severity of the violation. Disciplinary sanctions are reported to the OCIO.
+
+
+#### a
+
+##### CivicActions
+
+CivicActions Security and/or the Director of Human Resources is responsible for determining and enforcing sanctions for failing to comply with established information security policies and procedures. Coaching may be considered prior to sanctions. Sanctions may include but are not limited to written warnings, reduction in system access, demotion, or termination.
+
+
+#### b
+
+##### CivicActions
+
+When employee sanctions processes are initiated, the Director of Human Resources notifies the respective Project Manager(s) and CivicActions Security within five business days.
+
+
 ## PE: Physical and Environmental Protection
 
 ### PE-1: Physical And Environmental Protection Policy And Procedures
@@ -2350,24 +2415,18 @@ The SSP is currently available to authorized users on GitLab. Per the Acceptable
 
 ### PL-4: Rules Of Behavior
 
-##### LINCS
-
-All users (privileged and program account users) requesting access to the LINCS Technology Project system are required to read the LINCS’ Rules of Behaviors, complete an account request form and sign both documents. Appendix B includes the Rules of Behavior, describing the user’s responsibilities and expected behavior when using the application and also includes the User Acknowledgement form. Account management procedures are described in detail in the SSP.
-
-
 #### a
 
 ##### CivicActions
 
-CivicActions maintains an Acceptable Use Policy that all CivicActions personnel are required to abide by when working with CivicActions operated systems. This information is available in the CivicActions Handbook under Security Policy here: <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy>.
+CivicActions has created and made readily available to individuals requiring access to the information system an Acceptable Use Policy that describes their responsibilities and expected behavior with regard to information and information system usage. This information is available in the CivicActions Handbook under Security Policy here: <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy> and has also been uploaded to CSAM as ‘Appendix J1 - CivicActions Security Policy 20190226.docx’.
 
 
 #### b
 
 ##### CivicActions
 
-All CivicActions employees are required to read and sign the Security Policy <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/> which includes the Acceptable Use Policy, prior to being authorized access to CivicActions operated systems. This is part of the onboarding Security Training process: <https://civicactions-handbook.readthedocs.io/en/latest/01-welcome-to-civicactions/training/security-training/>
-If CivicActions staff fail to comply with CivicActions security awareness and training requirements, their access to CivicActions information systems may be terminated.
+All CivicActions employees are required to read and sign the Security Policy <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/> which includes the Acceptable Use Policy/Rules of Behavior, prior to being authorized access to CivicActions operated systems. The text of the electronically signed (via DocuSign) acknowledgement document has been uploaded to CSAM as artifact: 'CivicActions Security Policy Acknowledgement.docx'
 
 
 #### c
@@ -2381,261 +2440,7 @@ The CivicActions Acceptable Use Policy/Rules of Behavior are reviewed by CivicAc
 
 ##### CivicActions
 
-CivicActions employees re-sign the revised/updated Acceptable Use Policy/Rules of Behavior policy document. The Director of Human Resources retains the signed acknowledgements.
-
-
-## PS: Personnel Security
-
-### PS-1: Personnel Security Policy And Procedures
-
-##### AWS
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
-
-
-##### CivicActions
-
-CivicActions has developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Personnel Security (PS) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-##### LINCS
-
-The LINCS Technology Project documents the security policy and procedures in addressing position categorization, personnel screening, personnel termination, personnel transfer, and access agreements within the LINCS SSP. The LINCS Technology Project adopts the Department of Education personnel security standards and determines position risks levels based on public trust responsibilities.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-
-
-### PS-2: Position Risk Designation
-
-##### LINCS
-
-The LINCS Technology Project’s position sensitivity levels are assigned by the Department of Education and National Classification Center (NCC) as part of the position designation required by OPM under 5 CFR 731.106. Each Department position designation is documented on the Standard Position Description (SPD) and assigned a risk level (or sensitivity level) commensurate with the sensitivity of the information, the risk to that information and the system maintaining that information. The levels of risk still need to be designated by the Department for employee and contractor positions but since the LINCS Technology Project system does not have any sensitive data, a low risk scenario can be assumed.
-• Employee risk levels and background investigations are: Low Risk= NACI, Moderate Risk= LBI, High Risk= BI.
-• Contractor risk levels and background investigations are: Low Risk= NACI, Moderate Risk= NACC, High Risk= BI.
-In order to ensure every employee is assigned to a position, which has been reviewed for sensitivity by the NCC, the SPD is a required data attribute of an employee’s HR record. Position risks designations are reviewed and revised when NCC or OPM publish changes to sensitivity levels.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog
-
-
-#### a
-
-##### CivicActions
-
-Risk designations are assigned to all CivicActions positions. The CivicActions Director of Human Resources works in coordination with the CivicActions ISSO and the Chief Operating Officer to assign risk designations.
-
-
-#### b
-
-##### CivicActions
-
-The CivicActions Director of Human Resources works in coordination with the CivicActions ISSO and the Chief Operating Officer to establish screening criteria for all CivicActions positions.
-
-
-#### c
-
-##### CivicActions
-
-At least every three (3) years, the CivicActions Director of Human Resources reviews and revises position risk designations. If the Director of Human Resources determines that significant changes must be made to the position risk descriptions the Director of Human Resources works in coordination with the CivicActions ISSO and the Chief Operating Officer to implement changes as required.
-
-
-### PS-3: Personnel Screening
-
-##### LINCS
-
-Minimum background investigations are conducted, since all data is non-sensitive, for individuals requiring access to LINCS Technology Project information and information systems. The type of background investigation conducted for an individual is determined by the individual’s position risk categorization noted in control PS-2. The Department conducts periodic reinvestigations in accordance with OPM and NIST guidelines.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-
-
-#### a
-
-##### CivicActions
-
-Prospective CivicActions employees undergo background checks commensurate with the individual’s job duties, the classification of the information they will access, and the risks associated with the role. At the discretion of the Chief Operating Officer these checks may also be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public.  In these instances, the Chief Operating Officer will instruct the Director of Human Resources to conduct a background check before granting access to the information system.
-
-
-#### b
-
-##### CivicActions
-
-Rescreening is conducted as required by the individual’s job duties, the classification of the information they will access, and the risks associated with the role. A basic background check is performed for all CivicActions employees.
-
-
-### PS-4: Personnel Termination
-
-##### LINCS
-
-The Department’s HR policy states that managers or designated officials are responsible for recovering and properly securing employee badges and returning it to the local physical security office. The Department executes termination procedures that remove personnel access privileges, computer accounts. When an employee is terminated, the employee’s manager or designated official completes a form requesting termination of access for the user. Local management and the security manager coordinate disabling or removing LINCS Technology Project privileged access with the system administrator. The employee’s manager or designated official is responsible for recovering and properly securing his/her ID badge and returning it to the local physical security office. The employee’s manager or designated official ensures that any information on the system that the employee was responsible for will be available to the appropriate personnel.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-
-
-#### a
-
-##### CivicActions
-
-Information system access is terminated immediately upon the voluntary or involuntary departure of an employee. In the case of involuntary departure, in addition to immediate termination of system access, at no point is a departing employee allowed access to any part of the CivicActions infrastructure.
-In the case of voluntary departure, employees are permitted access to the information system for the duration of their off boarding period. The departing employee’s manager is responsible for informing the Information Technology department when the employee off boarding period concludes. At this time system and facility access is terminated.
-
-
-#### b
-
-##### CivicActions
-
-The terminated user’s accounts are disabled and all access associated with the individual is revoked.
-
-
-#### c
-
-##### CivicActions
-
-The employee's manager or the Director of Human Resources conducts exit interviews with all employees who leave CivicActions voluntarily. There is a general discussion about the process of turning in any/all company issued devices, laptops, etc.
-
-
-#### d
-
-##### CivicActions
-
-CivicActions employees provide their own equipment that must be hardened to security reqirements depending upon their role and duties. CivicActions supplies two factor authentication tokens that become the property of the employee.
-Some employees may receive company-issued hardware for working on particular projects. These items are collected before the employee exits CivicActions. In the case of an involuntary termination, the Director of Human Resources works to collect company issued devices and provides paperwork highlighting confidential protections for customers.
-
-
-#### e
-
-##### CivicActions
-
-Access to CivicActions information and information systems is always shared, so that the termination of an individual will not prevent CivicActions from having access to needed resources.
-
-
-#### f
-
-##### CivicActions
-
-When a person is terminated, a standard off-boarding process is used to notify management and IT and to track the process of disabling access to the information system/information system components. CivicActions IT Operations and Security is given at least a four hour notice to schedule the deactivation of access upon termination. Deactivation is a manual process that is tracked via a Trello card in order to meet the four hour turnaround time before termination.
-
-
-### PS-5: Personnel Transfer
-
-##### LINCS
-
-When an employee is reassigned or transferred, the employee’s manager or designated official is required to request transfer of access (as appropriate) for the user.
-In accordance with the Department’s HR policy, the employee’s manager or designated official is responsible for recovering and properly securing his/her ID badge and returning it to the local physical security office. The manager provides prompt notification to the LINCS Technology Project system/security administrator when an employee changes assignments and/or location. This includes taking prompt and appropriate action to change employee access profile and/or remove employee from the system; and ensure that users’ system access is cancelled when the need no longer exists.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-
-
-#### a
-
-##### CivicActions
-
-When an employee, third party personnel and / or contractor is transferred to a new project or position within CivicActions, they may maintain access to the previous system they were working on in order to facilitate the process of maintenance and knowledge transfer. However, as part of the practices of account management (AC-02) and least privilege (AC-06), regular audits of privileged users are conducted and access privileges may be removed when no longer needed. Additionally, adherence to specific client SLAs may enhance the frequency of such audits or the timeliness of privilege removal during personnel transfer.
-
-
-#### b
-
-##### CivicActions
-
-When an employee, third party personnel and / or contractor is transferred to a new position within CivicActions and there is a requirement for access change, such access changes are normally completed within five business days.
-
-
-#### c
-
-##### CivicActions
-
-Access authorizations are modified as needed to coincide with changes in duties or operational need upon personnel transfer or reassignment.
-
-
-#### d
-
-##### CivicActions
-
-CivicActions Operations is informed of transfers that require access authorization modifications within five business days by the Project Manager, System Owner or Director of Human Resources.
-
-
-### PS-6: Access Agreements
-
-##### LINCS
-
-The Department has implemented a formalized process for user account administration using the approved and signed Rules of Behavior and User Acknowledgement forms. All new users requesting access to the LINCS Technology Project system must complete these forms and the security manager will keep them on file and reviewed bi-annually.
-
-
-#### a
-
-##### CivicActions
-
-CivicActions has developed and documented an Acceptable Use Policy that covers access and use of all CivicActiuons systems.
-
-
-#### b
-
-##### CivicActions
-
-The Acceptable Use Policy is reviewed at least annually or when a significant change occurs. In the event that a major update is made to the Acceptable Use Policy, employees are required to read and sign the updated policy document and Human Resources stores the information.
-
-
-#### c
-
-##### CivicActions
-
-All CivicActions team members are required to read and sign the Acceptable Use Policy (AUP) provided in the Security Policy document prior to gaining access to the any CivicActions system. The acknowledgment signature page is a separate document collected and recorded by the Director of Human Resources.
-
-
-### PS-7: Third-Party Personnel Security
-
-##### LINCS
-
-All contractor support personnel are required to meet the same personnel security policy requirements as Department personnel who have privileged access to the LINCS Technology Project system. Third party providers are required to review and sign the Rules of Behavior prior to being granted access to the system.
-
-
-#### a
-
-##### CivicActions
-
-Third party personnel are required to following the same process and requirements as CivicActions employees.
-
-
-#### b
-
-##### CivicActions
-
-Third party personnel are required to following the same process and requirements as CivicActions employees. CivicActions Operations or Security may require that a background check be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public.
-
-
-#### c
-
-##### CivicActions
-
-All personnel security requirements are documented and include things such as signing the Acceptable Use Policy (AUP) and taking security awareness training.
-
-
-#### d
-
-##### CivicActions
-
-For personnel transfers and terminations of third-party personnel with access to the CivicActions systems, third parties must notify the CivicActions Operations an/or Director of Human Resources the same day. The same employee transfer and/or termination procedure(s) are folloed as if the third party personnel were CivicActions employees.
-
-
-#### e
-
-##### CivicActions
-
-Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. CivicActions Security is responsible for coordinating with the managers of external systems to include appropriate and tailored compliance verification language in contracts as required.  Third-party personnel are continuously monitored to ensure compliance with personnel security requirements.
-
-
-### PS-8: Personnel Sanctions
-
-##### LINCS
-
-The disciplinary sanctions for personnel failing to comply with establish IT security policies and procedures are included in the Department’s HR policy. If an employee violates the Department’s information security policies and procedures, the employee may be subject to disciplinary action at the discretion of management. Actions may range from verbal or written warning, removal of system access for a specific period of time, reassignment to other duties, or termination, depending on the severity of the violation. Disciplinary sanctions are reported to the OCIO.
-
-
-#### a
-
-##### CivicActions
-
-The Director of Human Resources is responsible for determining and enforcing sanctions for failing to comply with established information security policies and procedures. Coaching may be considered prior to sanctions. Sanctions may include but are not limited to written warnings, reduction in system access, demotion, or termination.
-
-
-#### b
-
-##### CivicActions
-
-When employee sanctions processes are initiated, the Director of Human Resources notifies the respective Project Manager(s) and CivicActions Security within five business days.
+CivicActions employees re-sign acknowledgement of the Acceptable Use/Rules of Behavior policy document whenever significant changes are made. The Director of Human Resources retains the signed acknowledgements.
 
 
 ## RA: Risk Assessment
@@ -2779,9 +2584,9 @@ Identified and reported vulnerabilities are assigned an impact rating and respon
 Results of the vulnerability scans and security assessments are shared with all appropriate CivicActions personnel supporting continuous monitoring requirements. CivicActions Security assigns each vulnerability an impact rating and response time though JIRA or the Git issue tool for tracking to the established remediation deadlines listed in RA-5(d).
 
 
-## SA: System and Services Acquisition
+## CA: Security Assessment and Authorization
 
-### SA-1: System And Services Acquisition Policy And Procedures
+### CA-1: Security Assessment And Authorization Policy And Procedures
 
 ##### AWS
 
@@ -2790,265 +2595,179 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained the CivicActions System and Services Acquisition (SA) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
+CivicActions has developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Security Assessment and Authorization Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 ##### LINCS
 
-The LINCS Technology Project complies with the Department of Education Handbook for Software Management and Acquisition Policy and Federal Acquisition Regulation (FAR) policies and procedures. The Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01) states that security requirements will be included in information system acquisition contracts based on an assessment of risk in accordance with FISMA requirements. The LINCS Technology Project will identify new threats/vulnerabilities and technologies that may require updating of solicitation documents.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
+The Department has published the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01) and U. S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05). Both of these publications are revised periodically. The LINCS System Security Policy (SSP) provides guidance on all aspects of security for the protection of LINCS information technology resources.
+The Department will periodically review and update the SSP when there is a significant change to the regulatory, operational, or technical environment.
 
 
-### SA-2: Allocation Of Resources
-
-##### AWS
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: allocation of resources.
-
-
-##### LINCS
-
-The LINCS System Owner is responsible for leading the annual budgeting process and for tracking organizational spending. The System Owner coordinates with the CivicActions Project Manager and CivicActions Security on at least monthly basis to track security priorities and spending patterns and determine financial requirements. The System Owner also coordinates the approval process for interim increases to the security budget, if required. This data is used to support the development of the annual budget.
-Security costs are included in Exhibit 53 in the Department's on-line electronic Capital Planning and Investment Control system (eCPIC) in order to provide adequate business case information for budget purposes. Security costs are represented across the life cycle in the business case (Exhibit 300) for major investments and (Exhibit 53) for non-major projects - LINCS is a non-major project. Security costs are summarized and listed as a line item on the Exhibit 53 in the budget submitted to Treasury.
-Costs for providing security at the infrastructure level are contained in the business cases for infrastructure supporting computing platforms, desktop processing, the network environment, and web capability. Since the Exhibit 53 includes projections for multiple fiscal years, its intention is to identify and anticipate security resources required.
-
+### CA-2: Security Assessments
 
 #### a
 
 ##### CivicActions
 
-CivicActions Security in collaboration with the System Owner act and/or meet on a pre-determined basis to determine information system security requirements and to develop implementation budgets and plans.
+CivicActions will develop a security assessment plan (SAP) that describes the security controls and control enhancements under assessment, assessment procedures used to determine effectiveness, the assessment environment, the assessment team, and the assessment roles and responsibilities.
+
+
+##### LINCS
+
+The LINCS Technology Project follows the U. S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures.  The LINCS Technology Project will conduct annual security assessments to comply with FISMA and NIST regulations. The Department will draw on NIST Special Publications 800-53A security controls to complete the assessment. All controls and sub-set security controls will be evaluated and a risk assessment will be conducted. The scope of the assessment includes:
+1. Security controls and control enhancements under assessment
+2. Assessment procedures to be used to determine security control effectiveness
+3. Assessment environment, assessment team, and assessment roles and responsibilities
 
 
 #### b
 
 ##### CivicActions
 
-CivicActions Security in collaboration with the System Owner determines, designates, documents, and allocates the resources required to protect the system as part of its capital planning and investment control processes.
+CivicActions will assess the security controls in their system and its environment of operation to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security requirements,
+All controls assigned and documented in this System Security Plan (SSP) will be tested at least annually or when there is a major change to the system.
 
 
 #### c
 
 ##### CivicActions
 
-The annual budget developed by the System Owner includes explicit budgetary line items for FISMA security requirements. Additional security-related expenditures that fall outside of explicit compliance requirements are addressed in sub-lines under the CivicActions Information Technology budget.
-
-
-### SA-3: System Development Life Cycle
-
-##### AWS
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: system development life cycle.
+CivicActions will produce a security assessment report that documents the results of the assessment. The Security Assessment Report must contain the results of the assessment, and may also contain recommendations and suggestions for plans of actions and milestones (POA&Ms).
 
 
 ##### LINCS
 
-The LINCS Technology Project draws from the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01), Department of Education Lifecycle Management (LCM) Framework, NIST SP 800-64, the LINCS Enterprise Performance Life Cycle (EPLC) and Agile software development methodology to ensure security requirements are incorporated during each phase of the life cycle. This helps to ensure the development of secure systems and effective risk management.
-
-
-#### a
-
-##### CivicActions
-
-The system and application(s) are managed by CivicActions using the Agile software development methodology, which provides a continuous System Development Life Cycle (SDLC) methodology. CivicActions Agile management continues to improve the software through ongoing planned code releases. The process is overseen by the Change Control Board (CCB) as described in CM-1. Each point release introduces code and configuration changes to the website through the following SDLC methodology:
-• Code release planning: A code release ticket is created in the Change Request project of the CivicActions ticketing system which describes the overall goals of the code release. The code release ticket is linked to other tickets in the ticketing system which describe issues to be addressed by the planned code release. Those issues may include bug fixes and feature enhancements as well as upgrades to newer versions of the software packages that have been used to build the website.
-• Sprints: The tickets covered by the planned code release are then implemented through a series of planned sprints, each of which typically lasts two weeks.  Each sprint begins with a sprint planning session at which the the CCB selects a list of tickets to be implemented. CivicActions Development holds daily coordination meetings throughout the sprint to share information and resolve any problems that may be blocking progress toward completion. At the end of the sprint, a retrospective is performed in which progress is reviewed to determine which issues have been resolved and which need further work.
-• Development/unit testing: Work on each ticket is performed within a separate code branch within the CivicActions git repository, and tested using the Gitlab Runner continuous integration platform. Developers also write unit tests to prove their code behaves as expected and address security considerations such as information leakage, bounds checking, and input validation. Once work on a ticket is completed, the developer creates a merge request, and the changes are submitted to at least one other developer for review to ensure they meet functional requirements and address security considerations before the pull request is merged into the git repository's development branch for the planned code release.
-• Integration testing: Once all work tickets have been completed, the code and configuration necessary to implement the changes is merged into the website's staging server, where it undergoes additional testing to ensure there are no conflicts between the work that has been done on individual tickets.
-• User acceptance testing (UAT): The code release undergoes manual testing against a checklist of expected site behaviors and options each of the website's defined user roles to further verify that the functional changes work as expected and to identify any changes in user experience that need to be documented in release notes to be shared with the customer.
-• Approval for deployment: After all the planned code release has passed all of the above tests, the code release is scheduled for deployment to production and presented to CivicActions' Change Control Board (CCB) for review and approval.
-• Deployment to production: A full backup of the website is performed immediately prior to the deployment.
-• Security scan: After the deployment to production, the website undergoes a security scan using the a web vulnerability scanner.
-Security issues to be addressed in the planned code release may come from a variety of sources:
-• Customer support requests received by the CivicActions Help Desk
-• Security concerns, incidents, and site performance issues reported by users
-• Security incident reports, including server log analysis and root cause analysis of those incidents performed by CivicActions Security and Operations
-• Security notifications received by CivicActions Security from external security teams and other software vendors
-• Vulnerabilities detected during security scans of the website performed by CivicActions Security
-• Issues reported by CivicActions Security, Operations and Development
-• Security issues reported through continuous monitoring
-
-
-#### b
-
-##### CivicActions
-
-The CivicActions organization defines and documents information security roles and responsibilities throughout the SDLC. The following teams participate in this process:
-• Customer Support: Files tickets when incidents are reported and shares incident reports with customers
-• CivicActions Security: Receives security notifications from the Drupal security team and other software vendors; performs security scans; uses CivicActions JIRA ticketing system to request mitigation of all reported vulnerabilities
-• CivicActions Development: Performs server log analysis when security incidents are reported; assists in root cause analysis
-• Change Control Board: Meets weekly to review and approve upcoming planned code changes to the website, include security-related code releases.
-• AWS Cloud: Monitors server and application events; proactively responds to security incidents, and reports incidents to CivicActions
-• Users: Communicates customer security requirements and expectations, and alerts CivicActions' customer support team whenever it detects a security or site performance issue
-Security responsibilities performed by these teams include the following:
-• Perform configuration management during information system design, development, implementation, and operation;
-• Implement only organization-approved changes;
-• Document approved changes;
-• Manage and control changes to the system;
-• Fully test all changes, taking into account security considerations as well as other functional requirements;
-• Track security flaws and flaw resolution; and
-• Employ code analysis tools to examine software for common flaws and document the results of the analysis.
-
-
-#### c
-
-##### CivicActions
-
-Each of the CivicActions teams described in SA-3(b) has a team leader who is responsible for defining roles and responsibilities of individual personnel members within that team. CivicActions uses role base management for access and authentication implementation and enforcement.
+The LINCS Authorizing Official or Designated Representative will create a Security Assessment Report (SAR). A full assessment shall be conducted by an independent third party assessor at least every three years.
 
 
 #### d
 
 ##### CivicActions
 
-The CivicActions organization integrates the organizational information security risk management process into system development life cycle activities by requiring that the processes defined in SA-3(a) and (b) above are adhered to by all information system developers and associated security personnel.
+CivicActions will provide the results of the security control assessment to the System Owner, Project Manager, CivicActions Security, and the Authorization Official (AO)). The security control assessment package includes the following:
+• Security Control Matrix
+• Privacy Impact Assessment
+• E-Authentication
+• Contingency Plan
+• Configuration Management Plan
+• Rules of Behavior
+• Incident Response Plan
 
 
-### SA-4: Acquisition Process
-
-##### AWS
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: acquisition process.
-
+### CA-3: System Interconnections
 
 ##### CivicActions
 
-CivicActions' System and Services Acquisition Policy affects all personnel with purchasing authorization, and applies to all purchases or deployments including infrastructure, software or hardware. The CivicActions System and Services Acquisition Policy contains the process for determining acceptance criteria for all system software and application services.
-The Acquisition Security Policy includes an assessment that evaluates the product based on the vendor’s security practices, policies, and past performance. It also details the potential maintenance and end-of-life ramifications with regards to security.
-CivicActions Security is responsible for determining the security documentation that must be included in information system or services acquisition contracts.
-Configuration and design of the development and production environments are hosted in the CivicActions Git repository. All documentation are strictly controlled regarding transportation and storage in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs.
+This control is not applicable. CivicActions systems do not have system interconnections. The only communication conducted to CivicActions systems is through the Internet.
+
+
+### CA-5: Plan Of Action And Milestones
+
+##### CivicActions
+
+CivicActions documents all deficiencies and vulnerabilities identified during the security certification and/or continuous monitoring phase (via security assessment, vulnerability scanning, risk assessment, etc.) within the Plan of Action and Milestones (POA&M).
+The POA&M document provides a platform for CivicActions to monitor and track the deficiency and its mitigation strategy. POA&M items will include:
+• The description of the deficiency,
+• Dedicated point of contact for this deficiency.
+• Cost of the mitigation strategy
+• Associated risk and NIST control
+• Recommended mitigation strategy
+POA&Ms are tracked throughout the lifecycle of the system until its mitigation. All POA&Ms are reviewed on a monthly basis by CivicActions Information System Security Officer to ensure all mitigation strategies are continuing as documented.
 
 
 ##### LINCS
 
-The LINCS Technology Project follows the guidelines and procedures within the overarching Department of Education policy documents for all federal acquisition of information technology equipment, software and services, Federal Acquisition Regulations (FAR) Part 39, “Acquisition of Information Technology.”  Security requirements/specifications are included in information system acquisition contracts. The requirements in the information system acquisition contract permit updating security controls as new threat/vulnerabilities are identified and new technologies are implemented.
-The LINCS System and Services Acquisition Policy contains the process for determining acceptance criteria for all LINCS system software and services.
-The LINCS organization reviews and approves all acquisition contracts in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs.
+The LINCS Technology Project follows the U.S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures in managing POA&Ms.
 
 
-### SA-4 (10): Use Of Approved Piv Products
+### CA-6: Security Authorization
 
 ##### LINCS
 
-CivicActions/LINCS and AWS describes this control as “not applicable”, as PIV credentials are not applicable to the LINCS system. Access and Authentication requirements for the LINCS system for internal CivicActions and customer are implemented under access management and enforcement (AC-2 and AC-3) and identification and authentication for all users (IA-2 and IA-8).
-It is the responsibiility of LINCS for implementation of PIV capability for authentication as required.
+The LINCS Technology Project follows the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01) and U. S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures. The LINCS Technology Project system received its first three-year security accreditation on March 3, 2009, and most recently received an ATO on February 5, 2016.
+ATO re-assessment will be performed every three years or when there is a major change to the application, in which a senior organizational official will sign and approve the security accreditation.
 
 
-### SA-5: Information System Documentation
-
-##### AWS
-
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: information system documentation.
-
-
-##### LINCS
-
-The Department maintains adequate documentation for the LINCS Technology Project system. The LINCS Technology Project system documentation is protected as required and made available to authorized personnel. Procedures for protecting system documentation include management in the private CivicActions Git repository and the publicly available documentation trees for Free and Open Source Software (FOSS). The documentation maintained for the LINCS Technology Project system includes:
-  
-• System Security Plan (SSP) – this document
-• Configuration documentation
-• Incident Response and Contingency Plans
-• Rules of Behavior (Acceptable Use Policy)
-• FOSS Reference Manuals (Drupal, Moodle, GNU/Linux, Apache, MySQL, PHP, Postfix, etc.)
-
+### CA-7: Continuous Monitoring
 
 #### a
 
 ##### CivicActions
 
-Some application features are built on a custom basis and are not part of standard FOSS packages. Administrator documentation for those custom features is maintained in the CivicActions Git repository documentation system.
+CivicActions implements a continuous monitoring strategy that incorporates configuration management, system scanning and log analysis processes:
+• Configuration management includes the assessment of security impact analyses of
+  proposed and implemented changes.
+
+• System scanning is managed by running the OpanSCAP vulnerability scanner using the
+  DISA STIG profile.
+
+• Log analysis is managed by feeding logs to a Graylog dashboard for analysis.
 
 
 ##### Drupal
 
-Public documentation related to Drupal is maintained by the Drupal Association and is located at: <https://drupal.org/documentation>. This documentation contains administrator documentation for the information system that describes:
-• secure configuration, installation, and operation of the system, component, or service;
-• effective use and maintenance of security functions/mechanisms; and
-• known vulnerabilities regarding configuration and use of administrative functions;
+CivicActions follows recommendations and best practices developed by the Drupal community for monitoring. Examples of specific logs and metrics are included in AU-2 and AU-3.
 
 
 #### b
 
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: continuous monitoring.
+
+
 ##### CivicActions
 
-The publicly-available FOSS package documentation described in control SA-5(a) also includes user documentation for non-administrators as described in control AC-3. This includes documentation on how to create and manage user accounts as well as how to create, update and delete content.
-CivicActions follows the user docuemntation standard practice to provide context-sensitive help as well as access to a HelpDesk in publicly facing applications.
-CivicActions' Customer Support team, described in control SA-3(b), handles questions about how to use the system. Questions are submitted by sending an email to support@civicactions.com, which triggers creation of a ticket in CivicActions' customer support ticketing system.
-
-
-##### Drupal
-
-The public documentation at drupal.org contains user documentation for the information system that describes:
-• user-accessible security functions/mechanisms and how to effectively use those
-  security functions/mechanisms;
-
-• methods for user interaction, which enables individuals to use the system,
-  component, or service in a more secure manner; and
-
-• user responsibilities in maintaining the security of the system, component, or service;
+Configuration management and log analysis is real time. OpenSCAP security scans are performed and reviewed monthly. See also: RA-5 and SI-4.
+Quarterly review of the control assessments supporting the monitoring is conducted by CivicActions Operations in collaboration with CivicActions Security.
 
 
 #### c
 
-##### CivicActions
-
-If the information needed to answer a question is not already included in the website's public-facing documentation, a ticket is created to determine whether the question is sufficiently general in nature to warrant adding the answer to the website's documentation.
-
-
 ##### Drupal
 
-As a popular and well-used and maintained free and open source (FOSS) project, in the event that sought after documentation is not available on Drupal.org, it can usually be found in one of the many forums, mailing lists or StackExchange sites covering Drupal and its many contributed modules.
+CivicActions works closely with the Drupal security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed.
 
 
 #### d
 
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: ongoing security status monitoring.
+
+
 ##### CivicActions
 
-All administrator documentation is housed in a protected Git repository. User documentation is publicly available..
-
-
-##### Drupal
-
-The Drupal.org documentation is multi-sourced on github and private repositories.
+CivicActions conducts or oversees continuous system security monitoring.
 
 
 #### e
 
 ##### CivicActions
 
-As needed and approved by CivicActions Security, documentation is available to appropriate personnel by granting access to the private Git repository.
+CivicActions Security reviews the results of the security scans and security assessments with associated JIRA and/or GitLab Issue tickets created to correlate and analyze security related information generated from the monitoring tools becoming POA&M items for tracking.
 
 
-##### Drupal
-
-As the Drupal.org documentation is publicly available, there is no need to provide distribution mechanisms.
-
-
-### SA-8: Security Engineering Principles
+#### f
 
 ##### CivicActions
 
-Information system security engineering principles are applied in the specification, design, development, implementation, and modification of the application system.
-Sound security policy, developing layered protections, and controls have been established as the foundation for design throughout the SDLC defined in control SA-3. Security requirements are incorporated into that SDLC, as described previously.
-CivicActions uses a development-stage-production testing and management workflow as part of the CivicActions development model. Changes are first tested on a development environment, then moved to a staging environment for further testing. Once the chnages have been tested and approved, a backup is made of the production environment, and the changes are then deployed. More information regarding this model can be found in CM-3 and CM-4.The CivicActions organization ensures that all its developers are trained on how to build secure software, that security controls have been tailored to meet business and operational needs.
+POA&M items are tracked by CivicActions Security though JIRA tickets with a security categorization assigned.  Information included in the POA&M item include the severity, the due date, the weakness source identifier, and the plugin ID that identified the vulnerability.
 
 
-### SA-9: External Information System Services
+#### g
+
+##### CivicActions
+
+The security status of the system is reported up to the System Owner and Project Manager via CivicActions Security to be reviewed alongside other security issues relating to the system.
+
+
+### CA-9: Internal System Connections
 
 ##### AWS
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: external information system services.
-
-
-##### CivicActions
-
-CivicActions does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing, or transmitting federal agency data.
-
-
-##### LINCS
-
-LINCS does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing, or transmitting federal agency data.
-LINCS is hosted on the AWS Cloud platform, which was approved under the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
+Not applicable: There are no internal systems that connect to the FedRAMP certified AWS cloud.
 
 
 ## SC: System and Communications Protection
@@ -3544,6 +3263,278 @@ The CivicActions organization retains all information, system-related informatio
 ##### LINCS
 
 LINCS Technology Project representatives and systems administrators receive annual training from the Department regarding information assurance and information handling requirements. These personnel are required to operate the system and handle system data and output in accordance with legal requirements. Personnel training and system guidelines ensure that data and programs are handled appropriately.
+
+
+## SA: System and Services Acquisition
+
+### SA-1: System And Services Acquisition Policy And Procedures
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+
+
+##### CivicActions
+
+CivicActions has developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained the CivicActions System and Services Acquisition (SA) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
+
+
+##### LINCS
+
+The LINCS Technology Project complies with the Department of Education Handbook for Software Management and Acquisition Policy and Federal Acquisition Regulation (FAR) policies and procedures. The Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01) states that security requirements will be included in information system acquisition contracts based on an assessment of risk in accordance with FISMA requirements. The LINCS Technology Project will identify new threats/vulnerabilities and technologies that may require updating of solicitation documents.
+This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
+
+
+### SA-2: Allocation Of Resources
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: allocation of resources.
+
+
+##### LINCS
+
+The LINCS System Owner is responsible for leading the annual budgeting process and for tracking organizational spending. The System Owner coordinates with the CivicActions Project Manager and CivicActions Security on at least monthly basis to track security priorities and spending patterns and determine financial requirements. The System Owner also coordinates the approval process for interim increases to the security budget, if required. This data is used to support the development of the annual budget.
+Security costs are included in Exhibit 53 in the Department's on-line electronic Capital Planning and Investment Control system (eCPIC) in order to provide adequate business case information for budget purposes. Security costs are represented across the life cycle in the business case (Exhibit 300) for major investments and (Exhibit 53) for non-major projects - LINCS is a non-major project. Security costs are summarized and listed as a line item on the Exhibit 53 in the budget submitted to Treasury.
+Costs for providing security at the infrastructure level are contained in the business cases for infrastructure supporting computing platforms, desktop processing, the network environment, and web capability. Since the Exhibit 53 includes projections for multiple fiscal years, its intention is to identify and anticipate security resources required.
+
+
+#### a
+
+##### CivicActions
+
+CivicActions Security in collaboration with the System Owner act and/or meet on a pre-determined basis to determine information system security requirements and to develop implementation budgets and plans.
+
+
+#### b
+
+##### CivicActions
+
+CivicActions Security in collaboration with the System Owner determines, designates, documents, and allocates the resources required to protect the system as part of its capital planning and investment control processes.
+
+
+#### c
+
+##### CivicActions
+
+The annual budget developed by the System Owner includes explicit budgetary line items for FISMA security requirements. Additional security-related expenditures that fall outside of explicit compliance requirements are addressed in sub-lines under the CivicActions Information Technology budget.
+
+
+### SA-3: System Development Life Cycle
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: system development life cycle.
+
+
+##### LINCS
+
+The LINCS Technology Project draws from the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01), Department of Education Lifecycle Management (LCM) Framework, NIST SP 800-64, the LINCS Enterprise Performance Life Cycle (EPLC) and Agile software development methodology to ensure security requirements are incorporated during each phase of the life cycle. This helps to ensure the development of secure systems and effective risk management.
+
+
+#### a
+
+##### CivicActions
+
+The system and application(s) are managed by CivicActions using the Agile software development methodology, which provides a continuous System Development Life Cycle (SDLC) methodology. CivicActions Agile management continues to improve the software through ongoing planned code releases. The process is overseen by the Change Control Board (CCB) as described in CM-1. Each point release introduces code and configuration changes to the website through the following SDLC methodology:
+• Code release planning: A code release ticket is created in the Change Request project of the CivicActions ticketing system which describes the overall goals of the code release. The code release ticket is linked to other tickets in the ticketing system which describe issues to be addressed by the planned code release. Those issues may include bug fixes and feature enhancements as well as upgrades to newer versions of the software packages that have been used to build the website.
+• Sprints: The tickets covered by the planned code release are then implemented through a series of planned sprints, each of which typically lasts two weeks.  Each sprint begins with a sprint planning session at which the the CCB selects a list of tickets to be implemented. CivicActions Development holds daily coordination meetings throughout the sprint to share information and resolve any problems that may be blocking progress toward completion. At the end of the sprint, a retrospective is performed in which progress is reviewed to determine which issues have been resolved and which need further work.
+• Development/unit testing: Work on each ticket is performed within a separate code branch within the CivicActions git repository, and tested using the Gitlab Runner continuous integration platform. Developers also write unit tests to prove their code behaves as expected and address security considerations such as information leakage, bounds checking, and input validation. Once work on a ticket is completed, the developer creates a merge request, and the changes are submitted to at least one other developer for review to ensure they meet functional requirements and address security considerations before the pull request is merged into the git repository's development branch for the planned code release.
+• Integration testing: Once all work tickets have been completed, the code and configuration necessary to implement the changes is merged into the website's staging server, where it undergoes additional testing to ensure there are no conflicts between the work that has been done on individual tickets.
+• User acceptance testing (UAT): The code release undergoes manual testing against a checklist of expected site behaviors and options each of the website's defined user roles to further verify that the functional changes work as expected and to identify any changes in user experience that need to be documented in release notes to be shared with the customer.
+• Approval for deployment: After all the planned code release has passed all of the above tests, the code release is scheduled for deployment to production and presented to CivicActions' Change Control Board (CCB) for review and approval.
+• Deployment to production: A full backup of the website is performed immediately prior to the deployment.
+• Security scan: After the deployment to production, the website undergoes a security scan using the a web vulnerability scanner.
+Security issues to be addressed in the planned code release may come from a variety of sources:
+• Customer support requests received by the CivicActions Help Desk
+• Security concerns, incidents, and site performance issues reported by users
+• Security incident reports, including server log analysis and root cause analysis of those incidents performed by CivicActions Security and Operations
+• Security notifications received by CivicActions Security from external security teams and other software vendors
+• Vulnerabilities detected during security scans of the website performed by CivicActions Security
+• Issues reported by CivicActions Security, Operations and Development
+• Security issues reported through continuous monitoring
+
+
+#### b
+
+##### CivicActions
+
+The CivicActions organization defines and documents information security roles and responsibilities throughout the SDLC. The following teams participate in this process:
+• Customer Support: Files tickets when incidents are reported and shares incident reports with customers
+• CivicActions Security: Receives security notifications from the Drupal security team and other software vendors; performs security scans; uses CivicActions JIRA ticketing system to request mitigation of all reported vulnerabilities
+• CivicActions Development: Performs server log analysis when security incidents are reported; assists in root cause analysis
+• Change Control Board: Meets weekly to review and approve upcoming planned code changes to the website, include security-related code releases.
+• AWS Cloud: Monitors server and application events; proactively responds to security incidents, and reports incidents to CivicActions
+• Users: Communicates customer security requirements and expectations, and alerts CivicActions' customer support team whenever it detects a security or site performance issue
+Security responsibilities performed by these teams include the following:
+• Perform configuration management during information system design, development, implementation, and operation;
+• Implement only organization-approved changes;
+• Document approved changes;
+• Manage and control changes to the system;
+• Fully test all changes, taking into account security considerations as well as other functional requirements;
+• Track security flaws and flaw resolution; and
+• Employ code analysis tools to examine software for common flaws and document the results of the analysis.
+
+
+#### c
+
+##### CivicActions
+
+Each of the CivicActions teams described in SA-3(b) has a team leader who is responsible for defining roles and responsibilities of individual personnel members within that team. CivicActions uses role base management for access and authentication implementation and enforcement.
+
+
+#### d
+
+##### CivicActions
+
+The CivicActions organization integrates the organizational information security risk management process into system development life cycle activities by requiring that the processes defined in SA-3(a) and (b) above are adhered to by all information system developers and associated security personnel.
+
+
+### SA-4: Acquisition Process
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: acquisition process.
+
+
+##### CivicActions
+
+CivicActions' System and Services Acquisition Policy affects all personnel with purchasing authorization, and applies to all purchases or deployments including infrastructure, software or hardware. The CivicActions System and Services Acquisition Policy contains the process for determining acceptance criteria for all system software and application services.
+The Acquisition Security Policy includes an assessment that evaluates the product based on the vendor’s security practices, policies, and past performance. It also details the potential maintenance and end-of-life ramifications with regards to security.
+CivicActions Security is responsible for determining the security documentation that must be included in information system or services acquisition contracts.
+Configuration and design of the development and production environments are hosted in the CivicActions Git repository. All documentation are strictly controlled regarding transportation and storage in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs.
+
+
+##### LINCS
+
+The LINCS Technology Project follows the guidelines and procedures within the overarching Department of Education policy documents for all federal acquisition of information technology equipment, software and services, Federal Acquisition Regulations (FAR) Part 39, “Acquisition of Information Technology.”  Security requirements/specifications are included in information system acquisition contracts. The requirements in the information system acquisition contract permit updating security controls as new threat/vulnerabilities are identified and new technologies are implemented.
+The LINCS System and Services Acquisition Policy contains the process for determining acceptance criteria for all LINCS system software and services.
+The LINCS organization reviews and approves all acquisition contracts in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs.
+
+
+### SA-4 (10): Use Of Approved Piv Products
+
+##### LINCS
+
+CivicActions/LINCS and AWS describes this control as “not applicable”, as PIV credentials are not applicable to the LINCS system. Access and Authentication requirements for the LINCS system for internal CivicActions and customer are implemented under access management and enforcement (AC-2 and AC-3) and identification and authentication for all users (IA-2 and IA-8).
+It is the responsibiility of LINCS for implementation of PIV capability for authentication as required.
+
+
+### SA-5: Information System Documentation
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: information system documentation.
+
+
+##### LINCS
+
+The Department maintains adequate documentation for the LINCS Technology Project system. The LINCS Technology Project system documentation is protected as required and made available to authorized personnel. Procedures for protecting system documentation include management in the private CivicActions Git repository and the publicly available documentation trees for Free and Open Source Software (FOSS). The documentation maintained for the LINCS Technology Project system includes:
+  
+• System Security Plan (SSP) – this document
+• Configuration documentation
+• Incident Response and Contingency Plans
+• Rules of Behavior (Acceptable Use Policy)
+• FOSS Reference Manuals (Drupal, Moodle, GNU/Linux, Apache, MySQL, PHP, Postfix, etc.)
+
+
+#### a
+
+##### CivicActions
+
+Some application features are built on a custom basis and are not part of standard FOSS packages. Administrator documentation for those custom features is maintained in the CivicActions Git repository documentation system.
+
+
+##### Drupal
+
+Public documentation related to Drupal is maintained by the Drupal Association and is located at: <https://drupal.org/documentation>. This documentation contains administrator documentation for the information system that describes:
+• secure configuration, installation, and operation of the system, component, or service;
+• effective use and maintenance of security functions/mechanisms; and
+• known vulnerabilities regarding configuration and use of administrative functions;
+
+
+#### b
+
+##### CivicActions
+
+The publicly-available FOSS package documentation described in control SA-5(a) also includes user documentation for non-administrators as described in control AC-3. This includes documentation on how to create and manage user accounts as well as how to create, update and delete content.
+CivicActions follows the user docuemntation standard practice to provide context-sensitive help as well as access to a HelpDesk in publicly facing applications.
+CivicActions' Customer Support team, described in control SA-3(b), handles questions about how to use the system. Questions are submitted by sending an email to support@civicactions.com, which triggers creation of a ticket in CivicActions' customer support ticketing system.
+
+
+##### Drupal
+
+The public documentation at drupal.org contains user documentation for the information system that describes:
+• user-accessible security functions/mechanisms and how to effectively use those
+  security functions/mechanisms;
+
+• methods for user interaction, which enables individuals to use the system,
+  component, or service in a more secure manner; and
+
+• user responsibilities in maintaining the security of the system, component, or service;
+
+
+#### c
+
+##### CivicActions
+
+If the information needed to answer a question is not already included in the website's public-facing documentation, a ticket is created to determine whether the question is sufficiently general in nature to warrant adding the answer to the website's documentation.
+
+
+##### Drupal
+
+As a popular and well-used and maintained free and open source (FOSS) project, in the event that sought after documentation is not available on Drupal.org, it can usually be found in one of the many forums, mailing lists or StackExchange sites covering Drupal and its many contributed modules.
+
+
+#### d
+
+##### CivicActions
+
+All administrator documentation is housed in a protected Git repository. User documentation is publicly available..
+
+
+##### Drupal
+
+The Drupal.org documentation is multi-sourced on github and private repositories.
+
+
+#### e
+
+##### CivicActions
+
+As needed and approved by CivicActions Security, documentation is available to appropriate personnel by granting access to the private Git repository.
+
+
+##### Drupal
+
+As the Drupal.org documentation is publicly available, there is no need to provide distribution mechanisms.
+
+
+### SA-8: Security Engineering Principles
+
+##### CivicActions
+
+Information system security engineering principles are applied in the specification, design, development, implementation, and modification of the application system.
+Sound security policy, developing layered protections, and controls have been established as the foundation for design throughout the SDLC defined in control SA-3. Security requirements are incorporated into that SDLC, as described previously.
+CivicActions uses a development-stage-production testing and management workflow as part of the CivicActions development model. Changes are first tested on a development environment, then moved to a staging environment for further testing. Once the chnages have been tested and approved, a backup is made of the production environment, and the changes are then deployed. More information regarding this model can be found in CM-3 and CM-4.The CivicActions organization ensures that all its developers are trained on how to build secure software, that security controls have been tailored to meet business and operational needs.
+
+
+### SA-9: External Information System Services
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: external information system services.
+
+
+##### CivicActions
+
+CivicActions does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing, or transmitting federal agency data.
+
+
+##### LINCS
+
+LINCS does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing, or transmitting federal agency data.
+LINCS is hosted on the AWS Cloud platform, which was approved under the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
 
 
 # NIST SP 800-53 Revision 4 Privacy

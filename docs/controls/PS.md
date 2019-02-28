@@ -44,8 +44,12 @@ This is Agency common control.  More data about implementation can be obtained f
 ##### LINCS
 
 The LINCS Technology Project’s position sensitivity levels are assigned by the Department of Education and National Classification Center (NCC) as part of the position designation required by OPM under 5 CFR 731.106. Each Department position designation is documented on the Standard Position Description (SPD) and assigned a risk level (or sensitivity level) commensurate with the sensitivity of the information, the risk to that information and the system maintaining that information. The levels of risk still need to be designated by the Department for employee and contractor positions but since the LINCS Technology Project system does not have any sensitive data, a low risk scenario can be assumed.
-• Employee risk levels and background investigations are: Low Risk= NACI, Moderate Risk= LBI, High Risk= BI.
-• Contractor risk levels and background investigations are: Low Risk= NACI, Moderate Risk= NACC, High Risk= BI.
+• Employee risk levels and background investigations are: Low Risk= NACI, Moderate
+  Risk= LBI, High Risk= BI.
+
+• Contractor risk levels and background investigations are: Low Risk= NACI,
+  Moderate Risk= NACC, High Risk= BI.
+
 In order to ensure every employee is assigned to a position, which has been reviewed for sensitivity by the NCC, the SPD is a required data attribute of an employee’s HR record. Position risks designations are reviewed and revised when NCC or OPM publish changes to sensitivity levels.
 This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog
 
@@ -187,7 +191,7 @@ This is Agency common control.  More data about implementation can be obtained f
 
 ##### CivicActions
 
-When an employee, third party personnel and / or contractor is transferred to a new project or position within CivicActions, they may maintain access to the previous system they were working on in order to facilitate the process of maintenance and knowledge transfer. However, as part of the practices of account management (AC-02) and least privilege (AC-06), regular audits of privileged users are conducted and access privileges may be removed when no longer needed. Additionally, adherence to specific client SLAs may enhance the frequency of such audits or the timeliness of privilege removal during personnel transfer.
+When an employee, third party personnel and / or contractor is transferred to a new project or position within CivicActions, they may maintain access to the previous system they were working on in order to facilitate the process of maintenance and knowledge transfer. However, as part of the practices of account management (AC-2) and least privilege (AC-6), regular audits of privileged users are conducted and access privileges may be removed when no longer needed. Additionally, adherence to specific client SLAs may enhance the frequency of such audits or the timeliness of privilege removal during personnel transfer.
 
 
 #### b
@@ -201,7 +205,8 @@ When an employee, third party personnel and / or contractor is transferred to a 
 
 ##### CivicActions
 
-Access authorizations are modified as needed to coincide with changes in duties or operational need upon personnel transfer or reassignment.
+Access authorizations are modified as needed to coincide with changes in duties or
+operational need upon personnel transfer or reassignment.
 
 
 #### d
@@ -224,30 +229,27 @@ CivicActions Operations is informed of transfers that require access authorizati
 >     2.  Re-sign access agreements to maintain access to organizational information
 > systems when access agreements have been updated or [Assignment: organization-defined frequency].
 
-##### LINCS
-
-The Department has implemented a formalized process for user account administration using the approved and signed Rules of Behavior and User Acknowledgement forms. All new users requesting access to the LINCS Technology Project system must complete these forms and the security manager will keep them on file and reviewed bi-annually.
-
-
 #### a
 
-##### CivicActions
+##### LINCS
 
-CivicActions has developed and documented an Acceptable Use Policy that covers access and use of all CivicActiuons systems.
+All users of the LINCS system must read and accept access agreements upon every
+login. The access agreement can be found at http://courses.lincs.ed.gov a copy of
+which has been uploaded to CSAM as artifact: AccessAgreements.txt
 
 
 #### b
 
-##### CivicActions
+##### LINCS
 
-The Acceptable Use Policy is reviewed at least annually or when a significant change occurs. In the event that a major update is made to the Acceptable Use Policy, employees are required to read and sign the updated policy document and Human Resources stores the information.
+The Access Agreements are reviewed at least annually or when a significant change occurs.
 
 
 #### c
 
-##### CivicActions
+##### LINCS
 
-All CivicActions team members are required to read and sign the Acceptable Use Policy (AUP) provided in the Security Policy document prior to gaining access to the any CivicActions system. The acknowledgment signature page is a separate document collected and recorded by the Director of Human Resources.
+All individuals requiring access to the LINCS system are required to sign the Access Agreements before login is granted. When the Access Agreements are updated, the individual will be required to sign the new copy before regaining access.
 
 
 ### PS-7: Third-Party Personnel Security
@@ -262,44 +264,39 @@ All CivicActions team members are required to read and sign the Acceptable Use P
 > personnel or roles] of any personnel transfers or terminations of third-party personnel who possess organizational credentials and/or badges, or who have information system privileges within [Assignment: organization-defined time period]; and
 >   e.  Monitors provider compliance.
 
-##### LINCS
-
-All contractor support personnel are required to meet the same personnel security policy requirements as Department personnel who have privileged access to the LINCS Technology Project system. Third party providers are required to review and sign the Rules of Behavior prior to being granted access to the system.
-
-
 #### a
 
-##### CivicActions
+##### LINCS
 
-Third party personnel are required to following the same process and requirements as CivicActions employees.
+Personnel security requirements including security roles and responsibilities that apply to primary contracting organizations flow down to their subcontractors.
 
 
 #### b
 
-##### CivicActions
+##### LINCS
 
-Third party personnel are required to following the same process and requirements as CivicActions employees. CivicActions Operations or Security may require that a background check be conducted on contractors and / or third party users in cases where they will have access to application data that is not meant to be consumed by the public.
+Personnel security policies and procedures that apply to primary contracting organizations flow down to their subcontractors.
 
 
 #### c
 
-##### CivicActions
+##### LINCS
 
-All personnel security requirements are documented and include things such as signing the Acceptable Use Policy (AUP) and taking security awareness training.
+All personnel security requirements are documented in PS-1 and other related Personnel Security controls.
 
 
 #### d
 
-##### CivicActions
+##### LINCS
 
-For personnel transfers and terminations of third-party personnel with access to the CivicActions systems, third parties must notify the CivicActions Operations an/or Director of Human Resources the same day. The same employee transfer and/or termination procedure(s) are folloed as if the third party personnel were CivicActions employees.
+For personnel transfers and terminations of third-party personnel, the procedures defined in employee termination (PS-4) and employee transfer (PS-5) flow down to subcontractors.
 
 
 #### e
 
-##### CivicActions
+##### LINCS
 
-Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. CivicActions Security is responsible for coordinating with the managers of external systems to include appropriate and tailored compliance verification language in contracts as required.  Third-party personnel are continuously monitored to ensure compliance with personnel security requirements.
+Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. Third-party personnel are monitored to ensure compliance with personnel security requirements.
 
 
 ### PS-8: Personnel Sanctions
@@ -319,7 +316,7 @@ The disciplinary sanctions for personnel failing to comply with establish IT sec
 
 ##### CivicActions
 
-The Director of Human Resources is responsible for determining and enforcing sanctions for failing to comply with established information security policies and procedures. Coaching may be considered prior to sanctions. Sanctions may include but are not limited to written warnings, reduction in system access, demotion, or termination.
+CivicActions Security and/or the Director of Human Resources is responsible for determining and enforcing sanctions for failing to comply with established information security policies and procedures. Coaching may be considered prior to sanctions. Sanctions may include but are not limited to written warnings, reduction in system access, demotion, or termination.
 
 
 #### b

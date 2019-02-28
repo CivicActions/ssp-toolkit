@@ -126,24 +126,18 @@ The SSP is currently available to authorized users on GitLab. Per the Acceptable
 >   d.  Requires individuals who have signed a previous version of the rules of
 > behavior to read and re-sign when the rules of behavior are revised/updated.
 
-##### LINCS
-
-All users (privileged and program account users) requesting access to the LINCS Technology Project system are required to read the LINCS’ Rules of Behaviors, complete an account request form and sign both documents. Appendix B includes the Rules of Behavior, describing the user’s responsibilities and expected behavior when using the application and also includes the User Acknowledgement form. Account management procedures are described in detail in the SSP.
-
-
 #### a
 
 ##### CivicActions
 
-CivicActions maintains an Acceptable Use Policy that all CivicActions personnel are required to abide by when working with CivicActions operated systems. This information is available in the CivicActions Handbook under Security Policy here: <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy>.
+CivicActions has created and made readily available to individuals requiring access to the information system an Acceptable Use Policy that describes their responsibilities and expected behavior with regard to information and information system usage. This information is available in the CivicActions Handbook under Security Policy here: <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy> and has also been uploaded to CSAM as ‘Appendix J1 - CivicActions Security Policy 20190226.docx’.
 
 
 #### b
 
 ##### CivicActions
 
-All CivicActions employees are required to read and sign the Security Policy <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/> which includes the Acceptable Use Policy, prior to being authorized access to CivicActions operated systems. This is part of the onboarding Security Training process: <https://civicactions-handbook.readthedocs.io/en/latest/01-welcome-to-civicactions/training/security-training/>
-If CivicActions staff fail to comply with CivicActions security awareness and training requirements, their access to CivicActions information systems may be terminated.
+All CivicActions employees are required to read and sign the Security Policy <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/> which includes the Acceptable Use Policy/Rules of Behavior, prior to being authorized access to CivicActions operated systems. The text of the electronically signed (via DocuSign) acknowledgement document has been uploaded to CSAM as artifact: 'CivicActions Security Policy Acknowledgement.docx'
 
 
 #### c
@@ -157,7 +151,7 @@ The CivicActions Acceptable Use Policy/Rules of Behavior are reviewed by CivicAc
 
 ##### CivicActions
 
-CivicActions employees re-sign the revised/updated Acceptable Use Policy/Rules of Behavior policy document. The Director of Human Resources retains the signed acknowledgements.
+CivicActions employees re-sign acknowledgement of the Acceptable Use/Rules of Behavior policy document whenever significant changes are made. The Director of Human Resources retains the signed acknowledgements.
 
 
 
