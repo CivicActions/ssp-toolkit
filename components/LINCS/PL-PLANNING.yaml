@@ -44,17 +44,3 @@ satisfies:
       least annually and updated to account for any changes to the LINCS system and
       to address any changes in security controls.
     implementation_status: In Place
-- control_key: PL-4
-  control_name: RULES OF BEHAVIOR
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      All users (privileged and program account users) requesting access to the LINCS
-      Technology Project system are required to read the LINCS’ Rules of Behaviors,
-      complete an account request form and sign both documents. Appendix B includes
-      the Rules of Behavior, describing the user’s responsibilities and expected behavior
-      when using the application and also includes the User Acknowledgement form.
-      Account management procedures are described in detail in the SSP.
-    implementation_status: In Place
