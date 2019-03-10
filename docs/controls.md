@@ -1,4 +1,4 @@
-# LINCS Controls (compiled: 2019.02.28 at 1658)
+# LINCS Controls (compiled: 2019.03.10 at 1211)
 
 * [AC: Access Control](controls/AC.md#ac-access-control)
    * [AC-1: Access Control Policy And Procedures](controls/AC.md#ac-1-access-control-policy-and-procedures)
@@ -202,7 +202,7 @@
 * [SI: System and Information Integrity](controls/SI.md#si-system-and-information-integrity)
    * [SI-1: System And Information Integrity Policy And Procedures](controls/SI.md#si-1-system-and-information-integrity-policy-and-procedures)
    * [SI-2: Flaw Remediation](controls/SI.md#si-2-flaw-remediation)
-   * [SI-2(2): SI-2(2)](controls/SI.md#si-22-si-22)
+   * [SI-2(2): Flaw Remediation](controls/SI.md#si-22-flaw-remediation)
    * [SI-3: Malicious Code Protection](controls/SI.md#si-3-malicious-code-protection)
    * [SI-4: Information System Monitoring](controls/SI.md#si-4-information-system-monitoring)
    * [SI-5: Security Alerts, Advisories, And Directives](controls/SI.md#si-5-security-alerts-advisories-and-directives)

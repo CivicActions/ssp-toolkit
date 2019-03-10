@@ -89,7 +89,7 @@ CivicActions security-software updates are tested prior to place to production. 
 Flaw remediation is part of the CivicActions configuration management process.  Any security issues found are ticketed through JIRA or the Git issue queue. CivicActions Security prioritizes the high findings within the application. Changes made to correct the system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB Chair as implemented in CM-3.
 
 
-### SI-2(2): SI-2(2)
+### SI-2(2): Flaw Remediation
 
 > The organization:
 >   a.  Identifies, reports, and corrects information system flaws;
