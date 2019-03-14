@@ -23,8 +23,9 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - text: |
-      Drupal administrators and other roles with unrestricted access to user data are
-      required to use two factor authentication.
+      Drupal administrators and other roles with unrestricted access to live content
+      and/or user accounts are required to use two factor authentication. See artifact
+      LINCS-COP-TFA.png
     implementation_status: In Place
 - control_key: IA-4
   control_name: IDENTIFIER MANAGEMENT

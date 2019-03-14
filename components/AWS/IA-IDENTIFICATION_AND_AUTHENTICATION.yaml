@@ -30,7 +30,8 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - text: >
-      The AWS Management Console is configured to require two factor authentication.
+      The AWS Management Console is configured to require two factor authentication. See
+      artifact: AWS_IAM_MFA.png
     implementation_status: In Place
 - control_key: IA-4
   control_name: IDENTIFIER MANAGEMENT
