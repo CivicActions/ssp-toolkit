@@ -234,8 +234,8 @@ CivicActions Operations is informed of transfers that require access authorizati
 ##### LINCS
 
 All users of the LINCS system must read and accept access agreements upon every
-login. The access agreement can be found at http://courses.lincs.ed.gov a copy of
-which has been uploaded to CSAM as artifact: AccessAgreements.txt
+login. The access agreement can be found at https://courses.lincs.ed.gov/login/ a
+copy of which has been uploaded to CSAM as artifact: AccessAgreements.txt
 
 
 #### b
