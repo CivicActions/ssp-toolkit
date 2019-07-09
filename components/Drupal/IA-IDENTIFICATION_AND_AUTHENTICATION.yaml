@@ -24,8 +24,7 @@ satisfies:
   narrative:
   - text: |
       Drupal administrators and other roles with unrestricted access to live content
-      and/or user accounts are required to use two factor authentication. See artifact
-      LINCS-COP-TFA.png
+      and/or user accounts are required to use two factor authentication.
     implementation_status: In Place
 - control_key: IA-4
   control_name: IDENTIFIER MANAGEMENT
@@ -49,7 +48,7 @@ satisfies:
     implementation_status: Partially in Place
   - key: c
     text: >
-      Identifiers for CivicActions internal personnel include a username based on
+      Identifiers for {{ contractor }} internal personnel include a username based on
       the individual's full first and last name and are reviewed for uniqueness by
       the admin group when it approves creation of the user account.
     implementation_status: Partially in Place
@@ -67,7 +66,7 @@ satisfies:
     text: >
       Refer to control AC-2 in this SSP for further details on account provisioning.
 
-      CivicActions will create and maintain an initial Drupal Administrator (highest
+      {{ contractor }} will create and maintain an initial Drupal Administrator (highest
       level of Drupal Account). New Administrators are able to provide additional
       Administrator access at their own discretion, and are ultimately responsible
       for managing their own Administrator and other user accounts that they create.
@@ -76,7 +75,7 @@ satisfies:
     text: >
       Initial authenticator content (a unique email address – not previously used
       in any other account) is provided by the user. Internal initial password requirements
-      set by CivicActions Operations and ongoing password refreshes by internal user
+      set by {{ contractor }} Operations and ongoing password refreshes by internal user
       follow the requirements set in the Identification and Authentication Policy.
     implementation_status: Partially in Place
   - key: c
@@ -137,7 +136,7 @@ satisfies:
       submitted passwords to comply with validation rules, as described above in IA-5(c).
 
       Changing password lifetime, length, reuse or strength requirements requires
-      a code setting change that therefore needs to be planned and approved by CivicActions'
+      a code setting change that therefore needs to be planned and approved by {{ contractor }}'
       Change Control Board before being implemented.
     implementation_status: Partially in Place
   - key: b

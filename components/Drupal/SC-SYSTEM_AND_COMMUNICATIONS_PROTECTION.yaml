@@ -9,7 +9,7 @@ satisfies:
   narrative:
   - text: >
       Drupal has a manual ability to block IP addresses in cases where attacks bypass
-      cloud protection. This is managed by CivicActions Operations.
+      cloud protection. This is managed by {{ contractor }} Operations.
     implementation_status: Partially in Place
 - control_key: SC-7
   control_name: BOUNDARY PROTECTION
