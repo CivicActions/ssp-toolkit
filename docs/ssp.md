@@ -2,7 +2,7 @@
 Table of Contents
 =================
 
-* [LINCS System Security Plan](#lincs-system-security-plan)
+* [Reusable Component Library System Security Plan](#reusable-component-library-system-security-plan)
 * [NIST SP 800-53 Revision 4](#nist-sp-800-53-revision-4)
    * [AC: Access Control](#ac-access-control)
    * [AU: Audit and Accountability](#au-audit-and-accountability)
@@ -33,7 +33,7 @@ Table of Contents
 
 <!-- Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc) -->
 
-# LINCS System Security Plan
+# Reusable Component Library System Security Plan
 
 # NIST SP 800-53 Revision 4
 

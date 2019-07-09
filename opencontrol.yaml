@@ -1,10 +1,10 @@
 schema_version: "1.0.0"
-name: LINCS
+name: Reusable Component Library
 metadata:
-  description: LINCS SSP by Civic Actions.
+  description: Reusable OpenControl Components.
   organization:
-    name: U.S. Department of Education
-    abbreviation: DeptEd
+    name: CivicActions and GovReady
+    abbreviation: Components
 components:
   - ./components/AWS
   - ./components/CivicActions
