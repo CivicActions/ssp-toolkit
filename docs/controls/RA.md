@@ -27,99 +27,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel a risk assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Risk Assessment (RA) Policy and Procedure CivicActions that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
-##### LINCS
-
-The Department follows the risk assessment policy and procedures formally documented within in the Department of Education Handbook for Information Technology Security Risk Assessment Procedures (Handbook OCIO-07). Furthermore, a Risk Assessment Plan was originally initiated to determine the extent of the potential threat and the risk associated with LINCS Technology Project throughout its System Development Life Cycle (SDLC). The LINCS Technology Project Risk Assessment defines the methodology approach to determine the likelihood risks, and identify potential mitigation options to reduce risks to the LINCS Technology Project system.
-The LINCS Technology Project Risk Assessment will be conducted in accordance with the Department’s risk assessment policy and procedures. By doing so, the responsible parties associated with the LINCS Technology Project will be able to determine the risk, likelihood and impact that could result from exploiting vulnerabilities within the system.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-Additional information is contained within the Department of Education Handbook for Information Technology Security Risk Assessment Procedures (Handbook OCIO-07).
-
-
-### RA-2: Security Categorization
-
-> The organization:
->   a.  Categorizes information and the information system in accordance with applicable
-> federal laws, Executive Orders, directives, policies, regulations, standards, and guidance;
->   b.  Documents the security categorization results (including supporting rationale)
-> in the security plan for the information system; and
->   c.  Ensures that the authorizing official or authorizing official designated
-> representative reviews and approves the security categorization decision.
-
-#### a
-
-##### LINCS
-
-In accordance with FIPS 199 requirement and guidelines provided in NIST SP800-60 Rev.1, the organization categorized the system as a Low system: Confidentiality (Low), Integrity (Low), Availability (Low).
-
-
-#### b
-
-##### LINCS
-
-The security categorization was determined by evaluating the type of information that is stored, processed, and/or transmitted by the application and the potential impact levels associated with the confidentiality, integrity, and availability of that information. The application’s security categorization has been documented in this SSP.
-
-
-#### c
-
-##### LINCS
-
-The security categorizations have been reviewed by the designated application POCs, were approved during the C&A effort. The formal security categorization document is available upon request. The system inventory for the LINCS Technology Project is revalidated semiannually.
-
-
-### RA-3: Risk Assessment
-
-> The organization:
->   a.  Conducts an assessment of risk, including the likelihood and magnitude of
-> harm, from the unauthorized access, use, disclosure, disruption, modification, or destruction of the information system and the information it processes, stores, or transmits;
->   b.  Documents risk assessment results in [Selection: security plan; risk assessment
-> report; [Assignment: organization-defined document]];
->   c.  Reviews risk assessment results [Assignment: organization-defined frequency];
->   d.  Disseminates risk assessment results to [Assignment: organization-defined
-> personnel or roles]; and
->   e.  Updates the risk assessment [Assignment: organization-defined frequency]
-> or whenever there are significant changes to the information system or environment of operation (including the identification of new threats and vulnerabilities), or other conditions that may impact the security state of the system.
-
-#### a
-
-##### LINCS
-
-CivicActions/LINCS will perform risk assessments for the LINCS system based on SP 800-30 Rev. 1 Guide for Conducting Risk Assessments at least annually and as part of the change management activities for the LINCS system that warrant a new or updated risk assessment.
-
-
-#### b
-
-##### LINCS
-
-The results of risk assessments will be compiled into a risk assessment report to be reviewed by CivicActions Security and relevant personnel, and also added to the GitLab system for the LINCS system.
-
-
-#### c
-
-##### LINCS
-
-CivicActions/LINCS reviews risk assessment results at least annually.
-
-
-#### d
-
-##### LINCS
-
-The Risk Assessment report will be disseminated to the appropriate personnel through the Project Manager and CivicActions Security.
-
-
-#### e
-
-##### LINCS
-
-Risk assessments are conducted annually or whenever there are significant changes to the information system or environment of operation (including the identification of new threats and vulnerabilities), or other conditions that may impact the security state of the system, as defined in NIST Special Publication 800-37 Revision 1.
-A significant change includes:
-• Changing authentication or access control implementations;
-• Changing storage implementations;
-• Changing a COTS product to another product;
-• Changing the backup mechanisms and process; and,
-• Adding new interconnections to an outside service provide.
-
-
 ### RA-5: Vulnerability Scanning
 
 > The organization:
@@ -139,11 +46,6 @@ A significant change includes:
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: vulnerability scanning.
-
-
-##### LINCS
-
-The LINCS Technology Project uses vulnerability scanning software to document and determine risks to the system.  These scans are being run on a regular basis and the results of these scans are being used to inform changes to the system and verify that security controls are working correctly.  These scans are used to document the current state of the system, and to analyze security trends as changes are made over time.
 
 
 #### a

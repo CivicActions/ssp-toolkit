@@ -28,31 +28,12 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Personnel Security (PS) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
 
 
-##### LINCS
-
-The LINCS Technology Project documents the security policy and procedures in addressing position categorization, personnel screening, personnel termination, personnel transfer, and access agreements within the LINCS SSP. The LINCS Technology Project adopts the Department of Education personnel security standards and determines position risks levels based on public trust responsibilities.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-
-
 ### PS-2: Position Risk Designation
 
 > The organization:
 >   a.  Assigns a risk designation to all organizational positions;
 >   b.  Establishes screening criteria for individuals filling those positions; and
 >   c.  Reviews and updates position risk designations [Assignment: organization-defined frequency].
-
-##### LINCS
-
-The LINCS Technology Project’s position sensitivity levels are assigned by the Department of Education and National Classification Center (NCC) as part of the position designation required by OPM under 5 CFR 731.106. Each Department position designation is documented on the Standard Position Description (SPD) and assigned a risk level (or sensitivity level) commensurate with the sensitivity of the information, the risk to that information and the system maintaining that information. The levels of risk still need to be designated by the Department for employee and contractor positions but since the LINCS Technology Project system does not have any sensitive data, a low risk scenario can be assumed.
-• Employee risk levels and background investigations are: Low Risk= NACI, Moderate
-  Risk= LBI, High Risk= BI.
-
-• Contractor risk levels and background investigations are: Low Risk= NACI,
-  Moderate Risk= NACC, High Risk= BI.
-
-In order to ensure every employee is assigned to a position, which has been reviewed for sensitivity by the NCC, the SPD is a required data attribute of an employee’s HR record. Position risks designations are reviewed and revised when NCC or OPM publish changes to sensitivity levels.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog
-
 
 #### a
 
@@ -83,12 +64,6 @@ At least every three (3) years, the CivicActions Director of Human Resources rev
 >   b.  Rescreens individuals according to [Assignment: organization-defined conditions
 > requiring rescreening and, where rescreening is so indicated, the frequency of such rescreening].
 
-##### LINCS
-
-Minimum background investigations are conducted, since all data is non-sensitive, for individuals requiring access to LINCS Technology Project information and information systems. The type of background investigation conducted for an individual is determined by the individual’s position risk categorization noted in control PS-2. The Department conducts periodic reinvestigations in accordance with OPM and NIST guidelines.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-
-
 #### a
 
 ##### CivicActions
@@ -117,12 +92,6 @@ Rescreening is conducted as required by the individual’s job duties, the class
 > controlled by terminated individual; and
 >   f.  Notifies [Assignment: organization-defined personnel or roles] within [Assignment:
 > organization-defined time period].
-
-##### LINCS
-
-The Department’s HR policy states that managers or designated officials are responsible for recovering and properly securing employee badges and returning it to the local physical security office. The Department executes termination procedures that remove personnel access privileges, computer accounts. When an employee is terminated, the employee’s manager or designated official completes a form requesting termination of access for the user. Local management and the security manager coordinate disabling or removing LINCS Technology Project privileged access with the system administrator. The employee’s manager or designated official is responsible for recovering and properly securing his/her ID badge and returning it to the local physical security office. The employee’s manager or designated official ensures that any information on the system that the employee was responsible for will be available to the appropriate personnel.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-
 
 #### a
 
@@ -180,13 +149,6 @@ When a person is terminated, a standard off-boarding process is used to notify m
 >   d.  Notifies [Assignment: organization-defined personnel or roles] within [Assignment:
 > organization-defined time period].
 
-##### LINCS
-
-When an employee is reassigned or transferred, the employee’s manager or designated official is required to request transfer of access (as appropriate) for the user.
-In accordance with the Department’s HR policy, the employee’s manager or designated official is responsible for recovering and properly securing his/her ID badge and returning it to the local physical security office. The manager provides prompt notification to the LINCS Technology Project system/security administrator when an employee changes assignments and/or location. This includes taking prompt and appropriate action to change employee access profile and/or remove employee from the system; and ensure that users’ system access is cancelled when the need no longer exists.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-
-
 #### a
 
 ##### CivicActions
@@ -216,89 +178,6 @@ operational need upon personnel transfer or reassignment.
 CivicActions Operations is informed of transfers that require access authorization modifications within five business days by the Project Manager, System Owner or Director of Human Resources.
 
 
-### PS-6: Access Agreements
-
-> The organization:
->   a.  Develops and documents access agreements for organizational information
-> systems;
->   b.  Reviews and updates the access agreements [Assignment: organization-defined
-> frequency]; and
->   c.  Ensures that individuals requiring access to organizational information
-> and information systems:
->     1.  Sign appropriate access agreements prior to being granted access; and
->     2.  Re-sign access agreements to maintain access to organizational information
-> systems when access agreements have been updated or [Assignment: organization-defined frequency].
-
-#### a
-
-##### LINCS
-
-All users of the LINCS system must read and accept access agreements upon every
-login. The access agreement can be found at https://courses.lincs.ed.gov/login/ a
-copy of which has been uploaded to CSAM as artifact: AccessAgreements.txt
-
-
-#### b
-
-##### LINCS
-
-The Access Agreements are reviewed at least annually or when a significant change occurs.
-
-
-#### c
-
-##### LINCS
-
-All individuals requiring access to the LINCS system are required to sign the Access Agreements before login is granted. When the Access Agreements are updated, the individual will be required to sign the new copy before regaining access.
-
-
-### PS-7: Third-Party Personnel Security
-
-> The organization:
->   a.  Establishes personnel security requirements including security roles and
-> responsibilities for third-party providers;
->   b.  Requires third-party providers to comply with personnel security policies
-> and procedures established by the organization;
->   c.  Documents personnel security requirements;
->   d.  Requires third-party providers to notify [Assignment: organization-defined
-> personnel or roles] of any personnel transfers or terminations of third-party personnel who possess organizational credentials and/or badges, or who have information system privileges within [Assignment: organization-defined time period]; and
->   e.  Monitors provider compliance.
-
-#### a
-
-##### LINCS
-
-Personnel security requirements including security roles and responsibilities that apply to primary contracting organizations flow down to their subcontractors.
-
-
-#### b
-
-##### LINCS
-
-Personnel security policies and procedures that apply to primary contracting organizations flow down to their subcontractors.
-
-
-#### c
-
-##### LINCS
-
-All personnel security requirements are documented in PS-1 and other related Personnel Security controls.
-
-
-#### d
-
-##### LINCS
-
-For personnel transfers and terminations of third-party personnel, the procedures defined in employee termination (PS-4) and employee transfer (PS-5) flow down to subcontractors.
-
-
-#### e
-
-##### LINCS
-
-Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. Third-party personnel are monitored to ensure compliance with personnel security requirements.
-
-
 ### PS-8: Personnel Sanctions
 
 > The organization:
@@ -306,11 +185,6 @@ Compliance measures for assessing third-party personnel and/or contractors are d
 > established information security policies and procedures; and
 >   b.  Notifies [Assignment: organization-defined personnel or roles] within [Assignment:
 > organization-defined time period] when a formal employee sanctions process is initiated, identifying the individual sanctioned and the reason for the sanction.
-
-##### LINCS
-
-The disciplinary sanctions for personnel failing to comply with establish IT security policies and procedures are included in the Department’s HR policy. If an employee violates the Department’s information security policies and procedures, the employee may be subject to disciplinary action at the discretion of management. Actions may range from verbal or written warning, removal of system access for a specific period of time, reassignment to other duties, or termination, depending on the severity of the violation. Disciplinary sanctions are reported to the OCIO.
-
 
 #### a
 

@@ -29,12 +29,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel an identification and authentication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained the CivicActions Identification and Authentication (IA) Policy. This document can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
 
 
-##### LINCS
-
-The LINCS Technology Project complies with identification and authentication policies contained within the Department of Education, Handbook for Information Assurance Security Policy (Handbook OCIO-01).
-The LINCS system owners/managers manage user identifiers by: (i) uniquely identifying each user; (ii) verifying the identity of each user; (iii) receiving authorization to issue a user identifier from an appropriate official; (iv) ensuring that the user identifier is issued to the intended party; (v) disabling user identifier after a reasonable period of inactivity as documented in its security procedures; and (vi) archiving user identifiers. The Department reviews and updates this policy as necessary.
-
-
 ### IA-2: Identification And Authentication (Organizational Users)
 
 > The information system uniquely identifies and authenticates organizational users (or processes acting on behalf of organizational users).
@@ -53,12 +47,6 @@ Privileged users of the system are required to identify and authenticate in orde
 
 Drupal users authenticate using the standard login protocol prior to using application services. User roles are described in AC-3.
 Privileged Drupal accounts can only be created by existing website users with the role of "administrator". Administrator users assign roles to each login account that govern the user's ability to create, publish, update or delete website content.
-
-
-##### LINCS
-
-The LINCS Technology Project system uniquely identifies and authenticates all privileged and program users. This is accomplished through the use of unique user identification and a secret user password. All user IDs are maintained in a database by the system administrator and no identical IDs may be issued.
-Password requirements are listed under security control IA-5.
 
 
 ### IA-2 (1): Network Access To Privileged Accounts
@@ -81,23 +69,6 @@ To access root (sudo) privileges an additional password is required. The passwor
 Drupal administrators and other roles with unrestricted access to live content
 and/or user accounts are required to use two factor authentication. See artifact
 LINCS-COP-TFA.png
-
-
-##### LINCS
-
-The LINCS Technology Project employs multi-factor authentication for privileged
-users.
-
-
-### IA-2 (12): Acceptance Of Piv Credentials
-
-> The information system accepts and electronically verifies Personal Identity Verification (PIV) credentials.
-
-##### LINCS
-
-The LINCS Technology Project system does not implement logical access control
-systems (LACS) or physical access control systems (PACS). Therefore Personal
-Identity Verification (PIV) credentials have not been issued for users.
 
 
 ### IA-3: Device Identification And Authentication
@@ -217,11 +188,6 @@ Refer to control AC-2 in this SSP for further details on account provisioning.
 CivicActions will create and maintain an initial Drupal Administrator (highest level of Drupal Account). New Administrators are able to provide additional Administrator access at their own discretion, and are ultimately responsible for managing their own Administrator and other user accounts that they create.
 
 
-##### LINCS
-
-Authentication for LINCS internal personnel are created during the personnel assignment process where requests are made to the LINCS admin group for proper access levels. The LINCS admin group verifies the identity of the user. The website performs further verification by sending an email to the user's mailbox containing a single-use activation link which must be used to log in to the account for the first time and to create a password.
-
-
 #### b
 
 ##### Drupal
@@ -229,26 +195,11 @@ Authentication for LINCS internal personnel are created during the personnel ass
 Initial authenticator content (a unique email address – not previously used in any other account) is provided by the user. Internal initial password requirements set by CivicActions Operations and ongoing password refreshes by internal user follow the requirements set in the Identification and Authentication Policy.
 
 
-##### LINCS
-
-LINCS admins in collaboration with CivicActions Operations are responsible for provisioning and de-provisioning end user accounts in compliance with the authentication requirements described herein.
-
-
 #### c
 
 ##### Drupal
 
 The system partially inherits this control from Drupal standard password strength mechanisms.
-
-
-##### LINCS
-
-When entering a user account password upon initial login to lincs.ed.gov, all users must comply with the following password policies, which are enforced by the website's software configuration:
-• Password must be at least 14 characters in length.
-• Password must contain at least one digit.
-• Password must contain at least one special character (not whitespace or an alphanumeric).
-• Password must contain at least one uppercase character.
-• Password must contain at least one lowercase character.
 
 
 #### d
@@ -259,39 +210,11 @@ The system partially inherits this control from Drupal standard password managem
 All password creation/change/reset operations are recorded in the website's "Drupal watchdog" logs.
 
 
-##### LINCS
-
-LINCS is responsible for provisioning and de-provisioning end user accounts, which must comply with the strict password policies that are enforced by the website's software configuration, as described in IA-5(d).
-In accordance with LINCS site configuration, the following administrative procedures exist for initial authenticator distribution, for lost/compromised/damaged authenticators, and for revoking authenticators.
-• Initial authenticator distribution: Users receive a one-time login link by email upon creating of their user account. They use that link to log in and then must enter a password themselves which complies with the password complexity requirements described in IA-4(b).
-• Lost/compromised/damaged authenticators: Users who have forgotten their password may request a new password by submitting their username or email address. The website responds by emailing a one-time login link to the user's email address. After using the link to log in, the user is required to enter a new password.
-• Revoking authenticators: Users who have not changed their password in the last 90 days are automatically blocked. Administrators may block any user account if they believe there is a reason to do so.
-
-
 #### e
 
 ##### Drupal
 
 Drupal requires users to change their password upon initial login, and the application website enforces this. User accounts are assigned a randomly-generated and unguessable default password that is not shared with anyone, including site Administrators. Once the user logs in and creates a new password, the default password erased from the website's database.
-
-
-#### f
-
-##### LINCS
-
-LINCS authenticators follow these password lifetime restrictions:
-• Maximum password age = 90
-• Minimum password age = 1
-• Password reuse restriction = 10
-
-
-#### g
-
-##### LINCS
-
-LINCS enforces password lifetime restrictions.  The password lifetime settings for internal accounts is as follows:
-• Minimum restriction of zero (1) days and
-• Maximum restriction of ninety (90) days before a password change is required.
 
 
 #### h
@@ -353,11 +276,6 @@ This control is not applicable due to the fact that group accounts are not creat
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: password based authentication.
 
 
-##### LINCS
-
-LINCS is responsible for provisioning and de-provisioning end user accounts, which must comply with the strict password policies that are enforced by the website's software configuration, as described in IA-5.
-
-
 #### a
 
 ##### Drupal
@@ -401,15 +319,6 @@ Password reuse is limited through software configuration.
 When website users request a password reset, the website sends a temporary login link to the email address associated with their user account. After a user logs in via the temporary login link, the website requires the user to enter a new password before proceeding further.
 
 
-### IA-5 (11): Hardware Token-Based Authentication
-
-> The information system, for hardware token-based authentication, employs mechanisms that satisfy [Assignment: organization-defined token quality requirements].
-
-##### LINCS
-
-LINCS does not support physical hardware token-based authentication.  Therefore this control is Not Applicable.
-
-
 ### IA-6: Authenticator Feedback
 
 > The information system obscures feedback of authentication information during the authentication process to protect the information from possible exploitation/use by unauthorized individuals.
@@ -433,51 +342,6 @@ All Drupal passwords are encrypted in storage, using the SHA-512 hashing algorit
 ##### CivicActions
 
 CivicActions systems employ authentication methods consistent with NIST FIPS 140-2 requirements. General public access to system web pages does not require cryptographic authentication. Privileged users accessing systems use the public-key cryptographic functionality of Secure Shell (SSH) to encrypt the exchange of information (including the password) between the remote user and the server. Where Transport Layer Security (TLS, aka SSL) is used, cryptographic modules will be configured in accordance with FIPS 140-2.
-
-
-### IA-8: Identification And Authentication (Non-Organizational Users)
-
-> The information system uniquely identifies and authenticates non-organizational users (or processes acting on behalf of non-organizational users).
-
-##### LINCS
-
-All non-organization users must follow procedures for access privileges as described in AC-2. Any non-organizational user must receive written permission from a Department representative to access the LINCS. In addition, only temporary access of a specified duration is allowed for non-organizational users directly accessing the system. Once the time period is over or the task completed, the temporary user accounts are removed immediately.
-
-
-### IA-8 (1): Acceptance Of Piv Credentials From Other Agencies
-
-> The information system accepts and electronically verifies Personal Identity Verification (PIV) credentials from other federal agencies.
-
-##### LINCS
-
-LINCS does not utilize customer agency supplied PIV credentials.
-
-
-### IA-8 (2): Acceptance Of Third-Party Credentials
-
-> The information system accepts only FICAM-approved third-party credentials.
-
-##### LINCS
-
-LINCS does not utilize FICAM approved credentials.
-
-
-### IA-8 (3): Use Of Ficam-Approved Products
-
-> The organization employs only FICAM-approved information system components in [Assignment: organization-defined information systems] to accept third-party credentials.
-
-##### LINCS
-
-LINCS does not utilize FICAM approved products.
-
-
-### IA-8 (4): Use Of Ficam-Issued Profiles
-
-> The information system conforms to FICAM-issued profiles.
-
-##### LINCS
-
-CivicActions does not utilize FICAM approved products or profiles.
 
 
 

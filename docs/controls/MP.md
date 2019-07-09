@@ -28,12 +28,6 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 CivicActions has developed, documented and disseminated to personnel a media protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Media Protection (MP) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
 
 
-##### LINCS
-
-This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
-Media protection policy and procedures are fully inherited from AWS Cloud.
-
-
 ### MP-2: Media Access
 
 > The organization restricts access to [Assignment: organization-defined types of digital and/or non-digital media] to [Assignment: organization-defined personnel or roles].

@@ -29,12 +29,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Security Assessment and Authorization Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
-##### LINCS
-
-The Department has published the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01) and U. S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05). Both of these publications are revised periodically. The LINCS System Security Policy (SSP) provides guidance on all aspects of security for the protection of LINCS information technology resources.
-The Department will periodically review and update the SSP when there is a significant change to the regulatory, operational, or technical environment.
-
-
 ### CA-2: Security Assessments
 
 > The organization:
@@ -58,14 +52,6 @@ The Department will periodically review and update the SSP when there is a signi
 CivicActions will develop a security assessment plan (SAP) that describes the security controls and control enhancements under assessment, assessment procedures used to determine effectiveness, the assessment environment, the assessment team, and the assessment roles and responsibilities.
 
 
-##### LINCS
-
-The LINCS Technology Project follows the U. S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures.  The LINCS Technology Project will conduct annual security assessments to comply with FISMA and NIST regulations. The Department will draw on NIST Special Publications 800-53A security controls to complete the assessment. All controls and sub-set security controls will be evaluated and a risk assessment will be conducted. The scope of the assessment includes:
-1. Security controls and control enhancements under assessment
-2. Assessment procedures to be used to determine security control effectiveness
-3. Assessment environment, assessment team, and assessment roles and responsibilities
-
-
 #### b
 
 ##### CivicActions
@@ -79,11 +65,6 @@ All controls assigned and documented in this System Security Plan (SSP) will be 
 ##### CivicActions
 
 CivicActions will produce a security assessment report that documents the results of the assessment. The Security Assessment Report must contain the results of the assessment, and may also contain recommendations and suggestions for plans of actions and milestones (POA&Ms).
-
-
-##### LINCS
-
-The LINCS Authorizing Official or Designated Representative will create a Security Assessment Report (SAR). A full assessment shall be conducted by an independent third party assessor at least every three years.
 
 
 #### d
@@ -133,26 +114,6 @@ The POA&M document provides a platform for CivicActions to monitor and track the
 • Associated risk and NIST control
 • Recommended mitigation strategy
 POA&Ms are tracked throughout the lifecycle of the system until its mitigation. All POA&Ms are reviewed on a monthly basis by CivicActions Information System Security Officer to ensure all mitigation strategies are continuing as documented.
-
-
-##### LINCS
-
-The LINCS Technology Project follows the U.S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures in managing POA&Ms.
-
-
-### CA-6: Security Authorization
-
-> The organization:
->   a.  Assigns a senior-level executive or manager as the authorizing official
-> for the information system;
->   b.  Ensures that the authorizing official authorizes the information system
-> for processing before commencing operations; and
->   c.  Updates the security authorization [Assignment: organization-defined frequency].
-
-##### LINCS
-
-The LINCS Technology Project follows the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01) and U. S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures. The LINCS Technology Project system received its first three-year security accreditation on March 3, 2009, and most recently received an ATO on February 5, 2016.
-ATO re-assessment will be performed every three years or when there is a major change to the application, in which a senior organizational official will sign and approve the security accreditation.
 
 
 ### CA-7: Continuous Monitoring

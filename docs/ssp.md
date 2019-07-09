@@ -51,13 +51,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel an access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Access Control (AC) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
-##### LINCS
-
-This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
-Access control policy and procedures are documented in the LINCS SSP. Access to LINCS Technology Project operational information or system resources is limited to only authorized users, programs or processes. The Department enforces access control policies to protect the integrity of the LINCS Technology Project system. This Department reviews and updates this policy as necessary and it has been being updated, as necessary, since April 2008.
-Additional information is contained within the Department of Education, OCIO-01, Handbook for Information Assurance Cybersecurity Policy.
-
-
 ### AC-2: Account Management
 
 ##### AWS
@@ -93,31 +86,11 @@ role."
 • Administrator - This role has all permissions enabled by default.
 
 
-##### LINCS
-
-SSH system accounts are provided to contractors on an as-needed basis.
-Access privileges are used to ensure that only authorized personnel access certain areas of the LINCS Technology Project system. User access is controlled by the completion and submission of LINCS Technology Project System Rules of Behavior and New User Account Request forms by the user and management. These items are completed and submitted whenever a new user requires access or an existing user requires access changes. The system administrator, based on need-to-know, assigns the proper permissions. The employee’s manager approves the access rights before the initial account is created. Finally, the system administrator implements the access rights according to the New User Account Request form. The security staff and the support contractor review accounts periodically. Accounts no longer in use are removed from the system by the system administrator.
-The LINCS Technology Project has implemented user account procedures to disable inactive user accounts after 90-days of inactivity. The LINCS support staff monitors all user accounts to ensure this procedure is enforced. Section 6.3, Authentication Management, of the LINCS SSP illustrates the exact procedures the contractor support staff follows to ensure accounts are properly managed.
-The LINCS Technology Project system does not have guest or anonymous accounts.
-
-
 #### b
 
 ##### CivicActions
 
 CivicActions' Project Manager assigns the "admininstrator" role for the management of all accounts issued to internal admin roles supporting the information system. Account requests are initiated by the Project Manager by completing a ticket request and the CivicActions Operation Team manages the entire account creation process.
-
-
-##### LINCS
-
-The System Owner has oversight over all permissions that the Project Manager and Operations Staff manages.
-
-
-#### c
-
-##### LINCS
-
-In accordance with LINCS Access Control Policy, LINCS group membership is determined according to the individual's position and role within the organization. A ticket request is used to request accounts and group membership. The request is authorized by the appropriate manager.
 
 
 #### d
@@ -132,21 +105,11 @@ All accounts issued for application administrators and SSH are documented in Civ
 Drupal has a sophisticated permissions and role-based access control built in. Each role within Drupal can only access the documents and controls for which their privilege allows.
 
 
-##### LINCS
-
-LINCS user privileges vary depending on the type of user role assigned. Only users with the role of Administrator have the ability to create and modify user roles for other users.
-
-
 #### e
 
 ##### CivicActions
 
 All accounts issued for the admin management of Application or SSH access must be approved by the System Owner or Project Manager who must create an account request. The CivicActions Operations Team applies appropriate account permissions and settings based on the job role and function documented within the request ticket using processes defined by the CivicActions Security Team.
-
-
-##### LINCS
-
-The System Owner approves, and CivicActions Operations set up the initial Administrator account for LINCS. Subsequent client access and related approvals are managed by CivicActions Operations in collaboaration with the System Owner.
 
 
 #### f
@@ -188,21 +151,11 @@ In accordance with the CivicActions Access Control (AC-01) Policy when an accoun
 System accounts require access authorizations prior to accounts being created. The Project Manager must initiate an access request for an account to be created. CivicActions Operations reviews the request to ensure accuracy, including intended system usage and other attributes of the user access being requested.
 
 
-##### LINCS
-
-LINCS governs their own administrative access. Users with the Administrator roles are empowered to designate and approve Administrators.
-
-
 #### j
 
 ##### CivicActions
 
 All privileged accounts are reviewed by CivicActions Operations every 180 days.
-
-
-##### LINCS
-
-Administrators are empowered to and responsible for reviewing their own accounts and determining whether the accounts should still be authorized.
 
 
 #### k
@@ -225,11 +178,6 @@ Access control in Drupal is enforced by authentication via unique username/passw
 The anonymous user role has the least access to the site of all roles. The website does not allow anonymous users to register an account for themselves. Drupal Administrators are the only user roles that can create new user accounts.
 
 
-##### LINCS
-
-The LINCS Technology Project ensures that assigned authorizations for controlling access to the system is enforced in accordance with the user definitions noted in Section 1.1.1 of the LINCS SSP. The technical support staff ensures that access to security functions and protected information is restricted to authorized personnel. Access will be controlled with access control list used on each instance. Members of one group cannot access resources defined for other groups unless explicitly permitted.
-
-
 ### AC-6: Least Privilege
 
 ##### AWS
@@ -249,11 +197,6 @@ At the application layer, Drupal is designed with a role based user access syste
 SSH access is provided on a least privilege basis and analyzed on an ongoing basis, at least quarterly. Findings related to these audits of accounts are reported and reviewed by the CivicActions Data team and evaluated to determine roles that need to be revoked.
 
 
-##### LINCS
-
-Drupal privileged access roles are designated by LINCS which is responsible for determining who will have administrator privileges and the ability to create other user accounts, including user accounts with the role of "administrator".
-
-
 ### AC-6 (9): Auditing Use Of Privileged Functions
 
 ##### Drupal
@@ -266,11 +209,6 @@ CivicActions, at least quarterly, audits all team accounts based on the concept 
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: unsuccessful logon attempts.
-
-
-##### LINCS
-
-The LINCS Technology Project system locks out users after three unsuccessful login attempts. The information system automatically locks the account permanently, unless an administrator unlocks the account before then, when the maximum number of unsuccessful attempts (3) is exceeded.
 
 
 #### a
@@ -287,27 +225,11 @@ Drupal can be configured to lock an account after a specified number of invalid 
 Lock down following unsuccessful attempts is configurable by Drupal administrators to conform to defined requirements.  When a user exceeds the limit of invalid logon attempts, their account is automatically locked for a specfied time and requires administrator action to unlock the account before the lockout period expires.
 
 
-### AC-8: System Use Notification
-
-##### LINCS
-
-A warning banner ensures that all persons attempting to gain access to the system know that the system and its information are “Authorized User Only” and that attempts to illegally log on to the system could lead to criminal prosecution. The warning message displayed notifies unauthorized users that they have accessed a U.S. Government computer system and continued, unauthorized use can be punishable by fines or imprisonment. Each device logged into will display a system use notification message before the log in window is displayed. The system use notification banner will remain on the screen until the user takes an explicit action to log on to the device. The following is the notification banner displayed on all Department instances:
-"You are accessing a U.S. Federal Government computer system intended to be solely accessed by individual users expressly authorized to access the system by the U.S. Department of Education. Usage may be monitored, recorded, and/or subject to audit. For security purposes and in order to ensure that the system remains available to all expressly authorized users, the U.S. Department of Education monitors the system to identify unauthorized users. Anyone using this system expressly consents to such monitoring and recording. Unauthorized use of this information system is prohibited and subject to criminal and civil penalties. Except as expressly authorized by the U.S. Department of Education, unauthorized attempts to access, obtain, upload, modify, change, and/or delete information on this system are strictly prohibited and are subject to criminal prosecution under 18 U.S.C § 1030, and other applicable statutes, which may result in fines and imprisonment. For purposes of this system, unauthorized access includes, but is not limited to:
-• Any access by an employee or agent of a commercial entity, or other third party, who is not the individual user, for purposes of commercial advantage or private financial gain (regardless of whether the commercial entity or third party is providing a service to an authorized user of the system); and
-• Any access in furtherance of any criminal or tortious act in violation of the Constitution or laws of the United States or any State.
-If system monitoring reveals information indicating possible criminal activity, such evidence may be provided to law enforcement personnel."
-
-
 ### AC-14: Permitted Actions Without Identification Or Authentication
 
 ##### Drupal
 
 The anonymous user role has the least access to the site of all roles. The website does not allow anonymous users to register an account for themselves.
-
-
-##### LINCS
-
-The Department of Education allows the general public user to read the web pages, do searches on the resource database and to review online forum information without identification and authentication for the public web site. Program and Privilege users cannot access LINCS Technology Project system without identification or authentication.
 
 
 ### AC-17: Remote Access
@@ -320,11 +242,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 ##### CivicActions
 
 The CivicActions Access Control (AC) policy defines policy for remote usage restrictions.  The Project Manager or System Owner may additionally provision users according to their Access Control policies.
-
-
-##### LINCS
-
-The LINCS Technology Project permits remote access for privileged functions to support operational needs. The technical staff documents, monitors, and controls all methods of remote access to the information system including remote access for privileged functions. Privileged user access is only permitted through the use of Secure Shell (SSH) where the user will authenticate to the device through this secure channel. Virtual Private Networking (VPN) is not enabled in any form within the LINCS accreditation boundary.
 
 
 ### AC-18: Wireless Access
@@ -363,37 +280,6 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 This control is not applicable. The system does not connect with external information systems.
 
 
-### AC-22: Publicly Accessible Content
-
-#### a
-
-##### LINCS
-
-The Department of Education grants certain LINCS support staff members the authority to post publicly accessible content. These individuals must complete LINCS system security training before being granted access to the LINCS and before they can post publicly accessible content within the LINCS. Furthermore, each authorized individual must follow the procedures delineated within the “Using Drupal” Instruction to ensure they are following a verifiable procedure throughout the entire process. This covers the LINCS Discussion Lists administration areas, LINCS Quarterly Reporting and training tools, and Drupal Content Management systems. Public content is only edited via the Drupal Content Management System. All other content is only viewable by LINCS system users and protected by hardened access controls.
-
-
-#### b
-
-##### LINCS
-
-It is the LINCS responsibility to train authorized LINCS individuals ensuring publicly accessible information does not contain nonpublic information.
-
-
-#### c
-
-##### LINCS
-
-Authorized LINCS individuals review the proposed content of information prior to posting onto the publicly accessible information system to ensure that nonpublic information is not included.
-LINCS Program Users have been authorized for creation of publicly accessible content with publishing authority from an Administrator role. The publishing authority ensures the information being published does not contain nonpublic information.
-
-
-#### d
-
-##### LINCS
-
-Authorized LINCS individuals review the content on the publicly accessible information system for nonpublic information at least every 365 days and removes such information.
-
-
 ## AU: Audit and Accountability
 
 ### AU-1: Audit And Accountability Policy And Procedures
@@ -406,11 +292,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel an audit and accountability policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Audit and Accountability (AU) Policy.  This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-##### LINCS
-
-The LINCS Technology Project maintains a record of system activity by application process and by user activity. Audit and accountability policy and procedures are documented within the LINCS SSP. Security software features are used to automatically generate and store security audit log records for use in monitoring security-related events on all multi-user systems. The Department reviews and updates this policy as necessary and it was last updated in April 2008. Additional information is contained within the Department of Education Handbook for Information Assurance Security policy (Handbook OCIO-01).
 
 
 ### AU-2: Audit Events
@@ -562,11 +443,6 @@ Any significant findings observed during the inspection are reported to CivicAct
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
 
 
-##### LINCS
-
-The LINCS Technology Project system clocks are synchronized system-wide and provide time stamps with audit records.
-
-
 ### AU-9: Protection Of Audit Information
 
 ##### AWS
@@ -633,29 +509,11 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel awareness and training policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Awareness and Training (AT) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
-##### LINCS
-
-Security awareness and training policy and procedures are formally documented in Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01), which provides the roles and responsibilities as it pertains to security awareness and training. The Department will ensure all users, including managers and senior executives, are exposed to basic information system security awareness materials before authorizing access to the system and at least annually thereafter. The Department documents and monitors all individual information system security training activities including basic security awareness training. The Department reviews and updates the policy as necessary.
-
-
 ### AT-2: Security Awareness Training
 
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
-
-
-##### LINCS
-
-The Department personnel and contractor employees involved with the management, operation, programming, maintenance, or use of LINCS Technology Project system receive training in acceptable computer security practices prior to system access.
-All Department employees and contractors are required to complete annual IT security awareness training. This security awareness training covers issues and policies associated with information security, including end user security roles and responsibilities and rules of behavior. Some topics addressed in the training are:
-* Password protection
-* System rules of behavior
-* Protection of hardware, software, and data
-* Proper handling of copyrighted materials
-* Reporting of security breaches and violations
-* Proper procedures for software installation, uploading, and use on workstations. 
-The security and awareness training is consistent with Department of Education IT Security Training Program Plan and the guidance in NIST Special Publication 800-50.
 
 
 #### a
@@ -688,11 +546,6 @@ CivicActions provides annual security awareness training to its personnel.
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
 
 
-##### LINCS
-
-Completion of role-based training is an annual requirement for personnel in roles with significant information security responsibilities that require specialized role-based training. Role-based cybersecurity training is developed and implemented to meet identified training needs and competencies associated with the various target audiences/functional roles (federal and contractor employees) that comprise the Department workforce, as is identified in and required by the FISMA and OMB A-130, Appendix III. The appropriate content of security training is determined based on the assigned roles and responsibilities of individuals and the specific security requirements of the Department, PO and the information systems to which personnel have authorized access. Annual training requirements may be met by completing one or more course(s) within the Department’s learning management systems, participating in instructor-led training provided by the OCIO, or completing an external role-based course or courses offered within their specific functional area of expertise.
-
-
 #### a
 
 ##### CivicActions
@@ -723,11 +576,6 @@ CivicActions' Security provides users with security responsibilities role-based 
 The CivicActions Information Security Office tracks all security awareness training within the organization and ensures that all employees have successfully completed training when required. The training records are stored and tracked in a spreadsheet maintained by the CivicActions Information Security Office.
 
 
-##### LINCS
-
-The Department documents and monitors all individual information system security training activities including basic security awareness training. New users are required to take security training within 30 days of hire. This information is kept in the appropriate personnel files to verify users have met the training requirements. Training requirement notifications are sent to individuals as deadline for re-training approaches.
-
-
 #### b
 
 ##### AWS
@@ -738,11 +586,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 ##### CivicActions
 
 Training records are tracked and maintained by the CivicActions Information Security Office. Records are maintained permanently.
-
-
-##### LINCS
-
-The Office of Information Secuity maintains training certifications for the specified period.
 
 
 ## CM: Configuration Management
@@ -758,12 +601,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 CivicActions has developed, documented and disseminated to personnel a configuration management policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Configuration Management (CM) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 Configuration changes are overseen by the Change Control Board (CCB) consisting of the System Owner, Project Manager and CivicActions Development.
-
-
-##### LINCS
-
-The configuration management policy and procedures are formally documented in the LINCS Technology Project Configuration Management Plan (CMP), which provides the roles and responsibilities as it pertains to physical and environmental protection. It defines responsibilities for the implementation and oversight of the guidance contained herein. The Department reviews and updates the policy as necessary.
-Additional information is contained within the Department of Education, Handbook forInformation Technology Security Configuration Management Planning Procedures (Handbook OCIO-11).
 
 
 ### CM-2: Baseline Configuration
@@ -783,11 +620,6 @@ A current baseline configuration is always available - stored as a tag in the Gi
 
 The baseline configuration is maintained in Git and described in the Configuration Management Plan, which describes the change workflow and software configuration. In the context of Security Configuration Management, the baseline configuration is a collection of formally approved configuration state(s) of one or more configuration items ("features") that compose the system. The baseline configuration is used to restore and serves as the basis against which the next change or set of changes to the system is made.
 The features for the system are maintained in the website's source code, which is managed in git, a source code version control system. Once the source code is updated, git maintains the new version of staged code once committed in the git repository as the new baseline. All code prior to it being staged is documented, tested and approved by CivicActions Development, which is described in control SA-3. The production environment is configured to take database snapshots daily.
-
-
-##### LINCS
-
-A CM process has been established and documented in the LINCS Technology Project CMP. All updates are made in accordance with the procedures outlined in the CMP.  The CM process establishes a baseline of hardware, software, firmware and documentation, as well as changes thereto, throughout the development and life cycle of the information system. CM ensures the control of the information system through its life cycle. It assures that additions, deletions, or changes made to the LINCS Technology Project system do not unintentionally or unknowingly diminish security. If the change is major, the security of the system must be re-analyzed.
 
 
 ### CM-2 (1): Reviews And Updates
@@ -892,11 +724,6 @@ CivicActions tests and validates changes to the system before implementing the c
 Security impact analysis is conducted and documented within the Change Request (CR) process described in in CM-3(b). All proposed configuration-controlled changes to the application are tested first in a sandboxed development environment before being pushed to a staging environment to be tested by another developer and by the Engineering team prior to final approval from CCB to move changes to the production environment.
 
 
-##### LINCS
-
-An Information Security Program is in place to ensure all security-centric impacts to the LINCS Technology Project are properly analyzed and conducted by personnel with information security responsibilities (i.e., LINCS SSO, IT Security Officer, etc.). These individuals have the appropriate skills and technical expertise to analyze the changes to the LINCS Technology Project and their associated security ramifications. In support of continuous monitoring and to ensure the LINCS Technology system lifecycle is fully sustained, a risk assessment process, be it formal or informal, is performed when changes are occur. This ensures the Department understands the security impacts and can determine if additional security controls are required.
-
-
 ### CM-5: Access Restrictions For Change
 
 ##### AWS
@@ -951,31 +778,11 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions configuration settings for Drupal are guided by the Drupal Security Coding Standards <https://www.drupal.org/docs/develop/security> for the security configuration management processes and tools.
 
 
-#### a
-
-##### LINCS
-
-The LINCS Technology Project is configured in compliance with the applicable baseline security standards. The Department and its technical support staff configure the security settings of all IT products to the most restrictive mode consistent with information system operational requirements. The Department utilizes the NIST Special Publication 800-70 for guidance on configuration settings (checklists) for information technology products. When security setting checklist are not available from NIST for a particular device, good security engineering practices along with manufacture guidelines is used to develop the security settings. The CM Manager conducts configuration audits to ensure baseline compliance and documentation of hardware/software configurations throughout the system lifecycle.
-
-
 #### b
 
 ##### CivicActions
 
 CivicActions developers follow security best practices according to the guidelines set by CivicActions Information Security.
-
-
-##### LINCS
-
-Configuration settings are implemented, monitored, and controlled in accordance with the organizational Configuration Management Plan for the security configuration management processes and tools.
-
-
-#### c
-
-##### LINCS
-
-Currently, deviations do not exist for established configuration settings. In the event this changes, the following notes the process that will take place.
-The CivicActions CCB, identifies, approves, and documents exceptions to mandatory configuration settings for individual components within its cloud offering only when operationally necessary. All variances identified during the monthly and annual system testing scans that must be accepted for operational purposes are tracked.
 
 
 #### d
@@ -990,20 +797,6 @@ All changes to the configuration settings are logged in the Git source code vers
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: least functionality.
-
-
-#### a
-
-##### LINCS
-
-Services are limited to provide only essential capabilities.
-
-
-#### b
-
-##### LINCS
-
-The LINCS Technology Project maintains strict default deny policy with access controls at the firewall, and on individual systems. Inbound access across the system boundary is only allowed on ports 22 (ssh), 80 (http) and 443 (https), with an additional port, 25 (smtp) open on the mail server.
 
 
 ### CM-8: Information System Component Inventory
@@ -1034,13 +827,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 ##### CivicActions
 
 CivicActions stores all software code in a git source version control repository which is updated for all component installations, removals, and information system updates. This allows CivicActions to build an inventory of the system on demand.
-
-
-### CM-9: Configuration Management Plan
-
-##### LINCS
-
-The LINCS Configuration Management Plan addresses roles, responsibilities, and configuration management processes and procedures. It defines the configuration items for the information system throughout the system development life cycle and a process for managing the configuration of the configuration items.
 
 
 ### CM-10: Software Usage Restrictions
@@ -1107,12 +893,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel a contingency planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Contingency Planning (CP) Policy and Procedure that can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>. 
 
 
-##### LINCS
-
-This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
-The LINCS Technology Project has developed a contingency planning policy consistent with Department of Education, Handbook for Information Technology Security Contingency Planning Procedures (Handbook OCIO-10) and NIST 800-34. Contingency planning procedures are formally documented within the LINCS Technology Project Contingency Plan, which provides the roles and responsibilities as it pertains to contingency planning. The Department reviews and updates the policy as necessary and the policy was last updated in July 2012.
-
-
 ### CP-2: Contingency Plan
 
 #### a
@@ -1138,11 +918,6 @@ CivicActions has developed a contingincy plan for that addresses:
 ##### CivicActions
 
 The CivicActions Information System Contingency Plan (ISCP) has been distributed to all CivicActons team members. The ISCP can be found in the CivicActions Handbook at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan/>.
-
-
-##### LINCS
-
-The LINCS Information System Contingency Plan (ISCP) has been distributed to all members who have roles in Contingency Planning and Incident Response team. Direction by the System Owner will update who is required to receive a copy of the contingency plan. The ISCP can be found in the LINCS GitHub wiki at <https://git.civicactions.net/lincs/compliance/blob/master/docs/contingency-plan.md>.
 
 
 #### c
@@ -1289,12 +1064,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel an identification and authentication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained the CivicActions Identification and Authentication (IA) Policy. This document can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
 
 
-##### LINCS
-
-The LINCS Technology Project complies with identification and authentication policies contained within the Department of Education, Handbook for Information Assurance Security Policy (Handbook OCIO-01).
-The LINCS system owners/managers manage user identifiers by: (i) uniquely identifying each user; (ii) verifying the identity of each user; (iii) receiving authorization to issue a user identifier from an appropriate official; (iv) ensuring that the user identifier is issued to the intended party; (v) disabling user identifier after a reasonable period of inactivity as documented in its security procedures; and (vi) archiving user identifiers. The Department reviews and updates this policy as necessary.
-
-
 ### IA-2: Identification And Authentication (Organizational Users)
 
 ##### AWS
@@ -1311,12 +1080,6 @@ Privileged users of the system are required to identify and authenticate in orde
 
 Drupal users authenticate using the standard login protocol prior to using application services. User roles are described in AC-3.
 Privileged Drupal accounts can only be created by existing website users with the role of "administrator". Administrator users assign roles to each login account that govern the user's ability to create, publish, update or delete website content.
-
-
-##### LINCS
-
-The LINCS Technology Project system uniquely identifies and authenticates all privileged and program users. This is accomplished through the use of unique user identification and a secret user password. All user IDs are maintained in a database by the system administrator and no identical IDs may be issued.
-Password requirements are listed under security control IA-5.
 
 
 ### IA-2 (1): Network Access To Privileged Accounts
@@ -1337,21 +1100,6 @@ To access root (sudo) privileges an additional password is required. The passwor
 Drupal administrators and other roles with unrestricted access to live content
 and/or user accounts are required to use two factor authentication. See artifact
 LINCS-COP-TFA.png
-
-
-##### LINCS
-
-The LINCS Technology Project employs multi-factor authentication for privileged
-users.
-
-
-### IA-2 (12): Acceptance Of Piv Credentials
-
-##### LINCS
-
-The LINCS Technology Project system does not implement logical access control
-systems (LACS) or physical access control systems (PACS). Therefore Personal
-Identity Verification (PIV) credentials have not been issued for users.
 
 
 ### IA-3: Device Identification And Authentication
@@ -1439,11 +1187,6 @@ Refer to control AC-2 in this SSP for further details on account provisioning.
 CivicActions will create and maintain an initial Drupal Administrator (highest level of Drupal Account). New Administrators are able to provide additional Administrator access at their own discretion, and are ultimately responsible for managing their own Administrator and other user accounts that they create.
 
 
-##### LINCS
-
-Authentication for LINCS internal personnel are created during the personnel assignment process where requests are made to the LINCS admin group for proper access levels. The LINCS admin group verifies the identity of the user. The website performs further verification by sending an email to the user's mailbox containing a single-use activation link which must be used to log in to the account for the first time and to create a password.
-
-
 #### b
 
 ##### Drupal
@@ -1451,26 +1194,11 @@ Authentication for LINCS internal personnel are created during the personnel ass
 Initial authenticator content (a unique email address – not previously used in any other account) is provided by the user. Internal initial password requirements set by CivicActions Operations and ongoing password refreshes by internal user follow the requirements set in the Identification and Authentication Policy.
 
 
-##### LINCS
-
-LINCS admins in collaboration with CivicActions Operations are responsible for provisioning and de-provisioning end user accounts in compliance with the authentication requirements described herein.
-
-
 #### c
 
 ##### Drupal
 
 The system partially inherits this control from Drupal standard password strength mechanisms.
-
-
-##### LINCS
-
-When entering a user account password upon initial login to lincs.ed.gov, all users must comply with the following password policies, which are enforced by the website's software configuration:
-• Password must be at least 14 characters in length.
-• Password must contain at least one digit.
-• Password must contain at least one special character (not whitespace or an alphanumeric).
-• Password must contain at least one uppercase character.
-• Password must contain at least one lowercase character.
 
 
 #### d
@@ -1481,39 +1209,11 @@ The system partially inherits this control from Drupal standard password managem
 All password creation/change/reset operations are recorded in the website's "Drupal watchdog" logs.
 
 
-##### LINCS
-
-LINCS is responsible for provisioning and de-provisioning end user accounts, which must comply with the strict password policies that are enforced by the website's software configuration, as described in IA-5(d).
-In accordance with LINCS site configuration, the following administrative procedures exist for initial authenticator distribution, for lost/compromised/damaged authenticators, and for revoking authenticators.
-• Initial authenticator distribution: Users receive a one-time login link by email upon creating of their user account. They use that link to log in and then must enter a password themselves which complies with the password complexity requirements described in IA-4(b).
-• Lost/compromised/damaged authenticators: Users who have forgotten their password may request a new password by submitting their username or email address. The website responds by emailing a one-time login link to the user's email address. After using the link to log in, the user is required to enter a new password.
-• Revoking authenticators: Users who have not changed their password in the last 90 days are automatically blocked. Administrators may block any user account if they believe there is a reason to do so.
-
-
 #### e
 
 ##### Drupal
 
 Drupal requires users to change their password upon initial login, and the application website enforces this. User accounts are assigned a randomly-generated and unguessable default password that is not shared with anyone, including site Administrators. Once the user logs in and creates a new password, the default password erased from the website's database.
-
-
-#### f
-
-##### LINCS
-
-LINCS authenticators follow these password lifetime restrictions:
-• Maximum password age = 90
-• Minimum password age = 1
-• Password reuse restriction = 10
-
-
-#### g
-
-##### LINCS
-
-LINCS enforces password lifetime restrictions.  The password lifetime settings for internal accounts is as follows:
-• Minimum restriction of zero (1) days and
-• Maximum restriction of ninety (90) days before a password change is required.
 
 
 #### h
@@ -1562,11 +1262,6 @@ This control is not applicable due to the fact that group accounts are not creat
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: password based authentication.
 
 
-##### LINCS
-
-LINCS is responsible for provisioning and de-provisioning end user accounts, which must comply with the strict password policies that are enforced by the website's software configuration, as described in IA-5.
-
-
 #### a
 
 ##### Drupal
@@ -1610,13 +1305,6 @@ Password reuse is limited through software configuration.
 When website users request a password reset, the website sends a temporary login link to the email address associated with their user account. After a user logs in via the temporary login link, the website requires the user to enter a new password before proceeding further.
 
 
-### IA-5 (11): Hardware Token-Based Authentication
-
-##### LINCS
-
-LINCS does not support physical hardware token-based authentication.  Therefore this control is Not Applicable.
-
-
 ### IA-6: Authenticator Feedback
 
 ##### Drupal
@@ -1638,41 +1326,6 @@ All Drupal passwords are encrypted in storage, using the SHA-512 hashing algorit
 CivicActions systems employ authentication methods consistent with NIST FIPS 140-2 requirements. General public access to system web pages does not require cryptographic authentication. Privileged users accessing systems use the public-key cryptographic functionality of Secure Shell (SSH) to encrypt the exchange of information (including the password) between the remote user and the server. Where Transport Layer Security (TLS, aka SSL) is used, cryptographic modules will be configured in accordance with FIPS 140-2.
 
 
-### IA-8: Identification And Authentication (Non-Organizational Users)
-
-##### LINCS
-
-All non-organization users must follow procedures for access privileges as described in AC-2. Any non-organizational user must receive written permission from a Department representative to access the LINCS. In addition, only temporary access of a specified duration is allowed for non-organizational users directly accessing the system. Once the time period is over or the task completed, the temporary user accounts are removed immediately.
-
-
-### IA-8 (1): Acceptance Of Piv Credentials From Other Agencies
-
-##### LINCS
-
-LINCS does not utilize customer agency supplied PIV credentials.
-
-
-### IA-8 (2): Acceptance Of Third-Party Credentials
-
-##### LINCS
-
-LINCS does not utilize FICAM approved credentials.
-
-
-### IA-8 (3): Use Of Ficam-Approved Products
-
-##### LINCS
-
-LINCS does not utilize FICAM approved products.
-
-
-### IA-8 (4): Use Of Ficam-Issued Profiles
-
-##### LINCS
-
-CivicActions does not utilize FICAM approved products or profiles.
-
-
 ## IR: Incident Response
 
 ### IR-1: Incident Response Policy And Procedures
@@ -1687,15 +1340,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel an incident response planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Incident Response (IR) Policy and Procedure that can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
-##### LINCS
-
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-The LINCS Technology Project maintains an Incident Response Plan (IRP), consistent with Department of Education Directives and NIST 800-61, which addresses purpose, scope, roles, and responsibilities. The incident response procedures address any activity or occurrence that compromises the integrity of a system, denies access to or use of IT resources, and compromises the sensitivity of the information stored in, processed by or transmitted by a system.
-Additionally, the IRP includes procedures to respond to waste, fraud, misuse, or abuse of any departmental IT system, damage or loss of software or data contained in any system, Use of unlicensed (pirated) software products, discovery of hardware or software vulnerabilities
-The LINCS Incident Response Plan can be found in the CivicActions Github repository at <https://git.civicactions.net/lincs/compliance/blob/master/docs/security-irp.md>
-Additional information is contained within the Department of Education, Handbook for Information Assurance Security Policy (Handbook OCIO-01) and the Department of Education, Handbook for Information Security Incident Response and Reporting Procedures (Handbook OCIO-14).
-
-
 ### IR-2: Incident Response Training
 
 ##### AWS
@@ -1708,23 +1352,11 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 All CivicActions employees are required to participate in incident response training, as required by Incident Response Plan changes, and annually. The CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) is the basis for the training and the incident response workflow created by the Security team.  Upon a review of past incidents, the training is updated to ensure processes and workflows are updated.
 
 
-##### LINCS
-
-CivicActions Operations and users of the LINCS system with incident response responsibilities are required to participate in incident response training once the role is assumed within 10 days, as required by LINCS changes, and annually. The Incident Response Plan (<https://git.civicactions.net/lincs/compliance/blob/master/docs/security-irp.md>) is the basis for the training and the incident response workflow created by the Security team.  Upon a review of past incidents, the training is updated to ensure processes and workflows are updated.
-
-
 ### IR-4: Incident Handling
 
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident handling.
-
-
-##### LINCS
-
-The LINCS Technology Project’s Computer Security Officer (CSO) handles all incidents for the LINCS Technology Project. The CSO is prepared to report all incidents to The Department Computer Incident Response Capability (EDCIRC) and United States Computer Emergency Readiness Team (US-CERT) as necessary.
-The LINCS Technology Project utilizes proven incident handling methodologies for security incidents that includes preparation, detection and analysis, containment, eradication, and recovery. The Department maintains a list of lessons learned from ongoing incident handling activities and uses those lessons to update the incident response procedures accordingly.
-Preparation activities includes all CivicActions and LINCS internal users are trained if their role includes incident response. Detection monitoring tools providing notification to incident response personnel for analysis and action. Containment, eradication and recovery activities include AWS and LAMP-stack inherited fixes and LINCS system administrators adjusting IP port blocking security groups and SELinux policies.
 
 
 #### a
@@ -1761,22 +1393,11 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions utilizes the JIRA ticketing tool for tracking and reporting of incident events from reporting to resolution and post-incident analysis. Initial reporting can come from continuous monitoring tools as well as client and public submissions made to support@civicactions.com. Jira processes the tickets for the public submissions and CivicActions' Support Team creates associated GitHub Issues. Internal incidents reported are processed within the GitHub Issue queue. Details of the handling procedures are included in the CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan/#response-process>) Response Process.
 
 
-##### LINCS
-
-The LINCS Technology project utilizes network and host-based intrusion detection systems, monitoring the system and application logs for anomalous events.  Incidents are tracked using the same ticketing system that is used to track all system-related changes and events.
-
-
 ### IR-6: Incident Reporting
 
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident reporting.
-
-
-##### LINCS
-
-If an incident involves suspicious activity, CivicActions Operations will contact the LINCS System Owner who may then contact the LINCS CSO.
-The LINCS Technology Project’s Computer Security Officer (CSO) handles all incidents for the LINCS Technology Project. The CSO is prepared to report all incidents to The Department Computer Incident Response Capability (EDCIRC) and United States Computer Emergency Readiness Team (US-CERT) as necessary.
 
 
 #### a
@@ -1814,11 +1435,6 @@ CivicActions HelpDesk team provides first response assistance to any users of th
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident response plan.
-
-
-##### LINCS
-
-The LINCS Incident Response Plan (<https://git.civicactions.net/lincs/compliance/blob/master/docs/security-irp.md>) includes a comprehensive incident response program, which details the implementation of procedures and tools required for incident handling. The incident response program details the roles and responsibilities of LINCS/CivicActions IR Team. The IR Team includes members from CivicActions Security and Operations teams.  Incident response plays a pivotal role in monitoring, detecting and handling security incidents of the entire information system. The IRP details categorization of incidents in accordance with NIST 800-61 and accordingly documents and reports incidents. The IRP is reviewed annually and updated as needed by ISSO, with the assistance of the incident response team.
 
 
 #### a
@@ -1891,29 +1507,11 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel a system maintenance policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in in the CivicActions Maintenance (MA) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
 
 
-##### LINCS
-
-System maintenance policy and procedures are formally documented in the LINCS SSP, which provides the roles and responsibilities as it pertains to software and systems maintennance and updates. The LINCS Technology Project ensures that maintenance controls are developed, disseminated, reviewed, and updated as necessary.
-Physical and environmental protection is fully inherited from the AWS FedRAMP certified us-east cloud.
-Additional information is contained within the Department of Education, Handbook for Information Assurance Security Policy (Handbook OCIO-01).
-This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
-
-
 ### MA-2: Controlled Maintenance
 
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: controlled maintenance.
-
-
-##### LINCS
-
-The LINCS Technology Project schedules, performs, and documents regular maintenance on the software components of all systems, including but not limited to:
-• Hourly automated snapshot backups
-• Daily disaster recovery remote backups
-• Daily Intrusion Detection (OSSEC) / Data Integrity Assurance (AIDE)
-• As needed HelpDesk support
-• Twice-monthly OS updates/patches
 
 
 ### MA-4: Nonlocal Maintenance
@@ -1970,11 +1568,6 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 Maintenance on the system and applications can only be performed by personnel designated as having internal administrator privileges and responsibilities.  Access rights for the internal administrators are assigned and granted access to perform their specific job responsibilities. All physical maintenance requirements are inherited from AWS.
 
 
-##### LINCS
-
-The Department maintains a list of authorized contract (CivicActions) personnel who perform maintenance and repair activities on the LINCS Technology Project system components, and only these authorized personnel may perform the maintenance. All maintenance personnel have the required personnel security elements in place.
-
-
 ## MP: Media Protection
 
 ### MP-1: Media Protection Policy And Procedures
@@ -1987,12 +1580,6 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel a media protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Media Protection (MP) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
-
-
-##### LINCS
-
-This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
-Media protection policy and procedures are fully inherited from AWS Cloud.
 
 
 ### MP-2: Media Access
@@ -2030,26 +1617,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Personnel Security (PS) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
 
 
-##### LINCS
-
-The LINCS Technology Project documents the security policy and procedures in addressing position categorization, personnel screening, personnel termination, personnel transfer, and access agreements within the LINCS SSP. The LINCS Technology Project adopts the Department of Education personnel security standards and determines position risks levels based on public trust responsibilities.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-
-
 ### PS-2: Position Risk Designation
-
-##### LINCS
-
-The LINCS Technology Project’s position sensitivity levels are assigned by the Department of Education and National Classification Center (NCC) as part of the position designation required by OPM under 5 CFR 731.106. Each Department position designation is documented on the Standard Position Description (SPD) and assigned a risk level (or sensitivity level) commensurate with the sensitivity of the information, the risk to that information and the system maintaining that information. The levels of risk still need to be designated by the Department for employee and contractor positions but since the LINCS Technology Project system does not have any sensitive data, a low risk scenario can be assumed.
-• Employee risk levels and background investigations are: Low Risk= NACI, Moderate
-  Risk= LBI, High Risk= BI.
-
-• Contractor risk levels and background investigations are: Low Risk= NACI,
-  Moderate Risk= NACC, High Risk= BI.
-
-In order to ensure every employee is assigned to a position, which has been reviewed for sensitivity by the NCC, the SPD is a required data attribute of an employee’s HR record. Position risks designations are reviewed and revised when NCC or OPM publish changes to sensitivity levels.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog
-
 
 #### a
 
@@ -2074,12 +1642,6 @@ At least every three (3) years, the CivicActions Director of Human Resources rev
 
 ### PS-3: Personnel Screening
 
-##### LINCS
-
-Minimum background investigations are conducted, since all data is non-sensitive, for individuals requiring access to LINCS Technology Project information and information systems. The type of background investigation conducted for an individual is determined by the individual’s position risk categorization noted in control PS-2. The Department conducts periodic reinvestigations in accordance with OPM and NIST guidelines.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-
-
 #### a
 
 ##### CivicActions
@@ -2095,12 +1657,6 @@ Rescreening is conducted as required by the individual’s job duties, the class
 
 
 ### PS-4: Personnel Termination
-
-##### LINCS
-
-The Department’s HR policy states that managers or designated officials are responsible for recovering and properly securing employee badges and returning it to the local physical security office. The Department executes termination procedures that remove personnel access privileges, computer accounts. When an employee is terminated, the employee’s manager or designated official completes a form requesting termination of access for the user. Local management and the security manager coordinate disabling or removing LINCS Technology Project privileged access with the system administrator. The employee’s manager or designated official is responsible for recovering and properly securing his/her ID badge and returning it to the local physical security office. The employee’s manager or designated official ensures that any information on the system that the employee was responsible for will be available to the appropriate personnel.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-
 
 #### a
 
@@ -2148,13 +1704,6 @@ When a person is terminated, a standard off-boarding process is used to notify m
 
 ### PS-5: Personnel Transfer
 
-##### LINCS
-
-When an employee is reassigned or transferred, the employee’s manager or designated official is required to request transfer of access (as appropriate) for the user.
-In accordance with the Department’s HR policy, the employee’s manager or designated official is responsible for recovering and properly securing his/her ID badge and returning it to the local physical security office. The manager provides prompt notification to the LINCS Technology Project system/security administrator when an employee changes assignments and/or location. This includes taking prompt and appropriate action to change employee access profile and/or remove employee from the system; and ensure that users’ system access is cancelled when the need no longer exists.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-
-
 #### a
 
 ##### CivicActions
@@ -2184,74 +1733,7 @@ operational need upon personnel transfer or reassignment.
 CivicActions Operations is informed of transfers that require access authorization modifications within five business days by the Project Manager, System Owner or Director of Human Resources.
 
 
-### PS-6: Access Agreements
-
-#### a
-
-##### LINCS
-
-All users of the LINCS system must read and accept access agreements upon every
-login. The access agreement can be found at https://courses.lincs.ed.gov/login/ a
-copy of which has been uploaded to CSAM as artifact: AccessAgreements.txt
-
-
-#### b
-
-##### LINCS
-
-The Access Agreements are reviewed at least annually or when a significant change occurs.
-
-
-#### c
-
-##### LINCS
-
-All individuals requiring access to the LINCS system are required to sign the Access Agreements before login is granted. When the Access Agreements are updated, the individual will be required to sign the new copy before regaining access.
-
-
-### PS-7: Third-Party Personnel Security
-
-#### a
-
-##### LINCS
-
-Personnel security requirements including security roles and responsibilities that apply to primary contracting organizations flow down to their subcontractors.
-
-
-#### b
-
-##### LINCS
-
-Personnel security policies and procedures that apply to primary contracting organizations flow down to their subcontractors.
-
-
-#### c
-
-##### LINCS
-
-All personnel security requirements are documented in PS-1 and other related Personnel Security controls.
-
-
-#### d
-
-##### LINCS
-
-For personnel transfers and terminations of third-party personnel, the procedures defined in employee termination (PS-4) and employee transfer (PS-5) flow down to subcontractors.
-
-
-#### e
-
-##### LINCS
-
-Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. Third-party personnel are monitored to ensure compliance with personnel security requirements.
-
-
 ### PS-8: Personnel Sanctions
-
-##### LINCS
-
-The disciplinary sanctions for personnel failing to comply with establish IT security policies and procedures are included in the Department’s HR policy. If an employee violates the Department’s information security policies and procedures, the employee may be subject to disciplinary action at the discretion of management. Actions may range from verbal or written warning, removal of system access for a specific period of time, reassignment to other duties, or termination, depending on the severity of the violation. Disciplinary sanctions are reported to the OCIO.
-
 
 #### a
 
@@ -2353,22 +1835,11 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel a system planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Planning (PL) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
-##### LINCS
-
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-The LINCS Technology Project developed its security policy planning and procedures based on the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01), guidance from NIST, the Office of Management and Budget and industry best practices. Security policies and procedures are formally documented within the LINCS SSP, which provides the roles and responsibilities as it pertains to security planning. It provides guidance on all aspects of security for the protection of LINCS information technology resources. It defines responsibilities for the implementation and oversight of the guidance contained herein. The plan was last updated in December, 2015.
-
-
 ### PL-2: System Security Plan
 
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: AWS system security plan.
-
-
-##### LINCS
-
-The System Security Plan (SSP) was developed and implemented for LINCS Technology Project system in accordance with the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01), Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05), NIST SP 800-18 and NIST SP 800-37. The SSP includes a description of the management, operational, and technical controls in place or planned for the application. The SSP is included as a key document in an application’s C&A package and is reviewed and approved by designated officials. The SSP identifies the system owner and responsible parties for managing system access and the overall security of the system. The Chief Information Security Officer reviews and approves the SSP.  The SSP will be reviewed at least annually and updated to account for any changes to the LINCS system and to address any changes in security controls.
 
 
 #### a
@@ -2424,22 +1895,11 @@ The SSP is currently available to authorized users on GitLab. Per the Acceptable
 CivicActions has created and made readily available to individuals requiring access to the information system the rules that describes their responsibilities and expected behavior with regard to information and information system usage. These rules, defined as the Acceptable Use Policy, are included in the CivicActions Security Policy accessible here : <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy> which has also been uploaded to CSAM as 'Appendix J1 - System Rules of Behavior - Privileged User' (CivicActions Security Policy 20190226.docx).
 
 
-##### LINCS
-
-LINCS has created and made readily available to individuals requiring access to the information system the rules that describes their responsibilities and expected behavior with regard to information and information system usage. These rules are captured in ‘Appendix J2 - System Rules of Behavior - General User’ (LINCSSystemRoB2019-template.docx).
-LINCS has reviewed and accepted as a superset alternative the CivicActions Acceptable Use Policy.
-
-
 #### b
 
 ##### CivicActions
 
 CivicActions HR receives a signed acknowledgment from all employees, indicating that they have read, understand, and agree to abide by the rules of behavior, before authorizing access to information and the information system. The text of the electronically signed (via DocuSign) acknowledgement document has been uploaded to CSAM as artifact: 'CivicActions Security Policy Acknowledgement.docx'
-
-
-##### LINCS
-
-The LINCS System Owner receives a signed acknowledgment from such individuals that are not CivicActions employees, indicating that they have read, understand, and agree to abide by the rules of behavior, before authorizing access to information and the information system.
 
 
 #### c
@@ -2449,21 +1909,11 @@ The LINCS System Owner receives a signed acknowledgment from such individuals th
 CivicActions reviews the CivicActions Security Policy at least annually and updates is as required.
 
 
-##### LINCS
-
-LINCS reviews the Rules of Behavior at least annually and updates it as required.
-
-
 #### d
 
 ##### CivicActions
 
 CivicActions requires individuals who have signed a previous version of the CivicActions Security Policy to read and re-sign when any part of it, including the Acceptable Use Policy/Rules of Behavior, are revised/updated.
-
-
-##### LINCS
-
-LINCS requires individuals who have signed a previous version of the rules of behavior to read and re-sign when the Rules of Behavior are revised/updated.
 
 
 ## RA: Risk Assessment
@@ -2480,90 +1930,11 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel a risk assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Risk Assessment (RA) Policy and Procedure CivicActions that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
-##### LINCS
-
-The Department follows the risk assessment policy and procedures formally documented within in the Department of Education Handbook for Information Technology Security Risk Assessment Procedures (Handbook OCIO-07). Furthermore, a Risk Assessment Plan was originally initiated to determine the extent of the potential threat and the risk associated with LINCS Technology Project throughout its System Development Life Cycle (SDLC). The LINCS Technology Project Risk Assessment defines the methodology approach to determine the likelihood risks, and identify potential mitigation options to reduce risks to the LINCS Technology Project system.
-The LINCS Technology Project Risk Assessment will be conducted in accordance with the Department’s risk assessment policy and procedures. By doing so, the responsible parties associated with the LINCS Technology Project will be able to determine the risk, likelihood and impact that could result from exploiting vulnerabilities within the system.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-Additional information is contained within the Department of Education Handbook for Information Technology Security Risk Assessment Procedures (Handbook OCIO-07).
-
-
-### RA-2: Security Categorization
-
-#### a
-
-##### LINCS
-
-In accordance with FIPS 199 requirement and guidelines provided in NIST SP800-60 Rev.1, the organization categorized the system as a Low system: Confidentiality (Low), Integrity (Low), Availability (Low).
-
-
-#### b
-
-##### LINCS
-
-The security categorization was determined by evaluating the type of information that is stored, processed, and/or transmitted by the application and the potential impact levels associated with the confidentiality, integrity, and availability of that information. The application’s security categorization has been documented in this SSP.
-
-
-#### c
-
-##### LINCS
-
-The security categorizations have been reviewed by the designated application POCs, were approved during the C&A effort. The formal security categorization document is available upon request. The system inventory for the LINCS Technology Project is revalidated semiannually.
-
-
-### RA-3: Risk Assessment
-
-#### a
-
-##### LINCS
-
-CivicActions/LINCS will perform risk assessments for the LINCS system based on SP 800-30 Rev. 1 Guide for Conducting Risk Assessments at least annually and as part of the change management activities for the LINCS system that warrant a new or updated risk assessment.
-
-
-#### b
-
-##### LINCS
-
-The results of risk assessments will be compiled into a risk assessment report to be reviewed by CivicActions Security and relevant personnel, and also added to the GitLab system for the LINCS system.
-
-
-#### c
-
-##### LINCS
-
-CivicActions/LINCS reviews risk assessment results at least annually.
-
-
-#### d
-
-##### LINCS
-
-The Risk Assessment report will be disseminated to the appropriate personnel through the Project Manager and CivicActions Security.
-
-
-#### e
-
-##### LINCS
-
-Risk assessments are conducted annually or whenever there are significant changes to the information system or environment of operation (including the identification of new threats and vulnerabilities), or other conditions that may impact the security state of the system, as defined in NIST Special Publication 800-37 Revision 1.
-A significant change includes:
-• Changing authentication or access control implementations;
-• Changing storage implementations;
-• Changing a COTS product to another product;
-• Changing the backup mechanisms and process; and,
-• Adding new interconnections to an outside service provide.
-
-
 ### RA-5: Vulnerability Scanning
 
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: vulnerability scanning.
-
-
-##### LINCS
-
-The LINCS Technology Project uses vulnerability scanning software to document and determine risks to the system.  These scans are being run on a regular basis and the results of these scans are being used to inform changes to the system and verify that security controls are working correctly.  These scans are used to document the current state of the system, and to analyze security trends as changes are made over time.
 
 
 #### a
@@ -2621,12 +1992,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Security Assessment and Authorization Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
-##### LINCS
-
-The Department has published the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01) and U. S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05). Both of these publications are revised periodically. The LINCS System Security Policy (SSP) provides guidance on all aspects of security for the protection of LINCS information technology resources.
-The Department will periodically review and update the SSP when there is a significant change to the regulatory, operational, or technical environment.
-
-
 ### CA-2: Security Assessments
 
 #### a
@@ -2634,14 +1999,6 @@ The Department will periodically review and update the SSP when there is a signi
 ##### CivicActions
 
 CivicActions will develop a security assessment plan (SAP) that describes the security controls and control enhancements under assessment, assessment procedures used to determine effectiveness, the assessment environment, the assessment team, and the assessment roles and responsibilities.
-
-
-##### LINCS
-
-The LINCS Technology Project follows the U. S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures.  The LINCS Technology Project will conduct annual security assessments to comply with FISMA and NIST regulations. The Department will draw on NIST Special Publications 800-53A security controls to complete the assessment. All controls and sub-set security controls will be evaluated and a risk assessment will be conducted. The scope of the assessment includes:
-1. Security controls and control enhancements under assessment
-2. Assessment procedures to be used to determine security control effectiveness
-3. Assessment environment, assessment team, and assessment roles and responsibilities
 
 
 #### b
@@ -2657,11 +2014,6 @@ All controls assigned and documented in this System Security Plan (SSP) will be 
 ##### CivicActions
 
 CivicActions will produce a security assessment report that documents the results of the assessment. The Security Assessment Report must contain the results of the assessment, and may also contain recommendations and suggestions for plans of actions and milestones (POA&Ms).
-
-
-##### LINCS
-
-The LINCS Authorizing Official or Designated Representative will create a Security Assessment Report (SAR). A full assessment shall be conducted by an independent third party assessor at least every three years.
 
 
 #### d
@@ -2697,19 +2049,6 @@ The POA&M document provides a platform for CivicActions to monitor and track the
 • Associated risk and NIST control
 • Recommended mitigation strategy
 POA&Ms are tracked throughout the lifecycle of the system until its mitigation. All POA&Ms are reviewed on a monthly basis by CivicActions Information System Security Officer to ensure all mitigation strategies are continuing as documented.
-
-
-##### LINCS
-
-The LINCS Technology Project follows the U.S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures in managing POA&Ms.
-
-
-### CA-6: Security Authorization
-
-##### LINCS
-
-The LINCS Technology Project follows the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01) and U. S. Department of Education Information Technology Security, Handbook for Information Technology Security, Certification and Accreditation Procedures (Handbook OCIO-05) procedures. The LINCS Technology Project system received its first three-year security accreditation on March 3, 2009, and most recently received an ATO on February 5, 2016.
-ATO re-assessment will be performed every three years or when there is a major change to the application, in which a senior organizational official will sign and approve the security accreditation.
 
 
 ### CA-7: Continuous Monitoring
@@ -2807,12 +2146,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel a system and communication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Communications Protection (SC) Policy CivicActions document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
-##### LINCS
-
-System and communications protection policy and procedures are formally documented in the Department of Education, Handbook for Information Assurance Security Policy (Handbook OCIO-01) and the LINCS SSP. The Department reviews and updates the policy as necessary and has been continually updated since April 2008.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-
-
 ### SC-5: Denial Of Service Protection
 
 ##### AWS
@@ -2825,22 +2158,11 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 Drupal has a manual ability to block IP addresses in cases where attacks bypass cloud protection. This is managed by CivicActions Operations.
 
 
-##### LINCS
-
-The LINCS Technology Project system is configured to reduce vulnerabilities in its operating system and applications to protect against Denial of Service (DoS) attacks.
-The LINCS support staff ensures the system is protected against or limits the effect of DoS attacks as specified in the Department of Education, Handbook for Information Security Incident Response and Reporting Procedures (Handbook OCIO-14).
-
-
 ### SC-7: Boundary Protection
 
 ##### Drupal
 
 Drupal, when deployed on SELinux in full enforcing mode, minimizes the number of services and computing nodes that are exposed to the Internet. Drupal employs both the AWS platform safeguards and the Drupal Watchdog module in monitoring and recording system events. All other computing nodes used in the system are isolated within AWS.
-
-
-##### LINCS
-
-The LINCS Technology Project system has monitored and controlled communications at the external boundary of the information system and at key internal boundaries within the system, where appropriate. The LINCS allocates publicly accessible information system components (e.g., public web servers) specific IP address and port combinations. Public access into the organization’s internal networks is prevented except as appropriately mediated.
 
 
 #### a
@@ -2866,13 +2188,6 @@ Internal organizational networks (e.g. CivicActions private networks) are physic
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: boundary protection.
 
 
-### SC-12: Cryptographic Key Establishment And Management
-
-##### LINCS
-
-Use of cryptographic key management for the LINCS system is not in use for at the time of implementation for authentication. CivicActions does not utilize customer agency supplied PIV credentials for access to customer instances of the LINCS. Access enforcement and authentication requirements for LINCS are described in AC-2 & IA-2. AWS platform does not utilize or manage cryptographic keys within the ACE boundary.
-
-
 ### SC-13: Cryptographic Protection
 
 ##### AWS
@@ -2887,13 +2202,6 @@ The information system implements:
 • HTTPS/SSL (TLS) for connection to web-based services
 • TLS for connection to email services
 * AES-256 (FIPS 140-2 validated) for data at rest (with Elastic Block Store (EBS) volumnes)
-
-
-### SC-15: Collaborative Computing Devices
-
-##### LINCS
-
-This control is not applicable, as the LINCS system does not employ any collaborative computing devices.
 
 
 ### SC-20: Secure Name / Address Resolution Service (Authoritative Source)
@@ -2936,13 +2244,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Information Integrity (SI) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
-
-
-##### LINCS
-
-System and information integrity policy and procedures for the LINCS Technology Project system are formally documented in the LINCS SSP, which provides the roles and responsibilities as it pertains to physical and environmental protection systems. The LINCS Technology Project system support staff monitors the network on a daily basis and employs up-to-date patches to protect the integrity of the system.
-Additional information is contained within the Department of Education, Handbook for Information Assurance Security Policy (Handbook OCIO-01.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
 
 
 ### SI-2: Flaw Remediation
@@ -3130,11 +2431,6 @@ System alerts generated by CivicActions internal monitors (StatusCake, OSSEC, Cl
 CivicActions Security and Operations receive Drupal Security Advisories on a regular basis.
 
 
-##### LINCS
-
-LINCS Technology Project representatives and system administrators receive alerts from US-CERT on a regular basis. Support personnel take appropriate action in response to relevant areas of concern.
-
-
 #### a
 
 ##### AWS
@@ -3254,11 +2550,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 Drupal system error logs do not contain passwords, personal information, encryption keys or other sensitive information.
 
 
-##### LINCS
-
-Drupal in production operation mode does not display application errors to the user but instead displays a predefined page indication that a request cannot be handled as requested and logs all errors to the watchdog.log file.
-
-
 #### b
 
 ##### AWS
@@ -3283,11 +2574,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 The CivicActions organization retains all information, system-related information, incident-related information, and system output in accordance with customers’ requirements retention periods and other NIST guidance and standards, Federal policies, procedures, Federal laws and executive orders. Audit records are retained for 365 days.
 
 
-##### LINCS
-
-LINCS Technology Project representatives and systems administrators receive annual training from the Department regarding information assurance and information handling requirements. These personnel are required to operate the system and handle system data and output in accordance with legal requirements. Personnel training and system guidelines ensure that data and programs are handled appropriately.
-
-
 ## SA: System and Services Acquisition
 
 ### SA-1: System And Services Acquisition Policy And Procedures
@@ -3302,24 +2588,11 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained the CivicActions System and Services Acquisition (SA) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
-##### LINCS
-
-The LINCS Technology Project complies with the Department of Education Handbook for Software Management and Acquisition Policy and Federal Acquisition Regulation (FAR) policies and procedures. The Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01) states that security requirements will be included in information system acquisition contracts based on an assessment of risk in accordance with FISMA requirements. The LINCS Technology Project will identify new threats/vulnerabilities and technologies that may require updating of solicitation documents.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-
-
 ### SA-2: Allocation Of Resources
 
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: allocation of resources.
-
-
-##### LINCS
-
-The LINCS System Owner is responsible for leading the annual budgeting process and for tracking organizational spending. The System Owner coordinates with the CivicActions Project Manager and CivicActions Security on at least monthly basis to track security priorities and spending patterns and determine financial requirements. The System Owner also coordinates the approval process for interim increases to the security budget, if required. This data is used to support the development of the annual budget.
-Security costs are included in Exhibit 53 in the Department's on-line electronic Capital Planning and Investment Control system (eCPIC) in order to provide adequate business case information for budget purposes. Security costs are represented across the life cycle in the business case (Exhibit 300) for major investments and (Exhibit 53) for non-major projects - LINCS is a non-major project. Security costs are summarized and listed as a line item on the Exhibit 53 in the budget submitted to Treasury.
-Costs for providing security at the infrastructure level are contained in the business cases for infrastructure supporting computing platforms, desktop processing, the network environment, and web capability. Since the Exhibit 53 includes projections for multiple fiscal years, its intention is to identify and anticipate security resources required.
 
 
 #### a
@@ -3348,11 +2621,6 @@ The annual budget developed by the System Owner includes explicit budgetary line
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: system development life cycle.
-
-
-##### LINCS
-
-The LINCS Technology Project draws from the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01), Department of Education Lifecycle Management (LCM) Framework, NIST SP 800-64, the LINCS Enterprise Performance Life Cycle (EPLC) and Agile software development methodology to ensure security requirements are incorporated during each phase of the life cycle. This helps to ensure the development of secure systems and effective risk management.
 
 
 #### a
@@ -3428,37 +2696,11 @@ CivicActions Security is responsible for determining the security documentation 
 Configuration and design of the development and production environments are hosted in the CivicActions Git repository. All documentation are strictly controlled regarding transportation and storage in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs.
 
 
-##### LINCS
-
-The LINCS Technology Project follows the guidelines and procedures within the overarching Department of Education policy documents for all federal acquisition of information technology equipment, software and services, Federal Acquisition Regulations (FAR) Part 39, “Acquisition of Information Technology.”  Security requirements/specifications are included in information system acquisition contracts. The requirements in the information system acquisition contract permit updating security controls as new threat/vulnerabilities are identified and new technologies are implemented.
-The LINCS System and Services Acquisition Policy contains the process for determining acceptance criteria for all LINCS system software and services.
-The LINCS organization reviews and approves all acquisition contracts in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs.
-
-
-### SA-4 (10): Use Of Approved Piv Products
-
-##### LINCS
-
-CivicActions/LINCS and AWS describes this control as “not applicable”, as PIV credentials are not applicable to the LINCS system. Access and Authentication requirements for the LINCS system for internal CivicActions and customer are implemented under access management and enforcement (AC-2 and AC-3) and identification and authentication for all users (IA-2 and IA-8).
-It is the responsibiility of LINCS for implementation of PIV capability for authentication as required.
-
-
 ### SA-5: Information System Documentation
 
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: information system documentation.
-
-
-##### LINCS
-
-The Department maintains adequate documentation for the LINCS Technology Project system. The LINCS Technology Project system documentation is protected as required and made available to authorized personnel. Procedures for protecting system documentation include management in the private CivicActions Git repository and the publicly available documentation trees for Free and Open Source Software (FOSS). The documentation maintained for the LINCS Technology Project system includes:
-  
-• System Security Plan (SSP) – this document
-• Configuration documentation
-• Incident Response and Contingency Plans
-• Rules of Behavior (Acceptable Use Policy)
-• FOSS Reference Manuals (Drupal, Moodle, GNU/Linux, Apache, MySQL, PHP, Postfix, etc.)
 
 
 #### a
@@ -3552,12 +2794,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 ##### CivicActions
 
 CivicActions does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing, or transmitting federal agency data.
-
-
-##### LINCS
-
-LINCS does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing, or transmitting federal agency data.
-LINCS is hosted on the AWS Cloud platform, which was approved under the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
 
 
 # NIST SP 800-53 Revision 4 Privacy

@@ -9,7 +9,6 @@ components:
   - ./components/AWS
   - ./components/CivicActions
   - ./components/Drupal
-  - ./components/LINCS
   - ./components/Privacy
 standards:
   - ./standards/nist-sp-800-53-rev4.yaml

@@ -30,12 +30,6 @@ CivicActions has developed, documented and disseminated to personnel a configura
 Configuration changes are overseen by the Change Control Board (CCB) consisting of the System Owner, Project Manager and CivicActions Development.
 
 
-##### LINCS
-
-The configuration management policy and procedures are formally documented in the LINCS Technology Project Configuration Management Plan (CMP), which provides the roles and responsibilities as it pertains to physical and environmental protection. It defines responsibilities for the implementation and oversight of the guidance contained herein. The Department reviews and updates the policy as necessary.
-Additional information is contained within the Department of Education, Handbook forInformation Technology Security Configuration Management Planning Procedures (Handbook OCIO-11).
-
-
 ### CM-2: Baseline Configuration
 
 > The organization develops, documents, and maintains under configuration control, a current baseline configuration of the information system.
@@ -55,11 +49,6 @@ A current baseline configuration is always available - stored as a tag in the Gi
 
 The baseline configuration is maintained in Git and described in the Configuration Management Plan, which describes the change workflow and software configuration. In the context of Security Configuration Management, the baseline configuration is a collection of formally approved configuration state(s) of one or more configuration items ("features") that compose the system. The baseline configuration is used to restore and serves as the basis against which the next change or set of changes to the system is made.
 The features for the system are maintained in the website's source code, which is managed in git, a source code version control system. Once the source code is updated, git maintains the new version of staged code once committed in the git repository as the new baseline. All code prior to it being staged is documented, tested and approved by CivicActions Development, which is described in control SA-3. The production environment is configured to take database snapshots daily.
-
-
-##### LINCS
-
-A CM process has been established and documented in the LINCS Technology Project CMP. All updates are made in accordance with the procedures outlined in the CMP.  The CM process establishes a baseline of hardware, software, firmware and documentation, as well as changes thereto, throughout the development and life cycle of the information system. CM ensures the control of the information system through its life cycle. It assures that additions, deletions, or changes made to the LINCS Technology Project system do not unintentionally or unknowingly diminish security. If the change is major, the security of the system must be re-analyzed.
 
 
 ### CM-2 (1): Reviews And Updates
@@ -194,11 +183,6 @@ CivicActions tests and validates changes to the system before implementing the c
 Security impact analysis is conducted and documented within the Change Request (CR) process described in in CM-3(b). All proposed configuration-controlled changes to the application are tested first in a sandboxed development environment before being pushed to a staging environment to be tested by another developer and by the Engineering team prior to final approval from CCB to move changes to the production environment.
 
 
-##### LINCS
-
-An Information Security Program is in place to ensure all security-centric impacts to the LINCS Technology Project are properly analyzed and conducted by personnel with information security responsibilities (i.e., LINCS SSO, IT Security Officer, etc.). These individuals have the appropriate skills and technical expertise to analyze the changes to the LINCS Technology Project and their associated security ramifications. In support of continuous monitoring and to ensure the LINCS Technology system lifecycle is fully sustained, a risk assessment process, be it formal or informal, is performed when changes are occur. This ensures the Department understands the security impacts and can determine if additional security controls are required.
-
-
 ### CM-5: Access Restrictions For Change
 
 > The organization defines, documents, approves, and enforces physical and logical access restrictions associated with changes to the information system.
@@ -272,31 +256,11 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions configuration settings for Drupal are guided by the Drupal Security Coding Standards <https://www.drupal.org/docs/develop/security> for the security configuration management processes and tools.
 
 
-#### a
-
-##### LINCS
-
-The LINCS Technology Project is configured in compliance with the applicable baseline security standards. The Department and its technical support staff configure the security settings of all IT products to the most restrictive mode consistent with information system operational requirements. The Department utilizes the NIST Special Publication 800-70 for guidance on configuration settings (checklists) for information technology products. When security setting checklist are not available from NIST for a particular device, good security engineering practices along with manufacture guidelines is used to develop the security settings. The CM Manager conducts configuration audits to ensure baseline compliance and documentation of hardware/software configurations throughout the system lifecycle.
-
-
 #### b
 
 ##### CivicActions
 
 CivicActions developers follow security best practices according to the guidelines set by CivicActions Information Security.
-
-
-##### LINCS
-
-Configuration settings are implemented, monitored, and controlled in accordance with the organizational Configuration Management Plan for the security configuration management processes and tools.
-
-
-#### c
-
-##### LINCS
-
-Currently, deviations do not exist for established configuration settings. In the event this changes, the following notes the process that will take place.
-The CivicActions CCB, identifies, approves, and documents exceptions to mandatory configuration settings for individual components within its cloud offering only when operationally necessary. All variances identified during the monthly and annual system testing scans that must be accepted for operational purposes are tracked.
 
 
 #### d
@@ -317,20 +281,6 @@ All changes to the configuration settings are logged in the Git source code vers
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: least functionality.
-
-
-#### a
-
-##### LINCS
-
-Services are limited to provide only essential capabilities.
-
-
-#### b
-
-##### LINCS
-
-The LINCS Technology Project maintains strict default deny policy with access controls at the firewall, and on individual systems. Inbound access across the system boundary is only allowed on ports 22 (ssh), 80 (http) and 443 (https), with an additional port, 25 (smtp) open on the mail server.
 
 
 ### CM-8: Information System Component Inventory
@@ -375,23 +325,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 ##### CivicActions
 
 CivicActions stores all software code in a git source version control repository which is updated for all component installations, removals, and information system updates. This allows CivicActions to build an inventory of the system on demand.
-
-
-### CM-9: Configuration Management Plan
-
-> The organization develops, documents, and implements a configuration management plan for the information system that:
->   a.  Addresses roles, responsibilities, and configuration management processes
-> and procedures;
->   b.  Establishes a process for identifying configuration items throughout the
-> system development life cycle and for managing the configuration of the configuration items;
->   c.  Defines the configuration items for the information system and places the
-> configuration items under configuration management; and
->   d.  Protects the configuration management plan from unauthorized disclosure
-> and modification.
-
-##### LINCS
-
-The LINCS Configuration Management Plan addresses roles, responsibilities, and configuration management processes and procedures. It defines the configuration items for the information system throughout the system development life cycle and a process for managing the configuration of the configuration items.
 
 
 ### CM-10: Software Usage Restrictions
