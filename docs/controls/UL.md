@@ -11,7 +11,7 @@
 
 ##### Privacy
 
-The information is collected on the LINCS Community is for identification and
+The information is collected on the {{ organization_name }} Community is for identification and
 authentication purposes, allowing individuals to:
 
 * Identify themselves to the system
@@ -56,7 +56,7 @@ publications of learning resources, etc.)
 
 ##### Privacy
 
-LINCS does not share any collected information with any third parties.
+{{ organization_name }} does not share any collected information with any third parties.
 
 
 

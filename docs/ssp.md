@@ -2816,7 +2816,7 @@ adult education programs and activities.
 
 ##### Privacy
 
-LINCS does not collect PII other than that covered by the "Roladex exception".
+{{ organization_name }} does not collect PII other than that covered by the "Roladex exception".
 Anonymous access is possible, but courses and community participation require an
 account for which these fields are required:
 
@@ -2834,7 +2834,7 @@ to enhance community participation in forums.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -2842,7 +2842,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -2850,7 +2850,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -2858,7 +2858,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -2866,7 +2866,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -2874,7 +2874,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -2882,7 +2882,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -2890,7 +2890,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -2900,7 +2900,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly. Users enter and have full access to
 update or delete any information they input.
 
@@ -2909,7 +2909,7 @@ update or delete any information they input.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly. Users enter and have full access to
 update or delete any information they input.
 
@@ -2920,7 +2920,7 @@ update or delete any information they input.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly. The data collected (email address, first
 and last name) is demonstrably a minimum.
 
@@ -2929,7 +2929,7 @@ and last name) is demonstrably a minimum.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -2937,7 +2937,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -2947,7 +2947,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly. Users enter and have full access to
 update or delete any information they input.
 
@@ -2956,7 +2956,7 @@ update or delete any information they input.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly. Users enter and have full access to
 update or delete any information they input.
 
@@ -2965,7 +2965,7 @@ update or delete any information they input.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly. Users enter and have full access to
 update or delete any information they input.
 
@@ -2974,7 +2974,7 @@ update or delete any information they input.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly. Users enter and have full access to
 update or delete any information they input.
 
@@ -2985,7 +2985,7 @@ update or delete any information they input.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -2993,7 +2993,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -3003,7 +3003,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS publishes a privacy policy in the footer of every  page. Further, upon login,
+{{ organization_name }} publishes a privacy policy in the footer of every  page. Further, upon login,
 the user must accept a detailed Terms and Conditions of Use.
 
 
@@ -3011,14 +3011,14 @@ the user must accept a detailed Terms and Conditions of Use.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not publish a SORN.
+{{ organization_name }} does not collect or maintain PII and therefore does not publish a SORN.
 
 
 ### TR-3: DISSEMINATION OF PRIVACY PROGRAM INFORMATION
 
 ##### Privacy
 
-LINCS publishes a privacy policy in the footer of every page. Further, upon login,
+{{ organization_name }} publishes a privacy policy in the footer of every page. Further, upon login,
 the user must accept a detailed Terms and Conditions of Use.
 
 
@@ -3028,7 +3028,7 @@ the user must accept a detailed Terms and Conditions of Use.
 
 ##### Privacy
 
-The information is collected on the LINCS Community is for identification and
+The information is collected on the {{ organization_name }} Community is for identification and
 authentication purposes, allowing individuals to:
 
 * Identify themselves to the system
@@ -3052,7 +3052,7 @@ publications of learning resources, etc.)
 
 ##### Privacy
 
-LINCS does not share any collected information with any third parties.
+{{ organization_name }} does not share any collected information with any third parties.
 
 
 
