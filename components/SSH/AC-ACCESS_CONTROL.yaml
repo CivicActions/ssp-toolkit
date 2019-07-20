@@ -25,7 +25,7 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - text: SSH access is provided on a least privilege basis and analyzed on an ongoing
-      basis, at least quarterly. Findings related to these audits of accounts are
-      reported and reviewed by the CivicActions Data team and evaluated to determine
-      roles that need to be revoked.
+      basis, at least quarterly. Findings related to these audits of accounts are reported
+      and reviewed by the Security Office and evaluated to determine roles that need to be
+      revoked.
     implementation_status: In Place

@@ -43,7 +43,8 @@ Table of Contents
 
 ##### AWS
 
-The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+The system partially inherits this control from the FedRAMP Provisional ATO granted
+to the AWS Cloud Service Providers dated 1 May 2013.
 
 
 ##### CivicActions
@@ -60,30 +61,27 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 #### a
 
-##### CivicActions
+##### AWS
 
-CivicActions Operations, in collaboration with CivicActions Security, will set
-up privileged accounts accounts for the following roles:
-
-• Developer - user level account that has access to application features and
-sanitized databases
-
-• System Administrator - user accounts that enjoy full system administrator
-access
+AWS Identity and Access Management (IAM) provides fine-grained access to AWS resources
+Operations, in collaboration with the Security Office, will set up privileged accounts accounts for the following roles:
+• Reporter - account that has read-only access to system reporting.
+• Administrator - account with full site management access.
 
 
 ##### Drupal
 
-Drupal provides user accounts for individuals who participate in visiting, contributing
-to and administering the site with the following roles:
-
-• Anonymous user – readers of the site who either do not have an account or
-are not logged in.
-
-• Authenticated user – All non-anonymous users inherit the "authenticated user
-role."
-
+Drupal provides user accounts for individuals who participate in visiting, contributing to and administering the site with the following roles:
+• Anonymous user – readers of the site who either do not have an account or are not logged in.
+• Authenticated user – All non-anonymous users inherit the "authenticated user role."
 • Administrator - This role has all permissions enabled by default.
+
+
+##### SSH
+
+Operations, in collaboration with the Security Office, will set up privileged accounts accounts for the following roles:
+• Developer - user level account that has access to application features and sanitized databases
+• System Administrator - user accounts that enjoy full system administrator (`sudo`) access
 
 
 #### b
@@ -196,6 +194,10 @@ CivicActions implements the policy of least privilege for all logical components
 At the application layer, Drupal is designed with a role based user access system, a least privileged approach based on assignment of privileges to roles. Drupal‘s permission systems enables control of what users can do and see on the site. CivicActions has defined a specific set of permissions for each of the user roles mentioned in control AC-5.
 SSH access is provided on a least privilege basis and analyzed on an ongoing basis, at least quarterly. Findings related to these audits of accounts are reported and reviewed by the CivicActions Data team and evaluated to determine roles that need to be revoked.
 
+
+##### SSH
+
+SSH access is provided on a least privilege basis and analyzed on an ongoing basis, at least quarterly. Findings related to these audits of accounts are reported and reviewed by the Security Office and evaluated to determine roles that need to be revoked.
 
 ### AC-6 (9): Auditing Use Of Privileged Functions
 
@@ -1193,13 +1195,11 @@ CivicActions will create and maintain an initial Drupal Administrator (highest l
 
 Initial authenticator content (a unique email address – not previously used in any other account) is provided by the user. Internal initial password requirements set by CivicActions Operations and ongoing password refreshes by internal user follow the requirements set in the Identification and Authentication Policy.
 
-
 #### c
 
 ##### Drupal
 
 The system partially inherits this control from Drupal standard password strength mechanisms.
-
 
 #### d
 

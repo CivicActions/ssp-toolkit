@@ -1,4 +1,4 @@
-# Reusable Controls (compiled: 2019.07.09 at 1905)
+# Reusable Controls (compiled: 2019.07.20 at 1923)
 
 * [AC: Access Control](controls/AC.md#ac-access-control)
    * [AC-1: Access Control Policy And Procedures](controls/AC.md#ac-1-access-control-policy-and-procedures)

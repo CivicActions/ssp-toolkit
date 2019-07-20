@@ -194,13 +194,11 @@ CivicActions will create and maintain an initial Drupal Administrator (highest l
 
 Initial authenticator content (a unique email address – not previously used in any other account) is provided by the user. Internal initial password requirements set by CivicActions Operations and ongoing password refreshes by internal user follow the requirements set in the Identification and Authentication Policy.
 
-
 #### c
 
 ##### Drupal
 
 The system partially inherits this control from Drupal standard password strength mechanisms.
-
 
 #### d
 
