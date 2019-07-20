@@ -10,8 +10,10 @@ components:
   - ./components/CivicActions
   - ./components/Drupal
   - ./components/Privacy
+  - ./components/SSH
 standards:
   - ./standards/nist-sp-800-53-rev4.yaml
   - ./standards/NIST-SP-800-53-rev4-privacy.yaml
 certifications:
   - ./certifications/fisma-low-impact-privacy.yaml
+

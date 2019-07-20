@@ -1,0 +1,31 @@
+family: ACCESS CONTROL
+documentation_complete: false
+satisfies:
+- control_key: AC-2
+  control_name: ACCOUNT MANAGEMENT
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: >
+      Operations, in collaboration with the Security Office, will set up privileged
+      accounts accounts for the following roles:
+
+      • Developer - user level account that has access to application features and
+      sanitized databases
+
+      • System Administrator - user accounts that enjoy full system administrator (`sudo`)
+      access
+    implementation_status: In Place
+- control_key: AC-6
+  control_name: LEAST PRIVILEGE
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: SSH access is provided on a least privilege basis and analyzed on an ongoing
+      basis, at least quarterly. Findings related to these audits of accounts are
+      reported and reviewed by the CivicActions Data team and evaluated to determine
+      roles that need to be revoked.
+    implementation_status: In Place

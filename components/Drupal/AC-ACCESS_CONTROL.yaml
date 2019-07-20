@@ -8,7 +8,7 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - key: a
-    text: |
+    text: >
       Drupal provides user accounts for individuals who participate in visiting, contributing
       to and administering the site with the following roles:
 

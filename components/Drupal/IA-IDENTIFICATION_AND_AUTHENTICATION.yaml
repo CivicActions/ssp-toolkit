@@ -73,15 +73,14 @@ satisfies:
       for managing their own Administrator and other user accounts that they create.
     implementation_status: Partially in Place
   - key: b
-    text: >
-      Initial authenticator content (a unique email address – not previously used
+    text: Initial authenticator content (a unique email address – not previously used
       in any other account) is provided by the user. Internal initial password requirements
       set by CivicActions Operations and ongoing password refreshes by internal user
       follow the requirements set in the Identification and Authentication Policy.
     implementation_status: Partially in Place
   - key: c
-    text: |
-      The system partially inherits this control from Drupal standard password strength mechanisms.
+    text: The system partially inherits this control from Drupal standard password
+      strength mechanisms.
     implementation_status: Partially in Place
   - key: d
     text: |
