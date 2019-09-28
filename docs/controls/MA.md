@@ -1,4 +1,4 @@
-# LINCS System Security Plan
+# Reusable Component Library System Security Plan
 
 # NIST SP 800-53 Revision 4
 
@@ -28,14 +28,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel a system maintenance policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in in the CivicActions Maintenance (MA) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
 
 
-##### LINCS
-
-System maintenance policy and procedures are formally documented in the LINCS SSP, which provides the roles and responsibilities as it pertains to software and systems maintennance and updates. The LINCS Technology Project ensures that maintenance controls are developed, disseminated, reviewed, and updated as necessary.
-Physical and environmental protection is fully inherited from the AWS FedRAMP certified us-east cloud.
-Additional information is contained within the Department of Education, Handbook for Information Assurance Security Policy (Handbook OCIO-01).
-This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
-
-
 ### MA-2: Controlled Maintenance
 
 > The organization:
@@ -55,16 +47,6 @@ This is Agency common control. More data about implementation can be obtained fr
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: controlled maintenance.
-
-
-##### LINCS
-
-The LINCS Technology Project schedules, performs, and documents regular maintenance on the software components of all systems, including but not limited to:
-• Hourly automated snapshot backups
-• Daily disaster recovery remote backups
-• Daily Intrusion Detection (OSSEC) / Data Integrity Assurance (AIDE)
-• As needed HelpDesk support
-• Twice-monthly OS updates/patches
 
 
 ### MA-4: Nonlocal Maintenance
@@ -137,11 +119,6 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 ##### CivicActions
 
 Maintenance on the system and applications can only be performed by personnel designated as having internal administrator privileges and responsibilities.  Access rights for the internal administrators are assigned and granted access to perform their specific job responsibilities. All physical maintenance requirements are inherited from AWS.
-
-
-##### LINCS
-
-The Department maintains a list of authorized contract (CivicActions) personnel who perform maintenance and repair activities on the LINCS Technology Project system components, and only these authorized personnel may perform the maintenance. All maintenance personnel have the required personnel security elements in place.
 
 
 

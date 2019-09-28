@@ -22,17 +22,6 @@ satisfies:
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - key: a
-    text: |
-      CivicActions Operations, in collaboration with CivicActions Security, will set
-      up privileged accounts accounts for the following roles:
-
-      • Developer - user level account that has access to application features and
-      sanitized databases
-
-      • System Administrator - user accounts that enjoy full system administrator
-      access
-    implementation_status: In Place
   - key: b
     text: >
       CivicActions' Project Manager assigns the "admininstrator" role for the management

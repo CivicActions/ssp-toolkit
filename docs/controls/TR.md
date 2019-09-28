@@ -1,4 +1,4 @@
-# LINCS System Security Plan
+# Reusable Component Library System Security Plan
 
 # NIST SP 800-53 Revision 4 Privacy
 
@@ -36,7 +36,7 @@
 
 ##### Privacy
 
-LINCS publishes a privacy policy in the footer of every  page. Further, upon login,
+{{ organization_name }} publishes a privacy policy in the footer of every  page. Further, upon login,
 the user must accept a detailed Terms and Conditions of Use.
 
 
@@ -56,7 +56,7 @@ the user must accept a detailed Terms and Conditions of Use.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not publish a SORN.
+{{ organization_name }} does not collect or maintain PII and therefore does not publish a SORN.
 
 
 ### TR-3: DISSEMINATION OF PRIVACY PROGRAM INFORMATION
@@ -70,7 +70,7 @@ LINCS does not collect or maintain PII and therefore does not publish a SORN.
 
 ##### Privacy
 
-LINCS publishes a privacy policy in the footer of every page. Further, upon login,
+{{ organization_name }} publishes a privacy policy in the footer of every page. Further, upon login,
 the user must accept a detailed Terms and Conditions of Use.
 
 

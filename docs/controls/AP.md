@@ -1,4 +1,4 @@
-# LINCS System Security Plan
+# Reusable Component Library System Security Plan
 
 # NIST SP 800-53 Revision 4 Privacy
 
@@ -28,7 +28,7 @@ adult education programs and activities.
 
 ##### Privacy
 
-LINCS does not collect PII other than that covered by the "Roladex exception".
+{{ organization_name }} does not collect PII other than that covered by the "Roladex exception".
 Anonymous access is possible, but courses and community participation require an
 account for which these fields are required:
 

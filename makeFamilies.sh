@@ -23,7 +23,7 @@ cd docs
 
 DATE=`date "+%Y.%m.%d at %H%M"`
 
-echo "# LINCS Controls (compiled: ${DATE})" > controls.md
+echo "# Reusable Controls (compiled: ${DATE})" > controls.md
 
 #../gh-md-toc controls/* | sed '/^         /d' | sed 's/^   //' | \
 #  sed 's/^\(Created by \[gh-md-toc\].*$\)/<!-- \1 -->/' >> controls.md

@@ -1,4 +1,4 @@
-# LINCS System Security Plan
+# Reusable Component Library System Security Plan
 
 # NIST SP 800-53 Revision 4 Privacy
 
@@ -30,7 +30,7 @@
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -50,7 +50,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -63,7 +63,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -74,7 +74,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -98,7 +98,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -115,7 +115,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -125,7 +125,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -146,7 +146,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-LINCS does not collect or maintain PII and therefore does not directly address this
+{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 

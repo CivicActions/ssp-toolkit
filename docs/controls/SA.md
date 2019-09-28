@@ -1,4 +1,4 @@
-# LINCS System Security Plan
+# Reusable Component Library System Security Plan
 
 # NIST SP 800-53 Revision 4
 
@@ -29,12 +29,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 CivicActions has developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained the CivicActions System and Services Acquisition (SA) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
-##### LINCS
-
-The LINCS Technology Project complies with the Department of Education Handbook for Software Management and Acquisition Policy and Federal Acquisition Regulation (FAR) policies and procedures. The Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01) states that security requirements will be included in information system acquisition contracts based on an assessment of risk in accordance with FISMA requirements. The LINCS Technology Project will identify new threats/vulnerabilities and technologies that may require updating of solicitation documents.
-This is Agency common control.  More data about implementation can be obtained from the Agency common control catalog.
-
-
 ### SA-2: Allocation Of Resources
 
 > The organization:
@@ -48,13 +42,6 @@ This is Agency common control.  More data about implementation can be obtained f
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: allocation of resources.
-
-
-##### LINCS
-
-The LINCS System Owner is responsible for leading the annual budgeting process and for tracking organizational spending. The System Owner coordinates with the CivicActions Project Manager and CivicActions Security on at least monthly basis to track security priorities and spending patterns and determine financial requirements. The System Owner also coordinates the approval process for interim increases to the security budget, if required. This data is used to support the development of the annual budget.
-Security costs are included in Exhibit 53 in the Department's on-line electronic Capital Planning and Investment Control system (eCPIC) in order to provide adequate business case information for budget purposes. Security costs are represented across the life cycle in the business case (Exhibit 300) for major investments and (Exhibit 53) for non-major projects - LINCS is a non-major project. Security costs are summarized and listed as a line item on the Exhibit 53 in the budget submitted to Treasury.
-Costs for providing security at the infrastructure level are contained in the business cases for infrastructure supporting computing platforms, desktop processing, the network environment, and web capability. Since the Exhibit 53 includes projections for multiple fiscal years, its intention is to identify and anticipate security resources required.
 
 
 #### a
@@ -93,11 +80,6 @@ The annual budget developed by the System Owner includes explicit budgetary line
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: system development life cycle.
-
-
-##### LINCS
-
-The LINCS Technology Project draws from the Department of Education, Office of the Chief Information Officer, Handbook for Information Assurance Security Policy, Information Assurance Program (Handbook OCIO-01), Department of Education Lifecycle Management (LCM) Framework, NIST SP 800-64, the LINCS Enterprise Performance Life Cycle (EPLC) and Agile software development methodology to ensure security requirements are incorporated during each phase of the life cycle. This helps to ensure the development of secure systems and effective risk management.
 
 
 #### a
@@ -183,23 +165,6 @@ CivicActions Security is responsible for determining the security documentation 
 Configuration and design of the development and production environments are hosted in the CivicActions Git repository. All documentation are strictly controlled regarding transportation and storage in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs.
 
 
-##### LINCS
-
-The LINCS Technology Project follows the guidelines and procedures within the overarching Department of Education policy documents for all federal acquisition of information technology equipment, software and services, Federal Acquisition Regulations (FAR) Part 39, “Acquisition of Information Technology.”  Security requirements/specifications are included in information system acquisition contracts. The requirements in the information system acquisition contract permit updating security controls as new threat/vulnerabilities are identified and new technologies are implemented.
-The LINCS System and Services Acquisition Policy contains the process for determining acceptance criteria for all LINCS system software and services.
-The LINCS organization reviews and approves all acquisition contracts in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs.
-
-
-### SA-4 (10): Use Of Approved Piv Products
-
-> The organization employs only information technology products on the FIPS 201-approved products list for Personal Identity Verification (PIV) capability implemented within organizational information systems.
-
-##### LINCS
-
-CivicActions/LINCS and AWS describes this control as “not applicable”, as PIV credentials are not applicable to the LINCS system. Access and Authentication requirements for the LINCS system for internal CivicActions and customer are implemented under access management and enforcement (AC-2 and AC-3) and identification and authentication for all users (IA-2 and IA-8).
-It is the responsibiility of LINCS for implementation of PIV capability for authentication as required.
-
-
 ### SA-5: Information System Documentation
 
 > The organization:
@@ -228,17 +193,6 @@ It is the responsibiility of LINCS for implementation of PIV capability for auth
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: information system documentation.
-
-
-##### LINCS
-
-The Department maintains adequate documentation for the LINCS Technology Project system. The LINCS Technology Project system documentation is protected as required and made available to authorized personnel. Procedures for protecting system documentation include management in the private CivicActions Git repository and the publicly available documentation trees for Free and Open Source Software (FOSS). The documentation maintained for the LINCS Technology Project system includes:
-  
-• System Security Plan (SSP) – this document
-• Configuration documentation
-• Incident Response and Contingency Plans
-• Rules of Behavior (Acceptable Use Policy)
-• FOSS Reference Manuals (Drupal, Moodle, GNU/Linux, Apache, MySQL, PHP, Postfix, etc.)
 
 
 #### a
@@ -342,12 +296,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 ##### CivicActions
 
 CivicActions does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing, or transmitting federal agency data.
-
-
-##### LINCS
-
-LINCS does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing, or transmitting federal agency data.
-LINCS is hosted on the AWS Cloud platform, which was approved under the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
 
 
 

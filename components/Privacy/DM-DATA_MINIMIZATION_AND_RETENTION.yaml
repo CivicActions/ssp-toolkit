@@ -8,7 +8,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      LINCS does not collect or maintain PII and therefore does not directly address this
+      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly. The data collected (email address, first
       and last name) is demonstrably a minimum.
     implementation_status: Not Applicable
@@ -19,7 +19,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      LINCS does not collect or maintain PII and therefore does not directly address this
+      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: DM-3
@@ -29,6 +29,6 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      LINCS does not collect or maintain PII and therefore does not directly address this
+      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable

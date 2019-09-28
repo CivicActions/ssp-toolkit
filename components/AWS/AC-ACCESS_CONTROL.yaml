@@ -8,7 +8,8 @@ satisfies:
   security_control_type: Partially Inheritable
   narrative:
   - text: |
-      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
+      The system partially inherits this control from the FedRAMP Provisional ATO granted
+      to the AWS Cloud Service Providers dated 1 May 2013.
     implementation_status: In Place
 - control_key: AC-2
   control_name: ACCOUNT MANAGEMENT
@@ -17,8 +18,20 @@ satisfies:
   security_control_type: Partially Inheritable
   narrative:
   - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: AWS account management.
+      The system partially inherits this control from the FedRAMP Provisional ATO granted
+      to the AWS Cloud dated 1 May 2013 for the following: AWS account management.
+    implementation_status: In Place
+
+  - key: a
+    text: >
+      AWS Identity and Access Management (IAM) provides fine-grained access to AWS resources
+
+      Operations, in collaboration with the Security Office, will set up privileged
+      accounts accounts for the following roles:
+
+      • Reporter - account that has read-only access to system reporting.
+
+      • Administrator - account with full site management access.
     implementation_status: In Place
 - control_key: AC-3
   control_name: ACCESS ENFORCEMENT
