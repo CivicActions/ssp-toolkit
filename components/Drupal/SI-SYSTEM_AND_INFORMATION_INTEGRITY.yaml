@@ -17,7 +17,7 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - text: |
-      CivicActions Security and Operations receive Drupal Security Advisories on a regular basis.
+      {{ contractor }} Security and Operations receive Drupal Security Advisories on a regular basis.
     implementation_status: In Place
 - control_key: SI-10
   control_name: INFORMATION INPUT VALIDATION
