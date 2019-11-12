@@ -9,7 +9,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      Under {{ system_relevant_legislation }}, System Owner carries out a program of
+      Under {{system_relevant_legislation}}, System Owner carries out a program of
       national leadership activities to enhance the quality and outcomes of programs
       nationwide. System Owner uses these funds to provide technical assistance and
       professional development to programs and contribute to research and evaluations
@@ -21,7 +21,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect PII other than that covered by the "Roladex
+      {{organization_name}} does not collect PII other than that covered by the "Roladex
       exception".  Anonymous access is possible, but community participation require an
       account for which these fields are required:
 
@@ -45,7 +45,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: AR-2
@@ -55,7 +55,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: AR-3
@@ -65,7 +65,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: AR-4
@@ -75,7 +75,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: AR-5
@@ -85,7 +85,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: AR-6
@@ -95,7 +95,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: AR-7
@@ -105,7 +105,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: AR-8
@@ -115,7 +115,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 
@@ -131,7 +131,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly. Users enter and have full access to
       update or delete any information they input.
     implementation_status: Not Applicable
@@ -142,7 +142,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly. Users enter and have full access to
       update or delete any information they input.
     implementation_status: Not Applicable
@@ -159,7 +159,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly. The data collected (email address, first
       and last name) is demonstrably a minimum.
     implementation_status: Not Applicable
@@ -170,7 +170,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: DM-3
@@ -180,7 +180,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 
@@ -196,7 +196,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly. Users enter and have full access to
       update or delete any information they input.
     implementation_status: Not Applicable
@@ -207,7 +207,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly. Users enter and have full access to
       update or delete any information they input.
     implementation_status: Not Applicable
@@ -218,7 +218,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly. Users enter and have full access to
       update or delete any information they input.
     implementation_status: Not Applicable
@@ -229,7 +229,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly. Users enter and have full access to
       update or delete any information they input.
     implementation_status: Not Applicable
@@ -246,7 +246,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: SE-2
@@ -256,7 +256,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 
@@ -271,7 +271,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} publishes a privacy policy in the footer of every  page. Further, upon login,
+      {{organization_name}} publishes a privacy policy in the footer of every  page. Further, upon login,
       the user must accept a detailed Terms and Conditions of Use.
     implementation_status: In Place
 - control_key: TR-2
@@ -281,7 +281,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not collect or maintain PII and therefore does not publish a SORN.
+      {{organization_name}} does not collect or maintain PII and therefore does not publish a SORN.
     implementation_status: In Place
 - control_key: TR-3
   control_name: DISSEMINATION OF PRIVACY PROGRAM INFORMATION
@@ -290,7 +290,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} publishes a privacy policy in the footer of every page. Further, upon login,
+      {{organization_name}} publishes a privacy policy in the footer of every page. Further, upon login,
       the user must accept a detailed Terms and Conditions of Use.
     implementation_status: In Place
 
@@ -305,7 +305,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      The information is collected on the {{ organization_name }} Community is for identification and
+      The information is collected on the {{organization_name}} Community is for identification and
       authentication purposes, allowing individuals to:
 
       * Identify themselves to the system
@@ -331,5 +331,5 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{ organization_name }} does not share any collected information with any third parties.
+      {{organization_name}} does not share any collected information with any third parties.
     implementation_status: In Place

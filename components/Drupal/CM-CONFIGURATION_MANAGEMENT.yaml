@@ -20,7 +20,7 @@ satisfies:
       is managed in Git, a source code version control system. Once the source code
       is updated, Git maintains the new version of staged code once committed in the
       Git repository as the new baseline. All code prior to it being staged is documented,
-      tested and approved by {{ contractor }} Development, which is described in control
+      tested and approved by {{contractor}} Development, which is described in control
       SA-3. The production environment is configured to take database snapshots daily.
     implementation_status: In Place
 - control_key: CM-2 (1)
@@ -30,13 +30,13 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - text: >
-      {{ contractor }} reviews and updates baseline configurations for the system
+      {{contractor}} reviews and updates baseline configurations for the system
       at least annually, when requested by the System Owner or required by law, and
       as an integral part of information system component installations, upgrades,
       and maintenance.
 
       A review of the CM baselines for the system is conducted and approved by {{
-      contractor }} Development. Any changes made to the production environment are
+      contractor}} Development. Any changes made to the production environment are
       approved prior to deployment by the CCB or agile scrum process. Changes that
       may require updates to the baseline configuration for the application include:
 
@@ -107,7 +107,7 @@ satisfies:
   narrative:
   - key: a
     text: Configuration changes that do not entail software code changes can only
-      be performed by {{ contractor }} internal administrators with privileges implemented
+      be performed by {{contractor}} internal administrators with privileges implemented
       by access enforcement (AC-3) and least privilege (AC-6).
     implementation_status: In Place
 - control_key: CM-6
@@ -116,7 +116,7 @@ satisfies:
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: '{{ contractor }} configuration settings for Drupal are guided by the Drupal
+  - text: '{{contractor}} configuration settings for Drupal are guided by the Drupal
       Security Coding Standards <https://www.drupal.org/docs/develop/security> for
       the security configuration management processes and tools.'
     implementation_status: In Place
@@ -128,7 +128,7 @@ satisfies:
   narrative:
   - text: >
       The software inventory for the application is maintained in the codebase stored
-      {{ contractor }}' Git source code version control system. It consists of the
+      {{contractor}}' Git source code version control system. It consists of the
       following components:
 
       • The Drupal open source web content management system
@@ -136,16 +136,16 @@ satisfies:
       • Drupal add-on modules, themes, and libraries available from the Drupal.org
       website which extend Drupal core
 
-      • Custom code written by {{ contractor }}' developers
+      • Custom code written by {{contractor}}' developers
 
-      The inventory is reviewed monthly by {{ contractor }} Product Engineering teams
+      The inventory is reviewed monthly by {{contractor}} Product Engineering teams
       in accordance with the Configuration Management Plan.
 
-      Website content is backed up daily using CPM snapshots. This allows {{ contractor
-      }} to build an inventory of the system on demand.
+      Website content is backed up daily using CPM snapshots. This allows {{contractor
+     }} to build an inventory of the system on demand.
     implementation_status: In Place
-  summary: The application's software inventory is maintained in the {{ contractor
-    }}' Git source code repository.
+  summary: The application's software inventory is maintained in the {{contractor
+   }}' Git source code repository.
 - control_key: CM-10
   control_name: SOFTWARE USAGE RESTRICTIONS
   standard_key: NIST SP 800-53 Revision 4

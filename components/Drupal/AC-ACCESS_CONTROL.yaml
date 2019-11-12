@@ -50,7 +50,7 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - text: >
-      {{ contractor }} implements the policy of least privilege for all logical components
+      {{contractor}} implements the policy of least privilege for all logical components
       of Drupal by allowing only authorized access for users, which are necessary
       to accomplish assigned tasks in accordance with business functions and organizational
       needs.
@@ -58,12 +58,12 @@ satisfies:
       At the application layer, Drupal is designed with a role-based user access system,
       a least-privileged approach based on the assignment of privileges to roles.
       Drupal‘s permission systems enable control of what users can do and see on the
-      site. {{ contractor }} has defined a specific set of permissions for each of
+      site. {{contractor}} has defined a specific set of permissions for each of
       the user roles mentioned in control AC-5.
 
       SSH access is provided on a least privilege basis and analyzed on an ongoing
       basis, at least quarterly. Findings related to these audits of accounts are
-      reported and reviewed by the {{ contractor }} Data team and evaluated to determine
+      reported and reviewed by the {{contractor}} Data team and evaluated to determine
       roles that need to be revoked.
     implementation_status: In Place
 - control_key: AC-6 (9)
@@ -72,10 +72,10 @@ satisfies:
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: '{{ contractor }}, at least quarterly, audits all team accounts based on
+  - text: '{{contractor}}, at least quarterly, audits all team accounts based on
       the concept of least privilege. Each member of the developer team is assigned
       a role of which defines access needed to perform only the member’s job function.
-      The audit of accounts is reported and reviewed by the {{ contractor }} Operations
+      The audit of accounts is reported and reviewed by the {{contractor}} Operations
       and evaluated to determine whether roles or membership within the developer
       team should be changed.'
     implementation_status: In Place

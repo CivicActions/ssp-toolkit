@@ -35,10 +35,10 @@ satisfies:
     implementation_status: In Place
   - key: b
     text: All security-related issues and events, including requests for server log
-      analysis, are recorded in {{ contractor }}' JIRA tracking system.
+      analysis, are recorded in {{contractor}}' JIRA tracking system.
     implementation_status: In Place
   - key: c
-    text: '{{ contractor }} has extensive experience and specialization as a host
+    text: '{{contractor}} has extensive experience and specialization as a host
       of websites that are built using the Drupal web hosting platform. Our list of
       auditable events is also informed by the experience and advice of Drupal''s
       security team, which receives security vulnerability reports and publishes security
@@ -99,7 +99,7 @@ satisfies:
       • Unique numerical ID of the content being modified (for content creation, modification
       and deletion events)
 
-      When auditing a Drupal incident, {{ contractor }}' developers aggregate log
+      When auditing a Drupal incident, {{contractor}}' developers aggregate log
       sources from multiple servers into the Graylog dashboard so that all log entries
       for a single managed security incident can be analyzed in a single document.
       Log sources are sorted, filtered and reviewed.  Application logs are maintained
