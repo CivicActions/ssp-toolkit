@@ -13,7 +13,7 @@ satisfies:
 
       Privileged Drupal accounts can only be created by existing website users with
       the role of "administrator". Administrator users assign roles to each login
-      account that govern the user's ability to create, publish, update or delete
+      account that governs the user's ability to create, publish, update or delete
       website content.
     implementation_status: In Place
 - control_key: IA-2 (1)
@@ -24,7 +24,8 @@ satisfies:
   narrative:
   - text: |
       Drupal administrators and other roles with unrestricted access to live content
-      and/or user accounts are required to use two factor authentication.
+      and/or user accounts are required to use two-factor authentication. See artifact
+      GlobalNET-COP-TFA.png
     implementation_status: In Place
 - control_key: IA-4
   control_name: IDENTIFIER MANAGEMENT
@@ -33,28 +34,24 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - key: a
-    text: >
-      Upon account creation, the Drupal software assigns each user account a unique
-      numerical user ID (uid). This uid is used internally by the system to track
+    text: Upon account creation, the Drupal software assigns each user account a unique
+      numerical user ID (UID). This UID is used internally by the system to track
       user actions such as content creation or editing. The numerical user IDs are
       never reused even if their user accounts are subsequently blocked or deleted.
     implementation_status: Partially in Place
   - key: b
-    text: >
-      When Drupal user accounts are created, users' email addresses are verified by
-      sending a single-use activation link to the user’s mailbox. The email recipient
+    text: When Drupal user accounts are created, users' email addresses are verified
+      by sending a single-use activation link to the user’s mailbox. The email recipient
       then uses the activation link to log in to the website and supply a password
       which must meet the system's password complexity requirements.
     implementation_status: Partially in Place
   - key: c
-    text: >
-      Identifiers for {{ contractor }} internal personnel include a username based on
-      the individual's full first and last name and are reviewed for uniqueness by
-      the admin group when it approves creation of the user account.
+    text: Identifiers for {{ contractor }} internal personnel include a username based
+      on the individual's full first and last name and are reviewed for uniqueness
+      by the admin group when it approves the creation of the user account.
     implementation_status: Partially in Place
   - key: d
-    text: |
-      Drupal users unique identifier (the numeric user id, or uid) is never reused.
+    text: Drupal user's unique identifier (the numeric user ID, or UID) is never reused.
     implementation_status: Partially in Place
 - control_key: IA-5
   control_name: AUTHENTICATOR MANAGEMENT
@@ -68,14 +65,14 @@ satisfies:
 
       {{ contractor }} will create and maintain an initial Drupal Administrator (highest
       level of Drupal Account). New Administrators are able to provide additional
-      Administrator access at their own discretion, and are ultimately responsible
+      Administrator access at their own discretion and are ultimately responsible
       for managing their own Administrator and other user accounts that they create.
     implementation_status: Partially in Place
   - key: b
     text: Initial authenticator content (a unique email address – not previously used
       in any other account) is provided by the user. Internal initial password requirements
-      set by {{ contractor }} Operations and ongoing password refreshes by internal user
-      follow the requirements set in the Identification and Authentication Policy.
+      set by {{ contractor }} Operations and ongoing password refreshes by internal
+      users follow the requirements set in the Identification and Authentication Policy.
     implementation_status: Partially in Place
   - key: c
     text: The system partially inherits this control from Drupal standard password
@@ -84,24 +81,22 @@ satisfies:
   - key: d
     text: |
       The system partially inherits this control from Drupal standard password management.
-      All password creation/change/reset operations are recorded in the website's "Drupal watchdog" logs.
+      All password creation/change/reset operations are recorded in the website's "Drupal Watchdog" logs.
     implementation_status: Partially in Place
   - key: e
-    text: >
-      Drupal requires users to change their password upon initial login, and the application
-      website enforces this. User accounts are assigned a randomly-generated and unguessable
-      default password that is not shared with anyone, including site Administrators.
-      Once the user logs in and creates a new password, the default password erased
-      from the website's database.
+    text: Drupal requires users to change their password upon initial login, and the
+      application website enforces this. User accounts are assigned a randomly-generated
+      and unguessable default password that is not shared with anyone, including site
+      Administrators. Once the user logs in and creates a new password, the default
+      password erased from the website's database.
     implementation_status: Partially in Place
   - key: h
-    text: >
-      For all Drupal users, passwords are protected by the website's software, which
-      only stores an encrypted string based on the password. This means that even
-      if the websites database should be compromised, an attacker would still be unable
-      to know users actual passwords. Internal users receive training in security
-      awareness and acceptable use and are instructed never to reveal their passwords
-      to anyone.
+    text: For all Drupal users, passwords are protected by the website's software,
+      which only stores an encrypted string based on the password. This means that
+      even if the website's database should be compromised, an attacker would still
+      be unable to know users' actual passwords. Internal users receive training in
+      security awareness and acceptable use and are instructed never to reveal their
+      passwords to anyone.
     implementation_status: Partially in Place
   - key: i
     text: >
@@ -118,8 +113,8 @@ satisfies:
       logical location where they may be discoverable by unauthorized persons.
     implementation_status: In Place
   - key: j
-    text: |
-      This control is not applicable due to the fact that group accounts are not created within the Drupal application per IA Policy.
+    text: This control is not applicable due to the fact that group accounts are not
+      created within the Drupal application per IA Policy.
     implementation_status: Not Applicable
 - control_key: IA-5 (1)
   control_name: PASSWORD-BASED AUTHENTICATION
@@ -129,42 +124,38 @@ satisfies:
   narrative:
   - key: a
     text: >
-      Drupal supports the requirement for password based authentication complexity.
+      Drupal supports the requirement for password-based authentication complexity.
       New users of Drupal are required to specify their password authentication as
       soon as they log in to the website for the first.  The website requires all
       submitted passwords to comply with validation rules, as described above in IA-5(c).
 
       Changing password lifetime, length, reuse or strength requirements requires
-      a code setting change that therefore needs to be planned and approved by {{ contractor }}'
-      Change Control Board before being implemented.
+      a code setting change that therefore needs to be planned and approved by {{
+      contractor }}' Change Control Board before being implemented.
     implementation_status: Partially in Place
   - key: b
-    text: >
-      When required to change passwords, Drupal users are required to change their
+    text: When required to change passwords, Drupal users are required to change their
       authenticator password by changing at least one character. Enforcement of this
       control is implemented through the website's software configuration.
     implementation_status: Partially in Place
   - key: c
-    text: >
-      All Drupal passwords are encrypted in storage, using the SHA-512 hashing algorithm
-      with a salt. The hash function is performed repeatedly to further obfuscate
-      the password via key stretching. In transmission, passwords are encrypted using
-      SSL via HTTPS.
+    text: All Drupal passwords are encrypted in storage, using the SHA-512 hashing
+      algorithm with a salt. The hash function is performed repeatedly to further
+      obfuscate the password via key stretching. In transmission, passwords are encrypted
+      using SSL via HTTPS.
     implementation_status: Partially in Place
   - key: d
-    text: |
-      The website requires all submitted passwords to comply with lifetime rules, as described above in IA-5(g).
+    text: The website requires all submitted passwords to comply with lifetime rules,
+      as described above in IA-5(g).
     implementation_status: In Place
   - key: e
-    text: |
-      Password reuse is limited through software configuration.
+    text: Password reuse is limited through software configuration.
     implementation_status: In Place
   - key: f
-    text: >
-      When website users request a password reset, the website sends a temporary login
-      link to the email address associated with their user account. After a user logs
-      in via the temporary login link, the website requires the user to enter a new
-      password before proceeding further.
+    text: When website users request a password reset, the website sends a temporary
+      login link to the email address associated with their user account. After a
+      user logs in via the temporary login link, the website requires the user to
+      enter a new password before proceeding further.
     implementation_status: Partially in Place
 - control_key: IA-6
   control_name: AUTHENTICATOR FEEDBACK
@@ -172,8 +163,7 @@ satisfies:
   covered_by: []
   security_control_type: System Specific Control
   narrative:
-  - text: >
-      Feedback of authentication information is obscured during the authentication
+  - text: Feedback of authentication information is obscured during the authentication
       process into the Drupal application by displaying “dots” in the place of a password,
       as is standard for web-based applications. In transmission, passwords are encrypted
       using SSL via HTTPS.
@@ -184,9 +174,8 @@ satisfies:
   covered_by: []
   security_control_type: System Specific Control
   narrative:
-  - text: >
-      All Drupal passwords are encrypted in storage, using the SHA-512 hashing algorithm
-      with a salt. SHA-512 is an approved security function under FIPS PUB 140-2.
-      The hash function is performed repeatedly to further obfuscate the password
+  - text: All Drupal passwords are encrypted in storage, using the SHA-512 hashing
+      algorithm with a salt. SHA-512 is an approved security function under FIPS PUB
+      140-2. The hash function is performed repeatedly to further obfuscate the password
       via key stretching. In transmission, passwords are encrypted using SSL via HTTPS.
     implementation_status: In Place

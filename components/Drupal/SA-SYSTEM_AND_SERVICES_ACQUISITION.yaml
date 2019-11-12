@@ -10,7 +10,7 @@ satisfies:
   - key: a
     text: >
       Public documentation related to Drupal is maintained by the Drupal Association
-      and is located at: <https://drupal.org/documentation>. This documentation contains
+      and is located at <https://drupal.org/documentation>. This documentation contains
       administrator documentation for the information system that describes:
 
       • secure configuration, installation, and operation of the system, component,
@@ -25,24 +25,20 @@ satisfies:
       The public documentation at drupal.org contains user documentation for the information system that describes:
       • user-accessible security functions/mechanisms and how to effectively use those
         security functions/mechanisms;
-
       • methods for user interaction, which enables individuals to use the system,
         component, or service in a more secure manner; and
-
       • user responsibilities in maintaining the security of the system, component, or service;
     implementation_status: In Place
   - key: c
-    text: >
-      As a popular and well-used and maintained free and open source (FOSS) project,
+    text: As a popular and well-used and maintained free and open source (FOSS) project,
       in the event that sought after documentation is not available on Drupal.org,
       it can usually be found in one of the many forums, mailing lists or StackExchange
       sites covering Drupal and its many contributed modules.
     implementation_status: In Place
   - key: d
-    text: |
-      The Drupal.org documentation is multi-sourced on github and private repositories.
+    text: The Drupal.org documentation is multi-sourced on Github and private repositories.
     implementation_status: In Place
   - key: e
-    text: |
-      As the Drupal.org documentation is publicly available, there is no need to provide distribution mechanisms.
+    text: As the Drupal.org documentation is publicly available, there is no need
+      to provide distribution mechanisms.
     implementation_status: Not Applicable

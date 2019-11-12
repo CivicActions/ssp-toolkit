@@ -8,14 +8,12 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - key: a
-    text: >
-      {{ contractor }} follows recommendations and best practices developed by the Drupal
-      community for monitoring. Examples of specific logs and metrics are included
-      in AU-2 and AU-3.
+    text: '{{ contractor }} follows recommendations and best practices developed by
+      the Drupal community for monitoring. Examples of specific logs and metrics are
+      included in AU-2 and AU-3.'
     implementation_status: In Place
   - key: c
-    text: >
-      {{ contractor }} works closely with the Drupal security community and reviews security
-      announcements as part of the continuous monitoring strategy. Items found to
-      require immediate remediation will be addressed.
+    text: '{{ contractor }} works closely with the Drupal security community and reviews
+      security announcements as part of the continuous monitoring strategy. Items
+      found to require immediate remediation will be addressed.'
     implementation_status: In Place
