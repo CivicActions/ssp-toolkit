@@ -25,7 +25,7 @@
 
 ##### Privacy
 
-{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+Example Org does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly. The data collected (email address, first
 and last name) is demonstrably a minimum.
 
@@ -45,7 +45,7 @@ and last name) is demonstrably a minimum.
 
 ##### Privacy
 
-{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+Example Org does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 
@@ -58,7 +58,7 @@ control though it may address it indirectly.
 
 ##### Privacy
 
-{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+Example Org does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly.
 
 

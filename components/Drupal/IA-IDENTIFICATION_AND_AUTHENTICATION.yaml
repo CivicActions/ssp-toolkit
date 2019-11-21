@@ -25,7 +25,7 @@ satisfies:
   - text: |
       Drupal administrators and other roles with unrestricted access to live content
       and/or user accounts are required to use two-factor authentication. See artifact
-      GlobalNET-COP-TFA.png
+      ia-4-two-factor-auth.png
     implementation_status: In Place
 - control_key: IA-4
   control_name: IDENTIFIER MANAGEMENT
@@ -46,7 +46,7 @@ satisfies:
       which must meet the system's password complexity requirements.
     implementation_status: Partially in Place
   - key: c
-    text: Identifiers for {{contractor}} internal personnel include a username based
+    text: Identifiers for CivicActions internal personnel include a username based
       on the individual's full first and last name and are reviewed for uniqueness
       by the admin group when it approves the creation of the user account.
     implementation_status: Partially in Place
@@ -63,7 +63,7 @@ satisfies:
     text: >
       Refer to control AC-2 in this SSP for further details on account provisioning.
 
-      {{contractor}} will create and maintain an initial Drupal Administrator (highest
+      CivicActions will create and maintain an initial Drupal Administrator (highest
       level of Drupal Account). New Administrators are able to provide additional
       Administrator access at their own discretion and are ultimately responsible
       for managing their own Administrator and other user accounts that they create.
@@ -71,7 +71,7 @@ satisfies:
   - key: b
     text: Initial authenticator content (a unique email address – not previously used
       in any other account) is provided by the user. Internal initial password requirements
-      set by {{contractor}} Operations and ongoing password refreshes by internal
+      set by CivicActions Operations and ongoing password refreshes by internal
       users follow the requirements set in the Identification and Authentication Policy.
     implementation_status: Partially in Place
   - key: c
@@ -129,9 +129,9 @@ satisfies:
       soon as they log in to the website for the first.  The website requires all
       submitted passwords to comply with validation rules, as described above in IA-5(c).
 
-      Changing password lifetime, length, reuse or strength requirements requires
-      a code setting change that therefore needs to be planned and approved by {{
-      contractor}}' Change Control Board before being implemented.
+      Changing password lifetime, length, reuse or strength requirements requires a code
+      setting change that therefore needs to be planned and approved by
+      CivicActions Change Control Board before being implemented.
     implementation_status: Partially in Place
   - key: b
     text: When required to change passwords, Drupal users are required to change their

@@ -1,0 +1,69 @@
+family: IDENTIFICATION AND AUTHENTICATION
+documentation_complete: false
+satisfies:
+- control_key: IA-1
+  control_name: IDENTIFICATION AND AUTHENTICATION POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+    implementation_status: In Place
+  summary: Partially inherited from AWS (FedRAMP).
+- control_key: IA-2
+  control_name: IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS)
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: Identification
+      and Authentication procedures for personnel who have rights to AWS platform.
+    implementation_status: In Place
+  summary: Partially inherited from AWS (FedRAMP).
+- control_key: IA-2 (1)
+  control_name: NETWORK ACCESS TO PRIVILEGED ACCOUNTS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The AWS Management Console is configured to require two factor authentication. See
+      artifact: AWS_IAM_MFA.png
+    implementation_status: In Place
+- control_key: IA-4
+  control_name: IDENTIFIER MANAGEMENT
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: identifier management.
+    implementation_status: Partially in Place
+  summary: Partially inherited from AWS (FedRAMP).
+- control_key: IA-5
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: authenticator management.
+    implementation_status: Partially in Place
+  summary: Partially inherited from AWS (FedRAMP).
+- control_key: IA-5 (1)
+  control_name: PASSWORD-BASED AUTHENTICATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: password based
+      authentication.
+    implementation_status: Partially in Place
+  summary: Partially inherited from AWS (FedRAMP).

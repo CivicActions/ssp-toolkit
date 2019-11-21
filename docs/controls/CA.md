@@ -28,7 +28,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 CivicActions has developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Security Assessment and Authorization Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
-
 ### CA-2: Security Assessments
 
 > The organization:
@@ -51,7 +50,6 @@ CivicActions has developed, documented and disseminated to personnel a certifica
 
 CivicActions will develop a security assessment plan (SAP) that describes the security controls and control enhancements under assessment, assessment procedures used to determine effectiveness, the assessment environment, the assessment team, and the assessment roles and responsibilities.
 
-
 #### b
 
 ##### CivicActions
@@ -65,7 +63,6 @@ All controls assigned and documented in this System Security Plan (SSP) will be 
 ##### CivicActions
 
 CivicActions will produce a security assessment report that documents the results of the assessment. The Security Assessment Report must contain the results of the assessment, and may also contain recommendations and suggestions for plans of actions and milestones (POA&Ms).
-
 
 #### d
 
@@ -93,8 +90,7 @@ CivicActions will provide the results of the security control assessment to the 
 
 ##### CivicActions
 
-This control is not applicable. CivicActions systems do not have system interconnections. The only communication conducted to CivicActions systems is through the Internet.
-
+This control is not applicable. CivicActions' systems do not have system interconnections. The only communication conducted to CivicActions' systems is through the Internet.
 
 ### CA-5: Plan Of Action And Milestones
 
@@ -151,7 +147,6 @@ CivicActions implements a continuous monitoring strategy that incorporates confi
 
 CivicActions follows recommendations and best practices developed by the Drupal community for monitoring. Examples of specific logs and metrics are included in AU-2 and AU-3.
 
-
 #### b
 
 ##### AWS
@@ -161,8 +156,8 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-Configuration management and log analysis is real time. OpenSCAP security scans are performed and reviewed monthly. See also: RA-5 and SI-4.
-Quarterly review of the control assessments supporting the monitoring is conducted by CivicActions Operations in collaboration with CivicActions Security.
+Configuration management and log analysis is carried out in real-time. OpenSCAP security scans are performed and reviewed monthly. See also: RA-5 and SI-4.
+Quarterly review of the control assessments supporting the monitoring is conducted by CivicActions Operations in collaboration with CivicActions' Security Office.
 
 
 #### c
@@ -170,7 +165,6 @@ Quarterly review of the control assessments supporting the monitoring is conduct
 ##### Drupal
 
 CivicActions works closely with the Drupal security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed.
-
 
 #### d
 
@@ -183,27 +177,23 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 CivicActions conducts or oversees continuous system security monitoring.
 
-
 #### e
 
 ##### CivicActions
 
-CivicActions Security reviews the results of the security scans and security assessments with associated JIRA and/or GitLab Issue tickets created to correlate and analyze security related information generated from the monitoring tools becoming POA&M items for tracking.
-
+CivicActions Security reviews the results of the security scans and security assessments with associated JIRA and/or GitLab Issue tickets created to correlate and analyze security-related information generated from the monitoring tools becoming POA&M items for tracking.
 
 #### f
 
 ##### CivicActions
 
-POA&M items are tracked by CivicActions Security though JIRA tickets with a security categorization assigned.  Information included in the POA&M item include the severity, the due date, the weakness source identifier, and the plugin ID that identified the vulnerability.
-
+POA&M items are tracked by CivicActions Security through JIRA tickets with a security categorization assigned.  The information included in the POA&M item include the severity, the due date, the weakness source identifier, and the plugin ID that identified the vulnerability.
 
 #### g
 
 ##### CivicActions
 
-The security status of the system is reported up to the System Owner and Project Manager via CivicActions Security to be reviewed alongside other security issues relating to the system.
-
+The security status of the system is reported up to the System Owner and Project Manager via CivicActions' Security Office to be reviewed alongside other security issues relating to the system.
 
 ### CA-9: Internal System Connections
 

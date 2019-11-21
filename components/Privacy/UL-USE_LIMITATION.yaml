@@ -8,7 +8,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      The information is collected on the {{organization_name}} Community is for identification and
+      The information is collected on the Example Org Community is for identification and
       authentication purposes, allowing individuals to:
 
       * Identify themselves to the system
@@ -34,5 +34,5 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{organization_name}} does not share any collected information with any third parties.
+      Example Org does not share any collected information with any third parties.
     implementation_status: In Place

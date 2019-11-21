@@ -1,0 +1,159 @@
+family: CONFIGURATION MANAGEMENT
+documentation_complete: false
+satisfies:
+- control_key: CM-2
+  control_name: BASELINE CONFIGURATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The baseline configuration is maintained in Git and described in the Configuration
+      Management Plan, which describes the change workflow and software configuration.
+      In the context of Security Configuration Management, the baseline configuration
+      is a collection of formally approved configuration state(s) of one or more configuration
+      items ("features") that compose the system. The baseline configuration is used
+      to restore and serves as the basis against which the next change or set of changes
+      to the system is made.
+
+      The features for the system are maintained in the website's source code, which
+      is managed in Git, a source code version control system. Once the source code
+      is updated, Git maintains the new version of staged code once committed in the
+      Git repository as the new baseline. All code prior to it being staged is documented,
+      tested and approved by {{contractor.name_short}} Development, which is described in control
+      SA-3. The production environment is configured to take database snapshots daily.
+    implementation_status: In Place
+- control_key: CM-2 (1)
+  control_name: REVIEWS AND UPDATES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      {{contractor.name_short}} reviews and updates baseline configurations for the system
+      at least annually, when requested by the System Owner or required by law, and
+      as an integral part of information system component installations, upgrades,
+      and maintenance.
+
+      A review of the CM baselines for the system is conducted and approved by
+      {{contractor.name_short}} Development. Any changes made to the production
+      environment are approved prior to deployment by the CCB or agile scrum
+      process. Changes that may require updates to the baseline configuration for the
+      application include:
+
+      • Significant upgrades or changes to applications or database software
+
+      • Security assessment findings
+
+      • Changes in internal/external security requirements
+
+      • A new security threat, incident, or event
+    implementation_status: In Place
+- control_key: CM-2 (2)
+  control_name: AUTOMATION SUPPORT FOR ACCURACY / CURRENCY
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      Drupal configuration settings use automated mechanisms to automate code deployment
+      and baseline settings changes. The website's baseline configuration may be reapplied
+      to the site at any time by manually retriggering a tagged code deployment.
+
+      The source code, which contains the site’s baseline configuration, is managed
+      using Git, a source code version control system. Git is used to track source
+      code which allows administrators to easily deploy and roll back changes on production
+      hosting environments.
+
+      The Features module is used to export configuration settings from the website's
+      MySQL database and stores them as code so that the configuration settings can
+      be managed within the Git source code version control system.
+    implementation_status: In Place
+- control_key: CM-2 (3)
+  control_name: RETENTION OF PREVIOUS CONFIGURATIONS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: Previous baseline configurations are retained in Git, which implements unlimited
+      revision control. Each version of the codebase is given a unique tag when it
+      is deployed to production. When new features are ready for deployment to production,
+      the new code release is given a new tag. This makes it possible to roll back
+      to a previous version of the baseline configuration if needed by redeploying
+      the older release tag.
+    implementation_status: In Place
+- control_key: CM-5 (1)
+  control_name: AUTOMATED ACCESS ENFORCEMENT / AUDITING
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      Access enforcement is monitored within Drupal, which records an entry in the
+      Drupal Watchdog log for every successful or failed login attempt to the system.
+      Each successful login or logout event is logged with an entry that includes
+      the username of the account being used.
+
+      Access to the server environments is via encrypted SSH sessions with public-key
+      authentication, and all server access is logged.  Specific implementation of
+      auditing events are captured in AU-2. The same access control procedures and
+      need-to-know and accountability principles are enforced for all systems storing
+      baseline configuration policies.
+    implementation_status: In Place
+- control_key: CM-5 (5)
+  control_name: LIMIT PRODUCTION / OPERATIONAL PRIVILEGES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: Configuration changes that do not entail software code changes can only
+      be performed by {{contractor.name_short}} internal administrators with privileges implemented
+      by access enforcement (AC-3) and least privilege (AC-6).
+    implementation_status: In Place
+- control_key: CM-6
+  control_name: CONFIGURATION SETTINGS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: '{{contractor.name_short}} configuration settings for Drupal are guided by the Drupal
+      Security Coding Standards <https://www.drupal.org/docs/develop/security> for
+      the security configuration management processes and tools.'
+    implementation_status: In Place
+- control_key: CM-8
+  control_name: INFORMATION SYSTEM COMPONENT INVENTORY
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The software inventory for the application is maintained in the codebase stored
+      {{contractor.name_short}}' Git source code version control system. It consists of the
+      following components:
+
+      • The Drupal open source web content management system
+
+      • Drupal add-on modules, themes, and libraries available from the Drupal.org
+      website which extend Drupal core
+
+      • Custom code written by {{contractor.name_short}}' developers
+
+      The inventory is reviewed monthly by {{contractor.name_short}} Product Engineering teams
+      in accordance with the Configuration Management Plan.
+
+      Website content is backed up daily using CPM snapshots. This allows
+      {{contractor.name_short}} to build an inventory of the system on demand.
+    implementation_status: In Place
+  summary: The application's software inventory is maintained in the {{contractor.name_short}} Git source code repository.
+- control_key: CM-10
+  control_name: SOFTWARE USAGE RESTRICTIONS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: Drupal is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These
+      are all compatible with the Free Software Foundation's General Public License
+      (GPL) version 2 or later and are freely available for use under copyright law.
+    implementation_status: In Place
+  summary: Drupal uses Linux, Apache, MySQL and PHP software compatible with the GPL.

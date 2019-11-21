@@ -1,0 +1,22 @@
+family: RISK ASSESSMENT
+documentation_complete: false
+satisfies:
+- control_key: RA-1
+  control_name: RISK ASSESSMENT POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+    implementation_status: In Place
+- control_key: RA-5
+  control_name: VULNERABILITY SCANNING
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: vulnerability scanning.
+    implementation_status: In Place

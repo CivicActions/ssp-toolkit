@@ -28,7 +28,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 CivicActions has developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Information Integrity (SI) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
 
-
 ### SI-2: Flaw Remediation
 
 > The organization:
@@ -49,7 +48,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 Drupal contains built-in security status monitoring of the core application and contributed modules.
 
-
 #### a
 
 ##### CivicActions
@@ -57,30 +55,27 @@ Drupal contains built-in security status monitoring of the core application and 
 Identification of information system security flaws are detected as early as possible by the following methods:
 • Vulnerability scans, as described in RA-5.
 • Log analysis from monitoring described in SI-4.
-• Service flaw notifications (CVEs, etc.) are received by CivicActions Security and passed on to CicvicActions Operations when relevant.
-Any security issues found are ticketed through JIRA and/or the Git issue queue. CivicActions Operations prioritizes the high findings.  Changes made to correct the information system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB as implemented in CM-3.
+• Service flaw notifications (CVEs, etc.) are received by CivicActions' Security Office and passed on to CicvicActions Operations staff when relevant.
+Any security issues found are ticketed through JIRA and/or the Git issue queue. CivicActions Operations staff prioritizes high findings.  Changes made to correct the information system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB as implemented in CM-3.
 
 
 #### b
 
 ##### CivicActions
 
-CivicActions testing of the system as a result of security flaw remediation are done through a development environment though use of internal software and automated testing that ensures the system is working as intended. When a change is made by a developer, testing though a peer review is conducted as part of the Change Request process to ensure the correct analysis is completed. Then changed code is tested in an automatic test environment as described in Configuration Management Plan (CMP). Tracking of the testing is documented in JIRA and/or the Git issue queue.
-
+CivicActions testing of the system as a result of security flaw remediation is done through a development environment through the use of internal software and automated testing that ensures the system is working as intended. When a change is made by a developer, testing though a peer review is conducted as part of the Change Request process to ensure the correct analysis is completed. Then the changed code is tested in an automatic test environment as described in the Configuration Management Plan (CMP). Tracking of the testing is documented in JIRA and/or the Git issue queue.
 
 #### c
 
 ##### CivicActions
 
-CivicActions security-software updates are tested prior to place to production. The CivicActions Security framework for installation requires updates to be made within 30 days for high vulnerabilities, 90 days for moderate vulnerabilities, and 240 for low vulnerabilities. An issue ticket is created to track the any updates made to the system.
-
+CivicActions security-software updates are tested prior to implementation on production. The CivicActions Security framework for installation requires updates to be made within 30 days for high vulnerabilities, 90 days for moderate vulnerabilities, and 240 for low vulnerabilities. An issue ticket is created to track any updates made to the system.
 
 #### d
 
 ##### CivicActions
 
-Flaw remediation is part of the CivicActions configuration management process.  Any security issues found are ticketed through JIRA or the Git issue queue. CivicActions Security prioritizes the high findings within the application. Changes made to correct the system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB Chair as implemented in CM-3.
-
+Flaw remediation is part of the CivicActions configuration management process.  Any security issues found are ticketed through JIRA or the Git issue queue. CivicActions' Security Office prioritizes the high findings within the application. Changes made to correct the system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB Chair as implemented in CM-3.
 
 ### SI-2(2): Flaw Remediation
 
@@ -100,8 +95,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-The OpenSCAP and OWASP ZAP security scanners are used to perform monthly vulnerability scans of all system components and assess web application interfaces to identify any performance or security issues/flaws. Vulnerabilities and findings identified are handled and remediated in accordance with the implementation of RA-5. Reports are generated to CivicActions Security and Operations for review, analysis, and remediation.
-
+The OpenSCAP and OWASP ZAP security scanners are used to perform monthly vulnerability scans of all system components and assess web application interfaces to identify any performance or security issues/flaws. Vulnerabilities and findings identified are handled and remediated in accordance with the implementation of RA-5. Reports are generated to CivicActions' Security Office and Operations staff for review, analysis, and remediation.
 
 ### SI-3: Malicious Code Protection
 
@@ -124,27 +118,23 @@ The OpenSCAP and OWASP ZAP security scanners are used to perform monthly vulnera
 
 Virus scans are performed by ClamAV, a server-hosted tool protecting the application from Trojans, Viruses and other malicious cyber-threats. Real-time scans are conducted whenever files are uploaded from any external source and malicious code is blocked or quarantined when detected. All file-based traffic traversing the server is sanitized before being delivered. All input form text is validated and sanitized.
 
-
 #### b
 
 ##### CivicActions
 
 Anti-virus definitions and malicious code protection mechanisms are configured and updated automatically on a nightly basis.
 
-
 #### c
 
 ##### CivicActions
 
-CivicActions Operations receives information system security alerts, advisories and notifications in response to malicious code detection. These messages are sent to group email distribution lists to ensure all members of the team receive the proper information in a timely manner.
-
+CivicActions Operations staff receives information system security alerts, advisories, and notifications in response to malicious code detection. These messages are sent to group email distribution lists to ensure all members of the team receive the proper information in a timely manner.
 
 #### d
 
 ##### CivicActions
 
 False positives during malicious code detection and eradication are dealt with on a case by case basis. Potential impacts on the availability of the information system are detailed in a false positive report depending on if the report is for the OS, database or web application.
-
 
 ### SI-4: Information System Monitoring
 
@@ -179,7 +169,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 ##### CivicActions
 
 CivicActions systems use a collection of monitoring systems, including:
-• ClamAV - provides signature based malware detection/quarantine
+• ClamAV - provides signature-based malware detection/quarantine
 • OSSEC host-based intrusion detection system (HIDS)
 • AIDE Advanced Intrusion Detection Environment (IDS))
 • fail2ban, an intrusion prevention system (IPS) framework
@@ -196,7 +186,6 @@ CivicActions systems use a collection of monitoring systems, including:
 
 Logs from the systems described in SI-4(a) are sent to the CivicActions SIEM tool for analysis. These logs can identify unauthorized use of the information system.
 
-
 #### c
 
 ##### AWS
@@ -207,8 +196,7 @@ CivicActions leverages the AWS platform and a host-based intrusion detection sys
 
 ##### CivicActions
 
-Monitoring and log collection occurs throughout the system.
-
+Monitoring and log collection occur throughout the system.
 
 #### d
 
@@ -219,8 +207,7 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 
 ##### CivicActions
 
-The Configuration Management process, remote log gathering and SELinux MAC protects information obtained from intrusion-monitoring tools from unauthorized access, modification, and deletion.
-
+The Configuration Management process, remote log gathering, and SELinux MAC protects information obtained from intrusion-monitoring tools from unauthorized access, modification, and deletion.
 
 #### e
 
@@ -231,8 +218,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-In the event of a performance score lower than CivicActions standards, a notification is sent to CivicActions Security. CivicActions subscribes to security mailing lists in the event the monitoring activity is required based on law enforcement information, intelligence information, or other credible sources of information.
-
+In the event of a performance score lower than CivicActions standards, a notification is sent to CivicActions' Security Office. CivicActions subscribes to security mailing lists in the event the monitoring activity is required based on law enforcement information, intelligence information, or other credible sources of information.
 
 #### f
 
@@ -243,8 +229,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-Internal legal counsel is utilized as required when system notifications indicate such action based on user and/or malicious activity.  Legal counsel is engaged for any actions that may necessitate increased user monitoring, or evidence/forensic actions.
-
+Internal legal counsel is utilized as required when system notifications indicate such action based on user and/or malicious activity.  Legal counsel is engaged for any actions that may necessitate increased user monitoring or evidence/forensic actions.
 
 #### g
 
@@ -257,7 +242,6 @@ AWS’s monitoring mechanisms provide notification including audit records, inpu
 ##### CivicActions
 
 System alerts generated by CivicActions internal monitors (StatusCake, OSSEC, ClamAV, others) are sent to the Incident Response team via OpsGenie.
-
 
 ### SI-5: Security Alerts, Advisories, And Directives
 
@@ -275,7 +259,6 @@ System alerts generated by CivicActions internal monitors (StatusCake, OSSEC, Cl
 
 CivicActions Security and Operations receive Drupal Security Advisories on a regular basis.
 
-
 #### a
 
 ##### AWS
@@ -286,7 +269,7 @@ The AWS Insight control panel provides direct access to the monitored systems.
 
 ##### CivicActions
 
-CivicActions Security and Operations receive the following security alerts, advisories and directives on an ongoing basis:
+CivicActions' Security Office and Operations staff receive the following security alerts, advisories, and directives on an ongoing basis:
 • Mailing lists relevant to web application security
 • US-CERT
 • Technical Cyber Security Alerts
@@ -305,7 +288,6 @@ The AWS host-based intrusion detection system (HIDS) monitors the events of the 
 
 CivicActions utilizes StatusCake for front line monitoring for real-time system status and events of the application. StatusCake can feed to the OpsGenie incident escalation system.
 
-
 #### c
 
 ##### AWS
@@ -315,8 +297,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-CivicActions Security disseminates security alerts, advisories, advisories, and directives to all CivicActions internal personnel and client personnel as directed.
-
+CivicActions' Security Office disseminates security alerts, advisories, advisories, and directives to all CivicActions internal personnel and client personnel as directed.
 
 #### d
 
@@ -327,8 +308,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-CivicActions Security is responsible for ensuring the dissemination and implementation of relevant security alerts and advisories.
-
+CivicActions' Security Office is responsible for ensuring the dissemination and implementation of relevant security alerts and advisories.
 
 ### SI-7: Software, Firmware, And Information Integrity
 
@@ -341,7 +321,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-CivicActions employ the GitHub system to monitor source code and version control ensuring system integrity and prevents unauthorized changes.  The PHP-authenticator tool is perform a format check on source code prior to entering production. Per implementation of CM-3, any changes to the source code of the system requires the CCB Change Request process. A peer review as part of the Change Request process is conducted to ensure the requested change is verified prior to entering production.
+CivicActions employ the GitHub system to monitor source code and version control ensuring system integrity and prevents unauthorized changes.  The PHP-authenticator tool performs a format check on source code prior to entering production. Per the implementation of CM-3, any changes to the source code of the system require the CCB Change Request process. A peer review as part of the Change Request process is conducted to ensure the requested change is verified prior to entering production.
 CivicActions employs additional integrity checks on production systems as described in SI-4.
 
 
@@ -356,8 +336,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-The integrity check implementation of SI-7 is conducted though the GitHub system and verified monthly by redeploying the system codebase from GitHub.
-
+The integrity check implementation of SI-7 is conducted through the GitHub system and verified monthly by redeploying the system codebase from GitHub.
 
 ### SI-7 (5): Automated Response To Integrity Violations
 
@@ -365,8 +344,7 @@ The integrity check implementation of SI-7 is conducted though the GitHub system
 
 ##### CivicActions
 
-The system maintains an audit log of all operations including integrity violations. When an integrity violation occurs, CivicActions Operations will be alerted via email with escalations to text and phone as needed.
-
+The system maintains an audit log of all operations including integrity violations. When an integrity violation occurs, CivicActions' Operations staff will be alerted via email with escalations to text and phone as needed.
 
 ### SI-7 (7): Integration Of Detection And Response
 
@@ -379,8 +357,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-CivicActions incident response and configuration capabilities include the detection of unauthorized changes to the system though the IR Plan and CCB Change Request process and the implementation of IR-4 and IR-5. In the event of an unauthorized security change to the system, CivicActions support would roll back to and restore from the most recent authorized database set.
-
+CivicActions incident response and configuration capabilities include the detection of unauthorized changes to the system through the IR Plan and CCB Change Request process and the implementation of IR-4 and IR-5. In the event of an unauthorized security change to the system, CivicActions support would roll back to and restore from the most recent authorized database set.
 
 ### SI-10: Information Input Validation
 
@@ -389,7 +366,6 @@ CivicActions incident response and configuration capabilities include the detect
 ##### Drupal
 
 All Drupal form input text is subject to format verification and input validation.
-
 
 ### SI-11: Error Handling
 
@@ -410,7 +386,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 Drupal system error logs do not contain passwords, personal information, encryption keys or other sensitive information.
 
-
 #### b
 
 ##### AWS
@@ -421,7 +396,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 ##### Drupal
 
 Drupal system error logs are only available to authenticated administrators and viewable within the administrative interface.
-
 
 ### SI-12: Information Handling And Retention
 
@@ -434,7 +408,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-The CivicActions organization retains all information, system-related information, incident-related information, and system output in accordance with customers’ requirements retention periods and other NIST guidance and standards, Federal policies, procedures, Federal laws and executive orders. Audit records are retained for 365 days.
-
+The CivicActions organization retains all information, system-related information, incident-related information, and system output in accordance with customers’ requirements retention periods and other NIST guidance and standards, Federal policies, procedures, federal laws, and executive orders. Audit records are retained for 365 days.
 
 

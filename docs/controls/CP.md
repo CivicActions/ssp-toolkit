@@ -25,8 +25,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel a contingency planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Contingency Planning (CP) Policy and Procedure that can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>. 
-
+CivicActions has developed, documented and disseminated to personnel a contingency planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Contingency Planning (CP) Policy and Procedure that can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 ### CP-2: Contingency Plan
 
@@ -63,10 +62,10 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-CivicActions has developed a contingincy plan for that addresses:
-1. Essential missions, business functions and associated contingency requirements
+CivicActions has developed a contingency plan for that addresses:
+1. Essential missions, business functions, and associated contingency requirements
 2. Recovery objectives, restoration priorities, and metrics
-3. Roles and responsibilities are identified in the CP and includes the ISCP Director, Incident Commander (IC), CivicActions Coordinator, and CivicActions Information System Security Officer (ISSO).
+3. Roles and responsibilities are identified in the CP and include the ISCP Director, Incident Commander (IC), CivicActions Coordinator, and CivicActions Information System Security Officer (ISSO).
 4. Maintaining essential missions and business functions despite an information system disruption, compromise, or failure
 5. Full information system restoration without deterioration of the security safeguards originally planned and implemented
 6. The ISCP is reviewed and approved by ISCP Director, Incident Commander (IC), CivicActions ISSO and the System Owner annually.
@@ -76,43 +75,37 @@ CivicActions has developed a contingincy plan for that addresses:
 
 ##### CivicActions
 
-The CivicActions Information System Contingency Plan (ISCP) has been distributed to all CivicActons team members. The ISCP can be found in the CivicActions Handbook at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan/>.
-
+The CivicActions Information System Contingency Plan (ISCP) has been distributed to all CivicActons team members. The ISCP can be found in the CivicActions Handbook at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan>.
 
 #### c
 
 ##### CivicActions
 
-The Information System Contingency Plan (ISCP) is closely integrated with the Incident Response Plan (IRP). Coordination is the responsibility of the ISCP Director and CivicActions Operations.
-
+The Information System Contingency Plan (ISCP) is closely integrated with the Incident Response Plan (IRP). Coordination is the responsibility of the ISCP Director and CivicActions Operations staff.
 
 #### d
 
 ##### CivicActions
 
-The ISCP Director and CivicActions Security are responsible to review the ISCP annually and when a change to the system occurs.
-
+The ISCP Director and CivicActions' Security Office are responsible to review the ISCP annually and when a change to the system occurs.
 
 #### e
 
 ##### CivicActions
 
-CivicActions Operations and ISCP Director are required to update the ISCP to address changes to the organization, information system, or environment of operation and problems encountered during contingency plan implementation, execution, or testing.
-
+CivicActions Operations staff and ISCP Director are required to update the ISCP to address changes to the organization, information system, or environment of operation and problems encountered during contingency plan implementation, execution, or testing.
 
 #### f
 
 ##### CivicActions
 
-The ISCP requires that changes to the plan be communicated to those on the Incident Response / Contingency Plan Contact List.
-
+The ISCP requires that changes to the plan be communicated to those on the Incident Response/Contingency Plan Contact List.
 
 #### g
 
 ##### CivicActions
 
 The ISCP is available on CivicActions Github repository.  This repository provides the configuration management capabilities for the ISCP to be protected from unauthorized disclosure and modification.
-
 
 ### CP-3: Contingency Training
 
@@ -131,7 +124,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 The ISCP stipulates that all CivicActions system assigned roles in the Contingency Plan Team are trained in their duties within three months of first being assigned a role in the CP, and then annually thereafter or when changes are required. CivicActions uses the Contingency Plan as described in controls CP-1 and CP-2 as a basis for personnel contingency training.
 
-
 ### CP-4: Contingency Plan Testing
 
 > The organization:
@@ -147,8 +139,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-Real world tests of the contingency plan will be held at least annually, with supplemental tests (checklist/table-top) as needed for specific scenarios. The ISCP Coordinator is responsible to facilitate annual testing exercises. The testing process for the ISCP includes review of the ISCP, exercise and identification of corrective actions and other improvements.
-
+Real-world tests of the contingency plan will be held at least annually, with supplemental tests (checklist/table-top) as needed for specific scenarios. The ISCP Coordinator is responsible to facilitate annual testing exercises. The testing process for the ISCP includes a review of the ISCP, exercise, and identification of corrective actions and other improvements.
 
 ### CP-6: Alternate Storage Site
 
@@ -195,7 +186,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 CivicActions conducts system user-level information backup in accordance with requirements (at a minimum, incremental backups must be conducted at least weekly and full backups must be conducted at least monthly).
 
-
 #### b
 
 ##### AWS
@@ -205,15 +195,13 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-System level information for the application is replicated and backed up in the same way as user-level information as defined in CP-9(a).
-
+System-level information for the application is replicated and backed up in the same way as user-level information as defined in CP-9(a).
 
 #### c
 
 ##### CivicActions
 
 System documentation is backed up from the GitHub repository on a daily basis with a minimum two-week retention period and off-site storage.
-
 
 #### d
 
@@ -225,7 +213,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 ##### CivicActions
 
 CivicActions employees must authenticate prior to being granted access to the GitHub repository. Roles and responsibilities within GitHub determine the proper level of access for the documentation being accessed. The folder structure of GitHub protects though permissions and ownership prohibiting users from accessing unauthorized documentation.
-
 
 ### CP-10: Information System Recovery And Reconstitution
 
@@ -239,6 +226,5 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 ##### CivicActions
 
 The Contingency Plan documents the mechanisms with supporting procedures that allow all system components to be recovered and reconstituted to the system’s original state after a disruption or failure. This original state means that all system parameters (either default or organization-established) are reset, patches are reinstalled, system and security configuration settings are reestablished, system documentation and operating procedures are available, application and system software is reinstalled, information from the most recent backups is available and the system is fully tested.
-
 
 

@@ -1,0 +1,83 @@
+family: ACCOUNTABILITY, AUDIT, AND RISK MANAGEMENT
+documentation_complete: false
+satisfies:
+- control_key: AR-1
+  control_name: GOVERNANCE AND PRIVACY PROGRAM
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      {{project.organization_name_short}} does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+- control_key: AR-2
+  control_name: PRIVACY IMPACT AND RISK ASSESSMENT
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      {{project.organization_name_short}} does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+- control_key: AR-3
+  control_name: PRIVACY REQUIREMENTS FOR CONTRACTORS AND SERVICE PROVIDERS
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      {{project.organization_name_short}} does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+- control_key: AR-4
+  control_name: PRIVACY MONITORING AND AUDITING
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      {{project.organization_name_short}} does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+- control_key: AR-5
+  control_name: PRIVACY AWARENESS AND TRAINING
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      {{project.organization_name_short}} does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+- control_key: AR-6
+  control_name: PRIVACY REPORTING
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      {{project.organization_name_short}} does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+- control_key: AR-7
+  control_name: PRIVACY-ENHANCED SYSTEM DESIGN AND DEVELOPMENT
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      {{project.organization_name_short}} does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable
+- control_key: AR-8
+  control_name: ACCOUNTING OF DISCLOSURES
+  standard_key: NIST SP 800-53 Revision 4 Privacy
+  covered_by: []
+  security_control_type: System Specific
+  narrative:
+  - text: |
+      {{project.organization_name_short}} does not collect or maintain PII and therefore does not directly address this
+      control though it may address it indirectly.
+    implementation_status: Not Applicable

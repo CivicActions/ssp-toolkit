@@ -25,8 +25,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel a system maintenance policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in in the CivicActions Maintenance (MA) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
-
+CivicActions has developed, documented and disseminated to personnel a system maintenance policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Maintenance (MA) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
 
 ### MA-2: Controlled Maintenance
 
@@ -70,36 +69,31 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-System maintenance is done from remote sites as there is no direct access to the server instances in the AWS cloud; this is the government-approved method of doing business. Approval, QA, and monitoring is conducted by the team performing the specific maintenance.
-
+System maintenance is done from remote sites as there is no direct access to the server instances in the AWS cloud; this is the government-approved method of doing business. Approval, QA, and monitoring are conducted by the team performing the specific maintenance.
 
 #### b
 
 ##### CivicActions
 
-Remote diagnostic tools, such as OSSEC, AIDE, fail2ban and OpenSCAP are used to verify the integrity of files, perform log analysis, monitor login attempts and check for root kits and other vulnerabilies.
-
+Remote diagnostics tools, such as OSSEC, AIDE, fail2ban, and OpenSCAP are used to verify the integrity of files, perform log analysis, monitor login attempts and check for rootkits and other vulnerabilities.
 
 #### c
 
 ##### CivicActions
 
-All nonlocal maintenance requires the same authentication requirements to perform the maintenance activities as to access the system as defined in controls AC-3 and IA-2. SSH is used to secure all communications between the remote user and the components located in the AWS cloud.
-
+All nonlocal maintenance requires the same authentication requirements to perform the maintenance activities to access the system as defined in controls AC-3 and IA-2. SSH is used to secure all communications between the remote user and the components located in the AWS cloud.
 
 #### d
 
 ##### CivicActions
 
-CivicActions records for nonlocal maintenance is managed through JIRA tickets and the Git issue queue as well as normal system logs. CivicActions administrator activity to the system is also logged though the implementation of the AU-2 (Audit Events) and AU-3 (Content of Audit Records).
-
+CivicActions records for nonlocal maintenance is managed through JIRA tickets and the Git issue queue as well as normal system logs. CivicActions administrator activity to the system is also logged through the implementation of the AU-2 (Audit Events) and AU-3 (Content of Audit Records).
 
 #### e
 
 ##### CivicActions
 
 Any session for internal maintenance activities is terminated when the user completes their session, disconnects from the system, or logs out. In addition, sessions are terminated after 15 minutes of inactivity.
-
 
 ### MA-5: Maintenance Personnel
 
@@ -118,7 +112,6 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 
 ##### CivicActions
 
-Maintenance on the system and applications can only be performed by personnel designated as having internal administrator privileges and responsibilities.  Access rights for the internal administrators are assigned and granted access to perform their specific job responsibilities. All physical maintenance requirements are inherited from AWS.
-
+Maintenance of the system and applications can only be performed by personnel designated as having internal administrator privileges and responsibilities.  Access rights for the internal administrators are assigned and granted access to perform their specific job responsibilities. All physical maintenance requirements are inherited from AWS.
 
 

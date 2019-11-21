@@ -1,0 +1,147 @@
+family: IDENTIFICATION AND AUTHENTICATION
+documentation_complete: false
+satisfies:
+- control_key: IA-1
+  control_name: IDENTIFICATION AND AUTHENTICATION POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel an identification
+      and authentication policy that addresses purpose, scope, roles, responsibilities,
+      management commitment, coordination among organizational entities, and compliance;
+      and procedures to facilitate the implementation of the policy and associated
+      controls. This information is maintained the CivicActions Identification and
+      Authentication (IA) Policy. This document can be found in the CivicActions Github
+      repository at <https://github.com/CivicActions/compliance-docs>.
+    implementation_status: In Place
+  summary: |
+    CivicActions has developed, documented and disseminated to personnel an identification and authentication policy.
+- control_key: IA-2
+  control_name: IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS)
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      Privileged users of the system are required to identify and authenticate in
+      order to access any functions of the information system beyond viewing and downloading
+      the publicly available website content that is available to all anonymous website
+      visitors. Privileged users require the appropriate authorization described in
+      AC-2.
+    implementation_status: In Place
+  summary: Privileged users are required to identify and authenticate to privileged
+    features.
+- control_key: IA-2 (1)
+  control_name: NETWORK ACCESS TO PRIVILEGED ACCOUNTS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      CivicActions system administrators employ a personal public-key pair for basic
+      access and must originate from a whitelisted IP address. The public key and
+      whitelist is maintained by an Ansible inventory file, the current complete list
+      (includes dev sites) of users with whitelisted IPs is in artifact:
+      {{artifact.inventory_whitelist}}
+
+      To access root (sudo) privileges an additional password is required. The passwords
+      are maintained in encrypted form in the Ansible inventory file. The mechanism to
+      enable select users to use a password to obtain root access can be viewed in
+      artifact: {{artifact.admin_sudo}}
+  implementation_status: In Place
+- control_key: IA-3
+  control_name: DEVICE IDENTIFICATION AND AUTHENTICATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: |
+      CivicActions systems do not support or allow device-to-device communications.
+    implementation_status: Not Applicable
+  summary: |
+    CivicActions systems do not support or allow device-to-device communications.
+- control_key: IA-4
+  control_name: IDENTIFIER MANAGEMENT
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: |
+      Access to the system is authorized by the System Owner or Project Manager for each role as described in AC-2.
+    implementation_status: Partially in Place
+  - key: b
+    text: >
+      User accounts are assigned a unique identifier in the form of a unique username,
+      password and email address based on the system for allocating user accounts
+      described in AC-2.
+
+      In accordance with CivicActions Identification and Authentication (IA) Policy
+      <https://github.com/CivicActions/compliance-docs/blob/master/IA-Policy.md>,
+      CivicActions internal users are uniquely identified by creation of an organizational
+      account with a username based on each user's first and last names.
+    implementation_status: Partially in Place
+  - key: c
+    text: >
+      User accounts are assigned a unique identifier in the form of a unique username,
+      password and email address based on the system for allocating user accounts
+      described in AC-2.
+    implementation_status: Partially in Place
+  - key: d
+    text: |
+      Account usernames may not be re-used for at least two years.
+    implementation_status: Partially in Place
+  - key: e
+    text: >
+      All user accounts are required to change their passwords every 90 days. The
+      website will automatically block the accounts of users who fail to change their
+      password within that time period, after which the account may only be unblocked
+      by a website Administrator or CivicActions Operations.
+    implementation_status: Partially in Place
+  summary: |
+    Access to the system is authorized by the System Owner or Project Manager for each role.
+- control_key: IA-5
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: i
+    text: >
+      CivicActions users are required to take appropriate measures in the handling
+      of passwords including:
+
+      • Not transmitting user names and passwords together in an unencrypted format
+
+      • Not permitting the sending of passwords in an unencrypted format via email
+
+      • Not listing passwords in tickets
+
+      • Not writing down or storing passwords in a readable form in any physical or
+      logical location where they may be discoverable by unauthorized persons.
+    implementation_status: In Place
+  - key: j
+    text: |
+      This control is not applicable due to the fact that group accounts are not created within CivicActions Operations per IA Policy.
+    implementation_status: Not Applicable
+  summary: CivicActions required to take appropriate password handling measures.
+- control_key: IA-7
+  control_name: CRYPTOGRAPHIC MODULE AUTHENTICATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: j
+    text: >
+      CivicActions systems employ authentication methods consistent with NIST FIPS
+      140-2 requirements. General public access to system web pages does not require
+      cryptographic authentication. Privileged users accessing systems use the public-key
+      cryptographic functionality of Secure Shell (SSH) to encrypt the exchange of
+      information (including the password) between the remote user and the server.
+      Where Transport Layer Security (TLS, aka SSL) is used, cryptographic modules
+      will be configured in accordance with FIPS 140-2.
+    implementation_status: In Place
+  summary: CivicActions systems employ authentication methods consistent with NIST
+    FIPS 140-2 requirements.

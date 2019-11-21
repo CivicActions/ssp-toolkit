@@ -27,7 +27,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 CivicActions has developed, documented and disseminated to personnel a system planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Planning (PL) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
 
-
 ### PL-2: System Security Plan
 
 > The organization:
@@ -79,29 +78,25 @@ CivicActions has developed this system security plan (SSP) for the information s
 
 ##### CivicActions
 
-The SSP is reviewed and approved by the authorizing official prior to plan implementation. A copy of the SSP is provided to authorized CivicActions and assessing personnel including the System Owner, Authorizing Official, Information System Security Officer, System/Network Administrator and CivicActions Operations. The SSP is maintained by CivicActions Security.
-
+The SSP is reviewed and approved by the authorizing official prior to plan implementation. A copy of the SSP is provided to authorized CivicActions and assessing personnel including the System Owner, Authorizing Official, Information System Security Officer, System/Network Administrator, and CivicActions' Operations staff. The SSP is maintained by CivicActions' Security Office.
 
 #### c
 
 ##### CivicActions
 
-The SSP is reviewed at least annually by the System Owner and CivicActions Operations in collaboration with CivicActions Security.
-
+The SSP is reviewed at least annually by the System Owner and CivicActions' Operations staff in collaboration with CivicActions' Security Office.
 
 #### d
 
 ##### CivicActions
 
-CivicActions Operations in collaboration with CivicActions Security updates the system description and control descriptions within the SSP as needed to verify the SSP is an accurate description of the system.
-
+CivicActions' Operations staff in collaboration with CivicActions' Security Office updates the system description and control descriptions within the SSP as needed to verify the SSP is an accurate description of the system.
 
 #### e
 
 ##### CivicActions
 
 The SSP is currently available to authorized users on GitLab. Per the Acceptable Use Policy, all entities granted access to CivicActions information assets are required to complete a non-disclosure agreement (NDA) to uphold information confidentiality. GitLab provides the configuration management capabilities for the SSP to be protected from unauthorized disclosure and modification.
-
 
 ### PL-4: Rules Of Behavior
 
@@ -119,28 +114,24 @@ The SSP is currently available to authorized users on GitLab. Per the Acceptable
 
 ##### CivicActions
 
-CivicActions has created and made readily available to individuals requiring access to the information system the rules that describes their responsibilities and expected behavior with regard to information and information system usage. These rules, defined as the Acceptable Use Policy, are included in the CivicActions Security Policy accessible here : <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy> which has also been uploaded to CSAM as 'Appendix J1 - System Rules of Behavior - Privileged User' (CivicActions Security Policy 20190226.docx).
-
+CivicActions has created and made readily available to individuals requiring access to the information system the rules that describe their responsibilities and expected behavior with regard to information and information system usage. These rules, defined as the Acceptable Use Policy, are included in the CivicActions Security Policy accessible here: <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy> which has also been uploaded to CSAM as 'Appendix J1 - System Rules of Behavior - Privileged User' (CivicActions Security Policy 20190226.docx).
 
 #### b
 
 ##### CivicActions
 
-CivicActions HR receives a signed acknowledgment from all employees, indicating that they have read, understand, and agree to abide by the rules of behavior, before authorizing access to information and the information system. The text of the electronically signed (via DocuSign) acknowledgement document has been uploaded to CSAM as artifact: 'CivicActions Security Policy Acknowledgement.docx'
-
+CivicActions HR receives a signed acknowledgment from all employees, indicating that they have read, understand, and agree to abide by the rules of behavior, before authorizing access to information and the information system. The text of the electronically signed (via DocuSign) acknowledgment document has been uploaded to CSAM as artifact: 'CivicActions Security Policy Acknowledgement.docx'
 
 #### c
 
 ##### CivicActions
 
-CivicActions reviews the CivicActions Security Policy at least annually and updates is as required.
-
+CivicActions reviews the CivicActions Security Policy at least annually and updates as required.
 
 #### d
 
 ##### CivicActions
 
-CivicActions requires individuals who have signed a previous version of the CivicActions Security Policy to read and re-sign when any part of it, including the Acceptable Use Policy/Rules of Behavior, are revised/updated.
-
+CivicActions requires individuals who have signed a previous version of the CivicActions Security Policy to read and re-sign when any part of it, including the Acceptable Use Policy/Rules of Behavior, is revised/updated.
 
 

@@ -8,7 +8,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
+      Example Org does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: SE-2
@@ -18,6 +18,6 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
+      Example Org does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable

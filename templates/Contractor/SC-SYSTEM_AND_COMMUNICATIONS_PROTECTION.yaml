@@ -1,0 +1,39 @@
+family: SYSTEM AND COMMUNICATIONS PROTECTION
+documentation_complete: false
+satisfies:
+- control_key: SC-1
+  control_name: SYSTEM AND COMMUNICATIONS PROTECTION POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: {{contractor.name_short}} has developed, documented and disseminated to personnel a system
+      and communication policy that addresses purpose, scope, roles, responsibilities,
+      management commitment, coordination among organizational entities, and compliance;
+      and procedures to facilitate the implementation of the policy and associated
+      controls. This information is maintained in the {{contractor.name_short}} System and Communications
+      Protection (SC) Policy {{contractor.name_short}} document that can be found in the {{contractor.name_short}}
+      Github repository at <{{contractor.compliance_docs_url}}/>.
+    implementation_status: In Place
+- control_key: SC-13
+  control_name: CRYPTOGRAPHIC PROTECTION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: |
+      The information system implements:
+      • Cryptographic modules through Secure Shell (SSH) to allow administrators to securely logon to the various system components
+      • HTTPS/SSL (TLS) for connection to web-based services
+      • TLS for connection to email services
+      * AES-256 (FIPS 140-2 validated) for data at rest (with Elastic Block Store (EBS) volumes)
+    implementation_status: Not Applicable
+- control_key: SC-39
+  control_name: PROCESS ISOLATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  narrative:
+  - text: Process isolation is maintained on the Linux platform. Linux is the only
+      operating system that is part of the boundary.
+    implementation_status: In Place

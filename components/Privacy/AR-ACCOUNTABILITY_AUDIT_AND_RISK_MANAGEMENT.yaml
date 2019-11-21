@@ -8,7 +8,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
+      Example Org does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: AR-2
@@ -18,7 +18,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
+      Example Org does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: AR-3
@@ -28,7 +28,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
+      Example Org does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: AR-4
@@ -38,7 +38,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
+      Example Org does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: AR-5
@@ -48,7 +48,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
+      Example Org does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: AR-6
@@ -58,7 +58,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
+      Example Org does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: AR-7
@@ -68,7 +68,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
+      Example Org does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable
 - control_key: AR-8
@@ -78,6 +78,6 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{organization_name}} does not collect or maintain PII and therefore does not directly address this
+      Example Org does not collect or maintain PII and therefore does not directly address this
       control though it may address it indirectly.
     implementation_status: Not Applicable

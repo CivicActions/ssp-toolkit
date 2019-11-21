@@ -27,7 +27,7 @@
 
 ##### Privacy
 
-{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+Example Org does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly. Users enter and have full access to
 update or delete any information they input.
 
@@ -45,7 +45,7 @@ update or delete any information they input.
 
 ##### Privacy
 
-{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+Example Org does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly. Users enter and have full access to
 update or delete any information they input.
 
@@ -56,7 +56,7 @@ update or delete any information they input.
 
 ##### Privacy
 
-{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+Example Org does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly. Users enter and have full access to
 update or delete any information they input.
 
@@ -68,7 +68,7 @@ update or delete any information they input.
 
 ##### Privacy
 
-{{ organization_name }} does not collect or maintain PII and therefore does not directly address this
+Example Org does not collect or maintain PII and therefore does not directly address this
 control though it may address it indirectly. Users enter and have full access to
 update or delete any information they input.
 

@@ -28,7 +28,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 CivicActions has developed, documented and disseminated to personnel a system and communication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Communications Protection (SC) Policy CivicActions document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
 
-
 ### SC-5: Denial Of Service Protection
 
 > The information system protects against or limits the effects of the following types of denial of service attacks: [Assignment: organization-defined types of denial of service attacks or references to sources for such information] by employing [Assignment: organization-defined security safeguards].
@@ -41,7 +40,6 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 ##### Drupal
 
 Drupal has a manual ability to block IP addresses in cases where attacks bypass cloud protection. This is managed by CivicActions Operations.
-
 
 ### SC-7: Boundary Protection
 
@@ -56,7 +54,6 @@ Drupal has a manual ability to block IP addresses in cases where attacks bypass 
 ##### Drupal
 
 Drupal, when deployed on SELinux in full enforcing mode, minimizes the number of services and computing nodes that are exposed to the Internet. Drupal employs both the AWS platform safeguards and the Drupal Watchdog module in monitoring and recording system events. All other computing nodes used in the system are isolated within AWS.
-
 
 #### a
 
@@ -93,10 +90,10 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 ##### CivicActions
 
 The information system implements:
-• cryptographic modules through Secure Shell (SSH) to allow administrators to securely logon to the various system components
+• Cryptographic modules through Secure Shell (SSH) to allow administrators to securely logon to the various system components
 • HTTPS/SSL (TLS) for connection to web-based services
 • TLS for connection to email services
-* AES-256 (FIPS 140-2 validated) for data at rest (with Elastic Block Store (EBS) volumnes)
+* AES-256 (FIPS 140-2 validated) for data at rest (with Elastic Block Store (EBS) volumes)
 
 
 ### SC-20: Secure Name / Address Resolution Service (Authoritative Source)
@@ -137,6 +134,5 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 ##### CivicActions
 
 Process isolation is maintained on the Linux platform. Linux is the only operating system that is part of the boundary.
-
 
 

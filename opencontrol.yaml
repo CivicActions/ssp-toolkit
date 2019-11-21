@@ -7,7 +7,7 @@ metadata:
     abbreviation: Components
 components:
   - ./components/AWS
-  - ./components/CivicActions
+  - ./components/Contractor
   - ./components/Drupal
   - ./components/Privacy
   - ./components/SSH

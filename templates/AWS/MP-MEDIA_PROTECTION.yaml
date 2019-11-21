@@ -1,0 +1,51 @@
+family: MEDIA PROTECTION
+documentation_complete: false
+satisfies:
+- control_key: MP-1
+  control_name: MEDIA PROTECTION POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  summary: Fully inherited from AWS (FedRAMP).
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for media protection controls as the system is
+      entirely within the AWS Cloud boundary.
+    implementation_status: In Place
+- control_key: MP-2
+  control_name: MEDIA ACCESS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  summary: Fully inherited from AWS (FedRAMP).
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for media protection controls as the system is
+      entirely within the AWS Cloud boundary.
+    implementation_status: In Place
+- control_key: MP-6
+  control_name: MEDIA SANITIZATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  summary: Fully inherited from AWS (FedRAMP).
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for media protection controls as the system is
+      entirely within the AWS Cloud boundary.
+    implementation_status: In Place
+- control_key: MP-7
+  control_name: MEDIA USE
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  summary: Fully inherited from AWS (FedRAMP).
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for media protection controls as the system is
+      entirely within the AWS Cloud boundary.
+    implementation_status: In Place

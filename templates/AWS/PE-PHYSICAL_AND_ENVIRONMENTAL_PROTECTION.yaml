@@ -1,0 +1,123 @@
+family: PHYSICAL AND ENVIRONMENTAL PROTECTION
+documentation_complete: false
+satisfies:
+- control_key: PE-1
+  control_name: PHYSICAL AND ENVIRONMENTAL PROTECTION POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  summary: Fully inherited from AWS (FedRAMP).
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for all physical and environmental protection
+      controls.
+    implementation_status: In Place
+- control_key: PE-2
+  control_name: PHYSICAL ACCESS AUTHORIZATIONS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  summary: Fully inherited from AWS (FedRAMP).
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for all physical and environmental protection
+      controls.
+    implementation_status: In Place
+- control_key: PE-3
+  control_name: PHYSICAL ACCESS CONTROL
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  summary: Fully inherited from AWS (FedRAMP).
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for all physical and environmental protection
+      controls in conjunction with their IaaS provider, AWS.
+    implementation_status: In Place
+- control_key: PE-6
+  control_name: MONITORING PHYSICAL ACCESS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  summary: Fully inherited from AWS (FedRAMP).
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for all physical and environmental protection
+      controls.
+    implementation_status: In Place
+- control_key: PE-8
+  control_name: VISITOR ACCESS RECORDS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  summary: Fully inherited from AWS (FedRAMP).
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for all physical and environmental protection
+      controls.
+    implementation_status: In Place
+- control_key: PE-12
+  control_name: EMERGENCY LIGHTING
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  summary: Fully inherited from AWS (FedRAMP).
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for all physical and environmental protection
+      controls.
+    implementation_status: In Place
+- control_key: PE-13
+  control_name: FIRE PROTECTION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  summary: Fully inherited from AWS (FedRAMP).
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for all physical and environmental protection
+      controls.
+    implementation_status: In Place
+- control_key: PE-14
+  control_name: TEMPERATURE AND HUMIDITY CONTROLS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  summary: Fully inherited from AWS (FedRAMP).
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for all physical and environmental protection
+      controls.
+    implementation_status: In Place
+- control_key: PE-15
+  control_name: WATER DAMAGE PROTECTION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  summary: Fully inherited from AWS (FedRAMP).
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for all physical and environmental protection
+      controls.
+    implementation_status: In Place
+- control_key: PE-16
+  control_name: DELIVERY AND REMOVAL
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  summary: Fully inherited from AWS (FedRAMP).
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for all physical and environmental protection
+      controls.
+    implementation_status: In Place

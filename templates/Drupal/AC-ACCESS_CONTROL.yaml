@@ -1,0 +1,108 @@
+family: ACCESS CONTROL
+documentation_complete: false
+satisfies:
+- control_key: AC-2
+  control_name: ACCOUNT MANAGEMENT
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: >
+      Drupal provides user accounts for individuals who participate in visiting, contributing
+      to and administering the site with the following roles:
+
+      • Anonymous user – readers of the site who either do not have an account or
+      are not logged in.
+
+      • Authenticated user – All non-anonymous users inherit the "authenticated user
+      role."
+
+      • Administrator - This role has all permissions enabled by default.
+    implementation_status: In Place
+  - key: d
+    text: Drupal has a sophisticated permissions and role-based access control built-in.
+      Each role within Drupal can only access the documents and controls for which
+      their privilege allows.
+    implementation_status: In Place
+  - key: g
+    text: Drupal monitors the usage of information accounts in the Watchdog log.
+    implementation_status: In Place
+- control_key: AC-3
+  control_name: ACCESS ENFORCEMENT
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      Access control in Drupal is enforced by authentication via a unique username/password
+      for every type of user except Anonymous user. The user’s privileges, permissions,
+      and access are provided on the principle of least privilege.
+
+      The anonymous user role has the least access to the site of all roles. The website
+      does not allow anonymous users to register an account for themselves. Drupal
+      Administrators are the only user roles that can create new user accounts.
+    implementation_status: In Place
+- control_key: AC-6
+  control_name: LEAST PRIVILEGE
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      {{contractor.name_short}} implements the policy of least privilege for all logical components
+      of Drupal by allowing only authorized access for users, which are necessary
+      to accomplish assigned tasks in accordance with business functions and organizational
+      needs.
+
+      At the application layer, Drupal is designed with a role-based user access system,
+      a least-privileged approach based on the assignment of privileges to roles.
+      Drupal‘s permission systems enable control of what users can do and see on the
+      site. {{contractor.name_short}} has defined a specific set of permissions for each of
+      the user roles mentioned in control AC-5.
+
+      SSH access is provided on a least privilege basis and analyzed on an ongoing
+      basis, at least quarterly. Findings related to these audits of accounts are
+      reported and reviewed by the {{contractor.name_short}} Data team and evaluated to determine
+      roles that need to be revoked.
+    implementation_status: In Place
+- control_key: AC-6 (9)
+  control_name: AUDITING USE OF PRIVILEGED FUNCTIONS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: '{{contractor.name_short}}, at least quarterly, audits all team accounts based on
+      the concept of least privilege. Each member of the developer team is assigned
+      a role of which defines access needed to perform only the member’s job function.
+      The audit of accounts is reported and reviewed by the {{contractor.name_short}} Operations
+      and evaluated to determine whether roles or membership within the developer
+      team should be changed.'
+    implementation_status: In Place
+- control_key: AC-7
+  control_name: UNSUCCESSFUL LOGIN ATTEMPTS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: Drupal can be configured to lock an account after a specified number of
+      invalid login attempts within a specified time period.
+    implementation_status: In Place
+  - key: b
+    text: Lockdown following unsuccessful attempts is configurable by Drupal administrators
+      to conform to defined requirements.  When a user exceeds the limit of invalid
+      login attempts, their account is automatically locked for a specified time and
+      requires administrator action to unlock the account before the lockout period
+      expires.
+    implementation_status: In Place
+- control_key: AC-14
+  control_name: PERMITTED ACTIONS WITHOUT IDENTIFICATION OR AUTHENTICATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: System Specific Control
+  narrative:
+  - text: The anonymous user role has the least access to the site of all roles. The
+      website does not allow anonymous users to register an account for themselves.
+    implementation_status: In Place
+  summary: The website does not allow anonymous users to register an account for themselves.

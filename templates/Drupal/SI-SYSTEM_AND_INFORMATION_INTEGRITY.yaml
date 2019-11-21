@@ -1,0 +1,43 @@
+family: SYSTEM AND INFORMATION INTEGRITY
+documentation_complete: false
+satisfies:
+- control_key: SI-2
+  control_name: FLAW REMEDIATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: Drupal contains built-in security status monitoring of the core application
+      and contributed modules.
+    implementation_status: In Place
+- control_key: SI-5
+  control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: '{{contractor.name_short}} Security and Operations receive Drupal Security Advisories
+      on a regular basis.'
+    implementation_status: In Place
+- control_key: SI-10
+  control_name: INFORMATION INPUT VALIDATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: System Specific Control
+  narrative:
+  - text: All Drupal form input text is subject to format verification and input validation.
+    implementation_status: In Place
+- control_key: SI-11
+  control_name: ERROR HANDLING
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: Drupal system error logs do not contain passwords, personal information,
+      encryption keys or other sensitive information.
+    implementation_status: In Place
+  - key: b
+    text: Drupal system error logs are only available to authenticated administrators
+      and viewable within the administrative interface.
+    implementation_status: In Place

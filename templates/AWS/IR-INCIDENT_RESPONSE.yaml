@@ -1,0 +1,82 @@
+family: INCIDENT RESPONSE
+documentation_complete: false
+satisfies:
+- control_key: IR-1
+  control_name: INCIDENT RESPONSE POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+    implementation_status: In Place
+  summary: Partially inherited from AWS (FedRAMP).
+- control_key: IR-2
+  control_name: INCIDENT RESPONSE TRAINING
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: incident response
+      training.
+    implementation_status: In Place
+  summary: Partially inherited from AWS (FedRAMP).
+- control_key: IR-4
+  control_name: INCIDENT HANDLING
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: incident handling.
+    implementation_status: In Place
+  summary: Partially inherited from AWS (FedRAMP).
+- control_key: IR-5
+  control_name: INCIDENT MONITORING
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: incident monitoring.
+    implementation_status: In Place
+  summary: Partially inherited from AWS (FedRAMP).
+- control_key: IR-6
+  control_name: INCIDENT REPORTING
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: incident reporting.
+    implementation_status: In Place
+  summary: Partially inherited from AWS (FedRAMP).
+- control_key: IR-7
+  control_name: INCIDENT RESONSE ASSISTANCE
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: incident resonse
+      assistance.
+    implementation_status: In Place
+  summary: Partially inherited from AWS (FedRAMP).
+- control_key: IR-8
+  control_name: INCIDENT RESPONSE PLAN
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: incident response
+      plan.
+    implementation_status: In Place
+  summary: Partially inherited from AWS (FedRAMP).

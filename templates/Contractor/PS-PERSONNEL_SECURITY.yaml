@@ -1,0 +1,162 @@
+family: PERSONNEL SECURITY
+documentation_complete: false
+satisfies:
+- control_key: PS-1
+  control_name: PERSONNEL SECURITY POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: {{contractor.name_short}} has developed, documented and disseminated to personnel a personnel
+      security policy that addresses purpose, scope, roles, responsibilities, management
+      commitment, coordination among organizational entities, and compliance; and
+      procedures to facilitate the implementation of the policy and associated controls.
+      This information is maintained in {{contractor.name_short}} Personnel Security (PS) Policy
+      document that can be found in the {{contractor.name_short}} Github repository at <{{contractor.compliance_docs_url}}>.
+    implementation_status: In Place
+- control_key: PS-2
+  control_name: POSITION RISK DESIGNATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: Risk designations are assigned to all {{contractor.name_short}} positions. The {{contractor.name_short}}
+      Office of Human Resources works in coordination with the {{contractor.name_short}} Security
+      Office to assign risk designations.
+    implementation_status: In Place
+  - key: b
+    text: The {{contractor.name_short}} Office of Human Resources works in coordination with the
+      {{contractor.name_short}} Security Office to establish screening criteria for all {{contractor.name_short}}
+      positions.
+    implementation_status: In Place
+  - key: c
+    text: At least every three (3) years, the {{contractor.name_short}} Office of Human Resources
+      reviews and revises position risk designations. If the Office of Human Resources
+      determines that significant changes must be made to the position risk descriptions
+      the Office of Human Resources works in coordination with the {{contractor.name_short}} Security
+      Office to implement changes as required.
+    implementation_status: In Place
+- control_key: PS-3
+  control_name: PERSONNEL SCREENING
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: Prospective {{contractor.name_short}} employees undergo background checks commensurate
+      with the individual’s job duties, the classification of the information they
+      will access, and the risks associated with the role. At the discretion of the
+      {{contractor.name_short}} Security Office, these checks may also be conducted on contractors
+      and/or third party users in cases where they will have access to application
+      data that is not meant to be consumed by the public.  In these instances, the
+      Security Office will instruct the Office of Human Resources to conduct a background
+      check before granting access to the information system.
+    implementation_status: In Place
+  - key: b
+    text: Rescreening is conducted as required by the individual’s job duties, the
+      classification of the information they will access, and the risks associated
+      with the role. A basic background check is performed for all {{contractor.name_short}} employees.
+    implementation_status: In Place
+- control_key: PS-4
+  control_name: PERSONNEL TERMINATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: >
+      Information system access is terminated immediately upon the voluntary or involuntary
+      departure of an employee. In the case of involuntary departure, in addition
+      to immediate termination of system access, at no point is a departing employee
+      allowed access to any part of the {{contractor.name_short}} infrastructure.
+
+      In the case of voluntary departure, employees are permitted access to the information
+      system for the duration of their offboarding period. The departing employee’s
+      manager is responsible for informing the Information Technology department when
+      the employee offboarding period concludes. At this time system and facility,
+      access is terminated.
+    implementation_status: In Place
+  - key: b
+    text: The terminated user’s accounts are disabled and all access associated with
+      the individual is revoked.
+    implementation_status: In Place
+  - key: c
+    text: The employee's manager or the Office of Human Resources conducts exit interviews
+      with all employees who leave {{contractor.name_short}} voluntarily. There is a general discussion
+      about the process of turning in any/all company-issued devices, laptops, etc.
+    implementation_status: In Place
+  - key: d
+    text: >
+      {{contractor.name_short}} employees provide their own equipment that must be hardened to
+      security requirements depending upon their roles and duties. {{contractor.name_short}} supplies
+      two-factor authentication tokens that become the property of the employee.
+
+      Some employees may receive company-issued hardware for working on particular
+      projects. These items are collected before the employee exits {{contractor.name_short}}.
+      In the case of an involuntary termination, the Office of Human Resources works
+      to collect company-issued devices and provides paperwork highlighting confidential
+      protections for customers.
+    implementation_status: In Place
+  - key: e
+    text: Access to {{contractor.name_short}} information and information systems is always shared
+      so that the termination of an individual will not prevent {{contractor.name_short}} from
+      having access to needed resources.
+    implementation_status: In Place
+  - key: f
+    text: When a person is terminated, a standard off-boarding process is used to
+      notify management and {{contractor.name_short}}' Operations staff, and to track the process
+      of disabling access to the information system/information system components.
+      {{contractor.name_short}}' Operations staff and Security Office are given at least four hours'
+      notice to schedule the deactivation of access upon termination. Deactivation
+      is a manual process that is tracked via a Trello card in order to meet the four
+      hour turnaround time before termination.
+    implementation_status: In Place
+- control_key: PS-5
+  control_name: PERSONNEL TRANSFER
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: When an employee, third party personnel and/or contractor is transferred
+      to a new project or position within {{contractor.name_short}}, they may maintain access to
+      the previous system they were working on in order to facilitate the process
+      of maintenance and knowledge transfer. However, as part of the practices of
+      account management (AC-2) and least privilege (AC-6), regular audits of privileged
+      users are conducted and access privileges may be removed when no longer needed.
+      Additionally, adherence to specific client SLAs may enhance the frequency of
+      such audits or the timeliness of privilege removal during personnel transfer.
+    implementation_status: In Place
+  - key: b
+    text: When an employee, third party personnel and/or contractor is transferred
+      to a new position within {{contractor.name_short}} and there is a requirement for access
+      change, such access changes are normally completed within five business days.
+    implementation_status: In Place
+  - key: c
+    text: Access authorizations are modified as needed to coincide with changes in
+      duties or operational needs upon personnel transfer or reassignment.
+    implementation_status: In Place
+  - key: d
+    text: {{contractor.name_short}} Operations staff is informed of transfers that require access
+      authorization modifications within five business days by the Project Manager,
+      System Owner or Office of Human Resources.
+    implementation_status: In Place
+- control_key: PS-8
+  control_name: PERSONNEL SANCTIONS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: {{contractor.name_short}}' Security Office and/or the Office of Human Resources is responsible
+      for determining and enforcing sanctions for failing to comply with established
+      information security policies and procedures. Coaching may be considered prior
+      to sanctions. Sanctions may include but are not limited to written warnings,
+      reduction in system access, demotion, or termination.
+    implementation_status: In Place
+  - key: b
+    text: When employee sanctions processes are initiated, the Office of Human Resources
+      notifies the respective Project Manager(s) and {{contractor.name_short}}' Security Office
+      within five business days.
+    implementation_status: In Place

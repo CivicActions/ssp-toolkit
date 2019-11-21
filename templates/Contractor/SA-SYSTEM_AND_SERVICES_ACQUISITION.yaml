@@ -1,0 +1,282 @@
+family: SYSTEM AND SERVICES ACQUISITION
+documentation_complete: false
+satisfies:
+- control_key: SA-1
+  control_name: SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: {{contractor.name_short}} has developed, documented and disseminated to personnel a system
+      and services acquisition policy that addresses purpose, scope, roles, responsibilities,
+      management commitment, coordination among organizational entities, and compliance;
+      and procedures to facilitate the implementation of the policy and associated
+      controls. This information is maintained by the {{contractor.name_short}} System and Services
+      Acquisition (SA) Policy document that can be found in the {{contractor.name_short}} Github
+      repository at <{{contractor.compliance_docs_url}}/>.
+    implementation_status: In Place
+- control_key: SA-2
+  control_name: ALLOCATION OF RESOURCES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: {{contractor.name_short}}' Security Office, in collaboration with the System Owner, act
+      and/or meet on a pre-determined basis to determine information system security
+      requirements and to develop implementation budgets and plans.
+    implementation_status: In Place
+  - key: b
+    text: {{contractor.name_short}}' Security Office, in collaboration with the System Owner, determines,
+      designates, documents, and allocates the resources required to protect the system
+      as part of its capital planning and investment control processes.
+    implementation_status: In Place
+  - key: c
+    text: The annual budget developed by the System Owner includes explicit budgetary
+      line items for FISMA security requirements. Additional security-related expenditures
+      that fall outside of explicit compliance requirements are addressed in sub-lines
+      under the {{contractor.name_short}} Information Technology budget.
+    implementation_status: In Place
+- control_key: SA-3
+  control_name: SYSTEM DEVELOPMENT LIFE CYCLE
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: >
+      The system and application(s) are managed by {{contractor.name_short}} using the Agile software
+      development methodology, which provides a continuous System Development Life
+      Cycle (SDLC) methodology. {{contractor.name_short}} Agile management continues to improve
+      the software through ongoing planned code releases. The process is overseen
+      by the Change Control Board (CCB) as described in CM-1. Each point release introduces
+      code and configuration changes to the website through the following SDLC methodology:
+
+      • Code release planning: A code release ticket is created in the Change Request
+      project of the {{contractor.name_short}} ticketing system which describes the overall goals
+      of the code release. The code release ticket is linked to other tickets in the
+      ticketing system which describe issues to be addressed by the planned code release.
+      Those issues may include bug fixes and feature enhancements as well as upgrades
+      to newer versions of the software packages that have been used to build the
+      website.
+
+      • Sprints: The tickets covered by the planned code release are then implemented
+      through a series of planned sprints, each of which typically lasts two weeks. 
+      Each sprint begins with a sprint planning session at which the CCB selects a
+      list of tickets to be implemented. {{contractor.name_short}} Development holds daily coordination
+      meetings throughout the sprint to share information and resolve any problems
+      that may be blocking progress toward completion. At the end of the sprint, a
+      retrospective is performed in which progress is reviewed to determine which
+      issues have been resolved and which need further work.
+
+      • Development/unit testing: Work on each ticket is performed within a separate
+      code branch within the {{contractor.name_short}} git repository, and tested using the Gitlab
+      Runner continuous integration platform. Developers also write unit tests to
+      prove their code behaves as expected and address security considerations such
+      as information leakage, bounds checking, and input validation. Once work on
+      a ticket is completed, the developer creates a merge request, and the changes
+      are submitted to at least one other developer for review to ensure they meet
+      functional requirements and address security considerations before the pull
+      request is merged into the git repository's development branch for the planned
+      code release.
+
+      • Integration testing: Once all work tickets have been completed, the code and
+      configuration necessary to implement the changes are merged into the website's
+      staging server, where it undergoes additional testing to ensure there are no
+      conflicts between the work that has been done on individual tickets.
+
+      • User acceptance testing (UAT): The code release undergoes manual testing against
+      a checklist of expected site behaviors and options each of the website's defined
+      user roles to further verify that the functional changes work as expected and
+      to identify any changes in user experience that need to be documented in release
+      notes to be shared with the customer.
+
+      • Approval for deployment: After all the planned code release has passed all
+      of the above tests, the code release is scheduled for deployment to production
+      and presented to {{contractor.name_short}}' Change Control Board (CCB) for review and approval.
+
+      • Deployment to production: A full backup of the website is performed immediately
+      prior to the deployment.
+
+      • Security scan: After the deployment to production, the website undergoes a
+      security scan using a web vulnerability scanner.
+
+      Security issues to be addressed in the planned code release may come from a
+      variety of sources:
+
+      • Customer support requests received by the {{contractor.name_short}} Help Desk
+
+      • Security concerns, incidents, and site performance issues reported by users
+
+      • Security incident reports, including server log analysis and root cause analysis
+      of those incidents performed by {{contractor.name_short}}' Security Office and Operations
+      staff
+
+      • Security notifications received by {{contractor.name_short}}' Security Office from external
+      security teams and other software vendors
+
+      • Vulnerabilities detected during security scans of the website performed by
+      {{contractor.name_short}}' Security Office
+
+      • Issues reported by {{contractor.name_short}}' Security Office, Operations staff and Development
+
+      • Security issues reported through continuous monitoring
+    implementation_status: In Place
+  - key: b
+    text: >
+      The {{contractor.name_short}} organization defines and documents information security roles
+      and responsibilities throughout the SDLC. The following teams participate in
+      this process:
+
+      • Customer Support: Files tickets when incidents are reported and shares incident
+      reports with customers
+
+      • {{contractor.name_short}}' Security Office: Receives security notifications from the Drupal
+      security team and other software vendors; performs security scans; uses {{contractor.name_short}}
+      JIRA ticketing system to request mitigation of all reported vulnerabilities
+
+      • {{contractor.name_short}} Development: Performs server log analysis when security incidents
+      are reported; assists in root cause analysis
+
+      • Change Control Board: Meets weekly to review and approve upcoming planned
+      code changes to the website, include security-related code releases.
+
+      • AWS Cloud: Monitors server and application events; proactively respond to
+      security incidents, and reports incidents to {{contractor.name_short}}
+
+      • Users: Communicates customer security requirements and expectations, and alerts
+      {{contractor.name_short}}' customer support team whenever it detects a security or site performance
+      issue
+
+      Security responsibilities performed by these teams include the following:
+
+      • Perform configuration management during information system design, development,
+      implementation, and operation;
+
+      • Implement only organization-approved changes;
+
+      • Document approved changes;
+
+      • Manage and control changes to the system;
+
+      • Fully test all changes, taking into account security considerations as well
+      as other functional requirements;
+
+      • Track security flaws and flaw resolution; and
+
+      • Employ code analysis tools to examine software for common flaws and document
+      the results of the analysis.
+    implementation_status: In Place
+  - key: c
+    text: Each of the {{contractor.name_short}} teams described in SA-3(b) has a team leader who
+      is responsible for defining the roles and responsibilities of individual personnel
+      members within that team. {{contractor.name_short}} uses role-based management for access
+      and authentication implementation and enforcement.
+    implementation_status: In Place
+  - key: d
+    text: The {{contractor.name_short}} organization integrates the organizational information
+      security risk management process into system development life cycle activities
+      by requiring that the processes defined in SA-3(a) and (b) above are adhered
+      to by all information system developers and associated security personnel.
+    implementation_status: In Place
+- control_key: SA-4
+  control_name: ACQUISITIONS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      {{contractor.name_short}}' System and Services Acquisition Policy affects all personnel with
+      purchasing authorization and applies to all purchases or deployments including
+      infrastructure, software or hardware. The {{contractor.name_short}} System and Services Acquisition
+      Policy contains the process for determining acceptance criteria for all system
+      software and application services.
+
+      The Acquisition Security Policy includes an assessment that evaluates the product
+      based on the vendor’s security practices, policies, and past performance. It
+      also details the potential maintenance and end-of-life ramifications with regards
+      to security.
+
+      {{contractor.name_short}}' Security Office is responsible for determining the security documentation
+      that must be included in the information system or services acquisition contracts.
+
+      Configuration and design of the development and production environments are
+      hosted in the {{contractor.name_short}} Git repository. All documentation is strictly controlled
+      regarding transportation and storage in accordance with applicable federal laws,
+      Executive Orders, directives, policies, regulations, standards, guidelines,
+      and organizational mission/business needs.
+    implementation_status: Partially in Place
+- control_key: SA-5
+  control_name: INFORMATION SYSTEM DOCUMENTATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: Some application features are built on a custom basis and are not part of
+      standard FOSS packages. Administrator documentation for those custom features
+      is maintained in the {{contractor.name_short}} Git repository documentation system.
+    implementation_status: In Place
+  - key: b
+    text: >
+      The publicly-available FOSS package documentation described in control SA-5(a)
+      also includes user documentation for non-administrators as described in control
+      AC-3. This includes documentation on how to create and manage user accounts
+      as well as how to create, update and delete content.
+
+      {{contractor.name_short}} follows the user documentation standard practice to provide context-sensitive
+      help as well as access to a HelpDesk in publicly facing applications.
+
+      {{contractor.name_short}}' Customer Support team, described in control SA-3(b), handles questions
+      about how to use the system. Questions are submitted by sending an email to
+      {{contractor.email_support}}, which triggers the creation of a ticket in {{contractor.name_short}}'
+      customer support ticketing system.
+    implementation_status: In Place
+  - key: c
+    text: If the information needed to answer a question is not already included in
+      the website's public-facing documentation, a ticket is created to determine
+      whether the question is sufficiently general in nature to warrant adding the
+      answer to the website's documentation.
+    implementation_status: In Place
+  - key: d
+    text: All administrator documentation is housed in a protected Git repository.
+      User documentation is publicly available.
+    implementation_status: In Place
+  - key: e
+    text: As needed and approved by {{contractor.name_short}}' Security Office, documentation is
+      available to appropriate personnel by granting access to the private Git repository.
+    implementation_status: In Place
+- control_key: SA-8
+  control_name: SECURITY ENGINEERING PRINCIPLES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: System Specific Control
+  narrative:
+  - text: >
+      Information system security engineering principles are applied in the specification,
+      design, development, implementation, and modification of the application system.
+
+      Sound security policy, developing layered protections, and controls have been
+      established as the foundation for design throughout the SDLC defined in control
+      SA-3. Security requirements are incorporated into that SDLC, as described previously.
+
+      {{contractor.name_short}} uses a development-stage-production testing and management workflow
+      as part of the {{contractor.name_short}} development model. Changes are first tested on a
+      development environment, then moved to a staging environment for further testing.
+      Once the changes have been tested and approved, a backup is made of the production
+      environment, and the changes are then deployed. More information regarding this
+      model can be found in CM-3 and CM-4. The {{contractor.name_short}} organization ensures that
+      all its developers are trained on how to build secure software, that security
+      controls have been tailored to meet business and operational needs.
+    implementation_status: In Place
+- control_key: SA-9
+  control_name: EXTERNAL INFORMATION SYSTEM SERVICES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: {{contractor.name_short}} does not have any dedicated interconnections between information
+      system components within the authorization boundary and external third-party
+      vendor information systems for the purposes of storing, processing or transmitting
+      federal agency data.
+    implementation_status: In Place

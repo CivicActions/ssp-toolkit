@@ -1,0 +1,108 @@
+family: PLANNING
+documentation_complete: false
+satisfies:
+- control_key: PL-1
+  control_name: SECURITY PLANNING POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: {{contractor.name_short}} has developed, documented and disseminated to personnel a system
+      planning policy that addresses purpose, scope, roles, responsibilities, management
+      commitment, coordination among organizational entities, and compliance; and
+      procedures to facilitate the implementation of the policy and associated controls.
+      This information is maintained in the {{contractor.name_short}} Planning (PL) Policy and
+      Procedure document that can be found in the {{contractor.name_short}} Github repository at
+      <{{contractor.compliance_docs_url}}/>.
+    implementation_status: In Place
+- control_key: PL-2
+  control_name: SYSTEM SECURITY PLAN
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: >
+      {{contractor.name_short}} has developed this system security plan (SSP) for the information
+      system as part of compliance with NIST 800-53 and FIPS 199. The SSP defines
+      the security categorization, system boundary, and security requirements and
+      controls meeting the requirements of the NIST Risk Management Framework (RMF).
+      Specifically the SSP:
+
+      1. Is consistent with the organization’s enterprise architecture
+
+      2. Explicitly defines the authorization boundary for the system
+
+      3. Describes the operational context of the information system in terms of missions
+      and business processes
+
+      4. Provides the security categorization of the information system including
+      supporting rationale
+
+      5. Describes the operational environment for the information system and relationships
+      with or connections to other information systems
+
+      6. Provides an overview of the security requirements for the system
+
+      7. Identifies any relevant overlays, if applicable
+
+      8. Describes the security controls in place or planned for meeting those requirements
+      including a rationale for the tailoring decisions
+
+      9. Is reviewed and approved by the authorizing official or designated representative
+      prior to plan implementation
+    implementation_status: In Place
+  - key: b
+    text: The SSP is reviewed and approved by the authorizing official prior to plan
+      implementation. A copy of the SSP is provided to authorized {{contractor.name_short}} and
+      assessing personnel including the System Owner, Authorizing Official, Information
+      System Security Officer, System/Network Administrator, and {{contractor.name_short}}' Operations
+      staff. The SSP is maintained by {{contractor.name_short}}' Security Office.
+    implementation_status: In Place
+  - key: c
+    text: The SSP is reviewed at least annually by the System Owner and {{contractor.name_short}}'
+      Operations staff in collaboration with {{contractor.name_short}}' Security Office.
+    implementation_status: In Place
+  - key: d
+    text: {{contractor.name_short}}' Operations staff in collaboration with {{contractor.name_short}}' Security
+      Office updates the system description and control descriptions within the SSP
+      as needed to verify the SSP is an accurate description of the system.
+    implementation_status: In Place
+  - key: e
+    text: The SSP is currently available to authorized users on GitLab. Per the Acceptable
+      Use Policy, all entities granted access to {{contractor.name_short}} information assets are
+      required to complete a non-disclosure agreement (NDA) to uphold information
+      confidentiality. GitLab provides the configuration management capabilities for
+      the SSP to be protected from unauthorized disclosure and modification.
+    implementation_status: In Place
+- control_key: PL-4
+  control_name: RULES OF BEHAVIOR
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: '{{contractor.name_short}} has created and made readily available to individuals requiring
+      access to the information system the rules that describe their responsibilities
+      and expected behavior with regard to information and information system usage.
+      These rules, defined as the Acceptable Use Policy, are included in the {{contractor.name_short}}
+      Security Policy accessible here: <{{project.acceptable_use_policy_url}}>
+      which has also been uploaded to CSAM as ''Appendix J1 - System Rules of Behavior
+      - Privileged User'' ({{contractor.name_short}} Security Policy 20190226.docx).'
+    implementation_status: In Place
+  - key: b
+    text: '{{contractor.name_short}} HR receives a signed acknowledgment from all employees, indicating
+      that they have read, understand, and agree to abide by the rules of behavior,
+      before authorizing access to information and the information system. The text
+      of the electronically signed (via DocuSign) acknowledgment document has been
+      uploaded to CSAM as artifact: ''{{contractor.name_short}} Security Policy Acknowledgement.docx'''
+    implementation_status: In Place
+  - key: c
+    text: {{contractor.name_short}} reviews the {{contractor.name_short}} Security Policy at least annually
+      and updates as required.
+    implementation_status: In Place
+  - key: d
+    text: {{contractor.name_short}} requires individuals who have signed a previous version of
+      the {{contractor.name_short}} Security Policy to read and re-sign when any part of it, including
+      the Acceptable Use Policy/Rules of Behavior, is revised/updated.
+    implementation_status: In Place

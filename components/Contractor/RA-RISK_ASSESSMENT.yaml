@@ -1,0 +1,74 @@
+family: RISK ASSESSMENT
+documentation_complete: false
+satisfies:
+- control_key: RA-1
+  control_name: RISK ASSESSMENT POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: CivicActions has developed, documented and disseminated to personnel a risk
+      assessment policy that addresses purpose, scope, roles, responsibilities, management
+      commitment, coordination among organizational entities, and compliance; and
+      procedures to facilitate the implementation of the policy and associated controls.
+      This information is maintained in the CivicActions Risk Assessment (RA) Policy
+      and Procedure that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
+    implementation_status: In Place
+- control_key: RA-5
+  control_name: VULNERABILITY SCANNING
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: >
+      CivicActions Operations uses vulnerability scanning software to document and
+      determine risks to the system. Operating system and application vulnerability
+      scans include:
+
+      • The CivicActions system environment employs the OpenSCAP scanner with the
+      Red Hat STIG baseline to check for vulnerabilities.
+
+      • The CivicActions application environment is tested by the penetration tester
+      OWASP ZAP, an open-source web application security scanner to report on needed
+      updates based on known flaws.
+
+      CivicActions Operations has automated the process to perform the scans on a
+      monthly basis. The resulting reports list vulnerabilities and rank them by severity.
+      These reports are stored on an audit server and are used to inform changes to
+      the system and verify that security controls are working correctly.  These scans
+      are used to document the current state of the system, and to analyze security
+      trends as changes are made over time.
+    implementation_status: Partially in Place
+  - key: b
+    text: CivicActions uses the automated vulnerability scanning tools OpenSCAP and
+      OWASP ZAP are interoperable with standard web browsers, the Open Source Ansible
+      infrastructure provisioning system and other Open Source tools employed by CivicActions.
+    implementation_status: Partially in Place
+  - key: c
+    text: CivicActions' Security Office reviews all vulnerabilities identified from
+      automated scans and security assessments. Vulnerabilities found and deemed legitimate
+      are assigned an impact rating and response time thought creation of an issue
+      or ticket.  CivicActions' Operations staff reviews current scans and compare
+      with older scans to identify trends and to verify previous vulnerabilities have
+      been mitigated.
+    implementation_status: Partially in Place
+  - key: d
+    text: >
+      Identified and reported vulnerabilities are assigned an impact rating and response
+      time by CivicActions' Security Office and must be remediated according to the
+      following time requirements:
+
+      • High - Within 30 days of discovery (usually within 1 week))
+
+      • Moderate - Within 90 days of discovery (usually within 2 weeks)
+
+      • Low - Within 240 days of discovery
+    implementation_status: Partially in Place
+  - key: e
+    text: Results of the vulnerability scans and security assessments are shared with
+      all appropriate CivicActions personnel supporting continuous monitoring requirements.
+      CivicActions Security assigns each vulnerability an impact rating and response
+      time through JIRA or the Git issue tool for tracking to the established remediation
+      deadlines listed in RA-5(d).
+    implementation_status: Partially in Place

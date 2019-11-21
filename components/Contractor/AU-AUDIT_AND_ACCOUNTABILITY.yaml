@@ -1,0 +1,129 @@
+family: AUDIT AND ACCOUNTABILITY
+documentation_complete: false
+satisfies:
+- control_key: AU-1
+  control_name: AUDIT AND ACCOUNTABILITY POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: CivicActions has developed, documented and disseminated to personnel an
+      audit and accountability policy that addresses purpose, scope, roles, responsibilities,
+      management commitment, coordination among organizational entities, and compliance;
+      and procedures to facilitate the implementation of the policy and associated
+      controls. This information is maintained in the CivicActions Audit and Accountability
+      (AU) Policy.  This document can be found in the CivicActions Compliance Docs
+      GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+    implementation_status: In Place
+  summary: CivicActions has developed, documented and disseminated to personnel an
+    audit and accountability policy.
+- control_key: AU-2
+  control_name: AUDITABLE EVENTS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: CivicActions' Security Policy provides information about auditing and logging
+      of CivicActions internal users and end-user activity on the servers and within
+      the system application.
+    implementation_status: In Place
+  - key: b
+    text: Auditable events may change due to changes in the threat environment. CivicActions
+      teams collaborate internally and also communicate with customers and partner
+      organizations to identify and select auditable events. The teams that participate
+      in this process are described in control SA-3(b).
+    implementation_status: In Place
+  summary: CivicActions' Security Policy provides information about auditing and logging.
+- control_key: AU-4
+  control_name: AUDIT STORAGE CAPACITY
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  narrative:
+  - text: CivicActions ensures adequate storage capability requirements listed in
+      AU-11 for all events from the application, database, and hosting environment.
+    implementation_status: In Place
+  summary: CivicActions ensures adequate storage capability requirements for all events.
+- control_key: AU-5
+  control_name: RESPONSE TO AUDIT PROCESSING FAILURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: When notified (e.g., via CloudWatch) of an auditing failure, CivicActions
+      Operations staff will review the causes and take corrective action.
+    implementation_status: In Place
+  summary: CivicActions Operations reviews causes adn takes corrective action when
+    notified via CloudWatch of auditing failures.
+- control_key: AU-6
+  control_name: AUDIT REVIEW, ANALYSIS, AND REPORTING
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: >
+      CivicActions security audit data is collected by the AWS CloudWatch monitoring
+      and observability service to support real-time and after-the-fact investigation
+      at the application level for the following:
+
+      • Indications of inappropriate or unusual activity
+
+      • Assurance that logging is functioning properly
+
+      • Adherence to logging standards identified in this procedure
+    implementation_status: Planned
+  - key: b
+    text: Any significant findings observed during the inspection are reported to
+      CivicActions' Security Office. If these are considered to constitute a security
+      incident, then the Incident Response process is invoked as described in the
+      implementation of the Incident Response Plan (IR-8).
+    implementation_status: Planned
+  summary: >
+    CivicActions security audit data is collected by a Graylog Security and Event
+    Management (SIEM) dashboard to support real-time and after-the-fact investigation.
+- control_key: AU-9
+  control_name: PROTECTION OF AUDIT INFORMATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  narrative:
+  - text: CivicActions ensures that audit logs are created, stored and maintained.
+      Developers who have been assigned as members of the CivicActions' Security Office
+      are the only CivicActions personnel with logical permission to access and review
+      audit logs.
+    implementation_status: Planned
+  summary: CivicActions ensures that audit logs are created, stored and maintained.
+- control_key: AU-11
+  control_name: AUDIT RECORD RETENTION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited (Cloud Service Provider)
+  narrative:
+  - text: CivicActions audits events from the application, database, and hosting environment,
+      and retains these records for at least 180 days.
+    implementation_status: In Place
+  summary: CivicActions retains audit records for at least  180 days.
+- control_key: AU-12
+  control_name: AUDIT GENERATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: CivicActions ensures audit records are generated for its web and event logs
+      as required in AU-2 and AU-3 for servers, application, database, and network
+      components.
+    implementation_status: In Place
+  - key: b
+    text: The selected auditable events described in AU-2 are coordinated by CivicActions
+      internal admins and client security/operations officers for each component of
+      the production system.
+    implementation_status: In Place
+  - key: c
+    text: CivicActions maintained applications generate audit records for their web
+      and event logs as described in AU-2 and AU-3.
+    implementation_status: In Place
+  summary: CivicActions ensures audit records are generated for its web and event
+    logs as required.

@@ -1,5 +1,24 @@
-variables:
-  contractor: CivicActions
-  project: GlobalNET Platform
-  IA_documentation:
-  organization: DSCA
+
+---
+system_security_plan:
+  title: System Security Plan (SSP) Low Baseline
+  date:
+    _iso-date: iso-date3
+    __text: '2019-11-20'
+
+project:
+  name_short: Example Project
+  incident_response_plan_url: https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan
+  contingency_plan_url: https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan
+  acceptable_use_policy_url: https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy
+  organization_name_short: Example Org
+
+contractor:
+  name_short: CivicActions
+  compliance_docs_url: https://github.com/CivicActions/compliance-docs
+  email_support: support@example.com
+
+artifact:
+  inventory_whitelist: ia-2-inventory-whitelist.txt
+  admin_sudo: ia-2-admin-sudo.png
+  two_factor_auth: ia-4-two-factor-auth.png

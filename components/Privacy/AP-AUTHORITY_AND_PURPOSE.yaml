@@ -8,7 +8,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      Under {{system_relevant_legislation}}, System Owner carries out a program of
+      Under , System Owner carries out a program of
       national leadership activities to enhance the quality and outcomes of programs
       nationwide. System Owner uses these funds to provide technical assistance and
       professional development to programs and contribute to research and evaluations
@@ -20,7 +20,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: |
-      {{organization_name}} does not collect PII other than that covered by the "Roladex
+      Example Org does not collect PII other than that covered by the "Roladex
       exception".  Anonymous access is possible, but community participation require an
       account for which these fields are required:
 
