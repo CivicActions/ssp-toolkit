@@ -12,6 +12,22 @@ project:
   contingency_plan_url: https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan
   acceptable_use_policy_url: https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy
   organization_name_short: Example Org
+  slack_link: '[`#project`](https://civicactions.slack.com/messages/project/)'
+  slack_url: https://civicactions.slack.com/messages/project/
+  issue_system: JIRA Incident ticket
+  issue_incident: '[JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident)'
+  issue_url: https://project.atlassian.net/
+  escalation_mail: '[project@contractor.opsgenie.net](mailto:project@contractor.opsgenie.net)'
+  contact_sheet: '[Project Incident Response Team contact sheet](https://docs.google.com/a/project/spreadsheets/d/1fhjOq6KpURCfwwacasfplu6vbIAV1HbQRO/edit?usp=sharing)'
+  contact_sheet_url: https://docs.google.com/a/project/spreadsheets/d/1fhjOq6KpURCfwwacasfplu6vbIAV1HbQRO/edit?usp=sharing
+  gitlab_url: https://git.civicactions.net/project/
+  escalation_mail: '[project@contractor.opsgenie.net](mailto:project@contractor.opsgenie.net)'
+  video1: 'Zoom <https://zoom.us/j/123456789>'
+  video2: 'IT Hangout: <https://hangouts.google.com/hangouts/_/contractor/it_is>'
+  cloud_console1: https://signin.aws.amazon.com/console
+  cloud_console2: https://signin.aws.amazon.com/console2
+  backup_url: https://cpm-project.example.com/signin/
+  backup_snaps: '[CPM snapshots](https://cpm-project.example.com/)'
 
 contractor:
   name_short: CivicActions
@@ -22,3 +38,7 @@ artifact:
   inventory_whitelist: ia-2-inventory-whitelist.txt
   admin_sudo: ia-2-admin-sudo.png
   two_factor_auth: ia-4-two-factor-auth.png
+
+status_url:
+  gitlab: https://app.statuscake.com/AllStatus.php
+  issue: https://twitter.com/JIRA

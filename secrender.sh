@@ -1,18 +1,23 @@
 #!/usr/bin/env bash
 
-# Requires https://github.com/CivicActions/secrender (add_output_option branch)
+# Requires https://github.com/CivicActions/secrender
 
-# Fill template jinja2 files with values from configuration.yaml file and
-# output to components directory
+# Fill template jinja2 files with values from configuration.yaml file.
+# Output to file path after stripping the initial "templates/" directory.
 
 for template in $(find templates -type f); do
-  component=${template/templates/components}
-  comp_dir=$(dirname $component)
-  mkdir -p $comp_dir
-  secrender.py --in configuration.yaml --template $template --output $component
+  # strip initial "templates/" directory name from file
+  file="${template#templates/}"
+  # strip optional ".j2" extension
+  ext=${template##*.}
+  [[ $ext == "j2" ]] && file="${file%.*}"
+  # make directory for secrendered file
+  dir=$(dirname $file)
+  mkdir -p $dir
+  # do the work (use local secrender for efficiency)
+  secrender.py --in configuration.yaml --template $template --output $file
+  # docker run -v $PWD:/src drydockcloud/ci-secrender \
+  #        --in configuration.yaml --template $template --output $file
   echo -n '.'
 done
 echo "done!"
-
-# dockerized version:
-# docker run -v $PWD:/src drydockcloud/ci-secrender --in configuration.yaml --template templates/Contractor/AC-ACCESS_CONTROL.yaml 
