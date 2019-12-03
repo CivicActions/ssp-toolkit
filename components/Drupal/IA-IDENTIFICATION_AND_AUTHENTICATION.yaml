@@ -25,7 +25,7 @@ satisfies:
   - text: |
       Drupal administrators and other roles with unrestricted access to live content
       and/or user accounts are required to use two-factor authentication. See artifact
-      ia-4-two-factor-auth.png
+      ia-2.1-two-factor-auth.png
     implementation_status: In Place
 - control_key: IA-4
   control_name: IDENTIFIER MANAGEMENT

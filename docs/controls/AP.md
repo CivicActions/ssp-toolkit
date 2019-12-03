@@ -13,10 +13,11 @@
 
 ##### Privacy
 
-Under , System Owner carries out a program of
-national leadership activities to enhance the quality and outcomes of programs
-nationwide. System Owner uses these funds to provide technical assistance and
-professional development to programs and contribute to research and evaluations
+Under Title II of the Workforce Innovation and Opportunity Act (WIOA), Example Org
+carries out a program of national leadership activities to enhance the quality and
+outcomes of programs nationwide. Example Org uses these
+funds to provide technical assistance and professional development to programs and
+contribute to research and evaluations
 
 
 ### AP-2: PURPOSE SPECIFICATION

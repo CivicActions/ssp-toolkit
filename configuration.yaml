@@ -12,6 +12,7 @@ project:
   contingency_plan_url: https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan
   acceptable_use_policy_url: https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy
   organization_name_short: Example Org
+  system_relevant_legislation: 'Title II of the Workforce Innovation and Opportunity Act (WIOA)'
   slack_link: '[`#project`](https://civicactions.slack.com/messages/project/)'
   slack_url: https://civicactions.slack.com/messages/project/
   issue_system: JIRA Incident ticket
@@ -35,9 +36,9 @@ contractor:
   email_support: support@example.com
 
 artifact:
-  inventory_whitelist: ia-2-inventory-whitelist.txt
-  admin_sudo: ia-2-admin-sudo.png
-  two_factor_auth: ia-4-two-factor-auth.png
+  inventory_whitelist: ia-2.1-inventory-whitelist.txt
+  admin_sudo: ia-2.1-admin-sudo.png
+  two_factor_auth: ia-2.1-two-factor-auth.png
 
 status_url:
   gitlab: https://app.statuscake.com/AllStatus.php

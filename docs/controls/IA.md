@@ -58,15 +58,15 @@ The AWS Management Console is configured to require two factor authentication. S
 
 ##### CivicActions
 
-CivicActions system administrators employ a personal public-key pair for basic access and must originate from a whitelisted IP address. The whitelist is maintained by an Ansible inventory file, the current complete list (includes dev sites) of users with whitelisted IPs is in artifact: ia-2-inventory-whitelist.txt
-To access root (sudo) privileges an additional password is required. The passwords are maintained in encrypted form in the Ansible inventory file. The mechanism to enable select users to use a password to obtain root access can be viewed in artifact: ia-2-admin-sudo.png
+CivicActions system administrators employ a personal public-key pair for basic access and must originate from a whitelisted IP address. The whitelist is maintained by an Ansible inventory file, the current complete list (includes dev sites) of users with whitelisted IPs is in artifact: ia-2.1-inventory-whitelist.txt
+To access root (sudo) privileges an additional password is required. The passwords are maintained in encrypted form in the Ansible inventory file. The mechanism to enable select users to use a password to obtain root access can be viewed in artifact: ia-2.1-admin-sudo.png
 
 
 ##### Drupal
 
 Drupal administrators and other roles with unrestricted access to live content
 and/or user accounts are required to use two-factor authentication. See artifact
-ia-4-two-factor-auth.png
+ia-2.1-two-factor-auth.png
 
 
 ### IA-3: Device Identification And Authentication
