@@ -1,0 +1,206 @@
+# {{ project.name }} Configuration Management
+
+This document describes how the {{ contractor.name_short }}/{{ project.name_short }} team approaches configuration management of the {{ project.name_short }} General Services platform.
+
+## Table of Contents
+
+* [Overview](#overview)
+  * [Purpose](#purpose)
+  * [Scope](#scope)
+  * [Roles and Responsibilities](#roles-and-responsibilities)
+  * [{{ project.name_short }} Working Group](#{{ project.name_short|lower }}-working-group)
+  * [Definitions](#definitions)
+* [What goes into configuration management?](#what-goes-into-configuration-management)
+* [Where should all this configuration go?](#where-should-all-this-configuration-go)
+* [How do we test these changes?](#how-do-we-test-these-changes)
+* [Change workflow](#change-workflow)
+* [What if a configuration is changed and it is not in Configuration Management?](#what-if-a-configuration-is-changed-and-it-is-not-in-configuration-management)
+* [Drupal Specific Configuration](#drupal-specific-configuration)
+* [Gitlab contribution guidelines](#gitlab-contribution-guidelines)
+* [Forking](#forking)
+  * [Branching](#branching)
+  * [Squashing commits](#squashing-commits)
+  * [Rebase or merge](#rebase-or-merge)
+  * [When should a Merge Request (MR) be created?](#when-should-a-merge-request-mr-be-created)
+  * [Should MRs be assigned?](#should-mrs-be-assigned)
+  * [When reviewing a MR, should the change be tested locally?](#when-reviewing-a-mr-should-the-change-be-tested-locally)
+
+## Overview
+
+{{ project.name_short }} employs a combination of inheritied manual configuration and {{ contractor.name_short }}-developed scripted _configuration in code_ employing AWS CloudFormation, the Ansible software and configuration provisioning engine and/or Git-based scripts. Manual processes migrate first to scripts, then to Ansible. New servers are spun up using AWS CloudFormation and Ansible.
+
+The server software update process, AIDE-based intrusion detection, and git management of /etc are all managed by Ansible. Drupal application updates both security and feature based, make use of a scripted deployment process. A git repository is used to manage and record configuration in scripts and playbooks. Peer review, automated testing and a stakeholder review on a staging server ensure that configuration updates are deployed without problems. Should a problem be discovered, rollback to a previous version is seamlessly managed by re-deploying the previous release stored in Git.
+
+### Purpose
+
+The purpose of this document is to identify and describe the Configuration Management (CM) process for the {{ project.name }} and provide {{ contractor.name_short }} with the necessary structure to efficiently and securely manage the configuration standards for software baselines and changes to assets within the {{ project.name_short }} authorization boundary.  This plan describes the processes required to ensure that the inevitable changes to {{ project.name_short }} occur within an identifiable and controlled environment.
+
+The {{ project.name_short }} CM Plan will ensure the following requirements are met:
+
+* Formally documented CM roles, responsibilities, and procedures;
+* A configuration control board that implements procedures to ensure a security review and approval of all proposed information system changes, to include interconnections to other information systems;
+* A testing process to verify proposed configuration changes prior to implementation in the operational environment; and
+* A verification process to provide additional assurance that the CM process is working effectively and that changes outside the CM process are technically or procedurally not permitted.
+
+### Scope
+
+This Configuration Management Plan and associated processes apply to all employees, contractors and vendors that manage change or otherwise affect the operations of the {{ project.name_short }} system including but not limited to the hardware, software, facilities or information resources. The scope of the Configuration Management Plan is to establish a policy and procedures to ensure that:
+
+* The revision status of the {{ project.name_short }} Baseline can be clearly identified, accurately recorded, and provided to at any given point in time;
+* The integrity of the approved Authorization and status of the {{ project.name_short }} baseline is maintained throughout all program phases/sprints;
+* Coordination of approved changes are vetted in an effective and timely manner; and
+* Changes to the defined Baseline is controlled and evaluated for impact on all related system aspects, security and incorporated only after review and approval by the personnel.
+
+### Roles and Responsibilities
+
+{{ project.name_short }} shall maintain an active Configuration Control Board which will be established as a formal approval authority for changes.  It primarily exists to control changes to the {{ project.name_short }} architecture (e.g., deployment of a new piece of software/code/major architectural change).
+
+The following **Roles** will be involved in configuration management activities and make up the Configuration Control Board:
+
+* {{ project.name_short }} Program Manager
+* Information Systems Security Manager (ISSM)
+* {{ contractor.name_short }} Team
+  * Project Manager (PM)
+  * Information Systems Security Officer (ISSO)
+  * Infrastructure Support Team
+  * Technology Lead (TL)
+  * Development Team
+* {{ project.name_short }} Managers
+
+The **Program Manager** or a **Designated Represenatative (DR)** shall ensure appropriate roles, responsibilities, and access controls are assigned to support an effective Configuration Management Process.  The {{ project.name_short }} Program Manager is ultimately responsible for providing oversight responsibilities to manage the Change Control Process, Change Management policy, and associated processes which are essential to the integrity of the Change Control Board. The PM is also responsible for providing direction for {{ project.name_short }} sprints and ensuring changes which require modifications to the contract are submitted as required and attends Configuration Control Board meetings.
+
+The **Information Systems Security Manager (ISSM)** is the liaison between the PM and the {{ contractor.name_short }} team for CM related actions and responsible for leading monthly Configuration Management meetings. The ISSM shall ensure CM changes are accurately assessed, documented, and disseminated to prevent any potential impact to the {{ project.name_short }} authorization and analyzing changes to {{ project.name_short }} to determine potential security impacts prior to change implementation.  The ISSM shall also ensure required stakeholders maintain active participation within the {{ project.name_short }} CCB and attends Configuration Control Board meetings.
+
+The **{{ contractor.name_short }} Team** is responsible for the {{ project.name_short }} architecture and its components.  It tests and deploys {{ project.name_short }} components, modifies existing software components, and identifies potential {{ project.name_short }} enhancements. The {{ contractor.name_short }} Team is composed of several roles:
+
+* The **Project Manager (PM)** is responsible for sheparding the agile process used to develop and maintain {{ project.name_short }} throughout any requested or required configuration changes.
+* The **Information Systems Security Officer (ISSO)** develops and implements processes and procedures to insure that security of the {{ project.name_short }} General Service as it grows and changes through use and updates.
+* The **Infrastructure Support Team** is authorized to make changes to the underlying {{ project.name_short }} infrastructure and components. This team shall ensure a central inventory is maintained and updated as information system components are modified/added/removed to/from the {{ project.name_short }} environment.
+* The **Technology Lead (TL)** manages the change process of the {{ project.name_short }} application, oversees the testing and staging operations, and is directly involved in the deployment of new releases.
+* The **Development Team** is tasked with implementing newly requested features, mitigating reported bugs, and developing test systems to ensure the proper operation of the system as it undergoes changes.
+
+The **{{ project.name_short }} Managers** are responsible for the day-to-day operation of the {{ project.name }} system and maintaining close communication with {{ project.name_short }} users and/or organizations. This team is responsible for acting as a liaison between the {{ project.name_short }} user base and {{ contractor.name_short }} team to ensure that the {{ project.name_short }} system is up and operational and coordinating minor changes to the {{ project.name_short }} baseline. Attends Configuration Control Board meetings as needed.
+
+#### {{ project.name_short }} Working Group
+
+The {{ project.name_short }} Working Group (WG) is comprised of the members of the current sprint including, at minimum, the Program Manager or DR, a Project Manager, and a Tech Lead. The WG coordinates minor {{ project.name_short }} changes (e.g., setting changes within the Drupal application and minor operating system updates) between {{ contractor.name_short }} and {{ project.name_short }} Managers.  The {{ project.name_short }} CCB delegates this authority to the {{ project.name_short }} WG to provide a more streamlined CM control mechanism for those changes that do not affect the authorization of the {{ project.name_short }} system.  Although the WG is less formal than the CCB, all requests and decisions must still be documented through the JIRA ticketing system.
+
+### Definitions
+
+The Configuration Management Process is comprised of a collection of activities focused on establishing and maintaining the integrity of the {{ project.name_short }} baseline, through control of the processes for initializing, changing, and monitoring the configurations of assets within the {{ project.name_short }} authorization boundary. This process is administered by {{ contractor.name_short }} in collaboration with the {{ project.name_short }} Program Manager. The Program Manager, in collaboration with the ISSM shall ensure define and implement configuration baseline process and standards for:
+
+A **Configuration Item (CI)** - is an identifiable part of a system (e.g., hardware, software, firmware, documentation, or a combination thereof) that is a discrete target of configuration control processes.
+
+A **Baseline Configuration** - is a set of specifications for a system, or CI within a system, that has been formally reviewed and agreed on at a given point in time, and which can be changed only through change control procedures. The baseline configuration is used as a basis for future builds, releases, and/or changes.
+
+A **Configuration Management Plan (CM Plan)** - is a comprehensive description of the roles, responsibilities, policies, and procedures that apply when managing the configuration of products and systems. The basic parts of a CM Plan include:
+
+* **Configuration Item Identification** – methodology for selecting and naming configuration items that need to be placed under CM;
+* **Configuration Change Control** – process for managing updates to the baseline configurations for the configuration items
+
+Other Commonly used terms used within the Configuration Management Process include:
+
+**Baseline** - is a current and comprehensive baseline inventory of all components required to support {{ project.name_short }} operations that are part of the System Inventory and is changed only through formal change control procedures. The baseline includes sufficient detail to re-create the {{ project.name_short }} General Service. Baselines exist for Software and Infrastructure, and redundant copies of the Baseline are stored by {{ contractor.name_short }} at a location separate from the Information System.
+
+**Baseline Change Request (BCR)** - a formal written request to initiate a change to a baseline document.
+
+**Configuration Control Board (CCB)** - a review panel that evaluates and/or approves changes to the {{ project.name_short }} baseline.
+
+**Code Commit** - is a definitive change to any source code that defines the {{ project.name_short }} software, or {{ project.name_short }} virtual infrastructure, or other supporting {{ project.name_short }} asset or document contributing the {{ project.name_short }} Information System. Each code commit is assigned a unique ID and all code commits are part of a permanent record. All changes to Infrastructure and Software Baselines are executed through code commits. But not all code commits represent changes to Baselines.
+
+**Version** or **Release** - (1) uniquely identified snapshot of a build that represents some identifiable milestone of functions and capabilities of the Information System, or (2) uniquely identified snapshot of a document representing some identifiable milestone of content.
+
+## What goes into configuration management?
+
+In short, everything needed to run and operate the platform that is not a _secret_. (_tbd: secret key management_)
+
+Here are some examples that are in configuration management:
+
+* CI pipelines (Jenkins)
+* Infrastructure/network configuration (Manual and Ansible)
+* VM setup and quantity (Manual and Ansible)
+* Software configuration (Ansible and Scripted)
+* {{ contractor.name_short }}-developed code (Git managed by scripts)
+* Application configuration (Drupal features in Git)
+
+## Where should all this configuration go
+
+All configuration must be stored in Gitlab using the following "Change Workflow" unless it is a _secret_.
+
+## How do we test these changes
+
+If possible, first test the changes locally. After that, upload them to a development environment where either manual or automated testing needs to be run.
+
+Security tests need to be executed in the development environment where changes are applied.
+
+## Change workflow
+
+1. All configuration changes must flow through a git repository, centrally managed through Gitlab, unless they contain sensitive information.
+1. A change is initiated and discussed as a "Backlog" ticket in [the {{ project.name_short }} JIRA](https://globalnet.atlassian.net/secure/).
+1. During Sprint Planning, the ticket is prioritized and may get moved from "Backlog" to "ToDo".
+1. A developer is assigned to the ticket as it moves from "ToDo" to "In Progress".
+1. During development, commits are checked for code style and security using `githooks`.
+1. After development and local testing is performed, the developer will initiate a "Merge Request" (MR).
+1. The MR is reviewed by someone other than the committer. Pairing via screen-sharing is encouraged and qualifies as a review. Review should include assessment of architectural design, DRY principles, security and code quality.
+1. The reviewer merges the MR.
+1. A continuous integration (CI) server handles automated tests and continuous deployment (CD) of the merged changes.
+
+* All changes are deployed to a freshly created testing environment.
+* Any and all automated tests are run.
+* If all tests pass, changes can be promoted for deployment to production in the pipeline.
+
+1. The CI/CD tool uses Gitlab repositories and as the canonical source of truth for what the platform should look like. If there are manual changes, it will reset the state of all systems to match.
+
+## What if a configuration is changed and it is not in Configuration Management
+
+If possible, Configuration Management tools need to be set up to always roll back to a known state. Other than that, these tools need to be able to "recreate" all settings from the known configurations.
+
+## Drupal Specific Configuration
+
+Configuration management in Drupal is handled through the use of Features and hook_update_N to make the necessary changes to site configuration. Each site has its own site_deploy module that orchestrates deployments.  If a feature needs to be reverted, it is reverted through a hook_update_N placed either in its own .install file or in site_deploy's .install file.  When code is deployed to sandbox, development  or production environments, `drush updb` is run, which runs any hook_update_Ns that have not been run.
+
+For many of the common configuration tasks, the module hook_update_deploy_tools is used to make sure that any hook_update_N's that run follow a solid model of: make the change, verify it was made, then report that it was made.  Records of these events are output to the terminal of the engineer deploying the code, and to Drupal Watchdog.
+
+## Gitlab contribution guidelines
+
+Because {{ project.name_short }} is built and maintained by {{ contractor.name_short }}, we follow our standard code development guidelines. These are our team practices within those requirements.
+
+## Forking
+
+Each engineer works from their own fork of the repository and only push code to their own fork.  When they are ready to have their work reviewed, they create a merge request from a branch in their fork, to the upstream master branch.  All contributions come through merge requests.
+
+### Branching
+
+Each upstream code repository has at least two branches.  The development environment tracks the master branch and engineers will rebase upon and create merge requests against the master branch.  The production server tracks the production branch.  Code is moved from the master branch to the production branch via the actions of the release manager.
+
+Branching is encouraged in the upstream repository if multiple engineers need to collaborate on something that can not be continously merged into the master branch. The rationale for branching within a team is
+that paired collaboration on a single branch avoids certain types of friction:
+
+* Having to create multiple forked PRs in order to contribute to the branch
+* Having to add new users to forked repositories as collaborators in order to have people directly contribute on short-lived forked branches
+
+When contributing directly on a branch, we're able to modify work-in-progress (WIP) pull requests and encourage collaboration across the Cloud Operations team.
+
+### Squashing commits
+
+[Squashing commits](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History#Squashing-Commits) is allowed and encouraged within an engineer's branch, but discouraged, except in rare instances in master and production branches which are fast forward only and block force pushes.
+
+### Rebase or merge
+
+The team prefers [rebasing over merging](https://www.atlassian.com/git/tutorials/merging-vs-rebasing/). Ongoing work should always be rebased upon the master branch.
+
+### When should a Merge Request (MR) be created?
+
+Work-in-progress MRs are encouraged. If you create a work-in-progress MR, you might also make it plain in the MR name with a `[WIP]` prefix. When a MR is ready for review, remove the `[WIP]` label.  A MR with a WIP label is blocked from merging by Gitlab.
+
+Merge requests should be created whenever code is ready for review, prior to being merged into the master branch.
+
+### Should MRs be assigned?
+
+MRs are typically not assigned in Gitlab, unless someone specifically needs to sign off on the change.
+
+You can request a review using Gitlab's built-in tools, mention someone in the MR with the `@` notation, or contact them outside the Gitlab context to request a review.
+
+### When reviewing a MR, should the change be tested locally?
+
+Whenever possible, the proposed changes should be tested locally. Because of the nature of many of the {{ project.name_short }} repositories and deployment environments, local testing is not always possible or practical. Visual code review, however, is always required.  In the event that merged code breaks the dev environment, the decision will be made at the time to either revert the merge, or

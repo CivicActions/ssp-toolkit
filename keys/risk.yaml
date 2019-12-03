@@ -1,0 +1,48 @@
+---
+title: Risk Management Plan
+title_short: RM
+version: '3.4'
+project_information:
+  project_name: GlobalNET Platform
+  project_name_short: GlobalNET
+  client_name: The Defense Security Cooperation Agency
+  client_name_short: DSCA
+  slack_link: '[`#globalnet`](https://civicactions.slack.com/messages/globalnet/)'
+  slack_url: https://civicactions.slack.com/messages/globalnet/
+  contact_sheet: '[CivicActions/GlobalNET Incident Response Team contact sheet](https://docs.google.com/a/civicactions.net/spreadsheets/d/1wO2pEfifl7gsgupYftSvlcECQ5dEw6twzYOUhWvnpJQ/edit?usp=sharing)'
+  issue_system: JIRA Incident ticket
+  issue_incident: '[JIRA Incident ticket](https://globalnet.atlassian.net/issues/?jql=issuetype=Incident)'
+  escalation_mail: '[globalnet@civicactions.opsgenie.net](mailto:globalnet@civicactions.opsgenie.net)'
+  backup_snaps: '[CPM snapshots](https://gnet-cpm.civicactions.net/)'
+  contingency_plan: https://git.civicactions.net/dsca/documentation/blob/master/Security_Appendices/contingency-plan.md
+contractor_information:
+  name: CivicActions, Inc
+  name_short: CivicActions
+  address:
+    street:
+    city: Lafayette
+    state: CA
+    zip:
+    country:
+  phone:
+  website: www.civicactions.com
+sections:
+  risk: # Project Risks
+    description: >-
+      The following is a list of project risks that are known at the start of the project. As the project progresses, new risks will come to light and this list will be updated. The monthly status report “Areas of Concern” section will include the most up to date risks on a monthly basis, and those will be copied to this list and submitted annually.
+    risks:
+      -
+        name: CAC
+        description: Obtaining CAC can be challenging without sponsorship
+        mitigation: Tejas to follow up with respective members from DSCA on a periodic basis to get traction on this
+        owner: Tejas/Fen
+      -
+        name: Security Clearances
+        description: This step would be required to obtain CAC access. So this is a blocker for CAC access
+        mitigation: Tejas to follow up with respective members from DSCA on a periodic basis to get traction on this
+        owner: Tejas
+      -
+        name: GovCloud Migration
+        description: CivicActions provided information based on initial GovCloud related testing to DSCA. The risk is related to latency and also for port whitelisting for access as per GovCloud requirements
+        mitigation: DSCA members ( Brian as POC ) to help with bringing this information with appropriate department / groups and help with strategy to get around this
+        owner: Fen/Brian

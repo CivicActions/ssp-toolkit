@@ -1,0 +1,164 @@
+{% set project_info = project_information -%}
+{% set contractor = contractor_information -%}
+{% set system = system_information -%}
+{% set sections = sections -%}
+# {{ project_info.project_name_short }} {{ title }}
+
+## {{ project_info.client_name_short }} {{ project_info.project_name }}
+
+{{ current_date.strftime('%B %Y') }}
+Version {{ version }}
+
+{{ contractor.name }}
+{{ contractor.address.city }}, {{ contractor.address.state }}
+{{ contractor.website }}
+
+{{ current_date.strftime('%Y') }} {{ contractor.name }}
+All rights reserved.
+
+Information contained in this document is proprietary,
+confidential, and intended for the use of {{ contractor.name_short }}
+and the indicated client organization only.
+
+## 1 Overview
+
+{{ sections.overview }}
+
+### 1.1 Introduction
+
+The purpose of the {{ title }} ({{ title_short }}) is to prepare for and address the elements necessary to sustain {{ project_info.project_name_short }} mission essential functions (MEF) at an alternate site and performing those functions for up to 30 days before returning to normal operations. Once a particular emergency is resolved, a synopsis of the problem and the resolution process in the form of a “lessons learned” document is generated and disseminated to all concerned. The {{ title_short }} is intended to serve as the centralized repository for the information, tasks, and procedures that would be necessary to facilitate the {{ project_info.project_name_short }} management’s decision-making process and its timely response to any disruptive or extended interruption of normal business operations and services. This is especially important if the cause of the interruption is such that a prompt resumption of operations cannot be accomplished by employing only normal daily operating procedures. In terms of personnel and financial resources, the information tasks and procedures detailed in this plan represent {{ project_info.project_name_short }}  management’s demonstrated commitment to response, resumption, recovery, and restoration planning.
+
+### 1.2 Plan Information
+
+The {{ title_short }} is comprised of dynamic action plans to manage information system operational continuity objectives, and generally static policy that is managed by organizational processes. For {{ project_info.project_name_short }}, the majority of the {{ title_short }} is contained in the action plan, which is captured in the [{{ project_info.project_name_short }} Contingency Plan]({{ project_info.contingency_plan }}) documentation.
+
+## 2 Continuity of Operations Plan Overview
+
+### 2.1 Applicable Provisions and Directives
+
+The development of the {{ project_info.project_name_short }} {{ title_short }} is required by both executive decision and regulatory mandates. The {{ project_info.project_name_short }} management must maintain an information assurance (IA) infrastructure that will ensure that its information resources maintain confidentiality, integrity and availability of its data and resources. Furthermore, {{ project_info.project_name_short }} management must ensure their strategic information resources management capabilities. Therefore, the {{ project_info.project_name_short }} {{ title_short }} is developed in accordance with the following executive decisions, regulatory mandates, provisions, and directives as required by:
+
+{% for item in sections.continuity_of_ops.provisions_directives -%}
+* {{item}}
+{% endfor %}
+### 2.2 Objectives
+
+{{ sections.continuity_of_ops.objectives }}
+
+### 2.3 Organization
+
+{{ sections.continuity_of_ops.organization.description }}
+
+{% for item in sections.continuity_of_ops.organization.duties -%}
+* {{ item }}
+{% endfor %}
+### 2.4 Assumptions
+
+System recovery time of 24 hours has been determined to provide a cost of recovery consummate with the value of the functionality provided by {{ project_info.project_name_short }}. In light of this schedule, full system recovery can occur within the time frame, sparing the cost of a “hot” or “warm” site.
+
+### 2.5 Critical Success Factors and Issues
+
+{{ sections.continuity_of_ops.success_factors }}
+### 2.6 Mission-Critical Systems/Applications/Services
+
+The following mission-critical systems/applications/services must be recovered at the time of disaster in the following order, due to interdependencies.
+
+{% if sections.continuity_of_ops.mission_critical_services is defined -%}
+| System Identifier | System Description | Priority | Rationale |
+| ---- | ---- | ---- | ---- |
+{% for item in sections.continuity_of_ops.mission_critical_services -%}
+| {{ item.system_id }} | {{ item.description }} | {{ item.priority }} | {{ item.rationale }} |
+{% endfor %}
+{% endif -%}
+
+## 3 Continuity of Operations Plan
+
+### 3.1 Plan Management
+
+#### 3.1.1 Continuity of Operations Planning and Updates
+
+{{ sections.coop.plan_mgmt.planning_and_updates }}
+
+#### 3.1.2 Continuity of Operations and System Contingency Team Members
+
+{{ sections.coop.plan_mgmt.team_members }}
+
+### 3.2 Vital Records/Documentation
+
+Vital records and important documentation are backed up and stored offsite and include any documents or documentation that is essential to the operations of an organization, such as personnel records, software documentation, legal documentation, legislative documentation, benefits documentation, etc. The following documentation will be available:
+
+* Security related Information Technology (IT) policy & procedure memoranda, circulars, publications
+* Complete hardware and software listings
+* System testing plans/procedures
+* System configuration
+* Data backup/restoration procedures
+
+## 4 Testing Procedures
+
+{{ sections.testing }}
+
+## 5 Recommended Strategies
+
+The following information represents potential strategies for execution and is considered as solutions that potentially may assist in the continued development of recovery capabilities in a post-disaster situation.
+
+### 5.1 Basic Emergency Response Procedures
+
+The actions set forth as responses to disasters are basic procedures that will be followed immediately prior to or during an actual contingency event. These procedures are designed to protect life; minimize damage, injury or disruption; and contribute to timely restart and recovery of the GlobalNET System.
+
+#### 5.1.1 {{ sections.recommended_strategies.emergency_response.inherited_procedures.title }}
+
+{% for item in sections.recommended_strategies.emergency_response.inherited_procedures.procedures -%}
+* {{ item }}
+{% endfor %}
+### 5.2 Diversification of Connectivity
+
+{{ sections.recommended_strategies.diversification_of_connectivity.description }}
+![{{ sections.recommended_strategies.diversification_of_connectivity.image.alt }}]({{ sections.recommended_strategies.diversification_of_connectivity.image.path }})
+
+## 6 Backup, Restore, and Recovery Procedures
+
+### 6.1 Backup Capabilities
+
+{{ sections.backups.backup_capabilities }}
+
+#### 6.1.1 Hardware
+
+GlobalNET inherits its hardware from the infrastructure {{ title_short }}.
+
+### 6.2 Backup Procedures
+
+Backup procedures are vital to ensure that any interruption of service is minimized as far as is possible. Backup Log.
+
+The backup schedule is as follows:
+
+{% for item in sections.backups.backup_schedule.steps -%}
+* {{ item }}
+{% endfor -%}
+
+{% if sections.backups.backup_schedule.additional.text is defined %}
+{{ sections.backups.backup_schedule.additional.text }}
+{% endif -%}
+
+### 6.3 Offsite Backup Procedures
+
+See section 6.1.
+
+### 6.4 Restore Procedures
+
+{{ sections.backups.restore }}
+
+### 6.5 Contingency Log
+
+{{ sections.backups.contingency_log }}
+
+## 7 Continuity of Operations Plan Contact Information
+
+{{ sections.contact_info.description }}
+
+### Contact List
+
+{{ sections.contact_info.list.description }}
+
+{% if sections.contact_info.list.image.path is sameas true -%}
+![{{ sections.contact_info.list.image.alt }}]({{ sections.contact_info.list.image.path }})
+{% endif -%}
