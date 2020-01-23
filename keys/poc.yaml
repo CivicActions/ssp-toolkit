@@ -1,0 +1,49 @@
+main:
+  name:
+  title:
+  comp_org:
+  address:
+  phone:
+  email:
+system_owner: # Appendix_b Table 3‑1
+  name:
+  title:
+  comp_org:
+  address:
+  phone:
+  email:
+assessor: # Appendix_b Table 4‑1
+  name:
+  title:
+  comp_org:
+  address:
+  phone:
+  email:
+ao_management_poc: # Appendix_b Table 6‑1
+  name:
+  title:
+  comp_org:
+  address:
+  phone:
+  email:
+tech_management_poc: # Appendix_b Table 6‑2
+  name:
+  title:
+  comp_org:
+  address:
+  phone:
+  email:
+int_isso_poc: # Appendix_b Table 7‑1
+  name:
+  title:
+  comp_org:
+  address:
+  phone:
+  email:
+ao_isso_poc: # Appendix_b Table 7‑2
+  name:
+  title:
+  comp_org:
+  address:
+  phone:
+  email:

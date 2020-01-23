@@ -1,0 +1,17 @@
+omb_ctr_nums: #OMB Control Numbers
+what_is_collected: # What information is being collected?
+why_is_collected: #  Why is the information being collected?
+intended_use: # What is the intended use of the information?
+whom_shared: # With whom will the information be shared?
+opt_out: # What opportunities do individuals or businesses have to decline to provide information
+how_secured: # How will the information be secured?
+
+log_and_verify: # How will the data extract log and verify requirement be met?
+privacy_act: # Is a system of records being created under the Privacy Act (5 U.S.C. 552a)?
+records_control: # Are these records covered by an approved records control schedule?
+systems:
+  -
+    name: # System name
+    ssns: # Social Security Numbers? Yes/No
+    other_pii: # Other Personally Identifiable Information (PII)?
+    bii: # Business Identifiable Information?

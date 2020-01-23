@@ -1,27 +1,26 @@
-# {{ project.system_abbr }} Security Incident Response Procedures
+# {{ project.name_short }} Security Incident Response Procedures
 
-Table of Contents
-=================
+## Table of Contents
 
 * [Overview](#overview)
 * [Response process](#response-process)
-   * [Initiate](#initiate)
-      * [Comms at the Initiate phase](#comms-at-the-initiate-phase)
-   * [Assess](#assess)
-      * [Comms at the Assess phase](#comms-at-the-assess-phase)
-   * [Remediate](#remediate)
-      * [Comms at the Remediate phase](#comms-at-the-remediate-phase)
-   * [Retrospective](#retrospective)
+  * [Initiate](#initiate)
+    * [Comms at the Initiate phase](#comms-at-the-initiate-phase)
+  * [Assess](#assess)
+    * [Comms at the Assess phase](#comms-at-the-assess-phase)
+  * [Remediate](#remediate)
+    * [Comms at the Remediate phase](#comms-at-the-remediate-phase)
+  * [Retrospective](#retrospective)
 * [Incident Severities](#incident-severities)
-   * [1 - High Severity](#1---high-severity)
-   * [2 - Medium Severity](#2---medium-severity)
-   * [3 - Low Severity](#3---low-severity)
+  * [1 - High Severity](#1---high-severity)
+  * [2 - Medium Severity](#2---medium-severity)
+  * [3 - Low Severity](#3---low-severity)
 
 ----
 
 ## Overview
 
-This document outlines the {{ contractor.name_short }} Incident Response Team's process for responding to {{ project.system_abbr }} security incidents and other system disruptions. It outlines roles and responsibilities during and after incidents, and it lays out the steps we'll take to resolve them.
+This document outlines the {{ contractor.name_short }} Incident Response Team's process for responding to {{ project.name_short }} security incidents and other system disruptions. It outlines roles and responsibilities during and after incidents, and it lays out the steps we'll take to resolve them.
 
 ***If you're responding to an incident, [here's an IRP checklist](security-irp-checklist.md) as a short, actionable companion to this guide.***
 
@@ -29,16 +28,16 @@ At a high level, incident response follows this process:
 
 [Initiate](#initiate):
 
-* A {{ project.system_abbr }} or {{ contractor.name_short }} team member (the *reporter*) notices and reports a {{ project.system_abbr }} related incident, notifying the {{ contractor.name_short }} Incident Response Team:
-  1. Slack: {{ project.slack_link }} using `@channel`
-  2. Email: {{ project.escalation_mail }}
-  3. {{ project.contact_sheet }}
+* A {{ project.name_short }} or {{ contractor.name_short }} team member (the *reporter*) notices and reports a {{ project.name_short }} related incident, notifying the {{ contractor.name_short }} Incident Response Team:
+  1. Slack: [#{{ project.slack_channel }}]({{ project.slack_url }}) using `@channel`
+  1. Email: {{ project.escalation_mail }}
+  1. [{{ contractor.name_short }}/{{ project.name_short }}]({{ project.contact_sheet_url }})
 * The first responder on the Incident Response Team (which could be the reporter if the reporter is on the team) becomes the initial **Incident Commander (IC)**.
 
 [Assess](#assess):
 
 * The IC forms a team (*responders*) to determine if the event is actually a confirmed incident, and if so [assesses the severity](#incident-severities).
-   * Note that some apparent outages can be triggered by [external dependencies as listed in the contingency plan](contingency-plan.md#external-dependencies).
+  * Note that some apparent outages can be triggered by [external dependencies as listed in the contingency plan](contingency-plan.md#external-dependencies).
 * The IC creates an initial situation report ("sitrep") in a {{ project.issue_incident }}, or acknowledges false-alarm notification.
 * The IC assesses whether to also activate the [contingency plan](contingency-plan.md) (for disaster recovery).
 
@@ -56,7 +55,7 @@ At a high level, incident response follows this process:
 During this process, the team communicates in the following places:
 
 * Situation updates, investigation notes, and other relevant information gets captured in the {{ project.issue_system }} created to track this event.
-* Real-time communication happens in Slack, in the {{ project.slack_link }} channel.
+* Real-time communication happens in Slack, in the [#{{ project.slack_channel }}]({{ project.slack_url }}) channel.
 * If needed, the team can use a Zoom room, Google Hangout and/or Google Docs to share information that's not appropriate for Slack (PII, etc.).
 
 For full details, read on.
@@ -65,9 +64,9 @@ For full details, read on.
 
 ### Initiate
 
-An incident begins when someone becomes aware of a potential incident. We define "incident" broadly, following [NIST SP 800-61](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf), as "a violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices". This is a deliberately broad definition, designed to encompass any scenario that might threaten the security of {{ project.system_abbr }}. (For more, see: [What is an incident?](http://civicactions-handbook.readthedocs.io/en/latest/09-security/incidents/#what-is-an-incident))
+An incident begins when someone becomes aware of a potential incident. We define "incident" broadly, following [NIST SP 800-61](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf), as "a violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices". This is a deliberately broad definition, designed to encompass any scenario that might threaten the security of {{ project.name_short }}. (For more, see: [What is an incident?](http://civicactions-handbook.readthedocs.io/en/latest/09-security/incidents/#what-is-an-incident))
 
-When a person (the *reporter*) notices what appears to be a {{ project.system_abbr }}-related incident, they should check {{ project.slack_link }} slack to see if this may be expected behavior (e.g., expected system downtime during a maintenance window) and if necessary alert the on-call system administrators by emailing {{ project.escalation_mail }}. If they don't get acknowledgment from the Incident Response team within 10 minutes, they should escalate by contacting the {{ project.contact_sheet }} directly until they receive acknowledgment of their report.
+When a person (the *reporter*) notices what appears to be a {{ project.name_short }}-related incident, they should check [#{{ project.slack_channel }}]({{ project.slack_url }}) slack to see if this may be expected behavior (e.g., expected system downtime during a maintenance window) and if necessary alert the on-call system administrators by emailing {{ project.escalation_mail }}. If they don't get acknowledgment from the Incident Response team within 10 minutes, they should escalate by contacting the {{ project.contact_sheet }} directly until they receive acknowledgment of their report.
 
 The first participant on the {{ contractor.name_short }} Incident Response Team becomes the initial **Incident Commander** (IC) and carries out the next steps in the response. The IC's responsibility is coordination, not necessarily investigation. The IC's primary role is to guide the process. The first responder may remain IC throughout the process, or they may hand off IC duties later in the process.
 
@@ -79,7 +78,7 @@ Note that at this point the event's status is "investigating" — we haven't con
 
 To help with reporting, you may copy the following template into Slack or an email to create the issue:
 
-```
+``` markdown
 Short description of what's going on
 
 * **Status**: investigating
@@ -121,7 +120,7 @@ The IC should assess whether to also activate the [contingency plan](contingency
 
 At this point, the IC should write an initial situation report in a {{ project.issue_system }}, summarizing what's going on, identifying the IC, and linking to the issue. Here's an example sitrep:
 
-```
+``` markdown
 Subject: [sitrep] The chickens are escaping
 
 Severity: low
@@ -133,8 +132,8 @@ We've confirmed reports of escaped chickens. Looks like a fox may have tunneled 
 
 This sitrep should be:
 
-* Posted in the {{ project.issue_system }}
-* Posted in {{ project.slack_link }} slack (include link to {{ project.issue_system }})
+* Posted in the {{ project.issue_url }}
+* Posted in [#{{ project.slack_channel }}]({{ project.slack_url }}) Slack (include link to {{ project.issue_system }})
 
 #### Comms at the Assess phase
 
@@ -159,7 +158,7 @@ At this point, we're trying to fix the issue! Remediation will be very situation
 
    * For High-severity incidents, the team should take action immediately, even if this causes disruption. A notification about the disruption should be sent out as soon as possible, but the team needs no permission to take action at this level.
 
-   * For Medium-severity incidents, the team should notify the {{ project.system_abbr }} leads of the planned action, and help them assess the relative risk of disruption vs. security. If the leads are unavailable via Slack, they should be contacted using the phone numbers in their Slack profiles. The team should reach a collaborative decision on action, with a bias towards disruption. If they can't be reached within 1 hour, the team may take action without them.
+   * For Medium-severity incidents, the team should notify the {{ project.name_short }} leads of the planned action, and help them assess the relative risk of disruption vs. security. If the leads are unavailable via Slack, they should be contacted using the phone numbers in their Slack profiles. The team should reach a collaborative decision on action, with a bias towards disruption. If they can't be reached within 1 hour, the team may take action without them.
 
    * For Low-severity issues, the team should notify as above, and not take action until a mutually-agreed-on course of action has been determined.
 
@@ -205,7 +204,7 @@ This report should be posted as a final comment on the {{ project.issue_system }
 
 ## Incident Severities
 
-*Note that {{ project.system_abbr }} has no High Value Assets (HVAs) or Sensitive Personally Identifiable Information (SPII). As such, {{ project.system_abbr }} incidents are generally expected to fall into the* **Low Severity** *bucket.*
+*Note that {{ project.name_short }} has no High Value Assets (HVAs) or Sensitive Personally Identifiable Information (SPII). As such, {{ project.name_short }} incidents are generally expected to fall into the* **Low Severity** *bucket.*
 
 Severity ratings drive the actions of the response team. Below are the severities ratings we use, some examples of incidents that might fall into that bucket, and some guidelines for ICs and response teams about how to treat each class of incident.
 
@@ -231,7 +230,7 @@ Medium-severity incidents represent attempts (possibly un- or not-yet-successful
 
 * Suspected SPII breach
 * Targeted (but as-of-yet unsuccessful) attempts to compromise production systems
-* Spam/phishing attacks targeting {{ contractor.name_short }} or {{ project.system_abbr }} staff
+* Spam/phishing attacks targeting {{ contractor.name_short }} or {{ project.name_short }} staff
 * DoS attacks resulting in limited service degradation
 
 Guidelines for addressing Medium-sev issues:

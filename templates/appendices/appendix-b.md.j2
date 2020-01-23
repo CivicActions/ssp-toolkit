@@ -1,0 +1,574 @@
+{% set is = information_system -%}
+# FedRAMP {{ is.fedramp_type|title }} LI-SaaS
+
+## Table of Contents
+
+* [1. Information System Name](#1-information-system-name)
+* [2. Information System Categorization](#2-information-system-categorization)
+  * [2.1. Information Types](#21-information-types)
+  * [2.2. Security Objectives Categorization (FIPS 199)](#22-security-objectives-categorization-fips-199)
+* [3. Information System Owner](#3-information-system-owner)
+* [4. Independent Assessor](#4-independent-assessor)
+* [5. Authorizing Official](#5-authorizing-official)
+* [6. Other Designated Contacts](#6-other-designated-contacts)
+* [7. Assignment of Security Responsibility](#7-assignment-of-security-responsibility)
+* [8. Information System Operational Status](#8-information-system-operational-status)
+* [9. Information System Type](#9-information-system-type)
+  * [9.1. Cloud Service Models](#91-cloud-service-models)
+  * [9.2. Cloud Deployment Models](#92-cloud-deployment-models)
+  * [9.3. Leveraged Authorizations](#93-leveraged-authorizations)
+* [10. General System Description](#10-general-system-description)
+  * [10.1. System Function or Purpose](#101-system-function-or-purpose)
+  * [10.2. Information System Components and Boundaries](#102-information-system-components-and-boundaries)
+  * [10.3. Types of Users](#103-types-of-users)
+  * [10.4. Network Architecture](#104-network-architecture)
+* [11. System Environment](#11-system-environment)
+  * [11.1. Hardware Inventory](#111-hardware-inventory)
+  * [11.2. Software Inventory](#112-software-inventory)
+  * [11.3. Network Inventory](#113-network-inventory)
+  * [11.4. Data Flow](#114-data-flow)
+  * [11.5. Ports, Protocols, and Services](#115-ports-protocols-and-services)
+* [12. System Interconnections](#12-system-interconnections)
+* [13. FedRAMP Applicable Laws and Regulations](#13-fedramp-applicable-laws-and-regulations)
+  * [13.1. FedRAMP Tailored LI-SaaS Guidance](#131-fedramp-tailored-li-saas-guidance)
+  * [13.2 GLOBALNET PLATFORM APPLICABLE STANDARDS AND GUIDANCE](#132-globalnet-platform-applicable-standards-and-guidance)
+
+## 1. Information System Name
+
+This FedRAMP _{{ is.fedramp_type|title }}_ {{ is.security_categorization|title }} Impact Software
+as a Service (LI-SaaS) Framework provides an overview of the security
+requirements for the _{{ project.name }}_ (_{{ project.name_short }}_) and
+describes the controls in place or planned for implementation to provide a
+level of security appropriate for the information to be transmitted, processed,
+or stored by the system. Information security is vital to our critical
+infrastructure and its effective performance and protection is a key component
+of our national security program. Proper management of information technology
+(IT) systems is essential to ensure the required risk impact level of
+confidentiality, integrity, and availability of the data transmitted,
+processed, or stored by the _{{ project.name_short }}_ system is in place and
+operating as intended.
+
+The security safeguards implemented for the _{{ project.name_short }}_ system
+meet the policy and control requirements set forth in this FedRAMP _{{ is.fedramp_type|title }}_
+LI-SaaS Framework. All systems are subject to monitoring, consistent with
+applicable laws, regulations, agency policies, procedures, and practices.
+
+Table 1‑1. **Information System Identifier, Name, and Abbreviation**
+
+| **Unique Identifier** | **Information System Name** | **Information System Abbreviation** |
+| --- | ---| --- |
+| {{ is.application_number }} | {{ project.name }} | {{ project.name_short }} |
+
+## 2. Information System Categorization
+
+The overall _{{ project.name_short }}_ sensitivity categorization is recorded
+in Table 2.1, Security Categorization, which follows. The completed FedRAMP
+FIPS 199 document is included in this document as Attachment 3 – FedRAMP FIPS
+Security Categorization.
+
+Table 2‑1. **System Security Categorization**
+
+|     |     |
+| --- | --- |
+| **System Sensitivity Level:** | {{ is.sensitivity|title }} |
+
+### 2.1. Information Types
+
+This section describes how the information types used by
+_{{ project.name_short }}_ are categorized for confidentiality, integrity, and
+availability of sensitivity levels.
+
+The following tables identify the information types that are input, stored,
+processed, and/or output from _{{ project.name_short }}_. The selection of the
+information types is based on guidance provided by the Office of Management and
+Budget (OMB) Federal Enterprise Architecture (EA) Program Management Office
+(PMO) Business Reference Model 2.0, National Institute of Standards and
+Technology (NIST) Federal Information Processing Standard (FIPS) Publication 199,
+*Standards for Security Categorization of Federal Information and Information Systems*,
+and NIST Special Publication 800-60 (NIST SP 800-60),
+*Guide for Mapping Types of Information and Information Systems to Security Categories*.
+
+FIPS 199[1] allows for a full range of information types. In order to meet
+specific, niche needs of systems, Agencies can specify the types of information
+being placed in the cloud environment. For FedRAMP _{{ is.fedramp_type|title }}_ LI-SaaS, Agencies
+can specify the type(s) of information that will reside in FedRAMP _{{ is.fedramp_type|title }}_
+LI-SaaS applications/systems.
+
+To be considered a FedRAMP _{{ is.fedramp_type|title }}_ LI-SaaS cloud application/service, the
+answer to all of the following questions must be “yes:”
+
+1. Does the service operate in a cloud environment?
+1. Is the cloud service fully operational?
+1. Is the cloud service a Software as a Service (SaaS), as defined by
+   NIST SP 800-145, The NIST Definition of Cloud Computing?
+1. Does the cloud service contain no personally identifiable
+   information (PII), except as needed to provide a login capability
+   (username, password and email address)?
+1. Is the cloud service low-security-impact, as defined by FIPS PUB
+   199, Standards for Security Categorization of Federal Information
+   and Information Systems?
+1. Is the cloud service hosted within a FedRAMP-authorized Platform as
+   a Service (PaaS) or Infrastructure as a Service (IaaS), or is the
+   CSP providing the underlying cloud infrastructure?
+
+Table 2‑2. **Sensitivity Categorization of Information Types for the
+_{{ project.name_short }}_ System**
+
+| **Information Type** | **NIST SP 800-60 V2 R1 Recommended Confidentiality Impact Level** | **NIST SP 800-60 V2 R1 Recommended Integrity Impact Level** | **NIST SP 800-60 V2 R1 Recommended Availability Impact Level** | **CSP Selected Confidentiality Impact Level** | **CSP Selected Integrity Impact Level** | **CSP Selected Availability Impact Level** | **Statement for Impact Adjustment Justification**
+| --- | --- | --- | --- | --- |
+{% for item in is.info_types -%}
+{% if item.type is not none -%}
+| {{ item.type }} | {{ item.reco_confidentiality }} | {{ item.reco_integrity }} | {{ item.reco_availability }} | {{ item.sel_confidentiality }} | {{ item.sel_integrity }} | {{ item.sel_availability }} | {{ item.impact }} |
+{% else -%}
+| | | | |
+{%- endif %}
+{%- endfor %}
+### 2.2. Security Objectives Categorization (FIPS 199)
+
+Based on the information provided in Table 2.2, Sensitivity Categorization of
+Information Types for the _{{ project.name_short }}_ default to the high-water
+mark for the Information Types as identified in Table 2.3, Security Impact
+Level, below.
+
+If the security impact level for confidentiality, integrity, and availability
+for any of the identified data types is moderate or high, the information
+system is not a FedRAMP _{{ is.fedramp_type|title }}_ LI-SaaS system. The Cloud
+Service Provider (CSP) must meet the standard FedRAMP Low, Moderate, or High
+impact baseline security requirements, as applicable, and complete the
+requirement documentation.
+
+Table 2‑4. **Security Impact Level**
+
+| **Security Objective**  | **Low, Moderate or High** |
+| ----------------------- | ------------------------- |
+| **Confidentiality**     | {{ is.security_categorization|title }} |
+| **Integrity**           | {{ is.security_categorization|title }} |
+| **Availability**        | {{ is.security_categorization|title }} |
+
+Through careful review and analysis, the baseline security categorization for
+the _{{ project.name_short }}_ system has been determined and is listed in
+Table 2.5, Baseline Security Configuration, which follows.
+
+Table 2‑5. **Baseline Security Configuration**
+
+|     |     |
+| --- | --- |
+| _{{ project.name_short }}_ Security Categorization | {{ is.security_categorization|title }} |
+
+Using this categorization, in conjunction with the risk assessment and any
+unique security requirements, the security controls for this system have been
+established as detailed in this FedRAMP _{{ is.fedramp_type|title }}_ LI-SaaS
+Framework.
+
+## 3. Information System Owner
+
+The following individual is identified as the system owner or functional
+proponent/advocate for this system.
+
+Table 3‑1. **Information System Owner**
+
+| **Information System Owner Information** |                                |
+| ---------------------------------------- | ------------------------------ |
+| **Title**                                | {{ poc.system_owner.title }}    |
+| **Company / Organization**               | {{ poc.system_owner.comp_org }} |
+| **Address**                              | {{ poc.system_owner.address }}  |
+| **Phone Number**                         | {{ poc.system_owner.phone }}    |
+| **Email Address**                        | {{ poc.system_owner.email }}    |
+
+## 4. Independent Assessor
+
+The following individual is identified as the Independent Assessor for
+this system.
+
+Table 4‑1. **Independent Assessor**
+
+| **Independent Assessor Information** |                            |
+| ------------------------------------ | -------------------------- |
+| **Name**                             | {{ poc.assessor.name }}     |
+| **Title**                            | {{ poc.assessor.title }}    |
+| **Company / Organization**           | {{ poc.assessor.comp_org }} |
+| **Address**                          | {{ poc.assessor.address }}  |
+| **Phone Number**                     | {{ poc.assessor.phone }}    |
+| **Email Address**                    | {{ poc.assessor.email }}    |
+
+## 5. Authorizing Official
+
+The Authorizing Official (AO) or Designated Approving Authority (DAA)
+for the {{ project.name }} is the {{ is.authorizing_official }}.*
+
+## 6. Other Designated Contacts
+
+*Instruction: AOs should use the following section to identify points of
+contact that understand the technical implementations of the identified
+cloud system. AOs should edit, add, or modify the contacts in this
+section as they see fit.*
+
+*Delete this and all other instructions from your final version of this
+document.*
+
+The individual(s) identified below possess an in-depth knowledge of this
+system and/or its functions and operation.
+
+Table 6‑1. **Information System AO Management Point of Contact**
+
+| **Information System AO Management Point of Contact** | |
+| -------------------------- | ----------------------------------- |
+| **Name**                   | {{ poc.ao_management_poc.name }}     |
+| **Title**                  | {{ poc.ao_management_poc.title }}    |
+| **Company / Organization** | {{ poc.ao_management_poc.comp_org }} |
+| **Address**                | {{ poc.ao_management_poc.address }}  |
+| **Phone Number**           | {{ poc.ao_management_poc.phone }}    |
+| **Email Address**          | {{ poc.ao_management_poc.email }}    |
+
+Table 6‑2. **Information System AO Technical Point of Contact**
+
+| **Information System AO Technical Point of Contact** |  |
+| -------------------------- | ------------------------------------- |
+| **Name**                   | {{ poc.tech_management_poc.name }}     |
+| **Title**                  | {{ poc.tech_management_poc.title }}    |
+| **Company / Organization** | {{ poc.tech_management_poc.comp_org }} |
+| **Address**                | {{ poc.tech_management_poc.address }}  |
+| **Phone Number**           | {{ poc.tech_management_poc.phone }}    |
+| **Email Address**          | {{ poc.tech_management_poc.email }}    |
+
+## 7. Assignment of Security Responsibility
+
+The {{ project.name }} Information System Security Officer
+(ISSO), or their equivalent, identified below, have been appointed in
+writing and are deemed to have significant cyber and operational role
+responsibilities.
+
+Table 7‑1. **Internal ISSO (or Equivalent) Point of Contact**
+
+| **Internal ISSO (or Equivalent) Point of Contact** |  |
+| -------------------------- | ------------------------------ |
+| **Name**                   | {{ poc.int_isso_poc.name }}     |
+| **Title**                  | {{ poc.int_isso_poc.title }}    |
+| **Company / Organization** | {{ poc.int_isso_poc.comp_org }} |
+| **Address**                | {{ poc.int_isso_poc.address }}  |
+| **Phone Number**           | {{ poc.int_isso_poc.phone }}    |
+| **Email Address**          | {{ poc.int_isso_poc.email }}    |
+
+Table 7‑2. **AO ISSO Point of Contact**
+
+| **AO ISSO Point of Contact** |  |
+| ---------------------------- | ----------------------------- |
+| **Name**                     | {{ poc.ao_isso_poc.name }}     |
+| **Title**                    | {{ poc.ao_isso_poc.title }}    |
+| **Company / Organization**   | {{ poc.ao_isso_poc.comp_org }} |
+| **Address**                  | {{ poc.ao_isso_poc.address }}  |
+| **Phone Number**             | {{ poc.ao_isso_poc.phone }}    |
+| **Email Address**            | {{ poc.ao_isso_poc.email }}    |
+
+## 8. Information System Operational Status
+
+The system is currently in the life-cycle phase shown in Table 8.1,
+System Status, which follows. Only operational systems can be granted an
+Authority to Operate (ATO).
+
+Table 8‑1. **System Status**
+
+| **System Status** | |
+| ----------------- | ---  |
+{% if is.status|title == 'Operational' -%}
+| Operational | The system is operating and in production. |
+{% elif is.status|title == 'Private' -%}
+| Under Development | The system is being designed, developed, or implemented. |
+{% elif is.status|title == 'Major Modification' -%}
+| Major Modification | The system is undergoing a major change, development, or transition. |
+{% elif is.status|title == 'Other' -%}
+| Other | {{ si.other_description }} |
+{%- endif %}
+## 9. Information System Type
+
+The _{{ project.name_short }}_ makes use of unique managed service provider
+architecture layer(s).
+
+### 9.1. Cloud Service Models
+
+Information systems, particularly those based on cloud architecture models,
+are made up of different service layers. Below are some questions that can help
+system owners determine if their system is a cloud followed by specific
+questions to help system owners determine the type of cloud.
+
+Table 9‑1. **Determining a Cloud System**
+
+| **Question (Yes/No)** | **Conclusion** |
+| --------------------- | -------------- |
+| Does the system use virtual machines (VM)? | A no response means that system is most likely not a cloud. |
+| Does the system have the ability to expand its capacity to meet customer demand? | A no response means that the system is most likely not a cloud. |
+| Does the system allow the customer to build anything other than servers? | A no response means that the system is an Infrastructure as a Service (IaaS). A yes response means that the system is either a Platform as a Service (PaaS) or a SaaS. |
+| Does the system offer the ability to create databases? | A yes response means that the system is a PaaS. |
+| Does the system offer various developer toolkits and Application Programming Interfaces (APIs)? | A yes response means that the system is a PaaS. |
+| Does the system offer only applications that are available by obtaining a login? | A yes response means that system is a SaaS. A no response means that the system is either a PaaS or an IaaS. |
+
+The layers of the _{{ project.name_short }}_ defined in this
+FedRAMP _{{ is.fedramp_type|title }}_ LI-SaaS Framework are indicated in Table
+9.2, Service Layers Represented in this FedRAMP _{{ is.fedramp_type|title }}_
+LI-SaaS Framework, which follows.
+
+Table 9‑2. **Service Layers Represented in this FedRAMP {{ is.fedramp_type|title }} LI-SaaS Framework**
+
+| **Service Provider Architecture Layers** | |
+| --- | --- |
+| Software as a Service (SaaS) | Major Application |
+
+### 9.2. Cloud Deployment Models
+
+Information systems are made up of different deployment models. The deployment
+models of the _{{ project.name_short }}_ that are defined in this FedRAMP
+{{ is.fedramp_type|title }} LI-SaaS Framework, and that are not leveraged by
+any other FedRAMP Authorizations, are indicated in Table 9.3, Cloud Deployment
+Model Represented in this FedRAMP _{{ is.fedramp_type|title }}_ LI-SaaS
+Framework, which follows.
+
+Table 9‑3. **Cloud Deployment Model Represented in this FedRAMP {{ is.fedramp_type|title }} LI-SaaS Framework**
+
+| **Service Provider Cloud Deployment Model** | |
+| --- | --- |
+{% if is.cloud_deployment|title == 'Public' -%}
+| Public | Cloud services and infrastructure supporting multiple organizations and agency clients. |
+{% elif is.cloud_deployment|title == 'Private' -%}
+| Private | Cloud services and infrastructure dedicated to a specific organization/agency and no other clients. |
+{% elif is.cloud_deployment|title == 'Government Only Community' -%}
+| Government Only Community | Cloud services and infrastructure shared by several organizations/agencies with same policy and compliance considerations. |
+{% elif is.cloud_deployment|title == 'Other' -%}
+| Hybrid | {{ si.hybrid_description }} |
+{%- endif %}
+### 9.3. Leveraged Authorizations
+
+The _{{ project.name_short }}_ leverages a pre-existing FedRAMP Authorized
+IaaS and/or PaaS. FedRAMP Authorizations leveraged by this
+_{{ project.name_short }}_ are listed in Table 9.4, Leveraged Authorizations,
+which follows.
+
+Table 9‑4. **Leveraged Authorizations**
+
+| **Leveraged Information System Name** | **Leveraged Service Provider Owner** | **Date Granted** |
+| --- | --- | --- |
+{% for item in is.leveraged_systems -%}
+{% if item.name is not none -%}
+| {{ item.name }} | {{ item.provider_owner }} | {{ item.date }} |
+{% else -%}
+| | | |
+{%- endif %}
+{%- endfor %}
+
+## 10. General System Description
+
+This section includes a general description of the _{{ project.name_short }}_ system.
+
+### 10.1. System Function or Purpose
+
+{{ information_system.system_function }}
+### 10.2. Information System Components and Boundaries
+
+{{ information_system.components_boundaries }}
+A detailed and explicit definition of the system authorization boundary
+diagram is represented in Figure 10.1, Authorization Boundary Diagram,
+below.
+
+Figure 10‑1. **Authorization Boundary Diagram**
+
+### 10.3. Types of Users
+
+All personnel have their status categorized with a sensitivity level in
+accordance with PS-2. Personnel (employees or contractors) of service
+providers are considered Internal Users. All other users are considered
+External Users. User privileges (authorization permission after
+authentication takes place) are described in Table 10.1, Personnel Roles
+and Privileges, which follows.
+
+Table 10‑1. **Personnel Roles and Privileges**
+
+| **Role** | **Internal or External** | **Privileged (P), Non-Privileged (NP), or No Logical Access (NLA)** | **Sensitivity Level** | **Authorized Privileges**  | **Functions Performed** |
+| --- | --- | --- | --- | --- | --- |
+{% for item in is.roles_privileges -%}
+{% if item.role is not none -%}
+| {{ item.role }} | {{ item.int_ext }} | {{ item.privilege_level }} | {{ item.sensitivity }} | {{ item.authorized_privileges }} | {{ item.functions }} |
+{% else -%}
+| | | | | | |
+{% endif -%}
+{%- endfor %}
+{{ is.roles_perms_additional }}
+### 10.4. Network Architecture
+
+Assessors should be able to easily map hardware, software, and network
+inventories back to this diagram.
+
+The logical network topology is shown in Figure 10.2, Network Diagram,
+mapping the data flow between components.
+
+Figure 10.2, Network Diagram(s), provides a visual depiction of the
+system network components that constitute the _{{ project.name_short }}_ system.
+
+Figure 10‑2. **Network Diagram**
+![Network Diagram]({{ is.network_diagram }})
+
+## 11. System Environment
+
+```diff
+- *Instruction: In the space that follows, provide a general description
+- of the technical system environment. Include information about all
+- system environments that are used, e.g., production environment, test
+- environment, staging or QA environments. Include alternate, backup, and
+- operational facilities.*
+
+- *The FedRAMP Inventory Workbook Template can be found on the FedRAMP
+- website: <https://www.fedramp.gov/templates/>*
+
+- *Delete this and all other instructions from your final version of this
+- document.*
+```
+
+The FedRAMP Inventory Workbook is included in this document in
+ATTACHMENT 2 – FedRAMP Inventory Workbook.
+
+### 11.1. Hardware Inventory
+
+Use the FedRAMP Inventory Workbook to list the principal hardware
+components for _{{ project.name_short }}_.
+
+Note: A complete and detailed list of the system hardware and software
+inventory is required per NIST SP 800-53, Rev 4 CM-8.
+
+### 11.2. Software Inventory
+
+Use the FedRAMP Inventory Workbook to list the principal software
+components for _{{ project.name_short }}_.
+
+### 11.3. Network Inventory
+
+Use the FedRAMP Inventory Workbook to list the principal network devices
+and components for _{{ project.name_short }}_.
+
+### 11.4. Data Flow
+
+```diff
+- *Instruction: In the space that follows, describe the flow of data in
+- and out of system boundaries and insert a data flow diagram. Describe
+- protections implemented at all entry and exit points in the data flow as
+- well as internal controls between customer and project users. Include
+- data flows for privileged and non-privileged
+- authentication/authorization to the system for internal and external
+- users. If necessary, include multiple data flow diagrams.*
+
+- *Delete this and all other instructions from your final version of this
+- document.*
+```
+
+The data flow in and out of the system boundaries is represented in
+Figure 11.1, Data Flow Diagram, below.
+
+Figure 11‑1. **Data Flow Diagram**
+
+### 11.5. Ports, Protocols, and Services
+
+Table 11.1, Ports, Protocols, and Services, lists the ports, protocols, and services enabled for the _{{ project.name_short }}_.
+
+```diff
+- *Instruction: In the column labeled “Used By,” please indicate the
+- components of the information system that make use of the ports,
+- protocols, and services. In the column labeled “Purpose,” indicate the
+- purpose for the service (e.g., system logging, HTTP redirector, load
+- balancing). This table should be consistent with CM-6 and CM-7. You must
+- fill out this table as applicable for this application/service and as
+- applicable for the leveraged system. Add more rows as needed.*
+
+- *Delete this and all other instructions from your final version of this
+- document.*
+```
+
+Table 11‑1. **Ports, Protocols, and Services**
+
+| **Ports (TCP/UDP)** | **Protocols** | **Services**  | **Purpose** | **Used By**  |
+| --- | --- | --- | --- | --- |
+{% for item in is.ports_protocols -%}
+{% if item.port is not none -%}
+| {{ item.port }} | {{ item.protocols }} | {{ item.services }} | {{ item.purpose }} | {{ item.used_by }} |
+{% else -%}
+| | | | | |
+{%- endif %}
+{%- endfor %}
+
+## 12. System Interconnections
+
+```diff
+- *Instruction: List all interconnected systems. Provide the IP address
+- and interface identifier (eth0, eth1, eth2) for the CSP system that
+- provides the connection. Name the external organization and the IP
+- address of the external system. Provide a point of contact and phone
+- number for the external organization. For Connection Security, indicate
+- how the connection is being secured. For Data Direction, indicate which
+- direction the packets are flowing. For Information Being Transmitted,
+- describe what type of data is being transmitted. If a dedicated telecom
+- line is used, indicate the circuit number. Add additional rows as
+- needed.*
+
+- *Additional FedRAMP Requirements and Guidance:*
+
+- *Guidance: See the FedRAMP Documents page under Key Cloud Service
+- Provider (CSP) Documents FedRAMP Authorization Boundary Guidance*
+
+- <https://www.fedramp.gov/documents/>
+
+- *Delete this and all other instructions from your final version of this
+- document.*
+```
+
+Table 12.1, System Interconnections, is consistent with the CA-3
+Authorized Connections attestation information.
+
+Table 12‑1. **System Interconnections**
+
+| **SP IP Address and Interface** | **External Organization Name and IP Address of System** | **External Point of Contact and Phone Number** | **Connection Security (IPSec VPN, SSL, Certificates, Secure File Transfer etc.)** | **Data Direction</br>(incoming, outgoing, or both)** | **Information Being Transmitted** | **Port or Circuit Numbers** |
+| --- | --- | --- | --- | --- | --- | --- |
+{% for item in is.interconnections -%}
+{% if item.addr_interface is not none -%}
+| {{ item.addr_interface }} | {{ item.ext_org_ip }} | {{ item.ext_poc }} | {{ item.connection_sec }} | {{ item.data_direction }} | {{ item.info_transmitted }} | {{ item.port_or_circuit }} |
+{% else -%}
+| | | | | | | |
+{%- endif %}
+{%- endfor %}
+
+## 13. FedRAMP Applicable Laws and Regulations
+
+The FedRAMP Laws and Regulations Template can be found on this page:
+<https://www.fedramp.gov/templates/>.
+
+### 13.1. FedRAMP {{ is.fedramp_type|title }} LI-SaaS Guidance
+
+Table 13.1, FedRAMP _{{ is.fedramp_type|title }}_ LI-SaaS Applicable Guidance, includes
+additional documentation specific to FedRAMP _{{ is.fedramp_type|title }}_ LI-SaaS
+information systems.
+
+Table 13‑1. **FedRAMP {{ is.fedramp_type|title }} LI-SaaS Applicable Guidance**
+
+| **Title** | **Date**      |
+| --- | --- |
+| FedRAMP _{{ is.fedramp_type|title }}_ Security Requirements for {{ is.security_categorization|title }} Impact Software as a Service (LI-SaaS) Cloud Systems | 1/30/2017 |
+| NIST SP 800-171 rev 1, Protecting Controlled Unclassified Information in Nonfederal Information Systems and Organizations | 12/2016   |
+| NIST Framework for Improving Critical Infrastructure Cybersecurity, v1.0 | 2/12/2014 |
+
+### 13.2 {{ project.name|upper}} APPLICABLE STANDARDS AND GUIDANCE
+
+Table 13.2, _{{ project.name }}_ Standards and Guidance,
+includes any additional standards and guidance specific to
+_{{ project.name }}_.
+
+Table 13‑2. **_{{ project.name }}_ Standards and Guidance**
+
+| **Identification Number** | **Title** | **Date** | **Link** |
+| ------------------------- | --------- | -------- | -------- |
+{% for item in is.standards -%}
+{% if item.id is not none -%}
+| {{ item.id }} | {{ item.title }} | {{ item.date }} | <{{ item.link }}> |
+{% else -%}
+| | | | |
+{%- endif %}
+{%- endfor %}
+
+1. FIPS Pub 199: FEDERAL INFORMATION PROCESSING STANDARDS PUBLICATION:
+   Standards for Security Categorization of Federal Information and
+   Information Systems, February 2004;
+   <http://csrc.nist.gov/publications/fips/fips199/FIPS-PUB-199-final.pdf>

@@ -1,0 +1,70 @@
+# PRIVACY IMPACT ASSESSMENT (PIA)
+
+**Unique Project Identifier (UPI):** {{ system_security_plan.upi }}
+
+## Project Description
+
+{{ project.description }}
+
+_This PIA is for the IT {{ 'systems' if pia.system|length > 1 else 'system' }} listed in the table below._
+
+| Name of System | Social Security Numbers? | Other Personally Identifiable Information (PII)? | Business Identifiable Information? |
+| --- | --- | --- | --- |
+{% for item in pia.systems -%}
+{% if item.name is not none -%}
+| {{ item.name }} | {{ item.ssns }} | {{ item.other_pii }} | {{ item.bii }} |
+{% else -%}
+| | | | |
+{%- endif %}
+{% endfor -%}
+
+**OMB Control Numbers:** Most of the information in these systems does not
+involve the collection of information from the public; therefore, Office of
+Management and Budget approval is not required except for the following:
+
+OMB NO: {{ pia.omb_ctr_nums }}
+
+### 1. What information is being collected
+
+{{ pia.what_is_collected }}
+
+### 2. Why is the information being collected
+
+{{ pia.why_is_collected }}
+
+### 3. What is the intended use of the information
+
+{{ pia.intended_use }}
+
+### 4. With whom will the information be shared
+
+{{ pia.whom_shared }}
+
+### 5. What opportunities do individuals or businesses have to decline to provide information (i.e., where providing information is voluntary) or to consent to particular uses of the information and how can they grant such consent
+
+{{ pia.opt_out }}
+
+### 6. How will the information be secured
+
+{{ pia.how_secured }}
+
+### 7. How will the data extract log and verify requirement be met
+
+{{ pia.log_and_verify }}
+
+### 8. Is a system of records being created under the Privacy Act (5 U.S.C. 552a)
+
+{{ pia.privacy_act }}
+
+### 9. Are these records covered by an approved records control schedule
+
+{{ pia.records_control }}
+
+## Point of Contact
+
+{{ poc.main.name }}
+{{ poc.main.title }}
+{{ poc.main.comp_org }}
+{{ poc.main.address }}
+{{ poc.main.phone }}
+{{ poc.main.email }}

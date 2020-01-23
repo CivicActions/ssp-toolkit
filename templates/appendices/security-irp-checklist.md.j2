@@ -1,11 +1,11 @@
-# Example Project Security Incident Response Procedure Checklist
+# {{ project.name_short }} Security Incident Response Procedure Checklist
 
 *This is a short, actionable checklist for the* **Incident Commander** *(IC) and* **Responders** *to follow during incident response. It's a companion to the [Security Incident Response Plan](security-irp.md) where you can find the full details of each step.*
 
 ## Step 1: *Breathe*
 
 * No one's life is in danger.
-* ***Document your steps and findings!*** *(The [`#project`](https://civicactions.slack.com/messages/project/) slack channel recommended.)* This eases communications and handoffs.
+* ***Document your steps and findings!*** *(The [#{{ project.slack_channel }}]({{ project.slack_url }}) Slack channel recommended.)* This eases communications and handoffs.
 * Consult with the *Incident Commander* (or other team members) if you have questions.
 
 ## Roles
@@ -13,16 +13,16 @@
 *There is often overlap between these two roles, especially at the beginning of an incident response.*
 
 * **Incident Commander (IC)**
-   * is the first Example Project team member to notice or respond to the incident
-   * forms the team (for the first 15-30 minutes the IC may also be the only *Responder*)
-   * escalates communication to additional team members and/or the Example Project Product Owner when needed.
-   * ensures steps are documented (usually in [`#project`](https://civicactions.slack.com/messages/project/) slack)
-   * ensures a ticket is created and a record of the Incident process is maintained
+  * is the first {{ project.name_short }} team member to notice or respond to the incident
+  * forms the team (for the first 15-30 minutes the IC may also be the only *Responder*)
+  * escalates communication to additional team members and/or the {{ project.name_short }} Product Owner when needed.
+  * ensures steps are documented (usually in [#{{ project.slack_channel }}]({{ project.slack_url }}) Slack)
+  * ensures a ticket is created and a record of the Incident process is maintained
 
 * **Responders**
-   * primarily responsible for the *Assess* and *Remediate* steps
-   * document *in real time* measurements, theories, steps taken in [`#project`](https://civicactions.slack.com/messages/project/) slack.
-   * seek out a separate **Incident Commander** if the incident will take longer than 15-30 minutes to resolve
+  * primarily responsible for the *Assess* and *Remediate* steps
+  * document *in real time* measurements, theories, steps taken in [#{{ project.slack_channel }}]({{ project.slack_url }}) Slack.
+  * seek out a separate **Incident Commander** if the incident will take longer than 15-30 minutes to resolve
 
 ## Initiate
 
@@ -30,25 +30,26 @@ At this point, the *Incident Commander* (aka the first *Responder*) is usually w
 
 * Determine if you can whether or not this may be a false alarm.
 * If you believe it may be a real incident (best to err on the side of *"it is an incident"*) and you can't resolve yourself in under 15-30 minutes, find either a *Responder* or replacement *Incident Commander* to help share the load:
-  * Email: [lincs@civicactions.opsgenie.net](mailto:lincs@civicactions.opsgenie.net) (alerts "on call" system admin)
-  * Slack: [`#project`](https://civicactions.slack.com/messages/project/) using `@channel` (notifies the team of an incident)
-  * [CivicActions/Example Project Incident Response Team](https://docs.google.com/a/civicactions.net/spreadsheets/d/1fhjOq6KpURCfplu6vbIAV1HbQRO-7jUqX_Uj8gE1vC0/edit?usp=sharing) conntact sheet with direct emails and phone numbers
+
+* Email: [{{ project.escalation_mail }}](mailto:{{ project.escalation_mail }}) (alerts "on call" system admin)
+* Slack: [#{{ project.slack_channel }}]({{ project.slack_url }}) using `@channel` (notifies the team of an incident)
+* [{{ contractor.name_short }}/{{ project.name_short }} Incident Response Team]({{ project.contact_sheet_url }}) contact sheet with direct emails and phone numbers
 
 ## Assess
 
 The *Responders* (more than one is OK) work to:
 
 * Confirm the incident — *is it a real incident?*
-   * Was the event triggered by an [external dependency](contingency-plan.md#external-dependencies)?
-   * If it's not a real incident, go to [False Alarm](#false-alarm).
-* Assess the severity, using [the rubric in the IR guide](security-irp.md#incident-severities) *(Example Project incidents are generally* **Low** *severity.)*
-* Post an initial situation report ("sitrep") ([example sitrep](security-irp.md#assess)) to [`#project`](https://civicactions.slack.com/messages/project/) slack including the a descriptive name, Commander and Responders
+  * Was the event triggered by an [external dependency](contingency-plan.md#external-dependencies)?
+  * If it's not a real incident, go to [False Alarm](#false-alarm).
+* Assess the severity, using [the rubric in the IR guide](security-irp.md#incident-severities) *({{ project.name_short }} incidents are generally* **Low** *severity.)*
+* Post an initial situation report ("sitrep") ([example sitrep](security-irp.md#assess)) to [#{{ project.slack_channel }}]({{ project.slack_url }}) Slack including the a descriptive name, Commander and Responders
 * Assess whether to also activate the [contingency plan](contingency-plan.md) - *is a system failure causing the disruption?*
 
 The *Incident Commander*:
 
-* Creates a [JIRA 'Incident' ticket](https://lincsportal.atlassian.net/secure/CreateIssue!default.jspa)
-* If needed, emails sitrep to [lincs@lists.civicactions.net](mailto:lincs@lists.civicactions.net) (include link to JIRA Incident ticket)
+* Creates a [JIRA 'Incident' ticket]({{ project.issue_url }})
+* If needed, emails sitrep to [{{ project.contact_email }}]({{ project.contact_email }}) (include link to {{ project.issue_system }})
 
 ## Remediate
 
@@ -61,8 +62,8 @@ The *Responders* work to determine cause, find resolution and return the system(
 The *Incident Commander* coordinates activity:
 
 * Keep the ticket/docs updated as people work, tracking:
-   * Leads, and who's following them
-   * Remediation items, and who's working on them, including customer notification (if appropriate to the situation)
+  * Leads, and who's following them
+  * Remediation items, and who's working on them, including customer notification (if appropriate to the situation)
 * Send out sitreps on a regular cadence (high: hourly; medium: 2x daily; low: daily).
 * Go into work shifts if the incident lasts longer then 3 hours.
 * [Hand off IC](#handing-off-ic) if the incident lasts longer than 3 hours.
@@ -82,8 +83,8 @@ Extra checklists for special situations that don't always occur during incidents
 
 Follow this checklist if an event turns out not to be a security incident:
 
-* Notify [`#project`](https://civicactions.slack.com/messages/project/) of the false alarm.
-* Update the JIRA Incident ticket, setting status to `Done`.
+* Notify [#{{ project.slack_channel }}]({{ project.slack_url }}) of the false alarm.
+* Update the {{ project.issue_system }}, setting status to `Done`.
 * If any sitreps have been sent out, send a final sitrep to all previous recipients, noting the false alarm.
 
 ### Handing off IC
@@ -92,6 +93,6 @@ Follow this checklist if you need to hand over IC duties:
 
 * Old IC: brief New IC on the situation.
 * New IC: confirm that you're taking over.
-* New IC: update the JIRA Incident ticket, noting that you're now the IC.
+* New IC: update the {{ project.issue_system }}, noting that you're now the IC.
 * New IC: send out a sitrep, noting that you're taking over IC.
 * Old IC: stick around for 15-20 minutes to ensure a smooth handoff, then log off!

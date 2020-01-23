@@ -1,0 +1,65 @@
+
+application_number:
+sensitivity:
+security_categorization:
+fedramp_type:
+authorizing_official:
+internal_personnel:
+est_internal_personnel:
+external_personnel:
+est_external_personnel:
+status:
+other_description:
+cloud_deployment:
+hybrid_description:
+info_types: # Table 2‑2
+  -
+    type:
+    reco_confidentiality:
+    reco_integrity:
+    reco_availability:
+    sel_confidentiality:
+    sel_integrity:
+    sel_availability:
+    impact:
+leveraged_systems: # Table 9‑4
+  -
+    name:
+    provider_owner:
+    date:
+roles_privileges: # Table 10‑1
+  - role:
+    int_ext:
+    privilege_level:
+    sensitivity:
+    authorized_privileges: A
+    functions:
+roles_perms_additional: >
+
+system_function: > # Section 10.1
+
+components_boundaries: > # Section 10.2
+
+network_diagram:
+ports_protocols: # Table 11‑1
+  -
+    port:
+    protocols:
+    services:
+    purpose:
+    used_by:
+interconnections: # Table 12‑1
+  -
+    addr_interface:
+    ext_org_ip:
+    ext_poc:
+    connection_sec:
+    data_direction:
+    info_transmitted:
+    port_or_circuit:
+standards: # Table 13‑2
+  -
+    id:
+    title:
+    date:
+    link:

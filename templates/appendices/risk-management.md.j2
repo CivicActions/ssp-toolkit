@@ -1,13 +1,9 @@
-{% set project_info = project_information -%}
-{% set contractor = contractor_information -%}
-{% set system = system_information -%}
-{% set sections = sections -%}
-# {{ title }}
+# {{ risk.title }}
 
-## {{ project_info.client_name_short }} {{ project_info.project_name }}
+## {{ project.client_name_short }} {{ project.name }}
 
 {{ current_date.strftime('%B %Y') }}
-Version {{ version }}
+Version {{ risk.version }}
 
 {{ contractor.name }}
 {{ contractor.address.city }}, {{ contractor.address.state }}
@@ -54,10 +50,10 @@ If tasks are identified as both high priority and high risk, we typically addres
 
 ## III. Project Risks
 
-{{ sections.risk.description }}
+{{ risk.sections.risk.description }}
 
 | Name | Description | Mitigation Plan | Owner |
 |---|---|---|---|
-{% for item in sections.risk.risks -%}
+{% for item in risk.sections.risk.risks -%}
 | {{ item.name }} | {{ item.description }} | {{ item.mitigation }} | {{ item.owner }} |
 {% endfor -%}

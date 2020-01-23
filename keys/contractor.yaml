@@ -1,0 +1,13 @@
+name: CivicActions, Inc
+name_short: CivicActions
+address:
+  street: 3527 Mt Diablo Blvd, Unit 269
+  city: Lafayette
+  state: CA
+  zip: 94549
+  country:
+phone: 510-408-7510
+website: www.civicactions.com
+compliance_docs_url: https://github.com/CivicActions/compliance-docs
+email_support: support@civicactions.com
+security_policy_url: https://github.com/CivicActions/security-policy

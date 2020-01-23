@@ -1,0 +1,9 @@
+service:
+  - service:
+      name: # For example GitLab
+      url: # https://git.civicactions.net/
+      documentation:
+      status:
+        -
+          # https://app.statuscake.com/AllStatus.php?tid=1702974
+      description:
