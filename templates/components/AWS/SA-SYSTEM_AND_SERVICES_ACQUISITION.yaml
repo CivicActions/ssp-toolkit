@@ -9,7 +9,7 @@ satisfies:
   narrative:
   - text: |
       The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: SA-2
   control_name: ALLOCATION OF RESOURCES
   standard_key: NIST SP 800-53 Revision 4
@@ -19,7 +19,7 @@ satisfies:
   - text: >
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: allocation of resources.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: SA-3
   control_name: SYSTEM DEVELOPMENT LIFE CYCLE
   standard_key: NIST SP 800-53 Revision 4
@@ -30,7 +30,7 @@ satisfies:
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: system development
       life cycle.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: SA-4
   control_name: ACQUISITION PROCESS
   standard_key: NIST SP 800-53 Revision 4
@@ -40,7 +40,7 @@ satisfies:
   - text: >
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: acquisition process.
-    implementation_status: Partially in Place
+  implementation_status: Partially in Place
 - control_key: SA-5
   control_name: INFORMATION SYSTEM DOCUMENTATION
   standard_key: NIST SP 800-53 Revision 4
@@ -51,7 +51,7 @@ satisfies:
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: information system
       documentation.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: SA-9
   control_name: EXTERNAL INFORMATION SYSTEM SERVICES
   standard_key: NIST SP 800-53 Revision 4
@@ -62,4 +62,4 @@ satisfies:
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: external information
       system services.
-    implementation_status: In Place
+  implementation_status: In Place

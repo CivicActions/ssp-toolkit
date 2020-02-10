@@ -9,7 +9,7 @@ satisfies:
   narrative:
   - text: |
       The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: IR-2
   control_name: INCIDENT RESPONSE TRAINING
@@ -21,7 +21,7 @@ satisfies:
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: incident response
       training.
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: IR-4
   control_name: INCIDENT HANDLING
@@ -32,7 +32,7 @@ satisfies:
   - text: >
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: incident handling.
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: IR-5
   control_name: INCIDENT MONITORING
@@ -43,7 +43,7 @@ satisfies:
   - text: >
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: incident monitoring.
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: IR-6
   control_name: INCIDENT REPORTING
@@ -54,7 +54,7 @@ satisfies:
   - text: >
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: incident reporting.
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: IR-7
   control_name: INCIDENT RESONSE ASSISTANCE
@@ -66,7 +66,7 @@ satisfies:
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: incident resonse
       assistance.
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: IR-8
   control_name: INCIDENT RESPONSE PLAN
@@ -78,5 +78,5 @@ satisfies:
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: incident response
       plan.
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).

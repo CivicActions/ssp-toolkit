@@ -9,7 +9,7 @@ satisfies:
   narrative:
   - text: |
       The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: AU-2
   control_name: AUDITABLE EVENTS
   standard_key: NIST SP 800-53 Revision 4
@@ -18,7 +18,7 @@ satisfies:
   narrative:
   - text: |
       The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: AU-3
   control_name: CONTENT OF AUDIT RECORDS
   standard_key: NIST SP 800-53 Revision 4
@@ -27,7 +27,7 @@ satisfies:
   narrative:
   - text: |
       The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: AU-4
   control_name: AUDIT STORAGE CAPACITY
   standard_key: NIST SP 800-53 Revision 4
@@ -37,7 +37,7 @@ satisfies:
   - text: >
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: disk space availability.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: AU-5
   control_name: RESPONSE TO AUDIT PROCESSING FAILURES
   standard_key: NIST SP 800-53 Revision 4
@@ -49,9 +49,9 @@ satisfies:
       granted to the AWS Cloud dated 1 May 2013: response to audit processing failures.
 
       In the event of low storage or other system issues affecting audit, the AWS
-      CloudWatch monitoring system will alert CivicActions Operations via real-time
+      CloudWatch monitoring system will alert {{contractor.short_name}} Operations via real-time
       alert mechanism such as OpsGenie.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: AU-6
   control_name: AUDIT REVIEW, ANALYSIS, AND REPORTING
   standard_key: NIST SP 800-53 Revision 4
@@ -60,7 +60,7 @@ satisfies:
   narrative:
   - text: |
       The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-    implementation_status: Planned
+  implementation_status: Planned
 - control_key: AU-8
   control_name: TIME STAMPS
   standard_key: NIST SP 800-53 Revision 4
@@ -69,7 +69,7 @@ satisfies:
   narrative:
   - text: |
       The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: AU-9
   control_name: PROTECTION OF AUDIT INFORMATION
   standard_key: NIST SP 800-53 Revision 4
@@ -78,7 +78,7 @@ satisfies:
   narrative:
   - text: |
       This system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-    implementation_status: Planned
+  implementation_status: Planned
 - control_key: AU-11
   control_name: AUDIT RECORD RETENTION
   standard_key: NIST SP 800-53 Revision 4
@@ -87,7 +87,7 @@ satisfies:
   narrative:
   - text: |
       The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: AU-12
   control_name: AUDIT GENERATION
   standard_key: NIST SP 800-53 Revision 4
@@ -96,4 +96,4 @@ satisfies:
   narrative:
   - text: |
       The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-    implementation_status: In Place
+  implementation_status: In Place

@@ -8,13 +8,11 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - key: a
-    text: >
-      {{contractor.name_short}} follows recommendations and best practices developed by
-      the Drupal community for monitoring. Examples of specific logs and metrics are
-      included in AU-2 and AU-3.
+    text: '{{contractor.name_short}} follows recommendations and best practices developed by
+      the Ilias community for monitoring. Examples of specific logs and metrics are
+      included in AU-2 and AU-3.'
   - key: c
-    text: >
-      {{contractor.name_short}} works closely with the Drupal security community and reviews
+    text: '{{contractor.name_short}} works closely with the Ilias security community and reviews
       security announcements as part of the continuous monitoring strategy. Items
-      found to require immediate remediation will be addressed.
+      found to require immediate remediation will be addressed.'
   implementation_status: In Place

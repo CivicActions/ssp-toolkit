@@ -7,16 +7,19 @@ satisfies:
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: {{contractor.name_short}} has developed, documented and disseminated to personnel an
-      audit and accountability policy that addresses purpose, scope, roles, responsibilities,
-      management commitment, coordination among organizational entities, and compliance;
-      and procedures to facilitate the implementation of the policy and associated
-      controls. This information is maintained in the {{contractor.name_short}} Audit and Accountability
-      (AU) Policy.  This document can be found in the {{contractor.name_short}} Compliance Docs
-      GitHub repository at <{{contractor.compliance_docs_url}}>.
-    implementation_status: In Place
-  summary: {{contractor.name_short}} has developed, documented and disseminated to personnel an
-    audit and accountability policy.
+  - text: >
+      {{contractor.name_short}} has developed, documented and disseminated to
+      personnel an audit and accountability policy that addresses purpose, scope,
+      roles, responsibilities, management commitment, coordination among
+      organizational entities, and compliance; and procedures to facilitate the
+      implementation of the policy and associated controls. This information is
+      maintained in the {{contractor.name_short}} Audit and Accountability (AU)
+      Policy.  This document can be found in the {{contractor.name_short}}
+      Compliance Docs GitHub repository at <{{contractor.compliance_docs_url}}>.
+  implementation_status: In Place
+  summary: >
+    {{contractor.name_short}} has developed, documented and disseminated to
+    personnel an audit and accountability policy.
 - control_key: AU-2
   control_name: AUDITABLE EVENTS
   standard_key: NIST SP 800-53 Revision 4
@@ -24,38 +27,48 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - key: a
-    text: {{contractor.name_short}}' Security Policy provides information about auditing and logging
-      of {{contractor.name_short}} internal users and end-user activity on the servers and within
-      the system application.
-    implementation_status: In Place
+    text: >
+      {{contractor.name_short}}' Security Policy provides information about
+      auditing and logging of {{contractor.name_short}} internal users and
+      end-user activity on the servers and within the system application.
   - key: b
-    text: Auditable events may change due to changes in the threat environment. {{contractor.name_short}}
-      teams collaborate internally and also communicate with customers and partner
-      organizations to identify and select auditable events. The teams that participate
-      in this process are described in control SA-3(b).
-    implementation_status: In Place
-  summary: {{contractor.name_short}}' Security Policy provides information about auditing and logging.
+    text: >
+      Auditable events may change due to changes in the threat environment.
+      {{contractor.name_short}} teams collaborate internally and also communicate
+      with customers and partner organizations to identify and select auditable
+      events. The teams that participate in this process are described in control
+      SA-3(b).
+  implementation_status: In Place
+  summary: >
+    {{contractor.name_short}}' Security Policy provides information about auditing
+    and logging.
 - control_key: AU-4
   control_name: AUDIT STORAGE CAPACITY
   standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
-  - text: {{contractor.name_short}} ensures adequate storage capability requirements listed in
-      AU-11 for all events from the application, database, and hosting environment.
-    implementation_status: In Place
-  summary: {{contractor.name_short}} ensures adequate storage capability requirements for all events.
+  - text: >
+      {{contractor.name_short}} ensures adequate storage capability requirements
+      listed in AU-11 for all events from the application, database, and hosting
+      environment.
+  implementation_status: In Place
+  summary: >
+    {{contractor.name_short}} ensures adequate storage capability requirements
+    for all events.
 - control_key: AU-5
   control_name: RESPONSE TO AUDIT PROCESSING FAILURES
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: When notified (e.g., via CloudWatch) of an auditing failure, {{contractor.name_short}}
-      Operations staff will review the causes and take corrective action.
-    implementation_status: In Place
-  summary: {{contractor.name_short}} Operations reviews causes adn takes corrective action when
-    notified via CloudWatch of auditing failures.
+  - text: >
+      When notified (e.g., via CloudWatch) of an auditing failure,
+      {{contractor.name_short}} Operations staff will review the causes and take
+      corrective action.
+  implementation_status: In Place
+  summary: >
+    {{contractor.name_short}} Operations reviews causes adn takes corrective
+    action when notified via CloudWatch of auditing failures.
 - control_key: AU-6
   control_name: AUDIT REVIEW, ANALYSIS, AND REPORTING
   standard_key: NIST SP 800-53 Revision 4
@@ -73,38 +86,46 @@ satisfies:
       • Assurance that logging is functioning properly
 
       • Adherence to logging standards identified in this procedure
-    implementation_status: Planned
   - key: b
-    text: Any significant findings observed during the inspection are reported to
-      {{contractor.name_short}}' Security Office. If these are considered to constitute a security
-      incident, then the Incident Response process is invoked as described in the
-      implementation of the Incident Response Plan (IR-8).
-    implementation_status: Planned
+    text: >
+      Any significant findings observed during the inspection are reported to
+      {{contractor.name_short}}' Security Office. If these are considered to
+      constitute a security incident, then the Incident Response process is
+      invoked as described in the implementation of the Incident Response Plan
+      (IR-8).
+  implementation_status: Planned
   summary: >
-    {{contractor.name_short}} security audit data is collected by a Graylog Security and Event
-    Management (SIEM) dashboard to support real-time and after-the-fact investigation.
+    {{contractor.name_short}} security audit data is collected by a Graylog
+    Security and Event Management (SIEM) dashboard to support real-time and
+    after-the-fact investigation.
 - control_key: AU-9
   control_name: PROTECTION OF AUDIT INFORMATION
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
-  - text: {{contractor.name_short}} ensures that audit logs are created, stored and maintained.
-      Developers who have been assigned as members of the {{contractor.name_short}}' Security Office
-      are the only {{contractor.name_short}} personnel with logical permission to access and review
-      audit logs.
-    implementation_status: Planned
-  summary: {{contractor.name_short}} ensures that audit logs are created, stored and maintained.
+  - text: >
+      {{contractor.name_short}} ensures that audit logs are created, stored and
+      maintained. Developers who have been assigned as members of the
+      {{contractor.name_short}} Security Office are the only
+      {{contractor.name_short}} personnel with logical permission to access and
+      review audit logs.
+  implementation_status: Planned
+  summary: >
+    {{contractor.name_short}} ensures that audit logs are created, stored and
+    maintained.
 - control_key: AU-11
   control_name: AUDIT RECORD RETENTION
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
-  - text: {{contractor.name_short}} audits events from the application, database, and hosting environment,
-      and retains these records for at least 180 days.
-    implementation_status: In Place
-  summary: {{contractor.name_short}} retains audit records for at least  180 days.
+  - text: >
+      {{contractor.name_short}} audits events from the application, database,
+      and hosting environment, and retains these records for at least 180 days.
+  implementation_status: In Place
+  summary: >
+    {{contractor.name_short}} retains audit records for at least  180 days.
 - control_key: AU-12
   control_name: AUDIT GENERATION
   standard_key: NIST SP 800-53 Revision 4
@@ -112,18 +133,20 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - key: a
-    text: {{contractor.name_short}} ensures audit records are generated for its web and event logs
-      as required in AU-2 and AU-3 for servers, application, database, and network
-      components.
-    implementation_status: In Place
+    text: >
+      {{contractor.name_short}} ensures audit records are generated for its web
+      and event logs as required in AU-2 and AU-3 for servers, application,
+      database, and network components.
   - key: b
-    text: The selected auditable events described in AU-2 are coordinated by {{contractor.name_short}}
-      internal admins and client security/operations officers for each component of
-      the production system.
-    implementation_status: In Place
+    text: >
+      The selected auditable events described in AU-2 are coordinated by
+      {{contractor.name_short}} internal admins and client security/operations
+      officers for each component of the production system.
   - key: c
-    text: {{contractor.name_short}} maintained applications generate audit records for their web
-      and event logs as described in AU-2 and AU-3.
-    implementation_status: In Place
-  summary: {{contractor.name_short}} ensures audit records are generated for its web and event
-    logs as required.
+    text: >
+      {{contractor.name_short}} maintained applications generate audit records
+      for their web and event logs as described in AU-2 and AU-3.
+  implementation_status: In Place
+  summary: >
+    {{contractor.name_short}} ensures audit records are generated for its web
+    and event logs as required.

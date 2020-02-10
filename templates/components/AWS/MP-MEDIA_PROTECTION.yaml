@@ -12,7 +12,7 @@ satisfies:
       The system inherits this control from the FedRAMP Provisional ATO granted to
       the AWS Cloud dated 1 May 2013 for media protection controls as the system is
       entirely within the AWS Cloud boundary.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: MP-2
   control_name: MEDIA ACCESS
   standard_key: NIST SP 800-53 Revision 4
@@ -24,7 +24,7 @@ satisfies:
       The system inherits this control from the FedRAMP Provisional ATO granted to
       the AWS Cloud dated 1 May 2013 for media protection controls as the system is
       entirely within the AWS Cloud boundary.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: MP-6
   control_name: MEDIA SANITIZATION
   standard_key: NIST SP 800-53 Revision 4
@@ -36,7 +36,7 @@ satisfies:
       The system inherits this control from the FedRAMP Provisional ATO granted to
       the AWS Cloud dated 1 May 2013 for media protection controls as the system is
       entirely within the AWS Cloud boundary.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: MP-7
   control_name: MEDIA USE
   standard_key: NIST SP 800-53 Revision 4
@@ -48,4 +48,4 @@ satisfies:
       The system inherits this control from the FedRAMP Provisional ATO granted to
       the AWS Cloud dated 1 May 2013 for media protection controls as the system is
       entirely within the AWS Cloud boundary.
-    implementation_status: In Place
+  implementation_status: In Place

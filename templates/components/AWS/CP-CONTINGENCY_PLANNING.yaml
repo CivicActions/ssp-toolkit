@@ -9,7 +9,7 @@ satisfies:
   narrative:
   - text: |
       The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: CP-2
   control_name: CONTINGENCY PLAN
@@ -21,7 +21,7 @@ satisfies:
     text: >
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: contingency plan.
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: CP-3
   control_name: CONTINGENCY TRAINING
@@ -33,7 +33,7 @@ satisfies:
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: contingency plan
       training.
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: CP-4
   control_name: CONTINGENCY PLAN TESTING
@@ -45,7 +45,7 @@ satisfies:
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: contingency plan
       testing.
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: CP-6
   control_name: ALTERNATE STORAGE SITE
@@ -57,7 +57,7 @@ satisfies:
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: alternate storage
       site
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: CP-6 (1)
   control_name: SEPARATION FROM PRIMARY SITE
@@ -69,7 +69,7 @@ satisfies:
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: alternate storage
       site separation.
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: CP-9
   control_name: INFORMATION SYSTEM BACKUP
@@ -82,19 +82,17 @@ satisfies:
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: user level backup
       requirements.
-    implementation_status: In Place
   - key: b
     text: >
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: system level backup
       requirements.
-    implementation_status: In Place
   - key: d
     text: >
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: protection of backup
       information.
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: CP-10
   control_name: INFORMATION SYSTEM RECOVERY AND RECONSTITUTION
@@ -106,5 +104,5 @@ satisfies:
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: information system
       recovery and reconstitution.
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).

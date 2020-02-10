@@ -10,7 +10,7 @@ satisfies:
   narrative:
   - text: |
       The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: MA-2
   control_name: CONTROLLED MAINTENANCE
   standard_key: NIST SP 800-53 Revision 4
@@ -21,7 +21,7 @@ satisfies:
   - text: >
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: controlled maintenance.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: MA-4
   control_name: NON-LOCAL MAINTENANCE
   standard_key: NIST SP 800-53 Revision 4
@@ -32,7 +32,7 @@ satisfies:
   - text: >
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: non-local maintenance.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: MA-5
   control_name: MAINTENANCE PERSONNEL
   standard_key: NIST SP 800-53 Revision 4
@@ -43,4 +43,4 @@ satisfies:
   - text: >
       The system inherits this control from the FedRAMP Provisional ATO granted to
       the AWS Cloud dated 1 May 2013 for the following: maintenance personnel.
-    implementation_status: In Place
+  implementation_status: In Place

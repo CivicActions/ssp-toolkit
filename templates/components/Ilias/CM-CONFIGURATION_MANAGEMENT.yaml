@@ -35,11 +35,10 @@ satisfies:
       as an integral part of information system component installations, upgrades,
       and maintenance.
 
-      A review of the CM baselines for the system is conducted and approved by
-      {{contractor.name_short}} Development. Any changes made to the production
-      environment are approved prior to deployment by the CCB or agile scrum
-      process. Changes that may require updates to the baseline configuration for the
-      application include:
+      A review of the CM baselines for the system is conducted and approved by {{
+      contractor}} Development. Any changes made to the production environment are
+      approved prior to deployment by the CCB or agile scrum process. Changes that
+      may require updates to the baseline configuration for the application include:
 
       • Significant upgrades or changes to applications or database software
 
@@ -56,7 +55,7 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - text: >
-      Drupal configuration settings use automated mechanisms to automate code deployment
+      Ilias configuration settings use automated mechanisms to automate code deployment
       and baseline settings changes. The website's baseline configuration may be reapplied
       to the site at any time by manually retriggering a tagged code deployment.
 
@@ -64,10 +63,6 @@ satisfies:
       using Git, a source code version control system. Git is used to track source
       code which allows administrators to easily deploy and roll back changes on production
       hosting environments.
-
-      The Features module is used to export configuration settings from the website's
-      MySQL database and stores them as code so that the configuration settings can
-      be managed within the Git source code version control system.
   implementation_status: In Place
 - control_key: CM-2 (3)
   control_name: RETENTION OF PREVIOUS CONFIGURATIONS
@@ -89,8 +84,8 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - text: >
-      Access enforcement is monitored within Drupal, which records an entry in the
-      Drupal Watchdog log for every successful or failed login attempt to the system.
+      Access enforcement is monitored within Ilias, which records an entry in the
+      Ilias log for every successful or failed login attempt to the system.
       Each successful login or logout event is logged with an entry that includes
       the username of the account being used.
 
@@ -111,17 +106,6 @@ satisfies:
       be performed by {{contractor.name_short}} internal administrators with privileges implemented
       by access enforcement (AC-3) and least privilege (AC-6).
   implementation_status: In Place
-- control_key: CM-6
-  control_name: CONFIGURATION SETTINGS
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      {{contractor.name_short}} configuration settings for Drupal are guided by the Drupal
-      Security Coding Standards <https://www.drupal.org/docs/develop/security> for
-      the security configuration management processes and tools.
-  implementation_status: In Place
 - control_key: CM-8
   control_name: INFORMATION SYSTEM COMPONENT INVENTORY
   standard_key: NIST SP 800-53 Revision 4
@@ -133,29 +117,29 @@ satisfies:
       {{contractor.name_short}}' Git source code version control system. It consists of the
       following components:
 
-      • The Drupal open source web content management system
+      • The Ilias open-source web learning management system
 
-      • Drupal add-on modules, themes, and libraries available from the Drupal.org
-      website which extend Drupal core
+      • Ilias add-on modules, themes, and libraries available from the Ilias.de website
+      which extend Ilias core
 
       • Custom code written by {{contractor.name_short}}' developers
 
       The inventory is reviewed monthly by {{contractor.name_short}} Product Engineering teams
       in accordance with the Configuration Management Plan.
 
-      Website content is backed up daily using CPM snapshots. This allows
-      {{contractor.name_short}} to build an inventory of the system on demand.
+      Website content is backed up daily using CPM snapshots. This allows {{contractor.name_short}}
+      to build an inventory of the system on demand.
   implementation_status: In Place
-  summary: The application's software inventory is maintained in the {{contractor.name_short}} Git source code repository.
+  summary: The application's software inventory is maintained in the {{contractor
+   }}' Git source code repository.
 - control_key: CM-10
   control_name: SOFTWARE USAGE RESTRICTIONS
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: >
-      Drupal is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These
+  - text: Ilias is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These
       are all compatible with the Free Software Foundation's General Public License
       (GPL) version 2 or later and are freely available for use under copyright law.
   implementation_status: In Place
-  summary: Drupal uses Linux, Apache, MySQL and PHP software compatible with the GPL.
+  summary: Ilias uses Linux, Apache, MySQL and PHP software compatible with the GPL.

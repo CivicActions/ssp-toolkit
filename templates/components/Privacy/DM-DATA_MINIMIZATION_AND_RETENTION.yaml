@@ -7,28 +7,31 @@ satisfies:
   covered_by: []
   security_control_type: System Specific
   narrative:
-  - text: |
-      {{project.organization_name_short}} does not collect or maintain PII and therefore does not directly address this
-      control though it may address it indirectly. The data collected (email address, first
-      and last name) is demonstrably a minimum.
-    implementation_status: Not Applicable
+  - text: >
+      {{project.name_short}} does not collect or maintain PII and therefore
+      does not directly address this control though it may address it
+      indirectly. The data collected (email address, first and last name) is
+      demonstrably a minimum.
+  implementation_status: Not Applicable
 - control_key: DM-2
   control_name: DATA RETENTION AND DISPOSAL
   standard_key: NIST SP 800-53 Revision 4 Privacy
   covered_by: []
   security_control_type: System Specific
   narrative:
-  - text: |
-      {{project.organization_name_short}} does not collect or maintain PII and therefore does not directly address this
-      control though it may address it indirectly.
-    implementation_status: Not Applicable
+  - text: >
+      {{project.name_short}} does not collect or maintain PII and therefore
+      does not directly address this control though it may address it
+      indirectly.
+  implementation_status: Not Applicable
 - control_key: DM-3
   control_name: MINIMIZATION OF PII USED IN TESTING, TRAINING, AND RESEARCH
   standard_key: NIST SP 800-53 Revision 4 Privacy
   covered_by: []
   security_control_type: System Specific
   narrative:
-  - text: |
-      {{project.organization_name_short}} does not collect or maintain PII and therefore does not directly address this
-      control though it may address it indirectly.
-    implementation_status: Not Applicable
+  - text: >
+      {{project.name_short}} does not collect or maintain PII and therefore
+      does not directly address this control though it may address it
+      indirectly.
+  implementation_status: Not Applicable

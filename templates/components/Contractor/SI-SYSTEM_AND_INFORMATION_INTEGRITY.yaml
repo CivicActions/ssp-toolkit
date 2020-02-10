@@ -7,14 +7,17 @@ satisfies:
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: {{contractor.name_short}} has developed, documented and disseminated to personnel a system
-      and information integrity policy that addresses purpose, scope, roles, responsibilities,
-      management commitment, coordination among organizational entities, and compliance;
-      and procedures to facilitate the implementation of the policy and associated
-      controls. This information is maintained in the {{contractor.name_short}} System and Information
-      Integrity (SI) Policy document that can be found in the {{contractor.name_short}} Github
-      repository at <{{contractor.compliance_docs_url}}/>.
-    implementation_status: In Place
+  - text: >
+      {{contractor.name_short}} has developed, documented and disseminated to
+      personnel a system and information integrity policy that addresses
+      purpose, scope, roles, responsibilities, management commitment,
+      coordination among organizational entities, and compliance; and procedures
+      to facilitate the implementation of the policy and associated controls.
+      This information is maintained in the {{contractor.name_short}} System
+      and Information Integrity (SI) Policy document that can be found in the
+      {{contractor.name_short}} Github repository at
+      <{{contractor.compliance_docs_url}}/>.
+  implementation_status: In Place
 - control_key: SI-2
   control_name: FLAW REMEDIATION
   standard_key: NIST SP 800-53 Revision 4
@@ -23,60 +26,67 @@ satisfies:
   narrative:
   - key: a
     text: >
-      Identification of information system security flaws are detected as early as
-      possible by the following methods:
+      Identification of information system security flaws are detected as early
+      as possible by the following methods:
 
       • Vulnerability scans, as described in RA-5.
 
       • Log analysis from monitoring described in SI-4.
 
-      • Service flaw notifications (CVEs, etc.) are received by {{contractor.name_short}}' Security
-      Office and passed on to CicvicActions Operations staff when relevant.
+      • Service flaw notifications (CVEs, etc.) are received by the
+        {{contractor.name_short}} Security Office and passed on to
+        CicvicActions Operations staff when relevant.
 
-      Any security issues found are ticketed through JIRA and/or the Git issue queue.
-      {{contractor.name_short}} Operations staff prioritizes high findings.  Changes made to correct
-      the information system as a result of the system flaws are scheduled and coordinated
-      through the CCB Change Request Process and appropriate approvals required from
-      the CCB as implemented in CM-3.
-    implementation_status: In Place
+      Any security issues found are ticketed through JIRA and/or the Git issue
+      queue. {{contractor.name_short}} Operations staff prioritizes high
+      findings.  Changes made to correct the information system as a result of
+      the system flaws are scheduled and coordinated through the CCB Change
+      Request Process and appropriate approvals required from the CCB as
+      implemented in CM-3.
   - key: b
-    text: {{contractor.name_short}} testing of the system as a result of security flaw remediation
-      is done through a development environment through the use of internal software
-      and automated testing that ensures the system is working as intended. When a
-      change is made by a developer, testing though a peer review is conducted as
-      part of the Change Request process to ensure the correct analysis is completed.
-      Then the changed code is tested in an automatic test environment as described
-      in the Configuration Management Plan (CMP). Tracking of the testing is documented
-      in JIRA and/or the Git issue queue.
-    implementation_status: In Place
+    text: >
+      {{contractor.name_short}} testing of the system as a result of security
+      flaw remediation is done through a development environment through the
+      use of internal software and automated testing that ensures the system is
+      working as intended. When a change is made by a developer, testing though
+      a peer review is conducted as part of the Change Request process to ensure
+      the correct analysis is completed. Then the changed code is tested in an
+      automatic test environment as described in the Configuration Management
+      Plan (CMP). Tracking of the testing is documented in JIRA and/or the Git
+      issue queue.
   - key: c
-    text: {{contractor.name_short}} security-software updates are tested prior to implementation
-      on production. The {{contractor.name_short}} Security framework for installation requires
-      updates to be made within 30 days for high vulnerabilities, 90 days for moderate
-      vulnerabilities, and 240 for low vulnerabilities. An issue ticket is created
-      to track any updates made to the system.
-    implementation_status: In Place
+    text: >
+      {{contractor.name_short}} security-software updates are tested prior to
+      implementation on production. The {{contractor.name_short}} Security
+      framework for installation requires updates to be made within 30 days for
+      high vulnerabilities, 90 days for moderate vulnerabilities, and 240 for
+      low vulnerabilities. An issue ticket is created to track any updates made
+      to the system.
   - key: d
-    text: Flaw remediation is part of the {{contractor.name_short}} configuration management process.  Any
-      security issues found are ticketed through JIRA or the Git issue queue. {{contractor.name_short}}'
-      Security Office prioritizes the high findings within the application. Changes
-      made to correct the system as a result of the system flaws are scheduled and
-      coordinated through the CCB Change Request Process and appropriate approvals
-      required from the CCB Chair as implemented in CM-3.
-    implementation_status: In Place
+    text: >
+      Flaw remediation is part of the {{contractor.name_short}} configuration
+      management process.  Any security issues found are ticketed through JIRA
+      or the Git issue queue. The {{contractor.name_short}} Security Office
+      prioritizes the high findings within the application. Changes made to
+      correct the system as a result of the system flaws are scheduled and
+      coordinated through the CCB Change Request Process and appropriate
+      approvals required from the CCB Chair as implemented in CM-3.
+  implementation_status: In Place
 - control_key: SI-2(2)
   control_name: AUTOMATED FLAW REMEDIATION STATUS
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: The OpenSCAP and OWASP ZAP security scanners are used to perform monthly
-      vulnerability scans of all system components and assess web application interfaces
-      to identify any performance or security issues/flaws. Vulnerabilities and findings
-      identified are handled and remediated in accordance with the implementation
-      of RA-5. Reports are generated to {{contractor.name_short}}' Security Office and Operations
-      staff for review, analysis, and remediation.
-    implementation_status: In Place
+  - text: >
+      The OpenSCAP and OWASP ZAP security scanners are used to perform monthly
+      vulnerability scans of all system components and assess web application
+      interfaces to identify any performance or security issues/flaws.
+      Vulnerabilities and findings identified are handled and remediated in
+      accordance with the implementation of RA-5. Reports are generated to the
+      {{contractor.name_short}} Security Office and Operations staff for review,
+      analysis, and remediation.
+  implementation_status: In Place
 - control_key: SI-3
   control_name: MALICIOUS CODE PROTECTION
   standard_key: NIST SP 800-53 Revision 4
@@ -84,29 +94,31 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - key: a
-    text: Virus scans are performed by ClamAV, a server-hosted tool protecting the
-      application from Trojans, Viruses and other malicious cyber-threats. Real-time
-      scans are conducted whenever files are uploaded from any external source and
-      malicious code is blocked or quarantined when detected. All file-based traffic
-      traversing the server is sanitized before being delivered. All input form text
-      is validated and sanitized.
-    implementation_status: Partially in Place
+    text: >
+      Virus scans are performed by ClamAV, a server-hosted tool protecting the
+      application from Trojans, Viruses and other malicious cyber-threats.
+      Real-time scans are conducted whenever files are uploaded from any
+      external source and malicious code is blocked or quarantined when detected.
+      All file-based traffic traversing the server is sanitized before being
+      delivered. All input form text is validated and sanitized.
   - key: b
-    text: Anti-virus definitions and malicious code protection mechanisms are configured
-      and updated automatically on a nightly basis.
-    implementation_status: Partially in Place
+    text: >
+      Anti-virus definitions and malicious code protection mechanisms are
+      configured and updated automatically on a nightly basis.
   - key: c
-    text: {{contractor.name_short}} Operations staff receives information system security alerts,
-      advisories, and notifications in response to malicious code detection. These
-      messages are sent to group email distribution lists to ensure all members of
-      the team receive the proper information in a timely manner.
-    implementation_status: Partially in Place
+    text: >
+      {{contractor.name_short}} Operations staff receives information system
+      security alerts, advisories, and notifications in response to malicious
+      code detection. These messages are sent to group email distribution lists
+      to ensure all members of the team receive the proper information in a
+      timely manner.
   - key: d
-    text: False positives during malicious code detection and eradication are dealt
-      with on a case by case basis. Potential impacts on the availability of the information
-      system are detailed in a false positive report depending on if the report is
-      for the OS, database or web application.
-    implementation_status: Partially in Place
+    text: >
+      False positives during malicious code detection and eradication are dealt
+      with on a case by case basis. Potential impacts on the availability of
+      the information system are detailed in a false positive report depending
+      on if the report is for the OS, database or web application.
+  implementation_status: Partially in Place
 - control_key: SI-4
   control_name: INFORMATION SYSTEM MONITORING
   standard_key: NIST SP 800-53 Revision 4
@@ -114,48 +126,59 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - key: a
-    text: |
-      {{contractor.name_short}} systems use a collection of monitoring systems, including:
+    text: >
+      {{contractor.name_short}} systems use a collection of monitoring systems,
+      including:
+
       • ClamAV - provides signature-based malware detection/quarantine
+
       • OSSEC host-based intrusion detection system (HIDS)
+
       • AIDE Advanced Intrusion Detection Environment (IDS))
+
       • fail2ban, an intrusion prevention system (IPS) framework
+
       • SELinux - a Mandatory Access Control (MAC) IPS
+
       • auditd - a secure system audit daemon
+
       • CloudWatch - AWS monitoring and measurement system
+
       • StatusCake - website monitoring tool
+
       • OpsGenie - a slack/email/text/phone incident escalation tool
-    implementation_status: In Place
   - key: b
-    text: Logs from the systems described in SI-4(a) are sent to the {{contractor.name_short}}
-      SIEM tool for analysis. These logs can identify unauthorized use of the information
-      system.
-    implementation_status: In Place
+    text: >
+      Logs from the systems described in SI-4(a) are sent to the
+      {{contractor.name_short}} SIEM tool for analysis. These logs can identify
+      unauthorized use of the information system.
   - key: c
     text: Monitoring and log collection occur throughout the system.
-    implementation_status: In Place
   - key: d
-    text: The Configuration Management process, remote log gathering, and SELinux
-      MAC protects information obtained from intrusion-monitoring tools from unauthorized
-      access, modification, and deletion.
-    implementation_status: In Place
+    text: >
+      The Configuration Management process, remote log gathering, and SELinux
+      MAC protects information obtained from intrusion-monitoring tools from
+      unauthorized access, modification, and deletion.
   - key: e
-    text: In the event of a performance score lower than {{contractor.name_short}} standards, a
-      notification is sent to {{contractor.name_short}}' Security Office. {{contractor.name_short}} subscribes
-      to security mailing lists in the event the monitoring activity is required based
-      on law enforcement information, intelligence information, or other credible
+    text: >
+      In the event of a performance score lower than {{contractor.name_short}}
+      standards, a notification is sent to the {{contractor.name_short}}
+      Security Office. {{contractor.name_short}} subscribes to security mailing
+      lists in the event the monitoring activity is required based on law
+      enforcement information, intelligence information, or other credible
       sources of information.
-    implementation_status: In Place
   - key: f
-    text: Internal legal counsel is utilized as required when system notifications
-      indicate such action based on user and/or malicious activity.  Legal counsel
-      is engaged for any actions that may necessitate increased user monitoring or
-      evidence/forensic actions.
-    implementation_status: In Place
+    text: >
+      Internal legal counsel is utilized as required when system notifications
+      indicate such action based on user and/or malicious activity.  Legal
+      counsel is engaged for any actions that may necessitate increased user
+      monitoring or evidence/forensic actions.
   - key: g
-    text: System alerts generated by {{contractor.name_short}} internal monitors (StatusCake, OSSEC,
-      ClamAV, others) are sent to the Incident Response team via OpsGenie.
-    implementation_status: In Place
+    text: >
+      System alerts generated by {{contractor.name_short}} internal monitors
+      (StatusCake, OSSEC, ClamAV, others) are sent to the Incident Response
+      team via OpsGenie.
+  implementation_status: In Place
 - control_key: SI-5
   control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
   standard_key: NIST SP 800-53 Revision 4
@@ -163,27 +186,34 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - key: a
-    text: |
-      {{contractor.name_short}}' Security Office and Operations staff receive the following security alerts, advisories, and directives on an ongoing basis:
+    text: >
+      The {{contractor.name_short}} Security Office and Operations staff receive
+      the following security alerts, advisories, and directives on an ongoing
+      basis:
+
       • Mailing lists relevant to web application security
+
       • US-CERT
+
       • Technical Cyber Security Alerts
+
       • Drupal Security Advisories
-    implementation_status: In Place
   - key: b
-    text: {{contractor.name_short}} utilizes StatusCake for front line monitoring for real-time
-      system status and events of the application. StatusCake can feed to the OpsGenie
-      incident escalation system.
-    implementation_status: In Place
+    text: >
+      {{contractor.name_short}} utilizes StatusCake for front line monitoring
+      for real-time system status and events of the application. StatusCake can
+      feed to the OpsGenie incident escalation system.
   - key: c
-    text: {{contractor.name_short}}' Security Office disseminates security alerts, advisories,
-      advisories, and directives to all {{contractor.name_short}} internal personnel and client
-      personnel as directed.
-    implementation_status: In Place
+    text: >
+      The {{contractor.name_short}} Security Office disseminates security alerts,
+      advisories, and directives to all {{contractor.name_short}} internal
+      personnel and client personnel as directed.
   - key: d
-    text: {{contractor.name_short}}' Security Office is responsible for ensuring the dissemination
-      and implementation of relevant security alerts and advisories.
-    implementation_status: In Place
+    text: >
+      The {{contractor.name_short}} Security Office is responsible for ensuring
+      the dissemination and implementation of relevant security alerts and
+      advisories.
+  implementation_status: In Place
 - control_key: SI-7
   control_name: SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY
   standard_key: NIST SP 800-53 Revision 4
@@ -191,57 +221,64 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - text: >
-      {{contractor.name_short}} employ the GitHub system to monitor source code and version control
-      ensuring system integrity and prevents unauthorized changes.  The PHP-authenticator
-      tool performs a format check on source code prior to entering production. Per
-      the implementation of CM-3, any changes to the source code of the system require
-      the CCB Change Request process. A peer review as part of the Change Request
-      process is conducted to ensure the requested change is verified prior to entering
-      production.
+      {{contractor.name_short}} employ the GitHub system to monitor source code
+      and version control ensuring system integrity and prevents unauthorized
+      changes.  The PHP-authenticator tool performs a format check on source
+      code prior to entering production. Per the implementation of CM-3, any
+      changes to the source code of the system require the CCB Change Request
+      process. A peer review as part of the Change Request process is conducted
+      to ensure the requested change is verified prior to entering production.
 
-      {{contractor.name_short}} employs additional integrity checks on production systems as described
-      in SI-4.
-    implementation_status: In Place
+      {{contractor.name_short}} employs additional integrity checks on
+      production systems as described in SI-4.
+  implementation_status: In Place
 - control_key: SI-7 (1)
   control_name: INTEGRITY CHECKS
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: The integrity check implementation of SI-7 is conducted through the GitHub
-      system and verified monthly by redeploying the system codebase from GitHub.
-    implementation_status: Partially in Place
+  - text: >
+      The integrity check implementation of SI-7 is conducted through the
+      GitHub system and verified monthly by redeploying the system codebase
+      from GitHub.
+  implementation_status: Partially in Place
 - control_key: SI-7 (5)
   control_name: AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: The system maintains an audit log of all operations including integrity
-      violations. When an integrity violation occurs, {{contractor.name_short}}' Operations staff
-      will be alerted via email with escalations to text and phone as needed.
-    implementation_status: In Place
+  - text: >
+      The system maintains an audit log of all operations including integrity
+      violations. When an integrity violation occurs, the
+      {{contractor.name_short}} Operations staff will be alerted via email with
+      escalations to text and phone as needed.
+  implementation_status: In Place
 - control_key: SI-7 (7)
   control_name: INTEGRATION OF DETECTION AND RESPONSE
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: {{contractor.name_short}} incident response and configuration capabilities include the
-      detection of unauthorized changes to the system through the IR Plan and CCB
-      Change Request process and the implementation of IR-4 and IR-5. In the event
-      of an unauthorized security change to the system, {{contractor.name_short}} support would
-      roll back to and restore from the most recent authorized database set.
-    implementation_status: Partially in Place
+  - text: >
+      {{contractor.name_short}} incident response and configuration capabilities
+      include the detection of unauthorized changes to the system through the
+      IR Plan and CCB Change Request process and the implementation of IR-4 and
+      IR-5. In the event of an unauthorized security change to the system,
+      {{contractor.name_short}} support would roll back to and restore from the
+      most recent authorized database set.
+  implementation_status: Partially in Place
 - control_key: SI-12
   control_name: INFORMATION OUTPUT HANDLING AND RETENTION
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: The {{contractor.name_short}} organization retains all information, system-related information,
-      incident-related information, and system output in accordance with customers’
-      requirements retention periods and other NIST guidance and standards, Federal
-      policies, procedures, federal laws, and executive orders. Audit records are
-      retained for 365 days.
-    implementation_status: In Place
+  - text: >
+      The {{contractor.name_short}} organization retains all information,
+      system-related information, incident-related information, and system
+      output in accordance with customers’ requirements retention periods and
+      other NIST guidance and standards, Federal policies, procedures, federal
+      laws, and executive orders. Audit records are retained for 365 days.
+  implementation_status: In Place

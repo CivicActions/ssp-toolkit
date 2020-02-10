@@ -7,17 +7,19 @@ satisfies:
   covered_by: []
   security_control_type: System Specific
   narrative:
-  - text: |
-      {{project.organization_name_short}} does not collect or maintain PII and therefore does not directly address this
-      control though it may address it indirectly.
-    implementation_status: Not Applicable
+  - text: >
+      {{project.name_short}} does not collect or maintain PII and therefore
+      does not directly address this control though it may address it
+      indirectly.
+  implementation_status: Not Applicable
 - control_key: SE-2
   control_name: PRIVACY INCIDENT RESPONSE
   standard_key: NIST SP 800-53 Revision 4 Privacy
   covered_by: []
   security_control_type: System Specific
   narrative:
-  - text: |
-      {{project.organization_name_short}} does not collect or maintain PII and therefore does not directly address this
-      control though it may address it indirectly.
-    implementation_status: Not Applicable
+  - text: >
+      {{project.name_short}} does not collect or maintain PII and therefore
+      does not directly address this control though it may address it
+      indirectly.
+  implementation_status: Not Applicable

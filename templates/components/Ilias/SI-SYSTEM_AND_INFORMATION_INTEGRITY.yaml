@@ -7,7 +7,7 @@ satisfies:
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: Drupal contains built-in security status monitoring of the core application
+  - text: Ilias contains built-in security status monitoring of the core application
       and contributed modules.
   implementation_status: In Place
 - control_key: SI-5
@@ -16,9 +16,8 @@ satisfies:
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: >
-      {{contractor.name_short}} Security and Operations receive Drupal Security Advisories
-      on a regular basis.
+  - text: '{{contractor.name_short}} Security and Operations receive Ilias Security Advisories
+      on a regular basis.'
   implementation_status: In Place
 - control_key: SI-10
   control_name: INFORMATION INPUT VALIDATION
@@ -26,7 +25,7 @@ satisfies:
   covered_by: []
   security_control_type: System Specific Control
   narrative:
-  - text: All Drupal form input text is subject to format verification and input validation.
+  - text: All Ilias form input text is subject to format verification and input validation.
   implementation_status: In Place
 - control_key: SI-11
   control_name: ERROR HANDLING
@@ -35,9 +34,9 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - key: a
-    text: Drupal system error logs do not contain passwords, personal information,
+    text: Ilias system error logs do not contain passwords, personal information,
       encryption keys or other sensitive information.
   - key: b
-    text: Drupal system error logs are only available to authenticated administrators
+    text: Ilias system error logs are only available to authenticated administrators
       and viewable within the administrative interface.
   implementation_status: In Place

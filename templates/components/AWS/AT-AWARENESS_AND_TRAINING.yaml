@@ -9,7 +9,7 @@ satisfies:
   narrative:
   - text: |
       The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: AT-2
   control_name: SECURITY AWARENESS TRAINING
@@ -19,7 +19,7 @@ satisfies:
   narrative:
   - text: |
       The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: AT-3
   control_name: ROLE-BASED SECURITY TRAINING
@@ -29,7 +29,7 @@ satisfies:
   narrative:
   - text: |
       The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
-    implementation_status: In Place
+  implementation_status: In Place
   summary: Partially inherited from AWS (FedRAMP).
 - control_key: AT-4
   control_name: SECURITY TRAINING RECORDS
@@ -40,4 +40,4 @@ satisfies:
   - key: b
     text: |
       The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
-    implementation_status: In Place
+  implementation_status: In Place

@@ -9,7 +9,7 @@ satisfies:
   narrative:
   - text: |
       The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
-    implementation_status: In Place
+  implementation_status: In Place
 - control_key: CA-7
   control_name: CONTINUOUS MONITORING
   standard_key: NIST SP 800-53 Revision 4
@@ -20,13 +20,12 @@ satisfies:
     text: >
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: continuous monitoring.
-    implementation_status: In Place
   - key: d
     text: >
       The system partially inherits this control from the FedRAMP Provisional ATO
       granted to the AWS Cloud dated 1 May 2013 for the following: ongoing security
       status monitoring.
-    implementation_status: Partially in Place
+  implementation_status: Partially in Place
 - control_key: CA-9
   control_name: INTERNAL SYSTEM CONNECTIONS
   standard_key: NIST SP 800-53 Revision 4
@@ -35,6 +34,6 @@ satisfies:
   narrative:
   - text: |
       Not applicable: There are no internal systems that connect to the FedRAMP certified AWS cloud.
-    implementation_status: Not Applicable
+  implementation_status: Not Applicable
   summary: Not applicable. No internal systems connect to the FedRAMP certified AWS
     cloud.
