@@ -1,20 +1,11 @@
 family: CONFIGURATION MANAGEMENT
 documentation_complete: false
 satisfies:
-- control_key: CM-1
-  control_name: CONFIGURATION MANAGEMENT POLICY AND PROCEDURES
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: |
-      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
-  implementation_status: In Place
 - control_key: CM-2
   control_name: BASELINE CONFIGURATION
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Shared
   narrative:
   - text: >
       Hardware Baselines
@@ -22,105 +13,56 @@ satisfies:
       All hardware is maintained by AWS Cloud. The system therefore inherits hardware
       configuration aspects of this control from the FedRAMP Provisional ATO granted
       to the AWS Cloud dated 1 May 2013 for the following: baseline configuration.
-  implementation_status: In Place
-- control_key: CM-5
-  control_name: ACCESS RESTRICTIONS FOR CHANGE
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: physical and logical
-      access restrictions to server instances. Development and staging environments
-      are logged by default as part of the AWS Cloud system.
-  implementation_status: In Place
-- control_key: CM-5 (1)
-  control_name: AUTOMATED ACCESS ENFORCEMENT / AUDITING
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: automated access
-      enforcement / access.
-  implementation_status: In Place
-- control_key: CM-6
-  control_name: CONFIGURATION SETTINGS
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: configuration settings.
-  implementation_status: In Place
+  implementation_status: partial
 - control_key: CM-7
   control_name: LEAST FUNCTIONALITY
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Shared
   narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: least functionality.
-  implementation_status: In Place
+  - key: a
+    text: >
+      In this architecture, only essential capabilities for a multi-tiered web service are
+      configured. AWS Identity and Access Management (IAM) baseline Groups and Roles are
+      configured to support restricted access to AWS resources by  privileged users and
+      non-person entities (EC2 systems operating with a role) authorized and assigned by the
+      organization.
+  - key: b
+    text: >
+      In this architecture, ports, protocols, and services are restricted to those that are
+      required for a multi-tiered web service, via AWS security group rules.
+  implementation_status: partial
 - control_key: CM-8
   control_name: INFORMATION SYSTEM COMPONENT INVENTORY
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      The system inherits the platform software components of this control from the
-      FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following:
-      information system component inventory.
-  implementation_status: In Place
-- control_key: CM-8 (1)
-  control_name: UPDATES DURING INSTALLATIONS / REMOVALS
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      Website content is backed up daily by the AWS Managed Cloud hosting system,
-      which is configured to take daily database snapshots
-
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: components inventory
-      updates.
-  implementation_status: In Place
-- control_key: CM-10
-  control_name: SOFTWARE USAGE RESTRICTIONS
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud Service Providers dated 1 May 2013 for the following:
-      software usage restrictions.
-  implementation_status: In Place
-- control_key: CM-11
-  control_name: USER-INSTALLED SOFTWARE
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Shared
   narrative:
   - key: a
     text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud Service Providers dated 1 May 2013 for the following:
-      governing user installed software.
+      AWS built-in features dynamically build and maintain an inventory of system components
+      (infrastructure inventory)
+
+      1. AWS built-in features provide an accurate, real-time inventory of all infrastructure
+         system and network components within the customer account and provides a single view
+         for granularity for tracking and reporting.
+
+      2. AWS built-in features provide an accurate, real-time inventory of all infrastructure
+         system and network components within the AWS account, and  AWS CloudFormation
+         creates a unique set of stack names, and associated resource names  incorporate the
+         stack name, for tracking components deployed by Cloudformation templates that align
+         with an authorization boundary.
+
+      3. AWS built-in features provide a level of granularity for tracking and reporting on
+         all infrastructure system and network components and configuration settings for
+         those components.
+
+      4. AWS built-in features provide all available information about all infrastructure
+         system and network components to achieve effective component accountability.
+
   - key: b
     text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud Service Providers dated 1 May 2013 for the following:
-      enforcing software installation policies.
-  - key: c
-    text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud Service Providers dated 1 May 2013 for the following:
-      monitoring compliance.
-  implementation_status: In Place
+      AWS built-in features provides a dynamically updated inventory of all infrastructure
+      system and network components within the customer account. The AWS management console
+      and AWS API calls support the capability for the organization to review the inventory.
+  implementation_status: partial

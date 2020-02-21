@@ -1,108 +1,37 @@
 family: CONTINGENCY PLANNING
 documentation_complete: false
 satisfies:
-- control_key: CP-1
-  control_name: CONTINGENCY PLANNING POLICY AND PROCEDURES
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: |
-      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
-  implementation_status: In Place
-  summary: Partially inherited from AWS (FedRAMP).
-- control_key: CP-2
-  control_name: CONTINGENCY PLAN
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - key: a
-    text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: contingency plan.
-  implementation_status: In Place
-  summary: Partially inherited from AWS (FedRAMP).
-- control_key: CP-3
-  control_name: CONTINGENCY TRAINING
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: contingency plan
-      training.
-  implementation_status: In Place
-  summary: Partially inherited from AWS (FedRAMP).
-- control_key: CP-4
-  control_name: CONTINGENCY PLAN TESTING
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: contingency plan
-      testing.
-  implementation_status: In Place
-  summary: Partially inherited from AWS (FedRAMP).
-- control_key: CP-6
-  control_name: ALTERNATE STORAGE SITE
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: alternate storage
-      site
-  implementation_status: In Place
-  summary: Partially inherited from AWS (FedRAMP).
-- control_key: CP-6 (1)
-  control_name: SEPARATION FROM PRIMARY SITE
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: alternate storage
-      site separation.
-  implementation_status: In Place
-  summary: Partially inherited from AWS (FedRAMP).
 - control_key: CP-9
   control_name: INFORMATION SYSTEM BACKUP
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Shared
   narrative:
   - key: a
     text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: user level backup
-      requirements.
+      In this architecture, user data is limited to that which is stored in the Amazon RDS
+      database. RDS is fully backed up by a daily snapshot as well as through transaction
+      logging conducted by AWS as part of this managed service. Full database recovery from
+      snapshot or point-in-time can be initiated from the RDS console/API.
   - key: b
     text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: system level backup
-      requirements.
+      AWS built-in features automatically backs up system-level information limited to
+      infrastructure CONFIGURATION information within the AWS account.  While individual
+      running  EC2 instances and attached EBS volumnes  are NOT backed up, they can be
+      reconstituted from Amazon Machine Images (AMIs) provided  by AWS (which are backed up
+      by AWS) and user data scripts included in CloudFormation templates.  Once deployed, the
+      CloudFormation template contents are backed up by AWS R488within the CloudFormation
+      service. These AWS backups of AWS services are transparent to the customer as part of
+      AWS backend processes.
+  - key: c
+    text: >
+      AWS built-in features back up online administrator and developer documentation, limited
+      to that which is published at https://aws.amazon.com/documentation.
   - key: d
     text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: protection of backup
-      information.
-  implementation_status: In Place
-  summary: Partially inherited from AWS (FedRAMP).
-- control_key: CP-10
-  control_name: INFORMATION SYSTEM RECOVERY AND RECONSTITUTION
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: information system
-      recovery and reconstitution.
-  implementation_status: In Place
-  summary: Partially inherited from AWS (FedRAMP).
+      AWS built-in features  protect the  confidentiality, integrity, and availability of
+      information that AWS services back up.   This information includes the service
+      configuration information within an account,  AWS online administrator and developer
+      documentation, and AWS CloudFormation stacks for templates once deployed into an
+      account. R612
+  implementation_status: partial

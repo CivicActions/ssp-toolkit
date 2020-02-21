@@ -1,106 +1,46 @@
 family: ACCESS CONTROL
 documentation_complete: false
 satisfies:
-- control_key: AC-1
-  control_name: ACCESS CONTROL POLICY AND PROCEDURES
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Partially Inheritable
-  narrative:
-  - text: |
-      The system partially inherits this control from the FedRAMP Provisional ATO granted
-      to the AWS Cloud Service Providers dated 1 May 2013.
-  implementation_status: In Place
 - control_key: AC-2
   control_name: ACCOUNT MANAGEMENT
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Partially Inheritable
+  security_control_type: Shared
   narrative:
   - text: >
       The system partially inherits this control from the FedRAMP Provisional ATO granted
       to the AWS Cloud dated 1 May 2013 for the following: AWS account management.
   - key: a
     text: >
-      AWS Identity and Access Management (IAM) provides fine-grained access to AWS resources
-
-      Operations, in collaboration with the Security Office, will set up privileged
-      accounts accounts for the following roles:
-
-      • Reporter - account that has read-only access to system reporting.
-
-      • Administrator - account with full site management access.
-  implementation_status: In Place
+      In this architecture, a baseline set of AWS Identity and Access Management (IAM) groups
+      and roles are created, with associated access policies,  to support alignment of user
+      accounts to personnel functions related to infrastructure/platform management (e.g.
+      Billing, EC2/VPC/RDS systems administration, I.T. auditing, etc.)
+  - key: g
+    text: >
+      In this architecture, AWS CloudTrail and Amazon S3 Bucket logging are enabled, which
+      provides the audit trail capability for the organization to monitor the use of AWS
+      Identity and Access Management (IAM) accounts.  An Amazon S3 bucket centrally contains
+      the CloudTrail audit logs. Amazon CloudWatch Alarm is configured to send an alert when
+      an API call is made to create, update or delete a Network ACL/Security Group, when Root
+      user activity detected, when multiple API actions or login attempts fail,  when IAM
+      Configuration changes are detected, when new IAM access key was created and when
+      changes to the CloudTrail log configuration is detected
+  implementation_status: partial
 - control_key: AC-3
   control_name: ACCESS ENFORCEMENT
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Shared
   narrative:
   - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: AWS account management.
-  implementation_status: In Place
-- control_key: AC-6
-  control_name: LEAST PRIVILEGE
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: application of
-      least privilege.
-  implementation_status: In Place
-- control_key: AC-7
-  control_name: UNSUCCESSFUL LOGIN ATTEMPTS
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: unsuccessful logon
-      attempts.
-  implementation_status: In Place
-- control_key: AC-17
-  control_name: REMOTE ACCESS
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: remote access.
-  implementation_status: In Place
-- control_key: AC-18
-  control_name: WIRELESS ACCESS
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
-  narrative:
-  - text: >
-      The system inherits this control from the FedRAMP Provisional ATO granted to
-      the AWS Cloud dated 1 May 2013 for the following: wireless access.
-  implementation_status: Not Applicable
-- control_key: AC-19
-  control_name: ACCESS CONTROL FOR MOBILE DEVICES
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
-  narrative:
-  - text: >
-      The system inherits this control from the FedRAMP Provisional ATO granted to
-      the AWS Cloud dated 1 May 2013 for the following: mobile device restrictions.
-  implementation_status: In Place
-- control_key: AC-20
-  control_name: USE OF EXTERNAL INFORMATION SYSTEMS
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
-  narrative:
-  - text: >
-      The system inherits this control from the FedRAMP Provisional ATO granted to
-      the AWS Cloud dated 1 May 2013 for the following: use of external information
-      systems.
-  implementation_status: In Place
+      In this architecture, AWS Identify and Access Management (IAM) and Amazon S3 enforce
+      access to the AWS infrastructure and data in S3 buckets. A baseline set of IAM groups
+      are created, with associated access policies to support alignment of user accounts to
+      personnel functions related to infrastructure/platform management (e.g. Billing, EC2/
+      VPC/RDS systems administration, I.T. auditing, etc.) Login/API access is restricted to
+      those users for whom the organization has authorized and created or federated IAM user
+      accounts, and assigned the appropriate IAM group and/or role membership. Amazon S3
+      buckets have specific access control policies assigned to restrict access to those IAM
+      users who are assigned the appropriate IAM roles/groups.
+  implementation_status: partial

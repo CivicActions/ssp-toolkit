@@ -1,65 +1,42 @@
 family: SYSTEM AND SERVICES ACQUISITION
 documentation_complete: false
 satisfies:
-- control_key: SA-1
-  control_name: SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: |
-      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
-  implementation_status: In Place
-- control_key: SA-2
-  control_name: ALLOCATION OF RESOURCES
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: allocation of resources.
-  implementation_status: In Place
-- control_key: SA-3
-  control_name: SYSTEM DEVELOPMENT LIFE CYCLE
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: system development
-      life cycle.
-  implementation_status: In Place
-- control_key: SA-4
-  control_name: ACQUISITION PROCESS
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: acquisition process.
-  implementation_status: Partially in Place
 - control_key: SA-5
   control_name: INFORMATION SYSTEM DOCUMENTATION
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Shared
   narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: information system
-      documentation.
-  implementation_status: In Place
-- control_key: SA-9
-  control_name: EXTERNAL INFORMATION SYSTEM SERVICES
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: external information
-      system services.
-  implementation_status: In Place
+  - key: a
+    text: >
+      In this architecture, documentation of the infrastructure configuration in the form of
+      AWS CloudFormation templates in JSON or YAML format, architecture diagrams, deployment
+      user guide and security controls implementation details is included.
+
+
+      AWS built-in features include online documentation for management of the infrastructure at http://aws.amazon.com/documentation/
+  - key: b
+    text: >
+      AWS built-in features include online documentation of AWS services at http://aws.amazon.com/documentation/
+
+      1. AWS built-in features include online documentation for AWS account users at
+         http://aws.amazon.com/documentation/ such as user Guides, API reference guides, CLI
+         reference guides and developer reference guides to provide information on how to
+         effectively use security functions.
+
+      2. AWS built-in features include online documentation for AWS account users within the
+         infrastructure at http://aws.amazon.com/documentation/ such as user Guides, API
+         reference guides, CLI reference guides and developer reference guides to provide
+         information on how to access AWS services and components in a more secure manner.
+
+      3. AWS built-in features include online documentation for AWS account users at
+         https://aws.amazon.com/security/security-resources/ that provides information
+         related to security responsibilities of customers using AWS services.
+  - key: d
+    text: >
+      AWS built-in features include online documentation that is protected by AWS from
+      unauthorized modification or deletion within AWS system.
+  - key: e
+    text: >
+      AWS built-in features include online  documentation located at http://aws.amazon.com/documentation/ that is publicly available.
+  implementation_status: partial

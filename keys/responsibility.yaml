@@ -1,0 +1,309 @@
+# Based off Table D-2: SECURITY CONTROL BASELINES
+# in NIST 800-53
+# Current as of 2018-JUNE-2018
+#
+# Found on Page D-2 of NIST 800-53 rev 4:
+# https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf
+#
+AC_1:
+  contractor: complete
+  project: complete
+AC_2:
+  aws: complete
+  contractor: complete
+  project: complete
+AC_3:
+  drupal: complete
+  project: complete
+  ilias: complete
+AC_7:
+  drupal: complete
+  project: complete
+AC_8:
+  project: partial
+  ilias: complete
+AC_14:
+  project: complete
+AC_17:
+  contractor: complete
+  project: complete
+AC_18:
+  contractor: complete
+AC_19:
+  contractor: complete
+AC_20:
+  contractor: complete
+AC_22:
+  project: complete
+AT_1:
+  contractor: complete
+  project: complete
+AT_2:
+  contractor: complete
+  project: complete
+AT_3:
+  contractor: complete
+  project: complete
+AT_4:
+  contractor: complete
+  project: complete
+AU_1:
+  contractor: complete
+  project: complete
+AU_2:
+  contractor: complete
+AU_3:
+  drupal: complete
+  ilias: complete
+AU_4:
+  contractor: complete
+AU_5:
+  contractor: complete
+AU_6:
+  contractor: Planned
+AU_8:
+  project: complete
+AU_9:
+  contractor: Planned
+AU_11:
+  contractor: complete
+AU_12:
+  contractor: complete
+CA_1:
+  contractor: complete
+  project: complete
+CA_2:
+  contractor: Planned
+  project: Planned
+CA_3:
+  contractor: none
+CA_5:
+  contractor: complete
+  project: complete
+CA_6:
+  project: partial
+CA_7:
+  contractor: partial
+  drupal: complete
+  ilias: complete
+CA_9:
+CM_1:
+  contractor: complete
+  project: complete
+CM_2:
+  contractor: complete
+  project: complete
+CM_4:
+  contractor: complete
+  project: complete
+CM_6:
+  contractor: complete
+  project: partial
+CM_7:
+  project: complete
+CM_8:
+CM_10:
+CM_11:
+  contractor: complete
+CP_1:
+  contractor: complete
+  project: complete
+CP_2:
+  contractor: complete
+  project: complete
+CP_3:
+  contractor: complete
+CP_4:
+  contractor: complete
+CP_9:
+  contractor: complete
+CP_10:
+  contractor: complete
+IA_1:
+  contractor: complete
+  project: complete
+IA_2_1:
+  contractor: complete
+  drupal: complete
+  project: complete
+  ilias: complete
+IA_2_12:
+  project: none
+IA_4:
+  contractor: partial
+  drupal: partial
+  ilias: partial
+IA_5:
+  contractor: complete
+  drupal: none
+  project: partial
+  ilias: none
+IA_5_1:
+  drupal: partial
+  project: partial
+  ilias: partial
+IA_5_11:
+  project: partial
+IA_6:
+  drupal: complete
+  ilias: complete
+IA_7:
+  contractor: complete
+  drupal: complete
+  ilias: complete
+IA_8_1:
+  project: none
+IA_8_2:
+  project: none
+IA_8_3:
+  project: none
+IA_8_4:
+  project: none
+IR_1:
+  contractor: complete
+  project: complete
+IR_2:
+  contractor: complete
+  project: complete
+IR_4:
+  contractor: complete
+  project: complete
+IR_5:
+  contractor: complete
+  project: complete
+IR_6:
+  contractor: complete
+  project: complete
+IR_7:
+  contractor: complete
+IR_8:
+  contractor: complete
+  project: complete
+MA_1:
+  contractor: complete
+  project: complete
+MA_2:
+  project: complete
+MA_4:
+  contractor: complete
+MA_5:
+  contractor: complete
+  project: complete
+MP_1:
+  contractor: complete
+  project: complete
+MP_2:
+MP_6:
+MP_7:
+PE_1:
+PE_2:
+PE_3:
+PE_6:
+PE_8:
+PE_12:
+PE_13:
+PE_14:
+PE_15:
+PE_16:
+PL_1:
+  contractor: complete
+  project: complete
+PL_2:
+  contractor: complete
+  project: complete
+PL_4:
+  contractor: complete
+  project: complete
+PS_1:
+  contractor: complete
+  project: complete
+PS_2:
+  contractor: complete
+  project: complete
+PS_3:
+  contractor: complete
+  project: complete
+PS_4:
+  contractor: complete
+  project: complete
+PS_5:
+  contractor: complete
+  project: complete
+PS_6:
+  project: complete
+PS_7:
+  project: complete
+PS_8:
+  contractor: complete
+  project: complete
+RA_1:
+  contractor: complete
+  project: complete
+RA_2:
+  project: complete
+RA_3:
+  project: Planned
+RA_5:
+  contractor: partial
+  project: partial
+SA_1:
+  contractor: complete
+  project: complete
+SA_2:
+  contractor: complete
+  project: complete
+SA_3:
+  contractor: complete
+  project: complete
+SA_4:
+  contractor: partial
+  project: partial
+SA_4_10:
+  contractor: none
+SA_5:
+  contractor: complete
+  project: complete
+SA_9:
+  contractor: complete
+  project: complete
+SC_1:
+  contractor: complete
+  project: complete
+SC_5:
+  drupal: partial
+  project: partial
+  ilias: complete
+SC_7:
+  drupal: complete
+  project: complete
+  ilias: complete
+SC_12:
+  project: none
+SC_13:
+  contractor: none
+SC_15:
+  project: none
+SC_20:
+SC_21:
+SC_22:
+SC_39:
+  contractor: none
+SI_1:
+  contractor: complete
+  project: complete
+SI_2:
+  contractor: complete
+  drupal: complete
+  ilias: complete
+SI_3:
+  contractor: partial
+SI_4:
+  contractor: complete
+SI_5:
+  contractor: complete
+  drupal: complete
+  project: complete
+  ilias: complete
+SI_12:
+  contractor: complete
+  project: complete

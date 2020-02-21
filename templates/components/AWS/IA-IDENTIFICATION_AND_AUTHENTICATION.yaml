@@ -1,69 +1,100 @@
 family: IDENTIFICATION AND AUTHENTICATION
 documentation_complete: false
 satisfies:
-- control_key: IA-1
-  control_name: IDENTIFICATION AND AUTHENTICATION POLICY AND PROCEDURES
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: |
-      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
-  implementation_status: In Place
-  summary: Partially inherited from AWS (FedRAMP).
 - control_key: IA-2
   control_name: IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS)
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Shared
   narrative:
   - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: Identification
-      and Authentication procedures for personnel who have rights to AWS platform.
-  implementation_status: In Place
-  summary: Partially inherited from AWS (FedRAMP).
-- control_key: IA-2 (1)
-  control_name: NETWORK ACCESS TO PRIVILEGED ACCOUNTS
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      The AWS Management Console is configured to require two factor authentication. See
-      artifact: AWS_IAM_MFA.png
-  implementation_status: In Place
-- control_key: IA-4
-  control_name: IDENTIFIER MANAGEMENT
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: identifier management.
-  implementation_status: Partially in Place
-  summary: Partially inherited from AWS (FedRAMP).
-- control_key: IA-5
-  control_name: AUTHENTICATOR MANAGEMENT
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: authenticator management.
-  implementation_status: Partially in Place
-  summary: Partially inherited from AWS (FedRAMP).
+      AWS built-in features of Identity and Access Management (IAM) provides the capability
+      for uniquely identifying and authenticating  users and processes acting on their behalf
+      to both organizational and non-organizational users operating within the AWS account
+      and infrastructure, providing privileges based on the credentials, group memberships,
+      and access policies assigned to them.  The customer organization, at its discretion,
+      provides individual user accounts and privileges to both organizational
+      non-organizational users in addition to organizational users.
+  implementation_status: partial
 - control_key: IA-5 (1)
   control_name: PASSWORD-BASED AUTHENTICATION
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Shared
+  narrative:
+  - key: a
+    text: >
+      AWS built-in features of Identity and Access Management (IAM) provides minimum password
+      complexity enforcement, but the characteristics to enforce must be manually configured
+      by the customer.  Refer to http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html
+  - key: c
+    text: >
+      AWS built-in features of AWS Identity and Access Management (IAM) and the AWS Console
+      store passwords on AWS systems in a cryptographically-protected format and only support
+      TLS connectivity to the console web site to protect passwords in transit via encyption.
+  - key: f
+    text: >
+      AWS built-in features of AWS Identity and Access Management (IAM) provides the
+      capability to require new password to be entered upon login.   The customer
+      organization, at its discretion, configures IAM to enforce that requirement.
+  implementation_status: partial
+- control_key: IA-5 (11)
+  control_name: HARDWARE TOKEN-BASED AUTHENTICATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Shared
   narrative:
   - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: password based
-      authentication.
-  implementation_status: Partially in Place
-  summary: Partially inherited from AWS (FedRAMP).
+      AWS built-in features of AWS Identity and Access Management (IAM) provides the capability
+      for Hardware MFA using Gemalto SafeNet IDProve 100 and 700 OTP Tokens which are compliant
+      to OATH open standard (time based - 6 digits) Expected battery life is 3-5 years or
+      approximately 15,000 - 20,000 clicks. These products are handheld devices that provide
+      strong authentication by generating a unique password that is valid for only one attempt
+      and for 30 seconds.
+
+
+      It is the customer organization's responsibility to implement Hardware MFA.
+      Refer to http://aws.amazon.com/iam/details/mfa/ and http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html
+  implementation_status: partial
+- control_key: IA-6
+  control_name: AUTHENTICATOR FEEDBACK
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Shared
+  narrative:
+  - text: >
+      In this architecture, All EC2 instances (bastion host, web/proxy servers, application servers) employ SSH for interactive login, and when a key passphrase is prompted for, the SSH prompting mechanism obscures the feedback by default.
+
+
+      AWS built-in features obscure keystroke feedback for password input during AWS console
+      login with AWS  Identity and Access Management (IAM)  user credentials, and when the
+      CloudFormation console prompts for an initial database password during Quick Start
+      template deployment.
+  implementation_status: partial
+- control_key: IA-7
+  control_name: CRYPTOGRAPHIC MODULE AUTHENTICATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Shared
+  narrative:
+  - text: >
+      AWS built-in features of AWS Identity and Access Management (IAM) authentication employs
+      cryptographic modules that meet requirements as specified and assessed in the AWS FedRAMP
+      authorization package.
+  implementation_status: partial
+- control_key: IA-8
+  control_name: IDENTIFICATION AND AUTHENTICATION (NON-ORGANIZATIONAL USERS)
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Shared
+  narrative:
+  - text: >
+      AWS built-in features of AWS Identity and Access Management (IAM) provide the capability
+      for uniquely identifying and authenticating users and processes acting on their behalf to
+      both organizational and non-organizational users, providing privileges based on the
+      credentials, group memberships, and access policies assigned to them.
+
+
+      The customer organization at its discretion provides user accounts and privileges to both
+      organizational non-organizational users in addition to organizational users.
+  implementation_status: partial

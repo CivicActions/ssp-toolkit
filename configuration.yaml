@@ -5,6 +5,10 @@ system_security_plan:
     _iso-date: iso-date3
     __text: '2019-11-20'
   upi: # Unique Project Identifier
+certification:
+  name: FISMA Low Impact
+  abbr: fisma-low-impact
+status: !include keys/responsibilty.yaml
 poc: !include keys/poc.yaml
 project: !include keys/project.yaml
 artifact: !include keys/artifacts.yaml

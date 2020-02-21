@@ -1,99 +1,186 @@
 family: AUDIT AND ACCOUNTABILITY
 documentation_complete: false
 satisfies:
-- control_key: AU-1
-  control_name: AUDIT AND ACCOUNTABILITY POLICY AND PROCEDURES
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: |
-      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
-  implementation_status: In Place
 - control_key: AU-2
   control_name: AUDITABLE EVENTS
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Shared
   narrative:
-  - text: |
-      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-  implementation_status: In Place
+  - key: a
+    text: >
+      In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB)
+      Logging, and RDS MySQL error logging are employed, which support the capability for
+      audit of organizationally defined events by logging all security-relevant user/API
+      activities and S3 data access activities.
+  - key: c
+    text: >
+      In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB)
+      Logging, and RDS MySQL error logging are employed to provide the audit data necessary
+      to determine what activities have occurred within the infrastructure.
+  - key: d
+    text: >
+      In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB)
+      Logging, and RDS MySQL error logging are employed to provide the capability for audit
+      of organizationally defined events by logging security-relevant events and  errors
+      related to IAM user and API activities, S3 data access, network access, and RDS
+      database errors.
+  implementation_status: partial
 - control_key: AU-3
   control_name: CONTENT OF AUDIT RECORDS
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Shared
   narrative:
-  - text: |
-      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-  implementation_status: In Place
+  - text: >
+      In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB)
+      Logging, and RDS MySQL error logging are employed, which generate audit records that
+      include the level of detail specified in the control. CloudTrail logs provide
+      information on activities related to the manipulation of the infrastructure; S3 bucket
+      logs provide data on activities related to the access or manipulation of data stored in
+      S3; ELB logs provide information about requests or connections; RDS Database MySQL
+      error logs record errors encountered by the database engine.  In addition, the MySQL
+      general query log can be enabled by the customer organization to capture when clients
+      connect or disconnect and SQL statement received from clients.
+
+
+      General information about AWS native logging is documented at:
+      https://aws.amazon.com/answers/logging/aws-native-security-logging-capabilities/
+      Details about CloudTrail logs are documented at http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html
+      Details about S3 bucket logs are documented at http://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html
+      Details about ELB logs are available at http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html
+      http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/access-log-collection.html
+      Details about RDS logs are documented at http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.html
+  implementation_status: partial
 - control_key: AU-4
   control_name: AUDIT STORAGE CAPACITY
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
+  security_control_type: Shared
   narrative:
   - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: disk space availability.
-  implementation_status: In Place
+      In this architecture, Amazon S3 buckets are established for storage of AWS CloudTrail
+      audit records, S3 Bucket logs, Elastic Load Balancer logs, etc., which provide dynamic
+      capacity growth to accommodate organizationally defined storage capacity requirements
+  implementation_status: partial
 - control_key: AU-5
   control_name: RESPONSE TO AUDIT PROCESSING FAILURES
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Shared
   narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013: response to audit processing failures.
+  - key: a
+    text: >
+      In this architecture, AWS CloudTrail is enabled, which provides the basis for audit
+      processing within the infrastructure.
 
-      In the event of low storage or other system issues affecting audit, the AWS
-      CloudWatch monitoring system will alert {{contractor.short_name}} Operations via real-time
-      alert mechanism such as OpsGenie.
-  implementation_status: In Place
-- control_key: AU-6
-  control_name: AUDIT REVIEW, ANALYSIS, AND REPORTING
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: |
-      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-  implementation_status: Planned
+
+      AWS built-in features include customer alerting of CloudTrail and other service
+      failures through the AWS Service Health Dashboard (http://status.aws.amazon.com) and
+      through optional RSS feeds subscribed to by customers, as well as through email and
+      other direct alerts to root account owners for events deemed critical enough for direct
+      contact, per AWS internal Incident Response and corporate communications processes.
+  implementation_status: partial
 - control_key: AU-8
   control_name: TIME STAMPS
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
+  security_control_type: Shared
   narrative:
-  - text: |
-      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-  implementation_status: In Place
+  - key: a
+    text: >
+      In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB)
+      Logging, and RDS MySQL error logging are employed.
+
+
+      AWS built-in features of native logging use AWS region internal clocks to time stamp
+      all log entries.
+  - key: b
+    text: >
+      In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB)
+      Logging, and RDS MySQL error logging are employed.
+
+
+      AWS built-in features of native logging provide time stamps as specified in the ISO
+      8601 standard. ISO 8601 represents local time (with the location unspecified), as UTC,
+      or as an offset from UTC.
+  implementation_status: partial
 - control_key: AU-9
   control_name: PROTECTION OF AUDIT INFORMATION
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
+  security_control_type: Shared
   narrative:
-  - text: |
-      This system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-  implementation_status: Planned
+  - text: >
+      In this architecture, access to audit data and tools are restricted to only personnel
+      assigned by the organization to IAM groups and roles which are associated with access
+      control policies for such access.   In addition, server side encryption of Audit
+      bucket, S3 bucket policies are configured to restrict access to those appropriate IAM
+      groups/roles, and with read-only permissions.
+  implementation_status: partial
 - control_key: AU-11
   control_name: AUDIT RECORD RETENTION
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
+  security_control_type: Shared
   narrative:
-  - text: |
-      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-  implementation_status: In Place
+  - text: >
+      In this architecture, AWS CloudTrail logs are stored in an Amazon S3 bucket, which
+      dynamically allocates storage capacity to support continuous collection and storage of
+      CloudTrail log data with indefinite retention capability, but with 7 year retention
+      specified, and migration to Amazon Glacier after 90 days in AWS regions where Glacier
+      is available.
+  implementation_status: partial
 - control_key: AU-12
   control_name: AUDIT GENERATION
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Shared
   narrative:
-  - text: |
-      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-  implementation_status: In Place
+  - key: a
+    text: >
+      In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB)
+      Logging, and RDS MySQL error logging are enabled, but  initial EC2 instances launched
+      by this deployment (bastion host, application servers, proxy servers, and any EC2-based
+      NAT servers) DO NOT have any auditing enabled within the OS, as these are in place for
+      example purposes only.
+
+
+      AWS built-in features of logging mechanisms povide the audit record generation
+      capability for the auditable events defined in AU-2a. by logging all security-relevant
+      IAM user and API activities which address  AWS infrastructure components (AWS Products
+      and services), ELB
+  - key: b
+    text: >
+      In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB)
+      Logging, and RDS MySQL error logging are enabled AWS Cloudtrail is enabled to log all
+      available API events automatically within the AWS infrastructure and Amazon S3 bucket
+      logging is enabled to log bucket activity.
+
+
+      AWS built-in features of Identity and Access Management (IAM) allows policy  to be
+      applied to privileged users for administrator/audit access, allowing them to modify
+      Amazon CloudWatch alarms, AWS Config rules, and Amazon S3 bucket logging to select the
+      Cloudtrail and S3 events that are to cause notification, alerting and automated
+      reaction.
+  - key: c
+    text: >
+      In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB)
+      Logging, and RDS MySQL error logging are enabled. However, the initial EC2 instances
+      launched by this deployment (bastion host, application servers, proxy servers, and any
+      EC2-based NAT servers) DO NOT have any auditing enabled within the OS, as these are in
+      place for example purposes only.
+
+
+      AWS built-in features of native logging generates audit records with the content
+      defined in AU-3.
+
+
+      General information about AWS native logging is documented at:
+      https://aws.amazon.com/answers/logging/aws-native-security-logging-capabilities/
+      Details about CloudTrail logs are documented at http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html
+      Details about S3 bucket logs are documented at http://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html
+      Details about ELB logs are available at http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html
+      http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/access-log-collection.html
+      Details about RDS logs are documented at http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.html
+  implementation_status: partial
