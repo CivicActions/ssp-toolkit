@@ -16,10 +16,7 @@ satisfies:
       maintained in the {{contractor.name_short}} Audit and Accountability (AU)
       Policy.  This document can be found in the {{contractor.name_short}}
       Compliance Docs GitHub repository at <{{contractor.compliance_docs_url}}>.
-  implementation_status: In Place
-  summary: >
-    {{contractor.name_short}} has developed, documented and disseminated to
-    personnel an audit and accountability policy.
+  implementation_status: {{status.AU_1.implentation_status}}
 - control_key: AU-2
   control_name: AUDITABLE EVENTS
   standard_key: NIST SP 800-53 Revision 4
@@ -38,7 +35,7 @@ satisfies:
       with customers and partner organizations to identify and select auditable
       events. The teams that participate in this process are described in control
       SA-3(b).
-  implementation_status: In Place
+  implementation_status: {{status.AU_2.contractor}}
   summary: >
     {{contractor.name_short}}' Security Policy provides information about auditing
     and logging.
@@ -51,7 +48,7 @@ satisfies:
       {{contractor.name_short}} ensures adequate storage capability requirements
       listed in AU-11 for all events from the application, database, and hosting
       environment.
-  implementation_status: In Place
+  implementation_status: {{status.AU_4.contractor}}
   summary: >
     {{contractor.name_short}} ensures adequate storage capability requirements
     for all events.
@@ -65,7 +62,7 @@ satisfies:
       When notified (e.g., via CloudWatch) of an auditing failure,
       {{contractor.name_short}} Operations staff will review the causes and take
       corrective action.
-  implementation_status: In Place
+  implementation_status: {{status.AU_5.contractor}}
   summary: >
     {{contractor.name_short}} Operations reviews causes adn takes corrective
     action when notified via CloudWatch of auditing failures.
@@ -93,7 +90,7 @@ satisfies:
       constitute a security incident, then the Incident Response process is
       invoked as described in the implementation of the Incident Response Plan
       (IR-8).
-  implementation_status: Planned
+  implementation_status: {{status.AU_6.contractor}}
   summary: >
     {{contractor.name_short}} security audit data is collected by a Graylog
     Security and Event Management (SIEM) dashboard to support real-time and
@@ -110,7 +107,7 @@ satisfies:
       {{contractor.name_short}} Security Office are the only
       {{contractor.name_short}} personnel with logical permission to access and
       review audit logs.
-  implementation_status: Planned
+  implementation_status: {{status.AU_9.contractor}}
   summary: >
     {{contractor.name_short}} ensures that audit logs are created, stored and
     maintained.
@@ -123,7 +120,7 @@ satisfies:
   - text: >
       {{contractor.name_short}} audits events from the application, database,
       and hosting environment, and retains these records for at least 180 days.
-  implementation_status: In Place
+  implementation_status: {{status.AU_11.contractor}}
   summary: >
     {{contractor.name_short}} retains audit records for at least  180 days.
 - control_key: AU-12
@@ -146,7 +143,7 @@ satisfies:
     text: >
       {{contractor.name_short}} maintained applications generate audit records
       for their web and event logs as described in AU-2 and AU-3.
-  implementation_status: In Place
+  implementation_status: {{status.AU_12.contractor}}
   summary: >
     {{contractor.name_short}} ensures audit records are generated for its web
     and event logs as required.

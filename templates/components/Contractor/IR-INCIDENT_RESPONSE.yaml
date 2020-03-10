@@ -16,7 +16,7 @@ satisfies:
       maintained in Incident Response (IR) Policy and Procedure that can be
       found in the {{contractor.name_short}} Compliance Docs GitHub repository
       at <{{contractor.compliance_docs_url}}>.
-  implementation_status: In Place
+  implementation_status: {{status.IR_1.contractor}}
 - control_key: IR-2
   control_name: INCIDENT RESPONSE TRAINING
   standard_key: NIST SP 800-53 Revision 4
@@ -31,7 +31,7 @@ satisfies:
       and the incident response workflow created by the Security Office.  Upon
       a review of past incidents, the training is updated to ensure processes
       and workflows are updated.
-  implementation_status: In Place
+  implementation_status: {{status.IR_2.contractor}}
 - control_key: IR-4
   control_name: INCIDENT HANDLING
   standard_key: NIST SP 800-53 Revision 4
@@ -64,7 +64,7 @@ satisfies:
       the Operations staff and Security Office. Changes to the Incident Response
       Plan (<{{project.incident_response_plan_url}}>) require a team review
       session for approval.
-  implementation_status: In Place
+  implementation_status: {{status.IR_4.contractor}}
 - control_key: IR-5
   control_name: INCIDENT MONITORING
   standard_key: NIST SP 800-53 Revision 4
@@ -83,7 +83,7 @@ satisfies:
       included in the {{contractor.name_short}} Incident Response Plan
       (<{{project.incident_response_plan_url}}/#response-process>) Response
       Process.
-  implementation_status: In Place
+  implementation_status: {{status.IR_5.contractor}}
 - control_key: IR-6
   control_name: INCIDENT REPORTING
   standard_key: NIST SP 800-53 Revision 4
@@ -110,7 +110,7 @@ satisfies:
       {{contractor.name_short}} personnel, as soon as the incident event is
       detected and/or communicated, are required to report the incident event
       to the {{contractor.name_short}} Security Office.
-  implementation_status: In Place
+  implementation_status: {{status.IR_6.contractor}}
 - control_key: IR-7
   control_name: INCIDENT RESPONSE ASSISTANCE
   standard_key: NIST SP 800-53 Revision 4
@@ -125,7 +125,7 @@ satisfies:
       workflow.  Tickets created in the Jira (customer ticketing system) and
       GitLab (internal ticketing system) documents all details related to the
       incident to assist the incident response teams in handling the incident.
-  implementation_status: In Place
+  implementation_status: {{status.IR_7.contractor}}
 - control_key: IR-8
   control_name: INCIDENT RESPONSE PLAN
   standard_key: NIST SP 800-53 Revision 4
@@ -194,4 +194,4 @@ satisfies:
       is maintained in the {{contractor.name_short}} Github repository. Github
       provides the configuration management capabilities for the IR Plan to be
       protected from unauthorized disclosure and modification.
-  implementation_status: In Place
+  implementation_status: {{status.IR_8.contractor}}

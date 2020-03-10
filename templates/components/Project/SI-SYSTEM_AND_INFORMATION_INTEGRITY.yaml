@@ -1,0 +1,49 @@
+family: SYSTEM AND INFORMATION INTEGRITY
+documentation_complete: false
+satisfies:
+- control_key: SI-1
+  control_name: SYSTEM AND INFORMATION INTEGRITY POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      System and information integrity policy and procedures for the
+      {{project.name_short}} system are formally documented in the
+      {{project.name_short}} SSP, which provides the roles and responsibilities
+      as it pertains to physical and environmental protection systems. The
+      {{project.name_short}} system support staff monitors the network on a
+      daily basis and employs up-to-date patches to protect the integrity of
+      the system.
+
+      Additional information is contained within the
+      {{project.info_security_policy}}.
+
+      This is Agency common control.  More data about implementation can be
+      obtained from the Agency common control catalog.
+  implementation_status: {{status.SI_1.project}}
+- control_key: SI-5
+  control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      {{project.name_short}} representatives and system administrators receive
+      alerts from US-CERT on a regular basis. Support personnel take appropriate
+      action in response to relevant areas of concern.
+  implementation_status: {{status.SI_5.project}}
+- control_key: SI-12
+  control_name: INFORMATION HANDLING AND RETENTION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      {{project.name_short}} representatives and systems administrators receive
+      annual training from {{project.client_name_short}} regarding information
+      assurance and information handling requirements. These personnel are
+      required to operate the system and handle system data and output in
+      accordance with legal requirements. Personnel training and system
+      guidelines ensure that data and programs are handled appropriately.
+  implementation_status: {{status.SI_12.project}}

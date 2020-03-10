@@ -17,7 +17,7 @@ satisfies:
       Communications Protection (SC) Policy {{contractor.name_short}} document
       that can be found in the {{contractor.name_short}} Github repository at
       <{{contractor.compliance_docs_url}}/>.
-  implementation_status: In Place
+  implementation_status: {{status.SC_1.contractor}}
 - control_key: SC-13
   control_name: CRYPTOGRAPHIC PROTECTION
   standard_key: NIST SP 800-53 Revision 4
@@ -36,7 +36,38 @@ satisfies:
 
       * AES-256 (FIPS 140-2 validated) for data at rest (with Elastic Block
         Store (EBS) volumes)
-  implementation_status: Not Applicable
+  implementation_status: {{status.SC_13.contractor}}
+- control_key: SC-20
+  control_name: SECURE NAME / ADDRESS RESOLUTION SERVICE
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for the following: secure name / address
+      resolution service (authoritative source)
+  implementation_status: {{status.SC_20.contractor}}
+- control_key: SC-21
+  control_name: SECURE NAME / ADDRESS RESOLUTION SERVICE
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for the following: secure name / address
+      resolution service (recursive or caching resolver)
+  implementation_status: {{status.SC_21.contractor}}
+- control_key: SC-22
+  control_name: ARCHITECTURE AND PROVISIONING FOR NAME / ADDRESS RESOLUTION SERVICE
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+
+  implementation_status: {{status.SC_22.contractor}}
 - control_key: SC-39
   control_name: PROCESS ISOLATION
   standard_key: NIST SP 800-53 Revision 4
@@ -46,4 +77,4 @@ satisfies:
   - text: >
       Process isolation is maintained on the Linux platform. Linux is the only
       operating system that is part of the boundary.
-  implementation_status: In Place
+  implementation_status: {{status.SC_39.contractor}}

@@ -17,25 +17,10 @@ satisfies:
       Identification and Authentication (IA) Policy. This document can be found
       in the {{contractor.name_short}} Github repository at
       <{{contractor.compliance_docs_url}}>.
-  implementation_status: In Place
+  implementation_status: {{status.IA_1.contractor}}
   summary: >
     {{contractor.name_short}} has developed, documented and disseminated to
     personnel an identification and authentication policy.
-- control_key: IA-2
-  control_name: IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS)
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      Privileged users of the system are required to identify and authenticate
-      in order to access any functions of the information system beyond viewing
-      and downloading the publicly available website content that is available
-      to all anonymous website visitors. Privileged users require the appropriate
-      authorization described in AC-2.
-  implementation_status: In Place
-  summary: Privileged users are required to identify and authenticate to privileged
-    features.
 - control_key: IA-2 (1)
   control_name: NETWORK ACCESS TO PRIVILEGED ACCOUNTS
   standard_key: NIST SP 800-53 Revision 4
@@ -53,20 +38,7 @@ satisfies:
       passwords are maintained in encrypted form in the Ansible inventory file.
       The mechanism to enable select users to use a password to obtain root
       access can be viewed in artifact: {{artifact.admin_sudo}}
-  implementation_status: In Place
-- control_key: IA-3
-  control_name: DEVICE IDENTIFICATION AND AUTHENTICATION
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      {{contractor.name_short}} systems do not support or allow device-to-
-      device communications.
-  implementation_status: Not Applicable
-  summary: >
-    {{contractor.name_short}} systems do not support or allow device-to-device
-    communications.
+  implementation_status: {{status.IA_2_1.contractor}}
 - control_key: IA-4
   control_name: IDENTIFIER MANAGEMENT
   standard_key: NIST SP 800-53 Revision 4
@@ -102,7 +74,7 @@ satisfies:
       change their password within that time period, after which the account
       may only be unblocked by a website Administrator or
       {{contractor.name_short}} Operations staff.
-  implementation_status: Partially in Place
+  implementation_status: {{status.IA_4.contractor}}
   summary: >
     Access to the system is authorized by the System Owner or Project Manager
     for each role.
@@ -128,7 +100,7 @@ satisfies:
       • Not writing down or storing passwords in a readable form in any physical
         or logical location where they may be discoverable by unauthorized
         persons.
-  implementation_status: In Place
+  implementation_status: {{status.IA_5.contractor}}
   summary: >
     {{contractor.name_short}} required to take appropriate password handling
     measures.
@@ -148,7 +120,7 @@ satisfies:
       password) between the remote user and the server. Where Transport Layer
       Security (TLS, aka SSL) is used, cryptographic modules will be configured
       in accordance with FIPS 140-2.
-  implementation_status: In Place
+  implementation_status: {{status.IA_7.contractor}}
   summary: >
     {{contractor.name_short}} systems employ authentication methods consistent
     with NIST FIPS 140-2 requirements.

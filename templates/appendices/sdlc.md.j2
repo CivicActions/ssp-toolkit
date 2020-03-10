@@ -1,0 +1,83 @@
+# Appendix SA-15.2: {{ project.name_short }} GitFlow Work Flow
+
+The {{ contractor.name_short }} Development Team uses a specific form of Gitflow as described in this document: <https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow>
+
+## Security Requirements of {{ project.name_short }}
+
+{{ project.name_short }} has defined a set of security requirements to ensure the security of the code produced by the CivicActions developers. Most of these requirements are defined in the [{{ contractor.name_short }} Security Policy]({{ contractor.security_policy_url }}) but they are repeated here for clarity:
+
+* Maintain up-to-date versions of software on all systems (sandbox, development, staging and production). This includes:
+  * Drupal
+  * Operating System (GNU/Linux; some developers may use Mac OSX)
+  * Editors, debuggers, and other tools
+* Always apply relevant CVE patches within 30 days of their release, usually within two weeks
+* Limit live data on development machines. In particular:
+  * no {{ project.name_short }} user PII (other than test PII created by developers)
+  * no copyrighted content
+  * no access restricted files
+* Custom code must conform to Drupal coding and security standards
+* Before being integrated into the development branch, all {{ project.name_short }} code updates must:
+  * have an associated ticket in JIRA
+  * undergo static code analysis with PHP\_CodeSniffer (exceptions for CSS, features, perhaps others)
+  * peer review
+  * full automated testing
+
+## Source Code Branch Management
+
+Three main and constant branches are in use: _develop_, _release_ and _production_
+
+* **develop** - the working branch. New code that has passed automated testing and peer review is merged into the develop branch.
+* **release** - when code is in a stable state, passing all tests and meeting requirements set by the current sprint, the code in develop moves to release. More detail about this special branch in the next section.
+* **production** - contains all production 'stable' code.
+
+Two other types of branches are used that are not constant and are considered working branches: _feature_, and _hotfix_.
+
+## Basic Git Workflow
+
+* All configuration is captured using the Drupal Features module so that it can be reviewed and tracked
+* Before code can be committed to a working branch, it must pass an automated quality and security review as documented below (via PHP\_CodeSniffer enhanced with coder)
+* Before the tested working branch can be merged into the _develop_ branch, it must pass:
+  * a set of over 500 custom automated tests
+  * peer code review
+* Peer review spot checks by the ISSO and CivicActions Director of Engineering are performed
+* Code is deployed to other developers (in their sandboxes) and a “devtest” instance
+* When a sprint achieves its goals, the code is deployed to a staging site with a copy of the production database for further testing by the Product Owner.
+* After acceptance by the Product Owner, a tag is “cut” that indicates a unique set of code and configuration.
+* To maintain continuity, the production site is mirrored onto a “Stable” instance. Then the new tag can be deployed to the production instance.
+* Every step creates an accountable audit trail of all changes.
+
+## Code Development Workflow
+
+ The ability to push code to the main branch is limited to just four persons. All other developers disable their ability to push code to the main branch.
+
+ Developers make all additions and modifications to code in their local copies of the repository. Developers create distinct temporary branches for their work.
+
+ Developers modifications to their local copies of the source code are review and tested (discussed later) before being merged with one of three branches used for organizing code under development.
+
+ Each of these branches exists for specific type of source code modifications. These branches are: “_Feature_”, “_Release_” and “_Hot Fix_”.
+
+ These separate branches that can be independently tested and evaluated before merging with main branch.
+
+ Developers register their local branch as a distinct remote branch to keep their code changes separate from the main branches until their changes can be reviewed.
+
+## Source Code Review and Merge Management
+
+The ability to merge modified source code into production code for deployment is limited to just four individuals. All changes made by developers are review by these individuals before the modified source code is accepted.
+
+### Pending Merge Requests
+
+Developers create merge requests to combine their code with the appropriate branch.
+
+All code must be reviewed by a separate developer before the merge request can be approved.
+
+### Review of Pending Merge Requests
+
+Code reviews are performed by one of four developers with permission to commit code. The person reviewing the code must be different from the code author.
+
+The merge request process displays for the reviewer line by line comparison of the old and  new code.
+
+### Approved and Record of Approved Merge Request
+
+Approved merge requests are then automatically regression tested.
+
+If the regression tests fails, the merge request is rolled back.

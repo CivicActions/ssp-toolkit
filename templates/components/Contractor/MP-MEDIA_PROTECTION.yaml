@@ -16,4 +16,4 @@ satisfies:
       {{contractor.name_short}} Media Protection (MP) Policy and Procedure
       document that can be found in the {{contractor.name_short}} Github
       repository at <{{contractor.compliance_docs_url}}>.
-  implementation_status: In Place
+  implementation_status: {{status.MP_1.contractor}}

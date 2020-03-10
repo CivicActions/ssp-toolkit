@@ -16,7 +16,7 @@ satisfies:
       maintained by the {{contractor.name_short}} System and Services Acquisition
       (SA) Policy document that can be found in the {{contractor.name_short}}
       Github repository at <{{contractor.compliance_docs_url}}/>.
-  implementation_status: In Place
+  implementation_status: {{status.SA_1.contractor}}
 - control_key: SA-2
   control_name: ALLOCATION OF RESOURCES
   standard_key: NIST SP 800-53 Revision 4
@@ -42,7 +42,7 @@ satisfies:
       security-related expenditures that fall outside of explicit compliance
       requirements are addressed in sub-lines under the {{contractor.name_short}}
       Information Technology budget.
-  implementation_status: In Place
+  implementation_status: {{status.SA_2.contractor}}
 - control_key: SA-3
   control_name: SYSTEM DEVELOPMENT LIFE CYCLE
   standard_key: NIST SP 800-53 Revision 4
@@ -197,9 +197,9 @@ satisfies:
       cycle activities by requiring that the processes defined in SA-3(a) and
       (b) above are adhered to by all information system developers and
       associated security personnel.
-  implementation_status: In Place
+  implementation_status: {{status.SA_3.contractor}}
 - control_key: SA-4
-  control_name: ACQUISITIONS
+  control_name: ACQUISITION PROCESS
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
@@ -227,7 +227,7 @@ satisfies:
       in accordance with applicable federal laws, Executive Orders, directives,
       policies, regulations, standards, guidelines, and organizational
       mission/business needs.
-  implementation_status: Partially in Place
+  implementation_status: {{status.SA_4.contractor}}
 - control_key: SA-5
   control_name: INFORMATION SYSTEM DOCUMENTATION
   standard_key: NIST SP 800-53 Revision 4
@@ -272,34 +272,7 @@ satisfies:
       As needed and approved by the {{contractor.name_short}} Security Office,
       documentation is available to appropriate personnel by granting access to
       the private Git repository.
-  implementation_status: In Place
-- control_key: SA-8
-  control_name: SECURITY ENGINEERING PRINCIPLES
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: System Specific Control
-  narrative:
-  - text: >
-      Information system security engineering principles are applied in the
-      specification, design, development, implementation, and modification of
-      the application system.
-
-      Sound security policy, developing layered protections, and controls have
-      been established as the foundation for design throughout the SDLC defined
-      in control SA-3. Security requirements are incorporated into that SDLC,
-      as described previously.
-
-      {{contractor.name_short}} uses a development-stage-production testing and
-      management workflow as part of the {{contractor.name_short}} development
-      model. Changes are first tested on a development environment, then moved
-      to a staging environment for further testing. Once the changes have been
-      tested and approved, a backup is made of the production environment, and
-      the changes are then deployed. More information regarding this model can
-      be found in CM-3 and CM-4. The {{contractor.name_short}} organization
-      ensures that all its developers are trained on how to build secure
-      software, that security controls have been tailored to meet business and
-      operational needs.
-  implementation_status: In Place
+  implementation_status: {{status.SA_5.contractor}}
 - control_key: SA-9
   control_name: EXTERNAL INFORMATION SYSTEM SERVICES
   standard_key: NIST SP 800-53 Revision 4
@@ -311,4 +284,4 @@ satisfies:
       between information system components within the authorization boundary
       and external third-party vendor information systems for the purposes of
       storing, processing or transmitting federal agency data.
-  implementation_status: In Place
+  implementation_status: {{status.SA_9.contractor}}

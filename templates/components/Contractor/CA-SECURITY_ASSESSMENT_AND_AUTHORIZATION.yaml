@@ -17,7 +17,7 @@ satisfies:
       {{contractor.name_short}} Security Assessment and Authorization Policy.
       This document can be found in the {{contractor.name_short}} Compliance
       Docs GitHub repository at <{{contractor.compliance_docs_url}}>.
-  implementation_status: In Place
+  implementation_status: {{status.CA_1.contractor}}
 - control_key: CA-2
   control_name: SECURITY ASSESSMENTS
   standard_key: NIST SP 800-53 Revision 4
@@ -70,7 +70,7 @@ satisfies:
 
       • Incident Response Plan
 
-  implementation_status: Planned
+  implementation_status: {{status.CA_2.contractor}}
 - control_key: CA-3
   control_name: SYSTEM INTERCONNECTIONS
   standard_key: NIST SP 800-53 Revision 4
@@ -81,7 +81,7 @@ satisfies:
       This control is not applicable. {{contractor.name_short}} systems do not
       have system interconnections. The only communication conducted to
       {{contractor.name_short}}' systems is through the Internet.
-  implementation_status: Not Applicable
+  implementation_status: {{status.CA_3.contractor}}
   summary: |
     Control not applicable. {{contractor.name_short}} systems do not have system interconnections.
 - control_key: CA-5
@@ -114,7 +114,7 @@ satisfies:
       mitigation. All POA&Ms are reviewed on a monthly basis by
       {{contractor.name_short}} Information System Security Officer to ensure
       all mitigation strategies are continuing as documented.
-  implementation_status: In Place
+  implementation_status: {{status.CA_5.contractor}}
 - control_key: CA-7
   control_name: CONTINUOUS MONITORING
   standard_key: NIST SP 800-53 Revision 4
@@ -166,8 +166,12 @@ satisfies:
       The security status of the system is reported up to the System Owner and
       Project Manager via the {{contractor.name_short}} Security Office to be
       reviewed alongside other security issues relating to the system.
-  implementation_status: Partially in Place
-  summary: >
-    {{contractor.name_short}} implements a continuous monitoring strategy that
-    incorporates configuration management, system scanning and log analysis
-    processes.
+  implementation_status: {{status.CA_7.contractor}}
+- control_key: CA-9
+  control_name: INTERNAL SYSTEM CONNECTIONS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Inherited
+  narrative:
+  - text: Not applicable.
+  implementation_status: {{status.CA_9.contractor}}

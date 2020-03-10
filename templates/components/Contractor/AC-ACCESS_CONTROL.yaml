@@ -15,7 +15,7 @@ satisfies:
       controls. This information is maintained in the {{contractor.name_short}} Access Control
       (AC) Policy. This document can be found in the {{contractor.name_short}} Compliance Docs
       GitHub repository at <{{contractor.compliance_docs_url}}>.
-  implementation_status: In Place
+  implementation_status: {{status.AC_1.contractor}}
 - control_key: AC-2
   control_name: ACCOUNT MANAGEMENT
   standard_key: NIST SP 800-53 Revision 4
@@ -84,17 +84,7 @@ satisfies:
       In accordance with standard security best practices and {{contractor.name_short}} policy,
       shared and reissued accounts for internal accounts of any kind are not created
       nor used for any purpose in any system.
-  implementation_status: In Place
-- control_key: AC-6
-  control_name: LEAST PRIVILEGE
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      {{contractor.name_short}} performs regular audits of privileged users as part of the
-      practice of enforcing least privilege.
-  implementation_status: In Place
+  implementation_status: {{status.AC_2.contractor}}
 - control_key: AC-17
   control_name: REMOTE ACCESS
   standard_key: NIST SP 800-53 Revision 4
@@ -105,9 +95,7 @@ satisfies:
       The {{contractor.name_short}} Access Control (AC) policy defines policy for remote usage
       restrictions.  The Project Manager or System Owner may additionally provision
       users according to their Access Control policies.
-  implementation_status: In Place
-  summary: |
-    {{contractor.name_short}} Access Control (AC) policy defines remote usage restrictions.
+  implementation_status: {{status.AC_17.contractor}}
 - control_key: AC-18
   control_name: WIRELESS ACCESS
   standard_key: NIST SP 800-53 Revision 4
@@ -117,7 +105,7 @@ satisfies:
   - text: >
       This control is not applicable. The system does not provide wireless
       access points.
-  implementation_status: In Place
+  implementation_status: {{status.AC_18.contractor}}
 - control_key: AC-19
   control_name: ACCESS CONTROL FOR MOBILE DEVICES
   standard_key: NIST SP 800-53 Revision 4
@@ -127,7 +115,7 @@ satisfies:
   - text: >
       This control is not applicable. The system does not maintain a facility
       in which mobile device access limitations are required.
-  implementation_status: In Place
+  implementation_status: {{status.AC_19.contractor}}
 - control_key: AC-20
   control_name: USE OF EXTERNAL INFORMATION SYSTEMS
   standard_key: NIST SP 800-53 Revision 4
@@ -137,4 +125,4 @@ satisfies:
   - text: >
       This control is not applicable. The system does not connect with external
       information systems.
-  implementation_status: In Place
+  implementation_status: {{status.AC_20.contractor}}

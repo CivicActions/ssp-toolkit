@@ -1,0 +1,84 @@
+family: SECURITY ASSESSMENT AND AUTHORIZATION
+documentation_complete: false
+satisfies:
+- control_key: CA-1
+  control_name: SECURITY ASSESSMENT AND AUTHORIZATION POLICIES AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      {{project.name_short}} follows the {{project.info_security_policy}}. The
+      {{project.name_short}} System Security Policy (SSP) provides guidance
+      on all aspects of security for the protection of {{project.name_short}}
+      information technology resources.
+
+      {{project.name_short}} will periodically review and update the SSP when
+      there is a significant change to the regulatory, operational, or technical
+      environment.
+  implementation_status: {{status.CA_1.project}}
+  summary: >
+    {{project.name_short}} follows the {{project.info_security_policy}}.
+- control_key: CA-2
+  control_name: SECURITY ASSESSMENTS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: >
+      The {{project.name}} follows the {{project.info_security_policy}}.
+      The {{project.name}} will conduct annual security assessments to comply
+      with FISMA and NIST regulations. {{project.name_short}} will draw on NIST
+      Special Publications 800-53A security controls to complete the assessment.
+      All controls and sub-set security controls will be evaluated and a risk
+      assessment will be conducted. The scope of the assessment includes:
+
+      1. Security controls and control enhancements under assessment
+
+      2. Assessment procedures to be used to determine security control
+         effectiveness
+
+      3. Assessment environment, assessment team, and assessment roles and
+         responsibilities
+  - key: c
+    text: >
+      The {{project.name_short}} Authorizing Official or Designated
+      Representative will create a Security Assessment Report (SAR). A full
+      assessment shall be conducted by an independent third party assessor at
+      least every three years.
+  implementation_status: {{status.CA_2.project}}
+  summary: >
+    The {{project.name_short}} will conduct annual security assessments to
+    comply with FISMA and NIST regulations.
+- control_key: CA-5
+  control_name: PLAN OF ACTION AND MILESTONES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The {{project.name_short}} follows the {{project.info_security_policy}}
+      procedures in managing POA&Ms.
+  implementation_status: {{status.CA_5.project}}
+  summary: >
+    The {{project.name_short}} follows the {{project.info_security_policy}}
+    procedures in managing POA&Ms.
+- control_key: CA-6
+  control_name: SECURITY AUTHORIZATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The {{project.name_short}} follows the {{project.info_security_policy}}.
+      The {{project.name_short}} system received its first three-year security accreditation on March 3, 2009, and most recently received an ATO on
+      February 5, 2016.
+
+      ATO re-assessment will be performed every three years or when there is a
+      major change to the application, in which a senior organizational
+      official will sign and approve the security accreditation.
+  implementation_status: {{status.CA_6.project}}
+  summary: >
+    The {{project.name_short}} follows the {{project.info_security_policy}}
+    procedures.

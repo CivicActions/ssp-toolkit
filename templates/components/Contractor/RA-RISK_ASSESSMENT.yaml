@@ -16,7 +16,7 @@ satisfies:
       the {{contractor.name_short}} Risk Assessment (RA) Policy and Procedure
       that can be found in the {{contractor.name_short}} Github repository at
       <{{contractor.compliance_docs_url}}/>.
-  implementation_status: In Place
+  implementation_status: {{status.RA_1.contractor}}
 - control_key: RA-5
   control_name: VULNERABILITY SCANNING
   standard_key: NIST SP 800-53 Revision 4
@@ -76,4 +76,4 @@ satisfies:
       assigns each vulnerability an impact rating and response time through
       JIRA or the Git issue tool for tracking to the established remediation
       deadlines listed in RA-5(d).
-  implementation_status: Partially in Place
+  implementation_status: {{status.RA_5.contractor}}

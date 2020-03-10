@@ -1,0 +1,35 @@
+family: CONTINGENCY PLANNING
+documentation_complete: false
+satisfies:
+- control_key: CP-1
+  control_name: CONTINGENCY PLANNING POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      This is Agency common control. More data about implementation can be
+      obtained from the Agency common control catalog.
+
+      The {{project.name_short}} and has developed a contingency planning
+      policy consistent with NIST 800-34. Contingency planning procedures
+      are formally documented within the {{project.name_short}} Contingency
+      Plan, which provides the roles and responsibilities as it pertains to
+      contingency planning. The {{project.name_short}} reviews and updates the
+      policy as necessary and the policy was last updated in July 2012.
+  implementation_status: {{status.CP_1.project}}
+- control_key: CP-2
+  control_name: CONTINGENCY PLAN
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: b
+    text: >
+      The {{project.name_short}} Information System Contingency Plan (ISCP) has
+      been distributed to all members who have roles in Contingency Planning and
+      Incident Response team. Direction by the System Owner will update who is
+      required to receive a copy of the contingency plan. The ISCP can be found
+      in the {{project.name_short}} GitHub wiki at
+      <{{project.contingency_plan_url}}>.
+  implementation_status: {{status.CP_2.project}}

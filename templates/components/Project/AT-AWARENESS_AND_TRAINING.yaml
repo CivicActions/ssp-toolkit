@@ -1,0 +1,106 @@
+family: AWARENESS AND TRAINING
+documentation_complete: false
+satisfies:
+- control_key: AT-1
+  control_name: SECURITY AWARENESS AND TRAINING POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      Security awareness and training policy and procedures are formally
+      documented in {{project.info_security_policy}}, which provides the roles and
+      responsibilities as it pertains to security awareness and training. The
+      Department will ensure all users, including managers and senior
+      executives, are exposed to basic information system security awareness
+      materials before authorizing access to the system and at least annually
+      thereafter. {{project.client_name_short}} documents and monitors all
+      individual information system security training activities including basic security awareness training. {{project.info_security_policy_agency}} reviews
+      and updates the policy as necessary.
+  implementation_status: {{status.AT_1.project}}
+  summary: >
+    This is an Agency Common Control. Security awareness and training policy
+    and procedures documented in Handbook OCIO-01.
+- control_key: AT-2
+  control_name: SECURITY AWARENESS TRAINING
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      {{project.client_name_short}} personnel and contractor employees involved
+      with the management, operation, programming, maintenance, or use of
+      {{project.name_short}} system receive training in acceptable computer
+      security practices prior to system access. All {{project.client_name_short}}
+      employees and contractors are required to complete annual IT security
+      awareness training. This security awareness training covers issues and
+      policies associated with information security, including end user security
+      roles and responsibilities and rules of behavior. Some topics addressed in
+      the training are:
+
+      * Password protection
+
+      * System rules of behavior
+
+      * Protection of hardware, software, and data
+
+      * Proper handling of copyrighted materials
+
+      * Reporting of security breaches and violations
+
+      * Proper procedures for software installation, uploading, and use on
+        workstations.
+  implementation_status: {{status.AT_2.project}}
+  summary: >
+    This is an Agency Common Control. Department personnel and contractors
+    receive security awareness training.
+- control_key: AT-3
+  control_name: ROLE-BASED SECURITY TRAINING
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      Completion of role-based training is an annual requirement for personnel
+      in roles with significant information security responsibilities that
+      require specialized role-based training. Role-based cybersecurity training
+      is developed and implemented to meet identified training needs and
+      competencies associated with the various target audiences/functional roles
+      (federal and contractor employees) that comprise the
+      {{project.client_name_short}} workforce, as is identified in and required
+      by the FISMA and OMB A-130, Appendix III. The appropriate content of
+      security training is determined based on the assigned roles and
+      responsibilities of individuals and the specific security requirements of
+      the Department, PO and the information systems to which personnel have
+      authorized access. Annual training requirements may be met by completing
+      one or more course(s) within the Department’s learning management systems,
+      participating in instructor-led training provided by the OCIO, or
+      completing an external role-based course or courses offered within their
+      specific functional area of expertise.
+  implementation_status: {{status.AT_3.project}}
+  summary: >
+    Role-based training is a requirement for personnel  with significant
+    information security responsibilities.
+- control_key: AT-4
+  control_name: SECURITY TRAINING RECORDS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: >
+      {{project.client_name_short}} documents and monitors all individual
+      information system security training activities including basic security
+      awareness training. New users are required to take security training
+      within 30 days of hire. This information is kept in the appropriate
+      personnel files to verify users have met the training requirements.
+      Training requirement notifications are sent to individuals as deadline
+      for re-training approaches.
+  - key: b
+    text: >
+      {{project.client_name_short}} maintains training certifications for the
+      specified period.
+  implementation_status: {{status.AT_4.project}}
+  summary: |
+    {{project.client_name_short}} documents and monitors all individual
+    information system security training activities

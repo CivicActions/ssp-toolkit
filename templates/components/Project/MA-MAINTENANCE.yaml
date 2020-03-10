@@ -1,0 +1,57 @@
+family: MAINTENANCE
+documentation_complete: false
+satisfies:
+- control_key: MA-1
+  control_name: SYSTEM MAINTENANCE POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      System maintenance policy and procedures are formally documented in the
+      {{project.name_short}} SSP, which provides the roles and responsibilities
+      as it pertains to software and systems maintennance and updates. The
+      {{project.name}} ensures that maintenance controls are developed,
+      disseminated, reviewed, and updated as necessary.
+
+      Physical and environmental protection is fully inherited from the AWS
+      FedRAMP certified us-east cloud.
+
+      This is Agency common control. More data about implementation can be
+      obtained from the Agency common control catalog.
+  implementation_status: {{status.MA_1.project}}
+- control_key: MA-2
+  control_name: CONTROLLED MAINTENANCE
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The {{project.name_short}} schedules, performs, and documents regular
+      maintenance on the software components of all systems, including but
+      not limited to:
+
+      • Hourly automated snapshot backups
+
+      • Daily disaster recovery remote backups
+
+      • Daily Intrusion Detection (OSSEC) / Data Integrity Assurance (AIDE)
+
+      • As needed HelpDesk support
+
+      • Twice-monthly OS updates/patches
+  implementation_status: {{status.MA_2.project}}
+- control_key: MA-5
+  control_name: MAINTENANCE PERSONNEL
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      {{project.client_name_short}} maintains a list of authorized contract
+      ({{contractor.name_short}}) personnel who perform maintenance and repair
+      activities on the {{project.name_short}} Project system components, and
+      only these authorized personnel may perform the maintenance. All
+      maintenance personnel have the required personnel security elements in
+      place.
+  implementation_status: {{status.MA_5.project}}

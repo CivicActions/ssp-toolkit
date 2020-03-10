@@ -22,90 +22,7 @@ satisfies:
       Git repository as the new baseline. All code prior to it being staged is documented,
       tested and approved by {{contractor.name_short}} Development, which is described in control
       SA-3. The production environment is configured to take database snapshots daily.
-  implementation_status: In Place
-- control_key: CM-2 (1)
-  control_name: REVIEWS AND UPDATES
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      {{contractor.name_short}} reviews and updates baseline configurations for the system
-      at least annually, when requested by the System Owner or required by law, and
-      as an integral part of information system component installations, upgrades,
-      and maintenance.
-
-      A review of the CM baselines for the system is conducted and approved by {{
-      contractor}} Development. Any changes made to the production environment are
-      approved prior to deployment by the CCB or agile scrum process. Changes that
-      may require updates to the baseline configuration for the application include:
-
-      • Significant upgrades or changes to applications or database software
-
-      • Security assessment findings
-
-      • Changes in internal/external security requirements
-
-      • A new security threat, incident, or event
-  implementation_status: In Place
-- control_key: CM-2 (2)
-  control_name: AUTOMATION SUPPORT FOR ACCURACY / CURRENCY
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      Ilias configuration settings use automated mechanisms to automate code deployment
-      and baseline settings changes. The website's baseline configuration may be reapplied
-      to the site at any time by manually retriggering a tagged code deployment.
-
-      The source code, which contains the site’s baseline configuration, is managed
-      using Git, a source code version control system. Git is used to track source
-      code which allows administrators to easily deploy and roll back changes on production
-      hosting environments.
-  implementation_status: In Place
-- control_key: CM-2 (3)
-  control_name: RETENTION OF PREVIOUS CONFIGURATIONS
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: Previous baseline configurations are retained in Git, which implements unlimited
-      revision control. Each version of the codebase is given a unique tag when it
-      is deployed to production. When new features are ready for deployment to production,
-      the new code release is given a new tag. This makes it possible to roll back
-      to a previous version of the baseline configuration if needed by redeploying
-      the older release tag.
-  implementation_status: In Place
-- control_key: CM-5 (1)
-  control_name: AUTOMATED ACCESS ENFORCEMENT / AUDITING
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      Access enforcement is monitored within Ilias, which records an entry in the
-      Ilias log for every successful or failed login attempt to the system.
-      Each successful login or logout event is logged with an entry that includes
-      the username of the account being used.
-
-      Access to the server environments is via encrypted SSH sessions with public-key
-      authentication, and all server access is logged.  Specific implementation of
-      auditing events are captured in AU-2. The same access control procedures and
-      need-to-know and accountability principles are enforced for all systems storing
-      baseline configuration policies.
-  implementation_status: In Place
-- control_key: CM-5 (5)
-  control_name: LIMIT PRODUCTION / OPERATIONAL PRIVILEGES
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - key: a
-    text: Configuration changes that do not entail software code changes can only
-      be performed by {{contractor.name_short}} internal administrators with privileges implemented
-      by access enforcement (AC-3) and least privilege (AC-6).
-  implementation_status: In Place
+  implementation_status: {{status.CM_2.ilias}}
 - control_key: CM-8
   control_name: INFORMATION SYSTEM COMPONENT INVENTORY
   standard_key: NIST SP 800-53 Revision 4
@@ -129,9 +46,7 @@ satisfies:
 
       Website content is backed up daily using CPM snapshots. This allows {{contractor.name_short}}
       to build an inventory of the system on demand.
-  implementation_status: In Place
-  summary: The application's software inventory is maintained in the {{contractor
-   }}' Git source code repository.
+  implementation_status: {{status.CM_8.ilias}}
 - control_key: CM-10
   control_name: SOFTWARE USAGE RESTRICTIONS
   standard_key: NIST SP 800-53 Revision 4
@@ -141,5 +56,4 @@ satisfies:
   - text: Ilias is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These
       are all compatible with the Free Software Foundation's General Public License
       (GPL) version 2 or later and are freely available for use under copyright law.
-  implementation_status: In Place
-  summary: Ilias uses Linux, Apache, MySQL and PHP software compatible with the GPL.
+  implementation_status: {{status.CM_10.ilias}}

@@ -16,7 +16,7 @@ satisfies:
       is maintained in the {{contractor.name_short}} Maintenance (MA) Policy and
       Procedure document that can be found in the {{contractor.name_short}}
       Github repository at <{{contractor.compliance_docs_url}}>.
-  implementation_status: In Place
+  implementation_status: {{status.MA_1.contractor}}
 - control_key: MA-4
   control_name: NON-LOCAL MAINTENANCE
   standard_key: NIST SP 800-53 Revision 4
@@ -52,7 +52,7 @@ satisfies:
       Any session for internal maintenance activities is terminated when the
       user completes their session, disconnects from the system, or logs out.
       In addition, sessions are terminated after 15 minutes of inactivity.
-  implementation_status: In Place
+  implementation_status: {{status.MA_4.contractor}}
 - control_key: MA-5
   control_name: MAINTENANCE PERSONNEL
   standard_key: NIST SP 800-53 Revision 4
@@ -65,4 +65,4 @@ satisfies:
       responsibilities.  Access rights for the internal administrators are
       assigned and granted access to perform their specific job responsibilities.
       All physical maintenance requirements are inherited from AWS.
-  implementation_status: In Place
+  implementation_status: {{status.MA_5.contractor}}

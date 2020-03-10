@@ -1,0 +1,180 @@
+family: IDENTIFICATION AND AUTHENTICATION
+documentation_complete: false
+satisfies:
+- control_key: IA-1
+  control_name: IDENTIFICATION AND AUTHENTICATION POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The {{project.name_short}} system owners/managers manage user identifiers
+      by: (i) uniquely identifying each user; (ii) verifying the identity of
+      each user; (iii) receiving authorization to issue a user identifier from
+      an appropriate official; (iv) ensuring that the user identifier is issued
+      to the intended party; (v) disabling user identifier after a reasonable
+      period of inactivity as documented in its security procedures; and (vi)
+      archiving user identifiers. {{project.name_short}} reviews and updates
+      this policy as necessary.
+  implementation_status: {{status.IA_1.project}}
+- control_key: IA-2 (1)
+  control_name: NETWORK ACCESS TO PRIVILEGED ACCOUNTS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The {{project.name_short}} employs multi-factor authentication for
+      privileged users.
+  implementation_status: {{status.IA_2_1.project}}
+- control_key: IA-2 (12)
+  control_name: ACCEPTANCE OF PIV CREDENTIALS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The {{project.name_short}} system allows users to access the system using
+      Common Access Cards (CAC).
+  implementation_status: {{status.IA_2_12.project}}
+- control_key: IA-5
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: >
+      Authentication for {{project.name_short}} internal personnel are created
+      during the personnel assignment process where requests are made to the
+      {{project.name_short}} admin group for proper access levels. The
+      {{project.name_short}} admin group verifies the identity of the user. The
+      website performs further verification by sending an email to the user's
+      mailbox containing a single-use activation link which must be used to log
+      in to the account for the first time and to create a password.
+  - key: b
+    text: >
+      {{project.name_short}} admins in collaboration with {{contractor.name_short}}
+      Operations are responsible for provisioning and de-provisioning end user
+      accounts in compliance with the authentication requirements described
+      herein.
+  - key: c
+    text: >
+      When entering a user account password upon initial login, all users must
+      comply with the following password policies, which are enforced by the
+      website's software configuration:
+
+      • Password must be at least 14 characters in length.
+
+      • Password must contain at least one digit.
+
+      • Password must contain at least one special character (not whitespace or
+        an alphanumeric).
+
+      • Password must contain at least one uppercase character.
+
+      • Password must contain at least one lowercase character.
+  - key: d
+    text: >
+      {{project.name_short}} is responsible for provisioning and de-provisioning
+      end user accounts, which must comply with the strict password policies that
+      are enforced by the website's software configuration, as described in
+      IA-5(d).
+
+      In accordance with {{project.name_short}} site configuration, the
+      following administrative procedures exist for initial authenticator
+      distribution, for lost/compromised/damaged authenticators, and for
+      revoking authenticators.
+
+      • Initial authenticator distribution: Users receive a one-time login link
+        by email upon creating of their user account. They use that link to log
+        in and then must enter a password themselves which complies with the
+        password complexity requirements described in IA-4(b).
+
+      • Lost/compromised/damaged authenticators: Users who have forgotten their
+        password may request a new password by submitting their username or
+        email address. The website responds by emailing a one-time login link
+        to the user's email address. After using the link to log in, the user
+        is required to enter a new password.
+
+      • Revoking authenticators: Users who have not changed their password in
+        the last 90 days are automatically blocked. Administrators may block
+        any user account if they believe there is a reason to do so.
+  - key: f
+    text: >
+      {{project.name_short}} authenticators follow these password lifetime restrictions:
+
+      • Maximum password age = 90
+
+      • Minimum password age = 1
+
+      • Password reuse restriction = 10
+  - key: g
+    text: >
+      {{project.name_short}} enforces password lifetime restrictions.  The
+      password lifetime settings for internal accounts is as follows:
+
+      • Minimum restriction of zero (1) days and
+
+      • Maximum restriction of ninety (90) days before a password change is required.
+  implementation_status: {{status.IA_5.project}}
+- control_key: IA-5 (1)
+  control_name: PASSWORD-BASED AUTHENTICATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      {{project.name_short}} is responsible for provisioning and de-provisioning
+      end user accounts, which must comply with the strict password policies
+      that are enforced by the website's software configuration, as described
+      in IA-5.
+  implementation_status: {{status.IA_5_1.project}}
+- control_key: IA-5 (11)
+  control_name: HARDWARE TOKEN-BASED AUTHENTICATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: System Specific Control
+  narrative:
+  - text: >
+      {{project.name_short}} does not support physical hardware token-based
+      authentication.  Therefore this control is Not Applicable.
+  implementation_status: {{status.IA_5_11.project}}
+- control_key: IA-8 (1)
+  control_name: ACCEPTANCE OF PIV CREDENTIALS FROM OTHER AGENCIES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      {{project.name_short}} allows the use of customer agency supplied Common
+      Access Cards (CAC).
+  implementation_status: {{status.IA_8_1.project}}
+- control_key: IA-8 (2)
+  control_name: ACCEPTANCE OF THIRD-PARTY CREDENTIALS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      {{project.name_short}} does not utilize FICAM approved credentials.
+  implementation_status: {{status.IA_8_2.project}}
+- control_key: IA-8 (3)
+  control_name: USE OF FICAM-APPROVED PRODUCTS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      {{project.name_short}} does not utilize FICAM approved products.
+  implementation_status: {{status.IA_8_3.project}}
+- control_key: IA-8 (4)
+  control_name: USE OF FICAM-ISSUED PROFILES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      {{contractor.name_short}} does not utilize FICAM approved products or
+      profiles.
+  implementation_status: {{status.IA_8_4.project}}

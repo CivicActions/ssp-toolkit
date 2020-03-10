@@ -9,7 +9,7 @@ satisfies:
   narrative:
   - text: Ilias has a manual ability to block IP addresses in cases where attacks
       bypass cloud protection. This is managed by {{contractor.name_short}} Operations.
-  implementation_status: Partially in Place
+  implementation_status: {{status.SC_5.ilias}}
 - control_key: SC-7
   control_name: BOUNDARY PROTECTION
   standard_key: NIST SP 800-53 Revision 4
@@ -21,4 +21,4 @@ satisfies:
       both the AWS platform safeguards and the Ilias logging in monitoring
       and recording system events. All other computing nodes used in the system are
       isolated within AWS.
-  implementation_status: In Place
+  implementation_status: {{status.SC_7.ilias}}

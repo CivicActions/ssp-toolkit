@@ -15,4 +15,4 @@ satisfies:
     text: '{{contractor.name_short}} works closely with the Ilias security community and reviews
       security announcements as part of the continuous monitoring strategy. Items
       found to require immediate remediation will be addressed.'
-  implementation_status: In Place
+  implementation_status: {{status.CA_7.ilias}}

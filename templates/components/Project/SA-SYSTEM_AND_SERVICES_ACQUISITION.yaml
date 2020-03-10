@@ -1,0 +1,145 @@
+family: SYSTEM AND SERVICES ACQUISITION
+documentation_complete: false
+satisfies:
+- control_key: SA-1
+  control_name: SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The {{project.name_short}} complies with the
+      {{project.info_security_policy}}. The {{project.name_short}} will
+      identify new threats/vulnerabilities and technologies that may require
+      updating of solicitation documents.
+
+      This is Agency common control.  More data about implementation can be
+      obtained from the Agency common control catalog.
+  implementation_status: {{status.SA_1.project}}
+- control_key: SA-2
+  control_name: ALLOCATION OF RESOURCES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The {{project.name_short}} System Owner is responsible for leading the
+      annual budgeting process and for tracking organizational spending. The
+      System Owner coordinates with the {{contractor.name_short}} Project
+      Manager and {{contractor.name_short}} Security on at least monthly basis
+      to track security priorities and spending patterns and determine financial
+      requirements. The System Owner also coordinates the approval process for
+      interim increases to the security budget, if required. This data is used
+      to support the development of the annual budget.
+
+      Security costs are included in Exhibit 53 in the Department's on-line
+      electronic Capital Planning and Investment Control system (eCPIC) in order
+      to provide adequate business case information for budget purposes.
+      Security costs are represented across the life cycle in the business case
+      (Exhibit 300) for major investments and (Exhibit 53) for non-major projects
+      - {{project.name_short}} is a non-major project. Security costs are
+      summarized and listed as a line item on the Exhibit 53 in the budget
+      submitted to Treasury.
+
+      Costs for providing security at the infrastructure level are contained in
+      the business cases for infrastructure supporting computing platforms,
+      desktop processing, the network environment, and web capability. Since
+      the Exhibit 53 includes projections for multiple fiscal years, its
+      intention is to identify and anticipate security resources required.
+  implementation_status: {{status.SA_2.project}}
+- control_key: SA-3
+  control_name: SYSTEM DEVELOPMENT LIFE CYCLE
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The {{project.name_short}} draws from the {{project.info_security_policy}},
+      NIST SP 800-64, and Agile software development methodology to ensure
+      security requirements are incorporated during each phase of the life
+      cycle. This helps to ensure the development of secure systems and
+      effective risk management.
+  implementation_status: {{status.SA_3.project}}
+- control_key: SA-4
+  control_name: ACQUISITIONS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The {{project.name_short}} follows the guidelines and procedures within
+      the overarching {{project.info_security_policy}}. The requirements in
+      the information system acquisition contract permit updating security
+      controls as new threat/vulnerabilities are identified and new technologies
+      are implemented.
+
+      The {{project.name_short}} System and Services Acquisition Policy contains
+      the process for determining acceptance criteria for all
+      {{project.name_short}} system software and services.
+
+      The {{project.name_short}} organization reviews and approves all
+      acquisition contracts in accordance with applicable federal laws, Executive
+      Orders, directives, policies, regulations, standards, guidelines, and
+      organizational mission/business needs.
+  implementation_status: {{status.SA_4.project}}
+- control_key: SA-4 (10)
+  control_name: USE OF APPROVED PIV PRODUCTS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      {{contractor.name_short}}/{{project.name_short}} and AWS describes this
+      control as “not applicable”, as PIV credentials are not applicable to the
+      {{project.name_short}} system. Access and Authentication requirements for
+      the {{project.name_short}} system for internal {{contractor.name_short}}
+      and customer are implemented under access management and enforcement
+      (AC-2 and AC-3) and identification and authentication for all users
+      (IA-2 and IA-8).
+
+      It is the responsibiility of {{contractor.name_short}} for implementation
+      of PIV capability for authentication as required.
+  implementation_status: {{status.SA_4_10.project}}
+- control_key: SA-5
+  control_name: INFORMATION SYSTEM DOCUMENTATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      {{project.client_name_short}} maintains adequate documentation for the
+      {{project.name_short}} system. The {{project.name_short}} system
+      documentation is protected as required and made available to authorized
+      personnel. Procedures for protecting system documentation include
+      management in the private {{contractor.name_short}} Git repository and
+      the publicly available documentation trees for Free and Open Source
+      Software (FOSS). The documentation maintained for the
+      {{project.name_short}} system includes:
+
+      • System Security Plan (SSP) – this document
+
+      • Configuration documentation
+
+      • Incident Response and Contingency Plans
+
+      • Rules of Behavior (Acceptable Use Policy)
+
+      • FOSS Reference Manuals (Drupal, GNU/Linux, Apache, MySQL, PHP, Postfix,
+        etc.)
+  implementation_status: {{status.SA_5.project}}
+- control_key: SA-9
+  control_name: EXTERNAL INFORMATION SYSTEM SERVICES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      {{project.name_short}} does not have any dedicated interconnections
+      between information system components within the authorization boundary
+      and external third-party vendor information systems for the purposes of
+      storing, processing, or transmitting federal agency data.
+
+      {{project.name_short}} is hosted on the AWS Cloud platform, which was
+      approved under the FedRAMP Provisional ATO granted to the AWS Cloud dated
+      1 May 2013.
+  implementation_status: {{status.SA_9.project}}

@@ -1,0 +1,34 @@
+family: AUDIT AND ACCOUNTABILITY
+documentation_complete: false
+satisfies:
+- control_key: AU-1
+  control_name: AUDIT AND ACCOUNTABILITY POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The {{project.name_short}} maintains a record of system activity by
+      application process and by user activity. Audit and accountability policy
+      and procedures are documented within the {{project.name_short}} SSP.
+      Security software features are used to automatically generate and store
+      security audit log records for use in monitoring security-related events
+      on all multi-user systems. The {{project.client_name_short}} reviews and
+      updates this policy as necessary and it was last updated in April 2008.
+      Additional information is contained within the {{project.info_security_policy}}.
+  implementation_status: {{status.AU_1.project}}
+  summary: >
+    {{project.name_short}}  maintains a record of system activity by application
+    process and by user activity and follows {{project.info_security_policy}}.
+- control_key: AU-8
+  control_name: TIME STAMPS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The {{project.name_short}} system clocks are synchronized system-wide and
+      provide time stamps with audit records.
+  implementation_status: {{status.AU_8.project}}
+  summary: >
+    {{project.name_short}}  system clocks are synchronized system-wide.
