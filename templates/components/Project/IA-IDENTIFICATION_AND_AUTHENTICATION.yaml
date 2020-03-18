@@ -64,16 +64,16 @@ satisfies:
       comply with the following password policies, which are enforced by the
       website's software configuration:
 
-      • Password must be at least 14 characters in length.
+      * Password must be at least 14 characters in length.
 
-      • Password must contain at least one digit.
+      * Password must contain at least one digit.
 
-      • Password must contain at least one special character (not whitespace or
+      * Password must contain at least one special character (not whitespace or
         an alphanumeric).
 
-      • Password must contain at least one uppercase character.
+      * Password must contain at least one uppercase character.
 
-      • Password must contain at least one lowercase character.
+      * Password must contain at least one lowercase character.
   - key: d
     text: >
       {{project.name_short}} is responsible for provisioning and de-provisioning
@@ -86,37 +86,37 @@ satisfies:
       distribution, for lost/compromised/damaged authenticators, and for
       revoking authenticators.
 
-      • Initial authenticator distribution: Users receive a one-time login link
+      * Initial authenticator distribution: Users receive a one-time login link
         by email upon creating of their user account. They use that link to log
         in and then must enter a password themselves which complies with the
         password complexity requirements described in IA-4(b).
 
-      • Lost/compromised/damaged authenticators: Users who have forgotten their
+      * Lost/compromised/damaged authenticators: Users who have forgotten their
         password may request a new password by submitting their username or
         email address. The website responds by emailing a one-time login link
         to the user's email address. After using the link to log in, the user
         is required to enter a new password.
 
-      • Revoking authenticators: Users who have not changed their password in
+      * Revoking authenticators: Users who have not changed their password in
         the last 90 days are automatically blocked. Administrators may block
         any user account if they believe there is a reason to do so.
   - key: f
     text: >
       {{project.name_short}} authenticators follow these password lifetime restrictions:
 
-      • Maximum password age = 90
+      * Maximum password age = 90
 
-      • Minimum password age = 1
+      * Minimum password age = 1
 
-      • Password reuse restriction = 10
+      * Password reuse restriction = 10
   - key: g
     text: >
       {{project.name_short}} enforces password lifetime restrictions.  The
       password lifetime settings for internal accounts is as follows:
 
-      • Minimum restriction of zero (1) days and
+      * Minimum restriction of zero (1) days and
 
-      • Maximum restriction of ninety (90) days before a password change is required.
+      * Maximum restriction of ninety (90) days before a password change is required.
   implementation_status: {{status.IA_5.project}}
 - control_key: IA-5 (1)
   control_name: PASSWORD-BASED AUTHENTICATION

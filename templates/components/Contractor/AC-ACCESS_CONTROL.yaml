@@ -27,10 +27,10 @@ satisfies:
       {{contractor.name_short}} Operations staff, in collaboration with {{contractor.name_short}}' Security
       Office, will set up privileged accounts for the following roles:
 
-      • Developer - a user-level account that has access to application features and
+      * Developer - a user-level account that has access to application features and
       sanitized databases
 
-      • System Administrator - user accounts that enjoy full system administrator
+      * System Administrator - user accounts that enjoy full system administrator
       access
   - key: b
     text: >
@@ -54,12 +54,12 @@ satisfies:
   - key: f
     text: |
       {{contractor.name_short}} Operations staff is responsible for the following account management activities for both internal administrative users and customer accounts:
-      • Establishing account justification
-      • Activating accounts
-      • Modifying accounts
-      • Expiring accounts
-      • Disabling accounts
-      • Removing accounts
+      * Establishing account justification
+      * Activating accounts
+      * Modifying accounts
+      * Expiring accounts
+      * Disabling accounts
+      * Removing accounts
   - key: g
     text: All {{contractor.name_short}} systems log the usage of information accounts.
   - key: h

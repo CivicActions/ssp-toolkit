@@ -89,15 +89,15 @@ satisfies:
       {{contractor.name_short}} users are required to take appropriate measures
       in the handling of passwords including:
 
-      • Not transmitting user names and passwords together in an unencrypted
+      * Not transmitting user names and passwords together in an unencrypted
         format
 
-      • Not permitting the sending of passwords in an unencrypted format via
+      * Not permitting the sending of passwords in an unencrypted format via
         email
 
-      • Not listing passwords in tickets
+      * Not listing passwords in tickets
 
-      • Not writing down or storing passwords in a readable form in any physical
+      * Not writing down or storing passwords in a readable form in any physical
         or logical location where they may be discoverable by unauthorized
         persons.
   implementation_status: {{status.IA_5.contractor}}

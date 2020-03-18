@@ -35,10 +35,10 @@ satisfies:
       since {{project.name_short}} system does not have any sensitive data,
       a low risk scenario can be assumed.
 
-      • Employee risk levels and background investigations are: Low Risk= NACI,
+      * Employee risk levels and background investigations are: Low Risk= NACI,
         Moderate Risk= LBI, High Risk= BI.
 
-      • Contractor risk levels and background investigations are: Low Risk= NACI,
+      * Contractor risk levels and background investigations are: Low Risk= NACI,
         Moderate Risk= NACC, High Risk= BI.
 
       In order to ensure every employee is assigned to a position, which has

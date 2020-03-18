@@ -68,13 +68,13 @@ satisfies:
       Ilias users are required to take appropriate measures in the handling of passwords
       including:
 
-      • Not transmitting user names and passwords together in an unencrypted format
+      * Not transmitting user names and passwords together in an unencrypted format
 
-      • Not permitting the sending of passwords in an unencrypted format via email
+      * Not permitting the sending of passwords in an unencrypted format via email
 
-      • Not listing passwords in tickets
+      * Not listing passwords in tickets
 
-      • Not writing down or storing passwords in a readable form in any physical or
+      * Not writing down or storing passwords in a readable form in any physical or
       logical location where they may be discoverable by unauthorized persons.
   - key: j
     text: This control is not applicable due to the fact that group accounts are not

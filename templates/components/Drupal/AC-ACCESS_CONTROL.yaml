@@ -1,6 +1,24 @@
 family: ACCESS CONTROL
 documentation_complete: false
 satisfies:
+- control_key: AC-2
+  control_name: ACCOUNT MANAGEMENT
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: b
+    text: >
+      Drupal defines a default set of roles; Anonymous, Authenticated, and
+      Administrator, as well as providing for the creation of additional
+      organizational-defined roles identified by {{project.name}}
+  - key: d
+    text: Drupal has a sophisticated permissions and role-based access control
+      built-in. Each role within Drupal can only access the documents and
+      controls for which their privilege allows.
+  - key: g
+    text: Drupal monitors the usage of information accounts in the Watchdog log.
+  implementation_status: {{status.AC_2.drupal}}
 - control_key: AC-3
   control_name: ACCESS ENFORCEMENT
   standard_key: NIST SP 800-53 Revision 4
@@ -33,3 +51,16 @@ satisfies:
       requires administrator action to unlock the account before the lockout period
       expires.
   implementation_status: {{status.AC_7.drupal}}
+- control_key: AC-14
+  control_name: PERMITTED ACTIONS WITHOUT IDENTIFICATION OR AUTHENTICATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: System Specific Control
+  narrative:
+  - key: a
+    text: >
+      The anonymous user role has the least access to the site of all roles.
+      Drupal sites can be configured to allow actions indentified by
+      {{project.name}}
+  implementation_status: {{status.AC_14.drupal}}
+

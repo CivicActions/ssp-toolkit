@@ -97,14 +97,14 @@ satisfies:
       to the {{contractor.name_short}} Security Office. Methods of detection
       and/or communication may include one or more of:
 
-      • Through continuous monitoring tools (StatusCake, OSSEC, others).
+      * Through continuous monitoring tools (StatusCake, OSSEC, others).
 
-      • As a result of application notifications where {{contractor.name_short}}
+      * As a result of application notifications where {{contractor.name_short}}
         Security receives notifications (AIDE, OpsGenie, others).
 
-      • Event logging described in AC-2
+      * Event logging described in AC-2
 
-      • Host-based alerts from the cloud infrastructure or platform.
+      * Host-based alerts from the cloud infrastructure or platform.
   - key: b
     text: >
       {{contractor.name_short}} personnel, as soon as the incident event is

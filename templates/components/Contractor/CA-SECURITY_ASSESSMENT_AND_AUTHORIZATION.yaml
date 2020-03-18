@@ -56,19 +56,19 @@ satisfies:
       Security, and the Authorization Official (AO)). The security control
       assessment package includes the following:
 
-      • Security Control Matrix
+      * Security Control Matrix
 
-      • Privacy Impact Assessment
+      * Privacy Impact Assessment
 
-      • E-Authentication
+      * E-Authentication
 
-      • Contingency Plan
+      * Contingency Plan
 
-      • Configuration Management Plan
+      * Configuration Management Plan
 
-      • Rules of Behavior
+      * Rules of Behavior
 
-      • Incident Response Plan
+      * Incident Response Plan
 
   implementation_status: {{status.CA_2.contractor}}
 - control_key: CA-3
@@ -100,15 +100,15 @@ satisfies:
       monitor and track the deficiency and its mitigation strategy. POA&M items
       will include:
 
-      • The description of the deficiency,
+      * The description of the deficiency,
 
-      • Dedicated point of contact for this deficiency.
+      * Dedicated point of contact for this deficiency.
 
-      • Cost of the mitigation strategy
+      * Cost of the mitigation strategy
 
-      • Associated risk and NIST control
+      * Associated risk and NIST control
 
-      • Recommended mitigation strategy
+      * Recommended mitigation strategy
 
       POA&Ms are tracked throughout the lifecycle of the system until its
       mitigation. All POA&Ms are reviewed on a monthly basis by
@@ -127,13 +127,13 @@ satisfies:
       that incorporates configuration management, system scanning and log
       analysis processes:
 
-      • Configuration management includes the assessment of security impact
+      * Configuration management includes the assessment of security impact
         analyses of proposed and implemented changes.
 
-      • System scanning is managed by running the OpanSCAP vulnerability scanner
+      * System scanning is managed by running the OpanSCAP vulnerability scanner
         using the DISA STIG profile.
 
-      • Log analysis is managed by feeding logs to a Graylog dashboard for analysis.
+      * Log analysis is managed by feeding logs to a Graylog dashboard for analysis.
 
   - key: b
     text: >

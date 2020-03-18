@@ -31,15 +31,15 @@ satisfies:
       maintenance on the software components of all systems, including but
       not limited to:
 
-      • Hourly automated snapshot backups
+      * Hourly automated snapshot backups
 
-      • Daily disaster recovery remote backups
+      * Daily disaster recovery remote backups
 
-      • Daily Intrusion Detection (OSSEC) / Data Integrity Assurance (AIDE)
+      * Daily Intrusion Detection (OSSEC) / Data Integrity Assurance (AIDE)
 
-      • As needed HelpDesk support
+      * As needed HelpDesk support
 
-      • Twice-monthly OS updates/patches
+      * Twice-monthly OS updates/patches
   implementation_status: {{status.MA_2.project}}
 - control_key: MA-5
   control_name: MAINTENANCE PERSONNEL

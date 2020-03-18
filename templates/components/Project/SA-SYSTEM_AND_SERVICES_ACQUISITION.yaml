@@ -116,15 +116,15 @@ satisfies:
       Software (FOSS). The documentation maintained for the
       {{project.name_short}} system includes:
 
-      • System Security Plan (SSP) – this document
+      * System Security Plan (SSP) – this document
 
-      • Configuration documentation
+      * Configuration documentation
 
-      • Incident Response and Contingency Plans
+      * Incident Response and Contingency Plans
 
-      • Rules of Behavior (Acceptable Use Policy)
+      * Rules of Behavior (Acceptable Use Policy)
 
-      • FOSS Reference Manuals (Drupal, GNU/Linux, Apache, MySQL, PHP, Postfix,
+      * FOSS Reference Manuals (Drupal, GNU/Linux, Apache, MySQL, PHP, Postfix,
         etc.)
   implementation_status: {{status.SA_5.project}}
 - control_key: SA-9

@@ -78,11 +78,11 @@ satisfies:
       and observability service to support real-time and after-the-fact investigation
       at the application level for the following:
 
-      • Indications of inappropriate or unusual activity
+      * Indications of inappropriate or unusual activity
 
-      • Assurance that logging is functioning properly
+      * Assurance that logging is functioning properly
 
-      • Adherence to logging standards identified in this procedure
+      * Adherence to logging standards identified in this procedure
   - key: b
     text: >
       Any significant findings observed during the inspection are reported to

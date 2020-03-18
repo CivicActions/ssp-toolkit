@@ -89,15 +89,15 @@ satisfies:
 
       A significant change includes:
 
-      • Changing authentication or access control implementations;
+      * Changing authentication or access control implementations;
 
-      • Changing storage implementations;
+      * Changing storage implementations;
 
-      • Changing a COTS product to another product;
+      * Changing a COTS product to another product;
 
-      • Changing the backup mechanisms and process; and,
+      * Changing the backup mechanisms and process; and,
 
-      • Adding new interconnections to an outside service provide.
+      * Adding new interconnections to an outside service provide.
   implementation_status: {{status.RA_3.project}}
 - control_key: RA-5
   control_name: VULNERABILITY SCANNING

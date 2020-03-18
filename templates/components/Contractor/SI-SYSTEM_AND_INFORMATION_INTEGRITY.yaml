@@ -29,11 +29,11 @@ satisfies:
       Identification of information system security flaws are detected as early
       as possible by the following methods:
 
-      • Vulnerability scans, as described in RA-5.
+      * Vulnerability scans, as described in RA-5.
 
-      • Log analysis from monitoring described in SI-4.
+      * Log analysis from monitoring described in SI-4.
 
-      • Service flaw notifications (CVEs, etc.) are received by the
+      * Service flaw notifications (CVEs, etc.) are received by the
         {{contractor.name_short}} Security Office and passed on to
         CicvicActions Operations staff when relevant.
 
@@ -115,23 +115,23 @@ satisfies:
       {{contractor.name_short}} systems use a collection of monitoring systems,
       including:
 
-      • ClamAV - provides signature-based malware detection/quarantine
+      * ClamAV - provides signature-based malware detection/quarantine
 
-      • OSSEC host-based intrusion detection system (HIDS)
+      * OSSEC host-based intrusion detection system (HIDS)
 
-      • AIDE Advanced Intrusion Detection Environment (IDS))
+      * AIDE Advanced Intrusion Detection Environment (IDS))
 
-      • fail2ban, an intrusion prevention system (IPS) framework
+      * fail2ban, an intrusion prevention system (IPS) framework
 
-      • SELinux - a Mandatory Access Control (MAC) IPS
+      * SELinux - a Mandatory Access Control (MAC) IPS
 
-      • auditd - a secure system audit daemon
+      * auditd - a secure system audit daemon
 
-      • CloudWatch - AWS monitoring and measurement system
+      * CloudWatch - AWS monitoring and measurement system
 
-      • StatusCake - website monitoring tool
+      * StatusCake - website monitoring tool
 
-      • OpsGenie - a slack/email/text/phone incident escalation tool
+      * OpsGenie - a slack/email/text/phone incident escalation tool
   - key: b
     text: >
       Logs from the systems described in SI-4(a) are sent to the
@@ -176,13 +176,13 @@ satisfies:
       the following security alerts, advisories, and directives on an ongoing
       basis:
 
-      • Mailing lists relevant to web application security
+      * Mailing lists relevant to web application security
 
-      • US-CERT
+      * US-CERT
 
-      • Technical Cyber Security Alerts
+      * Technical Cyber Security Alerts
 
-      • Drupal Security Advisories
+      * Drupal Security Advisories
   - key: b
     text: >
       {{contractor.name_short}} utilizes StatusCake for front line monitoring

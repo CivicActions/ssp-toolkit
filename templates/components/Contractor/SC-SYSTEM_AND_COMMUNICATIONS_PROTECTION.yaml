@@ -27,12 +27,12 @@ satisfies:
   - text: >
       The information system implements:
 
-      • Cryptographic modules through Secure Shell (SSH) to allow administrators
+      * Cryptographic modules through Secure Shell (SSH) to allow administrators
         to securely logon to the various system components
 
-      • HTTPS/SSL (TLS) for connection to web-based services
+      * HTTPS/SSL (TLS) for connection to web-based services
 
-      • TLS for connection to email services
+      * TLS for connection to email services
 
       * AES-256 (FIPS 140-2 validated) for data at rest (with Elastic Block
         Store (EBS) volumes)
