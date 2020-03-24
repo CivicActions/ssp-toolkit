@@ -44,3 +44,10 @@ Optional (and temporary) hack to add a Table of Contents (requires <https://gith
 ```bash
 ./makeDocsTOC.sh
 ```
+
+## License
+
+This work is dual-licensed under Creative Commons 0 and GPL v3 (or any later version).
+You can choose between one of them if you use this work.
+
+`SPDX-License-Identifier: CC0-1.0 OR GPL-3.0-or-later`
