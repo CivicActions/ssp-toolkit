@@ -1,4 +1,5 @@
-
+# This work is dual-licensed under Creative Commons Zero v1.0 Universal and GNU General Public License v3.0 or later.
+# The file containts example code. Replace the values with information that is pertinent to your project.
 application_number:
 sensitivity: low impact
 security_categorization: low
