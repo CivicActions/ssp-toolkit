@@ -2,67 +2,290 @@ title: System Continuity Plan
 title_short: COOP
 version: '3.4'
 sections:
-  overview: >- # Section 1.0
+  overview: # Section 1.0
+    The Project facilitate collaboration between the communities the latest
+    Enterprise 2.0 technologies, along with traditional communication tools
+    will be used to ensure users can easily find and disseminate information
+    between colleagues. The system is based on a content management system. To
+    further enhance collaboration Porject provides video teleconferencing (VTC)
+    capabilities and will have team communications. These tools help to promote
+    real time collaboration between users of the system.
 
+    The system is available to users over a traditional web interface using a
+    desktop or laptop, but also through a mobile version of the web site
+    accessible through mobile devices (phone and tablets). By enabling the
+    latest collaboration techniques the Project will help the Client to fulfill
+    their mission in a more efficient manner. System recovery time of 24 hours
+    has been determined to provide a cost of recovery consummate with the value
+    of the functionality provided by the Client. In light of this schedule, full
+    system recovery can occur within the time frame, sparing the cost of a “hot”
+    or “warm” site.
   continuity_of_ops: # Section 2.0
     provisions_directives: # Section 2.1
       -
+        Federal Information Security Management Act (FISMA 2002)
+      -
+        Federal Information Security Modernization Act (FISMA 2014)
+      -
+        Contingency Planning Guide for Federal Systems, NIST Special Publication 800-34r1 (May 2010)
+      -
+        Risk Management Framework (RMF), NIST Special Publication 800-53r4 (April 2013)
     objectives: >- # Section 2.2
-
+      The primary focus of a COOP revolves around the protection of the two most
+      important assets of any organization: personnel and data. The protection of
+      personnel is inherited fully by the FedRAMP certification granted to the Amazon
+      Web Services (AWS) cloud upon with the Project is built. Further, protection of
+      data from fire, flood, power outages and other natural disasters is inherited
+      through FedRAMP. Additional measures beyond the inherited capabilities are laid
+      out in the Project Contingency Plan.
     organization: # Section 2.3
       description: >-
+        In the event of a disaster or other circumstances that may bring about
+        the need for contingency operations, the normal organization of the
+        Project will shift into that of the contingency organization. The focus
+        the Project will shift from the current structure and function of
+        "business as usual" to the structure and function of the Project working
+        towards the resumption of time-sensitive business operations. The teams
+        associated with the plan represent functions of a department or support
+        functions developed to respond, resume, recover, or restore operations or
+        facilities of the Project and its affected systems. Status and progress
+        updates will be reported by each team leader to the plan owner. Close
+        coordination must be maintained with the Project management and each of
+        the teams throughout the resumption and recovery operations. The Project
+        contingency organization’s primary duties are::
 
-      duties:
-        -
-    success_factors: | #Section 2.5
+        * Protect information assets until normal business operations are resumed
 
+        * Ensure that a viable capability exists to respond to an incident
+
+        * Manage all response, resumption, recovery, and restoration activities
+
+        * Support and communicate with employees, system administrators, security
+          officers, and managers
+
+        * Accomplish rapid and efficient resumption of time-sensitive business
+          operations, technology, and functional support areas
+
+        * Ensure regulatory requirements are satisfied
+
+        * Exercise resumption and recovery expenditure decisions
+
+        * Streamline the reporting of resumption and recovery progress between the
+          teams and management of each system
+
+    success_factors: >- #Section 2.5
+      This section addresses the factors and issues that specifically apply to the the Project COOP project that have been identified to be critical to its successful implementation. These factors are as follows:
+
+      * Commitment by upper management to Continuity of Operations Planning and
+        Disaster Recovery.
+
+      * Budgetary commitment to Disaster Recovery.
+
+      * Modifications and improvements to the current scheduling procedures for the
+        retention and transportation of backup files to the offsite storage facility.
+
+      * Development and execution of the necessary Memoranda of Agreement (MOAs),
+        Memoranda of Understanding (MOUs), and Service Level Agreements (SLAs).
     mission_critical_services: # Section 2.6
       -
-        system_id:
-        description:
-        priority:
-        rationale:
+        system_id: cpm
+        description: Backup management server (Cloud Protection Manager)
+        priority: 1
+        rationale: Expedites restore process
+      -
+        system_id: prod-db
+        description: the Project database
+        priority: 2
+        rationale: Required for the site to function
+      -
+        system_id: prod-web
+        description: the Project website
+        priority: 2
+        rationale: Required for the site to function
+      -
+        system_id: solr
+        description: the Project Search Server
+        priority: 3
+        rationale: Soft dependency for site search functions
+      -
+        system_id: staging
+        description: the Project Staging Server
+        priority: 6
+        rationale: For testing purposes only
+      -
+        system_id: dev
+        description: the Project Development Server
+        priority: 6
+        rationale: For development purposes only
   coop: # Section 3
     plan_mgmt: # Section 3.1
       planning_and_updates: >- # Section 3.1.1
-
+        The development of recovery strategies and work-arounds requires technical
+        input, creativity, and pragmatism. The best way to create workable strategies
+        and cohesive teams that leverage out-of-the-box thinking is to involve
+        management and information resource management personnel in an ongoing,
+        informative dialogue. The the Project management has developed an agile
+        Contingency Plan that is maintained in Git and regularly reviewed and updated
+        by the development, operations and security teams.
       team_members: >- # Section 3.1.2
+        The the Project COOP, Contingency Plan and Security Incident Response team
+        members are listed in the the Project Incident Response Team Contact Details
+        (private Google) spreadsheet which is linked to the the Project Contingency
+        Plan. Included are processes for:
+
+        * Incident Notification and Assessment
+
+        * Plan Activation
+
+        * Damage Assessment
+
+        * Remediation
+
+        * Disaster Recovery
+
+        * Retrospective (lessons learned)
 
       vital_records: >- # Section 3.2
+        Vital records and important documentation are backed up and stored offsite and
+        include any documents or documentation that is essential to the operations of
+        an organization, such as personnel records, software documentation, legal
+        documentation, legislative documentation, benefits documentation, etc. The
+        following documentation will be available:
+
+        * Security related Information Technology (IT) policy & procedure memoranda, circulars, publications
+
+        * Complete hardware and software listings
+
+        * System testing plans/procedures
+
+        * System configuration
+
+        * Data backup/restoration procedures
 
   testing: >- # Section 4
+    The the Project COOP will be maintained routinely and exercised/tested at least
+    annually. Contingency procedures must be tested periodically to ensure the
+    effectiveness of the plan. The scope, objective, and measurement criteria of each
+    exercise will be determined and coordinated by the the Project COOP Coordinator on a
+    “per event” basis. The purpose of exercising and testing the plan is to continually
+    refine resumption and recovery procedures to reduce the potential for failure.
+    There are several different types of tests that are useful for measuring different
+    objectives. The schedule for testing is as follows:
 
+    * Desktop testing on a quarterly basis
+
+    * One structured walk-through per year
+
+    * One integrated business operations/information systems exercise per year
+
+    The COOP Coordinator, Contingency System Coordinators, and Team Leaders, together
+    with the the Project Management will determine end-user participation
   recommended_strategies: # Section 5
     emergency_response: # Section 5.1
       inherited_procedures:
-        title:
+        title: Procedures Inherited from the Cloud Service Provider (AWS) COOP
         procedures:
-          -
+          - Fire
+          - Water hazards
+          - Power failures
+          - Mechanical Failures
+          - Sabotage
     diversification_of_connectivity:
       description: >-
-
+        Amazon EC2 Region US-East is the primary the Project Cloud data center
+        infrastructure with US-West as the secondary/contingency site.
       image:
         path:
         alt:
   backups: # Section 6
     backup_capabilities: >- # Section 6.1
+      All of the the Project systems are dependent on the preservation of data,
+      including software code and databases. In order to minimize the impact of
+      a disaster, it is extremely important to protect the sensitivity or
+      confidentiality of data; to preserve the authenticity and accuracy of
+      data, and to maintain the availability of data. These three goals are
+      commonly defined as “Confidentiality, Integrity, and Availability”. The
+      protection of the confidentiality, integrity, and availability of data is
+      of singular importance in information security and disaster recovery
+      planning. Confidentiality, integrity, and availability of data are intrinsic
+      to disaster recovery planning.
 
+      For data backups, the system utilizes hourly encrypted snapshots of the file
+      system, utilizing AWS elastic block storage (EBS) devices. A full set of these
+      snapshot images is transferred daily to the secondary geographic location
+      (US-West) for localized disaster recovery. The system also makes full logical
+      backups of the primary the Project site database and stores them on virtualized
+      storage.
     backup_schedule:
       steps:
-        -
+        - Hourly snapshot backups of all operating system, application software and data. These are retained for 24 hours.
+        - Daily snapshot backups of all operating system, application software and data. These are retained for 30 days. Each backup is also transferred to the secondary geographic location (US-West).
+        - Daily full logical backups of the primary the Project site database. These are retained on filesystem for 6 days, with additional weekly backups retained for 35 days, and additional monthly backups retained for 150 days. The backup file system itself is also part of the daily snapshot backups and made available on the secondary geographic location (US-West).
       additional:
         text: |
+          In addition:
+
+          * Manual backups are triggered and verified before any system or application software release.
+
+          * Important backups (e.g. prior to major data structure changes) can be added to an extended retention list, and will be retained indefinitely or until they are identified for removal.
+
+          * Configuration of systems and services is maintained in distributed Git repositories.
+
+          Proprietary third party software is external so backups are not required. Third party software packaged that the Project calls out to include:
+
+          * StatusCake
+
+          * OpsGenie
+
+          * JIRA
 
     restore: >- # Section 6.4
+      There are three basic types of software recovery that must be anticipated, namely,
+      data error recovery, hard disk recovery, and virus recovery. The guidelines for
+      these procedures are as follows:
 
+
+      * Data Error Recovery – Use the last hourly backup. Overwrite the data with the
+      contents of the backup, using the appropriate vendor software.
+
+      * Hard Disk Crash – Use the last hourly backup to re-install the system and
+      application software.
+
+      * Virus – Once the start date of the virus has been determined, use the last weekly backup tape before that date to restore the system and application software.
+
+
+      In the event of serious infrastructure level incidents there are two scenarios:
+
+
+      * The first would be to use an alternate availability zone within the same
+        US-East geographic region - in this case, the active disk volumes are already
+        available and could just be attached to server instances in the alternate zone
+        - in this instance, no backup snapshot is required, and the Elastic IPs can be
+        instantly directed to the new servers.
+
+      * The second would be if the entire US-East region became unavailable (all
+        availability zones). In this case we would bring up servers in the secondary
+        US-West site, utilizing the most recent daily snapshots, and then update the
+        domain name (DNS) entries to point to the new instance IPs.
     contingency_log: >- # Section 6.5
-
+      Assessments and results of any exercise or real contingency operations will be
+      logged in JIRA from available documentation after recovery and restoration.
+      Sections include lessons learned, unanticipated difficulties, staff participation,
+      restoration of system backups, description of any permanently lost data, and shut
+      down of temporary equipment used for the resumption, recovery, and restoration.
   contact_info: # Section 7
     description: >-
+      This section includes all points of contact of positions described in the
+      Continuity of Operations Plan (COOP) and key organizational personnel and contact
+      numbers. the Project incident notification and system and network personnel are
+      available 24x7.
 
+      The below diagram shows the overall help desk support workflow, which includes
+      non-urgent support issues. The urgent issue escalation and triage workflow
+      indicates primary contact points and specialization of duties.
     list:
       description: >-
-
+        To maintain current and accurate contact information, the contact list is maintained as a private Google Spreadsheet and linked to the the Project Contingency Plan. If you require access to either of these living documents, contact the CISO.
       image:
         path:
         alt:

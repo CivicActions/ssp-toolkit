@@ -1,0 +1,373 @@
+# Based off Table D-2: SECURITY CONTROL BASELINES
+# in NIST 800-53
+# Current as of 2018-JUNE-2018
+#
+# Found on Page D-2 of NIST 800-53 rev 4:
+# https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf
+#
+AC_1:
+  implementation_status: complete
+  summary:
+AC_2:
+  implementation_status: complete
+  summary:
+AC_3:
+  implementation_status: complete
+  summary:
+AC_7:
+  implementation_status: complete
+  summary:
+AC_8:
+  implementation_status: partial
+  summary:
+AC_14:
+  implementation_status: complete
+  summary:
+AC_17:
+  implementation_status: complete
+  summary:
+AC_18:
+  implementation_status: complete
+  summary:
+AC_19:
+  implementation_status: complete
+  summary:
+AC_20:
+  implementation_status: complete
+  summary:
+AC_22:
+  implementation_status: complete
+  summary:
+AT_1:
+  implementation_status: complete
+  summary:
+AT_2:
+  implementation_status: complete
+  summary:
+AT_3:
+  implementation_status: complete
+  summary:
+AT_4:
+  implementation_status: complete
+  summary:
+AU_1:
+  implementation_status: complete
+  summary:
+AU_2:
+  implementation_status: none
+  summary:
+AU_3:
+  implementation_status: complete
+  summary:
+AU_4:
+  implementation_status: complete
+  summary:
+AU_5:
+  implementation_status: complete
+  summary:
+AU_6:
+  implementation_status: planned
+  summary:
+AU_8:
+  implementation_status: complete
+  summary:
+AU_9:
+  implementation_status: complete
+  summary:
+AU_11:
+  implementation_status: complete
+  summary:
+AU_12:
+  implementation_status: complete
+  summary:
+CA_1:
+  implementation_status: complete
+  summary:
+CA_2:
+  implementation_status: complete
+  summary:
+CA_3:
+  implementation_status: complete
+  summary:
+CA_5:
+  implementation_status: complete
+  summary:
+CA_6:
+  implementation_status: complete
+  summary:
+CA_7:
+  implementation_status: partial
+  summary:
+CA_9:
+  implementation_status: none
+  summary:
+CM_1:
+  implementation_status: complete
+  summary:
+CM_2:
+  implementation_status: complete
+  summary:
+CM_4:
+  implementation_status: complete
+  summary:
+CM_6:
+  implementation_status: complete
+  summary:
+CM_7:
+  implementation_status: complete
+  summary:
+CM_8:
+  implementation_status: complete
+  summary:
+CM_10:
+  implementation_status: complete
+  summary:
+CM_11:
+  implementation_status: complete
+  summary:
+CP_1:
+  implementation_status: partial
+  summary: Partially inherited from AWS (FedRAMP).
+CP_2:
+  implementation_status: partial
+  summary: Partially inherited from AWS (FedRAMP).
+CP_3:
+  implementation_status: partial
+  summary: Partially inherited from AWS (FedRAMP).
+CP_4:
+  implementation_status: partial
+  summary: Partially inherited from AWS (FedRAMP).
+CP_9:
+  implementation_status: partial
+  summary: Partially inherited from AWS (FedRAMP).
+CP_10:
+  implementation_status: partial
+  summary: Partially inherited from AWS (FedRAMP).
+IA_1:
+  implementation_status: partial
+  summary: Partially inherited from AWS (FedRAMP).
+IA_2_1:
+  implementation_status: complete
+  summary:
+IA_2_12:
+  implementation_status: none
+  summary:
+IA_4:
+  implementation_status: partial
+  summary: Partially inherited from AWS (FedRAMP).
+IA_5:
+  implementation_status: partial
+  summary: Partially inherited from AWS (FedRAMP).
+IA_5_1:
+  implementation_status: partial
+  summary: Partially inherited from AWS (FedRAMP).
+IA_5_11:
+  implementation_status: complete
+  summary:
+IA_6:
+  implementation_status: complete
+  summary:
+IA_7:
+  implementation_status: complete
+  summary:
+IA_8_1:
+  implementation_status: complete
+  summary:
+IA_8_2:
+  implementation_status: complete
+  summary:
+IA_8_3:
+  implementation_status: complete
+  summary:
+IA_8_4:
+  implementation_status: complete
+  summary:
+IR_1:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+IR_2:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+IR_4:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+IR_5:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+IR_6:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+IR_7:
+  implementation_status: complete
+  summary:
+IR_8:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+MA_1:
+  implementation_status: partial
+  summary: Partially inherited from AWS (FedRAMP).
+MA_2:
+  implementation_status: partial
+  summary: Partially inherited from AWS (FedRAMP).
+MA_4:
+  implementation_status: partial
+  summary: Partially inherited from AWS (FedRAMP).
+MA_5:
+  implementation_status: partial
+  summary: Partially inherited from AWS (FedRAMP).
+MP_1:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+MP_2:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+MP_6:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+MP_7:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+PE_1:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+PE_2:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+PE_3:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+PE_6:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+PE_8:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+PE_12:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+PE_13:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+PE_14:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+PE_15:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+PE_16:
+  implementation_status: complete
+  summary: Fully inherited from AWS (FedRAMP).
+PL_1:
+  implementation_status: complete
+  summary:
+PL_2:
+  implementation_status: complete
+  summary:
+PL_4:
+  implementation_status: complete
+  summary:
+PS_1:
+  implementation_status: complete
+  summary:
+PS_2:
+  implementation_status: complete
+  summary:
+PS_3:
+  implementation_status: complete
+  summary:
+PS_4:
+  implementation_status: complete
+  summary:
+PS_5:
+  implementation_status: complete
+  summary:
+PS_6:
+  implementation_status: complete
+  summary:
+PS_7:
+  implementation_status: complete
+  summary:
+PS_8:
+  implementation_status: complete
+  summary:
+RA_1:
+  implementation_status: complete
+  summary:
+RA_2:
+  implementation_status: complete
+  summary:
+RA_3:
+  implementation_status: complete
+  summary:
+RA_5:
+  implementation_status: complete
+  summary:
+SA_1:
+  implementation_status: complete
+  summary:
+SA_2:
+  implementation_status: complete
+  summary:
+SA_3:
+  implementation_status: complete
+  summary:
+SA_4:
+  implementation_status: complete
+  summary:
+SA_4_10:
+  implementation_status: complete
+  summary:
+SA_5:
+  implementation_status: complete
+  summary:
+SA_9:
+  implementation_status: complete
+  summary:
+SC_1:
+  implementation_status: complete
+  summary:
+SC_5:
+  implementation_status: complete
+  summary:
+SC_7:
+  implementation_status: complete
+  summary:
+SC_12:
+  implementation_status: none
+  summary:
+SC_13:
+  implementation_status: none
+  summary:
+SC_15:
+  implementation_status: none
+  summary:
+SC_20:
+  implementation_status: none
+  summary:
+SC_21:
+  implementation_status: none
+  summary:
+SC_22:
+  implementation_status: none
+  summary:
+SC_39:
+  implementation_status: none
+  summary:
+SI_1:
+  implementation_status: complete
+  summary:
+SI_2:
+  implementation_status: complete
+  summary:
+SI_3:
+  implementation_status: complete
+  summary:
+SI_4:
+  implementation_status: complete
+  summary:
+SI_5:
+  implementation_status: complete
+  summary:
+SI_12:
+  implementation_status: complete
+  summary:

@@ -1,26 +1,27 @@
-name:
-name_short:
-contact_email:
+name: The Project
+name_short: Project
+contact_email: TheProject@example.net
 description:
-client_name:
-client_name_short:
-incident_response_plan_url:
-contingency_plan_url:
-acceptable_use_policy_url:
+client_name: The Client
+client_name_short: Client
+incident_response_plan_url: https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan
+contingency_plan_url: https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan
+acceptable_use_policy_url: https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy
 contact_sheet_url:
-git_repository:
+git_repository: https://github.com
 backup_url:
-escalation_mail:
+escalation_mail: TheProject@example.com
 slack_link:
 slack_channel:
 slack_url:
 contact_sheet:
-issue_system:
+issue_system: JIRA Incident ticket
 issue_incident:
-escalation_mail:
+escalation_mail: TheProject@example.com
 backup_snaps:
 info_security_policy:
-info_security_policy_url:
-info_security_policy_agency:
+info_security_policy_url: https://obamawhitehouse.archives.gov/blog/2016/07/26/managing-federal-information-strategic-resource
+info_security_policy_agency: OMB
 video_urls:
-  -
+  - https://zoom.us
+  - https://chat.google.com/

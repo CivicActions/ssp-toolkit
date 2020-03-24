@@ -1,62 +1,252 @@
 
 application_number:
-sensitivity:
-security_categorization:
-fedramp_type:
+sensitivity: low impact
+security_categorization: low
 authorizing_official:
 internal_personnel:
 est_internal_personnel:
 external_personnel:
 est_external_personnel:
-status:
+status: Major Modification
 other_description:
-cloud_deployment:
+cloud_deployment: public
 hybrid_description:
 info_types: # Table 2‑2
   -
-    type:
-    reco_confidentiality:
-    reco_integrity:
-    reco_availability:
-    sel_confidentiality:
-    sel_integrity:
-    sel_availability:
-    impact:
+    type: Training Materials
+    reco_confidentiality: Low
+    reco_integrity: Low
+    reco_availability: Low
+    sel_confidentiality: Low
+    sel_integrity: Low
+    sel_availability: Low
+    impact: Training materials is not classified, or FOUO. Users only have access to the training if the instructor grants access to the Training content. All students are vetted prior to coming to the training class and are granted access control to all training material within his/her course
+  -
+    type: Profile Information
+    reco_confidentiality: Low
+    reco_integrity: Low
+    reco_availability: Low
+    sel_confidentiality: Low
+    sel_integrity: Low
+    sel_availability: Low
+    impact: Users have the option of sharing his/her profile information. Information is considered business rolodex information and doesn’t contain financial information or highly sensitive information. User account information is encrypted with 256 bit encryption using FIPS 140-2 compliant security requirements and requires multi-factor authentication and privileged user access to access user accounts.
 leveraged_systems: # Table 9‑4
   -
     name:
     provider_owner:
     date:
 roles_privileges: # Table 10‑1
-  - role:
-    int_ext:
-    privilege_level:
-    sensitivity:
-    authorized_privileges: A
-    functions:
+  - role: AWS Dashboard Administrator
+    int_ext: Internal
+    privilege_level: P
+    sensitivity: Moderate
+    authorized_privileges: AWS Dashboard access
+    functions: Add/remove virtual hardware, manage backup and restore server
+
+  - role: UNIX System Administrator
+    int_ext: Internal
+    privilege_level: P
+    sensitivity: Moderate
+    authorized_privileges: Full administrative access (root)
+    functions: Add/remove system users, install and configure software, OS updates, patches and hotfixes
+
+  - role: Site Administrator
+    int_ext: Internal
+    privilege_level: P
+    sensitivity: Limited
+    authorized_privileges: Full Application Access
+    functions: Application configuration, external user permissions, and content management
+
+  - role: Manager
+    int_ext: Internal
+    privilege_level: P
+    sensitivity: N/A
+    authorized_privileges: Extended Application Access
+    functions: Limited user permissions and content management.
+
+  - role: Staff
+    int_ext: Internal
+    privilege_level: P
+    sensitivity: N/A
+    authorized_privileges: Limited Application Access
+    functions: Create, edit and delete content.
+
+  - role: Content Specialist
+    int_ext: Internal
+    privilege_level: NP
+    sensitivity: N/A
+    authorized_privileges: General Users
+    functions: Create, edit and delete content.
+
+  - role: Members
+    int_ext: Internal
+    privilege_level: NP
+    sensitivity: N/A
+    authorized_privileges: General Users
+    functions: View published content and post comments.
 roles_perms_additional: >
+  The Project uses groups for access to most content.
 
+
+  * **Public Users** -- _Public users_ have limited access to content
+    on the Project. They can only access content that is marked as _Public_
+    and can request membership to _Organizations_ and _Groups_.
+
+  * **Organization Members** -- Users need to be request access, or be added
+    to _Organizations_.
+
+  * **HR Manager** -- An _HR Manager_ is a user who can administer users within a
+    single  the Project community. The also have a limited ability to edit content
+    within that community.
+
+  * **Group Manager** -- _Group Managers_ is responsible for managing the content
+    and members for a group.
 system_function: > # Section 10.1
-
+  The Project uses Open Source Software and is a web based social business tool
+  built on top of a Content Management System (CMS). The CMS provides for
+  creating and managing groups, “friending”, blogs, discussions and other social
+  media functionality. To further enhance collaboration, the Project provides
+  Video Teleconferencing (VTC) capabilities.  These tools will help to promote
+  real time collaboration between users of the system. By enabling the latest
+  collaboration techniques, the the Project system will help the Client to
+  fulfill their mission in a more efficient manner.
 components_boundaries: > # Section 10.2
-
+  The accreditation boundary includes applications and guest operating
+  systems that reside on the AWS Infrastructure-as-a-Service (IaaS).
+  It does not include AWS services themselves, which are documented in
+  the AWS FedRAMP documents and System Security Plan. AWS is
+  considered outside of this system boundary of this application.
+  Shared responsibilities are listed in the Control Implementation
+  Summary.
+boundary_diagram:
 network_diagram:
 ports_protocols: # Table 11‑1
-  -
-    port:
-    protocols:
-    services:
-    purpose:
+  - port: 22
+    protocols: TCP
+    services: SSH Bastion
+    purpose: SSH acces to server
+    used_by: System Administrator
+  - port: 53
+    protocols: TCP/UDP
+    services: AWS DNS
+    purpose: DNS service within AWS
     used_by:
+  - port: 123
+    protocols: UDP
+    services: AWS NTP
+    purpose: Network time protocol
+    used_by:
+  - port: 443
+    protocols: TCP
+    services: AWS ELB
+    purpose: Load balancing
+    used_by:
+  - port: 3306
+    protocols: TCP
+    services: AWS RDS
+    purpose: Database
+    used_by:
+  - port: 4444
+    protocols: TCP
+    services: Filebeat
+    purpose: Baselines (from all instances in VPC)
+    used_by:
+  - port: 5044
+    protocols: TCP/UDP
+    services: SSH/rsync audit records
+    purpose: Elasticsearch (from all instances in VPC)
+    used_by:
+  - port: 8065
+    protocols: TCP
+    services: Web chat
+    purpose: Team chat server
+    used_by:
+  - port: 8443
+    protocols: TCP
+    services: Other service
+    purpose: Shibboleth "attribute query" - SAML2 SSO
+    used_by:
+  - port: 8983
+    protocols: TCP
+    services: Solr
+    purpose: Solr search
+    used_by:
+  - port: 443
+    protocols: TCP
+    services: CMS
+    purpose: CMS update
+    used_by: CMS
+  - port: 443
+    protocols: TCP
+    services: ClamAV
+    purpose: ClamAV definitions updates
+    used_by: ClamAV
+  - port: 443
+    protocols: TCP
+    services: BrowseCap
+    purpose: Determine browser capabilities
+    used_by: Drupal
+  - port: 443
+    protocols: TCP
+    services: GitLab
+    purpose: Used to pull in code changes via git pull
+    used_by: CMS
+  - port: 443
+    protocols: TCP
+    services: GitLab docker registry
+    purpose: Used to pull in docker images
+    used_by: Audit
+  - port: 443
+    protocols: TCP
+    services: OpsGenie
+    purpose: AWS CloudWatch pings OpsGenie
+    used_by: all instances
+  - port: 443
+    protocols: TCP
+    services: yum
+    purpose: RHEL (AWS mirrors) - Repo Lists
+    used_by: all instances
+  - port: 443
+    protocols: TCP
+    services: LetsEncrypt
+    purpose: SSL certificates
+    used_by: all instances
+  - port: 25
+    protocols: TCP
+    services: AWS SES
+    purpose: AWS Simple Email Service (from all)
+    used_by:
+  - port: 636
+    protocols: TCP
+    services: OCSP
+    purpose: Online Certificate Status Protocol
+    used_by: Drupal
+  - port: 143
+    protocols: TCP/UDP
+    services: IMAP
+    purpose: Spam report management
+    used_by: Drupal
+  - port: 993
+    protocols: TCP/UDP
+    services: IMAPS
+    purpose: Spam report management
+    used_by: Drupal
+  - port: 443
+    protocols: TCP
+    services: pip
+    purpose: Python package management
+    used_by: Python
 interconnections: # Table 12‑1
-  -
-    addr_interface:
-    ext_org_ip:
-    ext_poc:
-    connection_sec:
-    data_direction:
-    info_transmitted:
-    port_or_circuit:
+  description:
+  table:
+    -
+      addr_interface:
+      ext_org_ip:
+      ext_poc:
+      connection_sec:
+      data_direction:
+      info_transmitted:
+      port_or_circuit:
 standards: # Table 13‑2
   -
     id:

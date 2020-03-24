@@ -12,6 +12,7 @@ AC_2:
   aws: complete
   contractor: complete
   project: complete
+  drupal: complete
 AC_3:
   drupal: complete
   project: complete
@@ -24,6 +25,7 @@ AC_8:
   ilias: complete
 AC_14:
   project: complete
+  drupal: complete
 AC_17:
   contractor: complete
   project: complete
@@ -52,6 +54,7 @@ AU_1:
   project: complete
 AU_2:
   contractor: complete
+  drupal: complete
 AU_3:
   drupal: complete
   ilias: complete
@@ -87,6 +90,7 @@ CA_7:
   drupal: complete
   ilias: complete
 CA_9:
+  contractor: none
 CM_1:
   contractor: complete
   project: complete
@@ -103,6 +107,7 @@ CM_7:
   project: complete
 CM_8:
 CM_10:
+  contractor: none
 CM_11:
   contractor: complete
 CP_1:
@@ -286,6 +291,7 @@ SC_15:
 SC_20:
 SC_21:
 SC_22:
+  contractor: none
 SC_39:
   contractor: none
 SI_1:
