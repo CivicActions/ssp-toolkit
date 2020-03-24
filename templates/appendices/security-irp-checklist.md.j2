@@ -55,15 +55,21 @@ The *Incident Commander*:
 
 The *Responders* work to determine cause, find resolution and return the system(s) to normal operations.
 
-* If ***suspicious activity*** is suspected or other unanswered questions exist, take [CPM snapshots](https://cpm.globalnetplatform.org/) of relevant volumes, preserve logs, get screen captures of anomalous activity ***before making changes*** such that post-remedation forensic analysis is supported.
+* If ***suspicious activity*** is suspected or other unanswered questions exist, take
+  snapshots of relevant volumes, preserve logs, get screen captures of anomalous
+  activity ***before making changes*** such that post-remedation forensic analysis is
+  supported.
 * Determining the cause can drive followup measures to prevent incident reccurence.
-  * A *containment* strategy can be implemented by reconfiguring the Security Group for the instance to drop all ingress and egress traffic except from specific IPs (like yours) until forensics can be performed.
+  * A *containment* strategy can be implemented by reconfiguring the Security Group for
+    the instance to drop all ingress and egress traffic except from specific IPs (like
+    yours) until forensics can be performed.
 
 The *Incident Commander* coordinates activity:
 
 * Keep the ticket/docs updated as people work, tracking:
   * Leads, and who's following them
-  * Remediation items, and who's working on them, including customer notification (if appropriate to the situation)
+  * Remediation items, and who's working on them, including customer notification (if
+    appropriate to the situation)
 * Send out sitreps on a regular cadence (high: hourly; medium: 2x daily; low: daily).
 * Go into work shifts if the incident lasts longer then 3 hours.
 * [Hand off IC](#handing-off-ic) if the incident lasts longer than 3 hours.
