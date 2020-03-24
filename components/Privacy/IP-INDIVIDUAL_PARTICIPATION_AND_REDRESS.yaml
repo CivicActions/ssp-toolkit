@@ -7,41 +7,45 @@ satisfies:
   covered_by: []
   security_control_type: System Specific
   narrative:
-  - text: |
-      Example Org does not collect or maintain PII and therefore does not directly address this
-      control though it may address it indirectly. Users enter and have full access to
-      update or delete any information they input.
-    implementation_status: Not Applicable
+  - text: >
+      Project does not collect or maintain PII and therefore
+      does not directly address this control though it may address it
+      indirectly. Users enter and have full access to update or delete any
+      information they input.
+  implementation_status: Not Applicable
 - control_key: IP-2
   control_name: INDIVIDUAL ACCESS
   standard_key: NIST SP 800-53 Revision 4 Privacy
   covered_by: []
   security_control_type: System Specific
   narrative:
-  - text: |
-      Example Org does not collect or maintain PII and therefore does not directly address this
-      control though it may address it indirectly. Users enter and have full access to
-      update or delete any information they input.
-    implementation_status: Not Applicable
+  - text: >
+      Project does not collect or maintain PII and therefore
+      does not directly address this control though it may address it
+      indirectly. Users enter and have full access to update or delete any
+      information they input.
+  implementation_status: Not Applicable
 - control_key: IP-3
   control_name: REDRESS
   standard_key: NIST SP 800-53 Revision 4 Privacy
   covered_by: []
   security_control_type: System Specific
   narrative:
-  - text: |
-      Example Org does not collect or maintain PII and therefore does not directly address this
-      control though it may address it indirectly. Users enter and have full access to
-      update or delete any information they input.
-    implementation_status: Not Applicable
+  - text: >
+      Project does not collect or maintain PII and therefore
+      does not directly address this control though it may address it
+      indirectly. Users enter and have full access to update or delete any
+      information they input.
+  implementation_status: Not Applicable
 - control_key: IP-4
   control_name: COMPLAINT MANAGEMENT
   standard_key: NIST SP 800-53 Revision 4 Privacy
   covered_by: []
   security_control_type: System Specific
   narrative:
-  - text: |
-      Example Org does not collect or maintain PII and therefore does not directly address this
-      control though it may address it indirectly. Users enter and have full access to
-      update or delete any information they input.
-    implementation_status: Not Applicable
+  - text: >
+      Project does not collect or maintain PII and therefore
+      does not directly address this control though it may address it
+      indirectly. Users enter and have full access to update or delete any
+      information they input.
+  implementation_status: Not Applicable

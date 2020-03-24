@@ -8,7 +8,7 @@ system_security_plan:
 certification:
   name: FISMA Low Impact
   abbr: fisma-low-impact
-status: !include keys/responsibilty.yaml
+status: !include keys/responsibility.yaml
 poc: !include keys/poc.yaml
 project: !include keys/project.yaml
 artifact: !include keys/artifacts.yaml
@@ -18,3 +18,4 @@ information_system: !include keys/info_system.yaml
 pia: !include keys/pia.yaml
 risk: !include keys/risk.yaml
 services: !include keys/services.yaml
+regulations: !include keys/regulations.yaml

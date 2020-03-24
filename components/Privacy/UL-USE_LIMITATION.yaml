@@ -7,32 +7,33 @@ satisfies:
   covered_by: []
   security_control_type: System Specific
   narrative:
-  - text: |
-      The information is collected on the Example Org Community is for identification and
-      authentication purposes, allowing individuals to:
+  - text: >
+      The information is collected on the Project is for
+      identification and authentication purposes, allowing individuals to:
 
       * Identify themselves to the system
 
-      * Authenticate with the system to prove that they are the same person when they
-      return
+      * Authenticate with the system to prove that they are the same person
+        when they return
 
       * Enable emailed password reset
 
-      * Access control (e.g. updating notification settings, following a moderation of a
-      discussion, etc.)
+      * Access control (e.g. updating notification settings, following a
+        moderation of a discussion, etc.)
 
-      * Carry out actions that impact that individual (e.g. joining a course or signing up
-      for a mailing list subscription)
+      * Carry out actions that impact that individual (e.g. joining a course
+        or signing up for a mailing list subscription)
 
-      * Publish information to make it available to others (e.g. forum posting, comment on
-      publications of learning resources, etc.)
-    implementation_status: In Place
+      * Publish information to make it available to others (e.g. forum posting,
+        comment on publications of learning resources, etc.)
+  implementation_status: In Place
 - control_key: UL-2
   control_name: INFORMATION SHARING WITH THIRD PARTIES
   standard_key: NIST SP 800-53 Revision 4 Privacy
   covered_by: []
   security_control_type: System Specific
   narrative:
-  - text: |
-      Example Org does not share any collected information with any third parties.
-    implementation_status: In Place
+  - text: >
+      Project does not share any collected information with any
+      third parties.
+  implementation_status: In Place

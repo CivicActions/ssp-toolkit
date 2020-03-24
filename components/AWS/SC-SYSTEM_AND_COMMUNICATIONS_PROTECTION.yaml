@@ -1,98 +1,77 @@
 family: SYSTEM AND COMMUNICATIONS PROTECTION
 documentation_complete: false
 satisfies:
-- control_key: SC-1
-  control_name: SYSTEM AND COMMUNICATIONS PROTECTION POLICY AND PROCEDURES
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: |
-      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Providers dated 1 May 2013.
-    implementation_status: In Place
-- control_key: SC-5
-  control_name: DENIAL OF SERVICE PROTECTION
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: denial of service
-      protection.
-    implementation_status: Partially in Place
 - control_key: SC-7
   control_name: BOUNDARY PROTECTION
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Shared
   narrative:
   - key: a
     text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: boundary protection.
-    implementation_status: In Place
+      In this architecture,  network communications to, from, and between VPCs,  subnets and
+      S3 buckets are controlled as follows:  AWS Route Tables specify which subnets in each
+      VPC are accessible through gateways and which are isolated/private. AWS Security Groups
+      provide stateful inbound/outbound port/protocol restrictions, Amazon Simple Storage
+      Service (Amazon S3) buckets support access control  restrictions based on network
+      source/destination.
   - key: b
     text: >
-      The authorization boundary is completely contained within a Virtual Private
-      Cloud (VPC) created and managed by the AWS Infrastructure as a Service (IaaS).
-      External connections must be explicitly configured via the AWS Security Groups
-      (SG) mechanism.
-
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: boundary protection.
-    implementation_status: In Place
+      In this architecture, subnetworks for publicly accessible system components  are
+      logically separated from internal private subnetworks via AWS  security groups, refined
+      routing tables, and NACLs.
   - key: c
     text: >
-      Internal organizational networks (e.g. CivicActions private networks) are physically
-      separate from the AWS platform and are protected by managed boundary devices
-      that include FIPS 140-2 validated encryption modules at all entry points.
-
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: boundary protection.
-    implementation_status: In Place
-- control_key: SC-13
+      In this architecture, connection to external networks is possible only through Internet
+      Gateways (IGWs) or NAT gateways (in regions where supported by AWS VPC) and are
+      restricted based on ports/protocols via AWS Security groups, and default subnet rules
+      provided by NACLs.
+  implementation_status: partial
+- control_key: SA-12
+  control_name: CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Shared
+  narrative:
+  - text: >
+      In this architecture, initial private/public SSH keys stored in Identity and Access
+      Management (IAM) are supplied to EC2 instances upon launch, and the public key portion
+      is managed within the AWS EC2 service. In addition, server-side encryption encryption
+      is used for Amazon S3 storage and Amazon RDS databases, using key management provided
+      by AWS for the storage buckets and RDS databases.
+  implementation_status: partial
+- control_key: SA-13
   control_name: CRYPTOGRAPHIC PROTECTION
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Hybrid
+  security_control_type: Shared
   narrative:
   - text: >
-      The system partially inherits this control from the FedRAMP Provisional ATO
-      granted to the AWS Cloud dated 1 May 2013 for the following: cryptographic protection
-      for data in motion (with SSH and HTTPS/SSL) and for data at rest (with Elastic
-      Block Store (EBS) volumnes).
-    implementation_status: Partially in Place
-- control_key: SC-20
-  control_name: SECURE NAME / ADDRESS RESOLUTION SERVICE (AUTHORITATIVE SOURCE)
+      In this architecture, encryption mechanisms are employed for data at rest and in
+      transit. For data at rest, AES-256 Server Side encryption is employed for data stored
+      in S3, and RDS databases. For data in transit, to protect against exposure of any
+      cleartext data transmitted deliberately (upload/download) or incidentally during
+      interactive systems management operations, Amazon S3 object access can only be
+      conducted over encrypted sessions via TLS; the bastion host, EC2 instances and
+      associated security groups are configured for encrypted SSH sessions only.  For web
+      user access, the Elastic Load Balancer (ELB)  employs  a TLS endpoint.
+
+
+      AWS built-in features employ TLS for AWS Management Console sessions, AWS API calls,
+      and AWS Command Line Interface connections.
+  implementation_status: partial
+- control_key: SA-39
+  control_name: PROCESS ISOLATION
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
+  security_control_type: Shared
   narrative:
   - text: >
-      The system inherits this control from the FedRAMP Provisional ATO granted to
-      the AWS Cloud dated 1 May 2013 for the following: secure name / address resolution
-      service (authoritative source)
-    implementation_status: In Place
-- control_key: SC-21
-  control_name: SECURE NAME / ADDRESS RESOLUTION SERVICE (RECURSIVE OR CACHING RESOLVER)
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
-  narrative:
-  - text: >
-      The system inherits this control from the FedRAMP Provisional ATO granted to
-      the AWS Cloud dated 1 May 2013 for the following: secure name / address resolution
-      service (recursive or caching resolver)
-    implementation_status: In Place
-- control_key: SC-22
-  control_name: ARCHITECTURE AND PROVISIONING FOR NAME / ADDRESS RESOLUTION SERVICE
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Inherited (Cloud Service Provider)
-  narrative:
-  - text: >
-      The system inherits this control from the FedRAMP Provisional ATO granted to
-      the AWS Cloud dated 1 May 2013 for the following: architecture and provisioning
-      for name / address resolution service.
-    implementation_status: In Place
+      In this architecture, the AMIs that make up the operating systems deployed on EC2
+      instances maintain separate execution domains/address spaces for executing processes
+      within the customer operating environment.
+
+
+      AWS built-in features of the hypervisors that support the infrastructure maintain
+      separate execution domains/address spaces for executing processes.
+  implementation_status: partial

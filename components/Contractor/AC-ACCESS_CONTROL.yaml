@@ -7,14 +7,15 @@ satisfies:
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: CivicActions has developed, documented and disseminated to personnel an
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel an
       access control policy that addresses purpose, scope, roles, responsibilities,
       management commitment, coordination among organizational entities, and compliance;
       and procedures to facilitate the implementation of the policy and associated
       controls. This information is maintained in the CivicActions Access Control
       (AC) Policy. This document can be found in the CivicActions Compliance Docs
       GitHub repository at <https://github.com/CivicActions/compliance-docs>.
-    implementation_status: In Place
+  implementation_status: complete
 - control_key: AC-2
   control_name: ACCOUNT MANAGEMENT
   standard_key: NIST SP 800-53 Revision 4
@@ -26,111 +27,102 @@ satisfies:
       CivicActions Operations staff, in collaboration with CivicActions' Security
       Office, will set up privileged accounts for the following roles:
 
-      • Developer - a user-level account that has access to application features and
+      * Developer - a user-level account that has access to application features and
       sanitized databases
 
-      • System Administrator - user accounts that enjoy full system administrator
+      * System Administrator - user accounts that enjoy full system administrator
       access
-    implementation_status: In Place
   - key: b
-    text: CivicActions' Project Manager assigns the "administrator" role for the management
+    text: >
+      CivicActions' Project Manager assigns the "administrator" role for the management
       of all accounts issued to internal admin roles supporting the information system.
       Account requests are initiated by the Project Manager by completing a ticket
       request and the CivicActions Operation staff manages the entire account creation
       process.
-    implementation_status: In Place
   - key: d
-    text: All accounts issued for application administrators and SSH are documented
+    text: >
+      All accounts issued for application administrators and SSH are documented
       in CivicActions' ticketing system. Account request tickets contain details that
       explain the attributes for the account including authorized users of Drupal,
       system infrastructure, group and role membership, and access authorizations.
-    implementation_status: In Place
   - key: e
     text: All accounts issued for the admin management of Application or SSH access
       must be approved by the System Owner or Project Manager who must create an account
       request. The CivicActions Operations staff applies appropriate account permissions
       and settings based on the job role and function documented within the request
       ticket using processes defined by the CivicActions' Security Office.
-    implementation_status: In Place
   - key: f
     text: |
       CivicActions Operations staff is responsible for the following account management activities for both internal administrative users and customer accounts:
-      • Establishing account justification
-      • Activating accounts
-      • Modifying accounts
-      • Expiring accounts
-      • Disabling accounts
-      • Removing accounts
-    implementation_status: In Place
+      * Establishing account justification
+      * Activating accounts
+      * Modifying accounts
+      * Expiring accounts
+      * Disabling accounts
+      * Removing accounts
   - key: g
     text: All CivicActions systems log the usage of information accounts.
-    implementation_status: In Place
   - key: h
-    text: In accordance with the CivicActions Access Control (AC-01) Policy when an
+    text: >
+      In accordance with the CivicActions Access Control (AC-01) Policy when an
       account is no longer required, the Project Manager notifies the Operations Team
       to immediately disable all access. Users upon reassignment, change in roles,
       termination, or leaving employment are initially removed from all roles and
       groups, effectively denying them all access to privileged accounts.
-    implementation_status: In Place
   - key: i
-    text: System accounts require access authorizations prior to accounts being created.
+    text: >
+      System accounts require access authorizations prior to accounts being created.
       The Project Manager must initiate an access request for an account to be created.
-      CivicActions' Operations staff reviews the request to ensure accuracy, including
+      CivicActions Operations staff reviews the request to ensure accuracy, including
       intended system usage and other attributes of the user access being requested.
-    implementation_status: In Place
   - key: j
-    text: All privileged accounts are reviewed by CivicActions Operations staff every
+    text: >
+      All privileged accounts are reviewed by CivicActions Operations staff every
       180 days.
-    implementation_status: In Place
   - key: k
-    text: In accordance with standard security best practices and CivicActions policy,
+    text: >
+      In accordance with standard security best practices and CivicActions policy,
       shared and reissued accounts for internal accounts of any kind are not created
       nor used for any purpose in any system.
-    implementation_status: In Place
-- control_key: AC-6
-  control_name: LEAST PRIVILEGE
-  standard_key: NIST SP 800-53 Revision 4
-  covered_by: []
-  security_control_type: Hybrid
-  narrative:
-  - text: CivicActions performs regular audits of privileged users as part of the
-      practice of enforcing least privilege.
-    implementation_status: In Place
+  implementation_status: complete
 - control_key: AC-17
   control_name: REMOTE ACCESS
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: The CivicActions Access Control (AC) policy defines policy for remote usage
+  - text: >
+      The CivicActions Access Control (AC) policy defines policy for remote usage
       restrictions.  The Project Manager or System Owner may additionally provision
       users according to their Access Control policies.
-    implementation_status: In Place
-  summary: CivicActions Access Control (AC) policy defines remote usage restrictions.
+  implementation_status: complete
 - control_key: AC-18
   control_name: WIRELESS ACCESS
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
-  - text: This control is not applicable. The system does not provide wireless access
-      points.
-    implementation_status: In Place
+  - text: >
+      This control is not applicable. The system does not provide wireless
+      access points.
+  implementation_status: complete
 - control_key: AC-19
   control_name: ACCESS CONTROL FOR MOBILE DEVICES
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
-  - text: This control is not applicable. The system does not maintain a facility
+  - text: >
+      This control is not applicable. The system does not maintain a facility
       in which mobile device access limitations are required.
-    implementation_status: In Place
+  implementation_status: complete
 - control_key: AC-20
   control_name: USE OF EXTERNAL INFORMATION SYSTEMS
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
-  - text: This control is not applicable. The system does not connect with external
+  - text: >
+      This control is not applicable. The system does not connect with external
       information systems.
-    implementation_status: In Place
+  implementation_status: complete

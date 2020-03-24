@@ -7,11 +7,13 @@ satisfies:
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: CivicActions has developed, documented and disseminated to personnel a media
-      protection policy that addresses purpose, scope, roles, responsibilities, management
-      commitment, coordination among organizational entities, and compliance; and
-      procedures to facilitate the implementation of the policy and associated controls.
-      This information is maintained in CivicActions Media Protection (MP) Policy
-      and Procedure document that can be found in the CivicActions Github repository
-      at <https://github.com/CivicActions/compliance-docs>.
-    implementation_status: In Place
+  - text: >
+      CivicActions has developed, documented and disseminated to
+      personnel a media protection policy that addresses purpose, scope, roles,
+      responsibilities, management commitment, coordination among organizational
+      entities, and compliance; and procedures to facilitate the implementation
+      of the policy and associated controls. This information is maintained in
+      CivicActions Media Protection (MP) Policy and Procedure
+      document that can be found in the CivicActions Github
+      repository at <https://github.com/CivicActions/compliance-docs>.
+  implementation_status: complete

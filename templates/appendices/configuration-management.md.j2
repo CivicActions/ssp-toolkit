@@ -17,35 +17,40 @@ The purpose of this document is to identify and describe the Configuration Manag
 
 The {{ project.name_short }} CM Plan will ensure the following requirements are met:
 
-* Formally documented CM roles, responsibilities, and procedures;
-* A configuration control board that implements procedures to ensure a security review and approval of all proposed information system changes, to include interconnections to other information systems;
-* A testing process to verify proposed configuration changes prior to implementation in the operational environment; and
-* A verification process to provide additional assurance that the CM process is working effectively and that changes outside the CM process are technically or procedurally not permitted.
+- Formally documented CM roles, responsibilities, and procedures;
+- A configuration control board that implements procedures to ensure a security review
+  and approval of all proposed information system changes, to include interconnections
+  to other information systems;
+- A testing process to verify proposed configuration changes prior to implementation in
+  the operational environment; and
+- A verification process to provide additional assurance that the CM process is working
+  effectively and that changes outside the CM process are technically or procedurally
+  not permitted.
 
 ### Scope
 
 This Configuration Management Plan and associated processes apply to all employees, contractors and vendors that manage change or otherwise affect the operations of the {{ project.name_short }} system including but not limited to the hardware, software, facilities or information resources. The scope of the Configuration Management Plan is to establish a policy and procedures to ensure that:
 
-* The revision status of the {{ project.name_short }} Baseline can be clearly identified, accurately recorded, and provided to at any given point in time;
-* The integrity of the approved Authorization and status of the {{ project.name_short }} baseline is maintained throughout all program phases/sprints;
-* Coordination of approved changes are vetted in an effective and timely manner; and
-* Changes to the defined Baseline is controlled and evaluated for impact on all related system aspects, security and incorporated only after review and approval by the personnel.
+- The revision status of the {{ project.name_short }} Baseline can be clearly identified, accurately recorded, and provided to at any given point in time;
+- The integrity of the approved Authorization and status of the {{ project.name_short }} baseline is maintained throughout all program phases/sprints;
+- Coordination of approved changes are vetted in an effective and timely manner; and
+- Changes to the defined Baseline is controlled and evaluated for impact on all related system aspects, security and incorporated only after review and approval by the personnel.
 
 ### Roles and Responsibilities
 
 {{ project.name_short }} shall maintain an active Configuration Control Board which will be established as a formal approval authority for changes.  It primarily exists to control changes to the {{ project.name_short }} architecture (e.g., deployment of a new piece of software/code/major architectural change).
 
-The following **Roles** will be involved in configuration management activities and make up the Configuration Control Board:
+The following **Roles*- will be involved in configuration management activities and make up the Configuration Control Board:
 
-* {{ project.name_short }} Program Manager
-* Information Systems Security Manager (ISSM)
-* {{ contractor.name_short }} Team
-  * Project Manager (PM)
-  * Information Systems Security Officer (ISSO)
-  * Infrastructure Support Team
-  * Technology Lead (TL)
-  * Development Team
-* {{ project.name_short }} Managers
+- {{ project.name_short }} Program Manager
+- Information Systems Security Manager (ISSM)
+- {{ contractor.name_short }} Team
+  - Project Manager (PM)
+  - Information Systems Security Officer (ISSO)
+  - Infrastructure Support Team
+  - Technology Lead (TL)
+  - Development Team
+- {{ project.name_short }} Managers
 
 The **Program Manager** or a **Designated Represenatative (DR)** shall ensure appropriate roles, responsibilities, and access controls are assigned to support an effective Configuration Management Process.  The {{ project.name_short }} Program Manager is ultimately responsible for providing oversight responsibilities to manage the Change Control Process, Change Management policy, and associated processes which are essential to the integrity of the Change Control Board. The PM is also responsible for providing direction for {{ project.name_short }} sprints and ensuring changes which require modifications to the contract are submitted as required and attends Configuration Control Board meetings.
 
@@ -53,11 +58,11 @@ The **Information Systems Security Manager (ISSM)** is the liaison between the P
 
 The **{{ contractor.name_short }} Team** is responsible for the {{ project.name_short }} architecture and its components.  It tests and deploys {{ project.name_short }} components, modifies existing software components, and identifies potential {{ project.name_short }} enhancements. The {{ contractor.name_short }} Team is composed of several roles:
 
-* The **Project Manager (PM)** is responsible for sheparding the agile process used to develop and maintain {{ project.name_short }} throughout any requested or required configuration changes.
-* The **Information Systems Security Officer (ISSO)** develops and implements processes and procedures to insure that security of the {{ project.name_short }} General Service as it grows and changes through use and updates.
-* The **Infrastructure Support Team** is authorized to make changes to the underlying {{ project.name_short }} infrastructure and components. This team shall ensure a central inventory is maintained and updated as information system components are modified/added/removed to/from the {{ project.name_short }} environment.
-* The **Technology Lead (TL)** manages the change process of the {{ project.name_short }} application, oversees the testing and staging operations, and is directly involved in the deployment of new releases.
-* The **Development Team** is tasked with implementing newly requested features, mitigating reported bugs, and developing test systems to ensure the proper operation of the system as it undergoes changes.
+- The **Project Manager (PM)** is responsible for sheparding the agile process used to develop and maintain {{ project.name_short }} throughout any requested or required configuration changes.
+- The **Information Systems Security Officer (ISSO)** develops and implements processes and procedures to insure that security of the {{ project.name_short }} General Service as it grows and changes through use and updates.
+- The **Infrastructure Support Team** is authorized to make changes to the underlying {{ project.name_short }} infrastructure and components. This team shall ensure a central inventory is maintained and updated as information system components are modified/added/removed to/from the {{ project.name_short }} environment.
+- The **Technology Lead (TL)** manages the change process of the {{ project.name_short }} application, oversees the testing and staging operations, and is directly involved in the deployment of new releases.
+- The **Development Team** is tasked with implementing newly requested features, mitigating reported bugs, and developing test systems to ensure the proper operation of the system as it undergoes changes.
 
 The **{{ project.name_short }} Managers** are responsible for the day-to-day operation of the {{ project.name }} system and maintaining close communication with {{ project.name_short }} users and/or organizations. This team is responsible for acting as a liaison between the {{ project.name_short }} user base and {{ contractor.name_short }} team to ensure that the {{ project.name_short }} system is up and operational and coordinating minor changes to the {{ project.name_short }} baseline. Attends Configuration Control Board meetings as needed.
 
@@ -75,8 +80,8 @@ A **Baseline Configuration** - is a set of specifications for a system, or CI wi
 
 A **Configuration Management Plan (CM Plan)** - is a comprehensive description of the roles, responsibilities, policies, and procedures that apply when managing the configuration of products and systems. The basic parts of a CM Plan include:
 
-* **Configuration Item Identification** – methodology for selecting and naming configuration items that need to be placed under CM;
-* **Configuration Change Control** – process for managing updates to the baseline configurations for the configuration items
+- **Configuration Item Identification** – methodology for selecting and naming configuration items that need to be placed under CM;
+- **Configuration Change Control** – process for managing updates to the baseline configurations for the configuration items
 
 Other Commonly used terms used within the Configuration Management Process include:
 
@@ -96,12 +101,12 @@ In short, everything needed to run and operate the platform that is not a _secre
 
 Here are some examples that are in configuration management:
 
-* CI pipelines (Jenkins)
-* Infrastructure/network configuration (Manual and Ansible)
-* VM setup and quantity (Manual and Ansible)
-* Software configuration (Ansible and Scripted)
-* {{ contractor.name_short }}-developed code (Git managed by scripts)
-* Application configuration (Drupal features in Git)
+- CI pipelines (Jenkins)
+- Infrastructure/network configuration (Manual and Ansible)
+- VM setup and quantity (Manual and Ansible)
+- Software configuration (Ansible and Scripted)
+- {{ contractor.name_short }}-developed code (Git managed by scripts)
+- Application configuration (Drupal features in Git)
 
 ## Where should all this configuration go
 
@@ -125,9 +130,9 @@ Security tests need to be executed in the development environment where changes 
 1. The reviewer merges the MR.
 1. A continuous integration (CI) server handles automated tests and continuous deployment (CD) of the merged changes.
 
-* All changes are deployed to a freshly created testing environment.
-* Any and all automated tests are run.
-* If all tests pass, changes can be promoted for deployment to production in the pipeline.
+- All changes are deployed to a freshly created testing environment.
+- Any and all automated tests are run.
+- If all tests pass, changes can be promoted for deployment to production in the pipeline.
 
 1. The CI/CD tool uses Gitlab repositories and as the canonical source of truth for what the platform should look like. If there are manual changes, it will reset the state of all systems to match.
 
@@ -156,8 +161,8 @@ Each upstream code repository has at least two branches.  The development enviro
 Branching is encouraged in the upstream repository if multiple engineers need to collaborate on something that can not be continously merged into the master branch. The rationale for branching within a team is
 that paired collaboration on a single branch avoids certain types of friction:
 
-* Having to create multiple forked PRs in order to contribute to the branch
-* Having to add new users to forked repositories as collaborators in order to have people directly contribute on short-lived forked branches
+- Having to create multiple forked PRs in order to contribute to the branch
+- Having to add new users to forked repositories as collaborators in order to have people directly contribute on short-lived forked branches
 
 When contributing directly on a branch, we're able to modify work-in-progress (WIP) pull requests and encourage collaboration across the Cloud Operations team.
 
