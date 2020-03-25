@@ -7,10 +7,7 @@ sections:
     The Project facilitate collaboration between the communities the latest
     Enterprise 2.0 technologies, along with traditional communication tools
     will be used to ensure users can easily find and disseminate information
-    between colleagues. The system is based on a content management system. To
-    further enhance collaboration Porject provides video teleconferencing (VTC)
-    capabilities and will have team communications. These tools help to promote
-    real time collaboration between users of the system.
+    between colleagues. The system is based on a content management system.
 
     The system is available to users over a traditional web interface using a
     desktop or laptop, but also through a mobile version of the web site
@@ -23,14 +20,10 @@ sections:
     or “warm” site.
   continuity_of_ops: # Section 2.0
     provisions_directives: # Section 2.1
-      -
-        Federal Information Security Management Act (FISMA 2002)
-      -
-        Federal Information Security Modernization Act (FISMA 2014)
-      -
-        Contingency Planning Guide for Federal Systems, NIST Special Publication 800-34r1 (May 2010)
-      -
-        Risk Management Framework (RMF), NIST Special Publication 800-53r4 (April 2013)
+      - Federal Information Security Management Act (FISMA 2002)
+      - Federal Information Security Modernization Act (FISMA 2014)
+      - Contingency Planning Guide for Federal Systems, NIST Special Publication 800-34r1 (May 2010)
+      - Risk Management Framework (RMF), NIST Special Publication 800-53r4 (April 2013)
     objectives: >- # Section 2.2
       The primary focus of a COOP revolves around the protection of the two most
       important assets of any organization: personnel and data. The protection of
@@ -75,7 +68,9 @@ sections:
           teams and management of each system
 
     success_factors: >- #Section 2.5
-      This section addresses the factors and issues that specifically apply to the the Project COOP project that have been identified to be critical to its successful implementation. These factors are as follows:
+      This section addresses the factors and issues that specifically apply to the the
+      Project COOP that have been identified to be critical to its successful
+      implementation. These factors are as follows:
 
       * Commitment by upper management to Continuity of Operations Planning and
         Disaster Recovery.
@@ -88,33 +83,27 @@ sections:
       * Development and execution of the necessary Memoranda of Agreement (MOAs),
         Memoranda of Understanding (MOUs), and Service Level Agreements (SLAs).
     mission_critical_services: # Section 2.6
-      -
-        system_id: cpm
+      - system_id: cpm
         description: Backup management server (Cloud Protection Manager)
         priority: 1
         rationale: Expedites restore process
-      -
-        system_id: prod-db
+      - system_id: prod-db
         description: the Project database
         priority: 2
         rationale: Required for the site to function
-      -
-        system_id: prod-web
+      - system_id: prod-web
         description: the Project website
         priority: 2
         rationale: Required for the site to function
-      -
-        system_id: solr
+      - system_id: solr
         description: the Project Search Server
         priority: 3
         rationale: Soft dependency for site search functions
-      -
-        system_id: staging
+      - system_id: staging
         description: the Project Staging Server
         priority: 6
         rationale: For testing purposes only
-      -
-        system_id: dev
+      - system_id: dev
         description: the Project Development Server
         priority: 6
         rationale: For development purposes only
@@ -227,17 +216,12 @@ sections:
           In addition:
 
           * Manual backups are triggered and verified before any system or application software release.
-
           * Important backups (e.g. prior to major data structure changes) can be added to an extended retention list, and will be retained indefinitely or until they are identified for removal.
-
           * Configuration of systems and services is maintained in distributed Git repositories.
 
           Proprietary third party software is external so backups are not required. Third party software packaged that the Project calls out to include:
-
           * StatusCake
-
           * OpsGenie
-
           * JIRA
 
     restore: >- # Section 6.4
@@ -268,6 +252,7 @@ sections:
         availability zones). In this case we would bring up servers in the secondary
         US-West site, utilizing the most recent daily snapshots, and then update the
         domain name (DNS) entries to point to the new instance IPs.
+
     contingency_log: >- # Section 6.5
       Assessments and results of any exercise or real contingency operations will be
       logged in JIRA from available documentation after recovery and restoration.
@@ -280,10 +265,6 @@ sections:
       Continuity of Operations Plan (COOP) and key organizational personnel and contact
       numbers. the Project incident notification and system and network personnel are
       available 24x7.
-
-      The below diagram shows the overall help desk support workflow, which includes
-      non-urgent support issues. The urgent issue escalation and triage workflow
-      indicates primary contact points and specialization of duties.
     list:
       description: >-
         To maintain current and accurate contact information, the contact list is maintained as a private Google Spreadsheet and linked to the the Project Contingency Plan. If you require access to either of these living documents, contact the CISO.

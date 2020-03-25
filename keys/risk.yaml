@@ -7,18 +7,11 @@ sections:
     description: >-
       The following is a list of project risks that are known at the start of the project. As the project progresses, new risks will come to light and this list will be updated. The monthly status report “Areas of Concern” section will include the most up to date risks on a monthly basis, and those will be copied to this list and submitted annually.
     risks:
-      -
-        name: CAC
-        description: Obtaining CAC can be challenging without sponsorship
-        mitigation: Tejas to follow up with respective members from DSCA on a periodic basis to get traction on this
-        owner: Tejas/Fen
-      -
-        name: Security Clearances
-        description: This step would be required to obtain CAC access. So this is a blocker for CAC access
-        mitigation: Tejas to follow up with respective members from DSCA on a periodic basis to get traction on this
-        owner: Tejas
-      -
-        name: GovCloud Migration
-        description: CivicActions provided information based on initial GovCloud related testing to DSCA. The risk is related to latency and also for port whitelisting for access as per GovCloud requirements
-        mitigation: DSCA members ( Brian as POC ) to help with bringing this information with appropriate department / groups and help with strategy to get around this
-        owner: Fen/Brian
+      - name: Security Clearances
+        description: The time need to get security clearances could delay the project.
+        mitigation: The project manager will work with the Client to ensure that clearances are performed in a timely manner.
+        owner: Project Manager
+      - name: Content Migration
+        description: The content migration could surface unforeseen issues.
+        mitigation: A thorough content inventory prior to beginning the migration should provide insight into issues before they arise.
+        owner: Engineer

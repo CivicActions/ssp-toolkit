@@ -5,49 +5,41 @@ service:
       name: GitLab
       url: https://gitlab.com
       status:
-        -
-          https://app.statuscake.com/AllStatus.php
+        - https://status.gitlab.com/
       description: If GitLab becomes unavailable, the Project will continue to operate in its current state. The disruption would only impact the team's ability to update code on the instances.
   - service:
       name: StatusCake
       url: https://app.statuscake.com/
       status:
-        -
-          https://twitter.com/StatusCakeTeam
+        - https://twitter.com/StatusCakeTeam
       description: If there is a disruption in the StatusCake service, the Incident Response team will be notified by email.
   - service:
       name: OpsGenie
       url: https://app.opsgenie.com/alert/
       status:
-        -
-          https://status.opsgenie.com/
-        -
-          https://twitter.com/opsgenie
+        - https://status.opsgenie.com/
+        - https://twitter.com/opsgenie
       description: If there is a disruption in the OpsGenie service, all alerts automatically get delivered to the team via email.
   - service:
       name: Jira
       url: https://project.atlassian.net/
       status:
-        -
-          https://twitter.com/JIRA
+        - https://twitter.com/JIRA
       description:
   - service:
       name: Slack
       url: https://slack.com/
       status:
-        -
-          https://status.slack.com/
-        -
-          https://twitter.com/SlackStatus
+        - https://status.slack.com/
+        - https://twitter.com/SlackStatus
       backup: https://chat.google.com/
       description:
   - service:
       name: AWS
       url: https://signin.aws.amazon.com/console
       status:
-        -
-          http://status.aws.amazon.com/
+        - http://status.aws.amazon.com/
       description: |
-        If needed, you can [manage and create new servers](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1).
+        If needed, you can [manage and create new servers](https://console.aws.amazon.com/ec2/v2/home).
 
         In case of a **significant** disruption, after receiving approval from our Authorizing Official, the Contractor's team will deploy a new instance of the entire system to a different region.

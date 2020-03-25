@@ -43,43 +43,31 @@ roles_privileges: # Table 10‑1
     sensitivity: Moderate
     authorized_privileges: AWS Dashboard access
     functions: Add/remove virtual hardware, manage backup and restore server
-
   - role: UNIX System Administrator
     int_ext: Internal
     privilege_level: P
     sensitivity: Moderate
     authorized_privileges: Full administrative access (root)
     functions: Add/remove system users, install and configure software, OS updates, patches and hotfixes
-
   - role: Site Administrator
     int_ext: Internal
     privilege_level: P
     sensitivity: Limited
     authorized_privileges: Full Application Access
     functions: Application configuration, external user permissions, and content management
-
   - role: Manager
     int_ext: Internal
     privilege_level: P
     sensitivity: N/A
     authorized_privileges: Extended Application Access
     functions: Limited user permissions and content management.
-
-  - role: Staff
-    int_ext: Internal
-    privilege_level: P
-    sensitivity: N/A
-    authorized_privileges: Limited Application Access
-    functions: Create, edit and delete content.
-
-  - role: Content Specialist
+  - role: Editor
     int_ext: Internal
     privilege_level: NP
     sensitivity: N/A
     authorized_privileges: General Users
     functions: Create, edit and delete content.
-
-  - role: Members
+  - role: Authenticated User
     int_ext: Internal
     privilege_level: NP
     sensitivity: N/A
@@ -88,37 +76,25 @@ roles_privileges: # Table 10‑1
 roles_perms_additional: >
   The Project uses groups for access to most content.
 
+  * **Unauthenticated Users** -- _Unauthenticated users_ have limited access to
+    content on the Project. They can only access content that is marked as
+    _Public_ and can request membership to _Organizations_ and _Groups_.
 
-  * **Public Users** -- _Public users_ have limited access to content
-    on the Project. They can only access content that is marked as _Public_
-    and can request membership to _Organizations_ and _Groups_.
-
-  * **Organization Members** -- Users need to be request access, or be added
-    to _Organizations_.
-
-  * **HR Manager** -- An _HR Manager_ is a user who can administer users within a
-    single  the Project community. The also have a limited ability to edit content
-    within that community.
+  * **Authenticated Users** -- Users need to be request access, or be added
+    to _Groups_.
 
   * **Group Manager** -- _Group Managers_ is responsible for managing the content
     and members for a group.
+
+  * **Group Members** -- _Group Members_ can access public content as well as
+  content specific to their groups.
+
 system_function: > # Section 10.1
   The Project uses Open Source Software and is a web based social business tool
-  built on top of a Content Management System (CMS). The CMS provides for
-  creating and managing groups, “friending”, blogs, discussions and other social
-  media functionality. To further enhance collaboration, the Project provides
-  Video Teleconferencing (VTC) capabilities.  These tools will help to promote
-  real time collaboration between users of the system. By enabling the latest
-  collaboration techniques, the the Project system will help the Client to
-  fulfill their mission in a more efficient manner.
+  built on top of a Content Management System (CMS).
 components_boundaries: > # Section 10.2
   The accreditation boundary includes applications and guest operating
   systems that reside on the AWS Infrastructure-as-a-Service (IaaS).
-  It does not include AWS services themselves, which are documented in
-  the AWS FedRAMP documents and System Security Plan. AWS is
-  considered outside of this system boundary of this application.
-  Shared responsibilities are listed in the Control Implementation
-  Summary.
 boundary_diagram:
 network_diagram:
 ports_protocols: # Table 11‑1
@@ -147,25 +123,10 @@ ports_protocols: # Table 11‑1
     services: AWS RDS
     purpose: Database
     used_by:
-  - port: 4444
-    protocols: TCP
-    services: Filebeat
-    purpose: Baselines (from all instances in VPC)
-    used_by:
   - port: 5044
     protocols: TCP/UDP
     services: SSH/rsync audit records
     purpose: Elasticsearch (from all instances in VPC)
-    used_by:
-  - port: 8065
-    protocols: TCP
-    services: Web chat
-    purpose: Team chat server
-    used_by:
-  - port: 8443
-    protocols: TCP
-    services: Other service
-    purpose: Shibboleth "attribute query" - SAML2 SSO
     used_by:
   - port: 8983
     protocols: TCP
@@ -186,7 +147,7 @@ ports_protocols: # Table 11‑1
     protocols: TCP
     services: BrowseCap
     purpose: Determine browser capabilities
-    used_by: Drupal
+    used_by: CMS
   - port: 443
     protocols: TCP
     services: GitLab
@@ -221,17 +182,17 @@ ports_protocols: # Table 11‑1
     protocols: TCP
     services: OCSP
     purpose: Online Certificate Status Protocol
-    used_by: Drupal
+    used_by: CMS
   - port: 143
     protocols: TCP/UDP
     services: IMAP
     purpose: Spam report management
-    used_by: Drupal
+    used_by: CMS
   - port: 993
     protocols: TCP/UDP
     services: IMAPS
     purpose: Spam report management
-    used_by: Drupal
+    used_by: CMS
   - port: 443
     protocols: TCP
     services: pip

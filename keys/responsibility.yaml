@@ -18,13 +18,11 @@ AC_2:
 AC_3:
   drupal: complete
   project: complete
-  ilias: complete
 AC_7:
   drupal: complete
   project: complete
 AC_8:
   project: partial
-  ilias: complete
 AC_14:
   project: complete
   drupal: complete
@@ -59,7 +57,6 @@ AU_2:
   drupal: complete
 AU_3:
   drupal: complete
-  ilias: complete
 AU_4:
   contractor: complete
 AU_5:
@@ -90,7 +87,6 @@ CA_6:
 CA_7:
   contractor: partial
   drupal: complete
-  ilias: complete
 CA_9:
   contractor: none
 CM_1:
@@ -133,31 +129,25 @@ IA_2_1:
   contractor: complete
   drupal: complete
   project: complete
-  ilias: complete
 IA_2_12:
   project: none
 IA_4:
   contractor: partial
   drupal: partial
-  ilias: partial
 IA_5:
   contractor: complete
   drupal: none
   project: partial
-  ilias: none
 IA_5_1:
   drupal: partial
   project: partial
-  ilias: partial
 IA_5_11:
   project: partial
 IA_6:
   drupal: complete
-  ilias: complete
 IA_7:
   contractor: complete
   drupal: complete
-  ilias: complete
 IA_8_1:
   project: none
 IA_8_2:
@@ -279,11 +269,9 @@ SC_1:
 SC_5:
   drupal: partial
   project: partial
-  ilias: complete
 SC_7:
   drupal: complete
   project: complete
-  ilias: complete
 SC_12:
   project: none
 SC_13:
@@ -302,7 +290,6 @@ SI_1:
 SI_2:
   contractor: complete
   drupal: complete
-  ilias: complete
 SI_3:
   contractor: partial
 SI_4:
@@ -311,7 +298,6 @@ SI_5:
   contractor: complete
   drupal: complete
   project: complete
-  ilias: complete
 SI_12:
   contractor: complete
   project: complete
