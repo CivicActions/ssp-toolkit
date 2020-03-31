@@ -34,6 +34,7 @@ satisfies:
       complete list (includes dev sites) of users with whitelisted IPs is in
       artifact: {{artifact.inventory_whitelist}}
 
+
       To access root (sudo) privileges an additional password is required. The
       passwords are maintained in encrypted form in the Ansible inventory file.
       The mechanism to enable select users to use a password to obtain root
@@ -54,6 +55,7 @@ satisfies:
       User accounts are assigned a unique identifier in the form of a unique
       username, password and email address based on the system for allocating
       user accounts described in AC-2.
+
 
       In accordance with {{contractor.name_short}} Identification and
       Authentication (IA) Policy outlined at <{{contractor.compliance_docs_url}}>,
@@ -89,17 +91,14 @@ satisfies:
       {{contractor.name_short}} users are required to take appropriate measures
       in the handling of passwords including:
 
-      * Not transmitting user names and passwords together in an unencrypted
-        format
 
-      * Not permitting the sending of passwords in an unencrypted format via
-        email
+      - Not transmitting user names and passwords together in an unencrypted format
 
-      * Not listing passwords in tickets
+      - Not permitting the sending of passwords in an unencrypted format via  email
 
-      * Not writing down or storing passwords in a readable form in any physical
-        or logical location where they may be discoverable by unauthorized
-        persons.
+      - Not listing passwords in tickets
+
+      - Not writing down or storing passwords in a readable form in any physical or logical location where they may be discoverable by unauthorized persons.
   implementation_status: {{status.IA_5.contractor}}
   summary: >
     {{contractor.name_short}} required to take appropriate password handling

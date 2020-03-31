@@ -97,14 +97,14 @@ satisfies:
       to the {{contractor.name_short}} Security Office. Methods of detection
       and/or communication may include one or more of:
 
-      * Through continuous monitoring tools (StatusCake, OSSEC, others).
 
-      * As a result of application notifications where {{contractor.name_short}}
-        Security receives notifications (AIDE, OpsGenie, others).
+      - Through continuous monitoring tools (StatusCake, OSSEC, others).
 
-      * Event logging described in AC-2
+      - As a result of application notifications where {{contractor.name_short}} Security receives notifications (AIDE, OpsGenie, others).
 
-      * Host-based alerts from the cloud infrastructure or platform.
+      - Event logging described in AC-2
+
+      - Host-based alerts from the cloud infrastructure or platform.
   - key: b
     text: >
       {{contractor.name_short}} personnel, as soon as the incident event is
@@ -124,7 +124,7 @@ satisfies:
       request support thought the same process or initiate the incident response
       workflow.  Tickets created in the Jira (customer ticketing system) and
       GitLab (internal ticketing system) documents all details related to the
-      incident to assist the incident response teams in handling the incident.
+      incident to assist the Incident Response Teams in handling the incident.
   implementation_status: {{status.IR_7.contractor}}
 - control_key: IR-8
   control_name: INCIDENT RESPONSE PLAN
@@ -139,41 +139,34 @@ satisfies:
       {{contractor.name_short}} has developed an Incident Response Plan
       (<{{project.incident_response_plan_url}}>) that:
 
-      1. Provides {{contractor.name_short}} with procedures and tools required
-         for incident handling;
 
-      2. Describes the structure and organization of the incident response
-         capability;
+      1. Provides {{contractor.name_short}} with procedures and tools required for incident handling;
 
-      3. Provides a high-level approach for how the incident response capability
-         fits into {{contractor.name_short}} and the systems it maintains;
+      2. Describes the structure and organization of the incident response capability;
 
-      4. Meets the mission, size, structure, and functions of
-         {{contractor.name_short}};
+      3. Provides a high-level approach for how the incident response capability fits into {{contractor.name_short}} and the systems it maintains;
+
+      4. Meets the mission, size, structure, and functions of {{contractor.name_short}};
 
       5. Defines reportable incidents;
 
-      6. Provides metrics for measuring the incident response capability and
-         details categorization of incidents in accordance with NIST 800-61;
+      6. Provides metrics for measuring the incident response capability and details categorization of incidents in accordance with NIST 800-61;
 
-      7. Defines the roles and responsibilities of {{contractor.name_short}} IR
-         Team;
+      7. Defines the roles and responsibilities of {{contractor.name_short}} IR Team;
 
-      8. Is reviewed annually and updated as needed by the
-         {{contractor.name_short}}  Security Office, with the assistance of the
-         Incident Response team.
+      8. Is reviewed annually and updated as needed by the {{contractor.name_short}}  Security Office, with the assistance of the Incident Response Team.
   - key: b
     text: >
       The {{contractor.name_short}} Incident Response Plan is distributed to
       all {{contractor.name_short}} team members as part of the
       {{contractor.name_short}} Handbook (<{{project.incident_response_plan_url}}>).
-       The Incident Response team includes members from the Security Office,
+       The Incident Response Team includes members from the Security Office,
        Operations staff, and Drupal Engineering teams.
   - key: c
     text: >
       The {{contractor.name_short}} Security Office and the Incident Response
       team is responsible for reviewing the Incident Response Plan annually. The
-      entire incident response team will review the plan and update it as
+      entire Incident Response Team will review the plan and update it as
       necessary. Ultimately, the Security Office has the final say and will
       approve all updates to the plan.
   - key: d

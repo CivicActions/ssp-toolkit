@@ -15,6 +15,7 @@ satisfies:
       {{project.client_name_short}} personnel security standards and determines
       position risks levels based on public trust responsibilities.
 
+
       This is Agency common control.  More data about implementation can be
       obtained from the Agency common control catalog.
   implementation_status: {{status.PS_1.project}}
@@ -35,17 +36,18 @@ satisfies:
       since {{project.name_short}} system does not have any sensitive data,
       a low risk scenario can be assumed.
 
-      * Employee risk levels and background investigations are: Low Risk= NACI,
-        Moderate Risk= LBI, High Risk= BI.
 
-      * Contractor risk levels and background investigations are: Low Risk= NACI,
-        Moderate Risk= NACC, High Risk= BI.
+      - Employee risk levels and background investigations are: Low Risk= NACI, Moderate Risk= LBI, High Risk= BI.
+
+      - Contractor risk levels and background investigations are: Low Risk= NACI, Moderate Risk= NACC, High Risk= BI.
+
 
       In order to ensure every employee is assigned to a position, which has
       been reviewed for sensitivity by the NCC, the SPD is a required data
       attribute of an employee’s HR record. Position risks designations are
       reviewed and revised when NCC or OPM publish changes to sensitivity
       levels.
+
 
       This is Agency common control.  More data about implementation can be
       obtained from the Agency common control catalog
@@ -64,6 +66,7 @@ satisfies:
       risk categorization noted in control PS-2. {{project.client_name_short}}
       conducts periodic reinvestigations in accordance with OPM and NIST
       guidelines.
+
 
       This is Agency common control.  More data about implementation can be
       obtained from the Agency common control catalog.
@@ -90,6 +93,7 @@ satisfies:
       information on the system that the employee was responsible for will be
       available to the appropriate personnel.
 
+
       This is Agency common control.  More data about implementation can be
       obtained from the Agency common control catalog.
   implementation_status: {{status.PS_4.project}}
@@ -104,6 +108,7 @@ satisfies:
       designated official is required to request transfer of access (as
       appropriate) for the user.
 
+
       In accordance with the {{project.client_name}} HR policy, the employee’s
       manager or designated official is responsible for recovering and properly
       securing his/her ID badge and returning it to the local physical security
@@ -113,6 +118,7 @@ satisfies:
       appropriate action to change employee access profile and/or remove
       employee from the system; and ensure that users’ system access is
       cancelled when the need no longer exists.
+
 
       This is Agency common control.  More data about implementation can be
       obtained from the Agency common control catalog.

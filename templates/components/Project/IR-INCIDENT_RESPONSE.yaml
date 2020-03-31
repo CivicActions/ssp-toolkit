@@ -11,6 +11,7 @@ satisfies:
       This is Agency common control.  More data about implementation can be
       obtained from the Agency common control catalog.
 
+
       The {{project.name_short}} maintains an Incident Response Plan (IRP),
       consistent with NIST 800-61, which addresses purpose, scope, roles, and
       responsibilities. The incident response procedures address any activity
@@ -18,10 +19,12 @@ satisfies:
       access to or use of IT resources, and compromises the sensitivity of the
       information stored in, processed by or transmitted by a system.
 
+
       Additionally, the IRP includes procedures to respond to waste, fraud,
       misuse, or abuse of any departmental IT system, damage or loss of software
       or data contained in any system, Use of unlicensed (pirated) software
       products, discovery of hardware or software vulnerabilities
+
 
       The {{project.name_short}} Incident Response Plan can be found in the
       {{contractor.name_short}} Github repository at
@@ -54,12 +57,14 @@ satisfies:
       The {{project.client_name_short}} Computer Security Officer (CSO) handles
       all incidents for the {{project.name}}.
 
+
       The {{project.client_name}} utilizes proven incident handling
       methodologies for security incidents that includes preparation, detection
       and analysis, containment, eradication, and recovery.
       {{project.client_name}} maintains a list of lessons learned from ongoing
       incident handling activities and uses those lessons to update the incident
       response procedures accordingly.
+
 
       Preparation activities includes all {{contractor.name_short}} and
       {{project.name_short}} internal users are trained if their role includes
@@ -92,6 +97,7 @@ satisfies:
       Operations will contact the {{project.name_short}} System Owner who may
       then contact the {{project.name_short}} CSO.
 
+
       The {{contractor.name_short}} Computer Security Officer (CSO) handles all
       incidents for the {{project.name_short}}. The CSO is prepared to report
       all incidents to the {{project.client_name}}.
@@ -114,5 +120,5 @@ satisfies:
       security incidents of the entire information system. The IRP details
       categorization of incidents in accordance with NIST 800-61 and accordingly
       documents and reports incidents. The IRP is reviewed annually and updated
-      as needed by ISSO, with the assistance of the incident response team.
+      as needed by ISSO, with the assistance of the Incident Response Team.
   implementation_status: {{status.IR_8.project}}

@@ -14,8 +14,10 @@ satisfies:
       {{project.name}} ensures that maintenance controls are developed,
       disseminated, reviewed, and updated as necessary.
 
+
       Physical and environmental protection is fully inherited from the AWS
       FedRAMP certified us-east cloud.
+
 
       This is Agency common control. More data about implementation can be
       obtained from the Agency common control catalog.
@@ -31,15 +33,16 @@ satisfies:
       maintenance on the software components of all systems, including but
       not limited to:
 
-      * Hourly automated snapshot backups
 
-      * Daily disaster recovery remote backups
+      - Hourly automated snapshot backups
 
-      * Daily Intrusion Detection (OSSEC) / Data Integrity Assurance (AIDE)
+      - Daily disaster recovery remote backups
 
-      * As needed HelpDesk support
+      - Daily Intrusion Detection (OSSEC) / Data Integrity Assurance (AIDE)
 
-      * Twice-monthly OS updates/patches
+      - As needed HelpDesk support
+
+      - Twice-monthly OS updates/patches
   implementation_status: {{status.MA_2.project}}
 - control_key: MA-5
   control_name: MAINTENANCE PERSONNEL

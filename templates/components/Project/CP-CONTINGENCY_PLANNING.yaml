@@ -11,6 +11,7 @@ satisfies:
       This is Agency common control. More data about implementation can be
       obtained from the Agency common control catalog.
 
+
       The {{project.name_short}} and has developed a contingency planning
       policy consistent with NIST 800-34. Contingency planning procedures
       are formally documented within the {{project.name_short}} Contingency
@@ -28,7 +29,7 @@ satisfies:
     text: >
       The {{project.name_short}} Information System Contingency Plan (ISCP) has
       been distributed to all members who have roles in Contingency Planning and
-      Incident Response team. Direction by the System Owner will update who is
+      Incident Response Team. Direction by the System Owner will update who is
       required to receive a copy of the contingency plan. The ISCP can be found
       in the {{project.name_short}} GitHub wiki at
       <{{project.contingency_plan_url}}>.

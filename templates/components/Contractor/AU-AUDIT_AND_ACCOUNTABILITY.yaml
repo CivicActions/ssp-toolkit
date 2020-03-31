@@ -75,14 +75,16 @@ satisfies:
   - key: a
     text: >
       {{contractor.name_short}} security audit data is collected by the AWS CloudWatch monitoring
-      and observability service to support real-time and after-the-fact investigation
+      and observability service to support real time and after-the-fact investigation
       at the application level for the following:
 
-      * Indications of inappropriate or unusual activity
 
-      * Assurance that logging is functioning properly
+      - Indications of inappropriate or unusual activity
 
-      * Adherence to logging standards identified in this procedure
+      - Assurance that logging is functioning properly
+
+      - Adherence to logging standards identified in this procedure
+
   - key: b
     text: >
       Any significant findings observed during the inspection are reported to
@@ -93,7 +95,7 @@ satisfies:
   implementation_status: {{status.AU_6.contractor}}
   summary: >
     {{contractor.name_short}} security audit data is collected by a Graylog
-    Security and Event Management (SIEM) dashboard to support real-time and
+    Security and Event Management (SIEM) dashboard to support real time and
     after-the-fact investigation.
 - control_key: AU-9
   control_name: PROTECTION OF AUDIT INFORMATION

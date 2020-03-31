@@ -28,23 +28,18 @@ satisfies:
       {{contractor.name_short}} has developed a contingency plan for that
       addresses:
 
-      1. Essential missions, business functions, and associated contingency
-         requirements
+      1. Essential missions, business functions, and associated contingency requirements
 
       2. Recovery objectives, restoration priorities, and metrics
 
-      3. Roles and responsibilities are identified in the CP and include the ISCP
-         Director, Incident Commander (IC), {{contractor.name_short}} Coordinator,
-         and {{contractor.name_short}} Information System Security Officer (ISSO).
+      3. Roles and responsibilities are identified in the CP and include the ISCP Director, Incident Commander (IC), {{contractor.name_short}} Coordinator, and {{contractor.name_short}} Information System Security Officer (ISSO).
 
-      4. Maintaining essential missions and business functions despite an
-         information system disruption, compromise, or failure
+      4. Maintaining essential missions and business functions despite an information system disruption, compromise, or failure
 
-      5. Full information system restoration without deterioration of the security
-         safeguards originally planned and implemented
+      5. Full information system restoration without deterioration of the security safeguards originally planned and implemented
 
-      6. The ISCP is reviewed and approved by ISCP Director, Incident Commander
-         (IC), {{contractor.name_short}} ISSO and the System Owner annually.
+      6. The ISCP is reviewed and approved by ISCP Director, Incident Commander (IC), {{contractor.name_short}} ISSO and the System Owner annually.
+
   - key: b
     text: >
       The {{contractor.name_short}} Information System Contingency Plan (ISCP)

@@ -1,26 +1,26 @@
 # {{ project.name_short }} Contingency Plan
 
-## Table of Contents
+## Contents
 <!--TOC-->
 
 ----
 
 ## Overview
 
-This Contingency Plan provides guidance for the {{ contractor.name_short }} Team in the case of trouble delivering our essential mission and business functions because of disruption, compromise, or failure of any component of {{ project.name_short }}. As a general guideline, we consider "disruption" to mean unexpected downtime or significantly reduced service lasting longer than:
+This Contingency Plan provides guidance for the {{ contractor.name_short }} Team in the case of trouble delivering our essential mission and business functions because of disruption, compromise, or failure of any {{ project.name_short }} component. As a general guideline, we consider "disruption" to mean unexpected downtime or significantly reduced service lasting longer than:
 
-- 30 minutes 0900 - 2100 Eastern Time Monday through Friday (standard U.S. business hours)
-- 90 minutes at other times
+* 30 minutes during standard U.S. business hours (0900-2100 EST, Monday through Friday)
+* 90 minutes at other times
 
-Scenarios where that could happen include unexpected downtime of key services, data loss, or improper privilege escalation. In most cases, the robust contingency management capabilities of [AWS Cloud Security](https://aws.amazon.com/security/) coupled with [N2WS CPM backups and disaster recovery](https://n2ws.com/product/aws-disaster-recovery) will resolve/remediate event occurences.
+Scenarios might include unexpected downtime of key services, data loss, or improper privilege escalation. In most cases, the robust contingency management capabilities of [AWS Cloud Security](https://aws.amazon.com/security/) coupled with [N2WS CPM backups and disaster recovery](https://n2ws.com/product/aws-disaster-recovery) can resolve/remediate event occurrences.
 
-In the case of a security incident - and for most events - the [Security Incident Response Plan](security-irp.md) will provide guidance for the responding team.
+In the case of a security incident, and for most events, the [Security Incident Response Plan](security-irp.md) provides guidance for the responding team.
 
 ## Recovery objective
 
 Short-term disruptions lasting less than 30 minutes are outside the scope of this plan.
 
-More than 3 hours of any {{ project.name_short }} service being offline during standard U.S. business hours (0900 - 2100 Eastern Time) is considered unacceptable. Our objective is to recover from any significant problem (disruption, compromise, or failure) within that span of time.
+More than 3 hours of any {{ project.name_short }} service being offline during standard U.S. business hours (0900-2100 EST, Monday through Friday) is considered unacceptable. Our objective is to recover from any significant problem (disruption, compromise, or failure) within that span of time.
 
 ## Incident Response Team information
 
@@ -28,27 +28,27 @@ More than 3 hours of any {{ project.name_short }} service being offline during s
 
 Team contact information is available in the {{ project.name_short }} Google Drive:
 
-- [{{ contractor.name_short }}/{{ project.name_short }} Incident Response Team contact sheet]({{ project.contact_sheet_url }}) with names and roles for {{ contractor.name_short }} and {{ project.name_short }} Incident Response Team members.
+* [{{ contractor.name_short }}/{{ project.name_short }} Incident Response Team contact sheet]({{ project.contact_sheet_url }}) with names and roles for {{ contractor.name_short }} and {{ project.name_short }} Incident Response Team members.
 
 ## Contingency plan outline
 
 ### Activation and notification
 
-The first Incident Response Team member who notices or reports a potential contingency-plan-level problem becomes the **Incident Commander** (IC) until recovery efforts are complete or the Incident Commander role is explicitly reassigned.
+The first Incident Response Team member who notices or reports a potential contingency-plan-level problem becomes the **Incident Commander** (IC) until recovery efforts are complete, or until the Incident Commander role is explicitly reassigned.
 
-If the problem is identified as part of a [security incident response situation](security-irp.md) (or becomes a security incident response situation), the same Incident Commander (IC) should handle the overall situation, since these response processes must be coordinated.
+If the problem is identified as part of a [security incident response situation](security-irp.md) (or becomes a security incident response situation), the same Incident Commander (IC) should handle the overall situation since these response processes must be coordinated.
 
 The IC first notifies and coordinates with the people who are authorized to decide that {{ project.name_short }} is in a contingency plan situation:
 
-- From {{ contractor.name_short }}:
-  - Incident Commander
-  - Project Manager
-  - {{ contractor.name_short }} Incident Response Team
-- {{ project.name_short }}
-  - Product Owner
-  - {{ project.name_short }} users, when applicable
+* From {{ contractor.name_short }}:
+  * Incident Commander
+  * Project Manager
+  * {{ contractor.name_short }} Incident Response Team
+* {{ project.name_short }}
+  * Product Owner
+  * {{ project.name_short }} users, when applicable
 
-The IC keeps a log of the situation in a {{ project.issue_system }}; if this is also a security incident, the IC also follows the [security incident communications process](security-irp.md#initiate) which includes updating the {{ project.slack_link }} Slack channel. The IC should delegate assistant ICs for aspects of the situation as necessary.
+The IC keeps a log of the situation in a JIRA Incident ticket; if this is also a security incident, the IC also follows the [security incident communications process](security-irp.md#initiate) which includes updating the {{ contractor.name_short }} Slack channel {{ project.slack_link }} Slack channel. The IC should delegate assistant ICs for aspects of the situation as necessary.
 
 ### Recovery
 
@@ -58,76 +58,83 @@ If this is also a security incident, the IC also follows the [security incident 
 
 If the IC assesses that the overall response process is likely to last longer than 3 hours, the IC should organize shifts so that each responder works on response for no longer than 3 hours at a time, including handing off their own responsibility to a new IC after 3 hours.
 
-#### Backup and Restore
+#### Backup and restore
 
 Hourly and daily [snapshots](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Snapshots) are created using the [Cloud Protection Manager (CPM)]({{ project.backup_url }})
 
-- First determine how far back in time to go to obtain a clean backup for restore
-- Restore by using the `Recover` tab for the instance needing restoration
+* First determine how far back in time to go to obtain a clean backup for restore
+* Restore by using the `Recover` tab for the instance needing restoration
 
 ##### The process to recover a downed server
 
 Note: _If you terminate the old instance before you begin - volumes should not be deleted by default - then CPM will attempt the re-use the internal "backnet" (172.x.x.x) addresses_
 
-- Login to CPM at <{{ project.backup_url }}>
-  - Determine how far back in time to go to obtain a clean backup for restore
-  - Click "Recover" on the most recent hourly snapshots previous to issue occurrence
-  - Click "Instance" of the instance to be recovered
-  - Click "Recover Instance"
-- Reset: *(this part needs additional documentation)*
-  - Elastic IPs
-  - Internal backnet addresses (in .ssh/config files) *(unnecessary if backnet preserved)*
-  - System name tags of instances and volumes
-  - Pingdom & OpsGenie alarms *(if they had been disabled)*
+1. Log in to CPM at: <{{ project.backup_url }}>
 
-##### Disaster Recovery (DR)
+    a. Determine how far back in time to go to obtain a clean backup for restore.
 
-_See: <https://n2ws.com/support/documentation/10-disaster-recovery-dr>_
+    b. Click **Recover** on the most recent hourly snapshots previous to issue occurrence.
 
-- Review:
-  - Performing DR on the CPM Server (The cpmdata Policy)
-  - DR Recovery
-  - DR Instance Recovery
-  - DR of Encrypted Volumes, AMIs and RDS Instances
+    c. Click **Instance** of the instance to be recovered.
+
+    d. Click **Recover Instance**.
+
+2. Reset: *(this part needs additional documentation)*
+  * Elastic IPs
+  * Internal backnet addresses (in .ssh/config files) *(unnecessary if backnet preserved)*
+  * System name tags of instances and volumes
+  * Pingdom & OpsGenie alarms *(if they had been disabled)*
+
+##### Disaster recovery (DR)
+
+Go to <https://n2ws.com/support/documentation/10-disaster-recovery-dr> and review the following sections:
+
+* Review:
+
+  * _Performing DR on the N2WS Server (The cpmdata Policy)_
+  * _DR Recovery_, including subsections _DR Instance Recovery_ and _DR of Encrypted Volumes, AMIs and RDS Instances_
 
 ### Reconstitution
 
-The Incident Response Team tests and validates the system as operational.
+For reconstitution:
 
-The Incident Commander declares that recovery efforts are complete and notifies all relevant people. The last step is to schedule a postmortem in the {{ project.issue_system }} (as part of the same of a new ticket) to discuss the event. This is the same as the [security incident retrospective process](security-irp.md#retrospective).
+1. The Incident Response Team tests and validates the system as operational.
+2. The Incident Commander declares that recovery efforts are complete and notifies all relevant people.
+3. The Incident Response Team schedules a retrospective in {{ project.issue_system }}, and discusses the event. For more detail, see the [security incident retrospective process](security-irp.md#retrospective).
 
 ## External dependencies
 
-{{ project.name_short }} depends on several external services.  In the event one or more of these services has a long-term disruption, the team will mitigate impact by following this plan.
+{{ project.name_short }} depends on several external services. In the event one or more of these services has a long-term disruption, the team will mitigate impact by following this plan.
 {% if services is defined -%}
 {% for item in services.service %}
 ### {{ item.service.name }}
 
 {% if item.service.url is defined -%}
-- **Service:** <{{ item.service.url }}>
+* **Service:** <{{ item.service.url }}>
 {% endif -%}
 {% if item.service.status is defined -%}
 {% for statuses in item.service.status -%}
-- **Status:** <{{ statuses }}>
+* **Status:** <{{ statuses }}>
 {% endfor -%}
 {% endif -%}
 {% if item.service.backup is defined -%}
-- **Backup:** <{{ item.service.backup }}>
+* **Backup:** <{{ item.service.backup }}>
 {% endif -%}
 {% if item.service.documentation is defined -%}
-- **Documentation:** <{{ item.service.documentation }}>
+* **Documentation:** <{{ item.service.documentation }}>
 {% endif -%}
 {% if item.service.description is defined %}
 {{ item.service.description }}
 {% endif -%}
 {%- endfor %}
 {%- endif %}
+
 ## How this document works
 
 This plan is most effective if all core {{ contractor.name_short }} team members know about it, remember that it exists, have the ongoing opportunity to give input based on their expertise, and keep it up to date.
 
-- The {{ contractor.name_short }} team is responsible for maintaining this document and updating it as needed. Any change to it must be approved and peer reviewed by at least another member of the team.
-  - All changes to the plan should be communicated to the rest of the team.
-  - At least once a year, and after major changes to our systems, we review and update the plan.
-- How we protect this plan from unauthorized modification:
-  - This plan is stored in the {{ contractor.name_short }} GitLab repository (<{{ project.git_repository }}/compliance/>) with authorization to modify it limited to the Incident Response Team by GitLab access controls. {{ contractor.name_short }} policy is that changes are proposed by making a pull request and ask another team member to review and merge the pull request.
+* The {{ contractor.name_short }} team is responsible for maintaining this document and updating it as needed. Any change to it must be approved and peer reviewed by at least another member of the team.
+  * All changes to the plan should be communicated to the rest of the team.
+  * At least once a year, and after major changes to our systems, we review and update the plan.
+* How we protect this plan from unauthorized modification:
+  * This plan is stored in the {{ contractor.name_short }} GitLab repository (<{{ project.git_repository }}/compliance/>) with authorization to modify it limited to the Incident Response Team by GitLab access controls. {{ contractor.name_short }} policy is that changes are proposed by creating a merge request in GitLab and asking another team member to review the changes and approve the request.

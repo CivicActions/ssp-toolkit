@@ -11,6 +11,7 @@ satisfies:
       This is Agency common control.  More data about implementation can be
       obtained from the Agency common control catalog.
 
+
       The {{project.name_short}} developed its security policy planning and
       procedures based on {{project.info_security_policy}}, guidance from NIST,
       the Office of Management and Budget and industry best practices. Security
@@ -56,6 +57,7 @@ satisfies:
       information and information system usage. These rules are captured in
       ‘Appendix J2 - System Rules of Behavior - General User’
       ({{project.name_short}}SystemRoB2019-template.docx).
+
 
       {{project.name_short}} has reviewed and accepted as a superset alternative
       the {{contractor.name_short}} Acceptable Use Policy.

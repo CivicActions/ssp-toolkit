@@ -19,6 +19,7 @@ satisfies:
     text: >
       AWS built-in features include online documentation of AWS services at http://aws.amazon.com/documentation/
 
+
       1. AWS built-in features include online documentation for AWS account users at
          http://aws.amazon.com/documentation/ such as user Guides, API reference guides, CLI
          reference guides and developer reference guides to provide information on how to

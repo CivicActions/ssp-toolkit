@@ -38,17 +38,18 @@ satisfies:
       roles and responsibilities and rules of behavior. Some topics addressed in
       the training are:
 
-      * Password protection
 
-      * System rules of behavior
+      - Password protection
 
-      * Protection of hardware, software, and data
+      - System rules of behavior
 
-      * Proper handling of copyrighted materials
+      - Protection of hardware, software, and data
 
-      * Reporting of security breaches and violations
+      - Proper handling of copyrighted materials
 
-      * Proper procedures for software installation, uploading, and use on
+      - Reporting of security breaches and violations
+
+      - Proper procedures for software installation, uploading, and use on
         workstations.
   implementation_status: {{status.AT_2.project}}
   summary: >

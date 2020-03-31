@@ -13,6 +13,7 @@ satisfies:
       identify new threats/vulnerabilities and technologies that may require
       updating of solicitation documents.
 
+
       This is Agency common control.  More data about implementation can be
       obtained from the Agency common control catalog.
   implementation_status: {{status.SA_1.project}}
@@ -32,6 +33,7 @@ satisfies:
       interim increases to the security budget, if required. This data is used
       to support the development of the annual budget.
 
+
       Security costs are included in Exhibit 53 in the Department's on-line
       electronic Capital Planning and Investment Control system (eCPIC) in order
       to provide adequate business case information for budget purposes.
@@ -40,6 +42,7 @@ satisfies:
       - {{project.name_short}} is a non-major project. Security costs are
       summarized and listed as a line item on the Exhibit 53 in the budget
       submitted to Treasury.
+
 
       Costs for providing security at the infrastructure level are contained in
       the business cases for infrastructure supporting computing platforms,
@@ -73,9 +76,11 @@ satisfies:
       controls as new threat/vulnerabilities are identified and new technologies
       are implemented.
 
+
       The {{project.name_short}} System and Services Acquisition Policy contains
       the process for determining acceptance criteria for all
       {{project.name_short}} system software and services.
+
 
       The {{project.name_short}} organization reviews and approves all
       acquisition contracts in accordance with applicable federal laws, Executive
@@ -97,6 +102,7 @@ satisfies:
       (AC-2 and AC-3) and identification and authentication for all users
       (IA-2 and IA-8).
 
+
       It is the responsibiility of {{contractor.name_short}} for implementation
       of PIV capability for authentication as required.
   implementation_status: {{status.SA_4_10.project}}
@@ -116,15 +122,16 @@ satisfies:
       Software (FOSS). The documentation maintained for the
       {{project.name_short}} system includes:
 
-      * System Security Plan (SSP) – this document
 
-      * Configuration documentation
+      - System Security Plan (SSP) – this document
 
-      * Incident Response and Contingency Plans
+      - Configuration documentation
 
-      * Rules of Behavior (Acceptable Use Policy)
+      - Incident Response and Contingency Plans
 
-      * FOSS Reference Manuals (Drupal, GNU/Linux, Apache, MySQL, PHP, Postfix,
+      - Rules of Behavior (Acceptable Use Policy)
+
+      - FOSS Reference Manuals (Drupal, GNU/Linux, Apache, MySQL, PHP, Postfix,
         etc.)
   implementation_status: {{status.SA_5.project}}
 - control_key: SA-9
@@ -138,6 +145,7 @@ satisfies:
       between information system components within the authorization boundary
       and external third-party vendor information systems for the purposes of
       storing, processing, or transmitting federal agency data.
+
 
       {{project.name_short}} is hosted on the AWS Cloud platform, which was
       approved under the FedRAMP Provisional ATO granted to the AWS Cloud dated

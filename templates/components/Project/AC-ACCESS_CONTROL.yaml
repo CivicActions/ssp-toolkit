@@ -11,6 +11,7 @@ satisfies:
       This is Agency common control. More data about implementation can be
       obtained from the Agency common control catalog.
 
+
       Access control policy and procedures are documented in the
       {{project.name}} SSP. Access to {{project.name_short}} operational
       information or system resources is limited to only authorized users,
@@ -29,6 +30,7 @@ satisfies:
     text: >
       SSH system accounts are provided to contractors on an as-needed basis.
 
+
       Access privileges are used to ensure that only authorized personnel access
       certain areas of the {{project.name_short}} system. User access is
       controlled by the completion and submission of {{project.name_short}}
@@ -42,6 +44,7 @@ satisfies:
       security staff and the support contractor review accounts periodically.
       Accounts no longer in use are removed from the system by the system
       administrator.
+
 
       The {{project.name_short}} has implemented user account procedures to
       disable inactive user accounts after 90-days of inactivity. The
@@ -139,30 +142,21 @@ satisfies:
       on to the device. The following is the notification banner displayed on
       all system instances:
 
+
       "You are accessing a U.S. Government (USG) Information System (IS) that is
       provided for USG-authorized use only. By using this IS (which includes any
       device attached to this IS), you consent to the following conditions:
 
-      * The USG routinely intercepts and monitors communications on this IS for
-        purposes including, but not limited to, penetration testing, COMSEC monitoring,
-        network operations and defense, personnel misconduct (PM), law enforcement
-        (LE), and counterintelligence (CI) investigations.
 
-      * At any time, the USG may inspect and seize data stored on this IS.
+      - The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
 
-      * Communications using, or data stored on, this IS are not private, are subject
-        to routine monitoring, interception, and search, and may be disclosed or used
-        for any USG-authorized purpose.
+      - At any time, the USG may inspect and seize data stored on this IS.
 
-      * This IS includes security measures (e.g., authentication and access controls)
-        to protect USG interests -- not for your personal benefit or privacy.
+      - Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
 
-      * Notwithstanding the above, using this IS does not constitute consent to PM, LE
-        or CI investigative searching or monitoring of the content of privileged
-        communications, or work product, related to personal representation or services
-        by attorneys, psychotherapists, or clergy, and their assistants. Such
-        communications and work product are private and confidential. See User
-        Agreement for details."
+      - This IS includes security measures (e.g., authentication and access controls) to protect USG interests -- not for your personal benefit or privacy.
+
+      - Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
   implementation_status: {{status.AC_8.project}}
   summary: >
     {{project.name_short}} shows all persons who log into system "Authorized
@@ -234,6 +228,7 @@ satisfies:
       Authorized {{project.name_short}} individuals review the proposed content
       of information prior to posting onto the publicly accessible information
       system to ensure that nonpublic information is not included.
+
 
       {{project.name_short}} Users have been authorized for creation of publicly
       accessible content with publishing authority from an Administrator role.

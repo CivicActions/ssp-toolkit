@@ -17,11 +17,13 @@ satisfies:
       approach to determine the likelihood risks, and identify potential
       mitigation options to reduce risks to the {{project.name_short}} system.
 
+
       The {{project.name_short}} Risk Assessment will be conducted in accordance
       with the Department’s risk assessment policy and procedures. By doing so,
       the responsible parties associated with the {{project.name_short}} will
       be able to determine the risk, likelihood and impact that could result
       from exploiting vulnerabilities within the system.
+
 
       This is Agency common control.  More data about implementation can be
       obtained from the Agency common control catalog.
@@ -89,15 +91,16 @@ satisfies:
 
       A significant change includes:
 
-      * Changing authentication or access control implementations;
 
-      * Changing storage implementations;
+      - Changing authentication or access control implementations;
 
-      * Changing a COTS product to another product;
+      - Changing storage implementations;
 
-      * Changing the backup mechanisms and process; and,
+      - Changing a COTS product to another product;
 
-      * Adding new interconnections to an outside service provide.
+      - Changing the backup mechanisms and process; and,
+
+      - Adding new interconnections to an outside service provide.
   implementation_status: {{status.RA_3.project}}
 - control_key: RA-5
   control_name: VULNERABILITY SCANNING

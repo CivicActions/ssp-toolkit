@@ -12,10 +12,10 @@ satisfies:
       Operations, in collaboration with the Security Office, will set up privileged
       accounts accounts for the following roles:
 
-      • Developer - user level account that has access to application features and
+      - Developer - user level account that has access to application features and
       sanitized databases
 
-      • System Administrator - user accounts that enjoy full system administrator (`sudo`)
+      - System Administrator - user accounts that enjoy full system administrator (`sudo`)
       access
     implementation_status: In Place
 - control_key: AC-6

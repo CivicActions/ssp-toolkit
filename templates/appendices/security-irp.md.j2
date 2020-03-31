@@ -1,49 +1,55 @@
 # {{ project.name_short }} Security Incident Response Procedures
 
-## Table of Contents
+## Contents
 <!--TOC-->
 
 ----
 
 ## Overview
 
-This document outlines the {{ contractor.name_short }} Incident Response Team's process for responding to {{ project.name_short }} security incidents and other system disruptions. It outlines roles and responsibilities during and after incidents, and it lays out the steps we'll take to resolve them.
+This document outlines the {{ contractor.name_short }} Incident Response Team's process for responding to {{ project.name_short }} security incidents and other system disruptions. It outlines roles and responsibilities during and after incidents, and it outlines the steps for resolution.
 
-***If you're responding to an incident, [here's an IRP checklist](security-irp-checklist.md) as a short, actionable companion to this guide.***
+* For incident responders, see the [IRP checklist](security-irp-checklist.md). It is a short, actionable companion to this guide.*
 
 At a high level, incident response follows this process:
 
 [Initiate](#initiate):
 
-* A {{ project.name_short }} or {{ contractor.name_short }} team member (the *reporter*) notices and reports a {{ project.name_short }} related incident, notifying the {{ contractor.name_short }} Incident Response Team:
+* The *incident reporter* (a {{ project.name_short }} or {{ contractor.name_short }} team member) notices and reports a {{ project.name_short }} related incident to the {{ contractor.name_short }} Incident Response Team:
   1. Slack: [#{{ project.slack_channel }}]({{ project.slack_url }}) using `@channel`
   1. Email: {{ project.escalation_mail }}
-  1. [{{ contractor.name_short }}/{{ project.name_short }}]({{ project.contact_sheet_url }})
-* The first responder on the Incident Response Team (which could be the reporter if the reporter is on the team) becomes the initial **Incident Commander (IC)**.
+  1. [{{ contractor.name_short }}/{{ project.name_short }} contacts]({{ project.contact_sheet_url }})
+* The first responder on the Incident Response Team, which could be the reporter if the reporter is on the team, assumes the **Incident Commander (IC)** role.
 
 [Assess](#assess):
 
-* The IC forms a team (*responders*) to determine if the event is actually a confirmed incident, and if so [assesses the severity](#incident-severities).
-  * Note that some apparent outages can be triggered by [external dependencies as listed in the contingency plan](contingency-plan.md#external-dependencies).
-* The IC creates an initial situation report ("sitrep") in a {{ project.issue_incident }}, or acknowledges false-alarm notification.
-* The IC assesses whether to also activate the [contingency plan](contingency-plan.md) (for disaster recovery).
+* The IC forms a team of *responders* to determine whether the event is a security incident. *Note that some apparent outages can be triggered by [external dependencies as listed in the contingency plan](contingency-plan.md#external-dependencies).*
+
+  * If the incident is confirmed:
+    * The team [assesses the severity](#incident-severities).
+    * The IC creates an initial situation report, called a *sitrep*, in a {{ project.issue_incident }}.
+    * The IC assesses whether to activate the [contingency plan](contingency-plan.md) for disaster recovery.
+  * If the incident is determined to be a false alarm, the IC follows the notification procedure for false alarms.
 
 [Remediate](#remediate):
 
-* If ***suspicious activity*** is suspected or other unanswered questions exist, create database dumps, take disk snapshots of relevant volumes, get screen captures of anomalous activity ***before making changes*** such that post-remedation forensic analysis is supported.
-* The responders work to contain and remediate the issue; timelines vary based on the assessed severity.
-* The IC coordinates, communicates, and tracks the investigation and remediation.
-* If appropriate to the situation, the IC coordinates with the Product Owner (PO) to notify affected customers.
+* If suspicious activity is suspected or other unanswered questions exist:
+  * Make [CPM snapshots](https://cpm.globalnetplatform.org/) of relevant volumes.
+  * Preserve logs.
+  * Take screen captures of anomalous activity that can be used in post-remediation forensic analysis. *Do this before making any changes.*
+* The responders work to contain and remediate the issue. Timelines vary based on the assessed severity.
+* The IC coordinates, communicates, and tracks incident investigation and remediation.
+* If appropriate, the IC coordinates with the Product Owner (PO) to notify affected customers.
 
-[Retrospective](#retrospective):
+[Retrospect](#retrospective):
 
-* The responding team holds a retrospective to analyze the incident, capture follow-ups and lessons-learned, and write a formal report.
+* The responding team holds a retrospective to analyze the incident, capture follow-ups and lessons learned, and write a formal report.
 
 During this process, the team communicates in the following places:
 
-* Situation updates, investigation notes, and other relevant information gets captured in the {{ project.issue_system }} created to track this event.
-* Real-time communication happens in Slack, in the [#{{ project.slack_channel }}]({{ project.slack_url }}) channel.
-* If needed, the team can use a Zoom room, Google Hangout and/or Google Docs to share information that's not appropriate for Slack (PII, etc.).
+* **{{ project.issue_system }}**: Situation updates, investigation notes, and other relevant information gets captured in the {{ project.issue_system }} created to track this event.
+* **Slack**: Real-time communication happens in the Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}).
+* **Other**: If needed, the team may use Zoom, Google Hangouts, and/or Google Docs to share information not appropriate for Slack (PII, etc.).
 
 For full details, read on.
 
@@ -51,61 +57,65 @@ For full details, read on.
 
 ### Initiate
 
-An incident begins when someone becomes aware of a potential incident. We define "incident" broadly, following [NIST SP 800-61](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf), as "a violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices". This is a deliberately broad definition, designed to encompass any scenario that might threaten the security of {{ project.name_short }}. (For more, see: [What is an incident?](http://civicactions-handbook.readthedocs.io/en/latest/09-security/incidents/#what-is-an-incident))
+An incident begins when someone becomes aware of a potential incident. We define "incident" broadly, following [*NIST SP 800-61: Computer Security Incident Handling Guide*](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf), as "a violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices". This is a deliberately broad definition, designed to encompass any scenario that might threaten the security of {{ project.name_short }}. For more, see: [What is an incident?](http://civicactions-handbook.readthedocs.io/en/latest/09-security/incidents/#what-is-an-incident)
 
-When a person (the *reporter*) notices what appears to be a {{ project.name_short }}-related incident, they should check [#{{ project.slack_channel }}]({{ project.slack_url }}) slack to see if this may be expected behavior (e.g., expected system downtime during a maintenance window) and if necessary alert the on-call system administrators by emailing {{ project.escalation_mail }}. If they don't get acknowledgment from the Incident Response team within 10 minutes, they should escalate by contacting the {{ project.contact_sheet }} directly until they receive acknowledgment of their report.
+When a person (the *reporter*) notices what appears to be a {{ project.name_short }}-related incident, they should check the Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}) to see if this may be expected behavior (e.g., expected system downtime during a maintenance window), and if necessary, alert the on-call system administrators by email {{ project.escalation_mail }}. If there is no acknowledgment from the Incident Response Team within 10 minutes, the reporter should escalate the issue by contacting the {{ project.contact_sheet }} directly until receiving acknowledgment of the report.
 
-The first participant on the {{ contractor.name_short }} Incident Response Team becomes the initial **Incident Commander** (IC) and carries out the next steps in the response. The IC's responsibility is coordination, not necessarily investigation. The IC's primary role is to guide the process. The first responder may remain IC throughout the process, or they may hand off IC duties later in the process.
+The first participant on the {{ contractor.name_short }} Incident Response Team is the *reporter*, who is also the initial *Incident Commander* (IC). The IC does the following:
 
-The IC makes sure that the incident response process is followed, including supporting the reporter if the reporter already started it, or starting it if nobody has started it yet.
+* Carries out the next steps in the incident response process.
+* Focuses on coordination, not necessarily investigation.
+* Ensures that the incident response process is followed.
+* Supports the reporter if the reporter already started the process, or starts the process.
+* Remains IC throughout the process, or hands off IC duties later in the process.
 
-#### Comms at the Initiate phase
+#### Communications during the Initiate phase
 
-Note that at this point the event's status is "investigating" — we haven't confirmed that it's really an issue yet. So, we should actually refer to this as just an "event" at this point; it doesn't become an "incident" until we've confirmed it.
+Note that at this point the event status is "investigating". The issue has not been confirmed yet, so it should be called an "event". When it has been confirmed, it becomes an "incident".
 
-To help with reporting, you may copy the following template into Slack or an email to create the issue:
+To help with reporting, copy the following template into Slack or an email to create the issue:
 
 ``` markdown
-Short description of what's going on
+[Short description of the event and its impact]
 
 * **Status**: investigating
 * **Severity**: unknown
-* **Reporter**: who initially reported the issue
-* **IC**: Your Name
-* **Responders**: Any other responders
+* **Reporter**: [name of the person who reported the issue]
+* **IC**: [your name]
+* **Responders**: [names of other responders]
 
-Any extra details about the issue can go here.
+[Any extra details about the issue can go here.]
 ```
 
-The IC is responsible for keeping this issue up-to-date as investigation and remediation progresses. Everyone involved in the issue (*responders*) should leave notes as comments on the issue.
+The IC is responsible for keeping this issue updated as investigation and remediation progresses. *Responders* should add comments to the make notes on the issue.
 
-* The IC may start a Zoom room, Google Hangout and/or create Google Docs so that responders can share sensitive information not suitable for sharing in a {{ project.issue_system }} or Slack.
+* The IC may use Zoom, Google Hangouts, and/or Google Docs so that responders can share sensitive information not suitable for sharing in a {{ project.issue_system }} or Slack.
 
 ### Assess
 
 The next step is to assess the event. We need to answer two questions:
 
-* Is this an incident? (i.e., did the thing we suspect happen actually happen?)
-* If so, how severe is it? (This will determine how our response proceeds.)
+* Is this an incident? Did the thing we suspect happen actually happen?
+* If so, how severe is it? This determines the response.
 * Could the event have been triggered by an [external dependency](contingency-plan.md#external-dependencies)?
 
-To answer these questions, the IC should form a response team by DM'ing people in Slack. The response team should work to confirm the event and assess its impact.
+To answer these questions, the IC should form an Incident Response Team using Slack Direct Messages. The Incident Response Team should work to confirm the event and assess its impact.
 
-If the event turns out to be a false alarm, the IC should update the ticket, setting the status to "false alarm", and closing the ticket.
+If the event is determined to be a false alarm, the IC should update the ticket, set the status to "false alarm", and close the ticket.
 
-If the event is a valid incident, the team should assess its impact and determine an initial severity following the incident severity guide below. (Note that the severity can change over the lifespan of the incident, so it's OK to determine the initial severity fairly quickly.)
+If the event is confirmed as an incident, the team should assess its impact and determine an initial severity using the incident severity guide below. Note that severity can change over the lifespan of an incident, and it is acceptable for the team to assess the initial severity quickly.
 
-If a security incident is suspected, the IC ensures that system state is captured with disk snapshots, screen captures and any other mechanisms relevant to the system such that post-remedation forensic analysis is supported.
+If a security incident is suspected, the IC ensures that the system state is captured with disk snapshots, screen captures, and any other mechanisms relevant to the system to support post-remediation forensic analysis.
 
-Once this is done, the IC should update the ticket, noting:
+After this has been done, the IC should update the ticket and note the following:
 
-* Status: "confirmed"
-* Severity: High/Med/Low
-* Any new/changed responders
+* **Status**: confirmed
+* **Severity**: [High/Med/Low]
+* **Responders**: [update to include names of new/changed responders]
 
-The IC should assess whether to also activate the [contingency plan](contingency-plan.md).
+The IC should assess whether the [contingency plan](contingency-plan.md) should be activated.
 
-At this point, the IC should write an initial situation report in a {{ project.issue_system }}, summarizing what's going on, identifying the IC, and linking to the issue. Here's an example sitrep:
+The IC should write an initial situation report, called a *sitrep*, in a {{ project.issue_system }}, summarizing the incident details, identifying the IC, and linking to the issue. Here is an example sitrep:
 
 ``` markdown
 Subject: [sitrep] The chickens are escaping
@@ -114,63 +124,64 @@ Severity: low
 IC: Farmer Jane
 Responders: Spot the Dog, Farmer Dave
 
-We've confirmed reports of escaped chickens. Looks like a fox may have tunneled into the run. Dave is working to fix the fence, Spot is tracking the fox.
+We've confirmed reports of escaped chickens. Looks like a fox may have tunneled into the run. Dave is working to fix the fence. Spot is tracking the fox.
 ```
 
-This sitrep should be:
+This sitrep should be posted in:
 
-* Posted in the {{ project.issue_url }}
-* Posted in [#{{ project.slack_channel }}]({{ project.slack_url }}) Slack (include link to {{ project.issue_system }})
+* {{ project.issue_url }}
+* Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}) (include link to {{ project.issue_system }})
 
-#### Comms at the Assess phase
+#### Communications during the Assess phase
 
-Updates and real-time chat should continue as above (chat in Slack, Zoom or Google Hangouts).
+Updates and real time chat should continue using Slack, Zoom, or Google Hangouts.
 
 ### Remediate
 
-At this point, we're trying to fix the issue! Remediation will be very situation-specific, so specific steps are hard to suggest. However, a few guidelines to follow during this process:
+Remediation is about resolving the issues caused by the incident. Remediation will be situation-specific. Here are a few guidelines:
 
-* If ***suspicious activity*** is suspected or other unanswered questions exist, create database dumps, take disk snapshots of relevant volumes, get screen captures of anomalous activity ***before making changes*** such that post-remedation forensic analysis is supported.
+* If suspicious activity is suspected or other unanswered questions exist, create database dumps, take disk snapshots of relevant volumes, get screen captures of anomalous activity *before making changes* to support post-remediation forensic analysis.
 
-* The IC's responsibility is coordination, communication, and information-collection. The remediation team will be focused on resolving the issue, so it's up to the IC to make sure that we properly track what happened, how we're fixing it, who's doing what, etc. Ideally, the notes kept by the IC should be sufficient for an outside investigator to independently follow the work of the response team and validate the team's work
+* The IC's responsibility is coordination, communication, and information collection. The remediation team will be focused on resolving the issue, so the IC must track what happened, how the incident is being remediated, and who is part of those efforts. Ideally the notes that the second IC makes should be sufficient for an outside investigator to independently follow the work of the Incident Response Team and validate the team's work.
 
-* The team will develop a list of **leads** — actionable information about breaches, stolen data, etc. The IC should track these leads, maintain information about which are being investigated (and by whom), and what information that investigation leads. These can be tracked as checklists in the {{ project.issue_system }}.
+* The team will develop a list of informational leads from the incident — actionable information about any security breaches, stolen data, etc. The IC should track these leads, maintaining information about the investigations and their outcomes. These can be tracked as checklists in the {{ project.issue_system }}.
 
-* Similarly, the team will develop a list of **remediation steps**. The IC is likewise responsible for tracking those, making sure they're assigned and followed-up, and verifying them as they're completed. These may be tracked in the central  issue as well. The IC should distinguish between immediate concerns which should be completed before the incident is considered resolved and long-term improvements/hardening which can be deferred to the Retrospective.
+* Similarly, the team will develop a list of remediation steps. The IC is responsible for tracking them, making sure they are assigned and followed, and verifying them when they are completed. Remediation efforts may be tracked with the issue details. The IC should distinguish between immediate concerns, which need to be completed before the incident is considered resolved, and long-term improvements/hardening, which can be deferred to the Retrospective.
 
-* The response team should aim to adopt a *containment* strategy: if machines are compromised, they should avoid destroying or shutting them down if possible (this can hamper forensics). Creating {{ project.backup_snaps }} of relevant volumes is a good step here.
-   * For AWS instances, remember that you can leave the instance running and reconfigure the Security Group for the instance to drop all ingress and egress traffic except from specific IPs (like yours) until forensics can be performed.
+* The Incident Response Team should aim to adopt a containment strategy. If machines are compromised, avoid destroying volumes or shutting down systems if possible, both of which can hamper forensics. Creating {{ project.backup_snaps }} of relevant volumes is helpful at this stage.
+
+   * For AWS instances, leave the instance running and reconfigure the Security Group for the instance to drop all ingress and egress traffic except from specific IPs (like yours) until forensics can be performed.
 
 * Remediation may require service disruption. If it does, the team should proceed in a different way depending on the [severity](#incident-severities):
 
-   * For High-severity incidents, the team should take action immediately, even if this causes disruption. A notification about the disruption should be sent out as soon as possible, but the team needs no permission to take action at this level.
+   * High-severity: Take action immediately, even if this causes disruption. A notification about the disruption should be sent out as soon as possible, but the team needs no permission to take action at this level.
 
-   * For Medium-severity incidents, the team should notify the {{ project.name_short }} leads of the planned action, and help them assess the relative risk of disruption vs. security. If the leads are unavailable via Slack, they should be contacted using the phone numbers in their Slack profiles. The team should reach a collaborative decision on action, with a bias towards disruption. If they can't be reached within 1 hour, the team may take action without them.
+   * Medium-severity: Notify the {{ project.name_short }} leads of the planned action, and help them assess the relative risk of disruption versus security. If the leads are unavailable on Slack, contact them using the phone numbers in their Slack profiles. The team should reach a collaborative decision on action, with a bias towards disruption. If they cannot be reached within an hour, the team may take action without them.
 
-   * For Low-severity issues, the team should notify as above, and not take action until a mutually-agreed-on course of action has been determined.
+   * Low-severity: Notify the leads as described above. Do not take action until a mutually-agreed course of action has been determined.
 
-* Remediation can sometimes take a long time. If the issue progresses for more than 3 hours without being resolved, the IC should plan for a long remediation. This means:
+* Remediation takes time. If the issue progresses for more than 3 hours without being resolved, the IC should plan for a long remediation. This means:
 
-   * Determine if remediation efforts should be "business hours" or "24/7". This will depend on the severity of the issue, and whether breaches are ongoing.
+   * Determine whether remediation efforts will occur during business hours only or be continuous. This depends on the severity of the issue, and whether breaches are ongoing.
 
-   * For 24/7 responses, the IC should begin shift-planning. Generally, responders should only work 3 hour shifts, so the IC should begin scheduling shifts and sending people "home" to preserve their ability to function.
+   * For a continuous response, the IC should plan shifts. This allows responders to take breaks and insures continuous coverage. Shifts should be no longer than 3 hours. Also, the IC duties should rotate in shifts no longer than 3 hours.
 
-   * The IC also needs to get into rotation — again, 3 hour shifts are about the maximum suggested. So, the IC should likely hand off duties at this point.
+When the incident is no longer active -- for example, the breach has been contained, the issue has been fixed, etc. -- the IC should close out the incident. There might be longer term remediation required, and possibly more investigation, but when the incident is no longer active, these activities can proceed at the regular pace of business.
 
-Once the incident is no longer active — i.e. the breach has been contained, the issue has been fixed, etc. — the IC should spin down the incident. There may still be longer-term remediation needed, and possibly more investigation, but as long as the incident is no longer active these activities can proceed at the regular pace of business. To close out an incident, the IC should:
+To close out an incident, the IC should:
 
-* Set the status of the incident to "Ready for QA".
+* Set the status of the incident to **Ready for QA**.
 * Send a final sitrep to stakeholders.
-* Thank everyone involved for their service!
+* Thank everyone involved for their service.
 
-#### Comms at the Remediate phase
+#### Communications during the Remediate phase
 
-* Updates and real-time chat should continue as above (updates on the {{ project.issue_system }}, chat in Slack or Google Hangouts).
-* The IC should continue to post updated sitreps on a regular cadence (the section on severities, below, suggests cadences for each level). These sitreps should be sent to Slack, posted in the {{ project.issue_system }}, and to any other stakeholders identified throughout the process (e.g. clients).
+* Updates and real time chat should continue as above (updates on the {{ project.issue_system }}, chat in Slack or Google Hangouts).
+* The IC should continue to post updated sitreps on a regular basis (the section on severities, below, suggests time intervals for each level). These sitreps should be shared in Slack, in the {{ project.issue_system }}, and with all stakeholders identified during the process (e.g. clients).
 
-### Retrospective
+### Retrospect
 
-The final step in handling a security incident is figuring out what we learned. The IC (or one of the ICs if there were multiple, or a designated other party) should lead a retrospective and develop an incident report.
+The final step in handling a security incident is identifying what we can learn from it. The IC (or one of the ICs if there were multiple, or a designated other party) should lead a retrospective and develop an incident report.
 
 The report should contain:
 
@@ -193,7 +204,7 @@ This report should be posted as a final comment on the {{ project.issue_system }
 
 *Note that {{ project.name_short }} has no High Value Assets (HVAs) or Sensitive Personally Identifiable Information (SPII). As such, {{ project.name_short }} incidents are generally expected to fall into the* **Low Severity** *bucket.*
 
-Severity ratings drive the actions of the response team. Below are the severities ratings we use, some examples of incidents that might fall into that bucket, and some guidelines for ICs and response teams about how to treat each class of incident.
+Severity ratings drive the actions of the Incident Response Team. Below are the severities ratings we use, some examples of incidents that might fall into that bucket, and some guidelines for ICs and Incident Response Teams about how to treat each class of incident.
 
 Note the severities may (and often will) change during the lifecycle of the incident. That's normal.
 

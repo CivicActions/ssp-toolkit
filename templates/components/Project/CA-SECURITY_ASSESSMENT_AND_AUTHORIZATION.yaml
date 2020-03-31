@@ -13,6 +13,7 @@ satisfies:
       on all aspects of security for the protection of {{project.name_short}}
       information technology resources.
 
+
       {{project.name_short}} will periodically review and update the SSP when
       there is a significant change to the regulatory, operational, or technical
       environment.
@@ -34,13 +35,12 @@ satisfies:
       All controls and sub-set security controls will be evaluated and a risk
       assessment will be conducted. The scope of the assessment includes:
 
+
       1. Security controls and control enhancements under assessment
 
-      2. Assessment procedures to be used to determine security control
-         effectiveness
+      2. Assessment procedures to be used to determine security control effectiveness
 
-      3. Assessment environment, assessment team, and assessment roles and
-         responsibilities
+      3. Assessment environment, assessment team, and assessment roles and responsibilities
   - key: c
     text: >
       The {{project.name_short}} Authorizing Official or Designated
@@ -74,6 +74,7 @@ satisfies:
       The {{project.name_short}} follows the {{project.info_security_policy}}.
       The {{project.name_short}} system received its first three-year security accreditation on March 3, 2009, and most recently received an ATO on
       February 5, 2016.
+
 
       ATO re-assessment will be performed every three years or when there is a
       major change to the application, in which a senior organizational
