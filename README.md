@@ -20,13 +20,15 @@ This repository contains documents and scripts that can be used to create and ma
 
 We understand that version 2 of the [Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy (RMFv2)](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final) has been released and we are planning to update this repository to include the controls as defined in [NIST SP 800-53r5 (draft)](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/draft) as this is finalized.
 
+Control templates are in machine readable ([OpenControl](https://github.com/opencontrol/)) YAML files. The intention is to enable these files to be updated automatically by gathering evidence on the state of the running system.
+
 ### System Security Plan sections
 
 A current version can be viewed in Git Markdown from this repository:
 
-* [Front matter](frontmatter)
+* [Front matter](frontmatter) (points of contact, system and technical description, ...)
 * [Control implementation statements](docs/controls.md)
-* [Appendices](appendices)
+* [Appendices](appendices) (incident response, configuration management, regulations, ...)
 
 ### Disclaimer
 
@@ -34,7 +36,7 @@ The contents of these pages are provided as an information guide only. They are 
 
 ## Prerequisites
 
-You will need `docker` and `docker-compose` running locally in a `bash` compatible shell:
+You will need `docker` and `docker-compose` running locally in a `bash` compatible shell. These can be obtained by installing the [Docker Desktop](https://www.docker.com/products/docker-desktop).
 
 ```bash
 docker --version
