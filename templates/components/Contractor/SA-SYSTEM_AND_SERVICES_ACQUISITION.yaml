@@ -15,7 +15,7 @@ satisfies:
       implementation of the policy and associated controls. This information is
       maintained by the {{contractor.name_short}} System and Services Acquisition
       (SA) Policy document that can be found in the {{contractor.name_short}}
-      Github repository at <{{contractor.compliance_docs_url}}/>.
+      GitHub repository at <{{contractor.compliance_docs_url}}/>.
   implementation_status: {{status.SA_1.contractor}}
 - control_key: SA-2
   control_name: ALLOCATION OF RESOURCES
@@ -198,7 +198,7 @@ satisfies:
 
 
       {{contractor.name_short}} follows the user documentation standard practice
-      to provide context-sensitive help as well as access to a HelpDesk in
+      to provide context-sensitive help as well as access to a Help Desk in
       publicly facing applications.
 
 

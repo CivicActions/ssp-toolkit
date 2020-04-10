@@ -30,10 +30,10 @@ satisfies:
   - key: c
     text: As a popular and well-used and maintained free and open source (FOSS) project,
       in the event that sought after documentation is not available on Ilias.de,
-      it can usually be found in one of the many forums, mailing lists or StackExchange
-      sites covering Ilias and its many contributed modules.
+      it can usually be found in one of the many forums, mailing lists or Stack
+      Exchange sites covering Ilias and its many contributed modules.
   - key: d
-    text: The Ilias.de documentation is multi-sourced on Github and private repositories.
+    text: The Ilias.de documentation is multi-sourced on GitHub and private repositories.
   - key: e
     text: As the Ilias.de documentation is publicly available, there is no need
       to provide distribution mechanisms.

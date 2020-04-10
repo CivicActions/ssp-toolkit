@@ -8,7 +8,7 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - text: >
-      This is Agency common control.  More data about implementation can be
+      This is Agency common control. More data about implementation can be
       obtained from the Agency common control catalog.
 
 
@@ -39,7 +39,7 @@ satisfies:
       approved by designated officials. The SSP identifies the system owner and
       responsible parties for managing system access and the overall security of
       the system. The Chief Information Security Officer reviews and approves
-      the SSP.  The SSP will be reviewed at least annually and updated to account
+      the SSP. The SSP will be reviewed at least annually and updated to account
       for any changes to the {{project.name_short}} system and to address any
       changes in security controls.
   implementation_status: {{status.PL_2.project}}

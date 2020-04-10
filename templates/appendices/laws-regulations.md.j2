@@ -6,8 +6,8 @@ The following laws, regulations, or policies establish requirements for confiden
 
 {% if regulations.fed_statutes is defined -%}
 {% for item in regulations.fed_statutes -%}
-* {{ item.title }}
-  * <{{ item.url }}>
+- {{ item.title }}
+  - <{{ item.url }}>
 {%- endfor %}
 {%- endif %}
 
@@ -15,8 +15,8 @@ The following laws, regulations, or policies establish requirements for confiden
 
 {% if regulations.standards is defined -%}
 {% for item in regulations.standards -%}
-* {{ item.title }}
-  * <{{ item.url }}>
+- {{ item.title }}
+  - <{{ item.url }}>
 {%- endfor %}
 {%- endif %}
 
@@ -26,6 +26,6 @@ Review these for current versions and applicability
 
 {% if regulations.additional is defined -%}
 {% for item in regulations.additional -%}
-* {{ item }}
+- {{ item }}
 {% endfor %}
 {%- endif %}

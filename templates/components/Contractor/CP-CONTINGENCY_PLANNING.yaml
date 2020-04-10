@@ -43,7 +43,7 @@ satisfies:
   - key: b
     text: >
       The {{contractor.name_short}} Information System Contingency Plan (ISCP)
-      has been distributed to all CivicActons team members. The ISCP can be
+      has been distributed to all CivicActions team members. The ISCP can be
       found in the {{contractor.name_short}} Handbook at
       <{{project.contingency_plan_url}}>.
   - key: c
@@ -68,7 +68,7 @@ satisfies:
       Incident Response/Contingency Plan Contact List.
   - key: g
     text: >
-      The ISCP is available on {{contractor.name_short}} Github repository.
+      The ISCP is available on {{contractor.name_short}} GitHub repository.
       This repository provides the configuration management capabilities for
       the ISCP to be protected from unauthorized disclosure and modification.
   implementation_status: {{status.CP_2.contractor}}

@@ -15,7 +15,7 @@ satisfies:
       implementation of the policy and associated controls. This information is
       maintained in the {{contractor.name_short}} Planning (PL) Policy and
       Procedure document that can be found in the {{contractor.name_short}}
-      Github repository at <{{contractor.compliance_docs_url}}/>.
+      GitHub repository at <{{contractor.compliance_docs_url}}/>.
   implementation_status: {{status.PL_1.contractor}}
 - control_key: PL-2
   control_name: SYSTEM SECURITY PLAN

@@ -31,7 +31,7 @@ satisfies:
       hardware, software, firmware and documentation, as well as changes
       thereto, throughout the development and life cycle of the information
       system. CM ensures the control of the information system through its life
-      cycle. It assures that additions, deletions, or changes  made to the
+      cycle. It assures that additions, deletions, or changes made to the
       {{project.name_short}} system do not unintentionally or unknowingly
       diminish security. If the change is major, the security of the system
       must be re-analyzed.

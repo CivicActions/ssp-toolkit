@@ -14,7 +14,7 @@ satisfies:
       updating of solicitation documents.
 
 
-      This is Agency common control.  More data about implementation can be
+      This is Agency common control. More data about implementation can be
       obtained from the Agency common control catalog.
   implementation_status: {{status.SA_1.project}}
 - control_key: SA-2
@@ -103,7 +103,7 @@ satisfies:
       (IA-2 and IA-8).
 
 
-      It is the responsibiility of {{contractor.name_short}} for implementation
+      It is the responsibility of {{contractor.name_short}} for implementation
       of PIV capability for authentication as required.
   implementation_status: {{status.SA_4_10.project}}
 - control_key: SA-5

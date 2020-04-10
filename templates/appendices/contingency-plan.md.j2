@@ -9,8 +9,8 @@
 
 This Contingency Plan provides guidance for the {{ contractor.name_short }} Team in the case of trouble delivering our essential mission and business functions because of disruption, compromise, or failure of any {{ project.name_short }} component. As a general guideline, we consider "disruption" to mean unexpected downtime or significantly reduced service lasting longer than:
 
-* 30 minutes during standard U.S. business hours (0900-2100 EST, Monday through Friday)
-* 90 minutes at other times
+- 30 minutes during standard U.S. business hours (0900-2100 EST, Monday through Friday)
+- 90 minutes at other times
 
 Scenarios might include unexpected downtime of key services, data loss, or improper privilege escalation. In most cases, the robust contingency management capabilities of [AWS Cloud Security](https://aws.amazon.com/security/) coupled with [N2WS CPM backups and disaster recovery](https://n2ws.com/product/aws-disaster-recovery) can resolve/remediate event occurrences.
 
@@ -28,7 +28,7 @@ More than 3 hours of any {{ project.name_short }} service being offline during s
 
 Team contact information is available in the {{ project.name_short }} Google Drive:
 
-* [{{ contractor.name_short }}/{{ project.name_short }} Incident Response Team contact sheet]({{ project.contact_sheet_url }}) with names and roles for {{ contractor.name_short }} and {{ project.name_short }} Incident Response Team members.
+- [{{ contractor.name_short }}/{{ project.name_short }} Incident Response Team contact sheet]({{ project.contact_sheet_url }}) with names and roles for {{ contractor.name_short }} and {{ project.name_short }} Incident Response Team members.
 
 ## Contingency plan outline
 
@@ -40,13 +40,13 @@ If the problem is identified as part of a [security incident response situation]
 
 The IC first notifies and coordinates with the people who are authorized to decide that {{ project.name_short }} is in a contingency plan situation:
 
-* From {{ contractor.name_short }}:
-  * Incident Commander
-  * Project Manager
-  * {{ contractor.name_short }} Incident Response Team
-* {{ project.name_short }}
-  * Product Owner
-  * {{ project.name_short }} users, when applicable
+- From {{ contractor.name_short }}:
+  - Incident Commander
+  - Project Manager
+  - {{ contractor.name_short }} Incident Response Team
+- {{ project.name_short }}
+  - Product Owner
+  - {{ project.name_short }} users, when applicable
 
 The IC keeps a log of the situation in a JIRA Incident ticket; if this is also a security incident, the IC also follows the [security incident communications process](security-irp.md#initiate) which includes updating the {{ contractor.name_short }} Slack channel {{ project.slack_link }} Slack channel. The IC should delegate assistant ICs for aspects of the situation as necessary.
 
@@ -62,8 +62,8 @@ If the IC assesses that the overall response process is likely to last longer th
 
 Hourly and daily [snapshots](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Snapshots) are created using the [Cloud Protection Manager (CPM)]({{ project.backup_url }})
 
-* First determine how far back in time to go to obtain a clean backup for restore
-* Restore by using the `Recover` tab for the instance needing restoration
+- First determine how far back in time to go to obtain a clean backup for restore
+- Restore by using the `Recover` tab for the instance needing restoration
 
 ##### The process to recover a downed server
 
@@ -79,20 +79,20 @@ Note: _If you terminate the old instance before you begin - volumes should not b
 
     d. Click **Recover Instance**.
 
-2. Reset: *(this part needs additional documentation)*
-  * Elastic IPs
-  * Internal backnet addresses (in .ssh/config files) *(unnecessary if backnet preserved)*
-  * System name tags of instances and volumes
-  * Pingdom & OpsGenie alarms *(if they had been disabled)*
+2. Reset: _(this part needs additional documentation)_
+  - Elastic IPs
+  - Internal backnet addresses (in .ssh/config files) _(unnecessary if backnet preserved)_
+  - System name tags of instances and volumes
+  - Pingdom & OpsGenie alarms _(if they had been disabled)_
 
 ##### Disaster recovery (DR)
 
 Go to <https://n2ws.com/support/documentation/10-disaster-recovery-dr> and review the following sections:
 
-* Review:
+- Review:
 
-  * _Performing DR on the N2WS Server (The cpmdata Policy)_
-  * _DR Recovery_, including subsections _DR Instance Recovery_ and _DR of Encrypted Volumes, AMIs and RDS Instances_
+  - _Performing DR on the N2WS Server (The cpmdata Policy)_
+  - _DR Recovery_, including subsections _DR Instance Recovery_ and _DR of Encrypted Volumes, AMIs and RDS Instances_
 
 ### Reconstitution
 
@@ -110,18 +110,18 @@ For reconstitution:
 ### {{ item.service.name }}
 
 {% if item.service.url is defined -%}
-* **Service:** <{{ item.service.url }}>
+- **Service:** <{{ item.service.url }}>
 {% endif -%}
 {% if item.service.status is defined -%}
 {% for statuses in item.service.status -%}
-* **Status:** <{{ statuses }}>
+- **Status:** <{{ statuses }}>
 {% endfor -%}
 {% endif -%}
 {% if item.service.backup is defined -%}
-* **Backup:** <{{ item.service.backup }}>
+- **Backup:** <{{ item.service.backup }}>
 {% endif -%}
 {% if item.service.documentation is defined -%}
-* **Documentation:** <{{ item.service.documentation }}>
+- **Documentation:** <{{ item.service.documentation }}>
 {% endif -%}
 {% if item.service.description is defined %}
 {{ item.service.description }}
@@ -133,8 +133,8 @@ For reconstitution:
 
 This plan is most effective if all core {{ contractor.name_short }} team members know about it, remember that it exists, have the ongoing opportunity to give input based on their expertise, and keep it up to date.
 
-* The {{ contractor.name_short }} team is responsible for maintaining this document and updating it as needed. Any change to it must be approved and peer reviewed by at least another member of the team.
-  * All changes to the plan should be communicated to the rest of the team.
-  * At least once a year, and after major changes to our systems, we review and update the plan.
-* How we protect this plan from unauthorized modification:
-  * This plan is stored in the {{ contractor.name_short }} GitLab repository (<{{ project.git_repository }}/compliance/>) with authorization to modify it limited to the Incident Response Team by GitLab access controls. {{ contractor.name_short }} policy is that changes are proposed by creating a merge request in GitLab and asking another team member to review the changes and approve the request.
+- The {{ contractor.name_short }} team is responsible for maintaining this document and updating it as needed. Any change to it must be approved and peer reviewed by at least another member of the team.
+  - All changes to the plan should be communicated to the rest of the team.
+  - At least once a year, and after major changes to our systems, we review and update the plan.
+- How we protect this plan from unauthorized modification:
+  - This plan is stored in the {{ contractor.name_short }} GitLab repository (<{{ project.git_repository }}/compliance/>) with authorization to modify it limited to the Incident Response Team by GitLab access controls. {{ contractor.name_short }} policy is that changes are proposed by creating a merge request in GitLab and asking another team member to review the changes and approve the request.

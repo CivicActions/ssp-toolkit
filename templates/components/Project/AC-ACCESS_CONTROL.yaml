@@ -76,7 +76,7 @@ satisfies:
       The System Owner approves, and {{contractor.name_short}} Operations set
       up the initial Administrator account for {{project.name_short}}.
       Subsequent client access and related approvals are managed by
-      {{contractor.name_short}} Operations in collaboaration with the System
+      {{contractor.name_short}} Operations in collaboration with the System
       Owner.
   - key: i
     text: |

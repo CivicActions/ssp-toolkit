@@ -15,7 +15,7 @@ satisfies:
       facilitate the implementation of the policy and associated controls.
       This information is maintained in the {{contractor.name_short}} System and
       Communications Protection (SC) Policy {{contractor.name_short}} document
-      that can be found in the {{contractor.name_short}} Github repository at
+      that can be found in the {{contractor.name_short}} GitHub repository at
       <{{contractor.compliance_docs_url}}/>.
   implementation_status: {{status.SC_1.contractor}}
 - control_key: SC-13

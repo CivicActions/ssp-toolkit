@@ -8,7 +8,7 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - text: >
-      This is Agency common control.  More data about implementation can be
+      This is Agency common control. More data about implementation can be
       obtained from the Agency common control catalog.
 
 
@@ -27,7 +27,7 @@ satisfies:
 
 
       The {{project.name_short}} Incident Response Plan can be found in the
-      {{contractor.name_short}} Github repository at
+      {{contractor.name_short}} GitHub repository at
       <{{project.incident_response_plan_url}}>
   implementation_status: {{status.IR_1.project}}
 - control_key: IR-2
@@ -43,7 +43,7 @@ satisfies:
       assumed within 10 days, as required by {{project.name_short}} changes,
       and annually. The Incident Response Plan
       (<{{project.incident_response_plan_url}}>) is the basis for the training
-      and the incident response workflow created by the Security team.  Upon a
+      and the incident response workflow created by the Security team. Upon a
       review of past incidents, the training is updated to ensure processes and
       workflows are updated.
   implementation_status: {{status.IR_2.project}}
@@ -83,7 +83,7 @@ satisfies:
   - text: >
       The {{project.name_short}} utilizes network and host-based intrusion
       detection systems, monitoring the system and application logs for
-      anomalous events.  Incidents are tracked using the same ticketing system
+      anomalous events. Incidents are tracked using the same ticketing system
       that is used to track all system-related changes and events.
   implementation_status: {{status.IR_5.project}}
 - control_key: IR-6
@@ -115,7 +115,7 @@ satisfies:
       and tools required for incident handling. The incident response program
       details the roles and responsibilities of {{project.name_short}}/
       {{contractor.name_short}} IR Team. The IR Team includes members from
-      {{contractor.name_short}} Security and Operations teams.  Incident
+      {{contractor.name_short}} Security and Operations teams. Incident
       response plays a pivotal role in monitoring, detecting and handling
       security incidents of the entire information system. The IRP details
       categorization of incidents in accordance with NIST 800-61 and accordingly

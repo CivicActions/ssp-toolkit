@@ -39,5 +39,5 @@ satisfies:
       unauthorized modification or deletion within AWS system.
   - key: e
     text: >
-      AWS built-in features include online  documentation located at http://aws.amazon.com/documentation/ that is publicly available.
+      AWS built-in features include online documentation located at http://aws.amazon.com/documentation/ that is publicly available.
   implementation_status: partial

@@ -15,7 +15,7 @@ satisfies:
       to facilitate the implementation of the policy and associated controls.
       This information is maintained by the {{contractor.name_short}}
       Identification and Authentication (IA) Policy. This document can be found
-      in the {{contractor.name_short}} Github repository at
+      in the {{contractor.name_short}} GitHub repository at
       <{{contractor.compliance_docs_url}}>.
   implementation_status: {{status.IA_1.contractor}}
   summary: >
@@ -94,7 +94,7 @@ satisfies:
 
       - Not transmitting user names and passwords together in an unencrypted format
 
-      - Not permitting the sending of passwords in an unencrypted format via  email
+      - Not permitting the sending of passwords in an unencrypted format via email
 
       - Not listing passwords in tickets
 

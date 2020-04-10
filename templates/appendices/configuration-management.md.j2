@@ -7,68 +7,68 @@ This document describes how the {{ contractor.name_short }}/{{ project.name_shor
 
 ## Overview
 
-{{ project.name_short }} employs a combination of inheritied manual configuration and {{ contractor.name_short }}-developed scripted _configuration in code_ employing AWS CloudFormation, the Ansible software and configuration provisioning engine and/or Git-based scripts. Manual processes migrate first to scripts, then to Ansible. New servers are spun up using AWS CloudFormation and Ansible.
+{{ project.name_short }} employs a combination of AWS CloudFormation templates and the Ansible software and configuration provisioning engine. Using CloudFormation, {{ contractor.name_short }} is able to create virtual machines for each step of the CI/CD pipeline.
 
-The server software update process, AIDE-based intrusion detection, and Git management of /etc are all managed by Ansible. Drupal application updates both security and feature based, make use of a scripted deployment process. A Git repository is used to manage and record configuration in scripts and playbooks. Peer review, automated testing and a stakeholder review on a staging server ensure that configuration updates are deployed without problems. Should a problem be discovered, rollback to a previous version is seamlessly managed by re-deploying the previous release stored in Git.
+The server software update process, AIDE-based intrusion detection, and Git management of /etc are all managed by Ansible. Drupal application updates both security and feature based, make use of a scripted deployment process. A Git repository is used to manage and record configuration in code, templates and playbooks. Peer review, automated testing and a stakeholder review on a staging server ensure that configuration updates are deployed without problems. Should a problem be discovered, rollback to a previous version is seamlessly managed by re-deploying the previous release stored in Git.
 
 ### Purpose
 
-The purpose of this document is to identify and describe the Configuration Management (CM) process for the {{ project.name }} and provide {{ contractor.name_short }} with the necessary structure to efficiently and securely manage the configuration standards for software baselines and changes to assets within the {{ project.name_short }} authorization boundary.  This plan describes the processes required to ensure that the inevitable changes to {{ project.name_short }} occur within an identifiable and controlled environment.
+The purpose of this document is to identify and describe the Configuration Management (CM) process for the {{ project.name }} and provide {{ contractor.name_short }} with the necessary structure to efficiently and securely manage the configuration standards for software baselines and changes to assets within the {{ project.name_short }} authorization boundary. This plan describes the processes required to ensure that the inevitable changes to {{ project.name_short }} occur within an identifiable and controlled environment.
 
 The {{ project.name_short }} CM Plan will ensure the following requirements are met:
 
-* Formally documented CM roles, responsibilities, and procedures;
-* A configuration control board that implements procedures to ensure a security review and approval of all proposed information system changes, to include interconnections to other information systems;
-* A testing process to verify proposed configuration changes prior to implementation in the operational environment; and
-* A verification process to provide additional assurance that the CM process is working effectively and that changes outside the CM process are technically or procedurally not permitted.
+- Formally documented CM roles, responsibilities, and procedures;
+- A configuration control board that implements procedures to ensure a security review and approval of all proposed information system changes, to include interconnections to other information systems;
+- A testing process to verify proposed configuration changes prior to implementation in the operational environment; and
+- A verification process to provide additional assurance that the CM process is working effectively and that changes outside the CM process are technically or procedurally not permitted.
 
 ### Scope
 
 This Configuration Management Plan and associated processes apply to all employees, contractors and vendors that manage change or otherwise affect the operations of the {{ project.name_short }} system including but not limited to the hardware, software, facilities or information resources. The scope of the Configuration Management Plan is to establish policy and procedures to ensure that:
 
-* The revision status of the {{ project.name_short }} Baseline can be clearly identified, accurately recorded, and provided to at any given point in time;
-* The integrity of the approved Authorization and status of the {{ project.name_short }} baseline is maintained throughout all program phases/sprints;
-* Coordination of approved changes are vetted in an effective and timely manner; and
-* Changes to the defined Baseline is controlled and evaluated for impact on all related system aspects including security, and incorporated only after review and approval by the personnel.
+- The revision status of the {{ project.name_short }} Baseline can be clearly identified, accurately recorded, and provided to at any given point in time;
+- The integrity of the approved Authorization and status of the {{ project.name_short }} baseline is maintained throughout all program phases/sprints;
+- Coordination of approved changes are vetted in an effective and timely manner; and
+- Changes to the defined Baseline is controlled and evaluated for impact on all related system aspects including security, and incorporated only after review and approval by the personnel.
 
 ### Roles and responsibilities
 
-{{ project.name_short }} shall maintain an active Configuration Control Board (CCB) which will be established as a formal approval authority for changes.  It primarily exists to control changes to the {{ project.name_short }} architecture (e.g., deployment of new software, code, or major architectural change).
+{{ project.name_short }} shall maintain an active Configuration Control Board (CCB) which will be established as a formal approval authority for changes. It primarily exists to control changes to the {{ project.name_short }} architecture (e.g., deployment of new software, code, or major architectural change).
 
 The following **Roles** will be involved in configuration management activities and make up the Configuration Control Board:
 
-* {{ project.name_short }} Program Manager
-* Information Systems Security Manager (ISSM)
-* {{ contractor.name_short }} Team
-  * Project Manager (PM)
-  * Information Systems Security Officer (ISSO)
-  * Infrastructure Support Team
-  * Technology Lead (TL)
-  * Development Team
-* {{ project.name_short }} Managers
+- {{ project.name_short }} Program Manager
+- Information Systems Security Manager (ISSM)
+- {{ contractor.name_short }} Team
+  - Project Manager (PM)
+  - Information Systems Security Officer (ISSO)
+  - Infrastructure Support Team
+  - Technology Lead (TL)
+  - Development Team
+- {{ project.name_short }} Managers
 
 The **Program Manager** or a **Designated Represenatative (DR)** shall:
 
-* ensure that appropriate roles, responsibilities, and access controls are assigned to support an effective Configuration Management Process;
-* manage the Change Control Process, Change Management policy, and associated processes that are essential to the integrity of the Change Control Board;
-* provide direction for {{ project.name_short }} sprints, ensuring that changes requiring modifications to the contract are submitted as required; and
-* attend Configuration Control Board meetings.
+- ensure that appropriate roles, responsibilities, and access controls are assigned to support an effective Configuration Management Process;
+- manage the Change Control Process, Change Management policy, and associated processes that are essential to the integrity of the Change Control Board;
+- provide direction for {{ project.name_short }} sprints, ensuring that changes requiring modifications to the contract are submitted as required; and
+- attend Configuration Control Board meetings.
 
 The **Information Systems Security Manager (ISSM)** is the liaison between the PM and the {{ contractor.name_short }} Team for CM-related actions, and shall:
 
-* lead monthly Configuration Management meetings;
-* ensure that CM changes are accurately assessed, documented, and disseminated to prevent any potential impact to the {{ project.name_short }} Authorization;
-* analyze changes to {{ project.name_short }} to determine potential security impacts prior to change implementation;
-* ensure that required stakeholders maintain active participation within the {{ project.name_short }} CCB; and
-* attend Configuration Control Board meetings.
+- lead monthly Configuration Management meetings;
+- ensure that CM changes are accurately assessed, documented, and disseminated to prevent any potential impact to the {{ project.name_short }} Authorization;
+- analyze changes to {{ project.name_short }} to determine potential security impacts prior to change implementation;
+- ensure that required stakeholders maintain active participation within the {{ project.name_short }} CCB; and
+- attend Configuration Control Board meetings.
 
 The **{{ contractor.name_short }} Team** is responsible for the {{ project.name_short }} architecture and its components. The CivicActions Team tests and deploys {{ project.name_short }} components, modifies existing software components, and identifies potential {{ project.name_short }} enhancements. The team is composed of several roles:
 
-* The **Project Manager (PM)** is responsible for shepherding the Agile process that is used to develop and maintain {{ project.name_short }} throughout any requested or required configuration changes.
-* The **Information Systems Security Officer (ISSO)** develops and implements processes and procedures to insure the security of the {{ project.name_short }} General Service as it grows and changes through use and updates.
-* The **Infrastructure Support Team** is authorized to make changes to the underlying {{ project.name_short }} infrastructure and components. This team shall ensure that a central inventory is maintained and updated as information system components are modified/added/removed to/from the {{ project.name_short }} environment.
-* The **Technology Lead (TL)** manages the change process of the {{ project.name_short }} application, oversees the testing and staging operations, and is directly involved in the deployment of new releases.
-* The **Development Team** is tasked with implementing newly requested features, mitigating reported bugs, and developing test systems to ensure the proper operation of the system as it undergoes changes.
+- The **Project Manager (PM)** is responsible for shepherding the Agile process that is used to develop and maintain {{ project.name_short }} throughout any requested or required configuration changes.
+- The **Information Systems Security Officer (ISSO)** develops and implements processes and procedures to insure the security of the {{ project.name_short }} General Service as it grows and changes through use and updates.
+- The **Infrastructure Support Team** is authorized to make changes to the underlying {{ project.name_short }} infrastructure and components. This team shall ensure that a central inventory is maintained and updated as information system components are modified/added/removed to/from the {{ project.name_short }} environment.
+- The **Technology Lead (TL)** manages the change process of the {{ project.name_short }} application, oversees the testing and staging operations, and is directly involved in the deployment of new releases.
+- The **Development Team** is tasked with implementing newly requested features, mitigating reported bugs, and developing test systems to ensure the proper operation of the system as it undergoes changes.
 
 The **{{ project.name_short }} Managers** are responsible for the day-to-day operation of the {{ project.name_short }} Platform system, and maintain close communication with {{ project.name_short }} users and/or organizations. This team is responsible for acting as a liaison between the {{ project.name_short }} user base and the {{ contractor.name_short }} Team to ensure that the {{ project.name_short }} system is up and operational, and coordinating minor changes to the {{ project.name_short }} Baseline. Attends Configuration Control Board meetings as needed.
 
@@ -86,8 +86,8 @@ The Configuration Management Process is comprised of a collection of activities 
 
 **Configuration Management Plan (CM Plan)** - A comprehensive description of the roles, responsibilities, policies, and procedures that apply when managing the configuration of products and systems. The basic parts of a CM Plan include:
 
-* **Configuration Item Identification** – Methodology for selecting and naming configuration items that need to be placed under CM.
-* **Configuration Change Control** – Process for managing updates to the baseline configurations for the configuration items.
+- **Configuration Item Identification** – Methodology for selecting and naming configuration items that need to be placed under CM.
+- **Configuration Change Control** – Process for managing updates to the baseline configurations for the configuration items.
 
 Other Commonly used terms used within the Configuration Management Process include:
 
@@ -107,12 +107,12 @@ In short, everything needed to run and operate the platform that is not a _secre
 
 Here are some examples that are in configuration management:
 
-* CI pipelines (Jenkins)
-* Infrastructure/network configuration (Manual and Ansible)
-* VM setup and quantity (Manual and Ansible)
-* Software configuration (Ansible and Scripted)
-* {{ contractor.name_short }}-developed code (Git managed by scripts)
-* Application configuration (Drupal features in Git)
+- CI/CD pipeline
+- Infrastructure/network configuration (CloudFormation and Ansible)
+- VM setup and quantity (CloudFormation and Ansible)
+- Server software configuration (Ansible)
+- {{ contractor.name_short }}-developed code (Git)
+- Application configuration (Drupal features in Git)
 
 ## Where should all this configuration go
 
@@ -136,9 +136,9 @@ Security tests need to be executed in the development environment where changes 
 1. The reviewer merges the MR.
 1. A continuous integration (CI) server handles automated tests and continuous deployment (CD) of the merged changes.
 
-* All changes are deployed to a newly created test environment.
-* Any and all automated tests are run.
-* If all tests pass, changes can be promoted for deployment to production in the pipeline.
+- All changes are deployed to a newly created test environment.
+- Any and all automated tests are run.
+- If all tests pass, changes can be promoted for deployment to production in the pipeline.
 
 1. The CI/CD tool uses GitLab repositories as the single source of truth for what the platform should look like. If there are manual changes, the CI/CD tool resets the state of all systems to match.
 
@@ -146,21 +146,25 @@ Security tests need to be executed in the development environment where changes 
 
 If possible, Configuration Management tools should always roll back to a known state. Other than that, these tools need to be able to "recreate" all settings from known configurations.
 
-## Drupal-specific configuration
+## Server configuration
 
-Configuration management in Drupal is handled using the Features module and hook_update_N modules to make the necessary changes to site configuration.
+Server configuration is handled via CloudFormation templates and Ansible playbooks and managed using Git. Once a change has been committed and pushed to the Git repository, a merge request is created. Creating the merge request triggers the CI/CD build pipeline which contains the following phases:
 
-Each site has its own site_deploy module that orchestrates deployments.
+{% if cm.server_phases is defined %}
+{%- for item in cm.server_phases -%}
+{% if item.name is not none %}- **{{ item.name -}}:** {% endif -%}
+  {{ item.description }}
+{% endfor %}
+{% endif -%}
 
-When code is deployed to sandbox, development or production environments, `drush updb` is run, which runs any hook_update_N modules that have not been run.
+## Application configuration
 
-For many of the common configuration tasks, Hook Update Deploy Tools methods make sure that all hook_update_N modules follow this model:
-
-* make the change,
-* verify it was made, and then
-* report that it was made.
-
-Records of these events are output to the terminal of the engineer deploying the code, and to Drupal Watchdog.
+{% if cm.application_phases is defined %}
+{%- for item in cm.application_phases -%}
+{% if item.name is not none %}- **{{ item.name -}}:** {% endif -%}
+  {{ item.description }}
+{% endfor %}
+{% endif -%}
 
 ## GitLab contribution guidelines
 
@@ -170,11 +174,11 @@ Records of these events are output to the terminal of the engineer deploying the
 
 Forking is a method that can be used to modify the code base.
 
-The {{ contractor.name_short }} Team maintains the GlobalNET code base in a GitLab repository. The *master* is the most current version that has been deployed to production. When starting a new project, the {{ contractor.name_short }} Team makes a copy of the *master* in GitLab; the copy, called a *fork*, is where project-specific code changes shall be maintained going forward.
+The {{ contractor.name_short }} Team maintains the {{ project.name_short }} code base in a GitLab repository. The _master_ is the most current version that has been deployed to production. When starting a new project, the {{ contractor.name_short }} Team makes a copy of the _master_ in GitLab; the copy, called a _fork_, is where project-specific code changes shall be maintained going forward.
 
 Code changes are implemented using the following workflow:
 
-1. The {{ contractor.name_short }} Team uses the *master* to create a *fork* for project-specific code changes.
+1. The {{ contractor.name_short }} Team uses the _master_ to create a _fork_ for project-specific code changes.
 
 2. During the project, individual team members create branches, and then work in those branches until the code changes are ready to be committed to the fork.
 
@@ -192,12 +196,12 @@ Each code repository has at least two branches:
 
 2. **Production branch.** The production branch is deployed to the production server. When deploying changes to production, the release manager copies code from the master branch to the production branch.
 
-The CivicActions Team might create a branch from the upstream repository when multiple developers need to collaborate on something that cannot be continuously merged into the master branch. The rationale for branching within a team is that paired collaboration on a single branch avoids certain types of friction:
+The {{ contractor.name_short }} Team might create a branch from the upstream repository when multiple developers need to collaborate on something that cannot be continuously merged into the master branch. The rationale for branching within a team is that paired collaboration on a single branch avoids certain types of friction:
 
-* Having to process merge requests from multiple forks in order to integrate changes to the upstream branch
-* Having to add team members to forks as *collaborators* so that they can contribute in short-lived forks
+- Having to process merge requests from multiple forks in order to integrate changes to the upstream branch
+- Having to add team members to forks as _collaborators_ so that they can contribute in short-lived forks
 
-When team members contribute directly in a branch, CivicActions can modify work-in-progress (WIP) merge requests and encourage collaboration across the Cloud Operations team.
+When team members contribute directly in a branch, {{ contractor.name_short }} can modify work-in-progress (WIP) merge requests and encourage collaboration across the Cloud Operations team.
 
 ### Squashing commits
 

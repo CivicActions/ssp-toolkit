@@ -114,7 +114,7 @@ satisfies:
       - Password reuse restriction = 10
   - key: g
     text: >
-      {{project.name_short}} enforces password lifetime restrictions.  The
+      {{project.name_short}} enforces password lifetime restrictions. The
       password lifetime settings for internal accounts is as follows:
 
 
@@ -142,7 +142,7 @@ satisfies:
   narrative:
   - text: >
       {{project.name_short}} does not support physical hardware token-based
-      authentication.  Therefore this control is Not Applicable.
+      authentication. Therefore this control is Not Applicable.
   implementation_status: {{status.IA_5_11.project}}
 - control_key: IA-8 (1)
   control_name: ACCEPTANCE OF PIV CREDENTIALS FROM OTHER AGENCIES

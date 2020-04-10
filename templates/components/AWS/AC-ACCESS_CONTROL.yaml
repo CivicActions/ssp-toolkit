@@ -13,17 +13,17 @@ satisfies:
   - key: a
     text: >
       In this architecture, a baseline set of AWS Identity and Access Management (IAM) groups
-      and roles are created, with associated access policies,  to support alignment of user
+      and roles are created, with associated access policies, to support alignment of user
       accounts to personnel functions related to infrastructure/platform management (e.g.
       Billing, EC2/VPC/RDS systems administration, I.T. auditing, etc.)
   - key: g
     text: >
       In this architecture, AWS CloudTrail and Amazon S3 Bucket logging are enabled, which
       provides the audit trail capability for the organization to monitor the use of AWS
-      Identity and Access Management (IAM) accounts.  An Amazon S3 bucket centrally contains
+      Identity and Access Management (IAM) accounts. An Amazon S3 bucket centrally contains
       the CloudTrail audit logs. Amazon CloudWatch Alarm is configured to send an alert when
       an API call is made to create, update or delete a Network ACL/Security Group, when Root
-      user activity detected, when multiple API actions or login attempts fail,  when IAM
+      user activity detected, when multiple API actions or login attempts fail, when IAM
       Configuration changes are detected, when new IAM access key was created and when
       changes to the CloudTrail log configuration is detected
   implementation_status: partial

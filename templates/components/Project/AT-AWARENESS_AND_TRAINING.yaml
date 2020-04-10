@@ -80,7 +80,7 @@ satisfies:
       specific functional area of expertise.
   implementation_status: {{status.AT_3.project}}
   summary: >
-    Role-based training is a requirement for personnel  with significant
+    Role-based training is a requirement for personnel with significant
     information security responsibilities.
 - control_key: AT-4
   control_name: SECURITY TRAINING RECORDS

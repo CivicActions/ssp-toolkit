@@ -19,7 +19,7 @@ satisfies:
 
       - Drupal page request log: Records all Drupal page loads on your website.
 
-      - Drupal Watchdog log: Records Drupal-related actions on your website. The Watchdog log is recorded on your databse if you have enabled the syslog module.
+      - Drupal Watchdog log: Records Drupal-related actions on your website. The Watchdog log is recorded on your database if you have enabled the syslog module.
 
       - MySQL slow query log: Contains a list of MySQL queries that have taken longer than one second to complete.
 
@@ -100,7 +100,7 @@ satisfies:
       When auditing a Drupal incident, the {{contractor.name_short}} developers aggregate log
       sources from multiple servers into the Graylog dashboard so that all log entries
       for a single managed security incident can be analyzed in a single document.
-      Log sources are sorted, filtered and reviewed.  Application logs are maintained
+      Log sources are sorted, filtered and reviewed. Application logs are maintained
       primarily for an after-the-fact investigation of critical systems or security
       events.
   implementation_status: {{status.AU_3.drupal}}

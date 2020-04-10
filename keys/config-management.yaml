@@ -1,0 +1,32 @@
+server_phases:
+  - name: Deploy infrastructure
+    description: In this phase the containers are created using the CloudFormation templates and Ansible playbooks.
+  - name: Deploy services
+    description: Services defined in the CloudFormation template are deployed. The services include the bastion host, the Drupal application, the Ilias CMS, Solr searching, and the RDS databases.
+  - name: Validate platform
+    description: During the validation phase, the server configuation is tested for drift detection in order to catch configuation settings that have deviated from the baseline configuation, as well as checks to determine if the applications are up and running and accessible. Nmap, OpenSCAP and Zap scans are also performed during this phase.
+  - name: Post validation
+    description: During the post validation, the hardened Amazon Machine Image (AMI) is checked to see if there are any updates available and, if so, they are installed.
+application_phases:
+  - name:
+    description: >
+      Configuration management in Drupal is handled using Drupal's Configuration Management and hook_update_N modules to make the necessary changes to site configuration.
+
+
+      Each site has its own site_deploy module that orchestrates deployments.
+
+
+      When code is deployed to sandbox, development, staging or production environments, `drush config:import`, which imports changes to configuration, is run, and `drush updatedb` is run, which runs any new hook_update_N functions.
+
+
+      For many of the common configuration tasks, Hook Update Deploy Tools methods make sure that all hook_update_N modules follow this model::
+
+
+      - make the change,
+
+      - verify it was made, and then
+
+      - report that it was made.
+
+
+      Records of these events are output to the terminal of the engineer deploying the code, and to Drupal Watchdog.

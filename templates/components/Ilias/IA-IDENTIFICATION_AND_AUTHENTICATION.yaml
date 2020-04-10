@@ -52,10 +52,11 @@ satisfies:
       All password creation/change/reset operations are recorded in the website's Ilias logs.
   - key: e
     text: Ilias requires users to change their password upon initial login, and the
-      application website enforces this. User accounts are assigned a randomly-generated
-      and unguessable default password that is not shared with anyone, including site
-      Administrators. Once the user logs in and creates a new password, the default
-      password erased from the website's database.
+      application website enforces this. Each user account is assigned a default
+      password that is randomly generated, not possible to guess, and not shared
+      with anyone, including site administrators. When the user logs in and
+      creates a new password, the default password is erased from the website
+      database.
   - key: h
     text: For all Ilias users, passwords are protected by the website's software,
       which only stores an encrypted string based on the password. This means that
@@ -90,7 +91,7 @@ satisfies:
     text: >
       Ilias supports the requirement for password-based authentication complexity.
       New users of Ilias are required to specify their password authentication as
-      soon as they log in to the website for the first.  The website requires all
+      soon as they log in to the website for the first. The website requires all
       submitted passwords to comply with validation rules, as described above in IA-5(c).
 
       Changing password lifetime, length, reuse or strength requirements requires

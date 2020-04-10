@@ -18,7 +18,7 @@ satisfies:
       Additional information is contained within the {{project.info_security_policy}}.
   implementation_status: {{status.AU_1.project}}
   summary: >
-    {{project.name_short}}  maintains a record of system activity by application
+    {{project.name_short}} maintains a record of system activity by application
     process and by user activity and follows {{project.info_security_policy}}.
 - control_key: AU-8
   control_name: TIME STAMPS
@@ -31,4 +31,4 @@ satisfies:
       provide time stamps with audit records.
   implementation_status: {{status.AU_8.project}}
   summary: >
-    {{project.name_short}}  system clocks are synchronized system-wide.
+    {{project.name_short}} system clocks are synchronized system-wide.

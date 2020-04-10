@@ -13,7 +13,7 @@ satisfies:
       {{project.name_short}} SSP. The Department reviews and updates the policy
       as necessary and has been continually updated since April 2008.
 
-      This is Agency common control.  More data about implementation can be
+      This is Agency common control. More data about implementation can be
       obtained from the Agency common control catalog.
   implementation_status: {{status.SC_1.project}}
 - control_key: SC-5

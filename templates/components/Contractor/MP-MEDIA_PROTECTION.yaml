@@ -14,6 +14,6 @@ satisfies:
       entities, and compliance; and procedures to facilitate the implementation
       of the policy and associated controls. This information is maintained in
       {{contractor.name_short}} Media Protection (MP) Policy and Procedure
-      document that can be found in the {{contractor.name_short}} Github
+      document that can be found in the {{contractor.name_short}} GitHub
       repository at <{{contractor.compliance_docs_url}}>.
   implementation_status: {{status.MP_1.contractor}}

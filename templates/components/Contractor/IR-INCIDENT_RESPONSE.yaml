@@ -28,7 +28,7 @@ satisfies:
       incident response training, as required by Incident Response Plan changes,
       and annually. The {{contractor.name_short}} Incident Response Plan
       (<{{project.incident_response_plan_url}}>) is the basis for the training
-      and the incident response workflow created by the Security Office.  Upon
+      and the incident response workflow created by the Security Office. Upon
       a review of past incidents, the training is updated to ensure processes
       and workflows are updated.
   implementation_status: {{status.IR_2.contractor}}
@@ -118,11 +118,11 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - text: >
-      {{contractor.name_short}} HelpDesk team provides first response assistance
+      {{contractor.name_short}} Help Desk team provides first response assistance
       to any users of the system. Response time for external reporting of
       incidents through e-mail is one business day. Internal users are able to
       request support thought the same process or initiate the incident response
-      workflow.  Tickets created in the Jira (customer ticketing system) and
+      workflow. Tickets created in the Jira (customer ticketing system) and
       GitLab (internal ticketing system) documents all details related to the
       incident to assist the Incident Response Teams in handling the incident.
   implementation_status: {{status.IR_7.contractor}}
@@ -154,7 +154,7 @@ satisfies:
 
       7. Defines the roles and responsibilities of {{contractor.name_short}} IR Team;
 
-      8. Is reviewed annually and updated as needed by the {{contractor.name_short}}  Security Office, with the assistance of the Incident Response Team.
+      8. Is reviewed annually and updated as needed by the {{contractor.name_short}} Security Office, with the assistance of the Incident Response Team.
   - key: b
     text: >
       The {{contractor.name_short}} Incident Response Plan is distributed to
@@ -184,7 +184,7 @@ satisfies:
   - key: f
     text: >
       The IR Plan is available in the {{contractor.name_short}} Handbook and
-      is maintained in the {{contractor.name_short}} Github repository. Github
+      is maintained in the {{contractor.name_short}} GitHub repository. GitHub
       provides the configuration management capabilities for the IR Plan to be
       protected from unauthorized disclosure and modification.
   implementation_status: {{status.IR_8.contractor}}

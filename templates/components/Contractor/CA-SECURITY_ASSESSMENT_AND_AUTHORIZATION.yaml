@@ -135,7 +135,7 @@ satisfies:
 
       - Configuration management includes the assessment of security impact analyses of proposed and implemented changes.
 
-      - System scanning is managed by running the OpanSCAP vulnerability scanner using the DISA STIG profile.
+      - System scanning is managed by running the OpenSCAP vulnerability scanner using the DISA STIG profile.
 
       - Log analysis is managed by feeding logs to a Graylog dashboard for analysis.
 
@@ -162,7 +162,7 @@ satisfies:
   - key: f
     text: >
       POA&M items are tracked by {{contractor.name_short}} Security through
-      JIRA tickets with a security categorization assigned.  The information
+      JIRA tickets with a security categorization assigned. The information
       included in the POA&M item include the severity, the due date, the
       weakness source identifier, and the plugin ID that identified the
       vulnerability.

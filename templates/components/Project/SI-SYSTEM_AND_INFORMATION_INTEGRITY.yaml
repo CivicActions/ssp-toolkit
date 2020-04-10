@@ -21,7 +21,7 @@ satisfies:
       {{project.info_security_policy}}.
 
 
-      This is Agency common control.  More data about implementation can be
+      This is Agency common control. More data about implementation can be
       obtained from the Agency common control catalog.
   implementation_status: {{status.SI_1.project}}
 - control_key: SI-5

@@ -10,7 +10,7 @@ satisfies:
   - text: >
       System maintenance policy and procedures are formally documented in the
       {{project.name_short}} SSP, which provides the roles and responsibilities
-      as it pertains to software and systems maintennance and updates. The
+      as it pertains to software and systems maintenance and updates. The
       {{project.name}} ensures that maintenance controls are developed,
       disseminated, reviewed, and updated as necessary.
 
@@ -40,7 +40,7 @@ satisfies:
 
       - Daily Intrusion Detection (OSSEC) / Data Integrity Assurance (AIDE)
 
-      - As needed HelpDesk support
+      - As needed help desk support
 
       - Twice-monthly OS updates/patches
   implementation_status: {{status.MA_2.project}}

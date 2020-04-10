@@ -9,10 +9,10 @@ satisfies:
   narrative:
   - text: >
       AWS built-in features of Identity and Access Management (IAM) provides the capability
-      for uniquely identifying and authenticating  users and processes acting on their behalf
+      for uniquely identifying and authenticating users and processes acting on their behalf
       to both organizational and non-organizational users operating within the AWS account
       and infrastructure, providing privileges based on the credentials, group memberships,
-      and access policies assigned to them.  The customer organization, at its discretion,
+      and access policies assigned to them. The customer organization, at its discretion,
       provides individual user accounts and privileges to both organizational
       non-organizational users in addition to organizational users.
   implementation_status: partial
@@ -26,16 +26,16 @@ satisfies:
     text: >
       AWS built-in features of Identity and Access Management (IAM) provides minimum password
       complexity enforcement, but the characteristics to enforce must be manually configured
-      by the customer.  Refer to http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html
+      by the customer. Refer to http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html
   - key: c
     text: >
       AWS built-in features of AWS Identity and Access Management (IAM) and the AWS Console
       store passwords on AWS systems in a cryptographically-protected format and only support
-      TLS connectivity to the console web site to protect passwords in transit via encyption.
+      TLS connectivity to the console web site to protect passwords in transit via encryption.
   - key: f
     text: >
       AWS built-in features of AWS Identity and Access Management (IAM) provides the
-      capability to require new password to be entered upon login.   The customer
+      capability to require new password to be entered upon login. The customer
       organization, at its discretion, configures IAM to enforce that requirement.
   implementation_status: partial
 - control_key: IA-5 (11)
@@ -67,7 +67,7 @@ satisfies:
 
 
       AWS built-in features obscure keystroke feedback for password input during AWS console
-      login with AWS  Identity and Access Management (IAM)  user credentials, and when the
+      login with AWS Identity and Access Management (IAM) user credentials, and when the
       CloudFormation console prompts for an initial database password during Quick Start
       template deployment.
   implementation_status: partial

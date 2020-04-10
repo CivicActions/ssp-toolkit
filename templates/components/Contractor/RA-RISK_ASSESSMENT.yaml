@@ -39,7 +39,7 @@ satisfies:
       the scans on a monthly basis. The resulting reports list vulnerabilities
       and rank them by severity. These reports are stored on an audit server
       and are used to inform changes to the system and verify that security
-      controls are working correctly.  These scans are used to document the
+      controls are working correctly. These scans are used to document the
       current state of the system, and to analyze security trends as changes
       are made over time.
   - key: b

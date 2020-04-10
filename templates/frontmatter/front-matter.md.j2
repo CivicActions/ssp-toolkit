@@ -54,9 +54,9 @@ information types is based on guidance provided by the Office of Management and
 Budget (OMB) Federal Enterprise Architecture (EA) Program Management Office
 (PMO) Business Reference Model 2.0, National Institute of Standards and
 Technology (NIST) Federal Information Processing Standard (FIPS) Publication 199,
-*Standards for Security Categorization of Federal Information and Information Systems*,
+Standards for Security Categorization of Federal Information and Information Systems,
 and NIST Special Publication 800-60 (NIST SP 800-60),
-*Guide for Mapping Types of Information and Information Systems to Security Categories*.
+Guide for Mapping Types of Information and Information Systems to Security Categories.
 
 FIPS 199[1] allows for a full range of information types. In order to meet
 specific, niche needs of systems, Agencies can specify the types of information
@@ -137,8 +137,9 @@ proponent/advocate for this system.
 
 Table 3‑1. **Information System Owner**
 
-| **Information System Owner Information** |                                |
-| ---------------------------------------- | ------------------------------ |
+| **Information System Owner Information** |                                 |
+| ---------------------------------------- | ------------------------------  |
+| **Name**                                 | {{ poc.system_owner.name }}     |
 | **Title**                                | {{ poc.system_owner.title }}    |
 | **Company / Organization**               | {{ poc.system_owner.comp_org }} |
 | **Address**                              | {{ poc.system_owner.address }}  |
@@ -189,17 +190,6 @@ Table 6‑1. **Information System AO Management Point of Contact**
 | **Address**                | {{ poc.ao_management_poc.address }}  |
 | **Phone Number**           | {{ poc.ao_management_poc.phone }}    |
 | **Email Address**          | {{ poc.ao_management_poc.email }}    |
-
-Table 6‑2. **Information System AO Technical Point of Contact**
-
-| **Information System AO Technical Point of Contact** |  |
-| -------------------------- | ------------------------------------- |
-| **Name**                   | {{ poc.tech_management_poc.name }}     |
-| **Title**                  | {{ poc.tech_management_poc.title }}    |
-| **Company / Organization** | {{ poc.tech_management_poc.comp_org }} |
-| **Address**                | {{ poc.tech_management_poc.address }}  |
-| **Phone Number**           | {{ poc.tech_management_poc.phone }}    |
-| **Email Address**          | {{ poc.tech_management_poc.email }}    |
 
 ## 7. Assignment of Security Responsibility
 
@@ -399,19 +389,6 @@ Use the FedRAMP Inventory Workbook to list the principal network devices
 and components for _{{ project.name_short }}_.
 
 ### 11.4. Data Flow
-
-```diff
-- *Instruction: In the space that follows, describe the flow of data in
-- and out of system boundaries and insert a data flow diagram. Describe
-- protections implemented at all entry and exit points in the data flow as
-- well as internal controls between customer and project users. Include
-- data flows for privileged and non-privileged
-- authentication/authorization to the system for internal and external
-- users. If necessary, include multiple data flow diagrams.*
-
-- *Delete this and all other instructions from your final version of this
-- document.*
-```
 
 The data flow in and out of the system boundaries is represented in
 Figure 11.1, Data Flow Diagram, below.

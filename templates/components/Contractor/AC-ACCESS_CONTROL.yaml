@@ -96,7 +96,7 @@ satisfies:
   narrative:
   - text: >
       The {{contractor.name_short}} Access Control (AC) policy defines policy for remote usage
-      restrictions.  The Project Manager or System Owner may additionally provision
+      restrictions. The Project Manager or System Owner may additionally provision
       users according to their Access Control policies.
   implementation_status: {{status.AC_17.contractor}}
 - control_key: AC-18

@@ -21,49 +21,81 @@ _This PIA is for the IT {{ 'systems' if pia.system|length > 1 else 'system' }} l
 **OMB Control Numbers:** Most of the information in these systems does not
 involve the collection of information from the public; therefore, approval from the Office of Management and Budget is not required, except for the following:
 
+{% if pia.omb_ctr_nums is defined and pia.omb_ctr_nums is not none -%}
 OMB NO: {{ pia.omb_ctr_nums }}
+{% endif %}
 
-### 1. What information is being collected?
+{%- if pia.what_is_collected is defined and pia.what_is_collected is not none %}
+### What information is being collected?
 
 {{ pia.what_is_collected }}
+{% endif %}
 
-### 2. Why is the information being collected?
+{%- if pia.why_is_collected is defined and pia.why_is_collected is not none %}
+### Why is the information being collected?
 
 {{ pia.why_is_collected }}
+{% endif %}
 
-### 3. What is the intended use of the information?
+{%- if pia.intended_use is defined and pia.intended_use is not none %}
+### What is the intended use of the information?
 
 {{ pia.intended_use }}
+{% endif %}
 
-### 4. With whom will the information be shared?
+{%- if pia.whom_shared is defined and pia.whom_shared is not none %}
+### With whom will the information be shared?
 
 {{ pia.whom_shared }}
+{% endif %}
 
-### 5. What opportunities do individuals or businesses have to decline to provide information (i.e., where providing information is voluntary), or to consent to particular uses of the information and how can they grant such consent?
+{%- if pia.opt_out is defined and pia.opt_out is not none %}
+### What opportunities do individuals or businesses have to decline to provide information (i.e., where providing information is voluntary), or to consent to particular uses of the information and how can they grant such consent?
 
 {{ pia.opt_out }}
+{% endif %}
 
-### 6. How will the information be secured?
+{%- if pia.how_secured is defined and pia.how_secured is not none %}
+### How will the information be secured?
 
 {{ pia.how_secured }}
+{% endif %}
 
-### 7. How will the requirement regarding data extract log and verify be met?
+{%- if pia.log_and_verify is defined and pia.log_and_verify is not none %}
+### How will the requirement regarding data extract log and verify be met?
 
 {{ pia.log_and_verify }}
+{% endif %}
 
-### 8. Is a system of records being created under the Privacy Act (5 U.S.C. 552a)?
+{%- if pia.privacy_act is defined and pia.privacy_act is not none %}
+### Is a system of records being created under the Privacy Act (5 U.S.C. 552a)?
 
 {{ pia.privacy_act }}
+{% endif %}
 
-### 9. Are these records covered by an approved records control schedule?
+{%- if pia.records_control is defined and pia.records_control is not none %}
+### Are these records covered by an approved records control schedule?
 
 {{ pia.records_control }}
+{% endif %}
 
 ## Point of contact
 
+{% if poc.main.name is defined and poc.main.name is not none -%}
 {{ poc.main.name }}
+{% endif -%}
+{% if poc.main.title is defined and poc.main.title is not none  -%}
 {{ poc.main.title }}
+{% endif -%}
+{% if poc.main.comp_org is defined and poc.main.comp_org is not none  -%}
 {{ poc.main.comp_org }}
+{% endif -%}
+{% if poc.main.address is defined and poc.main.address is not none  -%}
 {{ poc.main.address }}
+{% endif -%}
+{% if poc.main.phone is defined and poc.main.phone is not none  -%}
 {{ poc.main.phone }}
+{% endif -%}
+{% if poc.main.email is defined and poc.main.email is not none  -%}
 {{ poc.main.email }}
+{%- endif %}

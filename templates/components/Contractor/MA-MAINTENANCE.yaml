@@ -15,7 +15,7 @@ satisfies:
       the implementation of the policy and associated controls. This information
       is maintained in the {{contractor.name_short}} Maintenance (MA) Policy and
       Procedure document that can be found in the {{contractor.name_short}}
-      Github repository at <{{contractor.compliance_docs_url}}>.
+      GitHub repository at <{{contractor.compliance_docs_url}}>.
   implementation_status: {{status.MA_1.contractor}}
 - control_key: MA-4
   control_name: NON-LOCAL MAINTENANCE
@@ -62,7 +62,7 @@ satisfies:
   - text: >
       Maintenance of the system and applications can only be performed by
       personnel designated as having internal administrator privileges and
-      responsibilities.  Access rights for the internal administrators are
+      responsibilities. Access rights for the internal administrators are
       assigned and granted access to perform their specific job responsibilities.
       All physical maintenance requirements are inherited from AWS.
   implementation_status: {{status.MA_5.contractor}}

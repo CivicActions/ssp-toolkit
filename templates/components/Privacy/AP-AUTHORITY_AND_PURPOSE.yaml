@@ -24,11 +24,11 @@ satisfies:
   narrative:
   - text: >
       {{project.name_short}} does not collect PII other than that covered by the
-      "Roladex exception". Anonymous access is possible, but courses and community
+      "Rolodex exception". Anonymous access is possible, but courses and community
       participation require an account for which these fields are required:
 
 
-      - Email address -  used for identification.
+      - Email address - used for identification.
 
       - First name, last name - used for addressing a logged in user.
 

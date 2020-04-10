@@ -16,10 +16,10 @@ satisfies:
   - key: b
     text: >
       AWS built-in features automatically backs up system-level information limited to
-      infrastructure CONFIGURATION information within the AWS account.  While individual
-      running  EC2 instances and attached EBS volumnes  are NOT backed up, they can be
-      reconstituted from Amazon Machine Images (AMIs) provided  by AWS (which are backed up
-      by AWS) and user data scripts included in CloudFormation templates.  Once deployed, the
+      infrastructure CONFIGURATION information within the AWS account. While individual
+      running EC2 instances and attached EBS volumes are NOT backed up, they can be
+      reconstituted from Amazon Machine Images (AMIs) provided by AWS (which are backed up
+      by AWS) and user data scripts included in CloudFormation templates. Once deployed, the
       CloudFormation template contents are backed up by AWS R488within the CloudFormation
       service. These AWS backups of AWS services are transparent to the customer as part of
       AWS backend processes.
@@ -29,9 +29,9 @@ satisfies:
       to that which is published at https://aws.amazon.com/documentation.
   - key: d
     text: >
-      AWS built-in features  protect the  confidentiality, integrity, and availability of
-      information that AWS services back up.   This information includes the service
-      configuration information within an account,  AWS online administrator and developer
+      AWS built-in features protect the confidentiality, integrity, and availability of
+      information that AWS services back up. This information includes the service
+      configuration information within an account, AWS online administrator and developer
       documentation, and AWS CloudFormation stacks for templates once deployed into an
       account. R612
   implementation_status: partial

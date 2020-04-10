@@ -25,7 +25,7 @@ and the indicated client organization only.
 
 ### 1.1 Introduction
 
-The purpose of the {{ coop.title }} ({{ coop.title_short }}) is to prepare for and address the elements necessary to sustain {{ project.name_short }} mission essential functions (MEF) at an alternate site and performing those functions for up to 30 days before returning to normal operations. Once a particular emergency is resolved, a synopsis of the problem and the resolution process in the form of a “lessons learned” document is generated and disseminated to all concerned. The {{ coop.title_short }} is intended to serve as the centralized repository for the information, tasks, and procedures that would be necessary to facilitate the {{ project.name_short }} management’s decision-making process and its timely response to any disruptive or extended interruption of normal business operations and services. This is especially important if the cause of the interruption is such that a prompt resumption of operations cannot be accomplished by employing only normal daily operating procedures. In terms of personnel and financial resources, the information tasks and procedures detailed in this plan represent {{ project.name_short }}  management’s demonstrated commitment to response, resumption, recovery, and restoration planning.
+The purpose of the {{ coop.title }} ({{ coop.title_short }}) is to prepare for and address the elements necessary to sustain {{ project.name_short }} mission essential functions (MEF) at an alternate site and performing those functions for up to 30 days before returning to normal operations. Once a particular emergency is resolved, a synopsis of the problem and the resolution process in the form of a “lessons learned” document is generated and disseminated to all concerned. The {{ coop.title_short }} is intended to serve as the centralized repository for the information, tasks, and procedures that would be necessary to facilitate the {{ project.name_short }} management’s decision-making process and its timely response to any disruptive or extended interruption of normal business operations and services. This is especially important if the cause of the interruption is such that a prompt resumption of operations cannot be accomplished by employing only normal daily operating procedures. In terms of personnel and financial resources, the information tasks and procedures detailed in this plan represent {{ project.name_short }} management’s demonstrated commitment to response, resumption, recovery, and restoration planning.
 
 ### 1.2 Plan Information
 
@@ -38,7 +38,7 @@ The {{ coop.title_short }} is comprised of dynamic action plans to manage inform
 The development of the {{ project.name_short }} {{ coop.title_short }} is required by both executive decision and regulatory mandates. The {{ project.name_short }} management must maintain an information assurance (IA) infrastructure that will ensure that its information resources maintain confidentiality, integrity and availability of its data and resources. Furthermore, {{ project.name_short }} management must ensure their strategic information resources management capabilities. Therefore, the {{ project.name_short }} {{ coop.title_short }} is developed in accordance with the following executive decisions, regulatory mandates, provisions, and directives as required by:
 
 {% for item in coop.sections.continuity_of_ops.provisions_directives -%}
-* {{item}}
+- {{item}}
 {% endfor %}
 ### 2.2 Objectives
 
@@ -49,7 +49,7 @@ The development of the {{ project.name_short }} {{ coop.title_short }} is requir
 {{ coop.sections.continuity_of_ops.organization.description }}
 
 {% for item in coop.sections.continuity_of_ops.organization.duties -%}
-* {{ item }}
+- {{ item }}
 {% endfor %}
 ### 2.4 Assumptions
 
@@ -86,11 +86,11 @@ The following mission-critical systems/applications/services must be recovered a
 
 Vital records and important documentation are backed up and stored offsite and include any documents or documentation that is essential to the operations of an organization, such as personnel records, software documentation, legal documentation, legislative documentation, benefits documentation, etc. The following documentation will be available:
 
-* Security related Information Technology (IT) policy & procedure memoranda, circulars, publications
-* Complete hardware and software listings
-* System testing plans/procedures
-* System configuration
-* Data backup/restoration procedures
+- Security related Information Technology (IT) policy & procedure memoranda, circulars, publications
+- Complete hardware and software listings
+- System testing plans/procedures
+- System configuration
+- Data backup/restoration procedures
 
 ## 4 Testing Procedures
 
@@ -107,7 +107,7 @@ The actions set forth as responses to disasters are basic procedures that will b
 #### 5.1.1 {{ sections.recommended_strategies.emergency_response.inherited_procedures.title }}
 
 {% for item in coop.sections.recommended_strategies.emergency_response.inherited_procedures.procedures -%}
-* {{ item }}
+- {{ item }}
 {% endfor %}
 ### 5.2 Diversification of Connectivity
 
@@ -131,7 +131,7 @@ Backup procedures are vital to ensure that any interruption of service is minimi
 The backup schedule is as follows:
 
 {% for item in coop.sections.backups.backup_schedule.steps -%}
-* {{ item }}
+- {{ item }}
 {% endfor -%}
 
 {% if coop.sections.backups.backup_schedule.text is defined %}

@@ -14,7 +14,7 @@ satisfies:
       organizational entities, and compliance; and procedures to facilitate the
       implementation of the policy and associated controls. This information is
       maintained in the {{contractor.name_short}} Audit and Accountability (AU)
-      Policy.  This document can be found in the {{contractor.name_short}}
+      Policy. This document can be found in the {{contractor.name_short}}
       Compliance Docs GitHub repository at <{{contractor.compliance_docs_url}}>.
   implementation_status: {{status.AU_1.implentation_status}}
 - control_key: AU-2
@@ -64,7 +64,7 @@ satisfies:
       corrective action.
   implementation_status: {{status.AU_5.contractor}}
   summary: >
-    {{contractor.name_short}} Operations reviews causes adn takes corrective
+    {{contractor.name_short}} Operations reviews causes and takes corrective
     action when notified via CloudWatch of auditing failures.
 - control_key: AU-6
   control_name: AUDIT REVIEW, ANALYSIS, AND REPORTING
@@ -124,7 +124,7 @@ satisfies:
       and hosting environment, and retains these records for at least 180 days.
   implementation_status: {{status.AU_11.contractor}}
   summary: >
-    {{contractor.name_short}} retains audit records for at least  180 days.
+    {{contractor.name_short}} retains audit records for at least 180 days.
 - control_key: AU-12
   control_name: AUDIT GENERATION
   standard_key: NIST SP 800-53 Revision 4
