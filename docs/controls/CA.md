@@ -60,6 +60,7 @@ CivicActions will develop a security assessment plan (SAP) that describes the se
 ##### CivicActions
 
 CivicActions will assess the security controls in their system and its environment of operation to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security requirements.
+
 All controls assigned and documented in this System Security Plan (SSP) will be tested at least annually or when there is a major change to the system.
 
 
@@ -75,13 +76,14 @@ CivicActions will produce a security assessment report that documents the result
 ##### CivicActions
 
 CivicActions will provide the results of the security control assessment to the System Owner, Project Manager, CivicActions Security, and the Authorization Official (AO)). The security control assessment package includes the following:
-* Security Control Matrix
-* Privacy Impact Assessment
-* E-Authentication
-* Contingency Plan
-* Configuration Management Plan
-* Rules of Behavior
-* Incident Response Plan
+
+- Security Control Matrix
+- Privacy Impact Assessment
+- E-Authentication
+- Contingency Plan
+- Configuration Management Plan
+- Rules of Behavior
+- Incident Response Plan
 
 
 ### CA-3: System Interconnections
@@ -118,12 +120,15 @@ frequency] based on the findings from security controls assessments, security im
 ##### CivicActions
 
 CivicActions documents all deficiencies and vulnerabilities identified during the security certification and/or continuous monitoring phase (via security assessment, vulnerability scanning, risk assessment, etc.) within the Plan of Action and Milestones (POA&M).
+
 The POA&M document provides a platform for CivicActions to monitor and track the deficiency and its mitigation strategy. POA&M items will include:
-* The description of the deficiency,
-* Dedicated point of contact for this deficiency.
-* Cost of the mitigation strategy
-* Associated risk and NIST control
-* Recommended mitigation strategy
+
+- The description of the deficiency,
+- Dedicated point of contact for this deficiency.
+- Cost of the mitigation strategy
+- Associated risk and NIST control
+- Recommended mitigation strategy
+
 POA&Ms are tracked throughout the lifecycle of the system until its mitigation. All POA&Ms are reviewed on a monthly basis by CivicActions Information System Security Officer to ensure all mitigation strategies are continuing as documented.
 
 
@@ -153,13 +158,10 @@ to [Assignment: organization-defined personnel or roles] [Assignment: organizati
 ##### CivicActions
 
 CivicActions implements a continuous monitoring strategy that incorporates configuration management, system scanning and log analysis processes:
-* Configuration management includes the assessment of security impact
-  analyses of proposed and implemented changes.
 
-* System scanning is managed by running the OpanSCAP vulnerability scanner
-  using the DISA STIG profile.
-
-* Log analysis is managed by feeding logs to a Graylog dashboard for analysis.
+- Configuration management includes the assessment of security impact analyses of proposed and implemented changes.
+- System scanning is managed by running the OpenSCAP vulnerability scanner using the DISA STIG profile.
+- Log analysis is managed by feeding logs to a Graylog dashboard for analysis.
 
 
 ##### Drupal
@@ -171,7 +173,8 @@ CivicActions follows recommendations and best practices developed by the Drupal 
 
 ##### CivicActions
 
-Configuration management and log analysis is carried out in real-time. OpenSCAP security scans are performed and reviewed monthly. See also: RA-5 and SI-4.
+Configuration management and log analysis is carried out in real time. OpenSCAP security scans are performed and reviewed monthly. See also: RA-5 and SI-4.
+
 Quarterly review of the control assessments supporting the monitoring is conducted by CivicActions Operations in collaboration with the CivicActions Security Office.
 
 
@@ -200,7 +203,7 @@ CivicActions Security reviews the results of the security scans and security ass
 
 ##### CivicActions
 
-POA&M items are tracked by CivicActions Security through JIRA tickets with a security categorization assigned.  The information included in the POA&M item include the severity, the due date, the weakness source identifier, and the plugin ID that identified the vulnerability.
+POA&M items are tracked by CivicActions Security through JIRA tickets with a security categorization assigned. The information included in the POA&M item include the severity, the due date, the weakness source identifier, and the plugin ID that identified the vulnerability.
 
 
 #### g

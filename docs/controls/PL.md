@@ -24,7 +24,7 @@ and
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel a system planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Planning (PL) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
+CivicActions has developed, documented and disseminated to personnel a system planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Planning (PL) Policy and Procedure document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
 ### PL-2: System Security Plan
@@ -62,24 +62,16 @@ of operation or problems identified during plan implementation or security contr
 ##### CivicActions
 
 CivicActions has developed this system security plan (SSP) for the information system as part of compliance with NIST 800-53 and FIPS 199. The SSP defines the security categorization, system boundary, and security requirements and controls meeting the requirements of the NIST Risk Management Framework (RMF). Specifically the SSP:
+
 1. Is consistent with the organization’s enterprise architecture
 2. Explicitly defines the authorization boundary for the system
-3. Describes the operational context of the information system in terms
-   of missions and business processes
-
-4. Provides the security categorization of the information system
-   including supporting rationale
-
-5. Describes the operational environment for the information system and
-   relationships with or connections to other information systems
-
+3. Describes the operational context of the information system in terms of missions and business processes
+4. Provides the security categorization of the information system including supporting rationale
+5. Describes the operational environment for the information system and relationships with or connections to other information systems
 6. Provides an overview of the security requirements for the system
 7. Identifies any relevant overlays, if applicable
-8. Describes the security controls in place or planned for meeting those
-   requirements including a rationale for the tailoring decisions
-
-9. Is reviewed and approved by the authorizing official or designated
-   representative prior to plan implementation
+8. Describes the security controls in place or planned for meeting those requirements including a rationale for the tailoring decisions
+9. Is reviewed and approved by the authorizing official or designated representative prior to plan implementation
 
 
 #### b

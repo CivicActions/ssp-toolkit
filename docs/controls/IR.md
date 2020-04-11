@@ -45,7 +45,7 @@ response role or responsibility;
 
 ##### CivicActions
 
-All CivicActions employees are required to participate in incident response training, as required by Incident Response Plan changes, and annually. The CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) is the basis for the training and the incident response workflow created by the Security Office.  Upon a review of past incidents, the training is updated to ensure processes and workflows are updated.
+All CivicActions employees are required to participate in incident response training, as required by Incident Response Plan changes, and annually. The CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) is the basis for the training and the incident response workflow created by the Security Office. Upon a review of past incidents, the training is updated to ensure processes and workflows are updated.
 
 
 ### IR-4: Incident Handling
@@ -120,12 +120,11 @@ authorities].
 ##### CivicActions
 
 CivicActions personnel, as soon as an incident event is detected and/or communicated, are required to report the incident event to the CivicActions Security Office. Methods of detection and/or communication may include one or more of:
-* Through continuous monitoring tools (StatusCake, OSSEC, others).
-* As a result of application notifications where CivicActions
-  Security receives notifications (AIDE, OpsGenie, others).
 
-* Event logging described in AC-2
-* Host-based alerts from the cloud infrastructure or platform.
+- Through continuous monitoring tools (StatusCake, OSSEC, others).
+- As a result of application notifications where CivicActions Security receives notifications (AIDE, OpsGenie, others).
+- Event logging described in AC-2
+- Host-based alerts from the cloud infrastructure or platform.
 
 
 #### b
@@ -145,7 +144,7 @@ The organization provides an incident response support resource, integral to the
 
 ##### CivicActions
 
-CivicActions HelpDesk team provides first response assistance to any users of the system. Response time for external reporting of incidents through e-mail is one business day. Internal users are able to request support thought the same process or initiate the incident response workflow.  Tickets created in the Jira (customer ticketing system) and GitLab (internal ticketing system) documents all details related to the incident to assist the incident response teams in handling the incident.
+CivicActions Help Desk team provides first response assistance to any users of the system. Response time for external reporting of incidents through e-mail is one business day. Internal users are able to request support thought the same process or initiate the incident response workflow. Tickets created in the Jira (customer ticketing system) and GitLab (internal ticketing system) documents all details related to the incident to assist the Incident Response Teams in handling the incident.
 
 
 ### IR-8: Incident Response Plan
@@ -186,28 +185,15 @@ incident response personnel (identified by name and/or by role) and organization
 ##### CivicActions
 
 Incident response plays a pivotal role in monitoring, detecting and handling security incidents of the entire information system. CivicActions has developed an Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) that:
-1. Provides CivicActions with procedures and tools required
-   for incident handling;
 
-2. Describes the structure and organization of the incident response
-   capability;
-
-3. Provides a high-level approach for how the incident response capability
-   fits into CivicActions and the systems it maintains;
-
-4. Meets the mission, size, structure, and functions of
-   CivicActions;
-
+1. Provides CivicActions with procedures and tools required for incident handling;
+2. Describes the structure and organization of the incident response capability;
+3. Provides a high-level approach for how the incident response capability fits into CivicActions and the systems it maintains;
+4. Meets the mission, size, structure, and functions of CivicActions;
 5. Defines reportable incidents;
-6. Provides metrics for measuring the incident response capability and
-   details categorization of incidents in accordance with NIST 800-61;
-
-7. Defines the roles and responsibilities of CivicActions IR
-   Team;
-
-8. Is reviewed annually and updated as needed by the
-   CivicActions  Security Office, with the assistance of the
-   Incident Response team.
+6. Provides metrics for measuring the incident response capability and details categorization of incidents in accordance with NIST 800-61;
+7. Defines the roles and responsibilities of CivicActions IR Team;
+8. Is reviewed annually and updated as needed by the CivicActions Security Office, with the assistance of the Incident Response Team.
 
 
 #### b
@@ -215,7 +201,7 @@ Incident response plays a pivotal role in monitoring, detecting and handling sec
 ##### CivicActions
 
 The CivicActions Incident Response Plan is distributed to all CivicActions team members as part of the CivicActions Handbook (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>).
- The Incident Response team includes members from the Security Office,
+ The Incident Response Team includes members from the Security Office,
  Operations staff, and Drupal Engineering teams.
 
 
@@ -223,7 +209,7 @@ The CivicActions Incident Response Plan is distributed to all CivicActions team 
 
 ##### CivicActions
 
-The CivicActions Security Office and the Incident Response team is responsible for reviewing the Incident Response Plan annually. The entire incident response team will review the plan and update it as necessary. Ultimately, the Security Office has the final say and will approve all updates to the plan.
+The CivicActions Security Office and the Incident Response team is responsible for reviewing the Incident Response Plan annually. The entire Incident Response Team will review the plan and update it as necessary. Ultimately, the Security Office has the final say and will approve all updates to the plan.
 
 
 #### d
@@ -244,7 +230,7 @@ Modifications to the IR Plan are conducted by the IR team the (CivicActions Secu
 
 ##### CivicActions
 
-The IR Plan is available in the CivicActions Handbook and is maintained in the CivicActions Github repository. Github provides the configuration management capabilities for the IR Plan to be protected from unauthorized disclosure and modification.
+The IR Plan is available in the CivicActions Handbook and is maintained in the CivicActions GitHub repository. GitHub provides the configuration management capabilities for the IR Plan to be protected from unauthorized disclosure and modification.
 
 
 

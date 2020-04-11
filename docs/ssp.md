@@ -102,21 +102,22 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### AWS
 
-In this architecture, a baseline set of AWS Identity and Access Management (IAM) groups and roles are created, with associated access policies,  to support alignment of user accounts to personnel functions related to infrastructure/platform management (e.g. Billing, EC2/VPC/RDS systems administration, I.T. auditing, etc.)
+In this architecture, a baseline set of AWS Identity and Access Management (IAM) groups and roles are created, with associated access policies, to support alignment of user accounts to personnel functions related to infrastructure/platform management (e.g. Billing, EC2/VPC/RDS systems administration, I.T. auditing, etc.)
 
 
 ##### CivicActions
 
 CivicActions Operations staff, in collaboration with CivicActions' Security Office, will set up privileged accounts for the following roles:
-* Developer - a user-level account that has access to application features and sanitized databases
-* System Administrator - user accounts that enjoy full system administrator access
+
+- Developer - a user-level account that has access to application features and sanitized databases
+- System Administrator - user accounts that enjoy full system administrator access
 
 
 ##### SSH
 
 Operations, in collaboration with the Security Office, will set up privileged accounts accounts for the following roles:
-• Developer - user level account that has access to application features and sanitized databases
-• System Administrator - user accounts that enjoy full system administrator (`sudo`) access
+- Developer - user level account that has access to application features and sanitized databases
+- System Administrator - user accounts that enjoy full system administrator (`sudo`) access
 
 
 #### b
@@ -153,19 +154,20 @@ All accounts issued for the admin management of Application or SSH access must b
 ##### CivicActions
 
 CivicActions Operations staff is responsible for the following account management activities for both internal administrative users and customer accounts:
-* Establishing account justification
-* Activating accounts
-* Modifying accounts
-* Expiring accounts
-* Disabling accounts
-* Removing accounts
+
+- Establishing account justification
+- Activating accounts
+- Modifying accounts
+- Expiring accounts
+- Disabling accounts
+- Removing accounts
 
 
 #### g
 
 ##### AWS
 
-In this architecture, AWS CloudTrail and Amazon S3 Bucket logging are enabled, which provides the audit trail capability for the organization to monitor the use of AWS Identity and Access Management (IAM) accounts.  An Amazon S3 bucket centrally contains the CloudTrail audit logs. Amazon CloudWatch Alarm is configured to send an alert when an API call is made to create, update or delete a Network ACL/Security Group, when Root user activity detected, when multiple API actions or login attempts fail,  when IAM Configuration changes are detected, when new IAM access key was created and when changes to the CloudTrail log configuration is detected
+In this architecture, AWS CloudTrail and Amazon S3 Bucket logging are enabled, which provides the audit trail capability for the organization to monitor the use of AWS Identity and Access Management (IAM) accounts. An Amazon S3 bucket centrally contains the CloudTrail audit logs. Amazon CloudWatch Alarm is configured to send an alert when an API call is made to create, update or delete a Network ACL/Security Group, when Root user activity detected, when multiple API actions or login attempts fail, when IAM Configuration changes are detected, when new IAM access key was created and when changes to the CloudTrail log configuration is detected
 
 
 ##### CivicActions
@@ -255,7 +257,7 @@ Drupal can be configured to lock an account after a specified number of invalid 
 
 ##### Drupal
 
-Lockdown following unsuccessful attempts is configurable by Drupal administrators to conform to defined requirements.  When a user exceeds the limit of invalid login attempts, their account is automatically locked for a specified time and requires administrator action to unlock the account before the lockout period expires.
+Lockdown following unsuccessful attempts is configurable by Drupal administrators to conform to defined requirements. When a user exceeds the limit of invalid login attempts, their account is automatically locked for a specified time and requires administrator action to unlock the account before the lockout period expires.
 
 ### AC-14: Permitted Actions Without Identification Or Authentication
 
@@ -273,7 +275,7 @@ information system, user actions not requiring identification or authentication.
 
 ##### Drupal
 
-The anonymous user role has the least access to the site of all roles. Drupal sites can be configured to allow actions indentified by The Project
+The anonymous user role has the least access to the site of all roles. Drupal sites can be configured to allow actions identified by The Project
 
 
 ### AC-17: Remote Access
@@ -290,7 +292,7 @@ connections.
 
 ##### CivicActions
 
-The CivicActions Access Control (AC) policy defines policy for remote usage restrictions.  The Project Manager or System Owner may additionally provision users according to their Access Control policies.
+The CivicActions Access Control (AC) policy defines policy for remote usage restrictions. The Project Manager or System Owner may additionally provision users according to their Access Control policies.
 
 
 ### AC-18: Wireless Access
@@ -366,7 +368,7 @@ frequency].
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel an audit and accountability policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Audit and Accountability (AU) Policy.  This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+CivicActions has developed, documented and disseminated to personnel an audit and accountability policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Audit and Accountability (AU) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 ### AU-2: Audit Events
@@ -389,7 +391,7 @@ system: [Assignment: organization-defined audited events (the subset of the audi
 
 ##### AWS
 
-In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are employed, which support the capability for audit of organizationally defined events by logging all security-relevant user/API activities and S3 data access activities.
+In this architecture, AWS CloudTrail, S3 bucket logging, Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are employed, which support the capability for audit of organizationally defined events by logging all security-relevant user/API activities and S3 data access activities.
 
 
 ##### CivicActions
@@ -400,25 +402,13 @@ CivicActions' Security Policy provides information about auditing and logging of
 ##### Drupal
 
 Drupal's Watchdog log are configured to track all relevant auditable events as defined by Client
-* Apache access log: Contains a list of requests for your website that
-  have bypassed Varnish. These requests include pages, theme files, and
-  static media files.
 
-* Apache error log: Records any Apache-level issues. The issues reported
-  here are usually caused by general server issues, including capacity
-  problems, .htaccess problems, and missing files.
-
-* Drupal page request log: Records all Drupal page loads on your website.
-* Drupal Watchdog log: Records Drupal-related actions on your website.
-  The Watchdog log is recorded on your databse if you have enabled the
-  syslog module.
-
-* MySQL slow query log: Contains a list of MySQL queries that have taken
-  longer than one second to complete.
-
-* PHP error log: Records any issues that occur during the PHP processing
-  portion of a page load. Issues reported here are usually caused by a
-  website’s code, configuration, or content.
+- Apache access log: Contains a list of requests for your website that have bypassed Varnish. These requests include pages, theme files, and static media files.
+- Apache error log: Records any Apache-level issues. The issues reported here are usually caused by general server issues, including capacity problems, .htaccess problems, and missing files.
+- Drupal page request log: Records all Drupal page loads on your website.
+- Drupal Watchdog log: Records Drupal-related actions on your website. The Watchdog log is recorded on your database if you have enabled the syslog module.
+- MySQL slow query log: Contains a list of MySQL queries that have taken longer than one second to complete.
+- PHP error log: Records any issues that occur during the PHP processing portion of a page load. Issues reported here are usually caused by a website’s code, configuration, or content.
 
 
 #### b
@@ -432,41 +422,41 @@ Auditable events may change due to changes in the threat environment. CivicActio
 
 ##### AWS
 
-In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are employed to provide the audit data necessary to determine what activities have occurred within the infrastructure.
+In this architecture, AWS CloudTrail, S3 bucket logging, Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are employed to provide the audit data necessary to determine what activities have occurred within the infrastructure.
 
 
 #### d
 
 ##### AWS
 
-In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are employed to provide the capability for audit of organizationally defined events by logging security-relevant events and  errors related to IAM user and API activities, S3 data access, network access, and RDS database errors.
+In this architecture, AWS CloudTrail, S3 bucket logging, Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are employed to provide the capability for audit of organizationally defined events by logging security-relevant events and errors related to IAM user and API activities, S3 data access, network access, and RDS database errors.
 
 
 ##### Drupal
 
 Information captured in the transaction logs includes, but is not limited to, the following auditable events:
-* Failed login attempts
-* Successful login attempts
-* User account deletions
-* User account blocking/unblocking
-* Changes in user role assignments
-* Unauthorized attempts to alter protected user fields
-* New user account creation
-* Password reset instructions mailed
-* User logins via a one-time login link
-* User logouts
-* Content creation (datasets, resources and other content types)
-* Content modification
-* Content deletion
-* Content publishing
-* Content unpublishing
-* File uploads
-* Web page not found
-* Website configuration changes
-* System administration activities
-* Slow query logs.
-* PHP error logs: Captures any errors logged during execution of the PHP
-  programming language.
+
+- Failed login attempts
+- Successful login attempts
+- User account deletions
+- User account blocking/unblocking
+- Changes in user role assignments
+- Unauthorized attempts to alter protected user fields
+- New user account creation
+- Password reset instructions mailed
+- User logins via a one-time login link
+- User logouts
+- Content creation (datasets, resources and other content types)
+- Content modification
+- Content deletion
+- Content publishing
+- Content unpublishing
+- File uploads
+- Web page not found
+- Website configuration changes
+- System administration activities
+- Slow query logs.
+- PHP error logs: Captures any errors logged during execution of the PHP programming language.
 
 
 ### AU-3: Content Of Audit Records
@@ -479,7 +469,7 @@ The information system generates audit records containing information that estab
 
 ##### AWS
 
-In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are employed, which generate audit records that include the level of detail specified in the control. CloudTrail logs provide information on activities related to the manipulation of the infrastructure; S3 bucket logs provide data on activities related to the access or manipulation of data stored in S3; ELB logs provide information about requests or connections; RDS Database MySQL error logs record errors encountered by the database engine.  In addition, the MySQL general query log can be enabled by the customer organization to capture when clients connect or disconnect and SQL statement received from clients.
+In this architecture, AWS CloudTrail, S3 bucket logging, Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are employed, which generate audit records that include the level of detail specified in the control. CloudTrail logs provide information on activities related to the manipulation of the infrastructure; S3 bucket logs provide data on activities related to the access or manipulation of data stored in S3; ELB logs provide information about requests or connections; RDS Database MySQL error logs record errors encountered by the database engine. In addition, the MySQL general query log can be enabled by the customer organization to capture when clients connect or disconnect and SQL statement received from clients.
 
 General information about AWS native logging is documented at: https://aws.amazon.com/answers/logging/aws-native-security-logging-capabilities/ Details about CloudTrail logs are documented at http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html Details about S3 bucket logs are documented at http://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html Details about ELB logs are available at http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/access-log-collection.html Details about RDS logs are documented at http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.html
 
@@ -487,14 +477,15 @@ General information about AWS native logging is documented at: https://aws.amazo
 ##### Drupal
 
 The logs collected for Drupal sites include the following types of information:
-* IP number of the request originator
-* Timestamp
-* Request URL
-* HTTP status code returned
-* Username
-* Drupal Watchdog message (if applicable)
-* Unique numerical ID of the content being modified (for content creation, modification and deletion events)
-When auditing a Drupal incident, the CivicActions developers aggregate log sources from multiple servers into the Graylog dashboard so that all log entries for a single managed security incident can be analyzed in a single document. Log sources are sorted, filtered and reviewed.  Application logs are maintained primarily for an after-the-fact investigation of critical systems or security events.
+
+- IP number of the request originator
+- Timestamp
+- Request URL
+- HTTP status code returned
+- Username
+- Drupal Watchdog message (if applicable)
+- Unique numerical ID of the content being modified (for content creation, modification and deletion events)
+When auditing a Drupal incident, the CivicActions developers aggregate log sources from multiple servers into the Graylog dashboard so that all log entries for a single managed security incident can be analyzed in a single document. Log sources are sorted, filtered and reviewed. Application logs are maintained primarily for an after-the-fact investigation of critical systems or security events.
 
 
 ### AU-4: Audit Storage Capacity
@@ -556,10 +547,11 @@ frequency] for indications of [Assignment: organization-defined inappropriate or
 
 ##### CivicActions
 
-CivicActions security audit data is collected by the AWS CloudWatch monitoring and observability service to support real-time and after-the-fact investigation at the application level for the following:
-* Indications of inappropriate or unusual activity
-* Assurance that logging is functioning properly
-* Adherence to logging standards identified in this procedure
+CivicActions security audit data is collected by the AWS CloudWatch monitoring and observability service to support real time and after-the-fact investigation at the application level for the following:
+
+- Indications of inappropriate or unusual activity
+- Assurance that logging is functioning properly
+- Adherence to logging standards identified in this procedure
 
 
 #### b
@@ -584,7 +576,7 @@ Universal Time (UTC) or Greenwich Mean Time (GMT) and meets [Assignment: organiz
 
 ##### AWS
 
-In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are employed.
+In this architecture, AWS CloudTrail, S3 bucket logging, Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are employed.
 
 AWS built-in features of native logging use AWS region internal clocks to time stamp all log entries.
 
@@ -593,7 +585,7 @@ AWS built-in features of native logging use AWS region internal clocks to time s
 
 ##### AWS
 
-In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are employed.
+In this architecture, AWS CloudTrail, S3 bucket logging, Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are employed.
 
 AWS built-in features of native logging provide time stamps as specified in the ISO 8601 standard. ISO 8601 represents local time (with the location unspecified), as UTC, or as an offset from UTC.
 
@@ -608,7 +600,7 @@ The information system protects audit information and audit tools from unauthori
 
 ##### AWS
 
-In this architecture, access to audit data and tools are restricted to only personnel assigned by the organization to IAM groups and roles which are associated with access control policies for such access.   In addition, server side encryption of Audit bucket, S3 bucket policies are configured to restrict access to those appropriate IAM groups/roles, and with read-only permissions.
+In this architecture, access to audit data and tools are restricted to only personnel assigned by the organization to IAM groups and roles which are associated with access control policies for such access. In addition, server side encryption of Audit bucket, S3 bucket policies are configured to restrict access to those appropriate IAM groups/roles, and with read-only permissions.
 
 
 ##### CivicActions
@@ -652,9 +644,9 @@ defined in AU-3.
 
 ##### AWS
 
-In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are enabled, but  initial EC2 instances launched by this deployment (bastion host, application servers, proxy servers, and any EC2-based NAT servers) DO NOT have any auditing enabled within the OS, as these are in place for example purposes only.
+In this architecture, AWS CloudTrail, S3 bucket logging, Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are enabled, but initial EC2 instances launched by this deployment (bastion host, application servers, proxy servers, and any EC2-based NAT servers) DO NOT have any auditing enabled within the OS, as these are in place for example purposes only.
 
-AWS built-in features of logging mechanisms povide the audit record generation capability for the auditable events defined in AU-2a. by logging all security-relevant IAM user and API activities which address  AWS infrastructure components (AWS Products and services), ELB
+AWS built-in features of logging mechanisms provide the audit record generation capability for the auditable events defined in AU-2a. by logging all security-relevant IAM user and API activities which address AWS infrastructure components (AWS Products and services), ELB
 
 
 ##### CivicActions
@@ -666,9 +658,9 @@ CivicActions ensures audit records are generated for its web and event logs as r
 
 ##### AWS
 
-In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are enabled AWS Cloudtrail is enabled to log all available API events automatically within the AWS infrastructure and Amazon S3 bucket logging is enabled to log bucket activity.
+In this architecture, AWS CloudTrail, S3 bucket logging, Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are enabled AWS CloudTrail is enabled to log all available API events automatically within the AWS infrastructure and Amazon S3 bucket logging is enabled to log bucket activity.
 
-AWS built-in features of Identity and Access Management (IAM) allows policy  to be applied to privileged users for administrator/audit access, allowing them to modify Amazon CloudWatch alarms, AWS Config rules, and Amazon S3 bucket logging to select the Cloudtrail and S3 events that are to cause notification, alerting and automated reaction.
+AWS built-in features of Identity and Access Management (IAM) allows policy to be applied to privileged users for administrator/audit access, allowing them to modify Amazon CloudWatch alarms, AWS Config rules, and Amazon S3 bucket logging to select the CloudTrail and S3 events that are to cause notification, alerting and automated reaction.
 
 
 ##### CivicActions
@@ -680,7 +672,7 @@ The selected auditable events described in AU-2 are coordinated by CivicActions 
 
 ##### AWS
 
-In this architecture, AWS CloudTrail,  S3 bucket logging,  Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are enabled. However, the initial EC2 instances launched by this deployment (bastion host, application servers, proxy servers, and any EC2-based NAT servers) DO NOT have any auditing enabled within the OS, as these are in place for example purposes only.
+In this architecture, AWS CloudTrail, S3 bucket logging, Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are enabled. However, the initial EC2 instances launched by this deployment (bastion host, application servers, proxy servers, and any EC2-based NAT servers) DO NOT have any auditing enabled within the OS, as these are in place for example purposes only.
 
 AWS built-in features of native logging generates audit records with the content defined in AU-3.
 
@@ -734,7 +726,9 @@ The organization provides basic security awareness training to information syste
 ##### CivicActions
 
 Both regular and ad hoc training to all CivicActions personnel, including those who support the system infrastructure and applications, is provided. All employees and contractors must complete Security Awareness training upon being hired and at least annually thereafter. CivicActions Operations staff will not create accounts for individuals until they have successfully completed the trainings. Additional training will be provided as required by system changes. Training takes the following forms:
+
 Annual Knowledge Survey (i.e., Security Awareness Training): All employees are required to review trainings covering Security Awareness. After the training, a survey-style security awareness test is taken by employees. All CivicActions personnel are required to complete and pass the survey, and new employees are required to pass before being granted access to the Information System. In order to successfully pass the test, a score of 80% is required. This survey tests CivicActions personnel’s knowledge of critical security subjects, policies and procedures. Results from this survey are compiled by the Office of Human Resources and used to refine future training efforts.
+
 Ad Hoc Security Awareness: The CivicActions' Security Office oversees the approximately bi-monthly distribution of security awareness tips and articles to all CivicActions employees. This can include general tips as well as articles tailored to the specific requirements of CivicActions users.
 
 
@@ -849,6 +843,7 @@ The organization develops, documents, and maintains under configuration control,
 ##### AWS
 
 Hardware Baselines
+
 All hardware is maintained by AWS Cloud. The system therefore inherits hardware configuration aspects of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: baseline configuration.
 
 
@@ -915,7 +910,7 @@ and/or services: [Assignment: organization-defined prohibited or restricted func
 
 ##### AWS
 
-In this architecture, only essential capabilities for a multi-tiered web service are configured. AWS Identity and Access Management (IAM) baseline Groups and Roles are configured to support restricted access to AWS resources by  privileged users and non-person entities (EC2 systems operating with a role) authorized and assigned by the organization.
+In this architecture, only essential capabilities for a multi-tiered web service are configured. AWS Identity and Access Management (IAM) baseline Groups and Roles are configured to support restricted access to AWS resources by privileged users and non-person entities (EC2 systems operating with a role) authorized and assigned by the organization.
 
 
 #### b
@@ -948,22 +943,11 @@ organization-defined frequency].
 ##### AWS
 
 AWS built-in features dynamically build and maintain an inventory of system components (infrastructure inventory)
-1. AWS built-in features provide an accurate, real-time inventory of all infrastructure
-   system and network components within the customer account and provides a single view
-   for granularity for tracking and reporting.
 
-2. AWS built-in features provide an accurate, real-time inventory of all infrastructure
-   system and network components within the AWS account, and  AWS CloudFormation
-   creates a unique set of stack names, and associated resource names  incorporate the
-   stack name, for tracking components deployed by Cloudformation templates that align
-   with an authorization boundary.
-
-3. AWS built-in features provide a level of granularity for tracking and reporting on
-   all infrastructure system and network components and configuration settings for
-   those components.
-
-4. AWS built-in features provide all available information about all infrastructure
-   system and network components to achieve effective component accountability.
+1. AWS built-in features provide an accurate, real time inventory of all infrastructure system and network components within the customer account and provides a single view for granularity for tracking and reporting.
+2. AWS built-in features provide an accurate, real time inventory of all infrastructure system and network components within the AWS account, and  AWS CloudFormation creates a unique set of stack names, and associated resource names  incorporate the stack name, for tracking components deployed by CloudFormation templates that align with an authorization boundary.
+3. AWS built-in features provide a level of granularity for tracking and reporting on all infrastructure system and network components and configuration settings for those components.
+4. AWS built-in features provide all available information about all infrastructure system and network components to achieve effective component accountability.
 
 
 #### b
@@ -1090,29 +1074,19 @@ key contingency personnel (identified by name and/or by role) and organizational
 ##### CivicActions
 
 CivicActions has developed a contingency plan for that addresses:
-1. Essential missions, business functions, and associated contingency
-   requirements
-
+1. Essential missions, business functions, and associated contingency requirements
 2. Recovery objectives, restoration priorities, and metrics
-3. Roles and responsibilities are identified in the CP and include the ISCP
-   Director, Incident Commander (IC), CivicActions Coordinator,
-   and CivicActions Information System Security Officer (ISSO).
-
-4. Maintaining essential missions and business functions despite an
-   information system disruption, compromise, or failure
-
-5. Full information system restoration without deterioration of the security
-   safeguards originally planned and implemented
-
-6. The ISCP is reviewed and approved by ISCP Director, Incident Commander
-   (IC), CivicActions ISSO and the System Owner annually.
+3. Roles and responsibilities are identified in the CP and include the ISCP Director, Incident Commander (IC), CivicActions Coordinator, and CivicActions Information System Security Officer (ISSO).
+4. Maintaining essential missions and business functions despite an information system disruption, compromise, or failure
+5. Full information system restoration without deterioration of the security safeguards originally planned and implemented
+6. The ISCP is reviewed and approved by ISCP Director, Incident Commander (IC), CivicActions ISSO and the System Owner annually.
 
 
 #### b
 
 ##### CivicActions
 
-The CivicActions Information System Contingency Plan (ISCP) has been distributed to all CivicActons team members. The ISCP can be found in the CivicActions Handbook at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan>.
+The CivicActions Information System Contingency Plan (ISCP) has been distributed to all CivicActions team members. The ISCP can be found in the CivicActions Handbook at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan>.
 
 
 #### c
@@ -1147,7 +1121,7 @@ The ISCP requires that changes to the plan be communicated to those on the Incid
 
 ##### CivicActions
 
-The ISCP is available on CivicActions Github repository. This repository provides the configuration management capabilities for the ISCP to be protected from unauthorized disclosure and modification.
+The ISCP is available on CivicActions GitHub repository. This repository provides the configuration management capabilities for the ISCP to be protected from unauthorized disclosure and modification.
 
 
 ### CP-3: Contingency Training
@@ -1222,7 +1196,7 @@ CivicActions conducts system user-level information backup in accordance with re
 
 ##### AWS
 
-AWS built-in features automatically backs up system-level information limited to infrastructure CONFIGURATION information within the AWS account.  While individual running  EC2 instances and attached EBS volumnes  are NOT backed up, they can be reconstituted from Amazon Machine Images (AMIs) provided  by AWS (which are backed up by AWS) and user data scripts included in CloudFormation templates.  Once deployed, the CloudFormation template contents are backed up by AWS R488within the CloudFormation service. These AWS backups of AWS services are transparent to the customer as part of AWS backend processes.
+AWS built-in features automatically backs up system-level information limited to infrastructure CONFIGURATION information within the AWS account. While individual running EC2 instances and attached EBS volumes are NOT backed up, they can be reconstituted from Amazon Machine Images (AMIs) provided by AWS (which are backed up by AWS) and user data scripts included in CloudFormation templates. Once deployed, the CloudFormation template contents are backed up by AWS R488within the CloudFormation service. These AWS backups of AWS services are transparent to the customer as part of AWS backend processes.
 
 
 ##### CivicActions
@@ -1246,7 +1220,7 @@ System documentation is backed up from the GitHub repository on a daily basis wi
 
 ##### AWS
 
-AWS built-in features  protect the  confidentiality, integrity, and availability of information that AWS services back up.   This information includes the service configuration information within an account,  AWS online administrator and developer documentation, and AWS CloudFormation stacks for templates once deployed into an account. R612
+AWS built-in features protect the confidentiality, integrity, and availability of information that AWS services back up. This information includes the service configuration information within an account, AWS online administrator and developer documentation, and AWS CloudFormation stacks for templates once deployed into an account. R612
 
 
 ##### CivicActions
@@ -1294,7 +1268,7 @@ frequency].
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel an identification and authentication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained by the CivicActions Identification and Authentication (IA) Policy. This document can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
+CivicActions has developed, documented and disseminated to personnel an identification and authentication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained by the CivicActions Identification and Authentication (IA) Policy. This document can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 ### IA-2: Identification And Authentication (Organizational Users)
@@ -1305,7 +1279,7 @@ The information system uniquely identifies and authenticates organizational user
 
 ##### AWS
 
-AWS built-in features of Identity and Access Management (IAM) provides the capability for uniquely identifying and authenticating  users and processes acting on their behalf to both organizational and non-organizational users operating within the AWS account and infrastructure, providing privileges based on the credentials, group memberships, and access policies assigned to them.  The customer organization, at its discretion, provides individual user accounts and privileges to both organizational non-organizational users in addition to organizational users.
+AWS built-in features of Identity and Access Management (IAM) provides the capability for uniquely identifying and authenticating users and processes acting on their behalf to both organizational and non-organizational users operating within the AWS account and infrastructure, providing privileges based on the credentials, group memberships, and access policies assigned to them. The customer organization, at its discretion, provides individual user accounts and privileges to both organizational non-organizational users in addition to organizational users.
 
 
 ### IA-2 (1): Network Access To Privileged Accounts
@@ -1319,6 +1293,7 @@ The information system implements multifactor authentication for network access 
 ##### CivicActions
 
 CivicActions system administrators employ a personal public- key pair for basic access and must originate from a whitelisted IP address. The whitelist is maintained by an Ansible inventory file, the current complete list (includes dev sites) of users with whitelisted IPs is in artifact: None
+
 To access root (sudo) privileges an additional password is required. The passwords are maintained in encrypted form in the Ansible inventory file. The mechanism to enable select users to use a password to obtain root access can be viewed in artifact: None
 
 
@@ -1362,6 +1337,7 @@ Upon account creation, the Drupal software assigns each user account a unique nu
 ##### CivicActions
 
 User accounts are assigned a unique identifier in the form of a unique username, password and email address based on the system for allocating user accounts described in AC-2.
+
 In accordance with CivicActions Identification and Authentication (IA) Policy outlined at <https://github.com/CivicActions/compliance-docs>, CivicActions internal users are uniquely identified by the creation of an organizational account with a username based on each user's first and last names.
 
 
@@ -1459,7 +1435,7 @@ The system partially inherits this control from Drupal standard password managem
 
 ##### Drupal
 
-Drupal requires users to change their password upon initial login, and the application website enforces this. User accounts are assigned a randomly-generated and unguessable default password that is not shared with anyone, including site Administrators. Once the user logs in and creates a new password, the default password erased from the website's database.
+Drupal requires users to change their password upon initial login, and the application website enforces this. Each user account is assigned a default password that is randomly generated, not possible to guess, and not shared with anyone, including site administrators. When the user logs in and creates a new password, the default password is erased from the website database.
 
 
 #### h
@@ -1474,25 +1450,21 @@ For all Drupal users, passwords are protected by the website's software, which o
 ##### CivicActions
 
 CivicActions users are required to take appropriate measures in the handling of passwords including:
-* Not transmitting user names and passwords together in an unencrypted
-  format
 
-* Not permitting the sending of passwords in an unencrypted format via
-  email
-
-* Not listing passwords in tickets
-* Not writing down or storing passwords in a readable form in any physical
-  or logical location where they may be discoverable by unauthorized
-  persons.
+- Not transmitting user names and passwords together in an unencrypted format
+- Not permitting the sending of passwords in an unencrypted format via email
+- Not listing passwords in tickets
+- Not writing down or storing passwords in a readable form in any physical or logical location where they may be discoverable by unauthorized persons.
 
 
 ##### Drupal
 
 Drupal users are required to take appropriate measures in the handling of passwords including:
-* Not transmitting user names and passwords together in an unencrypted format
-* Not permitting the sending of passwords in an unencrypted format via email
-* Not listing passwords in tickets
-* Not writing down or storing passwords in a readable form in any physical or logical location where they may be discoverable by unauthorized persons.
+
+- Not transmitting user names and passwords together in an unencrypted format
+- Not permitting the sending of passwords in an unencrypted format via email
+- Not listing passwords in tickets
+- Not writing down or storing passwords in a readable form in any physical or logical location where they may be discoverable by unauthorized persons.
 
 
 #### j
@@ -1526,12 +1498,12 @@ change to a permanent password.
 
 ##### AWS
 
-AWS built-in features of Identity and Access Management (IAM) provides minimum password complexity enforcement, but the characteristics to enforce must be manually configured by the customer.  Refer to http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html
+AWS built-in features of Identity and Access Management (IAM) provides minimum password complexity enforcement, but the characteristics to enforce must be manually configured by the customer. Refer to http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html
 
 
 ##### Drupal
 
-Drupal supports the requirement for password-based authentication complexity. New users of Drupal are required to specify their password authentication as soon as they log in to the website for the first.  The website requires all submitted passwords to comply with validation rules, as described above in IA-5(c).
+Drupal supports the requirement for password-based authentication complexity. New users of Drupal are required to specify their password authentication as soon as they log in to the website for the first. The website requires all submitted passwords to comply with validation rules, as described above in IA-5(c).
 Changing password lifetime, length, reuse or strength requirements requires a code setting change that therefore needs to be planned and approved by CivicActions Change Control Board before being implemented.
 
 
@@ -1546,7 +1518,7 @@ When required to change passwords, Drupal users are required to change their aut
 
 ##### AWS
 
-AWS built-in features of AWS Identity and Access Management (IAM) and the AWS Console store passwords on AWS systems in a cryptographically-protected format and only support TLS connectivity to the console web site to protect passwords in transit via encyption.
+AWS built-in features of AWS Identity and Access Management (IAM) and the AWS Console store passwords on AWS systems in a cryptographically-protected format and only support TLS connectivity to the console web site to protect passwords in transit via encryption.
 
 
 ##### Drupal
@@ -1570,7 +1542,7 @@ Password reuse is limited through software configuration.
 
 ##### AWS
 
-AWS built-in features of AWS Identity and Access Management (IAM) provides the capability to require new password to be entered upon login.   The customer organization, at its discretion, configures IAM to enforce that requirement.
+AWS built-in features of AWS Identity and Access Management (IAM) provides the capability to require new password to be entered upon login. The customer organization, at its discretion, configures IAM to enforce that requirement.
 
 
 ##### Drupal
@@ -1605,7 +1577,7 @@ The information system obscures feedback of authentication information during th
 
 In this architecture, All EC2 instances (bastion host, web/proxy servers, application servers) employ SSH for interactive login, and when a key passphrase is prompted for, the SSH prompting mechanism obscures the feedback by default.
 
-AWS built-in features obscure keystroke feedback for password input during AWS console login with AWS  Identity and Access Management (IAM)  user credentials, and when the CloudFormation console prompts for an initial database password during Quick Start template deployment.
+AWS built-in features obscure keystroke feedback for password input during AWS console login with AWS Identity and Access Management (IAM) user credentials, and when the CloudFormation console prompts for an initial database password during Quick Start template deployment.
 
 
 ##### Drupal
@@ -1694,7 +1666,7 @@ response role or responsibility;
 
 ##### CivicActions
 
-All CivicActions employees are required to participate in incident response training, as required by Incident Response Plan changes, and annually. The CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) is the basis for the training and the incident response workflow created by the Security Office.  Upon a review of past incidents, the training is updated to ensure processes and workflows are updated.
+All CivicActions employees are required to participate in incident response training, as required by Incident Response Plan changes, and annually. The CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) is the basis for the training and the incident response workflow created by the Security Office. Upon a review of past incidents, the training is updated to ensure processes and workflows are updated.
 
 
 ### IR-4: Incident Handling
@@ -1769,12 +1741,11 @@ authorities].
 ##### CivicActions
 
 CivicActions personnel, as soon as an incident event is detected and/or communicated, are required to report the incident event to the CivicActions Security Office. Methods of detection and/or communication may include one or more of:
-* Through continuous monitoring tools (StatusCake, OSSEC, others).
-* As a result of application notifications where CivicActions
-  Security receives notifications (AIDE, OpsGenie, others).
 
-* Event logging described in AC-2
-* Host-based alerts from the cloud infrastructure or platform.
+- Through continuous monitoring tools (StatusCake, OSSEC, others).
+- As a result of application notifications where CivicActions Security receives notifications (AIDE, OpsGenie, others).
+- Event logging described in AC-2
+- Host-based alerts from the cloud infrastructure or platform.
 
 
 #### b
@@ -1794,7 +1765,7 @@ The organization provides an incident response support resource, integral to the
 
 ##### CivicActions
 
-CivicActions HelpDesk team provides first response assistance to any users of the system. Response time for external reporting of incidents through e-mail is one business day. Internal users are able to request support thought the same process or initiate the incident response workflow.  Tickets created in the Jira (customer ticketing system) and GitLab (internal ticketing system) documents all details related to the incident to assist the incident response teams in handling the incident.
+CivicActions Help Desk team provides first response assistance to any users of the system. Response time for external reporting of incidents through e-mail is one business day. Internal users are able to request support thought the same process or initiate the incident response workflow. Tickets created in the Jira (customer ticketing system) and GitLab (internal ticketing system) documents all details related to the incident to assist the Incident Response Teams in handling the incident.
 
 
 ### IR-8: Incident Response Plan
@@ -1835,28 +1806,15 @@ incident response personnel (identified by name and/or by role) and organization
 ##### CivicActions
 
 Incident response plays a pivotal role in monitoring, detecting and handling security incidents of the entire information system. CivicActions has developed an Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) that:
-1. Provides CivicActions with procedures and tools required
-   for incident handling;
 
-2. Describes the structure and organization of the incident response
-   capability;
-
-3. Provides a high-level approach for how the incident response capability
-   fits into CivicActions and the systems it maintains;
-
-4. Meets the mission, size, structure, and functions of
-   CivicActions;
-
+1. Provides CivicActions with procedures and tools required for incident handling;
+2. Describes the structure and organization of the incident response capability;
+3. Provides a high-level approach for how the incident response capability fits into CivicActions and the systems it maintains;
+4. Meets the mission, size, structure, and functions of CivicActions;
 5. Defines reportable incidents;
-6. Provides metrics for measuring the incident response capability and
-   details categorization of incidents in accordance with NIST 800-61;
-
-7. Defines the roles and responsibilities of CivicActions IR
-   Team;
-
-8. Is reviewed annually and updated as needed by the
-   CivicActions  Security Office, with the assistance of the
-   Incident Response team.
+6. Provides metrics for measuring the incident response capability and details categorization of incidents in accordance with NIST 800-61;
+7. Defines the roles and responsibilities of CivicActions IR Team;
+8. Is reviewed annually and updated as needed by the CivicActions Security Office, with the assistance of the Incident Response Team.
 
 
 #### b
@@ -1864,7 +1822,7 @@ Incident response plays a pivotal role in monitoring, detecting and handling sec
 ##### CivicActions
 
 The CivicActions Incident Response Plan is distributed to all CivicActions team members as part of the CivicActions Handbook (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>).
- The Incident Response team includes members from the Security Office,
+ The Incident Response Team includes members from the Security Office,
  Operations staff, and Drupal Engineering teams.
 
 
@@ -1872,7 +1830,7 @@ The CivicActions Incident Response Plan is distributed to all CivicActions team 
 
 ##### CivicActions
 
-The CivicActions Security Office and the Incident Response team is responsible for reviewing the Incident Response Plan annually. The entire incident response team will review the plan and update it as necessary. Ultimately, the Security Office has the final say and will approve all updates to the plan.
+The CivicActions Security Office and the Incident Response team is responsible for reviewing the Incident Response Plan annually. The entire Incident Response Team will review the plan and update it as necessary. Ultimately, the Security Office has the final say and will approve all updates to the plan.
 
 
 #### d
@@ -1893,7 +1851,7 @@ Modifications to the IR Plan are conducted by the IR team the (CivicActions Secu
 
 ##### CivicActions
 
-The IR Plan is available in the CivicActions Handbook and is maintained in the CivicActions Github repository. Github provides the configuration management capabilities for the IR Plan to be protected from unauthorized disclosure and modification.
+The IR Plan is available in the CivicActions Handbook and is maintained in the CivicActions GitHub repository. GitHub provides the configuration management capabilities for the IR Plan to be protected from unauthorized disclosure and modification.
 
 
 ## MA: Maintenance
@@ -1929,7 +1887,7 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel a system maintenance policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Maintenance (MA) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
+CivicActions has developed, documented and disseminated to personnel a system maintenance policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Maintenance (MA) Policy and Procedure document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 ### MA-2: Controlled Maintenance
@@ -2052,7 +2010,7 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 
 ##### CivicActions
 
-Maintenance of the system and applications can only be performed by personnel designated as having internal administrator privileges and responsibilities.  Access rights for the internal administrators are assigned and granted access to perform their specific job responsibilities. All physical maintenance requirements are inherited from AWS.
+Maintenance of the system and applications can only be performed by personnel designated as having internal administrator privileges and responsibilities. Access rights for the internal administrators are assigned and granted access to perform their specific job responsibilities. All physical maintenance requirements are inherited from AWS.
 
 
 ## MP: Media Protection
@@ -2088,7 +2046,7 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel a media protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Media Protection (MP) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
+CivicActions has developed, documented and disseminated to personnel a media protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Media Protection (MP) Policy and Procedure document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 ### MP-2: Media Access
@@ -2174,7 +2132,7 @@ and
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Personnel Security (PS) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
+CivicActions has developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Personnel Security (PS) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 ### PS-2: Position Risk Designation
@@ -2225,7 +2183,7 @@ requiring rescreening and, where rescreening is so indicated, the frequency of s
 
 ##### CivicActions
 
-Prospective CivicActions employees undergo background checks commensurate with the individual’s job duties, the classification of the information they will access, and the risks associated with the role. At the discretion of the CivicActions Security Office, these checks may also be conducted on contractors and/or third party users in cases where they will have access to application data that is not meant to be consumed by the public.  In these instances, the Security Office will instruct the Office of Human Resources to conduct a background check before granting access to the information system.
+Prospective CivicActions employees undergo background checks commensurate with the individual’s job duties, the classification of the information they will access, and the risks associated with the role. At the discretion of the CivicActions Security Office, these checks may also be conducted on contractors and/or third party users in cases where they will have access to application data that is not meant to be consumed by the public. In these instances, the Security Office will instruct the Office of Human Resources to conduct a background check before granting access to the information system.
 
 
 #### b
@@ -2630,7 +2588,7 @@ and
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel a system planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Planning (PL) Policy and Procedure document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
+CivicActions has developed, documented and disseminated to personnel a system planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Planning (PL) Policy and Procedure document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
 ### PL-2: System Security Plan
@@ -2668,24 +2626,16 @@ of operation or problems identified during plan implementation or security contr
 ##### CivicActions
 
 CivicActions has developed this system security plan (SSP) for the information system as part of compliance with NIST 800-53 and FIPS 199. The SSP defines the security categorization, system boundary, and security requirements and controls meeting the requirements of the NIST Risk Management Framework (RMF). Specifically the SSP:
+
 1. Is consistent with the organization’s enterprise architecture
 2. Explicitly defines the authorization boundary for the system
-3. Describes the operational context of the information system in terms
-   of missions and business processes
-
-4. Provides the security categorization of the information system
-   including supporting rationale
-
-5. Describes the operational environment for the information system and
-   relationships with or connections to other information systems
-
+3. Describes the operational context of the information system in terms of missions and business processes
+4. Provides the security categorization of the information system including supporting rationale
+5. Describes the operational environment for the information system and relationships with or connections to other information systems
 6. Provides an overview of the security requirements for the system
 7. Identifies any relevant overlays, if applicable
-8. Describes the security controls in place or planned for meeting those
-   requirements including a rationale for the tailoring decisions
-
-9. Is reviewed and approved by the authorizing official or designated
-   representative prior to plan implementation
+8. Describes the security controls in place or planned for meeting those requirements including a rationale for the tailoring decisions
+9. Is reviewed and approved by the authorizing official or designated representative prior to plan implementation
 
 
 #### b
@@ -2781,7 +2731,7 @@ and associated risk assessment controls; and
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel a risk assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Risk Assessment (RA) Policy and Procedure that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
+CivicActions has developed, documented and disseminated to personnel a risk assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Risk Assessment (RA) Policy and Procedure that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
 ### RA-5: Vulnerability Scanning
@@ -2809,14 +2759,11 @@ security control assessments with [Assignment: organization-defined personnel or
 ##### CivicActions
 
 CivicActions Operations uses vulnerability scanning software to document and determine risks to the system. Operating system and application vulnerability scans include:
-* The CivicActions system environment employs the OpenSCAP
-  scanner with the Red Hat STIG baseline to check for vulnerabilities.
 
-* The CivicActions application environment is tested by the
-  penetration tester OWASP ZAP, an open-source web application security
-  scanner to report on needed updates based on known flaws.
+- The CivicActions system environment employs the OpenSCAP scanner with the Red Hat STIG baseline to check for vulnerabilities.
+- The CivicActions application environment is tested by the penetration tester OWASP ZAP, an open-source web application security scanner to report on needed updates based on known flaws.
 
-CivicActions Operations has automated the process to perform the scans on a monthly basis. The resulting reports list vulnerabilities and rank them by severity. These reports are stored on an audit server and are used to inform changes to the system and verify that security controls are working correctly.  These scans are used to document the current state of the system, and to analyze security trends as changes are made over time.
+CivicActions Operations has automated the process to perform the scans on a monthly basis. The resulting reports list vulnerabilities and rank them by severity. These reports are stored on an audit server and are used to inform changes to the system and verify that security controls are working correctly. These scans are used to document the current state of the system, and to analyze security trends as changes are made over time.
 
 
 #### b
@@ -2838,9 +2785,10 @@ The CivicActions Security Office reviews all vulnerabilities identified from aut
 ##### CivicActions
 
 Identified and reported vulnerabilities are assigned an impact rating and response time by CivicActions' Security Office and must be remediated according to the following time requirements:
-* High - Within 30 days of discovery (usually within 1 week))
-* Moderate - Within 90 days of discovery (usually within 2 weeks)
-* Low - Within 240 days of discovery
+
+- High - Within 30 days of discovery (usually within 1 week))
+- Moderate - Within 90 days of discovery (usually within 2 weeks)
+- Low - Within 240 days of discovery
 
 
 #### e
@@ -2908,6 +2856,7 @@ CivicActions will develop a security assessment plan (SAP) that describes the se
 ##### CivicActions
 
 CivicActions will assess the security controls in their system and its environment of operation to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security requirements.
+
 All controls assigned and documented in this System Security Plan (SSP) will be tested at least annually or when there is a major change to the system.
 
 
@@ -2923,13 +2872,14 @@ CivicActions will produce a security assessment report that documents the result
 ##### CivicActions
 
 CivicActions will provide the results of the security control assessment to the System Owner, Project Manager, CivicActions Security, and the Authorization Official (AO)). The security control assessment package includes the following:
-* Security Control Matrix
-* Privacy Impact Assessment
-* E-Authentication
-* Contingency Plan
-* Configuration Management Plan
-* Rules of Behavior
-* Incident Response Plan
+
+- Security Control Matrix
+- Privacy Impact Assessment
+- E-Authentication
+- Contingency Plan
+- Configuration Management Plan
+- Rules of Behavior
+- Incident Response Plan
 
 
 ### CA-3: System Interconnections
@@ -2966,12 +2916,15 @@ frequency] based on the findings from security controls assessments, security im
 ##### CivicActions
 
 CivicActions documents all deficiencies and vulnerabilities identified during the security certification and/or continuous monitoring phase (via security assessment, vulnerability scanning, risk assessment, etc.) within the Plan of Action and Milestones (POA&M).
+
 The POA&M document provides a platform for CivicActions to monitor and track the deficiency and its mitigation strategy. POA&M items will include:
-* The description of the deficiency,
-* Dedicated point of contact for this deficiency.
-* Cost of the mitigation strategy
-* Associated risk and NIST control
-* Recommended mitigation strategy
+
+- The description of the deficiency,
+- Dedicated point of contact for this deficiency.
+- Cost of the mitigation strategy
+- Associated risk and NIST control
+- Recommended mitigation strategy
+
 POA&Ms are tracked throughout the lifecycle of the system until its mitigation. All POA&Ms are reviewed on a monthly basis by CivicActions Information System Security Officer to ensure all mitigation strategies are continuing as documented.
 
 
@@ -3001,13 +2954,10 @@ to [Assignment: organization-defined personnel or roles] [Assignment: organizati
 ##### CivicActions
 
 CivicActions implements a continuous monitoring strategy that incorporates configuration management, system scanning and log analysis processes:
-* Configuration management includes the assessment of security impact
-  analyses of proposed and implemented changes.
 
-* System scanning is managed by running the OpanSCAP vulnerability scanner
-  using the DISA STIG profile.
-
-* Log analysis is managed by feeding logs to a Graylog dashboard for analysis.
+- Configuration management includes the assessment of security impact analyses of proposed and implemented changes.
+- System scanning is managed by running the OpenSCAP vulnerability scanner using the DISA STIG profile.
+- Log analysis is managed by feeding logs to a Graylog dashboard for analysis.
 
 
 ##### Drupal
@@ -3019,7 +2969,8 @@ CivicActions follows recommendations and best practices developed by the Drupal 
 
 ##### CivicActions
 
-Configuration management and log analysis is carried out in real-time. OpenSCAP security scans are performed and reviewed monthly. See also: RA-5 and SI-4.
+Configuration management and log analysis is carried out in real time. OpenSCAP security scans are performed and reviewed monthly. See also: RA-5 and SI-4.
+
 Quarterly review of the control assessments supporting the monitoring is conducted by CivicActions Operations in collaboration with the CivicActions Security Office.
 
 
@@ -3048,7 +2999,7 @@ CivicActions Security reviews the results of the security scans and security ass
 
 ##### CivicActions
 
-POA&M items are tracked by CivicActions Security through JIRA tickets with a security categorization assigned.  The information included in the POA&M item include the severity, the due date, the weakness source identifier, and the plugin ID that identified the vulnerability.
+POA&M items are tracked by CivicActions Security through JIRA tickets with a security categorization assigned. The information included in the POA&M item include the severity, the due date, the weakness source identifier, and the plugin ID that identified the vulnerability.
 
 
 #### g
@@ -3097,7 +3048,7 @@ frequency].
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel a system and communication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Communications Protection (SC) Policy CivicActions document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
+CivicActions has developed, documented and disseminated to personnel a system and communication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Communications Protection (SC) Policy CivicActions document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
 ### SC-5: Denial Of Service Protection
@@ -3135,14 +3086,14 @@ Drupal, when deployed on SELinux in full enforcing mode, minimizes the number of
 
 ##### AWS
 
-In this architecture,  network communications to, from, and between VPCs,  subnets and S3 buckets are controlled as follows:  AWS Route Tables specify which subnets in each VPC are accessible through gateways and which are isolated/private. AWS Security Groups provide stateful inbound/outbound port/protocol restrictions, Amazon Simple Storage Service (Amazon S3) buckets support access control  restrictions based on network source/destination.
+In this architecture, network communications to, from, and between VPCs, subnets and S3 buckets are controlled as follows: AWS Route Tables specify which subnets in each VPC are accessible through gateways and which are isolated/private. AWS Security Groups provide stateful inbound/outbound port/protocol restrictions, Amazon Simple Storage Service (Amazon S3) buckets support access control restrictions based on network source/destination.
 
 
 #### b
 
 ##### AWS
 
-In this architecture, subnetworks for publicly accessible system components  are logically separated from internal private subnetworks via AWS  security groups, refined routing tables, and NACLs.
+In this architecture, subnetworks for publicly accessible system components are logically separated from internal private subnetworks via AWS security groups, refined routing tables, and NACLs.
 
 
 #### c
@@ -3163,13 +3114,11 @@ The information system implements [Assignment: organization-defined cryptographi
 ##### CivicActions
 
 The information system implements:
-* Cryptographic modules through Secure Shell (SSH) to allow administrators
-  to securely logon to the various system components
 
-* HTTPS/SSL (TLS) for connection to web-based services
-* TLS for connection to email services
-* AES-256 (FIPS 140-2 validated) for data at rest (with Elastic Block
-  Store (EBS) volumes)
+- Cryptographic modules through Secure Shell (SSH) to allow administrators to securely logon to the various system components
+- HTTPS/SSL (TLS) for connection to web-based services
+- TLS for connection to email services
+- AES-256 (FIPS 140-2 validated) for data at rest (with Elastic Block Store (EBS) volumes)
 
 
 ### SC-20: Secure Name / Address Resolution Service (Authoritative Source)
@@ -3250,7 +3199,7 @@ frequency].
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Information Integrity (SI) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
+CivicActions has developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Information Integrity (SI) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
 ### SI-2: Flaw Remediation
@@ -3273,13 +3222,14 @@ process.
 ##### CivicActions
 
 Identification of information system security flaws are detected as early as possible by the following methods:
-* Vulnerability scans, as described in RA-5.
-* Log analysis from monitoring described in SI-4.
-* Service flaw notifications (CVEs, etc.) are received by the
-  CivicActions Security Office and passed on to
-  CicvicActions Operations staff when relevant.
 
-Any security issues found are ticketed through JIRA and/or the Git issue queue. CivicActions Operations staff prioritizes high findings.  Changes made to correct the information system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB as implemented in CM-3.
+- Vulnerability scans, as described in RA-5.
+- Log analysis from monitoring described in SI-4.
+- Service flaw notifications (CVEs, etc.) are received by the
+  CivicActions Security Office and passed on to
+  CivicActions Operations staff when relevant.
+
+Any security issues found are ticketed through JIRA and/or the Git issue queue. CivicActions Operations staff prioritizes high findings. Changes made to correct the information system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB as implemented in CM-3.
 
 
 #### b
@@ -3300,7 +3250,7 @@ CivicActions security-software updates are tested prior to implementation on pro
 
 ##### CivicActions
 
-Flaw remediation is part of the CivicActions configuration management process.  Any security issues found are ticketed through JIRA or the Git issue queue. The CivicActions Security Office prioritizes the high findings within the application. Changes made to correct the system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB Chair as implemented in CM-3.
+Flaw remediation is part of the CivicActions configuration management process. Any security issues found are ticketed through JIRA or the Git issue queue. The CivicActions Security Office prioritizes the high findings within the application. Changes made to correct the system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB Chair as implemented in CM-3.
 
 
 ### SI-3: Malicious Code Protection
@@ -3382,15 +3332,16 @@ information] to [Assignment: organization-defined personnel or roles] [Selection
 ##### CivicActions
 
 CivicActions systems use a collection of monitoring systems, including:
-* ClamAV - provides signature-based malware detection/quarantine
-* OSSEC host-based intrusion detection system (HIDS)
-* AIDE Advanced Intrusion Detection Environment (IDS))
-* fail2ban, an intrusion prevention system (IPS) framework
-* SELinux - a Mandatory Access Control (MAC) IPS
-* auditd - a secure system audit daemon
-* CloudWatch - AWS monitoring and measurement system
-* StatusCake - website monitoring tool
-* OpsGenie - a slack/email/text/phone incident escalation tool
+
+- ClamAV - provides signature-based malware detection/quarantine
+- OSSEC host-based intrusion detection system (HIDS)
+- AIDE Advanced Intrusion Detection Environment (IDS))
+- fail2ban, an intrusion prevention system (IPS) framework
+- SELinux - a Mandatory Access Control (MAC) IPS
+- auditd - a secure system audit daemon
+- CloudWatch - AWS monitoring and measurement system
+- StatusCake - website monitoring tool
+- OpsGenie - a slack/email/text/phone incident escalation tool
 
 
 #### b
@@ -3424,7 +3375,7 @@ In the event of a performance score lower than CivicActions standards, a notific
 
 ##### CivicActions
 
-Internal legal counsel is utilized as required when system notifications indicate such action based on user and/or malicious activity.  Legal counsel is engaged for any actions that may necessitate increased user monitoring or evidence/forensic actions.
+Internal legal counsel is utilized as required when system notifications indicate such action based on user and/or malicious activity. Legal counsel is engaged for any actions that may necessitate increased user monitoring or evidence/forensic actions.
 
 
 #### g
@@ -3455,17 +3406,18 @@ or notifies the issuing organization of the degree of noncompliance.
 ##### CivicActions
 
 The CivicActions Security Office and Operations staff receive the following security alerts, advisories, and directives on an ongoing basis:
-* Mailing lists relevant to web application security
-* US-CERT
-* Technical Cyber Security Alerts
-* Drupal Security Advisories
+
+- Mailing lists relevant to web application security
+- US-CERT
+- Technical Cyber Security Alerts
+- Drupal Security Advisories
 
 
 #### b
 
 ##### CivicActions
 
-CivicActions utilizes StatusCake for front line monitoring for real-time system status and events of the application. StatusCake can feed to the OpsGenie incident escalation system.
+CivicActions utilizes StatusCake for front line monitoring for real time system status and events of the application. StatusCake can feed to the OpsGenie incident escalation system.
 
 
 #### c
@@ -3518,7 +3470,7 @@ frequency].
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained by the CivicActions System and Services Acquisition (SA) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
+CivicActions has developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained by the CivicActions System and Services Acquisition (SA) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
 ### SA-2: Allocation Of Resources
@@ -3577,81 +3529,25 @@ into system development life cycle activities.
 ##### CivicActions
 
 The system and application(s) are managed by CivicActions using the Agile software development methodology, which provides a continuous System Development Life Cycle (SDLC) methodology. CivicActions Agile management continues to improve the software through ongoing planned code releases. The process is overseen by the Change Control Board (CCB) as described in CM-1. Each point release introduces code and configuration changes to the website through the following SDLC methodology:
-* Code release planning: A code release ticket is created in the Change
-  Request project of the CivicActions ticketing system which
-  describes the overall goals of the code release. The code release ticket
-  is linked to other tickets in the ticketing system which describe issues
-  to be addressed by the planned code release. Those issues may include
-  bug fixes and feature enhancements as well as upgrades to newer versions
-  of the software packages that have been used to build the website.
 
-* Sprints: The tickets covered by the planned code release are then
-  implemented through a series of planned sprints, each of which typically
-  lasts two weeks. Each sprint begins with a sprint planning session at
-  which the CCB selects a list of tickets to be implemented.
-  CivicActions Development holds daily coordination meetings
-  throughout the sprint to share information and resolve any problems
-  that may be blocking progress toward completion. At the end of the
-  sprint, a retrospective is performed in which progress is reviewed to
-  determine which issues have been resolved and which need further work.
+- Code release planning: A code release ticket is created in the Change Request project of the CivicActions ticketing system which describes the overall goals of the code release. The code release ticket is linked to other tickets in the ticketing system which describe issues to be addressed by the planned code release. Those issues may include bug fixes and feature enhancements as well as upgrades to newer versions of the software packages that have been used to build the website.
+- Sprints: The tickets covered by the planned code release are then implemented through a series of planned sprints, each of which typically lasts two weeks. Each sprint begins with a sprint planning session at which the CCB selects a list of tickets to be implemented. CivicActions Development holds daily coordination meetings throughout the sprint to share information and resolve any problems that may be blocking progress toward completion. At the end of the sprint, a retrospective is performed in which progress is reviewed to determine which issues have been resolved and which need further work.
+- Development/unit testing: Work on each ticket is performed within a separate code branch within the CivicActions Git repository, and tested using the GitLab Runner continuous integration platform. Developers also write unit tests to prove their code behaves as expected and address security considerations such as information leakage, bounds checking, and input validation. Once work on a ticket is completed, the developer creates a merge request, and the changes are submitted to at least one other developer for review to ensure they meet functional requirements and address security considerations before the pull request is merged into the Git repository's development branch for the planned code release.
+- Integration testing: Once all work tickets have been completed, the code and configuration necessary to implement the changes are merged into the website's staging server, where it undergoes additional testing to ensure there are no conflicts between the work that has been done on individual tickets.
+- User acceptance testing (UAT): The code release undergoes manual testing against a checklist of expected site behaviors and options each of the website's defined user roles to further verify that the functional changes work as expected and to identify any changes in user experience that need to be documented in release notes to be shared with the customer.
+- Approval for deployment: After all the planned code release has passed all of the above tests, the code release is scheduled for deployment to production and presented to CivicActions' Change Control Board (CCB) for review and approval.
+- Deployment to production: A full backup of the website is performed immediately prior to the deployment.
+- Security scan: After the deployment to production, the website undergoes a security scan using a web vulnerability scanner.
 
-* Development/unit testing: Work on each ticket is performed within a
-  separate code branch within the CivicActions git
-  repository, and tested using the Gitlab Runner continuous integration
-  platform. Developers also write unit tests to prove their code behaves
-  as expected and address security considerations such as information
-  leakage, bounds checking, and input validation. Once work on a ticket
-  is completed, the developer creates a merge request, and the changes are
-  submitted to at least one other developer for review to ensure they meet
-  functional requirements and address security considerations before the
-  pull request is merged into the git repository's development branch for
-  the planned code release.
+  Security issues to be addressed in the planned code release may come from a variety of sources:
 
-* Integration testing: Once all work tickets have been completed, the code
-  and configuration necessary to implement the changes are merged into the
-  website's staging server, where it undergoes additional testing to ensure
-  there are no conflicts between the work that has been done on individual
-  tickets.
-
-* User acceptance testing (UAT): The code release undergoes manual testing
-  against a checklist of expected site behaviors and options each of the
-  website's defined user roles to further verify that the functional
-  changes work as expected and to identify any changes in user experience
-  that need to be documented in release notes to be shared with the
-  customer.
-
-* Approval for deployment: After all the planned code release has passed
-  all of the above tests, the code release is scheduled for deployment to
-  production and presented to CivicActions' Change Control
-  Board (CCB) for review and approval.
-
-* Deployment to production: A full backup of the website is performed
-  immediately prior to the deployment.
-
-* Security scan: After the deployment to production, the website undergoes
-  a security scan using a web vulnerability scanner.
-
-Security issues to be addressed in the planned code release may come from a variety of sources:
-* Customer support requests received by the CivicActions
-  Help Desk
-
-* Security concerns, incidents, and site performance issues reported by
-  users
-
-* Security incident reports, including server log analysis and root cause
-  analysis of those incidents performed by the CivicActions
-  Security Office and Operations staff
-
-* Security notifications received by the CivicActions
-  Security Office from external security teams and other software vendors
-
-* Vulnerabilities detected during security scans of the website performed
-  by the CivicActions Security Office
-
-* Issues reported by the CivicActions Security Office,
-  Operations staff and Development
-
-* Security issues reported through continuous monitoring
+- Customer support requests received by the CivicActions Help Desk
+- Security concerns, incidents, and site performance issues reported by users
+- Security incident reports, including server log analysis and root cause analysis of those incidents performed by the CivicActions Security Office and Operations staff
+- Security notifications received by the CivicActions Security Office from external security teams and other software vendors
+- Vulnerabilities detected during security scans of the website performed by the CivicActions Security Office
+- Issues reported by the CivicActions Security Office, Operations staff and Development
+- Security issues reported through continuous monitoring
 
 
 #### b
@@ -3659,41 +3555,23 @@ Security issues to be addressed in the planned code release may come from a vari
 ##### CivicActions
 
 The CivicActions organization defines and documents information security roles and responsibilities throughout the SDLC. The following teams participate in this process:
-* Customer Support: Files tickets when incidents are reported and shares
-  incident reports with customers
 
-* The CivicActions Security Office: Receives security
-  notifications from the Drupal security team and other software vendors;
-  performs security scans; uses CivicActions JIRA ticketing
-  system to request mitigation of all reported vulnerabilities
-
-* CivicActions Development: Performs server log analysis when
-  security incidents are reported; assists in root cause analysis
-
-* Change Control Board: Meets weekly to review and approve upcoming
-  planned code changes to the website, include security-related code
-  releases.
-
-* AWS Cloud: Monitors server and application events; proactively respond
-  to security incidents, and reports incidents to CivicActions
-
-* Users: Communicates customer security requirements and expectations, and
-  alerts the CivicActions customer support team whenever it
-  detects a security or site performance issue
+- Customer Support: Files tickets when incidents are reported and shares incident reports with customers
+- The CivicActions Security Office: Receives security notifications from the Drupal security team and other software vendors; performs security scans; uses CivicActions JIRA ticketing system to request mitigation of all reported vulnerabilities
+- CivicActions Development: Performs server log analysis when security incidents are reported; assists in root cause analysis
+- Change Control Board: Meets weekly to review and approve upcoming planned code changes to the website, include security-related code releases.
+- AWS Cloud: Monitors server and application events; proactively respond to security incidents, and reports incidents to CivicActions
+- Users: Communicates customer security requirements and expectations, and alerts the CivicActions customer support team whenever it detects a security or site performance issue
 
 Security responsibilities performed by these teams include the following:
-* Perform configuration management during information system design,
-  development, implementation, and operation;
 
-* Implement only organization-approved changes;
-* Document approved changes;
-* Manage and control changes to the system;
-* Fully test all changes, taking into account security considerations as
-  well as other functional requirements;
-
-* Track security flaws and flaw resolution; and
-* Employ code analysis tools to examine software for common flaws and
-  document the results of the analysis.
+- Perform configuration management during information system design, development, implementation, and operation;
+- Implement only organization-approved changes;
+- Document approved changes;
+- Manage and control changes to the system;
+- Fully test all changes, taking into account security considerations as well as other functional requirements;
+- Track security flaws and flaw resolution; and
+- Employ code analysis tools to examine software for common flaws and document the results of the analysis.
 
 
 #### c
@@ -3729,8 +3607,11 @@ in which the system is intended to operate; and
 ##### CivicActions
 
 The CivicActions System and Services Acquisition Policy affects all personnel with purchasing authorization and applies to all purchases or deployments including infrastructure, software or hardware. The CivicActions System and Services Acquisition Policy contains the process for determining acceptance criteria for all system software and application services.
+
 The Acquisition Security Policy includes an assessment that evaluates the product based on the vendor’s security practices, policies, and past performance. It also details the potential maintenance and end-of-life ramifications with regards to security.
+
 The CivicActions Security Office is responsible for determining the security documentation that must be included in the information system or services acquisition contracts.
+
 Configuration and design of the development and production environments are hosted in the CivicActions Git repository. All documentation is strictly controlled regarding transportation and storage in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs.
 
 
@@ -3782,6 +3663,7 @@ Some application features are built on a custom basis and are not part of standa
 ##### AWS
 
 AWS built-in features include online documentation of AWS services at http://aws.amazon.com/documentation/
+
 1. AWS built-in features include online documentation for AWS account users at
    http://aws.amazon.com/documentation/ such as user Guides, API reference guides, CLI
    reference guides and developer reference guides to provide information on how to
@@ -3800,7 +3682,9 @@ AWS built-in features include online documentation of AWS services at http://aws
 ##### CivicActions
 
 The publicly-available FOSS package documentation described in control SA-5(a) also includes user documentation for non-administrators as described in control AC-3. This includes documentation on how to create and manage user accounts as well as how to create, update and delete content.
-CivicActions follows the user documentation standard practice to provide context-sensitive help as well as access to a HelpDesk in publicly facing applications.
+
+CivicActions follows the user documentation standard practice to provide context-sensitive help as well as access to a Help Desk in publicly facing applications.
+
 The CivicActions Customer Support team, described in control SA-3(b), handles questions about how to use the system. Questions are submitted by sending an email to support@civicactions.com, which triggers the creation of a ticket in the CivicActions customer support ticketing system.
 
 
@@ -3827,7 +3711,7 @@ All administrator documentation is housed in a protected Git repository. User do
 
 ##### AWS
 
-AWS built-in features include online  documentation located at http://aws.amazon.com/documentation/ that is publicly available.
+AWS built-in features include online documentation located at http://aws.amazon.com/documentation/ that is publicly available.
 
 
 ##### CivicActions
@@ -3862,7 +3746,7 @@ The organization protects against supply chain threats to the information system
 
 ##### AWS
 
-In this architecture, initial private/public SSH keys stored in Identity and Access Management (IAM) are supplied to EC2 instances upon launch, and the public key portion is managed within the AWS EC2 service. In addition, server-side encryption encryption is used for Amazon S3 storage and Amazon RDS databases, using key management provided by AWS for the storage buckets and RDS databases.
+In this architecture, initial private/public SSH keys stored in Identity and Access Management (IAM) are supplied to EC2 instances upon launch, and the public key portion is managed within the AWS EC2 service. In addition, server-side encryption is used for Amazon S3 storage and Amazon RDS databases, using key management provided by AWS for the storage buckets and RDS databases.
 
 
 ### SA-13: Trustworthiness
@@ -3877,7 +3761,7 @@ such trustworthiness.
 
 ##### AWS
 
-In this architecture, encryption mechanisms are employed for data at rest and in transit. For data at rest, AES-256 Server Side encryption is employed for data stored in S3, and RDS databases. For data in transit, to protect against exposure of any cleartext data transmitted deliberately (upload/download) or incidentally during interactive systems management operations, Amazon S3 object access can only be conducted over encrypted sessions via TLS; the bastion host, EC2 instances and associated security groups are configured for encrypted SSH sessions only.  For web user access, the Elastic Load Balancer (ELB)  employs  a TLS endpoint.
+In this architecture, encryption mechanisms are employed for data at rest and in transit. For data at rest, AES-256 Server Side encryption is employed for data stored in S3, and RDS databases. For data in transit, to protect against exposure of any cleartext data transmitted deliberately (upload/download) or incidentally during interactive systems management operations, Amazon S3 object access can only be conducted over encrypted sessions via TLS; the bastion host, EC2 instances and associated security groups are configured for encrypted SSH sessions only. For web user access, the Elastic Load Balancer (ELB) employs a TLS endpoint.
 
 AWS built-in features employ TLS for AWS Management Console sessions, AWS API calls, and AWS Command Line Interface connections.
 
@@ -3920,9 +3804,11 @@ information (PII) is collected, used, maintained, and shared in its privacy noti
 
 ##### Privacy
 
-Project does not collect PII other than that covered by the "Roladex exception". Anonymous access is possible, but courses and community participation require an account for which these fields are required:
-* Email address -  used for identification.
-* First name, last name - used for addressing a logged in user.
+Project does not collect PII other than that covered by the "Rolodex exception". Anonymous access is possible, but courses and community participation require an account for which these fields are required:
+
+- Email address - used for identification.
+- First name, last name - used for addressing a logged in user.
+
 Any additional information is entered by the user at will as part of coursework or to enhance community participation in forums.
 
 
@@ -3956,7 +3842,8 @@ programs,
 
 ##### Privacy
 
-< Project does not collect or maintain PII and therefore does not directly address this control though it may address it indirectly.
+Project does not collect or maintain PII and therefore does not directly address this control though it may address it indirectly.
+
 
 ### AR-2: PRIVACY IMPACT AND RISK ASSESSMENT
 
@@ -4384,19 +4271,13 @@ Project publishes a privacy policy in the footer of every page. Further, upon lo
 ##### Privacy
 
 The information is collected on the Project is for identification and authentication purposes, allowing individuals to:
-* Identify themselves to the system
-* Authenticate with the system to prove that they are the same person
-  when they return
 
-* Enable emailed password reset
-* Access control (e.g. updating notification settings, following a
-  moderation of a discussion, etc.)
-
-* Carry out actions that impact that individual (e.g. joining a course
-  or signing up for a mailing list subscription)
-
-* Publish information to make it available to others (e.g. forum posting,
-  comment on publications of learning resources, etc.)
+- Identify themselves to the system
+- Authenticate with the system to prove that they are the same person when they return
+- Enable emailed password reset
+- Access control (e.g. updating notification settings, following a moderation of a discussion, etc.)
+- Carry out actions that impact that individual (e.g. joining a course or signing up for a mailing list subscription)
+- Publish information to make it available to others (e.g. forum posting, comment on publications of learning resources, etc.)
 
 
 ### UL-2: INFORMATION SHARING WITH THIRD PARTIES

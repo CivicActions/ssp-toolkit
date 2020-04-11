@@ -15,7 +15,7 @@ satisfies:
       implementation of the policy and associated controls. This information is
       maintained in the CivicActions Planning (PL) Policy and
       Procedure document that can be found in the CivicActions
-      Github repository at <https://github.com/CivicActions/compliance-docs/>.
+      GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
   implementation_status: complete
 - control_key: PL-2
   control_name: SYSTEM SECURITY PLAN
@@ -31,28 +31,24 @@ satisfies:
       security requirements and controls meeting the requirements of the NIST
       Risk Management Framework (RMF). Specifically the SSP:
 
+
       1. Is consistent with the organization’s enterprise architecture
 
       2. Explicitly defines the authorization boundary for the system
 
-      3. Describes the operational context of the information system in terms
-         of missions and business processes
+      3. Describes the operational context of the information system in terms of missions and business processes
 
-      4. Provides the security categorization of the information system
-         including supporting rationale
+      4. Provides the security categorization of the information system including supporting rationale
 
-      5. Describes the operational environment for the information system and
-         relationships with or connections to other information systems
+      5. Describes the operational environment for the information system and relationships with or connections to other information systems
 
       6. Provides an overview of the security requirements for the system
 
       7. Identifies any relevant overlays, if applicable
 
-      8. Describes the security controls in place or planned for meeting those
-         requirements including a rationale for the tailoring decisions
+      8. Describes the security controls in place or planned for meeting those requirements including a rationale for the tailoring decisions
 
-      9. Is reviewed and approved by the authorizing official or designated
-         representative prior to plan implementation
+      9. Is reviewed and approved by the authorizing official or designated representative prior to plan implementation
   - key: b
     text: >
       The SSP is reviewed and approved by the authorizing official prior to

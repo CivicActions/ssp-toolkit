@@ -25,7 +25,7 @@ frequency].
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Information Integrity (SI) Policy document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
+CivicActions has developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Information Integrity (SI) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
 ### SI-2: Flaw Remediation
@@ -48,13 +48,14 @@ process.
 ##### CivicActions
 
 Identification of information system security flaws are detected as early as possible by the following methods:
-* Vulnerability scans, as described in RA-5.
-* Log analysis from monitoring described in SI-4.
-* Service flaw notifications (CVEs, etc.) are received by the
-  CivicActions Security Office and passed on to
-  CicvicActions Operations staff when relevant.
 
-Any security issues found are ticketed through JIRA and/or the Git issue queue. CivicActions Operations staff prioritizes high findings.  Changes made to correct the information system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB as implemented in CM-3.
+- Vulnerability scans, as described in RA-5.
+- Log analysis from monitoring described in SI-4.
+- Service flaw notifications (CVEs, etc.) are received by the
+  CivicActions Security Office and passed on to
+  CivicActions Operations staff when relevant.
+
+Any security issues found are ticketed through JIRA and/or the Git issue queue. CivicActions Operations staff prioritizes high findings. Changes made to correct the information system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB as implemented in CM-3.
 
 
 #### b
@@ -75,7 +76,7 @@ CivicActions security-software updates are tested prior to implementation on pro
 
 ##### CivicActions
 
-Flaw remediation is part of the CivicActions configuration management process.  Any security issues found are ticketed through JIRA or the Git issue queue. The CivicActions Security Office prioritizes the high findings within the application. Changes made to correct the system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB Chair as implemented in CM-3.
+Flaw remediation is part of the CivicActions configuration management process. Any security issues found are ticketed through JIRA or the Git issue queue. The CivicActions Security Office prioritizes the high findings within the application. Changes made to correct the system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB Chair as implemented in CM-3.
 
 
 ### SI-3: Malicious Code Protection
@@ -157,15 +158,16 @@ information] to [Assignment: organization-defined personnel or roles] [Selection
 ##### CivicActions
 
 CivicActions systems use a collection of monitoring systems, including:
-* ClamAV - provides signature-based malware detection/quarantine
-* OSSEC host-based intrusion detection system (HIDS)
-* AIDE Advanced Intrusion Detection Environment (IDS))
-* fail2ban, an intrusion prevention system (IPS) framework
-* SELinux - a Mandatory Access Control (MAC) IPS
-* auditd - a secure system audit daemon
-* CloudWatch - AWS monitoring and measurement system
-* StatusCake - website monitoring tool
-* OpsGenie - a slack/email/text/phone incident escalation tool
+
+- ClamAV - provides signature-based malware detection/quarantine
+- OSSEC host-based intrusion detection system (HIDS)
+- AIDE Advanced Intrusion Detection Environment (IDS))
+- fail2ban, an intrusion prevention system (IPS) framework
+- SELinux - a Mandatory Access Control (MAC) IPS
+- auditd - a secure system audit daemon
+- CloudWatch - AWS monitoring and measurement system
+- StatusCake - website monitoring tool
+- OpsGenie - a slack/email/text/phone incident escalation tool
 
 
 #### b
@@ -199,7 +201,7 @@ In the event of a performance score lower than CivicActions standards, a notific
 
 ##### CivicActions
 
-Internal legal counsel is utilized as required when system notifications indicate such action based on user and/or malicious activity.  Legal counsel is engaged for any actions that may necessitate increased user monitoring or evidence/forensic actions.
+Internal legal counsel is utilized as required when system notifications indicate such action based on user and/or malicious activity. Legal counsel is engaged for any actions that may necessitate increased user monitoring or evidence/forensic actions.
 
 
 #### g
@@ -230,17 +232,18 @@ or notifies the issuing organization of the degree of noncompliance.
 ##### CivicActions
 
 The CivicActions Security Office and Operations staff receive the following security alerts, advisories, and directives on an ongoing basis:
-* Mailing lists relevant to web application security
-* US-CERT
-* Technical Cyber Security Alerts
-* Drupal Security Advisories
+
+- Mailing lists relevant to web application security
+- US-CERT
+- Technical Cyber Security Alerts
+- Drupal Security Advisories
 
 
 #### b
 
 ##### CivicActions
 
-CivicActions utilizes StatusCake for front line monitoring for real-time system status and events of the application. StatusCake can feed to the OpsGenie incident escalation system.
+CivicActions utilizes StatusCake for front line monitoring for real time system status and events of the application. StatusCake can feed to the OpsGenie incident escalation system.
 
 
 #### c

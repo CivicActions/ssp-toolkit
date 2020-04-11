@@ -65,13 +65,14 @@ createfiles -i configuration.yaml -t templates
 2. Generate markdown versions of the RMF control implementation family files in the `/docs/controls/` directory:
 
 ```bash
+mkdir -p docs/controls
 makefamilies
 ```
 
 3. Generate Microsoft Word (.docx) versions of the control family files (see the `docx/` directory):
 
 ```bash
-exportto docs/controls
+exportto -c docs/controls
 ```
 
 4. Generate a reponsiblity matrix with:

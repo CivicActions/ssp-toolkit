@@ -1,0 +1,140 @@
+family: IDENTIFICATION AND AUTHENTICATION
+documentation_complete: false
+satisfies:
+- control_key: IA-4
+  control_name: IDENTIFIER MANAGEMENT
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: Upon account creation, the Ilias software assigns each user account a unique
+      numerical user ID (UID). This UID is used internally by the system to track
+      user actions such as content creation or editing. The numerical user IDs are
+      never reused even if their user accounts are subsequently blocked or deleted.
+  - key: b
+    text: When Ilias user accounts are created, users' email addresses are verified
+      by sending a single-use activation link to the user’s mailbox. The email recipient
+      then uses the activation link to log in to the website and supply a password
+      which must meet the system's password complexity requirements.
+  - key: c
+    text: Identifiers for CivicActions internal personnel include a username based
+      on the individual's full first and last name and are reviewed for uniqueness
+      by the admin group when it approves the creation of the user account.
+  - key: d
+    text: Ilias user's unique identifier (the numeric user ID, or UID) is never reused.
+  implementation_status: 
+- control_key: IA-5
+  control_name: AUTHENTICATOR MANAGEMENT
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: >
+      Refer to control AC-2 in this SSP for further details on account provisioning.
+
+      CivicActions will create and maintain an initial Ilias Administrator (highest
+      level of Ilias Account). New Administrators are able to provide additional
+      Administrator access at their own discretion and are ultimately responsible
+      for managing their own Administrator and other user accounts that they create.
+  - key: b
+    text: Initial authenticator content (a unique email address – not previously used
+      in any other account) is provided by the user. Internal initial password requirements
+      set by CivicActions Operations and ongoing password refreshes by internal
+      users follow the requirements set in the Identification and Authentication Policy.
+  - key: c
+    text: The system partially inherits this control from Ilias standard password
+      strength mechanisms.
+  - key: d
+    text: |
+      The system partially inherits this control from Ilias standard password management.
+      All password creation/change/reset operations are recorded in the website's Ilias logs.
+  - key: e
+    text: Ilias requires users to change their password upon initial login, and the
+      application website enforces this. Each user account is assigned a default
+      password that is randomly generated, not possible to guess, and not shared
+      with anyone, including site administrators. When the user logs in and
+      creates a new password, the default password is erased from the website
+      database.
+  - key: h
+    text: For all Ilias users, passwords are protected by the website's software,
+      which only stores an encrypted string based on the password. This means that
+      even if the website's database should be compromised, an attacker would still
+      be unable to know users' actual passwords. Internal users receive training in
+      security awareness and acceptable use and are instructed never to reveal their
+      passwords to anyone.
+  - key: i
+    text: >
+      Ilias users are required to take appropriate measures in the handling of passwords
+      including:
+
+      * Not transmitting user names and passwords together in an unencrypted format
+
+      * Not permitting the sending of passwords in an unencrypted format via email
+
+      * Not listing passwords in tickets
+
+      * Not writing down or storing passwords in a readable form in any physical or
+      logical location where they may be discoverable by unauthorized persons.
+  - key: j
+    text: This control is not applicable due to the fact that group accounts are not
+      created within the Ilias application per IA Policy.
+  implementation_status: 
+- control_key: IA-5 (1)
+  control_name: PASSWORD-BASED AUTHENTICATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: >
+      Ilias supports the requirement for password-based authentication complexity.
+      New users of Ilias are required to specify their password authentication as
+      soon as they log in to the website for the first. The website requires all
+      submitted passwords to comply with validation rules, as described above in IA-5(c).
+
+      Changing password lifetime, length, reuse or strength requirements requires
+      a code setting change that therefore needs to be planned and approved by {'name': 'CivicActions, Inc', 'name_short': 'CivicActions', 'address': {'street': '3527 Mt Diablo Blvd, Unit 269', 'city': 'Lafayette', 'state': 'CA', 'zip': 94549, 'country': None}, 'phone': '510-408-7510', 'website': 'www.civicactions.com', 'compliance_docs_url': 'https://github.com/CivicActions/compliance-docs', 'email_support': 'support@civicactions.com', 'security_policy_url': 'https://github.com/CivicActions/security-policy'}' Change Control Board before being implemented.
+  - key: b
+    text: When required to change passwords, Ilias users are required to change their
+      authenticator password by changing at least one character. Enforcement of this
+      control is implemented through the website's software configuration.
+  - key: c
+    text: All Ilias passwords are encrypted in storage, using the SHA-512 hashing
+      algorithm with a salt. The hash function is performed repeatedly to further
+      obfuscate the password via key stretching. In transmission, passwords are encrypted
+      using SSL via HTTPS.
+  - key: d
+    text: The website requires all submitted passwords to comply with lifetime rules,
+      as described above in IA-5(g).
+  - key: e
+    text: Password reuse is limited through software configuration.
+  - key: f
+    text: When website users request a password reset, the website sends a temporary
+      login link to the email address associated with their user account. After a
+      user logs in via the temporary login link, the website requires the user to
+      enter a new password before proceeding further.
+  implementation_status: 
+- control_key: IA-6
+  control_name: AUTHENTICATOR FEEDBACK
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: System Specific Control
+  narrative:
+  - text: Feedback of authentication information is obscured during the authentication
+      process into the Ilias application by displaying “dots” in the place of a password,
+      as is standard for web-based applications. In transmission, passwords are encrypted
+      using SSL via HTTPS.
+  implementation_status: 
+- control_key: IA-7
+  control_name: CRYPTOGRAPHIC MODULE AUTHENTICATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: System Specific Control
+  narrative:
+  - text: All Ilias passwords are encrypted in storage, using the SHA-512 hashing
+      algorithm with a salt. SHA-512 is an approved security function under FIPS PUB
+      140-2. The hash function is performed repeatedly to further obfuscate the password
+      via key stretching. In transmission, passwords are encrypted using SSL via HTTPS.
+  implementation_status: 

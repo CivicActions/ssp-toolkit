@@ -66,29 +66,19 @@ key contingency personnel (identified by name and/or by role) and organizational
 ##### CivicActions
 
 CivicActions has developed a contingency plan for that addresses:
-1. Essential missions, business functions, and associated contingency
-   requirements
-
+1. Essential missions, business functions, and associated contingency requirements
 2. Recovery objectives, restoration priorities, and metrics
-3. Roles and responsibilities are identified in the CP and include the ISCP
-   Director, Incident Commander (IC), CivicActions Coordinator,
-   and CivicActions Information System Security Officer (ISSO).
-
-4. Maintaining essential missions and business functions despite an
-   information system disruption, compromise, or failure
-
-5. Full information system restoration without deterioration of the security
-   safeguards originally planned and implemented
-
-6. The ISCP is reviewed and approved by ISCP Director, Incident Commander
-   (IC), CivicActions ISSO and the System Owner annually.
+3. Roles and responsibilities are identified in the CP and include the ISCP Director, Incident Commander (IC), CivicActions Coordinator, and CivicActions Information System Security Officer (ISSO).
+4. Maintaining essential missions and business functions despite an information system disruption, compromise, or failure
+5. Full information system restoration without deterioration of the security safeguards originally planned and implemented
+6. The ISCP is reviewed and approved by ISCP Director, Incident Commander (IC), CivicActions ISSO and the System Owner annually.
 
 
 #### b
 
 ##### CivicActions
 
-The CivicActions Information System Contingency Plan (ISCP) has been distributed to all CivicActons team members. The ISCP can be found in the CivicActions Handbook at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan>.
+The CivicActions Information System Contingency Plan (ISCP) has been distributed to all CivicActions team members. The ISCP can be found in the CivicActions Handbook at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan>.
 
 
 #### c
@@ -123,7 +113,7 @@ The ISCP requires that changes to the plan be communicated to those on the Incid
 
 ##### CivicActions
 
-The ISCP is available on CivicActions Github repository. This repository provides the configuration management capabilities for the ISCP to be protected from unauthorized disclosure and modification.
+The ISCP is available on CivicActions GitHub repository. This repository provides the configuration management capabilities for the ISCP to be protected from unauthorized disclosure and modification.
 
 
 ### CP-3: Contingency Training
@@ -198,7 +188,7 @@ CivicActions conducts system user-level information backup in accordance with re
 
 ##### AWS
 
-AWS built-in features automatically backs up system-level information limited to infrastructure CONFIGURATION information within the AWS account.  While individual running  EC2 instances and attached EBS volumnes  are NOT backed up, they can be reconstituted from Amazon Machine Images (AMIs) provided  by AWS (which are backed up by AWS) and user data scripts included in CloudFormation templates.  Once deployed, the CloudFormation template contents are backed up by AWS R488within the CloudFormation service. These AWS backups of AWS services are transparent to the customer as part of AWS backend processes.
+AWS built-in features automatically backs up system-level information limited to infrastructure CONFIGURATION information within the AWS account. While individual running EC2 instances and attached EBS volumes are NOT backed up, they can be reconstituted from Amazon Machine Images (AMIs) provided by AWS (which are backed up by AWS) and user data scripts included in CloudFormation templates. Once deployed, the CloudFormation template contents are backed up by AWS R488within the CloudFormation service. These AWS backups of AWS services are transparent to the customer as part of AWS backend processes.
 
 
 ##### CivicActions
@@ -222,7 +212,7 @@ System documentation is backed up from the GitHub repository on a daily basis wi
 
 ##### AWS
 
-AWS built-in features  protect the  confidentiality, integrity, and availability of information that AWS services back up.   This information includes the service configuration information within an account,  AWS online administrator and developer documentation, and AWS CloudFormation stacks for templates once deployed into an account. R612
+AWS built-in features protect the confidentiality, integrity, and availability of information that AWS services back up. This information includes the service configuration information within an account, AWS online administrator and developer documentation, and AWS CloudFormation stacks for templates once deployed into an account. R612
 
 
 ##### CivicActions

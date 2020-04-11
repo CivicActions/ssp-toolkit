@@ -27,7 +27,7 @@ frequency].
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel an identification and authentication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained by the CivicActions Identification and Authentication (IA) Policy. This document can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs>.
+CivicActions has developed, documented and disseminated to personnel an identification and authentication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained by the CivicActions Identification and Authentication (IA) Policy. This document can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 ### IA-2: Identification And Authentication (Organizational Users)
@@ -38,7 +38,7 @@ The information system uniquely identifies and authenticates organizational user
 
 ##### AWS
 
-AWS built-in features of Identity and Access Management (IAM) provides the capability for uniquely identifying and authenticating  users and processes acting on their behalf to both organizational and non-organizational users operating within the AWS account and infrastructure, providing privileges based on the credentials, group memberships, and access policies assigned to them.  The customer organization, at its discretion, provides individual user accounts and privileges to both organizational non-organizational users in addition to organizational users.
+AWS built-in features of Identity and Access Management (IAM) provides the capability for uniquely identifying and authenticating users and processes acting on their behalf to both organizational and non-organizational users operating within the AWS account and infrastructure, providing privileges based on the credentials, group memberships, and access policies assigned to them. The customer organization, at its discretion, provides individual user accounts and privileges to both organizational non-organizational users in addition to organizational users.
 
 
 ### IA-2 (1): Network Access To Privileged Accounts
@@ -52,6 +52,7 @@ The information system implements multifactor authentication for network access 
 ##### CivicActions
 
 CivicActions system administrators employ a personal public- key pair for basic access and must originate from a whitelisted IP address. The whitelist is maintained by an Ansible inventory file, the current complete list (includes dev sites) of users with whitelisted IPs is in artifact: None
+
 To access root (sudo) privileges an additional password is required. The passwords are maintained in encrypted form in the Ansible inventory file. The mechanism to enable select users to use a password to obtain root access can be viewed in artifact: None
 
 
@@ -95,6 +96,7 @@ Upon account creation, the Drupal software assigns each user account a unique nu
 ##### CivicActions
 
 User accounts are assigned a unique identifier in the form of a unique username, password and email address based on the system for allocating user accounts described in AC-2.
+
 In accordance with CivicActions Identification and Authentication (IA) Policy outlined at <https://github.com/CivicActions/compliance-docs>, CivicActions internal users are uniquely identified by the creation of an organizational account with a username based on each user's first and last names.
 
 
@@ -192,7 +194,7 @@ The system partially inherits this control from Drupal standard password managem
 
 ##### Drupal
 
-Drupal requires users to change their password upon initial login, and the application website enforces this. User accounts are assigned a randomly-generated and unguessable default password that is not shared with anyone, including site Administrators. Once the user logs in and creates a new password, the default password erased from the website's database.
+Drupal requires users to change their password upon initial login, and the application website enforces this. Each user account is assigned a default password that is randomly generated, not possible to guess, and not shared with anyone, including site administrators. When the user logs in and creates a new password, the default password is erased from the website database.
 
 
 #### h
@@ -207,25 +209,21 @@ For all Drupal users, passwords are protected by the website's software, which o
 ##### CivicActions
 
 CivicActions users are required to take appropriate measures in the handling of passwords including:
-* Not transmitting user names and passwords together in an unencrypted
-  format
 
-* Not permitting the sending of passwords in an unencrypted format via
-  email
-
-* Not listing passwords in tickets
-* Not writing down or storing passwords in a readable form in any physical
-  or logical location where they may be discoverable by unauthorized
-  persons.
+- Not transmitting user names and passwords together in an unencrypted format
+- Not permitting the sending of passwords in an unencrypted format via email
+- Not listing passwords in tickets
+- Not writing down or storing passwords in a readable form in any physical or logical location where they may be discoverable by unauthorized persons.
 
 
 ##### Drupal
 
 Drupal users are required to take appropriate measures in the handling of passwords including:
-* Not transmitting user names and passwords together in an unencrypted format
-* Not permitting the sending of passwords in an unencrypted format via email
-* Not listing passwords in tickets
-* Not writing down or storing passwords in a readable form in any physical or logical location where they may be discoverable by unauthorized persons.
+
+- Not transmitting user names and passwords together in an unencrypted format
+- Not permitting the sending of passwords in an unencrypted format via email
+- Not listing passwords in tickets
+- Not writing down or storing passwords in a readable form in any physical or logical location where they may be discoverable by unauthorized persons.
 
 
 #### j
@@ -259,12 +257,12 @@ change to a permanent password.
 
 ##### AWS
 
-AWS built-in features of Identity and Access Management (IAM) provides minimum password complexity enforcement, but the characteristics to enforce must be manually configured by the customer.  Refer to http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html
+AWS built-in features of Identity and Access Management (IAM) provides minimum password complexity enforcement, but the characteristics to enforce must be manually configured by the customer. Refer to http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html
 
 
 ##### Drupal
 
-Drupal supports the requirement for password-based authentication complexity. New users of Drupal are required to specify their password authentication as soon as they log in to the website for the first.  The website requires all submitted passwords to comply with validation rules, as described above in IA-5(c).
+Drupal supports the requirement for password-based authentication complexity. New users of Drupal are required to specify their password authentication as soon as they log in to the website for the first. The website requires all submitted passwords to comply with validation rules, as described above in IA-5(c).
 Changing password lifetime, length, reuse or strength requirements requires a code setting change that therefore needs to be planned and approved by CivicActions Change Control Board before being implemented.
 
 
@@ -279,7 +277,7 @@ When required to change passwords, Drupal users are required to change their aut
 
 ##### AWS
 
-AWS built-in features of AWS Identity and Access Management (IAM) and the AWS Console store passwords on AWS systems in a cryptographically-protected format and only support TLS connectivity to the console web site to protect passwords in transit via encyption.
+AWS built-in features of AWS Identity and Access Management (IAM) and the AWS Console store passwords on AWS systems in a cryptographically-protected format and only support TLS connectivity to the console web site to protect passwords in transit via encryption.
 
 
 ##### Drupal
@@ -303,7 +301,7 @@ Password reuse is limited through software configuration.
 
 ##### AWS
 
-AWS built-in features of AWS Identity and Access Management (IAM) provides the capability to require new password to be entered upon login.   The customer organization, at its discretion, configures IAM to enforce that requirement.
+AWS built-in features of AWS Identity and Access Management (IAM) provides the capability to require new password to be entered upon login. The customer organization, at its discretion, configures IAM to enforce that requirement.
 
 
 ##### Drupal
@@ -338,7 +336,7 @@ The information system obscures feedback of authentication information during th
 
 In this architecture, All EC2 instances (bastion host, web/proxy servers, application servers) employ SSH for interactive login, and when a key passphrase is prompted for, the SSH prompting mechanism obscures the feedback by default.
 
-AWS built-in features obscure keystroke feedback for password input during AWS console login with AWS  Identity and Access Management (IAM)  user credentials, and when the CloudFormation console prompts for an initial database password during Quick Start template deployment.
+AWS built-in features obscure keystroke feedback for password input during AWS console login with AWS Identity and Access Management (IAM) user credentials, and when the CloudFormation console prompts for an initial database password during Quick Start template deployment.
 
 
 ##### Drupal

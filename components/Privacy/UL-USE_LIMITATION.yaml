@@ -11,21 +11,18 @@ satisfies:
       The information is collected on the Project is for
       identification and authentication purposes, allowing individuals to:
 
-      * Identify themselves to the system
 
-      * Authenticate with the system to prove that they are the same person
-        when they return
+      - Identify themselves to the system
 
-      * Enable emailed password reset
+      - Authenticate with the system to prove that they are the same person when they return
 
-      * Access control (e.g. updating notification settings, following a
-        moderation of a discussion, etc.)
+      - Enable emailed password reset
 
-      * Carry out actions that impact that individual (e.g. joining a course
-        or signing up for a mailing list subscription)
+      - Access control (e.g. updating notification settings, following a moderation of a discussion, etc.)
 
-      * Publish information to make it available to others (e.g. forum posting,
-        comment on publications of learning resources, etc.)
+      - Carry out actions that impact that individual (e.g. joining a course or signing up for a mailing list subscription)
+
+      - Publish information to make it available to others (e.g. forum posting, comment on publications of learning resources, etc.)
   implementation_status: In Place
 - control_key: UL-2
   control_name: INFORMATION SHARING WITH THIRD PARTIES

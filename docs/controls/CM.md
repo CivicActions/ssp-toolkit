@@ -40,6 +40,7 @@ The organization develops, documents, and maintains under configuration control,
 ##### AWS
 
 Hardware Baselines
+
 All hardware is maintained by AWS Cloud. The system therefore inherits hardware configuration aspects of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: baseline configuration.
 
 
@@ -106,7 +107,7 @@ and/or services: [Assignment: organization-defined prohibited or restricted func
 
 ##### AWS
 
-In this architecture, only essential capabilities for a multi-tiered web service are configured. AWS Identity and Access Management (IAM) baseline Groups and Roles are configured to support restricted access to AWS resources by  privileged users and non-person entities (EC2 systems operating with a role) authorized and assigned by the organization.
+In this architecture, only essential capabilities for a multi-tiered web service are configured. AWS Identity and Access Management (IAM) baseline Groups and Roles are configured to support restricted access to AWS resources by privileged users and non-person entities (EC2 systems operating with a role) authorized and assigned by the organization.
 
 
 #### b
@@ -139,22 +140,11 @@ organization-defined frequency].
 ##### AWS
 
 AWS built-in features dynamically build and maintain an inventory of system components (infrastructure inventory)
-1. AWS built-in features provide an accurate, real-time inventory of all infrastructure
-   system and network components within the customer account and provides a single view
-   for granularity for tracking and reporting.
 
-2. AWS built-in features provide an accurate, real-time inventory of all infrastructure
-   system and network components within the AWS account, and  AWS CloudFormation
-   creates a unique set of stack names, and associated resource names  incorporate the
-   stack name, for tracking components deployed by Cloudformation templates that align
-   with an authorization boundary.
-
-3. AWS built-in features provide a level of granularity for tracking and reporting on
-   all infrastructure system and network components and configuration settings for
-   those components.
-
-4. AWS built-in features provide all available information about all infrastructure
-   system and network components to achieve effective component accountability.
+1. AWS built-in features provide an accurate, real time inventory of all infrastructure system and network components within the customer account and provides a single view for granularity for tracking and reporting.
+2. AWS built-in features provide an accurate, real time inventory of all infrastructure system and network components within the AWS account, and  AWS CloudFormation creates a unique set of stack names, and associated resource names  incorporate the stack name, for tracking components deployed by CloudFormation templates that align with an authorization boundary.
+3. AWS built-in features provide a level of granularity for tracking and reporting on all infrastructure system and network components and configuration settings for those components.
+4. AWS built-in features provide all available information about all infrastructure system and network components to achieve effective component accountability.
 
 
 #### b

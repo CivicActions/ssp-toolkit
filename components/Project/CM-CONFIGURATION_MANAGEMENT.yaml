@@ -1,0 +1,113 @@
+family: CONFIGURATION MANAGEMENT
+documentation_complete: false
+satisfies:
+- control_key: CM-1
+  control_name: CONFIGURATION MANAGEMENT POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The configuration management policy and procedures are formally
+      documented in the Project Configuration Management Plan
+      (CMP), which provides the roles and responsibilities as it pertains to
+      physical and environmental protection. It defines responsibilities for
+      the implementation and oversight of the guidance contained herein.
+      Client reviews and updates the policy as necessary.
+  implementation_status: complete
+  summary: >
+    Configuration management policy and procedures documented in the
+    Project Configuration Management Plan
+- control_key: CM-2
+  control_name: BASELINE CONFIGURATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      A CM process has been established and documented in the
+      Project CMP. All updates are made in accordance with the
+      procedures outlined in the CMP. The CM process establishes a baseline of
+      hardware, software, firmware and documentation, as well as changes
+      thereto, throughout the development and life cycle of the information
+      system. CM ensures the control of the information system through its life
+      cycle. It assures that additions, deletions, or changes made to the
+      Project system do not unintentionally or unknowingly
+      diminish security. If the change is major, the security of the system
+      must be re-analyzed.
+  implementation_status: complete
+  summary: >
+    A CM process has been established and documented in the
+    Project CMP.
+- control_key: CM-4
+  control_name: SECURITY IMPACT ANALYSIS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      An Information Security Program is in place to ensure all security-centric
+      impacts to the Project are properly analyzed and conducted
+      by personnel with information security responsibilities (i.e.,
+      Project SSO, IT Security Officer, etc.). These individuals
+      have the appropriate skills and technical expertise to analyze the changes
+      to the Project and their associated security ramifications.
+      In support of continuous monitoring and to ensure the Project
+      system lifecycle is fully sustained, a risk assessment process, be it
+      formal or informal, is performed when changes are occur. This ensures
+      that The Client understands the security impacts and can
+      determine if additional security controls are required.
+  implementation_status: complete
+- control_key: CM-6
+  control_name: CONFIGURATION SETTINGS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: >
+      The Project is configured in compliance with the
+      applicable baseline security standards. The Department and its technical
+      support staff configure the security settings of all IT products to the
+      most restrictive mode consistent with information system operational
+      requirements. Project utilizes the NIST Special Publication
+      800-70 for guidance on configuration settings (checklists) for information
+      technology products. When security setting checklist are not available
+      from NIST for a particular device, good security engineering practices
+      along with manufacture guidelines is used to develop the security settings.
+      The CM Manager conducts configuration audits to ensure baseline compliance
+      and documentation of hardware/software configurations throughout the system
+      lifecycle.
+  - key: b
+    text: >
+      Configuration settings are implemented, monitored, and controlled in
+      accordance with the organizational Configuration Management Plan for the
+      security configuration management processes and tools.
+  - key: c
+    text: >
+      Currently, deviations do not exist for established configuration settings.
+      In the event this changes, the following notes the process that will take
+      place.
+
+      The CivicActions CCB, identifies, approves, and documents
+      exceptions to mandatory configuration settings for individual components
+      within its cloud offering only when operationally necessary. All variances
+      identified during the monthly and annual system testing scans that must be accepted for operational purposes are tracked.
+  implementation_status: partial
+- control_key: CM-7
+  control_name: LEAST FUNCTIONALITY
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: |
+      Services are limited to provide only essential capabilities.
+  - key: b
+    text: >
+      The Project maintains strict default deny policy with
+      access controls at the firewall, and on individual systems. Inbound
+      access across the system boundary is only allowed on ports 22 (ssh), 80
+      (http) and 443 (https), with an additional port, 25 (smtp) open on the
+      mail server.
+  implementation_status: complete

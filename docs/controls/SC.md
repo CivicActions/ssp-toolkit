@@ -25,7 +25,7 @@ frequency].
 
 ##### CivicActions
 
-CivicActions has developed, documented and disseminated to personnel a system and communication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Communications Protection (SC) Policy CivicActions document that can be found in the CivicActions Github repository at <https://github.com/CivicActions/compliance-docs/>.
+CivicActions has developed, documented and disseminated to personnel a system and communication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Communications Protection (SC) Policy CivicActions document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
 ### SC-5: Denial Of Service Protection
@@ -63,14 +63,14 @@ Drupal, when deployed on SELinux in full enforcing mode, minimizes the number of
 
 ##### AWS
 
-In this architecture,  network communications to, from, and between VPCs,  subnets and S3 buckets are controlled as follows:  AWS Route Tables specify which subnets in each VPC are accessible through gateways and which are isolated/private. AWS Security Groups provide stateful inbound/outbound port/protocol restrictions, Amazon Simple Storage Service (Amazon S3) buckets support access control  restrictions based on network source/destination.
+In this architecture, network communications to, from, and between VPCs, subnets and S3 buckets are controlled as follows: AWS Route Tables specify which subnets in each VPC are accessible through gateways and which are isolated/private. AWS Security Groups provide stateful inbound/outbound port/protocol restrictions, Amazon Simple Storage Service (Amazon S3) buckets support access control restrictions based on network source/destination.
 
 
 #### b
 
 ##### AWS
 
-In this architecture, subnetworks for publicly accessible system components  are logically separated from internal private subnetworks via AWS  security groups, refined routing tables, and NACLs.
+In this architecture, subnetworks for publicly accessible system components are logically separated from internal private subnetworks via AWS security groups, refined routing tables, and NACLs.
 
 
 #### c
@@ -91,13 +91,11 @@ The information system implements [Assignment: organization-defined cryptographi
 ##### CivicActions
 
 The information system implements:
-* Cryptographic modules through Secure Shell (SSH) to allow administrators
-  to securely logon to the various system components
 
-* HTTPS/SSL (TLS) for connection to web-based services
-* TLS for connection to email services
-* AES-256 (FIPS 140-2 validated) for data at rest (with Elastic Block
-  Store (EBS) volumes)
+- Cryptographic modules through Secure Shell (SSH) to allow administrators to securely logon to the various system components
+- HTTPS/SSL (TLS) for connection to web-based services
+- TLS for connection to email services
+- AES-256 (FIPS 140-2 validated) for data at rest (with Elastic Block Store (EBS) volumes)
 
 
 ### SC-20: Secure Name / Address Resolution Service (Authoritative Source)

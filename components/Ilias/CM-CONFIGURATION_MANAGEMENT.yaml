@@ -1,0 +1,59 @@
+family: CONFIGURATION MANAGEMENT
+documentation_complete: false
+satisfies:
+- control_key: CM-2
+  control_name: BASELINE CONFIGURATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The baseline configuration is maintained in Git and described in the Configuration
+      Management Plan, which describes the change workflow and software configuration.
+      In the context of Security Configuration Management, the baseline configuration
+      is a collection of formally approved configuration state(s) of one or more configuration
+      items ("features") that compose the system. The baseline configuration is used
+      to restore and serves as the basis against which the next change or set of changes
+      to the system is made.
+
+      The features for the system are maintained in the website's source code, which
+      is managed in Git, a source code version control system. Once the source code
+      is updated, Git maintains the new version of staged code once committed in the
+      Git repository as the new baseline. All code prior to it being staged is documented,
+      tested and approved by CivicActions Development, which is described in control
+      SA-3. The production environment is configured to take database snapshots daily.
+  implementation_status: 
+- control_key: CM-8
+  control_name: INFORMATION SYSTEM COMPONENT INVENTORY
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The software inventory for the application is maintained in the codebase stored
+      CivicActions' Git source code version control system. It consists of the
+      following components:
+
+      * The Ilias open-source web learning management system
+
+      * Ilias add-on modules, themes, and libraries available from the Ilias.de website
+      which extend Ilias core
+
+      * Custom code written by CivicActions' developers
+
+      The inventory is reviewed monthly by CivicActions Product Engineering teams
+      in accordance with the Configuration Management Plan.
+
+      Website content is backed up daily using CPM snapshots. This allows CivicActions
+      to build an inventory of the system on demand.
+  implementation_status: 
+- control_key: CM-10
+  control_name: SOFTWARE USAGE RESTRICTIONS
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: Ilias is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These
+      are all compatible with the Free Software Foundation's General Public License
+      (GPL) version 2 or later and are freely available for use under copyright law.
+  implementation_status: 

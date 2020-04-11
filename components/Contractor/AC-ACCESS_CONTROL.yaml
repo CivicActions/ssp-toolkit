@@ -27,11 +27,13 @@ satisfies:
       CivicActions Operations staff, in collaboration with CivicActions' Security
       Office, will set up privileged accounts for the following roles:
 
-      * Developer - a user-level account that has access to application features and
+
+      - Developer - a user-level account that has access to application features and
       sanitized databases
 
-      * System Administrator - user accounts that enjoy full system administrator
+      - System Administrator - user accounts that enjoy full system administrator
       access
+
   - key: b
     text: >
       CivicActions' Project Manager assigns the "administrator" role for the management
@@ -54,12 +56,13 @@ satisfies:
   - key: f
     text: |
       CivicActions Operations staff is responsible for the following account management activities for both internal administrative users and customer accounts:
-      * Establishing account justification
-      * Activating accounts
-      * Modifying accounts
-      * Expiring accounts
-      * Disabling accounts
-      * Removing accounts
+
+      - Establishing account justification
+      - Activating accounts
+      - Modifying accounts
+      - Expiring accounts
+      - Disabling accounts
+      - Removing accounts
   - key: g
     text: All CivicActions systems log the usage of information accounts.
   - key: h
@@ -93,7 +96,7 @@ satisfies:
   narrative:
   - text: >
       The CivicActions Access Control (AC) policy defines policy for remote usage
-      restrictions.  The Project Manager or System Owner may additionally provision
+      restrictions. The Project Manager or System Owner may additionally provision
       users according to their Access Control policies.
   implementation_status: complete
 - control_key: AC-18

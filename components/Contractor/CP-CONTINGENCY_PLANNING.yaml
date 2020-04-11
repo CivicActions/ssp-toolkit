@@ -28,27 +28,22 @@ satisfies:
       CivicActions has developed a contingency plan for that
       addresses:
 
-      1. Essential missions, business functions, and associated contingency
-         requirements
+      1. Essential missions, business functions, and associated contingency requirements
 
       2. Recovery objectives, restoration priorities, and metrics
 
-      3. Roles and responsibilities are identified in the CP and include the ISCP
-         Director, Incident Commander (IC), CivicActions Coordinator,
-         and CivicActions Information System Security Officer (ISSO).
+      3. Roles and responsibilities are identified in the CP and include the ISCP Director, Incident Commander (IC), CivicActions Coordinator, and CivicActions Information System Security Officer (ISSO).
 
-      4. Maintaining essential missions and business functions despite an
-         information system disruption, compromise, or failure
+      4. Maintaining essential missions and business functions despite an information system disruption, compromise, or failure
 
-      5. Full information system restoration without deterioration of the security
-         safeguards originally planned and implemented
+      5. Full information system restoration without deterioration of the security safeguards originally planned and implemented
 
-      6. The ISCP is reviewed and approved by ISCP Director, Incident Commander
-         (IC), CivicActions ISSO and the System Owner annually.
+      6. The ISCP is reviewed and approved by ISCP Director, Incident Commander (IC), CivicActions ISSO and the System Owner annually.
+
   - key: b
     text: >
       The CivicActions Information System Contingency Plan (ISCP)
-      has been distributed to all CivicActons team members. The ISCP can be
+      has been distributed to all CivicActions team members. The ISCP can be
       found in the CivicActions Handbook at
       <https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan>.
   - key: c
@@ -73,7 +68,7 @@ satisfies:
       Incident Response/Contingency Plan Contact List.
   - key: g
     text: >
-      The ISCP is available on CivicActions Github repository.
+      The ISCP is available on CivicActions GitHub repository.
       This repository provides the configuration management capabilities for
       the ISCP to be protected from unauthorized disclosure and modification.
   implementation_status: complete

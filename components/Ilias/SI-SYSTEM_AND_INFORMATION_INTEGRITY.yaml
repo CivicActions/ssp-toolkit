@@ -1,0 +1,21 @@
+family: SYSTEM AND INFORMATION INTEGRITY
+documentation_complete: false
+satisfies:
+- control_key: SI-2
+  control_name: FLAW REMEDIATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: Ilias contains built-in security status monitoring of the core application
+      and contributed modules.
+  implementation_status: 
+- control_key: SI-5
+  control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: 'CivicActions Security and Operations receive Ilias Security Advisories
+      on a regular basis.'
+  implementation_status: 

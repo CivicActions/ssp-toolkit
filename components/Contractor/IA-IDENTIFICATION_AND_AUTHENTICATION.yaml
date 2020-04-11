@@ -15,7 +15,7 @@ satisfies:
       to facilitate the implementation of the policy and associated controls.
       This information is maintained by the CivicActions
       Identification and Authentication (IA) Policy. This document can be found
-      in the CivicActions Github repository at
+      in the CivicActions GitHub repository at
       <https://github.com/CivicActions/compliance-docs>.
   implementation_status: complete
   summary: >
@@ -33,6 +33,7 @@ satisfies:
       The whitelist is maintained by an Ansible inventory file, the current
       complete list (includes dev sites) of users with whitelisted IPs is in
       artifact: None
+
 
       To access root (sudo) privileges an additional password is required. The
       passwords are maintained in encrypted form in the Ansible inventory file.
@@ -54,6 +55,7 @@ satisfies:
       User accounts are assigned a unique identifier in the form of a unique
       username, password and email address based on the system for allocating
       user accounts described in AC-2.
+
 
       In accordance with CivicActions Identification and
       Authentication (IA) Policy outlined at <https://github.com/CivicActions/compliance-docs>,
@@ -89,17 +91,14 @@ satisfies:
       CivicActions users are required to take appropriate measures
       in the handling of passwords including:
 
-      * Not transmitting user names and passwords together in an unencrypted
-        format
 
-      * Not permitting the sending of passwords in an unencrypted format via
-        email
+      - Not transmitting user names and passwords together in an unencrypted format
 
-      * Not listing passwords in tickets
+      - Not permitting the sending of passwords in an unencrypted format via email
 
-      * Not writing down or storing passwords in a readable form in any physical
-        or logical location where they may be discoverable by unauthorized
-        persons.
+      - Not listing passwords in tickets
+
+      - Not writing down or storing passwords in a readable form in any physical or logical location where they may be discoverable by unauthorized persons.
   implementation_status: complete
   summary: >
     CivicActions required to take appropriate password handling

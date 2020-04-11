@@ -46,7 +46,7 @@ satisfies:
       failed login attempts within six hours.
   - key: b
     text: Lockdown following unsuccessful attempts is configurable by Drupal administrators
-      to conform to defined requirements.  When a user exceeds the limit of invalid
+      to conform to defined requirements. When a user exceeds the limit of invalid
       login attempts, their account is automatically locked for a specified time and
       requires administrator action to unlock the account before the lockout period
       expires.
@@ -60,7 +60,6 @@ satisfies:
   - key: a
     text: >
       The anonymous user role has the least access to the site of all roles.
-      Drupal sites can be configured to allow actions indentified by
+      Drupal sites can be configured to allow actions identified by
       The Project
   implementation_status: complete
-

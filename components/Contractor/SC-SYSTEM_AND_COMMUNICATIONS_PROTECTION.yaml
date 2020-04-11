@@ -15,7 +15,7 @@ satisfies:
       facilitate the implementation of the policy and associated controls.
       This information is maintained in the CivicActions System and
       Communications Protection (SC) Policy CivicActions document
-      that can be found in the CivicActions Github repository at
+      that can be found in the CivicActions GitHub repository at
       <https://github.com/CivicActions/compliance-docs/>.
   implementation_status: complete
 - control_key: SC-13
@@ -27,15 +27,14 @@ satisfies:
   - text: >
       The information system implements:
 
-      * Cryptographic modules through Secure Shell (SSH) to allow administrators
-        to securely logon to the various system components
 
-      * HTTPS/SSL (TLS) for connection to web-based services
+      - Cryptographic modules through Secure Shell (SSH) to allow administrators to securely logon to the various system components
 
-      * TLS for connection to email services
+      - HTTPS/SSL (TLS) for connection to web-based services
 
-      * AES-256 (FIPS 140-2 validated) for data at rest (with Elastic Block
-        Store (EBS) volumes)
+      - TLS for connection to email services
+
+      - AES-256 (FIPS 140-2 validated) for data at rest (with Elastic Block Store (EBS) volumes)
   implementation_status: none
 - control_key: SC-20
   control_name: SECURE NAME / ADDRESS RESOLUTION SERVICE

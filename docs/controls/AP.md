@@ -27,9 +27,11 @@ information (PII) is collected, used, maintained, and shared in its privacy noti
 
 ##### Privacy
 
-Project does not collect PII other than that covered by the "Roladex exception". Anonymous access is possible, but courses and community participation require an account for which these fields are required:
-* Email address -  used for identification.
-* First name, last name - used for addressing a logged in user.
+Project does not collect PII other than that covered by the "Rolodex exception". Anonymous access is possible, but courses and community participation require an account for which these fields are required:
+
+- Email address - used for identification.
+- First name, last name - used for addressing a logged in user.
+
 Any additional information is entered by the user at will as part of coursework or to enhance community participation in forums.
 
 

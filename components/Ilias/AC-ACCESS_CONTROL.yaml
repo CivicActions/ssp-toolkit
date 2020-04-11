@@ -1,0 +1,61 @@
+family: ACCESS CONTROL
+documentation_complete: false
+satisfies:
+- control_key: AC-2
+  control_name: ACCOUNT MANAGEMENT
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - key: a
+    text: >
+      Ilias provides user accounts for individuals who participate in visiting, contributing
+      to and administering the site with the following roles:
+
+      * Anonymous user – Readers of the site who either do not have an account or
+      are not logged in.
+
+      * Guest – This role has limited visibility and read permissions
+
+      * User - Standard role for registered users. This role grants read access to
+      most objects.
+
+      * Administrator - This role has all permissions enabled by default.
+  - key: d
+    text: Ilias' permissions and role-based access controls are built-in. Each role
+      within Ilias can only access the pages and controls for which their privilege
+      allows.
+  - key: g
+    text: Ilias monitors the usage of information accounts in a log on the server.
+  implementation_status: 
+- control_key: AC-3
+  control_name: ACCESS ENFORCEMENT
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      Access control in Ilias is enforced by authentication via Shibboleth single
+      sing on (SSO) for every type of user except Anonymous user. The user’s privileges,
+      permissions, and access are provided on the principle of least privilege.
+
+      The anonymous user role has the least access to the site of all roles. The website
+      does not allow anonymous users to register an account for themselves. Project
+      Administrators, HR Managers, and Org Managers are the only roles that
+      can create new user accounts.
+- control_key: AC-8
+  control_name: SYSTEM USE NOTIFICATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: System Use Notification is inherited from the Project.
+  implementation_status: 
+- control_key: AC-14
+  control_name: PERMITTED ACTIONS WITHOUT IDENTIFICATION OR AUTHENTICATION
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: System Specific Control
+  narrative:
+  - text: The anonymous user role has the least access to the site of all roles. The
+      website does not allow anonymous users to register an account for themselves.

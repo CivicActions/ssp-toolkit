@@ -67,21 +67,22 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### AWS
 
-In this architecture, a baseline set of AWS Identity and Access Management (IAM) groups and roles are created, with associated access policies,  to support alignment of user accounts to personnel functions related to infrastructure/platform management (e.g. Billing, EC2/VPC/RDS systems administration, I.T. auditing, etc.)
+In this architecture, a baseline set of AWS Identity and Access Management (IAM) groups and roles are created, with associated access policies, to support alignment of user accounts to personnel functions related to infrastructure/platform management (e.g. Billing, EC2/VPC/RDS systems administration, I.T. auditing, etc.)
 
 
 ##### CivicActions
 
 CivicActions Operations staff, in collaboration with CivicActions' Security Office, will set up privileged accounts for the following roles:
-* Developer - a user-level account that has access to application features and sanitized databases
-* System Administrator - user accounts that enjoy full system administrator access
+
+- Developer - a user-level account that has access to application features and sanitized databases
+- System Administrator - user accounts that enjoy full system administrator access
 
 
 ##### SSH
 
 Operations, in collaboration with the Security Office, will set up privileged accounts accounts for the following roles:
-• Developer - user level account that has access to application features and sanitized databases
-• System Administrator - user accounts that enjoy full system administrator (`sudo`) access
+- Developer - user level account that has access to application features and sanitized databases
+- System Administrator - user accounts that enjoy full system administrator (`sudo`) access
 
 
 #### b
@@ -118,19 +119,20 @@ All accounts issued for the admin management of Application or SSH access must b
 ##### CivicActions
 
 CivicActions Operations staff is responsible for the following account management activities for both internal administrative users and customer accounts:
-* Establishing account justification
-* Activating accounts
-* Modifying accounts
-* Expiring accounts
-* Disabling accounts
-* Removing accounts
+
+- Establishing account justification
+- Activating accounts
+- Modifying accounts
+- Expiring accounts
+- Disabling accounts
+- Removing accounts
 
 
 #### g
 
 ##### AWS
 
-In this architecture, AWS CloudTrail and Amazon S3 Bucket logging are enabled, which provides the audit trail capability for the organization to monitor the use of AWS Identity and Access Management (IAM) accounts.  An Amazon S3 bucket centrally contains the CloudTrail audit logs. Amazon CloudWatch Alarm is configured to send an alert when an API call is made to create, update or delete a Network ACL/Security Group, when Root user activity detected, when multiple API actions or login attempts fail,  when IAM Configuration changes are detected, when new IAM access key was created and when changes to the CloudTrail log configuration is detected
+In this architecture, AWS CloudTrail and Amazon S3 Bucket logging are enabled, which provides the audit trail capability for the organization to monitor the use of AWS Identity and Access Management (IAM) accounts. An Amazon S3 bucket centrally contains the CloudTrail audit logs. Amazon CloudWatch Alarm is configured to send an alert when an API call is made to create, update or delete a Network ACL/Security Group, when Root user activity detected, when multiple API actions or login attempts fail, when IAM Configuration changes are detected, when new IAM access key was created and when changes to the CloudTrail log configuration is detected
 
 
 ##### CivicActions
@@ -220,7 +222,7 @@ Drupal can be configured to lock an account after a specified number of invalid 
 
 ##### Drupal
 
-Lockdown following unsuccessful attempts is configurable by Drupal administrators to conform to defined requirements.  When a user exceeds the limit of invalid login attempts, their account is automatically locked for a specified time and requires administrator action to unlock the account before the lockout period expires.
+Lockdown following unsuccessful attempts is configurable by Drupal administrators to conform to defined requirements. When a user exceeds the limit of invalid login attempts, their account is automatically locked for a specified time and requires administrator action to unlock the account before the lockout period expires.
 
 ### AC-14: Permitted Actions Without Identification Or Authentication
 
@@ -238,7 +240,7 @@ information system, user actions not requiring identification or authentication.
 
 ##### Drupal
 
-The anonymous user role has the least access to the site of all roles. Drupal sites can be configured to allow actions indentified by The Project
+The anonymous user role has the least access to the site of all roles. Drupal sites can be configured to allow actions identified by The Project
 
 
 ### AC-17: Remote Access
@@ -255,7 +257,7 @@ connections.
 
 ##### CivicActions
 
-The CivicActions Access Control (AC) policy defines policy for remote usage restrictions.  The Project Manager or System Owner may additionally provision users according to their Access Control policies.
+The CivicActions Access Control (AC) policy defines policy for remote usage restrictions. The Project Manager or System Owner may additionally provision users according to their Access Control policies.
 
 
 ### AC-18: Wireless Access

@@ -44,7 +44,9 @@ The organization provides basic security awareness training to information syste
 ##### CivicActions
 
 Both regular and ad hoc training to all CivicActions personnel, including those who support the system infrastructure and applications, is provided. All employees and contractors must complete Security Awareness training upon being hired and at least annually thereafter. CivicActions Operations staff will not create accounts for individuals until they have successfully completed the trainings. Additional training will be provided as required by system changes. Training takes the following forms:
+
 Annual Knowledge Survey (i.e., Security Awareness Training): All employees are required to review trainings covering Security Awareness. After the training, a survey-style security awareness test is taken by employees. All CivicActions personnel are required to complete and pass the survey, and new employees are required to pass before being granted access to the Information System. In order to successfully pass the test, a score of 80% is required. This survey tests CivicActions personnel’s knowledge of critical security subjects, policies and procedures. Results from this survey are compiled by the Office of Human Resources and used to refine future training efforts.
+
 Ad Hoc Security Awareness: The CivicActions' Security Office oversees the approximately bi-monthly distribution of security awareness tips and articles to all CivicActions employees. This can include general tips as well as articles tailored to the specific requirements of CivicActions users.
 
 

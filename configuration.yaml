@@ -19,3 +19,4 @@ pia: !include keys/pia.yaml
 risk: !include keys/risk.yaml
 services: !include keys/services.yaml
 regulations: !include keys/regulations.yaml
+cm: !include keys/config-management.yaml

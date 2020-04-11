@@ -15,7 +15,7 @@ satisfies:
       to facilitate the implementation of the policy and associated controls.
       This information is maintained in the CivicActions System
       and Information Integrity (SI) Policy document that can be found in the
-      CivicActions Github repository at
+      CivicActions GitHub repository at
       <https://github.com/CivicActions/compliance-docs/>.
   implementation_status: complete
 - control_key: SI-2
@@ -29,17 +29,18 @@ satisfies:
       Identification of information system security flaws are detected as early
       as possible by the following methods:
 
-      * Vulnerability scans, as described in RA-5.
 
-      * Log analysis from monitoring described in SI-4.
+      - Vulnerability scans, as described in RA-5.
 
-      * Service flaw notifications (CVEs, etc.) are received by the
+      - Log analysis from monitoring described in SI-4.
+
+      - Service flaw notifications (CVEs, etc.) are received by the
         CivicActions Security Office and passed on to
-        CicvicActions Operations staff when relevant.
+        CivicActions Operations staff when relevant.
 
       Any security issues found are ticketed through JIRA and/or the Git issue
       queue. CivicActions Operations staff prioritizes high
-      findings.  Changes made to correct the information system as a result of
+      findings. Changes made to correct the information system as a result of
       the system flaws are scheduled and coordinated through the CCB Change
       Request Process and appropriate approvals required from the CCB as
       implemented in CM-3.
@@ -65,7 +66,7 @@ satisfies:
   - key: d
     text: >
       Flaw remediation is part of the CivicActions configuration
-      management process.  Any security issues found are ticketed through JIRA
+      management process. Any security issues found are ticketed through JIRA
       or the Git issue queue. The CivicActions Security Office
       prioritizes the high findings within the application. Changes made to
       correct the system as a result of the system flaws are scheduled and
@@ -115,23 +116,24 @@ satisfies:
       CivicActions systems use a collection of monitoring systems,
       including:
 
-      * ClamAV - provides signature-based malware detection/quarantine
 
-      * OSSEC host-based intrusion detection system (HIDS)
+      - ClamAV - provides signature-based malware detection/quarantine
 
-      * AIDE Advanced Intrusion Detection Environment (IDS))
+      - OSSEC host-based intrusion detection system (HIDS)
 
-      * fail2ban, an intrusion prevention system (IPS) framework
+      - AIDE Advanced Intrusion Detection Environment (IDS))
 
-      * SELinux - a Mandatory Access Control (MAC) IPS
+      - fail2ban, an intrusion prevention system (IPS) framework
 
-      * auditd - a secure system audit daemon
+      - SELinux - a Mandatory Access Control (MAC) IPS
 
-      * CloudWatch - AWS monitoring and measurement system
+      - auditd - a secure system audit daemon
 
-      * StatusCake - website monitoring tool
+      - CloudWatch - AWS monitoring and measurement system
 
-      * OpsGenie - a slack/email/text/phone incident escalation tool
+      - StatusCake - website monitoring tool
+
+      - OpsGenie - a slack/email/text/phone incident escalation tool
   - key: b
     text: >
       Logs from the systems described in SI-4(a) are sent to the
@@ -155,7 +157,7 @@ satisfies:
   - key: f
     text: >
       Internal legal counsel is utilized as required when system notifications
-      indicate such action based on user and/or malicious activity.  Legal
+      indicate such action based on user and/or malicious activity. Legal
       counsel is engaged for any actions that may necessitate increased user
       monitoring or evidence/forensic actions.
   - key: g
@@ -176,17 +178,18 @@ satisfies:
       the following security alerts, advisories, and directives on an ongoing
       basis:
 
-      * Mailing lists relevant to web application security
 
-      * US-CERT
+      - Mailing lists relevant to web application security
 
-      * Technical Cyber Security Alerts
+      - US-CERT
 
-      * Drupal Security Advisories
+      - Technical Cyber Security Alerts
+
+      - Drupal Security Advisories
   - key: b
     text: >
       CivicActions utilizes StatusCake for front line monitoring
-      for real-time system status and events of the application. StatusCake can
+      for real time system status and events of the application. StatusCake can
       feed to the OpsGenie incident escalation system.
   - key: c
     text: >

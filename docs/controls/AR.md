@@ -32,7 +32,8 @@ programs,
 
 ##### Privacy
 
-< Project does not collect or maintain PII and therefore does not directly address this control though it may address it indirectly.
+Project does not collect or maintain PII and therefore does not directly address this control though it may address it indirectly.
+
 
 ### AR-2: PRIVACY IMPACT AND RISK ASSESSMENT
 

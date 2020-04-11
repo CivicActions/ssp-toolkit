@@ -14,19 +14,13 @@
 ##### Privacy
 
 The information is collected on the Project is for identification and authentication purposes, allowing individuals to:
-* Identify themselves to the system
-* Authenticate with the system to prove that they are the same person
-  when they return
 
-* Enable emailed password reset
-* Access control (e.g. updating notification settings, following a
-  moderation of a discussion, etc.)
-
-* Carry out actions that impact that individual (e.g. joining a course
-  or signing up for a mailing list subscription)
-
-* Publish information to make it available to others (e.g. forum posting,
-  comment on publications of learning resources, etc.)
+- Identify themselves to the system
+- Authenticate with the system to prove that they are the same person when they return
+- Enable emailed password reset
+- Access control (e.g. updating notification settings, following a moderation of a discussion, etc.)
+- Carry out actions that impact that individual (e.g. joining a course or signing up for a mailing list subscription)
+- Publish information to make it available to others (e.g. forum posting, comment on publications of learning resources, etc.)
 
 
 ### UL-2: INFORMATION SHARING WITH THIRD PARTIES

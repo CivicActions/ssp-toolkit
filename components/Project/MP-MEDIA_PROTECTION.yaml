@@ -1,0 +1,13 @@
+family: MEDIA PROTECTION
+documentation_complete: false
+satisfies:
+- control_key: MP-1
+  control_name: MEDIA PROTECTION POLICY AND PROCEDURES
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      This is Agency common control. More data about implementation can be obtained
+      from the Agency common control catalog. Media protection policy and procedures
+      are fully inherited from AWS Cloud.

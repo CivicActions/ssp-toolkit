@@ -14,7 +14,7 @@ satisfies:
       organizational entities, and compliance; and procedures to facilitate the
       implementation of the policy and associated controls. This information is
       maintained in the CivicActions Audit and Accountability (AU)
-      Policy.  This document can be found in the CivicActions
+      Policy. This document can be found in the CivicActions
       Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
   implementation_status: 
 - control_key: AU-2
@@ -64,7 +64,7 @@ satisfies:
       corrective action.
   implementation_status: complete
   summary: >
-    CivicActions Operations reviews causes adn takes corrective
+    CivicActions Operations reviews causes and takes corrective
     action when notified via CloudWatch of auditing failures.
 - control_key: AU-6
   control_name: AUDIT REVIEW, ANALYSIS, AND REPORTING
@@ -75,14 +75,16 @@ satisfies:
   - key: a
     text: >
       CivicActions security audit data is collected by the AWS CloudWatch monitoring
-      and observability service to support real-time and after-the-fact investigation
+      and observability service to support real time and after-the-fact investigation
       at the application level for the following:
 
-      * Indications of inappropriate or unusual activity
 
-      * Assurance that logging is functioning properly
+      - Indications of inappropriate or unusual activity
 
-      * Adherence to logging standards identified in this procedure
+      - Assurance that logging is functioning properly
+
+      - Adherence to logging standards identified in this procedure
+
   - key: b
     text: >
       Any significant findings observed during the inspection are reported to
@@ -93,7 +95,7 @@ satisfies:
   implementation_status: Planned
   summary: >
     CivicActions security audit data is collected by a Graylog
-    Security and Event Management (SIEM) dashboard to support real-time and
+    Security and Event Management (SIEM) dashboard to support real time and
     after-the-fact investigation.
 - control_key: AU-9
   control_name: PROTECTION OF AUDIT INFORMATION
@@ -122,7 +124,7 @@ satisfies:
       and hosting environment, and retains these records for at least 180 days.
   implementation_status: complete
   summary: >
-    CivicActions retains audit records for at least  180 days.
+    CivicActions retains audit records for at least 180 days.
 - control_key: AU-12
   control_name: AUDIT GENERATION
   standard_key: NIST SP 800-53 Revision 4
