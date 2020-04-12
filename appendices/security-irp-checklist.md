@@ -49,14 +49,14 @@ The _Responder(s)_ works to:
 The _Incident Commander_:
 
 - Creates a [JIRA Incident ticket]().
-- If needed, sends the _sitrep_ and a link to the JIRA Incident ticket to [TheProject@example.net](TheProject@example.net).
+- If needed, sends the _sitrep_ and a link to the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident) to [TheProject@example.net](TheProject@example.net).
 
 ## Remediate
 
 The _responders_ work to determine the cause, implement a resolution, and return the system to normal operations.
 
 - If suspicious activity is suspected or other unanswered questions exist:
-  - Make [CPM snapshots](https://cpm.globalnetplatform.org/) of relevant volumes.
+    - Make [CPM snapshots](https://cpm.project.com/) of relevant volumes.
   - Preserve logs.
   - Take screen captures of anomalous activity that can be used in post-remediation forensic analysis. _Do this before making any changes._
 
@@ -87,7 +87,7 @@ After the incident has been resolved:
 If an event is determined not to be a security incident:
 
 - Notify the Slack channel [#None](None) about the false alarm.
-- Update the JIRA Incident ticket, and set the status to _Done_.
+- Update the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident), and set the status to _Done_.
 - If any _sitreps_ were shared, send a final sitrep to all previous recipients, noting the false alarm.
 
 ### Incident Commander handoff
@@ -96,6 +96,6 @@ To hand off _Incident Commander_ duties:
 
 1. Outgoing IC initiates the handoff and briefs the new IC on the situation.
 2. New IC confirms the handoff and assumes responsibility.
-3. New IC updates the JIRA Incident ticket and notes the handoff.
+3. New IC updates the JIRA ticket and notes the handoff.
 4. New IC shares a _sitrep_, which notes the handoff.
 5. Outgoing IC remains available for 15-20 minutes to ensure a smooth handoff and then logs off.

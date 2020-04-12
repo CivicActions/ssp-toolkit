@@ -15,7 +15,7 @@ need."
 
 ##### Privacy
 
-Under Title II of the Workforce Innovation and Opportunity Act (WIOA; PL 113-128), Section 242, OCTAE carries out a program of national leadership activities to enhance the quality and outcomes of adult education and literacy activities and programs nationwide. OCTAE uses these funds to provide technical assistance and professional development to programs and contribute to research and evaluations of adult education programs and activities.
+The Client, as the governing agency of The Project, has authorized the collection of user names and email addresses for the purpose of authenticating to the Project system.
 
 
 ### AP-2: PURPOSE SPECIFICATION
@@ -27,12 +27,10 @@ information (PII) is collected, used, maintained, and shared in its privacy noti
 
 ##### Privacy
 
-Project does not collect PII other than that covered by the "Rolodex exception". Anonymous access is possible, but courses and community participation require an account for which these fields are required:
-
-- Email address - used for identification.
-- First name, last name - used for addressing a logged in user.
-
-Any additional information is entered by the user at will as part of coursework or to enhance community participation in forums.
+Project does not collect PII other than that covered by the "Rolodex exception". Anonymous access is possible, but community participation require an account for which these fields are required:
+* Email address - used for identification.
+* First name, last name - used for addressing a logged in user.
+Any additional information is entered by the user at will to enhance community participation in forums.
 
 
 

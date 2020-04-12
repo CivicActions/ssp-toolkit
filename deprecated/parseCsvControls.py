@@ -50,10 +50,10 @@ with open(fn_tsv, 'r') as csvfile:
     cur_component = None
     parts_text = [ ]
     for line in row['Control Implementation Statement'].split("\n"):
-      if line == "CivicActions/HDG":
-        cur_component = "CivicActions-HDG"
-      elif line == "HHS Responsibility:":
-        cur_component = "HHS"
+      if line == "CivicActions/Project":
+        cur_component = "CivicActions"
+      elif line == "Project Responsibility:":
+        cur_component = "Project"
       elif line == "Acquia (ACE)":
         cur_component = "Acquia-ACE"
         continue

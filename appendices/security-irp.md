@@ -40,14 +40,14 @@ At a high level, incident response follows this process:
 
   - If the incident is confirmed:
     - The team [assesses the severity](#incident-severities).
-    - The IC creates an initial situation report, called a _sitrep_, in a None.
+    - The IC creates an initial situation report, called a _sitrep_, in a [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident).
     - The IC assesses whether to activate the [contingency plan](contingency-plan.md) for disaster recovery.
   - If the incident is determined to be a false alarm, the IC follows the notification procedure for false alarms.
 
 [Remediate](#remediate):
 
 - If suspicious activity is suspected or other unanswered questions exist:
-  - Make [CPM snapshots](https://cpm.globalnetplatform.org/) of relevant volumes.
+  - Make [CPM snapshots](https://cpm.project.com/) of relevant volumes.
   - Preserve logs.
   - Take screen captures of anomalous activity that can be used in post-remediation forensic analysis. _Do this before making any changes._
 - The responders work to contain and remediate the issue. Timelines vary based on the assessed severity.
@@ -60,7 +60,7 @@ At a high level, incident response follows this process:
 
 During this process, the team communicates in the following places:
 
-- **JIRA Incident ticket**: Situation updates, investigation notes, and other relevant information gets captured in the JIRA Incident ticket created to track this event.
+- **JIRA ticket**: Situation updates, investigation notes, and other relevant information gets captured in the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident) created to track this event.
 - **Slack**: Real-time communication happens in the Slack channel [#None](None).
 - **Other**: If needed, the team may use Zoom, Google Hangouts, and/or Google Docs to share information not appropriate for Slack (PII, etc.).
 
@@ -102,7 +102,7 @@ To help with reporting, copy the following template into Slack or an email to cr
 
 The IC is responsible for keeping this issue updated as investigation and remediation progresses. _Responders_ should add comments to the make notes on the issue.
 
-- The IC may use Zoom, Google Hangouts, and/or Google Docs so that responders can share sensitive information not suitable for sharing in a JIRA Incident ticket or Slack.
+- The IC may use Zoom, Google Hangouts, and/or Google Docs so that responders can share sensitive information not suitable for sharing in a [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident) or Slack.
 
 ### Assess
 
@@ -128,7 +128,7 @@ After this has been done, the IC should update the ticket and note the following
 
 The IC should assess whether the [contingency plan](contingency-plan.md) should be activated.
 
-The IC should write an initial situation report, called a _sitrep_, in a JIRA Incident ticket, summarizing the incident details, identifying the IC, and linking to the issue. Here is an example sitrep:
+The IC should write an initial situation report, called a _sitrep_, in a [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident), summarizing the incident details, identifying the IC, and linking to the issue. Here is an example sitrep:
 
 ``` markdown
 Subject: [sitrep] The chickens are escaping
@@ -143,7 +143,7 @@ We've confirmed reports of escaped chickens. Looks like a fox may have tunneled 
 This sitrep should be posted in:
 
 - 
-- Slack channel [#None](None) (include link to JIRA Incident ticket)
+- Slack channel [#None](None) (include link to [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident))
 
 #### Communications during the Assess phase
 
@@ -157,11 +157,11 @@ Remediation is about resolving the issues caused by the incident. Remediation wi
 
 - The IC's responsibility is coordination, communication, and information collection. The remediation team will be focused on resolving the issue, so the IC must track what happened, how the incident is being remediated, and who is part of those efforts. Ideally the notes that the second IC makes should be sufficient for an outside investigator to independently follow the work of the Incident Response Team and validate the team's work.
 
-- The team will develop a list of informational leads from the incident — actionable information about any security breaches, stolen data, etc. The IC should track these leads, maintaining information about the investigations and their outcomes. These can be tracked as checklists in the JIRA Incident ticket.
+- The team will develop a list of informational leads from the incident — actionable information about any security breaches, stolen data, etc. The IC should track these leads, maintaining information about the investigations and their outcomes. These can be tracked as checklists in the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident).
 
 - Similarly, the team will develop a list of remediation steps. The IC is responsible for tracking them, making sure they are assigned and followed, and verifying them when they are completed. Remediation efforts may be tracked with the issue details. The IC should distinguish between immediate concerns, which need to be completed before the incident is considered resolved, and long-term improvements/hardening, which can be deferred to the Retrospective.
 
-- The Incident Response Team should aim to adopt a containment strategy. If machines are compromised, avoid destroying volumes or shutting down systems if possible, both of which can hamper forensics. Creating None of relevant volumes is helpful at this stage.
+- The Incident Response Team should aim to adopt a containment strategy. If machines are compromised, avoid destroying volumes or shutting down systems if possible, both of which can hamper forensics. Creating [CPM snapshots](https://cpm.project.com/) of relevant volumes is helpful at this stage.
 
    - For AWS instances, leave the instance running and reconfigure the Security Group for the instance to drop all ingress and egress traffic except from specific IPs (like yours) until forensics can be performed.
 
@@ -189,8 +189,8 @@ To close out an incident, the IC should:
 
 #### Communications during the Remediate phase
 
-- Updates and real time chat should continue as above (updates on the JIRA Incident ticket, chat in Slack or Google Hangouts).
-- The IC should continue to post updated sitreps on a regular basis (the section on severities, below, suggests time intervals for each level). These sitreps should be shared in Slack, in the JIRA Incident ticket, and with all stakeholders identified during the process (e.g. clients).
+- Updates and real time chat should continue as above (updates on the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident), chat in Slack or Google Hangouts).
+- The IC should continue to post updated sitreps on a regular basis (the section on severities, below, suggests time intervals for each level). These sitreps should be shared in Slack, in the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident), and with all stakeholders identified during the process (e.g. clients).
 
 ### Retrospect
 
@@ -211,7 +211,7 @@ The report should also contain some basic response metrics:
 - Time to containment (how long did it take from when we became aware until the issue was contained?)
 - Threat actions (which specific actions -- e.g. phishing, password attacks, etc) -- were taken by the actor)?
 
-This report should be posted as a final comment on the JIRA Incident ticket, which can then be closed.
+This report should be posted as a final comment on the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident), which can then be closed.
 
 ## Incident Severities
 

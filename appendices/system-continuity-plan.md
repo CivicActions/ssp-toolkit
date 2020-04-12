@@ -162,7 +162,7 @@ The following information represents potential strategies for execution and is c
 
 ### 5.1 Basic Emergency Response Procedures
 
-The actions set forth as responses to disasters are basic procedures that will be followed immediately prior to or during an actual contingency event. These procedures are designed to protect life; minimize damage, injury or disruption; and contribute to timely restart and recovery of the GlobalNET System.
+The actions set forth as responses to disasters are basic procedures that will be followed immediately prior to or during an actual contingency event. These procedures are designed to protect life; minimize damage, injury or disruption; and contribute to timely restart and recovery of the Project System.
 
 #### 5.1.1 Procedures Inherited from the Cloud Service Provider (AWS) COOP
 
@@ -186,7 +186,7 @@ For data backups, the system utilizes hourly encrypted snapshots of the file sys
 
 #### 6.1.1 Hardware
 
-GlobalNET inherits its hardware from the infrastructure COOP.
+Project inherits its hardware from the infrastructure COOP.
 
 ### 6.2 Backup Procedures
 

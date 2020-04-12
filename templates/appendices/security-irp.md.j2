@@ -34,7 +34,7 @@ At a high level, incident response follows this process:
 [Remediate](#remediate):
 
 - If suspicious activity is suspected or other unanswered questions exist:
-  - Make [CPM snapshots](https://cpm.globalnetplatform.org/) of relevant volumes.
+  - Make {{ project.backup_snaps }} of relevant volumes.
   - Preserve logs.
   - Take screen captures of anomalous activity that can be used in post-remediation forensic analysis. _Do this before making any changes._
 - The responders work to contain and remediate the issue. Timelines vary based on the assessed severity.
@@ -47,7 +47,7 @@ At a high level, incident response follows this process:
 
 During this process, the team communicates in the following places:
 
-- **{{ project.issue_system }}**: Situation updates, investigation notes, and other relevant information gets captured in the {{ project.issue_system }} created to track this event.
+- **{{ project.issue_system }}**: Situation updates, investigation notes, and other relevant information gets captured in the {{ project.issue_incident }} created to track this event.
 - **Slack**: Real-time communication happens in the Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}).
 - **Other**: If needed, the team may use Zoom, Google Hangouts, and/or Google Docs to share information not appropriate for Slack (PII, etc.).
 
@@ -89,7 +89,7 @@ To help with reporting, copy the following template into Slack or an email to cr
 
 The IC is responsible for keeping this issue updated as investigation and remediation progresses. _Responders_ should add comments to the make notes on the issue.
 
-- The IC may use Zoom, Google Hangouts, and/or Google Docs so that responders can share sensitive information not suitable for sharing in a {{ project.issue_system }} or Slack.
+- The IC may use Zoom, Google Hangouts, and/or Google Docs so that responders can share sensitive information not suitable for sharing in a {{ project.issue_incident }} or Slack.
 
 ### Assess
 
@@ -115,7 +115,7 @@ After this has been done, the IC should update the ticket and note the following
 
 The IC should assess whether the [contingency plan](contingency-plan.md) should be activated.
 
-The IC should write an initial situation report, called a _sitrep_, in a {{ project.issue_system }}, summarizing the incident details, identifying the IC, and linking to the issue. Here is an example sitrep:
+The IC should write an initial situation report, called a _sitrep_, in a {{ project.issue_incident }}, summarizing the incident details, identifying the IC, and linking to the issue. Here is an example sitrep:
 
 ``` markdown
 Subject: [sitrep] The chickens are escaping
@@ -130,7 +130,7 @@ We've confirmed reports of escaped chickens. Looks like a fox may have tunneled 
 This sitrep should be posted in:
 
 - {{ project.issue_url }}
-- Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}) (include link to {{ project.issue_system }})
+- Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}) (include link to {{ project.issue_incident }})
 
 #### Communications during the Assess phase
 
@@ -144,7 +144,7 @@ Remediation is about resolving the issues caused by the incident. Remediation wi
 
 - The IC's responsibility is coordination, communication, and information collection. The remediation team will be focused on resolving the issue, so the IC must track what happened, how the incident is being remediated, and who is part of those efforts. Ideally the notes that the second IC makes should be sufficient for an outside investigator to independently follow the work of the Incident Response Team and validate the team's work.
 
-- The team will develop a list of informational leads from the incident — actionable information about any security breaches, stolen data, etc. The IC should track these leads, maintaining information about the investigations and their outcomes. These can be tracked as checklists in the {{ project.issue_system }}.
+- The team will develop a list of informational leads from the incident — actionable information about any security breaches, stolen data, etc. The IC should track these leads, maintaining information about the investigations and their outcomes. These can be tracked as checklists in the {{ project.issue_incident }}.
 
 - Similarly, the team will develop a list of remediation steps. The IC is responsible for tracking them, making sure they are assigned and followed, and verifying them when they are completed. Remediation efforts may be tracked with the issue details. The IC should distinguish between immediate concerns, which need to be completed before the incident is considered resolved, and long-term improvements/hardening, which can be deferred to the Retrospective.
 
@@ -176,8 +176,8 @@ To close out an incident, the IC should:
 
 #### Communications during the Remediate phase
 
-- Updates and real time chat should continue as above (updates on the {{ project.issue_system }}, chat in Slack or Google Hangouts).
-- The IC should continue to post updated sitreps on a regular basis (the section on severities, below, suggests time intervals for each level). These sitreps should be shared in Slack, in the {{ project.issue_system }}, and with all stakeholders identified during the process (e.g. clients).
+- Updates and real time chat should continue as above (updates on the {{ project.issue_incident }}, chat in Slack or Google Hangouts).
+- The IC should continue to post updated sitreps on a regular basis (the section on severities, below, suggests time intervals for each level). These sitreps should be shared in Slack, in the {{ project.issue_incident }}, and with all stakeholders identified during the process (e.g. clients).
 
 ### Retrospect
 
@@ -198,7 +198,7 @@ The report should also contain some basic response metrics:
 - Time to containment (how long did it take from when we became aware until the issue was contained?)
 - Threat actions (which specific actions -- e.g. phishing, password attacks, etc) -- were taken by the actor)?
 
-This report should be posted as a final comment on the {{ project.issue_system }}, which can then be closed.
+This report should be posted as a final comment on the {{ project.issue_incident }}, which can then be closed.
 
 ## Incident Severities
 

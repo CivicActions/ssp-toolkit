@@ -79,7 +79,7 @@ If the IC assesses that the overall response process is likely to last longer th
 
 #### Backup and restore
 
-Hourly and daily [snapshots](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Snapshots) are created using the [Cloud Protection Manager (CPM)](None)
+Hourly and daily [snapshots](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Snapshots) are created using the [Cloud Protection Manager (CPM)](https://cpm.project.com/signin/)
 
 - First determine how far back in time to go to obtain a clean backup for restore
 - Restore by using the `Recover` tab for the instance needing restoration
@@ -88,7 +88,7 @@ Hourly and daily [snapshots](https://console.aws.amazon.com/ec2/v2/home?region=u
 
 Note: _If you terminate the old instance before you begin - volumes should not be deleted by default - then CPM will attempt the re-use the internal "backnet" (172.x.x.x) addresses_
 
-1. Log in to CPM at: <None>
+1. Log in to CPM at: <https://cpm.project.com/signin/>
 
     a. Determine how far back in time to go to obtain a clean backup for restore.
 
@@ -119,7 +119,7 @@ For reconstitution:
 
 1. The Incident Response Team tests and validates the system as operational.
 2. The Incident Commander declares that recovery efforts are complete and notifies all relevant people.
-3. The Incident Response Team schedules a retrospective in JIRA Incident ticket, and discusses the event. For more detail, see the [security incident retrospective process](security-irp.md#retrospective).
+3. The Incident Response Team schedules a retrospective in JIRA ticket, and discusses the event. For more detail, see the [security incident retrospective process](security-irp.md#retrospective).
 
 ## External dependencies
 

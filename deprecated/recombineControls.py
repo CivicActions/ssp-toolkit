@@ -53,7 +53,7 @@ components_glob = components_dir.rstrip('/') + "/*"
 # OrderedDict to maintain a preferred component order.
 component_names = collections.OrderedDict([
   (None, None),
-  ("LINCS",        "LINCS specific control or LINCS Responsibility"),
+  ("Project",      "Project specific control or Project Responsibility"),
   ("CivicActions", "CivicActions Responsibility"),
   ("Drupal",       "Drupal specific control support"),
   ("AWS",          "Amazon Web Services (AWS) US-East/West control support"),

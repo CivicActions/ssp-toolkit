@@ -49,14 +49,14 @@ The _Responder(s)_ works to:
 The _Incident Commander_:
 
 - Creates a [JIRA Incident ticket]({{ project.issue_url }}).
-- If needed, sends the _sitrep_ and a link to the {{ project.issue_system }} to [{{ project.contact_email }}]({{ project.contact_email }}).
+- If needed, sends the _sitrep_ and a link to the {{ project.issue_incident }} to [{{ project.contact_email }}]({{ project.contact_email }}).
 
 ## Remediate
 
 The _responders_ work to determine the cause, implement a resolution, and return the system to normal operations.
 
 - If suspicious activity is suspected or other unanswered questions exist:
-  - Make [CPM snapshots](https://cpm.globalnetplatform.org/) of relevant volumes.
+    - Make {{ project.backup_snaps }} of relevant volumes.
   - Preserve logs.
   - Take screen captures of anomalous activity that can be used in post-remediation forensic analysis. _Do this before making any changes._
 
@@ -87,7 +87,7 @@ After the incident has been resolved:
 If an event is determined not to be a security incident:
 
 - Notify the Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}) about the false alarm.
-- Update the {{ project.issue_system }}, and set the status to _Done_.
+- Update the {{ project.issue_incident }}, and set the status to _Done_.
 - If any _sitreps_ were shared, send a final sitrep to all previous recipients, noting the false alarm.
 
 ### Incident Commander handoff

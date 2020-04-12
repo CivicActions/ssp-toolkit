@@ -150,7 +150,7 @@ Security tests need to be executed in the development environment where changes 
 ## Change workflow
 
 1. All configuration changes must flow through a Git repository, centrally managed through GitLab, unless they contain sensitive information.
-1. A change is initiated and discussed as a "Backlog" ticket in [the Project JIRA](https://globalnet.atlassian.net/secure/).
+1. A change is initiated and discussed as a "Backlog" JIRA ticket in the [JIRA ticket management system](https://project.atlassian.net/secure/)
 1. During Sprint Planning, the ticket is prioritized and may get moved from "Backlog" to "ToDo".
 1. The ticket moves from "ToDo" to "In Progress" when it is assigned to a developer.
 1. During development, code commits are checked for style and security using `githooks`.
