@@ -34,12 +34,12 @@ satisfies:
       CivicActions' Git source code version control system. It consists of the
       following components:
 
-      * The Ilias open-source web learning management system
+      - The Ilias open-source web learning management system
 
-      * Ilias add-on modules, themes, and libraries available from the Ilias.de website
+      - Ilias add-on modules, themes, and libraries available from the Ilias.de website
       which extend Ilias core
 
-      * Custom code written by CivicActions' developers
+      - Custom code written by CivicActions' developers
 
       The inventory is reviewed monthly by CivicActions Product Engineering teams
       in accordance with the Configuration Management Plan.

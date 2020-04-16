@@ -28,6 +28,11 @@ frequency].
 CivicActions has developed, documented and disseminated to personnel awareness and training policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Awareness and Training (AT) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
+##### Project
+
+Security awareness and training policy and procedures are formally documented in None, which provides the roles and responsibilities as it pertains to security awareness and training. The Department will ensure all users, including managers and senior executives, are exposed to basic information system security awareness materials before authorizing access to the system and at least annually thereafter. Client documents and monitors all individual information system security training activities including basic security awareness training. OMB reviews and updates the policy as necessary.
+
+
 ### AT-2: Security Awareness Training
 
 ```text
@@ -38,6 +43,19 @@ The organization provides basic security awareness training to information syste
 ```
 
 **Status:** Complete
+
+##### Project
+
+Client personnel and contractor employees involved with the management, operation, programming, maintenance, or use of Project system receive training in acceptable computer security practices prior to system access. All Client employees and contractors are required to complete annual IT security awareness training. This security awareness training covers issues and policies associated with information security, including end user security roles and responsibilities and rules of behavior. Some topics addressed in the training are:
+
+- Password protection
+- System rules of behavior
+- Protection of hardware, software, and data
+- Proper handling of copyrighted materials
+- Reporting of security breaches and violations
+- Proper procedures for software installation, uploading, and use on
+  workstations.
+
 
 #### a
 
@@ -75,6 +93,11 @@ duties;
 ```
 
 **Status:** Complete
+
+##### Project
+
+Completion of role-based training is an annual requirement for personnel in roles with significant information security responsibilities that require specialized role-based training. Role-based cybersecurity training is developed and implemented to meet identified training needs and competencies associated with the various target audiences/functional roles (federal and contractor employees) that comprise the Client workforce, as is identified in and required by the FISMA and OMB A-130, Appendix III. The appropriate content of security training is determined based on the assigned roles and responsibilities of individuals and the specific security requirements of the Department, PO and the information systems to which personnel have authorized access. Annual training requirements may be met by completing one or more course(s) within the Department’s learning management systems, participating in instructor-led training provided by the OCIO, or completing an external role-based course or courses offered within their specific functional area of expertise.
+
 
 #### a
 
@@ -116,11 +139,21 @@ time period].
 The CivicActions' Security Office tracks all security awareness training within the organization and ensures that all employees have successfully completed training when required. The training records are stored and tracked in a spreadsheet maintained by the CivicActions Security Office.
 
 
+##### Project
+
+Client documents and monitors all individual information system security training activities including basic security awareness training. New users are required to take security training within 30 days of hire. This information is kept in the appropriate personnel files to verify users have met the training requirements. Training requirement notifications are sent to individuals as deadline for re-training approaches.
+
+
 #### b
 
 ##### CivicActions
 
 Training records are tracked and maintained by the CivicActions Security Office. Records are maintained permanently.
+
+
+##### Project
+
+Client maintains training certifications for the specified period.
 
 
 

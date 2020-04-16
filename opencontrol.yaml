@@ -9,7 +9,9 @@ components:
   - ./components/AWS
   - ./components/Contractor
   - ./components/Drupal
+  - ./components/Ilias
   - ./components/Privacy
+  - ./components/Project
   - ./components/SSH
 standards:
   - ./standards/nist-sp-800-53-rev4.yaml

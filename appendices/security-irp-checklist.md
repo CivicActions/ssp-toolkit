@@ -56,7 +56,7 @@ The _Incident Commander_:
 The _responders_ work to determine the cause, implement a resolution, and return the system to normal operations.
 
 - If suspicious activity is suspected or other unanswered questions exist:
-    - Make [CPM snapshots](https://cpm.project.com/) of relevant volumes.
+  - Make [CPM snapshots](https://cpm.project.com/) of relevant volumes.
   - Preserve logs.
   - Take screen captures of anomalous activity that can be used in post-remediation forensic analysis. _Do this before making any changes._
 

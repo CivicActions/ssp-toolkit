@@ -28,6 +28,13 @@ frequency].
 CivicActions has developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained by the CivicActions System and Services Acquisition (SA) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
+##### Project
+
+The Project complies with the None. The Project will identify new threats/vulnerabilities and technologies that may require updating of solicitation documents.
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+
+
 ### SA-2: Allocation Of Resources
 
 ```text
@@ -41,6 +48,15 @@ programming and budgeting documentation.
 ```
 
 **Status:** Complete
+
+##### Project
+
+The Project System Owner is responsible for leading the annual budgeting process and for tracking organizational spending. The System Owner coordinates with the CivicActions Project Manager and CivicActions Security on at least monthly basis to track security priorities and spending patterns and determine financial requirements. The System Owner also coordinates the approval process for interim increases to the security budget, if required. This data is used to support the development of the annual budget.
+
+Security costs are included in Exhibit 53 in the Department's on-line electronic Capital Planning and Investment Control system (eCPIC) in order to provide adequate business case information for budget purposes. Security costs are represented across the life cycle in the business case (Exhibit 300) for major investments and (Exhibit 53) for non-major projects - Project is a non-major project. Security costs are summarized and listed as a line item on the Exhibit 53 in the budget submitted to Treasury.
+
+Costs for providing security at the infrastructure level are contained in the business cases for infrastructure supporting computing platforms, desktop processing, the network environment, and web capability. Since the Exhibit 53 includes projections for multiple fiscal years, its intention is to identify and anticipate security resources required.
+
 
 #### a
 
@@ -78,6 +94,11 @@ into system development life cycle activities.
 ```
 
 **Status:** Complete
+
+##### Project
+
+The Project draws from the None, NIST SP 800-64, and Agile software development methodology to ensure security requirements are incorporated during each phase of the life cycle. This helps to ensure the development of secure systems and effective risk management.
+
 
 #### a
 
@@ -170,6 +191,30 @@ The CivicActions Security Office is responsible for determining the security doc
 Configuration and design of the development and production environments are hosted in the CivicActions Git repository. All documentation is strictly controlled regarding transportation and storage in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs.
 
 
+##### Project
+
+The Project follows the guidelines and procedures within the overarching None. The requirements in the information system acquisition contract permit updating security controls as new threat/vulnerabilities are identified and new technologies are implemented.
+
+The Project System and Services Acquisition Policy contains the process for determining acceptance criteria for all Project system software and services.
+
+The Project organization reviews and approves all acquisition contracts in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs.
+
+
+### SA-4 (10): Use Of Approved Piv Products
+
+```text
+The organization employs only information technology products on the FIPS 201-approved products list for Personal Identity Verification (PIV) capability implemented within organizational information systems.
+```
+
+**Status:** Complete
+
+##### Project
+
+CivicActions/Project and AWS describes this control as “not applicable”, as PIV credentials are not applicable to the Project system. Access and Authentication requirements for the Project system for internal CivicActions and customer are implemented under access management and enforcement (AC-2 and AC-3) and identification and authentication for all users (IA-2 and IA-8).
+
+It is the responsibility of CivicActions for implementation of PIV capability for authentication as required.
+
+
 ### SA-5: Information System Documentation
 
 ```text
@@ -199,6 +244,18 @@ or roles].
 
 **Status:** Complete
 
+##### Project
+
+Client maintains adequate documentation for the Project system. The Project system documentation is protected as required and made available to authorized personnel. Procedures for protecting system documentation include management in the private CivicActions Git repository and the publicly available documentation trees for Free and Open Source Software (FOSS). The documentation maintained for the Project system includes:
+
+- System Security Plan (SSP) – this document
+- Configuration documentation
+- Incident Response and Contingency Plans
+- Rules of Behavior (Acceptable Use Policy)
+- FOSS Reference Manuals (Drupal, GNU/Linux, Apache, MySQL, PHP, Postfix,
+  etc.)
+
+
 #### a
 
 ##### AWS
@@ -211,6 +268,14 @@ AWS built-in features include online documentation for management of the infrast
 ##### CivicActions
 
 Some application features are built on a custom basis and are not part of standard FOSS packages. Administrator documentation for those custom features is maintained in the CivicActions Git repository documentation system.
+
+
+##### Ilias
+
+Public documentation related to Ilias is maintained by the Ilias Association and is located at <https://Ilias.de/documentation>. This documentation contains administrator documentation for the information system that describes:
+- secure configuration, installation, and operation of the system, component, or service;
+- effective use and maintenance of security functions/mechanisms; and
+- known vulnerabilities regarding configuration and use of administrative functions;
 
 
 #### b
@@ -243,12 +308,26 @@ CivicActions follows the user documentation standard practice to provide context
 The CivicActions Customer Support team, described in control SA-3(b), handles questions about how to use the system. Questions are submitted by sending an email to support@civicactions.com, which triggers the creation of a ticket in the CivicActions customer support ticketing system.
 
 
+##### Ilias
+
+The public documentation at Ilias.de contains user documentation for the information system that describes:
+- user-accessible security functions/mechanisms and how to effectively use those
+  security functions/mechanisms;
+- methods for user interaction, which enables individuals to use the system,
+  component, or service in a more secure manner; and
+- user responsibilities in maintaining the security of the system, component, or service;
+
+
 #### c
 
 ##### CivicActions
 
 If the information needed to answer a question is not already included in the website's public-facing documentation, a ticket is created to determine whether the question is sufficiently general in nature to warrant adding the answer to the website's documentation.
 
+
+##### Ilias
+
+As a popular and well-used and maintained free and open source (FOSS) project, in the event that sought after documentation is not available on Ilias.de, it can usually be found in one of the many forums, mailing lists or Stack Exchange sites covering Ilias and its many contributed modules.
 
 #### d
 
@@ -262,6 +341,10 @@ AWS built-in features include online documentation that is protected by AWS from
 All administrator documentation is housed in a protected Git repository. User documentation is publicly available.
 
 
+##### Ilias
+
+The Ilias.de documentation is multi-sourced on GitHub and private repositories.
+
 #### e
 
 ##### AWS
@@ -273,6 +356,10 @@ AWS built-in features include online documentation located at http://aws.amazon.
 
 As needed and approved by the CivicActions Security Office, documentation is available to appropriate personnel by granting access to the private Git repository.
 
+
+##### Ilias
+
+As the Ilias.de documentation is publicly available, there is no need to provide distribution mechanisms.
 
 ### SA-9: External Information System Services
 
@@ -291,6 +378,13 @@ to monitor security control compliance by external service providers on an ongoi
 ##### CivicActions
 
 CivicActions does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing or transmitting federal agency data.
+
+
+##### Project
+
+Project does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing, or transmitting federal agency data.
+
+Project is hosted on the AWS Cloud platform, which was approved under the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
 
 
 ### SA-12: Supply Chain Protection

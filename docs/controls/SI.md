@@ -28,6 +28,15 @@ frequency].
 CivicActions has developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Information Integrity (SI) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
+##### Project
+
+System and information integrity policy and procedures for the Project system are formally documented in the Project SSP, which provides the roles and responsibilities as it pertains to physical and environmental protection systems. The Project system support staff monitors the network on a daily basis and employs up-to-date patches to protect the integrity of the system.
+
+Additional information is contained within the None.
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+
+
 ### SI-2: Flaw Remediation
 
 ```text
@@ -42,6 +51,10 @@ process.
 ```
 
 **Status:** Complete
+
+##### Ilias
+
+Ilias contains built-in security status monitoring of the core application and contributed modules.
 
 #### a
 
@@ -227,6 +240,15 @@ or notifies the issuing organization of the degree of noncompliance.
 
 **Status:** Complete
 
+##### Ilias
+
+CivicActions Security and Operations receive Ilias Security Advisories on a regular basis.
+
+##### Project
+
+Project representatives and system administrators receive alerts from US-CERT on a regular basis. Support personnel take appropriate action in response to relevant areas of concern.
+
+
 #### a
 
 ##### CivicActions
@@ -271,6 +293,11 @@ The organization handles and retains information within the information system a
 ##### CivicActions
 
 The CivicActions organization retains all information, system-related information, incident-related information, and system output in accordance with customers’ requirements retention periods and other NIST guidance and standards, Federal policies, procedures, federal laws, and executive orders. Audit records are retained for 365 days.
+
+
+##### Project
+
+Project representatives and systems administrators receive annual training from Client regarding information assurance and information handling requirements. These personnel are required to operate the system and handle system data and output in accordance with legal requirements. Personnel training and system guidelines ensure that data and programs are handled appropriately.
 
 
 

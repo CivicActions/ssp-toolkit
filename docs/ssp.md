@@ -61,6 +61,13 @@ and associated access controls; and
 CivicActions has developed, documented and disseminated to personnel an access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Access Control (AC) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
+##### Project
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+
+Access control policy and procedures are documented in the The Project SSP. Access to Project operational information or system resources is limited to only authorized users, programs or processes. The Department enforces access control policies to protect the integrity of the The Project. This Department reviews and updates this policy as necessary and it has been being updated, as necessary, since April 2008.
+
+
 ### AC-2: Account Management
 
 ```text
@@ -113,6 +120,25 @@ CivicActions Operations staff, in collaboration with CivicActions' Security Offi
 - System Administrator - user accounts that enjoy full system administrator access
 
 
+##### Ilias
+
+Ilias provides user accounts for individuals who participate in visiting, contributing to and administering the site with the following roles:
+- Anonymous user – Readers of the site who either do not have an account or are not logged in.
+- Guest – This role has limited visibility and read permissions
+- User - Standard role for registered users. This role grants read access to most objects.
+- Administrator - This role has all permissions enabled by default.
+
+
+##### Project
+
+SSH system accounts are provided to contractors on an as-needed basis.
+
+Access privileges are used to ensure that only authorized personnel access certain areas of the Project system. User access is controlled by the completion and submission of Project system Rules of Behavior and New User Account Request forms by the user and management. These items are completed and submitted whenever a new user requires access or an existing user requires access changes. The system administrator, based on need-to-know, assigns the proper permissions. The employee’s manager approves the access rights before the initial account is created. Finally, the system administrator implements the access rights according to the New User Account Request form. The security staff and the support contractor review accounts periodically. Accounts no longer in use are removed from the system by the system administrator.
+
+The Project has implemented user account procedures to disable inactive user accounts after 90-days of inactivity. The Project support staff monitors all user accounts to ensure this procedure is enforced. Section 6.3, Authentication Management, of the Project SSP illustrates the exact procedures the contractor support staff follows to ensure accounts are properly managed.
+The Project system does not have guest or anonymous accounts.
+
+
 ##### SSH
 
 Operations, in collaboration with the Security Office, will set up privileged accounts accounts for the following roles:
@@ -132,6 +158,18 @@ CivicActions' Project Manager assigns the "administrator" role for the managemen
 Drupal defines a default set of roles; Anonymous, Authenticated, and Administrator, as well as providing for the creation of additional organizational-defined roles identified by The Project
 
 
+##### Project
+
+The system Owner has oversight over all permissions that the Project Manager and Operations Staff manages.
+
+
+#### c
+
+##### Project
+
+In accordance with Project Access Control Policy, Project group membership is determined according to the individual's position and role within the organization. A ticket request is used to request accounts and group membership. The request is authorized by the appropriate manager.
+
+
 #### d
 
 ##### CivicActions
@@ -143,11 +181,25 @@ All accounts issued for application administrators and SSH are documented in Civ
 
 Drupal has a sophisticated permissions and role-based access control built-in. Each role within Drupal can only access the documents and controls for which their privilege allows.
 
+##### Ilias
+
+Ilias' permissions and role-based access controls are built-in. Each role within Ilias can only access the pages and controls for which their privilege allows.
+
+##### Project
+
+Project user privileges vary depending on the type of user role assigned. Only users with the role of Administrator have the ability to create and modify user roles for other users.
+
+
 #### e
 
 ##### CivicActions
 
 All accounts issued for the admin management of Application or SSH access must be approved by the System Owner or Project Manager who must create an account request. The CivicActions Operations staff applies appropriate account permissions and settings based on the job role and function documented within the request ticket using processes defined by the CivicActions' Security Office.
+
+##### Project
+
+The System Owner approves, and CivicActions Operations set up the initial Administrator account for Project. Subsequent client access and related approvals are managed by CivicActions Operations in collaboration with the System Owner.
+
 
 #### f
 
@@ -178,6 +230,10 @@ All CivicActions systems log the usage of information accounts.
 
 Drupal monitors the usage of information accounts in the Watchdog log.
 
+##### Ilias
+
+Ilias monitors the usage of information accounts in a log on the server.
+
 #### h
 
 ##### CivicActions
@@ -192,11 +248,23 @@ In accordance with the CivicActions Access Control (AC-01) Policy when an accoun
 System accounts require access authorizations prior to accounts being created. The Project Manager must initiate an access request for an account to be created. CivicActions Operations staff reviews the request to ensure accuracy, including intended system usage and other attributes of the user access being requested.
 
 
+##### Project
+
+Project governs their own administrative access. Users with
+the Administrator roles are empowered to designate and approve
+Administrators.
+
+
 #### j
 
 ##### CivicActions
 
 All privileged accounts are reviewed by CivicActions Operations staff every 180 days.
+
+
+##### Project
+
+Administrators are empowered to and responsible for reviewing their own accounts and determining whether the accounts should still be authorized.
 
 
 #### k
@@ -225,6 +293,17 @@ Access control in Drupal is enforced by authentication via a unique username/pas
 The anonymous user role has the least access to the site of all roles. The website does not allow anonymous users to register an account for themselves. Drupal Administrators are the only user roles that can create new user accounts.
 
 
+##### Ilias
+
+Access control in Ilias is enforced by authentication via Shibboleth single sing on (SSO) for every type of user except Anonymous user. The user’s privileges, permissions, and access are provided on the principle of least privilege.
+The anonymous user role has the least access to the site of all roles. The website does not allow anonymous users to register an account for themselves. Project Administrators, HR Managers, and Org Managers are the only roles that can create new user accounts.
+
+
+##### Project
+
+The The Project ensures that assigned authorizations for controlling access to the system is enforced in accordance with the user definitions noted in Section 1.1.1 of the Project SSP. The technical support staff ensures that access to security functions and protected information is restricted to authorized personnel. Access will be controlled with access control list used on each instance. Members of one group cannot access resources defined for other groups unless explicitly permitted.
+
+
 ### AC-6: Least Privilege
 
 ```text
@@ -247,6 +326,11 @@ time period]; locks the account/node until released by an administrator; delays 
 
 **Status:** Complete
 
+##### Project
+
+The Project system locks out users after three unsuccessful login attempts. The information system automatically locks the account permanently, unless an administrator unlocks the account before then, when the maximum number of unsuccessful attempts (3) is exceeded.
+
+
 #### a
 
 ##### Drupal
@@ -259,6 +343,46 @@ Drupal can be configured to lock an account after a specified number of invalid 
 
 Lockdown following unsuccessful attempts is configurable by Drupal administrators to conform to defined requirements. When a user exceeds the limit of invalid login attempts, their account is automatically locked for a specified time and requires administrator action to unlock the account before the lockout period expires.
 
+### AC-8: System Use Notification
+
+```text
+The information system:
+  a.  Displays to users [Assignment: organization-defined system use notification
+message or banner] before granting access to the system that provides privacy and security notices consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance and states that:
+    1.  Users are accessing a U.S. Government information system;
+    2.  Information system usage may be monitored, recorded, and subject to audit;
+    3.  Unauthorized use of the information system is prohibited and subject to
+criminal and civil penalties; and
+    4.  Use of the information system indicates consent to monitoring and recording;
+  b.  Retains the notification message or banner on the screen until users acknowledge
+the usage conditions and take explicit actions to log on to or further access the information system; and
+  c.  For publicly accessible systems:
+    1.  Displays system use information [Assignment: organization-defined conditions],
+before granting further access;
+    2.  Displays references, if any, to monitoring, recording, or auditing that
+are consistent with privacy accommodations for such systems that generally prohibit those activities; and
+    3.  Includes a description of the authorized uses of the system.
+```
+
+**Status:** Partial
+
+##### Ilias
+
+System Use Notification is inherited from the Project.
+
+##### Project
+
+A warning banner ensures that all persons attempting to gain access to the system know that the system and its information are “Authorized User Only” and that attempts to illegally log on to the system could lead to criminal prosecution. The warning message displayed notifies unauthorized users that they have accessed a U.S. Government computer system and continued, unauthorized use can be punishable by fines or imprisonment. Each device logged into will display a system use notification message before the log in window is displayed. The system use notification banner will remain on the screen until the user takes an explicit action to log on to the device. The following is the notification banner displayed on all system instances:
+
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+- The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+- At any time, the USG may inspect and seize data stored on this IS.
+- Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+- This IS includes security measures (e.g., authentication and access controls) to protect USG interests -- not for your personal benefit or privacy.
+- Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+
 ### AC-14: Permitted Actions Without Identification Or Authentication
 
 ```text
@@ -270,6 +394,15 @@ information system, user actions not requiring identification or authentication.
 ```
 
 **Status:** Complete
+
+##### Ilias
+
+The anonymous user role has the least access to the site of all roles. The website does not allow anonymous users to register an account for themselves.
+
+##### Project
+
+The The Project allows the general public user to read the web pages, do searches on the resource database and to review online forum information without identification and authentication for the public web site. Program and Privilege users cannot access the Project system without identification or authentication.
+
 
 #### a
 
@@ -293,6 +426,11 @@ connections.
 ##### CivicActions
 
 The CivicActions Access Control (AC) policy defines policy for remote usage restrictions. The Project Manager or System Owner may additionally provision users according to their Access Control policies.
+
+
+##### Project
+
+The The Project permits remote access for privileged functions to support operational needs. The technical staff documents, monitors, and controls all methods of remote access to the information system including remote access for privileged functions. Privileged user access is only permitted through the use of Secure Shell (SSH) where the user will authenticate to the device through this secure channel. Virtual Private Networking (VPN) is not enabled in any form within the Project accreditation boundary.
 
 
 ### AC-18: Wireless Access
@@ -345,6 +483,52 @@ information systems.
 This control is not applicable. The system does not connect with external information systems.
 
 
+### AC-22: Publicly Accessible Content
+
+```text
+The organization:
+  a.  Designates individuals authorized to post information onto a publicly accessible
+information system;
+  b.  Trains authorized individuals to ensure that publicly accessible information
+does not contain nonpublic information;
+  c.  Reviews the proposed content of information prior to posting onto the publicly
+accessible information system to ensure that nonpublic information is not included; and
+  d.  Reviews the content on the publicly accessible information system for nonpublic
+information [Assignment: organization-defined frequency] and removes such information, if discovered.
+```
+
+**Status:** Complete
+
+#### a
+
+##### Project
+
+The The Client grants certain Project support staff members the authority to post publicly accessible content. These individuals must complete Project system security training before being granted access to the Project and before they can post publicly accessible content within the The Project. Furthermore, each authorized individual must follow the procedures delineated within the “Using Drupal” Instruction to ensure they are following a verifiable procedure throughout the entire process. This covers the Project Discussion Lists administration areas, Project Quarterly Reporting and training tools, and Drupal Content Management systems. Public content is only edited via the Drupal Content Management System. All other content is only viewable by Project system users and protected by hardened access controls.
+
+
+#### b
+
+##### Project
+
+It is the Project responsibility to train authorized Project individuals ensuring publicly accessible information does not contain nonpublic information.
+
+
+#### c
+
+##### Project
+
+Authorized Project individuals review the proposed content of information prior to posting onto the publicly accessible information system to ensure that nonpublic information is not included.
+
+Project Users have been authorized for creation of publicly accessible content with publishing authority from an Administrator role. The publishing authority ensures the information being published does not contain nonpublic information.
+
+
+#### d
+
+##### Project
+
+Authorized Project individuals review the content on the publicly accessible information system for nonpublic information at least every 365 days and removes such information.
+
+
 ## AU: Audit and Accountability
 
 ### AU-1: Audit And Accountability Policy And Procedures
@@ -369,6 +553,11 @@ frequency].
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel an audit and accountability policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Audit and Accountability (AU) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+
+
+##### Project
+
+The Project maintains a record of system activity by application process and by user activity. Audit and accountability policy and procedures are documented within the Project SSP. Security software features are used to automatically generate and store security audit log records for use in monitoring security-related events on all multi-user systems. The Client reviews and updates this policy as necessary and it was last updated in April 2008. Additional information is contained within the None.
 
 
 ### AU-2: Audit Events
@@ -411,6 +600,17 @@ Drupal's Watchdog log are configured to track all relevant auditable events as d
 - PHP error log: Records any issues that occur during the PHP processing portion of a page load. Issues reported here are usually caused by a website’s code, configuration, or content.
 
 
+##### Ilias
+
+Transaction logs are generated by the Apache web server, Ilias CMS, MySQL database and PHP page processing. Specifically, the following server, application, database and network device audit log events are captured:
+- Apache access log: Contains a list of requests for your website that have bypassed Varnish. These requests include pages, theme files, and static media files.
+- Apache error log: Records any Apache-level issues. The issues reported here are usually caused by general server issues, including capacity problems, .htaccess problems, and missing files.
+- Ilias page request log: Records all Ilias page loads on your website.
+- Ilias log: Records Ilias-related actions on your website. The log is recorded on your server.
+- MySQL slow query log: Contains a list of MySQL queries that have taken longer than one second to complete.
+- PHP error log: Records any issues that occur during the PHP processing portion of a page load. Issues reported here are usually caused by a website’s code, configuration, or content.
+
+
 #### b
 
 ##### CivicActions
@@ -418,11 +618,20 @@ Drupal's Watchdog log are configured to track all relevant auditable events as d
 Auditable events may change due to changes in the threat environment. CivicActions teams collaborate internally and also communicate with customers and partner organizations to identify and select auditable events. The teams that participate in this process are described in control SA-3(b).
 
 
+##### Ilias
+
+All security-related issues and events, including requests for server log analysis, are recorded in CivicActions' JIRA tracking system.
+
 #### c
 
 ##### AWS
 
 In this architecture, AWS CloudTrail, S3 bucket logging, Elastic Load Balancer (ELB) Logging, and RDS MySQL error logging are employed to provide the audit data necessary to determine what activities have occurred within the infrastructure.
+
+
+##### Ilias
+
+CivicActions has extensive experience and specialization as a host of websites that are built using the Ilias web learning platform. Should the need for additional logging become evident, we have the ability to do so by modifying the website's source code to insert additional Ilias logging hooks.
 
 
 #### d
@@ -459,6 +668,24 @@ Information captured in the transaction logs includes, but is not limited to, th
 - PHP error logs: Captures any errors logged during execution of the PHP programming language.
 
 
+##### Ilias
+
+Information captured in the transaction logs includes, but is not limited to, the following auditable events:
+- Failed login attempts
+- Successful login attempts
+- New user account creation
+- Password reset instructions mailed
+- User logins via a one-time login link
+- Content creation
+- Content publishing
+- Web page not found
+- Website configuration changes
+- System administration activities
+- Slow query logs.
+- PHP error logs: Captures any errors logged during execution of the PHP programming
+  language.
+
+
 ### AU-3: Content Of Audit Records
 
 ```text
@@ -486,6 +713,17 @@ The logs collected for Drupal sites include the following types of information:
 - Drupal Watchdog message (if applicable)
 - Unique numerical ID of the content being modified (for content creation, modification and deletion events)
 When auditing a Drupal incident, the CivicActions developers aggregate log sources from multiple servers into the Graylog dashboard so that all log entries for a single managed security incident can be analyzed in a single document. Log sources are sorted, filtered and reviewed. Application logs are maintained primarily for an after-the-fact investigation of critical systems or security events.
+
+
+##### Ilias
+
+The logs collected for Ilias sites include the following types of information:
+- IP number of the request originator
+- Timestamp
+- Username
+- Ilias log message (if applicable)
+- Unique numerical ID of the content being modified (for content creation, modification and deletion events)
+When auditing an Ilias incident, CivicActions' developers aggregate log sources from multiple servers into the Graylog dashboard so that all log entries for a single managed security incident can be analyzed in a single document. Log sources are sorted, filtered and reviewed. Application logs are maintained primarily for an after-the-fact investigation of critical systems or security events.
 
 
 ### AU-4: Audit Storage Capacity
@@ -571,6 +809,11 @@ Universal Time (UTC) or Greenwich Mean Time (GMT) and meets [Assignment: organiz
 ```
 
 **Status:** Complete
+
+##### Project
+
+The Project system clocks are synchronized system-wide and provide time stamps with audit records.
+
 
 #### a
 
@@ -710,6 +953,11 @@ frequency].
 CivicActions has developed, documented and disseminated to personnel awareness and training policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Awareness and Training (AT) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
+##### Project
+
+Security awareness and training policy and procedures are formally documented in None, which provides the roles and responsibilities as it pertains to security awareness and training. The Department will ensure all users, including managers and senior executives, are exposed to basic information system security awareness materials before authorizing access to the system and at least annually thereafter. Client documents and monitors all individual information system security training activities including basic security awareness training. OMB reviews and updates the policy as necessary.
+
+
 ### AT-2: Security Awareness Training
 
 ```text
@@ -720,6 +968,19 @@ The organization provides basic security awareness training to information syste
 ```
 
 **Status:** Complete
+
+##### Project
+
+Client personnel and contractor employees involved with the management, operation, programming, maintenance, or use of Project system receive training in acceptable computer security practices prior to system access. All Client employees and contractors are required to complete annual IT security awareness training. This security awareness training covers issues and policies associated with information security, including end user security roles and responsibilities and rules of behavior. Some topics addressed in the training are:
+
+- Password protection
+- System rules of behavior
+- Protection of hardware, software, and data
+- Proper handling of copyrighted materials
+- Reporting of security breaches and violations
+- Proper procedures for software installation, uploading, and use on
+  workstations.
+
 
 #### a
 
@@ -757,6 +1018,11 @@ duties;
 ```
 
 **Status:** Complete
+
+##### Project
+
+Completion of role-based training is an annual requirement for personnel in roles with significant information security responsibilities that require specialized role-based training. Role-based cybersecurity training is developed and implemented to meet identified training needs and competencies associated with the various target audiences/functional roles (federal and contractor employees) that comprise the Client workforce, as is identified in and required by the FISMA and OMB A-130, Appendix III. The appropriate content of security training is determined based on the assigned roles and responsibilities of individuals and the specific security requirements of the Department, PO and the information systems to which personnel have authorized access. Annual training requirements may be met by completing one or more course(s) within the Department’s learning management systems, participating in instructor-led training provided by the OCIO, or completing an external role-based course or courses offered within their specific functional area of expertise.
+
 
 #### a
 
@@ -798,11 +1064,21 @@ time period].
 The CivicActions' Security Office tracks all security awareness training within the organization and ensures that all employees have successfully completed training when required. The training records are stored and tracked in a spreadsheet maintained by the CivicActions Security Office.
 
 
+##### Project
+
+Client documents and monitors all individual information system security training activities including basic security awareness training. New users are required to take security training within 30 days of hire. This information is kept in the appropriate personnel files to verify users have met the training requirements. Training requirement notifications are sent to individuals as deadline for re-training approaches.
+
+
 #### b
 
 ##### CivicActions
 
 Training records are tracked and maintained by the CivicActions Security Office. Records are maintained permanently.
+
+
+##### Project
+
+Client maintains training certifications for the specified period.
 
 
 ## CM: Configuration Management
@@ -832,6 +1108,11 @@ CivicActions has developed, documented and disseminated to personnel a configura
 Configuration changes are overseen by the Change Control Board (CCB) consisting of the System Owner, Project Manager, CivicActions Operations staff and the engineering team.
 
 
+##### Project
+
+The configuration management policy and procedures are formally documented in the Project Configuration Management Plan (CMP), which provides the roles and responsibilities as it pertains to physical and environmental protection. It defines responsibilities for the implementation and oversight of the guidance contained herein. Client reviews and updates the policy as necessary.
+
+
 ### CM-2: Baseline Configuration
 
 ```text
@@ -852,6 +1133,17 @@ All hardware is maintained by AWS Cloud. The system therefore inherits hardware 
 A current baseline configuration is always available - stored as a tag in the Git repository - such that the site can be regenerated or rolled back should unauthorized or failing changes be applied.
 
 
+##### Ilias
+
+The baseline configuration is maintained in Git and described in the Configuration Management Plan, which describes the change workflow and software configuration. In the context of Security Configuration Management, the baseline configuration is a collection of formally approved configuration state(s) of one or more configuration items ("features") that compose the system. The baseline configuration is used to restore and serves as the basis against which the next change or set of changes to the system is made.
+The features for the system are maintained in the website's source code, which is managed in Git, a source code version control system. Once the source code is updated, Git maintains the new version of staged code once committed in the Git repository as the new baseline. All code prior to it being staged is documented, tested and approved by CivicActions Development, which is described in control SA-3. The production environment is configured to take database snapshots daily.
+
+
+##### Project
+
+A CM process has been established and documented in the Project CMP. All updates are made in accordance with the procedures outlined in the CMP. The CM process establishes a baseline of hardware, software, firmware and documentation, as well as changes thereto, throughout the development and life cycle of the information system. CM ensures the control of the information system through its life cycle. It assures that additions, deletions, or changes made to the Project system do not unintentionally or unknowingly diminish security. If the change is major, the security of the system must be re-analyzed.
+
+
 ### CM-4: Security Impact Analysis
 
 ```text
@@ -863,6 +1155,11 @@ The organization analyzes changes to the information system to determine potenti
 ##### CivicActions
 
 Security impact analysis is conducted and documented within the Change Request (CR) process described in CM-3(b). All proposed configuration- controlled changes to the application are tested first in a sandboxed development environment before being pushed to a staging environment to be tested by another developer and by the Engineering team prior to final approval from CCB to move changes to the production environment.
+
+
+##### Project
+
+An Information Security Program is in place to ensure all security-centric impacts to the Project are properly analyzed and conducted by personnel with information security responsibilities (i.e., Project SSO, IT Security Officer, etc.). These individuals have the appropriate skills and technical expertise to analyze the changes to the Project and their associated security ramifications. In support of continuous monitoring and to ensure the Project system lifecycle is fully sustained, a risk assessment process, be it formal or informal, is performed when changes are occur. This ensures that The Client understands the security impacts and can determine if additional security controls are required.
 
 
 ### CM-6: Configuration Settings
@@ -880,11 +1177,31 @@ with organizational policies and procedures.
 
 **Status:** Complete
 
+#### a
+
+##### Project
+
+The Project is configured in compliance with the applicable baseline security standards. The Department and its technical support staff configure the security settings of all IT products to the most restrictive mode consistent with information system operational requirements. Project utilizes the NIST Special Publication 800-70 for guidance on configuration settings (checklists) for information technology products. When security setting checklist are not available from NIST for a particular device, good security engineering practices along with manufacture guidelines is used to develop the security settings. The CM Manager conducts configuration audits to ensure baseline compliance and documentation of hardware/software configurations throughout the system lifecycle.
+
+
 #### b
 
 ##### CivicActions
 
 CivicActions developers follow security best practices according to the guidelines set by the CivicActions Security Office.
+
+
+##### Project
+
+Configuration settings are implemented, monitored, and controlled in accordance with the organizational Configuration Management Plan for the security configuration management processes and tools.
+
+
+#### c
+
+##### Project
+
+Currently, deviations do not exist for established configuration settings. In the event this changes, the following notes the process that will take place.
+The CivicActions CCB, identifies, approves, and documents exceptions to mandatory configuration settings for individual components within its cloud offering only when operationally necessary. All variances identified during the monthly and annual system testing scans that must be accepted for operational purposes are tracked.
 
 
 #### d
@@ -913,11 +1230,21 @@ and/or services: [Assignment: organization-defined prohibited or restricted func
 In this architecture, only essential capabilities for a multi-tiered web service are configured. AWS Identity and Access Management (IAM) baseline Groups and Roles are configured to support restricted access to AWS resources by privileged users and non-person entities (EC2 systems operating with a role) authorized and assigned by the organization.
 
 
+##### Project
+
+Services are limited to provide only essential capabilities.
+
+
 #### b
 
 ##### AWS
 
 In this architecture, ports, protocols, and services are restricted to those that are required for a multi-tiered web service, via AWS security group rules.
+
+
+##### Project
+
+The Project maintains strict default deny policy with access controls at the firewall, and on individual systems. Inbound access across the system boundary is only allowed on ports 22 (ssh), 80 (http) and 443 (https), with an additional port, 25 (smtp) open on the mail server.
 
 
 ### CM-8: Information System Component Inventory
@@ -937,6 +1264,16 @@ organization-defined frequency].
 ```
 
 **Status:** Complete
+
+##### Ilias
+
+The software inventory for the application is maintained in the codebase stored CivicActions' Git source code version control system. It consists of the following components:
+- The Ilias open-source web learning management system
+- Ilias add-on modules, themes, and libraries available from the Ilias.de website which extend Ilias core
+- Custom code written by CivicActions' developers
+The inventory is reviewed monthly by CivicActions Product Engineering teams in accordance with the Configuration Management Plan.
+Website content is backed up daily using CPM snapshots. This allows CivicActions to build an inventory of the system on demand.
+
 
 #### a
 
@@ -975,6 +1312,10 @@ ensure that this capability is not used for the unauthorized distribution, displ
 
 Drupal is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These are all compatible with the Free Software Foundation's General Public License (GPL) version 2 or later and are freely available for use under copyright law.
 
+
+##### Ilias
+
+Ilias is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These are all compatible with the Free Software Foundation's General Public License (GPL) version 2 or later and are freely available for use under copyright law.
 
 ### CM-11: User-Installed Software
 
@@ -1037,6 +1378,13 @@ and
 CivicActions has developed, documented and disseminated to personnel a contingency planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Contingency Planning (CP) Policy and Procedure that can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
+##### Project
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+
+The Project and has developed a contingency planning policy consistent with NIST 800-34. Contingency planning procedures are formally documented within the Project Contingency Plan, which provides the roles and responsibilities as it pertains to contingency planning. The Project reviews and updates the policy as necessary and the policy was last updated in July 2012.
+
+
 ### CP-2: Contingency Plan
 
 ```text
@@ -1087,6 +1435,11 @@ CivicActions has developed a contingency plan for that addresses:
 ##### CivicActions
 
 The CivicActions Information System Contingency Plan (ISCP) has been distributed to all CivicActions team members. The ISCP can be found in the CivicActions Handbook at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan>.
+
+
+##### Project
+
+The Project Information System Contingency Plan (ISCP) has been distributed to all members who have roles in Contingency Planning and Incident Response Team. Direction by the System Owner will update who is required to receive a copy of the contingency plan. The ISCP can be found in the Project GitHub wiki at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan>.
 
 
 #### c
@@ -1271,6 +1624,11 @@ frequency].
 CivicActions has developed, documented and disseminated to personnel an identification and authentication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained by the CivicActions Identification and Authentication (IA) Policy. This document can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
+##### Project
+
+The Project system owners/managers manage user identifiers by: (i) uniquely identifying each user; (ii) verifying the identity of each user; (iii) receiving authorization to issue a user identifier from an appropriate official; (iv) ensuring that the user identifier is issued to the intended party; (v) disabling user identifier after a reasonable period of inactivity as documented in its security procedures; and (vi) archiving user identifiers. Project reviews and updates this policy as necessary.
+
+
 ### IA-2: Identification And Authentication (Organizational Users)
 
 ```text
@@ -1300,6 +1658,24 @@ To access root (sudo) privileges an additional password is required. The passwor
 ##### Drupal
 
 Drupal administrators and other roles with unrestricted access to live content and/or user accounts are required to use two-factor authentication. See artifact None
+
+
+##### Project
+
+The Project employs multi-factor authentication for privileged users.
+
+
+### IA-2 (12): Acceptance Of Piv Credentials
+
+```text
+The information system accepts and electronically verifies Personal Identity Verification (PIV) credentials.
+```
+
+**Status:** None
+
+##### Project
+
+The Project system allows users to access the system using Common Access Cards (CAC).
 
 
 ### IA-4: Identifier Management
@@ -1332,6 +1708,10 @@ Access to the system is authorized by the System Owner or Project Manager for ea
 Upon account creation, the Drupal software assigns each user account a unique numerical user ID (UID). This UID is used internally by the system to track user actions such as content creation or editing. The numerical user IDs are never reused even if their user accounts are subsequently blocked or deleted.
 
 
+##### Ilias
+
+Upon account creation, the Ilias software assigns each user account a unique numerical user ID (UID). This UID is used internally by the system to track user actions such as content creation or editing. The numerical user IDs are never reused even if their user accounts are subsequently blocked or deleted.
+
 #### b
 
 ##### CivicActions
@@ -1346,6 +1726,10 @@ In accordance with CivicActions Identification and Authentication (IA) Policy ou
 When Drupal user accounts are created, users' email addresses are verified by sending a single-use activation link to the user’s mailbox. The email recipient then uses the activation link to log in to the website and supply a password which must meet the system's password complexity requirements.
 
 
+##### Ilias
+
+When Ilias user accounts are created, users' email addresses are verified by sending a single-use activation link to the user’s mailbox. The email recipient then uses the activation link to log in to the website and supply a password which must meet the system's password complexity requirements.
+
 #### c
 
 ##### CivicActions
@@ -1358,6 +1742,10 @@ User accounts are assigned a unique identifier in the form of a unique username,
 Identifiers for CivicActions internal personnel include a username based on the individual's full first and last name and are reviewed for uniqueness by the admin group when it approves the creation of the user account.
 
 
+##### Ilias
+
+Identifiers for CivicActions internal personnel include a username based on the individual's full first and last name and are reviewed for uniqueness by the admin group when it approves the creation of the user account.
+
 #### d
 
 ##### CivicActions
@@ -1367,6 +1755,10 @@ Account usernames may not be re-used for at least two years.
 ##### Drupal
 
 Drupal user's unique identifier (the numeric user ID, or UID) is never reused.
+
+##### Ilias
+
+Ilias user's unique identifier (the numeric user ID, or UID) is never reused.
 
 #### e
 
@@ -1411,11 +1803,31 @@ Refer to control AC-2 in this SSP for further details on account provisioning.
 CivicActions will create and maintain an initial Drupal Administrator (highest level of Drupal Account). New Administrators are able to provide additional Administrator access at their own discretion and are ultimately responsible for managing their own Administrator and other user accounts that they create.
 
 
+##### Ilias
+
+Refer to control AC-2 in this SSP for further details on account provisioning.
+CivicActions will create and maintain an initial Ilias Administrator (highest level of Ilias Account). New Administrators are able to provide additional Administrator access at their own discretion and are ultimately responsible for managing their own Administrator and other user accounts that they create.
+
+
+##### Project
+
+Authentication for Project internal personnel are created during the personnel assignment process where requests are made to the Project admin group for proper access levels. The Project admin group verifies the identity of the user. The website performs further verification by sending an email to the user's mailbox containing a single-use activation link which must be used to log in to the account for the first time and to create a password.
+
+
 #### b
 
 ##### Drupal
 
 Initial authenticator content (a unique email address – not previously used in any other account) is provided by the user. Internal initial password requirements set by CivicActions Operations and ongoing password refreshes by internal users follow the requirements set in the Identification and Authentication Policy.
+
+
+##### Ilias
+
+Initial authenticator content (a unique email address – not previously used in any other account) is provided by the user. Internal initial password requirements set by CivicActions Operations and ongoing password refreshes by internal users follow the requirements set in the Identification and Authentication Policy.
+
+##### Project
+
+Project admins in collaboration with CivicActions Operations are responsible for provisioning and de-provisioning end user accounts in compliance with the authentication requirements described herein.
 
 
 #### c
@@ -1424,11 +1836,54 @@ Initial authenticator content (a unique email address – not previously used in
 
 The system partially inherits this control from Drupal standard password strength mechanisms.
 
+##### Ilias
+
+The system partially inherits this control from Ilias standard password strength mechanisms.
+
+##### Project
+
+When entering a user account password upon initial login, all users must comply with the following password policies, which are enforced by the website's software configuration:
+
+- Password must be at least 14 characters in length.
+- Password must contain at least one digit.
+- Password must contain at least one special character (not whitespace or an alphanumeric).
+- Password must contain at least one uppercase character.
+- Password must contain at least one lowercase character.
+
+
 #### d
 
 ##### Drupal
 
 The system partially inherits this control from Drupal standard password management. All password creation/change/reset operations are recorded in the website's "Drupal Watchdog" logs.
+
+
+##### Ilias
+
+The system partially inherits this control from Ilias standard password management.
+All password creation/change/reset operations are recorded in the website's Ilias logs.
+
+
+##### Project
+
+Project is responsible for provisioning and de-provisioning end user accounts, which must comply with the strict password policies that are enforced by the website's software configuration, as described in IA-5(d).
+
+In accordance with Project site configuration, the following administrative procedures exist for initial authenticator distribution, for lost/compromised/damaged authenticators, and for revoking authenticators.
+
+- Initial authenticator distribution: Users receive a one-time login link
+  by email upon creating of their user account. They use that link to log
+  in and then must enter a password themselves which complies with the
+  password complexity requirements described in IA-4(b).
+
+- Lost/compromised/damaged authenticators: Users who have forgotten their
+  password may request a new password by submitting their username or
+  email address. The website responds by emailing a one-time login link
+  to the user's email address. After using the link to log in, the user
+  is required to enter a new password.
+
+- Revoking authenticators: Users who have not changed their password in
+  the last 90 days are automatically blocked. Administrators may block
+  any user account if they believe there is a reason to do so.
 
 
 #### e
@@ -1438,12 +1893,41 @@ The system partially inherits this control from Drupal standard password managem
 Drupal requires users to change their password upon initial login, and the application website enforces this. Each user account is assigned a default password that is randomly generated, not possible to guess, and not shared with anyone, including site administrators. When the user logs in and creates a new password, the default password is erased from the website database.
 
 
+##### Ilias
+
+Ilias requires users to change their password upon initial login, and the application website enforces this. Each user account is assigned a default password that is randomly generated, not possible to guess, and not shared with anyone, including site administrators. When the user logs in and creates a new password, the default password is erased from the website database.
+
+#### f
+
+##### Project
+
+Project authenticators follow these password lifetime restrictions:
+
+- Maximum password age = 90
+- Minimum password age = 1
+- Password reuse restriction = 10
+
+
+#### g
+
+##### Project
+
+Project enforces password lifetime restrictions. The password lifetime settings for internal accounts is as follows:
+
+- Minimum restriction of zero (1) days and
+- Maximum restriction of ninety (90) days before a password change is required.
+
+
 #### h
 
 ##### Drupal
 
 For all Drupal users, passwords are protected by the website's software, which only stores an encrypted string based on the password. This means that even if the website's database should be compromised, an attacker would still be unable to know users' actual passwords. Internal users receive training in security awareness and acceptable use and are instructed never to reveal their passwords to anyone.
 
+
+##### Ilias
+
+For all Ilias users, passwords are protected by the website's software, which only stores an encrypted string based on the password. This means that even if the website's database should be compromised, an attacker would still be unable to know users' actual passwords. Internal users receive training in security awareness and acceptable use and are instructed never to reveal their passwords to anyone.
 
 #### i
 
@@ -1467,11 +1951,24 @@ Drupal users are required to take appropriate measures in the handling of passwo
 - Not writing down or storing passwords in a readable form in any physical or logical location where they may be discoverable by unauthorized persons.
 
 
+##### Ilias
+
+Ilias users are required to take appropriate measures in the handling of passwords including:
+- Not transmitting user names and passwords together in an unencrypted format
+- Not permitting the sending of passwords in an unencrypted format via email
+- Not listing passwords in tickets
+- Not writing down or storing passwords in a readable form in any physical or logical location where they may be discoverable by unauthorized persons.
+
+
 #### j
 
 ##### Drupal
 
 This control is not applicable due to the fact that group accounts are not created within the Drupal application per IA Policy.
+
+##### Ilias
+
+This control is not applicable due to the fact that group accounts are not created within the Ilias application per IA Policy.
 
 ### IA-5 (1): Password-Based Authentication
 
@@ -1494,6 +1991,11 @@ change to a permanent password.
 
 **Summary:** Partially inherited from AWS (FedRAMP).
 
+##### Project
+
+Project is responsible for provisioning and de-provisioning end user accounts, which must comply with the strict password policies that are enforced by the website's software configuration, as described in IA-5.
+
+
 #### a
 
 ##### AWS
@@ -1507,12 +2009,22 @@ Drupal supports the requirement for password-based authentication complexity. Ne
 Changing password lifetime, length, reuse or strength requirements requires a code setting change that therefore needs to be planned and approved by CivicActions Change Control Board before being implemented.
 
 
+##### Ilias
+
+Ilias supports the requirement for password-based authentication complexity. New users of Ilias are required to specify their password authentication as soon as they log in to the website for the first. The website requires all submitted passwords to comply with validation rules, as described above in IA-5(c).
+Changing password lifetime, length, reuse or strength requirements requires a code setting change that therefore needs to be planned and approved by {'name': 'CivicActions, Inc', 'name_short': 'CivicActions', 'address': {'street': '3527 Mt Diablo Blvd, Unit 269', 'city': 'Lafayette', 'state': 'CA', 'zip': 94549, 'country': None}, 'phone': '510-408-7510', 'website': 'www.civicactions.com', 'compliance_docs_url': 'https://github.com/CivicActions/compliance-docs', 'email_support': 'support@civicactions.com', 'security_policy_url': 'https://github.com/CivicActions/security-policy'}' Change Control Board before being implemented.
+
+
 #### b
 
 ##### Drupal
 
 When required to change passwords, Drupal users are required to change their authenticator password by changing at least one character. Enforcement of this control is implemented through the website's software configuration.
 
+
+##### Ilias
+
+When required to change passwords, Ilias users are required to change their authenticator password by changing at least one character. Enforcement of this control is implemented through the website's software configuration.
 
 #### c
 
@@ -1526,15 +2038,27 @@ AWS built-in features of AWS Identity and Access Management (IAM) and the AWS Co
 All Drupal passwords are encrypted in storage, using the SHA-512 hashing algorithm with a salt. The hash function is performed repeatedly to further obfuscate the password via key stretching. In transmission, passwords are encrypted using SSL via HTTPS.
 
 
+##### Ilias
+
+All Ilias passwords are encrypted in storage, using the SHA-512 hashing algorithm with a salt. The hash function is performed repeatedly to further obfuscate the password via key stretching. In transmission, passwords are encrypted using SSL via HTTPS.
+
 #### d
 
 ##### Drupal
 
 The website requires all submitted passwords to comply with lifetime rules, as described above in IA-5(g).
 
+##### Ilias
+
+The website requires all submitted passwords to comply with lifetime rules, as described above in IA-5(g).
+
 #### e
 
 ##### Drupal
+
+Password reuse is limited through software configuration.
+
+##### Ilias
 
 Password reuse is limited through software configuration.
 
@@ -1550,6 +2074,10 @@ AWS built-in features of AWS Identity and Access Management (IAM) provides the c
 When website users request a password reset, the website sends a temporary login link to the email address associated with their user account. After a user logs in via the temporary login link, the website requires the user to enter a new password before proceeding further.
 
 
+##### Ilias
+
+When website users request a password reset, the website sends a temporary login link to the email address associated with their user account. After a user logs in via the temporary login link, the website requires the user to enter a new password before proceeding further.
+
 ### IA-5 (11): Hardware Token-Based Authentication
 
 ```text
@@ -1563,6 +2091,11 @@ The information system, for hardware token-based authentication, employs mechani
 AWS built-in features of AWS Identity and Access Management (IAM) provides the capability for Hardware MFA using Gemalto SafeNet IDProve 100 and 700 OTP Tokens which are compliant to OATH open standard (time based - 6 digits) Expected battery life is 3-5 years or approximately 15,000 - 20,000 clicks. These products are handheld devices that provide strong authentication by generating a unique password that is valid for only one attempt and for 30 seconds.
 
 It is the customer organization's responsibility to implement Hardware MFA. Refer to http://aws.amazon.com/iam/details/mfa/ and http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html
+
+
+##### Project
+
+Project does not support physical hardware token-based authentication. Therefore this control is Not Applicable.
 
 
 ### IA-6: Authenticator Feedback
@@ -1585,6 +2118,10 @@ AWS built-in features obscure keystroke feedback for password input during AWS c
 Feedback of authentication information is obscured during the authentication process into the Drupal application by displaying “dots” in the place of a password, as is standard for web-based applications. In transmission, passwords are encrypted using SSL via HTTPS.
 
 
+##### Ilias
+
+Feedback of authentication information is obscured during the authentication process into the Ilias application by displaying “dots” in the place of a password, as is standard for web-based applications. In transmission, passwords are encrypted using SSL via HTTPS.
+
 ### IA-7: Cryptographic Module Authentication
 
 ```text
@@ -1602,6 +2139,10 @@ AWS built-in features of AWS Identity and Access Management (IAM) authentication
 
 All Drupal passwords are encrypted in storage, using the SHA-512 hashing algorithm with a salt. SHA-512 is an approved security function under FIPS PUB 140-2. The hash function is performed repeatedly to further obfuscate the password via key stretching. In transmission, passwords are encrypted using SSL via HTTPS.
 
+
+##### Ilias
+
+All Ilias passwords are encrypted in storage, using the SHA-512 hashing algorithm with a salt. SHA-512 is an approved security function under FIPS PUB 140-2. The hash function is performed repeatedly to further obfuscate the password via key stretching. In transmission, passwords are encrypted using SSL via HTTPS.
 
 #### j
 
@@ -1621,6 +2162,58 @@ The information system uniquely identifies and authenticates non-organizational 
 AWS built-in features of AWS Identity and Access Management (IAM) provide the capability for uniquely identifying and authenticating users and processes acting on their behalf to both organizational and non-organizational users, providing privileges based on the credentials, group memberships, and access policies assigned to them.
 
 The customer organization at its discretion provides user accounts and privileges to both organizational non-organizational users in addition to organizational users.
+
+
+### IA-8 (1): Acceptance Of Piv Credentials From Other Agencies
+
+```text
+The information system accepts and electronically verifies Personal Identity Verification (PIV) credentials from other federal agencies.
+```
+
+**Status:** Complete
+
+##### Project
+
+Project allows the use of customer agency supplied Common Access Cards (CAC).
+
+
+### IA-8 (2): Acceptance Of Third-Party Credentials
+
+```text
+The information system accepts only FICAM-approved third-party credentials.
+```
+
+**Status:** Complete
+
+##### Project
+
+Project does not utilize FICAM approved credentials.
+
+
+### IA-8 (3): Use Of Ficam-Approved Products
+
+```text
+The organization employs only FICAM-approved information system components in [Assignment: organization-defined information systems] to accept third-party credentials.
+```
+
+**Status:** Complete
+
+##### Project
+
+Project does not utilize FICAM approved products.
+
+
+### IA-8 (4): Use Of Ficam-Issued Profiles
+
+```text
+The information system conforms to FICAM-issued profiles.
+```
+
+**Status:** Complete
+
+##### Project
+
+CivicActions does not utilize FICAM approved products or profiles.
 
 
 ## IR: Incident Response
@@ -1645,9 +2238,25 @@ and
 
 **Summary:** Fully inherited from AWS (FedRAMP).
 
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+
+
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel an incident response planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Incident Response (IR) Policy and Procedure that can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+
+
+##### Project
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+
+The Project maintains an Incident Response Plan (IRP), consistent with NIST 800-61, which addresses purpose, scope, roles, and responsibilities. The incident response procedures address any activity or occurrence that compromises the integrity of a system, denies access to or use of IT resources, and compromises the sensitivity of the information stored in, processed by or transmitted by a system.
+
+Additionally, the IRP includes procedures to respond to waste, fraud, misuse, or abuse of any departmental IT system, damage or loss of software or data contained in any system, Use of unlicensed (pirated) software products, discovery of hardware or software vulnerabilities
+
+The Project Incident Response Plan can be found in the CivicActions GitHub repository at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>
 
 
 ### IR-2: Incident Response Training
@@ -1664,9 +2273,19 @@ response role or responsibility;
 
 **Summary:** Fully inherited from AWS (FedRAMP).
 
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident response training.
+
+
 ##### CivicActions
 
 All CivicActions employees are required to participate in incident response training, as required by Incident Response Plan changes, and annually. The CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) is the basis for the training and the incident response workflow created by the Security Office. Upon a review of past incidents, the training is updated to ensure processes and workflows are updated.
+
+
+##### Project
+
+CivicActions Operations and users of the Project system with incident response responsibilities are required to participate in incident response training once the role is assumed within 10 days, as required by Project changes, and annually. The Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) is the basis for the training and the incident response workflow created by the Security team. Upon a review of past incidents, the training is updated to ensure processes and workflows are updated.
 
 
 ### IR-4: Incident Handling
@@ -1684,6 +2303,20 @@ incident response procedures, training, and testing, and implements the resultin
 **Status:** Complete
 
 **Summary:** Fully inherited from AWS (FedRAMP).
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident handling.
+
+
+##### Project
+
+The Client Computer Security Officer (CSO) handles all incidents for the The Project.
+
+The The Client utilizes proven incident handling methodologies for security incidents that includes preparation, detection and analysis, containment, eradication, and recovery. The Client maintains a list of lessons learned from ongoing incident handling activities and uses those lessons to update the incident response procedures accordingly.
+
+Preparation activities includes all CivicActions and Project internal users are trained if their role includes incident response. Detection monitoring tools providing notification to incident response personnel for analysis and action. Containment, eradication and recovery activities include AWS and LAMP-stack inherited fixes and Project system administrators adjusting IP port blocking security groups and SELinux policies.
+
 
 #### a
 
@@ -1717,9 +2350,19 @@ The organization tracks and documents information system security incidents.
 
 **Summary:** Fully inherited from AWS (FedRAMP).
 
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident monitoring.
+
+
 ##### CivicActions
 
 CivicActions utilizes the JIRA ticketing tool for tracking and reporting of incident events from reporting to resolution and post- incident analysis. Initial reporting can come from continuous monitoring tools as well as client and public submissions made to support@civicactions.com. Jira processes the tickets for the public submissions and the CivicActions Support Team creates associated GitHub Issues. Internal incidents reported are processed within the GitHub Issue queue. Details of the handling procedures are included in the CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan/#response-process>) Response Process.
+
+
+##### Project
+
+The Project utilizes network and host-based intrusion detection systems, monitoring the system and application logs for anomalous events. Incidents are tracked using the same ticketing system that is used to track all system-related changes and events.
 
 
 ### IR-6: Incident Reporting
@@ -1735,6 +2378,18 @@ authorities].
 **Status:** Complete
 
 **Summary:** Fully inherited from AWS (FedRAMP).
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident reporting.
+
+
+##### Project
+
+If an incident involves suspicious activity, CivicActions Operations will contact the Project System Owner who may then contact the Project CSO.
+
+The CivicActions Computer Security Officer (CSO) handles all incidents for the Project. The CSO is prepared to report all incidents to the The Client.
+
 
 #### a
 
@@ -1762,6 +2417,11 @@ The organization provides an incident response support resource, integral to the
 ```
 
 **Status:** Complete
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident resonse assistance.
+
 
 ##### CivicActions
 
@@ -1800,6 +2460,16 @@ incident response personnel (identified by name and/or by role) and organization
 **Status:** Complete
 
 **Summary:** Fully inherited from AWS (FedRAMP).
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident response plan.
+
+
+##### Project
+
+The Project Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) includes a comprehensive incident response program, which details the implementation of procedures and tools required for incident handling. The incident response program details the roles and responsibilities of Project/ CivicActions IR Team. The IR Team includes members from CivicActions Security and Operations teams. Incident response plays a pivotal role in monitoring, detecting and handling security incidents of the entire information system. The IRP details categorization of incidents in accordance with NIST 800-61 and accordingly documents and reports incidents. The IRP is reviewed annually and updated as needed by ISSO, with the assistance of the Incident Response Team.
+
 
 #### a
 
@@ -1890,6 +2560,15 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 CivicActions has developed, documented and disseminated to personnel a system maintenance policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Maintenance (MA) Policy and Procedure document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
+##### Project
+
+System maintenance policy and procedures are formally documented in the Project SSP, which provides the roles and responsibilities as it pertains to software and systems maintenance and updates. The The Project ensures that maintenance controls are developed, disseminated, reviewed, and updated as necessary.
+
+Physical and environmental protection is fully inherited from the AWS FedRAMP certified us-east cloud.
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+
+
 ### MA-2: Controlled Maintenance
 
 ```text
@@ -1919,6 +2598,17 @@ This System Maintenance control associated with hardware components within AWS i
 For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
 
 Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+
+
+##### Project
+
+The Project schedules, performs, and documents regular maintenance on the software components of all systems, including but not limited to:
+
+- Hourly automated snapshot backups
+- Daily disaster recovery remote backups
+- Daily Intrusion Detection (OSSEC) / Data Integrity Assurance (AIDE)
+- As needed help desk support
+- Twice-monthly OS updates/patches
 
 
 ### MA-4: Nonlocal Maintenance
@@ -2013,6 +2703,11 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 Maintenance of the system and applications can only be performed by personnel designated as having internal administrator privileges and responsibilities. Access rights for the internal administrators are assigned and granted access to perform their specific job responsibilities. All physical maintenance requirements are inherited from AWS.
 
 
+##### Project
+
+Client maintains a list of authorized contract (CivicActions) personnel who perform maintenance and repair activities on the Project Project system components, and only these authorized personnel may perform the maintenance. All maintenance personnel have the required personnel security elements in place.
+
+
 ## MP: Media Protection
 
 ### MP-1: Media Protection Policy And Procedures
@@ -2047,6 +2742,11 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel a media protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Media Protection (MP) Policy and Procedure document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+
+
+##### Project
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog. Media protection policy and procedures are fully inherited from AWS Cloud.
 
 
 ### MP-2: Media Access
@@ -2130,9 +2830,21 @@ and
 
 **Status:** Complete
 
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+
+
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Personnel Security (PS) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+
+
+##### Project
+
+The Project documents the security policy and procedures in addressing position categorization, personnel screening, personnel termination, personnel transfer, and access agreements within the Project SSP. Project adopts the Client personnel security standards and determines position risks levels based on public trust responsibilities.
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
 
 
 ### PS-2: Position Risk Designation
@@ -2145,6 +2857,18 @@ The organization:
 ```
 
 **Status:** Complete
+
+##### Project
+
+Project position sensitivity levels are assigned by the The Client. Each position designation is documented on the Standard Position Description (SPD) and assigned a risk level (or sensitivity level) commensurate with the sensitivity of the information, the risk to that information and the system maintaining that information. The levels of risk still need to be designated by Client for employee and contractor positions but since Project system does not have any sensitive data, a low risk scenario can be assumed.
+
+- Employee risk levels and background investigations are: Low Risk= NACI, Moderate Risk= LBI, High Risk= BI.
+- Contractor risk levels and background investigations are: Low Risk= NACI, Moderate Risk= NACC, High Risk= BI.
+
+In order to ensure every employee is assigned to a position, which has been reviewed for sensitivity by the NCC, the SPD is a required data attribute of an employee’s HR record. Position risks designations are reviewed and revised when NCC or OPM publish changes to sensitivity levels.
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog
+
 
 #### a
 
@@ -2179,6 +2903,13 @@ requiring rescreening and, where rescreening is so indicated, the frequency of s
 
 **Status:** Complete
 
+##### Project
+
+Minimum background investigations are conducted, since all data is non-sensitive, for individuals requiring access to Project information and information systems. The type of background investigation conducted for an individual is determined by the individual’s position risk categorization noted in control PS-2. Client conducts periodic reinvestigations in accordance with OPM and NIST guidelines.
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+
+
 #### a
 
 ##### CivicActions
@@ -2211,6 +2942,13 @@ organization-defined time period].
 ```
 
 **Status:** Complete
+
+##### Project
+
+The Client HR policy states that managers or designated officials are responsible for recovering and properly securing employee badges and returning it to the local physical security office. The Client executes termination procedures that remove personnel access privileges, computer accounts. When an employee is terminated, the employee’s manager or designated official completes a form requesting termination of access for the user. Local management and the security manager coordinate disabling or removing Project privileged access with the system administrator. The employee’s manager or designated official is responsible for recovering and properly securing his/her ID badge and returning it to the local physical security office. The employee’s manager or designated official ensures that any information on the system that the employee was responsible for will be available to the appropriate personnel.
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+
 
 #### a
 
@@ -2272,6 +3010,15 @@ organization-defined time period].
 
 **Status:** Complete
 
+##### Project
+
+When an employee is reassigned or transferred, the employee’s manager or designated official is required to request transfer of access (as appropriate) for the user.
+
+In accordance with the The Client HR policy, the employee’s manager or designated official is responsible for recovering and properly securing his/her ID badge and returning it to the local physical security office. The manager provides prompt notification to the Project system/security administrator when an employee changes assignments and/or location. This includes taking prompt and appropriate action to change employee access profile and/or remove employee from the system; and ensure that users’ system access is cancelled when the need no longer exists.
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+
+
 #### a
 
 ##### CivicActions
@@ -2300,6 +3047,95 @@ Access authorizations are modified as needed to coincide with changes in duties 
 CivicActions Operations staff is informed of transfers that require access authorization modifications within five business days by the Project Manager, System Owner or Office of Human Resources.
 
 
+### PS-6: Access Agreements
+
+```text
+The organization:
+  a.  Develops and documents access agreements for organizational information
+systems;
+  b.  Reviews and updates the access agreements [Assignment: organization-defined
+frequency]; and
+  c.  Ensures that individuals requiring access to organizational information
+and information systems:
+    1.  Sign appropriate access agreements prior to being granted access; and
+    2.  Re-sign access agreements to maintain access to organizational information
+systems when access agreements have been updated or [Assignment: organization-defined frequency].
+```
+
+**Status:** Complete
+
+#### a
+
+##### Project
+
+All users of the Project system must read and accept access agreements upon every login.
+
+
+#### b
+
+##### Project
+
+The Access Agreements are reviewed at least annually or when a significant change occurs.
+
+
+#### c
+
+##### Project
+
+All individuals requiring access to the Project system are required to sign the Access Agreements before login is granted. When the Access Agreements are updated, the individual will be required to sign the new copy before regaining access.
+
+
+### PS-7: Third-Party Personnel Security
+
+```text
+The organization:
+  a.  Establishes personnel security requirements including security roles and
+responsibilities for third-party providers;
+  b.  Requires third-party providers to comply with personnel security policies
+and procedures established by the organization;
+  c.  Documents personnel security requirements;
+  d.  Requires third-party providers to notify [Assignment: organization-defined
+personnel or roles] of any personnel transfers or terminations of third-party personnel who possess organizational credentials and/or badges, or who have information system privileges within [Assignment: organization-defined time period]; and
+  e.  Monitors provider compliance.
+```
+
+**Status:** Complete
+
+#### a
+
+##### Project
+
+Personnel security requirements including security roles and responsibilities that apply to primary contracting organizations flow down to their subcontractors.
+
+
+#### b
+
+##### Project
+
+Personnel security policies and procedures that apply to primary contracting organizations flow down to their subcontractors.
+
+
+#### c
+
+##### Project
+
+All personnel security requirements are documented in PS-1 and other related Personnel Security controls.
+
+
+#### d
+
+##### Project
+
+For personnel transfers and terminations of third-party personnel, the procedures defined in employee termination (PS-4) and employee transfer (PS-5) flow down to subcontractors.
+
+
+#### e
+
+##### Project
+
+Compliance measures for assessing third-party personnel and/or contractors are determined on a case-by-case basis. Third-party personnel are monitored to ensure compliance with personnel security requirements.
+
+
 ### PS-8: Personnel Sanctions
 
 ```text
@@ -2311,6 +3147,11 @@ organization-defined time period] when a formal employee sanctions process is in
 ```
 
 **Status:** Complete
+
+##### Project
+
+The disciplinary sanctions for personnel failing to comply with establish IT security policies and procedures are included in The Client HR policy. If an employee violates the Client information security policies and procedures, the employee may be subject to disciplinary action at the discretion of management. Actions may range from verbal or written warning, removal of system access for a specific period of time, reassignment to other duties, or termination, depending on the severity of the violation. Disciplinary sanctions are reported to the OCIO.
+
 
 #### a
 
@@ -2586,9 +3427,21 @@ and
 
 **Status:** Complete
 
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+
+
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel a system planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Planning (PL) Policy and Procedure document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
+
+
+##### Project
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+
+The Project developed its security policy planning and procedures based on None, guidance from NIST, the Office of Management and Budget and industry best practices. Security policies and procedures are formally documented within the Project SSP, which provides the roles and responsibilities as it pertains to security planning. It provides guidance on all aspects of security for the protection of Project information technology resources. It defines responsibilities for the implementation and oversight of the guidance contained herein. The plan was last updated in December, 2015.
 
 
 ### PL-2: System Security Plan
@@ -2620,6 +3473,16 @@ of operation or problems identified during plan implementation or security contr
 ```
 
 **Status:** Complete
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: AWS system security plan.
+
+
+##### Project
+
+The System Security Plan (SSP) was developed and implemented for Project system in accordance with None, NIST SP 800-18 and NIST SP 800-37. The SSP includes a description of the management, operational, and technical controls in place or planned for the application. The SSP is included as a key document in an application’s C&A package and is reviewed and approved by designated officials. The SSP identifies the system owner and responsible parties for managing system access and the overall security of the system. The Chief Information Security Officer reviews and approves the SSP. The SSP will be reviewed at least annually and updated to account for any changes to the Project system and to address any changes in security controls.
+
 
 #### a
 
@@ -2689,11 +3552,23 @@ behavior to read and re-sign when the rules of behavior are revised/updated.
 CivicActions has created and made readily available to individuals requiring access to the information system the rules that describe their responsibilities and expected behavior with regard to information and information system usage. These rules, defined as the Acceptable Use Policy, are included in the CivicActions Security Policy accessible here: <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy> which has also been uploaded to CSAM as ''Appendix J1 - System Rules of Behavior - Privileged User'' (CivicActions Security Policy 20190226.docx).'
 
 
+##### Project
+
+Project has created and made readily available to individuals requiring access to the information system the rules that describes their responsibilities and expected behavior with regard to information and information system usage. These rules are captured in ‘Appendix J2 - System Rules of Behavior - General User’ (ProjectSystemRoB2019-template.docx).
+
+Project has reviewed and accepted as a superset alternative the CivicActions Acceptable Use Policy.
+
+
 #### b
 
 ##### CivicActions
 
 CivicActions HR receives a signed acknowledgment from all employees, indicating that they have read, understand, and agree to abide by the rules of behavior, before authorizing access to information and the information system. The text of the electronically signed (via DocuSign) acknowledgment document has been uploaded to CSAM as artifact: ''CivicActions Security Policy Acknowledgement.docx''
+
+
+##### Project
+
+The Project System Owner receives a signed acknowledgment from such individuals that are not CivicActions employees, indicating that they have read, understand, and agree to abide by the rules of behavior, before authorizing access to information and the information system.
 
 
 #### c
@@ -2703,11 +3578,21 @@ CivicActions HR receives a signed acknowledgment from all employees, indicating 
 CivicActions reviews the CivicActions Security Policy at least annually and updates as required.
 
 
+##### Project
+
+Project reviews the Rules of Behavior at least annually and updates it as required.
+
+
 #### d
 
 ##### CivicActions
 
 CivicActions requires individuals who have signed a previous version of the CivicActions Security Policy to read and re-sign when any part of it, including the Acceptable Use Policy/Rules of Behavior, is revised/updated.
+
+
+##### Project
+
+Project requires individuals who have signed a previous version of the rules of behavior to read and re-sign when the Rules of Behavior are revised/updated.
 
 
 ## RA: Risk Assessment
@@ -2729,9 +3614,120 @@ and associated risk assessment controls; and
 
 **Status:** Complete
 
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+
+
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel a risk assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Risk Assessment (RA) Policy and Procedure that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
+
+
+##### Project
+
+The Client follows the risk assessment policy and procedures formally documented within None. Furthermore, a Risk Assessment Plan was originally initiated to determine the extent of the potential threat and the risk associated with Project throughout its System Development Life Cycle (SDLC). The Project Risk Assessment defines the methodology approach to determine the likelihood risks, and identify potential mitigation options to reduce risks to the Project system.
+
+The Project Risk Assessment will be conducted in accordance with the Department’s risk assessment policy and procedures. By doing so, the responsible parties associated with the Project will be able to determine the risk, likelihood and impact that could result from exploiting vulnerabilities within the system.
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+
+
+### RA-2: Security Categorization
+
+```text
+The organization:
+  a.  Categorizes information and the information system in accordance with applicable
+federal laws, Executive Orders, directives, policies, regulations, standards, and guidance;
+  b.  Documents the security categorization results (including supporting rationale)
+in the security plan for the information system; and
+  c.  Ensures that the authorizing official or authorizing official designated
+representative reviews and approves the security categorization decision.
+```
+
+**Status:** Complete
+
+#### a
+
+##### Project
+
+In accordance with FIPS 199 requirement and guidelines provided in NIST SP800-60 Rev.1, the organization categorized the system as a Low system: Confidentiality (Low), Integrity (Low), Availability (Low).
+
+
+#### b
+
+##### Project
+
+The security categorization was determined by evaluating the type of information that is stored, processed, and/or transmitted by the application and the potential impact levels associated with the confidentiality, integrity, and availability of that information. The application’s security categorization has been documented in this SSP.
+
+
+#### c
+
+##### Project
+
+The security categorizations have been reviewed by the designated application POCs, were approved during the C&A effort. The formal security categorization document is available upon request. The system inventory for the Project Project is revalidated semiannually.
+
+
+### RA-3: Risk Assessment
+
+```text
+The organization:
+  a.  Conducts an assessment of risk, including the likelihood and magnitude of
+harm, from the unauthorized access, use, disclosure, disruption, modification, or destruction of the information system and the information it processes, stores, or transmits;
+  b.  Documents risk assessment results in [Selection: security plan; risk assessment
+report; [Assignment: organization-defined document]];
+  c.  Reviews risk assessment results [Assignment: organization-defined frequency];
+  d.  Disseminates risk assessment results to [Assignment: organization-defined
+personnel or roles]; and
+  e.  Updates the risk assessment [Assignment: organization-defined frequency]
+or whenever there are significant changes to the information system or environment of operation (including the identification of new threats and vulnerabilities), or other conditions that may impact the security state of the system.
+```
+
+**Status:** Complete
+
+#### a
+
+##### Project
+
+CivicActions/Project will perform risk assessments for the Project system based on SP 800-30 Rev. 1 Guide for Conducting Risk Assessments at least annually and as part of the change management activities for the Project system that warrant a new or updated risk assessment.
+
+
+#### b
+
+##### Project
+
+The results of risk assessments will be compiled into a risk assessment report to be reviewed by CivicActions Security and relevant personnel, and also added to the GitLab system for the Project system.
+
+
+#### c
+
+##### Project
+
+CivicActions/Project reviews risk assessment
+results at least annually.
+
+
+#### d
+
+##### Project
+
+The Risk Assessment report will be disseminated to the appropriate
+personnel through the Project Manager and CivicActions
+Security.
+
+
+#### e
+
+##### Project
+
+Risk assessments are conducted annually or whenever there are significant changes to the information system or environment of operation (including the identification of new threats and vulnerabilities), or other conditions that may impact the security state of the system, as defined in NIST Special Publication 800-37 Revision 1.
+A significant change includes:
+
+- Changing authentication or access control implementations;
+- Changing storage implementations;
+- Changing a COTS product to another product;
+- Changing the backup mechanisms and process; and,
+- Adding new interconnections to an outside service provide.
 
 
 ### RA-5: Vulnerability Scanning
@@ -2753,6 +3749,16 @@ security control assessments with [Assignment: organization-defined personnel or
 ```
 
 **Status:** Complete
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: vulnerability scanning.
+
+
+##### Project
+
+The Project uses vulnerability scanning software to document and determine risks to the system. These scans are being run on a regular basis and the results of these scans are being used to inform changes to the system and verify that security controls are working correctly. These scans are used to document the current state of the system, and to analyze security trends as changes are made over time.
+
 
 #### a
 
@@ -2824,6 +3830,13 @@ frequency].
 CivicActions has developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Security Assessment and Authorization Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
+##### Project
+
+Project follows the None. The Project System Security Policy (SSP) provides guidance on all aspects of security for the protection of Project information technology resources.
+
+Project will periodically review and update the SSP when there is a significant change to the regulatory, operational, or technical environment.
+
+
 ### CA-2: Security Assessments
 
 ```text
@@ -2851,6 +3864,15 @@ organization-defined individuals or roles].
 CivicActions will develop a security assessment plan (SAP) that describes the security controls and control enhancements under assessment, assessment procedures used to determine effectiveness, the assessment environment, the assessment team, and the assessment roles and responsibilities.
 
 
+##### Project
+
+The The Project follows the None. The The Project will conduct annual security assessments to comply with FISMA and NIST regulations. Project will draw on NIST Special Publications 800-53A security controls to complete the assessment. All controls and sub-set security controls will be evaluated and a risk assessment will be conducted. The scope of the assessment includes:
+
+1. Security controls and control enhancements under assessment
+2. Assessment procedures to be used to determine security control effectiveness
+3. Assessment environment, assessment team, and assessment roles and responsibilities
+
+
 #### b
 
 ##### CivicActions
@@ -2865,6 +3887,11 @@ All controls assigned and documented in this System Security Plan (SSP) will be 
 ##### CivicActions
 
 CivicActions will produce a security assessment report that documents the results of the assessment. The Security Assessment Report must contain the results of the assessment, and may also contain recommendations and suggestions for plans of actions and milestones (POA&Ms).
+
+
+##### Project
+
+The Project Authorizing Official or Designated Representative will create a Security Assessment Report (SAR). A full assessment shall be conducted by an independent third party assessor at least every three years.
 
 
 #### d
@@ -2928,6 +3955,31 @@ The POA&M document provides a platform for CivicActions to monitor and track the
 POA&Ms are tracked throughout the lifecycle of the system until its mitigation. All POA&Ms are reviewed on a monthly basis by CivicActions Information System Security Officer to ensure all mitigation strategies are continuing as documented.
 
 
+##### Project
+
+The Project follows the None procedures in managing POA&Ms.
+
+
+### CA-6: Security Authorization
+
+```text
+The organization:
+  a.  Assigns a senior-level executive or manager as the authorizing official
+for the information system;
+  b.  Ensures that the authorizing official authorizes the information system
+for processing before commencing operations; and
+  c.  Updates the security authorization [Assignment: organization-defined frequency].
+```
+
+**Status:** Complete
+
+##### Project
+
+The Project follows the None. The Project system received its first three-year security accreditation on March 3, 2009, and most recently received an ATO on February 5, 2016.
+
+ATO re-assessment will be performed every three years or when there is a major change to the application, in which a senior organizational official will sign and approve the security accreditation.
+
+
 ### CA-7: Continuous Monitoring
 
 ```text
@@ -2965,6 +4017,10 @@ CivicActions implements a continuous monitoring strategy that incorporates confi
 CivicActions follows recommendations and best practices developed by the Drupal community for monitoring. Examples of specific logs and metrics are included in AU-2 and AU-3.
 
 
+##### Ilias
+
+CivicActions follows recommendations and best practices developed by the Ilias community for monitoring. Examples of specific logs and metrics are included in AU-2 and AU-3.
+
 #### b
 
 ##### CivicActions
@@ -2980,6 +4036,10 @@ Quarterly review of the control assessments supporting the monitoring is conduct
 
 CivicActions works closely with the Drupal security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed.
 
+
+##### Ilias
+
+CivicActions works closely with the Ilias security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed.
 
 #### d
 
@@ -3051,6 +4111,12 @@ frequency].
 CivicActions has developed, documented and disseminated to personnel a system and communication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Communications Protection (SC) Policy CivicActions document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
+##### Project
+
+System and communications protection policy and procedures are formally documented in the None and the Project SSP. The Department reviews and updates the policy as necessary and has been continually updated since April 2008.
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+
+
 ### SC-5: Denial Of Service Protection
 
 ```text
@@ -3062,6 +4128,16 @@ The information system protects against or limits the effects of the following t
 ##### Drupal
 
 Drupal has a manual ability to block IP addresses in cases where attacks bypass cloud protection. This is managed by CivicActions Operations.
+
+##### Ilias
+
+Ilias has a manual ability to block IP addresses in cases where attacks bypass cloud protection. This is managed by CivicActions Operations.
+
+##### Project
+
+The Project system is configured to reduce vulnerabilities in its operating system and applications to protect against Denial of Service (DoS) attacks.
+The Project support staff ensures the system is protected against or limits the effect of DoS attacks as specified in the None.
+
 
 ### SC-7: Boundary Protection
 
@@ -3080,6 +4156,15 @@ interfaces consisting of boundary protection devices arranged in accordance with
 ##### Drupal
 
 Drupal, when deployed on SELinux in full enforcing mode, minimizes the number of services and computing nodes that are exposed to the Internet. Drupal employs both the AWS platform safeguards and the Drupal Watchdog module in monitoring and recording system events. All other computing nodes used in the system are isolated within AWS.
+
+
+##### Ilias
+
+Ilias, when deployed on SELinux in full enforcing mode, minimizes the number of services and computing nodes that are exposed to the Internet. Ilias employs both the AWS platform safeguards and the Ilias logging in monitoring and recording system events. All other computing nodes used in the system are isolated within AWS.
+
+##### Project
+
+The Project system has monitored and controlled communications at the external boundary of the information system and at key internal boundaries within the system, where appropriate. The Project allocates publicly accessible information system components (e.g., public web servers) specific IP address and port combinations. Public access into the organization’s internal networks is prevented except as appropriately mediated.
 
 
 #### a
@@ -3103,6 +4188,19 @@ In this architecture, subnetworks for publicly accessible system components are 
 In this architecture, connection to external networks is possible only through Internet Gateways (IGWs) or NAT gateways (in regions where supported by AWS VPC) and are restricted based on ports/protocols via AWS Security groups, and default subnet rules provided by NACLs.
 
 
+### SC-12: Cryptographic Key Establishment And Management
+
+```text
+The organization establishes and manages cryptographic keys for required cryptography employed within the information system in accordance with [Assignment: organization-defined requirements for key generation, distribution, storage, access, and destruction].
+```
+
+**Status:** None
+
+##### Project
+
+Use of cryptographic key management for the Project system is in use for at the time of implementation for authentication. CivicActions utilizes customer agency supplied PIV credentials for access to customer instances of the Project. Access enforcement and authentication requirements for Project are described in AC-2 & IA-2. AWS platform does not utilize or manage cryptographic keys within the ACE boundary.
+
+
 ### SC-13: Cryptographic Protection
 
 ```text
@@ -3119,6 +4217,24 @@ The information system implements:
 - HTTPS/SSL (TLS) for connection to web-based services
 - TLS for connection to email services
 - AES-256 (FIPS 140-2 validated) for data at rest (with Elastic Block Store (EBS) volumes)
+
+
+### SC-15: Collaborative Computing Devices
+
+```text
+The information system:
+  a.  Prohibits remote activation of collaborative computing devices with the
+following exceptions: [Assignment: organization-defined exceptions where remote activation is to be allowed]; and
+  b.  Provides an explicit indication of use to users physically present at the
+devices.
+```
+
+**Status:** None
+
+##### Project
+
+This control is not applicable, as the Project system does
+employ any collaborative computing devices.
 
 
 ### SC-20: Secure Name / Address Resolution Service (Authoritative Source)
@@ -3202,6 +4318,15 @@ frequency].
 CivicActions has developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Information Integrity (SI) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
+##### Project
+
+System and information integrity policy and procedures for the Project system are formally documented in the Project SSP, which provides the roles and responsibilities as it pertains to physical and environmental protection systems. The Project system support staff monitors the network on a daily basis and employs up-to-date patches to protect the integrity of the system.
+
+Additional information is contained within the None.
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+
+
 ### SI-2: Flaw Remediation
 
 ```text
@@ -3216,6 +4341,10 @@ process.
 ```
 
 **Status:** Complete
+
+##### Ilias
+
+Ilias contains built-in security status monitoring of the core application and contributed modules.
 
 #### a
 
@@ -3401,6 +4530,15 @@ or notifies the issuing organization of the degree of noncompliance.
 
 **Status:** Complete
 
+##### Ilias
+
+CivicActions Security and Operations receive Ilias Security Advisories on a regular basis.
+
+##### Project
+
+Project representatives and system administrators receive alerts from US-CERT on a regular basis. Support personnel take appropriate action in response to relevant areas of concern.
+
+
 #### a
 
 ##### CivicActions
@@ -3447,6 +4585,11 @@ The organization handles and retains information within the information system a
 The CivicActions organization retains all information, system-related information, incident-related information, and system output in accordance with customers’ requirements retention periods and other NIST guidance and standards, Federal policies, procedures, federal laws, and executive orders. Audit records are retained for 365 days.
 
 
+##### Project
+
+Project representatives and systems administrators receive annual training from Client regarding information assurance and information handling requirements. These personnel are required to operate the system and handle system data and output in accordance with legal requirements. Personnel training and system guidelines ensure that data and programs are handled appropriately.
+
+
 ## SA: System and Services Acquisition
 
 ### SA-1: System And Services Acquisition Policy And Procedures
@@ -3473,6 +4616,13 @@ frequency].
 CivicActions has developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained by the CivicActions System and Services Acquisition (SA) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
+##### Project
+
+The Project complies with the None. The Project will identify new threats/vulnerabilities and technologies that may require updating of solicitation documents.
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+
+
 ### SA-2: Allocation Of Resources
 
 ```text
@@ -3486,6 +4636,15 @@ programming and budgeting documentation.
 ```
 
 **Status:** Complete
+
+##### Project
+
+The Project System Owner is responsible for leading the annual budgeting process and for tracking organizational spending. The System Owner coordinates with the CivicActions Project Manager and CivicActions Security on at least monthly basis to track security priorities and spending patterns and determine financial requirements. The System Owner also coordinates the approval process for interim increases to the security budget, if required. This data is used to support the development of the annual budget.
+
+Security costs are included in Exhibit 53 in the Department's on-line electronic Capital Planning and Investment Control system (eCPIC) in order to provide adequate business case information for budget purposes. Security costs are represented across the life cycle in the business case (Exhibit 300) for major investments and (Exhibit 53) for non-major projects - Project is a non-major project. Security costs are summarized and listed as a line item on the Exhibit 53 in the budget submitted to Treasury.
+
+Costs for providing security at the infrastructure level are contained in the business cases for infrastructure supporting computing platforms, desktop processing, the network environment, and web capability. Since the Exhibit 53 includes projections for multiple fiscal years, its intention is to identify and anticipate security resources required.
+
 
 #### a
 
@@ -3523,6 +4682,11 @@ into system development life cycle activities.
 ```
 
 **Status:** Complete
+
+##### Project
+
+The Project draws from the None, NIST SP 800-64, and Agile software development methodology to ensure security requirements are incorporated during each phase of the life cycle. This helps to ensure the development of secure systems and effective risk management.
+
 
 #### a
 
@@ -3615,6 +4779,30 @@ The CivicActions Security Office is responsible for determining the security doc
 Configuration and design of the development and production environments are hosted in the CivicActions Git repository. All documentation is strictly controlled regarding transportation and storage in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs.
 
 
+##### Project
+
+The Project follows the guidelines and procedures within the overarching None. The requirements in the information system acquisition contract permit updating security controls as new threat/vulnerabilities are identified and new technologies are implemented.
+
+The Project System and Services Acquisition Policy contains the process for determining acceptance criteria for all Project system software and services.
+
+The Project organization reviews and approves all acquisition contracts in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs.
+
+
+### SA-4 (10): Use Of Approved Piv Products
+
+```text
+The organization employs only information technology products on the FIPS 201-approved products list for Personal Identity Verification (PIV) capability implemented within organizational information systems.
+```
+
+**Status:** Complete
+
+##### Project
+
+CivicActions/Project and AWS describes this control as “not applicable”, as PIV credentials are not applicable to the Project system. Access and Authentication requirements for the Project system for internal CivicActions and customer are implemented under access management and enforcement (AC-2 and AC-3) and identification and authentication for all users (IA-2 and IA-8).
+
+It is the responsibility of CivicActions for implementation of PIV capability for authentication as required.
+
+
 ### SA-5: Information System Documentation
 
 ```text
@@ -3644,6 +4832,18 @@ or roles].
 
 **Status:** Complete
 
+##### Project
+
+Client maintains adequate documentation for the Project system. The Project system documentation is protected as required and made available to authorized personnel. Procedures for protecting system documentation include management in the private CivicActions Git repository and the publicly available documentation trees for Free and Open Source Software (FOSS). The documentation maintained for the Project system includes:
+
+- System Security Plan (SSP) – this document
+- Configuration documentation
+- Incident Response and Contingency Plans
+- Rules of Behavior (Acceptable Use Policy)
+- FOSS Reference Manuals (Drupal, GNU/Linux, Apache, MySQL, PHP, Postfix,
+  etc.)
+
+
 #### a
 
 ##### AWS
@@ -3656,6 +4856,14 @@ AWS built-in features include online documentation for management of the infrast
 ##### CivicActions
 
 Some application features are built on a custom basis and are not part of standard FOSS packages. Administrator documentation for those custom features is maintained in the CivicActions Git repository documentation system.
+
+
+##### Ilias
+
+Public documentation related to Ilias is maintained by the Ilias Association and is located at <https://Ilias.de/documentation>. This documentation contains administrator documentation for the information system that describes:
+- secure configuration, installation, and operation of the system, component, or service;
+- effective use and maintenance of security functions/mechanisms; and
+- known vulnerabilities regarding configuration and use of administrative functions;
 
 
 #### b
@@ -3688,12 +4896,26 @@ CivicActions follows the user documentation standard practice to provide context
 The CivicActions Customer Support team, described in control SA-3(b), handles questions about how to use the system. Questions are submitted by sending an email to support@civicactions.com, which triggers the creation of a ticket in the CivicActions customer support ticketing system.
 
 
+##### Ilias
+
+The public documentation at Ilias.de contains user documentation for the information system that describes:
+- user-accessible security functions/mechanisms and how to effectively use those
+  security functions/mechanisms;
+- methods for user interaction, which enables individuals to use the system,
+  component, or service in a more secure manner; and
+- user responsibilities in maintaining the security of the system, component, or service;
+
+
 #### c
 
 ##### CivicActions
 
 If the information needed to answer a question is not already included in the website's public-facing documentation, a ticket is created to determine whether the question is sufficiently general in nature to warrant adding the answer to the website's documentation.
 
+
+##### Ilias
+
+As a popular and well-used and maintained free and open source (FOSS) project, in the event that sought after documentation is not available on Ilias.de, it can usually be found in one of the many forums, mailing lists or Stack Exchange sites covering Ilias and its many contributed modules.
 
 #### d
 
@@ -3707,6 +4929,10 @@ AWS built-in features include online documentation that is protected by AWS from
 All administrator documentation is housed in a protected Git repository. User documentation is publicly available.
 
 
+##### Ilias
+
+The Ilias.de documentation is multi-sourced on GitHub and private repositories.
+
 #### e
 
 ##### AWS
@@ -3718,6 +4944,10 @@ AWS built-in features include online documentation located at http://aws.amazon.
 
 As needed and approved by the CivicActions Security Office, documentation is available to appropriate personnel by granting access to the private Git repository.
 
+
+##### Ilias
+
+As the Ilias.de documentation is publicly available, there is no need to provide distribution mechanisms.
 
 ### SA-9: External Information System Services
 
@@ -3736,6 +4966,13 @@ to monitor security control compliance by external service providers on an ongoi
 ##### CivicActions
 
 CivicActions does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing or transmitting federal agency data.
+
+
+##### Project
+
+Project does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing, or transmitting federal agency data.
+
+Project is hosted on the AWS Cloud platform, which was approved under the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
 
 
 ### SA-12: Supply Chain Protection
