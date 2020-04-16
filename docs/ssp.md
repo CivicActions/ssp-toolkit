@@ -640,6 +640,11 @@ In this architecture, the following audit methods provide data on activities occ
 CivicActions has extensive experience and specialization as a host of websites that are built using the Ilias web learning platform. Should the need for additional logging become evident, we have the ability to do so by modifying the website's source code to insert additional Ilias logging hooks.
 
 
+##### Ilias
+
+CivicActions has extensive experience and specialization as a host of websites that are built using the Ilias web learning platform. Should the need for additional logging become evident, we have the ability to do so by modifying the website's source code to insert additional Ilias logging hooks.
+
+
 #### d
 
 ##### AWS
