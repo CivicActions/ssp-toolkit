@@ -10,7 +10,7 @@ satisfies:
   - key: a
     text: >
       In this architecture, network communications to, from, and between VPCs, subnets and
-      S3 buckets are controlled as follows: AWS Route Tables specify which subnets in each
+      Amazon S3 buckets are controlled as follows: AWS Route Tables specify which subnets in each
       VPC are accessible through gateways and which are isolated/private. AWS Security Groups
       provide stateful inbound/outbound port/protocol restrictions, Amazon Simple Storage
       Service (Amazon S3) buckets support access control restrictions based on network
@@ -38,7 +38,7 @@ satisfies:
       Management (IAM) are supplied to EC2 instances upon launch, and the public key portion
       is managed within the AWS EC2 service. In addition, server-side encryption is
       used for Amazon S3 storage and Amazon RDS databases, using key management provided
-      by AWS for the storage buckets and RDS databases.
+      by AWS for the storage buckets and Amazon RDS databases.
   implementation_status: partial
 - control_key: SA-13
   control_name: CRYPTOGRAPHIC PROTECTION
@@ -49,12 +49,12 @@ satisfies:
   - text: >
       In this architecture, encryption mechanisms are employed for data at rest and in
       transit. For data at rest, AES-256 Server Side encryption is employed for data stored
-      in S3, and RDS databases. For data in transit, to protect against exposure of any
+      in Amazon S3, and Amazon RDS databases. For data in transit, to protect against exposure of any
       cleartext data transmitted deliberately (upload/download) or incidentally during
       interactive systems management operations, Amazon S3 object access can only be
       conducted over encrypted sessions via TLS; the bastion host, EC2 instances and
       associated security groups are configured for encrypted SSH sessions only. For web
-      user access, the Elastic Load Balancer (ELB) employs a TLS endpoint.
+      user access, the Elastic Load Balancing (ELB) employs a TLS endpoint.
 
 
       AWS built-in features employ TLS for AWS Management Console sessions, AWS API calls,

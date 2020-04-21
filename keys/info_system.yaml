@@ -120,7 +120,7 @@ ports_protocols: # Table 11‑1
     used_by:
   - port: 3306
     protocols: TCP
-    services: AWS RDS
+    services: AWS Amazon RDS
     purpose: Database
     used_by:
   - port: 5044

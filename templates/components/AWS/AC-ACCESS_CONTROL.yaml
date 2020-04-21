@@ -12,20 +12,24 @@ satisfies:
       to the AWS Cloud dated 1 May 2013 for the following: AWS account management.
   - key: a
     text: >
-      In this architecture, a baseline set of AWS Identity and Access Management (IAM) groups
-      and roles are created, with associated access policies, to support alignment of user
-      accounts to personnel functions related to infrastructure/platform management (e.g.
-      Billing, EC2/VPC/RDS systems administration, I.T. auditing, etc.)
+      In this architecture, the baseline AWS Identity and Access Management (IAM)
+      groups and roles are associated with access policies to align user
+      accounts with personnel functions related to infrastructure/platform
+      management (e.g. Billing, EC2/VPC/Amazon RDS systems administration, I.T. auditing,
+      etc.)
   - key: g
     text: >
       In this architecture, AWS CloudTrail and Amazon S3 Bucket logging are enabled, which
-      provides the audit trail capability for the organization to monitor the use of AWS
+      provide the audit trail capability for the organization to monitor the use of AWS
       Identity and Access Management (IAM) accounts. An Amazon S3 bucket centrally contains
-      the CloudTrail audit logs. Amazon CloudWatch Alarm is configured to send an alert when
-      an API call is made to create, update or delete a Network ACL/Security Group, when Root
-      user activity detected, when multiple API actions or login attempts fail, when IAM
-      Configuration changes are detected, when new IAM access key was created and when
-      changes to the CloudTrail log configuration is detected
+      the CloudTrail audit logs. Amazon CloudWatch Alarm is configured to send an
+      alert when any of the following happen:
+        - an API call is made to create, update, or delete a Network ACL/Security Group
+        - Root user activity is detected
+        - multiple API actions or login attempts fail
+        - IAM Configuration changes are detected
+        - new IAM access key was created
+        - changes to the CloudTrail log configuration are detected
   implementation_status: partial
 - control_key: AC-3
   control_name: ACCESS ENFORCEMENT
@@ -34,13 +38,14 @@ satisfies:
   security_control_type: Shared
   narrative:
   - text: >
-      In this architecture, AWS Identify and Access Management (IAM) and Amazon S3 enforce
-      access to the AWS infrastructure and data in S3 buckets. A baseline set of IAM groups
-      are created, with associated access policies to support alignment of user accounts to
-      personnel functions related to infrastructure/platform management (e.g. Billing, EC2/
-      VPC/RDS systems administration, I.T. auditing, etc.) Login/API access is restricted to
-      those users for whom the organization has authorized and created or federated IAM user
-      accounts, and assigned the appropriate IAM group and/or role membership. Amazon S3
-      buckets have specific access control policies assigned to restrict access to those IAM
-      users who are assigned the appropriate IAM roles/groups.
+      In this architecture, AWS Identify and Access Management (IAM) and Amazon
+      Amazon S3 enforce access to the AWS infrastructure and data in Amazon S3 buckets. The
+      baseline IAM groups and roles are associated with access policies to
+      align user accounts with personnel functions related to infrastructure/platform
+      management (e.g. Billing, EC2/VPC/Amazon RDS systems administration, I.T.
+      auditing, etc.) Login/API access is restricted to those users for whom the
+      organization has authorized and created, or federated, IAM user accounts,
+      and assigned the appropriate IAM group and/or role memberships. Amazon S3
+      buckets have specific access control policies assigned to restrict access
+      to those IAM users who are assigned the appropriate IAM roles/groups.
   implementation_status: partial

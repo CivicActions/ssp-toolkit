@@ -11,9 +11,9 @@ satisfies:
       Hardware Baselines
 
 
-      All hardware is maintained by AWS Cloud. The system therefore inherits hardware
+      All hardware is maintained by the AWS cloud. The system inherits hardware
       configuration aspects of this control from the FedRAMP Provisional ATO granted
-      to the AWS Cloud dated 1 May 2013 for the following: baseline configuration.
+      to AWS, dated 1 May 2013, for the following: baseline configuration.
   implementation_status: partial
 - control_key: CM-7
   control_name: LEAST FUNCTIONALITY

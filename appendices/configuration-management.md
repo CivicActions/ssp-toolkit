@@ -174,7 +174,7 @@ If possible, Configuration Management tools should always roll back to a known s
 Server configuration is handled via CloudFormation templates and Ansible playbooks and managed using Git. Once a change has been committed and pushed to the Git repository, a merge request is created. Creating the merge request triggers the CI/CD build pipeline which contains the following phases:
 
 - **Deploy infrastructure:** In this phase the containers are created using the CloudFormation templates and Ansible playbooks.
-- **Deploy services:** Services defined in the CloudFormation template are deployed. The services include the bastion host, the Drupal application, the Ilias CMS, Solr searching, and the RDS databases.
+- **Deploy services:** Services defined in the CloudFormation template are deployed. The services include the bastion host, the Drupal application, the Ilias CMS, Solr searching, and the Amazon RDS databases.
 - **Validate platform:** During the validation phase, the server configuation is tested for drift detection in order to catch configuation settings that have deviated from the baseline configuation, as well as checks to determine if the applications are up and running and accessible. Nmap, OpenSCAP and Zap scans are also performed during this phase.
 - **Post validation:** During the post validation, the hardened Amazon Machine Image (AMI) is checked to see if there are any updates available and, if so, they are installed.
 
