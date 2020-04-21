@@ -46,7 +46,7 @@ The organization develops, documents, and maintains under configuration control,
 
 Hardware Baselines
 
-All hardware is maintained by AWS Cloud. The system therefore inherits hardware configuration aspects of this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: baseline configuration.
+All hardware is maintained by the AWS cloud. The system inherits hardware configuration aspects of this control from the FedRAMP Provisional ATO granted to AWS, dated 1 May 2013, for the following: baseline configuration.
 
 
 ##### CivicActions
