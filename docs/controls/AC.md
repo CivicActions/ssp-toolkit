@@ -74,7 +74,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### AWS
 
-In this architecture, a baseline set of AWS Identity and Access Management (IAM) groups and roles are created, with associated access policies, to support alignment of user accounts to personnel functions related to infrastructure/platform management (e.g. Billing, EC2/VPC/RDS systems administration, I.T. auditing, etc.)
+In this architecture, a baseline set of AWS Identity and Access Management (IAM) groups and roles are created, with associated access policies, to support alignment of user accounts to personnel functions related to infrastructure/platform management (e.g. Billing, EC2/VPC/Amazon RDS systems administration, I.T. auditing, etc.)
 
 
 ##### CivicActions
@@ -249,7 +249,7 @@ The information system enforces approved authorizations for logical access to in
 
 ##### AWS
 
-In this architecture, AWS Identify and Access Management (IAM) and Amazon S3 enforce access to the AWS infrastructure and data in S3 buckets. A baseline set of IAM groups are created, with associated access policies to support alignment of user accounts to personnel functions related to infrastructure/platform management (e.g. Billing, EC2/ VPC/RDS systems administration, I.T. auditing, etc.) Login/API access is restricted to those users for whom the organization has authorized and created or federated IAM user accounts, and assigned the appropriate IAM group and/or role membership. Amazon S3 buckets have specific access control policies assigned to restrict access to those IAM users who are assigned the appropriate IAM roles/groups.
+In this architecture, AWS Identify and Access Management (IAM) and Amazon S3 enforce access to the AWS infrastructure and data in Amazon S3 buckets. A baseline set of IAM groups are created, with associated access policies to support alignment of user accounts to personnel functions related to infrastructure/platform management (e.g. Billing, EC2/ VPC/Amazon RDS systems administration, I.T. auditing, etc.) Login/API access is restricted to those users for whom the organization has authorized and created or federated IAM user accounts, and assigned the appropriate IAM group and/or role membership. Amazon S3 buckets have specific access control policies assigned to restrict access to those IAM users who are assigned the appropriate IAM roles/groups.
 
 
 ##### Drupal

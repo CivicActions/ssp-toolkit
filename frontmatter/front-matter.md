@@ -425,7 +425,7 @@ Table 11‑1. **Ports, Protocols, and Services**
 | 53 | TCP/UDP | AWS DNS | DNS service within AWS | None |
 | 123 | UDP | AWS NTP | Network time protocol | None |
 | 443 | TCP | AWS ELB | Load balancing | None |
-| 3306 | TCP | AWS RDS | Database | None |
+| 3306 | TCP | AWS Amazon RDS | Database | None |
 | 5044 | TCP/UDP | SSH/rsync audit records | Elasticsearch (from all instances in VPC) | None |
 | 8983 | TCP | Solr | Solr search | None |
 | 443 | TCP | CMS | CMS update | CMS |

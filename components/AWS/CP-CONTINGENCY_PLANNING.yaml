@@ -10,9 +10,9 @@ satisfies:
   - key: a
     text: >
       In this architecture, user data is limited to that which is stored in the Amazon RDS
-      database. RDS is fully backed up by a daily snapshot as well as through transaction
+      database. Amazon RDS is fully backed up by a daily snapshot as well as through transaction
       logging conducted by AWS as part of this managed service. Full database recovery from
-      snapshot or point-in-time can be initiated from the RDS console/API.
+      snapshot or point-in-time can be initiated from the Amazon RDS console/API.
   - key: b
     text: >
       AWS built-in features automatically backs up system-level information limited to

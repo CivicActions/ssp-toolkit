@@ -2,7 +2,7 @@ server_phases:
   - name: Deploy infrastructure
     description: In this phase the containers are created using the CloudFormation templates and Ansible playbooks.
   - name: Deploy services
-    description: Services defined in the CloudFormation template are deployed. The services include the bastion host, the Drupal application, the Ilias CMS, Solr searching, and the RDS databases.
+    description: Services defined in the CloudFormation template are deployed. The services include the bastion host, the Drupal application, the Ilias CMS, Solr searching, and the Amazon RDS databases.
   - name: Validate platform
     description: During the validation phase, the server configuation is tested for drift detection in order to catch configuation settings that have deviated from the baseline configuation, as well as checks to determine if the applications are up and running and accessible. Nmap, OpenSCAP and Zap scans are also performed during this phase.
   - name: Post validation

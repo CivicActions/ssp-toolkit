@@ -188,7 +188,7 @@ at storage locations.
 
 ##### AWS
 
-In this architecture, user data is limited to that which is stored in the Amazon RDS database. RDS is fully backed up by a daily snapshot as well as through transaction logging conducted by AWS as part of this managed service. Full database recovery from snapshot or point-in-time can be initiated from the RDS console/API.
+In this architecture, user data is limited to that which is stored in the Amazon RDS database. Amazon RDS is fully backed up by a daily snapshot as well as through transaction logging conducted by AWS as part of this managed service. Full database recovery from snapshot or point-in-time can be initiated from the Amazon RDS console/API.
 
 
 ##### CivicActions
