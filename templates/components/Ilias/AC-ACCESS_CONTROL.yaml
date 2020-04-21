@@ -12,15 +12,15 @@ satisfies:
       Ilias provides user accounts for individuals who participate in visiting, contributing
       to and administering the site with the following roles:
 
-      * Anonymous user – Readers of the site who either do not have an account or
+      - Anonymous user – Readers of the site who either do not have an account or
       are not logged in.
 
-      * Guest – This role has limited visibility and read permissions
+      - Guest – This role has limited visibility and read permissions
 
-      * User - Standard role for registered users. This role grants read access to
+      - User - Standard role for registered users. This role grants read access to
       most objects.
 
-      * Administrator - This role has all permissions enabled by default.
+      - Administrator - This role has all permissions enabled by default.
   - key: d
     text: Ilias' permissions and role-based access controls are built-in. Each role
       within Ilias can only access the pages and controls for which their privilege

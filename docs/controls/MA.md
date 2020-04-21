@@ -38,6 +38,15 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 CivicActions has developed, documented and disseminated to personnel a system maintenance policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Maintenance (MA) Policy and Procedure document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
+##### Project
+
+System maintenance policy and procedures are formally documented in the Project SSP, which provides the roles and responsibilities as it pertains to software and systems maintenance and updates. The The Project ensures that maintenance controls are developed, disseminated, reviewed, and updated as necessary.
+
+Physical and environmental protection is fully inherited from the AWS FedRAMP certified us-east cloud.
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+
+
 ### MA-2: Controlled Maintenance
 
 ```text
@@ -67,6 +76,17 @@ This System Maintenance control associated with hardware components within AWS i
 For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
 
 Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+
+
+##### Project
+
+The Project schedules, performs, and documents regular maintenance on the software components of all systems, including but not limited to:
+
+- Hourly automated snapshot backups
+- Daily disaster recovery remote backups
+- Daily Intrusion Detection (OSSEC) / Data Integrity Assurance (AIDE)
+- As needed help desk support
+- Twice-monthly OS updates/patches
 
 
 ### MA-4: Nonlocal Maintenance
@@ -159,6 +179,11 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 ##### CivicActions
 
 Maintenance of the system and applications can only be performed by personnel designated as having internal administrator privileges and responsibilities. Access rights for the internal administrators are assigned and granted access to perform their specific job responsibilities. All physical maintenance requirements are inherited from AWS.
+
+
+##### Project
+
+Client maintains a list of authorized contract (CivicActions) personnel who perform maintenance and repair activities on the Project Project system components, and only these authorized personnel may perform the maintenance. All maintenance personnel have the required personnel security elements in place.
 
 
 

@@ -24,9 +24,25 @@ and
 
 **Summary:** Fully inherited from AWS (FedRAMP).
 
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+
+
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel an incident response planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Incident Response (IR) Policy and Procedure that can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+
+
+##### Project
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+
+The Project maintains an Incident Response Plan (IRP), consistent with NIST 800-61, which addresses purpose, scope, roles, and responsibilities. The incident response procedures address any activity or occurrence that compromises the integrity of a system, denies access to or use of IT resources, and compromises the sensitivity of the information stored in, processed by or transmitted by a system.
+
+Additionally, the IRP includes procedures to respond to waste, fraud, misuse, or abuse of any departmental IT system, damage or loss of software or data contained in any system, Use of unlicensed (pirated) software products, discovery of hardware or software vulnerabilities
+
+The Project Incident Response Plan can be found in the CivicActions GitHub repository at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>
 
 
 ### IR-2: Incident Response Training
@@ -43,9 +59,19 @@ response role or responsibility;
 
 **Summary:** Fully inherited from AWS (FedRAMP).
 
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident response training.
+
+
 ##### CivicActions
 
 All CivicActions employees are required to participate in incident response training, as required by Incident Response Plan changes, and annually. The CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) is the basis for the training and the incident response workflow created by the Security Office. Upon a review of past incidents, the training is updated to ensure processes and workflows are updated.
+
+
+##### Project
+
+CivicActions Operations and users of the Project system with incident response responsibilities are required to participate in incident response training once the role is assumed within 10 days, as required by Project changes, and annually. The Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) is the basis for the training and the incident response workflow created by the Security team. Upon a review of past incidents, the training is updated to ensure processes and workflows are updated.
 
 
 ### IR-4: Incident Handling
@@ -63,6 +89,20 @@ incident response procedures, training, and testing, and implements the resultin
 **Status:** Complete
 
 **Summary:** Fully inherited from AWS (FedRAMP).
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident handling.
+
+
+##### Project
+
+The Client Computer Security Officer (CSO) handles all incidents for the The Project.
+
+The The Client utilizes proven incident handling methodologies for security incidents that includes preparation, detection and analysis, containment, eradication, and recovery. The Client maintains a list of lessons learned from ongoing incident handling activities and uses those lessons to update the incident response procedures accordingly.
+
+Preparation activities includes all CivicActions and Project internal users are trained if their role includes incident response. Detection monitoring tools providing notification to incident response personnel for analysis and action. Containment, eradication and recovery activities include AWS and LAMP-stack inherited fixes and Project system administrators adjusting IP port blocking security groups and SELinux policies.
+
 
 #### a
 
@@ -96,9 +136,19 @@ The organization tracks and documents information system security incidents.
 
 **Summary:** Fully inherited from AWS (FedRAMP).
 
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident monitoring.
+
+
 ##### CivicActions
 
 CivicActions utilizes the JIRA ticketing tool for tracking and reporting of incident events from reporting to resolution and post- incident analysis. Initial reporting can come from continuous monitoring tools as well as client and public submissions made to support@civicactions.com. Jira processes the tickets for the public submissions and the CivicActions Support Team creates associated GitHub Issues. Internal incidents reported are processed within the GitHub Issue queue. Details of the handling procedures are included in the CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan/#response-process>) Response Process.
+
+
+##### Project
+
+The Project utilizes network and host-based intrusion detection systems, monitoring the system and application logs for anomalous events. Incidents are tracked using the same ticketing system that is used to track all system-related changes and events.
 
 
 ### IR-6: Incident Reporting
@@ -114,6 +164,18 @@ authorities].
 **Status:** Complete
 
 **Summary:** Fully inherited from AWS (FedRAMP).
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident reporting.
+
+
+##### Project
+
+If an incident involves suspicious activity, CivicActions Operations will contact the Project System Owner who may then contact the Project CSO.
+
+The CivicActions Computer Security Officer (CSO) handles all incidents for the Project. The CSO is prepared to report all incidents to the The Client.
+
 
 #### a
 
@@ -141,6 +203,11 @@ The organization provides an incident response support resource, integral to the
 ```
 
 **Status:** Complete
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident resonse assistance.
+
 
 ##### CivicActions
 
@@ -179,6 +246,16 @@ incident response personnel (identified by name and/or by role) and organization
 **Status:** Complete
 
 **Summary:** Fully inherited from AWS (FedRAMP).
+
+##### AWS
+
+The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident response plan.
+
+
+##### Project
+
+The Project Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) includes a comprehensive incident response program, which details the implementation of procedures and tools required for incident handling. The incident response program details the roles and responsibilities of Project/ CivicActions IR Team. The IR Team includes members from CivicActions Security and Operations teams. Incident response plays a pivotal role in monitoring, detecting and handling security incidents of the entire information system. The IRP details categorization of incidents in accordance with NIST 800-61 and accordingly documents and reports incidents. The IRP is reviewed annually and updated as needed by ISSO, with the assistance of the Incident Response Team.
+
 
 #### a
 

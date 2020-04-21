@@ -13,20 +13,20 @@ satisfies:
       and is located at <https://Ilias.de/documentation>. This documentation contains
       administrator documentation for the information system that describes:
 
-      * secure configuration, installation, and operation of the system, component,
+      - secure configuration, installation, and operation of the system, component,
       or service;
 
-      * effective use and maintenance of security functions/mechanisms; and
+      - effective use and maintenance of security functions/mechanisms; and
 
-      * known vulnerabilities regarding configuration and use of administrative functions;
+      - known vulnerabilities regarding configuration and use of administrative functions;
   - key: b
     text: |
       The public documentation at Ilias.de contains user documentation for the information system that describes:
-      * user-accessible security functions/mechanisms and how to effectively use those
+      - user-accessible security functions/mechanisms and how to effectively use those
         security functions/mechanisms;
-      * methods for user interaction, which enables individuals to use the system,
+      - methods for user interaction, which enables individuals to use the system,
         component, or service in a more secure manner; and
-      * user responsibilities in maintaining the security of the system, component, or service;
+      - user responsibilities in maintaining the security of the system, component, or service;
   - key: c
     text: As a popular and well-used and maintained free and open source (FOSS) project,
       in the event that sought after documentation is not available on Ilias.de,
