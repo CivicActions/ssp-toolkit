@@ -395,7 +395,7 @@ The organization protects against supply chain threats to the information system
 
 ##### AWS
 
-In this architecture, initial private/public SSH keys stored in Identity and Access Management (IAM) are supplied to EC2 instances upon launch, and the public key portion is managed within the AWS EC2 service. In addition, server-side encryption is used for Amazon S3 storage and Amazon RDS databases, using key management provided by AWS for the storage buckets and Amazon RDS databases.
+In this architecture, initial private/public SSH keys stored in Identity and Access Management (IAM) are supplied to Amazon EC2 instances upon launch, and the public key portion is managed within the AWS Amazon EC2 service. In addition, server-side encryption is used for Amazon S3 storage and Amazon RDS databases, using key management provided by AWS for the storage buckets and Amazon RDS databases.
 
 
 ### SA-13: Trustworthiness
@@ -410,7 +410,7 @@ such trustworthiness.
 
 ##### AWS
 
-In this architecture, encryption mechanisms are employed for data at rest and in transit. For data at rest, AES-256 Server Side encryption is employed for data stored in Amazon S3, and Amazon RDS databases. For data in transit, to protect against exposure of any cleartext data transmitted deliberately (upload/download) or incidentally during interactive systems management operations, Amazon S3 object access can only be conducted over encrypted sessions via TLS; the bastion host, EC2 instances and associated security groups are configured for encrypted SSH sessions only. For web user access, the Elastic Load Balancing (ELB) employs a TLS endpoint.
+In this architecture, encryption mechanisms are employed for data at rest and in transit. For data at rest, AES-256 Server Side encryption is employed for data stored in Amazon S3, and Amazon RDS databases. For data in transit, to protect against exposure of any cleartext data transmitted deliberately (upload/download) or incidentally during interactive systems management operations, Amazon S3 object access can only be conducted over encrypted sessions via TLS; the bastion host, Amazon EC2 instances and associated security groups are configured for encrypted SSH sessions only. For web user access, the Elastic Load Balancing (ELB) employs a TLS endpoint.
 
 AWS built-in features employ TLS for AWS Management Console sessions, AWS API calls, and AWS Command Line Interface connections.
 
@@ -421,7 +421,7 @@ AWS built-in features employ TLS for AWS Management Console sessions, AWS API ca
 
 ##### AWS
 
-In this architecture, the AMIs that make up the operating systems deployed on EC2 instances maintain separate execution domains/address spaces for executing processes within the customer operating environment.
+In this architecture, the AMIs that make up the operating systems deployed on Amazon EC2 instances maintain separate execution domains/address spaces for executing processes within the customer operating environment.
 
 AWS built-in features of the hypervisors that support the infrastructure maintain separate execution domains/address spaces for executing processes.
 

@@ -180,7 +180,7 @@ satisfies:
       In this architecture, AWS CloudTrail, Amazon S3 bucket logging, Elastic Load Balancing (ELB)
       logging, and Amazon RDS MySQL error logging are enabled. However, the initial EC2 instances
       launched by this deployment (bastion host, application servers, proxy servers, and any
-      EC2-based NAT servers) DO NOT have any auditing enabled within the OS, as these are in
+      Amazon EC2-based NAT servers) DO NOT have any auditing enabled within the OS, as these are in
       place for example purposes only.
 
 

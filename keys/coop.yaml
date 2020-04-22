@@ -182,7 +182,7 @@ sections:
           - Sabotage
     diversification_of_connectivity:
       description: >-
-        Amazon EC2 Region US-East is the primary the Project Cloud data center
+        Amazon Amazon EC2 Region US-East is the primary the Project Cloud data center
         infrastructure with US-West as the secondary/contingency site.
       image:
         path:
