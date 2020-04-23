@@ -3,181 +3,188 @@
 ## Contents
 <!--TOC-->
 
-- [Overview](#overview)
-- [Response process](#response-process)
+- [Introduction](#introduction)
+- [Roles and Responsibilities](#roles-and-responsibilities)
+  - [Responder](#responder)
+  - [Incident Commander (IC)](#incident-commander-ic)
+  - [Communications Officer (CO)](#communications-officer-co)
+- [Incident response process](#incident-response-process)
   - [Initiate](#initiate)
   - [Assess](#assess)
   - [Remediate](#remediate)
   - [Retrospect](#retrospect)
-- [Incident Severities](#incident-severities)
-  - [1 - High Severity](#1---high-severity)
-  - [2 - Medium Severity](#2---medium-severity)
-  - [3 - Low Severity](#3---low-severity)
+- [Incident severities](#incident-severities)
+  - [High severity](#high-severity)
+  - [Medium severity](#medium-severity)
+  - [Low severity](#low-severity)
 
 <!--TOC-->
 
 ----
 
-## Overview
+## Introduction
+This document describes the The Project Incident Response Team's process for responding to security incidents and and other disruption that may affect the Confidentiality, Integrity, Availability (CIA) or Privacy of system resources and data. It outlines roles and responsibilities during and after incidents, and it provides an overview of the steps to follow for resolution.
 
-This document outlines the CivicActions Incident Response Team's process for responding to Project security incidents and other system disruptions. It outlines roles and responsibilities during and after incidents, and it outlines the steps for resolution.
+**Note:** During an incident, the [**IRP checklist**](security-irp-checklist.md) may be more useful as it contains bulleted, actionable items to be adressed when an incident is being investigated and remediated.
 
-- For incident responders, see the [IRP checklist](security-irp-checklist.md). It is a short, actionable companion to this guide.*
+## Roles and Responsibilities
 
-At a high level, incident response follows this process:
+Basic Incident Response Team roles are described below.
 
-[Initiate](#initiate):
+### Responder
+A _Responder_ is an The Project Incident Response (IR) Team member working to investigate and remediate an event or incident.
+- The _First Responder_ is the _first_ IR Team member made aware of the incident (see [Initiate](#initiate) below).
+   - Oftentimes the _First Responder_ is also the _reporter_ of the event.
+- The _First Responder_ assumes the role of the initial _Incident Commander (IC)_ until that is [handed off](security-irp-checklist.md#explicit-handoff-ceremony).
+  - For the first 15-30 minutes, the _First Responder_ (who is also the IC) may be the only _Responder_. If needed, the _First Responder_ begins the process if IR Team formation.
 
-- The _incident reporter_ (a Client or CivicActions team member) notices and reports a Project related incident to the CivicActions Incident Response Team:
-  1. Slack: [#None](None) using `@channel`
-  1. Email: TheProject@example.com
-  1. [CivicActions/Project contacts](None)
-- The first responder on the Incident Response Team, which could be the reporter if the reporter is on the team, assumes the **Incident Commander (IC)** role.
+During incident response, _Responders_:
+- Assume primary responsibility for the [Assess](#assess) and [Remediate](#remediate) steps.
+- Document _in real time_ the measurements, theories, and steps taken using [#None](None) or other channels provided by the IC.
+- Designate, with an [explicit hand-off](security-irp-checklist.md#explicit-handoff-ceremony), a dedicated **Incident Commander** if the incident will take longer than 15-30 minutes to resolve.
 
-[Assess](#assess):
+### Incident Commander (IC)
+The _Incident Commander (IC)_ is not involved in the remediation of an incident, and instead performs three major duties:
 
-- The IC forms a team of _responders_ to determine whether the event is a security incident. _Note that some apparent outages can be triggered by [external dependencies as listed in the contingency plan](contingency-plan.md#external-dependencies)._
+1. Incident Response Team creation and management, ensuring that the IR Team:
+   - Is staffed with people capable of managing the situation
+      - For the first 15-30 minutes, the IC may be the only _Responder_.
+   - Is focused on the correct goals for incident resolution
+   - Has appropriate media/communication channels for recording actions
+      - If during business hours, a dedicated slack channel (e.g. `#fire-team) may be created for IR team communications.
+   - Utilizes work shifts if the incident lasts longer than 3 hours.
+2. Documentation: ensuring that actions taken during investigation and remediation are recorded
+   - Initially in the [#None](None) slack channel
+   - Also in the Project JIRA ticket
+3. Communication: ensuring that internal and external entities are aprised of the situation and progress reports
+   - As communications is an important task, the IC may request and designate with [explicit handoff](security-irp-checklist.md#explicit-handoff-ceremony) a dedicated _Communications Officer_ (CO).
 
-  - If the incident is confirmed:
-    - The team [assesses the severity](#incident-severities).
-    - The IC creates an initial situation report, called a _sitrep_, in a [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident).
-    - The IC assesses whether to activate the [contingency plan](contingency-plan.md) for disaster recovery.
-  - If the incident is determined to be a false alarm, the IC follows the notification procedure for false alarms.
+### Communications Officer (CO)
+Throughout the development of an incident, from receiving an event report to the completion of incident remediation, communications are key.
 
-[Remediate](#remediate):
+The _Communications Officer (CO)_ (whose duties are performed by the IC until [handoff](security-irp-checklist.md#explicit-handoff-ceremony) to another IR Team member) manages external communications with:
 
-- If suspicious activity is suspected or other unanswered questions exist:
-  - Make [CPM snapshots](https://cpm.project.com/) of relevant volumes.
-  - Preserve logs.
-  - Take screen captures of anomalous activity that can be used in post-remediation forensic analysis. _Do this before making any changes._
-- The responders work to contain and remediate the issue. Timelines vary based on the assessed severity.
-- The IC coordinates, communicates, and tracks incident investigation and remediation.
-- If appropriate, the IC coordinates with the Product Owner (PO) to notify affected customers.
+- Management, developers, users and anyone affected by the incident
+- Client stakeholders
+  - Escalates communication to additional team members and/or the Project Product Owner when needed.
+- Legal team and US-CERT escalations if required
 
-[Retrospect](#retrospective):
+#### Communication channels
 
-- The responding team holds a retrospective to analyze the incident, capture follow-ups and lessons learned, and write a formal report.
+- Slack: [#None](None) using `@channel` (Notifies the team about the incident.)
+  - If during business hours, a dedicated Slack channel (e.g. `#fire-team`) may be created for IR team communications
+- A Project [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident) which will be the final location for all reporting processes, with links to other documents as needed.
+- Zoom, Meet, other video chat _(though not a good place for recording actions as a record may be lost when the call ends)_
+- Email: TheProject@example.com (Alerts the "on call" responder(s).)
+- [CivicActions/Project IR Team contacts](None) (Provides direct email addresses and phone numbers.)
 
-During this process, the team communicates in the following places:
+## Incident response process
 
-- **JIRA ticket**: Situation updates, investigation notes, and other relevant information gets captured in the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident) created to track this event.
-- **Slack**: Real-time communication happens in the Slack channel [#None](None).
-- **Other**: If needed, the team may use Zoom, Google Hangouts, and/or Google Docs to share information not appropriate for Slack (PII, etc.).
-
-For full details, read on.
-
-## Response process
+There are four major processes of incident response, detailed below. See the [IRP checklist](security-irp-checklist.md) for quick, actionable information to use durin an incident.
 
 ### Initiate
 
-An incident begins when someone becomes aware of a potential incident. We define "incident" broadly, following [_NIST SP 800-61: Computer Security Incident Handling Guide_](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf), as "a violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices". This is a deliberately broad definition, designed to encompass any scenario that might threaten the security of Project. For more, see: [What is an incident?](http://civicactions-handbook.readthedocs.io/en/latest/09-security/incidents/#what-is-an-incident)
+An incident begins when someone becomes aware of a disruption in expected normal system operations. We define "incident" broadly, following [_NIST SP 800-61: Computer Security Incident Handling Guide_](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final), as "a violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices". This is a deliberately broad definition, designed to encompass any scenario that might threaten the security of the The Project. For more, see: [What is an incident?](http://civicactions-handbook.readthedocs.io/en/latest/09-security/incidents/#what-is-an-incident)
 
-When a person (the _reporter_) notices what appears to be a Project-related incident, they should check the Slack channel [#None](None) to see if this may be expected behavior (e.g., expected system downtime during a maintenance window), and if necessary, alert the on-call system administrators by email TheProject@example.com. If there is no acknowledgment from the Incident Response Team within 10 minutes, the reporter should escalate the issue by contacting the None directly until receiving acknowledgment of the report.
+When a person (the _reporter_) notices what appears to be a Project-related event, they should check normal communication channels -- if possible -- such as Slack ([#None](None)) to see if this may be expected behavior (e.g., expected system downtime during a maintenance window). If it appears to be a valid incident, the _reporter_ alerts the on-call responders via Slack ([#None](None)) or email TheProject@example.com. If there is no acknowledgment from the Incident Response Team within 10 minutes, the reporter should escalate the issue by contacting team members on the None directly until receiving acknowledgment of the report.
 
-The first participant on the CivicActions Incident Response Team is the _reporter_, who is also the initial _Incident Commander_ (IC). The IC does the following:
+The _First Responder_ on the The Project Incident Response Team is by default also the initial _Incident Commander_ (IC). The _First Responder/IC_ does the following:
+- If possible, confirms the event (report of system degradation or other disruption of normal service).
+- Remains IC unless and until an an [explicit handoff](security-irp-checklist.md#explicit-handoff-ceremony) transfers IC duties to another IR Team member.
+- Communicates to the  team that an event has been reported and is under investigation.
 
-- Carries out the next steps in the incident response process.
-- Focuses on coordination, not necessarily investigation.
-- Ensures that the incident response process is followed.
-- Supports the reporter if the reporter already started the process, or starts the process.
-- Remains IC throughout the process, or hands off IC duties later in the process.
+In some cases, the _First Responder/IC_ may be able to fully manage the incident, perhaps by simply re-starting a service.
+- A [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident) should still be created and completed describing the incident and including downtime.
 
 #### Communications during the Initiate phase
 
 Note that at this point the event status is "investigating". The issue has not been confirmed yet, so it should be called an "event". When it has been confirmed, it becomes an "incident".
 
-To help with reporting, copy the following template into Slack or an email to create the issue:
+To initiate the reporting process, the _First Responder/IC_ sends notification to the  team preferably via a real-time chat such as Slack: [#None](None) using `@channel`
+- This may have been done automatically via OpsGenie pager alarms
+- Example message follows. _(The format is not important, but the information fields are useful.)_
+   - **Description**: _[Short description of the event and its impact]_
+   - **Status**: **investigating**
+   - **Severity**: **unknown**
+   - **Reporter**: _[name of the person who reported the issue]_
+   - **IC**: _[your name]_
+   - **Responders**: _[names of other responders]_
+   - **Details**: _[Any extra details about the event can go here.]_
 
-``` markdown
-[Short description of the event and its impact]
-
-- **Status**: investigating
-- **Severity**: unknown
-- **Reporter**: [name of the person who reported the issue]
-- **IC**: [your name]
-- **Responders**: [names of other responders]
-
-[Any extra details about the issue can go here.]
-```
-
-The IC is responsible for keeping this issue updated as investigation and remediation progresses. _Responders_ should add comments to the make notes on the issue.
-
-- The IC may use Zoom, Google Hangouts, and/or Google Docs so that responders can share sensitive information not suitable for sharing in a [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident) or Slack.
+The IC -- who may change during the course of the incident -- is responsible for keeping this issue updated as investigation and remediation progresses. 
 
 ### Assess
 
-The next step is to assess the event. We need to answer two questions:
+The next step is to assess the event. The IC forms an _Incident Response Team_ of _Responders_ to answer two questions:
 
-- Is this an incident? Did the thing we suspect happen actually happen?
-- If so, how severe is it? This determines the response.
-- Could the event have been triggered by an [external dependency](contingency-plan.md#external-dependencies)?
+1. Is the reported event an incident?
+   - Did the thing we suspect happened actually happen? Or is it a [false alarm](security-irp-checklist.md#false-alarm)?
+   - Could the event have been triggered by an [external dependency](contingency-plan.md#external-dependencies)?
+2. How severe is the incident?
+   - [Assesses the severity](#incident-severities) of the incident. This determines the resources required for response.
+   - Does it affect system or data Confidentiality, Integrity, Availability and/or Privacy?
+   - Note that severity can change over the lifespan of an incident, and it is acceptable for the team to assess the initial severity quickly.
 
-To answer these questions, the IC should form an Incident Response Team using Slack Direct Messages. The Incident Response Team should work to confirm the event and assess its impact.
+If the event is determined to be a [false alarm](security-irp-checklist.md#false-alarm), the IC should update the ticket, set the status to "false alarm", and close the ticket.
 
-If the event is determined to be a false alarm, the IC should update the ticket, set the status to "false alarm", and close the ticket.
-
-If the event is confirmed as an incident, the team should assess its impact and determine an initial severity using the incident severity guide below. Note that severity can change over the lifespan of an incident, and it is acceptable for the team to assess the initial severity quickly.
-
-If a security incident is suspected, the IC ensures that the system state is captured with disk snapshots, screen captures, and any other mechanisms relevant to the system to support post-remediation forensic analysis.
-
-After this has been done, the IC should update the ticket and note the following:
-
-- **Status**: confirmed
-- **Severity**: [High/Med/Low]
-- **Responders**: [update to include names of new/changed responders]
-
-The IC should assess whether the [contingency plan](contingency-plan.md) should be activated.
-
-The IC should write an initial situation report, called a _sitrep_, in a [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident), summarizing the incident details, identifying the IC, and linking to the issue. Here is an example sitrep:
-
-``` markdown
-Subject: [sitrep] The chickens are escaping
-
-Severity: low
-IC: Farmer Jane
-Responders: Spot the Dog, Farmer Dave
-
-We've confirmed reports of escaped chickens. Looks like a fox may have tunneled into the run. Dave is working to fix the fence. Spot is tracking the fox.
-```
-
-This sitrep should be posted in:
-
-- 
-- Slack channel [#None](None) (include link to [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident))
+The IC should assess whether Disaster Recovery may be required in which case the [contingency plan](contingency-plan.md) should be activated.
 
 #### Communications during the Assess phase
 
-Updates and real time chat should continue using Slack, Zoom, or Google Hangouts.
+_Responders_ record all actions and observations in one of the supplied [communications channels](#communications channels).
+
+Once assessed, the IC updates the reported event and notes at least the following:
+- **Status**: **confirmed**
+- **Severity**: _[High/Med/Low]_
+- **Responders**: _[update to include names of new/changed responders]_
+
+The IC creates an initial incident report, called a _sitrep_, in a [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident), summarizing the incident details. Here is an example sitrep:
+- **Subject:** [sitrep] The chickens are escaping
+- **Severity:** low
+- **IC:** Farmer Jane
+- **Responders:** Spot the Dog, Farmer Dave
+- **Description:** We've confirmed reports of escaped chickens. Looks like a fox may have tunneled into the run. Dave is working to fix the fence. Spot is tracking the fox.
+
+This sitrep should be posted in:
+- JIRA ticket
+- Slack channel [#None](None) (include link to [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident))
+- and/or whatever [communications channel](#communications channels) the IC (or CO) has indicated.
 
 ### Remediate
 
-Remediation is about resolving the issues caused by the incident. Remediation will be situation-specific. Here are a few guidelines:
+Remediation is about resolving the issues caused by an incident. Remediation will be situation-specific, and timelines vary based on the assessed severity. Here are a few guidelines:
 
-- If suspicious activity is suspected or other unanswered questions exist, create database dumps, take disk snapshots of relevant volumes, get screen captures of anomalous activity _before making changes_ to support post-remediation forensic analysis.
+_Responder_ actions:
 
-- The IC's responsibility is coordination, communication, and information collection. The remediation team will be focused on resolving the issue, so the IC must track what happened, how the incident is being remediated, and who is part of those efforts. Ideally the notes that the second IC makes should be sufficient for an outside investigator to independently follow the work of the Incident Response Team and validate the team's work.
+- The IR Team will develop a list of informational leads from the incident — actionable information about any security breaches, stolen data, etc. Similarly, the IR Team will develop a list of remediation steps. These can be tracked as checklists in the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident).
+- If suspicious activity is suspected or other unanswered questions exist, create database dumps, take disk snapshots of relevant volumes, reconfigure firewalls to prevent ingress and egress, and/or get screen captures of anomalous activity _before making changes_ to support post-remediation forensic analysis.
 
-- The team will develop a list of informational leads from the incident — actionable information about any security breaches, stolen data, etc. The IC should track these leads, maintaining information about the investigations and their outcomes. These can be tracked as checklists in the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident).
+_Incident Commander_ actions:
 
-- Similarly, the team will develop a list of remediation steps. The IC is responsible for tracking them, making sure they are assigned and followed, and verifying them when they are completed. Remediation efforts may be tracked with the issue details. The IC should distinguish between immediate concerns, which need to be completed before the incident is considered resolved, and long-term improvements/hardening, which can be deferred to the Retrospective.
+- The IC's responsibility is coordination, communication, and information collection. While the remediation team is focused on resolving the issue, the IC must track what happened, how the incident is being remediated, and who is part of those efforts.
+- The IC is responsible for tracking remediation actions, making sure they are assigned and followed, and verifying them when they are completed. Remediation efforts may be tracked with the issue details. 
+- The IC should distinguish between immediate concerns, which need to be completed before the incident is considered resolved, and long-term improvements/hardening, which can be deferred to the Retrospective.
+- Ideally the notes that the IC makes should be sufficient for an outside investigator to independently follow the work of the Incident Response Team and validate the team's work.
 
-- The Incident Response Team should aim to adopt a containment strategy. If machines are compromised, avoid destroying volumes or shutting down systems if possible, both of which can hamper forensics. Creating [CPM snapshots](https://cpm.project.com/) of relevant volumes is helpful at this stage.
+#### Communications during the Remediate phase
 
-   - For AWS instances, leave the instance running and reconfigure the Security Group for the instance to drop all ingress and egress traffic except from specific IPs (like yours) until forensics can be performed.
+If and when appropriate, the _Incident Commander_ (IC) or _Communications Officer_ (CO)
+- Coordinates with the CivicActions managers to apprise them of the situation.
+- Coordinates with the The Project Product Owner (PO) to notify affected customers.
+- Ensure that the IR Team is recording all actions in the approriate designated [communications channels](#communications channels).
+- Share sitreps on a regular basis in Slack, in the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident), and with stakeholders.
+   - See the section on [incident severities](#incident-severities) for suggested time intervals for each severity level.
 
-- Remediation may require service disruption. If it does, the team should proceed in a different way depending on the [severity](#incident-severities):
+#### Remediation process notes
 
-   - High-severity: Take action immediately, even if this causes disruption. A notification about the disruption should be sent out as soon as possible, but the team needs no permission to take action at this level.
+Remediation may require service disruption. If it does, the team should proceed in a different way depending on the [severity](#incident-severities):
+- High-severity: Take action immediately, even if this causes disruption. A notification about the disruption should be sent out as soon as possible, but the team needs no permission to take action at this level.
+- Medium-severity: Notify the Project leads of the planned action, and help them assess the relative risk of disruption versus security. If the leads are unavailable on Slack, contact them using the phone numbers in their Slack profiles. The team should reach a collaborative decision on action, with a bias towards disruption. If they cannot be reached within an hour, the team may take action without them.
+- Low-severity: Notify the leads as described above. Do not take action until a mutually-agreed course of action has been determined.
 
-   - Medium-severity: Notify the Project leads of the planned action, and help them assess the relative risk of disruption versus security. If the leads are unavailable on Slack, contact them using the phone numbers in their Slack profiles. The team should reach a collaborative decision on action, with a bias towards disruption. If they cannot be reached within an hour, the team may take action without them.
-
-   - Low-severity: Notify the leads as described above. Do not take action until a mutually-agreed course of action has been determined.
-
-- Remediation takes time. If the issue progresses for more than 3 hours without being resolved, the IC should plan for a long remediation. This means:
-
-   - Determine whether remediation efforts will occur during business hours only or be continuous. This depends on the severity of the issue, and whether breaches are ongoing.
-
-   - For a continuous response, the IC should plan shifts. This allows responders to take breaks and insures continuous coverage. Shifts should be no longer than 3 hours. Also, the IC duties should rotate in shifts no longer than 3 hours.
+Remediation takes time. If the issue progresses for more than 3 hours without being resolved, the IC should plan for a long remediation. This means:
+- Determine whether remediation efforts will occur during business hours only or be continuous. This depends on the severity of the issue, and whether breaches are ongoing.
+- For a continuous response, the IC should plan shifts. This allows responders to take breaks and insures continuous coverage. Shifts should be no longer than 3 hours. Also, the IC duties should rotate in shifts no longer than 3 hours.
 
 When the incident is no longer active -- for example, the breach has been contained, the issue has been fixed, etc. -- the IC should close out the incident. There might be longer term remediation required, and possibly more investigation, but when the incident is no longer active, these activities can proceed at the regular pace of business.
 
@@ -187,79 +194,72 @@ To close out an incident, the IC should:
 - Send a final sitrep to stakeholders.
 - Thank everyone involved for their service.
 
-#### Communications during the Remediate phase
-
-- Updates and real time chat should continue as above (updates on the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident), chat in Slack or Google Hangouts).
-- The IC should continue to post updated sitreps on a regular basis (the section on severities, below, suggests time intervals for each level). These sitreps should be shared in Slack, in the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident), and with all stakeholders identified during the process (e.g. clients).
-
 ### Retrospect
 
-The final step in handling a security incident is identifying what we can learn from it. The IC (or one of the ICs if there were multiple, or a designated other party) should lead a retrospective and develop an incident report.
+The responding team holds a retrospective to analyze the incident, capture follow-ups and lessons learned, and write a formal report.
 
-The report should contain:
+Before this process begins, the Incident Commander (IC) should ensure that all relevant information is either copied or linked to the JIRA ticket created during the Assessment phase.
+
+The final step in handling a security incident is identifying what can be learned from it. The IC (or one of the ICs if there were multiple, or a designated other party such as the Communications Officer) should lead a retrospective and develop an incident report.
+
+The incident report should contain:
 
 - a timeline of the incident
 - details about how the incident progressed
-- information about the vulnerabilities that led to the incident, or _cause analysis_
+- information about the vulnerabilities that led to the incident, also called a _cause analysis_
 
-The _cause analysis_ is an important part of this report; the team should use tools such as [Infinite Hows](https://www.kitchensoap.com/2014/11/14/the-infinite-hows-or-the-dangers-of-the-five-whys/) or [Five Whys](https://en.wikipedia.org/wiki/5_Whys) to try to dig into causes, how future incidents could be prevented, how responses could be better in the future, etc.
+The _cause analysis_ is an important part of the incident report. Tools such as [Infinite Hows](https://www.kitchensoap.com/2014/11/14/the-infinite-hows-or-the-dangers-of-the-five-whys/) and [Five Whys](https://en.wikipedia.org/wiki/5_Whys) can help the team explore potential causes, prevention, and improved incident response.
 
-The report should also contain some basic response metrics:
+The incident report should contain these basic response metrics:
+- Discovery method: How did the team become aware of the issue?
+- Time to discovery: How much time passed from the time the incident became active until someone became aware of it?
+- Time to containment: How much time passed from the time someone became aware of the incident until the incident was contained?
+- Threat actions: What actions were taken by the actor? For example, phishing, password attacks, etc.
 
-- Discovery method (how did we become aware of the issue?)
-- Time to discovery (how long did it take from when the incident started until we became aware of it?)
-- Time to containment (how long did it take from when we became aware until the issue was contained?)
-- Threat actions (which specific actions -- e.g. phishing, password attacks, etc) -- were taken by the actor)?
+The incident report should be posted as a final comment on the JIRA ticket, which can then be closed.
 
-This report should be posted as a final comment on the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident), which can then be closed.
+## Incident severities
 
-## Incident Severities
+The incident severity level determines the actions of the Incident Response Team. Severity usually changes during the lifecycle of the incident.
 
-_Note that Project has no High Value Assets (HVAs) or Sensitive Personally Identifiable Information (SPII). As such, Project incidents are generally expected to fall into the_ **Low Severity** _bucket._
+### High severity
 
-Severity ratings drive the actions of the Incident Response Team. Below are the severities ratings we use, some examples of incidents that might fall into that bucket, and some guidelines for ICs and Incident Response Teams about how to treat each class of incident.
-
-Note the severities may (and often will) change during the lifecycle of the incident. That's normal.
-
-### 1 - High Severity
-
-High-severity incidents successfully compromise the confidentiality/integrity of -Sensitive* Personally Identifiable Information (SPII), impact the availability of services for a large number of customers, or have significant financial impact. Examples include:
+A high severity incident compromises the confidentiality/integrity of Sensitive Personally Identifiable Information (SPII), impacts the availability of services for a large number of customers, or has significant financial impact. Examples include:
 
 - Confirmed breach of SPII
 - Successful root-level compromise of production systems
 - Denial of Service attacks resulting in severe outages
 
-Guidelines for addressing High-sev issues:
+Guidelines for incident response:
 
-- Work will likely be 24/7 (e.g. work until the issue is contained).
-- Responders are empowered to take any step needed to contain the issue, up to and including complete service degradation.
-- Sitreps should be sent every hour, or more.
+- Remediation efforts will likely be continuous until the issue is contained.
+- Responders may take any action required to contain the issue, including complete service degradation.
+- Sitreps should be shared every hour, or more frequently.
 
-### 2 - Medium Severity
+### Medium severity
 
-Medium-severity incidents represent attempts (possibly un- or not-yet-successful) at breaching PII, or those with limited availability/financial impact. Examples include:
+A medium severity incident can be an unsuccessful attempt to breach Personally Identifiable Information (PII), an event with limited impact on the availability of services for a large number of customers, or an event with limited financial impact. Examples include:
 
-- Suspected SPII breach
-- Targeted (but as-of-yet unsuccessful) attempts to compromise production systems
+- Suspected PII breach
+- Targeted but unsuccessful attempts to compromise production systems
 - Spam/phishing attacks targeting CivicActions or Project staff
-- DoS attacks resulting in limited service degradation
+- Denial of Service attacks resulting in limited service degradation
 
-Guidelines for addressing Medium-sev issues:
+Guidelines for incident response:
 
-- Response should be business-hours.
-- Responders should attempt to consult stakeholders before causing downtime, but may proceed without them if they can't be contacted in a reasonable time-frame.
-- Sitreps should be sent approximately twice a day.
+- Response should occur during business hours.
+- Responders should attempt to consult stakeholders before causing downtime, but may proceed without consent if stakeholders do not respond in a reasonable time frame.
+- Sitreps should be shared approximately twice per day.
 
-### 3 - Low Severity
+### Low severity
 
-Low-sev incidents don't affect SPII, and have no availability or financial impact. Examples include:
+A low severity incident does not affect PII, and has no availability or financial impact. Examples include:
 
-- Attempted compromise of non-important systems (staging/testing instances, etc.)
-- Incidents involving specific employees
-- DoS attacks with no noticeable customer impact
+- Attempted compromise of non-important systems, for example, staging or testing instances
+- Denial of Service attacks with no noticeable customer impact
 
-Guidelines for addressing Low-sev issues:
+Guidelines for incident response:
 
-- Response should be business-hours.
+- Response should occur during business hours.
 - Responders should avoid service degradation unless stakeholders agree.
-- Sitreps should be sent approximately daily.
+- Sitreps should be shared daily.

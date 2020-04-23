@@ -20,6 +20,7 @@ contact_sheet:
 issue_system: JIRA ticket
 issue_system_url: '[JIRA ticket management system](https://project.atlassian.net/secure/)'
 issue_incident: '[JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident)'
+pager: OpsGenie
 escalation_mail: TheProject@example.com
 backup_snaps: '[CPM snapshots](https://cpm.project.com/)'
 info_security_policy:

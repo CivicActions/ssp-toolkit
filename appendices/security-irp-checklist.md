@@ -1,82 +1,91 @@
 # Project Security Incident Response Procedure Checklist
 
-This is a short, actionable checklist for the ***Incident Commander*** (IC) and ***Responders*** to follow during incident response. It is a companion to the [Security Incident Response Plan](security-irp.md) which provides full detail for each step.
+This is a focused, actionable checklist for the _Incident Commander_ (IC) and _Responders_ to follow during incident response. It is a companion to the [Security Incident Response Plan](security-irp.md) which provides full detail for each step.
 
 ## Remember to _breathe_
 
 - No one's life is in danger.
-- **Document all steps and findings!** (The Slack channel [#None](None) is recommended.) Documentation facilitates communication and makes handoffs easier.
+- **Document all steps and findings!** (The Slack channel [#None](None) is recommended but other [communications channels](security-irp.md#communications channels) may be used.)
+   - Documentation facilitates communication and makes handoffs easier.
 - Consult with the _Incident Commander_ (or other team members) if you have questions.
 
 ## Assume roles
 
-There is often overlap between these two roles, especially at the beginning of an incident response:
+See [Roles and Responsibilities](security-irp.md#roles-and-responsibilities) for detailed information about:
+- [Responder](security-irp.md#responder)
+- [Incident Commander (IC)](security-irp.md#incident-commander)
+- [Communications Officer (CO)](security-irp.md#communications-officer)
 
-- **Incident Commander (IC)**
-  - Assumes the role based on being the first Project team member to notice or respond to the incident.
-  - Forms the team. (For the first 15-30 minutes, the IC may be the only _Responder_.)
-  - Escalates communication to additional team members and/or the Project Product Owner when needed.
-  - Ensures that steps are documented, usually in the Slack channel [#None](None).
-  - Ensures that a ticket is created and a record of the incident process is maintained.
+Always use the [_Explicit Handoff Ceremony_](#explicit-handoff-ceremony) when transferring/changing roles.
 
-- **Responders**
-  - Assume primarily responsibility for the _Assess_ and _Remediate_ steps.
-  - Document _in real time_ the measurements, theories, and steps taken using the Slack channel [#None](None).
-  - Designate a new **Incident Commander** if the incident will take longer than 15-30 minutes to resolve.
+## Incident Response Checklist
 
-## Initiate
+At a high level, incident response follows this process. _(For additional background, see the [Security Incident Response Process](security-irp.md#incident-response-process))_
 
-At this stage, the _Incident Commander_ is usually working alone as the first responder:
+### Initiate
 
-- Determine if you can whether this might be a false alarm.
-- If it appears to be a real incident and it cannot be resolved in 15-30 minutes, recruit a _Responder_ or replacement _Incident Commander_ to share the load:
+An "event" (anomaly or suspected disruption) is reported and a  Incident Response Team member picks it up.
 
-- Email: [TheProject@example.com](mailto:TheProject@example.com) (Alerts the "on call" system admin.)
-- Slack: [#None](None) using `@channel` (Notifies the team about the incident.)
-- [CivicActions/Project Incident Response Team](None): This contact list provides direct email addresses and phone numbers.
+At this stage, the _First Responder_ is also the _Incident Commander_ (IC) and is usually working alone.
+
+The _First Responder/IC_ allocates no more than five (5) minutes to determine whether this event might be a [false alarms](#false-alarm).
+- If it appears to be a real incident, [broadcast notification of the incident](security-irp.md#communications-during-the-initiate-phase) via at least one of:
+  1. Slack: [#None](None) using `@channel` (Notifies the team about the incident.)
+     - This may have been done automatically via alarms via OpsGenie pager alarms
+  2. Email: [TheProject@example.com](mailto:TheProject@example.com) (Alerts the "on call" system admin.)
+  3. [CivicActions/Project IR Team contacts](None) (Provides direct email addresses and phone numbers.)
+- If the incident cannot be resolved in 15-30 minutes:
+   - Recruit additional IR Team _Responders_
+   - Designate, with an [explicit hand-off](#explicit-handoff-ceremony), a dedicated [**Incident Commander**](security-irp.md#incident-commander)
 
 ## Assess
 
-The _Responder(s)_ works to:
+The IR Team _Responders_ work to:
 
 - Confirm the incident. _Is it a real incident?_
   - Was the event triggered by an [external dependency](contingency-plan.md#external-dependencies)?
+  - Is a system failure causing the disruption?
   - If it's not a real incident, go to [False alarms](#false-alarm).
 - Assess the severity, using the [rubric in the IR guide](security-irp.md#incident-severities). (Project incidents are generally ***Low*** severity.)
 - Post an initial situation report, called a _sitrep_ ([example sitrep](security-irp.md#assess)), to the Slack channel [#None](None). Include a descriptive name, and identify the current Incident Commander and Responders.
-- Assess whether to activate the [contingency plan](contingency-plan.md). _Is a system failure causing the disruption?_
+- Assess whether to activate the [contingency plan](contingency-plan.md) (is Disaster Recovery required?).
 
-The _Incident Commander_:
+As new IR team members arrive, the _First Responder_ either fully assumes the role of [_Incident Commander_ (IC)](security-irp.md#incident-commander) or transfers the IC role to another IR Team member via the [handoff ceremony](#explicit-handoff-ceremony)
 
-- Creates a [JIRA Incident ticket]().
-- If needed, sends the _sitrep_ and a link to the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident) to [TheProject@example.net](TheProject@example.net).
+The _Incident Commander_ duties include:
+
+- Ensures all IR Team activities are being recorded in Slack, shared Google docs, or a [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident)
+   - Other [communications channels](security-irp.md#communications channels) may be set up and used.
+- Creates a Project [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident) (if not already created)
 
 ## Remediate
 
-The _responders_ work to determine the cause, implement a resolution, and return the system to normal operations.
+The _Responders_ work to determine the cause, implement a resolution, and return the system to normal operations.
 
-- If suspicious activity is suspected or other unanswered questions exist:
-  - Make [CPM snapshots](https://cpm.project.com/) of relevant volumes.
-  - Preserve logs.
-  - Take screen captures of anomalous activity that can be used in post-remediation forensic analysis. _Do this before making any changes._
+**If suspicious activity is suspected** or other unanswered questions exist, _before making any changes_:
+- Make [CPM snapshots](https://cpm.project.com/) of relevant volumes and data.
+- Preserve logs.
+- Take screen captures of anomalous activity that can be used in post-remediation forensic analysis.
+- Consider implementing a containment strategy. For example, reconfigure firewall rules for the affected instance to drop all ingress and egress traffic, except from specific IPs like yours, until forensics can be performed.
 
-- Make every attempt to determine the cause, as the cause can drive follow-up measures that prevent incident recurrence.
-- Consider implementing a _containment strategy_. To do so, reconfigure the Security Group for the affected instance to drop all ingress and egress traffic, except from specific IPs like yours, until forensics can be performed.
+Make every attempt to determine the cause, as the cause can drive follow-up measures that prevent incident recurrence.
 
-The _Incident Commander_ coordinates activity:
+The _Incident Commander_ coordinates activity and:
 
-- Keep the all information (ticket and documentation) current as people work. Be sure to track:
+- Is not involved in the remediation of the incident.
+- Maintains all information (ticket and documentation) current as people work, tracking:
   - Team leads and members
   - Remediation items and their assignees
-  - Customer notification, if appropriate
-- Share _sitreps_ on a regular basis. (For high severity, hourly; medium severity, 2x daily; and low severity, daily).
-- Utilize work shifts if the incident lasts longer than 3 hours.
-- [Hand off to a new Incident Commander](#handing-off-ic) if the incident lasts longer than 3 hours.
+  - Work shifts for all roles if the incident lasts longer than 3 hours.
+- Maintains communications with all stakeholders (or designates a _Communications Officer_ via [explicit handoff](#explicit-handoff-ceremony))
+  - Shares _sitreps_ on a regular basis. (For high severity, hourly; medium severity, 2x daily; and low severity, daily).
+
+## Post remediation
 
 After the incident has been resolved:
 
-- Update the ticket, and set the status to _Ready for QA_.
-- Schedule a retrospective.
+- Update the JIRA ticket and set the status to _Ready for QA_.
+- Schedule a [_Retrospective_](security-irp.md#retrospective).
 - Share the final _sitrep_ with stakeholders.
 - Thank everyone involved for their service.
 
@@ -90,12 +99,12 @@ If an event is determined not to be a security incident:
 - Update the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident), and set the status to _Done_.
 - If any _sitreps_ were shared, send a final sitrep to all previous recipients, noting the false alarm.
 
-### Incident Commander handoff
+### Explicit Handoff Ceremony
 
-To hand off _Incident Commander_ duties:
+To hand off _Incident Commander_, _Communications Officer_ or _Responder_ ("ROLE") duties:
 
-1. Outgoing IC initiates the handoff and briefs the new IC on the situation.
-2. New IC confirms the handoff and assumes responsibility.
-3. New IC updates the JIRA ticket and notes the handoff.
-4. New IC shares a _sitrep_, which notes the handoff.
-5. Outgoing IC remains available for 15-20 minutes to ensure a smooth handoff and then logs off.
+1. Outgoing ROLE initiates the handoff and briefs the incoming ROLE on the situation.
+2. Incoming ROLE confirms the handoff and assumes responsibility.
+3. Incoming ROLE updates the JIRA ticket and notes the handoff.
+4. Incoming ROLE shares a _sitrep_, which notes the handoff.
+5. Outgoing ROLE remains available for 15-20 minutes to ensure a smooth handoff and then logs off.
