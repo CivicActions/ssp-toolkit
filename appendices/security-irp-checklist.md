@@ -2,6 +2,24 @@
 
 This is a focused, actionable checklist for the _Incident Commander_ (IC) and _Responders_ to follow during incident response. It is a companion to the [Security Incident Response Plan](security-irp.md) which provides full detail for each step.
 
+## Contents
+<!--TOC-->
+
+- [Remember to _breathe_](#remember-to-_breathe_)
+- [Assume roles](#assume-roles)
+- [Incident Response Checklist](#incident-response-checklist)
+  - [Initiate](#initiate)
+- [Assess](#assess)
+- [Remediate](#remediate)
+- [Post remediation](#post-remediation)
+- [Special situations](#special-situations)
+  - [False alarms](#false-alarms)
+  - [Explicit Handoff Ceremony](#explicit-handoff-ceremony)
+
+<!--TOC-->
+
+----
+
 ## Remember to _breathe_
 
 - No one's life is in danger.
@@ -85,8 +103,8 @@ The _Incident Commander_ coordinates activity and:
 After the incident has been resolved:
 
 - Update the JIRA ticket and set the status to _Ready for QA_.
-- Schedule a [_Retrospective_](security-irp.md#retrospective).
 - Share the final _sitrep_ with stakeholders.
+- Schedule a [_Retrospective_](security-irp.md#retrospect).
 - Thank everyone involved for their service.
 
 ## Special situations
