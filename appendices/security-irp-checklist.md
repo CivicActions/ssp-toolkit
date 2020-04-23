@@ -9,9 +9,9 @@ This is a focused, actionable checklist for the _Incident Commander_ (IC) and _R
 - [Assume roles](#assume-roles)
 - [Incident Response Checklist](#incident-response-checklist)
   - [Initiate](#initiate)
-- [Assess](#assess)
-- [Remediate](#remediate)
-- [Post remediation](#post-remediation)
+  - [Assess](#assess)
+  - [Remediate](#remediate)
+  - [Post remediation](#post-remediation)
 - [Special situations](#special-situations)
   - [False alarms](#false-alarms)
   - [Explicit Handoff Ceremony](#explicit-handoff-ceremony)
@@ -56,7 +56,7 @@ The _First Responder/IC_ allocates no more than five (5) minutes to determine wh
    - Recruit additional IR Team _Responders_
    - Designate, with an [explicit hand-off](#explicit-handoff-ceremony), a dedicated [**Incident Commander**](security-irp.md#incident-commander)
 
-## Assess
+### Assess
 
 The IR Team _Responders_ work to:
 
@@ -76,7 +76,7 @@ The _Incident Commander_ duties include:
    - Other [communication channels](security-irp.md#communication-channels) may be set up and used.
 - Creates a Project [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident) (if not already created)
 
-## Remediate
+### Remediate
 
 The _Responders_ work to determine the cause, implement a resolution, and return the system to normal operations.
 
@@ -98,7 +98,7 @@ The _Incident Commander_ coordinates activity and:
 - Maintains communications with all stakeholders (or designates a _Communications Officer_ via [explicit handoff](#explicit-handoff-ceremony))
   - Shares _sitreps_ on a regular basis. (For high severity, hourly; medium severity, 2x daily; and low severity, daily).
 
-## Post remediation
+### Post remediation
 
 After the incident has been resolved:
 
