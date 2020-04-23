@@ -131,7 +131,7 @@ The IC should assess whether Disaster Recovery may be required in which case the
 
 #### Communications during the Assess phase
 
-_Responders_ record all actions and observations in one of the supplied [communications channels](#communications channels).
+_Responders_ record all actions and observations in one of the supplied [communications channels](#communications-channels).
 
 Once assessed, the IC updates the reported event and notes at least the following:
 - **Status**: **confirmed**
@@ -148,7 +148,7 @@ The IC creates an initial incident report, called a _sitrep_, in a [JIRA Inciden
 This sitrep should be posted in:
 - JIRA ticket
 - Slack channel [#None](None) (include link to [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident))
-- and/or whatever [communications channel](#communications channels) the IC (or CO) has indicated.
+- and/or whatever [communications channel](#communications-channels) the IC (or CO) has indicated.
 
 ### Remediate
 
@@ -171,7 +171,7 @@ _Incident Commander_ actions:
 If and when appropriate, the _Incident Commander_ (IC) or _Communications Officer_ (CO)
 - Coordinates with the CivicActions managers to apprise them of the situation.
 - Coordinates with the The Project Product Owner (PO) to notify affected customers.
-- Ensure that the IR Team is recording all actions in the approriate designated [communications channels](#communications channels).
+- Ensure that the IR Team is recording all actions in the approriate designated [communications channels](#communications-channels).
 - Share sitreps on a regular basis in Slack, in the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident), and with stakeholders.
    - See the section on [incident severities](#incident-severities) for suggested time intervals for each severity level.
 

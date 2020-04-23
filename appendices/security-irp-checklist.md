@@ -5,7 +5,7 @@ This is a focused, actionable checklist for the _Incident Commander_ (IC) and _R
 ## Remember to _breathe_
 
 - No one's life is in danger.
-- **Document all steps and findings!** (The Slack channel [#None](None) is recommended but other [communications channels](security-irp.md#communications channels) may be used.)
+- **Document all steps and findings!** (The Slack channel [#None](None) is recommended but other [communications channels](security-irp.md#communications-channels) may be used.)
    - Documentation facilitates communication and makes handoffs easier.
 - Consult with the _Incident Commander_ (or other team members) if you have questions.
 
@@ -55,7 +55,7 @@ As new IR team members arrive, the _First Responder_ either fully assumes the ro
 The _Incident Commander_ duties include:
 
 - Ensures all IR Team activities are being recorded in Slack, shared Google docs, or a [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident)
-   - Other [communications channels](security-irp.md#communications channels) may be set up and used.
+   - Other [communications channels](security-irp.md#communications-channels) may be set up and used.
 - Creates a Project [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident) (if not already created)
 
 ## Remediate
