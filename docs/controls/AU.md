@@ -107,6 +107,11 @@ In this architecture, the following audit methods provide data on activities occ
 CivicActions has extensive experience and specialization as a host of websites that are built using the Ilias web learning platform. Should the need for additional logging become evident, we have the ability to do so by modifying the website's source code to insert additional Ilias logging hooks.
 
 
+##### Ilias
+
+CivicActions has extensive experience and specialization as a host of websites that are built using the Ilias web learning platform. Should the need for additional logging become evident, we have the ability to do so by modifying the website's source code to insert additional Ilias logging hooks.
+
+
 #### d
 
 ##### AWS
@@ -372,7 +377,7 @@ defined in AU-3.
 
 ##### AWS
 
-In this architecture, AWS CloudTrail, Amazon S3 bucket logging, Elastic Load Balancing (ELB) logging, and Amazon RDS MySQL error logging are enabled, but initial EC2 instances launched by this deployment (bastion host, application servers, proxy servers, and any EC2-based NAT servers) DO NOT have any auditing enabled within the OS, as these are in place for example purposes only.
+In this architecture, AWS CloudTrail, Amazon S3 bucket logging, Elastic Load Balancing (ELB) logging, and Amazon RDS MySQL error logging are enabled, but initial Amazon EC2 instances launched by this deployment (bastion host, application servers, proxy servers, and any Amazon EC2-based NAT servers) DO NOT have any auditing enabled within the OS, as these are in place for example purposes only.
 
 AWS built-in features of logging mechanisms provide the audit record generation capability for the auditable events defined in AU-2a. by logging all security-relevant IAM user and API activities which address AWS infrastructure components (AWS Products and services), ELB
 
@@ -400,7 +405,7 @@ The selected auditable events described in AU-2 are coordinated by CivicActions 
 
 ##### AWS
 
-In this architecture, AWS CloudTrail, Amazon S3 bucket logging, Elastic Load Balancing (ELB) logging, and Amazon RDS MySQL error logging are enabled. However, the initial EC2 instances launched by this deployment (bastion host, application servers, proxy servers, and any EC2-based NAT servers) DO NOT have any auditing enabled within the OS, as these are in place for example purposes only.
+In this architecture, AWS CloudTrail, Amazon S3 bucket logging, Elastic Load Balancing (ELB) logging, and Amazon RDS MySQL error logging are enabled. However, the initial Amazon EC2 instances launched by this deployment (bastion host, application servers, proxy servers, and any Amazon EC2-based NAT servers) DO NOT have any auditing enabled within the OS, as these are in place for example purposes only.
 
 AWS built-in features of native logging generates audit records with the content defined in AU-3.
 

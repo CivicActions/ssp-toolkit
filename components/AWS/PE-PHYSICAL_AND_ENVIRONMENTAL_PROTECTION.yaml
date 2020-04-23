@@ -13,7 +13,7 @@ satisfies:
       while the customer organization is responsible for any part of the control that is
       applicable to customer-controlled equipment and facilities, and the customer's
       configurable portion of the AWS logical infrastructure, including the Operating systems
-      on EC2 instances and the customer's applications.
+      on Amazon EC2 instances and the customer's applications.
 
 
       For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from
@@ -36,7 +36,7 @@ satisfies:
       while the customer organization is responsible for any part of the control that is
       applicable to customer-controlled equipment and facilities, and the customer's
       configurable portion of the AWS logical infrastructure, including the Operating systems
-      on EC2 instances and the customer's applications.
+      on Amazon EC2 instances and the customer's applications.
 
 
       For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from
@@ -59,7 +59,7 @@ satisfies:
       while the customer organization is responsible for any part of the control that is
       applicable to customer-controlled equipment and facilities, and the customer's
       configurable portion of the AWS logical infrastructure, including the Operating systems
-      on EC2 instances and the customer's applications.
+      on Amazon EC2 instances and the customer's applications.
 
 
       For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from
@@ -82,7 +82,7 @@ satisfies:
       while the customer organization is responsible for any part of the control that is
       applicable to customer-controlled equipment and facilities, and the customer's
       configurable portion of the AWS logical infrastructure, including the Operating systems
-      on EC2 instances and the customer's applications.
+      on Amazon EC2 instances and the customer's applications.
 
 
       For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from
@@ -105,7 +105,7 @@ satisfies:
       while the customer organization is responsible for any part of the control that is
       applicable to customer-controlled equipment and facilities, and the customer's
       configurable portion of the AWS logical infrastructure, including the Operating systems
-      on EC2 instances and the customer's applications.
+      on Amazon EC2 instances and the customer's applications.
 
 
       For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from
@@ -128,7 +128,7 @@ satisfies:
       while the customer organization is responsible for any part of the control that is
       applicable to customer-controlled equipment and facilities, and the customer's
       configurable portion of the AWS logical infrastructure, including the Operating systems
-      on EC2 instances and the customer's applications.
+      on Amazon EC2 instances and the customer's applications.
 
 
       For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from
@@ -151,7 +151,7 @@ satisfies:
       while the customer organization is responsible for any part of the control that is
       applicable to customer-controlled equipment and facilities, and the customer's
       configurable portion of the AWS logical infrastructure, including the Operating systems
-      on EC2 instances and the customer's applications.
+      on Amazon EC2 instances and the customer's applications.
 
 
       For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from
@@ -174,7 +174,7 @@ satisfies:
       while the customer organization is responsible for any part of the control that is
       applicable to customer-controlled equipment and facilities, and the customer's
       configurable portion of the AWS logical infrastructure, including the Operating systems
-      on EC2 instances and the customer's applications.
+      on Amazon EC2 instances and the customer's applications.
 
 
       For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from
@@ -197,7 +197,7 @@ satisfies:
       while the customer organization is responsible for any part of the control that is
       applicable to customer-controlled equipment and facilities, and the customer's
       configurable portion of the AWS logical infrastructure, including the Operating systems
-      on EC2 instances and the customer's applications.
+      on Amazon EC2 instances and the customer's applications.
 
 
       For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from
@@ -220,7 +220,7 @@ satisfies:
       while the customer organization is responsible for any part of the control that is
       applicable to customer-controlled equipment and facilities, and the customer's
       configurable portion of the AWS logical infrastructure, including the Operating systems
-      on EC2 instances and the customer's applications.
+      on Amazon EC2 instances and the customer's applications.
 
 
       For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from

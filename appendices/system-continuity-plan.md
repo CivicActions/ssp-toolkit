@@ -174,7 +174,7 @@ The actions set forth as responses to disasters are basic procedures that will b
 
 ### 5.2 Diversification of Connectivity
 
-Amazon EC2 Region US-East is the primary the Project Cloud data center infrastructure with US-West as the secondary/contingency site.
+Amazon Amazon EC2 Region US-East is the primary the Project Cloud data center infrastructure with US-West as the secondary/contingency site.
 ![None](None)
 
 ## 6 Backup, Restore, and Recovery Procedures
