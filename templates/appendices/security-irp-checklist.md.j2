@@ -5,7 +5,7 @@ This is a focused, actionable checklist for the _Incident Commander_ (IC) and _R
 ## Remember to _breathe_
 
 - No one's life is in danger.
-- **Document all steps and findings!** (The Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}) is recommended but other [communications channels](security-irp.md#communications-channels) may be used.)
+- **Document all steps and findings!** (The Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}) is recommended but other [communication channels](security-irp.md#communication-channels) may be used.)
    - Documentation facilitates communication and makes handoffs easier.
 - Consult with the _Incident Commander_ (or other team members) if you have questions.
 
@@ -32,7 +32,7 @@ The _First Responder/IC_ allocates no more than five (5) minutes to determine wh
 - If it appears to be a real incident, [broadcast notification of the incident](security-irp.md#communications-during-the-initiate-phase) via at least one of:
   1. Slack: [#{{ project.slack_channel }}]({{ project.slack_url }}) using `@channel` (Notifies the team about the incident.)
      - This may have been done automatically via alarms via {{ project.pager }} pager alarms
-  2. Email: [{{ project.escalation_mail }}](mailto:{{ project.escalation_mail }}) (Alerts the "on call" system admin.)
+  2. Email: {{ project.escalation_mail }} (Alerts the "on call" system admin.)
   3. [{{ contractor.name_short }}/{{ project.name_short }} IR Team contacts]({{ project.contact_sheet_url }}) (Provides direct email addresses and phone numbers.)
 - If the incident cannot be resolved in 15-30 minutes:
    - Recruit additional IR Team _Responders_
@@ -55,7 +55,7 @@ As new IR team members arrive, the _First Responder_ either fully assumes the ro
 The _Incident Commander_ duties include:
 
 - Ensures all IR Team activities are being recorded in Slack, shared Google docs, or a {{ project.issue_incident }}
-   - Other [communications channels](security-irp.md#communications-channels) may be set up and used.
+   - Other [communication channels](security-irp.md#communication-channels) may be set up and used.
 - Creates a {{ project.name_short }} {{ project.issue_incident }} (if not already created)
 
 ## Remediate
