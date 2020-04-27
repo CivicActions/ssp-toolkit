@@ -12,20 +12,21 @@
   - [Initiate](#initiate)
   - [Assess](#assess)
   - [Remediate](#remediate)
-  - [Retrospect](#retrospect)
+  - [Hold a retrospective meeting](#hold-a-retrospective-meeting)
 - [Incident severities](#incident-severities)
   - [High severity](#high-severity)
   - [Medium severity](#medium-severity)
   - [Low severity](#low-severity)
+  - [Explicit Handoff Ceremony](#explicit-handoff-ceremony)
 
 <!--TOC-->
 
 ----
 
 ## Introduction
-This document describes the The Project Incident Response Team's process for responding to security incidents and and other disruption that may affect the Confidentiality, Integrity, Availability (CIA) or Privacy of system resources and data. It outlines roles and responsibilities during and after incidents, and it provides an overview of the steps to follow for resolution.
+This document describes the The Project Incident Response Team's process for responding to security incidents and other disruption that may affect the Confidentiality, Integrity, Availability (CIA) or Privacy of system resources and data. It outlines roles and responsibilities during and after incidents, and it provides an overview of the steps to follow for resolution.
 
-**Note:** During an incident, the [**IRP checklist**](security-irp-checklist.md) may be more useful as it contains bulleted, actionable items to be adressed when an incident is being investigated and remediated.
+**Note:** During an incident, the [**IRP checklist**](security-irp-checklist.md) may be more useful as it contains bulleted, actionable items to be addressed when an incident is being investigated and remediated.
 
 ## Roles and Responsibilities
 
@@ -56,7 +57,7 @@ The _Incident Commander (IC)_ is not involved in the remediation of an incident,
 2. Documentation: ensuring that actions taken during investigation and remediation are recorded
    - Initially in the [#None](None) slack channel
    - Also in the Project JIRA ticket
-3. Communication: ensuring that internal and external entities are aprised of the situation and progress reports
+3. Communication: ensuring that internal and external entities are apprised of the situation and progress reports
    - As communications is an important task, the IC may request and designate with [explicit handoff](security-irp-checklist.md#explicit-handoff-ceremony) a dedicated _Communications Officer_ (CO).
 
 ### Communications Officer (CO)
@@ -80,7 +81,7 @@ The _Communications Officer (CO)_ (whose duties are performed by the IC until [h
 
 ## Incident response process
 
-There are four major processes of incident response, detailed below. See the [IRP checklist](security-irp-checklist.md) for quick, actionable information to use durin an incident.
+There are four major processes of incident response, detailed below. See the [IRP checklist](security-irp-checklist.md) for quick, actionable information to use during an incident.
 
 ### Initiate
 
@@ -90,7 +91,7 @@ When a person (the _reporter_) notices what appears to be a Project-related even
 
 The _First Responder_ on the The Project Incident Response Team is by default also the initial _Incident Commander_ (IC). The _First Responder/IC_ does the following:
 - If possible, confirms the event (report of system degradation or other disruption of normal service).
-- Remains IC unless and until an an [explicit handoff](security-irp-checklist.md#explicit-handoff-ceremony) transfers IC duties to another IR Team member.
+- Remains IC unless and until an [explicit handoff](security-irp-checklist.md#explicit-handoff-ceremony) transfers IC duties to another IR Team member.
 - Communicates to the  team that an event has been reported and is under investigation.
 
 In some cases, the _First Responder/IC_ may be able to fully manage the incident, perhaps by simply re-starting a service.
@@ -111,7 +112,7 @@ To initiate the reporting process, the _First Responder/IC_ sends notification t
    - **Responders**: _[names of other responders]_
    - **Details**: _[Any extra details about the event can go here.]_
 
-The IC -- who may change during the course of the incident -- is responsible for keeping this issue updated as investigation and remediation progresses. 
+The IC -- who may change during the course of the incident -- is responsible for keeping this issue updated as investigation and remediation progresses.
 
 ### Assess
 
@@ -162,7 +163,7 @@ _Responder_ actions:
 _Incident Commander_ actions:
 
 - The IC's responsibility is coordination, communication, and information collection. While the remediation team is focused on resolving the issue, the IC must track what happened, how the incident is being remediated, and who is part of those efforts.
-- The IC is responsible for tracking remediation actions, making sure they are assigned and followed, and verifying them when they are completed. Remediation efforts may be tracked with the issue details. 
+- The IC is responsible for tracking remediation actions, making sure they are assigned and followed, and verifying them when they are completed. Remediation efforts may be tracked with the issue details.
 - The IC should distinguish between immediate concerns, which need to be completed before the incident is considered resolved, and long-term improvements/hardening, which can be deferred to the Retrospective.
 - Ideally the notes that the IC makes should be sufficient for an outside investigator to independently follow the work of the Incident Response Team and validate the team's work.
 
@@ -171,7 +172,7 @@ _Incident Commander_ actions:
 If and when appropriate, the _Incident Commander_ (IC) or _Communications Officer_ (CO)
 - Coordinates with the CivicActions managers to apprise them of the situation.
 - Coordinates with the The Project Product Owner (PO) to notify affected customers.
-- Ensure that the IR Team is recording all actions in the approriate designated [communication channels](#communication-channels).
+- Ensure that the IR Team is recording all actions in the appropriate designated [communication channels](#communication-channels).
 - Share sitreps on a regular basis in Slack, in the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident), and with stakeholders.
    - See the section on [incident severities](#incident-severities) for suggested time intervals for each severity level.
 
@@ -194,7 +195,7 @@ To close out an incident, the IC should:
 - Send a final sitrep to stakeholders.
 - Thank everyone involved for their service.
 
-### Retrospect
+### Hold a retrospective meeting
 
 The responding team holds a retrospective to analyze the incident, capture follow-ups and lessons learned, and write a formal report.
 
@@ -263,3 +264,13 @@ Guidelines for incident response:
 - Response should occur during business hours.
 - Responders should avoid service degradation unless stakeholders agree.
 - Sitreps should be shared daily.
+
+### Explicit Handoff Ceremony
+
+To transfer _Incident Commander_, _Communications Officer_ or _Responder_ ("ROLE") duties:
+
+1. Outgoing ROLE initiates the handoff and briefs the incoming ROLE on the situation.
+2. Incoming ROLE confirms the handoff and assumes responsibility.
+3. Incoming ROLE updates the JIRA ticket and notes the handoff.
+4. Incoming ROLE shares a _sitrep_, which notes the handoff.
+5. Outgoing ROLE remains available for 15-20 minutes to ensure a smooth handoff and then logs off.
