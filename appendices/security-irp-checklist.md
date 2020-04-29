@@ -130,7 +130,7 @@ A. Update the JIRA ticket and set the status to one of the following:
 
 B. Notify the Slack channel [#None](None) that the incident has been resolved.
 
-C. Schedule an [Incident Response Team retrospective](security-irp.md#have-a-team-retrospective). Optional for false alarms.
+C. Schedule an [Incident Response Team retrospective](security-irp.md#hold-a-team-retrospective). Optional for false alarms.
 
 D. Share the final _sitrep_ with stakeholders.
 

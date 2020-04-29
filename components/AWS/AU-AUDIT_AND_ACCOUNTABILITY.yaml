@@ -12,28 +12,46 @@ satisfies:
       In this architecture, the following audit methods log all security-relevant
       user/API activities and Amazon S3 data access activities, and support the
       capability to audit organizationally defined events:
+
+
       - AWS CloudTrail logging
+
       - Amazon S3 bucket logging
+
       - Elastic Load Balancing (ELB) logging
+
       - Amazon RDS MySQL error logging
+
   - key: c
     text: >
       In this architecture, the following audit methods provide data on activities
       occurring within the infrastructure:
+
+
       - AWS CloudTrail logging
+
       - Amazon S3 bucket logging
+
       - Elastic Load Balancing (ELB) logging
+
       - Amazon RDS MySQL error logging
+
   - key: d
     text: >
       In this architecture, the following audit methods log all security-relevant
       events and errors related to IAM user and API activities, Amazon S3 data
       access, network access, and Amazon RDS database errors, and support the
       capability to audit organizationally defined events:
+
+
       - AWS CloudTrail logging
+
       - Amazon S3 bucket logging
+
       - Elastic Load Balancing (ELB) logging
+
       - Amazon RDS MySQL error logging
+
   implementation_status: partial
 - control_key: AU-3
   control_name: CONTENT OF AUDIT RECORDS
@@ -44,12 +62,17 @@ satisfies:
   - text: >
       In this architecture, the following audit methods generate records with
       the level of detail specified for the control:
+
+
       - **AWS CloudTrail logging**: Provides information on activities
         related to infrastructure changes.
+
       - **Amazon S3 bucket logging**: Provides data on activities related to the
         access or manipulation of data stored in Amazon S3.
+
       - **Elastic Load Balancing (ELB) logging**: Provides information about
         requests or connections.
+
       - **Amazon RDS MySQL error logging**: Captures errors encountered by the
         database engine. In addition, the MySQL general query log can be enabled
         by the customer organization to capture when clients connect or disconnect
@@ -57,12 +80,19 @@ satisfies:
 
 
       AWS logging information:
+
+
       - AWS native logging: https://aws.amazon.com/answers/logging/aws-native-security-logging-capabilities/
+
       - AWS CloudTrail logs: http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html
+
       - Amazon S3 bucket logs: http://docs.aws.amazon.com/amazons3/latest/dev/ServerLogs.html
+
       - ELB logs: http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html
           http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/access-log-collection.html
+
       - Amazon RDS logs: http://docs.aws.amazon.com/amazonrds/latest/UserGuide/USER_LogAccess.html
+
   implementation_status: partial
 - control_key: AU-4
   control_name: AUDIT STORAGE CAPACITY
@@ -74,10 +104,16 @@ satisfies:
       In this architecture, logs track dynamic capacity growth to accommodate
       organizationally defined storage capacity requirements. Amazon S3 buckets
       are established to store audit logs from the following audit methods:
+
+
       - AWS CloudTrail logging
+
       - Amazon S3 bucket logging
+
       - Elastic Load Balancing (ELB) logging
+
       - Amazon RDS MySQL error logging
+
   implementation_status: partial
 - control_key: AU-5
   control_name: RESPONSE TO AUDIT PROCESSING FAILURES
@@ -93,11 +129,18 @@ satisfies:
 
       AWS built-in features include customer alerting of AWS CloudTrail and other
       service failures through the following:
+
+
       - AWS Service Health Dashboard (http://status.aws.amazon.com)
+
       - RSS feeds to which the customer organization can subscribe
+
       - email
+
       - alerts sent directly to the AWS account *root user* for critical events
+
       - AWS internal Incident Response and corporate communications processes
+
   implementation_status: partial
 - control_key: AU-8
   control_name: TIME STAMPS
@@ -112,17 +155,28 @@ satisfies:
       redundant satellite-connected and atomic clocks in all public AWS regions.
       The Amazon Time Sync Service provides accurate time stamp data to the
       following audit methods:
+
+
       - AWS CloudTrail logging
+
       - Amazon S3 bucket logging
+
       - Elastic Load Balancing (ELB) logging
+
       - Amazon RDS MySQL error logging
+
   - key: b
     text: >
       The Amazon Time Sync Service provides accurate time stamp data to the
       following audit methods:
+
+
       - AWS CloudTrail logging
+
       - Amazon S3 bucket logging
+
       - Elastic Load Balancing (ELB) logging
+
       - Amazon RDS MySQL error logging
 
 
@@ -203,10 +257,18 @@ satisfies:
 
 
       AWS logging information:
+
+
       - AWS native logging: https://aws.amazon.com/answers/logging/aws-native-security-logging-capabilities/
+
       - AWS CloudTrail logs: http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html
+
       - Amazon S3 bucket logs: http://docs.aws.amazon.com/amazons3/latest/dev/ServerLogs.html
+
       - ELB logs: http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html
+
           http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/access-log-collection.html
+
       - Amazon RDS logs: http://docs.aws.amazon.com/amazonrds/latest/UserGuide/USER_LogAccess.html
+      
   implementation_status: partial
