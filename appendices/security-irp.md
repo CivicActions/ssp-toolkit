@@ -12,7 +12,7 @@
   - [Initiate](#initiate)
   - [Assess](#assess)
   - [Remediate](#remediate)
-  - [Hold a retrospective meeting](#hold-a-retrospective-meeting)
+  - [Hold a retrospective](#hold-a-retrospective)
 - [Incident severities](#incident-severities)
   - [High severity](#high-severity)
   - [Medium severity](#medium-severity)
@@ -195,7 +195,7 @@ To close out an incident, the IC should:
 - Send a final sitrep to stakeholders.
 - Thank everyone involved for their service.
 
-### Hold a retrospective meeting
+### Hold a retrospective
 
 The responding team holds a retrospective to analyze the incident, capture follow-ups and lessons learned, and write a formal report.
 

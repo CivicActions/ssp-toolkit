@@ -53,7 +53,12 @@ system: [Assignment: organization-defined audited events (the subset of the audi
 
 ##### AWS
 
-In this architecture, the following audit methods log all security-relevant user/API activities and Amazon S3 data access activities, and support the capability to audit organizationally defined events: - AWS CloudTrail logging - Amazon S3 bucket logging - Elastic Load Balancing (ELB) logging - Amazon RDS MySQL error logging
+In this architecture, the following audit methods log all security-relevant user/API activities and Amazon S3 data access activities, and support the capability to audit organizationally defined events:
+
+- AWS CloudTrail logging
+- Amazon S3 bucket logging
+- Elastic Load Balancing (ELB) logging
+- Amazon RDS MySQL error logging
 
 
 ##### CivicActions
@@ -99,7 +104,12 @@ All security-related issues and events, including requests for server log analys
 
 ##### AWS
 
-In this architecture, the following audit methods provide data on activities occurring within the infrastructure: - AWS CloudTrail logging - Amazon S3 bucket logging - Elastic Load Balancing (ELB) logging - Amazon RDS MySQL error logging
+In this architecture, the following audit methods provide data on activities occurring within the infrastructure:
+
+- AWS CloudTrail logging
+- Amazon S3 bucket logging
+- Elastic Load Balancing (ELB) logging
+- Amazon RDS MySQL error logging
 
 
 ##### Ilias
@@ -111,7 +121,12 @@ CivicActions has extensive experience and specialization as a host of websites t
 
 ##### AWS
 
-In this architecture, the following audit methods log all security-relevant events and errors related to IAM user and API activities, Amazon S3 data access, network access, and Amazon RDS database errors, and support the capability to audit organizationally defined events: - AWS CloudTrail logging - Amazon S3 bucket logging - Elastic Load Balancing (ELB) logging - Amazon RDS MySQL error logging
+In this architecture, the following audit methods log all security-relevant events and errors related to IAM user and API activities, Amazon S3 data access, network access, and Amazon RDS database errors, and support the capability to audit organizationally defined events:
+
+- AWS CloudTrail logging
+- Amazon S3 bucket logging
+- Elastic Load Balancing (ELB) logging
+- Amazon RDS MySQL error logging
 
 
 ##### Drupal
@@ -169,20 +184,31 @@ The information system generates audit records containing information that estab
 
 ##### AWS
 
-In this architecture, the following audit methods generate records with the level of detail specified for the control: - **AWS CloudTrail logging**: Provides information on activities
+In this architecture, the following audit methods generate records with the level of detail specified for the control:
+
+- **AWS CloudTrail logging**: Provides information on activities
   related to infrastructure changes.
+
 - **Amazon S3 bucket logging**: Provides data on activities related to the
   access or manipulation of data stored in Amazon S3.
+
 - **Elastic Load Balancing (ELB) logging**: Provides information about
   requests or connections.
+
 - **Amazon RDS MySQL error logging**: Captures errors encountered by the
   database engine. In addition, the MySQL general query log can be enabled
   by the customer organization to capture when clients connect or disconnect
   and SQL statements received from clients.
 
 
-AWS logging information: - AWS native logging: https://aws.amazon.com/answers/logging/aws-native-security-logging-capabilities/ - AWS CloudTrail logs: http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html - Amazon S3 bucket logs: http://docs.aws.amazon.com/amazons3/latest/dev/ServerLogs.html - ELB logs: http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html
+AWS logging information:
+
+- AWS native logging: https://aws.amazon.com/answers/logging/aws-native-security-logging-capabilities/
+- AWS CloudTrail logs: http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html
+- Amazon S3 bucket logs: http://docs.aws.amazon.com/amazons3/latest/dev/ServerLogs.html
+- ELB logs: http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html
     http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/access-log-collection.html
+
 - Amazon RDS logs: http://docs.aws.amazon.com/amazonrds/latest/UserGuide/USER_LogAccess.html
 
 
@@ -221,7 +247,12 @@ The organization allocates audit record storage capacity in accordance with [Ass
 
 ##### AWS
 
-In this architecture, logs track dynamic capacity growth to accommodate organizationally defined storage capacity requirements. Amazon S3 buckets are established to store audit logs from the following audit methods: - AWS CloudTrail logging - Amazon S3 bucket logging - Elastic Load Balancing (ELB) logging - Amazon RDS MySQL error logging
+In this architecture, logs track dynamic capacity growth to accommodate organizationally defined storage capacity requirements. Amazon S3 buckets are established to store audit logs from the following audit methods:
+
+- AWS CloudTrail logging
+- Amazon S3 bucket logging
+- Elastic Load Balancing (ELB) logging
+- Amazon RDS MySQL error logging
 
 
 ##### CivicActions
@@ -252,7 +283,13 @@ When notified (e.g., via CloudWatch) of an auditing failure, CivicActions Operat
 
 In this architecture, AWS CloudTrail is enabled, and provides the basis for audit processing within the infrastructure.
 
-AWS built-in features include customer alerting of AWS CloudTrail and other service failures through the following: - AWS Service Health Dashboard (http://status.aws.amazon.com) - RSS feeds to which the customer organization can subscribe - email - alerts sent directly to the AWS account *root user* for critical events - AWS internal Incident Response and corporate communications processes
+AWS built-in features include customer alerting of AWS CloudTrail and other service failures through the following:
+
+- AWS Service Health Dashboard (http://status.aws.amazon.com)
+- RSS feeds to which the customer organization can subscribe
+- email
+- alerts sent directly to the AWS account *root user* for critical events
+- AWS internal Incident Response and corporate communications processes
 
 
 ### AU-6: Audit Review, Analysis, And Reporting
@@ -304,14 +341,24 @@ The Project system clocks are synchronized system-wide and provide time stamps w
 
 ##### AWS
 
-AWS includes the Amazon Time Sync Service. Running over Network Time Protocol (NTP), this service synchronizes the time on AWS instances using redundant satellite-connected and atomic clocks in all public AWS regions. The Amazon Time Sync Service provides accurate time stamp data to the following audit methods: - AWS CloudTrail logging - Amazon S3 bucket logging - Elastic Load Balancing (ELB) logging - Amazon RDS MySQL error logging
+AWS includes the Amazon Time Sync Service. Running over Network Time Protocol (NTP), this service synchronizes the time on AWS instances using redundant satellite-connected and atomic clocks in all public AWS regions. The Amazon Time Sync Service provides accurate time stamp data to the following audit methods:
+
+- AWS CloudTrail logging
+- Amazon S3 bucket logging
+- Elastic Load Balancing (ELB) logging
+- Amazon RDS MySQL error logging
 
 
 #### b
 
 ##### AWS
 
-The Amazon Time Sync Service provides accurate time stamp data to the following audit methods: - AWS CloudTrail logging - Amazon S3 bucket logging - Elastic Load Balancing (ELB) logging - Amazon RDS MySQL error logging
+The Amazon Time Sync Service provides accurate time stamp data to the following audit methods:
+
+- AWS CloudTrail logging
+- Amazon S3 bucket logging
+- Elastic Load Balancing (ELB) logging
+- Amazon RDS MySQL error logging
 
 Time stamps are recorded as specified in the ISO 8601 standard. ISO 8601 represents local time (with the location unspecified), as UTC, or as an offset from UTC.
 
@@ -402,8 +449,15 @@ In this architecture, AWS CloudTrail, Amazon S3 bucket logging, Elastic Load Bal
 
 AWS built-in features of native logging generates audit records with the content defined in AU-3.
 
-AWS logging information: - AWS native logging: https://aws.amazon.com/answers/logging/aws-native-security-logging-capabilities/ - AWS CloudTrail logs: http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html - Amazon S3 bucket logs: http://docs.aws.amazon.com/amazons3/latest/dev/ServerLogs.html - ELB logs: http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html
+AWS logging information:
+
+- AWS native logging: https://aws.amazon.com/answers/logging/aws-native-security-logging-capabilities/
+- AWS CloudTrail logs: http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html
+- Amazon S3 bucket logs: http://docs.aws.amazon.com/amazons3/latest/dev/ServerLogs.html
+- ELB logs: http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html
+
     http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/access-log-collection.html
+
 - Amazon RDS logs: http://docs.aws.amazon.com/amazonrds/latest/UserGuide/USER_LogAccess.html
 
 
