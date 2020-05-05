@@ -9,7 +9,7 @@ cd docs
 
 DATE=`date "+%Y.%m.%d at %H%M"`
 
-echo "# GNET Controls (compiled: ${DATE})" > controls.md
+echo "# LOW Impact Controls (compiled: ${DATE})" > controls.md
 
 gh-md-toc controls/* | sed '/^           /d' | sed '/^   \*/d' | sed 's/^      //' | \
   sed 's/^\(Created by \[gh-md-toc\].*$\)/<!-- \1 -->/' >> controls.md
