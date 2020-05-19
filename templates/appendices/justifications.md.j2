@@ -1,0 +1,19 @@
+# SCAP tailored controls from DISA STIG for RHEL6
+
+## References
+
+- <https://github.com/OpenSCAP/openscap>
+- <https://github.com/ComplianceAsCode/content>
+{% if justify.catalog is defined -%}
+{% for key, value in justify.catalog.items() -%}
+{% if value is defined %}
+### {{ key|upper }} impact tailored controls
+{% for item in value %}
+#### {{ item.title }}
+
+- Rule ID: _{{ item.rule_id }}_
+- {{ item.justification }}
+{% endfor -%}
+{% endif -%}
+{% endfor -%}
+{% endif -%}
