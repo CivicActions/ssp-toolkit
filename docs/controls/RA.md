@@ -164,7 +164,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### Project
 
-The Project uses vulnerability scanning software to document and determine risks to the system. These scans are being run on a regular basis and the results of these scans are being used to inform changes to the system and verify that security controls are working correctly. These scans are used to document the current state of the system, and to analyze security trends as changes are made over time.
+The Project uses vulnerability scanning software to document and determine risks to the system. These scans are run monthly and the results of these scans are being used to inform changes to the system and verify that security controls are working correctly. These scans are used to document the current state of the system, and to analyze security trends as changes are made over time.
 
 
 #### a
@@ -176,14 +176,14 @@ CivicActions Operations uses vulnerability scanning software to document and det
 - The CivicActions system environment employs the OpenSCAP scanner with the Red Hat STIG baseline to check for vulnerabilities.
 - The CivicActions application environment is tested by the penetration tester OWASP ZAP, an open-source web application security scanner to report on needed updates based on known flaws.
 
-CivicActions Operations has automated the process to perform the scans on a monthly basis. The resulting reports list vulnerabilities and rank them by severity. These reports are stored on an audit server and are used to inform changes to the system and verify that security controls are working correctly. These scans are used to document the current state of the system, and to analyze security trends as changes are made over time.
+CivicActions Operations has automated the process to perform the scans on a monthly basis. The resulting reports list vulnerabilities and rank them by severity. These reports are stored in Amazon S3 buckets and are used to inform changes to the system and verify that security controls are working correctly. These scans are used to document the current state of the system, and to analyze security trends as changes are made over time.
 
 
 #### b
 
 ##### CivicActions
 
-CivicActions uses the automated vulnerability scanning tools OpenSCAP and OWASP ZAP are interoperable with standard web browsers, the Open Source Ansible infrastructure provisioning system and other Open Source tools employed by CivicActions.
+CivicActions employs the automated vulnerability scanning tools OpenSCAP and OWASP ZAP which are interoperable with standard web browsers, the Open Source Ansible infrastructure provisioning system and other Open Source tools.
 
 
 #### c
@@ -197,11 +197,12 @@ The CivicActions Security Office reviews all vulnerabilities identified from aut
 
 ##### CivicActions
 
-Identified and reported vulnerabilities are assigned an impact rating and response time by CivicActions' Security Office and must be remediated according to the following time requirements:
+Identified and reported vulnerabilities are assigned an impact rating and response time by CivicActions' Security and must be remediated according to the following time requirements:
 
+- Critical - Within 15 days of discovery (usually within 1 week))
 - High - Within 30 days of discovery (usually within 1 week))
 - Moderate - Within 90 days of discovery (usually within 2 weeks)
-- Low - Within 240 days of discovery
+- Low - Within 180 days of discovery
 
 
 #### e

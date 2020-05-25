@@ -101,6 +101,8 @@ satisfies:
       - Changing the backup mechanisms and process; and,
 
       - Adding new interconnections to an outside service provide.
+
+
   implementation_status: {{status.RA_3.project}}
 - control_key: RA-5
   control_name: VULNERABILITY SCANNING
@@ -109,10 +111,9 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - text: >
-      The {{project.name_short}} uses vulnerability scanning software to document
-      and determine risks to the system. These scans are being run on a regular
-      basis and the results of these scans are being used to inform changes to
-      the system and verify that security controls are working correctly. These
-      scans are used to document the current state of the system, and to analyze
-      security trends as changes are made over time.
+      The {{project.name_short}} uses vulnerability scanning software to document and
+      determine risks to the system. These scans are run monthly and the results of
+      these scans are being used to inform changes to the system and verify that security
+      controls are working correctly. These scans are used to document the current state
+      of the system, and to analyze security trends as changes are made over time.
   implementation_status: {{status.RA_5.project}}

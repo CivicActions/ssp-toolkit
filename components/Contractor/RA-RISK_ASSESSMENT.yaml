@@ -37,17 +37,17 @@ satisfies:
 
       CivicActions Operations has automated the process to perform
       the scans on a monthly basis. The resulting reports list vulnerabilities
-      and rank them by severity. These reports are stored on an audit server
+      and rank them by severity. These reports are stored in Amazon S3 buckets
       and are used to inform changes to the system and verify that security
       controls are working correctly. These scans are used to document the
       current state of the system, and to analyze security trends as changes
       are made over time.
   - key: b
     text: >
-      CivicActions uses the automated vulnerability scanning tools
-      OpenSCAP and OWASP ZAP are interoperable with standard web browsers, the
+      CivicActions employs the automated vulnerability scanning tools
+      OpenSCAP and OWASP ZAP which are interoperable with standard web browsers, the
       Open Source Ansible infrastructure provisioning system and other Open
-      Source tools employed by CivicActions.
+      Source tools.
   - key: c
     text: >
       The CivicActions Security Office reviews all vulnerabilities
@@ -59,15 +59,19 @@ satisfies:
   - key: d
     text: >
       Identified and reported vulnerabilities are assigned an impact rating and
-      response time by CivicActions' Security Office and must be
+      response time by CivicActions' Security and must be
       remediated according to the following time requirements:
 
+
+      - Critical - Within 15 days of discovery (usually within 1 week))
 
       - High - Within 30 days of discovery (usually within 1 week))
 
       - Moderate - Within 90 days of discovery (usually within 2 weeks)
 
-      - Low - Within 240 days of discovery
+      - Low - Within 180 days of discovery
+
+
   - key: e
     text: >
       Results of the vulnerability scans and security assessments are shared
