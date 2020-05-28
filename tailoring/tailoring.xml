@@ -5,16 +5,12 @@
   <xccdf:Profile id="xccdf_org.ssgproject.content_profile_stig-rhel6-server-upstream_customized" extends="xccdf_org.ssgproject.content_profile_stig">
     <xccdf:title xmlns:xhtml="http://www.w3.org/1999/xhtml" xml:lang="en-US" override="true">DISA STIG for Red Hat Enterprise Linux</xccdf:title>
     <xccdf:description xmlns:xhtml="http://www.w3.org/1999/xhtml" xml:lang="en-US" override="true">This profile contains rules to ensure standard security baseline of Red Hat Enterprise Linux system. Regardless of your system's workload all of these checks should pass.</xccdf:description>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_no_empty_passwords" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_disable_ctrlaltdel_reboot" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_grub2_enable_fips_mode" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_install_antivirus" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_kernel_module_bluetooth_disabled" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_security_patches_up_to_date" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_install_smartcard_packages" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_smartcard_auth" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_kernel_module_usb-storage_disabled" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_snmpd_use_newer_protocol" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_abrtd_disabled" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_display_login_attempts" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_rhnsd_disabled" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_accounts_umask_etc_bashrc" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_unlock_time-storage_disabled" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_accounts_password_pam_maxrepeat" selected="false"/>
   </xccdf:Profile>
 </xccdf:Tailoring>

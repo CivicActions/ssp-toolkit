@@ -7,64 +7,40 @@
 
 ### HIGH impact tailored controls
 
-#### Prevent Login to Accounts With Empty Password
+#### Enable FIPS Mode in GRUB2
 
-- Rule ID: _xccdf_org.ssgproject.content_rule_no_empty_passwords_
-- None
-
-#### Disable Ctrl-Alt-Del Reboot Activation
-
-- Rule ID: _xccdf_org.ssgproject.content_rule_disable_ctrlaltdel_reboot_
-- None
+- Rule ID: _xccdf_org.ssgproject.content_rule_grub2_enable_fips_mode_
+- Full FIPS mode is not available in the AWS us-east cloud as the hardware is not guaranteed to be certified. However, this site makes use of FIPS compliant openssl software and SSL certificates.
 
 #### Install Virus Scanning Software
 
 - Rule ID: _xccdf_org.ssgproject.content_rule_install_antivirus_
-- None
+- This site employs ClamAV for anti-virus scanning and updates the database daily.
+
+#### Ensure Software Patches Installed
+
+- Rule ID: _xccdf_org.ssgproject.content_rule_security_patches_up_to_date_
+- Software patches are installed twice monthly.
 
 ### MEDIUM impact tailored controls
 
-#### Disable Bluetooth Kernel Module
+#### Install Smart Card Packages For Multifactor Authentication
 
-- Rule ID: _xccdf_org.ssgproject.content_rule_kernel_module_bluetooth_disabled_
-- None
+- Rule ID: _xccdf_org.ssgproject.content_rule_install_smartcard_packages_
+- Console and smart card logins are disallowed.
 
 #### Enable Smart Card Login
 
 - Rule ID: _xccdf_org.ssgproject.content_rule_smartcard_auth_
-- None
+- Console and smart card logins are disallowed.
 
-#### Disable Modprobe Loading of USB Storage Driver
+#### Set Lockout Time for Failed Password Attempts
 
-- Rule ID: _xccdf_org.ssgproject.content_rule_kernel_module_usb-storage_disabled_
-- None
+- Rule ID: _xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_unlock_time-storage_disabled_
+- Passwords are only used after SSH key login by administrators to achieve root access. Only administrators have accounts; two-factor authentication is used and the accounts are audited monthly.
 
-#### Configure SNMP Service to Use Only SNMPv3 or Newer
+#### Set Password Maximum Consecutive Repeating Characters
 
-- Rule ID: _xccdf_org.ssgproject.content_rule_snmpd_use_newer_protocol_
-- None
-
-#### Disable Automatic Bug Reporting Tool (abrtd)
-
-- Rule ID: _xccdf_org.ssgproject.content_rule_service_abrtd_disabled_
-- None
-
-### LOW impact tailored controls
-
-#### Ensure PAM Displays Last Logon/Access Notification
-
-- Rule ID: _xccdf_org.ssgproject.content_rule_display_login_attempts_
-- None
-
-#### Disable Red Hat Network Service (rhnsd)
-
-- Rule ID: _xccdf_org.ssgproject.content_rule_service_rhnsd_disabled_
-- None
-
-### UNKNOWN impact tailored controls
-
-#### Ensure the Default Bash Umask is Set Correctly
-
-- Rule ID: _xccdf_org.ssgproject.content_rule_accounts_umask_etc_bashrc_
-- None
+- Rule ID: _xccdf_org.ssgproject.content_rule_accounts_password_pam_maxrepeat_
+- Passwords are only used after SSH key login by administrators to achieve root access. Only administrators have accounts; two-factor authentication is used and the accounts are audited monthly.
 

@@ -6,39 +6,34 @@ time: '2020-05-14T13:53:12'
 checklist: http://checklists.nist.gov/xccdf/1.2
 catalog:
   high:
-  - title: Prevent Login to Accounts With Empty Password
-    rule_id: xccdf_org.ssgproject.content_rule_no_empty_passwords
-    justification: ~
-  - title: Disable Ctrl-Alt-Del Reboot Activation
-    rule_id: xccdf_org.ssgproject.content_rule_disable_ctrlaltdel_reboot
-    justification: ~
+  - title: Enable FIPS Mode in GRUB2
+    rule_id: xccdf_org.ssgproject.content_rule_grub2_enable_fips_mode
+    justification: >-
+      Full FIPS mode is not available in the AWS us-east cloud as the hardware
+      is not guaranteed to be certified. However, this site makes use of FIPS
+      compliant openssl software and SSL certificates.
   - title: Install Virus Scanning Software
     rule_id: xccdf_org.ssgproject.content_rule_install_antivirus
-    justification: ~
+    justification: This site employs ClamAV for anti-virus scanning and updates the database daily.
+  - title: Ensure Software Patches Installed
+    rule_id: xccdf_org.ssgproject.content_rule_security_patches_up_to_date
+    justification: Software patches are installed twice monthly.
   medium:
-  - title: Disable Bluetooth Kernel Module
-    rule_id: xccdf_org.ssgproject.content_rule_kernel_module_bluetooth_disabled
-    justification: ~
+  - title: Install Smart Card Packages For Multifactor Authentication
+    rule_id: xccdf_org.ssgproject.content_rule_install_smartcard_packages
+    justification: Console and smart card logins are disallowed.
   - title: Enable Smart Card Login
     rule_id: xccdf_org.ssgproject.content_rule_smartcard_auth
-    justification: ~
-  - title: Disable Modprobe Loading of USB Storage Driver
-    rule_id: xccdf_org.ssgproject.content_rule_kernel_module_usb-storage_disabled
-    justification: ~
-  - title: Configure SNMP Service to Use Only SNMPv3 or Newer
-    rule_id: xccdf_org.ssgproject.content_rule_snmpd_use_newer_protocol
-    justification: ~
-  - title: Disable Automatic Bug Reporting Tool (abrtd)
-    rule_id: xccdf_org.ssgproject.content_rule_service_abrtd_disabled
-    justification: ~
-  low:
-  - title: Ensure PAM Displays Last Logon/Access Notification
-    rule_id: xccdf_org.ssgproject.content_rule_display_login_attempts
-    justification: ~
-  - title: Disable Red Hat Network Service (rhnsd)
-    rule_id: xccdf_org.ssgproject.content_rule_service_rhnsd_disabled
-    justification: ~
-  unknown:
-  - title: Ensure the Default Bash Umask is Set Correctly
-    rule_id: xccdf_org.ssgproject.content_rule_accounts_umask_etc_bashrc
-    justification: ~
+    justification: Console and smart card logins are disallowed.
+  - title: Set Lockout Time for Failed Password Attempts
+    rule_id: xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_unlock_time-storage_disabled
+    justification: >-
+      Passwords are only used after SSH key login by administrators to achieve
+      root access. Only administrators have accounts; two-factor authentication
+      is used and the accounts are audited monthly.
+  - title: Set Password Maximum Consecutive Repeating Characters
+    rule_id: xccdf_org.ssgproject.content_rule_accounts_password_pam_maxrepeat
+    justification: >-
+      Passwords are only used after SSH key login by administrators to achieve
+      root access. Only administrators have accounts; two-factor authentication
+      is used and the accounts are audited monthly.
