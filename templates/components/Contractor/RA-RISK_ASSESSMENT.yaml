@@ -50,12 +50,13 @@ satisfies:
       Source tools.
   - key: c
     text: >
-      The {{contractor.name_short}} Security Office reviews all vulnerabilities
-      identified from automated scans and security assessments. Vulnerabilities
-      found and deemed legitimate are assigned an impact rating and response
-      time thought creation of an issue or ticket. The {{contractor.name_short}}
-      Operations staff reviews current scans and compare with older scans to
-      identify trends and to verify previous vulnerabilities have been mitigated.
+      The {{contractor.name_short}} Security Office reviews all vulnerabilities identified
+      from automated scans and security assessments. "False positive" findings are
+      documented and may be tailored out. Vulnerabilities found and deemed legitimate are
+      assigned an impact rating and response time thought creation of an issue or
+      ticket. The {{contractor.name_short}} Operations staff reviews current scans and
+      compare with older scans to identify trends and to verify previous vulnerabilities
+      have been mitigated.
   - key: d
     text: >
       Identified and reported vulnerabilities are assigned an impact rating and

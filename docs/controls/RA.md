@@ -190,7 +190,7 @@ CivicActions employs the automated vulnerability scanning tools OpenSCAP and OWA
 
 ##### CivicActions
 
-The CivicActions Security Office reviews all vulnerabilities identified from automated scans and security assessments. Vulnerabilities found and deemed legitimate are assigned an impact rating and response time thought creation of an issue or ticket. The CivicActions Operations staff reviews current scans and compare with older scans to identify trends and to verify previous vulnerabilities have been mitigated.
+The CivicActions Security Office reviews all vulnerabilities identified from automated scans and security assessments. "False positive" findings are documented and may be tailored out. Vulnerabilities found and deemed legitimate are assigned an impact rating and response time thought creation of an issue or ticket. The CivicActions Operations staff reviews current scans and compare with older scans to identify trends and to verify previous vulnerabilities have been mitigated.
 
 
 #### d
