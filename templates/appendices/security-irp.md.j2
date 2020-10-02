@@ -6,208 +6,304 @@
 ----
 
 ## Introduction
-This document describes the {{ project.name }} Incident Response Team's process for responding to security incidents and other disruption that may affect the Confidentiality, Integrity, Availability (CIA) or Privacy of system resources and data. It outlines roles and responsibilities during and after incidents, and it provides an overview of the steps to follow for resolution.
 
-**Note:** During an incident, the [**IRP checklist**](security-irp-checklist.md) may be more useful as it contains bulleted, actionable items to be addressed when an incident is being investigated and remediated.
+This document describes the {{ project.name }} Incident Response Team's process for responding to security incidents and other disruptions that may affect the Confidentiality, Integrity, Availability (CIA) or Privacy of system resources and data. It explains:
+
+- roles and responsibilities during and after incidents
+- overview of the steps to follow for resolution
+
+*During an incident, the [IRP checklist](security-irp-checklist.md) may be more useful as it contains bulleted, actionable items for the IR Team to follow.*
 
 ## Roles and Responsibilities
 
-Basic Incident Response Team roles are described below.
+Individual and team roles are described below.
 
 ### Responder
-A _Responder_ is an {{ project.name }} Incident Response (IR) Team member working to investigate and remediate an event or incident.
-- The _First Responder_ is the _first_ IR Team member made aware of the incident (see [Initiate](#initiate) below).
-   - Oftentimes the _First Responder_ is also the _reporter_ of the event.
-- The _First Responder_ assumes the role of the initial _Incident Commander (IC)_ until that is [handed off](security-irp-checklist.md#explicit-handoff-ceremony).
-  - For the first 15-30 minutes, the _First Responder_ (who is also the IC) may be the only _Responder_. If needed, the _First Responder_ begins the process if IR Team formation.
 
-During incident response, _Responders_:
-- Assume primary responsibility for the [Assess](#assess) and [Remediate](#remediate) steps.
-- Document _in real time_ the measurements, theories, and steps taken using [#{{ project.slack_channel }}]({{ project.slack_url }}) or other channels provided by the IC.
-- Designate, with an [explicit hand-off](security-irp-checklist.md#explicit-handoff-ceremony), a dedicated **Incident Commander** if the incident will take longer than 15-30 minutes to resolve.
+A _Responder_ is a member of the {{ project.name }} IR Team that investigates and remediates an event or incident.
 
-### Incident Commander (IC)
-The _Incident Commander (IC)_ is not involved in the remediation of an incident, and instead performs three major duties:
+#### First Responder
 
-1. Incident Response Team creation and management, ensuring that the IR Team:
-   - Is staffed with people capable of managing the situation
-      - For the first 15-30 minutes, the IC may be the only _Responder_.
-   - Is focused on the correct goals for incident resolution
-   - Has appropriate media/communication channels for recording actions
-      - If during business hours, a dedicated slack channel (e.g. `#fire-team) may be created for IR team communications.
-   - Utilizes work shifts if the incident lasts longer than 3 hours.
-2. Documentation: ensuring that actions taken during investigation and remediation are recorded
-   - Initially in the [#{{ project.slack_channel }}]({{ project.slack_url }}) slack channel
-   - Also in the {{ project.name_short }} {{ project.issue_system }}
-3. Communication: ensuring that internal and external entities are apprised of the situation and progress reports
-   - As communications is an important task, the IC may request and designate with [explicit handoff](security-irp-checklist.md#explicit-handoff-ceremony) a dedicated _Communications Officer_ (CO).
+The _First Responder_ is the first IR Team member who becomes aware of the incident.
 
-### Communications Officer (CO)
-Throughout the development of an incident, from receiving an event report to the completion of incident remediation, communications are key.
+- Frequently the _First Responder_ is also the incident _Reporter_.
+- The _First Responder_ assumes the role as the initial _Incident Commander (IC)_ until IC duties are [handed off](#explicit-handoff-ceremony).
+- For the first 15-30 minutes, the _First Responder_ may be the only responder. If needed, the _First Responder_ begins forming the IR Team.  See [Initiate](#3.-Initiate-the-response).
 
-The _Communications Officer (CO)_ (whose duties are performed by the IC until [handoff](security-irp-checklist.md#explicit-handoff-ceremony) to another IR Team member) manages external communications with:
+#### IR Team Responders
 
-- Management, developers, users and anyone affected by the incident
+During incident response, _Responders_ do the following:
+
+- Assume primary responsibility for the [Assess](#4.-Assess-the-incident) and [Remediate](#5.-Remediate) steps.
+- Document in real time the measurements, theories, and steps taken using the Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}) or other channels provided by the IC.
+- Designate an _Incident Commander_, if the incident might require more than 15-30 minutes to resolve, and do an [explicit hand-off](#explicit-handoff-ceremony).
+
+### Incident Commander
+
+The _Incident Commander (IC)_ remains uninvolved in remediation efforst, and performs three major duties:
+
+1. IR Team creation and management, ensuring that the IR Team:
+
+      - Includes team members who are capable of containing, investigating, and remediating the incident.
+      - Remains focused on resolving the incident.
+      - Uses the most appropriate media/communication channels for recording actions. During business hours, a dedicated Slack channel (for example, `#fire-team) may be created for IR Team communications.
+      - Utilizes work shifts if the incident lasts longer than 3 hours.
+
+2. Documentation, which includes all actions taken during investigation and remediation:
+
+      - Initially in the Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}).
+      - Also in the {{ project.name_short }} {{ project.issue_system }}.
+
+3. Communication, which ensures that internal and external entities are apprised of the situation and includes progress reports. For communication duties, the IC may designate a _Communications Officer_ (CO) and do an [explicit handoff](#explicit-handoff-ceremony).
+
+### Communications Officer
+
+Communication is critical as the IR Team works to contain, investigate, and remediate an incident.
+
+The Incident Commander (IC) manages communications regarding the incident until [handing off IC duties](#explicit-handoff-ceremony) to another IR Team member or unless a Communications Officer (CO) is designated.
+
+The CO manages external communications with:
+
+- Management, developers, users, and anyone affected by the incident
 - Client stakeholders
-  - Escalates communication to additional team members and/or the {{ project.name_short }} Product Owner when needed.
-- Legal team and US-CERT escalations if required
+- Additional {{ project.name_short }} team members and/or the Product Owner when needed
+- Legal team and US-CERT, if escalation is required
 
 #### Communication channels
 
-- Slack: [#{{ project.slack_channel }}]({{ project.slack_url }}) using `@channel` (Notifies the team about the incident.)
-  - If during business hours, a dedicated Slack channel (e.g. `#fire-team`) may be created for IR team communications
-- A {{ project.name_short }} {{ project.issue_incident }} which will be the final location for all reporting processes, with links to other documents as needed.
-- Zoom, Meet, other video chat _(though not a good place for recording actions as a record may be lost when the call ends)_
-- Email: {{ project.escalation_mail }} (Alerts the "on call" responder(s).)
-- [{{ contractor.name_short }}/{{ project.name_short }} IR Team contacts]({{ project.contact_sheet_url }}) (Provides direct email addresses and phone numbers.)
+- Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}). (Using `@channel` sends a Slack notification to everyone in the channel.)
+- During business hours, a dedicated Slack channel (for example, `#fire-team`) may be created for IR Team communications.
+- A {{ project.name_short }} {{ project.issue_incident }} is be the final location for all incident reporting, with links to other documents as needed.
+- Zoom, Meet, or other video conference. (Not recommended for recording actions as the record can be lost when the call ends.)
+- Email to {{ project.escalation_mail }}. (This alerts all on-call responders.)
+- [{{ contractor.name_short }}/{{ project.name_short }} IR Team contacts]({{ project.contact_sheet_url }}). (Provides direct email addresses and phone numbers.)
 
 ## Incident response process
 
-There are four major processes of incident response, detailed below. See the [IRP checklist](security-irp-checklist.md) for quick, actionable information to use during an incident.
+There are six major processes of incident response, detailed below:
 
-### Initiate
+   [1. _Breathe_](#1.-Breathe)
+   [2. Start documenting](#2.-Start-documenting)
+   [3. Initiate the response](#3.-Initiate-the-response)
+   [4. Assess the incident](#4.-Assess-the-incident)
+   [5. Remediate](#5.-Remediate)
+   [6. Conclude the incident](#6.-Conclude-the-incident)
 
-An incident begins when someone becomes aware of a disruption in expected normal system operations. We define "incident" broadly, following [_NIST SP 800-61: Computer Security Incident Handling Guide_](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final), as "a violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices". This is a deliberately broad definition, designed to encompass any scenario that might threaten the security of the {{ project.name }}. For more, see: [What is an incident?](http://civicactions-handbook.readthedocs.io/en/latest/09-security/incidents/#what-is-an-incident)
+*During an incident, the [IRP checklist](security-irp-checklist.md) may be more useful as it contains bulleted, actionable items for the IR Team to follow.*
 
-When a person (the _reporter_) notices what appears to be a {{ project.name_short }}-related event, they should check normal communication channels -- if possible -- such as Slack ([#{{ project.slack_channel }}]({{ project.slack_url }})) to see if this may be expected behavior (e.g., expected system downtime during a maintenance window). If it appears to be a valid incident, the _reporter_ alerts the on-call responders via Slack ([#{{ project.slack_channel }}]({{ project.slack_url }})) or email {{ project.escalation_mail }}. If there is no acknowledgment from the Incident Response Team within 10 minutes, the reporter should escalate the issue by contacting team members on the {{ project.contact_sheet }} directly until receiving acknowledgment of the report.
+### 1. _Breathe_
 
-The _First Responder_ on the {{ project.name }} Incident Response Team is by default also the initial _Incident Commander_ (IC). The _First Responder/IC_ does the following:
-- If possible, confirms the event (report of system degradation or other disruption of normal service).
-- Remains IC unless and until an [explicit handoff](security-irp-checklist.md#explicit-handoff-ceremony) transfers IC duties to another IR Team member.
-- Communicates to the {{ project.short_name }} team that an event has been reported and is under investigation.
+No one's life is in danger.
 
-In some cases, the _First Responder/IC_ may be able to fully manage the incident, perhaps by simply re-starting a service.
-- A {{ project.issue_incident }} should still be created and completed describing the incident and including downtime.
+### 2. Start documenting
 
-#### Communications during the Initiate phase
+Begin documenting all steps and findings. Documentation makes handoffs and responder onboarding easier. The Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}) is recommended because it is most widely accessible, but other [communication channels](#communication-channels) may be used.
 
-Note that at this point the event status is "investigating". The issue has not been confirmed yet, so it should be called an "event". When it has been confirmed, it becomes an "incident".
+### 3. Initiate the response
 
-To initiate the reporting process, the _First Responder/IC_ sends notification to the {{ project.short_name }} team preferably via a real-time chat such as Slack: [#{{ project.slack_channel }}]({{ project.slack_url }}) using `@channel`
-- This may have been done automatically via {{ project.pager }} pager alarms
-- Example message follows. _(The format is not important, but the information fields are useful.)_
-   - **Description**: _[Short description of the event and its impact]_
-   - **Status**: **investigating**
-   - **Severity**: **unknown**
-   - **Reporter**: _[name of the person who reported the issue]_
-   - **IC**: _[your name]_
-   - **Responders**: _[names of other responders]_
-   - **Details**: _[Any extra details about the event can go here.]_
+At this stage, the _First Responder_ is usually working alone, and is also the _Incident Commander_ (IC).
 
-The IC -- who may change during the course of the incident -- is responsible for keeping this issue updated as investigation and remediation progresses.
+A. Allocate 5 minutes and determine whether this event is a potential incident or false alarm.
 
-### Assess
+   An incident begins when someone becomes aware of a disruption in expected normal system operations. The definition of "incident" is broad, following [_NIST SP 800-61: Computer Security Incident Handling Guide_](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final), as "a violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices". This definition encompasses any scenario that might threaten the security of the {{ project.name }}. For more information, see the CivicActions handbook: [What is an incident?](http://civicactions-handbook.readthedocs.io/en/latest/09-security/incidents/#what-is-an-incident)
 
-The next step is to assess the event. The IC forms an _Incident Response Team_ of _Responders_ to answer two questions:
+   When noticing what appears to be a {{ project.name_short }}-related event, the {{ project.name_short }} team member should check normal communication channels, such as the Slack channel ([#{{ project.slack_channel }}]({{ project.slack_url }})), to determine whether this could be expected behavior (for example, system downtime during a maintenance window). If it appears to be a valid incident, the {{ project.name_short }} team member becomes the _Reporter_ and alerts the on-call responders via the Slack channel ([#{{ project.slack_channel }}]({{ project.slack_url }})) or email {{ project.escalation_mail }}. If no one from the IR Team acknowledges the message within 10 minutes, the _Reporter_ should escalate the issue by contacting {{ project.name_short }} team members on the {{ project.contact_sheet }} directly until someone acknowledges the report.
 
-1. Is the reported event an incident?
-   - Did the thing we suspect happened actually happen? Or is it a [false alarm](security-irp-checklist.md#false-alarm)?
-   - Could the event have been triggered by an [external dependency](contingency-plan.md#external-dependencies)?
-2. How severe is the incident?
-   - [Assesses the severity](#incident-severities) of the incident. This determines the resources required for response.
-   - Does it affect system or data Confidentiality, Integrity, Availability and/or Privacy?
-   - Note that severity can change over the lifespan of an incident, and it is acceptable for the team to assess the initial severity quickly.
+B. Respond accordingly:
 
-If the event is determined to be a [false alarm](security-irp-checklist.md#false-alarm), the IC should update the ticket, set the status to "false alarm", and close the ticket.
+  - **Potential incident**
 
-The IC should assess whether Disaster Recovery may be required in which case the [contingency plan](contingency-plan.md) should be activated.
+    1. Issue a broadcast notification via one or more of the following:
 
-#### Communications during the Assess phase
+         - Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}). Use `@channel` to notify the {{ project.name_short }} team. This may have been automatic via {{ project.pager }} pager alarms.
+         - Email to the on-call system admin: {{ project.escalation_mail }}
+         - Email/telephone to [{{ contractor.name_short }}/{{ project.name_short }} IR Team]({{ project.contact_sheet_url }})
 
-_Responders_ record all actions and observations in one of the supplied [communication channels](#communication-channels).
+         An example message follows. The format is not important, but the information fields are useful.
 
-Once assessed, the IC updates the reported event and notes at least the following:
-- **Status**: **confirmed**
-- **Severity**: _[High/Med/Low]_
-- **Responders**: _[update to include names of new/changed responders]_
+            **Description**: _[Short description of the event and its impact]_
+            **Status**: investigating
+            **Severity**: unknown
+            **Reporter**: _[name of the person who reported the issue]_
+            **IC**: _[your name]_
+            **Responders**: _[names of other responders]_
+            **Details**: _[Any extra details about the event can go here.]_
 
-The IC creates an initial incident report, called a _sitrep_, in a {{ project.issue_incident }}, summarizing the incident details. Here is an example sitrep:
-- **Subject:** [sitrep] The chickens are escaping
-- **Severity:** low
-- **IC:** Farmer Jane
-- **Responders:** Spot the Dog, Farmer Dave
-- **Description:** We've confirmed reports of escaped chickens. Looks like a fox may have tunneled into the run. Dave is working to fix the fence. Spot is tracking the fox.
+         Observe the following guidelines for communications:
 
-This sitrep should be posted in:
-- {{ project.issue_system }}
-- Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}) (include link to {{ project.issue_incident }})
-- and/or whatever [communication channel](#communication-channels) the IC (or CO) has indicated.
+            - During this stage of incident response, the event status is "investigating". 
+            - An unconfirmed issue is called an _event_. A confirmed issue is called an _incident_.
 
-### Remediate
+    2. For an incident requiring more than 30 minutes to resolve:
 
-Remediation is about resolving the issues caused by an incident. Remediation will be situation-specific, and timelines vary based on the assessed severity. Here are a few guidelines:
+         - Recruit additional IR Team responders via the Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}).
+         - Designate an [Incident Commander](#incident-commander) and [hand off the IC duties](#explicit-handoff-ceremony).
 
-_Responder_ actions:
+           More information on [incident response roles and responsibilities](#roles-and-responsibilities):
 
-- The IR Team will develop a list of informational leads from the incident — actionable information about any security breaches, stolen data, etc. Similarly, the IR Team will develop a list of remediation steps. These can be tracked as checklists in the {{ project.issue_incident }}.
-- If suspicious activity is suspected or other unanswered questions exist, create database dumps, take disk snapshots of relevant volumes, reconfigure firewalls to prevent ingress and egress, and/or get screen captures of anomalous activity _before making changes_ to support post-remediation forensic analysis.
+             - [Responder](#responder)
+             - [Incident Commander (IC)](#incident-commander)
+             - [Communications Officer (CO)](#communications-officer)
 
-_Incident Commander_ actions:
+            Use the [_Explicit Handoff Ceremony_](#explicit-handoff-ceremony) when transferring/changing roles.
 
-- The IC's responsibility is coordination, communication, and information collection. While the remediation team is focused on resolving the issue, the IC must track what happened, how the incident is being remediated, and who is part of those efforts.
-- The IC is responsible for tracking remediation actions, making sure they are assigned and followed, and verifying them when they are completed. Remediation efforts may be tracked with the issue details.
-- The IC should distinguish between immediate concerns, which need to be completed before the incident is considered resolved, and long-term improvements/hardening, which can be deferred to the Retrospective.
-- Ideally the notes that the IC makes should be sufficient for an outside investigator to independently follow the work of the Incident Response Team and validate the team's work.
+  - **False alarm**
+    
+    Conclude the incident. Proceed to [_6. Conclude the incident_](#6.-conclude-the-incident).
 
-#### Communications during the Remediate phase
+### 4. Assess the incident
 
-If and when appropriate, the _Incident Commander_ (IC) or _Communications Officer_ (CO)
-- Coordinates with the {{ contractor.name_short }} managers to apprise them of the situation.
-- Coordinates with the {{ project.name}} Product Owner (PO) to notify affected customers.
-- Ensure that the IR Team is recording all actions in the appropriate designated [communication channels](#communication-channels).
-- Share sitreps on a regular basis in Slack, in the {{ project.issue_incident }}, and with stakeholders.
-   - See the section on [incident severities](#incident-severities) for suggested time intervals for each severity level.
+#### IR Team responsibilities during assessment
 
-#### Remediation process notes
+   A. Confirm the incident.
 
-Remediation may require service disruption. If it does, the team should proceed in a different way depending on the [severity](#incident-severities):
-- High-severity: Take action immediately, even if this causes disruption. A notification about the disruption should be sent out as soon as possible, but the team needs no permission to take action at this level.
-- Medium-severity: Notify the {{ project.name_short }} leads of the planned action, and help them assess the relative risk of disruption versus security. If the leads are unavailable on Slack, contact them using the phone numbers in their Slack profiles. The team should reach a collaborative decision on action, with a bias towards disruption. If they cannot be reached within an hour, the team may take action without them.
-- Low-severity: Notify the leads as described above. Do not take action until a mutually-agreed course of action has been determined.
+      1. Gather information, and document your findings.
+
+         - Was the event triggered by an [external dependency](contingency-plan.md#external-dependencies)?
+         - Is a system failure causing the disruption?
+
+      2. Proceed to the next step for a confirmed incident. (For a false alarm, conclude the incident. Proceed to [_6. Conclude the incident_](#6.-conclude-the-incident).)
+
+   B. Assess the severity.
+
+      - Use the [rubric for determining severity](#incident-severities). ({{ project.name_short }} incidents are generally "Low severity".)
+      - Does it affect system or data Confidentiality, Integrity, Availability and/or Privacy?
+      - Note that severity can change over the lifespan of an incident, and it is acceptable for the IR Team to assess the initial severity quickly.
+
+   C. Determine whether the IR Team needs to activate the [Contingency Plan](contingency-plan.md). Consider whether Disaster Recovery is required.
+
+   The IR Team should record all actions and observations in an appropriate [communication channel](#communication-channels).
+
+   _Reminder: Use the [Explicit Handoff Ceremony](#explicit-handoff-ceremony) when transferring/changing roles._
+
+#### Incident Commander responsibilities during assessment
+
+   - Post an initial situation report (_sitrep_), in the following locations:
+
+      - {{ project.issue_system }}
+      - Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}) (include link to {{ project.issue_incident }})
+      - Any other [communication channels](#communication-channels) as indicated by the IC (or CO).
+   
+      Here is an example sitrep:
+
+         **Subject**: [sitrep] The chickens are escaping
+         **Severity**: low
+         **IC**: Farmer Jane
+         **Responders**: Spot the Dog, Farmer Dave
+         **Description**: We've confirmed reports of escaped chickens. Looks like a fox may have tunneled into the run. Dave is working to fix the fence. Spot is tracking the fox.
+
+   - Ensure that a {{ project.issue_system }} has been created. This should be done, even if the _First Responder/IC_ manages the incident fully, for example, by simply restarting a service.
+
+### 5. Remediate
+
+Remediation is about resolving the issues caused by an incident. Remediation will be situation-specific, and timelines vary based on the assessed severity.
+
+#### Remediation and service disruption
+
+Remediation may require service disruption. If it does, the IR Team should proceed in a different way depending on the [severity](#incident-severities):
+
+- **High severity**: Take action immediately, even if this causes disruption. A notification about the disruption should be sent out as soon as possible, but the IR Team needs no permission to take action at this level.
+- **Medium severity**: Notify the {{ project.name_short }} leads about the planned action, and help them assess the relative risk of disruption versus security. If the leads are unavailable on Slack, contact them using the phone numbers in their Slack profiles. The {{ project.name_short }} team should reach a collaborative decision on action, with a bias towards disruption. If they cannot be reached within an hour, the IR Team may take action without them.
+- **Low severity**: Notify the {{ project.name_short }}leads as described above. Do not take action until a mutually-agreed course of action has been determined.
+
+#### Remediation requiring more than 3 hours
 
 Remediation takes time. If the issue progresses for more than 3 hours without being resolved, the IC should plan for a long remediation. This means:
-- Determine whether remediation efforts will occur during business hours only or be continuous. This depends on the severity of the issue, and whether breaches are ongoing.
+
+- The IC determines whether remediation efforts will occur during business hours only or be continuous. This depends on the severity of the issue, and whether breaches are ongoing.
 - For a continuous response, the IC should plan shifts. This allows responders to take breaks and insures continuous coverage. Shifts should be no longer than 3 hours. Also, the IC duties should rotate in shifts no longer than 3 hours.
 
-When the incident is no longer active -- for example, the breach has been contained, the issue has been fixed, etc. -- the IC should close out the incident. There might be longer term remediation required, and possibly more investigation, but when the incident is no longer active, these activities can proceed at the regular pace of business.
+#### IR Team responsibilities during remediation
 
-To close out an incident, the IC should:
+- Determine the cause, implement a resolution, and return the system to normal operations. Make every attempt to identify the cause; this can prevent incident recurrence.
+- Maintain a list of informational leads from the incident — actionable information about any security breaches, stolen data, etc. 
+- Develop a list of remediation steps. These can be tracked as checklists in the {{ project.issue_incident }}.
+
+If suspicious activity is suspected or other unanswered questions exist, do the following before making any changes:
+
+  - Make {{ project.backup_snaps }} of relevant volumes and data.
+  - Preserve logs.
+  - Take screen captures of anomalous activity that can be used in post-remediation forensic analysis.
+  - Consider implementing a containment strategy. For example, reconfigure firewall rules for the affected instance to drop all ingress and egress traffic, except from specific IPs like your own, until forensics can be performed.
+
+#### Incident Commander responsibilities during remediation
+
+At a high level, the IC tracks remediation actions, ensures they are assigned and followed, and verifies them when they are completed. (Remediation efforts may be tracked with the issue details.) 
+
+The IC must  distinguish between immediate concerns, which need to be completed before the incident is considered resolved, and long-term improvements/hardening, which can be deferred to the Retrospective.
+
+The IC does do the following:
+
+- Maintains current information in Slack, shared Google Docs files, the {{ project.issue_incident }}, or other [communication channels](#communication-channels). Be sure to include:
+
+   - {{ project.name_short }} team leads and members
+   - Remediation items and their assignees
+
+- Establishes and documents work shifts for an incident longer than 3 hours.
+- Maintains communications with stakeholders, or designates a _Communications Officer_ via [explicit handoff](#explicit-handoff-ceremony).
+- Shares sitreps on a regular basis:
+
+    - High severity: hourly
+    - Medium severity: 2x daily
+    - Low severity: daily
+
+- Focuses on coordination, communication, and information collection -- not remediation.
+
+#### Communications during remediation
+
+The _Incident Commander_ (IC) or _Communications Officer_ (CO) does this following:
+
+- Coordinates with the {{ contractor.name_short }} managers to apprise them of the situation.
+- Coordinates with the {{ project.name}} Product Owner (PO) to notify affected customers.
+- Ensures that the IR Team is recording all actions in the appropriate designated [communication channels](#communication-channels).
+- Shares sitreps on a regular basis in Slack, in the {{ project.issue_incident }}, and with stakeholders. See the section on [incident severities](#incident-severities) for suggested time intervals for each severity level.
+
+### 6. Conclude the incident
+
+#### Closing the {{ project.issue_system }}
+
+When the incident is no longer active, for example, the breach has been contained, the issue has been fixed, etc., the IC should conclude the incident. There might be longer term remediation required, and possibly more investigation, but when the incident is no longer active, these activities can proceed at the regular pace of business.
+
+To conclude an incident, the IC should:
 
 - Set the status of the incident to **Ready for QA**.
 - Send a final sitrep to stakeholders.
 - Thank everyone involved for their service.
 
-### Hold a retrospective
+#### Conducting a retrospective
 
-The responding team holds a retrospective to analyze the incident, capture follow-ups and lessons learned, and write a formal report.
+The IC (one IC if there were multiple ICs, or another designated party such as the Communications Officer) should lead a retrospective and develop an incident report.
 
-Before this process begins, the Incident Commander (IC) should ensure that all relevant information is either copied or linked to the {{ project.issue_system }} created during the Assessment phase.
-
-The final step in handling a security incident is identifying what can be learned from it. The IC (or one of the ICs if there were multiple, or a designated other party such as the Communications Officer) should lead a retrospective and develop an incident report.
+#### Developing the incident report
 
 The incident report should contain:
 
 - a timeline of the incident
 - details about how the incident progressed
-- information about the vulnerabilities that led to the incident, also called a _cause analysis_
+- information about the vulnerabilities that led to the incident, also called a _cause analysis_ (The _cause analysis_ is an important part of the incident report. Tools such as [Infinite Hows](https://www.kitchensoap.com/2014/11/14/the-infinite-hows-or-the-dangers-of-the-five-whys/) and [Five Whys](https://en.wikipedia.org/wiki/5_Whys) can help the IR Team explore potential causes, prevention, and improved incident response.)
 
-The _cause analysis_ is an important part of the incident report. Tools such as [Infinite Hows](https://www.kitchensoap.com/2014/11/14/the-infinite-hows-or-the-dangers-of-the-five-whys/) and [Five Whys](https://en.wikipedia.org/wiki/5_Whys) can help the team explore potential causes, prevention, and improved incident response.
+Additionally, the incident report should include basic response metrics:
 
-The incident report should contain these basic response metrics:
-- Discovery method: How did the team become aware of the issue?
-- Time to discovery: How much time passed from the time the incident became active until someone became aware of it?
-- Time to containment: How much time passed from the time someone became aware of the incident until the incident was contained?
-- Threat actions: What actions were taken by the actor? For example, phishing, password attacks, etc.
+- **Discovery method**: How did the IR Team become aware of the issue?
+- **Time to discovery**: How much time passed from the time the incident became active until someone became aware of it?
+- **Time to containment**: How much time passed from the time someone became aware of the incident until the incident was contained?
+- **Threat actions**: What actions were taken by the actor? For example, phishing, password attacks, etc.
 
-The incident report should be posted as a final comment on the {{ project.issue_system }}, which can then be closed.
+The incident report should be posted as a final comment on the {{ project.issue_system }}, and then the {{ project.issue_system }} should be closed.
 
 ## Incident severities
 
-The incident severity level determines the actions of the Incident Response Team. Severity usually changes during the lifecycle of the incident.
+The incident severity level determines the actions of the IR Team. Severity usually changes during the lifecycle of the incident.
 
 ### High severity
 
-A high severity incident compromises the confidentiality/integrity of Sensitive Personally Identifiable Information (SPII), impacts the availability of services for a large number of customers, or has significant financial impact. Examples include:
+A high severity incident does one or more of the following: 
+
+- compromises the confidentiality/integrity of Sensitive Personally Identifiable Information (SPII), 
+- impacts the availability of services for a large number of customers, or 
+- has significant financial impact. 
+   
+Examples include:
 
 - Confirmed breach of SPII
 - Successful root-level compromise of production systems
@@ -247,7 +343,7 @@ Guidelines for incident response:
 - Responders should avoid service degradation unless stakeholders agree.
 - Sitreps should be shared daily.
 
-### Explicit Handoff Ceremony
+## Explicit Handoff Ceremony
 
 To transfer _Incident Commander_, _Communications Officer_ or _Responder_ ("ROLE") duties:
 
