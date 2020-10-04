@@ -2,7 +2,11 @@
 
 ## Client The Project
 
+<<<<<<< Updated upstream
 June 2020
+=======
+October 2020
+>>>>>>> Stashed changes
 Version 3.4
 
 CivicActions, Inc
