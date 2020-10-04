@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # LOW Impact Controls (compiled: 2020.05.04 at 2358)
 
 * [AC: Access Control](controls/AC.md#ac-access-control)
@@ -206,3 +207,6 @@
    * [UL-2: INFORMATION SHARING WITH THIRD PARTIES](controls/UL.md#ul-2-information-sharing-with-third-parties)
 
 <!-- Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc) -->
+=======
+# GNET Controls (compiled: 2020.10.04 at 0946)
+>>>>>>> Stashed changes
