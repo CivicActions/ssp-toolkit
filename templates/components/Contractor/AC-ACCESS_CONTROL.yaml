@@ -22,25 +22,13 @@ satisfies:
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - key: a
-    text: >
-      {{contractor.name_short}} Operations staff, in collaboration with {{contractor.name_short}}' Security
-      Office, will set up privileged accounts for the following roles:
-
-
-      - Developer - a user-level account that has access to application features and
-      sanitized databases
-
-      - System Administrator - user accounts that enjoy full system administrator
-      access
-
   - key: b
     text: >
-      {{contractor.name_short}}' Project Manager assigns the "administrator" role for the management
-      of all accounts issued to internal admin roles supporting the information system.
-      Account requests are initiated by the Project Manager by completing a ticket
-      request and the {{contractor.name_short}} Operation staff manages the entire account creation
-      process.
+      The {{contractor.name_short}} Project Manager assigns the "administrator" role for
+      the management of all accounts issued to internal admin roles supporting the
+      information system.  Account requests are initiated by the Project Manager by
+      completing a ticket request and the {{contractor.name_short}} Operation staff
+      manages the account creation process.
   - key: d
     text: >
       All accounts issued for application administrators and SSH are documented

@@ -6,7 +6,7 @@ fed_statutes:
   - title: Federal Information Security Modernization Act of 2014 (FISMA 2014)
     url: https://www.dhs.gov/cisa/federal-information-security-modernization-act
   - title: OMB Circular A-130, Managing Federal Information as a Strategic Resource, July 2016
-    url: https://obamawhitehouse.archives.gov/blog/2016/07/26/managing-federal-information-strategic-resource
+    url: https://www.cio.gov/policies-and-priorities/circular-a-130/
 standards:
   - title: NIST Special Publication 800-30, Revision 1, Guide for Conducting Risk Assessments, September 2012
     url: https://csrc.nist.gov/publications/detail/sp/800-30/rev-1/final
@@ -18,8 +18,12 @@ standards:
     url: https://csrc.nist.gov/publications/detail/sp/800-44/version-2/final
   - title: NIST Special Publication 800-53, Revision 4, Security and Privacy Controls for Federal Information Systems and Organizations, April 2013
     url: https://csrc.nist.gov/publications/detail/sp/800-53/rev-4/final
+  - title: NIST Special Publication 800-53, Revision 5, Security and Privacy Controls for Federal Information Systems and Organizations, September 2020
+    url: https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final
   - title: "NIST Special Publication 800-53A, Revision 1, Assessing the Security Controls in Federal Information Systems and Organizations: Building Effective Assessment Plans, December 2014"
     url: https://csrc.nist.gov/publications/detail/sp/800-53a/rev-4/final
+  - title: "NIST Special Publication 800-53B, Control Baselines for Information Systems and Organizations, October 2020"
+    url: https://csrc.nist.gov/publications/detail/sp/800-53b/final
   - title: IST Special Publication 800-60, Volume 1, Revision 1, Guide for Mapping Types of Information and Information Systems to Security Categories, August 2008
     url: https://csrc.nist.gov/publications/detail/sp/800-60/vol-1-rev-1/final
   - title: "NIST Special Publication 800-60, Volume 2, Revision 1, Guide for Mapping Types of Information and Information Systems to Security Categories: Appendices, August 2008"

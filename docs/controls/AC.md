@@ -77,12 +77,17 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 In this architecture, the baseline AWS Identity and Access Management (IAM) groups and roles are associated with access policies to align user accounts with personnel functions related to infrastructure/platform management (e.g. Billing, Amazon EC2/VPC/Amazon RDS systems administration, I.T. auditing, etc.)
 
 
-##### CivicActions
+##### Drupal
 
-CivicActions Operations staff, in collaboration with CivicActions' Security Office, will set up privileged accounts for the following roles:
+Drupal provides the following information system account types to support organizational mission/business functions:
 
-- Developer - a user-level account that has access to application features and sanitized databases
-- System Administrator - user accounts that enjoy full system administrator access
+- Anonymous user - readers of the site who either do not have an account or are not
+  logged in.
+
+- Authenticated user - All non-anonymous users inherit the "authenticated user role"
+  that supports personal account management capabilities.
+
+- Administrator - This role has all permissions enabled by default.
 
 
 ##### Ilias
@@ -115,7 +120,7 @@ Operations, in collaboration with the Security Office, will set up privileged ac
 
 ##### CivicActions
 
-CivicActions' Project Manager assigns the "administrator" role for the management of all accounts issued to internal admin roles supporting the information system. Account requests are initiated by the Project Manager by completing a ticket request and the CivicActions Operation staff manages the entire account creation process.
+The CivicActions Project Manager assigns the "administrator" role for the management of all accounts issued to internal admin roles supporting the information system.  Account requests are initiated by the Project Manager by completing a ticket request and the CivicActions Operation staff manages the account creation process.
 
 
 ##### Drupal

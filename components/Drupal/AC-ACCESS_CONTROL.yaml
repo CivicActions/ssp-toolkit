@@ -7,6 +7,19 @@ satisfies:
   covered_by: []
   security_control_type: Hybrid
   narrative:
+  - key: a
+    text: >
+      Drupal provides the following information system account types to support
+      organizational mission/business functions:
+
+
+      - Anonymous user - readers of the site who either do not have an account or are not
+        logged in.
+
+      - Authenticated user - All non-anonymous users inherit the "authenticated user role"
+        that supports personal account management capabilities.
+      
+      - Administrator - This role has all permissions enabled by default.
   - key: b
     text: >
       Drupal defines a default set of roles; Anonymous, Authenticated, and
