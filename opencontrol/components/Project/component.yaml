@@ -1,0 +1,1570 @@
+schema_version: 3.0.0
+name: Project
+key: ~
+system: ~
+documentation_complete: ~
+responsible_role: ~
+references: ~
+satisfies:
+- control_key: AC-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This is Agency common control. More data about implementation can be obtained
+      from the Agency common control catalog.
+
+
+      Access control policy and procedures are documented in the The Project SSP.
+      Access to Project operational information or system resources is limited to
+      only authorized users, programs or processes. The Department enforces access
+      control policies to protect the integrity of the The Project. This Department
+      reviews and updates this policy as necessary and it has been being updated,
+      as necessary, since April 2008.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AC-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      SSH system accounts are provided to contractors on an as-needed basis.
+
+
+      Access privileges are used to ensure that only authorized personnel access certain
+      areas of the Project system. User access is controlled by the completion and
+      submission of Project system Rules of Behavior and New User Account Request
+      forms by the user and management. These items are completed and submitted whenever
+      a new user requires access or an existing user requires access changes. The
+      system administrator, based on need-to-know, assigns the proper permissions.
+      The employee’s manager approves the access rights before the initial account
+      is created. Finally, the system administrator implements the access rights according
+      to the New User Account Request form. The security staff and the support contractor
+      review accounts periodically. Accounts no longer in use are removed from the
+      system by the system administrator.
+
+
+      The Project has implemented user account procedures to disable inactive user
+      accounts after 90-days of inactivity. The Project support staff monitors all
+      user accounts to ensure this procedure is enforced. Section 6.3, Authentication
+      Management, of the Project SSP illustrates the exact procedures the contractor
+      support staff follows to ensure accounts are properly managed.
+
+      The Project system does not have guest or anonymous accounts.
+    key: a
+  - text: |
+      The system Owner has oversight over all permissions that the Project Manager and Operations Staff manages.
+    key: b
+  - text: >
+      In accordance with Project Access Control Policy, Project group membership is
+      determined according to the individual's position and role within the organization.
+      A ticket request is used to request accounts and group membership. The request
+      is authorized by the appropriate manager.
+    key: c
+  - text: >
+      Project user privileges vary depending on the type of user role assigned. Only
+      users with the role of Administrator have the ability to create and modify user
+      roles for other users.
+    key: d
+  - text: >
+      The System Owner approves, and CivicActions Operations set up the initial Administrator
+      account for Project. Subsequent client access and related approvals are managed
+      by CivicActions Operations in collaboration with the System Owner.
+    key: e
+  - text: |
+      Project governs their own administrative access. Users with
+      the Administrator roles are empowered to designate and approve
+      Administrators.
+    key: i
+  - text: >
+      Administrators are empowered to and responsible for reviewing their own accounts
+      and determining whether the accounts should still be authorized.
+    key: j
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AC-3
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The The Project ensures that assigned authorizations for controlling access
+      to the system is enforced in accordance with the user definitions noted in Section
+      1.1.1 of the Project SSP. The technical support staff ensures that access to
+      security functions and protected information is restricted to authorized personnel.
+      Access will be controlled with access control list used on each instance. Members
+      of one group cannot access resources defined for other groups unless explicitly
+      permitted.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AC-7
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Project system locks out users after three unsuccessful login attempts.
+      The information system automatically locks the account permanently, unless an
+      administrator unlocks the account before then, when the maximum number of unsuccessful
+      attempts (3) is exceeded.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AC-8
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      A warning banner ensures that all persons attempting to gain access to the system
+      know that the system and its information are “Authorized User Only” and that
+      attempts to illegally log on to the system could lead to criminal prosecution.
+      The warning message displayed notifies unauthorized users that they have accessed
+      a U.S. Government computer system and continued, unauthorized use can be punishable
+      by fines or imprisonment. Each device logged into will display a system use
+      notification message before the log in window is displayed. The system use notification
+      banner will remain on the screen until the user takes an explicit action to
+      log on to the device. The following is the notification banner displayed on
+      all system instances:
+
+
+      "You are accessing a U.S. Government (USG) Information System (IS) that is provided
+      for USG-authorized use only. By using this IS (which includes any device attached
+      to this IS), you consent to the following conditions:
+
+
+      - The USG routinely intercepts and monitors communications on this IS for purposes
+      including, but not limited to, penetration testing, COMSEC monitoring, network
+      operations and defense, personnel misconduct (PM), law enforcement (LE), and
+      counterintelligence (CI) investigations.
+
+      - At any time, the USG may inspect and seize data stored on this IS.
+
+      - Communications using, or data stored on, this IS are not private, are subject
+      to routine monitoring, interception, and search, and may be disclosed or used
+      for any USG-authorized purpose.
+
+      - This IS includes security measures (e.g., authentication and access controls)
+      to protect USG interests -- not for your personal benefit or privacy.
+
+      - Notwithstanding the above, using this IS does not constitute consent to PM,
+      LE or CI investigative searching or monitoring of the content of privileged
+      communications, or work product, related to personal representation or services
+      by attorneys, psychotherapists, or clergy, and their assistants. Such communications
+      and work product are private and confidential. See User Agreement for details."
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AC-14
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The The Project allows the general public user to read the web pages, do searches
+      on the resource database and to review online forum information without identification
+      and authentication for the public web site. Program and Privilege users cannot
+      access the Project system without identification or authentication.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AC-17
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The The Project permits remote access for privileged functions to support operational
+      needs. The technical staff documents, monitors, and controls all methods of
+      remote access to the information system including remote access for privileged
+      functions. Privileged user access is only permitted through the use of Secure
+      Shell (SSH) where the user will authenticate to the device through this secure
+      channel. Virtual Private Networking (VPN) is not enabled in any form within
+      the Project accreditation boundary.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AC-22
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The The Client grants certain Project support staff members the authority to
+      post publicly accessible content. These individuals must complete Project system
+      security training before being granted access to the Project and before they
+      can post publicly accessible content within the The Project. Furthermore, each
+      authorized individual must follow the procedures delineated within the “Using
+      Drupal” Instruction to ensure they are following a verifiable procedure throughout
+      the entire process. This covers the Project Discussion Lists administration
+      areas, Project Quarterly Reporting and training tools, and Drupal Content Management
+      systems. Public content is only edited via the Drupal Content Management System.
+      All other content is only viewable by Project system users and protected by
+      hardened access controls.
+    key: a
+  - text: >
+      It is the Project responsibility to train authorized Project individuals ensuring
+      publicly accessible information does not contain nonpublic information.
+    key: b
+  - text: >
+      Authorized Project individuals review the proposed content of information prior
+      to posting onto the publicly accessible information system to ensure that nonpublic
+      information is not included.
+
+
+      Project Users have been authorized for creation of publicly accessible content
+      with publishing authority from an Administrator role. The publishing authority
+      ensures the information being published does not contain nonpublic information.
+    key: c
+  - text: >
+      Authorized Project individuals review the content on the publicly accessible
+      information system for nonpublic information at least every 365 days and removes
+      such information.
+    key: d
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AT-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Security awareness and training policy and procedures are formally documented
+      in None, which provides the roles and responsibilities as it pertains to security
+      awareness and training. The Department will ensure all users, including managers
+      and senior executives, are exposed to basic information system security awareness
+      materials before authorizing access to the system and at least annually thereafter.
+      Client documents and monitors all individual information system security training
+      activities including basic security awareness training. OMB reviews and updates
+      the policy as necessary.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AT-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Client personnel and contractor employees involved with the management, operation,
+      programming, maintenance, or use of Project system receive training in acceptable
+      computer security practices prior to system access. All Client employees and
+      contractors are required to complete annual IT security awareness training.
+      This security awareness training covers issues and policies associated with
+      information security, including end user security roles and responsibilities
+      and rules of behavior. Some topics addressed in the training are:
+
+
+      - Password protection
+
+      - System rules of behavior
+
+      - Protection of hardware, software, and data
+
+      - Proper handling of copyrighted materials
+
+      - Reporting of security breaches and violations
+
+      - Proper procedures for software installation, uploading, and use on
+        workstations.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AT-3
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Completion of role-based training is an annual requirement for personnel in
+      roles with significant information security responsibilities that require specialized
+      role-based training. Role-based cybersecurity training is developed and implemented
+      to meet identified training needs and competencies associated with the various
+      target audiences/functional roles (federal and contractor employees) that comprise
+      the Client workforce, as is identified in and required by the FISMA and OMB
+      A-130, Appendix III. The appropriate content of security training is determined
+      based on the assigned roles and responsibilities of individuals and the specific
+      security requirements of the Department, PO and the information systems to which
+      personnel have authorized access. Annual training requirements may be met by
+      completing one or more course(s) within the Department’s learning management
+      systems, participating in instructor-led training provided by the OCIO, or completing
+      an external role-based course or courses offered within their specific functional
+      area of expertise.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AT-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Client documents and monitors all individual information system security training
+      activities including basic security awareness training. New users are required
+      to take security training within 30 days of hire. This information is kept in
+      the appropriate personnel files to verify users have met the training requirements.
+      Training requirement notifications are sent to individuals as deadline for re-training
+      approaches.
+    key: a
+  - text: |
+      Client maintains training certifications for the specified period.
+    key: b
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Project maintains a record of system activity by application process and
+      by user activity. Audit and accountability policy and procedures are documented
+      within the Project SSP. Security software features are used to automatically
+      generate and store security audit log records for use in monitoring security-related
+      events on all multi-user systems. The Client reviews and updates this policy
+      as necessary and it was last updated in April 2008. Additional information is
+      contained within the None.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-8
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      The Project system clocks are synchronized system-wide and provide time stamps with audit records.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CA-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Project follows the None. The Project System Security Policy (SSP) provides
+      guidance on all aspects of security for the protection of Project information
+      technology resources.
+
+
+      Project will periodically review and update the SSP when there is a significant
+      change to the regulatory, operational, or technical environment.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CA-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The The Project follows the None. The The Project will conduct annual security
+      assessments to comply with FISMA and NIST regulations. Project will draw on
+      NIST Special Publications 800-53A security controls to complete the assessment.
+      All controls and sub-set security controls will be evaluated and a risk assessment
+      will be conducted. The scope of the assessment includes:
+
+
+      1. Security controls and control enhancements under assessment
+
+      2. Assessment procedures to be used to determine security control effectiveness
+
+      3. Assessment environment, assessment team, and assessment roles and responsibilities
+    key: a
+  - text: >
+      The Project Authorizing Official or Designated Representative will create a
+      Security Assessment Report (SAR). A full assessment shall be conducted by an
+      independent third party assessor at least every three years.
+    key: c
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CA-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      The Project follows the None procedures in managing POA&Ms.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CA-6
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Project follows the None. The Project system received its first three-year
+      security accreditation on March 3, 2009, and most recently received an ATO on
+      February 5, 2016.
+
+
+      ATO re-assessment will be performed every three years or when there is a major
+      change to the application, in which a senior organizational official will sign
+      and approve the security accreditation.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CM-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The configuration management policy and procedures are formally documented in
+      the Project Configuration Management Plan (CMP), which provides the roles and
+      responsibilities as it pertains to physical and environmental protection. It
+      defines responsibilities for the implementation and oversight of the guidance
+      contained herein. Client reviews and updates the policy as necessary.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CM-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      A CM process has been established and documented in the Project CMP. All updates
+      are made in accordance with the procedures outlined in the CMP. The CM process
+      establishes a baseline of hardware, software, firmware and documentation, as
+      well as changes thereto, throughout the development and life cycle of the information
+      system. CM ensures the control of the information system through its life cycle.
+      It assures that additions, deletions, or changes made to the Project system
+      do not unintentionally or unknowingly diminish security. If the change is major,
+      the security of the system must be re-analyzed.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CM-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      An Information Security Program is in place to ensure all security-centric impacts
+      to the Project are properly analyzed and conducted by personnel with information
+      security responsibilities (i.e., Project SSO, IT Security Officer, etc.). These
+      individuals have the appropriate skills and technical expertise to analyze the
+      changes to the Project and their associated security ramifications. In support
+      of continuous monitoring and to ensure the Project system lifecycle is fully
+      sustained, a risk assessment process, be it formal or informal, is performed
+      when changes are occur. This ensures that The Client understands the security
+      impacts and can determine if additional security controls are required.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CM-6
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Project is configured in compliance with the applicable baseline security
+      standards. The Department and its technical support staff configure the security
+      settings of all IT products to the most restrictive mode consistent with information
+      system operational requirements. Project utilizes the NIST Special Publication
+      800-70 for guidance on configuration settings (checklists) for information technology
+      products. When security setting checklist are not available from NIST for a
+      particular device, good security engineering practices along with manufacture
+      guidelines is used to develop the security settings. The CM Manager conducts
+      configuration audits to ensure baseline compliance and documentation of hardware/software
+      configurations throughout the system lifecycle.
+    key: a
+  - text: >
+      Configuration settings are implemented, monitored, and controlled in accordance
+      with the organizational Configuration Management Plan for the security configuration
+      management processes and tools.
+    key: b
+  - text: >
+      Currently, deviations do not exist for established configuration settings. In
+      the event this changes, the following notes the process that will take place.
+
+      The CivicActions CCB, identifies, approves, and documents exceptions to mandatory
+      configuration settings for individual components within its cloud offering only
+      when operationally necessary. All variances identified during the monthly and
+      annual system testing scans that must be accepted for operational purposes are
+      tracked.
+    key: c
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CM-7
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      Services are limited to provide only essential capabilities.
+    key: a
+  - text: >
+      The Project maintains strict default deny policy with access controls at the
+      firewall, and on individual systems. Inbound access across the system boundary
+      is only allowed on ports 22 (ssh), 80 (http) and 443 (https), with an additional
+      port, 25 (smtp) open on the mail server.
+    key: b
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CP-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This is Agency common control. More data about implementation can be obtained
+      from the Agency common control catalog.
+
+
+      The Project and has developed a contingency planning policy consistent with
+      NIST 800-34. Contingency planning procedures are formally documented within
+      the Project Contingency Plan, which provides the roles and responsibilities
+      as it pertains to contingency planning. The Project reviews and updates the
+      policy as necessary and the policy was last updated in July 2012.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CP-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Project Information System Contingency Plan (ISCP) has been distributed
+      to all members who have roles in Contingency Planning and Incident Response
+      Team. Direction by the System Owner will update who is required to receive a
+      copy of the contingency plan. The ISCP can be found in the Project GitHub wiki
+      at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan>.
+    key: b
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Project system owners/managers manage user identifiers by: (i) uniquely
+      identifying each user; (ii) verifying the identity of each user; (iii) receiving
+      authorization to issue a user identifier from an appropriate official; (iv)
+      ensuring that the user identifier is issued to the intended party; (v) disabling
+      user identifier after a reasonable period of inactivity as documented in its
+      security procedures; and (vi) archiving user identifiers. Project reviews and
+      updates this policy as necessary.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-2 (1)
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      The Project employs multi-factor authentication for privileged users.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-2 (12)
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      The Project system allows users to access the system using Common Access Cards (CAC).
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Authentication for Project internal personnel are created during the personnel
+      assignment process where requests are made to the Project admin group for proper
+      access levels. The Project admin group verifies the identity of the user. The
+      website performs further verification by sending an email to the user's mailbox
+      containing a single-use activation link which must be used to log in to the
+      account for the first time and to create a password.
+    key: a
+  - text: >
+      Project admins in collaboration with CivicActions Operations are responsible
+      for provisioning and de-provisioning end user accounts in compliance with the
+      authentication requirements described herein.
+    key: b
+  - text: |
+      When entering a user account password upon initial login, all users must comply with the following password policies, which are enforced by the website's software configuration:
+
+      - Password must be at least 14 characters in length.
+      - Password must contain at least one digit.
+      - Password must contain at least one special character (not whitespace or an alphanumeric).
+      - Password must contain at least one uppercase character.
+      - Password must contain at least one lowercase character.
+    key: c
+  - text: |
+      Project is responsible for provisioning and de-provisioning end user accounts, which must comply with the strict password policies that are enforced by the website's software configuration, as described in IA-5(d).
+
+      In accordance with Project site configuration, the following administrative procedures exist for initial authenticator distribution, for lost/compromised/damaged authenticators, and for revoking authenticators.
+
+      - Initial authenticator distribution: Users receive a one-time login link
+        by email upon creating of their user account. They use that link to log
+        in and then must enter a password themselves which complies with the
+        password complexity requirements described in IA-4(b).
+
+      - Lost/compromised/damaged authenticators: Users who have forgotten their
+        password may request a new password by submitting their username or
+        email address. The website responds by emailing a one-time login link
+        to the user's email address. After using the link to log in, the user
+        is required to enter a new password.
+
+      - Revoking authenticators: Users who have not changed their password in
+        the last 90 days are automatically blocked. Administrators may block
+        any user account if they believe there is a reason to do so.
+    key: d
+  - text: |
+      Project authenticators follow these password lifetime restrictions:
+
+      - Maximum password age = 90
+      - Minimum password age = 1
+      - Password reuse restriction = 10
+    key: f
+  - text: |
+      Project enforces password lifetime restrictions. The password lifetime settings for internal accounts is as follows:
+
+      - Minimum restriction of zero (1) days and
+      - Maximum restriction of ninety (90) days before a password change is required.
+    key: g
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-5 (1)
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Project is responsible for provisioning and de-provisioning end user accounts,
+      which must comply with the strict password policies that are enforced by the
+      website's software configuration, as described in IA-5.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-5 (11)
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      Project does not support physical hardware token-based authentication. Therefore this control is Not Applicable.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-8 (1)
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      Project allows the use of customer agency supplied Common Access Cards (CAC).
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-8 (2)
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      Project does not utilize FICAM approved credentials.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-8 (3)
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      Project does not utilize FICAM approved products.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-8 (4)
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      CivicActions does not utilize FICAM approved products or profiles.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This is Agency common control. More data about implementation can be obtained
+      from the Agency common control catalog.
+
+
+      The Project maintains an Incident Response Plan (IRP), consistent with NIST
+      800-61, which addresses purpose, scope, roles, and responsibilities. The incident
+      response procedures address any activity or occurrence that compromises the
+      integrity of a system, denies access to or use of IT resources, and compromises
+      the sensitivity of the information stored in, processed by or transmitted by
+      a system.
+
+
+      Additionally, the IRP includes procedures to respond to waste, fraud, misuse,
+      or abuse of any departmental IT system, damage or loss of software or data contained
+      in any system, Use of unlicensed (pirated) software products, discovery of hardware
+      or software vulnerabilities
+
+
+      The Project Incident Response Plan can be found in the CivicActions GitHub repository
+      at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions Operations and users of the Project system with incident response
+      responsibilities are required to participate in incident response training once
+      the role is assumed within 10 days, as required by Project changes, and annually.
+      The Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>)
+      is the basis for the training and the incident response workflow created by
+      the Security team. Upon a review of past incidents, the training is updated
+      to ensure processes and workflows are updated.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Client Computer Security Officer (CSO) handles all incidents for the The
+      Project.
+
+
+      The The Client utilizes proven incident handling methodologies for security
+      incidents that includes preparation, detection and analysis, containment, eradication,
+      and recovery. The Client maintains a list of lessons learned from ongoing incident
+      handling activities and uses those lessons to update the incident response procedures
+      accordingly.
+
+
+      Preparation activities includes all CivicActions and Project internal users
+      are trained if their role includes incident response. Detection monitoring tools
+      providing notification to incident response personnel for analysis and action.
+      Containment, eradication and recovery activities include AWS and LAMP-stack
+      inherited fixes and Project system administrators adjusting IP port blocking
+      security groups and SELinux policies.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Project utilizes network and host-based intrusion detection systems, monitoring
+      the system and application logs for anomalous events. Incidents are tracked
+      using the same ticketing system that is used to track all system-related changes
+      and events.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-6
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      If an incident involves suspicious activity, CivicActions Operations will contact
+      the Project System Owner who may then contact the Project CSO.
+
+
+      The CivicActions Computer Security Officer (CSO) handles all incidents for the
+      Project. The CSO is prepared to report all incidents to the The Client.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-8
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Project Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>)
+      includes a comprehensive incident response program, which details the implementation
+      of procedures and tools required for incident handling. The incident response
+      program details the roles and responsibilities of Project/ CivicActions IR Team.
+      The IR Team includes members from CivicActions Security and Operations teams.
+      Incident response plays a pivotal role in monitoring, detecting and handling
+      security incidents of the entire information system. The IRP details categorization
+      of incidents in accordance with NIST 800-61 and accordingly documents and reports
+      incidents. The IRP is reviewed annually and updated as needed by ISSO, with
+      the assistance of the Incident Response Team.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: MA-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      System maintenance policy and procedures are formally documented in the Project
+      SSP, which provides the roles and responsibilities as it pertains to software
+      and systems maintenance and updates. The The Project ensures that maintenance
+      controls are developed, disseminated, reviewed, and updated as necessary.
+
+
+      Physical and environmental protection is fully inherited from the AWS FedRAMP
+      certified us-east cloud.
+
+
+      This is Agency common control. More data about implementation can be obtained
+      from the Agency common control catalog.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: MA-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      The Project schedules, performs, and documents regular maintenance on the software components of all systems, including but not limited to:
+
+      - Hourly automated snapshot backups
+      - Daily disaster recovery remote backups
+      - Daily Intrusion Detection (OSSEC) / Data Integrity Assurance (AIDE)
+      - As needed help desk support
+      - Twice-monthly OS updates/patches
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: MA-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Client maintains a list of authorized contract (CivicActions) personnel who
+      perform maintenance and repair activities on the Project Project system components,
+      and only these authorized personnel may perform the maintenance. All maintenance
+      personnel have the required personnel security elements in place.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: MP-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This is Agency common control. More data about implementation can be obtained
+      from the Agency common control catalog. Media protection policy and procedures
+      are fully inherited from AWS Cloud.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PL-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This is Agency common control. More data about implementation can be obtained
+      from the Agency common control catalog.
+
+
+      The Project developed its security policy planning and procedures based on None,
+      guidance from NIST, the Office of Management and Budget and industry best practices.
+      Security policies and procedures are formally documented within the Project
+      SSP, which provides the roles and responsibilities as it pertains to security
+      planning. It provides guidance on all aspects of security for the protection
+      of Project information technology resources. It defines responsibilities for
+      the implementation and oversight of the guidance contained herein. The plan
+      was last updated in December, 2015.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PL-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The System Security Plan (SSP) was developed and implemented for Project system
+      in accordance with None, NIST SP 800-18 and NIST SP 800-37. The SSP includes
+      a description of the management, operational, and technical controls in place
+      or planned for the application. The SSP is included as a key document in an
+      application’s C&A package and is reviewed and approved by designated officials.
+      The SSP identifies the system owner and responsible parties for managing system
+      access and the overall security of the system. The Chief Information Security
+      Officer reviews and approves the SSP. The SSP will be reviewed at least annually
+      and updated to account for any changes to the Project system and to address
+      any changes in security controls.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PL-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Project has created and made readily available to individuals requiring access
+      to the information system the rules that describes their responsibilities and
+      expected behavior with regard to information and information system usage. These
+      rules are captured in ‘Appendix J2 - System Rules of Behavior - General User’
+      (ProjectSystemRoB2019-template.docx).
+
+
+      Project has reviewed and accepted as a superset alternative the CivicActions
+      Acceptable Use Policy.
+    key: a
+  - text: >
+      The Project System Owner receives a signed acknowledgment from such individuals
+      that are not CivicActions employees, indicating that they have read, understand,
+      and agree to abide by the rules of behavior, before authorizing access to information
+      and the information system.
+    key: b
+  - text: |
+      Project reviews the Rules of Behavior at least annually and updates it as required.
+    key: c
+  - text: >
+      Project requires individuals who have signed a previous version of the rules
+      of behavior to read and re-sign when the Rules of Behavior are revised/updated.
+    key: d
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PS-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Project documents the security policy and procedures in addressing position
+      categorization, personnel screening, personnel termination, personnel transfer,
+      and access agreements within the Project SSP. Project adopts the Client personnel
+      security standards and determines position risks levels based on public trust
+      responsibilities.
+
+
+      This is Agency common control. More data about implementation can be obtained
+      from the Agency common control catalog.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PS-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Project position sensitivity levels are assigned by the The Client. Each position
+      designation is documented on the Standard Position Description (SPD) and assigned
+      a risk level (or sensitivity level) commensurate with the sensitivity of the
+      information, the risk to that information and the system maintaining that information.
+      The levels of risk still need to be designated by Client for employee and contractor
+      positions but since Project system does not have any sensitive data, a low risk
+      scenario can be assumed.
+
+
+      - Employee risk levels and background investigations are: Low Risk= NACI, Moderate
+      Risk= LBI, High Risk= BI.
+
+      - Contractor risk levels and background investigations are: Low Risk= NACI,
+      Moderate Risk= NACC, High Risk= BI.
+
+
+      In order to ensure every employee is assigned to a position, which has been
+      reviewed for sensitivity by the NCC, the SPD is a required data attribute of
+      an employee’s HR record. Position risks designations are reviewed and revised
+      when NCC or OPM publish changes to sensitivity levels.
+
+
+      This is Agency common control. More data about implementation can be obtained
+      from the Agency common control catalog
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PS-3
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Minimum background investigations are conducted, since all data is non-sensitive,
+      for individuals requiring access to Project information and information systems.
+      The type of background investigation conducted for an individual is determined
+      by the individual’s position risk categorization noted in control PS-2. Client
+      conducts periodic reinvestigations in accordance with OPM and NIST guidelines.
+
+
+      This is Agency common control. More data about implementation can be obtained
+      from the Agency common control catalog.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PS-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Client HR policy states that managers or designated officials are responsible
+      for recovering and properly securing employee badges and returning it to the
+      local physical security office. The Client executes termination procedures that
+      remove personnel access privileges, computer accounts. When an employee is terminated,
+      the employee’s manager or designated official completes a form requesting termination
+      of access for the user. Local management and the security manager coordinate
+      disabling or removing Project privileged access with the system administrator.
+      The employee’s manager or designated official is responsible for recovering
+      and properly securing his/her ID badge and returning it to the local physical
+      security office. The employee’s manager or designated official ensures that
+      any information on the system that the employee was responsible for will be
+      available to the appropriate personnel.
+
+
+      This is Agency common control. More data about implementation can be obtained
+      from the Agency common control catalog.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PS-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      When an employee is reassigned or transferred, the employee’s manager or designated
+      official is required to request transfer of access (as appropriate) for the
+      user.
+
+
+      In accordance with the The Client HR policy, the employee’s manager or designated
+      official is responsible for recovering and properly securing his/her ID badge
+      and returning it to the local physical security office. The manager provides
+      prompt notification to the Project system/security administrator when an employee
+      changes assignments and/or location. This includes taking prompt and appropriate
+      action to change employee access profile and/or remove employee from the system;
+      and ensure that users’ system access is cancelled when the need no longer exists.
+
+
+      This is Agency common control. More data about implementation can be obtained
+      from the Agency common control catalog.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PS-6
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      All users of the Project system must read and accept access agreements upon every login.
+    key: a
+  - text: |
+      The Access Agreements are reviewed at least annually or when a significant change occurs.
+    key: b
+  - text: >
+      All individuals requiring access to the Project system are required to sign
+      the Access Agreements before login is granted. When the Access Agreements are
+      updated, the individual will be required to sign the new copy before regaining
+      access.
+    key: c
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PS-7
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Personnel security requirements including security roles and responsibilities
+      that apply to primary contracting organizations flow down to their subcontractors.
+    key: a
+  - text: |
+      Personnel security policies and procedures that apply to primary contracting organizations flow down to their subcontractors.
+    key: b
+  - text: |
+      All personnel security requirements are documented in PS-1 and other related Personnel Security controls.
+    key: c
+  - text: >
+      For personnel transfers and terminations of third-party personnel, the procedures
+      defined in employee termination (PS-4) and employee transfer (PS-5) flow down
+      to subcontractors.
+    key: d
+  - text: >
+      Compliance measures for assessing third-party personnel and/or contractors are
+      determined on a case-by-case basis. Third-party personnel are monitored to ensure
+      compliance with personnel security requirements.
+    key: e
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PS-8
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The disciplinary sanctions for personnel failing to comply with establish IT
+      security policies and procedures are included in The Client HR policy. If an
+      employee violates the Client information security policies and procedures, the
+      employee may be subject to disciplinary action at the discretion of management.
+      Actions may range from verbal or written warning, removal of system access for
+      a specific period of time, reassignment to other duties, or termination, depending
+      on the severity of the violation. Disciplinary sanctions are reported to the
+      OCIO.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: RA-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Client follows the risk assessment policy and procedures formally documented
+      within None. Furthermore, a Risk Assessment Plan was originally initiated to
+      determine the extent of the potential threat and the risk associated with Project
+      throughout its System Development Life Cycle (SDLC). The Project Risk Assessment
+      defines the methodology approach to determine the likelihood risks, and identify
+      potential mitigation options to reduce risks to the Project system.
+
+
+      The Project Risk Assessment will be conducted in accordance with the Department’s
+      risk assessment policy and procedures. By doing so, the responsible parties
+      associated with the Project will be able to determine the risk, likelihood and
+      impact that could result from exploiting vulnerabilities within the system.
+
+
+      This is Agency common control. More data about implementation can be obtained
+      from the Agency common control catalog.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: RA-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      In accordance with FIPS 199 requirement and guidelines provided in NIST SP800-60
+      Rev.1, the organization categorized the system as a Low system: Confidentiality
+      (Low), Integrity (Low), Availability (Low).
+    key: a
+  - text: >
+      The security categorization was determined by evaluating the type of information
+      that is stored, processed, and/or transmitted by the application and the potential
+      impact levels associated with the confidentiality, integrity, and availability
+      of that information. The application’s security categorization has been documented
+      in this SSP.
+    key: b
+  - text: >
+      The security categorizations have been reviewed by the designated application
+      POCs, were approved during the C&A effort. The formal security categorization
+      document is available upon request. The system inventory for the Project Project
+      is revalidated semiannually.
+    key: c
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: RA-3
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions/Project will perform risk assessments for the Project system based
+      on SP 800-30 Rev. 1 Guide for Conducting Risk Assessments at least annually
+      and as part of the change management activities for the Project system that
+      warrant a new or updated risk assessment.
+    key: a
+  - text: >
+      The results of risk assessments will be compiled into a risk assessment report
+      to be reviewed by CivicActions Security and relevant personnel, and also added
+      to the GitLab system for the Project system.
+    key: b
+  - text: |
+      CivicActions/Project reviews risk assessment
+      results at least annually.
+    key: c
+  - text: |
+      The Risk Assessment report will be disseminated to the appropriate
+      personnel through the Project Manager and CivicActions
+      Security.
+    key: d
+  - text: |
+      Risk assessments are conducted annually or whenever there are significant changes to the information system or environment of operation (including the identification of new threats and vulnerabilities), or other conditions that may impact the security state of the system, as defined in NIST Special Publication 800-37 Revision 1.
+      A significant change includes:
+
+      - Changing authentication or access control implementations;
+      - Changing storage implementations;
+      - Changing a COTS product to another product;
+      - Changing the backup mechanisms and process; and,
+      - Adding new interconnections to an outside service provide.
+    key: e
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: RA-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Project uses vulnerability scanning software to document and determine risks
+      to the system. These scans are run monthly and the results of these scans are
+      being used to inform changes to the system and verify that security controls
+      are working correctly. These scans are used to document the current state of
+      the system, and to analyze security trends as changes are made over time.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SA-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      The Project complies with the None. The Project will identify new threats/vulnerabilities and technologies that may require updating of solicitation documents.
+
+      This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SA-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Project System Owner is responsible for leading the annual budgeting process
+      and for tracking organizational spending. The System Owner coordinates with
+      the CivicActions Project Manager and CivicActions Security on at least monthly
+      basis to track security priorities and spending patterns and determine financial
+      requirements. The System Owner also coordinates the approval process for interim
+      increases to the security budget, if required. This data is used to support
+      the development of the annual budget.
+
+
+      Security costs are included in Exhibit 53 in the Department's on-line electronic
+      Capital Planning and Investment Control system (eCPIC) in order to provide adequate
+      business case information for budget purposes. Security costs are represented
+      across the life cycle in the business case (Exhibit 300) for major investments
+      and (Exhibit 53) for non-major projects - Project is a non-major project. Security
+      costs are summarized and listed as a line item on the Exhibit 53 in the budget
+      submitted to Treasury.
+
+
+      Costs for providing security at the infrastructure level are contained in the
+      business cases for infrastructure supporting computing platforms, desktop processing,
+      the network environment, and web capability. Since the Exhibit 53 includes projections
+      for multiple fiscal years, its intention is to identify and anticipate security
+      resources required.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SA-3
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Project draws from the None, NIST SP 800-64, and Agile software development
+      methodology to ensure security requirements are incorporated during each phase
+      of the life cycle. This helps to ensure the development of secure systems and
+      effective risk management.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SA-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Project follows the guidelines and procedures within the overarching None.
+      The requirements in the information system acquisition contract permit updating
+      security controls as new threat/vulnerabilities are identified and new technologies
+      are implemented.
+
+
+      The Project System and Services Acquisition Policy contains the process for
+      determining acceptance criteria for all Project system software and services.
+
+
+      The Project organization reviews and approves all acquisition contracts in accordance
+      with applicable federal laws, Executive Orders, directives, policies, regulations,
+      standards, guidelines, and organizational mission/business needs.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SA-4 (10)
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions/Project and AWS describes this control as “not applicable”, as
+      PIV credentials are not applicable to the Project system. Access and Authentication
+      requirements for the Project system for internal CivicActions and customer are
+      implemented under access management and enforcement (AC-2 and AC-3) and identification
+      and authentication for all users (IA-2 and IA-8).
+
+
+      It is the responsibility of CivicActions for implementation of PIV capability
+      for authentication as required.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SA-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Client maintains adequate documentation for the Project system. The Project
+      system documentation is protected as required and made available to authorized
+      personnel. Procedures for protecting system documentation include management
+      in the private CivicActions Git repository and the publicly available documentation
+      trees for Free and Open Source Software (FOSS). The documentation maintained
+      for the Project system includes:
+
+
+      - System Security Plan (SSP) – this document
+
+      - Configuration documentation
+
+      - Incident Response and Contingency Plans
+
+      - Rules of Behavior (Acceptable Use Policy)
+
+      - FOSS Reference Manuals (Drupal, GNU/Linux, Apache, MySQL, PHP, Postfix,
+        etc.)
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SA-9
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Project does not have any dedicated interconnections between information system
+      components within the authorization boundary and external third-party vendor
+      information systems for the purposes of storing, processing, or transmitting
+      federal agency data.
+
+
+      Project is hosted on the AWS Cloud platform, which was approved under the FedRAMP
+      Provisional ATO granted to the AWS Cloud dated 1 May 2013.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SC-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      System and communications protection policy and procedures are formally documented
+      in the None and the Project SSP. The Department reviews and updates the policy
+      as necessary and has been continually updated since April 2008.
+
+      This is Agency common control. More data about implementation can be obtained
+      from the Agency common control catalog.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SC-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Project system is configured to reduce vulnerabilities in its operating
+      system and applications to protect against Denial of Service (DoS) attacks.
+
+      The Project support staff ensures the system is protected against or limits
+      the effect of DoS attacks as specified in the None.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SC-7
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Project system has monitored and controlled communications at the external
+      boundary of the information system and at key internal boundaries within the
+      system, where appropriate. The Project allocates publicly accessible information
+      system components (e.g., public web servers) specific IP address and port combinations.
+      Public access into the organization’s internal networks is prevented except
+      as appropriately mediated.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SC-12
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Use of cryptographic key management for the Project system is in use for at
+      the time of implementation for authentication. CivicActions utilizes customer
+      agency supplied PIV credentials for access to customer instances of the Project.
+      Access enforcement and authentication requirements for Project are described
+      in AC-2 & IA-2. AWS platform does not utilize or manage cryptographic keys within
+      the ACE boundary.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SC-15
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      This control is not applicable, as the Project system does
+      employ any collaborative computing devices.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SI-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      System and information integrity policy and procedures for the Project system
+      are formally documented in the Project SSP, which provides the roles and responsibilities
+      as it pertains to physical and environmental protection systems. The Project
+      system support staff monitors the network on a daily basis and employs up-to-date
+      patches to protect the integrity of the system.
+
+
+      Additional information is contained within the None.
+
+
+      This is Agency common control. More data about implementation can be obtained
+      from the Agency common control catalog.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SI-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Project representatives and system administrators receive alerts from US-CERT
+      on a regular basis. Support personnel take appropriate action in response to
+      relevant areas of concern.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SI-12
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Project representatives and systems administrators receive annual training from
+      Client regarding information assurance and information handling requirements.
+      These personnel are required to operate the system and handle system data and
+      output in accordance with legal requirements. Personnel training and system
+      guidelines ensure that data and programs are handled appropriately.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~

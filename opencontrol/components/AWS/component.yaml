@@ -1,0 +1,1232 @@
+schema_version: 3.0.0
+name: AWS
+key: ~
+system: ~
+documentation_complete: ~
+responsible_role: ~
+references: ~
+satisfies:
+- control_key: AC-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: AWS account management.
+    key: ~
+  - text: >
+      In this architecture, the baseline AWS Identity and Access Management (IAM)
+      groups and roles are associated with access policies to align user accounts
+      with personnel functions related to infrastructure/platform management (e.g.
+      Billing, Amazon EC2/VPC/Amazon RDS systems administration, I.T. auditing, etc.)
+    key: a
+  - text: >
+      In this architecture, AWS CloudTrail and Amazon S3 Bucket logging are enabled,
+      which provide the audit trail capability for the organization to monitor the
+      use of AWS Identity and Access Management (IAM) accounts. An Amazon S3 bucket
+      centrally contains the CloudTrail audit logs. Amazon CloudWatch Alarm is configured
+      to send an alert when any of the following happen:
+        - an API call is made to create, update, or delete a Network ACL/Security
+      Group
+        - AWS account *root user* activity is detected
+        - multiple API actions or login attempts fail
+        - IAM Configuration changes are detected
+        - new IAM access key was created
+        - changes to the CloudTrail log configuration are detected
+    key: g
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AC-3
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      In this architecture, AWS Identify and Access Management (IAM) and Amazon Amazon
+      S3 enforce access to the AWS infrastructure and data in Amazon S3 buckets. The
+      baseline IAM groups and roles are associated with access policies to align user
+      accounts with personnel functions related to infrastructure/platform management
+      (e.g. Billing, Amazon EC2/VPC/Amazon RDS systems administration, I.T. auditing,
+      etc.) Login/API access is restricted to those users for whom the organization
+      has authorized and created, or federated, IAM user accounts, and assigned the
+      appropriate IAM group and/or role memberships. Amazon S3 buckets have specific
+      access control policies assigned to restrict access to those IAM users who are
+      assigned the appropriate IAM roles/groups.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      In this architecture, the following audit methods log all security-relevant user/API activities and Amazon S3 data access activities, and support the capability to audit organizationally defined events:
+
+      - AWS CloudTrail logging
+      - Amazon S3 bucket logging
+      - Elastic Load Balancing (ELB) logging
+      - Amazon RDS MySQL error logging
+    key: a
+  - text: |
+      In this architecture, the following audit methods provide data on activities occurring within the infrastructure:
+
+      - AWS CloudTrail logging
+      - Amazon S3 bucket logging
+      - Elastic Load Balancing (ELB) logging
+      - Amazon RDS MySQL error logging
+    key: c
+  - text: |
+      In this architecture, the following audit methods log all security-relevant events and errors related to IAM user and API activities, Amazon S3 data access, network access, and Amazon RDS database errors, and support the capability to audit organizationally defined events:
+
+      - AWS CloudTrail logging
+      - Amazon S3 bucket logging
+      - Elastic Load Balancing (ELB) logging
+      - Amazon RDS MySQL error logging
+    key: d
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-3
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      In this architecture, the following audit methods generate records with the level of detail specified for the control:
+
+      - **AWS CloudTrail logging**: Provides information on activities
+        related to infrastructure changes.
+
+      - **Amazon S3 bucket logging**: Provides data on activities related to the
+        access or manipulation of data stored in Amazon S3.
+
+      - **Elastic Load Balancing (ELB) logging**: Provides information about
+        requests or connections.
+
+      - **Amazon RDS MySQL error logging**: Captures errors encountered by the
+        database engine. In addition, the MySQL general query log can be enabled
+        by the customer organization to capture when clients connect or disconnect
+        and SQL statements received from clients.
+
+
+      AWS logging information:
+
+      - AWS native logging: https://aws.amazon.com/answers/logging/aws-native-security-logging-capabilities/
+      - AWS CloudTrail logs: http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html
+      - Amazon S3 bucket logs: http://docs.aws.amazon.com/amazons3/latest/dev/ServerLogs.html
+      - ELB logs: http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html
+          http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/access-log-collection.html
+
+      - Amazon RDS logs: http://docs.aws.amazon.com/amazonrds/latest/UserGuide/USER_LogAccess.html
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      In this architecture, logs track dynamic capacity growth to accommodate organizationally defined storage capacity requirements. Amazon S3 buckets are established to store audit logs from the following audit methods:
+
+      - AWS CloudTrail logging
+      - Amazon S3 bucket logging
+      - Elastic Load Balancing (ELB) logging
+      - Amazon RDS MySQL error logging
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      In this architecture, AWS CloudTrail is enabled, and provides the basis for audit processing within the infrastructure.
+
+      AWS built-in features include customer alerting of AWS CloudTrail and other service failures through the following:
+
+      - AWS Service Health Dashboard (http://status.aws.amazon.com)
+      - RSS feeds to which the customer organization can subscribe
+      - email
+      - alerts sent directly to the AWS account *root user* for critical events
+      - AWS internal Incident Response and corporate communications processes
+    key: a
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-8
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      AWS includes the Amazon Time Sync Service. Running over Network Time Protocol (NTP), this service synchronizes the time on AWS instances using redundant satellite-connected and atomic clocks in all public AWS regions. The Amazon Time Sync Service provides accurate time stamp data to the following audit methods:
+
+      - AWS CloudTrail logging
+      - Amazon S3 bucket logging
+      - Elastic Load Balancing (ELB) logging
+      - Amazon RDS MySQL error logging
+    key: a
+  - text: |
+      The Amazon Time Sync Service provides accurate time stamp data to the following audit methods:
+
+      - AWS CloudTrail logging
+      - Amazon S3 bucket logging
+      - Elastic Load Balancing (ELB) logging
+      - Amazon RDS MySQL error logging
+
+      Time stamps are recorded as specified in the ISO 8601 standard. ISO 8601 represents local time (with the location unspecified), as UTC, or as an offset from UTC.
+    key: b
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-9
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Access to audit data and tools is determined by access control policies for
+      IAM groups and roles. Only users assigned to IAM groups and roles with access
+      to audit data and tools can access them. Additionally, AWS uses server-side
+      encryption on Amazon S3 bucket logs, and maintains them as read-only files.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-11
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      AWS CloudTrail logs are stored in an Amazon S3 bucket, which dynamically allocates
+      storage capacity to support continuous collection and storage of AWS CloudTrail
+      log data. The storage capacity supports indefinite retention, but with 7 year
+      retention specified, and migration to Amazon Glacier after 90 days in AWS regions
+      where Glacier is available.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-12
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      In this architecture, AWS CloudTrail, Amazon S3 bucket logging, Elastic Load
+      Balancing (ELB) logging, and Amazon RDS MySQL error logging are  enabled, but
+      initial Amazon EC2 instances launched by this deployment (bastion host, application
+      servers, proxy servers, and any Amazon EC2-based NAT servers) do not have auditing
+      enabled within the OS, as these are for example purposes only.
+
+
+      AWS built-in features of logging mechanisms provide the audit record generation
+      capability for the auditable events defined in AU-2a. by logging all security-relevant
+      IAM user and API activities which address AWS infrastructure components (AWS
+      Products and services), ELB
+    key: a
+  - text: >
+      In this architecture, AWS CloudTrail, Amazon S3 bucket logging, Elastic Load
+      Balancing (ELB) logging, and Amazon RDS MySQL error logging are enabled AWS
+      CloudTrail is enabled to log all available API events automatically within the
+      AWS infrastructure and Amazon S3 bucket logging is enabled to log bucket activity.
+
+
+      AWS built-in features of Identity and Access Management (IAM) allows policy
+      to be applied to privileged users for administrator/audit access, allowing them
+      to modify Amazon CloudWatch alarms, AWS Config rules, and Amazon S3 bucket logging
+      to select the CloudTrail and Amazon S3 events that are to cause notification,
+      alerting and automated reaction.
+    key: b
+  - text: >
+      In this architecture, AWS CloudTrail, Amazon S3 bucket logging, Elastic Load
+      Balancing (ELB) logging, and Amazon RDS MySQL error logging are enabled. However,
+      the initial Amazon EC2 instances launched by this deployment (bastion host,
+      application servers, proxy servers, and any Amazon EC2-based NAT servers) DO
+      NOT have any auditing enabled within the OS, as these are in place for example
+      purposes only.
+
+
+      AWS built-in features of native logging generates audit records with the content
+      defined in AU-3.
+
+
+      AWS logging information:
+
+
+      - AWS native logging: https://aws.amazon.com/answers/logging/aws-native-security-logging-capabilities/
+
+      - AWS CloudTrail logs: http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html
+
+      - Amazon S3 bucket logs: http://docs.aws.amazon.com/amazons3/latest/dev/ServerLogs.html
+
+      - ELB logs: http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html
+
+          http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/access-log-collection.html
+
+      - Amazon RDS logs: http://docs.aws.amazon.com/amazonrds/latest/UserGuide/USER_LogAccess.html
+    key: c
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CM-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      Hardware Baselines
+
+      All hardware is maintained by the AWS cloud. The system inherits hardware configuration aspects of this control from the FedRAMP Provisional ATO granted to AWS, dated 1 May 2013, for the following: baseline configuration.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CM-7
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      In this architecture, only essential capabilities for a multi-tiered web service
+      are configured. AWS Identity and Access Management (IAM) baseline Groups and
+      Roles are configured to support restricted access to AWS resources by privileged
+      users and non-person entities (Amazon EC2 systems operating with a role) authorized
+      and assigned by the organization.
+    key: a
+  - text: >
+      In this architecture, ports, protocols, and services are restricted to those
+      that are required for a multi-tiered web service, via AWS security group rules.
+    key: b
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CM-8
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      AWS built-in features dynamically build and maintain an inventory of system
+      components (infrastructure inventory)
+
+
+      1. AWS built-in features provide an accurate, real time inventory of all infrastructure
+      system and network components within the customer account and provides a single
+      view for granularity for tracking and reporting.
+
+      2. AWS built-in features provide an accurate, real time inventory of all infrastructure
+      system and network components within the AWS account, and  AWS CloudFormation
+      creates a unique set of stack names, and associated resource names  incorporate
+      the stack name, for tracking components deployed by CloudFormation templates
+      that align with an authorization boundary.
+
+      3. AWS built-in features provide a level of granularity for tracking and reporting
+      on all infrastructure system and network components and configuration settings
+      for those components.
+
+      4. AWS built-in features provide all available information about all infrastructure
+      system and network components to achieve effective component accountability.
+    key: a
+  - text: >
+      AWS built-in features provides a dynamically updated inventory of all infrastructure
+      system and network components within the customer account. The AWS management
+      console and AWS API calls support the capability for the organization to review
+      the inventory.
+    key: b
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CP-9
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      In this architecture, user data is limited to that which is stored in the Amazon
+      RDS database. Amazon RDS is fully backed up by a daily snapshot as well as through
+      transaction logging conducted by AWS as part of this managed service. Full database
+      recovery from snapshot or point-in-time can be initiated from the Amazon RDS
+      console/API.
+    key: a
+  - text: >
+      AWS built-in features automatically backs up system-level information limited
+      to infrastructure CONFIGURATION information within the AWS account. While individual
+      running Amazon EC2 instances and attached EBS volumes are NOT backed up, they
+      can be reconstituted from Amazon Machine Images (AMIs) provided by AWS (which
+      are backed up by AWS) and user data scripts included in CloudFormation templates.
+      Once deployed, the CloudFormation template contents are backed up by AWS R488within
+      the CloudFormation service. These AWS backups of AWS services are transparent
+      to the customer as part of AWS backend processes.
+    key: b
+  - text: >
+      AWS built-in features back up online administrator and developer documentation,
+      limited to that which is published at https://aws.amazon.com/documentation.
+    key: c
+  - text: >
+      AWS built-in features protect the confidentiality, integrity, and availability
+      of information that AWS services back up. This information includes the service
+      configuration information within an account, AWS online administrator and developer
+      documentation, and AWS CloudFormation stacks for templates once deployed into
+      an account. R612
+    key: d
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      AWS built-in features of Identity and Access Management (IAM) provides the capability
+      for uniquely identifying and authenticating users and processes acting on their
+      behalf to both organizational and non-organizational users operating within
+      the AWS account and infrastructure, providing privileges based on the credentials,
+      group memberships, and access policies assigned to them. The customer organization,
+      at its discretion, provides individual user accounts and privileges to both
+      organizational non-organizational users in addition to organizational users.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-5 (1)
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      AWS built-in features of Identity and Access Management (IAM) provides minimum
+      password complexity enforcement, but the characteristics to enforce must be
+      manually configured by the customer. Refer to http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html
+    key: a
+  - text: >
+      AWS built-in features of AWS Identity and Access Management (IAM) and the AWS
+      Console store passwords on AWS systems in a cryptographically-protected format
+      and only support TLS connectivity to the console web site to protect passwords
+      in transit via encryption.
+    key: c
+  - text: >
+      AWS built-in features of AWS Identity and Access Management (IAM) provides the
+      capability to require new password to be entered upon login. The customer organization,
+      at its discretion, configures IAM to enforce that requirement.
+    key: f
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-5 (11)
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      AWS built-in features of AWS Identity and Access Management (IAM) provides the
+      capability for Hardware MFA using Gemalto SafeNet IDProve 100 and 700 OTP Tokens
+      which are compliant to OATH open standard (time based - 6 digits) Expected battery
+      life is 3-5 years or approximately 15,000 - 20,000 clicks. These products are
+      handheld devices that provide strong authentication by generating a unique password
+      that is valid for only one attempt and for 30 seconds.
+
+
+      It is the customer organization's responsibility to implement Hardware MFA.
+      Refer to http://aws.amazon.com/iam/details/mfa/ and http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-6
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      In this architecture, All Amazon EC2 instances (bastion host, web/proxy servers,
+      application servers) employ SSH for interactive login, and when a key passphrase
+      is prompted for, the SSH prompting mechanism obscures the feedback by default.
+
+
+      AWS built-in features obscure keystroke feedback for password input during AWS
+      console login with AWS Identity and Access Management (IAM) user credentials,
+      and when the CloudFormation console prompts for an initial database password
+      during Quick Start template deployment.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-7
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      AWS built-in features of AWS Identity and Access Management (IAM) authentication
+      employs cryptographic modules that meet requirements as specified and assessed
+      in the AWS FedRAMP authorization package.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-8
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      AWS built-in features of AWS Identity and Access Management (IAM) provide the
+      capability for uniquely identifying and authenticating users and processes acting
+      on their behalf to both organizational and non-organizational users, providing
+      privileges based on the credentials, group memberships, and access policies
+      assigned to them.
+
+
+      The customer organization at its discretion provides user accounts and privileges
+      to both organizational non-organizational users in addition to organizational
+      users.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: incident response
+      training.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: incident handling.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: incident monitoring.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-6
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: incident reporting.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-7
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: incident resonse
+      assistance.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-8
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: incident response
+      plan.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: MA-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This System Maintenance control associated with hardware components within AWS
+      is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: MA-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This System Maintenance control associated with hardware components within AWS
+      is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: MA-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This System Maintenance control associated with hardware components within AWS
+      is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: MA-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This System Maintenance control associated with hardware components within AWS
+      is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: MP-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This Media Protection control associated with hardware components within AWS
+      is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: MP-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This Media Protection control associated with hardware components within AWS
+      is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: MP-6
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This Media Protection control associated with hardware components within AWS
+      is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: MP-7
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This Media Protection control associated with hardware components within AWS
+      is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PE-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This Physical Environment control associated with hardware components within
+      AWS is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PE-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This Physical Environment control associated with hardware components within
+      AWS is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PE-3
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This Physical Environment control associated with hardware components within
+      AWS is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PE-6
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This Physical Environment control associated with hardware components within
+      AWS is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PE-8
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This Physical Environment control associated with hardware components within
+      AWS is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PE-12
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This Physical Environment control associated with hardware components within
+      AWS is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PE-13
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This Physical Environment control associated with hardware components within
+      AWS is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PE-14
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This Physical Environment control associated with hardware components within
+      AWS is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PE-15
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This Physical Environment control associated with hardware components within
+      AWS is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PE-16
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This Physical Environment control associated with hardware components within
+      AWS is generally either partially or fully inherited from the AWS physical infrastructure,
+      while the customer organization is responsible for any part of the control that
+      is applicable to customer-controlled equipment and facilities, and the customer's
+      configurable portion of the AWS logical infrastructure, including the Operating
+      systems on Amazon EC2 instances and the customer's applications.
+
+
+      For the U.S. East, U.S. West, and GovCloud regions, this control is inherited
+      from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority
+      to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
+
+
+      Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation
+      Summary and Customer Responsibility Matrix, available from the AWS Compliance
+      Team. http://aws.amazon.com/compliance/fedramp/"
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PL-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PL-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: AWS system security
+      plan.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PS-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: RA-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: RA-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO
+      granted to the AWS Cloud dated 1 May 2013 for the following: vulnerability scanning.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SA-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      In this architecture, documentation of the infrastructure configuration in the
+      form of AWS CloudFormation templates in JSON or YAML format, architecture diagrams,
+      deployment user guide and security controls implementation details is included.
+
+
+      AWS built-in features include online documentation for management of the infrastructure
+      at http://aws.amazon.com/documentation/
+    key: a
+  - text: |
+      AWS built-in features include online documentation of AWS services at http://aws.amazon.com/documentation/
+
+      1. AWS built-in features include online documentation for AWS account users at
+         http://aws.amazon.com/documentation/ such as user Guides, API reference guides, CLI
+         reference guides and developer reference guides to provide information on how to
+         effectively use security functions.
+
+      2. AWS built-in features include online documentation for AWS account users within the
+         infrastructure at http://aws.amazon.com/documentation/ such as user Guides, API
+         reference guides, CLI reference guides and developer reference guides to provide
+         information on how to access AWS services and components in a more secure manner.
+
+      3. AWS built-in features include online documentation for AWS account users at
+         https://aws.amazon.com/security/security-resources/ that provides information
+         related to security responsibilities of customers using AWS services.
+    key: b
+  - text: |
+      AWS built-in features include online documentation that is protected by AWS from unauthorized modification or deletion within AWS system.
+    key: d
+  - text: |
+      AWS built-in features include online documentation located at http://aws.amazon.com/documentation/ that is publicly available.
+    key: e
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SC-7
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      In this architecture, network communications to, from, and between VPCs, subnets
+      and Amazon S3 buckets are controlled as follows: AWS Route Tables specify which
+      subnets in each VPC are accessible through gateways and which are isolated/private.
+      AWS Security Groups provide stateful inbound/outbound port/protocol restrictions,
+      Amazon Simple Storage Service (Amazon S3) buckets support access control restrictions
+      based on network source/destination.
+    key: a
+  - text: >
+      In this architecture, subnetworks for publicly accessible system components
+      are logically separated from internal private subnetworks via AWS security groups,
+      refined routing tables, and NACLs.
+    key: b
+  - text: >
+      In this architecture, connection to external networks is possible only through
+      Internet Gateways (IGWs) or NAT gateways (in regions where supported by AWS
+      VPC) and are restricted based on ports/protocols via AWS Security groups, and
+      default subnet rules provided by NACLs.
+    key: c
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SA-12
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      In this architecture, initial private/public SSH keys stored in Identity and
+      Access Management (IAM) are supplied to Amazon EC2 instances upon launch, and
+      the public key portion is managed within the AWS Amazon EC2 service. In addition,
+      server-side encryption is used for Amazon S3 storage and Amazon RDS databases,
+      using key management provided by AWS for the storage buckets and Amazon RDS
+      databases.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SA-13
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      In this architecture, encryption mechanisms are employed for data at rest and
+      in transit. For data at rest, AES-256 Server Side encryption is employed for
+      data stored in Amazon S3, and Amazon RDS databases. For data in transit, to
+      protect against exposure of any cleartext data transmitted deliberately (upload/download)
+      or incidentally during interactive systems management operations, Amazon S3
+      object access can only be conducted over encrypted sessions via TLS; the bastion
+      host, Amazon EC2 instances and associated security groups are configured for
+      encrypted SSH sessions only. For web user access, the Elastic Load Balancing
+      (ELB) employs a TLS endpoint.
+
+
+      AWS built-in features employ TLS for AWS Management Console sessions, AWS API
+      calls, and AWS Command Line Interface connections.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SA-39
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      In this architecture, the AMIs that make up the operating systems deployed on
+      Amazon EC2 instances maintain separate execution domains/address spaces for
+      executing processes within the customer operating environment.
+
+
+      AWS built-in features of the hypervisors that support the infrastructure maintain
+      separate execution domains/address spaces for executing processes.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~

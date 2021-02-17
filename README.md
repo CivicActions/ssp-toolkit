@@ -8,6 +8,7 @@
       * [Prerequisites](#prerequisites)
          * [Activate your environment](#activate-your-environment)
       * [Generating the documentation](#generating-the-documentation)
+      * [OpenControl and OSCAL](#opencontrol-and-oscal)
       * [License](#license)
 
 <!-- Added by: fen, at: Tue 07 Apr 2020 02:53:45 PM EDT -->
@@ -86,6 +87,17 @@ creatematrix
 ```bash
 ./makeDocsTOC.sh
 ```
+
+## OpenControl and OSCAL
+
+The SSP-Toolkit is currently in an extended format of OpenControl in which each component represents its controls in separate [RMF Control Family](https://nvd.nist.gov/800-53/Rev4) files. Use the [compliance-io](https://github.com/CivicActions/compliance-io) tools to convert the SSP-Toolkit to a [compliance-masonry](https://github.com/opencontrol/compliance-masonry)-friendly OpenControl directory and from that generate an [OSCAL component definition](https://pages.nist.gov/OSCAL/documentation/schema/implementation-layer/component/):
+```
+mkdir opencontrol oscal
+python examples/defenestrate.py ../ssp-toolkit/opencontrol.yaml opencontrol/
+python examples/oc_to_oscal_components.py opencontrol/opencontrol.yaml > oscal/ssp-toolkit.json
+```
+
+See the [compliance-io/README.md](https://github.com/CivicActions/compliance-io/blob/main/README.md) for more information.
 
 ## License
 

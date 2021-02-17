@@ -1,0 +1,2043 @@
+schema_version: 3.0.0
+name: CivicActions
+key: ~
+system: ~
+documentation_complete: ~
+responsible_role: ~
+references: ~
+satisfies:
+- control_key: AC-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel an access
+      control policy that addresses purpose, scope, roles, responsibilities, management
+      commitment, coordination among organizational entities, and compliance; and
+      procedures to facilitate the implementation of the policy and associated controls.
+      This information is maintained in the CivicActions Access Control (AC) Policy.
+      This document can be found in the CivicActions Compliance Docs GitHub repository
+      at <https://github.com/CivicActions/compliance-docs>.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AC-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The CivicActions Project Manager assigns the "administrator" role for the management
+      of all accounts issued to internal admin roles supporting the information system. 
+      Account requests are initiated by the Project Manager by completing a ticket
+      request and the CivicActions Operation staff manages the account creation process.
+    key: b
+  - text: >
+      All accounts issued for application administrators and SSH are documented in
+      CivicActions' ticketing system. Account request tickets contain details that
+      explain the attributes for the account including authorized users of Drupal,
+      system infrastructure, group and role membership, and access authorizations.
+    key: d
+  - text: All accounts issued for the admin management of Application or SSH access
+      must be approved by the System Owner or Project Manager who must create an account
+      request. The CivicActions Operations staff applies appropriate account permissions
+      and settings based on the job role and function documented within the request
+      ticket using processes defined by the CivicActions' Security Office.
+    key: e
+  - text: |
+      CivicActions Operations staff is responsible for the following account management activities for both internal administrative users and customer accounts:
+
+      - Establishing account justification
+      - Activating accounts
+      - Modifying accounts
+      - Expiring accounts
+      - Disabling accounts
+      - Removing accounts
+    key: f
+  - text: All CivicActions systems log the usage of information accounts.
+    key: g
+  - text: >
+      In accordance with the CivicActions Access Control (AC-01) Policy when an account
+      is no longer required, the Project Manager notifies the Operations Team to immediately
+      disable all access. Users upon reassignment, change in roles, termination, or
+      leaving employment are initially removed from all roles and groups, effectively
+      denying them all access to privileged accounts.
+    key: h
+  - text: >
+      System accounts require access authorizations prior to accounts being created.
+      The Project Manager must initiate an access request for an account to be created.
+      CivicActions Operations staff reviews the request to ensure accuracy, including
+      intended system usage and other attributes of the user access being requested.
+    key: i
+  - text: |
+      All privileged accounts are reviewed by CivicActions Operations staff every 180 days.
+    key: j
+  - text: >
+      In accordance with standard security best practices and CivicActions policy,
+      shared and reissued accounts for internal accounts of any kind are not created
+      nor used for any purpose in any system.
+    key: k
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AC-17
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The CivicActions Access Control (AC) policy defines policy for remote usage
+      restrictions. The Project Manager or System Owner may additionally provision
+      users according to their Access Control policies.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AC-18
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      This control is not applicable. The system does not provide wireless access points.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AC-19
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      This control is not applicable. The system does not maintain a facility in which mobile device access limitations are required.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AC-20
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      This control is not applicable. The system does not connect with external information systems.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AT-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel awareness
+      and training policy that addresses purpose, scope, roles, responsibilities,
+      management commitment, coordination among organizational entities, and compliance;
+      and procedures to facilitate the implementation of the policy and associated
+      controls. This information is maintained in the CivicActions Awareness and Training
+      (AT) Policy. This document can be found in the CivicActions Compliance Docs
+      GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AT-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Both regular and ad hoc training to all CivicActions personnel, including those
+      who support the system infrastructure and applications, is provided. All employees
+      and contractors must complete Security Awareness training upon being hired and
+      at least annually thereafter. CivicActions Operations staff will not create
+      accounts for individuals until they have successfully completed the trainings.
+      Additional training will be provided as required by system changes. Training
+      takes the following forms:
+
+
+      Annual Knowledge Survey (i.e., Security Awareness Training): All employees are
+      required to review trainings covering Security Awareness. After the training,
+      a survey-style security awareness test is taken by employees. All CivicActions
+      personnel are required to complete and pass the survey, and new employees are
+      required to pass before being granted access to the Information System. In order
+      to successfully pass the test, a score of 80% is required. This survey tests
+      CivicActions personnel’s knowledge of critical security subjects, policies and
+      procedures. Results from this survey are compiled by the Office of Human Resources
+      and used to refine future training efforts.
+
+
+      Ad Hoc Security Awareness: The CivicActions' Security Office oversees the approximately
+      bi-monthly distribution of security awareness tips and articles to all CivicActions
+      employees. This can include general tips as well as articles tailored to the
+      specific requirements of CivicActions users.
+    key: a
+  - text: >
+      In the event of a major system change, the Project Manager is responsible for
+      delivering additional training to impacted personnel. Specific training types,
+      mediums, and delivery methods are dependent upon the nature of the system change.
+    key: b
+  - text: |
+      CivicActions provides annual security awareness training to its personnel.
+    key: c
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AT-3
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions personnel with security responsibilities are required to complete
+      role-based security training before being provided with access to the information
+      system. The CivicActions' Security Office is responsible for creating the content
+      of the training. The role-based training is provided and tracked by the CivicActions
+      Security Office.
+    key: a
+  - text: >
+      The Project Manager in collaboration with CivicActions Security Office determines
+      whether a change to the information system requires any modifications and updates
+      to the security awareness training program and if so, works with the CivicActions'
+      Security Office to implement the change.
+    key: b
+  - text: >
+      CivicActions Security Office provides users with security responsibilities role-based
+      security training on an annual basis. The training is provided and tracked by
+      the CivicActions Security Office.
+    key: c
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AT-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The CivicActions' Security Office tracks all security awareness training within
+      the organization and ensures that all employees have successfully completed
+      training when required. The training records are stored and tracked in a spreadsheet
+      maintained by the CivicActions Security Office.
+    key: a
+  - text: |
+      Training records are tracked and maintained by the CivicActions Security Office. Records are maintained permanently.
+    key: b
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel an audit
+      and accountability policy that addresses purpose, scope, roles, responsibilities,
+      management commitment, coordination among organizational entities, and compliance;
+      and procedures to facilitate the implementation of the policy and associated
+      controls. This information is maintained in the CivicActions Audit and Accountability
+      (AU) Policy. This document can be found in the CivicActions Compliance Docs
+      GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions' Security Policy provides information about auditing and logging
+      of CivicActions internal users and end-user activity on the servers and within
+      the system application.
+    key: a
+  - text: >
+      Auditable events may change due to changes in the threat environment. CivicActions
+      teams collaborate internally and also communicate with customers and partner
+      organizations to identify and select auditable events. The teams that participate
+      in this process are described in control SA-3(b).
+    key: b
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: ~
+  narrative:
+  - text: >
+      CivicActions ensures adequate storage capability requirements listed in AU-11
+      for all events from the application, database, and hosting environment.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      When notified (e.g., via CloudWatch) of an auditing failure, CivicActions Operations
+      staff will review the causes and take corrective action.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-6
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      CivicActions security audit data is collected by the AWS CloudWatch monitoring and observability service to support real time and after-the-fact investigation at the application level for the following:
+
+      - Indications of inappropriate or unusual activity
+      - Assurance that logging is functioning properly
+      - Adherence to logging standards identified in this procedure
+    key: a
+  - text: >
+      Any significant findings observed during the inspection are reported to CivicActions'
+      Security Office. If these are considered to constitute a security incident,
+      then the Incident Response process is invoked as described in the implementation
+      of the Incident Response Plan (IR-8).
+    key: b
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-9
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions ensures that audit logs are created, stored and maintained. Developers
+      who have been assigned as members of the CivicActions Security Office are the
+      only CivicActions personnel with logical permission to access and review audit
+      logs.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-11
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      CivicActions audits events from the application, database, and hosting environment, and retains these records for at least 180 days.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: AU-12
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions ensures audit records are generated for its web and event logs
+      as required in AU-2 and AU-3 for servers, application, database, and network
+      components.
+    key: a
+  - text: >
+      The selected auditable events described in AU-2 are coordinated by CivicActions
+      internal admins and client security/operations officers for each component of
+      the production system.
+    key: b
+  - text: |
+      CivicActions maintained applications generate audit records for their web and event logs as described in AU-2 and AU-3.
+    key: c
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CA-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel a certification,
+      accreditation, and security assessment policy that addresses purpose, scope,
+      roles, responsibilities, management commitment, coordination among organizational
+      entities, and compliance; and procedures to facilitate the implementation of
+      the policy and associated controls. This information is maintained in the CivicActions
+      Security Assessment and Authorization Policy. This document can be found in
+      the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CA-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions will develop a security assessment plan (SAP) that describes the
+      security controls and control enhancements under assessment, assessment procedures
+      used to determine effectiveness, the assessment environment, the assessment
+      team, and the assessment roles and responsibilities.
+    key: a
+  - text: >
+      CivicActions will assess the security controls in their system and its environment
+      of operation to determine the extent to which the controls are implemented correctly,
+      operating as intended, and producing the desired outcome with respect to meeting
+      established security requirements.
+
+
+      All controls assigned and documented in this System Security Plan (SSP) will
+      be tested at least annually or when there is a major change to the system.
+    key: b
+  - text: >
+      CivicActions will produce a security assessment report that documents the results
+      of the assessment. The Security Assessment Report must contain the results of
+      the assessment, and may also contain recommendations and suggestions for plans
+      of actions and milestones (POA&Ms).
+    key: c
+  - text: |
+      CivicActions will provide the results of the security control assessment to the System Owner, Project Manager, CivicActions Security, and the Authorization Official (AO)). The security control assessment package includes the following:
+
+      - Security Control Matrix
+      - Privacy Impact Assessment
+      - E-Authentication
+      - Contingency Plan
+      - Configuration Management Plan
+      - Rules of Behavior
+      - Incident Response Plan
+    key: d
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CA-3
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      This control is not applicable. CivicActions systems do not have system interconnections.
+      The only communication conducted to CivicActions' systems is through the Internet.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CA-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      CivicActions documents all deficiencies and vulnerabilities identified during the security certification and/or continuous monitoring phase (via security assessment, vulnerability scanning, risk assessment, etc.) within the Plan of Action and Milestones (POA&M).
+
+      The POA&M document provides a platform for CivicActions to monitor and track the deficiency and its mitigation strategy. POA&M items will include:
+
+      - The description of the deficiency,
+      - Dedicated point of contact for this deficiency.
+      - Cost of the mitigation strategy
+      - Associated risk and NIST control
+      - Recommended mitigation strategy
+
+      POA&Ms are tracked throughout the lifecycle of the system until its mitigation. All POA&Ms are reviewed on a monthly basis by CivicActions Information System Security Officer to ensure all mitigation strategies are continuing as documented.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CA-7
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions implements a continuous monitoring strategy that incorporates configuration
+      management, system scanning and log analysis processes:
+
+
+      - Configuration management includes the assessment of security impact analyses
+      of proposed and implemented changes.
+
+      - System scanning is managed by running the OpenSCAP vulnerability scanner using
+      the DISA STIG profile.
+
+      - Log analysis is managed by feeding logs to a Graylog dashboard for analysis.
+    key: a
+  - text: >
+      Configuration management and log analysis is carried out in real time. OpenSCAP
+      security scans are performed and reviewed monthly. See also: RA-5 and SI-4.
+
+
+      Quarterly review of the control assessments supporting the monitoring is conducted
+      by CivicActions Operations in collaboration with the CivicActions Security Office.
+    key: b
+  - text: |
+      CivicActions conducts or oversees continuous system security monitoring.
+    key: d
+  - text: >
+      CivicActions Security reviews the results of the security scans and security
+      assessments with associated JIRA and/or GitLab Issue tickets created to correlate
+      and analyze security-related information generated from the monitoring tools
+      becoming POA&M items for tracking.
+    key: e
+  - text: >
+      POA&M items are tracked by CivicActions Security through JIRA tickets with a
+      security categorization assigned. The information included in the POA&M item
+      include the severity, the due date, the weakness source identifier, and the
+      plugin ID that identified the vulnerability.
+    key: f
+  - text: >
+      The security status of the system is reported up to the System Owner and Project
+      Manager via the CivicActions Security Office to be reviewed alongside other
+      security issues relating to the system.
+    key: g
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CA-9
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: Not applicable.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CM-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel a configuration
+      management policy that addresses purpose, scope, roles, responsibilities, management
+      commitment, coordination among organizational entities, and compliance; and
+      procedures to facilitate the implementation of the policy and associated controls.
+      This information is maintained in the CivicActions Configuration Management
+      (CM) Policy. This document can be found in the CivicActions Compliance Docs
+      GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+
+      Configuration changes are overseen by the Change Control Board (CCB) consisting
+      of the System Owner, Project Manager, CivicActions Operations staff and the
+      engineering team.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CM-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      A current baseline configuration is always available - stored as a tag in the
+      Git repository - such that the site can be regenerated or rolled back should
+      unauthorized or failing changes be applied.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CM-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Security impact analysis is conducted and documented within the Change Request
+      (CR) process described in CM-3(b). All proposed configuration- controlled changes
+      to the application are tested first in a sandboxed development environment before
+      being pushed to a staging environment to be tested by another developer and
+      by the Engineering team prior to final approval from CCB to move changes to
+      the production environment.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CM-6
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      CivicActions developers follow security best practices according to the guidelines set by the CivicActions Security Office.
+    key: b
+  - text: >
+      All changes to the configuration settings are logged in the Git source code
+      version control system, which records the identity of the developer who committed
+      each change. Version control is enforced, with previous tagged code releases
+      kept for rollback purposes.
+    key: d
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CM-10
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Drupal is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These are
+      all compatible with the Free Software Foundation's General Public License (GPL)
+      version 2 or later and are freely available for use under copyright law.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CM-11
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      All software installed in the system environment must be first approved via
+      the CCB resulting in a Change Request (CR) being initiated and executed. Software
+      installation on the computing nodes within the authorization boundary is restricted
+      to administrators. All CivicActions internal administrators are informed of
+      this during their initial training and as part of the rules of behavior document.
+    key: a
+  - text: >
+      CivicActions enforces software installation policies through required acknowledgment
+      and sign-off on acceptable use policy by CivicActions personnel. CivicActions
+      Development is responsible for enforcing compliance with the acceptable use
+      policy.
+    key: b
+  - text: >
+      CivicActions monitors policy compliance continuously via the code release planning
+      and quality control systems built into the System Development Life Cycle described
+      in control SA-3.
+    key: c
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CP-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel a contingency
+      planning policy that addresses purpose, scope, roles, responsibilities, management
+      commitment, coordination among organizational entities, and compliance; and
+      procedures to facilitate the implementation of the policy and associated controls.
+      This information is maintained in Contingency Planning (CP) Policy and Procedure
+      that can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CP-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed a contingency plan for that addresses:
+
+      1. Essential missions, business functions, and associated contingency requirements
+
+      2. Recovery objectives, restoration priorities, and metrics
+
+      3. Roles and responsibilities are identified in the CP and include the ISCP
+      Director, Incident Commander (IC), CivicActions Coordinator, and CivicActions
+      Information System Security Officer (ISSO).
+
+      4. Maintaining essential missions and business functions despite an information
+      system disruption, compromise, or failure
+
+      5. Full information system restoration without deterioration of the security
+      safeguards originally planned and implemented
+
+      6. The ISCP is reviewed and approved by ISCP Director, Incident Commander (IC),
+      CivicActions ISSO and the System Owner annually.
+    key: a
+  - text: >
+      The CivicActions Information System Contingency Plan (ISCP) has been distributed
+      to all CivicActions team members. The ISCP can be found in the CivicActions
+      Handbook at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan>.
+    key: b
+  - text: >
+      The Information System Contingency Plan (ISCP) is closely integrated with the
+      Incident Response Plan (IRP). Coordination is the responsibility of the ISCP
+      Director and CivicActions Operations staff.
+    key: c
+  - text: |
+      The ISCP Director and CivicActions' Security Office are responsible to review the ISCP annually and when a change to the system occurs.
+    key: d
+  - text: >
+      CivicActions Operations staff and ISCP Director are required to update the ISCP
+      to address changes to the organization, information system, or environment of
+      operation and problems encountered during contingency plan implementation, execution,
+      or testing.
+    key: e
+  - text: |
+      The ISCP requires that changes to the plan be communicated to those on the Incident Response/Contingency Plan Contact List.
+    key: f
+  - text: >
+      The ISCP is available on CivicActions GitHub repository. This repository provides
+      the configuration management capabilities for the ISCP to be protected from
+      unauthorized disclosure and modification.
+    key: g
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CP-3
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The ISCP stipulates that all CivicActions system assigned roles in the Contingency
+      Plan Team are trained in their duties within three months of first being assigned
+      a role in the CP, and then annually thereafter or when changes are required.
+      CivicActions uses the Contingency Plan as described in controls CP-1 and CP-2
+      as a basis for personnel contingency training.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CP-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Real-world tests of the contingency plan will be held at least annually, with
+      supplemental tests (checklist/table-top) as needed for specific scenarios. The
+      ISCP Coordinator is responsible to facilitate annual testing exercises. The
+      testing process for the ISCP includes a review of the ISCP, exercise, and identification
+      of corrective actions and other improvements.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CP-9
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions conducts system user-level information backup in accordance with
+      requirements (at a minimum, incremental backups must be conducted at least weekly
+      and full backups must be conducted at least monthly).
+    key: a
+  - text: |
+      System-level information for the application is replicated and backed up in the same way as user-level information as defined in CP-9(a).
+    key: b
+  - text: |
+      System documentation is backed up from the GitHub repository on a daily basis with a minimum two-week retention period and off-site storage.
+    key: c
+  - text: >
+      CivicActions employees must authenticate prior to being granted access to the
+      GitHub repository. Roles and responsibilities within GitHub determine the proper
+      level of access for the documentation being accessed. The folder structure of
+      GitHub protects though permissions and ownership prohibiting users from accessing
+      unauthorized documentation.
+    key: d
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: CP-10
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The Contingency Plan documents the mechanisms with supporting procedures that
+      allow all system components to be recovered and reconstituted to the system’s
+      original state after a disruption or failure. This original state means that
+      all system parameters (either default or organization- established) are reset,
+      patches are reinstalled, system and security configuration settings are reestablished,
+      system documentation and operating procedures are available, application and
+      system software is reinstalled, information from the most recent backups is
+      available and the system is fully tested.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel an identification
+      and authentication policy that addresses purpose, scope, roles, responsibilities,
+      management commitment, coordination among organizational entities, and compliance;
+      and procedures to facilitate the implementation of the policy and associated
+      controls. This information is maintained by the CivicActions Identification
+      and Authentication (IA) Policy. This document can be found in the CivicActions
+      GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-2 (1)
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions system administrators employ a personal public- key pair for basic
+      access and must originate from a whitelisted IP address. The whitelist is maintained
+      by an Ansible inventory file, the current complete list (includes dev sites)
+      of users with whitelisted IPs is in artifact: None
+
+
+      To access root (sudo) privileges an additional password is required. The passwords
+      are maintained in encrypted form in the Ansible inventory file. The mechanism
+      to enable select users to use a password to obtain root access can be viewed
+      in artifact: None
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      Access to the system is authorized by the System Owner or Project Manager for each role as described in AC-2.
+    key: a
+  - text: >
+      User accounts are assigned a unique identifier in the form of a unique username,
+      password and email address based on the system for allocating user accounts
+      described in AC-2.
+
+
+      In accordance with CivicActions Identification and Authentication (IA) Policy
+      outlined at <https://github.com/CivicActions/compliance-docs>, CivicActions
+      internal users are uniquely identified by the creation of an organizational
+      account with a username based on each user's first and last names.
+    key: b
+  - text: >
+      User accounts are assigned a unique identifier in the form of a unique username,
+      password and email address based on the system for allocating user accounts
+      described in AC-2.
+    key: c
+  - text: Account usernames may not be re-used for at least two years.
+    key: d
+  - text: >
+      All user accounts are required to change their passwords every 90 days. The
+      website will automatically block the accounts of users who fail to change their
+      password within that time period, after which the account may only be unblocked
+      by a website Administrator or CivicActions Operations staff.
+    key: e
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      CivicActions users are required to take appropriate measures in the handling of passwords including:
+
+      - Not transmitting user names and passwords together in an unencrypted format
+      - Not permitting the sending of passwords in an unencrypted format via email
+      - Not listing passwords in tickets
+      - Not writing down or storing passwords in a readable form in any physical or logical location where they may be discoverable by unauthorized persons.
+    key: i
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IA-7
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions systems employ authentication methods consistent with NIST FIPS
+      140-2 requirements. General public access to system web pages does not require
+      cryptographic authentication. Privileged users accessing systems use the public-key
+      cryptographic functionality of Secure Shell (SSH) to encrypt the exchange of
+      information (including the password) between the remote user and the server.
+      Where Transport Layer Security (TLS, aka SSL) is used, cryptographic modules
+      will be configured in accordance with FIPS 140-2.
+    key: j
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel an incident
+      response planning policy that addresses purpose, scope, roles, responsibilities,
+      management commitment, coordination among organizational entities, and compliance;
+      and procedures to facilitate the implementation of the policy and associated
+      controls. This information is maintained in Incident Response (IR) Policy and
+      Procedure that can be found in the CivicActions Compliance Docs GitHub repository
+      at <https://github.com/CivicActions/compliance-docs>.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      All CivicActions employees are required to participate in incident response
+      training, as required by Incident Response Plan changes, and annually. The CivicActions
+      Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>)
+      is the basis for the training and the incident response workflow created by
+      the Security Office. Upon a review of past incidents, the training is updated
+      to ensure processes and workflows are updated.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has implemented an Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>)
+      that explains the process for incident handling and discusses preparation, detection
+      and analysis, containment, eradication, and recovery.
+
+      Preparation activities include all CivicActions team members who are trained
+      in incident response. Detection and monitoring tools providing notification
+      to incident response personnel for analysis and action.
+    key: a
+  - text: >
+      CivicActions' Operations staff and Security Office team members are members
+      of the CivicActions Contingency and Incident Response Plan teams which coordinates
+      activities accordingly through the life of the incident event.
+    key: b
+  - text: >
+      The CivicActions Operations staff and Security Office conduct a post-incident
+      analysis to assist in documenting lessons learned and suggesting changes to
+      improve the incident response process. Tickets created in response to the incident
+      event are reviewed upon completion by the Operations staff and Security Office.
+      Changes to the Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>)
+      require a team review session for approval.
+    key: c
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions utilizes the JIRA ticketing tool for tracking and reporting of
+      incident events from reporting to resolution and post- incident analysis. Initial
+      reporting can come from continuous monitoring tools as well as client and public
+      submissions made to support@civicactions.com. Jira processes the tickets for
+      the public submissions and the CivicActions Support Team creates associated
+      GitHub Issues. Internal incidents reported are processed within the GitHub Issue
+      queue. Details of the handling procedures are included in the CivicActions Incident
+      Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan/#response-process>)
+      Response Process.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-6
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions personnel, as soon as an incident event is detected and/or communicated,
+      are required to report the incident event to the CivicActions Security Office.
+      Methods of detection and/or communication may include one or more of:
+
+
+      - Through continuous monitoring tools (StatusCake, OSSEC, others).
+
+      - As a result of application notifications where CivicActions Security receives
+      notifications (AIDE, OpsGenie, others).
+
+      - Event logging described in AC-2
+
+      - Host-based alerts from the cloud infrastructure or platform.
+    key: a
+  - text: >
+      CivicActions personnel, as soon as the incident event is detected and/or communicated,
+      are required to report the incident event to the CivicActions Security Office.
+    key: b
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-7
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions Help Desk team provides first response assistance to any users
+      of the system. Response time for external reporting of incidents through e-mail
+      is one business day. Internal users are able to request support thought the
+      same process or initiate the incident response workflow. Tickets created in
+      the Jira (customer ticketing system) and GitLab (internal ticketing system)
+      documents all details related to the incident to assist the Incident Response
+      Teams in handling the incident.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: IR-8
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Incident response plays a pivotal role in monitoring, detecting and handling
+      security incidents of the entire information system. CivicActions has developed
+      an Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>)
+      that:
+
+
+      1. Provides CivicActions with procedures and tools required for incident handling;
+
+      2. Describes the structure and organization of the incident response capability;
+
+      3. Provides a high-level approach for how the incident response capability fits
+      into CivicActions and the systems it maintains;
+
+      4. Meets the mission, size, structure, and functions of CivicActions;
+
+      5. Defines reportable incidents;
+
+      6. Provides metrics for measuring the incident response capability and details
+      categorization of incidents in accordance with NIST 800-61;
+
+      7. Defines the roles and responsibilities of CivicActions IR Team;
+
+      8. Is reviewed annually and updated as needed by the CivicActions Security Office,
+      with the assistance of the Incident Response Team.
+    key: a
+  - text: >
+      The CivicActions Incident Response Plan is distributed to all CivicActions team
+      members as part of the CivicActions Handbook (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>).
+       The Incident Response Team includes members from the Security Office,
+       Operations staff, and Drupal Engineering teams.
+    key: b
+  - text: >
+      The CivicActions Security Office and the Incident Response team is responsible
+      for reviewing the Incident Response Plan annually. The entire Incident Response
+      Team will review the plan and update it as necessary. Ultimately, the Security
+      Office has the final say and will approve all updates to the plan.
+    key: c
+  - text: >
+      The CivicActions Security Office is responsible for managing the IR Plan, including
+      annual reviews and updates. The IR Plan is updated to reflect any changes to
+      processes, systems or applications. In addition, any concerns or difficulties
+      encountered during IR Plan implementation, execution, or testing are addressed
+      in an update to the IR Plan.
+    key: d
+  - text: >
+      Modifications to the IR Plan are conducted by the IR team the (CivicActions
+      Security Office, Operations staff and Engineering teams) and communicated to
+      the CivicActions team.
+    key: e
+  - text: >
+      The IR Plan is available in the CivicActions Handbook and is maintained in the
+      CivicActions GitHub repository. GitHub provides the configuration management
+      capabilities for the IR Plan to be protected from unauthorized disclosure and
+      modification.
+    key: f
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: MA-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel a system
+      maintenance policy that addresses purpose, scope, roles, responsibilities, management
+      commitment, coordination among organizational entities, and compliance; and
+      procedures to facilitate the implementation of the policy and associated controls.
+      This information is maintained in the CivicActions Maintenance (MA) Policy and
+      Procedure document that can be found in the CivicActions GitHub repository at
+      <https://github.com/CivicActions/compliance-docs>.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: MA-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      System maintenance is done from remote sites as there is no direct access to
+      the server instances in the AWS cloud; this is the government-approved method
+      of doing business. Approval, QA, and monitoring are conducted by the team performing
+      the specific maintenance.
+    key: a
+  - text: >
+      Remote diagnostics tools, such as OSSEC, AIDE, fail2ban, and OpenSCAP are used
+      to verify the integrity of files, perform log analysis, monitor login attempts
+      and check for rootkits and other vulnerabilities.
+    key: b
+  - text: >
+      All nonlocal maintenance requires the same authentication requirements to perform
+      the maintenance activities to access the system as defined in controls AC-3
+      and IA-2. SSH is used to secure all communications between the remote user and
+      the components located in the AWS cloud.
+    key: c
+  - text: >
+      CivicActions records for nonlocal maintenance is managed through JIRA tickets
+      and the Git issue queue as well as normal system logs. CivicActions administrator
+      activity to the system is also logged through the implementation of the AU-2
+      (Audit Events) and AU-3 (Content of Audit Records).
+    key: d
+  - text: >
+      Any session for internal maintenance activities is terminated when the user
+      completes their session, disconnects from the system, or logs out. In addition,
+      sessions are terminated after 15 minutes of inactivity.
+    key: e
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: MA-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Maintenance of the system and applications can only be performed by personnel
+      designated as having internal administrator privileges and responsibilities.
+      Access rights for the internal administrators are assigned and granted access
+      to perform their specific job responsibilities. All physical maintenance requirements
+      are inherited from AWS.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: MP-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel a media
+      protection policy that addresses purpose, scope, roles, responsibilities, management
+      commitment, coordination among organizational entities, and compliance; and
+      procedures to facilitate the implementation of the policy and associated controls.
+      This information is maintained in CivicActions Media Protection (MP) Policy
+      and Procedure document that can be found in the CivicActions GitHub repository
+      at <https://github.com/CivicActions/compliance-docs>.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PL-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel a system
+      planning policy that addresses purpose, scope, roles, responsibilities, management
+      commitment, coordination among organizational entities, and compliance; and
+      procedures to facilitate the implementation of the policy and associated controls.
+      This information is maintained in the CivicActions Planning (PL) Policy and
+      Procedure document that can be found in the CivicActions GitHub repository at
+      <https://github.com/CivicActions/compliance-docs/>.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PL-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed this system security plan (SSP) for the information
+      system as part of compliance with NIST 800-53 and FIPS 199. The SSP defines
+      the security categorization, system boundary, and security requirements and
+      controls meeting the requirements of the NIST Risk Management Framework (RMF).
+      Specifically the SSP:
+
+
+      1. Is consistent with the organization’s enterprise architecture
+
+      2. Explicitly defines the authorization boundary for the system
+
+      3. Describes the operational context of the information system in terms of missions
+      and business processes
+
+      4. Provides the security categorization of the information system including
+      supporting rationale
+
+      5. Describes the operational environment for the information system and relationships
+      with or connections to other information systems
+
+      6. Provides an overview of the security requirements for the system
+
+      7. Identifies any relevant overlays, if applicable
+
+      8. Describes the security controls in place or planned for meeting those requirements
+      including a rationale for the tailoring decisions
+
+      9. Is reviewed and approved by the authorizing official or designated representative
+      prior to plan implementation
+    key: a
+  - text: >
+      The SSP is reviewed and approved by the authorizing official prior to plan implementation.
+      A copy of the SSP is provided to authorized CivicActions and assessing personnel
+      including the System Owner, Authorizing Official, Information System Security
+      Officer, System/Network Administrator, and the CivicActions Operations staff.
+      The SSP is maintained by the CivicActions Security Office.
+    key: b
+  - text: >
+      The SSP is reviewed at least annually by the System Owner and the CivicActions
+      Operations staff in collaboration with the CivicActions Security Office.
+    key: c
+  - text: >
+      The CivicActions Operations staff in collaboration with the CivicActions Security
+      Office updates the system description and control descriptions within the SSP
+      as needed to verify the SSP is an accurate description of the system.
+    key: d
+  - text: >
+      The SSP is currently available to authorized users on GitLab. Per the Acceptable
+      Use Policy, all entities granted access to CivicActions information assets are
+      required to complete a non-disclosure agreement (NDA) to uphold information
+      confidentiality. GitLab provides the configuration management capabilities for
+      the SSP to be protected from unauthorized disclosure and modification.
+    key: e
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PL-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has created and made readily available to individuals requiring
+      access to the information system the rules that describe their responsibilities
+      and expected behavior with regard to information and information system usage.
+      These rules, defined as the Acceptable Use Policy, are included in the CivicActions
+      Security Policy accessible here: <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy>
+      which has also been uploaded to CSAM as ''Appendix J1 - System Rules of Behavior
+      - Privileged User'' (CivicActions Security Policy 20190226.docx).'
+    key: a
+  - text: >
+      CivicActions HR receives a signed acknowledgment from all employees, indicating
+      that they have read, understand, and agree to abide by the rules of behavior,
+      before authorizing access to information and the information system. The text
+      of the electronically signed (via DocuSign) acknowledgment document has been
+      uploaded to CSAM as artifact: ''CivicActions Security Policy Acknowledgement.docx''
+    key: b
+  - text: |
+      CivicActions reviews the CivicActions Security Policy at least annually and updates as required.
+    key: c
+  - text: >
+      CivicActions requires individuals who have signed a previous version of the
+      CivicActions Security Policy to read and re-sign when any part of it, including
+      the Acceptable Use Policy/Rules of Behavior, is revised/updated.
+    key: d
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PS-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel a personnel
+      security policy that addresses purpose, scope, roles, responsibilities, management
+      commitment, coordination among organizational entities, and compliance; and
+      procedures to facilitate the implementation of the policy and associated controls.
+      This information is maintained in CivicActions Personnel Security (PS) Policy
+      document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PS-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Risk designations are assigned to all CivicActions positions. The CivicActions
+      Office of Human Resources works in coordination with the CivicActions Security
+      Office to assign risk designations.
+    key: a
+  - text: >
+      The CivicActions Office of Human Resources works in coordination with the CivicActions
+      Security Office to establish screening criteria for all CivicActions positions.
+    key: b
+  - text: >
+      At least every three (3) years, the CivicActions Office of Human Resources reviews
+      and revises position risk designations. If the Office of Human Resources determines
+      that significant changes must be made to the position risk descriptions the
+      Office of Human Resources works in coordination with the CivicActions Security
+      Office to implement changes as required.
+    key: c
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PS-3
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Prospective CivicActions employees undergo background checks commensurate with
+      the individual’s job duties, the classification of the information they will
+      access, and the risks associated with the role. At the discretion of the CivicActions
+      Security Office, these checks may also be conducted on contractors and/or third
+      party users in cases where they will have access to application data that is
+      not meant to be consumed by the public. In these instances, the Security Office
+      will instruct the Office of Human Resources to conduct a background check before
+      granting access to the information system.
+    key: a
+  - text: >
+      Rescreening is conducted as required by the individual’s job duties, the classification
+      of the information they will access, and the risks associated with the role.
+      A basic background check is performed for all CivicActions employees.
+    key: b
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PS-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Information system access is terminated immediately upon the voluntary or involuntary
+      departure of an employee. In the case of involuntary departure, in addition
+      to immediate termination of system access, at no point is a departing employee
+      allowed access to any part of the CivicActions infrastructure.
+
+      In the case of voluntary departure, employees are permitted access to the information
+      system for the duration of their offboarding period. The departing employee’s
+      manager is responsible for informing the Information Technology department when
+      the employee offboarding period concludes. At this time system and facility,
+      access is terminated.
+    key: a
+  - text: |
+      The terminated user’s accounts are disabled and all access associated with the individual is revoked.
+    key: b
+  - text: >
+      The employee's manager or the Office of Human Resources conducts exit interviews
+      with all employees who leave CivicActions voluntarily. There is a general discussion
+      about the process of turning in any/all company-issued devices, laptops, etc.
+    key: c
+  - text: >
+      CivicActions employees provide their own equipment that must be hardened to
+      security requirements depending upon their roles and duties. CivicActions supplies
+      two-factor authentication tokens that become the property of the employee.
+
+      Some employees may receive company-issued hardware for working on particular
+      projects. These items are collected before the employee exits CivicActions.
+      In the case of an involuntary termination, the Office of Human Resources works
+      to collect company-issued devices and provides paperwork highlighting confidential
+      protections for customers.
+    key: d
+  - text: >
+      Access to CivicActions information and information systems is always shared
+      so that the termination of an individual will not prevent CivicActions from
+      having access to needed resources.
+    key: e
+  - text: >
+      When a person is terminated, a standard off-boarding process is used to notify
+      management and CivicActions' Operations staff, and to track the process of disabling
+      access to the information system/information system components. The CivicActions
+      Operations staff and Security Office are given at least four hours notice to
+      schedule the deactivation of access upon termination. Deactivation is a manual
+      process that is tracked via a Trello card in order to meet the four hour turnaround
+      time before termination.
+    key: f
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PS-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      When an employee, third party personnel and/or contractor is transferred to
+      a new project or position within CivicActions, they may maintain access to the
+      previous system they were working on in order to facilitate the process of maintenance
+      and knowledge transfer. However, as part of the practices of account management
+      (AC-2) and least privilege (AC-6), regular audits of privileged users are conducted
+      and access privileges may be removed when no longer needed. Additionally, adherence
+      to specific client SLAs may enhance the frequency of such audits or the timeliness
+      of privilege removal during personnel transfer.
+    key: a
+  - text: >
+      When an employee, third party personnel and/or contractor is transferred to
+      a new position within CivicActions and there is a requirement for access change,
+      such access changes are normally completed within five business days.
+    key: b
+  - text: >
+      Access authorizations are modified as needed to coincide with changes in duties
+      or operational needs upon personnel transfer or reassignment.
+    key: c
+  - text: >
+      CivicActions Operations staff is informed of transfers that require access authorization
+      modifications within five business days by the Project Manager, System Owner
+      or Office of Human Resources.
+    key: d
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: PS-8
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The CivicActions Security Office and/or the Office of Human Resources is responsible
+      for determining and enforcing sanctions for failing to comply with established
+      information security policies and procedures. Coaching may be considered prior
+      to sanctions. Sanctions may include but are not limited to written warnings,
+      reduction in system access, demotion, or termination.
+    key: a
+  - text: >
+      When employee sanctions processes are initiated, the Office of Human Resources
+      notifies the respective Project Manager(s) and CivicActions' Security Office
+      within five business days.
+    key: b
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: RA-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel a risk
+      assessment policy that addresses purpose, scope, roles, responsibilities, management
+      commitment, coordination among organizational entities, and compliance; and
+      procedures to facilitate the implementation of the policy and associated controls.
+      This information is maintained in the CivicActions Risk Assessment (RA) Policy
+      and Procedure that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: RA-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions Operations uses vulnerability scanning software to document and
+      determine risks to the system. Operating system and application vulnerability
+      scans include:
+
+
+      - The CivicActions system environment employs the OpenSCAP scanner with the
+      Red Hat STIG baseline to check for vulnerabilities.
+
+      - The CivicActions application environment is tested by the penetration tester
+      OWASP ZAP, an open-source web application security scanner to report on needed
+      updates based on known flaws.
+
+
+      CivicActions Operations has automated the process to perform the scans on a
+      monthly basis. The resulting reports list vulnerabilities and rank them by severity.
+      These reports are stored in Amazon S3 buckets and are used to inform changes
+      to the system and verify that security controls are working correctly. These
+      scans are used to document the current state of the system, and to analyze security
+      trends as changes are made over time.
+    key: a
+  - text: >
+      CivicActions employs the automated vulnerability scanning tools OpenSCAP and
+      OWASP ZAP which are interoperable with standard web browsers, the Open Source
+      Ansible infrastructure provisioning system and other Open Source tools.
+    key: b
+  - text: >
+      The CivicActions Security Office reviews all vulnerabilities identified from
+      automated scans and security assessments. "False positive" findings are documented
+      and may be tailored out. Vulnerabilities found and deemed legitimate are assigned
+      an impact rating and response time thought creation of an issue or ticket. The
+      CivicActions Operations staff reviews current scans and compare with older scans
+      to identify trends and to verify previous vulnerabilities have been mitigated.
+    key: c
+  - text: |
+      Identified and reported vulnerabilities are assigned an impact rating and response time by CivicActions' Security and must be remediated according to the following time requirements:
+
+      - Critical - Within 15 days of discovery (usually within 1 week))
+      - High - Within 30 days of discovery (usually within 1 week))
+      - Moderate - Within 90 days of discovery (usually within 2 weeks)
+      - Low - Within 180 days of discovery
+    key: d
+  - text: >
+      Results of the vulnerability scans and security assessments are shared with
+      all appropriate CivicActions personnel supporting continuous monitoring requirements.
+      CivicActions Security assigns each vulnerability an impact rating and response
+      time through JIRA or the Git issue tool for tracking to the established remediation
+      deadlines listed in RA-5(d).
+    key: e
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SA-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel a system
+      and services acquisition policy that addresses purpose, scope, roles, responsibilities,
+      management commitment, coordination among organizational entities, and compliance;
+      and procedures to facilitate the implementation of the policy and associated
+      controls. This information is maintained by the CivicActions System and Services
+      Acquisition (SA) Policy document that can be found in the CivicActions GitHub
+      repository at <https://github.com/CivicActions/compliance-docs/>.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SA-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions' Security Office, in collaboration with the System Owner, act and/or
+      meet on a pre-determined basis to determine information system security requirements
+      and to develop implementation budgets and plans.
+    key: a
+  - text: >
+      The CivicActions Security Office, in collaboration with the System Owner, determines,
+      designates, documents, and allocates the resources required to protect the system
+      as part of its capital planning and investment control processes.
+    key: b
+  - text: >
+      The annual budget developed by the System Owner includes explicit budgetary
+      line items for FISMA security requirements. Additional security-related expenditures
+      that fall outside of explicit compliance requirements are addressed in sub-lines
+      under the CivicActions Information Technology budget.
+    key: c
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SA-3
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The system and application(s) are managed by CivicActions using the Agile software
+      development methodology, which provides a continuous System Development Life
+      Cycle (SDLC) methodology. CivicActions Agile management continues to improve
+      the software through ongoing planned code releases. The process is overseen
+      by the Change Control Board (CCB) as described in CM-1. Each point release introduces
+      code and configuration changes to the website through the following SDLC methodology:
+
+
+      - Code release planning: A code release ticket is created in the Change Request
+      project of the CivicActions ticketing system which describes the overall goals
+      of the code release. The code release ticket is linked to other tickets in the
+      ticketing system which describe issues to be addressed by the planned code release.
+      Those issues may include bug fixes and feature enhancements as well as upgrades
+      to newer versions of the software packages that have been used to build the
+      website.
+
+      - Sprints: The tickets covered by the planned code release are then implemented
+      through a series of planned sprints, each of which typically lasts two weeks.
+      Each sprint begins with a sprint planning session at which the CCB selects a
+      list of tickets to be implemented. CivicActions Development holds daily coordination
+      meetings throughout the sprint to share information and resolve any problems
+      that may be blocking progress toward completion. At the end of the sprint, a
+      retrospective is performed in which progress is reviewed to determine which
+      issues have been resolved and which need further work.
+
+      - Development/unit testing: Work on each ticket is performed within a separate
+      code branch within the CivicActions Git repository, and tested using the GitLab
+      Runner continuous integration platform. Developers also write unit tests to
+      prove their code behaves as expected and address security considerations such
+      as information leakage, bounds checking, and input validation. Once work on
+      a ticket is completed, the developer creates a merge request, and the changes
+      are submitted to at least one other developer for review to ensure they meet
+      functional requirements and address security considerations before the pull
+      request is merged into the Git repository's development branch for the planned
+      code release.
+
+      - Integration testing: Once all work tickets have been completed, the code and
+      configuration necessary to implement the changes are merged into the website's
+      staging server, where it undergoes additional testing to ensure there are no
+      conflicts between the work that has been done on individual tickets.
+
+      - User acceptance testing (UAT): The code release undergoes manual testing against
+      a checklist of expected site behaviors and options each of the website's defined
+      user roles to further verify that the functional changes work as expected and
+      to identify any changes in user experience that need to be documented in release
+      notes to be shared with the customer.
+
+      - Approval for deployment: After all the planned code release has passed all
+      of the above tests, the code release is scheduled for deployment to production
+      and presented to CivicActions' Change Control Board (CCB) for review and approval.
+
+      - Deployment to production: A full backup of the website is performed immediately
+      prior to the deployment.
+
+      - Security scan: After the deployment to production, the website undergoes a
+      security scan using a web vulnerability scanner.
+
+        Security issues to be addressed in the planned code release may come from
+      a variety of sources:
+
+      - Customer support requests received by the CivicActions Help Desk
+
+      - Security concerns, incidents, and site performance issues reported by users
+
+      - Security incident reports, including server log analysis and root cause analysis
+      of those incidents performed by the CivicActions Security Office and Operations
+      staff
+
+      - Security notifications received by the CivicActions Security Office from external
+      security teams and other software vendors
+
+      - Vulnerabilities detected during security scans of the website performed by
+      the CivicActions Security Office
+
+      - Issues reported by the CivicActions Security Office, Operations staff and
+      Development
+
+      - Security issues reported through continuous monitoring
+    key: a
+  - text: >
+      The CivicActions organization defines and documents information security roles
+      and responsibilities throughout the SDLC. The following teams participate in
+      this process:
+
+
+      - Customer Support: Files tickets when incidents are reported and shares incident
+      reports with customers
+
+      - The CivicActions Security Office: Receives security notifications from the
+      Drupal security team and other software vendors; performs security scans; uses
+      CivicActions JIRA ticketing system to request mitigation of all reported vulnerabilities
+
+      - CivicActions Development: Performs server log analysis when security incidents
+      are reported; assists in root cause analysis
+
+      - Change Control Board: Meets weekly to review and approve upcoming planned
+      code changes to the website, include security-related code releases.
+
+      - AWS Cloud: Monitors server and application events; proactively respond to
+      security incidents, and reports incidents to CivicActions
+
+      - Users: Communicates customer security requirements and expectations, and alerts
+      the CivicActions customer support team whenever it detects a security or site
+      performance issue
+
+
+      Security responsibilities performed by these teams include the following:
+
+
+      - Perform configuration management during information system design, development,
+      implementation, and operation;
+
+      - Implement only organization-approved changes;
+
+      - Document approved changes;
+
+      - Manage and control changes to the system;
+
+      - Fully test all changes, taking into account security considerations as well
+      as other functional requirements;
+
+      - Track security flaws and flaw resolution; and
+
+      - Employ code analysis tools to examine software for common flaws and document
+      the results of the analysis.
+    key: b
+  - text: >
+      Each of the CivicActions teams described in SA-3(b) has a team leader who is
+      responsible for defining the roles and responsibilities of individual personnel
+      members within that team. CivicActions uses role-based management for access
+      and authentication implementation and enforcement.
+    key: c
+  - text: >
+      The CivicActions organization integrates the organizational information security
+      risk management process into system development life cycle activities by requiring
+      that the processes defined in SA-3(a) and (b) above are adhered to by all information
+      system developers and associated security personnel.
+    key: d
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SA-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The CivicActions System and Services Acquisition Policy affects all personnel
+      with purchasing authorization and applies to all purchases or deployments including
+      infrastructure, software or hardware. The CivicActions System and Services Acquisition
+      Policy contains the process for determining acceptance criteria for all system
+      software and application services.
+
+
+      The Acquisition Security Policy includes an assessment that evaluates the product
+      based on the vendor’s security practices, policies, and past performance. It
+      also details the potential maintenance and end-of-life ramifications with regards
+      to security.
+
+
+      The CivicActions Security Office is responsible for determining the security
+      documentation that must be included in the information system or services acquisition
+      contracts.
+
+
+      Configuration and design of the development and production environments are
+      hosted in the CivicActions Git repository. All documentation is strictly controlled
+      regarding transportation and storage in accordance with applicable federal laws,
+      Executive Orders, directives, policies, regulations, standards, guidelines,
+      and organizational mission/business needs.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SA-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Some application features are built on a custom basis and are not part of standard
+      FOSS packages. Administrator documentation for those custom features is maintained
+      in the CivicActions Git repository documentation system.
+    key: a
+  - text: >
+      The publicly-available FOSS package documentation described in control SA-5(a)
+      also includes user documentation for non-administrators as described in control
+      AC-3. This includes documentation on how to create and manage user accounts
+      as well as how to create, update and delete content.
+
+
+      CivicActions follows the user documentation standard practice to provide context-sensitive
+      help as well as access to a Help Desk in publicly facing applications.
+
+
+      The CivicActions Customer Support team, described in control SA-3(b), handles
+      questions about how to use the system. Questions are submitted by sending an
+      email to support@civicactions.com, which triggers the creation of a ticket in
+      the CivicActions customer support ticketing system.
+    key: b
+  - text: >
+      If the information needed to answer a question is not already included in the
+      website's public-facing documentation, a ticket is created to determine whether
+      the question is sufficiently general in nature to warrant adding the answer
+      to the website's documentation.
+    key: c
+  - text: |
+      All administrator documentation is housed in a protected Git repository. User documentation is publicly available.
+    key: d
+  - text: >
+      As needed and approved by the CivicActions Security Office, documentation is
+      available to appropriate personnel by granting access to the private Git repository.
+    key: e
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SA-9
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions does not have any dedicated interconnections between information
+      system components within the authorization boundary and external third-party
+      vendor information systems for the purposes of storing, processing or transmitting
+      federal agency data.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SC-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel a system
+      and communication policy that addresses purpose, scope, roles, responsibilities,
+      management commitment, coordination among organizational entities, and compliance;
+      and procedures to facilitate the implementation of the policy and associated
+      controls. This information is maintained in the CivicActions System and Communications
+      Protection (SC) Policy CivicActions document that can be found in the CivicActions
+      GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SC-13
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      The information system implements:
+
+      - Cryptographic modules through Secure Shell (SSH) to allow administrators to securely logon to the various system components
+      - HTTPS/SSL (TLS) for connection to web-based services
+      - TLS for connection to email services
+      - AES-256 (FIPS 140-2 validated) for data at rest (with Elastic Block Store (EBS) volumes)
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SC-20
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for the following: secure name / address resolution
+      service (authoritative source)
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SC-21
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The system inherits this control from the FedRAMP Provisional ATO granted to
+      the AWS Cloud dated 1 May 2013 for the following: secure name / address resolution
+      service (recursive or caching resolver)
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SC-22
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: ''
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SC-39
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      Process isolation is maintained on the Linux platform. Linux is the only operating system that is part of the boundary.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SI-1
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      CivicActions has developed, documented and disseminated to personnel a system
+      and information integrity policy that addresses purpose, scope, roles, responsibilities,
+      management commitment, coordination among organizational entities, and compliance;
+      and procedures to facilitate the implementation of the policy and associated
+      controls. This information is maintained in the CivicActions System and Information
+      Integrity (SI) Policy document that can be found in the CivicActions GitHub
+      repository at <https://github.com/CivicActions/compliance-docs/>.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SI-2
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Identification of information system security flaws are detected as early as
+      possible by the following methods:
+
+
+      - Vulnerability scans, as described in RA-5.
+
+      - Log analysis from monitoring described in SI-4.
+
+      - Service flaw notifications (CVEs, etc.) are received by the
+        CivicActions Security Office and passed on to
+        CivicActions Operations staff when relevant.
+
+      Any security issues found are ticketed through JIRA and/or the Git issue queue.
+      CivicActions Operations staff prioritizes high findings. Changes made to correct
+      the information system as a result of the system flaws are scheduled and coordinated
+      through the CCB Change Request Process and appropriate approvals required from
+      the CCB as implemented in CM-3.
+    key: a
+  - text: >
+      CivicActions testing of the system as a result of security flaw remediation
+      is done through a development environment through the use of internal software
+      and automated testing that ensures the system is working as intended. When a
+      change is made by a developer, testing though a peer review is conducted as
+      part of the Change Request process to ensure the correct analysis is completed.
+      Then the changed code is tested in an automatic test environment as described
+      in the Configuration Management Plan (CMP). Tracking of the testing is documented
+      in JIRA and/or the Git issue queue.
+    key: b
+  - text: >
+      CivicActions security-software updates are tested prior to implementation on
+      production. The CivicActions Security framework for installation requires updates
+      to be made within 30 days for high vulnerabilities, 90 days for moderate vulnerabilities,
+      and 240 for low vulnerabilities. An issue ticket is created to track any updates
+      made to the system.
+    key: c
+  - text: >
+      Flaw remediation is part of the CivicActions configuration management process.
+      Any security issues found are ticketed through JIRA or the Git issue queue.
+      The CivicActions Security Office prioritizes the high findings within the application.
+      Changes made to correct the system as a result of the system flaws are scheduled
+      and coordinated through the CCB Change Request Process and appropriate approvals
+      required from the CCB Chair as implemented in CM-3.
+    key: d
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SI-3
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      Virus scans are performed by ClamAV, a server-hosted tool protecting the application
+      from Trojans, Viruses and other malicious cyber-threats. Real-time scans are
+      conducted whenever files are uploaded from any external source and malicious
+      code is blocked or quarantined when detected. All file-based traffic traversing
+      the server is sanitized before being delivered. All input form text is validated
+      and sanitized.
+    key: a
+  - text: |
+      Anti-virus definitions and malicious code protection mechanisms are configured and updated automatically on a nightly basis.
+    key: b
+  - text: >
+      CivicActions Operations staff receives information system security alerts, advisories,
+      and notifications in response to malicious code detection. These messages are
+      sent to group email distribution lists to ensure all members of the team receive
+      the proper information in a timely manner.
+    key: c
+  - text: >
+      False positives during malicious code detection and eradication are dealt with
+      on a case by case basis. Potential impacts on the availability of the information
+      system are detailed in a false positive report depending on if the report is
+      for the OS, database or web application.
+    key: d
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SI-4
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      CivicActions systems use a collection of monitoring systems, including:
+
+      - ClamAV - provides signature-based malware detection/quarantine
+      - OSSEC host-based intrusion detection system (HIDS)
+      - AIDE Advanced Intrusion Detection Environment (IDS))
+      - fail2ban, an intrusion prevention system (IPS) framework
+      - SELinux - a Mandatory Access Control (MAC) IPS
+      - auditd - a secure system audit daemon
+      - CloudWatch - AWS monitoring and measurement system
+      - StatusCake - website monitoring tool
+      - OpsGenie - a slack/email/text/phone incident escalation tool
+    key: a
+  - text: >
+      Logs from the systems described in SI-4(a) are sent to the CivicActions SIEM
+      tool for analysis. These logs can identify unauthorized use of the information
+      system.
+    key: b
+  - text: Monitoring and log collection occur throughout the system.
+    key: c
+  - text: >
+      The Configuration Management process, remote log gathering, and SELinux MAC
+      protects information obtained from intrusion-monitoring tools from unauthorized
+      access, modification, and deletion.
+    key: d
+  - text: >
+      In the event of a performance score lower than CivicActions standards, a notification
+      is sent to the CivicActions Security Office. CivicActions subscribes to security
+      mailing lists in the event the monitoring activity is required based on law
+      enforcement information, intelligence information, or other credible sources
+      of information.
+    key: e
+  - text: >
+      Internal legal counsel is utilized as required when system notifications indicate
+      such action based on user and/or malicious activity. Legal counsel is engaged
+      for any actions that may necessitate increased user monitoring or evidence/forensic
+      actions.
+    key: f
+  - text: >
+      System alerts generated by CivicActions internal monitors (StatusCake, OSSEC,
+      ClamAV, others) are sent to the Incident Response team via OpsGenie.
+    key: g
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SI-5
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: |
+      The CivicActions Security Office and Operations staff receive the following security alerts, advisories, and directives on an ongoing basis:
+
+      - Mailing lists relevant to web application security
+      - US-CERT
+      - Technical Cyber Security Alerts
+      - Drupal Security Advisories
+    key: a
+  - text: >
+      CivicActions utilizes StatusCake for front line monitoring for real time system
+      status and events of the application. StatusCake can feed to the OpsGenie incident
+      escalation system.
+    key: b
+  - text: >
+      The CivicActions Security Office disseminates security alerts, advisories, and
+      directives to all CivicActions internal personnel and client personnel as directed.
+    key: c
+  - text: >
+      The CivicActions Security Office is responsible for ensuring the dissemination
+      and implementation of relevant security alerts and advisories.
+    key: d
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
+- control_key: SI-12
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  narrative:
+  - text: >
+      The CivicActions organization retains all information, system-related information,
+      incident-related information, and system output in accordance with customers’
+      requirements retention periods and other NIST guidance and standards, Federal
+      policies, procedures, federal laws, and executive orders. Audit records are
+      retained for 365 days.
+    key: ~
+  references: ~
+  implementation_statuses: ~
+  control_origins: ~
+  parameters: ~
