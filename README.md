@@ -92,10 +92,11 @@ creatematrix
 
 The SSP-Toolkit is currently in an extended format of OpenControl in which each component represents its controls in separate [RMF Control Family](https://nvd.nist.gov/800-53/Rev4) files. Use the [compliance-io](https://github.com/CivicActions/compliance-io) tools to convert the SSP-Toolkit to a [compliance-masonry](https://github.com/opencontrol/compliance-masonry)-friendly OpenControl directory and from that generate an [OSCAL component definition](https://pages.nist.gov/OSCAL/documentation/schema/implementation-layer/component/):
 ```
-poetry add git git+https://github.com/civicactions/compliance-io.git#main
+# You may want to create a python virtual environment for the pip install
+pip install git+https://github.com/civicactions/compliance-io.git@main#egg=complianceio
 mkdir opencontrol oscal
-poetry run python library/defenestrate.py opencontrol.yaml opencontrol
-poetry run python library/oc_to_oscal_components.py opencontrol/opencontrol.yaml > oscal/ssp-toolkit.json
+python library/defenestrate.py opencontrol.yaml opencontrol
+python library/oc_to_oscal_components.py opencontrol/opencontrol.yaml > oscal/ssp-toolkit.json
 ```
 
 See the [compliance-io/README.md](https://github.com/CivicActions/compliance-io/blob/main/README.md) for more information.
