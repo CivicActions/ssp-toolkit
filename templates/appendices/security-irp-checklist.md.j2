@@ -29,7 +29,7 @@ B. Respond accordingly:
 
          - Slack channel [#{{ project.slack_channel }}]({{ project.slack_url }}). Use `@channel` to notify the {{ project.name_short }} team. This may have been automatic via {{ project.pager }} pager alarms.
          - Email to "on call" system admin: {{ project.escalation_mail }}
-         - Email/telephone to [{{ contractor.name_short }}/{{ project.name_short }} IR Team]({{ project.contact_sheet_url }})
+         - Email/telephone to [{{ contractor.name_short }}/{{ project.name_short }} IR Team]({{ project.contact_sheet.url }})
 
     2. For an incident requiring more than 30 minutes to resolve:
 

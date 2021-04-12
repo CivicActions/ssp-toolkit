@@ -28,7 +28,7 @@ satisfies:
 
       The Project Incident Response Plan can be found in the
       CivicActions GitHub repository at
-      <https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>
+      <https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/>
   implementation_status: complete
 - control_key: IR-2
   control_name: INCIDENT RESPONSE TRAINING
@@ -42,7 +42,7 @@ satisfies:
       required to participate in incident response training once the role is
       assumed within 10 days, as required by Project changes,
       and annually. The Incident Response Plan
-      (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) is the basis for the training
+      (<https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/>) is the basis for the training
       and the incident response workflow created by the Security team. Upon a
       review of past incidents, the training is updated to ensure processes and
       workflows are updated.
@@ -110,7 +110,7 @@ satisfies:
   narrative:
   - text: >
       The Project Incident Response Plan
-      (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) includes a comprehensive
+      (<https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/>) includes a comprehensive
       incident response program, which details the implementation of procedures
       and tools required for incident handling. The incident response program
       details the roles and responsibilities of Project/

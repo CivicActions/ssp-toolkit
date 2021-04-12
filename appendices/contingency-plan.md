@@ -4,12 +4,14 @@
 <!--TOC-->
 
 - [Overview](#overview)
-- [Recovery objective](#recovery-objective)
-- [Incident Response Team information](#incident-response-team-information)
-  - [Contact information](#contact-information)
+  - [Preparedness](#preparedness)
+  - [Plan maintenance](#plan-maintenance)
+  - [Recovery objective](#recovery-objective)
+- [Incident Response Team information Contact information](#incident-response-team-information-contact-information)
 - [Contingency plan outline](#contingency-plan-outline)
   - [Activation and notification](#activation-and-notification)
-  - [Recovery](#recovery)
+- [Recovery](#recovery)
+  - [Backup and restore](#backup-and-restore)
   - [Reconstitution](#reconstitution)
 - [External dependencies](#external-dependencies)
   - [GitLab](#gitlab)
@@ -18,7 +20,6 @@
   - [Jira](#jira)
   - [Slack](#slack)
   - [AWS](#aws)
-- [How this document works](#how-this-document-works)
 
 <!--TOC-->
 
@@ -26,28 +27,54 @@
 
 ## Overview
 
-This Contingency Plan provides guidance for the CivicActions Team in the case of trouble delivering our essential mission and business functions because of disruption, compromise, or failure of any Project component. As a general guideline, we consider "disruption" to mean unexpected downtime or significantly reduced service lasting longer than:
+This Contingency Plan provides guidance for the CivicActions Team on delivering our essential mission and business functions follwing a disruption, compromise, or failure of any Project component.
+
+"Disruption" means unexpected downtime or significantly reduced service lasting longer than:
 
 - 30 minutes during standard U.S. business hours (0900-2100 EST, Monday through Friday)
 - 90 minutes at other times
 
-Scenarios might include unexpected downtime of key services, data loss, or improper privilege escalation. In most cases, the robust contingency management capabilities of [AWS Cloud Security](https://aws.amazon.com/security/) coupled with [N2WS CPM backups and disaster recovery](https://n2ws.com/product/aws-disaster-recovery) can resolve/remediate event occurrences.
+Disruption can include unexpected downtime of key services, data loss, or improper privilege escalation. In many cases, the robust contingency management capabilities of [AWS Cloud Security](https://aws.amazon.com/security/) coupled with [N2WS CPM backups and disaster recovery](https://n2ws.com/product/aws-disaster-recovery) will resolve/remediate event occurrences.
 
-In the case of a security incident, and for most events, the [Security Incident Response Plan](security-irp.md) provides guidance for the responding team.
+For a security incident and most events, the [Security Incident Response Plan](security-irp.md) provides guidance for the responding team.
 
-## Recovery objective
+### Preparedness
+
+This plan is most effective if all core CivicActions team members know about it, remember
+that it exists, have opportunities to give input based on their expertise, and keep it up
+to date.
+
+### Plan maintenance
+
+The CivicActions team is responsible for maintaining and updating this
+document as needed. Changes must be approved and peer reviewed by another team member.
+
+- All changes should be communicated to the team.
+- Annually, and after major changes to our systems, we review and update the plan.
+
+The CivicActions team protects this plan from unauthorized modification. This plan is
+stored in the CivicActions GitLab repository
+(https://handbook.civicactions.com/en/latest/100-security/incidents/). Authorization to modify it is limited to the
+Incident Response Team by GitLab access controls. Per CivicActions policy,
+a team member proposes changes by making a pull request and asking another team member to
+review and merge the pull request.
+
+### Recovery objective
+
+Our objective is to recover from any significant problem (disruption, compromise, or
+failure) within 3 hours. Any disruption to Project services lasting more
+than 3 hours during standard U.S. business hours (0900 - 2100 Eastern Time) is considered
+unacceptable.
 
 Short-term disruptions lasting less than 30 minutes are outside the scope of this plan.
 
-More than 3 hours of any Project service being offline during standard U.S. business hours (0900-2100 EST, Monday through Friday) is considered unacceptable. Our objective is to recover from any significant problem (disruption, compromise, or failure) within that span of time.
+## Incident Response Team information Contact information
 
-## Incident Response Team information
+To maintain current and accurate contact information, the contact list is maintained as a
+[private spreadsheet](None) and linked to the the Project
+Contingency Plan. If you require access to the source document, contact the ISO.
 
-### Contact information
 
-Team contact information is available in the Project Google Drive:
-
-- [CivicActions/Project Incident Response Team contact sheet](None) with names and roles for CivicActions and Project Incident Response Team members.
 
 ## Contingency plan outline
 
@@ -69,7 +96,7 @@ The IC first notifies and coordinates with the people who are authorized to deci
 
 The IC keeps a log of the situation in a JIRA Incident ticket; if this is also a security incident, the IC also follows the [security incident communications process](security-irp.md#initiate) which includes updating the CivicActions Slack channel None Slack channel. The IC should delegate assistant ICs for aspects of the situation as necessary.
 
-### Recovery
+## Recovery
 
 The Incident Response Team assesses the situation and works to recover the system. See the list of [external dependencies](#external-dependencies) for procedures for recovery from problems with external services.
 
@@ -77,49 +104,49 @@ If this is also a security incident, the IC also follows the [security incident 
 
 If the IC assesses that the overall response process is likely to last longer than 3 hours, the IC should organize shifts so that each responder works on response for no longer than 3 hours at a time, including handing off their own responsibility to a new IC after 3 hours.
 
-#### Backup and restore
+### Backup and restore
 
 Hourly and daily [snapshots](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Snapshots) are created using the [Cloud Protection Manager (CPM)](https://cpm.project.com/signin/)
 
 - First determine how far back in time to go to obtain a clean backup for restore
 - Restore by using the `Recover` tab for the instance needing restoration
 
-##### The process to recover a downed server
+#### To recover a downed server
 
-Note: _If you terminate the old instance before you begin - volumes should not be deleted by default - then CPM will attempt the re-use the internal "backnet" (172.x.x.x) addresses_
+Note: _Volumes should not be deleted by default. If you terminate the old instance before
+you begin, CPM will attempt the re-use the internal "backnet" (172.x.x.x) addresses_
 
 1. Log in to CPM at: <https://cpm.project.com/signin/>
 
-    a. Determine how far back in time to go to obtain a clean backup for restore.
-
-    b. Click **Recover** on the most recent hourly snapshots previous to issue occurrence.
-
-    c. Click **Instance** of the instance to be recovered.
-
-    d. Click **Recover Instance**.
+   - Determine how far back in time to go to obtain a clean backup for restore.
+   - Click **Recover** on the most recent hourly snapshots previous to issue occurrence.
+   - Click **Instance** of the instance to be recovered.
+   - Click **Recover Instance**.
 
 2. Reset: _(this part needs additional documentation)_
-  - Elastic IPs
-  - Internal backnet addresses (in .ssh/config files) _(unnecessary if backnet preserved)_
-  - System name tags of instances and volumes
-  - Pingdom & OpsGenie alarms _(if they had been disabled)_
 
-##### Disaster recovery (DR)
+   - Elastic IPs
+   - Internal backnet addresses (in .ssh/config files) _(unnecessary if backnet preserved)_
+   - System name tags of instances and volumes
+   - Monitoring alarms _(if they had been disabled)_
+
+#### Disaster recovery (DR)
 
 Go to <https://n2ws.com/support/documentation/10-disaster-recovery-dr> and review the following sections:
 
-- Review:
-
-  - _Performing DR on the N2WS Server (The cpmdata Policy)_
-  - _DR Recovery_, including subsections _DR Instance Recovery_ and _DR of Encrypted Volumes, AMIs and Amazon RDS Instances_
+- Performing DR on the N2WS Server (The cpmdata Policy)
+- DR Recovery
+- DR Instance Recovery
+- DR of Encrypted Volumes, AMIs and Amazon RDS Instances
 
 ### Reconstitution
 
 For reconstitution:
 
 1. The Incident Response Team tests and validates the system as operational.
-2. The Incident Commander declares that recovery efforts are complete and notifies all relevant people.
-3. The Incident Response Team schedules a retrospective in JIRA ticket, and discusses the event. For more detail, see the [security incident retrospective process](security-irp.md#retrospective).
+2. The IC declares that recovery efforts are complete and notifies all relevant people.
+3. The IC schedules a postmortem in the JIRA ticket to discuss the event. This is the 
+   same as the [security incident retrospective process](security-irp.md#retrospective).
 
 ## External dependencies
 
@@ -172,13 +199,3 @@ If needed, you can [manage and create new servers](https://console.aws.amazon.co
 
 In case of a **significant** disruption, after receiving approval from our Authorizing Official, the Contractor's team will deploy a new instance of the entire system to a different region.
 
-
-## How this document works
-
-This plan is most effective if all core CivicActions team members know about it, remember that it exists, have the ongoing opportunity to give input based on their expertise, and keep it up to date.
-
-- The CivicActions team is responsible for maintaining this document and updating it as needed. Any change to it must be approved and peer reviewed by at least another member of the team.
-  - All changes to the plan should be communicated to the rest of the team.
-  - At least once a year, and after major changes to our systems, we review and update the plan.
-- How we protect this plan from unauthorized modification:
-  - This plan is stored in the CivicActions GitLab repository (<https://github.com/compliance/>) with authorization to modify it limited to the Incident Response Team by GitLab access controls. CivicActions policy is that changes are proposed by creating a merge request in GitLab and asking another team member to review the changes and approve the request.

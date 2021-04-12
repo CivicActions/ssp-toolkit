@@ -259,15 +259,4 @@ sections:
       Sections include lessons learned, unanticipated difficulties, staff participation,
       restoration of system backups, description of any permanently lost data, and shut
       down of temporary equipment used for the resumption, recovery, and restoration.
-  contact_info: # Section 7
-    description: >-
-      This section includes all points of contact of positions described in the
-      Continuity of Operations Plan (COOP) and key organizational personnel and contact
-      numbers. the Project incident notification and system and network personnel are
-      available 24x7.
-    list:
-      description: >-
-        To maintain current and accurate contact information, the contact list is maintained as a private Google Spreadsheet and linked to the the Project Contingency Plan. If you require access to either of these living documents, contact the CISO.
-      image:
-        path:
-        alt:
+

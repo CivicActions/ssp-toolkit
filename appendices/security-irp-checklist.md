@@ -1,6 +1,6 @@
 # Project Security Incident Response Procedure Checklist
 
-For more details on any part of the checklist, see the [Security Incident Response Plan](security-irp.md).
+This checklist provides incident response procedures. For more detail, see the [Security Incident Response Plan](security-irp.md).
 
 ## Contents
 <!--TOC-->
@@ -22,11 +22,11 @@ No one's life is in danger.
 
 ## 2. Start documenting
 
-Begin documenting all steps and findings. Documentation makes handoffs and Responder onboarding easier. The Slack channel [#None](None) is recommended because it is most widely accessible, but other [communication channels](security-irp.md#communication-channels) may be used.
+Begin documenting all steps and findings. Documentation makes handoffs and responder onboarding easier. The Slack channel [#None](None) is recommended because it is most widely accessible, but other [communication channels](security-irp.md#communication-channels) may be used.
 
 ## 3. Initiate the response
 
-At this stage, the _First Responder_ is usually working alone, and is also the _Incident Commander_ (IC).
+_At this stage, the _First Responder_ is usually working alone, and is also the _Incident Commander_ (IC)._
 
 A. Allocate 5 minutes and determine whether this event is a potential incident or false alarm.
 
@@ -42,7 +42,7 @@ B. Respond accordingly:
 
     2. For an incident requiring more than 30 minutes to resolve:
 
-         - Recruit additional IR Team Responders via the Slack channel [#None](None).
+         - Recruit additional IR Team responders via the Slack channel [#None](None).
          - Designate an [**Incident Commander**](security-irp.md#incident-commander) and [hand off the IC duties](security-irp.md#explicit-handoff-ceremony).
 
            More information on [incident response roles and responsibilities](security-irp.md#roles-and-responsibilities):
@@ -54,7 +54,7 @@ B. Respond accordingly:
              Use the [_Explicit Handoff Ceremony_](security-irp.md#explicit-handoff-ceremony) when transferring/changing roles.
 
   - **False alarm**
-
+    
     Conclude the incident. Proceed to [_6. Conclude the incident_](#conclude-the-incident).
 
 ## 4. Assess the incident
@@ -78,7 +78,7 @@ _Reminder: Use the [Explicit Handoff Ceremony](#explicit-handoff-ceremony) when 
 
 **Incident Commander responsibilities**
 
-- Post an initial situation report, called a _sitrep_ ([example _sitrep_](security-irp.md#assess)), to the Slack channel [#None](None). Include a descriptive name, and identify the current Incident Commander and Responders.
+- Post an initial situation report, called a _sitrep_ ([example sitrep](security-irp.md#assess)), to the Slack channel [#None](None). Include a descriptive name, and identify the current Incident Commander and Responders.
 - Ensure that a JIRA ticket has been created. This should be done, even if the _First Responder/IC_ manages the incident fully, for example, by simply re-starting a service.
 
 ## 5. Remediate

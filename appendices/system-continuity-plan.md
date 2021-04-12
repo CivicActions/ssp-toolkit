@@ -2,14 +2,14 @@
 
 ## Client The Project
 
-November 2020
+April 2021
 Version 3.4
 
 CivicActions, Inc
 Lafayette, CA
 www.civicactions.com
 
-2020 CivicActions, Inc
+2021 CivicActions, Inc
 All rights reserved.
 
 Information contained in this document is proprietary,
@@ -56,7 +56,7 @@ The purpose of the System Continuity Plan (COOP) is to prepare for and address t
 
 ### 1.2 Plan Information
 
-The COOP is comprised of dynamic action plans to manage information system operational continuity objectives, and generally static policy that is managed by organizational processes. For Project, the majority of the COOP is contained in the action plan, which is captured in the [Project Contingency Plan](https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan) documentation.
+The COOP is comprised of dynamic action plans to manage information system operational continuity objectives, and generally static policy that is managed by organizational processes. For Project, the majority of the COOP is contained in the action plan, which is captured in the [Project Contingency Plan](https://handbook.civicactions.com/en/latest/100-security/contingency-plan/) documentation.
 
 ## 2 Continuity of Operations Plan Overview
 
@@ -228,10 +228,14 @@ Assessments and results of any exercise or real contingency operations will be l
 
 ## 7 Continuity of Operations Plan Contact Information
 
-This section includes all points of contact of positions described in the Continuity of Operations Plan (COOP) and key organizational personnel and contact numbers. the Project incident notification and system and network personnel are available 24x7.
+This section includes all points of contact of positions described in the Continuity of
+Operations Plan (COOP) and key organizational personnel and contact numbers. the Project
+incident notification and system and network personnel are available 24x7.
 
 ### Contact List
 
-To maintain current and accurate contact information, the contact list is maintained as a private Google Spreadsheet and linked to the the Project Contingency Plan. If you require access to either of these living documents, contact the CISO.
+To maintain current and accurate contact information, the contact list is maintained as a
+[private spreadsheet](None) and linked to the the Project
+Contingency Plan. If you require access to the source document, contact the ISO.
 
 

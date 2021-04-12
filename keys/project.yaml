@@ -6,22 +6,31 @@ contact_email: TheProject@example.net
 description:
 client_name: The Client
 client_name_short: Client
-incident_response_plan_url: https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan
-contingency_plan_url: https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan
-acceptable_use_policy_url: https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy
-contact_sheet_url:
+ssp_url: https://handbook.civicactions.com/en/latest/100-security/incidents/
+incident_response_plan_url: https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/
+contingency_plan_url: https://handbook.civicactions.com/en/latest/100-security/contingency-plan/
+acceptable_use_policy_url: https://handbook.civicactions.com/en/latest/030-policies/security/#acceptable-use-policy
 git_repository: https://github.com
-backup_url: https://cpm.project.com/signin/
 slack_link:
 slack_channel:
 slack_url:
 contact_sheet:
+  name:
+  url:
+  image:
+    path: 
+    alt: 
 issue_system: JIRA ticket
 issue_system_url: '[JIRA ticket management system](https://project.atlassian.net/secure/)'
 issue_incident: '[JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident)'
 pager: OpsGenie
 escalation_mail: TheProject@example.com
 backup_snaps: '[CPM snapshots](https://cpm.project.com/)'
+backup_system: Cloud Protection Manager (CPM)
+backup_url: https://cpm.project.com/signin/
+backup_region:
+  name: AWS US-WEST
+  url: https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1
 info_security_policy:
 info_security_policy_url: https://obamawhitehouse.archives.gov/blog/2016/07/26/managing-federal-information-strategic-resource
 info_security_policy_agency: OMB
