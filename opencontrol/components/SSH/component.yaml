@@ -7,7 +7,7 @@ responsible_role: ~
 references: ~
 satisfies:
 - control_key: AC-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -25,7 +25,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AC-6
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: SSH access is provided on a least privilege basis and analyzed on an ongoing

@@ -7,7 +7,7 @@ responsible_role: ~
 references: ~
 satisfies:
 - control_key: AP-1
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: >
@@ -20,7 +20,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AP-2
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: >
@@ -40,7 +40,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AR-1
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: |
@@ -51,7 +51,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AR-2
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: |
@@ -62,7 +62,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AR-3
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: |
@@ -73,7 +73,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AR-4
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: |
@@ -84,7 +84,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AR-5
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: |
@@ -95,7 +95,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AR-6
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: |
@@ -106,7 +106,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AR-7
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: |
@@ -117,7 +117,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AR-8
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: |
@@ -128,7 +128,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: DI-1
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: >
@@ -141,7 +141,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: DI-2
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: >
@@ -154,7 +154,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: DM-1
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: >
@@ -167,7 +167,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: DM-2
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: |
@@ -178,7 +178,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: DM-3
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: |
@@ -189,7 +189,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IP-1
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: >
@@ -202,7 +202,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IP-2
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: >
@@ -215,7 +215,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IP-3
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: >
@@ -228,7 +228,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IP-4
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: >
@@ -241,7 +241,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SE-1
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: |
@@ -252,7 +252,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SE-2
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: |
@@ -263,7 +263,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: TR-1
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: >
@@ -275,7 +275,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: TR-2
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: |
@@ -286,7 +286,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: TR-3
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: >
@@ -298,7 +298,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: UL-1
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: |
@@ -316,7 +316,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: UL-2
-  standard_key: NIST SP 800-53 Revision 4 Privacy
+  standard_key: NIST_SP80053r4_Privacy
   covered_by: []
   narrative:
   - text: |

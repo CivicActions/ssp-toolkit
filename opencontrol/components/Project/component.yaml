@@ -7,7 +7,7 @@ responsible_role: ~
 references: ~
 satisfies:
 - control_key: AC-1
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -27,7 +27,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AC-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -88,7 +88,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AC-3
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -105,7 +105,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AC-7
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -119,7 +119,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AC-8
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -165,7 +165,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AC-14
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -179,7 +179,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AC-17
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -196,7 +196,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AC-22
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -236,7 +236,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AT-1
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -254,7 +254,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AT-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -285,7 +285,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AT-3
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -309,7 +309,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AT-4
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -328,7 +328,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AU-1
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -345,7 +345,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AU-8
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: |
@@ -356,7 +356,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: CA-1
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -373,7 +373,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: CA-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -400,7 +400,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: CA-5
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: |
@@ -411,7 +411,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: CA-6
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -429,7 +429,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: CM-1
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -444,7 +444,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: CM-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -462,7 +462,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: CM-4
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -481,7 +481,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: CM-6
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -516,7 +516,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: CM-7
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: |
@@ -533,7 +533,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: CP-1
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -552,7 +552,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: CP-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -567,7 +567,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-1
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -584,7 +584,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-2 (1)
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: |
@@ -595,7 +595,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-2 (12)
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: |
@@ -606,7 +606,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-5
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -669,7 +669,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-5 (1)
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -682,7 +682,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-5 (11)
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: |
@@ -693,7 +693,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-8 (1)
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: |
@@ -704,7 +704,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-8 (2)
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: |
@@ -715,7 +715,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-8 (3)
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: |
@@ -726,7 +726,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-8 (4)
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: |
@@ -737,7 +737,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IR-1
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -767,7 +767,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IR-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -784,7 +784,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IR-4
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -811,7 +811,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IR-5
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -825,7 +825,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IR-6
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -841,7 +841,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IR-8
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -861,7 +861,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: MA-1
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -883,7 +883,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: MA-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: |
@@ -900,7 +900,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: MA-5
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -914,7 +914,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: MP-1
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -927,7 +927,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: PL-1
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -949,7 +949,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: PL-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -969,7 +969,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: PL-4
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1001,7 +1001,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: PS-1
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1020,7 +1020,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: PS-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1054,7 +1054,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: PS-3
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1073,7 +1073,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: PS-4
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1099,7 +1099,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: PS-5
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1125,7 +1125,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: PS-6
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: |
@@ -1145,7 +1145,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: PS-7
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1173,7 +1173,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: PS-8
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1191,7 +1191,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: RA-1
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1217,7 +1217,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: RA-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1243,7 +1243,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: RA-3
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1281,7 +1281,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: RA-5
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1296,7 +1296,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SA-1
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: |
@@ -1309,7 +1309,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SA-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1342,7 +1342,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SA-3
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1356,7 +1356,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SA-4
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1379,7 +1379,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SA-4 (10)
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1398,7 +1398,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SA-5
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1426,7 +1426,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SA-9
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1444,7 +1444,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SC-1
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1460,7 +1460,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SC-5
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1475,7 +1475,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SC-7
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1491,7 +1491,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SC-12
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1507,7 +1507,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SC-15
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: |
@@ -1519,7 +1519,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SI-1
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1541,7 +1541,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SI-5
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -1554,7 +1554,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SI-12
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >

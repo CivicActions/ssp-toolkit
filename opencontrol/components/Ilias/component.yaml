@@ -7,7 +7,7 @@ responsible_role: ~
 references: ~
 satisfies:
 - control_key: AC-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -35,7 +35,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AC-3
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -53,7 +53,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AC-8
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: System Use Notification is inherited from the Project.
@@ -63,7 +63,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AC-14
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: The anonymous user role has the least access to the site of all roles. The
@@ -74,7 +74,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AU-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -132,7 +132,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AU-3
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -160,7 +160,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: CA-7
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: CivicActions follows recommendations and best practices developed by the
@@ -176,7 +176,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: CM-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -200,7 +200,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: CM-8
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -226,7 +226,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: CM-10
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: Ilias is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These
@@ -238,7 +238,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-4
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: Upon account creation, the Ilias software assigns each user account a unique
@@ -262,7 +262,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-5
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -319,7 +319,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-5 (1)
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -361,7 +361,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-6
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: Feedback of authentication information is obscured during the authentication
@@ -374,7 +374,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-7
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: All Ilias passwords are encrypted in storage, using the SHA-512 hashing
@@ -387,7 +387,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SA-5
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -425,7 +425,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SC-5
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: Ilias has a manual ability to block IP addresses in cases where attacks
@@ -436,7 +436,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SC-7
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: Ilias, when deployed on SELinux in full enforcing mode, minimizes the number
@@ -450,7 +450,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SI-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: Ilias contains built-in security status monitoring of the core application
@@ -461,7 +461,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SI-5
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: CivicActions Security and Operations receive Ilias Security Advisories on

@@ -7,7 +7,7 @@ responsible_role: ~
 references: ~
 satisfies:
 - control_key: AC-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: |
@@ -37,7 +37,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AC-3
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -54,7 +54,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AC-7
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: Drupal can be configured to lock an account after a specified number of
@@ -72,7 +72,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AC-14
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -84,7 +84,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AU-2
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -142,7 +142,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: AU-3
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: |
@@ -162,7 +162,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: CA-7
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -180,7 +180,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-2 (1)
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -193,7 +193,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-4
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -220,7 +220,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-5
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -276,7 +276,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-5 (1)
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -316,7 +316,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-6
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -330,7 +330,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: IA-7
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
@@ -344,7 +344,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SC-5
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: Drupal has a manual ability to block IP addresses in cases where attacks
@@ -355,7 +355,7 @@ satisfies:
   control_origins: ~
   parameters: ~
 - control_key: SC-7
-  standard_key: NIST SP 800-53 Revision 4
+  standard_key: NIST_SP80053r4
   covered_by: []
   narrative:
   - text: >
