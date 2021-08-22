@@ -1,0 +1,8 @@
+schema_version: "1.0.0"
+name: Contractor Responsibilities
+metadata:
+  description: Contractor Responsibilities
+  maintainers:
+    - CivicActions
+components:
+  - ../Contractor

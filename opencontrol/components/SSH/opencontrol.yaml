@@ -1,0 +1,8 @@
+schema_version: "1.0.0"
+name: Secure Shell (SSH)
+metadata:
+  description: Secure Shell (SSH)
+  maintainers:
+    - CivicActions
+components:
+  - ../SSH

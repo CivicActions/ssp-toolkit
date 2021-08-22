@@ -1,0 +1,53 @@
+{
+  "component-definition": {
+    "uuid": "aabe8726-ac4c-4b12-8bbf-2076c5ed6452",
+    "metadata": {
+      "title": "Secure Shell (SSH)",
+      "published": "2021-08-22T19:52:04.708680+00:00",
+      "last-modified": "2021-08-22T19:52:04.708685+00:00",
+      "version": "unknown",
+      "oscal-version": "1.0.0"
+    },
+    "components": [
+      {
+        "uuid": "74e9909f-4748-418e-bf9e-7aefe348d5fd",
+        "type": "software",
+        "title": "SSH",
+        "description": "SSH",
+        "control-implementations": [
+          {
+            "uuid": "c36f3287-1696-4613-a1e3-d72c2f3ce68a",
+            "source": "NIST_SP80053r4",
+            "description": "NIST_SP80053r4",
+            "implemented-requirements": [
+              {
+                "uuid": "cf0a5154-d379-4b81-b33c-97faa844cda6",
+                "control-id": "ac-2",
+                "description": "ac-2 statements",
+                "statements": [
+                  {
+                    "statement-id": "ac-2_smt.a",
+                    "uuid": "fc3fc96f-3a9f-4bb9-8ba4-34ec0634b3b5",
+                    "description": "Operations, in collaboration with the Security Office, will set up privileged accounts accounts for the following roles:\n- Developer - user level account that has access to application features and sanitized databases\n- System Administrator - user accounts that enjoy full system administrator (`sudo`) access"
+                  }
+                ]
+              },
+              {
+                "uuid": "d8524a12-5089-45c4-88c9-44970d24dea6",
+                "control-id": "ac-6",
+                "description": "ac-6 statements",
+                "statements": [
+                  {
+                    "statement-id": "ac-6_smt",
+                    "uuid": "692b24a7-0bdb-45ee-98ab-f6251fc70635",
+                    "description": "SSH access is provided on a least privilege basis and analyzed on an ongoing basis, at least quarterly. Findings related to these audits of accounts are reported and reviewed by the Security Office and evaluated to determine roles that need to be revoked."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
