@@ -1,1496 +1,1174 @@
 {
   "component-definition": {
-    "uuid": "bce1644b-efe0-46c1-a6c6-8d0ac78b2da0",
+    "uuid": "ccf8d48b-555d-4ba0-b624-7b7caf099a51",
     "metadata": {
       "title": "Contractor Responsibilities",
-      "published": "2021-08-22T19:50:36.741881+00:00",
-      "last-modified": "2021-08-22T19:50:36.741885+00:00",
+      "published": "2021-09-03T22:02:52.782251+00:00",
+      "last-modified": "2021-09-03T22:02:52.782255+00:00",
       "version": "unknown",
       "oscal-version": "1.0.0"
     },
     "components": [
       {
-        "uuid": "d7857fcd-d303-486b-b0c2-48c56e62e9c1",
+        "uuid": "6708fec3-9870-49b1-b11a-aea2c3587cce",
         "type": "software",
         "title": "CivicActions",
         "description": "CivicActions",
         "control-implementations": [
           {
-            "uuid": "37157e9c-cd09-4fbf-a9ac-57b7ff477aab",
-            "source": "NIST_SP80053r4",
+            "uuid": "3b819f98-4fd2-423f-ae5e-005f5b10e1dd",
+            "source": "https://raw.githubusercontent.com/usnistgov/oscal-content/master/nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_catalog.json",
             "description": "NIST_SP80053r4",
             "implemented-requirements": [
               {
-                "uuid": "ffa70515-7134-4021-80ec-1ab39258d20e",
+                "uuid": "98b4640a-8bd0-46b5-8167-91a15473443c",
                 "control-id": "ac-1",
-                "description": "ac-1 statements",
-                "statements": [
-                  {
-                    "statement-id": "ac-1_smt",
-                    "uuid": "30136e96-4527-4efc-a7e5-2a4d27966825",
-                    "description": "CivicActions has developed, documented and disseminated to personnel an access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Access Control (AC) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>."
-                  }
-                ]
+                "description": "CivicActions has developed, documented and disseminated to personnel an access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Access Control (AC) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>."
               },
               {
-                "uuid": "8419bf34-21a6-4c65-a5df-be71f8dfcd2c",
+                "uuid": "6ed35f63-8b1a-46a9-86c7-8f1a9884b411",
                 "control-id": "ac-2",
-                "description": "ac-2 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ac-2_smt.b",
-                    "uuid": "f0a8ea58-10a8-4a25-b190-2d41688145fb",
+                    "uuid": "7a065e6b-614d-41e7-96f1-554f23c94306",
                     "description": "The CivicActions Project Manager assigns the \"administrator\" role for the management of all accounts issued to internal admin roles supporting the information system.  Account requests are initiated by the Project Manager by completing a ticket request and the CivicActions Operation staff manages the account creation process."
                   },
                   {
                     "statement-id": "ac-2_smt.d",
-                    "uuid": "9250df45-de5b-4c97-9074-006533d83697",
+                    "uuid": "131d628d-9cac-41ca-a364-d4cf4e4febae",
                     "description": "All accounts issued for application administrators and SSH are documented in CivicActions' ticketing system. Account request tickets contain details that explain the attributes for the account including authorized users of Drupal, system infrastructure, group and role membership, and access authorizations."
                   },
                   {
                     "statement-id": "ac-2_smt.e",
-                    "uuid": "3cc0776e-e611-4359-80fb-a6375e0b2105",
+                    "uuid": "099f0c55-61e1-409e-bc8a-669ed655ebca",
                     "description": "All accounts issued for the admin management of Application or SSH access must be approved by the System Owner or Project Manager who must create an account request. The CivicActions Operations staff applies appropriate account permissions and settings based on the job role and function documented within the request ticket using processes defined by the CivicActions' Security Office."
                   },
                   {
                     "statement-id": "ac-2_smt.f",
-                    "uuid": "b10daa89-9a93-446a-ae37-662dd2e52a12",
+                    "uuid": "1045c59f-4e70-4fdf-8fa0-c3ead9bb55e4",
                     "description": "CivicActions Operations staff is responsible for the following account management activities for both internal administrative users and customer accounts:\n\n- Establishing account justification\n- Activating accounts\n- Modifying accounts\n- Expiring accounts\n- Disabling accounts\n- Removing accounts"
                   },
                   {
                     "statement-id": "ac-2_smt.g",
-                    "uuid": "106e79fb-6c5f-4611-a064-0676fbddb49a",
+                    "uuid": "d2a7ccc1-d478-4fa3-99bc-fc4ea7de0ffe",
                     "description": "All CivicActions systems log the usage of information accounts."
                   },
                   {
                     "statement-id": "ac-2_smt.h",
-                    "uuid": "b8cf273d-1bc0-441d-b3e9-0941b22987cd",
+                    "uuid": "5da5d1b8-2180-4d0b-9552-cdfca3452ded",
                     "description": "In accordance with the CivicActions Access Control (AC-01) Policy when an account is no longer required, the Project Manager notifies the Operations Team to immediately disable all access. Users upon reassignment, change in roles, termination, or leaving employment are initially removed from all roles and groups, effectively denying them all access to privileged accounts."
                   },
                   {
                     "statement-id": "ac-2_smt.i",
-                    "uuid": "1a0d603a-53e5-447b-9ea6-baeb4dfe5437",
+                    "uuid": "5bb12697-f2b5-4b9f-be3d-383b6afbc5fb",
                     "description": "System accounts require access authorizations prior to accounts being created. The Project Manager must initiate an access request for an account to be created. CivicActions Operations staff reviews the request to ensure accuracy, including intended system usage and other attributes of the user access being requested."
                   },
                   {
                     "statement-id": "ac-2_smt.j",
-                    "uuid": "a101cb47-2144-4567-b2b3-ebb9b4a1d4b1",
+                    "uuid": "29d6a2ed-ac0e-4acb-a0ec-b9de9c8afbd1",
                     "description": "All privileged accounts are reviewed by CivicActions Operations staff every 180 days."
                   },
                   {
                     "statement-id": "ac-2_smt.k",
-                    "uuid": "0841404b-2069-44cf-adae-af4e5c590250",
+                    "uuid": "948887ad-4e4c-410c-9977-68680b938680",
                     "description": "In accordance with standard security best practices and CivicActions policy, shared and reissued accounts for internal accounts of any kind are not created nor used for any purpose in any system."
                   }
                 ]
               },
               {
-                "uuid": "50e8c925-39b1-4187-83d5-d0e9e84bbafb",
+                "uuid": "7569f8df-6505-4e65-ae7b-55091607b9a1",
                 "control-id": "ac-17",
-                "description": "ac-17 statements",
-                "statements": [
-                  {
-                    "statement-id": "ac-17_smt",
-                    "uuid": "bad03476-088d-48d9-8d2a-18c902374555",
-                    "description": "The CivicActions Access Control (AC) policy defines policy for remote usage restrictions. The Project Manager or System Owner may additionally provision users according to their Access Control policies."
-                  }
-                ]
+                "description": "The CivicActions Access Control (AC) policy defines policy for remote usage restrictions. The Project Manager or System Owner may additionally provision users according to their Access Control policies."
               },
               {
-                "uuid": "6fc9b128-bae2-466a-950a-6ca2b869117f",
+                "uuid": "13ea3aa4-608a-4689-8e43-6d573926d1d1",
                 "control-id": "ac-18",
-                "description": "ac-18 statements",
-                "statements": [
-                  {
-                    "statement-id": "ac-18_smt",
-                    "uuid": "bf369e28-a04f-43bf-9264-0aea67756801",
-                    "description": "This control is not applicable. The system does not provide wireless access points."
-                  }
-                ]
+                "description": "This control is not applicable. The system does not provide wireless access points."
               },
               {
-                "uuid": "e5992b18-5f97-48ae-b1aa-20e73e83b71e",
+                "uuid": "5ec65108-de0a-47bb-8101-4367d776ee7f",
                 "control-id": "ac-19",
-                "description": "ac-19 statements",
-                "statements": [
-                  {
-                    "statement-id": "ac-19_smt",
-                    "uuid": "934a43f8-36b3-4925-bdff-ed86ddb2e085",
-                    "description": "This control is not applicable. The system does not maintain a facility in which mobile device access limitations are required."
-                  }
-                ]
+                "description": "This control is not applicable. The system does not maintain a facility in which mobile device access limitations are required."
               },
               {
-                "uuid": "1f83e417-8383-4bd3-9eb3-93f9964b2849",
+                "uuid": "adbb3eb0-b3a4-4c85-b5f8-c3ffb8e323f0",
                 "control-id": "ac-20",
-                "description": "ac-20 statements",
-                "statements": [
-                  {
-                    "statement-id": "ac-20_smt",
-                    "uuid": "ee1fc050-68f2-4b76-9acf-9b3182d07786",
-                    "description": "This control is not applicable. The system does not connect with external information systems."
-                  }
-                ]
+                "description": "This control is not applicable. The system does not connect with external information systems."
               },
               {
-                "uuid": "d82a46f2-81ee-4736-9c85-d498cf0eac8d",
+                "uuid": "64f56edf-24b4-4a6f-a425-fabbd65c1c67",
                 "control-id": "at-1",
-                "description": "at-1 statements",
-                "statements": [
-                  {
-                    "statement-id": "at-1_smt",
-                    "uuid": "3078d7c3-3ba1-4394-89f5-c0db1d5591de",
-                    "description": "CivicActions has developed, documented and disseminated to personnel awareness and training policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Awareness and Training (AT) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>."
-                  }
-                ]
+                "description": "CivicActions has developed, documented and disseminated to personnel awareness and training policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Awareness and Training (AT) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>."
               },
               {
-                "uuid": "3287c721-429e-4a8b-b644-a5904ad8eadd",
+                "uuid": "673f6db6-41ac-4043-8e2c-22a4e3e4ff3a",
                 "control-id": "at-2",
-                "description": "at-2 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "at-2_smt.a",
-                    "uuid": "2ac68949-9fc7-4653-90b4-2991a5f871d7",
+                    "uuid": "12d40c74-29cf-4654-9e06-561a4e4087b9",
                     "description": "Both regular and ad hoc training to all CivicActions personnel, including those who support the system infrastructure and applications, is provided. All employees and contractors must complete Security Awareness training upon being hired and at least annually thereafter. CivicActions Operations staff will not create accounts for individuals until they have successfully completed the trainings. Additional training will be provided as required by system changes. Training takes the following forms:\n\nAnnual Knowledge Survey (i.e., Security Awareness Training): All employees are required to review trainings covering Security Awareness. After the training, a survey-style security awareness test is taken by employees. All CivicActions personnel are required to complete and pass the survey, and new employees are required to pass before being granted access to the Information System. In order to successfully pass the test, a score of 80% is required. This survey tests CivicActions personnel\u2019s knowledge of critical security subjects, policies and procedures. Results from this survey are compiled by the Office of Human Resources and used to refine future training efforts.\n\nAd Hoc Security Awareness: The CivicActions' Security Office oversees the approximately bi-monthly distribution of security awareness tips and articles to all CivicActions employees. This can include general tips as well as articles tailored to the specific requirements of CivicActions users."
                   },
                   {
                     "statement-id": "at-2_smt.b",
-                    "uuid": "5f16722f-42e0-42c4-9a2a-5bc523027b20",
+                    "uuid": "ea3064bc-fdfc-4e99-a833-72e535738b68",
                     "description": "In the event of a major system change, the Project Manager is responsible for delivering additional training to impacted personnel. Specific training types, mediums, and delivery methods are dependent upon the nature of the system change."
                   },
                   {
                     "statement-id": "at-2_smt.c",
-                    "uuid": "9087286b-3131-4bf2-9402-591971d7b765",
+                    "uuid": "4e154af6-988e-42be-9a7c-3da13f25de92",
                     "description": "CivicActions provides annual security awareness training to its personnel."
                   }
                 ]
               },
               {
-                "uuid": "a4998aa9-5071-4630-8365-a27ad9ec7d6e",
+                "uuid": "9b90bc4d-3b28-4a94-a219-f470d3fb0e07",
                 "control-id": "at-3",
-                "description": "at-3 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "at-3_smt.a",
-                    "uuid": "c5eea665-3d2a-4e54-8d05-9133d76765d2",
+                    "uuid": "1d7a128d-23d5-4513-a9ea-d8586fc32d0f",
                     "description": "CivicActions personnel with security responsibilities are required to complete role-based security training before being provided with access to the information system. The CivicActions' Security Office is responsible for creating the content of the training. The role-based training is provided and tracked by the CivicActions Security Office."
                   },
                   {
                     "statement-id": "at-3_smt.b",
-                    "uuid": "9b0e93b3-03fc-4fd7-952e-6fa53d75bee4",
+                    "uuid": "20f1e62d-f552-48b6-b4e8-80347b38bd44",
                     "description": "The Project Manager in collaboration with CivicActions Security Office determines whether a change to the information system requires any modifications and updates to the security awareness training program and if so, works with the CivicActions' Security Office to implement the change."
                   },
                   {
                     "statement-id": "at-3_smt.c",
-                    "uuid": "7dd90bad-eae7-41a6-8238-5a020672a765",
+                    "uuid": "5d55e967-d78b-4c8f-aff1-0cecdc67dc67",
                     "description": "CivicActions Security Office provides users with security responsibilities role-based security training on an annual basis. The training is provided and tracked by the CivicActions Security Office."
                   }
                 ]
               },
               {
-                "uuid": "549006c3-0b98-4dcd-9cef-8d00e088d516",
+                "uuid": "acad1614-6b6a-4284-ac9a-17810b7a8d22",
                 "control-id": "at-4",
-                "description": "at-4 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "at-4_smt.a",
-                    "uuid": "3c4a812d-2873-4dca-ba03-36221de4b63a",
+                    "uuid": "45ffa8a9-10f9-483a-a09f-197be80b3773",
                     "description": "The CivicActions' Security Office tracks all security awareness training within the organization and ensures that all employees have successfully completed training when required. The training records are stored and tracked in a spreadsheet maintained by the CivicActions Security Office."
                   },
                   {
                     "statement-id": "at-4_smt.b",
-                    "uuid": "cc14ea81-139c-4342-b02d-29bd4d1a7651",
+                    "uuid": "da07ea67-bc29-46c0-a767-58d04b558ce3",
                     "description": "Training records are tracked and maintained by the CivicActions Security Office. Records are maintained permanently."
                   }
                 ]
               },
               {
-                "uuid": "5f13a888-cb2e-4c0d-b946-c34ee342ec8e",
+                "uuid": "48eac5ce-1d48-4c4d-b957-9e93138c48fa",
                 "control-id": "au-1",
-                "description": "au-1 statements",
-                "statements": [
-                  {
-                    "statement-id": "au-1_smt",
-                    "uuid": "873c142e-aa5d-43fb-8c21-23d2ec2f1938",
-                    "description": "CivicActions has developed, documented and disseminated to personnel an audit and accountability policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Audit and Accountability (AU) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>."
-                  }
-                ]
+                "description": "CivicActions has developed, documented and disseminated to personnel an audit and accountability policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Audit and Accountability (AU) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>."
               },
               {
-                "uuid": "e8e0ac56-492c-45bd-9410-2179ed75580b",
+                "uuid": "bc320e93-9d4b-4f06-99c1-23e4d40dbaad",
                 "control-id": "au-2",
-                "description": "au-2 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "au-2_smt.a",
-                    "uuid": "7e162f42-016e-4be2-9640-4c6ef769db19",
+                    "uuid": "c50db248-e489-4882-897e-ed3a12157780",
                     "description": "CivicActions' Security Policy provides information about auditing and logging of CivicActions internal users and end-user activity on the servers and within the system application."
                   },
                   {
                     "statement-id": "au-2_smt.b",
-                    "uuid": "1757d349-be6f-4caf-bab7-145067dc0f7e",
+                    "uuid": "cf7f4f4d-0649-454f-87c9-841288273caf",
                     "description": "Auditable events may change due to changes in the threat environment. CivicActions teams collaborate internally and also communicate with customers and partner organizations to identify and select auditable events. The teams that participate in this process are described in control SA-3(b)."
                   }
                 ]
               },
               {
-                "uuid": "ecea4299-5cd9-47fb-8475-abae14181761",
+                "uuid": "2ed67ce8-4031-49ea-875d-457426600739",
                 "control-id": "au-4",
-                "description": "au-4 statements",
-                "statements": [
-                  {
-                    "statement-id": "au-4_smt",
-                    "uuid": "b471bf13-f067-4e46-884a-1781c8429af0",
-                    "description": "CivicActions ensures adequate storage capability requirements listed in AU-11 for all events from the application, database, and hosting environment."
-                  }
-                ]
+                "description": "CivicActions ensures adequate storage capability requirements listed in AU-11 for all events from the application, database, and hosting environment."
               },
               {
-                "uuid": "a39462f9-0b35-419d-a62f-5a6b12d79712",
+                "uuid": "bee960a5-00ab-4401-9748-fcbc1db7b946",
                 "control-id": "au-5",
-                "description": "au-5 statements",
-                "statements": [
-                  {
-                    "statement-id": "au-5_smt",
-                    "uuid": "fa21b111-f515-474c-a320-c47f42ec1a20",
-                    "description": "When notified (e.g., via CloudWatch) of an auditing failure, CivicActions Operations staff will review the causes and take corrective action."
-                  }
-                ]
+                "description": "When notified (e.g., via CloudWatch) of an auditing failure, CivicActions Operations staff will review the causes and take corrective action."
               },
               {
-                "uuid": "9f978161-a386-4af0-a4a2-47b88ebfc311",
+                "uuid": "b73f0378-5b1b-407e-91b3-fc84e7bd537a",
                 "control-id": "au-6",
-                "description": "au-6 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "au-6_smt.a",
-                    "uuid": "d5847fed-b146-4a75-a095-3a84d6a78286",
+                    "uuid": "eaad9f60-a682-4496-8106-2f54da5ef0b3",
                     "description": "CivicActions security audit data is collected by the AWS CloudWatch monitoring and observability service to support real time and after-the-fact investigation at the application level for the following:\n\n- Indications of inappropriate or unusual activity\n- Assurance that logging is functioning properly\n- Adherence to logging standards identified in this procedure"
                   },
                   {
                     "statement-id": "au-6_smt.b",
-                    "uuid": "c085ef20-a99e-434e-89af-5edab70c98f1",
+                    "uuid": "9537bda3-147a-4b5c-9876-2445ff4064d1",
                     "description": "Any significant findings observed during the inspection are reported to CivicActions' Security Office. If these are considered to constitute a security incident, then the Incident Response process is invoked as described in the implementation of the Incident Response Plan (IR-8)."
                   }
                 ]
               },
               {
-                "uuid": "ba808d34-6b35-47fe-ac7f-74dac6462e29",
+                "uuid": "0c6122c2-6e4d-4dce-a254-845d1173b2b2",
                 "control-id": "au-9",
-                "description": "au-9 statements",
-                "statements": [
-                  {
-                    "statement-id": "au-9_smt",
-                    "uuid": "6aa9cc9d-6810-44d8-a0e3-581adff2d515",
-                    "description": "CivicActions ensures that audit logs are created, stored and maintained. Developers who have been assigned as members of the CivicActions Security Office are the only CivicActions personnel with logical permission to access and review audit logs."
-                  }
-                ]
+                "description": "CivicActions ensures that audit logs are created, stored and maintained. Developers who have been assigned as members of the CivicActions Security Office are the only CivicActions personnel with logical permission to access and review audit logs."
               },
               {
-                "uuid": "148c8b59-0b3d-4a39-bd6e-2dac8ac26e19",
+                "uuid": "6b6c426c-1005-4e35-a0e5-45f8d6f79a7e",
                 "control-id": "au-11",
-                "description": "au-11 statements",
-                "statements": [
-                  {
-                    "statement-id": "au-11_smt",
-                    "uuid": "a4f0c4cf-7160-43c3-894f-e64503212f5e",
-                    "description": "CivicActions audits events from the application, database, and hosting environment, and retains these records for at least 180 days."
-                  }
-                ]
+                "description": "CivicActions audits events from the application, database, and hosting environment, and retains these records for at least 180 days."
               },
               {
-                "uuid": "e60d8d19-2176-4651-932e-d4677a879d86",
+                "uuid": "ff0c2873-2334-493b-9d78-1413841884db",
                 "control-id": "au-12",
-                "description": "au-12 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "au-12_smt.a",
-                    "uuid": "0de69a43-243f-4928-90fb-f4812d38b157",
+                    "uuid": "737e842f-afb9-475a-87da-cc2df70843e3",
                     "description": "CivicActions ensures audit records are generated for its web and event logs as required in AU-2 and AU-3 for servers, application, database, and network components."
                   },
                   {
                     "statement-id": "au-12_smt.b",
-                    "uuid": "84bfd5e0-2bc9-4ae3-9cf3-f028016ae4cd",
+                    "uuid": "3786f7fb-b36e-4229-aed3-7b4fdc51d875",
                     "description": "The selected auditable events described in AU-2 are coordinated by CivicActions internal admins and client security/operations officers for each component of the production system."
                   },
                   {
                     "statement-id": "au-12_smt.c",
-                    "uuid": "e2bbc812-10de-4a31-b761-31c0bf407606",
+                    "uuid": "a33427f0-f21a-4976-91cc-5ffcd949b9cc",
                     "description": "CivicActions maintained applications generate audit records for their web and event logs as described in AU-2 and AU-3."
                   }
                 ]
               },
               {
-                "uuid": "c3e528ce-de77-437f-8693-525b0b76c75a",
+                "uuid": "c40b6a07-aa94-4961-be25-0cb56204b78e",
                 "control-id": "ca-1",
-                "description": "ca-1 statements",
-                "statements": [
-                  {
-                    "statement-id": "ca-1_smt",
-                    "uuid": "5444e49c-7653-4a58-9ac8-3b917ab5a3ea",
-                    "description": "CivicActions has developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Security Assessment and Authorization Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>."
-                  }
-                ]
+                "description": "CivicActions has developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Security Assessment and Authorization Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>."
               },
               {
-                "uuid": "d279ecf1-3050-4e83-9f5b-b327cae63a6b",
+                "uuid": "6b4f823f-7a04-4d15-8509-3e97428205c5",
                 "control-id": "ca-2",
-                "description": "ca-2 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ca-2_smt.a",
-                    "uuid": "a633374a-e6a6-4ab8-b56a-defc089a98a6",
+                    "uuid": "ffadf5eb-fa2e-4958-b23c-565c79dbebf9",
                     "description": "CivicActions will develop a security assessment plan (SAP) that describes the security controls and control enhancements under assessment, assessment procedures used to determine effectiveness, the assessment environment, the assessment team, and the assessment roles and responsibilities."
                   },
                   {
                     "statement-id": "ca-2_smt.b",
-                    "uuid": "ed4e5a51-22ea-44c9-aea1-a8ef35252ead",
+                    "uuid": "9e3dc7f0-3782-4ee1-bdde-0116bed6a7f7",
                     "description": "CivicActions will assess the security controls in their system and its environment of operation to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security requirements.\n\nAll controls assigned and documented in this System Security Plan (SSP) will be tested at least annually or when there is a major change to the system."
                   },
                   {
                     "statement-id": "ca-2_smt.c",
-                    "uuid": "157bf99d-9335-49cc-b90e-dcff19fcdddc",
+                    "uuid": "9ff9202d-0a95-4555-878b-60c256b62f32",
                     "description": "CivicActions will produce a security assessment report that documents the results of the assessment. The Security Assessment Report must contain the results of the assessment, and may also contain recommendations and suggestions for plans of actions and milestones (POA&Ms)."
                   },
                   {
                     "statement-id": "ca-2_smt.d",
-                    "uuid": "714b1ccf-0fcc-46e3-942e-60fdd8094164",
+                    "uuid": "5967b894-e5a5-42ac-84ec-2adbe7c6e9c8",
                     "description": "CivicActions will provide the results of the security control assessment to the System Owner, Project Manager, CivicActions Security, and the Authorization Official (AO)). The security control assessment package includes the following:\n\n- Security Control Matrix\n- Privacy Impact Assessment\n- E-Authentication\n- Contingency Plan\n- Configuration Management Plan\n- Rules of Behavior\n- Incident Response Plan"
                   }
                 ]
               },
               {
-                "uuid": "1b066c3e-e6a7-4681-89fb-9942def9fb6a",
+                "uuid": "cd4ace73-1b29-4347-a472-f8541cf501fc",
                 "control-id": "ca-3",
-                "description": "ca-3 statements",
-                "statements": [
-                  {
-                    "statement-id": "ca-3_smt",
-                    "uuid": "b315dd18-58bd-4cbb-8a4d-6c137b302ce6",
-                    "description": "This control is not applicable. CivicActions systems do not have system interconnections. The only communication conducted to CivicActions' systems is through the Internet."
-                  }
-                ]
+                "description": "This control is not applicable. CivicActions systems do not have system interconnections. The only communication conducted to CivicActions' systems is through the Internet."
               },
               {
-                "uuid": "29aabb95-a6d1-4bcf-b462-430e41f18c09",
+                "uuid": "9ba806d8-8256-49f6-88f5-013e28db7ad2",
                 "control-id": "ca-5",
-                "description": "ca-5 statements",
-                "statements": [
-                  {
-                    "statement-id": "ca-5_smt",
-                    "uuid": "690a22e2-dc80-4aea-9fa9-c89441a387eb",
-                    "description": "CivicActions documents all deficiencies and vulnerabilities identified during the security certification and/or continuous monitoring phase (via security assessment, vulnerability scanning, risk assessment, etc.) within the Plan of Action and Milestones (POA&M).\n\nThe POA&M document provides a platform for CivicActions to monitor and track the deficiency and its mitigation strategy. POA&M items will include:\n\n- The description of the deficiency,\n- Dedicated point of contact for this deficiency.\n- Cost of the mitigation strategy\n- Associated risk and NIST control\n- Recommended mitigation strategy\n\nPOA&Ms are tracked throughout the lifecycle of the system until its mitigation. All POA&Ms are reviewed on a monthly basis by CivicActions Information System Security Officer to ensure all mitigation strategies are continuing as documented."
-                  }
-                ]
+                "description": "CivicActions documents all deficiencies and vulnerabilities identified during the security certification and/or continuous monitoring phase (via security assessment, vulnerability scanning, risk assessment, etc.) within the Plan of Action and Milestones (POA&M).\n\nThe POA&M document provides a platform for CivicActions to monitor and track the deficiency and its mitigation strategy. POA&M items will include:\n\n- The description of the deficiency,\n- Dedicated point of contact for this deficiency.\n- Cost of the mitigation strategy\n- Associated risk and NIST control\n- Recommended mitigation strategy\n\nPOA&Ms are tracked throughout the lifecycle of the system until its mitigation. All POA&Ms are reviewed on a monthly basis by CivicActions Information System Security Officer to ensure all mitigation strategies are continuing as documented."
               },
               {
-                "uuid": "130ab1bc-34f3-4651-9ec3-213a8b042073",
+                "uuid": "3ca2ea32-bc1a-41e8-b6ed-ef562cbbdca7",
                 "control-id": "ca-7",
-                "description": "ca-7 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ca-7_smt.a",
-                    "uuid": "a16e2214-cf67-41e6-ab08-46cff5506ce2",
+                    "uuid": "ef510dfa-d299-49af-985a-ac86b2d199dc",
                     "description": "CivicActions implements a continuous monitoring strategy that incorporates configuration management, system scanning and log analysis processes:\n\n- Configuration management includes the assessment of security impact analyses of proposed and implemented changes.\n- System scanning is managed by running the OpenSCAP vulnerability scanner using the DISA STIG profile.\n- Log analysis is managed by feeding logs to a Graylog dashboard for analysis."
                   },
                   {
                     "statement-id": "ca-7_smt.b",
-                    "uuid": "736fe4e6-fc13-4190-bcb2-e218c356529f",
+                    "uuid": "bb3da305-84dc-4e10-9212-11aed8cc2fda",
                     "description": "Configuration management and log analysis is carried out in real time. OpenSCAP security scans are performed and reviewed monthly. See also: RA-5 and SI-4.\n\nQuarterly review of the control assessments supporting the monitoring is conducted by CivicActions Operations in collaboration with the CivicActions Security Office."
                   },
                   {
                     "statement-id": "ca-7_smt.d",
-                    "uuid": "a8b02d23-41ea-4c80-9026-4afb95796b71",
+                    "uuid": "77e3b867-d3b8-43f0-93c7-c4696c15321c",
                     "description": "CivicActions conducts or oversees continuous system security monitoring."
                   },
                   {
                     "statement-id": "ca-7_smt.e",
-                    "uuid": "33c12c23-b3f9-4c8f-bf3b-2d9a1a6c94b3",
+                    "uuid": "f491cc82-5bb4-4b2f-9525-175ef53e0889",
                     "description": "CivicActions Security reviews the results of the security scans and security assessments with associated JIRA and/or GitLab Issue tickets created to correlate and analyze security-related information generated from the monitoring tools becoming POA&M items for tracking."
                   },
                   {
                     "statement-id": "ca-7_smt.f",
-                    "uuid": "180e50db-c6bf-4d37-b3fb-d0dd9be95183",
+                    "uuid": "e5613173-4eed-42fb-8271-48e714339474",
                     "description": "POA&M items are tracked by CivicActions Security through JIRA tickets with a security categorization assigned. The information included in the POA&M item include the severity, the due date, the weakness source identifier, and the plugin ID that identified the vulnerability."
                   },
                   {
                     "statement-id": "ca-7_smt.g",
-                    "uuid": "4180ee77-342c-41ce-b1d9-62e78dd25aeb",
+                    "uuid": "a5685211-5253-4eaa-95ae-9d0c7f9f4655",
                     "description": "The security status of the system is reported up to the System Owner and Project Manager via the CivicActions Security Office to be reviewed alongside other security issues relating to the system."
                   }
                 ]
               },
               {
-                "uuid": "29fa27b2-c553-4cfb-bb0b-cdedbc74fecc",
+                "uuid": "21989f1c-d00d-4dc5-a456-987d9eec2dd8",
                 "control-id": "ca-9",
-                "description": "ca-9 statements",
-                "statements": [
-                  {
-                    "statement-id": "ca-9_smt",
-                    "uuid": "cf1893c1-1375-419c-8c24-749cf871c7bc",
-                    "description": "Not applicable."
-                  }
-                ]
+                "description": "Not applicable."
               },
               {
-                "uuid": "f958d9a2-67c0-453d-af81-2efcba718870",
+                "uuid": "38ff8fa6-4d15-4302-b088-df509adcb7b6",
                 "control-id": "cm-1",
-                "description": "cm-1 statements",
-                "statements": [
-                  {
-                    "statement-id": "cm-1_smt",
-                    "uuid": "d696490f-142c-4fbb-a7d0-accf012bfd95",
-                    "description": "CivicActions has developed, documented and disseminated to personnel a configuration management policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Configuration Management (CM) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.\nConfiguration changes are overseen by the Change Control Board (CCB) consisting of the System Owner, Project Manager, CivicActions Operations staff and the engineering team."
-                  }
-                ]
+                "description": "CivicActions has developed, documented and disseminated to personnel a configuration management policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Configuration Management (CM) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.\nConfiguration changes are overseen by the Change Control Board (CCB) consisting of the System Owner, Project Manager, CivicActions Operations staff and the engineering team."
               },
               {
-                "uuid": "74da8199-6160-4ad1-94d4-63db7497b6f5",
+                "uuid": "c68c9b87-0201-4a6d-9a5e-0a79a8ceb98f",
                 "control-id": "cm-2",
-                "description": "cm-2 statements",
-                "statements": [
-                  {
-                    "statement-id": "cm-2_smt",
-                    "uuid": "72f49f7d-2a8e-420a-9d5f-33dcdb1fbb57",
-                    "description": "A current baseline configuration is always available - stored as a tag in the Git repository - such that the site can be regenerated or rolled back should unauthorized or failing changes be applied."
-                  }
-                ]
+                "description": "A current baseline configuration is always available - stored as a tag in the Git repository - such that the site can be regenerated or rolled back should unauthorized or failing changes be applied."
               },
               {
-                "uuid": "db77be25-a708-4f23-b682-8862b3f536d2",
+                "uuid": "316982c4-24de-4bbf-82c4-6f81451a4e30",
                 "control-id": "cm-4",
-                "description": "cm-4 statements",
-                "statements": [
-                  {
-                    "statement-id": "cm-4_smt",
-                    "uuid": "03e5dc6f-9c99-47a8-b648-ddd339aeaa59",
-                    "description": "Security impact analysis is conducted and documented within the Change Request (CR) process described in CM-3(b). All proposed configuration- controlled changes to the application are tested first in a sandboxed development environment before being pushed to a staging environment to be tested by another developer and by the Engineering team prior to final approval from CCB to move changes to the production environment."
-                  }
-                ]
+                "description": "Security impact analysis is conducted and documented within the Change Request (CR) process described in CM-3(b). All proposed configuration- controlled changes to the application are tested first in a sandboxed development environment before being pushed to a staging environment to be tested by another developer and by the Engineering team prior to final approval from CCB to move changes to the production environment."
               },
               {
-                "uuid": "b447cde0-3bb5-4311-8e79-f6f4e4176150",
+                "uuid": "63b81f7e-fd9e-4d40-a5d5-3e027bccd7ae",
                 "control-id": "cm-6",
-                "description": "cm-6 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "cm-6_smt.b",
-                    "uuid": "b0c723d8-41b1-40c3-8b7c-584c6432a990",
+                    "uuid": "2d4d79a3-1625-4424-9845-0bba1d655bd5",
                     "description": "CivicActions developers follow security best practices according to the guidelines set by the CivicActions Security Office."
                   },
                   {
                     "statement-id": "cm-6_smt.d",
-                    "uuid": "2405f7fd-5342-4435-ad35-53b0948965fb",
+                    "uuid": "7ab439af-2ad7-4f9b-a4ee-4263cf53b3af",
                     "description": "All changes to the configuration settings are logged in the Git source code version control system, which records the identity of the developer who committed each change. Version control is enforced, with previous tagged code releases kept for rollback purposes."
                   }
                 ]
               },
               {
-                "uuid": "fd9ec316-0dfd-4c72-84c6-3fe8f83df692",
+                "uuid": "102c7ee0-ad61-4727-b823-ef3a1be89c5e",
                 "control-id": "cm-10",
-                "description": "cm-10 statements",
-                "statements": [
-                  {
-                    "statement-id": "cm-10_smt",
-                    "uuid": "ab5e31a3-6f56-42a2-bb5b-4367e8ff45c6",
-                    "description": "Drupal is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These are all compatible with the Free Software Foundation's General Public License (GPL) version 2 or later and are freely available for use under copyright law."
-                  }
-                ]
+                "description": "Drupal is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These are all compatible with the Free Software Foundation's General Public License (GPL) version 2 or later and are freely available for use under copyright law."
               },
               {
-                "uuid": "f908c1b9-6bb5-421a-8dfe-fcbb837e13c3",
+                "uuid": "e2f7b3a0-d7ba-4990-84ed-7d4d82d0645b",
                 "control-id": "cm-11",
-                "description": "cm-11 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "cm-11_smt.a",
-                    "uuid": "96339a9e-a82c-4a99-92a8-969d5482d2ff",
+                    "uuid": "46cd7a0a-cd0f-4ee4-969c-c2c4a3b8248e",
                     "description": "All software installed in the system environment must be first approved via the CCB resulting in a Change Request (CR) being initiated and executed. Software installation on the computing nodes within the authorization boundary is restricted to administrators. All CivicActions internal administrators are informed of this during their initial training and as part of the rules of behavior document."
                   },
                   {
                     "statement-id": "cm-11_smt.b",
-                    "uuid": "59f7f0a7-2d9d-484b-a422-d33ef8afae46",
+                    "uuid": "1ba1b814-f2bd-4414-a2e5-b2ed05178740",
                     "description": "CivicActions enforces software installation policies through required acknowledgment and sign-off on acceptable use policy by CivicActions personnel. CivicActions Development is responsible for enforcing compliance with the acceptable use policy."
                   },
                   {
                     "statement-id": "cm-11_smt.c",
-                    "uuid": "f29a6b83-b544-4a26-936f-1e2d8ab60304",
+                    "uuid": "b2e36d02-fbbc-4276-af8b-e3428d746069",
                     "description": "CivicActions monitors policy compliance continuously via the code release planning and quality control systems built into the System Development Life Cycle described in control SA-3."
                   }
                 ]
               },
               {
-                "uuid": "267336c9-de79-488a-b037-b5800d7c4f95",
+                "uuid": "cd48a1c5-2d10-4211-836e-402d116346b2",
                 "control-id": "cp-1",
-                "description": "cp-1 statements",
-                "statements": [
-                  {
-                    "statement-id": "cp-1_smt",
-                    "uuid": "60494bc5-9066-44ed-920f-db04ed621c2f",
-                    "description": "CivicActions has developed, documented and disseminated to personnel a contingency planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Contingency Planning (CP) Policy and Procedure that can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>."
-                  }
-                ]
+                "description": "CivicActions has developed, documented and disseminated to personnel a contingency planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Contingency Planning (CP) Policy and Procedure that can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>."
               },
               {
-                "uuid": "ea7fa192-7a7a-4db4-8310-a31a6b2610ab",
+                "uuid": "48646ee7-4098-4265-96b1-066b1f7a4dd8",
                 "control-id": "cp-2",
-                "description": "cp-2 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "cp-2_smt.a",
-                    "uuid": "b1d08ca5-8688-4bae-8c5c-f338ab0d320f",
+                    "uuid": "137d41f3-987e-4da6-8d92-104842e6a01c",
                     "description": "CivicActions has developed a contingency plan for that addresses:\n1. Essential missions, business functions, and associated contingency requirements\n2. Recovery objectives, restoration priorities, and metrics\n3. Roles and responsibilities are identified in the CP and include the ISCP Director, Incident Commander (IC), CivicActions Coordinator, and CivicActions Information System Security Officer (ISSO).\n4. Maintaining essential missions and business functions despite an information system disruption, compromise, or failure\n5. Full information system restoration without deterioration of the security safeguards originally planned and implemented\n6. The ISCP is reviewed and approved by ISCP Director, Incident Commander (IC), CivicActions ISSO and the System Owner annually."
                   },
                   {
                     "statement-id": "cp-2_smt.b",
-                    "uuid": "ad66df5b-646c-4cb2-979f-fdb3ba04209d",
+                    "uuid": "c37907be-06be-4ed9-ac84-b8211d4b2d67",
                     "description": "The CivicActions Information System Contingency Plan (ISCP) has been distributed to all CivicActions team members. The ISCP can be found in the CivicActions Handbook at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan>."
                   },
                   {
                     "statement-id": "cp-2_smt.c",
-                    "uuid": "34ce4a23-a49f-4bb0-95f7-d706648623ac",
+                    "uuid": "86b163d7-c824-4a75-bd7c-167e39befc9c",
                     "description": "The Information System Contingency Plan (ISCP) is closely integrated with the Incident Response Plan (IRP). Coordination is the responsibility of the ISCP Director and CivicActions Operations staff."
                   },
                   {
                     "statement-id": "cp-2_smt.d",
-                    "uuid": "60d93e74-fa8b-4bf7-afcd-3347725cd66a",
+                    "uuid": "af362139-7369-49bc-86ea-96d574ac4516",
                     "description": "The ISCP Director and CivicActions' Security Office are responsible to review the ISCP annually and when a change to the system occurs."
                   },
                   {
                     "statement-id": "cp-2_smt.e",
-                    "uuid": "568cc890-3cf7-406e-9ab9-6858069215e0",
+                    "uuid": "ec988acf-bb38-4045-a0ad-d78a387e943d",
                     "description": "CivicActions Operations staff and ISCP Director are required to update the ISCP to address changes to the organization, information system, or environment of operation and problems encountered during contingency plan implementation, execution, or testing."
                   },
                   {
                     "statement-id": "cp-2_smt.f",
-                    "uuid": "be7f7af2-17d9-4a94-9b14-56ea1f1856a8",
+                    "uuid": "6617c3f5-7dca-453a-b44b-70caec329664",
                     "description": "The ISCP requires that changes to the plan be communicated to those on the Incident Response/Contingency Plan Contact List."
                   },
                   {
                     "statement-id": "cp-2_smt.g",
-                    "uuid": "9632f433-7e21-415a-87e8-6537dd6882d1",
+                    "uuid": "de8559e3-6255-44d3-bfed-ffdea8eec22e",
                     "description": "The ISCP is available on CivicActions GitHub repository. This repository provides the configuration management capabilities for the ISCP to be protected from unauthorized disclosure and modification."
                   }
                 ]
               },
               {
-                "uuid": "c718be35-d0c0-4efa-b1fa-9d5cb47ca2df",
+                "uuid": "ab7c3667-8e68-443a-b443-52bfac77f164",
                 "control-id": "cp-3",
-                "description": "cp-3 statements",
-                "statements": [
-                  {
-                    "statement-id": "cp-3_smt",
-                    "uuid": "38d1f183-5ef4-44f2-a0ae-9a8f3ab48761",
-                    "description": "The ISCP stipulates that all CivicActions system assigned roles in the Contingency Plan Team are trained in their duties within three months of first being assigned a role in the CP, and then annually thereafter or when changes are required. CivicActions uses the Contingency Plan as described in controls CP-1 and CP-2 as a basis for personnel contingency training."
-                  }
-                ]
+                "description": "The ISCP stipulates that all CivicActions system assigned roles in the Contingency Plan Team are trained in their duties within three months of first being assigned a role in the CP, and then annually thereafter or when changes are required. CivicActions uses the Contingency Plan as described in controls CP-1 and CP-2 as a basis for personnel contingency training."
               },
               {
-                "uuid": "fac6df8f-9f2e-407e-84c0-3b10d8930aaa",
+                "uuid": "a07d7360-b5ef-4acb-872f-b7c8c6fb21f4",
                 "control-id": "cp-4",
-                "description": "cp-4 statements",
-                "statements": [
-                  {
-                    "statement-id": "cp-4_smt",
-                    "uuid": "8038781d-0b80-42fb-9129-773be3749dbc",
-                    "description": "Real-world tests of the contingency plan will be held at least annually, with supplemental tests (checklist/table-top) as needed for specific scenarios. The ISCP Coordinator is responsible to facilitate annual testing exercises. The testing process for the ISCP includes a review of the ISCP, exercise, and identification of corrective actions and other improvements."
-                  }
-                ]
+                "description": "Real-world tests of the contingency plan will be held at least annually, with supplemental tests (checklist/table-top) as needed for specific scenarios. The ISCP Coordinator is responsible to facilitate annual testing exercises. The testing process for the ISCP includes a review of the ISCP, exercise, and identification of corrective actions and other improvements."
               },
               {
-                "uuid": "63ea8290-e736-41a3-a582-e85878a13a53",
+                "uuid": "0057c380-7c9b-4d91-a09e-81068d47d455",
                 "control-id": "cp-9",
-                "description": "cp-9 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "cp-9_smt.a",
-                    "uuid": "c46bb0dd-9770-4250-92f2-227646f9a286",
+                    "uuid": "d49aacf3-fed7-4f7b-b8ca-ad35759321b2",
                     "description": "CivicActions conducts system user-level information backup in accordance with requirements (at a minimum, incremental backups must be conducted at least weekly and full backups must be conducted at least monthly)."
                   },
                   {
                     "statement-id": "cp-9_smt.b",
-                    "uuid": "74f66aa5-743c-4113-af0a-f1aae645256f",
+                    "uuid": "d9434d2a-aa47-4caf-b355-1160502c77d1",
                     "description": "System-level information for the application is replicated and backed up in the same way as user-level information as defined in CP-9(a)."
                   },
                   {
                     "statement-id": "cp-9_smt.c",
-                    "uuid": "b7162116-9b77-47ea-98e7-05af373d5cf4",
+                    "uuid": "7f5b5c6e-f0cb-4234-9b43-30a1b81151bd",
                     "description": "System documentation is backed up from the GitHub repository on a daily basis with a minimum two-week retention period and off-site storage."
                   },
                   {
                     "statement-id": "cp-9_smt.d",
-                    "uuid": "811abf20-fce4-44fe-87bb-b8cb4bab7454",
+                    "uuid": "8c73854d-d700-42e2-8099-1963be546693",
                     "description": "CivicActions employees must authenticate prior to being granted access to the GitHub repository. Roles and responsibilities within GitHub determine the proper level of access for the documentation being accessed. The folder structure of GitHub protects though permissions and ownership prohibiting users from accessing unauthorized documentation."
                   }
                 ]
               },
               {
-                "uuid": "a604a210-0019-463f-bd0d-990e22e9bbb3",
+                "uuid": "f9e642b7-a3da-475b-aae2-5ca303351d77",
                 "control-id": "cp-10",
-                "description": "cp-10 statements",
-                "statements": [
-                  {
-                    "statement-id": "cp-10_smt",
-                    "uuid": "8bdb5bf5-e6a7-4650-843a-674cd308c0f1",
-                    "description": "The Contingency Plan documents the mechanisms with supporting procedures that allow all system components to be recovered and reconstituted to the system\u2019s original state after a disruption or failure. This original state means that all system parameters (either default or organization- established) are reset, patches are reinstalled, system and security configuration settings are reestablished, system documentation and operating procedures are available, application and system software is reinstalled, information from the most recent backups is available and the system is fully tested."
-                  }
-                ]
+                "description": "The Contingency Plan documents the mechanisms with supporting procedures that allow all system components to be recovered and reconstituted to the system\u2019s original state after a disruption or failure. This original state means that all system parameters (either default or organization- established) are reset, patches are reinstalled, system and security configuration settings are reestablished, system documentation and operating procedures are available, application and system software is reinstalled, information from the most recent backups is available and the system is fully tested."
               },
               {
-                "uuid": "f719024e-9e21-4d01-80ff-9835aacdd35a",
+                "uuid": "b6936a75-6c33-45f6-87cd-f3413761aff7",
                 "control-id": "ia-1",
-                "description": "ia-1 statements",
-                "statements": [
-                  {
-                    "statement-id": "ia-1_smt",
-                    "uuid": "411cec88-262a-47c3-bfdc-966753396fa6",
-                    "description": "CivicActions has developed, documented and disseminated to personnel an identification and authentication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained by the CivicActions Identification and Authentication (IA) Policy. This document can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>."
-                  }
-                ]
+                "description": "CivicActions has developed, documented and disseminated to personnel an identification and authentication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained by the CivicActions Identification and Authentication (IA) Policy. This document can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>."
               },
               {
-                "uuid": "489928c9-3d91-4442-ba06-df7e1b0f1741",
+                "uuid": "9823b617-3d8a-4a99-b4c7-d0e80ec7b5ec",
                 "control-id": "ia-2.1",
-                "description": "ia-2.1 statements",
-                "statements": [
-                  {
-                    "statement-id": "ia-2.1_smt",
-                    "uuid": "88034c49-04e6-4add-ac5c-62cbe2ebbc5a",
-                    "description": "CivicActions system administrators employ a personal public- key pair for basic access and must originate from a whitelisted IP address. The whitelist is maintained by an Ansible inventory file, the current complete list (includes dev sites) of users with whitelisted IPs is in artifact: None\n\nTo access root (sudo) privileges an additional password is required. The passwords are maintained in encrypted form in the Ansible inventory file. The mechanism to enable select users to use a password to obtain root access can be viewed in artifact: None"
-                  }
-                ]
+                "description": "CivicActions system administrators employ a personal public- key pair for basic access and must originate from a whitelisted IP address. The whitelist is maintained by an Ansible inventory file, the current complete list (includes dev sites) of users with whitelisted IPs is in artifact: None\n\nTo access root (sudo) privileges an additional password is required. The passwords are maintained in encrypted form in the Ansible inventory file. The mechanism to enable select users to use a password to obtain root access can be viewed in artifact: None"
               },
               {
-                "uuid": "f4ef9b35-428b-418e-851e-2035d372fd49",
+                "uuid": "82802674-bffc-4da1-9b92-76b701c6bb91",
                 "control-id": "ia-4",
-                "description": "ia-4 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ia-4_smt.a",
-                    "uuid": "35da08c7-1078-478f-ba58-3f754a8269eb",
+                    "uuid": "5568d15a-288e-46d8-bc43-e3c0c84de5f9",
                     "description": "Access to the system is authorized by the System Owner or Project Manager for each role as described in AC-2."
                   },
                   {
                     "statement-id": "ia-4_smt.b",
-                    "uuid": "73fc74fe-46e0-411f-9595-a386d0debafb",
+                    "uuid": "154a4c61-9f49-4dde-9c9d-60da40bfadf6",
                     "description": "User accounts are assigned a unique identifier in the form of a unique username, password and email address based on the system for allocating user accounts described in AC-2.\n\nIn accordance with CivicActions Identification and Authentication (IA) Policy outlined at <https://github.com/CivicActions/compliance-docs>, CivicActions internal users are uniquely identified by the creation of an organizational account with a username based on each user's first and last names."
                   },
                   {
                     "statement-id": "ia-4_smt.c",
-                    "uuid": "24b072b8-9bef-4693-824a-72d45d5e40ed",
+                    "uuid": "67ab3d57-4217-41c0-81b5-1cf34f09cf00",
                     "description": "User accounts are assigned a unique identifier in the form of a unique username, password and email address based on the system for allocating user accounts described in AC-2."
                   },
                   {
                     "statement-id": "ia-4_smt.d",
-                    "uuid": "3ceb72ec-2b37-47f3-8c0f-43b0c50b6e62",
+                    "uuid": "7decbd94-cfa7-4191-9ac3-ef9e62c6d939",
                     "description": "Account usernames may not be re-used for at least two years."
                   },
                   {
                     "statement-id": "ia-4_smt.e",
-                    "uuid": "c2ec4360-dd0d-4c44-a407-a753526f47ba",
+                    "uuid": "7a9ce5fa-0fb5-4ab2-a8f7-5a9d801ade2f",
                     "description": "All user accounts are required to change their passwords every 90 days. The website will automatically block the accounts of users who fail to change their password within that time period, after which the account may only be unblocked by a website Administrator or CivicActions Operations staff."
                   }
                 ]
               },
               {
-                "uuid": "6171b022-ed45-49b1-a022-7e3de0067f7a",
+                "uuid": "7bbf64bf-6e43-473b-9b3e-2c5bd9ae27e6",
                 "control-id": "ia-5",
-                "description": "ia-5 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ia-5_smt.i",
-                    "uuid": "d54b4b08-101a-42ed-a04f-cbf5e62dfcbe",
+                    "uuid": "ba165278-bbd1-4887-ab9d-1034d4dd6642",
                     "description": "CivicActions users are required to take appropriate measures in the handling of passwords including:\n\n- Not transmitting user names and passwords together in an unencrypted format\n- Not permitting the sending of passwords in an unencrypted format via email\n- Not listing passwords in tickets\n- Not writing down or storing passwords in a readable form in any physical or logical location where they may be discoverable by unauthorized persons."
                   }
                 ]
               },
               {
-                "uuid": "63d7667b-5d98-443b-a1f7-e3755744ee65",
+                "uuid": "6c3479a2-0cf7-441e-9ba6-4c61dd93d34b",
                 "control-id": "ia-7",
-                "description": "ia-7 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ia-7_smt.j",
-                    "uuid": "6e0d313f-3a13-4c9c-9e54-dee5037d60b1",
+                    "uuid": "877c3d64-a3d7-4d74-9965-20686f3c43cf",
                     "description": "CivicActions systems employ authentication methods consistent with NIST FIPS 140-2 requirements. General public access to system web pages does not require cryptographic authentication. Privileged users accessing systems use the public-key cryptographic functionality of Secure Shell (SSH) to encrypt the exchange of information (including the password) between the remote user and the server. Where Transport Layer Security (TLS, aka SSL) is used, cryptographic modules will be configured in accordance with FIPS 140-2."
                   }
                 ]
               },
               {
-                "uuid": "f08c046e-32d2-4847-84d2-94bf4a5674b5",
+                "uuid": "680eef70-6d26-4432-8022-7df86017bae7",
                 "control-id": "ir-1",
-                "description": "ir-1 statements",
-                "statements": [
-                  {
-                    "statement-id": "ir-1_smt",
-                    "uuid": "fd31c48c-c19b-437e-827c-97d4734b834e",
-                    "description": "CivicActions has developed, documented and disseminated to personnel an incident response planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Incident Response (IR) Policy and Procedure that can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>."
-                  }
-                ]
+                "description": "CivicActions has developed, documented and disseminated to personnel an incident response planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Incident Response (IR) Policy and Procedure that can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>."
               },
               {
-                "uuid": "acd0d5a7-187a-4721-b462-abd2fc1009d8",
+                "uuid": "0899582f-fb07-4d08-a943-8aa0fa453115",
                 "control-id": "ir-2",
-                "description": "ir-2 statements",
-                "statements": [
-                  {
-                    "statement-id": "ir-2_smt",
-                    "uuid": "97a302d4-584f-45a1-b1ca-8b2d371c1810",
-                    "description": "All CivicActions employees are required to participate in incident response training, as required by Incident Response Plan changes, and annually. The CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) is the basis for the training and the incident response workflow created by the Security Office. Upon a review of past incidents, the training is updated to ensure processes and workflows are updated."
-                  }
-                ]
+                "description": "All CivicActions employees are required to participate in incident response training, as required by Incident Response Plan changes, and annually. The CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) is the basis for the training and the incident response workflow created by the Security Office. Upon a review of past incidents, the training is updated to ensure processes and workflows are updated."
               },
               {
-                "uuid": "095c0075-438b-4e61-9def-dd31b4f817f9",
+                "uuid": "3c15c63f-edf8-4c53-b51f-890122401035",
                 "control-id": "ir-4",
-                "description": "ir-4 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ir-4_smt.a",
-                    "uuid": "79d10323-1e20-4753-a407-d607662620d7",
+                    "uuid": "d79c414c-423b-4326-a018-4bf9fe9cf02b",
                     "description": "CivicActions has implemented an Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) that explains the process for incident handling and discusses preparation, detection and analysis, containment, eradication, and recovery.\nPreparation activities include all CivicActions team members who are trained in incident response. Detection and monitoring tools providing notification to incident response personnel for analysis and action."
                   },
                   {
                     "statement-id": "ir-4_smt.b",
-                    "uuid": "1d2c57e9-c0e1-4aaf-8222-935bd399bb4e",
+                    "uuid": "e9096485-9930-427f-8337-64a361760cbb",
                     "description": "CivicActions' Operations staff and Security Office team members are members of the CivicActions Contingency and Incident Response Plan teams which coordinates activities accordingly through the life of the incident event."
                   },
                   {
                     "statement-id": "ir-4_smt.c",
-                    "uuid": "3fc3c479-df89-43ef-b5a8-2329945c0c08",
+                    "uuid": "ba73cf08-6ae2-49d0-88b4-70977f8c954e",
                     "description": "The CivicActions Operations staff and Security Office conduct a post-incident analysis to assist in documenting lessons learned and suggesting changes to improve the incident response process. Tickets created in response to the incident event are reviewed upon completion by the Operations staff and Security Office. Changes to the Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) require a team review session for approval."
                   }
                 ]
               },
               {
-                "uuid": "55119ab7-3037-40d2-989c-268fe586f3ed",
+                "uuid": "948acf36-a4ff-4b88-8b11-401e7e50ee78",
                 "control-id": "ir-5",
-                "description": "ir-5 statements",
-                "statements": [
-                  {
-                    "statement-id": "ir-5_smt",
-                    "uuid": "3be4b42a-36ac-44d7-9957-bf8680acee3a",
-                    "description": "CivicActions utilizes the JIRA ticketing tool for tracking and reporting of incident events from reporting to resolution and post- incident analysis. Initial reporting can come from continuous monitoring tools as well as client and public submissions made to support@civicactions.com. Jira processes the tickets for the public submissions and the CivicActions Support Team creates associated GitHub Issues. Internal incidents reported are processed within the GitHub Issue queue. Details of the handling procedures are included in the CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan/#response-process>) Response Process."
-                  }
-                ]
+                "description": "CivicActions utilizes the JIRA ticketing tool for tracking and reporting of incident events from reporting to resolution and post- incident analysis. Initial reporting can come from continuous monitoring tools as well as client and public submissions made to support@civicactions.com. Jira processes the tickets for the public submissions and the CivicActions Support Team creates associated GitHub Issues. Internal incidents reported are processed within the GitHub Issue queue. Details of the handling procedures are included in the CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan/#response-process>) Response Process."
               },
               {
-                "uuid": "abb0c37f-7afe-4120-a7e0-b5aeffd84b5e",
+                "uuid": "a72593c0-d310-4b6e-bec1-d62e9e446579",
                 "control-id": "ir-6",
-                "description": "ir-6 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ir-6_smt.a",
-                    "uuid": "77067294-46bc-4f37-88f3-6a76d9d46960",
+                    "uuid": "ebdc070a-10b8-4a91-9377-20e84bc929a3",
                     "description": "CivicActions personnel, as soon as an incident event is detected and/or communicated, are required to report the incident event to the CivicActions Security Office. Methods of detection and/or communication may include one or more of:\n\n- Through continuous monitoring tools (StatusCake, OSSEC, others).\n- As a result of application notifications where CivicActions Security receives notifications (AIDE, OpsGenie, others).\n- Event logging described in AC-2\n- Host-based alerts from the cloud infrastructure or platform."
                   },
                   {
                     "statement-id": "ir-6_smt.b",
-                    "uuid": "31114c3e-6399-403e-b571-962ff57d7036",
+                    "uuid": "0d04b40b-3af0-4313-812f-bdbe17d59e48",
                     "description": "CivicActions personnel, as soon as the incident event is detected and/or communicated, are required to report the incident event to the CivicActions Security Office."
                   }
                 ]
               },
               {
-                "uuid": "248c9e43-ba04-47f3-880d-8aa761673592",
+                "uuid": "35c0d898-953b-470a-b7b4-c73adb27efd1",
                 "control-id": "ir-7",
-                "description": "ir-7 statements",
-                "statements": [
-                  {
-                    "statement-id": "ir-7_smt",
-                    "uuid": "96010095-6da5-4dd6-98f9-b15c025ed508",
-                    "description": "CivicActions Help Desk team provides first response assistance to any users of the system. Response time for external reporting of incidents through e-mail is one business day. Internal users are able to request support thought the same process or initiate the incident response workflow. Tickets created in the Jira (customer ticketing system) and GitLab (internal ticketing system) documents all details related to the incident to assist the Incident Response Teams in handling the incident."
-                  }
-                ]
+                "description": "CivicActions Help Desk team provides first response assistance to any users of the system. Response time for external reporting of incidents through e-mail is one business day. Internal users are able to request support thought the same process or initiate the incident response workflow. Tickets created in the Jira (customer ticketing system) and GitLab (internal ticketing system) documents all details related to the incident to assist the Incident Response Teams in handling the incident."
               },
               {
-                "uuid": "97f58d98-532d-457f-aea9-30b4c3accc8a",
+                "uuid": "6bbe6086-34b1-4da4-b404-6325dcecdf51",
                 "control-id": "ir-8",
-                "description": "ir-8 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ir-8_smt.a",
-                    "uuid": "8e8ca6fb-4325-46f9-984d-857c06ada6de",
+                    "uuid": "a07eb474-98de-4457-8143-b5abd5de3233",
                     "description": "Incident response plays a pivotal role in monitoring, detecting and handling security incidents of the entire information system. CivicActions has developed an Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) that:\n\n1. Provides CivicActions with procedures and tools required for incident handling;\n2. Describes the structure and organization of the incident response capability;\n3. Provides a high-level approach for how the incident response capability fits into CivicActions and the systems it maintains;\n4. Meets the mission, size, structure, and functions of CivicActions;\n5. Defines reportable incidents;\n6. Provides metrics for measuring the incident response capability and details categorization of incidents in accordance with NIST 800-61;\n7. Defines the roles and responsibilities of CivicActions IR Team;\n8. Is reviewed annually and updated as needed by the CivicActions Security Office, with the assistance of the Incident Response Team."
                   },
                   {
                     "statement-id": "ir-8_smt.b",
-                    "uuid": "c5725704-c789-420a-8c03-28c780be37b7",
+                    "uuid": "53e0e101-0382-45b4-8d2f-09d22f675933",
                     "description": "The CivicActions Incident Response Plan is distributed to all CivicActions team members as part of the CivicActions Handbook (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>).\n The Incident Response Team includes members from the Security Office,\n Operations staff, and Drupal Engineering teams."
                   },
                   {
                     "statement-id": "ir-8_smt.c",
-                    "uuid": "358fc4c1-9641-44cf-8f7b-ddbb92e59285",
+                    "uuid": "959b08c2-cf0b-434b-aa08-915634bb7250",
                     "description": "The CivicActions Security Office and the Incident Response team is responsible for reviewing the Incident Response Plan annually. The entire Incident Response Team will review the plan and update it as necessary. Ultimately, the Security Office has the final say and will approve all updates to the plan."
                   },
                   {
                     "statement-id": "ir-8_smt.d",
-                    "uuid": "382d0fc4-b5fb-4364-9d98-3f1ae8e93bdc",
+                    "uuid": "1ea46e97-a8de-47e2-b86a-f57f137fae07",
                     "description": "The CivicActions Security Office is responsible for managing the IR Plan, including annual reviews and updates. The IR Plan is updated to reflect any changes to processes, systems or applications. In addition, any concerns or difficulties encountered during IR Plan implementation, execution, or testing are addressed in an update to the IR Plan."
                   },
                   {
                     "statement-id": "ir-8_smt.e",
-                    "uuid": "8909d15f-f7c0-4db5-8690-cf2fa5fa4872",
+                    "uuid": "49be1b4d-9f4e-490f-b1c2-c44008014e6f",
                     "description": "Modifications to the IR Plan are conducted by the IR team the (CivicActions Security Office, Operations staff and Engineering teams) and communicated to the CivicActions team."
                   },
                   {
                     "statement-id": "ir-8_smt.f",
-                    "uuid": "16175d3d-e858-4b8e-ac30-ad127e9f381e",
+                    "uuid": "fd88abf1-9d77-45eb-897a-d05b344737d4",
                     "description": "The IR Plan is available in the CivicActions Handbook and is maintained in the CivicActions GitHub repository. GitHub provides the configuration management capabilities for the IR Plan to be protected from unauthorized disclosure and modification."
                   }
                 ]
               },
               {
-                "uuid": "e129a7cc-d48b-453f-8d6f-7a1396bbcb45",
+                "uuid": "2a7cf067-ae23-4f7d-8f29-30d53da64e93",
                 "control-id": "ma-1",
-                "description": "ma-1 statements",
-                "statements": [
-                  {
-                    "statement-id": "ma-1_smt",
-                    "uuid": "cfd28020-5d48-48fb-893f-a2dda8209fdd",
-                    "description": "CivicActions has developed, documented and disseminated to personnel a system maintenance policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Maintenance (MA) Policy and Procedure document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>."
-                  }
-                ]
+                "description": "CivicActions has developed, documented and disseminated to personnel a system maintenance policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Maintenance (MA) Policy and Procedure document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>."
               },
               {
-                "uuid": "bc670639-0c7c-4db5-9bab-972933f2d17c",
+                "uuid": "3f68bcfb-bff7-4ed8-b2b1-4a04c3e1c503",
                 "control-id": "ma-4",
-                "description": "ma-4 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ma-4_smt.a",
-                    "uuid": "bf1f9716-69d9-425e-af91-4db5a33a90dd",
+                    "uuid": "5d688287-cbb3-4941-bd8a-18999bdaaa23",
                     "description": "System maintenance is done from remote sites as there is no direct access to the server instances in the AWS cloud; this is the government-approved method of doing business. Approval, QA, and monitoring are conducted by the team performing the specific maintenance."
                   },
                   {
                     "statement-id": "ma-4_smt.b",
-                    "uuid": "340a0283-5857-4064-9c95-59586d3639d3",
+                    "uuid": "6ba55d3a-85a0-4099-a800-63f6e0308d87",
                     "description": "Remote diagnostics tools, such as OSSEC, AIDE, fail2ban, and OpenSCAP are used to verify the integrity of files, perform log analysis, monitor login attempts and check for rootkits and other vulnerabilities."
                   },
                   {
                     "statement-id": "ma-4_smt.c",
-                    "uuid": "6ab5c758-439f-443f-8c91-774d4609758c",
+                    "uuid": "6f9a9ff3-5690-4dc0-9d57-e0c8d678bc33",
                     "description": "All nonlocal maintenance requires the same authentication requirements to perform the maintenance activities to access the system as defined in controls AC-3 and IA-2. SSH is used to secure all communications between the remote user and the components located in the AWS cloud."
                   },
                   {
                     "statement-id": "ma-4_smt.d",
-                    "uuid": "1ec3decc-b161-4ac4-9f65-96e18054187a",
+                    "uuid": "6ce94342-d52e-45a5-8436-57432ed687d0",
                     "description": "CivicActions records for nonlocal maintenance is managed through JIRA tickets and the Git issue queue as well as normal system logs. CivicActions administrator activity to the system is also logged through the implementation of the AU-2 (Audit Events) and AU-3 (Content of Audit Records)."
                   },
                   {
                     "statement-id": "ma-4_smt.e",
-                    "uuid": "6798a7fb-d6e1-461c-aadf-c2ef0d9cbcba",
+                    "uuid": "cc70a3be-e185-47a3-b910-dcee67ff5d7f",
                     "description": "Any session for internal maintenance activities is terminated when the user completes their session, disconnects from the system, or logs out. In addition, sessions are terminated after 15 minutes of inactivity."
                   }
                 ]
               },
               {
-                "uuid": "debdb13c-fbd4-4d45-b5b2-44e26f78e99e",
+                "uuid": "c9c0c4eb-ea99-44f1-b2c1-7a3f49d0e05a",
                 "control-id": "ma-5",
-                "description": "ma-5 statements",
-                "statements": [
-                  {
-                    "statement-id": "ma-5_smt",
-                    "uuid": "dcc10507-ed26-4bf6-8080-853ff448353f",
-                    "description": "Maintenance of the system and applications can only be performed by personnel designated as having internal administrator privileges and responsibilities. Access rights for the internal administrators are assigned and granted access to perform their specific job responsibilities. All physical maintenance requirements are inherited from AWS."
-                  }
-                ]
+                "description": "Maintenance of the system and applications can only be performed by personnel designated as having internal administrator privileges and responsibilities. Access rights for the internal administrators are assigned and granted access to perform their specific job responsibilities. All physical maintenance requirements are inherited from AWS."
               },
               {
-                "uuid": "b4a51b0b-390c-4104-9243-bf0638284366",
+                "uuid": "f4bcb68f-3943-4514-910c-48c0460890dd",
                 "control-id": "mp-1",
-                "description": "mp-1 statements",
-                "statements": [
-                  {
-                    "statement-id": "mp-1_smt",
-                    "uuid": "241d9324-8fd9-4e53-afe1-6d1f5009e4f0",
-                    "description": "CivicActions has developed, documented and disseminated to personnel a media protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Media Protection (MP) Policy and Procedure document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>."
-                  }
-                ]
+                "description": "CivicActions has developed, documented and disseminated to personnel a media protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Media Protection (MP) Policy and Procedure document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>."
               },
               {
-                "uuid": "aa80ba0b-8935-419f-9458-99c6637bb512",
+                "uuid": "012faa25-bab7-4f65-af5e-2c0591578df7",
                 "control-id": "pl-1",
-                "description": "pl-1 statements",
-                "statements": [
-                  {
-                    "statement-id": "pl-1_smt",
-                    "uuid": "e4d7fbbf-35de-47ac-893c-fde1f05620c2",
-                    "description": "CivicActions has developed, documented and disseminated to personnel a system planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Planning (PL) Policy and Procedure document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>."
-                  }
-                ]
+                "description": "CivicActions has developed, documented and disseminated to personnel a system planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Planning (PL) Policy and Procedure document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>."
               },
               {
-                "uuid": "e48bf2e9-e1a4-44a0-be08-73c3f0805ec1",
+                "uuid": "de15a990-bf99-4ea2-9e4b-73bcdc5e7069",
                 "control-id": "pl-2",
-                "description": "pl-2 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "pl-2_smt.a",
-                    "uuid": "4366709a-47f0-457f-a287-f40e5cd620ea",
+                    "uuid": "edf7f36d-1d4c-4422-a13c-f26bbd7a4862",
                     "description": "CivicActions has developed this system security plan (SSP) for the information system as part of compliance with NIST 800-53 and FIPS 199. The SSP defines the security categorization, system boundary, and security requirements and controls meeting the requirements of the NIST Risk Management Framework (RMF). Specifically the SSP:\n\n1. Is consistent with the organization\u2019s enterprise architecture\n2. Explicitly defines the authorization boundary for the system\n3. Describes the operational context of the information system in terms of missions and business processes\n4. Provides the security categorization of the information system including supporting rationale\n5. Describes the operational environment for the information system and relationships with or connections to other information systems\n6. Provides an overview of the security requirements for the system\n7. Identifies any relevant overlays, if applicable\n8. Describes the security controls in place or planned for meeting those requirements including a rationale for the tailoring decisions\n9. Is reviewed and approved by the authorizing official or designated representative prior to plan implementation"
                   },
                   {
                     "statement-id": "pl-2_smt.b",
-                    "uuid": "a1269f57-1d10-4870-a2a2-8a9f324e7c03",
+                    "uuid": "5501b164-1ed1-42f1-be70-d315a256b75d",
                     "description": "The SSP is reviewed and approved by the authorizing official prior to plan implementation. A copy of the SSP is provided to authorized CivicActions and assessing personnel including the System Owner, Authorizing Official, Information System Security Officer, System/Network Administrator, and the CivicActions Operations staff. The SSP is maintained by the CivicActions Security Office."
                   },
                   {
                     "statement-id": "pl-2_smt.c",
-                    "uuid": "2446d3e4-856b-459a-9959-daf0844b302b",
+                    "uuid": "f99113ca-4293-4b07-a603-e3771786f62a",
                     "description": "The SSP is reviewed at least annually by the System Owner and the CivicActions Operations staff in collaboration with the CivicActions Security Office."
                   },
                   {
                     "statement-id": "pl-2_smt.d",
-                    "uuid": "95d5b8d5-f3d0-472a-8fba-07de02a52c32",
+                    "uuid": "b3b45506-b0ed-416a-874e-73c10901fc0e",
                     "description": "The CivicActions Operations staff in collaboration with the CivicActions Security Office updates the system description and control descriptions within the SSP as needed to verify the SSP is an accurate description of the system."
                   },
                   {
                     "statement-id": "pl-2_smt.e",
-                    "uuid": "42eb9c95-873f-40cd-879e-ddda6b5870f0",
+                    "uuid": "77c7048c-3514-4342-9b1a-e364fb4c9f6e",
                     "description": "The SSP is currently available to authorized users on GitLab. Per the Acceptable Use Policy, all entities granted access to CivicActions information assets are required to complete a non-disclosure agreement (NDA) to uphold information confidentiality. GitLab provides the configuration management capabilities for the SSP to be protected from unauthorized disclosure and modification."
                   }
                 ]
               },
               {
-                "uuid": "ab545f2c-bcaa-4f9c-a398-75b528671e99",
+                "uuid": "579af2a8-4538-4b5c-9936-0e8a9b095d79",
                 "control-id": "pl-4",
-                "description": "pl-4 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "pl-4_smt.a",
-                    "uuid": "a521b885-68d6-4c87-9f6a-90600ece4bfd",
+                    "uuid": "4bd1e17d-ee04-4a87-ab6b-385beed97d94",
                     "description": "CivicActions has created and made readily available to individuals requiring access to the information system the rules that describe their responsibilities and expected behavior with regard to information and information system usage. These rules, defined as the Acceptable Use Policy, are included in the CivicActions Security Policy accessible here: <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy> which has also been uploaded to CSAM as ''Appendix J1 - System Rules of Behavior - Privileged User'' (CivicActions Security Policy 20190226.docx).'"
                   },
                   {
                     "statement-id": "pl-4_smt.b",
-                    "uuid": "f31f62f4-106c-45ff-8c9b-8976fa3c770d",
+                    "uuid": "67206db2-4cd8-4129-8d81-aecb359840a9",
                     "description": "CivicActions HR receives a signed acknowledgment from all employees, indicating that they have read, understand, and agree to abide by the rules of behavior, before authorizing access to information and the information system. The text of the electronically signed (via DocuSign) acknowledgment document has been uploaded to CSAM as artifact: ''CivicActions Security Policy Acknowledgement.docx''"
                   },
                   {
                     "statement-id": "pl-4_smt.c",
-                    "uuid": "330964de-3fb6-4522-8f2d-710d6c0cfcb5",
+                    "uuid": "ec04eea2-b8c7-4461-ac66-54e669f8e56d",
                     "description": "CivicActions reviews the CivicActions Security Policy at least annually and updates as required."
                   },
                   {
                     "statement-id": "pl-4_smt.d",
-                    "uuid": "bdeb491e-858f-4b3b-8fec-352b25b9a343",
+                    "uuid": "6746e6ad-0f74-44a6-8ac0-fcaf4b292b15",
                     "description": "CivicActions requires individuals who have signed a previous version of the CivicActions Security Policy to read and re-sign when any part of it, including the Acceptable Use Policy/Rules of Behavior, is revised/updated."
                   }
                 ]
               },
               {
-                "uuid": "845658f6-7599-4021-9398-1cca3ed6e797",
+                "uuid": "6d00f39d-8edc-40a6-a5bc-8d3e241ee703",
                 "control-id": "ps-1",
-                "description": "ps-1 statements",
-                "statements": [
-                  {
-                    "statement-id": "ps-1_smt",
-                    "uuid": "0f3ecb2a-808a-41cd-b526-6dc765111e34",
-                    "description": "CivicActions has developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Personnel Security (PS) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>."
-                  }
-                ]
+                "description": "CivicActions has developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Personnel Security (PS) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>."
               },
               {
-                "uuid": "4579bf56-28a8-4e0c-964e-6bb3d3a104b9",
+                "uuid": "26b34914-63fb-4d7a-bd1a-d52ca298b64c",
                 "control-id": "ps-2",
-                "description": "ps-2 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ps-2_smt.a",
-                    "uuid": "9ff02a1f-4545-496a-9818-048c9e3cc8b0",
+                    "uuid": "1a020c1f-2f07-4727-85f5-e7a98a6a65b9",
                     "description": "Risk designations are assigned to all CivicActions positions. The CivicActions Office of Human Resources works in coordination with the CivicActions Security Office to assign risk designations."
                   },
                   {
                     "statement-id": "ps-2_smt.b",
-                    "uuid": "90fccece-2a4a-4efb-9a08-442640b4237f",
+                    "uuid": "66cfccbb-018a-4fca-b487-88359c09b8a1",
                     "description": "The CivicActions Office of Human Resources works in coordination with the CivicActions Security Office to establish screening criteria for all CivicActions positions."
                   },
                   {
                     "statement-id": "ps-2_smt.c",
-                    "uuid": "772eb94e-34bd-4bd3-81f6-d4dde6ee42ab",
+                    "uuid": "8875ef9d-0202-4f68-8876-4d3934e0cc93",
                     "description": "At least every three (3) years, the CivicActions Office of Human Resources reviews and revises position risk designations. If the Office of Human Resources determines that significant changes must be made to the position risk descriptions the Office of Human Resources works in coordination with the CivicActions Security Office to implement changes as required."
                   }
                 ]
               },
               {
-                "uuid": "9fb1c950-4c5b-4f80-9ca3-ea57af7bca74",
+                "uuid": "597229c9-3062-4726-85ae-3f28fc2ef05f",
                 "control-id": "ps-3",
-                "description": "ps-3 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ps-3_smt.a",
-                    "uuid": "5cc3949d-66f4-492c-b39f-f28aded1e2ac",
+                    "uuid": "01020ccb-4360-46a2-b89f-6a781f2ac4eb",
                     "description": "Prospective CivicActions employees undergo background checks commensurate with the individual\u2019s job duties, the classification of the information they will access, and the risks associated with the role. At the discretion of the CivicActions Security Office, these checks may also be conducted on contractors and/or third party users in cases where they will have access to application data that is not meant to be consumed by the public. In these instances, the Security Office will instruct the Office of Human Resources to conduct a background check before granting access to the information system."
                   },
                   {
                     "statement-id": "ps-3_smt.b",
-                    "uuid": "7a4c3aa5-d69a-49ca-86dc-af142798f6cc",
+                    "uuid": "66bf8717-903b-492f-a124-b7c970481991",
                     "description": "Rescreening is conducted as required by the individual\u2019s job duties, the classification of the information they will access, and the risks associated with the role. A basic background check is performed for all CivicActions employees."
                   }
                 ]
               },
               {
-                "uuid": "ce2acae2-6926-474b-a5ba-b10a91821162",
+                "uuid": "4e981a46-6d4d-4234-a6f0-243ac2dd7e87",
                 "control-id": "ps-4",
-                "description": "ps-4 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ps-4_smt.a",
-                    "uuid": "d4da77c0-08e5-44e1-a1b4-7cf64f24d46d",
+                    "uuid": "77a89d0d-3263-433c-bb5c-8e78af50bb99",
                     "description": "Information system access is terminated immediately upon the voluntary or involuntary departure of an employee. In the case of involuntary departure, in addition to immediate termination of system access, at no point is a departing employee allowed access to any part of the CivicActions infrastructure.\nIn the case of voluntary departure, employees are permitted access to the information system for the duration of their offboarding period. The departing employee\u2019s manager is responsible for informing the Information Technology department when the employee offboarding period concludes. At this time system and facility, access is terminated."
                   },
                   {
                     "statement-id": "ps-4_smt.b",
-                    "uuid": "e8d0a7a9-30f9-4b93-be87-a1fd8f99e9f5",
+                    "uuid": "8b78071f-bc28-405a-9498-d15b1e25d0d3",
                     "description": "The terminated user\u2019s accounts are disabled and all access associated with the individual is revoked."
                   },
                   {
                     "statement-id": "ps-4_smt.c",
-                    "uuid": "72d86bec-c07e-44c5-a67e-c85585ad43d4",
+                    "uuid": "0840996a-85e6-4f0d-94b2-d7e9dcc6262a",
                     "description": "The employee's manager or the Office of Human Resources conducts exit interviews with all employees who leave CivicActions voluntarily. There is a general discussion about the process of turning in any/all company-issued devices, laptops, etc."
                   },
                   {
                     "statement-id": "ps-4_smt.d",
-                    "uuid": "dff3f276-4a39-40ff-ad07-88b0d4e71450",
+                    "uuid": "0d3ebbdc-3830-49a4-ab87-c896f5a880c6",
                     "description": "CivicActions employees provide their own equipment that must be hardened to security requirements depending upon their roles and duties. CivicActions supplies two-factor authentication tokens that become the property of the employee.\nSome employees may receive company-issued hardware for working on particular projects. These items are collected before the employee exits CivicActions. In the case of an involuntary termination, the Office of Human Resources works to collect company-issued devices and provides paperwork highlighting confidential protections for customers."
                   },
                   {
                     "statement-id": "ps-4_smt.e",
-                    "uuid": "20bddaa3-538a-476c-bbf7-eeceb34b2711",
+                    "uuid": "e9b0a3b6-5fda-4245-8762-0e8696c2ac04",
                     "description": "Access to CivicActions information and information systems is always shared so that the termination of an individual will not prevent CivicActions from having access to needed resources."
                   },
                   {
                     "statement-id": "ps-4_smt.f",
-                    "uuid": "584ca012-74a4-40d1-a7ed-0ab2d82e6b11",
+                    "uuid": "98064389-9699-4675-bc4c-d4f49826e582",
                     "description": "When a person is terminated, a standard off-boarding process is used to notify management and CivicActions' Operations staff, and to track the process of disabling access to the information system/information system components. The CivicActions Operations staff and Security Office are given at least four hours notice to schedule the deactivation of access upon termination. Deactivation is a manual process that is tracked via a Trello card in order to meet the four hour turnaround time before termination."
                   }
                 ]
               },
               {
-                "uuid": "3c2c772c-40ce-4a28-b29b-0580203eed93",
+                "uuid": "7ee576a2-6411-432c-85f5-1e62ce681102",
                 "control-id": "ps-5",
-                "description": "ps-5 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ps-5_smt.a",
-                    "uuid": "5a4f3e8d-0811-4e55-b25f-fa2aaee78b09",
+                    "uuid": "5cf58abd-ed00-4e7e-aa97-dd4a5f275e4a",
                     "description": "When an employee, third party personnel and/or contractor is transferred to a new project or position within CivicActions, they may maintain access to the previous system they were working on in order to facilitate the process of maintenance and knowledge transfer. However, as part of the practices of account management (AC-2) and least privilege (AC-6), regular audits of privileged users are conducted and access privileges may be removed when no longer needed. Additionally, adherence to specific client SLAs may enhance the frequency of such audits or the timeliness of privilege removal during personnel transfer."
                   },
                   {
                     "statement-id": "ps-5_smt.b",
-                    "uuid": "1f715b49-e083-4034-9445-48618bcc2c24",
+                    "uuid": "c81fea53-9ad0-4ce0-96d1-18215dab0b34",
                     "description": "When an employee, third party personnel and/or contractor is transferred to a new position within CivicActions and there is a requirement for access change, such access changes are normally completed within five business days."
                   },
                   {
                     "statement-id": "ps-5_smt.c",
-                    "uuid": "1928f5da-b062-42c9-8a7a-5141eb2f6b3f",
+                    "uuid": "537cd855-e661-47dd-adcc-c32668e1be7a",
                     "description": "Access authorizations are modified as needed to coincide with changes in duties or operational needs upon personnel transfer or reassignment."
                   },
                   {
                     "statement-id": "ps-5_smt.d",
-                    "uuid": "e87c786e-4608-4a15-96d3-fc456f0561d9",
+                    "uuid": "6e2870c1-6b9d-4c49-87ae-f7479e5d04b1",
                     "description": "CivicActions Operations staff is informed of transfers that require access authorization modifications within five business days by the Project Manager, System Owner or Office of Human Resources."
                   }
                 ]
               },
               {
-                "uuid": "bb79358f-366c-4d4b-b877-a2afd2a21b44",
+                "uuid": "2b7b9412-7757-4941-8701-6ac05080b1ed",
                 "control-id": "ps-8",
-                "description": "ps-8 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ps-8_smt.a",
-                    "uuid": "05892720-73f9-4f73-8820-a52a2aa28576",
+                    "uuid": "4be7d281-881a-44bf-9b58-687b0c0bb774",
                     "description": "The CivicActions Security Office and/or the Office of Human Resources is responsible for determining and enforcing sanctions for failing to comply with established information security policies and procedures. Coaching may be considered prior to sanctions. Sanctions may include but are not limited to written warnings, reduction in system access, demotion, or termination."
                   },
                   {
                     "statement-id": "ps-8_smt.b",
-                    "uuid": "5e94c8ed-a16b-44a4-8811-6bde12dae180",
+                    "uuid": "de34e6be-8674-4ff2-81c7-aefd66fb91bf",
                     "description": "When employee sanctions processes are initiated, the Office of Human Resources notifies the respective Project Manager(s) and CivicActions' Security Office within five business days."
                   }
                 ]
               },
               {
-                "uuid": "534000d9-8527-4f35-9eb6-36ba58187658",
+                "uuid": "f6b0065f-ecd2-481c-b33a-3f3720a311fa",
                 "control-id": "ra-1",
-                "description": "ra-1 statements",
-                "statements": [
-                  {
-                    "statement-id": "ra-1_smt",
-                    "uuid": "71245ee6-bdd1-452b-a73e-2b3e336700d2",
-                    "description": "CivicActions has developed, documented and disseminated to personnel a risk assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Risk Assessment (RA) Policy and Procedure that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>."
-                  }
-                ]
+                "description": "CivicActions has developed, documented and disseminated to personnel a risk assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Risk Assessment (RA) Policy and Procedure that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>."
               },
               {
-                "uuid": "509ebdd0-f8a0-4fbe-bae5-54013901afbd",
+                "uuid": "7eba7b92-d9e8-45c6-b721-597ef0636039",
                 "control-id": "ra-5",
-                "description": "ra-5 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ra-5_smt.a",
-                    "uuid": "6a35d2be-459c-4e95-ac45-5241565ccc82",
+                    "uuid": "72f865f8-6db1-4c93-ba86-daac58069392",
                     "description": "CivicActions Operations uses vulnerability scanning software to document and determine risks to the system. Operating system and application vulnerability scans include:\n\n- The CivicActions system environment employs the OpenSCAP scanner with the Red Hat STIG baseline to check for vulnerabilities.\n- The CivicActions application environment is tested by the penetration tester OWASP ZAP, an open-source web application security scanner to report on needed updates based on known flaws.\n\nCivicActions Operations has automated the process to perform the scans on a monthly basis. The resulting reports list vulnerabilities and rank them by severity. These reports are stored in Amazon S3 buckets and are used to inform changes to the system and verify that security controls are working correctly. These scans are used to document the current state of the system, and to analyze security trends as changes are made over time."
                   },
                   {
                     "statement-id": "ra-5_smt.b",
-                    "uuid": "86c2cbe2-175a-4d0d-b084-cc82eadaf79b",
+                    "uuid": "1abb625e-b709-4158-a741-5434595ad3f4",
                     "description": "CivicActions employs the automated vulnerability scanning tools OpenSCAP and OWASP ZAP which are interoperable with standard web browsers, the Open Source Ansible infrastructure provisioning system and other Open Source tools."
                   },
                   {
                     "statement-id": "ra-5_smt.c",
-                    "uuid": "2f44774a-e5c6-4c7f-95da-3890b280f95a",
+                    "uuid": "671f99d8-1ec3-4cc8-b787-763a5268e9b8",
                     "description": "The CivicActions Security Office reviews all vulnerabilities identified from automated scans and security assessments. \"False positive\" findings are documented and may be tailored out. Vulnerabilities found and deemed legitimate are assigned an impact rating and response time thought creation of an issue or ticket. The CivicActions Operations staff reviews current scans and compare with older scans to identify trends and to verify previous vulnerabilities have been mitigated."
                   },
                   {
                     "statement-id": "ra-5_smt.d",
-                    "uuid": "248cdd60-236f-4131-bfc7-d70c53558c94",
+                    "uuid": "2cc2931c-fa17-4d37-8256-7eb47ba2ff0b",
                     "description": "Identified and reported vulnerabilities are assigned an impact rating and response time by CivicActions' Security and must be remediated according to the following time requirements:\n\n- Critical - Within 15 days of discovery (usually within 1 week))\n- High - Within 30 days of discovery (usually within 1 week))\n- Moderate - Within 90 days of discovery (usually within 2 weeks)\n- Low - Within 180 days of discovery"
                   },
                   {
                     "statement-id": "ra-5_smt.e",
-                    "uuid": "84cb3454-dce2-4a9e-bc69-ee8c7327962d",
+                    "uuid": "662842b8-edc7-414e-9793-0621ece4cac4",
                     "description": "Results of the vulnerability scans and security assessments are shared with all appropriate CivicActions personnel supporting continuous monitoring requirements. CivicActions Security assigns each vulnerability an impact rating and response time through JIRA or the Git issue tool for tracking to the established remediation deadlines listed in RA-5(d)."
                   }
                 ]
               },
               {
-                "uuid": "1e5e1a9b-e6d2-42be-a155-9140a1950561",
+                "uuid": "c03148de-1dab-4550-9c6b-a3d53bbed17f",
                 "control-id": "sa-1",
-                "description": "sa-1 statements",
-                "statements": [
-                  {
-                    "statement-id": "sa-1_smt",
-                    "uuid": "737b32ac-f08d-4d6b-92ed-64d86ccf1880",
-                    "description": "CivicActions has developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained by the CivicActions System and Services Acquisition (SA) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>."
-                  }
-                ]
+                "description": "CivicActions has developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained by the CivicActions System and Services Acquisition (SA) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>."
               },
               {
-                "uuid": "37924ce2-668d-4d72-bf8b-f22135579d50",
+                "uuid": "1c183cfb-5560-4121-87eb-47d01de0383e",
                 "control-id": "sa-2",
-                "description": "sa-2 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "sa-2_smt.a",
-                    "uuid": "ef3d980e-3041-43da-893e-2a7d8abf7e58",
+                    "uuid": "48ca19c1-6419-458f-9743-8282b892d7af",
                     "description": "CivicActions' Security Office, in collaboration with the System Owner, act and/or meet on a pre-determined basis to determine information system security requirements and to develop implementation budgets and plans."
                   },
                   {
                     "statement-id": "sa-2_smt.b",
-                    "uuid": "a55119b7-b97f-47f9-91d1-93e31adbd351",
+                    "uuid": "7aa07e12-70b2-4888-8efb-23fc466293f8",
                     "description": "The CivicActions Security Office, in collaboration with the System Owner, determines, designates, documents, and allocates the resources required to protect the system as part of its capital planning and investment control processes."
                   },
                   {
                     "statement-id": "sa-2_smt.c",
-                    "uuid": "95c5e4ef-cfd0-40a4-8abb-3e026c1da653",
+                    "uuid": "2716bc9e-c68b-4968-8a6b-f6163024019d",
                     "description": "The annual budget developed by the System Owner includes explicit budgetary line items for FISMA security requirements. Additional security-related expenditures that fall outside of explicit compliance requirements are addressed in sub-lines under the CivicActions Information Technology budget."
                   }
                 ]
               },
               {
-                "uuid": "b1c4a7c6-e8d6-496e-b3a7-a73e49843456",
+                "uuid": "7d5463f0-4c2b-4200-8dfa-19dae0a34a3c",
                 "control-id": "sa-3",
-                "description": "sa-3 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "sa-3_smt.a",
-                    "uuid": "b635d359-81f5-46cd-b9c5-8b488a53e150",
+                    "uuid": "8eb82547-b30b-4177-8ed9-9ff5a103b4d4",
                     "description": "The system and application(s) are managed by CivicActions using the Agile software development methodology, which provides a continuous System Development Life Cycle (SDLC) methodology. CivicActions Agile management continues to improve the software through ongoing planned code releases. The process is overseen by the Change Control Board (CCB) as described in CM-1. Each point release introduces code and configuration changes to the website through the following SDLC methodology:\n\n- Code release planning: A code release ticket is created in the Change Request project of the CivicActions ticketing system which describes the overall goals of the code release. The code release ticket is linked to other tickets in the ticketing system which describe issues to be addressed by the planned code release. Those issues may include bug fixes and feature enhancements as well as upgrades to newer versions of the software packages that have been used to build the website.\n- Sprints: The tickets covered by the planned code release are then implemented through a series of planned sprints, each of which typically lasts two weeks. Each sprint begins with a sprint planning session at which the CCB selects a list of tickets to be implemented. CivicActions Development holds daily coordination meetings throughout the sprint to share information and resolve any problems that may be blocking progress toward completion. At the end of the sprint, a retrospective is performed in which progress is reviewed to determine which issues have been resolved and which need further work.\n- Development/unit testing: Work on each ticket is performed within a separate code branch within the CivicActions Git repository, and tested using the GitLab Runner continuous integration platform. Developers also write unit tests to prove their code behaves as expected and address security considerations such as information leakage, bounds checking, and input validation. Once work on a ticket is completed, the developer creates a merge request, and the changes are submitted to at least one other developer for review to ensure they meet functional requirements and address security considerations before the pull request is merged into the Git repository's development branch for the planned code release.\n- Integration testing: Once all work tickets have been completed, the code and configuration necessary to implement the changes are merged into the website's staging server, where it undergoes additional testing to ensure there are no conflicts between the work that has been done on individual tickets.\n- User acceptance testing (UAT): The code release undergoes manual testing against a checklist of expected site behaviors and options each of the website's defined user roles to further verify that the functional changes work as expected and to identify any changes in user experience that need to be documented in release notes to be shared with the customer.\n- Approval for deployment: After all the planned code release has passed all of the above tests, the code release is scheduled for deployment to production and presented to CivicActions' Change Control Board (CCB) for review and approval.\n- Deployment to production: A full backup of the website is performed immediately prior to the deployment.\n- Security scan: After the deployment to production, the website undergoes a security scan using a web vulnerability scanner.\n\n  Security issues to be addressed in the planned code release may come from\na variety of sources:\n- Customer support requests received by the CivicActions Help Desk\n- Security concerns, incidents, and site performance issues reported by users\n- Security incident reports, including server log analysis and root cause analysis of those incidents performed by the CivicActions Security Office and Operations staff\n- Security notifications received by the CivicActions Security Office from external security teams and other software vendors\n- Vulnerabilities detected during security scans of the website performed by the CivicActions Security Office\n- Issues reported by the CivicActions Security Office, Operations staff and Development\n- Security issues reported through continuous monitoring"
                   },
                   {
                     "statement-id": "sa-3_smt.b",
-                    "uuid": "2a495dd0-5b53-44e4-ba68-a13a399bd09d",
+                    "uuid": "b690e8df-5648-4860-af55-052e41b5a58f",
                     "description": "The CivicActions organization defines and documents information security roles and responsibilities throughout the SDLC. The following teams participate in this process:\n\n- Customer Support: Files tickets when incidents are reported and shares incident reports with customers\n- The CivicActions Security Office: Receives security notifications from the Drupal security team and other software vendors; performs security scans; uses CivicActions JIRA ticketing system to request mitigation of all reported vulnerabilities\n- CivicActions Development: Performs server log analysis when security incidents are reported; assists in root cause analysis\n- Change Control Board: Meets weekly to review and approve upcoming planned code changes to the website, include security-related code releases.\n- AWS Cloud: Monitors server and application events; proactively respond to security incidents, and reports incidents to CivicActions\n- Users: Communicates customer security requirements and expectations, and alerts the CivicActions customer support team whenever it detects a security or site performance issue\n\nSecurity responsibilities performed by these teams include the following:\n\n- Perform configuration management during information system design, development, implementation, and operation;\n- Implement only organization-approved changes;\n- Document approved changes;\n- Manage and control changes to the system;\n- Fully test all changes, taking into account security considerations as well as other functional requirements;\n- Track security flaws and flaw resolution; and\n- Employ code analysis tools to examine software for common flaws and document the results of the analysis."
                   },
                   {
                     "statement-id": "sa-3_smt.c",
-                    "uuid": "4215e3a7-25aa-4b84-bb98-78567fa2811f",
+                    "uuid": "7cf30799-6d12-4092-b781-fd67ec561892",
                     "description": "Each of the CivicActions teams described in SA-3(b) has a team leader who is responsible for defining the roles and responsibilities of individual personnel members within that team. CivicActions uses role-based management for access and authentication implementation and enforcement."
                   },
                   {
                     "statement-id": "sa-3_smt.d",
-                    "uuid": "78688071-d35e-42d9-ab8c-eb034af9286d",
+                    "uuid": "77cb7063-76df-4125-9c59-c9ed4d9b843b",
                     "description": "The CivicActions organization integrates the organizational information security risk management process into system development life cycle activities by requiring that the processes defined in SA-3(a) and (b) above are adhered to by all information system developers and associated security personnel."
                   }
                 ]
               },
               {
-                "uuid": "ab66bccd-7094-46db-a342-e32fa96239c4",
+                "uuid": "6e49c009-8191-4845-9fe9-7e73dc416352",
                 "control-id": "sa-4",
-                "description": "sa-4 statements",
-                "statements": [
-                  {
-                    "statement-id": "sa-4_smt",
-                    "uuid": "77c6104a-a7c7-4455-a126-1aacf51bf386",
-                    "description": "The CivicActions System and Services Acquisition Policy affects all personnel with purchasing authorization and applies to all purchases or deployments including infrastructure, software or hardware. The CivicActions System and Services Acquisition Policy contains the process for determining acceptance criteria for all system software and application services.\n\nThe Acquisition Security Policy includes an assessment that evaluates the product based on the vendor\u2019s security practices, policies, and past performance. It also details the potential maintenance and end-of-life ramifications with regards to security.\n\nThe CivicActions Security Office is responsible for determining the security documentation that must be included in the information system or services acquisition contracts.\n\nConfiguration and design of the development and production environments are hosted in the CivicActions Git repository. All documentation is strictly controlled regarding transportation and storage in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs."
-                  }
-                ]
+                "description": "The CivicActions System and Services Acquisition Policy affects all personnel with purchasing authorization and applies to all purchases or deployments including infrastructure, software or hardware. The CivicActions System and Services Acquisition Policy contains the process for determining acceptance criteria for all system software and application services.\n\nThe Acquisition Security Policy includes an assessment that evaluates the product based on the vendor\u2019s security practices, policies, and past performance. It also details the potential maintenance and end-of-life ramifications with regards to security.\n\nThe CivicActions Security Office is responsible for determining the security documentation that must be included in the information system or services acquisition contracts.\n\nConfiguration and design of the development and production environments are hosted in the CivicActions Git repository. All documentation is strictly controlled regarding transportation and storage in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs."
               },
               {
-                "uuid": "be18fc4f-8996-480d-a747-f79e88cf34b0",
+                "uuid": "6604fc59-ec27-4d68-b445-cbd58b15f849",
                 "control-id": "sa-5",
-                "description": "sa-5 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "sa-5_smt.a",
-                    "uuid": "504a9df1-0b99-4e5b-be2f-e847c9a1ca20",
+                    "uuid": "34577d19-83c7-40ff-a239-0a69ae5cd730",
                     "description": "Some application features are built on a custom basis and are not part of standard FOSS packages. Administrator documentation for those custom features is maintained in the CivicActions Git repository documentation system."
                   },
                   {
                     "statement-id": "sa-5_smt.b",
-                    "uuid": "96fab472-9608-433c-b484-1973132c19b9",
+                    "uuid": "c6920b45-3e15-4b39-b154-c9f6744d2b28",
                     "description": "The publicly-available FOSS package documentation described in control SA-5(a) also includes user documentation for non-administrators as described in control AC-3. This includes documentation on how to create and manage user accounts as well as how to create, update and delete content.\n\nCivicActions follows the user documentation standard practice to provide context-sensitive help as well as access to a Help Desk in publicly facing applications.\n\nThe CivicActions Customer Support team, described in control SA-3(b), handles questions about how to use the system. Questions are submitted by sending an email to support@civicactions.com, which triggers the creation of a ticket in the CivicActions customer support ticketing system."
                   },
                   {
                     "statement-id": "sa-5_smt.c",
-                    "uuid": "45889c88-36fb-49c3-bca7-56e06a7c5af8",
+                    "uuid": "0511dee4-51d6-44e1-961c-03d78b87ed64",
                     "description": "If the information needed to answer a question is not already included in the website's public-facing documentation, a ticket is created to determine whether the question is sufficiently general in nature to warrant adding the answer to the website's documentation."
                   },
                   {
                     "statement-id": "sa-5_smt.d",
-                    "uuid": "f97772b3-5b98-4fad-8c99-7cc0b1f1654e",
+                    "uuid": "5cfaf947-6422-4b6d-b389-d8b7a1c8d6aa",
                     "description": "All administrator documentation is housed in a protected Git repository. User documentation is publicly available."
                   },
                   {
                     "statement-id": "sa-5_smt.e",
-                    "uuid": "ed30ee71-37d5-4ae5-8438-ca6713ab5acf",
+                    "uuid": "46738818-9332-4db6-abec-f9139f757b11",
                     "description": "As needed and approved by the CivicActions Security Office, documentation is available to appropriate personnel by granting access to the private Git repository."
                   }
                 ]
               },
               {
-                "uuid": "b9aaac14-aa7d-4a3c-bf7c-04b0a202f2c0",
+                "uuid": "14df1730-f7d2-4ab4-a580-865ef2a312a7",
                 "control-id": "sa-9",
-                "description": "sa-9 statements",
-                "statements": [
-                  {
-                    "statement-id": "sa-9_smt",
-                    "uuid": "e7c6f8d8-92a8-4eff-9496-77aa54ce486b",
-                    "description": "CivicActions does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing or transmitting federal agency data."
-                  }
-                ]
+                "description": "CivicActions does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing or transmitting federal agency data."
               },
               {
-                "uuid": "bbdeee55-f85a-4faf-8f97-f3b3dd305443",
+                "uuid": "ab1dc3dc-52a6-44f0-b4b3-0f0d73102932",
                 "control-id": "sc-1",
-                "description": "sc-1 statements",
-                "statements": [
-                  {
-                    "statement-id": "sc-1_smt",
-                    "uuid": "a51dda5c-e865-42ec-a4cb-7a46ac9b67c8",
-                    "description": "CivicActions has developed, documented and disseminated to personnel a system and communication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Communications Protection (SC) Policy CivicActions document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>."
-                  }
-                ]
+                "description": "CivicActions has developed, documented and disseminated to personnel a system and communication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Communications Protection (SC) Policy CivicActions document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>."
               },
               {
-                "uuid": "6139ea4f-2a29-4929-96d1-de7643d07083",
+                "uuid": "b0891726-cd01-4842-bd37-006d2013e874",
                 "control-id": "sc-13",
-                "description": "sc-13 statements",
-                "statements": [
-                  {
-                    "statement-id": "sc-13_smt",
-                    "uuid": "f4d8471a-d896-4ed4-b4d3-f1124255a579",
-                    "description": "The information system implements:\n\n- Cryptographic modules through Secure Shell (SSH) to allow administrators to securely logon to the various system components\n- HTTPS/SSL (TLS) for connection to web-based services\n- TLS for connection to email services\n- AES-256 (FIPS 140-2 validated) for data at rest (with Elastic Block Store (EBS) volumes)"
-                  }
-                ]
+                "description": "The information system implements:\n\n- Cryptographic modules through Secure Shell (SSH) to allow administrators to securely logon to the various system components\n- HTTPS/SSL (TLS) for connection to web-based services\n- TLS for connection to email services\n- AES-256 (FIPS 140-2 validated) for data at rest (with Elastic Block Store (EBS) volumes)"
               },
               {
-                "uuid": "67dbeac1-2c49-4681-8771-26f39541228b",
+                "uuid": "77f4fe98-831c-499e-bd5b-ed54137d4805",
                 "control-id": "sc-20",
-                "description": "sc-20 statements",
-                "statements": [
-                  {
-                    "statement-id": "sc-20_smt",
-                    "uuid": "32416287-663c-4578-b25e-16098fb9f02a",
-                    "description": "The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: secure name / address resolution service (authoritative source)"
-                  }
-                ]
+                "description": "The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: secure name / address resolution service (authoritative source)"
               },
               {
-                "uuid": "9381f061-3005-46d4-95f0-19620bce0851",
+                "uuid": "cdb6a761-3ca1-432f-ad8d-fed74a8ffe66",
                 "control-id": "sc-21",
-                "description": "sc-21 statements",
-                "statements": [
-                  {
-                    "statement-id": "sc-21_smt",
-                    "uuid": "4512172e-53a5-45bb-8e9d-8e8ee74e948f",
-                    "description": "The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: secure name / address resolution service (recursive or caching resolver)"
-                  }
-                ]
+                "description": "The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: secure name / address resolution service (recursive or caching resolver)"
               },
               {
-                "uuid": "e9984599-162e-40e9-8187-8402ca7fe76c",
+                "uuid": "5f50f5cb-c480-4427-adfc-fb8658bb72d7",
                 "control-id": "sc-22",
-                "description": "sc-22 statements",
-                "statements": [
-                  {
-                    "statement-id": "sc-22_smt",
-                    "uuid": "4ac91051-b8a7-4937-bbca-c6fc9f92b5d5",
-                    "description": ""
-                  }
-                ]
+                "description": ""
               },
               {
-                "uuid": "ca044c93-bc2e-4e44-8ac6-3cbff70e916b",
+                "uuid": "3d08bad9-8c5d-4930-a61f-bbf577ab96b8",
                 "control-id": "sc-39",
-                "description": "sc-39 statements",
-                "statements": [
-                  {
-                    "statement-id": "sc-39_smt",
-                    "uuid": "d5b3c72c-5b8a-494b-83c3-d30956f7bcd8",
-                    "description": "Process isolation is maintained on the Linux platform. Linux is the only operating system that is part of the boundary."
-                  }
-                ]
+                "description": "Process isolation is maintained on the Linux platform. Linux is the only operating system that is part of the boundary."
               },
               {
-                "uuid": "f29e8fc0-95cc-4d56-aed3-807974f9b151",
+                "uuid": "ede43ae1-c4fe-465c-b459-ec54f339aa55",
                 "control-id": "si-1",
-                "description": "si-1 statements",
-                "statements": [
-                  {
-                    "statement-id": "si-1_smt",
-                    "uuid": "f78b2898-5006-4fe9-87cb-7246c0e0261f",
-                    "description": "CivicActions has developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Information Integrity (SI) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>."
-                  }
-                ]
+                "description": "CivicActions has developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Information Integrity (SI) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>."
               },
               {
-                "uuid": "45261441-5afd-49ec-8ad8-1776ff9c3c50",
+                "uuid": "3182dc9a-54bc-4d39-9e51-e6605be28b4b",
                 "control-id": "si-2",
-                "description": "si-2 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "si-2_smt.a",
-                    "uuid": "a0e974b1-8892-45ab-bc73-f4eceab98cb6",
+                    "uuid": "717ef18c-690f-4f66-ba34-f10dd1dd52da",
                     "description": "Identification of information system security flaws are detected as early as possible by the following methods:\n\n- Vulnerability scans, as described in RA-5.\n- Log analysis from monitoring described in SI-4.\n- Service flaw notifications (CVEs, etc.) are received by the\n  CivicActions Security Office and passed on to\n  CivicActions Operations staff when relevant.\n\nAny security issues found are ticketed through JIRA and/or the Git issue queue. CivicActions Operations staff prioritizes high findings. Changes made to correct the information system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB as implemented in CM-3."
                   },
                   {
                     "statement-id": "si-2_smt.b",
-                    "uuid": "abb5b105-117f-4f99-b0d2-ee9a857326b8",
+                    "uuid": "529ddb68-080e-4a8e-b67d-3f02e3bf2de8",
                     "description": "CivicActions testing of the system as a result of security flaw remediation is done through a development environment through the use of internal software and automated testing that ensures the system is working as intended. When a change is made by a developer, testing though a peer review is conducted as part of the Change Request process to ensure the correct analysis is completed. Then the changed code is tested in an automatic test environment as described in the Configuration Management Plan (CMP). Tracking of the testing is documented in JIRA and/or the Git issue queue."
                   },
                   {
                     "statement-id": "si-2_smt.c",
-                    "uuid": "e2c216e8-84fc-4f11-9d79-951829777cd3",
+                    "uuid": "efbd0ba2-5003-42ed-b3ba-83c6f802714c",
                     "description": "CivicActions security-software updates are tested prior to implementation on production. The CivicActions Security framework for installation requires updates to be made within 30 days for high vulnerabilities, 90 days for moderate vulnerabilities, and 240 for low vulnerabilities. An issue ticket is created to track any updates made to the system."
                   },
                   {
                     "statement-id": "si-2_smt.d",
-                    "uuid": "2a963ef8-fc67-4fae-8900-fdbb47ee77f7",
+                    "uuid": "7c4d115d-8431-4ced-bdc1-6660f2f962e6",
                     "description": "Flaw remediation is part of the CivicActions configuration management process. Any security issues found are ticketed through JIRA or the Git issue queue. The CivicActions Security Office prioritizes the high findings within the application. Changes made to correct the system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB Chair as implemented in CM-3."
                   }
                 ]
               },
               {
-                "uuid": "8e3284f7-01d3-4ddb-b6c9-bf050d8cd794",
+                "uuid": "ab463b22-2a44-4349-a853-9fd176099306",
                 "control-id": "si-3",
-                "description": "si-3 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "si-3_smt.a",
-                    "uuid": "bb1dcd72-8eec-4db4-baef-7260d4e5e357",
+                    "uuid": "a27e4459-b146-4fb7-a308-51a4a6262e1a",
                     "description": "Virus scans are performed by ClamAV, a server-hosted tool protecting the application from Trojans, Viruses and other malicious cyber-threats. Real-time scans are conducted whenever files are uploaded from any external source and malicious code is blocked or quarantined when detected. All file-based traffic traversing the server is sanitized before being delivered. All input form text is validated and sanitized."
                   },
                   {
                     "statement-id": "si-3_smt.b",
-                    "uuid": "0b56e1bb-573a-42bc-8e96-2ee01c5ee0cf",
+                    "uuid": "ca8a137a-5be0-479c-b350-eb55fe20f8fd",
                     "description": "Anti-virus definitions and malicious code protection mechanisms are configured and updated automatically on a nightly basis."
                   },
                   {
                     "statement-id": "si-3_smt.c",
-                    "uuid": "396638e5-ff1e-448d-82c5-482e9d698357",
+                    "uuid": "94f07f4b-e6ec-4158-875f-2bc273757b02",
                     "description": "CivicActions Operations staff receives information system security alerts, advisories, and notifications in response to malicious code detection. These messages are sent to group email distribution lists to ensure all members of the team receive the proper information in a timely manner."
                   },
                   {
                     "statement-id": "si-3_smt.d",
-                    "uuid": "190fc500-2185-43d8-a9ec-c0080453ec1c",
+                    "uuid": "66622efb-6bc8-4f25-b3f2-2d6a0f28d257",
                     "description": "False positives during malicious code detection and eradication are dealt with on a case by case basis. Potential impacts on the availability of the information system are detailed in a false positive report depending on if the report is for the OS, database or web application."
                   }
                 ]
               },
               {
-                "uuid": "843cc0fd-8abd-4591-8ecb-82fb3c771fa8",
+                "uuid": "71f12ded-f2d8-4187-9f7c-70ec3aa6bf2e",
                 "control-id": "si-4",
-                "description": "si-4 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "si-4_smt.a",
-                    "uuid": "3aaf739e-5131-48eb-8ca8-5499e58dc91b",
+                    "uuid": "14bdc129-b4e8-4714-a766-56f2b414160c",
                     "description": "CivicActions systems use a collection of monitoring systems, including:\n\n- ClamAV - provides signature-based malware detection/quarantine\n- OSSEC host-based intrusion detection system (HIDS)\n- AIDE Advanced Intrusion Detection Environment (IDS))\n- fail2ban, an intrusion prevention system (IPS) framework\n- SELinux - a Mandatory Access Control (MAC) IPS\n- auditd - a secure system audit daemon\n- CloudWatch - AWS monitoring and measurement system\n- StatusCake - website monitoring tool\n- OpsGenie - a slack/email/text/phone incident escalation tool"
                   },
                   {
                     "statement-id": "si-4_smt.b",
-                    "uuid": "eb7cf2aa-51b8-4aa9-a692-086b37a10904",
+                    "uuid": "c0e3ad30-d774-4032-b0b7-a5813bb6b7ca",
                     "description": "Logs from the systems described in SI-4(a) are sent to the CivicActions SIEM tool for analysis. These logs can identify unauthorized use of the information system."
                   },
                   {
                     "statement-id": "si-4_smt.c",
-                    "uuid": "0717b44c-3395-4d7e-b431-656de53aee35",
+                    "uuid": "9238b695-24e1-4836-9f7f-618eadef9cec",
                     "description": "Monitoring and log collection occur throughout the system."
                   },
                   {
                     "statement-id": "si-4_smt.d",
-                    "uuid": "a008b266-5f4f-40de-95cb-eb5eb380e161",
+                    "uuid": "a37a1319-8294-47ab-a88a-0d721a85cc08",
                     "description": "The Configuration Management process, remote log gathering, and SELinux MAC protects information obtained from intrusion-monitoring tools from unauthorized access, modification, and deletion."
                   },
                   {
                     "statement-id": "si-4_smt.e",
-                    "uuid": "786daec8-11fc-49bf-8469-c8adb3357a3e",
+                    "uuid": "ede3489e-46a6-481e-bf5d-65a286a54b5a",
                     "description": "In the event of a performance score lower than CivicActions standards, a notification is sent to the CivicActions Security Office. CivicActions subscribes to security mailing lists in the event the monitoring activity is required based on law enforcement information, intelligence information, or other credible sources of information."
                   },
                   {
                     "statement-id": "si-4_smt.f",
-                    "uuid": "64700f43-0ef3-4b23-835b-a74e6555e61d",
+                    "uuid": "38318905-de19-4a13-ad8b-08ff73fdf3f1",
                     "description": "Internal legal counsel is utilized as required when system notifications indicate such action based on user and/or malicious activity. Legal counsel is engaged for any actions that may necessitate increased user monitoring or evidence/forensic actions."
                   },
                   {
                     "statement-id": "si-4_smt.g",
-                    "uuid": "1fa7af09-074e-4bde-bf64-1aad3d77cbb1",
+                    "uuid": "08aade6e-2e50-4444-adef-18d9327519e8",
                     "description": "System alerts generated by CivicActions internal monitors (StatusCake, OSSEC, ClamAV, others) are sent to the Incident Response team via OpsGenie."
                   }
                 ]
               },
               {
-                "uuid": "fabf7cb9-526f-4c28-8237-8043c3ab1bf6",
+                "uuid": "3aacd0ed-b004-427b-99ec-d61694e5888f",
                 "control-id": "si-5",
-                "description": "si-5 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "si-5_smt.a",
-                    "uuid": "be2782cb-6cab-4b4c-bab3-ff9336b23718",
+                    "uuid": "05a4707c-5870-4d68-a4a1-fa16d3418690",
                     "description": "The CivicActions Security Office and Operations staff receive the following security alerts, advisories, and directives on an ongoing basis:\n\n- Mailing lists relevant to web application security\n- US-CERT\n- Technical Cyber Security Alerts\n- Drupal Security Advisories"
                   },
                   {
                     "statement-id": "si-5_smt.b",
-                    "uuid": "7b06c15b-51fa-4a2b-afe6-f398d4ce0403",
+                    "uuid": "b9048f23-2e9b-4bd0-a9e2-12ac743fa2b2",
                     "description": "CivicActions utilizes StatusCake for front line monitoring for real time system status and events of the application. StatusCake can feed to the OpsGenie incident escalation system."
                   },
                   {
                     "statement-id": "si-5_smt.c",
-                    "uuid": "2a43b654-2d51-4567-b45b-627bdc3eccb2",
+                    "uuid": "3171a00a-dd62-46a3-9d3d-95ca5889baf9",
                     "description": "The CivicActions Security Office disseminates security alerts, advisories, and directives to all CivicActions internal personnel and client personnel as directed."
                   },
                   {
                     "statement-id": "si-5_smt.d",
-                    "uuid": "f63b1ae0-0a35-4fb2-b625-dfe218397fbb",
+                    "uuid": "afdab2a9-bfe5-4672-9a18-56006bcd1017",
                     "description": "The CivicActions Security Office is responsible for ensuring the dissemination and implementation of relevant security alerts and advisories."
                   }
                 ]
               },
               {
-                "uuid": "138a2cff-787f-4d22-adc3-83d157318afb",
+                "uuid": "16b10365-f963-435e-8df5-9d75956b3684",
                 "control-id": "si-12",
-                "description": "si-12 statements",
-                "statements": [
-                  {
-                    "statement-id": "si-12_smt",
-                    "uuid": "d8266251-c02c-42fd-8625-32b2ada2b73e",
-                    "description": "The CivicActions organization retains all information, system-related information, incident-related information, and system output in accordance with customers\u2019 requirements retention periods and other NIST guidance and standards, Federal policies, procedures, federal laws, and executive orders. Audit records are retained for 365 days."
-                  }
-                ]
+                "description": "The CivicActions organization retains all information, system-related information, incident-related information, and system output in accordance with customers\u2019 requirements retention periods and other NIST guidance and standards, Federal policies, procedures, federal laws, and executive orders. Audit records are retained for 365 days."
               }
             ]
           }

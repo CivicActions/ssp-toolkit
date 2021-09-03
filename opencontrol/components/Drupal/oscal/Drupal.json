@@ -1,309 +1,260 @@
 {
   "component-definition": {
-    "uuid": "96f16f5c-95b5-43e5-8c65-99fbe236bbe0",
+    "uuid": "fc9d5fee-2f75-4d6d-b212-36821dce42a6",
     "metadata": {
       "title": "Drupal Content Management System (CMS)",
-      "published": "2021-08-22T19:49:17.073000+00:00",
-      "last-modified": "2021-08-22T19:49:17.073005+00:00",
+      "published": "2021-09-03T22:02:17.780667+00:00",
+      "last-modified": "2021-09-03T22:02:17.780671+00:00",
       "version": "unknown",
       "oscal-version": "1.0.0"
     },
     "components": [
       {
-        "uuid": "e528adb6-3f1f-4b40-b621-7e5cbdecfc85",
+        "uuid": "7f274782-d2c8-4270-acb9-288b8e86933b",
         "type": "software",
         "title": "Drupal",
         "description": "Drupal",
         "control-implementations": [
           {
-            "uuid": "a9725c29-961c-47b8-a7a0-f039fdd599d4",
-            "source": "NIST_SP80053r4",
+            "uuid": "3f59d42f-087e-4824-ae91-34b17c307e5e",
+            "source": "https://raw.githubusercontent.com/usnistgov/oscal-content/master/nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_catalog.json",
             "description": "NIST_SP80053r4",
             "implemented-requirements": [
               {
-                "uuid": "8fdc966b-4e1d-492e-85dd-e2f66e998f73",
+                "uuid": "e4ec0cc0-a672-4df9-89da-05b59e3c4da2",
                 "control-id": "ac-2",
-                "description": "ac-2 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ac-2_smt.a",
-                    "uuid": "f86a639a-83ce-4ca9-9b38-08d458ca49ea",
+                    "uuid": "ff03d804-984b-401c-a343-3150fbd32413",
                     "description": "Drupal provides the following information system account types to support organizational mission/business functions:\n\n- Anonymous user - readers of the site who either do not have an account or are not\n  logged in.\n\n- Authenticated user - All non-anonymous users inherit the \"authenticated user role\"\n  that supports personal account management capabilities.\n\n- Administrator - This role has all permissions enabled by default."
                   },
                   {
                     "statement-id": "ac-2_smt.b",
-                    "uuid": "6506ce4f-8b67-4970-9c95-523f036e69a2",
+                    "uuid": "a4aa09c5-1f59-4a43-a5b9-ca8ec0d05c21",
                     "description": "Drupal defines a default set of roles; Anonymous, Authenticated, and Administrator, as well as providing for the creation of additional organizational-defined roles identified by The Project"
                   },
                   {
                     "statement-id": "ac-2_smt.d",
-                    "uuid": "a690f90b-8b60-4b89-b32f-3c6cbc431a23",
+                    "uuid": "2a5309bc-0d42-4d45-b500-3d22b510d9da",
                     "description": "Drupal has a sophisticated permissions and role-based access control built-in. Each role within Drupal can only access the documents and controls for which their privilege allows."
                   },
                   {
                     "statement-id": "ac-2_smt.g",
-                    "uuid": "44932571-9cdf-449d-b1c8-3c30d31503e8",
+                    "uuid": "89937d2f-c0ff-48f8-be46-1a4f987d8397",
                     "description": "Drupal monitors the usage of information accounts in the Watchdog log."
                   }
                 ]
               },
               {
-                "uuid": "c1e69048-1325-4b68-9c9d-b6c1b99d617d",
+                "uuid": "d9b43f2e-4cee-4acf-a61c-5667fb77c98d",
                 "control-id": "ac-3",
-                "description": "ac-3 statements",
-                "statements": [
-                  {
-                    "statement-id": "ac-3_smt",
-                    "uuid": "4610d215-9f6c-4395-8d36-ac5c9fe0e56d",
-                    "description": "Access control in Drupal is enforced by authentication via a unique username/password for every type of user except Anonymous user. The user\u2019s privileges, permissions, and access are provided on the principle of least privilege.\nThe anonymous user role has the least access to the site of all roles. The website does not allow anonymous users to register an account for themselves. Drupal Administrators are the only user roles that can create new user accounts."
-                  }
-                ]
+                "description": "Access control in Drupal is enforced by authentication via a unique username/password for every type of user except Anonymous user. The user\u2019s privileges, permissions, and access are provided on the principle of least privilege.\nThe anonymous user role has the least access to the site of all roles. The website does not allow anonymous users to register an account for themselves. Drupal Administrators are the only user roles that can create new user accounts."
               },
               {
-                "uuid": "450864e8-9fde-40f9-8177-59fc644f9050",
+                "uuid": "114be633-f942-4470-ab41-710ffffcaef7",
                 "control-id": "ac-7",
-                "description": "ac-7 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ac-7_smt.a",
-                    "uuid": "9bce6314-04d4-4238-a8fa-3bfeda675bc7",
+                    "uuid": "c884abea-2f28-43ca-8cc2-8a47aa41afdb",
                     "description": "Drupal can be configured to lock an account after a specified number of invalid login attempts within a specified time period. The default for Drupal is 5 failed login attempts within six hours."
                   },
                   {
                     "statement-id": "ac-7_smt.b",
-                    "uuid": "c36fd8e9-c19d-4bcd-8736-0938e290f457",
+                    "uuid": "150ddca5-d233-4f25-a48f-b762f1a3331d",
                     "description": "Lockdown following unsuccessful attempts is configurable by Drupal administrators to conform to defined requirements. When a user exceeds the limit of invalid login attempts, their account is automatically locked for a specified time and requires administrator action to unlock the account before the lockout period expires."
                   }
                 ]
               },
               {
-                "uuid": "3b5ed77a-c201-478a-8216-1c2d2a3b84a1",
+                "uuid": "76b88869-f493-47e2-8c6d-28d74937ba20",
                 "control-id": "ac-14",
-                "description": "ac-14 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ac-14_smt.a",
-                    "uuid": "f4292b1c-8c8c-48eb-b2ba-770e5a94e362",
+                    "uuid": "ee20250d-ce46-439b-bf4f-78a1681582a7",
                     "description": "The anonymous user role has the least access to the site of all roles. Drupal sites can be configured to allow actions identified by The Project"
                   }
                 ]
               },
               {
-                "uuid": "c68a34c0-f0b9-4eb4-9583-21beed236b79",
+                "uuid": "d7ac3b2c-bb90-4a6e-adea-167e18cb1ef5",
                 "control-id": "au-2",
-                "description": "au-2 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "au-2_smt.a",
-                    "uuid": "a660e182-6616-485a-99a8-f6ecaeda4ceb",
+                    "uuid": "ec2e921f-479b-49d9-9fb7-65854a1e23ef",
                     "description": "Drupal's Watchdog log are configured to track all relevant auditable events as defined by Client\n\n- Apache access log: Contains a list of requests for your website that have bypassed Varnish. These requests include pages, theme files, and static media files.\n- Apache error log: Records any Apache-level issues. The issues reported here are usually caused by general server issues, including capacity problems, .htaccess problems, and missing files.\n- Drupal page request log: Records all Drupal page loads on your website.\n- Drupal Watchdog log: Records Drupal-related actions on your website. The Watchdog log is recorded on your database if you have enabled the syslog module.\n- MySQL slow query log: Contains a list of MySQL queries that have taken longer than one second to complete.\n- PHP error log: Records any issues that occur during the PHP processing portion of a page load. Issues reported here are usually caused by a website\u2019s code, configuration, or content."
                   },
                   {
                     "statement-id": "au-2_smt.d",
-                    "uuid": "1cc0bed3-390f-415a-96ae-7aa2af6c866b",
+                    "uuid": "c36e04fe-d112-4dc7-a913-35208ccc7f17",
                     "description": "Information captured in the transaction logs includes, but is not limited to, the following auditable events:\n\n- Failed login attempts\n- Successful login attempts\n- User account deletions\n- User account blocking/unblocking\n- Changes in user role assignments\n- Unauthorized attempts to alter protected user fields\n- New user account creation\n- Password reset instructions mailed\n- User logins via a one-time login link\n- User logouts\n- Content creation (datasets, resources and other content types)\n- Content modification\n- Content deletion\n- Content publishing\n- Content unpublishing\n- File uploads\n- Web page not found\n- Website configuration changes\n- System administration activities\n- Slow query logs.\n- PHP error logs: Captures any errors logged during execution of the PHP programming language."
                   }
                 ]
               },
               {
-                "uuid": "ce2a77b7-2baf-4f5c-8501-cf8825e6cbab",
+                "uuid": "ea42a2f3-bc7f-40c9-8ba4-1d1a017f5fce",
                 "control-id": "au-3",
-                "description": "au-3 statements",
-                "statements": [
-                  {
-                    "statement-id": "au-3_smt",
-                    "uuid": "d09d195c-cb44-4287-a5fb-ba7d3bda84e7",
-                    "description": "The logs collected for Drupal sites include the following types of information:\n\n- IP number of the request originator\n- Timestamp\n- Request URL\n- HTTP status code returned\n- Username\n- Drupal Watchdog message (if applicable)\n- Unique numerical ID of the content being modified (for content creation, modification and deletion events)\nWhen auditing a Drupal incident, the CivicActions developers aggregate log sources from multiple servers into the Graylog dashboard so that all log entries for a single managed security incident can be analyzed in a single document. Log sources are sorted, filtered and reviewed. Application logs are maintained primarily for an after-the-fact investigation of critical systems or security events."
-                  }
-                ]
+                "description": "The logs collected for Drupal sites include the following types of information:\n\n- IP number of the request originator\n- Timestamp\n- Request URL\n- HTTP status code returned\n- Username\n- Drupal Watchdog message (if applicable)\n- Unique numerical ID of the content being modified (for content creation, modification and deletion events)\nWhen auditing a Drupal incident, the CivicActions developers aggregate log sources from multiple servers into the Graylog dashboard so that all log entries for a single managed security incident can be analyzed in a single document. Log sources are sorted, filtered and reviewed. Application logs are maintained primarily for an after-the-fact investigation of critical systems or security events."
               },
               {
-                "uuid": "9f122369-24b4-4bee-acc6-dca6f07e02d9",
+                "uuid": "f2336bbd-1a7c-486e-94e9-22a2b3496068",
                 "control-id": "ca-7",
-                "description": "ca-7 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ca-7_smt.a",
-                    "uuid": "2504f678-261f-4739-85e1-cb9592423562",
+                    "uuid": "757edadf-c622-44db-aee1-f5d8372065bc",
                     "description": "CivicActions follows recommendations and best practices developed by the Drupal community for monitoring. Examples of specific logs and metrics are included in AU-2 and AU-3."
                   },
                   {
                     "statement-id": "ca-7_smt.c",
-                    "uuid": "bb0d1fed-2999-48ff-8550-9f7a9aa02ce9",
+                    "uuid": "0edd924e-08d5-415a-8bc0-d049b4e8baaf",
                     "description": "CivicActions works closely with the Drupal security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed."
                   }
                 ]
               },
               {
-                "uuid": "e7a974eb-a4e1-4155-b3c3-6235bd7dc25c",
+                "uuid": "3f129c08-6261-482c-b1fb-bd7585478f73",
                 "control-id": "ia-2.1",
-                "description": "ia-2.1 statements",
-                "statements": [
-                  {
-                    "statement-id": "ia-2.1_smt",
-                    "uuid": "e7fe738c-6aba-4fb0-a6d7-c777aca216b8",
-                    "description": "Drupal administrators and other roles with unrestricted access to live content and/or user accounts are required to use two-factor authentication. See artifact None"
-                  }
-                ]
+                "description": "Drupal administrators and other roles with unrestricted access to live content and/or user accounts are required to use two-factor authentication. See artifact None"
               },
               {
-                "uuid": "8bb8a041-edc4-48bf-b0f3-cddc762508d2",
+                "uuid": "79ac3c11-27f9-40da-8597-97d559a0208c",
                 "control-id": "ia-4",
-                "description": "ia-4 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ia-4_smt.a",
-                    "uuid": "72c48d1b-85f1-497b-ad36-2d43d8cde92b",
+                    "uuid": "0d007972-9f00-4cf7-af97-15eacde14943",
                     "description": "Upon account creation, the Drupal software assigns each user account a unique numerical user ID (UID). This UID is used internally by the system to track user actions such as content creation or editing. The numerical user IDs are never reused even if their user accounts are subsequently blocked or deleted."
                   },
                   {
                     "statement-id": "ia-4_smt.b",
-                    "uuid": "8c024b74-e5e5-43bb-be66-83a77f55cf56",
+                    "uuid": "2cae190a-b248-454f-ab76-b0cea4cc2999",
                     "description": "When Drupal user accounts are created, users' email addresses are verified by sending a single-use activation link to the user\u2019s mailbox. The email recipient then uses the activation link to log in to the website and supply a password which must meet the system's password complexity requirements."
                   },
                   {
                     "statement-id": "ia-4_smt.c",
-                    "uuid": "187819a8-018e-4553-aa56-ed89cb020738",
+                    "uuid": "d3894ca0-ef40-4501-86bf-218fb1e62c48",
                     "description": "Identifiers for CivicActions internal personnel include a username based on the individual's full first and last name and are reviewed for uniqueness by the admin group when it approves the creation of the user account."
                   },
                   {
                     "statement-id": "ia-4_smt.d",
-                    "uuid": "47b90dd6-b58f-4d28-924e-db62f3a41a8f",
+                    "uuid": "4881c916-530b-4cb8-9e9e-1ee0308667d2",
                     "description": "Drupal user's unique identifier (the numeric user ID, or UID) is never reused."
                   }
                 ]
               },
               {
-                "uuid": "108dda4a-bb7e-4d0a-8abd-f31ebe87c069",
+                "uuid": "51133830-1960-42cd-a5f8-917cb0ac3522",
                 "control-id": "ia-5",
-                "description": "ia-5 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ia-5_smt.a",
-                    "uuid": "067702f1-50d0-4c4f-9aaf-bea8d1a4651c",
+                    "uuid": "8bd245eb-0780-488d-ad5d-1aed37d715d6",
                     "description": "Refer to control AC-2 in this SSP for further details on account provisioning.\nCivicActions will create and maintain an initial Drupal Administrator (highest level of Drupal Account). New Administrators are able to provide additional Administrator access at their own discretion and are ultimately responsible for managing their own Administrator and other user accounts that they create."
                   },
                   {
                     "statement-id": "ia-5_smt.b",
-                    "uuid": "a0ab2da5-2ed2-4565-8b67-2f7f9e5646f0",
+                    "uuid": "184b67e4-1eb8-42c2-9076-c0bf3c7791ec",
                     "description": "Initial authenticator content (a unique email address \u2013 not previously used in any other account) is provided by the user. Internal initial password requirements set by CivicActions Operations and ongoing password refreshes by internal users follow the requirements set in the Identification and Authentication Policy."
                   },
                   {
                     "statement-id": "ia-5_smt.c",
-                    "uuid": "af25a5d5-d28b-43bf-aae2-6762d52f5619",
+                    "uuid": "08749bfc-8dae-4dd2-b871-d7a25e79ede3",
                     "description": "The system partially inherits this control from Drupal standard password strength mechanisms."
                   },
                   {
                     "statement-id": "ia-5_smt.d",
-                    "uuid": "2dcff6b0-6e68-450e-ad0a-33ba9406d463",
+                    "uuid": "40a381c3-2b7c-451d-8e30-eeceb6ed55a7",
                     "description": "The system partially inherits this control from Drupal standard password management. All password creation/change/reset operations are recorded in the website's \"Drupal Watchdog\" logs."
                   },
                   {
                     "statement-id": "ia-5_smt.e",
-                    "uuid": "b651f9e5-203d-4201-8f76-8628da1bf727",
+                    "uuid": "3aeab49d-13b8-4daa-96ef-a25ee790e787",
                     "description": "Drupal requires users to change their password upon initial login, and the application website enforces this. Each user account is assigned a default password that is randomly generated, not possible to guess, and not shared with anyone, including site administrators. When the user logs in and creates a new password, the default password is erased from the website database."
                   },
                   {
                     "statement-id": "ia-5_smt.h",
-                    "uuid": "3219426b-3a80-42fc-aa15-cc12c5c8d486",
+                    "uuid": "97a180dc-e9da-4664-ab81-93cb202350c0",
                     "description": "For all Drupal users, passwords are protected by the website's software, which only stores an encrypted string based on the password. This means that even if the website's database should be compromised, an attacker would still be unable to know users' actual passwords. Internal users receive training in security awareness and acceptable use and are instructed never to reveal their passwords to anyone."
                   },
                   {
                     "statement-id": "ia-5_smt.i",
-                    "uuid": "4ef7f058-0eb6-4e56-af64-7d6d796dee2c",
+                    "uuid": "4916d78d-aaa5-479f-8d53-d4ab2057184c",
                     "description": "Drupal users are required to take appropriate measures in the handling of passwords including:\n\n- Not transmitting user names and passwords together in an unencrypted format\n- Not permitting the sending of passwords in an unencrypted format via email\n- Not listing passwords in tickets\n- Not writing down or storing passwords in a readable form in any physical or logical location where they may be discoverable by unauthorized persons."
                   },
                   {
                     "statement-id": "ia-5_smt.j",
-                    "uuid": "0939ea70-4eba-48b4-a0a8-6843a1ba249f",
+                    "uuid": "bbf9b315-c263-437c-8db5-531cd27d64da",
                     "description": "This control is not applicable due to the fact that group accounts are not created within the Drupal application per IA Policy."
                   }
                 ]
               },
               {
-                "uuid": "39e6bf8e-c578-4680-9b76-49eae4f5988d",
+                "uuid": "04f3bb91-3844-4f7f-a3ab-0e4208bc405a",
                 "control-id": "ia-5.1",
-                "description": "ia-5.1 statements",
+                "description": "Requirements are implemented as described in the included statements.",
                 "statements": [
                   {
                     "statement-id": "ia-5.1_smt.a",
-                    "uuid": "5af205ff-558d-4da4-8e9c-a1a4f3e25cad",
+                    "uuid": "8bad0e6b-51ba-48fc-9a8c-5788c36050ed",
                     "description": "Drupal supports the requirement for password-based authentication complexity. New users of Drupal are required to specify their password authentication as soon as they log in to the website for the first. The website requires all submitted passwords to comply with validation rules, as described above in IA-5(c).\nChanging password lifetime, length, reuse or strength requirements requires a code setting change that therefore needs to be planned and approved by CivicActions Change Control Board before being implemented."
                   },
                   {
                     "statement-id": "ia-5.1_smt.b",
-                    "uuid": "9283ec2c-9f1d-4a26-9399-fda257161b2c",
+                    "uuid": "fdb4d280-c57b-4032-a79d-d970afc4d250",
                     "description": "When required to change passwords, Drupal users are required to change their authenticator password by changing at least one character. Enforcement of this control is implemented through the website's software configuration."
                   },
                   {
                     "statement-id": "ia-5.1_smt.c",
-                    "uuid": "2b1a1bf6-1a57-4af5-8ef3-d50a05049e8a",
+                    "uuid": "5e7f7910-29dd-45b5-8c91-554d8e3916e1",
                     "description": "All Drupal passwords are encrypted in storage, using the SHA-512 hashing algorithm with a salt. The hash function is performed repeatedly to further obfuscate the password via key stretching. In transmission, passwords are encrypted using SSL via HTTPS."
                   },
                   {
                     "statement-id": "ia-5.1_smt.d",
-                    "uuid": "37e1b426-b3c5-4821-a9b8-c597e9e38fab",
+                    "uuid": "bfefa7a8-2450-4530-b63c-0ec03604f282",
                     "description": "The website requires all submitted passwords to comply with lifetime rules, as described above in IA-5(g)."
                   },
                   {
                     "statement-id": "ia-5.1_smt.e",
-                    "uuid": "241809da-82e9-41ae-8b06-c1cacb4b699a",
+                    "uuid": "8129d5cb-a859-4d0d-9124-dd08824bc30e",
                     "description": "Password reuse is limited through software configuration."
                   },
                   {
                     "statement-id": "ia-5.1_smt.f",
-                    "uuid": "bc811754-f397-4639-bc2e-d8a0f1c59950",
+                    "uuid": "b33a8ae2-e5c3-4c3e-81a7-25bc1adcca26",
                     "description": "When website users request a password reset, the website sends a temporary login link to the email address associated with their user account. After a user logs in via the temporary login link, the website requires the user to enter a new password before proceeding further."
                   }
                 ]
               },
               {
-                "uuid": "6ae34da7-9c96-4874-93e7-550f6fd4193d",
+                "uuid": "60a730ff-c6b5-41ab-b137-3be6046f732d",
                 "control-id": "ia-6",
-                "description": "ia-6 statements",
-                "statements": [
-                  {
-                    "statement-id": "ia-6_smt",
-                    "uuid": "90fa241c-ed70-451b-aecc-55c346c6057e",
-                    "description": "Feedback of authentication information is obscured during the authentication process into the Drupal application by displaying \u201cdots\u201d in the place of a password, as is standard for web-based applications. In transmission, passwords are encrypted using SSL via HTTPS."
-                  }
-                ]
+                "description": "Feedback of authentication information is obscured during the authentication process into the Drupal application by displaying \u201cdots\u201d in the place of a password, as is standard for web-based applications. In transmission, passwords are encrypted using SSL via HTTPS."
               },
               {
-                "uuid": "699d2805-8070-4ad6-a99d-9f241986a67f",
+                "uuid": "8f3d6eed-d411-4ec9-8daf-d6fa2c6f605e",
                 "control-id": "ia-7",
-                "description": "ia-7 statements",
-                "statements": [
-                  {
-                    "statement-id": "ia-7_smt",
-                    "uuid": "69e2f2e0-e265-4034-8748-f64abe914a97",
-                    "description": "All Drupal passwords are encrypted in storage, using the SHA-512 hashing algorithm with a salt. SHA-512 is an approved security function under FIPS PUB 140-2. The hash function is performed repeatedly to further obfuscate the password via key stretching. In transmission, passwords are encrypted using SSL via HTTPS."
-                  }
-                ]
+                "description": "All Drupal passwords are encrypted in storage, using the SHA-512 hashing algorithm with a salt. SHA-512 is an approved security function under FIPS PUB 140-2. The hash function is performed repeatedly to further obfuscate the password via key stretching. In transmission, passwords are encrypted using SSL via HTTPS."
               },
               {
-                "uuid": "72dd4768-0d62-4ff2-9182-9b371553e4bb",
+                "uuid": "bc9f9af9-e022-4b7c-81be-c1884f82fbc5",
                 "control-id": "sc-5",
-                "description": "sc-5 statements",
-                "statements": [
-                  {
-                    "statement-id": "sc-5_smt",
-                    "uuid": "5e831f2c-f0fc-4536-affc-a9bd780bb112",
-                    "description": "Drupal has a manual ability to block IP addresses in cases where attacks bypass cloud protection. This is managed by CivicActions Operations."
-                  }
-                ]
+                "description": "Drupal has a manual ability to block IP addresses in cases where attacks bypass cloud protection. This is managed by CivicActions Operations."
               },
               {
-                "uuid": "c6fed864-cd16-4f4e-b0e7-7702c28a0fab",
+                "uuid": "991c253a-121e-4aff-9530-4972363dd7a6",
                 "control-id": "sc-7",
-                "description": "sc-7 statements",
-                "statements": [
-                  {
-                    "statement-id": "sc-7_smt",
-                    "uuid": "0b941b84-8104-4ef9-8c80-cbe5d5850506",
-                    "description": "Drupal, when deployed on SELinux in full enforcing mode, minimizes the number of services and computing nodes that are exposed to the Internet. Drupal employs both the AWS platform safeguards and the Drupal Watchdog module in monitoring and recording system events. All other computing nodes used in the system are isolated within AWS."
-                  }
-                ]
+                "description": "Drupal, when deployed on SELinux in full enforcing mode, minimizes the number of services and computing nodes that are exposed to the Internet. Drupal employs both the AWS platform safeguards and the Drupal Watchdog module in monitoring and recording system events. All other computing nodes used in the system are isolated within AWS."
               }
             ]
           }
