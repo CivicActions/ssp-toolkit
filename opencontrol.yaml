@@ -1,9 +1,9 @@
 schema_version: "1.0.0"
 name: Reusable Component Library
 metadata:
-  description: Reusable OpenControl Components.
+  description: Reusable OpenControl Components (SSP-Toolkit).
   organization:
-    name: CivicActions and GovReady
+    name: CivicActions
     abbreviation: Components
 components:
   - ./components/AWS
