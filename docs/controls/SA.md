@@ -21,8 +21,6 @@ frequency]; and
 frequency].
 ```
 
-**Status:** Complete
-
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained by the CivicActions System and Services Acquisition (SA) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
@@ -46,8 +44,6 @@ information system or information system service as part of its capital planning
   c.  Establishes a discrete line item for information security in organizational
 programming and budgeting documentation.
 ```
-
-**Status:** Complete
 
 ##### Project
 
@@ -92,8 +88,6 @@ and
   d.  Integrates the organizational information security risk management process
 into system development life cycle activities.
 ```
-
-**Status:** Complete
 
 ##### Project
 
@@ -178,8 +172,6 @@ in which the system is intended to operate; and
   g.  Acceptance criteria.
 ```
 
-**Status:** Complete
-
 ##### CivicActions
 
 The CivicActions System and Services Acquisition Policy affects all personnel with purchasing authorization and applies to all purchases or deployments including infrastructure, software or hardware. The CivicActions System and Services Acquisition Policy contains the process for determining acceptance criteria for all system software and application services.
@@ -205,8 +197,6 @@ The Project organization reviews and approves all acquisition contracts in accor
 ```text
 The organization employs only information technology products on the FIPS 201-approved products list for Personal Identity Verification (PIV) capability implemented within organizational information systems.
 ```
-
-**Status:** Complete
 
 ##### Project
 
@@ -241,8 +231,6 @@ strategy; and
   e.  Distributes documentation to [Assignment: organization-defined personnel
 or roles].
 ```
-
-**Status:** Complete
 
 ##### Project
 
@@ -372,8 +360,6 @@ with regard  to external information system services; and
   c.  Employs [Assignment: organization-defined processes, methods, and techniques]
 to monitor security control compliance by external service providers on an ongoing basis.
 ```
-
-**Status:** Complete
 
 ##### CivicActions
 

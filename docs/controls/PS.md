@@ -20,8 +20,6 @@ and
     2.  Personnel security procedures [Assignment: organization-defined frequency].
 ```
 
-**Status:** Complete
-
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
@@ -47,8 +45,6 @@ The organization:
   b.  Establishes screening criteria for individuals filling those positions; and
   c.  Reviews and updates position risk designations [Assignment: organization-defined frequency].
 ```
-
-**Status:** Complete
 
 ##### Project
 
@@ -93,8 +89,6 @@ and
 requiring rescreening and, where rescreening is so indicated, the frequency of such rescreening].
 ```
 
-**Status:** Complete
-
 ##### Project
 
 Minimum background investigations are conducted, since all data is non-sensitive, for individuals requiring access to Project information and information systems. The type of background investigation conducted for an individual is determined by the individual’s position risk categorization noted in control PS-2. Client conducts periodic reinvestigations in accordance with OPM and NIST guidelines.
@@ -132,8 +126,6 @@ controlled by terminated individual; and
   f.  Notifies [Assignment: organization-defined personnel or roles] within [Assignment:
 organization-defined time period].
 ```
-
-**Status:** Complete
 
 ##### Project
 
@@ -200,8 +192,6 @@ operational need due to reassignment or transfer; and
 organization-defined time period].
 ```
 
-**Status:** Complete
-
 ##### Project
 
 When an employee is reassigned or transferred, the employee’s manager or designated official is required to request transfer of access (as appropriate) for the user.
@@ -254,8 +244,6 @@ and information systems:
 systems when access agreements have been updated or [Assignment: organization-defined frequency].
 ```
 
-**Status:** Complete
-
 #### a
 
 ##### Project
@@ -290,8 +278,6 @@ and procedures established by the organization;
 personnel or roles] of any personnel transfers or terminations of third-party personnel who possess organizational credentials and/or badges, or who have information system privileges within [Assignment: organization-defined time period]; and
   e.  Monitors provider compliance.
 ```
-
-**Status:** Complete
 
 #### a
 
@@ -337,8 +323,6 @@ established information security policies and procedures; and
   b.  Notifies [Assignment: organization-defined personnel or roles] within [Assignment:
 organization-defined time period] when a formal employee sanctions process is initiated, identifying the individual sanctioned and the reason for the sanction.
 ```
-
-**Status:** Complete
 
 ##### Project
 

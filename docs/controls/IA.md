@@ -21,10 +21,6 @@ frequency]; and
 frequency].
 ```
 
-**Status:** Partial
-
-**Summary:** Partially inherited from AWS (FedRAMP).
-
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel an identification and authentication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained by the CivicActions Identification and Authentication (IA) Policy. This document can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>.
@@ -52,8 +48,6 @@ AWS built-in features of Identity and Access Management (IAM) provides the capab
 The information system implements multifactor authentication for network access to privileged accounts.
 ```
 
-**Status:** Complete
-
 ##### CivicActions
 
 CivicActions system administrators employ a personal public- key pair for basic access and must originate from a whitelisted IP address. The whitelist is maintained by an Ansible inventory file, the current complete list (includes dev sites) of users with whitelisted IPs is in artifact: None
@@ -77,8 +71,6 @@ The Project employs multi-factor authentication for privileged users.
 The information system accepts and electronically verifies Personal Identity Verification (PIV) credentials.
 ```
 
-**Status:** None
-
 ##### Project
 
 The Project system allows users to access the system using Common Access Cards (CAC).
@@ -97,10 +89,6 @@ period]; and
   e.  Disabling the identifier after [Assignment: organization-defined time period
 of inactivity].
 ```
-
-**Status:** Partial
-
-**Summary:** Partially inherited from AWS (FedRAMP).
 
 #### a
 
@@ -196,10 +184,6 @@ safeguards to protect authenticators; and
   j.  Changing authenticators for group/role accounts when membership to those
 accounts changes.
 ```
-
-**Status:** Partial
-
-**Summary:** Partially inherited from AWS (FedRAMP).
 
 #### a
 
@@ -393,10 +377,6 @@ generations; and
 change to a permanent password.
 ```
 
-**Status:** Partial
-
-**Summary:** Partially inherited from AWS (FedRAMP).
-
 ##### Project
 
 Project is responsible for provisioning and de-provisioning end user accounts, which must comply with the strict password policies that are enforced by the website's software configuration, as described in IA-5.
@@ -490,8 +470,6 @@ When website users request a password reset, the website sends a temporary login
 The information system, for hardware token-based authentication, employs mechanisms that satisfy [Assignment: organization-defined token quality requirements].
 ```
 
-**Status:** Complete
-
 ##### AWS
 
 AWS built-in features of AWS Identity and Access Management (IAM) provides the capability for Hardware MFA using Gemalto SafeNet IDProve 100 and 700 OTP Tokens which are compliant to OATH open standard (time based - 6 digits) Expected battery life is 3-5 years or approximately 15,000 - 20,000 clicks. These products are handheld devices that provide strong authentication by generating a unique password that is valid for only one attempt and for 30 seconds.
@@ -509,8 +487,6 @@ Project does not support physical hardware token-based authentication. Therefore
 ```text
 The information system obscures feedback of authentication information during the authentication process to protect the information from possible exploitation/use by unauthorized individuals.
 ```
-
-**Status:** Complete
 
 ##### AWS
 
@@ -533,8 +509,6 @@ Feedback of authentication information is obscured during the authentication pro
 ```text
 The information system implements mechanisms for authentication to a cryptographic module that meet the requirements of applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance for such authentication.
 ```
-
-**Status:** Complete
 
 ##### AWS
 
@@ -576,8 +550,6 @@ The customer organization at its discretion provides user accounts and privilege
 The information system accepts and electronically verifies Personal Identity Verification (PIV) credentials from other federal agencies.
 ```
 
-**Status:** Complete
-
 ##### Project
 
 Project allows the use of customer agency supplied Common Access Cards (CAC).
@@ -588,8 +560,6 @@ Project allows the use of customer agency supplied Common Access Cards (CAC).
 ```text
 The information system accepts only FICAM-approved third-party credentials.
 ```
-
-**Status:** Complete
 
 ##### Project
 
@@ -602,8 +572,6 @@ Project does not utilize FICAM approved credentials.
 The organization employs only FICAM-approved information system components in [Assignment: organization-defined information systems] to accept third-party credentials.
 ```
 
-**Status:** Complete
-
 ##### Project
 
 Project does not utilize FICAM approved products.
@@ -614,8 +582,6 @@ Project does not utilize FICAM approved products.
 ```text
 The information system conforms to FICAM-issued profiles.
 ```
-
-**Status:** Complete
 
 ##### Project
 

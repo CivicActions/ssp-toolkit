@@ -21,8 +21,6 @@ and
 frequency].
 ```
 
-**Status:** Complete
-
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel an audit and accountability policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Audit and Accountability (AU) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
@@ -46,8 +44,6 @@ to support after-the-fact investigations of security incidents; and
   d.  Determines that the following events are to be audited within the information
 system: [Assignment: organization-defined audited events (the subset of the auditable events defined in AU-2 a.) along with the frequency of (or situation requiring) auditing for each identified event].
 ```
-
-**Status:** None
 
 #### a
 
@@ -180,8 +176,6 @@ Information captured in the transaction logs includes, but is not limited to, th
 The information system generates audit records containing information that establishes what type of event occurred, when the event occurred, where the event occurred, the source of the event, the outcome of the event, and the identity of any individuals or subjects associated with the event.
 ```
 
-**Status:** Complete
-
 ##### AWS
 
 In this architecture, the following audit methods generate records with the level of detail specified for the control:
@@ -243,8 +237,6 @@ When auditing an Ilias incident, CivicActions' developers aggregate log sources 
 The organization allocates audit record storage capacity in accordance with [Assignment: organization-defined audit record storage requirements].
 ```
 
-**Status:** Complete
-
 ##### AWS
 
 In this architecture, logs track dynamic capacity growth to accommodate organizationally defined storage capacity requirements. Amazon S3 buckets are established to store audit logs from the following audit methods:
@@ -269,8 +261,6 @@ of an audit processing failure; and
   b.  Takes the following additional actions: [Assignment: organization-defined
 actions to be taken (e.g., shut down information system, overwrite oldest audit records, stop generating audit records)].
 ```
-
-**Status:** Complete
 
 ##### CivicActions
 
@@ -301,8 +291,6 @@ frequency] for indications of [Assignment: organization-defined inappropriate or
   b.  Reports findings to [Assignment: organization-defined personnel or roles].
 ```
 
-**Status:** Planned
-
 #### a
 
 ##### CivicActions
@@ -329,8 +317,6 @@ The information system:
   b.  Records time stamps for audit records that can be mapped to Coordinated
 Universal Time (UTC) or Greenwich Mean Time (GMT) and meets [Assignment: organization-defined granularity of time measurement].
 ```
-
-**Status:** Complete
 
 ##### Project
 
@@ -369,8 +355,6 @@ Time stamps are recorded as specified in the ISO 8601 standard. ISO 8601 represe
 The information system protects audit information and audit tools from unauthorized access, modification, and deletion.
 ```
 
-**Status:** Complete
-
 ##### AWS
 
 Access to audit data and tools is determined by access control policies for IAM groups and roles. Only users assigned to IAM groups and roles with access to audit data and tools can access them. Additionally, AWS uses server-side encryption on Amazon S3 bucket logs, and maintains them as read-only files.
@@ -386,8 +370,6 @@ CivicActions ensures that audit logs are created, stored and maintained. Develop
 ```text
 The organization retains audit records for [Assignment: organization-defined time period consistent with records retention policy] to provide support for after-the-fact investigations of security incidents and to meet regulatory and organizational information retention requirements.
 ```
-
-**Status:** Complete
 
 ##### AWS
 
@@ -410,8 +392,6 @@ auditable events are to be audited by specific components of the information sys
   c.  Generates audit records for the events defined in AU-2 d. with the content
 defined in AU-3.
 ```
-
-**Status:** Complete
 
 #### a
 

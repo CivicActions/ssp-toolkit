@@ -21,8 +21,6 @@ and
 frequency].
 ```
 
-**Status:** Complete
-
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel a configuration management policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Configuration Management (CM) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
@@ -39,8 +37,6 @@ The configuration management policy and procedures are formally documented in th
 ```text
 The organization develops, documents, and maintains under configuration control, a current baseline configuration of the information system.
 ```
-
-**Status:** Complete
 
 ##### AWS
 
@@ -71,8 +67,6 @@ A CM process has been established and documented in the Project CMP. All updates
 The organization analyzes changes to the information system to determine potential security impacts prior to change implementation.
 ```
 
-**Status:** Complete
-
 ##### CivicActions
 
 Security impact analysis is conducted and documented within the Change Request (CR) process described in CM-3(b). All proposed configuration- controlled changes to the application are tested first in a sandboxed development environment before being pushed to a staging environment to be tested by another developer and by the Engineering team prior to final approval from CCB to move changes to the production environment.
@@ -95,8 +89,6 @@ settings for [Assignment: organization-defined information system components] ba
   d.  Monitors and controls changes to the configuration settings in accordance
 with organizational policies and procedures.
 ```
-
-**Status:** Complete
 
 #### a
 
@@ -142,8 +134,6 @@ and
 and/or services: [Assignment: organization-defined prohibited or restricted functions, ports, protocols, and/or services].
 ```
 
-**Status:** Complete
-
 #### a
 
 ##### AWS
@@ -183,8 +173,6 @@ to achieve effective information system component accountability]; and
   b.  Reviews and updates the information system component inventory [Assignment:
 organization-defined frequency].
 ```
-
-**Status:** Complete
 
 ##### Ilias
 
@@ -227,8 +215,6 @@ licenses to control copying and distribution; and
 ensure that this capability is not used for the unauthorized distribution, display, performance, or reproduction of copyrighted work.
 ```
 
-**Status:** Complete
-
 ##### CivicActions
 
 Drupal is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These are all compatible with the Free Software Foundation's General Public License (GPL) version 2 or later and are freely available for use under copyright law.
@@ -248,8 +234,6 @@ of software by users;
 methods]; and
   c.  Monitors policy compliance at [Assignment: organization-defined frequency].
 ```
-
-**Status:** Complete
 
 #### a
 

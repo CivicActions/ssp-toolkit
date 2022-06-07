@@ -20,10 +20,6 @@ and
     2.  Media protection procedures [Assignment: organization-defined frequency].
 ```
 
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
-
 ##### AWS
 
 This Media Protection control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
@@ -49,10 +45,6 @@ This is Agency common control. More data about implementation can be obtained fr
 The organization restricts access to [Assignment: organization-defined types of digital and/or non-digital media] to [Assignment: organization-defined personnel or roles].
 ```
 
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
-
 ##### AWS
 
 This Media Protection control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
@@ -72,10 +64,6 @@ to disposal, release out of organizational control, or release for reuse using [
 with the security category or classification of the information.
 ```
 
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
-
 ##### AWS
 
 This Media Protection control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
@@ -90,10 +78,6 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 ```text
 The organization [Selection: restricts; prohibits] the use of [Assignment: organization-defined types of information system media] on [Assignment: organization-defined information systems or system components] using [Assignment: organization-defined security safeguards].
 ```
-
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
 
 ##### AWS
 

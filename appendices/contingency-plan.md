@@ -106,7 +106,7 @@ If the IC assesses that the overall response process is likely to last longer th
 
 ### Backup and restore
 
-Hourly and daily [snapshots](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Snapshots) are created using the [Cloud Protection Manager (CPM)](https://cpm.project.com/signin/)
+Hourly and daily [snapshots](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Snapshots) are created using the [Cloud Protection Manager (CPM) or other backup system](https://cpm.project.com/signin/)
 
 - First determine how far back in time to go to obtain a clean backup for restore
 - Restore by using the `Recover` tab for the instance needing restoration

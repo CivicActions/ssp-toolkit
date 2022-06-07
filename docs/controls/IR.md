@@ -20,10 +20,6 @@ and
     2.  Incident response procedures [Assignment: organization-defined frequency].
 ```
 
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
-
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
@@ -42,7 +38,7 @@ The Project maintains an Incident Response Plan (IRP), consistent with NIST 800-
 
 Additionally, the IRP includes procedures to respond to waste, fraud, misuse, or abuse of any departmental IT system, damage or loss of software or data contained in any system, Use of unlicensed (pirated) software products, discovery of hardware or software vulnerabilities
 
-The Project Incident Response Plan can be found in the CivicActions GitHub repository at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>
+The Project Incident Response Plan can be found in the CivicActions GitHub repository at <https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/>
 
 
 ### IR-2: Incident Response Training
@@ -55,10 +51,6 @@ response role or responsibility;
   c.  [Assignment: organization-defined frequency] thereafter.
 ```
 
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
-
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident response training.
@@ -66,12 +58,12 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-All CivicActions employees are required to participate in incident response training, as required by Incident Response Plan changes, and annually. The CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) is the basis for the training and the incident response workflow created by the Security Office. Upon a review of past incidents, the training is updated to ensure processes and workflows are updated.
+All CivicActions employees are required to participate in incident response training, as required by Incident Response Plan changes, and annually. The CivicActions Incident Response Plan (<https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/>) is the basis for the training and the incident response workflow created by the Security Office. Upon a review of past incidents, the training is updated to ensure processes and workflows are updated.
 
 
 ##### Project
 
-CivicActions Operations and users of the Project system with incident response responsibilities are required to participate in incident response training once the role is assumed within 10 days, as required by Project changes, and annually. The Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) is the basis for the training and the incident response workflow created by the Security team. Upon a review of past incidents, the training is updated to ensure processes and workflows are updated.
+CivicActions Operations and users of the Project system with incident response responsibilities are required to participate in incident response training once the role is assumed within 10 days, as required by Project changes, and annually. The Incident Response Plan (<https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/>) is the basis for the training and the incident response workflow created by the Security team. Upon a review of past incidents, the training is updated to ensure processes and workflows are updated.
 
 
 ### IR-4: Incident Handling
@@ -85,10 +77,6 @@ and
   c.  Incorporates lessons learned from ongoing incident handling activities into
 incident response procedures, training, and testing, and implements the resulting changes accordingly.
 ```
-
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
 
 ##### AWS
 
@@ -108,7 +96,7 @@ Preparation activities includes all CivicActions and Project internal users are 
 
 ##### CivicActions
 
-CivicActions has implemented an Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) that explains the process for incident handling and discusses preparation, detection and analysis, containment, eradication, and recovery.
+CivicActions has implemented an Incident Response Plan (<https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/>) that explains the process for incident handling and discusses preparation, detection and analysis, containment, eradication, and recovery.
 Preparation activities include all CivicActions team members who are trained in incident response. Detection and monitoring tools providing notification to incident response personnel for analysis and action.
 
 
@@ -123,7 +111,7 @@ CivicActions' Operations staff and Security Office team members are members of t
 
 ##### CivicActions
 
-The CivicActions Operations staff and Security Office conduct a post-incident analysis to assist in documenting lessons learned and suggesting changes to improve the incident response process. Tickets created in response to the incident event are reviewed upon completion by the Operations staff and Security Office. Changes to the Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) require a team review session for approval.
+The CivicActions Operations staff and Security Office conduct a post-incident analysis to assist in documenting lessons learned and suggesting changes to improve the incident response process. Tickets created in response to the incident event are reviewed upon completion by the Operations staff and Security Office. Changes to the Incident Response Plan (<https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/>) require a team review session for approval.
 
 
 ### IR-5: Incident Monitoring
@@ -132,10 +120,6 @@ The CivicActions Operations staff and Security Office conduct a post-incident an
 The organization tracks and documents information system security incidents.
 ```
 
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
-
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident monitoring.
@@ -143,7 +127,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### CivicActions
 
-CivicActions utilizes the JIRA ticketing tool for tracking and reporting of incident events from reporting to resolution and post- incident analysis. Initial reporting can come from continuous monitoring tools as well as client and public submissions made to support@civicactions.com. Jira processes the tickets for the public submissions and the CivicActions Support Team creates associated GitHub Issues. Internal incidents reported are processed within the GitHub Issue queue. Details of the handling procedures are included in the CivicActions Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan/#response-process>) Response Process.
+CivicActions utilizes the JIRA ticketing tool for tracking and reporting of incident events from reporting to resolution and post- incident analysis. Initial reporting can come from continuous monitoring tools as well as client and public submissions made to support@civicactions.com. Jira processes the tickets for the public submissions and the CivicActions Support Team creates associated GitHub Issues. Internal incidents reported are processed within the GitHub Issue queue. Details of the handling procedures are included in the CivicActions Incident Response Plan (<https://handbook.civicactions.com/en/latest/100-security/incident-response-plan//#response-process>) Response Process.
 
 
 ##### Project
@@ -160,10 +144,6 @@ incident response capability within [Assignment: organization-defined time perio
   b.  Reports security incident information to [Assignment: organization-defined
 authorities].
 ```
-
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
 
 ##### AWS
 
@@ -201,8 +181,6 @@ CivicActions personnel, as soon as the incident event is detected and/or communi
 ```text
 The organization provides an incident response support resource, integral to the organizational incident response capability that offers advice and assistance to users of the information system for the handling and reporting of security incidents.
 ```
-
-**Status:** Complete
 
 ##### AWS
 
@@ -243,10 +221,6 @@ incident response personnel (identified by name and/or by role) and organization
   f.  Protects the incident response plan from unauthorized disclosure and modification.
 ```
 
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
-
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: incident response plan.
@@ -254,14 +228,14 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### Project
 
-The Project Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) includes a comprehensive incident response program, which details the implementation of procedures and tools required for incident handling. The incident response program details the roles and responsibilities of Project/ CivicActions IR Team. The IR Team includes members from CivicActions Security and Operations teams. Incident response plays a pivotal role in monitoring, detecting and handling security incidents of the entire information system. The IRP details categorization of incidents in accordance with NIST 800-61 and accordingly documents and reports incidents. The IRP is reviewed annually and updated as needed by ISSO, with the assistance of the Incident Response Team.
+The Project Incident Response Plan (<https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/>) includes a comprehensive incident response program, which details the implementation of procedures and tools required for incident handling. The incident response program details the roles and responsibilities of Project/ CivicActions IR Team. The IR Team includes members from CivicActions Security and Operations teams. Incident response plays a pivotal role in monitoring, detecting and handling security incidents of the entire information system. The IRP details categorization of incidents in accordance with NIST 800-61 and accordingly documents and reports incidents. The IRP is reviewed annually and updated as needed by ISSO, with the assistance of the Incident Response Team.
 
 
 #### a
 
 ##### CivicActions
 
-Incident response plays a pivotal role in monitoring, detecting and handling security incidents of the entire information system. CivicActions has developed an Incident Response Plan (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>) that:
+Incident response plays a pivotal role in monitoring, detecting and handling security incidents of the entire information system. CivicActions has developed an Incident Response Plan (<https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/>) that:
 
 1. Provides CivicActions with procedures and tools required for incident handling;
 2. Describes the structure and organization of the incident response capability;
@@ -277,7 +251,7 @@ Incident response plays a pivotal role in monitoring, detecting and handling sec
 
 ##### CivicActions
 
-The CivicActions Incident Response Plan is distributed to all CivicActions team members as part of the CivicActions Handbook (<https://civicactions-handbook.readthedocs.io/en/latest/09-security/incident-response-plan>).
+The CivicActions Incident Response Plan is distributed to all CivicActions team members as part of the CivicActions Handbook (<https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/>).
  The Incident Response Team includes members from the Security Office,
  Operations staff, and Drupal Engineering teams.
 

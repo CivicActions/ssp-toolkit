@@ -20,10 +20,6 @@ and
     2.  System maintenance procedures [Assignment: organization-defined frequency].
 ```
 
-**Status:** Partial
-
-**Summary:** Partially inherited from AWS (FedRAMP).
-
 ##### AWS
 
 This System Maintenance control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
@@ -65,10 +61,6 @@ are still functioning properly following maintenance or repair actions; and
 in organizational maintenance records.
 ```
 
-**Status:** Partial
-
-**Summary:** Partially inherited from AWS (FedRAMP).
-
 ##### AWS
 
 This System Maintenance control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
@@ -102,10 +94,6 @@ and diagnostic sessions;
   e.  Terminates session and network connections when nonlocal maintenance is
 completed.
 ```
-
-**Status:** Partial
-
-**Summary:** Partially inherited from AWS (FedRAMP).
 
 ##### AWS
 
@@ -162,10 +150,6 @@ system have required access authorizations; and
   c.  Designates organizational personnel with required access authorizations
 and technical competence to supervise the maintenance activities of personnel who do not possess the required access authorizations.
 ```
-
-**Status:** Partial
-
-**Summary:** Partially inherited from AWS (FedRAMP).
 
 ##### AWS
 

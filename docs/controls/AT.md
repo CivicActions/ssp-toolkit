@@ -21,8 +21,6 @@ frequency]; and
 frequency].
 ```
 
-**Status:** Complete
-
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel awareness and training policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Awareness and Training (AT) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
@@ -41,8 +39,6 @@ The organization provides basic security awareness training to information syste
   b.  When required by information system changes; and
   c.  [Assignment: organization-defined frequency] thereafter.
 ```
-
-**Status:** Complete
 
 ##### Project
 
@@ -92,8 +88,6 @@ duties;
   c.  [Assignment: organization-defined frequency] thereafter.
 ```
 
-**Status:** Complete
-
 ##### Project
 
 Completion of role-based training is an annual requirement for personnel in roles with significant information security responsibilities that require specialized role-based training. Role-based cybersecurity training is developed and implemented to meet identified training needs and competencies associated with the various target audiences/functional roles (federal and contractor employees) that comprise the Client workforce, as is identified in and required by the FISMA and OMB A-130, Appendix III. The appropriate content of security training is determined based on the assigned roles and responsibilities of individuals and the specific security requirements of the Department, PO and the information systems to which personnel have authorized access. Annual training requirements may be met by completing one or more course(s) within the Department’s learning management systems, participating in instructor-led training provided by the OCIO, or completing an external role-based course or courses offered within their specific functional area of expertise.
@@ -129,8 +123,6 @@ including basic security awareness training and specific information system secu
   b.  Retains individual training records for [Assignment: organization-defined
 time period].
 ```
-
-**Status:** Complete
 
 #### a
 

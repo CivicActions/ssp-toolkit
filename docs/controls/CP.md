@@ -20,10 +20,6 @@ and
     2.  Contingency planning procedures [Assignment: organization-defined frequency].
 ```
 
-**Status:** Partial
-
-**Summary:** Partially inherited from AWS (FedRAMP).
-
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel a contingency planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Contingency Planning (CP) Policy and Procedure that can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
@@ -64,10 +60,6 @@ key contingency personnel (identified by name and/or by role) and organizational
   g.  Protects the contingency plan from unauthorized disclosure and modification.
 ```
 
-**Status:** Partial
-
-**Summary:** Partially inherited from AWS (FedRAMP).
-
 #### a
 
 ##### CivicActions
@@ -85,12 +77,12 @@ CivicActions has developed a contingency plan for that addresses:
 
 ##### CivicActions
 
-The CivicActions Information System Contingency Plan (ISCP) has been distributed to all CivicActions team members. The ISCP can be found in the CivicActions Handbook at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan>.
+The CivicActions Information System Contingency Plan (ISCP) has been distributed to all CivicActions team members. The ISCP can be found in the CivicActions Handbook at <https://handbook.civicactions.com/en/latest/100-security/contingency-plan/>.
 
 
 ##### Project
 
-The Project Information System Contingency Plan (ISCP) has been distributed to all members who have roles in Contingency Planning and Incident Response Team. Direction by the System Owner will update who is required to receive a copy of the contingency plan. The ISCP can be found in the Project GitHub wiki at <https://civicactions-handbook.readthedocs.io/en/latest/09-security/contingency-plan>.
+The Project Information System Contingency Plan (ISCP) has been distributed to all members who have roles in Contingency Planning and Incident Response Team. Direction by the System Owner will update who is required to receive a copy of the contingency plan. The ISCP can be found in the Project GitHub wiki at <https://handbook.civicactions.com/en/latest/100-security/contingency-plan/>.
 
 
 #### c
@@ -138,10 +130,6 @@ role or responsibility;
   c.  [Assignment: organization-defined frequency] thereafter.
 ```
 
-**Status:** Partial
-
-**Summary:** Partially inherited from AWS (FedRAMP).
-
 ##### CivicActions
 
 The ISCP stipulates that all CivicActions system assigned roles in the Contingency Plan Team are trained in their duties within three months of first being assigned a role in the CP, and then annually thereafter or when changes are required. CivicActions uses the Contingency Plan as described in controls CP-1 and CP-2 as a basis for personnel contingency training.
@@ -156,10 +144,6 @@ frequency] using [Assignment: organization-defined tests] to determine the effec
   b.  Reviews the contingency plan test results; and
   c.  Initiates corrective actions, if needed.
 ```
-
-**Status:** Partial
-
-**Summary:** Partially inherited from AWS (FedRAMP).
 
 ##### CivicActions
 
@@ -179,10 +163,6 @@ documentation [Assignment: organization-defined frequency consistent with recove
   d.  Protects the confidentiality, integrity, and availability of backup information
 at storage locations.
 ```
-
-**Status:** Partial
-
-**Summary:** Partially inherited from AWS (FedRAMP).
 
 #### a
 
@@ -237,10 +217,6 @@ CivicActions employees must authenticate prior to being granted access to the Gi
 ```text
 The organization provides for the recovery and reconstitution of the information system to a known state after a disruption, compromise, or failure.
 ```
-
-**Status:** Partial
-
-**Summary:** Partially inherited from AWS (FedRAMP).
 
 ##### CivicActions
 

@@ -19,8 +19,6 @@ and associated risk assessment controls; and
     2.  Risk assessment procedures [Assignment: organization-defined frequency].
 ```
 
-**Status:** Complete
-
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
@@ -51,8 +49,6 @@ in the security plan for the information system; and
   c.  Ensures that the authorizing official or authorizing official designated
 representative reviews and approves the security categorization decision.
 ```
-
-**Status:** Complete
 
 #### a
 
@@ -89,8 +85,6 @@ personnel or roles]; and
   e.  Updates the risk assessment [Assignment: organization-defined frequency]
 or whenever there are significant changes to the information system or environment of operation (including the identification of new threats and vulnerabilities), or other conditions that may impact the security state of the system.
 ```
-
-**Status:** Complete
 
 #### a
 
@@ -154,8 +148,6 @@ response times] in accordance with an organizational assessment of risk; and
   e.  Shares information obtained from the vulnerability scanning process and
 security control assessments with [Assignment: organization-defined personnel or roles] to help eliminate similar vulnerabilities in other information systems (i.e., systemic weaknesses or deficiencies).
 ```
-
-**Status:** Complete
 
 ##### AWS
 

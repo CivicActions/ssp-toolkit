@@ -20,8 +20,6 @@ and
     2.  Security planning procedures [Assignment: organization-defined frequency].
 ```
 
-**Status:** Complete
-
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
@@ -66,8 +64,6 @@ frequency];
 of operation or problems identified during plan implementation or security control assessments; and
   e.  Protects the security plan from unauthorized disclosure and modification.
 ```
-
-**Status:** Complete
 
 ##### AWS
 
@@ -138,13 +134,11 @@ frequency]; and
 behavior to read and re-sign when the rules of behavior are revised/updated.
 ```
 
-**Status:** Complete
-
 #### a
 
 ##### CivicActions
 
-CivicActions has created and made readily available to individuals requiring access to the information system the rules that describe their responsibilities and expected behavior with regard to information and information system usage. These rules, defined as the Acceptable Use Policy, are included in the CivicActions Security Policy accessible here: <https://civicactions-handbook.readthedocs.io/en/latest/03-policies/security/#acceptable-use-policy> which has also been uploaded to CSAM as ''Appendix J1 - System Rules of Behavior - Privileged User'' (CivicActions Security Policy 20190226.docx).'
+CivicActions has created and made readily available to individuals requiring access to the information system the rules that describe their responsibilities and expected behavior with regard to information and information system usage. These rules, defined as the Acceptable Use Policy, are included in the CivicActions Security Policy accessible here: <https://handbook.civicactions.com/en/latest/030-policies/security/#acceptable-use-policy> which has also been uploaded to CSAM as ''Appendix J1 - System Rules of Behavior - Privileged User'' (CivicActions Security Policy 20190226.docx).'
 
 
 ##### Project

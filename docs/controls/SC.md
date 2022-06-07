@@ -21,8 +21,6 @@ frequency]; and
 frequency].
 ```
 
-**Status:** Complete
-
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel a system and communication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Communications Protection (SC) Policy CivicActions document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
@@ -39,8 +37,6 @@ This is Agency common control. More data about implementation can be obtained fr
 ```text
 The information system protects against or limits the effects of the following types of denial of service attacks: [Assignment: organization-defined types of denial of service attacks or references to sources for such information] by employing [Assignment: organization-defined security safeguards].
 ```
-
-**Status:** Complete
 
 ##### Drupal
 
@@ -67,8 +63,6 @@ and at key internal boundaries within the system;
   c.  Connects to external networks or information systems only through managed
 interfaces consisting of boundary protection devices arranged in accordance with an organizational security architecture.
 ```
-
-**Status:** Complete
 
 ##### Drupal
 
@@ -111,8 +105,6 @@ In this architecture, connection to external networks is possible only through I
 The organization establishes and manages cryptographic keys for required cryptography employed within the information system in accordance with [Assignment: organization-defined requirements for key generation, distribution, storage, access, and destruction].
 ```
 
-**Status:** None
-
 ##### Project
 
 Use of cryptographic key management for the Project system is in use for at the time of implementation for authentication. CivicActions utilizes customer agency supplied PIV credentials for access to customer instances of the Project. Access enforcement and authentication requirements for Project are described in AC-2 & IA-2. AWS platform does not utilize or manage cryptographic keys within the ACE boundary.
@@ -123,8 +115,6 @@ Use of cryptographic key management for the Project system is in use for at the 
 ```text
 The information system implements [Assignment: organization-defined cryptographic uses and type of cryptography required for each use] in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards.
 ```
-
-**Status:** None
 
 ##### CivicActions
 
@@ -146,8 +136,6 @@ following exceptions: [Assignment: organization-defined exceptions where remote 
 devices.
 ```
 
-**Status:** None
-
 ##### Project
 
 This control is not applicable, as the Project system does
@@ -164,8 +152,6 @@ artifacts along with the authoritative name resolution data the system returns i
 the child supports secure resolution services) to enable verification of a chain of trust among parent and child domains, when operating as part of a distributed, hierarchical namespace.
 ```
 
-**Status:** None
-
 ##### CivicActions
 
 The system inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: secure name / address resolution service (authoritative source)
@@ -176,8 +162,6 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 ```text
 The information system requests and performs data origin authentication and data integrity verification on the name/address resolution responses the system receives from authoritative sources.
 ```
-
-**Status:** None
 
 ##### CivicActions
 
@@ -190,8 +174,6 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 The information systems that collectively provide name/address resolution service for an organization are fault-tolerant and implement internal/external role separation.
 ```
 
-**Status:** None
-
 ##### CivicActions
 
 
@@ -201,8 +183,6 @@ The information systems that collectively provide name/address resolution servic
 ```text
 The information system maintains a separate execution domain for each executing process.
 ```
-
-**Status:** None
 
 ##### CivicActions
 

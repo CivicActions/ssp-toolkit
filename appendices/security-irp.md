@@ -241,7 +241,7 @@ Remediation takes time. If the issue progresses for more than 3 hours without be
 
 If suspicious activity is suspected or other unanswered questions exist, do the following before making any changes:
 
-  - Make [CPM snapshots](https://cpm.project.com/) of relevant volumes and data.
+  - Make backup snapshots of relevant volumes and data.
   - Preserve logs.
   - Take screen captures of anomalous activity that can be used in post-remediation forensic analysis.
   - Consider implementing a containment strategy. For example, reconfigure firewall rules for the affected instance to drop all ingress and egress traffic, except from specific IPs like your own, until forensics can be performed.

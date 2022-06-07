@@ -21,8 +21,6 @@ frequency]; and
 frequency].
 ```
 
-**Status:** Complete
-
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel a system and information integrity policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions System and Information Integrity (SI) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
@@ -49,8 +47,6 @@ organization-defined time period] of the release of the updates; and
   d.  Incorporates flaw remediation into the organizational configuration management
 process.
 ```
-
-**Status:** Complete
 
 ##### Ilias
 
@@ -109,8 +105,6 @@ alert to administrator; [Assignment: organization-defined action]] in response t
 and eradication and the resulting potential impact on the availability of the information system.
 ```
 
-**Status:** Complete
-
 #### a
 
 ##### CivicActions
@@ -163,8 +157,6 @@ in accordance with applicable federal laws, Executive Orders, directives, polici
   g.  Provides [Assignment: organization-defined information system monitoring
 information] to [Assignment: organization-defined personnel or roles] [Selection (one or more): as needed; [Assignment: organization-defined frequency]].
 ```
-
-**Status:** Complete
 
 #### a
 
@@ -238,8 +230,6 @@ necessary;
 or notifies the issuing organization of the degree of noncompliance.
 ```
 
-**Status:** Complete
-
 ##### Ilias
 
 CivicActions Security and Operations receive Ilias Security Advisories on a regular basis.
@@ -287,8 +277,6 @@ The CivicActions Security Office is responsible for ensuring the dissemination a
 ```text
 The organization handles and retains information within the information system and information output from the system in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and operational requirements.
 ```
-
-**Status:** Complete
 
 ##### CivicActions
 

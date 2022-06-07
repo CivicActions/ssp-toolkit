@@ -21,10 +21,6 @@ frequency]; and
 frequency].
 ```
 
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
-
 ##### AWS
 
 This Physical Environment control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
@@ -46,10 +42,6 @@ access to the facility where the information system resides;
   d.  Removes individuals from the facility access list when access is no longer
 required.
 ```
-
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
 
 ##### AWS
 
@@ -83,10 +75,6 @@ circumstances requiring visitor escorts and monitoring];
 and/or when keys are lost, combinations are compromised, or individuals are transferred or terminated.
 ```
 
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
-
 ##### AWS
 
 This Physical Environment control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
@@ -108,10 +96,6 @@ and upon occurrence of [Assignment: organization-defined events or potential ind
 incident response capability.
 ```
 
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
-
 ##### AWS
 
 This Physical Environment control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
@@ -130,10 +114,6 @@ resides for [Assignment: organization-defined time period]; and
   b.  Reviews visitor access records [Assignment: organization-defined frequency].
 ```
 
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
-
 ##### AWS
 
 This Physical Environment control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
@@ -149,10 +129,6 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 The organization employs and maintains automatic emergency lighting for the information system that activates in the event of a power outage or disruption and that covers emergency exits and evacuation routes within the facility.
 ```
 
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
-
 ##### AWS
 
 This Physical Environment control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
@@ -167,10 +143,6 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 ```text
 The organization employs and maintains fire suppression and detection devices/systems for the information system that are supported by an independent energy source.
 ```
-
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
 
 ##### AWS
 
@@ -191,10 +163,6 @@ information system resides at [Assignment: organization-defined acceptable level
 frequency].
 ```
 
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
-
 ##### AWS
 
 This Physical Environment control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
@@ -210,10 +178,6 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 The organization protects the information system from damage resulting from water leakage by providing master shutoff or isolation valves that are accessible, working properly, and known to key personnel.
 ```
 
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
-
 ##### AWS
 
 This Physical Environment control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
@@ -228,10 +192,6 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 ```text
 The organization authorizes, monitors, and controls [Assignment: organization-defined types of information system components] entering and exiting the facility and maintains records of those items.
 ```
-
-**Status:** Complete
-
-**Summary:** Fully inherited from AWS (FedRAMP).
 
 ##### AWS
 

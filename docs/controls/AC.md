@@ -19,8 +19,6 @@ and associated access controls; and
     2.  Access control procedures [Assignment: organization-defined frequency].
 ```
 
-**Status:** Complete
-
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel an access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Access Control (AC) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
@@ -62,8 +60,6 @@ organization-defined frequency]; and
   k.  Establishes a process for reissuing shared/group account credentials (if
 deployed) when individuals are removed from the group.
 ```
-
-**Status:** Complete
 
 ##### AWS
 
@@ -256,8 +252,6 @@ In accordance with standard security best practices and CivicActions policy, sha
 The information system enforces approved authorizations for logical access to information           and system resources in accordance with applicable access control policies.
 ```
 
-**Status:** Complete
-
 ##### AWS
 
 In this architecture, AWS Identify and Access Management (IAM) and Amazon Amazon S3 enforce access to the AWS infrastructure and data in Amazon S3 buckets. The baseline IAM groups and roles are associated with access policies to align user accounts with personnel functions related to infrastructure/platform management (e.g. Billing, Amazon EC2/VPC/Amazon RDS systems administration, I.T. auditing, etc.) Login/API access is restricted to those users for whom the organization has authorized and created, or federated, IAM user accounts, and assigned the appropriate IAM group and/or role memberships. Amazon S3 buckets have specific access control policies assigned to restrict access to those IAM users who are assigned the appropriate IAM roles/groups.
@@ -300,8 +294,6 @@ invalid logon attempts by a user during a [Assignment: organization-defined time
 time period]; locks the account/node until released by an administrator; delays next logon prompt according to [Assignment: organization-defined delay algorithm]] when the maximum number of unsuccessful attempts is exceeded.
 ```
 
-**Status:** Complete
-
 ##### Project
 
 The Project system locks out users after three unsuccessful login attempts. The information system automatically locks the account permanently, unless an administrator unlocks the account before then, when the maximum number of unsuccessful attempts (3) is exceeded.
@@ -340,8 +332,6 @@ are consistent with privacy accommodations for such systems that generally prohi
     3.  Includes a description of the authorized uses of the system.
 ```
 
-**Status:** Partial
-
 ##### Ilias
 
 System Use Notification is inherited from the Project.
@@ -369,8 +359,6 @@ on the information system without identification or authentication consistent wi
 information system, user actions not requiring identification or authentication.
 ```
 
-**Status:** Complete
-
 ##### Ilias
 
 The anonymous user role has the least access to the site of all roles. The website does not allow anonymous users to register an account for themselves.
@@ -397,8 +385,6 @@ and implementation guidance for each type of remote access allowed; and
 connections.
 ```
 
-**Status:** Complete
-
 ##### CivicActions
 
 The CivicActions Access Control (AC) policy defines policy for remote usage restrictions. The Project Manager or System Owner may additionally provision users according to their Access Control policies.
@@ -419,8 +405,6 @@ implementation guidance for wireless access; and
 connections.
 ```
 
-**Status:** Complete
-
 ##### CivicActions
 
 This control is not applicable. The system does not provide wireless access points.
@@ -436,8 +420,6 @@ and implementation guidance for organization-controlled mobile devices; and
 systems.
 ```
 
-**Status:** Complete
-
 ##### CivicActions
 
 This control is not applicable. The system does not maintain a facility in which mobile device access limitations are required.
@@ -451,8 +433,6 @@ The organization establishes terms and conditions, consistent with any trust rel
   b.  Process, store, or transmit organization-controlled information using external
 information systems.
 ```
-
-**Status:** Complete
 
 ##### CivicActions
 
@@ -472,8 +452,6 @@ accessible information system to ensure that nonpublic information is not includ
   d.  Reviews the content on the publicly accessible information system for nonpublic
 information [Assignment: organization-defined frequency] and removes such information, if discovered.
 ```
-
-**Status:** Complete
 
 #### a
 

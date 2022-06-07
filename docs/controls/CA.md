@@ -21,8 +21,6 @@ frequency]; and
 frequency].
 ```
 
-**Status:** Complete
-
 ##### CivicActions
 
 CivicActions has developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Security Assessment and Authorization Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
@@ -52,8 +50,6 @@ assessment; and
   d.  Provides the results of the security control assessment to [Assignment:
 organization-defined individuals or roles].
 ```
-
-**Status:** Complete
 
 #### a
 
@@ -119,8 +115,6 @@ requirements, and the nature of the information communicated; and
 frequency].
 ```
 
-**Status:** Complete
-
 ##### CivicActions
 
 This control is not applicable. CivicActions systems do not have system interconnections. The only communication conducted to CivicActions' systems is through the Internet.
@@ -135,8 +129,6 @@ the organization�s planned remedial actions to correct weaknesses or deficienc
   b.  Updates existing plan of action and milestones [Assignment: organization-defined
 frequency] based on the findings from security controls assessments, security impact analyses, and continuous monitoring activities.
 ```
-
-**Status:** Complete
 
 ##### CivicActions
 
@@ -169,8 +161,6 @@ for processing before commencing operations; and
   c.  Updates the security authorization [Assignment: organization-defined frequency].
 ```
 
-**Status:** Complete
-
 ##### Project
 
 The Project follows the None. The Project system received its first three-year security accreditation on March 3, 2009, and most recently received an ATO on February 5, 2016.
@@ -196,8 +186,6 @@ information; and
   g.  Reporting the security status of organization and the information system
 to [Assignment: organization-defined personnel or roles] [Assignment: organization-defined frequency].
 ```
-
-**Status:** Partial
 
 #### a
 
@@ -276,8 +264,6 @@ system components or classes of components] to the information system; and
   b.  Documents, for each internal connection, the interface characteristics,
 security requirements, and the nature of the information communicated.
 ```
-
-**Status:** None
 
 ##### CivicActions
 
