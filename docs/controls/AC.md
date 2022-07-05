@@ -274,6 +274,17 @@ The anonymous user role has the least access to the site of all roles. The websi
 The The Project ensures that assigned authorizations for controlling access to the system is enforced in accordance with the user definitions noted in Section 1.1.1 of the Project SSP. The technical support staff ensures that access to security functions and protected information is restricted to authorized personnel. Access will be controlled with access control list used on each instance. Members of one group cannot access resources defined for other groups unless explicitly permitted.
 
 
+### AC-3(9): Access Enforcement
+
+```text
+The information system enforces approved authorizations for logical access to information           and system resources in accordance with applicable access control policies.
+```
+
+##### Project
+
+The Project information system does not release information outside of the established system boundary.
+
+
 ### AC-6: Least Privilege
 
 ```text

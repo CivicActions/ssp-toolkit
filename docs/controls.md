@@ -1,9 +1,10 @@
-# LOW Impact Controls (compiled: 2020.12.07 at 1044)
+# LOW Impact Controls (compiled: 2022.07.05 at 1218)
 
 * [AC: Access Control](controls/AC.md#ac-access-control)
    * [AC-1: Access Control Policy And Procedures](controls/AC.md#ac-1-access-control-policy-and-procedures)
    * [AC-2: Account Management](controls/AC.md#ac-2-account-management)
    * [AC-3: Access Enforcement](controls/AC.md#ac-3-access-enforcement)
+   * [AC-3(9): Access Enforcement](controls/AC.md#ac-39-access-enforcement)
    * [AC-6: Least Privilege](controls/AC.md#ac-6-least-privilege)
    * [AC-7: Unsuccessful Logon Attempts](controls/AC.md#ac-7-unsuccessful-logon-attempts)
    * [AC-8: System Use Notification](controls/AC.md#ac-8-system-use-notification)
