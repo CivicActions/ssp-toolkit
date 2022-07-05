@@ -107,6 +107,16 @@ satisfies:
   summary: >
     {{project.name_short}} ensures access authorizations enforced in accordance
     with user definitions.
+- control_key: AC-3(9)
+  control_name: CONTROLLED RELEASE
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Hybrid
+  narrative:
+  - text: >
+      The {{project.name_short}} information system does not release information outside
+      of the established system boundary.
+  implementation_status: {{status.AC_3.project}}
 - control_key: AC-7
   control_name: UNSUCCESSFUL LOGIN ATTEMPTS
   standard_key: NIST SP 800-53 Revision 4
