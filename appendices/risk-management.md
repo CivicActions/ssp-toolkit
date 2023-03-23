@@ -1,6 +1,6 @@
 # Risk Management Plan
 
-## Client The Project
+## Client Project Full Name
 
 March 2023
 Version 3.4

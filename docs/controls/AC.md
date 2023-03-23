@@ -28,7 +28,7 @@ CivicActions has developed, documented and disseminated to personnel an access c
 
 This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
 
-Access control policy and procedures are documented in the The Project SSP. Access to Project operational information or system resources is limited to only authorized users, programs or processes. The Department enforces access control policies to protect the integrity of the The Project. This Department reviews and updates this policy as necessary and it has been being updated, as necessary, since April 2008.
+Access control policy and procedures are documented in the Project Full Name SSP. Access to Project operational information or system resources is limited to only authorized users, programs or processes. The Department enforces access control policies to protect the integrity of the Project Full Name. This Department reviews and updates this policy as necessary and it has been being updated, as necessary, since April 2008.
 
 
 ### AC-2: Account Management
@@ -121,7 +121,7 @@ The CivicActions Project Manager assigns the "administrator" role for the manage
 
 ##### Drupal
 
-Drupal defines a default set of roles; Anonymous, Authenticated, and Administrator, as well as providing for the creation of additional organizational-defined roles identified by The Project
+Drupal defines a default set of roles; Anonymous, Authenticated, and Administrator, as well as providing for the creation of additional organizational-defined roles identified by Project Full Name
 
 
 ##### Project
@@ -271,7 +271,7 @@ The anonymous user role has the least access to the site of all roles. The websi
 
 ##### Project
 
-The The Project ensures that assigned authorizations for controlling access to the system is enforced in accordance with the user definitions noted in Section 1.1.1 of the Project SSP. The technical support staff ensures that access to security functions and protected information is restricted to authorized personnel. Access will be controlled with access control list used on each instance. Members of one group cannot access resources defined for other groups unless explicitly permitted.
+The Project Full Name ensures that assigned authorizations for controlling access to the system is enforced in accordance with the user definitions noted in Section 1.1.1 of the Project SSP. The technical support staff ensures that access to security functions and protected information is restricted to authorized personnel. Access will be controlled with access control list used on each instance. Members of one group cannot access resources defined for other groups unless explicitly permitted.
 
 
 ### AC-3(9): Access Enforcement
@@ -376,14 +376,14 @@ The anonymous user role has the least access to the site of all roles. The websi
 
 ##### Project
 
-The The Project allows the general public user to read the web pages, do searches on the resource database and to review online forum information without identification and authentication for the public web site. Program and Privilege users cannot access the Project system without identification or authentication.
+The Project Full Name allows the general public user to read the web pages, do searches on the resource database and to review online forum information without identification and authentication for the public web site. Program and Privilege users cannot access the Project system without identification or authentication.
 
 
 #### a
 
 ##### Drupal
 
-The anonymous user role has the least access to the site of all roles. Drupal sites can be configured to allow actions identified by The Project
+The anonymous user role has the least access to the site of all roles. Drupal sites can be configured to allow actions identified by Project Full Name
 
 
 ### AC-17: Remote Access
@@ -403,7 +403,7 @@ The CivicActions Access Control (AC) policy defines policy for remote usage rest
 
 ##### Project
 
-The The Project permits remote access for privileged functions to support operational needs. The technical staff documents, monitors, and controls all methods of remote access to the information system including remote access for privileged functions. Privileged user access is only permitted through the use of Secure Shell (SSH) where the user will authenticate to the device through this secure channel. Virtual Private Networking (VPN) is not enabled in any form within the Project accreditation boundary.
+The Project Full Name permits remote access for privileged functions to support operational needs. The technical staff documents, monitors, and controls all methods of remote access to the information system including remote access for privileged functions. Privileged user access is only permitted through the use of Secure Shell (SSH) where the user will authenticate to the device through this secure channel. Virtual Private Networking (VPN) is not enabled in any form within the Project accreditation boundary.
 
 
 ### AC-18: Wireless Access
@@ -468,7 +468,7 @@ information [Assignment: organization-defined frequency] and removes such inform
 
 ##### Project
 
-The The Client grants certain Project support staff members the authority to post publicly accessible content. These individuals must complete Project system security training before being granted access to the Project and before they can post publicly accessible content within the The Project. Furthermore, each authorized individual must follow the procedures delineated within the “Using Drupal” Instruction to ensure they are following a verifiable procedure throughout the entire process. This covers the Project Discussion Lists administration areas, Project Quarterly Reporting and training tools, and Drupal Content Management systems. Public content is only edited via the Drupal Content Management System. All other content is only viewable by Project system users and protected by hardened access controls.
+The Client Full Name grants certain Project support staff members the authority to post publicly accessible content. These individuals must complete Project system security training before being granted access to the Project and before they can post publicly accessible content within the Project Full Name. Furthermore, each authorized individual must follow the procedures delineated within the “Using Drupal” Instruction to ensure they are following a verifiable procedure throughout the entire process. This covers the Project Discussion Lists administration areas, Project Quarterly Reporting and training tools, and Drupal Content Management systems. Public content is only edited via the Drupal Content Management System. All other content is only viewable by Project system users and protected by hardened access controls.
 
 
 #### b

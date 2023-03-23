@@ -8,7 +8,7 @@ satisfies:
   security_control_type: System Specific
   narrative:
   - text: >
-      The Client, as the governing agency of The Project, has
+      Client Full Name, as the governing agency of Project Full Name, has
       authorized the collection of user names and email addresses for the purpose
       of authenticating to the Project system.
   implementation_status: In Place

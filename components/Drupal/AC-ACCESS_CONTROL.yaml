@@ -24,7 +24,7 @@ satisfies:
     text: >
       Drupal defines a default set of roles; Anonymous, Authenticated, and
       Administrator, as well as providing for the creation of additional
-      organizational-defined roles identified by The Project
+      organizational-defined roles identified by Project Full Name
   - key: d
     text: Drupal has a sophisticated permissions and role-based access control
       built-in. Each role within Drupal can only access the documents and
@@ -74,5 +74,5 @@ satisfies:
     text: >
       The anonymous user role has the least access to the site of all roles.
       Drupal sites can be configured to allow actions identified by
-      The Project
+      Project Full Name
   implementation_status: complete

@@ -27,7 +27,7 @@ satisfies:
   narrative:
   - text: >
       Project position sensitivity levels are assigned by the
-      The Client. Each position designation is documented on the
+      Client Full Name. Each position designation is documented on the
       Standard Position Description (SPD) and assigned a risk level (or
       sensitivity level) commensurate with the sensitivity of the information,
       the risk to that information and the system maintaining that information.
@@ -78,7 +78,7 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - text: >
-      The Client HR policy states that managers or designated
+      Client Full Name HR policy states that managers or designated
       officials are responsible for recovering and properly securing employee
       badges and returning it to the local physical security office. The
       Client executes termination procedures that remove
@@ -109,7 +109,7 @@ satisfies:
       appropriate) for the user.
 
 
-      In accordance with the The Client HR policy, the employee’s
+      In accordance with the Client Full Name HR policy, the employee’s
       manager or designated official is responsible for recovering and properly
       securing his/her ID badge and returning it to the local physical security
       office. The manager provides prompt notification to the
@@ -183,7 +183,7 @@ satisfies:
   - text: >
       The disciplinary sanctions for personnel failing to comply with establish
       IT security policies and procedures are included in
-      The Client HR policy. If an employee violates the
+      Client Full Name HR policy. If an employee violates the
       Client information security policies and procedures,
       the employee may be subject to disciplinary action at the discretion of
       management. Actions may range from verbal or written warning, removal of

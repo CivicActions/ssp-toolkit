@@ -36,7 +36,7 @@ CivicActions has developed, documented and disseminated to personnel a system ma
 
 ##### Project
 
-System maintenance policy and procedures are formally documented in the Project SSP, which provides the roles and responsibilities as it pertains to software and systems maintenance and updates. The The Project ensures that maintenance controls are developed, disseminated, reviewed, and updated as necessary.
+System maintenance policy and procedures are formally documented in the Project SSP, which provides the roles and responsibilities as it pertains to software and systems maintenance and updates. The Project Full Name ensures that maintenance controls are developed, disseminated, reviewed, and updated as necessary.
 
 Physical and environmental protection is fully inherited from the AWS FedRAMP certified us-east cloud.
 

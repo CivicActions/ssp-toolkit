@@ -1,10 +1,10 @@
 # This work is dual-licensed under Creative Commons Zero v1.0 Universal and GNU General Public License v3.0 or later.
 # The file containts example code. Replace the values with information that is pertinent to your project.
-name: The Project
+name: Project Full Name
 name_short: Project
 contact_email: TheProject@example.net
 description:
-client_name: The Client
+client_name: Client Full Name
 client_name_short: Client
 ssp_url: https://handbook.civicactions.com/en/latest/100-security/incidents/
 incident_response_plan_url: https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/

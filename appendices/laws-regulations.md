@@ -1,6 +1,6 @@
 # Applicable laws and regulations
 
-The following laws, regulations, or policies establish requirements for confidentiality, integrity, and availability for the The Project. This document references the publications where appropriate.
+The following laws, regulations, or policies establish requirements for confidentiality, integrity, and availability for the Project Full Name. This document references the publications where appropriate.
 
 ## Federal statutes
 

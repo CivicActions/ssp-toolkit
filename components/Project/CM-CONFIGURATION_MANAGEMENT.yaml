@@ -55,7 +55,7 @@ satisfies:
       In support of continuous monitoring and to ensure the Project
       system lifecycle is fully sustained, a risk assessment process, be it
       formal or informal, is performed when changes are occur. This ensures
-      that The Client understands the security impacts and can
+      that Client Full Name understands the security impacts and can
       determine if additional security controls are required.
   implementation_status: complete
 - control_key: CM-6

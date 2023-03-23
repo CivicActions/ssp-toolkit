@@ -68,7 +68,7 @@ sections:
           teams and management of each system
 
     success_factors: >- #Section 2.5
-      This section addresses the factors and issues that specifically apply to the the
+      This section addresses the factors and issues that specifically apply to the
       Project COOP that have been identified to be critical to its successful
       implementation. These factors are as follows:
 
@@ -114,13 +114,13 @@ sections:
         input, creativity, and pragmatism. The best way to create workable strategies
         and cohesive teams that leverage out-of-the-box thinking is to involve
         management and information resource management personnel in an ongoing,
-        informative dialogue. The the Project management has developed an agile
+        informative dialogue. The Project management has developed an agile
         Contingency Plan that is maintained in Git and regularly reviewed and updated
         by the development, operations and security teams.
       team_members: >- # Section 3.1.2
-        The the Project COOP, Contingency Plan and Security Incident Response team
-        members are listed in the the Project Incident Response Team Contact Details
-        (private Google) spreadsheet which is linked to the the Project Contingency
+        The Project COOP, Contingency Plan and Security Incident Response team
+        members are listed in the Project Incident Response Team Contact Details
+        (private Google) spreadsheet which is linked to the Project Contingency
         Plan. Included are processes for:
 
         * Incident Notification and Assessment
@@ -153,10 +153,10 @@ sections:
         * Data backup/restoration procedures
 
   testing: >- # Section 4
-    The the Project COOP will be maintained routinely and exercised/tested at least
+    The Project COOP will be maintained routinely and exercised/tested at least
     annually. Contingency procedures must be tested periodically to ensure the
     effectiveness of the plan. The scope, objective, and measurement criteria of each
-    exercise will be determined and coordinated by the the Project COOP Coordinator on a
+    exercise will be determined and coordinated by the Project COOP Coordinator on a
     “per event” basis. The purpose of exercising and testing the plan is to continually
     refine resumption and recovery procedures to reduce the potential for failure.
     There are several different types of tests that are useful for measuring different
@@ -169,7 +169,7 @@ sections:
     * One integrated business operations/information systems exercise per year
 
     The COOP Coordinator, Contingency System Coordinators, and Team Leaders, together
-    with the the Project Management will determine end-user participation
+    with the Project Management will determine end-user participation
   recommended_strategies: # Section 5
     emergency_response: # Section 5.1
       inherited_procedures:
@@ -182,14 +182,14 @@ sections:
           - Sabotage
     diversification_of_connectivity:
       description: >-
-        Amazon Amazon EC2 Region US-East is the primary the Project Cloud data center
+        Amazon EC2 Region US-East is the primary the Project Cloud data center
         infrastructure with US-West as the secondary/contingency site.
       image:
         path:
         alt:
   backups: # Section 6
     backup_capabilities: >- # Section 6.1
-      All of the the Project systems are dependent on the preservation of data,
+      All of the Project systems are dependent on the preservation of data,
       including software code and databases. In order to minimize the impact of
       a disaster, it is extremely important to protect the sensitivity or
       confidentiality of data; to preserve the authenticity and accuracy of
