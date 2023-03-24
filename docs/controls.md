@@ -1,4 +1,4 @@
-# LOW Impact Controls (compiled: 2022.07.05 at 1218)
+# LOW Impact Controls (compiled: 2023.03.23 at 1631)
 
 * [AC: Access Control](controls/AC.md#ac-access-control)
    * [AC-1: Access Control Policy And Procedures](controls/AC.md#ac-1-access-control-policy-and-procedures)

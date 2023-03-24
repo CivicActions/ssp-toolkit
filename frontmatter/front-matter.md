@@ -35,7 +35,7 @@
 ## 1. Information System Name
 
 This FISMA Low Impact Framework provide
-an overview of the security requirements for the _The Project_
+an overview of the security requirements for the _Project Full Name_
 (_Project_) and describes the controls in place or planned for
 implementation to provide a level of security appropriate for the information to
 be transmitted, processed, or stored by the system. Information security is vital
@@ -55,7 +55,7 @@ Table 1‑1. **Information System Identifier, Name, and Abbreviation**
 
 | **Unique Identifier** | **Information System Name** | **Information System Abbreviation** |
 | --- | ---| --- |
-| None | The Project | Project |
+| None | Project Full Name | Project |
 
 ## 2. Information System Categorization
 
@@ -165,7 +165,7 @@ Table 3‑1. **Information System Owner**
 | ---------------------------------------- | ------------------------------  |
 | **Name**                                 | John Manager     |
 | **Title**                                | Program Manager, System Owner    |
-| **Company / Organization**               | The Client |
+| **Company / Organization**               | Client Full Name |
 | **Address**                              | None  |
 | **Phone Number**                         | 555.555.1234    |
 | **Email Address**                        | john.manager@example.com    |
@@ -181,7 +181,7 @@ Table 4‑1. **Independent Assessor**
 | ------------------------------------ | -------------------------- |
 | **Name**                             | Jane Assessor     |
 | **Title**                            | System Assessor    |
-| **Company / Organization**           | The Client |
+| **Company / Organization**           | Client Full Name |
 | **Address**                          | None  |
 | **Phone Number**                     | 555.555.2345    |
 | **Email Address**                    | jane.assessor@example.com    |
@@ -189,7 +189,7 @@ Table 4‑1. **Independent Assessor**
 ## 5. Authorizing Official
 
 The Authorizing Official (AO) or Designated Approving Authority (DAA)
-for the The Project is the None.*
+for the Project Full Name is the None.*
 
 ## 6. Other Designated Contacts
 
@@ -210,14 +210,14 @@ Table 6‑1. **Information System AO Management Point of Contact**
 | -------------------------- | ----------------------------------- |
 | **Name**                   | Jan Poc     |
 | **Title**                  | Authorizing Official    |
-| **Company / Organization** | The Client |
+| **Company / Organization** | Client Full Name |
 | **Address**                | None  |
 | **Phone Number**           | 555.555.3456    |
 | **Email Address**          | jan.poc@example.com    |
 
 ## 7. Assignment of Security Responsibility
 
-The The Project Information System Security Officer
+The Project Full Name Information System Security Officer
 (ISSO), or their equivalent, identified below, have been appointed in
 writing and are deemed to have significant cyber and operational role
 responsibilities.
@@ -239,7 +239,7 @@ Table 7‑2. **AO ISSO Point of Contact**
 | ---------------------------- | ----------------------------- |
 | **Name**                     | Jim Issopoc     |
 | **Title**                    | Information Systems Security Manager (ISSM)    |
-| **Company / Organization**   | The Client |
+| **Company / Organization**   | Client Full Name |
 | **Address**                  | None  |
 | **Phone Number**             | 555.555.6789    |
 | **Email Address**            | jim.issopoc@example.com    |
@@ -425,7 +425,7 @@ Table 11‑1. **Ports, Protocols, and Services**
 | 53 | TCP/UDP | AWS DNS | DNS service within AWS | None |
 | 123 | UDP | AWS NTP | Network time protocol | None |
 | 443 | TCP | AWS ELB | Load balancing | None |
-| 3306 | TCP | AWS Amazon RDS | Database | None |
+| 3306 | TCP | Amazon RDS | Database | None |
 | 5044 | TCP/UDP | SSH/rsync audit records | Elasticsearch (from all instances in VPC) | None |
 | 8983 | TCP | Solr | Solr search | None |
 | 443 | TCP | CMS | CMS update | CMS |

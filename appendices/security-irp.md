@@ -27,7 +27,7 @@
 
 ## Introduction
 
-This document describes the The Project Incident Response Team's process for responding to security incidents and other disruptions that may affect the Confidentiality, Integrity, Availability (CIA) or Privacy of system resources and data. It explains:
+This document describes the Project Full Name Incident Response Team's process for responding to security incidents and other disruptions that may affect the Confidentiality, Integrity, Availability (CIA) or Privacy of system resources and data. It explains:
 
 - roles and responsibilities during and after incidents
 - overview of the steps to follow for resolution
@@ -40,7 +40,7 @@ Individual and team roles are described below.
 
 ### Responder
 
-A _Responder_ is a member of the The Project IR Team that investigates and remediates an event or incident.
+A _Responder_ is a member of the Project Full Name IR Team that investigates and remediates an event or incident.
 
 #### First Responder
 
@@ -125,7 +125,7 @@ At this stage, the _First Responder_ is usually working alone, and is also the _
 
 A. Allocate 5 minutes and determine whether this event is a potential incident or false alarm.
 
-   An incident begins when someone becomes aware of a disruption in expected normal system operations. The definition of "incident" is broad, following [_NIST SP 800-61: Computer Security Incident Handling Guide_](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final), as "a violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices". This definition encompasses any scenario that might threaten the security of the The Project. For more information, see the CivicActions handbook: [What is an incident?](http://civicactions-handbook.readthedocs.io/en/latest/09-security/incidents/#what-is-an-incident)
+   An incident begins when someone becomes aware of a disruption in expected normal system operations. The definition of "incident" is broad, following [_NIST SP 800-61: Computer Security Incident Handling Guide_](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final), as "a violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices". This definition encompasses any scenario that might threaten the security of the Project Full Name. For more information, see the CivicActions handbook: [What is an incident?](http://civicactions-handbook.readthedocs.io/en/latest/09-security/incidents/#what-is-an-incident)
 
    When noticing what appears to be a Project-related event, the Project team member should check normal communication channels, such as the Slack channel ([#None](None)), to determine whether this could be expected behavior (for example, system downtime during a maintenance window). If it appears to be a valid incident, the Project team member becomes the _Reporter_ and alerts the on-call responders via the Slack channel ([#None](None)) or email TheProject@example.com. If no one from the IR Team acknowledges the message within 10 minutes, the _Reporter_ should escalate the issue by contacting Project team members on the [None](None) contact sheet directly until someone acknowledges the report.
 
@@ -274,7 +274,7 @@ The IC does do the following:
 The _Incident Commander_ (IC) or _Communications Officer_ (CO) does this following:
 
 - Coordinates with the CivicActions managers to apprise them of the situation.
-- Coordinates with the The Project Product Owner (PO) to notify affected customers.
+- Coordinates with the Project Full Name Product Owner (PO) to notify affected customers.
 - Ensures that the IR Team is recording all actions in the appropriate designated [communication channels](#communication-channels).
 - Shares sitreps on a regular basis in Slack, in the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident), and with stakeholders. See the section on [incident severities](#incident-severities) for suggested time intervals for each severity level.
 

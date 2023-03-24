@@ -1,4 +1,4 @@
-# The Project Configuration Management Plan
+# Project Full Name Configuration Management Plan
 
 This document describes how the CivicActions/Project team approaches configuration management of the Project General Services platform.
 
@@ -36,7 +36,7 @@ The server software update process, AIDE-based intrusion detection, and Git mana
 
 ### Purpose
 
-The purpose of this document is to identify and describe the Configuration Management (CM) process for the The Project and provide CivicActions with the necessary structure to efficiently and securely manage the configuration standards for software baselines and changes to assets within the Project authorization boundary. This plan describes the processes required to ensure that the inevitable changes to Project occur within an identifiable and controlled environment.
+The purpose of this document is to identify and describe the Configuration Management (CM) process for the Project Full Name and provide CivicActions with the necessary structure to efficiently and securely manage the configuration standards for software baselines and changes to assets within the Project authorization boundary. This plan describes the processes required to ensure that the inevitable changes to Project occur within an identifiable and controlled environment.
 
 The Project CM Plan will ensure the following requirements are met:
 

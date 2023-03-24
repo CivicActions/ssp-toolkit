@@ -10,21 +10,21 @@ main:
 system_owner: # Appendix_b Table 3‑1
   name: John Manager
   title: Program Manager, System Owner
-  comp_org: The Client
+  comp_org: Client Full Name
   address:
   phone: 555.555.1234
   email: john.manager@example.com
 assessor: # Appendix_b Table 4‑1
   name: Jane Assessor
   title: System Assessor
-  comp_org: The Client
+  comp_org: Client Full Name
   address:
   phone: 555.555.2345
   email: jane.assessor@example.com
 ao_management_poc: # Appendix_b Table 6‑1
   name: Jan Poc
   title: Authorizing Official
-  comp_org: The Client
+  comp_org: Client Full Name
   address:
   phone: 555.555.3456
   email: jan.poc@example.com
@@ -45,7 +45,7 @@ int_isso_poc: # Appendix_b Table 7‑1
 ao_isso_poc: # Appendix_b Table 7‑2
   name: Jim Issopoc
   title: Information Systems Security Manager (ISSM)
-  comp_org: The Client
+  comp_org: Client Full Name
   address:
   phone: 555.555.6789
   email: jim.issopoc@example.com

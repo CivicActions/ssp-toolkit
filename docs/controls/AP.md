@@ -15,7 +15,7 @@ need."
 
 ##### Privacy
 
-The Client, as the governing agency of The Project, has authorized the collection of user names and email addresses for the purpose of authenticating to the Project system.
+Client Full Name, as the governing agency of Project Full Name, has authorized the collection of user names and email addresses for the purpose of authenticating to the Project system.
 
 
 ### AP-2: PURPOSE SPECIFICATION

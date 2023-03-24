@@ -1,6 +1,6 @@
 # Project System Continuity Plan
 
-## Client The Project
+## Client Project Full Name
 
 March 2023
 Version 3.4
@@ -97,7 +97,7 @@ System recovery time of 24 hours has been determined to provide a cost of recove
 
 ### 2.5 Critical Success Factors and Issues
 
-This section addresses the factors and issues that specifically apply to the the Project COOP that have been identified to be critical to its successful implementation. These factors are as follows:
+This section addresses the factors and issues that specifically apply to the Project COOP that have been identified to be critical to its successful implementation. These factors are as follows:
 * Commitment by upper management to Continuity of Operations Planning and
   Disaster Recovery.
 
@@ -126,11 +126,11 @@ The following mission-critical systems/applications/services must be recovered a
 
 #### 3.1.1 Continuity of Operations Planning and Updates
 
-The development of recovery strategies and work-arounds requires technical input, creativity, and pragmatism. The best way to create workable strategies and cohesive teams that leverage out-of-the-box thinking is to involve management and information resource management personnel in an ongoing, informative dialogue. The the Project management has developed an agile Contingency Plan that is maintained in Git and regularly reviewed and updated by the development, operations and security teams.
+The development of recovery strategies and work-arounds requires technical input, creativity, and pragmatism. The best way to create workable strategies and cohesive teams that leverage out-of-the-box thinking is to involve management and information resource management personnel in an ongoing, informative dialogue. The Project management has developed an agile Contingency Plan that is maintained in Git and regularly reviewed and updated by the development, operations and security teams.
 
 #### 3.1.2 Continuity of Operations and System Contingency Team Members
 
-The the Project COOP, Contingency Plan and Security Incident Response team members are listed in the the Project Incident Response Team Contact Details (private Google) spreadsheet which is linked to the the Project Contingency Plan. Included are processes for:
+The Project COOP, Contingency Plan and Security Incident Response team members are listed in the Project Incident Response Team Contact Details (private Google) spreadsheet which is linked to the Project Contingency Plan. Included are processes for:
 * Incident Notification and Assessment
 * Plan Activation
 * Damage Assessment
@@ -150,11 +150,11 @@ Vital records and important documentation are backed up and stored offsite and i
 
 ## 4 Testing Procedures
 
-The the Project COOP will be maintained routinely and exercised/tested at least annually. Contingency procedures must be tested periodically to ensure the effectiveness of the plan. The scope, objective, and measurement criteria of each exercise will be determined and coordinated by the the Project COOP Coordinator on a “per event” basis. The purpose of exercising and testing the plan is to continually refine resumption and recovery procedures to reduce the potential for failure. There are several different types of tests that are useful for measuring different objectives. The schedule for testing is as follows:
+The Project COOP will be maintained routinely and exercised/tested at least annually. Contingency procedures must be tested periodically to ensure the effectiveness of the plan. The scope, objective, and measurement criteria of each exercise will be determined and coordinated by the Project COOP Coordinator on a “per event” basis. The purpose of exercising and testing the plan is to continually refine resumption and recovery procedures to reduce the potential for failure. There are several different types of tests that are useful for measuring different objectives. The schedule for testing is as follows:
 * Desktop testing on a quarterly basis
 * One structured walk-through per year
 * One integrated business operations/information systems exercise per year
-The COOP Coordinator, Contingency System Coordinators, and Team Leaders, together with the the Project Management will determine end-user participation
+The COOP Coordinator, Contingency System Coordinators, and Team Leaders, together with the Project Management will determine end-user participation
 
 ## 5 Recommended Strategies
 
@@ -174,14 +174,14 @@ The actions set forth as responses to disasters are basic procedures that will b
 
 ### 5.2 Diversification of Connectivity
 
-Amazon Amazon EC2 Region US-East is the primary the Project Cloud data center infrastructure with US-West as the secondary/contingency site.
+Amazon EC2 Region US-East is the primary the Project Cloud data center infrastructure with US-West as the secondary/contingency site.
 ![None](None)
 
 ## 6 Backup, Restore, and Recovery Procedures
 
 ### 6.1 Backup Capabilities
 
-All of the the Project systems are dependent on the preservation of data, including software code and databases. In order to minimize the impact of a disaster, it is extremely important to protect the sensitivity or confidentiality of data; to preserve the authenticity and accuracy of data, and to maintain the availability of data. These three goals are commonly defined as “Confidentiality, Integrity, and Availability”. The protection of the confidentiality, integrity, and availability of data is of singular importance in information security and disaster recovery planning. Confidentiality, integrity, and availability of data are intrinsic to disaster recovery planning.
+All of the Project systems are dependent on the preservation of data, including software code and databases. In order to minimize the impact of a disaster, it is extremely important to protect the sensitivity or confidentiality of data; to preserve the authenticity and accuracy of data, and to maintain the availability of data. These three goals are commonly defined as “Confidentiality, Integrity, and Availability”. The protection of the confidentiality, integrity, and availability of data is of singular importance in information security and disaster recovery planning. Confidentiality, integrity, and availability of data are intrinsic to disaster recovery planning.
 For data backups, the system utilizes hourly encrypted snapshots of the file system, utilizing AWS elastic block storage (EBS) devices. A full set of these snapshot images is transferred daily to the secondary geographic location (US-West) for localized disaster recovery. The system also makes full logical backups of the primary the Project site database and stores them on virtualized storage.
 
 #### 6.1.1 Hardware

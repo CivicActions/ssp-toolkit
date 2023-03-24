@@ -60,7 +60,7 @@ CivicActions will develop a security assessment plan (SAP) that describes the se
 
 ##### Project
 
-The The Project follows the None. The The Project will conduct annual security assessments to comply with FISMA and NIST regulations. Project will draw on NIST Special Publications 800-53A security controls to complete the assessment. All controls and sub-set security controls will be evaluated and a risk assessment will be conducted. The scope of the assessment includes:
+The Project Full Name follows the None. The Project Full Name will conduct annual security assessments to comply with FISMA and NIST regulations. Project will draw on NIST Special Publications 800-53A security controls to complete the assessment. All controls and sub-set security controls will be evaluated and a risk assessment will be conducted. The scope of the assessment includes:
 
 1. Security controls and control enhancements under assessment
 2. Assessment procedures to be used to determine security control effectiveness

@@ -13,10 +13,10 @@ satisfies:
 
 
       Access control policy and procedures are documented in the
-      The Project SSP. Access to Project operational
+      Project Full Name SSP. Access to Project operational
       information or system resources is limited to only authorized users,
       programs or processes. The Department enforces access control policies
-      to protect the integrity of the The Project. This Department reviews
+      to protect the integrity of the Project Full Name. This Department reviews
       and updates this policy as necessary and it has been being updated, as
       necessary, since April 2008.
   implementation_status: complete
@@ -95,7 +95,7 @@ satisfies:
   security_control_type: Hybrid
   narrative:
   - text: >
-      The The Project ensures that assigned authorizations for controlling
+      The Project Full Name ensures that assigned authorizations for controlling
       access to the system is enforced in accordance with the user definitions
       noted in Section 1.1.1 of the Project SSP. The technical
       support staff ensures that access to security functions and protected
@@ -178,7 +178,7 @@ satisfies:
   security_control_type: System Specific Control
   narrative:
   - text: >
-      The The Project allows the general public user to read the web pages,
+      The Project Full Name allows the general public user to read the web pages,
       do searches on the resource database and to review online forum
       information without identification and authentication for the public web
       site. Program and Privilege users cannot access the Project
@@ -194,7 +194,7 @@ satisfies:
   security_control_type: Inherited (Cloud Service Provider)
   narrative:
   - text: >
-      The The Project permits remote access for privileged functions to
+      The Project Full Name permits remote access for privileged functions to
       support operational needs. The technical staff documents, monitors, and
       controls all methods of remote access to the information system including
       remote access for privileged functions. Privileged user access is only
@@ -214,11 +214,11 @@ satisfies:
   narrative:
   - key: a
     text: >
-      The The Client grants certain Project support
+      The Client Full Name grants certain Project support
       staff members the authority to post publicly accessible content. These
       individuals must complete Project system security training
       before being granted access to the Project and before they
-      can post publicly accessible content within the The Project.
+      can post publicly accessible content within the Project Full Name.
       Furthermore, each authorized individual must follow the procedures
       delineated within the “Using Drupal” Instruction to ensure they are
       following a verifiable procedure throughout the entire process. This covers

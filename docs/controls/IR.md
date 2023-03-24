@@ -85,9 +85,9 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 ##### Project
 
-The Client Computer Security Officer (CSO) handles all incidents for the The Project.
+The Client Computer Security Officer (CSO) handles all incidents for the Project Full Name.
 
-The The Client utilizes proven incident handling methodologies for security incidents that includes preparation, detection and analysis, containment, eradication, and recovery. The Client maintains a list of lessons learned from ongoing incident handling activities and uses those lessons to update the incident response procedures accordingly.
+The Client Full Name utilizes proven incident handling methodologies for security incidents that includes preparation, detection and analysis, containment, eradication, and recovery. Client Full Name maintains a list of lessons learned from ongoing incident handling activities and uses those lessons to update the incident response procedures accordingly.
 
 Preparation activities includes all CivicActions and Project internal users are trained if their role includes incident response. Detection monitoring tools providing notification to incident response personnel for analysis and action. Containment, eradication and recovery activities include AWS and LAMP-stack inherited fixes and Project system administrators adjusting IP port blocking security groups and SELinux policies.
 
@@ -154,7 +154,7 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 If an incident involves suspicious activity, CivicActions Operations will contact the Project System Owner who may then contact the Project CSO.
 
-The CivicActions Computer Security Officer (CSO) handles all incidents for the Project. The CSO is prepared to report all incidents to the The Client.
+The CivicActions Computer Security Officer (CSO) handles all incidents for the Project. The CSO is prepared to report all incidents to the Client Full Name.
 
 
 #### a
