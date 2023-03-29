@@ -70,19 +70,32 @@ mkdir -p docs/controls
 makefamilies
 ```
 
-3. Generate Microsoft Word (.docx) versions of the control family files (see the `docx/` directory):
+3. Generate Standard Operating Procedure (SOP) docs (from `components/` and `keys/sop.yaml`) in the `docs/sop` directory
+
+    ```bash
+    sop -i configuration.yaml -c components -o docs
+    ```
+
+4. Generate Microsoft Word (.docx) versions of the control family files (see the `docx/` directory):
 
 ```bash
 exportto -c docs/controls
 ```
 
-4. Generate a reponsiblity matrix with:
+5. Generate Microsoft Word (.docx) versions of the appendices and front matter (also in `docx/` directory):
+
+    ```bash
+    ./makeDocx.sh
+    ```
+
+6. Generate a reponsiblity matrix with:
+    
 
 ```bash
 creatematrix
 ```
 
-5. Optional (and temporary) hack to add a Table of Contents (requires <https://github.com/ekalinin/github-markdown-toc> v0.5+ with `gh-md-toc` in your shell search path):
+7. Optional (and temporary) hack to add a Table of Contents (requires <https://github.com/ekalinin/github-markdown-toc> v0.5+ with `gh-md-toc` in your shell search path):
 
 ```bash
 ./makeDocsTOC.sh
@@ -107,4 +120,4 @@ GNU General Public License v3.0 or later. Some portions of this work were produc
 
 SPDX-License-Identifier: `GPL-3.0-or-later`
 
-Copyright 2019-2021 CivicActions, Inc.
+Copyright 2019-2023 CivicActions, Inc.
