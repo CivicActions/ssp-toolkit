@@ -45,43 +45,56 @@ import tools.lib.secrender as secrender
 )
 def main(config_file: str, templates: str, output_dir: str):
     template_args = load_template_args(config_file)
-    od = Path(output_dir)
+    output_to = Path(output_dir)
     template_dir = Path(templates)
-    if not od.is_dir():
-        od.mkdir(parents=True, exist_ok=True)
+    if not output_to.is_dir():
+        output_to.mkdir(parents=True, exist_ok=True)
 
     template_path = Path(template_dir).rglob("*")
     template_files = [x for x in template_path if x.is_file()]
 
     for template in template_files:
-        new_path = rewrite(template, template_dir, od)
-        new_file = Path(new_path)
+        new_file = Path(
+            rewrite(
+                template_file=template,
+                template_dir=template_dir,
+                output_dir=output_to,
+            )
+        )
         if new_file.suffix == ".j2":
             new_file = new_file.with_name(new_file.stem)
 
         if not new_file.parent.is_dir():
             new_file.parent.mkdir(parents=True, exist_ok=True)
-        print("Creating file: {} from {}".format(new_file, template))
-        secrender.secrender(template.as_posix(), template_args, new_file.as_posix())
+        print(f"Creating file: {new_file} from {template}")
 
-        find_toc_tag(str(new_file))
+        secrender.secrender(
+            template_path=template.as_posix(),
+            template_args=template_args,
+            output_path=new_file.as_posix(),
+        )
+
+        find_toc_tag(file=str(new_file))
 
 
-def load_template_args(in_):
+def load_template_args(config_file: str) -> dict:
     YamlIncludeConstructor.add_to_loader_class(loader_class=FullLoader)
-    with open(in_, "r", newline="") as stream:
+    with open(config_file, "r", newline="") as stream:
         yaml = load(stream, Loader=FullLoader)
-    return secrender.get_template_args(yaml, None, dict())
+    return secrender.get_template_args(yaml=yaml, set_={}, root=None)
 
 
-def rewrite(tf, td, od):
-    subpath = [
-        p[0] for p in dropwhile(lambda f: f[0] == f[1], zip_longest(tf.parts, td.parts))
+def rewrite(template_file: Path, template_dir: Path, output_dir: Path) -> str:
+    sub_path = [
+        p[0]
+        for p in dropwhile(
+            lambda f: f[0] == f[1], zip_longest(template_file.parts, template_dir.parts)
+        )
     ]
-    return str(od / Path(*subpath))
+    return str(output_dir / Path(*sub_path))
 
 
-def find_toc_tag(file):
+def find_toc_tag(file: str):
     with open(file, "rb", 0) as f, mmap.mmap(
         f.fileno(), 0, access=mmap.ACCESS_READ
     ) as s:
@@ -89,9 +102,13 @@ def find_toc_tag(file):
             write_toc(file)
 
 
-def write_toc(file):
-    toc = md_toc.build_toc(file, keep_header_levels=3, skip_lines=5)
-    md_toc.write_string_on_file_between_markers(file, toc, "<!--TOC-->")
+def write_toc(file: str):
+    toc = md_toc.build_toc(filename=file, keep_header_levels=3, skip_lines=5)
+    md_toc.write_string_on_file_between_markers(
+        filename=file,
+        string=toc,
+        marker="<!--TOC-->",
+    )
 
 
 if __name__ == "__main__":

@@ -80,8 +80,8 @@ def main(
     with open(in_, "r") as stream:
         yaml = load(stream, Loader=FullLoader)
 
-    template_args = get_template_args(yaml, root, set_)
-    output_path = make_output_path(output_file, output_dir)
+    template_args = get_template_args(yaml=yaml, set_=set_, root=root)
+    output_path = make_output_path(output_file=output_file, output_dir=output_dir)
 
     secrender(template_path, template_args, output_path)
 
@@ -113,7 +113,7 @@ def make_output_path(output_file: str, output_dir: str) -> str:
         return os.path.join(output_dir, output_file)
 
 
-def get_template_args(yaml: dict, root: str, set_: dict) -> dict:
+def get_template_args(yaml: dict, set_: dict, root: str = None) -> dict:
     """
     Return a dictionary of arguments to pass to the template from the YAML file.
 
