@@ -22,7 +22,7 @@ import tools.lib.secrender as secrender
 @click.option(
     "--in",
     "-i",
-    "in_",
+    "config_file",
     required=True,
     type=click.Path(exists=True, dir_okay=False, readable=True),
     help="Replacement data values (YAML)",
@@ -30,7 +30,7 @@ import tools.lib.secrender as secrender
 @click.option(
     "--templates",
     "-t",
-    "template_dir",
+    "templates",
     required=True,
     type=click.Path(exists=True, dir_okay=True, file_okay=False),
     help="Template directory",
@@ -38,32 +38,31 @@ import tools.lib.secrender as secrender
 @click.option(
     "--out",
     "-o",
-    "out_",
+    "output_dir",
     type=click.Path(exists=False, dir_okay=True, readable=True),
     default=".",
     help="Output directory (default: current directory)",
 )
-def main(in_: str, template_dir: str, out_: str):
-    template_args = load_template_args(in_)
-    od = Path(out_)
-    td = Path(template_dir)
+def main(config_file: str, templates: str, output_dir: str):
+    template_args = load_template_args(config_file)
+    od = Path(output_dir)
+    template_dir = Path(templates)
     if not od.is_dir():
         od.mkdir(parents=True, exist_ok=True)
 
-    p = Path(td).rglob("*")
-    templates = [x for x in p if x.is_file()]
+    template_path = Path(template_dir).rglob("*")
+    template_files = [x for x in template_path if x.is_file()]
 
-    for tf in templates:
-        new_path = rewrite(tf, td, od)
+    for template in template_files:
+        new_path = rewrite(template, template_dir, od)
         new_file = Path(new_path)
-        ext = new_file.suffix
-        if ext == ".j2":
+        if new_file.suffix == ".j2":
             new_file = new_file.with_name(new_file.stem)
 
         if not new_file.parent.is_dir():
             new_file.parent.mkdir(parents=True, exist_ok=True)
-        print("Creating file: {} from {}".format(new_file, tf))
-        secrender.secrender(tf, template_args, new_file)
+        print("Creating file: {} from {}".format(new_file, template))
+        secrender.secrender(template.as_posix(), template_args, new_file.as_posix())
 
         find_toc_tag(str(new_file))
 
