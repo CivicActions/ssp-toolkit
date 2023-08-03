@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "ssp-toolkit"
+version = "0.1.0"
+description = ""
+authors = ["Tom Camp <tom.camp@civicactions.com>"]
+readme = "README.md"
+packages = [{include = "ssp_toolkit"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
