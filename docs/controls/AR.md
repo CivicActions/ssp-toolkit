@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## AR: Accountability, Audit, and Risk Management
+
 ### AR-1: GOVERNANCE AND PRIVACY PROGRAM
+
 ```text
 "The organization:
    a.   Appoints a Senior Agency Official for Privacy (SAOP)/Chief Privacy Officer
@@ -33,6 +35,7 @@ Project does not collect or maintain PII and therefore does not directly address
 
 
 ### AR-2: PRIVACY IMPACT AND RISK ASSESSMENT
+
 ```text
 "The organization:
      a.   Documents and implements a privacy risk management process that assesses
@@ -54,6 +57,7 @@ Project does not collect or maintain PII and therefore does not directly address
 
 
 ### AR-3: PRIVACY REQUIREMENTS FOR CONTRACTORS AND SERVICE PROVIDERS
+
 ```text
 "The organization:
      a.   Establishes privacy roles, responsibilities, and access requirements for contractors and service
@@ -68,6 +72,7 @@ Project does not collect or maintain PII and therefore does not directly address
 
 
 ### AR-4: PRIVACY MONITORING AND AUDITING
+
 ```text
 "The organization monitors and audits privacy controls and internal privacy policy
   [Assignment: organization-defined frequency] to ensure effective implementation."
@@ -80,6 +85,7 @@ Project does not collect or maintain PII and therefore does not directly address
 
 
 ### AR-5: PRIVACY AWARENESS AND TRAINING
+
 ```text
 "The organization:
      a.   Develops, implements, and updates a comprehensive training and awareness
@@ -105,6 +111,7 @@ Project does not collect or maintain PII and therefore does not directly address
 
 
 ### AR-6: PRIVACY REPORTING
+
 ```text
 The organization develops, disseminates, and updates reports to the Office of
      Management and Budget (OMB), Congress, and other oversight bodies, as appropriate,
@@ -123,6 +130,7 @@ Project does not collect or maintain PII and therefore does not directly address
 
 
 ### AR-7: PRIVACY-ENHANCED SYSTEM DESIGN AND DEVELOPMENT
+
 ```text
 Control:The organization designs information systems to support privacy by automating privacy controls.
 ```
@@ -134,6 +142,7 @@ Project does not collect or maintain PII and therefore does not directly address
 
 
 ### AR-8: ACCOUNTING OF DISCLOSURES
+
 ```text
 "The organization:
      a.   Keeps an accurate accounting of disclosures of information held in each

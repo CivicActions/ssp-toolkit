@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## DI: Data Quality and Integrity
+
 ### DI-1: DATA QUALITY
+
 ```text
 "The organization:
      a.    Confirms to the greatest extent practicable upon collection or creation
@@ -25,6 +27,7 @@ Project does not collect or maintain PII and therefore does not directly address
 
 
 ### DI-2: DATA INTEGRITY AND DATA INTEGRITY BOARD
+
 ```text
 "The organization:
      a.    Documents processes to ensure the integrity of personally identifiable information (PII)

@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## SC: System and Communications Protection
+
 ### SC-1: SYSTEM AND COMMUNICATIONS PROTECTION POLICY AND PROCEDURES
+
 ```text
 The organization:
   a.  Develops, documents, and disseminates to [Assignment: organization-defined
@@ -31,6 +33,7 @@ This is Agency common control. More data about implementation can be obtained fr
 
 
 ### SC-5: DENIAL OF SERVICE PROTECTION
+
 ```text
 The information system protects against or limits the effects of the following types of denial of service attacks: [Assignment: organization-defined types of denial of service attacks or references to sources for such information] by employing [Assignment: organization-defined security safeguards].
 ```
@@ -53,6 +56,7 @@ The Project support staff ensures the system is protected against or limits the 
 
 
 ### SC-7: BOUNDARY PROTECTION
+
 ```text
 The information system:
   a.  Monitors and controls communications at the external boundary of the system
@@ -99,6 +103,7 @@ In this architecture, connection to external networks is possible only through I
 
 
 ### SC-12: CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT
+
 ```text
 The organization establishes and manages cryptographic keys for required cryptography employed within the information system in accordance with [Assignment: organization-defined requirements for key generation, distribution, storage, access, and destruction].
 ```
@@ -116,6 +121,7 @@ Use of cryptographic key management for the Project system is in use for at the 
 
 
 ### SC-13: CRYPTOGRAPHIC PROTECTION
+
 ```text
 The information system implements [Assignment: organization-defined cryptographic uses and type of cryptography required for each use] in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards.
 ```
@@ -140,6 +146,7 @@ The information system implements:
 
 
 ### SC-15: COLLABORATIVE COMPUTING DEVICES
+
 ```text
 The information system:
   a.  Prohibits remote activation of collaborative computing devices with the
@@ -156,6 +163,7 @@ employ any collaborative computing devices.
 
 
 ### SC-20: SECURE NAME / ADDRESS RESOLUTION SERVICE
+
 ```text
 The information system:
   a.  Provides additional data origin authentication and integrity verification
@@ -171,6 +179,7 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 
 
 ### SC-21: SECURE NAME / ADDRESS RESOLUTION SERVICE
+
 ```text
 The information system requests and performs data origin authentication and data integrity verification on the name/address resolution responses the system receives from authoritative sources.
 ```
@@ -182,6 +191,7 @@ The system inherits this control from the FedRAMP Provisional ATO granted to the
 
 
 ### SC-22: ARCHITECTURE AND PROVISIONING FOR NAME / ADDRESS RESOLUTION SERVICE
+
 ```text
 The information systems that collectively provide name/address resolution service for an organization are fault-tolerant and implement internal/external role separation.
 ```
@@ -192,6 +202,7 @@ The information systems that collectively provide name/address resolution servic
 
 
 ### SC-39: PROCESS ISOLATION
+
 ```text
 The information system maintains a separate execution domain for each executing process.
 ```

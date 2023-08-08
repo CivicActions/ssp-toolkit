@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## SE: Security
+
 ### SE-1: INVENTORY OF PERSONALLY IDENTIFIABLE INFORMATION
+
 ```text
 "The organization:
      a.   Establishes, maintains, and updates [Assignment: organization-defined
@@ -25,6 +27,7 @@ Project does not collect or maintain PII and therefore does not directly address
 
 
 ### SE-2: PRIVACY INCIDENT RESPONSE
+
 ```text
 "The organization:
      a.   Develops and implements a Privacy Incident Response Plan; and

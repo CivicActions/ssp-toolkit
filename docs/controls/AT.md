@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## AT: Awareness and Training
+
 ### AT-1: SECURITY AWARENESS AND TRAINING POLICY AND PROCEDURES
+
 ```text
 The organization:
   a.  Develops, documents, and disseminates to [Assignment: organization-defined
@@ -30,6 +32,7 @@ Security awareness and training policy and procedures are formally documented in
 
 
 ### AT-2: SECURITY AWARENESS TRAINING
+
 ```text
 The organization provides basic security awareness training to information system users (including managers, senior executives, and contractors):
   a.  As part of initial training for new users;
@@ -74,6 +77,7 @@ CivicActions provides annual security awareness training to its personnel.
 
 
 ### AT-3: ROLE-BASED SECURITY TRAINING
+
 ```text
 The organization provides role-based security training to personnel with assigned security roles and responsibilities:
   a.  Before authorizing access to the information system or performing assigned
@@ -107,6 +111,7 @@ CivicActions Security Office provides users with security responsibilities role-
 
 
 ### AT-4: SECURITY TRAINING RECORDS
+
 ```text
 The organization:
   a.  Documents and monitors individual information system security training activities

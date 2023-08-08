@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## MA: Maintenance
+
 ### MA-1: SYSTEM MAINTENANCE POLICY AND PROCEDURES
+
 ```text
 The organization:
   a.  Develops, documents, and disseminates to [Assignment: organization-defined
@@ -43,6 +45,7 @@ This is Agency common control. More data about implementation can be obtained fr
 
 
 ### MA-2: CONTROLLED MAINTENANCE
+
 ```text
 The organization:
   a.  Schedules, performs, documents, and reviews records of maintenance and repairs
@@ -82,6 +85,7 @@ The Project schedules, performs, and documents regular maintenance on the softwa
 
 
 ### MA-4: NON-LOCAL MAINTENANCE
+
 ```text
 The organization:
   a.  Approves and monitors nonlocal maintenance and diagnostic activities;
@@ -135,6 +139,7 @@ Any session for internal maintenance activities is terminated when the user comp
 
 
 ### MA-5: MAINTENANCE PERSONNEL
+
 ```text
 The organization:
   a.  Establishes a process for maintenance personnel authorization and maintains

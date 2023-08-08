@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## PS: Personnel Security
+
 ### PS-1: PERSONNEL SECURITY POLICY AND PROCEDURES
+
 ```text
 The organization:
   a.  Develops, documents, and disseminates to [Assignment: organization-defined
@@ -37,6 +39,7 @@ This is Agency common control. More data about implementation can be obtained fr
 
 
 ### PS-2: POSITION RISK DESIGNATION
+
 ```text
 The organization:
   a.  Assigns a risk designation to all organizational positions;
@@ -76,6 +79,7 @@ At least every three (3) years, the CivicActions Office of Human Resources revie
 
 
 ### PS-3: PERSONNEL SCREENING
+
 ```text
 The organization:
   a.  Screens individuals prior to authorizing access to the information system;
@@ -105,6 +109,7 @@ Rescreening is conducted as required by the individual’s job duties, the class
 
 
 ### PS-4: PERSONNEL TERMINATION
+
 ```text
 The organization, upon termination of individual employment:
   a.  Disables information system access within [Assignment: organization-defined
@@ -167,6 +172,7 @@ When a person is terminated, a standard off-boarding process is used to notify m
 
 
 ### PS-5: PERSONNEL TRANSFER
+
 ```text
 The organization:
   a.  Reviews and confirms ongoing operational need for current logical and physical
@@ -214,6 +220,7 @@ CivicActions Operations staff is informed of transfers that require access autho
 
 
 ### PS-6: ACCESS AGREEMENTS
+
 ```text
 The organization:
   a.  Develops and documents access agreements for organizational information
@@ -246,6 +253,7 @@ All individuals requiring access to the Project system are required to sign the 
 
 
 ### PS-7: THIRD-PARTY PERSONNEL SECURITY
+
 ```text
 The organization:
   a.  Establishes personnel security requirements including security roles and
@@ -289,6 +297,7 @@ Compliance measures for assessing third-party personnel and/or contractors are d
 
 
 ### PS-8: PERSONNEL SANCTIONS
+
 ```text
 The organization:
   a.  Employs a formal sanctions process for individuals failing to comply with

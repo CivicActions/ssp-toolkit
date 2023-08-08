@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## DM: Data Minimization and Retention
+
 ### DM-1: MINIMIZATION OF PERSONALLY IDENTIFIABLE INFORMATION
+
 ```text
 "The organization:
      a.    Identifies the minimum personally identifiable information (PII) elements
@@ -28,6 +30,7 @@ Project does not collect or maintain PII and therefore does not directly address
 
 
 ### DM-2: DATA RETENTION AND DISPOSAL
+
 ```text
 "The organization:
      a. Retains each collection of personally identifiable information (PII)
@@ -48,6 +51,7 @@ Project does not collect or maintain PII and therefore does not directly address
 
 
 ### DM-3: MINIMIZATION OF PII USED IN TESTING, TRAINING, AND RESEARCH
+
 ```text
 "The organization:
      a.    Develops policies and procedures that minimize the use of personally identifiable information

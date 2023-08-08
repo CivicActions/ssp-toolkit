@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## MP: Media Protection
+
 ### MP-1: MEDIA PROTECTION POLICY AND PROCEDURES
+
 ```text
 The organization:
   a.  Develops, documents, and disseminates to [Assignment: organization-defined
@@ -39,6 +41,7 @@ This is Agency common control. More data about implementation can be obtained fr
 
 
 ### MP-2: MEDIA ACCESS
+
 ```text
 The organization restricts access to [Assignment: organization-defined types of digital and/or non-digital media] to [Assignment: organization-defined personnel or roles].
 ```
@@ -54,6 +57,7 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 
 
 ### MP-6: MEDIA SANITIZATION
+
 ```text
 The organization:
   a.  Sanitizes [Assignment: organization-defined information system media] prior
@@ -73,6 +77,7 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 
 
 ### MP-7: MEDIA USE
+
 ```text
 The organization [Selection: restricts; prohibits] the use of [Assignment: organization-defined types of information system media] on [Assignment: organization-defined information systems or system components] using [Assignment: organization-defined security safeguards].
 ```

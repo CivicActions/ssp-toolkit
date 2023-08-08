@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## IP: Individual Participation and Redress
+
 ### IP-1: CONSENT
+
 ```text
 "The organization:
      a.    Provides means, where feasible and appropriate, for individuals to
@@ -30,6 +32,7 @@ Project does not collect or maintain PII and therefore does not directly address
 
 
 ### IP-2: INDIVIDUAL ACCESS
+
 ```text
 "The organization:
      a.   Provides individuals the ability to have access to their personally identifiable information
@@ -48,6 +51,7 @@ Project does not collect or maintain PII and therefore does not directly address
 
 
 ### IP-3: REDRESS
+
 ```text
 "The organization: a.   Provides a process for individuals to have inaccurate personally identifiable information (PII) maintained by the organization corrected or amended, as appropriate; and b.   Establishes a process for disseminating corrections or amendments of the PII to other authorized users of the PII, such as external information-sharing partners and, where feasible and appropriate, notifies affected individuals that their information has been corrected or amended."
 ```
@@ -59,6 +63,7 @@ Project does not collect or maintain PII and therefore does not directly address
 
 
 ### IP-4: COMPLAINT MANAGEMENT
+
 ```text
 "The organization implements a process for receiving and responding to complaints,
   concerns, or questions from individuals about the organizational privacy practices."

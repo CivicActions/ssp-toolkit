@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## CM: Configuration Management
+
 ### CM-1: CONFIGURATION MANAGEMENT POLICY AND PROCEDURES
+
 ```text
 The organization:
   a.  Develops, documents, and disseminates to [Assignment: organization-defined
@@ -31,6 +33,7 @@ The configuration management policy and procedures are formally documented in th
 
 
 ### CM-2: BASELINE CONFIGURATION
+
 ```text
 The organization develops, documents, and maintains under configuration control, a current baseline configuration of the information system.
 ```
@@ -63,6 +66,7 @@ A CM process has been established and documented in the Project CMP. All updates
 
 
 ### CM-4: SECURITY IMPACT ANALYSIS
+
 ```text
 The organization analyzes changes to the information system to determine potential security impacts prior to change implementation.
 ```
@@ -80,6 +84,7 @@ An Information Security Program is in place to ensure all security-centric impac
 
 
 ### CM-6: CONFIGURATION SETTINGS
+
 ```text
 The organization:
   a.  Establishes and documents configuration settings for information technology
@@ -123,6 +128,7 @@ All changes to the configuration settings are logged in the Git source code vers
 
 
 ### CM-7: LEAST FUNCTIONALITY
+
 ```text
 The organization:
   a.  Configures the information system to provide only essential capabilities;
@@ -156,6 +162,7 @@ The Project maintains strict default deny policy with access controls at the fir
 
 
 ### CM-8: INFORMATION SYSTEM COMPONENT INVENTORY
+
 ```text
 The organization:
   a.  Develops and documents an inventory of information system components that:
@@ -199,6 +206,7 @@ AWS built-in features provides a dynamically updated inventory of all infrastruc
 
 
 ### CM-10: SOFTWARE USAGE RESTRICTIONS
+
 ```text
 The organization:
   a.  Uses software and associated documentation in accordance with contract agreements
@@ -221,6 +229,7 @@ Drupal is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These are a
 Ilias is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These are all compatible with the Free Software Foundation's General Public License (GPL) version 2 or later and are freely available for use under copyright law.
 
 ### CM-11: USER-INSTALLED SOFTWARE
+
 ```text
 The organization:
   a.  Establishes [Assignment: organization-defined policies] governing the installation

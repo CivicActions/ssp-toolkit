@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## AU: Audit and Accountability
+
 ### AU-1: AUDIT AND ACCOUNTABILITY POLICY AND PROCEDURES
+
 ```text
 The organization:
   a.  Develops, documents, and disseminates to [Assignment: organization-defined
@@ -30,6 +32,7 @@ The Project maintains a record of system activity by application process and by 
 
 
 ### AU-2: AUDITABLE EVENTS
+
 ```text
 The organization:
   a.  Determines that the information system is capable of auditing the following
@@ -171,6 +174,7 @@ Information captured in the transaction logs includes, but is not limited to, th
 
 
 ### AU-3: CONTENT OF AUDIT RECORDS
+
 ```text
 The information system generates audit records containing information that establishes what type of event occurred, when the event occurred, where the event occurred, the source of the event, the outcome of the event, and the identity of any individuals or subjects associated with the event.
 ```
@@ -234,6 +238,7 @@ When auditing an Ilias incident, CivicActions' developers aggregate log sources 
 
 
 ### AU-4: AUDIT STORAGE CAPACITY
+
 ```text
 The organization allocates audit record storage capacity in accordance with [Assignment: organization-defined audit record storage requirements].
 ```
@@ -256,6 +261,7 @@ CivicActions ensures adequate storage capability requirements listed in AU-11 fo
 
 
 ### AU-5: RESPONSE TO AUDIT PROCESSING FAILURES
+
 ```text
 The information system:
   a.  Alerts [Assignment: organization-defined personnel or roles] in the event
@@ -285,6 +291,7 @@ AWS built-in features include customer alerting of AWS CloudTrail and other serv
 
 
 ### AU-6: AUDIT REVIEW, ANALYSIS, AND REPORTING
+
 ```text
 The organization:
   a.  Reviews and analyzes information system audit records [Assignment: organization-defined
@@ -309,6 +316,7 @@ Any significant findings observed during the inspection are reported to CivicAct
 
 
 ### AU-8: TIME STAMPS
+
 ```text
 The information system:
   a.  Uses internal system clocks to generate time stamps for audit records; and
@@ -347,6 +355,7 @@ Time stamps are recorded as specified in the ISO 8601 standard. ISO 8601 represe
 
 
 ### AU-9: PROTECTION OF AUDIT INFORMATION
+
 ```text
 The information system protects audit information and audit tools from unauthorized access, modification, and deletion.
 ```
@@ -364,6 +373,7 @@ CivicActions ensures that audit logs are created, stored and maintained. Develop
 
 
 ### AU-11: AUDIT RECORD RETENTION
+
 ```text
 The organization retains audit records for [Assignment: organization-defined time period consistent with records retention policy] to provide support for after-the-fact investigations of security incidents and to meet regulatory and organizational information retention requirements.
 ```
@@ -381,6 +391,7 @@ CivicActions audits events from the application, database, and hosting environme
 
 
 ### AU-12: AUDIT GENERATION
+
 ```text
 The information system:
   a.  Provides audit record generation capability for the auditable events defined

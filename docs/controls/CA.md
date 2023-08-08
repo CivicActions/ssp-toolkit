@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## CA: Security Assessment and Authorization
+
 ### CA-1: SECURITY ASSESSMENT AND AUTHORIZATION POLICIES AND PROCEDURES
+
 ```text
 The organization:
   a.  Develops, documents, and disseminates to [Assignment: organization-defined
@@ -32,6 +34,7 @@ Project will periodically review and update the SSP when there is a significant 
 
 
 ### CA-2: SECURITY ASSESSMENTS
+
 ```text
 The organization:
   a.  Develops a security assessment plan that describes the scope of the assessment
@@ -99,6 +102,7 @@ CivicActions will provide the results of the security control assessment to the 
 
 
 ### CA-3: SYSTEM INTERCONNECTIONS
+
 ```text
 The organization:
   a.  Authorizes connections from the information system to other information
@@ -116,6 +120,7 @@ This control is not applicable. CivicActions systems do not have system intercon
 
 
 ### CA-5: PLAN OF ACTION AND MILESTONES
+
 ```text
 The organization:
   a.  Develops a plan of action and milestones for the information system to document
@@ -147,6 +152,7 @@ The Project follows the None procedures in managing POA&Ms.
 
 
 ### CA-6: SECURITY AUTHORIZATION
+
 ```text
 The organization:
   a.  Assigns a senior-level executive or manager as the authorizing official
@@ -165,6 +171,7 @@ ATO re-assessment will be performed every three years or when there is a major c
 
 
 ### CA-7: CONTINUOUS MONITORING
+
 ```text
 The organization develops a continuous monitoring strategy and implements a continuous monitoring program that includes:
   a.  Establishment of [Assignment: organization-defined metrics] to be monitored;
@@ -247,6 +254,7 @@ The security status of the system is reported up to the System Owner and Project
 
 
 ### CA-9: INTERNAL SYSTEM CONNECTIONS
+
 ```text
 The organization:
   a.  Authorizes internal connections of [Assignment: organization-defined information

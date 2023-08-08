@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## AC: Access Control
+
 ### AC-1: ACCESS CONTROL POLICY AND PROCEDURES
+
 ```text
 The organization:
   a.  Develops, documents, and disseminates to [Assignment: organization-defined
@@ -30,6 +32,7 @@ Access control policy and procedures are documented in the Project Full Name SSP
 
 
 ### AC-2: ACCOUNT MANAGEMENT
+
 ```text
 The organization:
   a.  Identifies and selects the following types of information system accounts
@@ -249,6 +252,7 @@ In accordance with standard security best practices and CivicActions policy, sha
 
 
 ### AC-3: ACCESS ENFORCEMENT
+
 ```text
 The information system enforces approved authorizations for logical access to information           and system resources in accordance with applicable access control policies.
 ```
@@ -280,6 +284,7 @@ The Project Full Name ensures that assigned authorizations for controlling acces
 
 
 ### AC-3(9): CONTROLLED RELEASE
+
 ```text
 The information system does not release information outside of the established system boundary unless:
    (9)(a).  The receiving [Assignment: organization-defined information system
@@ -295,6 +300,7 @@ The Project information system does not release information outside of the estab
 
 
 ### AC-6: LEAST PRIVILEGE
+
 ```text
 The organization employs the principle of least privilege, allowing only authorized accesses for users (or processes acting on behalf of users) which are necessary to accomplish assigned tasks in accordance with organizational missions and business functions.
 ```
@@ -305,6 +311,7 @@ The organization employs the principle of least privilege, allowing only authori
 SSH access is provided on a least privilege basis and analyzed on an ongoing basis, at least quarterly. Findings related to these audits of accounts are reported and reviewed by the Security Office and evaluated to determine roles that need to be revoked.
 
 ### AC-7: UNSUCCESSFUL LOGIN ATTEMPTS
+
 ```text
 The information system:
   a.  Enforces a limit of [Assignment: organization-defined number] consecutive
@@ -330,6 +337,7 @@ b
 Lockdown following unsuccessful attempts is configurable by Drupal administrators to conform to defined requirements. When a user exceeds the limit of invalid login attempts, their account is automatically locked for a specified time and requires administrator action to unlock the account before the lockout period expires.
 
 ### AC-8: SYSTEM USE NOTIFICATION
+
 ```text
 The information system:
   a.  Displays to users [Assignment: organization-defined system use notification
@@ -369,6 +377,7 @@ A warning banner ensures that all persons attempting to gain access to the syste
 
 
 ### AC-14: PERMITTED ACTIONS WITHOUT IDENTIFICATION OR AUTHENTICATION
+
 ```text
 The organization:
   a.  Identifies [Assignment: organization-defined user actions] that can be performed
@@ -395,6 +404,7 @@ The anonymous user role has the least access to the site of all roles. Drupal si
 
 
 ### AC-17: REMOTE ACCESS
+
 ```text
 The organization:
   a.  Establishes and documents usage restrictions, configuration/connection requirements,
@@ -416,6 +426,7 @@ The Project Full Name permits remote access for privileged functions to support 
 
 
 ### AC-18: WIRELESS ACCESS
+
 ```text
 The organization:
   a.  Establishes usage restrictions, configuration/connection requirements, and
@@ -431,6 +442,7 @@ This control is not applicable. The system does not provide wireless access poin
 
 
 ### AC-19: ACCESS CONTROL FOR MOBILE DEVICES
+
 ```text
 The organization:
   a.  Establishes usage restrictions, configuration requirements, connection requirements,
@@ -446,6 +458,7 @@ This control is not applicable. The system does not maintain a facility in which
 
 
 ### AC-20: USE OF EXTERNAL INFORMATION SYSTEMS
+
 ```text
 The organization establishes terms and conditions, consistent with any trust relationships established with other organizations owning, operating, and/or maintaining external information systems, allowing authorized individuals to:
   a.  Access the information system from external information systems; and
@@ -460,6 +473,7 @@ This control is not applicable. The system does not connect with external inform
 
 
 ### AC-22: PUBLICLY ACCESSIBLE CONTENT
+
 ```text
 The organization:
   a.  Designates individuals authorized to post information onto a publicly accessible

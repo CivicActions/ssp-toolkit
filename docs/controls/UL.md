@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## UL: Use Limitation
+
 ### UL-1: INTERNAL USE
+
 ```text
 "The organization uses personally identifiable information (PII) internally only for the
       authorized purpose(s) identified in the Privacy Act and/or in public notices."
@@ -21,6 +23,7 @@ The information is collected on the Project is for identification and authentica
 
 
 ### UL-2: INFORMATION SHARING WITH THIRD PARTIES
+
 ```text
 "The organization:
      a.   Shares personally identifiable information (PII) externally, only for

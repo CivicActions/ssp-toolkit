@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## PL: Planning
+
 ### PL-1: SECURITY PLANNING POLICY AND PROCEDURES
+
 ```text
 The organization:
   a.  Develops, documents, and disseminates to [Assignment: organization-defined
@@ -37,6 +39,7 @@ The Project developed its security policy planning and procedures based on None,
 
 
 ### PL-2: SYSTEM SECURITY PLAN
+
 ```text
 The organization:
   a.  Develops a security plan for the information system that:
@@ -116,6 +119,7 @@ The SSP is currently available to authorized users on GitLab. Per the Acceptable
 
 
 ### PL-4: RULES OF BEHAVIOR
+
 ```text
 The organization:
   a.  Establishes and makes readily available to individuals requiring access

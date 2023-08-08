@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## RA: Risk Assessment
+
 ### RA-1: RISK ASSESSMENT POLICY AND PROCEDURES
+
 ```text
 The organization:
   a.  Develops, documents, and disseminates to [Assignment: organization-defined
@@ -38,6 +40,7 @@ This is Agency common control. More data about implementation can be obtained fr
 
 
 ### RA-2: SECURITY CATEGORIZATION
+
 ```text
 The organization:
   a.  Categorizes information and the information system in accordance with applicable
@@ -67,6 +70,7 @@ The security categorizations have been reviewed by the designated application PO
 
 
 ### RA-3: RISK ASSESSMENT
+
 ```text
 The organization:
   a.  Conducts an assessment of risk, including the likelihood and magnitude of
@@ -121,6 +125,7 @@ A significant change includes:
 
 
 ### RA-5: VULNERABILITY SCANNING
+
 ```text
 The organization:
   a.  Scans for vulnerabilities in the information system and hosted applications

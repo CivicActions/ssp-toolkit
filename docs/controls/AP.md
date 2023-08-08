@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## AP: Authority and Purpose
+
 ### AP-1: AUTHORITY TO COLLECT
+
 ```text
 "The organization determines and documents the legal authority that permits the
 collection, use, maintenance, and sharing of personally identifiable information
@@ -16,6 +18,7 @@ Client Full Name, as the governing agency of Project Full Name, has authorized t
 
 
 ### AP-2: PURPOSE SPECIFICATION
+
 ```text
 "The organization describes the purpose(s) for which personally identifiable
 information (PII) is collected, used, maintained, and shared in its privacy notices."

@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## IR: Incident Response
+
 ### IR-1: INCIDENT RESPONSE POLICY AND PROCEDURES
+
 ```text
 The organization:
   a.  Develops, documents, and disseminates to [Assignment: organization-defined
@@ -41,6 +43,7 @@ The Project Incident Response Plan can be found in the CivicActions GitHub repos
 
 
 ### IR-2: INCIDENT RESPONSE TRAINING
+
 ```text
 The organization provides incident response training to information system users consistent with assigned roles and responsibilities:
   a.  Within [Assignment: organization-defined time period] of assuming an incident
@@ -68,6 +71,7 @@ CivicActions Operations and users of the Project system with incident response r
 
 
 ### IR-4: INCIDENT HANDLING
+
 ```text
 The organization:
   a.  Implements an incident handling capability for security incidents that includes
@@ -114,6 +118,7 @@ The CivicActions Operations staff and Security Office conduct a post-incident an
 
 
 ### IR-5: INCIDENT MONITORING
+
 ```text
 The organization tracks and documents information system security incidents.
 ```
@@ -137,6 +142,7 @@ The Project utilizes network and host-based intrusion detection systems, monitor
 
 
 ### IR-6: INCIDENT REPORTING
+
 ```text
 The organization:
   a.  Requires personnel to report suspected security incidents to the organizational
@@ -177,6 +183,7 @@ CivicActions personnel, as soon as the incident event is detected and/or communi
 
 
 ### IR-7: INCIDENT RESONSE ASSISTANCE
+
 ```text
 The organization provides an incident response support resource, integral to the organizational incident response capability that offers advice and assistance to users of the information system for the handling and reporting of security incidents.
 ```
@@ -194,6 +201,7 @@ CivicActions Help Desk team provides first response assistance to any users of t
 
 
 ### IR-8: INCIDENT RESPONSE PLAN
+
 ```text
 The organization:
   a.  Develops an incident response plan that:

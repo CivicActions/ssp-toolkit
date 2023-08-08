@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## CP: Contingency Planning
+
 ### CP-1: CONTINGENCY PLANNING POLICY AND PROCEDURES
+
 ```text
 The organization:
   a.  Develops, documents, and disseminates to [Assignment: organization-defined
@@ -31,6 +33,7 @@ The Project and has developed a contingency planning policy consistent with NIST
 
 
 ### CP-2: CONTINGENCY PLAN
+
 ```text
 The organization:
   a.  Develops a contingency plan for the information system that:
@@ -112,6 +115,7 @@ The ISCP is available on CivicActions GitHub repository. This repository provide
 
 
 ### CP-3: CONTINGENCY TRAINING
+
 ```text
 The organization provides contingency training to information system users consistent with assigned roles and responsibilities:
   a.  Within [Assignment: organization-defined time period] of assuming a contingency
@@ -127,6 +131,7 @@ The ISCP stipulates that all CivicActions system assigned roles in the Contingen
 
 
 ### CP-4: CONTINGENCY PLAN TESTING
+
 ```text
 The organization:
   a.  Tests the contingency plan for the information system [Assignment: organization-defined
@@ -142,6 +147,7 @@ Real-world tests of the contingency plan will be held at least annually, with su
 
 
 ### CP-9: INFORMATION SYSTEM BACKUP
+
 ```text
 The organization:
   a.  Conducts backups of user-level information contained in the information
@@ -203,6 +209,7 @@ CivicActions employees must authenticate prior to being granted access to the Gi
 
 
 ### CP-10: INFORMATION SYSTEM RECOVERY AND RECONSTITUTION
+
 ```text
 The organization provides for the recovery and reconstitution of the information system to a known state after a disruption, compromise, or failure.
 ```

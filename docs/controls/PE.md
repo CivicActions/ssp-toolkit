@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## PE: Physical and Environmental Protection
+
 ### PE-1: PHYSICAL AND ENVIRONMENTAL PROTECTION POLICY AND PROCEDURES
+
 ```text
 The organization:
   a.  Develops, documents, and disseminates to [Assignment: organization-defined
@@ -28,6 +30,7 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 
 
 ### PE-2: PHYSICAL ACCESS AUTHORIZATIONS
+
 ```text
 The organization:
   a.  Develops, approves, and maintains a list of individuals with authorized
@@ -50,6 +53,7 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 
 
 ### PE-3: PHYSICAL ACCESS CONTROL
+
 ```text
 The organization:
   a.  Enforces physical access authorizations at [Assignment: organization-defined
@@ -82,6 +86,7 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 
 
 ### PE-6: MONITORING PHYSICAL ACCESS
+
 ```text
 The organization:
   a.  Monitors physical access to the facility where the information system resides
@@ -103,6 +108,7 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 
 
 ### PE-8: VISITOR ACCESS RECORDS
+
 ```text
 The organization:
   a.  Maintains visitor access records to the facility where the information system
@@ -121,6 +127,7 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 
 
 ### PE-12: EMERGENCY LIGHTING
+
 ```text
 The organization employs and maintains automatic emergency lighting for the information system that activates in the event of a power outage or disruption and that covers emergency exits and evacuation routes within the facility.
 ```
@@ -136,6 +143,7 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 
 
 ### PE-13: FIRE PROTECTION
+
 ```text
 The organization employs and maintains fire suppression and detection devices/systems for the information system that are supported by an independent energy source.
 ```
@@ -151,6 +159,7 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 
 
 ### PE-14: TEMPERATURE AND HUMIDITY CONTROLS
+
 ```text
 The organization:
   a.  Maintains temperature and humidity levels within the facility where the
@@ -170,6 +179,7 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 
 
 ### PE-15: WATER DAMAGE PROTECTION
+
 ```text
 The organization protects the information system from damage resulting from water leakage by providing master shutoff or isolation valves that are accessible, working properly, and known to key personnel.
 ```
@@ -185,6 +195,7 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 
 
 ### PE-16: DELIVERY AND REMOVAL
+
 ```text
 The organization authorizes, monitors, and controls [Assignment: organization-defined types of information system components] entering and exiting the facility and maintains records of those items.
 ```

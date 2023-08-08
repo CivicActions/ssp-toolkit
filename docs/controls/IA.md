@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## IA: Identification and Authentication
+
 ### IA-1: IDENTIFICATION AND AUTHENTICATION POLICY AND PROCEDURES
+
 ```text
 The organization:
   a.  Develops, documents, and disseminates to [Assignment: organization-defined
@@ -30,6 +32,7 @@ The Project system owners/managers manage user identifiers by: (i) uniquely iden
 
 
 ### IA-2: IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS)
+
 ```text
 The information system uniquely identifies and authenticates organizational users (or processes acting on behalf of organizational users).
 ```
@@ -41,6 +44,7 @@ AWS built-in features of Identity and Access Management (IAM) provides the capab
 
 
 ### IA-2 (1): NETWORK ACCESS TO PRIVILEGED ACCOUNTS
+
 ```text
 The information system implements multifactor authentication for network access to privileged accounts.
 ```
@@ -66,6 +70,7 @@ The Project employs multi-factor authentication for privileged users.
 
 
 ### IA-2 (12): ACCEPTANCE OF PIV CREDENTIALS
+
 ```text
 The information system accepts and electronically verifies Personal Identity Verification (PIV) credentials.
 ```
@@ -77,6 +82,7 @@ The Project system allows users to access the system using Common Access Cards (
 
 
 ### IA-4: IDENTIFIER MANAGEMENT
+
 ```text
 The organization manages information system identifiers by:
   a.  Receiving authorization from [Assignment: organization-defined personnel
@@ -164,6 +170,7 @@ All user accounts are required to change their passwords every 90 days. The webs
 
 
 ### IA-5: AUTHENTICATOR MANAGEMENT
+
 ```text
 The organization manages information system authenticators by:
   a.  Verifying, as part of the initial authenticator distribution, the identity
@@ -365,6 +372,7 @@ j
 This control is not applicable due to the fact that group accounts are not created within the Ilias application per IA Policy.
 
 ### IA-5 (1): PASSWORD-BASED AUTHENTICATION
+
 ```text
 The information system, for password-based authentication:
    (1)(a).  Enforces minimum password complexity of [Assignment: organization-defined
@@ -472,6 +480,7 @@ f
 When website users request a password reset, the website sends a temporary login link to the email address associated with their user account. After a user logs in via the temporary login link, the website requires the user to enter a new password before proceeding further.
 
 ### IA-5 (11): HARDWARE TOKEN-BASED AUTHENTICATION
+
 ```text
 The information system, for hardware token-based authentication, employs mechanisms that satisfy [Assignment: organization-defined token quality requirements].
 ```
@@ -491,6 +500,7 @@ Project does not support physical hardware token-based authentication. Therefore
 
 
 ### IA-6: AUTHENTICATOR FEEDBACK
+
 ```text
 The information system obscures feedback of authentication information during the authentication process to protect the information from possible exploitation/use by unauthorized individuals.
 ```
@@ -515,6 +525,7 @@ Feedback of authentication information is obscured during the authentication pro
 Feedback of authentication information is obscured during the authentication process into the Ilias application by displaying “dots” in the place of a password, as is standard for web-based applications. In transmission, passwords are encrypted using SSL via HTTPS.
 
 ### IA-7: CRYPTOGRAPHIC MODULE AUTHENTICATION
+
 ```text
 The information system implements mechanisms for authentication to a cryptographic module that meet the requirements of applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance for such authentication.
 ```
@@ -543,6 +554,7 @@ CivicActions systems employ authentication methods consistent with NIST FIPS 140
 
 
 ### IA-8: IDENTIFICATION AND AUTHENTICATION (NON-ORGANIZATIONAL USERS)
+
 ```text
 The information system uniquely identifies and authenticates non-organizational users (or processes acting on behalf of non-organizational users).
 ```
@@ -556,6 +568,7 @@ The customer organization at its discretion provides user accounts and privilege
 
 
 ### IA-8 (1): ACCEPTANCE OF PIV CREDENTIALS FROM OTHER AGENCIES
+
 ```text
 The information system accepts and electronically verifies Personal Identity Verification (PIV) credentials from other federal agencies.
 ```
@@ -567,6 +580,7 @@ Project allows the use of customer agency supplied Common Access Cards (CAC).
 
 
 ### IA-8 (2): ACCEPTANCE OF THIRD-PARTY CREDENTIALS
+
 ```text
 The information system accepts only FICAM-approved third-party credentials.
 ```
@@ -578,6 +592,7 @@ Project does not utilize FICAM approved credentials.
 
 
 ### IA-8 (3): USE OF FICAM-APPROVED PRODUCTS
+
 ```text
 The organization employs only FICAM-approved information system components in [Assignment: organization-defined information systems] to accept third-party credentials.
 ```
@@ -589,6 +604,7 @@ Project does not utilize FICAM approved products.
 
 
 ### IA-8 (4): USE OF FICAM-ISSUED PROFILES
+
 ```text
 The information system conforms to FICAM-issued profiles.
 ```

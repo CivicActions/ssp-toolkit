@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## TR: Transparency
+
 ### TR-1: PRIVACY NOTICE
+
 ```text
 "The organization:
      a.    Provides effective notice to the public and to individuals regarding:
@@ -39,6 +41,7 @@ Project publishes a privacy policy in the footer of every page. Further, upon lo
 
 
 ### TR-2: SYSTEM OF RECORDS NOTICES AND PRIVACY ACT STATEMENTS
+
 ```text
 "The organization:
      a.    Publishes System of Records Notices (SORNs) in the Federal Register,
@@ -60,6 +63,7 @@ Project does not collect or maintain PII and therefore does not publish a SORN.
 
 
 ### TR-3: DISSEMINATION OF PRIVACY PROGRAM INFORMATION
+
 ```text
 "The organization:
      a.    Ensures that the public has access to information about its privacy activities and is able to

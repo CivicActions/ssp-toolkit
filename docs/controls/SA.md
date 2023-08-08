@@ -1,7 +1,9 @@
 # Reusable OpenControl Components (SSP-Toolkit).
 
 ## SA: System and Services Acquisition
+
 ### SA-1: SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES
+
 ```text
 The organization:
   a.  Develops, documents, and disseminates to [Assignment: organization-defined
@@ -32,6 +34,7 @@ This is Agency common control. More data about implementation can be obtained fr
 
 
 ### SA-2: ALLOCATION OF RESOURCES
+
 ```text
 The organization:
   a.  Determines information security requirements for the information system
@@ -71,6 +74,7 @@ The annual budget developed by the System Owner includes explicit budgetary line
 
 
 ### SA-3: SYSTEM DEVELOPMENT LIFE CYCLE
+
 ```text
 The organization:
   a.  Manages the information system using [Assignment: organization-defined system
@@ -150,6 +154,7 @@ The CivicActions organization integrates the organizational information security
 
 
 ### SA-4: ACQUISITION PROCESS
+
 ```text
 The organization includes the following requirements, descriptions, and criteria, explicitly or by reference, in the acquisition contract for the information system, system component, or information system service in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs:
   a.  Security functional requirements;
@@ -185,6 +190,7 @@ The Project organization reviews and approves all acquisition contracts in accor
 
 
 ### SA-4 (10): USE OF APPROVED PIV PRODUCTS
+
 ```text
 The organization employs only information technology products on the FIPS 201-approved products list for Personal Identity Verification (PIV) capability implemented within organizational information systems.
 ```
@@ -198,6 +204,7 @@ It is the responsibility of CivicActions for implementation of PIV capability fo
 
 
 ### SA-5: INFORMATION SYSTEM DOCUMENTATION
+
 ```text
 The organization:
   a.  Obtains administrator documentation for the information system, system component,
@@ -346,6 +353,7 @@ e
 As the Ilias.de documentation is publicly available, there is no need to provide distribution mechanisms.
 
 ### SA-9: EXTERNAL INFORMATION SYSTEM SERVICES
+
 ```text
 The organization:
   a.  Requires that providers of external information system services comply with
