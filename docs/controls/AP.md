@@ -1,4 +1,5 @@
 # Reusable OpenControl Components (SSP-Toolkit).
+
 ## AP: Authority and Purpose
 ### AP-1: AUTHORITY TO COLLECT
 ```text

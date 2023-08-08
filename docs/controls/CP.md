@@ -1,4 +1,5 @@
 # Reusable OpenControl Components (SSP-Toolkit).
+
 ## CP: Contingency Planning
 ### CP-1: CONTINGENCY PLANNING POLICY AND PROCEDURES
 ```text

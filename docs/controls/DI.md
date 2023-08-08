@@ -1,4 +1,5 @@
 # Reusable OpenControl Components (SSP-Toolkit).
+
 ## DI: Data Quality and Integrity
 ### DI-1: DATA QUALITY
 ```text

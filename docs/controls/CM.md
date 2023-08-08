@@ -1,4 +1,5 @@
 # Reusable OpenControl Components (SSP-Toolkit).
+
 ## CM: Configuration Management
 ### CM-1: CONFIGURATION MANAGEMENT POLICY AND PROCEDURES
 ```text

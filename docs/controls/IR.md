@@ -1,4 +1,5 @@
 # Reusable OpenControl Components (SSP-Toolkit).
+
 ## IR: Incident Response
 ### IR-1: INCIDENT RESPONSE POLICY AND PROCEDURES
 ```text

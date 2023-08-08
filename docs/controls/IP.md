@@ -1,4 +1,5 @@
 # Reusable OpenControl Components (SSP-Toolkit).
+
 ## IP: Individual Participation and Redress
 ### IP-1: CONSENT
 ```text

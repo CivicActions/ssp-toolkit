@@ -1,4 +1,5 @@
 # Reusable OpenControl Components (SSP-Toolkit).
+
 ## AR: Accountability, Audit, and Risk Management
 ### AR-1: GOVERNANCE AND PRIVACY PROGRAM
 ```text

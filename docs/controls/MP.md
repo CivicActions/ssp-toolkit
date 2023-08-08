@@ -1,4 +1,5 @@
 # Reusable OpenControl Components (SSP-Toolkit).
+
 ## MP: Media Protection
 ### MP-1: MEDIA PROTECTION POLICY AND PROCEDURES
 ```text

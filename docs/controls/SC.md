@@ -1,4 +1,5 @@
 # Reusable OpenControl Components (SSP-Toolkit).
+
 ## SC: System and Communications Protection
 ### SC-1: SYSTEM AND COMMUNICATIONS PROTECTION POLICY AND PROCEDURES
 ```text

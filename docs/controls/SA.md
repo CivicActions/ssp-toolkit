@@ -1,4 +1,5 @@
 # Reusable OpenControl Components (SSP-Toolkit).
+
 ## SA: System and Services Acquisition
 ### SA-1: SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES
 ```text

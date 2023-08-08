@@ -1,4 +1,5 @@
 # Reusable OpenControl Components (SSP-Toolkit).
+
 ## DM: Data Minimization and Retention
 ### DM-1: MINIMIZATION OF PERSONALLY IDENTIFIABLE INFORMATION
 ```text

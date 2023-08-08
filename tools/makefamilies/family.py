@@ -60,7 +60,7 @@ class Family(BaseModel):
     controls: Dict[str, Control]
 
     def header(self):
-        return f"# {self.title}\n## {self.family_id}: {self.family_name}\n"
+        return f"# {self.title}\n\n## {self.family_id}: {self.family_name}\n"
 
     def add_control(self, cid: str, control: Control):
         self.controls[cid] = control

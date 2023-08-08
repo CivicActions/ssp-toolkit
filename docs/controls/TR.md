@@ -1,4 +1,5 @@
 # Reusable OpenControl Components (SSP-Toolkit).
+
 ## TR: Transparency
 ### TR-1: PRIVACY NOTICE
 ```text

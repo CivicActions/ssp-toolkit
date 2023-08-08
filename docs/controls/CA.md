@@ -1,4 +1,5 @@
 # Reusable OpenControl Components (SSP-Toolkit).
+
 ## CA: Security Assessment and Authorization
 ### CA-1: SECURITY ASSESSMENT AND AUTHORIZATION POLICIES AND PROCEDURES
 ```text
