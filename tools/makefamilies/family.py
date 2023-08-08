@@ -27,7 +27,7 @@ class Control(BaseModel):
     parts: Dict[str, List[Part]]
 
     def header(self) -> str:
-        return f"### {self.control_id}: {self.control_name}\n"
+        return f"### {self.control_id}: {self.control_name}\n\n"
 
     def control_description(self) -> str:
         return f"```text\n{self.description}\n```\n"
@@ -60,7 +60,7 @@ class Family(BaseModel):
     controls: Dict[str, Control]
 
     def header(self):
-        return f"# {self.title}\n\n## {self.family_id}: {self.family_name}\n"
+        return f"# {self.title}\n\n## {self.family_id}: {self.family_name}\n\n"
 
     def add_control(self, cid: str, control: Control):
         self.controls[cid] = control
