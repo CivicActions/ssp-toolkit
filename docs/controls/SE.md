@@ -1,13 +1,8 @@
-# Reusable Component Library System Security Plan
-
-# NIST SP 800-53 Revision 4 Privacy
-
-## SE: Security
-
-### SE-1: INVENTORY OF PERSONALLY IDENTIFIABLE INFORMATION
-
-```text
-"The organization:
+# Reusable OpenControl Components (SSP-Toolkit).
+## SE: Security
+## SE-1: INVENTORY OF PERSONALLY IDENTIFIABLE INFORMATION
+```text
+"The organization:
      a.   Establishes, maintains, and updates [Assignment: organization-defined
 frequency] an
           inventory that contains a listing of all programs and information systems
@@ -19,26 +14,20 @@ security official
           [Assignment: organization-defined frequency] to support the establishment
 of information
           security requirements for all new or modified information systems containing
-PII."
-```
+PII."```
+**Status:** Not Applicable
 
-##### Privacy
+Privacy
+Project does not collect or maintain PII and therefore does not directly address this control though it may address it indirectly.
 
-Project does not collect or maintain PII and therefore does not directly address this control though it may address it indirectly.
 
-
-### SE-2: PRIVACY INCIDENT RESPONSE
-
-```text
-"The organization:
+## SE-2: PRIVACY INCIDENT RESPONSE
+```text
+"The organization:
      a.   Develops and implements a Privacy Incident Response Plan; and
      b.   Provides an organized and effective response to privacy incidents in accordance with the
-          organizational Privacy Incident Response Plan."
-```
+          organizational Privacy Incident Response Plan."```
+**Status:** Not Applicable
 
-##### Privacy
-
-Project does not collect or maintain PII and therefore does not directly address this control though it may address it indirectly.
-
-
-
+Privacy
+Project does not collect or maintain PII and therefore does not directly address this control though it may address it indirectly.

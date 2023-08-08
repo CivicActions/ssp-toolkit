@@ -2,7 +2,7 @@
 
 ## Client Project Full Name
 
-March 2023
+August 2023
 Version 3.4
 
 CivicActions, Inc
@@ -237,5 +237,3 @@ incident notification and system and network personnel are available 24x7.
 To maintain current and accurate contact information, the contact list is maintained as a
 [private spreadsheet](None) and linked to the the Project
 Contingency Plan. If you require access to the source document, contact the ISO.
-
-

@@ -15,7 +15,7 @@ import md_toc
 from yaml import FullLoader, load  # type: ignore
 from yamlinclude import YamlIncludeConstructor
 
-import tools.lib.secrender as secrender
+from tools.lib import secrender
 
 
 @click.command()

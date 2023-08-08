@@ -1,19 +1,13 @@
-# Reusable Component Library System Security Plan
+# Reusable OpenControl Components (SSP-Toolkit).
+## UL: Use Limitation
+## UL-1: INTERNAL USE
+```text
+"The organization uses personally identifiable information (PII) internally only for the
+      authorized purpose(s) identified in the Privacy Act and/or in public notices."```
+**Status:** In Place
 
-# NIST SP 800-53 Revision 4 Privacy
-
-## UL: Use Limitation
-
-### UL-1: INTERNAL USE
-
-```text
-"The organization uses personally identifiable information (PII) internally only for the
-      authorized purpose(s) identified in the Privacy Act and/or in public notices."
-```
-
-##### Privacy
-
-The information is collected on the Project is for identification and authentication purposes, allowing individuals to:
+Privacy
+The information is collected on the Project is for identification and authentication purposes, allowing individuals to:
 
 - Identify themselves to the system
 - Authenticate with the system to prove that they are the same person when they return
@@ -23,10 +17,9 @@ The information is collected on the Project is for identification and authentica
 - Publish information to make it available to others (e.g. forum posting, comment on publications of learning resources, etc.)
 
 
-### UL-2: INFORMATION SHARING WITH THIRD PARTIES
-
-```text
-"The organization:
+## UL-2: INFORMATION SHARING WITH THIRD PARTIES
+```text
+"The organization:
      a.   Shares personally identifiable information (PII) externally, only for
 the authorized purposes
           identified in the Privacy Act and/or described in its notice(s) or for
@@ -45,12 +38,8 @@ PII with third parties and on
      d.   Evaluates any proposed new instances of sharing PII with third parties
 to assess whether the
           sharing is authorized and whether additional or new public notice is
-required."
-```
+required."```
+**Status:** In Place
 
-##### Privacy
-
-Project does not share any collected information with any third parties.
-
-
-
+Privacy
+Project does not share any collected information with any third parties.
