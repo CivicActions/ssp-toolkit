@@ -6,9 +6,9 @@ from pathlib import Path
 
 import click
 import yaml
-from family import Control, Family, Part
 
 from tools.lib.opencontrol import OpenControl
+from tools.makefamilies.family import Control, Family, Part
 
 
 def sortable_control_id(control_id: str) -> str:
@@ -63,7 +63,7 @@ def get_family_files(components: list) -> dict:
     return family_files
 
 
-def get_control_parts(parts: list, control: Control, parent: str) -> Control:
+def get_control_parts(parts: list, control, parent: str) -> Control:
     for p in parts:
         part_id = p.get("key", "_default")
         control.add_part(

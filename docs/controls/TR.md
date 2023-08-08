@@ -1,8 +1,8 @@
 # Reusable OpenControl Components (SSP-Toolkit).
-## TR: Transparency
-## TR-1: PRIVACY NOTICE
-```text
-"The organization:
+## TR: Transparency
+### TR-1: PRIVACY NOTICE
+```text
+"The organization:
      a.    Provides effective notice to the public and to individuals regarding:
 (i) its activities that
            impact privacy, including its collection, use, sharing, safeguarding,
@@ -28,16 +28,18 @@ to PII; and (vi) how the
      c.    Revises its public notices to reflect changes in practice or policy
 that affect PII or changes in
            its activities that impact privacy, before or as soon as practicable
-after the change."```
-**Status:** In Place
+after the change."
+```
+**Status:** In Place
 
-Privacy
-Project publishes a privacy policy in the footer of every page. Further, upon login, the user must accept a detailed Terms and Conditions of Use.
+#### Privacy
+
+Project publishes a privacy policy in the footer of every page. Further, upon login, the user must accept a detailed Terms and Conditions of Use.
 
 
-## TR-2: SYSTEM OF RECORDS NOTICES AND PRIVACY ACT STATEMENTS
-```text
-"The organization:
+### TR-2: SYSTEM OF RECORDS NOTICES AND PRIVACY ACT STATEMENTS
+```text
+"The organization:
      a.    Publishes System of Records Notices (SORNs) in the Federal Register,
 subject to required
            oversight processes, for systems containing personally identifiable
@@ -47,22 +49,26 @@ information (PII);
 separate forms that can be
            retained by individuals, to provide additional formal notice to individuals
 from whom the
-           information is being collected."```
-**Status:** In Place
+           information is being collected."
+```
+**Status:** In Place
 
-Privacy
-Project does not collect or maintain PII and therefore does not publish a SORN.
+#### Privacy
+
+Project does not collect or maintain PII and therefore does not publish a SORN.
 
 
-## TR-3: DISSEMINATION OF PRIVACY PROGRAM INFORMATION
-```text
-"The organization:
+### TR-3: DISSEMINATION OF PRIVACY PROGRAM INFORMATION
+```text
+"The organization:
      a.    Ensures that the public has access to information about its privacy activities and is able to
            communicate with its Senior Agency Official for Privacy (SAOP)/Chief Privacy Officer
            (CPO); and
      b.    Ensures that its privacy practices are publicly available through organizational websites or
-           otherwise."```
-**Status:** In Place
+           otherwise."
+```
+**Status:** In Place
 
-Privacy
-Project publishes a privacy policy in the footer of every page. Further, upon login, the user must accept a detailed Terms and Conditions of Use.
+#### Privacy
+
+Project publishes a privacy policy in the footer of every page. Further, upon login, the user must accept a detailed Terms and Conditions of Use.

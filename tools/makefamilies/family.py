@@ -15,7 +15,7 @@ class Part(BaseModel):
     narrative: str
 
     def __str__(self):
-        return f"{self.party}\n\r{self.narrative}\n\r"
+        return f"#### {self.party}\n\n{self.narrative}\n"
 
 
 class Control(BaseModel):
@@ -27,13 +27,13 @@ class Control(BaseModel):
     parts: Dict[str, List[Part]]
 
     def header(self) -> str:
-        return f"## {self.control_id}: {self.control_name}\n\r"
+        return f"### {self.control_id}: {self.control_name}\n"
 
     def control_description(self) -> str:
-        return f"```text\n\r{self.description}```\n\r"
+        return f"```text\n{self.description}\n```\n"
 
     def get_status(self) -> str:
-        return f"**Status:** {self.status}\n\r"
+        return f"**Status:** {self.status}\n"
 
     def add_part(self, pid: str, part: Part):
         if pid not in self.parts:
@@ -46,7 +46,7 @@ class Control(BaseModel):
         for key, part in self.parts.items():
             for p in part:
                 part_key = "" if key == "_default" else key
-                parts = parts + f"{part_key}\n\r{str(p)}\n\r"
+                parts = parts + f"{part_key}\n{str(p)}\n"
         return parts
 
     def __str__(self):
@@ -60,7 +60,7 @@ class Family(BaseModel):
     controls: Dict[str, Control]
 
     def header(self):
-        return f"# {self.title}\n\r## {self.family_id}: {self.family_name}\n\r"
+        return f"# {self.title}\n## {self.family_id}: {self.family_name}\n"
 
     def add_control(self, cid: str, control: Control):
         self.controls[cid] = control

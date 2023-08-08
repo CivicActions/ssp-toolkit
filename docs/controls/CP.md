@@ -1,8 +1,8 @@
 # Reusable OpenControl Components (SSP-Toolkit).
-## CP: Contingency Planning
-## CP-1: CONTINGENCY PLANNING POLICY AND PROCEDURES
-```text
-The organization:
+## CP: Contingency Planning
+### CP-1: CONTINGENCY PLANNING POLICY AND PROCEDURES
+```text
+The organization:
   a.  Develops, documents, and disseminates to [Assignment: organization-defined
 personnel or roles]:
     1.  A contingency planning policy that addresses purpose, scope, roles, responsibilities,
@@ -12,23 +12,26 @@ policy and associated contingency planning controls; and
   b.  Reviews and updates the current:
     1.  Contingency planning policy [Assignment: organization-defined frequency];
 and
-    2.  Contingency planning procedures [Assignment: organization-defined frequency].```
-**Status:** complete
+    2.  Contingency planning procedures [Assignment: organization-defined frequency].
+```
+**Status:** complete
 
-Contractor
-CivicActions has developed, documented and disseminated to personnel a contingency planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Contingency Planning (CP) Policy and Procedure that can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+#### Contractor
+
+CivicActions has developed, documented and disseminated to personnel a contingency planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in Contingency Planning (CP) Policy and Procedure that can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 
-Project
-This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+#### Project
+
+This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
 
 The Project and has developed a contingency planning policy consistent with NIST 800-34. Contingency planning procedures are formally documented within the Project Contingency Plan, which provides the roles and responsibilities as it pertains to contingency planning. The Project reviews and updates the policy as necessary and the policy was last updated in July 2012.
 
 
-## CP-2: CONTINGENCY PLAN
-```text
-The organization:
+### CP-2: CONTINGENCY PLAN
+```text
+The organization:
   a.  Develops a contingency plan for the information system that:
     1.  Identifies essential missions and business functions and associated contingency
 requirements;
@@ -50,11 +53,13 @@ frequency];
 system, or environment of operation and problems encountered during contingency plan implementation, execution, or testing;
   f.  Communicates contingency plan changes to [Assignment: organization-defined
 key contingency personnel (identified by name and/or by role) and organizational elements]; and
-  g.  Protects the contingency plan from unauthorized disclosure and modification.```
-**Status:** complete
-a
-Contractor
-CivicActions has developed a contingency plan for that addresses:
+  g.  Protects the contingency plan from unauthorized disclosure and modification.
+```
+**Status:** complete
+a
+#### Contractor
+
+CivicActions has developed a contingency plan for that addresses:
 1. Essential missions, business functions, and associated contingency requirements
 2. Recovery objectives, restoration priorities, and metrics
 3. Roles and responsibilities are identified in the CP and include the ISCP Director, Incident Commander (IC), CivicActions Coordinator, and CivicActions Information System Security Officer (ISSO).
@@ -63,70 +68,81 @@ key contingency personnel (identified by name and/or by role) and organizational
 6. The ISCP is reviewed and approved by ISCP Director, Incident Commander (IC), CivicActions ISSO and the System Owner annually.
 
 
-b
-Contractor
-The CivicActions Information System Contingency Plan (ISCP) has been distributed to all CivicActions team members. The ISCP can be found in the CivicActions Handbook at <https://handbook.civicactions.com/en/latest/100-security/contingency-plan/>.
+b
+#### Contractor
+
+The CivicActions Information System Contingency Plan (ISCP) has been distributed to all CivicActions team members. The ISCP can be found in the CivicActions Handbook at <https://handbook.civicactions.com/en/latest/100-security/contingency-plan/>.
 
 
-b
-Project
-The Project Information System Contingency Plan (ISCP) has been distributed to all members who have roles in Contingency Planning and Incident Response Team. Direction by the System Owner will update who is required to receive a copy of the contingency plan. The ISCP can be found in the Project GitHub wiki at <https://handbook.civicactions.com/en/latest/100-security/contingency-plan/>.
+b
+#### Project
+
+The Project Information System Contingency Plan (ISCP) has been distributed to all members who have roles in Contingency Planning and Incident Response Team. Direction by the System Owner will update who is required to receive a copy of the contingency plan. The ISCP can be found in the Project GitHub wiki at <https://handbook.civicactions.com/en/latest/100-security/contingency-plan/>.
 
 
-c
-Contractor
-The Information System Contingency Plan (ISCP) is closely integrated with the Incident Response Plan (IRP). Coordination is the responsibility of the ISCP Director and CivicActions Operations staff.
+c
+#### Contractor
+
+The Information System Contingency Plan (ISCP) is closely integrated with the Incident Response Plan (IRP). Coordination is the responsibility of the ISCP Director and CivicActions Operations staff.
 
 
-d
-Contractor
-The ISCP Director and CivicActions' Security Office are responsible to review the ISCP annually and when a change to the system occurs.
+d
+#### Contractor
+
+The ISCP Director and CivicActions' Security Office are responsible to review the ISCP annually and when a change to the system occurs.
 
 
-e
-Contractor
-CivicActions Operations staff and ISCP Director are required to update the ISCP to address changes to the organization, information system, or environment of operation and problems encountered during contingency plan implementation, execution, or testing.
+e
+#### Contractor
+
+CivicActions Operations staff and ISCP Director are required to update the ISCP to address changes to the organization, information system, or environment of operation and problems encountered during contingency plan implementation, execution, or testing.
 
 
-f
-Contractor
-The ISCP requires that changes to the plan be communicated to those on the Incident Response/Contingency Plan Contact List.
+f
+#### Contractor
+
+The ISCP requires that changes to the plan be communicated to those on the Incident Response/Contingency Plan Contact List.
 
 
-g
-Contractor
-The ISCP is available on CivicActions GitHub repository. This repository provides the configuration management capabilities for the ISCP to be protected from unauthorized disclosure and modification.
+g
+#### Contractor
+
+The ISCP is available on CivicActions GitHub repository. This repository provides the configuration management capabilities for the ISCP to be protected from unauthorized disclosure and modification.
 
 
-## CP-3: CONTINGENCY TRAINING
-```text
-The organization provides contingency training to information system users consistent with assigned roles and responsibilities:
+### CP-3: CONTINGENCY TRAINING
+```text
+The organization provides contingency training to information system users consistent with assigned roles and responsibilities:
   a.  Within [Assignment: organization-defined time period] of assuming a contingency
 role or responsibility;
   b.  When required by information system changes; and
-  c.  [Assignment: organization-defined frequency] thereafter.```
-**Status:** complete
+  c.  [Assignment: organization-defined frequency] thereafter.
+```
+**Status:** complete
 
-Contractor
-The ISCP stipulates that all CivicActions system assigned roles in the Contingency Plan Team are trained in their duties within three months of first being assigned a role in the CP, and then annually thereafter or when changes are required. CivicActions uses the Contingency Plan as described in controls CP-1 and CP-2 as a basis for personnel contingency training.
+#### Contractor
+
+The ISCP stipulates that all CivicActions system assigned roles in the Contingency Plan Team are trained in their duties within three months of first being assigned a role in the CP, and then annually thereafter or when changes are required. CivicActions uses the Contingency Plan as described in controls CP-1 and CP-2 as a basis for personnel contingency training.
 
 
-## CP-4: CONTINGENCY PLAN TESTING
-```text
-The organization:
+### CP-4: CONTINGENCY PLAN TESTING
+```text
+The organization:
   a.  Tests the contingency plan for the information system [Assignment: organization-defined
 frequency] using [Assignment: organization-defined tests] to determine the effectiveness of the plan and the organizational readiness to execute the plan;
   b.  Reviews the contingency plan test results; and
-  c.  Initiates corrective actions, if needed.```
-**Status:** complete
+  c.  Initiates corrective actions, if needed.
+```
+**Status:** complete
 
-Contractor
-Real-world tests of the contingency plan will be held at least annually, with supplemental tests (checklist/table-top) as needed for specific scenarios. The ISCP Coordinator is responsible to facilitate annual testing exercises. The testing process for the ISCP includes a review of the ISCP, exercise, and identification of corrective actions and other improvements.
+#### Contractor
+
+Real-world tests of the contingency plan will be held at least annually, with supplemental tests (checklist/table-top) as needed for specific scenarios. The ISCP Coordinator is responsible to facilitate annual testing exercises. The testing process for the ISCP includes a review of the ISCP, exercise, and identification of corrective actions and other improvements.
 
 
-## CP-9: INFORMATION SYSTEM BACKUP
-```text
-The organization:
+### CP-9: INFORMATION SYSTEM BACKUP
+```text
+The organization:
   a.  Conducts backups of user-level information contained in the information
 system [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives];
   b.  Conducts backups of system-level information contained in the information
@@ -134,52 +150,63 @@ system [Assignment: organization-defined frequency consistent with recovery time
   c.  Conducts backups of information system documentation including security-related
 documentation [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives]; and
   d.  Protects the confidentiality, integrity, and availability of backup information
-at storage locations.```
-**Status:** partial
-a
-AWS
-In this architecture, user data is limited to that which is stored in the Amazon RDS database. Amazon RDS is fully backed up by a daily snapshot as well as through transaction logging conducted by AWS as part of this managed service. Full database recovery from snapshot or point-in-time can be initiated from the Amazon RDS console/API.
+at storage locations.
+```
+**Status:** partial
+a
+#### AWS
+
+In this architecture, user data is limited to that which is stored in the Amazon RDS database. Amazon RDS is fully backed up by a daily snapshot as well as through transaction logging conducted by AWS as part of this managed service. Full database recovery from snapshot or point-in-time can be initiated from the Amazon RDS console/API.
 
 
-a
-Contractor
-CivicActions conducts system user-level information backup in accordance with requirements (at a minimum, incremental backups must be conducted at least weekly and full backups must be conducted at least monthly).
+a
+#### Contractor
+
+CivicActions conducts system user-level information backup in accordance with requirements (at a minimum, incremental backups must be conducted at least weekly and full backups must be conducted at least monthly).
 
 
-b
-AWS
-AWS built-in features automatically backs up system-level information limited to infrastructure CONFIGURATION information within the AWS account. While individual running Amazon EC2 instances and attached EBS volumes are NOT backed up, they can be reconstituted from Amazon Machine Images (AMIs) provided by AWS (which are backed up by AWS) and user data scripts included in CloudFormation templates. Once deployed, the CloudFormation template contents are backed up by AWS R488within the CloudFormation service. These AWS backups of AWS services are transparent to the customer as part of AWS backend processes.
+b
+#### AWS
+
+AWS built-in features automatically backs up system-level information limited to infrastructure CONFIGURATION information within the AWS account. While individual running Amazon EC2 instances and attached EBS volumes are NOT backed up, they can be reconstituted from Amazon Machine Images (AMIs) provided by AWS (which are backed up by AWS) and user data scripts included in CloudFormation templates. Once deployed, the CloudFormation template contents are backed up by AWS R488within the CloudFormation service. These AWS backups of AWS services are transparent to the customer as part of AWS backend processes.
 
 
-b
-Contractor
-System-level information for the application is replicated and backed up in the same way as user-level information as defined in CP-9(a).
+b
+#### Contractor
+
+System-level information for the application is replicated and backed up in the same way as user-level information as defined in CP-9(a).
 
 
-c
-AWS
-AWS built-in features back up online administrator and developer documentation, limited to that which is published at https://aws.amazon.com/documentation.
+c
+#### AWS
+
+AWS built-in features back up online administrator and developer documentation, limited to that which is published at https://aws.amazon.com/documentation.
 
 
-c
-Contractor
-System documentation is backed up from the GitHub repository on a daily basis with a minimum two-week retention period and off-site storage.
+c
+#### Contractor
+
+System documentation is backed up from the GitHub repository on a daily basis with a minimum two-week retention period and off-site storage.
 
 
-d
-AWS
-AWS built-in features protect the confidentiality, integrity, and availability of information that AWS services back up. This information includes the service configuration information within an account, AWS online administrator and developer documentation, and AWS CloudFormation stacks for templates once deployed into an account. R612
+d
+#### AWS
+
+AWS built-in features protect the confidentiality, integrity, and availability of information that AWS services back up. This information includes the service configuration information within an account, AWS online administrator and developer documentation, and AWS CloudFormation stacks for templates once deployed into an account. R612
 
 
-d
-Contractor
-CivicActions employees must authenticate prior to being granted access to the GitHub repository. Roles and responsibilities within GitHub determine the proper level of access for the documentation being accessed. The folder structure of GitHub protects though permissions and ownership prohibiting users from accessing unauthorized documentation.
+d
+#### Contractor
+
+CivicActions employees must authenticate prior to being granted access to the GitHub repository. Roles and responsibilities within GitHub determine the proper level of access for the documentation being accessed. The folder structure of GitHub protects though permissions and ownership prohibiting users from accessing unauthorized documentation.
 
 
-## CP-10: INFORMATION SYSTEM RECOVERY AND RECONSTITUTION
-```text
-The organization provides for the recovery and reconstitution of the information system to a known state after a disruption, compromise, or failure.```
-**Status:** complete
+### CP-10: INFORMATION SYSTEM RECOVERY AND RECONSTITUTION
+```text
+The organization provides for the recovery and reconstitution of the information system to a known state after a disruption, compromise, or failure.
+```
+**Status:** complete
 
-Contractor
-The Contingency Plan documents the mechanisms with supporting procedures that allow all system components to be recovered and reconstituted to the system’s original state after a disruption or failure. This original state means that all system parameters (either default or organization- established) are reset, patches are reinstalled, system and security configuration settings are reestablished, system documentation and operating procedures are available, application and system software is reinstalled, information from the most recent backups is available and the system is fully tested.
+#### Contractor
+
+The Contingency Plan documents the mechanisms with supporting procedures that allow all system components to be recovered and reconstituted to the system’s original state after a disruption or failure. This original state means that all system parameters (either default or organization- established) are reset, patches are reinstalled, system and security configuration settings are reestablished, system documentation and operating procedures are available, application and system software is reinstalled, information from the most recent backups is available and the system is fully tested.
