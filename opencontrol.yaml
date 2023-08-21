@@ -2,9 +2,8 @@ schema_version: "1.0.0"
 name: Reusable Component Library
 metadata:
   description: Reusable OpenControl Components (SSP-Toolkit).
-  organization:
-    name: CivicActions
-    abbreviation: Components
+  maintainers:
+    - CivicActions
 components:
   - ./components/AWS
   - ./components/Contractor
@@ -16,6 +15,6 @@ components:
 standards:
   - ./standards/nist-sp-800-53-rev4.yaml
   - ./standards/NIST-SP-800-53-rev4-privacy.yaml
+  - ./standards/nist-sp-800-53-rev5.yaml
 certifications:
   - ./certifications/fisma-low-impact-privacy.yaml
-
