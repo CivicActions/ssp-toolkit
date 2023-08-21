@@ -110,8 +110,31 @@ def get_controls(family_files: list, family: Family, standards: list) -> Family:
     return family
 
 
+def create_toc(out_path: str, controls: dict):
+    toc_file = Path(out_path).parent.joinpath("controls").with_suffix(".md")
+    with open(toc_file, "w+") as fp:
+        for k, c in controls.items():
+            url_path = f"{Path(out_path).parts[-1]}/{k.upper()}.md"
+            family_name = c.get("name")
+            family_anchor = family_name.lower().replace(" ", "-")
+            fp.write(
+                f"* [{k}: {family_name.title()}]({url_path}#{k.lower()}-{family_anchor})\n"
+            )
+            for control in c.get("controls"):
+                anchor = (
+                    control.lower()
+                    .replace("(", "")
+                    .replace(")", "")
+                    .replace(": ", "-")
+                    .replace(" ", "-")
+                )
+                fp.write(f"\t* [{control}]({url_path}#{anchor})\n")
+    print(f"TOC written to {toc_file.as_posix()}")
+
+
 def create_family(families: dict, out_path: str):
     title, standards = get_standards()
+    toc: dict = {}
     for key, family_files in families.items():
         fid = key[:2]
         family_name = get_standards_family_name(fid, standards)
@@ -125,6 +148,14 @@ def create_family(families: dict, out_path: str):
             family_files=family_files, family=family, standards=standards
         )
         family.print_family_file(out_path=out_path)
+        toc[f"{fid}"] = {
+            "name": family_name,
+            "controls": [
+                f"{c.control_id.upper()}: {c.control_name.title()}"
+                for _, c in family.controls.items()
+            ],
+        }
+    create_toc(out_path=out_path, controls=toc)
 
 
 @click.command()
