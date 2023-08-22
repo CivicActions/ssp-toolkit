@@ -1,16 +1,16 @@
 # This work is dual-licensed under Creative Commons Zero v1.0 Universal and GNU General Public License v3.0 or later.
-# The file containts example code. Replace the values with information that is pertinent to your project.
+# The file contains example code. Replace the values with information that is pertinent to your project.
 name: Project Full Name
 name_short: Project
 contact_email: TheProject@example.net
 description:
 client_name: Client Full Name
 client_name_short: Client
-ssp_url: https://handbook.civicactions.com/en/latest/100-security/incidents/
-incident_response_plan_url: https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/
-contingency_plan_url: https://handbook.civicactions.com/en/latest/100-security/contingency-plan/
-acceptable_use_policy_url: https://handbook.civicactions.com/en/latest/030-policies/security/#acceptable-use-policy
-git_repository: https://github.com
+ssp_url: https://guidebook.civicactions.com/en/latest/common-practices-tools/security/incidents/
+incident_response_plan_url: https://guidebook.civicactions.com/en/latest/common-practices-tools/security/incident-response-plan/
+contingency_plan_url: https://guidebook.civicactions.com/en/latest/common-practices-tools/security/contingency-plan/
+acceptable_use_policy_url: https://guidebook.civicactions.com/en/latest/company-policies/security/#acceptable-use-policy
+git_repository: https://github.com/CivicActions/ssp-toolkit
 slack_link:
 slack_channel:
 slack_url:
@@ -18,15 +18,13 @@ contact_sheet:
   name:
   url:
   image:
-    path: 
-    alt: 
+    path:
+    alt:
 issue_system: JIRA ticket
 issue_system_url: '[JIRA ticket management system](https://project.atlassian.net/secure/)'
 issue_incident: '[JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident)'
 pager: OpsGenie
 escalation_mail: TheProject@example.com
-#backup_snaps: '[CPM snapshots](https://cpm.project.com/)'
-#backup_system: Cloud Protection Manager (CPM)
 backup_snaps: backup snapshots
 backup_system: Cloud Protection Manager (CPM) or other backup system
 backup_url: https://cpm.project.com/signin/
