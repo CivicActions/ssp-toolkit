@@ -12,6 +12,9 @@ from tools.lib import ssptoolkit
 
 
 def set_status(existing_status: str = "", component_status: str = "") -> Optional[str]:
+    """
+    Create matri
+    """
     new_status = None
     if not existing_status and component_status:
         new_status = component_status
@@ -79,6 +82,9 @@ def write_file(rows: list):
 
 
 def main():
+    """
+    creatematrix creates a Responsibility Matrix spreadsheet show
+    """
     project = ssptoolkit.load_project_data()
     components = project.get_components()
     header: list = ["Control", "Status"] + [Path(c).name for c in components]
