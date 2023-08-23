@@ -26,4 +26,5 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 createfiles = "tools.createfiles.createfiles:main"
+creatematrix = "tools.creatematrix.creatematrix:main"
 makefamilies = "tools.makefamilies.makefamilies:main"
