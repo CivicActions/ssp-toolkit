@@ -27,7 +27,7 @@ satisfies:
       restricted based on ports/protocols via AWS Security groups, and default subnet rules
       provided by NACLs.
   implementation_status: partial
-- control_key: SA-12
+- control_key: SC-12
   control_name: CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
@@ -40,7 +40,7 @@ satisfies:
       used for Amazon S3 storage and Amazon RDS databases, using key management provided
       by AWS for the storage buckets and Amazon RDS databases.
   implementation_status: partial
-- control_key: SA-13
+- control_key: SC-13
   control_name: CRYPTOGRAPHIC PROTECTION
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
@@ -60,7 +60,7 @@ satisfies:
       AWS built-in features employ TLS for AWS Management Console sessions, AWS API calls,
       and AWS Command Line Interface connections.
   implementation_status: partial
-- control_key: SA-39
+- control_key: SC-39
   control_name: PROCESS ISOLATION
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
