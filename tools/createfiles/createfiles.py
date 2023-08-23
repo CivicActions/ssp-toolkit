@@ -1,10 +1,13 @@
-# Copyright 2019-2020 CivicActions, Inc. See the README file at the top-level
-# directory of this distribution and at https://github.com/CivicActions/compliancetools#copyright.
-#
-# Given a YAML file and path to directory of template files, this tool
-# generates markdown files, replicating the directory structure in the template
-# directory. It uses the https://github.com/CivicActions/secrender tool for
-# variable replacement.
+"""
+Copyright 2019-2020 CivicActions, Inc. See the README file at the top-level
+directory of this distribution and at https://github.com/CivicActions/compliancetools#copyright.
+
+
+Given a YAML file and path to directory of template files, this tool
+generates markdown files, replicating the directory structure in the template
+directory. It uses the https://github.com/CivicActions/secrender tool for
+variable replacement.
+"""
 
 import mmap
 from itertools import dropwhile, zip_longest
