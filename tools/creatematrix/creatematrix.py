@@ -10,7 +10,7 @@ from typing import Optional
 
 import yaml
 
-from tools.lib import ssptoolkit
+from tools.helpers import ssptoolkit
 
 
 def set_status(existing_status: str = "", component_status: str = "") -> Optional[str]:
@@ -59,14 +59,19 @@ def sort_data(components: dict, header: list):
     except FileNotFoundError as error:
         raise error
 
+    baseline = ssptoolkit.get_certification_baseline()
+
     rows: list = []
     for cid, control in components.items():
         row: dict = OrderedDict.fromkeys(header)
         row["Control"] = cid
         row["Status"] = None
+        check_key = None
         for component in control:
             for key, satisfies in component.items():
-                status = statuses.get(satisfies.get("control_key"))
+                control_key = satisfies.get("control_key")
+                check_key = control_key if not check_key else check_key
+                status = statuses.get(control_key)
                 if not status:
                     existing_status = row["Status"]
                     component_status = satisfies.get("implementation_status", None)
@@ -77,7 +82,8 @@ def sort_data(components: dict, header: list):
                 row["Status"] = status
 
                 row[key] = satisfies.get("security_control_type", None)
-        rows.append(row)
+        if check_key in baseline:
+            rows.append(row)
 
     write_file(rows=rows)
 

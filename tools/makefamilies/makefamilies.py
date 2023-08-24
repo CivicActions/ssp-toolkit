@@ -8,7 +8,7 @@ from pathlib import Path
 import click
 import yaml
 
-from tools.lib import ssptoolkit
+from tools.helpers import ssptoolkit
 from tools.makefamilies.family import Control, Family, Part
 
 

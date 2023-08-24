@@ -17,4 +17,5 @@ standards:
   - ./standards/NIST-SP-800-53-rev4-privacy.yaml
   - ./standards/nist-sp-800-53-rev5.yaml
 certifications:
+  - ./certifications/fisma-low-impact.yaml
   - ./certifications/fisma-low-impact-privacy.yaml
