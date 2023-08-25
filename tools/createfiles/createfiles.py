@@ -1,10 +1,13 @@
-# Copyright 2019-2020 CivicActions, Inc. See the README file at the top-level
-# directory of this distribution and at https://github.com/CivicActions/compliancetools#copyright.
-#
-# Given a YAML file and path to directory of template files, this tool
-# generates markdown files, replicating the directory structure in the template
-# directory. It uses the https://github.com/CivicActions/secrender tool for
-# variable replacement.
+"""
+Copyright 2019-2020 CivicActions, Inc. See the README file at the top-level
+directory of this distribution and at https://github.com/CivicActions/compliancetools#copyright.
+
+
+Given a YAML file and path to directory of template files, this tool
+generates markdown files, replicating the directory structure in the template
+directory. It uses the https://github.com/CivicActions/secrender tool for
+variable replacement.
+"""
 
 import mmap
 from itertools import dropwhile, zip_longest
@@ -12,10 +15,9 @@ from pathlib import Path
 
 import click
 import md_toc
-from yaml import FullLoader, load  # type: ignore
-from yamlinclude import YamlIncludeConstructor
 
-from tools.lib import secrender
+from tools.helpers import secrender
+from tools.helpers.ssptoolkit import load_template_args
 
 
 @click.command()
@@ -75,13 +77,6 @@ def main(config_file: str, templates: str, output_dir: str):
         )
 
         find_toc_tag(file=str(new_file))
-
-
-def load_template_args(config_file: str) -> dict:
-    YamlIncludeConstructor.add_to_loader_class(loader_class=FullLoader)
-    with open(config_file, "r", newline="") as stream:
-        yaml = load(stream, Loader=FullLoader)
-    return secrender.get_template_args(yaml=yaml, set_={}, root=None)
 
 
 def rewrite(template_file: Path, template_dir: Path, output_dir: Path) -> str:

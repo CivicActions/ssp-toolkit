@@ -16,9 +16,11 @@ pyyaml-include = "^1.3.1"
 jinja2 = "^3.1.2"
 md-toc = "^8.1.9"
 rtyaml = "^1.0.0"
-pydantic = "^2.1.1"
+pydantic = "^1.10.12"
 blinker = "^1.6.2"
 slugify = "^0.0.1"
+complianceio = {git = "https://github.com/CivicActions/compliance-io.git"}
+pytest = "^7.4.0"
 
 [build-system]
 requires = ["poetry-core"]
@@ -26,4 +28,5 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 createfiles = "tools.createfiles.createfiles:main"
+creatematrix = "tools.creatematrix.creatematrix:main"
 makefamilies = "tools.makefamilies.makefamilies:main"
