@@ -9,7 +9,7 @@
   - [Incident Commander](#incident-commander)
   - [Communications Officer](#communications-officer)
 - [Incident response process](#incident-response-process)
-  - [1. _Breathe_](#1-_breathe_)
+  - [1. _Breathe_](#1-breathe)
   - [2. Start documenting](#2-start-documenting)
   - [3. Initiate the response](#3-initiate-the-response)
   - [4. Assess the incident](#4-assess-the-incident)
@@ -151,7 +151,7 @@ B. Respond accordingly:
 
          Observe the following guidelines for communications:
 
-            - During this stage of incident response, the event status is "investigating". 
+            - During this stage of incident response, the event status is "investigating".
             - An unconfirmed issue is called an _event_. A confirmed issue is called an _incident_.
 
     2. For an incident requiring more than 30 minutes to resolve:
@@ -168,7 +168,7 @@ B. Respond accordingly:
             Use the [_Explicit Handoff Ceremony_](#explicit-handoff-ceremony) when transferring/changing roles.
 
   - **False alarm**
-    
+
     Conclude the incident. Proceed to [_6. Conclude the incident_](#6.-conclude-the-incident).
 
 ### 4. Assess the incident
@@ -203,7 +203,7 @@ B. Respond accordingly:
       - JIRA ticket
       - Slack channel [#None](None) (include link to [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident))
       - Any other [communication channels](#communication-channels) as indicated by the IC (or CO).
-   
+
       Here is an example sitrep:
 
          **Subject**: [sitrep] The chickens are escaping
@@ -236,7 +236,7 @@ Remediation takes time. If the issue progresses for more than 3 hours without be
 #### IR Team responsibilities during remediation
 
 - Determine the cause, implement a resolution, and return the system to normal operations. Make every attempt to identify the cause; this can prevent incident recurrence.
-- Maintain a list of informational leads from the incident — actionable information about any security breaches, stolen data, etc. 
+- Maintain a list of informational leads from the incident — actionable information about any security breaches, stolen data, etc.
 - Develop a list of remediation steps. These can be tracked as checklists in the [JIRA Incident ticket](https://project.atlassian.net/issues/?jql=issuetype=Incident).
 
 If suspicious activity is suspected or other unanswered questions exist, do the following before making any changes:
@@ -248,7 +248,7 @@ If suspicious activity is suspected or other unanswered questions exist, do the 
 
 #### Incident Commander responsibilities during remediation
 
-At a high level, the IC tracks remediation actions, ensures they are assigned and followed, and verifies them when they are completed. (Remediation efforts may be tracked with the issue details.) 
+At a high level, the IC tracks remediation actions, ensures they are assigned and followed, and verifies them when they are completed. (Remediation efforts may be tracked with the issue details.)
 
 The IC must  distinguish between immediate concerns, which need to be completed before the incident is considered resolved, and long-term improvements/hardening, which can be deferred to the Retrospective.
 
@@ -317,12 +317,12 @@ The incident severity level determines the actions of the IR Team. Severity usua
 
 ### High severity
 
-A high severity incident does one or more of the following: 
+A high severity incident does one or more of the following:
 
-- compromises the confidentiality/integrity of Sensitive Personally Identifiable Information (SPII), 
-- impacts the availability of services for a large number of customers, or 
-- has significant financial impact. 
-   
+- compromises the confidentiality/integrity of Sensitive Personally Identifiable Information (SPII),
+- impacts the availability of services for a large number of customers, or
+- has significant financial impact.
+
 Examples include:
 
 - Confirmed breach of SPII

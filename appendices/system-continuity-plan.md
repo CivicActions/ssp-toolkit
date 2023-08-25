@@ -2,7 +2,7 @@
 
 ## Client Project Full Name
 
-March 2023
+August 2023
 Version 3.4
 
 CivicActions, Inc
@@ -56,7 +56,7 @@ The purpose of the System Continuity Plan (COOP) is to prepare for and address t
 
 ### 1.2 Plan Information
 
-The COOP is comprised of dynamic action plans to manage information system operational continuity objectives, and generally static policy that is managed by organizational processes. For Project, the majority of the COOP is contained in the action plan, which is captured in the [Project Contingency Plan](https://handbook.civicactions.com/en/latest/100-security/contingency-plan/) documentation.
+The COOP is comprised of dynamic action plans to manage information system operational continuity objectives, and generally static policy that is managed by organizational processes. For Project, the majority of the COOP is contained in the action plan, which is captured in the [Project Contingency Plan](https://guidebook.civicactions.com/en/latest/common-practices-tools/security/contingency-plan/) documentation.
 
 ## 2 Continuity of Operations Plan Overview
 
@@ -237,5 +237,3 @@ incident notification and system and network personnel are available 24x7.
 To maintain current and accurate contact information, the contact list is maintained as a
 [private spreadsheet](None) and linked to the the Project
 Contingency Plan. If you require access to the source document, contact the ISO.
-
-

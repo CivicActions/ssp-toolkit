@@ -54,7 +54,7 @@ document as needed. Changes must be approved and peer reviewed by another team m
 
 The CivicActions team protects this plan from unauthorized modification. This plan is
 stored in the CivicActions GitLab repository
-(https://handbook.civicactions.com/en/latest/100-security/incidents/). Authorization to modify it is limited to the
+(https://guidebook.civicactions.com/en/latest/common-practices-tools/security/incidents/). Authorization to modify it is limited to the
 Incident Response Team by GitLab access controls. Per CivicActions policy,
 a team member proposes changes by making a pull request and asking another team member to
 review and merge the pull request.
@@ -145,7 +145,7 @@ For reconstitution:
 
 1. The Incident Response Team tests and validates the system as operational.
 2. The IC declares that recovery efforts are complete and notifies all relevant people.
-3. The IC schedules a postmortem in the JIRA ticket to discuss the event. This is the 
+3. The IC schedules a postmortem in the JIRA ticket to discuss the event. This is the
    same as the [security incident retrospective process](security-irp.md#retrospective).
 
 ## External dependencies
@@ -198,4 +198,3 @@ None
 If needed, you can [manage and create new servers](https://console.aws.amazon.com/ec2/v2/home).
 
 In case of a **significant** disruption, after receiving approval from our Authorizing Official, the Contractor's team will deploy a new instance of the entire system to a different region.
-

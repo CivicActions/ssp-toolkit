@@ -9,7 +9,6 @@ components:
   - ./components/Contractor
   - ./components/Drupal
   - ./components/Ilias
-  - ./components/Privacy
   - ./components/Project
   - ./components/SSH
 standards:

@@ -5,7 +5,7 @@ This checklist provides incident response procedures. For more detail, see the [
 ## Contents
 <!--TOC-->
 
-- [1. _Breathe_](#1-_breathe_)
+- [1. _Breathe_](#1-breathe)
 - [2. Start documenting](#2-start-documenting)
 - [3. Initiate the response](#3-initiate-the-response)
 - [4. Assess the incident](#4-assess-the-incident)
@@ -54,7 +54,7 @@ B. Respond accordingly:
              Use the [_Explicit Handoff Ceremony_](security-irp.md#explicit-handoff-ceremony) when transferring/changing roles.
 
   - **False alarm**
-    
+
     Conclude the incident. Proceed to [_6. Conclude the incident_](#conclude-the-incident).
 
 ## 4. Assess the incident

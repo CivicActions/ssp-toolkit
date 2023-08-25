@@ -107,7 +107,7 @@ satisfies:
   summary: >
     Project ensures access authorizations enforced in accordance
     with user definitions.
-- control_key: AC-3(9)
+- control_key: AC-3 (9)
   control_name: CONTROLLED RELEASE
   standard_key: NIST SP 800-53 Revision 4
   covered_by: []
