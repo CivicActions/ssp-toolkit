@@ -113,7 +113,7 @@ def write_file(rows: list):
 
 
 def main():
-    project = ssptoolkit.load_project_data()
+    project = ssptoolkit.get_project()
     components = project.get_components()
     header: list = ["Control", "Status"] + [Path(c).name for c in components]
     component_data = ssptoolkit.load_controls_by_id(component_list=components)
