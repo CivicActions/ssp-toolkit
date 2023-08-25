@@ -20,7 +20,7 @@ class Part(BaseModel):
     narrative: str
 
     def __str__(self):
-        return f"#### {self.party}\n\n{self.narrative}\n"
+        return f"##### {self.party}\n\n{self.narrative}\n"
 
 
 class Control(BaseModel):
@@ -50,8 +50,8 @@ class Control(BaseModel):
         self.parts = sort_by_keys(self.parts)
         for key, part in self.parts.items():
             for p in part:
-                part_key = "" if key == "_default" else key
-                parts = parts + f"{part_key}\n{str(p)}\n"
+                part_key = "" if key == "_default" else f"#### {key}"
+                parts = parts + f"{part_key}\n\n{str(p)}\n"
         return parts
 
     def __str__(self):

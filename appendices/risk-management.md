@@ -2,7 +2,7 @@
 
 ## Client Project Full Name
 
-March 2023
+August 2023
 Version 3.4
 
 CivicActions, Inc
@@ -56,4 +56,3 @@ The following is a list of project risks that are known at the start of the proj
 |---|---|---|---|
 | Security Clearances | The time need to get security clearances could delay the project. | The project manager will work with the Client to ensure that clearances are performed in a timely manner. | Project Manager |
 | Content Migration | The content migration could surface unforeseen issues. | A thorough content inventory prior to beginning the migration should provide insight into issues before they arise. | Engineer |
-

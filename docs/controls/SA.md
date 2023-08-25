@@ -1,29 +1,29 @@
-# Reusable Component Library System Security Plan
-
-# NIST SP 800-53 Revision 4
+# Reusable OpenControl Components (SSP-Toolkit).
 
 ## SA: System and Services Acquisition
 
 ### SA-1: System And Services Acquisition Policy And Procedures
 
 ```text
-The organization:
-  a.  Develops, documents, and disseminates to [Assignment: organization-defined
-personnel or roles]:
-    1.  A system and services acquisition policy that addresses purpose, scope,
-roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
-    2.  Procedures to facilitate the implementation of the system and services
-acquisition policy and associated system and services acquisition controls; and
-  b.  Reviews and updates the current:
-    1.  System and services acquisition policy [Assignment: organization-defined
-frequency]; and
-    2.  System and services acquisition procedures [Assignment: organization-defined
-frequency].
-```
+ - a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]:
+   - 1. [Selection (one or more): organization-level, mission/business process-level, system-level] system and services acquisition policy that:
+     - (a) Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
+     - (b) Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and
+   - 2. Procedures to facilitate the implementation of the system and services acquisition policy and the associated system and services acquisition controls;
+ - b. Designate an [Assignment: organization-defined official] to manage the development, documentation, and dissemination of the system and services acquisition policy and procedures; and
+ - c. Review and update the current system and services acquisition:
+   - 1. Policy [Assignment: organization-defined frequency] and following [Assignment: organization-defined events]; and
+   - 2. Procedures [Assignment: organization-defined frequency] and following [Assignment: organization-defined events].
 
-##### CivicActions
+```
+**Status:** complete
+
+
+##### Contractor
 
 CivicActions has developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained by the CivicActions System and Services Acquisition (SA) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
+
+
 
 
 ##### Project
@@ -36,14 +36,13 @@ This is Agency common control. More data about implementation can be obtained fr
 ### SA-2: Allocation Of Resources
 
 ```text
-The organization:
-  a.  Determines information security requirements for the information system
-or information system service in mission/business process planning;
-  b.  Determines, documents, and allocates the resources required to protect the
-information system or information system service as part of its capital planning and investment control process; and
-  c.  Establishes a discrete line item for information security in organizational
-programming and budgeting documentation.
+ - a. Determine the high-level information security and privacy requirements for the system or system service in mission and business process planning;
+ - b. Determine, document, and allocate the resources required to protect the system or system service as part of the organizational capital planning and investment control process; and
+ - c. Establish a discrete line item for information security and privacy in organizational programming and budgeting documentation.
+
 ```
+**Status:** complete
+
 
 ##### Project
 
@@ -56,21 +55,21 @@ Costs for providing security at the infrastructure level are contained in the bu
 
 #### a
 
-##### CivicActions
+##### Contractor
 
 CivicActions' Security Office, in collaboration with the System Owner, act and/or meet on a pre-determined basis to determine information system security requirements and to develop implementation budgets and plans.
 
 
 #### b
 
-##### CivicActions
+##### Contractor
 
 The CivicActions Security Office, in collaboration with the System Owner, determines, designates, documents, and allocates the resources required to protect the system as part of its capital planning and investment control processes.
 
 
 #### c
 
-##### CivicActions
+##### Contractor
 
 The annual budget developed by the System Owner includes explicit budgetary line items for FISMA security requirements. Additional security-related expenditures that fall outside of explicit compliance requirements are addressed in sub-lines under the CivicActions Information Technology budget.
 
@@ -78,16 +77,14 @@ The annual budget developed by the System Owner includes explicit budgetary line
 ### SA-3: System Development Life Cycle
 
 ```text
-The organization:
-  a.  Manages the information system using [Assignment: organization-defined system
-development life cycle] that incorporates information security considerations;
-  b.  Defines and documents information security roles and responsibilities throughout
-the system development life cycle;
-  c.  Identifies individuals having information security roles and responsibilities;
-and
-  d.  Integrates the organizational information security risk management process
-into system development life cycle activities.
+ - a. Acquire, develop, and manage the system using [Assignment: organization-defined system development life cycle] that incorporates information security and privacy considerations;
+ - b. Define and document information security and privacy roles and responsibilities throughout the system development life cycle;
+ - c. Identify individuals having information security and privacy roles and responsibilities; and
+ - d. Integrate the organizational information security and privacy risk management process into system development life cycle activities.
+
 ```
+**Status:** complete
+
 
 ##### Project
 
@@ -96,7 +93,7 @@ The Project draws from the None, NIST SP 800-64, and Agile software development 
 
 #### a
 
-##### CivicActions
+##### Contractor
 
 The system and application(s) are managed by CivicActions using the Agile software development methodology, which provides a continuous System Development Life Cycle (SDLC) methodology. CivicActions Agile management continues to improve the software through ongoing planned code releases. The process is overseen by the Change Control Board (CCB) as described in CM-1. Each point release introduces code and configuration changes to the website through the following SDLC methodology:
 
@@ -122,7 +119,7 @@ The system and application(s) are managed by CivicActions using the Agile softwa
 
 #### b
 
-##### CivicActions
+##### Contractor
 
 The CivicActions organization defines and documents information security roles and responsibilities throughout the SDLC. The following teams participate in this process:
 
@@ -146,14 +143,14 @@ Security responsibilities performed by these teams include the following:
 
 #### c
 
-##### CivicActions
+##### Contractor
 
 Each of the CivicActions teams described in SA-3(b) has a team leader who is responsible for defining the roles and responsibilities of individual personnel members within that team. CivicActions uses role-based management for access and authentication implementation and enforcement.
 
 
 #### d
 
-##### CivicActions
+##### Contractor
 
 The CivicActions organization integrates the organizational information security risk management process into system development life cycle activities by requiring that the processes defined in SA-3(a) and (b) above are adhered to by all information system developers and associated security personnel.
 
@@ -161,18 +158,22 @@ The CivicActions organization integrates the organizational information security
 ### SA-4: Acquisition Process
 
 ```text
-The organization includes the following requirements, descriptions, and criteria, explicitly or by reference, in the acquisition contract for the information system, system component, or information system service in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs:
-  a.  Security functional requirements;
-  b.  Security strength requirements;
-  c.  Security assurance requirements;
-  d.  Security-related documentation requirements;
-  e.  Requirements for protecting security-related documentation;
-  f.  Description of the information system development environment and environment
-in which the system is intended to operate; and
-  g.  Acceptance criteria.
-```
+Include the following requirements, descriptions, and criteria, explicitly or by reference, using [Selection (one or more): standardized contract language, [Assignment: organization-defined contract language]] in the acquisition contract for the system, system component, or system service:
+ - a. Security and privacy functional requirements;
+ - b. Strength of mechanism requirements;
+ - c. Security and privacy assurance requirements;
+ - d. Controls needed to satisfy the security and privacy requirements.
+ - e. Security and privacy documentation requirements;
+ - f. Requirements for protecting security and privacy documentation;
+ - g. Description of the system development environment and environment in which the system is intended to operate;
+ - h. Allocation of responsibility or identification of parties responsible for information security, privacy, and supply chain risk management; and
+ - i. Acceptance criteria.
 
-##### CivicActions
+```
+**Status:** partial
+
+
+##### Contractor
 
 The CivicActions System and Services Acquisition Policy affects all personnel with purchasing authorization and applies to all purchases or deployments including infrastructure, software or hardware. The CivicActions System and Services Acquisition Policy contains the process for determining acceptance criteria for all system software and application services.
 
@@ -181,6 +182,8 @@ The Acquisition Security Policy includes an assessment that evaluates the produc
 The CivicActions Security Office is responsible for determining the security documentation that must be included in the information system or services acquisition contracts.
 
 Configuration and design of the development and production environments are hosted in the CivicActions Git repository. All documentation is strictly controlled regarding transportation and storage in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs.
+
+
 
 
 ##### Project
@@ -195,8 +198,11 @@ The Project organization reviews and approves all acquisition contracts in accor
 ### SA-4 (10): Use Of Approved Piv Products
 
 ```text
-The organization employs only information technology products on the FIPS 201-approved products list for Personal Identity Verification (PIV) capability implemented within organizational information systems.
+Employ only information technology products on the FIPS 201-approved products list for Personal Identity Verification (PIV) capability implemented within organizational systems.
+
 ```
+**Status:** incomplete
+
 
 ##### Project
 
@@ -208,29 +214,20 @@ It is the responsibility of CivicActions for implementation of PIV capability fo
 ### SA-5: Information System Documentation
 
 ```text
-The organization:
-  a.  Obtains administrator documentation for the information system, system component,
-or information system service that describes:
-    1.  Secure configuration, installation, and operation of the system, component,
-or service;
-    2.  Effective use and maintenance of security functions/mechanisms; and
-    3.  Known vulnerabilities regarding configuration and use of administrative
-(i.e., privileged) functions;
-  b.  Obtains user documentation for the information system, system component,
-or information system service that describes:
-    1.  User-accessible security functions/mechanisms and how to effectively use
-those security functions/mechanisms;
-    2.  Methods for user interaction, which enables individuals to use the system,
-component, or service in a more secure manner; and
-    3.  User responsibilities in maintaining the security of the system, component,
-or service;
-  c.  Documents attempts to obtain information system, system component, or information
-system service documentation when such documentation is either unavailable or nonexistent and takes [Assignment: organization-defined actions] in response;
-  d.  Protects documentation as required, in accordance with the risk management
-strategy; and
-  e.  Distributes documentation to [Assignment: organization-defined personnel
-or roles].
+ - a. Obtain or develop administrator documentation for the system, system component, or system service that describes:
+   - 1. Secure configuration, installation, and operation of the system, component, or service;
+   - 2. Effective use and maintenance of security and privacy functions and mechanisms; and
+   - 3. Known vulnerabilities regarding configuration and use of administrative or privileged functions;
+ - b. Obtain or develop user documentation for the system, system component, or system service that describes:
+   - 1. User-accessible security and privacy functions and mechanisms and how to effectively use those functions and mechanisms;
+   - 2. Methods for user interaction, which enables individuals to use the system, component, or service in a more secure manner and protect individual privacy; and
+   - 3. User responsibilities in maintaining the security of the system, component, or service and privacy of individuals;
+ - c. Document attempts to obtain system, system component, or system service documentation when such documentation is either unavailable or nonexistent and take [Assignment: organization-defined actions] in response; and
+ - d. Distribute documentation to [Assignment: organization-defined personnel or roles].
+
 ```
+**Status:** partial
+
 
 ##### Project
 
@@ -253,10 +250,14 @@ In this architecture, documentation of the infrastructure configuration in the f
 AWS built-in features include online documentation for management of the infrastructure at http://aws.amazon.com/documentation/
 
 
-##### CivicActions
+#### a
+
+##### Contractor
 
 Some application features are built on a custom basis and are not part of standard FOSS packages. Administrator documentation for those custom features is maintained in the CivicActions Git repository documentation system.
 
+
+#### a
 
 ##### Ilias
 
@@ -287,7 +288,9 @@ AWS built-in features include online documentation of AWS services at http://aws
    related to security responsibilities of customers using AWS services.
 
 
-##### CivicActions
+#### b
+
+##### Contractor
 
 The publicly-available FOSS package documentation described in control SA-5(a) also includes user documentation for non-administrators as described in control AC-3. This includes documentation on how to create and manage user accounts as well as how to create, update and delete content.
 
@@ -295,6 +298,8 @@ CivicActions follows the user documentation standard practice to provide context
 
 The CivicActions Customer Support team, described in control SA-3(b), handles questions about how to use the system. Questions are submitted by sending an email to support@civicactions.com, which triggers the creation of a ticket in the CivicActions customer support ticketing system.
 
+
+#### b
 
 ##### Ilias
 
@@ -308,10 +313,12 @@ The public documentation at Ilias.de contains user documentation for the informa
 
 #### c
 
-##### CivicActions
+##### Contractor
 
 If the information needed to answer a question is not already included in the website's public-facing documentation, a ticket is created to determine whether the question is sufficiently general in nature to warrant adding the answer to the website's documentation.
 
+
+#### c
 
 ##### Ilias
 
@@ -324,10 +331,14 @@ As a popular and well-used and maintained free and open source (FOSS) project, i
 AWS built-in features include online documentation that is protected by AWS from unauthorized modification or deletion within AWS system.
 
 
-##### CivicActions
+#### d
+
+##### Contractor
 
 All administrator documentation is housed in a protected Git repository. User documentation is publicly available.
 
+
+#### d
 
 ##### Ilias
 
@@ -340,10 +351,14 @@ The Ilias.de documentation is multi-sourced on GitHub and private repositories.
 AWS built-in features include online documentation located at http://aws.amazon.com/documentation/ that is publicly available.
 
 
-##### CivicActions
+#### e
+
+##### Contractor
 
 As needed and approved by the CivicActions Security Office, documentation is available to appropriate personnel by granting access to the private Git repository.
 
+
+#### e
 
 ##### Ilias
 
@@ -352,18 +367,19 @@ As the Ilias.de documentation is publicly available, there is no need to provide
 ### SA-9: External Information System Services
 
 ```text
-The organization:
-  a.  Requires that providers of external information system services comply with
-organizational information security requirements and employ [Assignment: organization-defined security controls] in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance;
-  b.  Defines and documents government oversight and user roles and responsibilities
-with regard  to external information system services; and
-  c.  Employs [Assignment: organization-defined processes, methods, and techniques]
-to monitor security control compliance by external service providers on an ongoing basis.
-```
+ - a. Require that providers of external system services comply with organizational security and privacy requirements and employ the following controls: [Assignment: organization-defined controls];
+ - b. Define and document organizational oversight and user roles and responsibilities with regard to external system services; and
+ - c. Employ the following processes, methods, and techniques to monitor control compliance by external service providers on an ongoing basis: [Assignment: organization-defined processes, methods, and techniques].
 
-##### CivicActions
+```
+**Status:** complete
+
+
+##### Contractor
 
 CivicActions does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing or transmitting federal agency data.
+
+
 
 
 ##### Project
@@ -371,45 +387,3 @@ CivicActions does not have any dedicated interconnections between information sy
 Project does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing, or transmitting federal agency data.
 
 Project is hosted on the AWS Cloud platform, which was approved under the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013.
-
-
-### SA-12: Supply Chain Protection
-
-```text
-The organization protects against supply chain threats to the information system, system component, or information system service by employing [Assignment: organization-defined security safeguards] as part of a comprehensive, defense-in-breadth information security strategy.
-```
-
-##### AWS
-
-In this architecture, initial private/public SSH keys stored in Identity and Access Management (IAM) are supplied to Amazon EC2 instances upon launch, and the public key portion is managed within the AWS Amazon EC2 service. In addition, server-side encryption is used for Amazon S3 storage and Amazon RDS databases, using key management provided by AWS for the storage buckets and Amazon RDS databases.
-
-
-### SA-13: Trustworthiness
-
-```text
-The organization:
-  a.  Describes the trustworthiness required in the [Assignment: organization-defined
-information system, information system component, or information system service] supporting its critical missions/business functions; and
-  b.  Implements [Assignment: organization-defined assurance overlay] to achieve
-such trustworthiness.
-```
-
-##### AWS
-
-In this architecture, encryption mechanisms are employed for data at rest and in transit. For data at rest, AES-256 Server Side encryption is employed for data stored in Amazon S3, and Amazon RDS databases. For data in transit, to protect against exposure of any cleartext data transmitted deliberately (upload/download) or incidentally during interactive systems management operations, Amazon S3 object access can only be conducted over encrypted sessions via TLS; the bastion host, Amazon EC2 instances and associated security groups are configured for encrypted SSH sessions only. For web user access, the Elastic Load Balancing (ELB) employs a TLS endpoint.
-
-AWS built-in features employ TLS for AWS Management Console sessions, AWS API calls, and AWS Command Line Interface connections.
-
-
-## SA: SA
-
-### SA-39: 
-
-##### AWS
-
-In this architecture, the AMIs that make up the operating systems deployed on Amazon EC2 instances maintain separate execution domains/address spaces for executing processes within the customer operating environment.
-
-AWS built-in features of the hypervisors that support the infrastructure maintain separate execution domains/address spaces for executing processes.
-
-
-

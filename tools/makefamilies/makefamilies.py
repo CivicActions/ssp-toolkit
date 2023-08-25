@@ -123,7 +123,7 @@ def main(output_dir):
         print(f"Creating output directory {controls_dir.resolve(strict=False)}")
         controls_dir.mkdir(exist_ok=False)
 
-    project = ssptoolkit.load_project_data()
+    project = ssptoolkit.get_project()
     family_files = ssptoolkit.get_component_files(project.get_components())
     create_family(family_files, out_path=output_dir)
     print("Process complete.")

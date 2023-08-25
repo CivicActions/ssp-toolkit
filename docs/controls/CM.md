@@ -1,30 +1,30 @@
-# Reusable Component Library System Security Plan
-
-# NIST SP 800-53 Revision 4
+# Reusable OpenControl Components (SSP-Toolkit).
 
 ## CM: Configuration Management
 
 ### CM-1: Configuration Management Policy And Procedures
 
 ```text
-The organization:
-  a.  Develops, documents, and disseminates to [Assignment: organization-defined
-personnel or roles]:
-    1.  A configuration management policy that addresses purpose, scope, roles,
-responsibilities, management commitment, coordination among organizational entities, and compliance; and
-    2.  Procedures to facilitate the implementation of the configuration management
-policy and associated configuration management controls; and
-  b.  Reviews and updates the current:
-    1.  Configuration management policy [Assignment: organization-defined frequency];
-and
-    2.  Configuration management procedures [Assignment: organization-defined
-frequency].
-```
+ - a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]:
+   - 1. [Selection (one or more): organization-level, mission/business process-level, system-level] configuration management policy that:
+     - (a) Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
+     - (b) Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and
+   - 2. Procedures to facilitate the implementation of the configuration management policy and the associated configuration management controls;
+ - b. Designate an [Assignment: organization-defined official] to manage the development, documentation, and dissemination of the configuration management policy and procedures; and
+ - c. Review and update the current configuration management:
+   - 1. Policy [Assignment: organization-defined frequency] and following [Assignment: organization-defined events]; and
+   - 2. Procedures [Assignment: organization-defined frequency] and following [Assignment: organization-defined events].
 
-##### CivicActions
+```
+**Status:** complete
+
+
+##### Contractor
 
 CivicActions has developed, documented and disseminated to personnel a configuration management policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Configuration Management (CM) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 Configuration changes are overseen by the Change Control Board (CCB) consisting of the System Owner, Project Manager, CivicActions Operations staff and the engineering team.
+
+
 
 
 ##### Project
@@ -35,8 +35,15 @@ The configuration management policy and procedures are formally documented in th
 ### CM-2: Baseline Configuration
 
 ```text
-The organization develops, documents, and maintains under configuration control, a current baseline configuration of the information system.
+ - a. Develop, document, and maintain under configuration control, a current baseline configuration of the system; and
+ - b. Review and update the baseline configuration of the system:
+   - 1. [Assignment: organization-defined frequency];
+   - 2. When required due to [Assignment: Assignment organization-defined circumstances]; and
+   - 3. When system components are installed or upgraded.
+
 ```
+**Status:** partial
+
 
 ##### AWS
 
@@ -45,15 +52,21 @@ Hardware Baselines
 All hardware is maintained by the AWS cloud. The system inherits hardware configuration aspects of this control from the FedRAMP Provisional ATO granted to AWS, dated 1 May 2013, for the following: baseline configuration.
 
 
-##### CivicActions
+
+
+##### Contractor
 
 A current baseline configuration is always available - stored as a tag in the Git repository - such that the site can be regenerated or rolled back should unauthorized or failing changes be applied.
+
+
 
 
 ##### Ilias
 
 The baseline configuration is maintained in Git and described in the Configuration Management Plan, which describes the change workflow and software configuration. In the context of Security Configuration Management, the baseline configuration is a collection of formally approved configuration state(s) of one or more configuration items ("features") that compose the system. The baseline configuration is used to restore and serves as the basis against which the next change or set of changes to the system is made.
 The features for the system are maintained in the website's source code, which is managed in Git, a source code version control system. Once the source code is updated, Git maintains the new version of staged code once committed in the Git repository as the new baseline. All code prior to it being staged is documented, tested and approved by CivicActions Development, which is described in control SA-3. The production environment is configured to take database snapshots daily.
+
+
 
 
 ##### Project
@@ -64,12 +77,17 @@ A CM process has been established and documented in the Project CMP. All updates
 ### CM-4: Security Impact Analysis
 
 ```text
-The organization analyzes changes to the information system to determine potential security impacts prior to change implementation.
-```
+Analyze changes to the system to determine potential security and privacy impacts prior to change implementation.
 
-##### CivicActions
+```
+**Status:** complete
+
+
+##### Contractor
 
 Security impact analysis is conducted and documented within the Change Request (CR) process described in CM-3(b). All proposed configuration- controlled changes to the application are tested first in a sandboxed development environment before being pushed to a staging environment to be tested by another developer and by the Engineering team prior to final approval from CCB to move changes to the production environment.
+
+
 
 
 ##### Project
@@ -80,16 +98,13 @@ An Information Security Program is in place to ensure all security-centric impac
 ### CM-6: Configuration Settings
 
 ```text
-The organization:
-  a.  Establishes and documents configuration settings for information technology
-products employed within the information system using [Assignment: organization-defined security configuration checklists] that reflect the most restrictive mode consistent with operational requirements;
-  b.  Implements the configuration settings;
-  c.  Identifies, documents, and approves any deviations from established configuration
-settings for [Assignment: organization-defined information system components] based on [Assignment: organization-defined operational requirements]; and
-  d.  Monitors and controls changes to the configuration settings in accordance
-with organizational policies and procedures.
-```
+ - a. Establish and document configuration settings for components employed within the system that reflect the most restrictive mode consistent with operational requirements using [Assignment: organization-defined common secure configurations];
+ - b. Implement the configuration settings;
+ - c. Identify, document, and approve any deviations from established configuration settings for [Assignment: organization-defined system components] based on [Assignment: organization-defined operational requirements]; and
+ - d. Monitor and control changes to the configuration settings in accordance with organizational policies and procedures.
 
+```
+**Status:** complete
 #### a
 
 ##### Project
@@ -99,10 +114,12 @@ The Project is configured in compliance with the applicable baseline security st
 
 #### b
 
-##### CivicActions
+##### Contractor
 
 CivicActions developers follow security best practices according to the guidelines set by the CivicActions Security Office.
 
+
+#### b
 
 ##### Project
 
@@ -119,7 +136,7 @@ The CivicActions CCB, identifies, approves, and documents exceptions to mandator
 
 #### d
 
-##### CivicActions
+##### Contractor
 
 All changes to the configuration settings are logged in the Git source code version control system, which records the identity of the developer who committed each change. Version control is enforced, with previous tagged code releases kept for rollback purposes.
 
@@ -127,19 +144,19 @@ All changes to the configuration settings are logged in the Git source code vers
 ### CM-7: Least Functionality
 
 ```text
-The organization:
-  a.  Configures the information system to provide only essential capabilities;
-and
-  b.  Prohibits or restricts the use of the following functions, ports, protocols,
-and/or services: [Assignment: organization-defined prohibited or restricted functions, ports, protocols, and/or services].
-```
+ - a. Configure the system to provide only [Assignment: organization-defined mission essential capabilities]; and
+ - b. Prohibit or restrict the use of the following functions, ports, protocols, software, and/or services: [Assignment: organization-defined prohibited or restricted functions, system ports, protocols, software, and/or services].
 
+```
+**Status:** partial
 #### a
 
 ##### AWS
 
 In this architecture, only essential capabilities for a multi-tiered web service are configured. AWS Identity and Access Management (IAM) baseline Groups and Roles are configured to support restricted access to AWS resources by privileged users and non-person entities (Amazon EC2 systems operating with a role) authorized and assigned by the organization.
 
+
+#### a
 
 ##### Project
 
@@ -153,6 +170,8 @@ Services are limited to provide only essential capabilities.
 In this architecture, ports, protocols, and services are restricted to those that are required for a multi-tiered web service, via AWS security group rules.
 
 
+#### b
+
 ##### Project
 
 The Project maintains strict default deny policy with access controls at the firewall, and on individual systems. Inbound access across the system boundary is only allowed on ports 22 (ssh), 80 (http) and 443 (https), with an additional port, 25 (smtp) open on the mail server.
@@ -161,18 +180,17 @@ The Project maintains strict default deny policy with access controls at the fir
 ### CM-8: Information System Component Inventory
 
 ```text
-The organization:
-  a.  Develops and documents an inventory of information system components that:
-    1.  Accurately reflects the current information system;
-    2.  Includes all components within the authorization boundary of the information
-system;
-    3.  Is at the level of granularity deemed necessary for tracking and reporting;
-and
-    4.  Includes [Assignment: organization-defined information deemed necessary
-to achieve effective information system component accountability]; and
-  b.  Reviews and updates the information system component inventory [Assignment:
-organization-defined frequency].
+ - a. Develop and document an inventory of system components that:
+   - 1. Accurately reflects the system;
+   - 2. Includes all components within the system;
+   - 3. Does not include duplicate accounting of components or components assigned to any other system;
+   - 4. Is at the level of granularity deemed necessary for tracking and reporting; and
+   - 5. Includes the following information to achieve system component accountability: [Assignment: organization-defined information deemed necessary to achieve effective system component accountability]; and
+ - b. Review and update the system component inventory [Assignment: organization-defined frequency].
+
 ```
+**Status:** partial
+
 
 ##### Ilias
 
@@ -206,18 +224,19 @@ AWS built-in features provides a dynamically updated inventory of all infrastruc
 ### CM-10: Software Usage Restrictions
 
 ```text
-The organization:
-  a.  Uses software and associated documentation in accordance with contract agreements
-and copyright laws;
-  b.  Tracks the use of software and associated documentation protected by quantity
-licenses to control copying and distribution; and
-  c.  Controls and documents the use of peer-to-peer file sharing technology to
-ensure that this capability is not used for the unauthorized distribution, display, performance, or reproduction of copyrighted work.
-```
+ - a. Use software and associated documentation in accordance with contract agreements and copyright laws;
+ - b. Track the use of software and associated documentation protected by quantity licenses to control copying and distribution; and
+ - c. Control and document the use of peer-to-peer file sharing technology to ensure that this capability is not used for the unauthorized distribution, display, performance, or reproduction of copyrighted work.
 
-##### CivicActions
+```
+**Status:** none
+
+
+##### Contractor
 
 Drupal is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These are all compatible with the Free Software Foundation's General Public License (GPL) version 2 or later and are freely available for use under copyright law.
+
+
 
 
 ##### Ilias
@@ -227,33 +246,28 @@ Ilias is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These are al
 ### CM-11: User-Installed Software
 
 ```text
-The organization:
-  a.  Establishes [Assignment: organization-defined policies] governing the installation
-of software by users;
-  b.  Enforces software installation policies through [Assignment: organization-defined
-methods]; and
-  c.  Monitors policy compliance at [Assignment: organization-defined frequency].
-```
+ - a. Establish [Assignment: organization-defined policies] governing the installation of software by users;
+ - b. Enforce software installation policies through the following methods: [Assignment: organization-defined methods]; and
+ - c. Monitor policy compliance [Assignment: organization-defined frequency].
 
+```
+**Status:** complete
 #### a
 
-##### CivicActions
+##### Contractor
 
 All software installed in the system environment must be first approved via the CCB resulting in a Change Request (CR) being initiated and executed. Software installation on the computing nodes within the authorization boundary is restricted to administrators. All CivicActions internal administrators are informed of this during their initial training and as part of the rules of behavior document.
 
 
 #### b
 
-##### CivicActions
+##### Contractor
 
 CivicActions enforces software installation policies through required acknowledgment and sign-off on acceptable use policy by CivicActions personnel. CivicActions Development is responsible for enforcing compliance with the acceptable use policy.
 
 
 #### c
 
-##### CivicActions
+##### Contractor
 
 CivicActions monitors policy compliance continuously via the code release planning and quality control systems built into the System Development Life Cycle described in control SA-3.
-
-
-

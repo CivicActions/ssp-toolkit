@@ -27,7 +27,7 @@ satisfies:
       All CivicActions employees are required to participate in
       incident response training, as required by Incident Response Plan changes,
       and annually. The CivicActions Incident Response Plan
-      (<https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/>) is the basis for the training
+      (<https://guidebook.civicactions.com/en/latest/common-practices-tools/security/incident-response-plan/>) is the basis for the training
       and the incident response workflow created by the Security Office. Upon
       a review of past incidents, the training is updated to ensure processes
       and workflows are updated.
@@ -41,7 +41,7 @@ satisfies:
   - key: a
     text: >
       CivicActions has implemented an Incident Response Plan
-      (<https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/>) that explains the process for
+      (<https://guidebook.civicactions.com/en/latest/common-practices-tools/security/incident-response-plan/>) that explains the process for
       incident handling and discusses preparation, detection and analysis,
       containment, eradication, and recovery.
 
@@ -62,7 +62,7 @@ satisfies:
       suggesting changes to improve the incident response process. Tickets
       created in response to the incident event are reviewed upon completion by
       the Operations staff and Security Office. Changes to the Incident Response
-      Plan (<https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/>) require a team review
+      Plan (<https://guidebook.civicactions.com/en/latest/common-practices-tools/security/incident-response-plan/>) require a team review
       session for approval.
   implementation_status: complete
 - control_key: IR-5
@@ -81,7 +81,7 @@ satisfies:
       associated GitHub Issues. Internal incidents reported are processed
       within the GitHub Issue queue. Details of the handling procedures are
       included in the CivicActions Incident Response Plan
-      (<https://handbook.civicactions.com/en/latest/100-security/incident-response-plan//#response-process>) Response
+      (<https://guidebook.civicactions.com/en/latest/common-practices-tools/security/incident-response-plan//#response-process>) Response
       Process.
   implementation_status: complete
 - control_key: IR-6
@@ -137,7 +137,7 @@ satisfies:
       Incident response plays a pivotal role in monitoring, detecting and
       handling security incidents of the entire information system.
       CivicActions has developed an Incident Response Plan
-      (<https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/>) that:
+      (<https://guidebook.civicactions.com/en/latest/common-practices-tools/security/incident-response-plan/>) that:
 
 
       1. Provides CivicActions with procedures and tools required for incident handling;
@@ -159,7 +159,7 @@ satisfies:
     text: >
       The CivicActions Incident Response Plan is distributed to
       all CivicActions team members as part of the
-      CivicActions Handbook (<https://handbook.civicactions.com/en/latest/100-security/incident-response-plan/>).
+      CivicActions Handbook (<https://guidebook.civicactions.com/en/latest/common-practices-tools/security/incident-response-plan/>).
        The Incident Response Team includes members from the Security Office,
        Operations staff, and Drupal Engineering teams.
   - key: c

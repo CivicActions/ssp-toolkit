@@ -80,11 +80,8 @@ def get_standards() -> tuple:
 
 
 def get_standards_control_data(control: str, standards: list) -> dict:
-    also_try = control.replace("(", " (")
     for s in standards:
         if control_data := s.get(control):
-            return control_data
-        elif control_data := s.get(also_try):
             return control_data
     raise KeyError(f"Control {control} not found.")
 
@@ -109,14 +106,6 @@ def get_component_files(components: list) -> dict:
             component_files[family_name].append(component_file.as_posix())
 
     return component_files
-
-
-def load_project_data() -> OpenControl:
-    oc_yaml = Path().joinpath("opencontrol.yaml")
-    if not oc_yaml.is_file():
-        raise FileNotFoundError
-    project = OpenControl.load(path=oc_yaml.as_posix())
-    return project
 
 
 def load_controls_by_id(component_list: list) -> dict:

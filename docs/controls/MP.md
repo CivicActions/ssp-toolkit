@@ -1,24 +1,23 @@
-# Reusable Component Library System Security Plan
-
-# NIST SP 800-53 Revision 4
+# Reusable OpenControl Components (SSP-Toolkit).
 
 ## MP: Media Protection
 
 ### MP-1: Media Protection Policy And Procedures
 
 ```text
-The organization:
-  a.  Develops, documents, and disseminates to [Assignment: organization-defined
-personnel or roles]:
-    1.  A media protection policy that addresses purpose, scope, roles, responsibilities,
-management commitment, coordination among organizational entities, and compliance; and
-    2.  Procedures to facilitate the implementation of the media protection policy
-and associated media protection controls; and
-  b.  Reviews and updates the current:
-    1.  Media protection policy [Assignment: organization-defined frequency];
-and
-    2.  Media protection procedures [Assignment: organization-defined frequency].
+ - a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]:
+   - 1. [Selection (one or more): organization-level, mission/business process-level, system-level] media protection policy that:
+     - (a) Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
+     - (b) Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and
+   - 2. Procedures to facilitate the implementation of the media protection policy and the associated media protection controls;
+ - b. Designate an [Assignment: organization-defined official] to manage the development, documentation, and dissemination of the media protection policy and procedures; and
+ - c. Review and update the current media protection:
+   - 1. Policy [Assignment: organization-defined frequency] and following [Assignment: organization-defined events]; and
+   - 2. Procedures [Assignment: organization-defined frequency] and following [Assignment: organization-defined events].
+
 ```
+**Status:** complete
+
 
 ##### AWS
 
@@ -29,9 +28,13 @@ For the U.S. East, U.S. West, and GovCloud regions, this control is inherited fr
 Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
 
 
-##### CivicActions
+
+
+##### Contractor
 
 CivicActions has developed, documented and disseminated to personnel a media protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Media Protection (MP) Policy and Procedure document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+
+
 
 
 ##### Project
@@ -42,8 +45,11 @@ This is Agency common control. More data about implementation can be obtained fr
 ### MP-2: Media Access
 
 ```text
-The organization restricts access to [Assignment: organization-defined types of digital and/or non-digital media] to [Assignment: organization-defined personnel or roles].
+Restrict access to [Assignment: organization-defined types of digital and/or non-digital media] to [Assignment: organization-defined personnel or roles].
+
 ```
+**Status:** complete
+
 
 ##### AWS
 
@@ -57,12 +63,12 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 ### MP-6: Media Sanitization
 
 ```text
-The organization:
-  a.  Sanitizes [Assignment: organization-defined information system media] prior
-to disposal, release out of organizational control, or release for reuse using [Assignment: organization-defined sanitization techniques and procedures] in accordance with applicable federal and organizational standards and policies; and
-  b.  Employs sanitization mechanisms with the strength and integrity commensurate
-with the security category or classification of the information.
+ - a. Sanitize [Assignment: organization-defined system media] prior to disposal, release out of organizational control, or release for reuse using [Assignment: organization-defined sanitization techniques and procedures]; and
+ - b. Employ sanitization mechanisms with the strength and integrity commensurate with the security category or classification of the information.
+
 ```
+**Status:** complete
+
 
 ##### AWS
 
@@ -76,8 +82,12 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 ### MP-7: Media Use
 
 ```text
-The organization [Selection: restricts; prohibits] the use of [Assignment: organization-defined types of information system media] on [Assignment: organization-defined information systems or system components] using [Assignment: organization-defined security safeguards].
+ - a. [Selection: Restrict, Prohibit] the use of [Assignment: organization-defined types of system media] on [Assignment: organization-defined systems or system components] using [Assignment: organization-defined controls]; and
+ - b. Prohibit the use of portable storage devices in organizational systems when such devices have no identifiable owner.
+
 ```
+**Status:** complete
+
 
 ##### AWS
 
@@ -86,6 +96,3 @@ This Media Protection control associated with hardware components within AWS is 
 For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
 
 Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
-
-
-

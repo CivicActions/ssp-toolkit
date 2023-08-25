@@ -1,33 +1,36 @@
-# Reusable Component Library System Security Plan
-
-# NIST SP 800-53 Revision 4
+# Reusable OpenControl Components (SSP-Toolkit).
 
 ## PS: Personnel Security
 
 ### PS-1: Personnel Security Policy And Procedures
 
 ```text
-The organization:
-  a.  Develops, documents, and disseminates to [Assignment: organization-defined
-personnel or roles]:
-    1.  A personnel security policy that addresses purpose, scope, roles, responsibilities,
-management commitment, coordination among organizational entities, and compliance; and
-    2.  Procedures to facilitate the implementation of the personnel security
-policy and associated personnel security controls; and
-  b.  Reviews and updates the current:
-    1.  Personnel security policy [Assignment: organization-defined frequency];
-and
-    2.  Personnel security procedures [Assignment: organization-defined frequency].
+ - a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]:
+   - 1. [Selection (one or more): organization-level, mission/business process-level, system-level] personnel security policy that:
+     - (a) Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
+     - (b) Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and
+   - 2. Procedures to facilitate the implementation of the personnel security policy and the associated personnel security controls;
+ - b. Designate an [Assignment: organization-defined official] to manage the development, documentation, and dissemination of the personnel security policy and procedures; and
+ - c. Review and update the current personnel security:
+   - 1. Policy [Assignment: organization-defined frequency] and following [Assignment: organization-defined events]; and
+   - 2. Procedures [Assignment: organization-defined frequency] and following [Assignment: organization-defined events].
+
 ```
+**Status:** In Place
+
 
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
 
 
-##### CivicActions
+
+
+##### Contractor
 
 CivicActions has developed, documented and disseminated to personnel a personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Personnel Security (PS) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+
+
 
 
 ##### Project
@@ -40,11 +43,13 @@ This is Agency common control. More data about implementation can be obtained fr
 ### PS-2: Position Risk Designation
 
 ```text
-The organization:
-  a.  Assigns a risk designation to all organizational positions;
-  b.  Establishes screening criteria for individuals filling those positions; and
-  c.  Reviews and updates position risk designations [Assignment: organization-defined frequency].
+ - a. Assign a risk designation to all organizational positions;
+ - b. Establish screening criteria for individuals filling those positions; and
+ - c. Review and update position risk designations [Assignment: organization-defined frequency].
+
 ```
+**Status:** complete
+
 
 ##### Project
 
@@ -60,21 +65,21 @@ This is Agency common control. More data about implementation can be obtained fr
 
 #### a
 
-##### CivicActions
+##### Contractor
 
 Risk designations are assigned to all CivicActions positions. The CivicActions Office of Human Resources works in coordination with the CivicActions Security Office to assign risk designations.
 
 
 #### b
 
-##### CivicActions
+##### Contractor
 
 The CivicActions Office of Human Resources works in coordination with the CivicActions Security Office to establish screening criteria for all CivicActions positions.
 
 
 #### c
 
-##### CivicActions
+##### Contractor
 
 At least every three (3) years, the CivicActions Office of Human Resources reviews and revises position risk designations. If the Office of Human Resources determines that significant changes must be made to the position risk descriptions the Office of Human Resources works in coordination with the CivicActions Security Office to implement changes as required.
 
@@ -82,12 +87,12 @@ At least every three (3) years, the CivicActions Office of Human Resources revie
 ### PS-3: Personnel Screening
 
 ```text
-The organization:
-  a.  Screens individuals prior to authorizing access to the information system;
-and
-  b.  Rescreens individuals according to [Assignment: organization-defined conditions
-requiring rescreening and, where rescreening is so indicated, the frequency of such rescreening].
+ - a. Screen individuals prior to authorizing access to the system; and
+ - b. Rescreen individuals in accordance with [Assignment: organization-defined conditions requiring rescreening and, where rescreening is so indicated, the frequency of rescreening].
+
 ```
+**Status:** complete
+
 
 ##### Project
 
@@ -98,14 +103,14 @@ This is Agency common control. More data about implementation can be obtained fr
 
 #### a
 
-##### CivicActions
+##### Contractor
 
 Prospective CivicActions employees undergo background checks commensurate with the individual’s job duties, the classification of the information they will access, and the risks associated with the role. At the discretion of the CivicActions Security Office, these checks may also be conducted on contractors and/or third party users in cases where they will have access to application data that is not meant to be consumed by the public. In these instances, the Security Office will instruct the Office of Human Resources to conduct a background check before granting access to the information system.
 
 
 #### b
 
-##### CivicActions
+##### Contractor
 
 Rescreening is conducted as required by the individual’s job duties, the classification of the information they will access, and the risks associated with the role. A basic background check is performed for all CivicActions employees.
 
@@ -113,19 +118,16 @@ Rescreening is conducted as required by the individual’s job duties, the class
 ### PS-4: Personnel Termination
 
 ```text
-The organization, upon termination of individual employment:
-  a.  Disables information system access within [Assignment: organization-defined
-time period];
-  b.  Terminates/revokes any authenticators/credentials associated with the individual;
-  c.  Conducts exit interviews that include a discussion of [Assignment: organization-defined
-information security topics];
-  d.  Retrieves all security-related organizational information system-related
-property;
-  e.  Retains access to organizational information and information systems formerly
-controlled by terminated individual; and
-  f.  Notifies [Assignment: organization-defined personnel or roles] within [Assignment:
-organization-defined time period].
+Upon termination of individual employment:
+ - a. Disable system access within [Assignment: organization-defined time period];
+ - b. Terminate or revoke any authenticators and credentials associated with the individual;
+ - c. Conduct exit interviews that include a discussion of [Assignment: organization-defined information security topics];
+ - d. Retrieve all security-related organizational system-related property; and
+ - e. Retain access to organizational information and systems formerly controlled by terminated individual.
+
 ```
+**Status:** complete
+
 
 ##### Project
 
@@ -136,7 +138,7 @@ This is Agency common control. More data about implementation can be obtained fr
 
 #### a
 
-##### CivicActions
+##### Contractor
 
 Information system access is terminated immediately upon the voluntary or involuntary departure of an employee. In the case of involuntary departure, in addition to immediate termination of system access, at no point is a departing employee allowed access to any part of the CivicActions infrastructure.
 In the case of voluntary departure, employees are permitted access to the information system for the duration of their offboarding period. The departing employee’s manager is responsible for informing the Information Technology department when the employee offboarding period concludes. At this time system and facility, access is terminated.
@@ -144,21 +146,21 @@ In the case of voluntary departure, employees are permitted access to the inform
 
 #### b
 
-##### CivicActions
+##### Contractor
 
 The terminated user’s accounts are disabled and all access associated with the individual is revoked.
 
 
 #### c
 
-##### CivicActions
+##### Contractor
 
 The employee's manager or the Office of Human Resources conducts exit interviews with all employees who leave CivicActions voluntarily. There is a general discussion about the process of turning in any/all company-issued devices, laptops, etc.
 
 
 #### d
 
-##### CivicActions
+##### Contractor
 
 CivicActions employees provide their own equipment that must be hardened to security requirements depending upon their roles and duties. CivicActions supplies two-factor authentication tokens that become the property of the employee.
 Some employees may receive company-issued hardware for working on particular projects. These items are collected before the employee exits CivicActions. In the case of an involuntary termination, the Office of Human Resources works to collect company-issued devices and provides paperwork highlighting confidential protections for customers.
@@ -166,14 +168,14 @@ Some employees may receive company-issued hardware for working on particular pro
 
 #### e
 
-##### CivicActions
+##### Contractor
 
 Access to CivicActions information and information systems is always shared so that the termination of an individual will not prevent CivicActions from having access to needed resources.
 
 
 #### f
 
-##### CivicActions
+##### Contractor
 
 When a person is terminated, a standard off-boarding process is used to notify management and CivicActions' Operations staff, and to track the process of disabling access to the information system/information system components. The CivicActions Operations staff and Security Office are given at least four hours notice to schedule the deactivation of access upon termination. Deactivation is a manual process that is tracked via a Trello card in order to meet the four hour turnaround time before termination.
 
@@ -181,16 +183,14 @@ When a person is terminated, a standard off-boarding process is used to notify m
 ### PS-5: Personnel Transfer
 
 ```text
-The organization:
-  a.  Reviews and confirms ongoing operational need for current logical and physical
-access authorizations to information systems/facilities when individuals are reassigned or transferred to other positions within the organization;
-  b.  Initiates [Assignment: organization-defined transfer or reassignment actions]
-within [Assignment: organization-defined time period following the formal transfer action];
-  c.  Modifies access authorization as needed to correspond with any changes in
-operational need due to reassignment or transfer; and
-  d.  Notifies [Assignment: organization-defined personnel or roles] within [Assignment:
-organization-defined time period].
+ - a. Review and confirm ongoing operational need for current logical and physical access authorizations to systems and facilities when individuals are reassigned or transferred to other positions within the organization;
+ - b. Initiate [Assignment: organization-defined transfer or reassignment actions] within [Assignment: organization-defined time period following the formal transfer action];
+ - c. Modify access authorization as needed to correspond with any changes in operational need due to reassignment or transfer; and
+ - d. Notify [Assignment: organization-defined personnel or roles] within [Assignment: organization-defined time period].
+
 ```
+**Status:** complete
+
 
 ##### Project
 
@@ -203,28 +203,28 @@ This is Agency common control. More data about implementation can be obtained fr
 
 #### a
 
-##### CivicActions
+##### Contractor
 
 When an employee, third party personnel and/or contractor is transferred to a new project or position within CivicActions, they may maintain access to the previous system they were working on in order to facilitate the process of maintenance and knowledge transfer. However, as part of the practices of account management (AC-2) and least privilege (AC-6), regular audits of privileged users are conducted and access privileges may be removed when no longer needed. Additionally, adherence to specific client SLAs may enhance the frequency of such audits or the timeliness of privilege removal during personnel transfer.
 
 
 #### b
 
-##### CivicActions
+##### Contractor
 
 When an employee, third party personnel and/or contractor is transferred to a new position within CivicActions and there is a requirement for access change, such access changes are normally completed within five business days.
 
 
 #### c
 
-##### CivicActions
+##### Contractor
 
 Access authorizations are modified as needed to coincide with changes in duties or operational needs upon personnel transfer or reassignment.
 
 
 #### d
 
-##### CivicActions
+##### Contractor
 
 CivicActions Operations staff is informed of transfers that require access authorization modifications within five business days by the Project Manager, System Owner or Office of Human Resources.
 
@@ -232,18 +232,14 @@ CivicActions Operations staff is informed of transfers that require access autho
 ### PS-6: Access Agreements
 
 ```text
-The organization:
-  a.  Develops and documents access agreements for organizational information
-systems;
-  b.  Reviews and updates the access agreements [Assignment: organization-defined
-frequency]; and
-  c.  Ensures that individuals requiring access to organizational information
-and information systems:
-    1.  Sign appropriate access agreements prior to being granted access; and
-    2.  Re-sign access agreements to maintain access to organizational information
-systems when access agreements have been updated or [Assignment: organization-defined frequency].
-```
+ - a. Develop and document access agreements for organizational systems;
+ - b. Review and update the access agreements [Assignment: organization-defined frequency]; and
+ - c. Verify that individuals requiring access to organizational information and systems:
+   - 1. Sign appropriate access agreements prior to being granted access; and
+   - 2. Re-sign access agreements to maintain access to organizational systems when access agreements have been updated or [Assignment: organization-defined frequency].
 
+```
+**Status:** complete
 #### a
 
 ##### Project
@@ -268,17 +264,14 @@ All individuals requiring access to the Project system are required to sign the 
 ### PS-7: Third-Party Personnel Security
 
 ```text
-The organization:
-  a.  Establishes personnel security requirements including security roles and
-responsibilities for third-party providers;
-  b.  Requires third-party providers to comply with personnel security policies
-and procedures established by the organization;
-  c.  Documents personnel security requirements;
-  d.  Requires third-party providers to notify [Assignment: organization-defined
-personnel or roles] of any personnel transfers or terminations of third-party personnel who possess organizational credentials and/or badges, or who have information system privileges within [Assignment: organization-defined time period]; and
-  e.  Monitors provider compliance.
-```
+ - a. Establish personnel security requirements, including security roles and responsibilities for external providers;
+ - b. Require external providers to comply with personnel security policies and procedures established by the organization;
+ - c. Document personnel security requirements;
+ - d. Require external providers to notify [Assignment: organization-defined personnel or roles] of any personnel transfers or terminations of external personnel who possess organizational credentials and/or badges, or who have system privileges within [Assignment: organization-defined time period]; and
+ - e. Monitor provider compliance with personnel security requirements.
 
+```
+**Status:** complete
 #### a
 
 ##### Project
@@ -317,12 +310,12 @@ Compliance measures for assessing third-party personnel and/or contractors are d
 ### PS-8: Personnel Sanctions
 
 ```text
-The organization:
-  a.  Employs a formal sanctions process for individuals failing to comply with
-established information security policies and procedures; and
-  b.  Notifies [Assignment: organization-defined personnel or roles] within [Assignment:
-organization-defined time period] when a formal employee sanctions process is initiated, identifying the individual sanctioned and the reason for the sanction.
+ - a. Employ a formal sanctions process for individuals failing to comply with established information security and privacy policies and procedures; and
+ - b. Notify [Assignment: organization-defined personnel or roles] within [Assignment: organization-defined time period] when a formal employee sanctions process is initiated, identifying the individual sanctioned and the reason for the sanction.
+
 ```
+**Status:** complete
+
 
 ##### Project
 
@@ -331,16 +324,13 @@ The disciplinary sanctions for personnel failing to comply with establish IT sec
 
 #### a
 
-##### CivicActions
+##### Contractor
 
 The CivicActions Security Office and/or the Office of Human Resources is responsible for determining and enforcing sanctions for failing to comply with established information security policies and procedures. Coaching may be considered prior to sanctions. Sanctions may include but are not limited to written warnings, reduction in system access, demotion, or termination.
 
 
 #### b
 
-##### CivicActions
+##### Contractor
 
 When employee sanctions processes are initiated, the Office of Human Resources notifies the respective Project Manager(s) and CivicActions' Security Office within five business days.
-
-
-
