@@ -18,13 +18,15 @@
 ```
 **Status:** complete
 
-#### Contractor
+
+##### Contractor
 
 CivicActions has developed, documented and disseminated to personnel a system and services acquisition policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained by the CivicActions System and Services Acquisition (SA) Policy document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs/>.
 
 
 
-#### Project
+
+##### Project
 
 The Project complies with the None. The Project will identify new threats/vulnerabilities and technologies that may require updating of solicitation documents.
 
@@ -41,7 +43,8 @@ This is Agency common control. More data about implementation can be obtained fr
 ```
 **Status:** complete
 
-#### Project
+
+##### Project
 
 The Project System Owner is responsible for leading the annual budgeting process and for tracking organizational spending. The System Owner coordinates with the CivicActions Project Manager and CivicActions Security on at least monthly basis to track security priorities and spending patterns and determine financial requirements. The System Owner also coordinates the approval process for interim increases to the security budget, if required. This data is used to support the development of the annual budget.
 
@@ -50,20 +53,23 @@ Security costs are included in Exhibit 53 in the Department's on-line electronic
 Costs for providing security at the infrastructure level are contained in the business cases for infrastructure supporting computing platforms, desktop processing, the network environment, and web capability. Since the Exhibit 53 includes projections for multiple fiscal years, its intention is to identify and anticipate security resources required.
 
 
-a
-#### Contractor
+#### a
+
+##### Contractor
 
 CivicActions' Security Office, in collaboration with the System Owner, act and/or meet on a pre-determined basis to determine information system security requirements and to develop implementation budgets and plans.
 
 
-b
-#### Contractor
+#### b
+
+##### Contractor
 
 The CivicActions Security Office, in collaboration with the System Owner, determines, designates, documents, and allocates the resources required to protect the system as part of its capital planning and investment control processes.
 
 
-c
-#### Contractor
+#### c
+
+##### Contractor
 
 The annual budget developed by the System Owner includes explicit budgetary line items for FISMA security requirements. Additional security-related expenditures that fall outside of explicit compliance requirements are addressed in sub-lines under the CivicActions Information Technology budget.
 
@@ -79,13 +85,15 @@ The annual budget developed by the System Owner includes explicit budgetary line
 ```
 **Status:** complete
 
-#### Project
+
+##### Project
 
 The Project draws from the None, NIST SP 800-64, and Agile software development methodology to ensure security requirements are incorporated during each phase of the life cycle. This helps to ensure the development of secure systems and effective risk management.
 
 
-a
-#### Contractor
+#### a
+
+##### Contractor
 
 The system and application(s) are managed by CivicActions using the Agile software development methodology, which provides a continuous System Development Life Cycle (SDLC) methodology. CivicActions Agile management continues to improve the software through ongoing planned code releases. The process is overseen by the Change Control Board (CCB) as described in CM-1. Each point release introduces code and configuration changes to the website through the following SDLC methodology:
 
@@ -109,8 +117,9 @@ The system and application(s) are managed by CivicActions using the Agile softwa
 - Security issues reported through continuous monitoring
 
 
-b
-#### Contractor
+#### b
+
+##### Contractor
 
 The CivicActions organization defines and documents information security roles and responsibilities throughout the SDLC. The following teams participate in this process:
 
@@ -132,14 +141,16 @@ Security responsibilities performed by these teams include the following:
 - Employ code analysis tools to examine software for common flaws and document the results of the analysis.
 
 
-c
-#### Contractor
+#### c
+
+##### Contractor
 
 Each of the CivicActions teams described in SA-3(b) has a team leader who is responsible for defining the roles and responsibilities of individual personnel members within that team. CivicActions uses role-based management for access and authentication implementation and enforcement.
 
 
-d
-#### Contractor
+#### d
+
+##### Contractor
 
 The CivicActions organization integrates the organizational information security risk management process into system development life cycle activities by requiring that the processes defined in SA-3(a) and (b) above are adhered to by all information system developers and associated security personnel.
 
@@ -161,7 +172,8 @@ Include the following requirements, descriptions, and criteria, explicitly or by
 ```
 **Status:** partial
 
-#### Contractor
+
+##### Contractor
 
 The CivicActions System and Services Acquisition Policy affects all personnel with purchasing authorization and applies to all purchases or deployments including infrastructure, software or hardware. The CivicActions System and Services Acquisition Policy contains the process for determining acceptance criteria for all system software and application services.
 
@@ -173,7 +185,8 @@ Configuration and design of the development and production environments are host
 
 
 
-#### Project
+
+##### Project
 
 The Project follows the guidelines and procedures within the overarching None. The requirements in the information system acquisition contract permit updating security controls as new threat/vulnerabilities are identified and new technologies are implemented.
 
@@ -190,7 +203,8 @@ Employ only information technology products on the FIPS 201-approved products li
 ```
 **Status:** incomplete
 
-#### Project
+
+##### Project
 
 CivicActions/Project and AWS describes this control as “not applicable”, as PIV credentials are not applicable to the Project system. Access and Authentication requirements for the Project system for internal CivicActions and customer are implemented under access management and enforcement (AC-2 and AC-3) and identification and authentication for all users (IA-2 and IA-8).
 
@@ -214,7 +228,8 @@ It is the responsibility of CivicActions for implementation of PIV capability fo
 ```
 **Status:** partial
 
-#### Project
+
+##### Project
 
 Client maintains adequate documentation for the Project system. The Project system documentation is protected as required and made available to authorized personnel. Procedures for protecting system documentation include management in the private CivicActions Git repository and the publicly available documentation trees for Free and Open Source Software (FOSS). The documentation maintained for the Project system includes:
 
@@ -226,22 +241,25 @@ Client maintains adequate documentation for the Project system. The Project syst
   etc.)
 
 
-a
-#### AWS
+#### a
+
+##### AWS
 
 In this architecture, documentation of the infrastructure configuration in the form of AWS CloudFormation templates in JSON or YAML format, architecture diagrams, deployment user guide and security controls implementation details is included.
 
 AWS built-in features include online documentation for management of the infrastructure at http://aws.amazon.com/documentation/
 
 
-a
-#### Contractor
+#### a
+
+##### Contractor
 
 Some application features are built on a custom basis and are not part of standard FOSS packages. Administrator documentation for those custom features is maintained in the CivicActions Git repository documentation system.
 
 
-a
-#### Ilias
+#### a
+
+##### Ilias
 
 Public documentation related to Ilias is maintained by the Ilias Association and is located at <https://Ilias.de/documentation>. This documentation contains administrator documentation for the information system that describes:
 - secure configuration, installation, and operation of the system, component, or service;
@@ -249,8 +267,9 @@ Public documentation related to Ilias is maintained by the Ilias Association and
 - known vulnerabilities regarding configuration and use of administrative functions;
 
 
-b
-#### AWS
+#### b
+
+##### AWS
 
 AWS built-in features include online documentation of AWS services at http://aws.amazon.com/documentation/
 
@@ -269,8 +288,9 @@ AWS built-in features include online documentation of AWS services at http://aws
    related to security responsibilities of customers using AWS services.
 
 
-b
-#### Contractor
+#### b
+
+##### Contractor
 
 The publicly-available FOSS package documentation described in control SA-5(a) also includes user documentation for non-administrators as described in control AC-3. This includes documentation on how to create and manage user accounts as well as how to create, update and delete content.
 
@@ -279,8 +299,9 @@ CivicActions follows the user documentation standard practice to provide context
 The CivicActions Customer Support team, described in control SA-3(b), handles questions about how to use the system. Questions are submitted by sending an email to support@civicactions.com, which triggers the creation of a ticket in the CivicActions customer support ticketing system.
 
 
-b
-#### Ilias
+#### b
+
+##### Ilias
 
 The public documentation at Ilias.de contains user documentation for the information system that describes:
 - user-accessible security functions/mechanisms and how to effectively use those
@@ -290,48 +311,56 @@ The public documentation at Ilias.de contains user documentation for the informa
 - user responsibilities in maintaining the security of the system, component, or service;
 
 
-c
-#### Contractor
+#### c
+
+##### Contractor
 
 If the information needed to answer a question is not already included in the website's public-facing documentation, a ticket is created to determine whether the question is sufficiently general in nature to warrant adding the answer to the website's documentation.
 
 
-c
-#### Ilias
+#### c
+
+##### Ilias
 
 As a popular and well-used and maintained free and open source (FOSS) project, in the event that sought after documentation is not available on Ilias.de, it can usually be found in one of the many forums, mailing lists or Stack Exchange sites covering Ilias and its many contributed modules.
 
-d
-#### AWS
+#### d
+
+##### AWS
 
 AWS built-in features include online documentation that is protected by AWS from unauthorized modification or deletion within AWS system.
 
 
-d
-#### Contractor
+#### d
+
+##### Contractor
 
 All administrator documentation is housed in a protected Git repository. User documentation is publicly available.
 
 
-d
-#### Ilias
+#### d
+
+##### Ilias
 
 The Ilias.de documentation is multi-sourced on GitHub and private repositories.
 
-e
-#### AWS
+#### e
+
+##### AWS
 
 AWS built-in features include online documentation located at http://aws.amazon.com/documentation/ that is publicly available.
 
 
-e
-#### Contractor
+#### e
+
+##### Contractor
 
 As needed and approved by the CivicActions Security Office, documentation is available to appropriate personnel by granting access to the private Git repository.
 
 
-e
-#### Ilias
+#### e
+
+##### Ilias
 
 As the Ilias.de documentation is publicly available, there is no need to provide distribution mechanisms.
 
@@ -345,13 +374,15 @@ As the Ilias.de documentation is publicly available, there is no need to provide
 ```
 **Status:** complete
 
-#### Contractor
+
+##### Contractor
 
 CivicActions does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing or transmitting federal agency data.
 
 
 
-#### Project
+
+##### Project
 
 Project does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing, or transmitting federal agency data.
 

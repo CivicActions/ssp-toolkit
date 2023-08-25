@@ -18,7 +18,8 @@
 ```
 **Status:** complete
 
-#### AWS
+
+##### AWS
 
 This Physical Environment control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
 
@@ -38,7 +39,8 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 ```
 **Status:** complete
 
-#### AWS
+
+##### AWS
 
 This Physical Environment control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
 
@@ -63,7 +65,8 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 ```
 **Status:** complete
 
-#### AWS
+
+##### AWS
 
 This Physical Environment control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
 
@@ -82,7 +85,8 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 ```
 **Status:** complete
 
-#### AWS
+
+##### AWS
 
 This Physical Environment control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
 
@@ -101,7 +105,8 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 ```
 **Status:** complete
 
-#### AWS
+
+##### AWS
 
 This Physical Environment control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
 
@@ -118,7 +123,8 @@ Employ and maintain automatic emergency lighting for the system that activates i
 ```
 **Status:** complete
 
-#### AWS
+
+##### AWS
 
 This Physical Environment control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
 
@@ -135,7 +141,8 @@ Employ and maintain fire detection and suppression systems that are supported by
 ```
 **Status:** complete
 
-#### AWS
+
+##### AWS
 
 This Physical Environment control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
 
@@ -153,7 +160,8 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 ```
 **Status:** complete
 
-#### AWS
+
+##### AWS
 
 This Physical Environment control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
 
@@ -170,7 +178,8 @@ Protect the system from damage resulting from water leakage by providing master 
 ```
 **Status:** complete
 
-#### AWS
+
+##### AWS
 
 This Physical Environment control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
 
@@ -188,7 +197,8 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 ```
 **Status:** complete
 
-#### AWS
+
+##### AWS
 
 This Physical Environment control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
 

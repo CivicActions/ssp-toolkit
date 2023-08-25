@@ -18,13 +18,15 @@
 ```
 **Status:** complete
 
-#### Contractor
+
+##### Contractor
 
 CivicActions has developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Security Assessment and Authorization Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 
-#### Project
+
+##### Project
 
 Project follows the None. The Project System Security Policy (SSP) provides guidance on all aspects of security for the protection of Project information technology resources.
 
@@ -46,14 +48,16 @@ Project will periodically review and update the SSP when there is a significant 
 
 ```
 **Status:** Planned
-a
-#### Contractor
+#### a
+
+##### Contractor
 
 CivicActions will develop a security assessment plan (SAP) that describes the security controls and control enhancements under assessment, assessment procedures used to determine effectiveness, the assessment environment, the assessment team, and the assessment roles and responsibilities.
 
 
-a
-#### Project
+#### a
+
+##### Project
 
 The Project Full Name follows the None. The Project Full Name will conduct annual security assessments to comply with FISMA and NIST regulations. Project will draw on NIST Special Publications 800-53A security controls to complete the assessment. All controls and sub-set security controls will be evaluated and a risk assessment will be conducted. The scope of the assessment includes:
 
@@ -62,28 +66,32 @@ The Project Full Name follows the None. The Project Full Name will conduct annua
 3. Assessment environment, assessment team, and assessment roles and responsibilities
 
 
-b
-#### Contractor
+#### b
+
+##### Contractor
 
 CivicActions will assess the security controls in their system and its environment of operation to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security requirements.
 
 All controls assigned and documented in this System Security Plan (SSP) will be tested at least annually or when there is a major change to the system.
 
 
-c
-#### Contractor
+#### c
+
+##### Contractor
 
 CivicActions will produce a security assessment report that documents the results of the assessment. The Security Assessment Report must contain the results of the assessment, and may also contain recommendations and suggestions for plans of actions and milestones (POA&Ms).
 
 
-c
-#### Project
+#### c
+
+##### Project
 
 The Project Authorizing Official or Designated Representative will create a Security Assessment Report (SAR). A full assessment shall be conducted by an independent third party assessor at least every three years.
 
 
-d
-#### Contractor
+#### d
+
+##### Contractor
 
 CivicActions will provide the results of the security control assessment to the System Owner, Project Manager, CivicActions Security, and the Authorization Official (AO)). The security control assessment package includes the following:
 
@@ -106,7 +114,8 @@ CivicActions will provide the results of the security control assessment to the 
 ```
 **Status:** none
 
-#### Contractor
+
+##### Contractor
 
 This control is not applicable. CivicActions systems do not have system interconnections. The only communication conducted to CivicActions' systems is through the Internet.
 
@@ -120,7 +129,8 @@ This control is not applicable. CivicActions systems do not have system intercon
 ```
 **Status:** complete
 
-#### Contractor
+
+##### Contractor
 
 CivicActions documents all deficiencies and vulnerabilities identified during the security certification and/or continuous monitoring phase (via security assessment, vulnerability scanning, risk assessment, etc.) within the Plan of Action and Milestones (POA&M).
 
@@ -136,7 +146,8 @@ POA&Ms are tracked throughout the lifecycle of the system until its mitigation. 
 
 
 
-#### Project
+
+##### Project
 
 The Project follows the None procedures in managing POA&Ms.
 
@@ -155,7 +166,8 @@ The Project follows the None procedures in managing POA&Ms.
 ```
 **Status:** partial
 
-#### Project
+
+##### Project
 
 The Project follows the None. The Project system received its first three-year security accreditation on March 3, 2009, and most recently received an ATO on February 5, 2016.
 
@@ -177,8 +189,9 @@ Develop a system-level continuous monitoring strategy and implement continuous m
 
 ```
 **Status:** partial
-a
-#### Contractor
+#### a
+
+##### Contractor
 
 CivicActions implements a continuous monitoring strategy that incorporates configuration management, system scanning and log analysis processes:
 
@@ -187,56 +200,65 @@ CivicActions implements a continuous monitoring strategy that incorporates confi
 - Log analysis is managed by feeding logs to a Graylog dashboard for analysis.
 
 
-a
-#### Drupal
+#### a
+
+##### Drupal
 
 CivicActions follows recommendations and best practices developed by the Drupal community for monitoring. Examples of specific logs and metrics are included in AU-2 and AU-3.
 
 
-a
-#### Ilias
+#### a
+
+##### Ilias
 
 CivicActions follows recommendations and best practices developed by the Ilias community for monitoring. Examples of specific logs and metrics are included in AU-2 and AU-3.
 
-b
-#### Contractor
+#### b
+
+##### Contractor
 
 Configuration management and log analysis is carried out in real time. OpenSCAP security scans are performed and reviewed monthly. See also: RA-5 and SI-4.
 
 Quarterly review of the control assessments supporting the monitoring is conducted by CivicActions Operations in collaboration with the CivicActions Security Office.
 
 
-c
-#### Drupal
+#### c
+
+##### Drupal
 
 CivicActions works closely with the Drupal security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed.
 
 
-c
-#### Ilias
+#### c
+
+##### Ilias
 
 CivicActions works closely with the Ilias security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed.
 
-d
-#### Contractor
+#### d
+
+##### Contractor
 
 CivicActions conducts or oversees continuous system security monitoring.
 
 
-e
-#### Contractor
+#### e
+
+##### Contractor
 
 CivicActions Security reviews the results of the security scans and security assessments with associated JIRA and/or GitLab Issue tickets created to correlate and analyze security-related information generated from the monitoring tools becoming POA&M items for tracking.
 
 
-f
-#### Contractor
+#### f
+
+##### Contractor
 
 POA&M items are tracked by CivicActions Security through JIRA tickets with a security categorization assigned. The information included in the POA&M item include the severity, the due date, the weakness source identifier, and the plugin ID that identified the vulnerability.
 
 
-g
-#### Contractor
+#### g
+
+##### Contractor
 
 The security status of the system is reported up to the System Owner and Project Manager via the CivicActions Security Office to be reviewed alongside other security issues relating to the system.
 
@@ -252,6 +274,7 @@ The security status of the system is reported up to the System Owner and Project
 ```
 **Status:** none
 
-#### Contractor
+
+##### Contractor
 
 Not applicable.

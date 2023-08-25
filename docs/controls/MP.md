@@ -18,7 +18,8 @@
 ```
 **Status:** complete
 
-#### AWS
+
+##### AWS
 
 This Media Protection control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
 
@@ -28,13 +29,15 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 
 
 
-#### Contractor
+
+##### Contractor
 
 CivicActions has developed, documented and disseminated to personnel a media protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in CivicActions Media Protection (MP) Policy and Procedure document that can be found in the CivicActions GitHub repository at <https://github.com/CivicActions/compliance-docs>.
 
 
 
-#### Project
+
+##### Project
 
 This is Agency common control. More data about implementation can be obtained from the Agency common control catalog. Media protection policy and procedures are fully inherited from AWS Cloud.
 
@@ -47,7 +50,8 @@ Restrict access to [Assignment: organization-defined types of digital and/or non
 ```
 **Status:** complete
 
-#### AWS
+
+##### AWS
 
 This Media Protection control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
 
@@ -65,7 +69,8 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 ```
 **Status:** complete
 
-#### AWS
+
+##### AWS
 
 This Media Protection control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
 
@@ -83,7 +88,8 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 ```
 **Status:** complete
 
-#### AWS
+
+##### AWS
 
 This Media Protection control associated with hardware components within AWS is generally either partially or fully inherited from the AWS physical infrastructure, while the customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on Amazon EC2 instances and the customer's applications.
 
