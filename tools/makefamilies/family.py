@@ -48,10 +48,12 @@ class Control(BaseModel):
     def get_parts(self):
         parts: str = ""
         self.parts = sort_by_keys(self.parts)
+        parts = ""
         for key, part in self.parts.items():
+            part_key = "" if key == "_default" else f"#### {key}"
+            parts = parts + part_key
             for p in part:
-                part_key = "" if key == "_default" else f"#### {key}"
-                parts = parts + f"{part_key}\n\n{str(p)}\n"
+                parts = parts + f"\n\n{p.__str__()}\n\n"
         return parts
 
     def __str__(self):
