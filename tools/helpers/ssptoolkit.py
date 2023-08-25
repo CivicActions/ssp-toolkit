@@ -108,14 +108,6 @@ def get_component_files(components: list) -> dict:
     return component_files
 
 
-def load_project_data() -> OpenControl:
-    oc_yaml = Path().joinpath("opencontrol.yaml")
-    if not oc_yaml.is_file():
-        raise FileNotFoundError
-    project = OpenControl.load(path=oc_yaml.as_posix())
-    return project
-
-
 def load_controls_by_id(component_list: list) -> dict:
     component_files = get_component_files(components=component_list)
     controls: dict = {}
