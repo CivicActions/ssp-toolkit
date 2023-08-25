@@ -13,29 +13,37 @@ from yamlinclude import YamlIncludeConstructor
 from tools.helpers import secrender
 
 
+class ControlRegExps:
+    oc_simple = re.compile(r"^([A-Z]{2})-(0\d+)$")
+    oc_extended = re.compile(r"^([A-Z]{2})-(0\d+)\s*\((0\d+)\)$")
+
+
 def sortable_control_id(control_id: str) -> str:
     return re.sub(r"(\d+)", lambda m: m.group(1).zfill(2), control_id)
+
+
+def to_oc_control_id(control_id: str) -> str:
+    match = re.match(ControlRegExps.oc_simple, control_id)
+    if match:
+        family = match.group(1)
+        number = int(match.group(2))
+        return f"{family}-{number}"
+
+    # AC-2(1)
+    match = re.match(ControlRegExps.oc_extended, control_id)
+    if match:
+        family = match.group(1)
+        number = int(match.group(2))
+        extension = int(match.group(3))
+        return f"{family}-{number} ({extension})"
+
+    return control_id
 
 
 def get_project() -> OpenControl:
     oc_file = Path("opencontrol").with_suffix(".yaml")
     project = OpenControl.load(oc_file.as_posix())
     return project
-
-
-def get_standards() -> tuple:
-    project = get_project()
-    standards: list = []
-    for standard in project.standards:
-        try:
-            with open(standard, "r") as s:
-                standards_list = yaml.load(s, Loader=yaml.SafeLoader)
-        except FileNotFoundError as error:
-            raise error
-        standards.append(standards_list)
-
-    title = project.get("metadata").get("description")
-    return title, standards
 
 
 def get_certification_baseline() -> list:
@@ -54,6 +62,21 @@ def get_certification_baseline() -> list:
             controls.extend(control_ids.keys())
 
     return list(dict.fromkeys(controls))
+
+
+def get_standards() -> tuple:
+    project = get_project()
+    standards: list = []
+    for standard in project.standards:
+        try:
+            with open(standard, "r") as s:
+                standards_list = yaml.load(s, Loader=yaml.SafeLoader)
+        except FileNotFoundError as error:
+            raise error
+        standards.append(standards_list)
+
+    title = project.metadata.description
+    return title, standards
 
 
 def get_standards_control_data(control: str, standards: list) -> dict:
@@ -123,3 +146,13 @@ def load_template_args(config_file: str) -> dict:
     with open(config_file, "r", newline="") as fp:
         config = yaml.load(fp, Loader=yaml.FullLoader)
     return secrender.get_template_args(yaml=config, set_={}, root=None)
+
+
+def get_control_statuses() -> dict:
+    p = Path("keys/status.yaml")
+    try:
+        with p.open("r") as fp:
+            statuses = yaml.load(fp, Loader=yaml.SafeLoader)
+    except FileNotFoundError as error:
+        raise error
+    return statuses

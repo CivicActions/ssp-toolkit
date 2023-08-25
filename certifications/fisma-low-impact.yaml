@@ -1,9 +1,6 @@
-# Based off Table D-2: SECURITY CONTROL BASELINES
-# in NIST 800-53
-# Current as of 2018-JUNE-2018
-#
-# Found on Page D-2 of NIST 800-53 rev 4:
-# https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf
+# From NIST the Cybersecurity and Privacy Reference Tool  (CPRT)
+# NIST 800-53 Rev. 5.1.0
+# https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_0/home
 #
 name: FISMA Low Impact
 standards:
@@ -11,7 +8,6 @@ standards:
     AC-1: {}
     AC-2: {}
     AC-3: {}
-    AC-3 (9): {}
     AC-7: {}
     AC-8: {}
     AC-14: {}
@@ -22,6 +18,7 @@ standards:
     AC-22: {}
     AT-1: {}
     AT-2: {}
+    AT-2 (2): {}
     AT-3: {}
     AT-4: {}
     AU-1: {}
@@ -40,10 +37,12 @@ standards:
     CA-5: {}
     CA-6: {}
     CA-7: {}
+    CA-7 (4): {}
     CA-9: {}
     CM-1: {}
     CM-2: {}
     CM-4: {}
+    CM-5: {}
     CM-6: {}
     CM-7: {}
     CM-8: {}
@@ -56,17 +55,19 @@ standards:
     CP-9: {}
     CP-10: {}
     IA-1: {}
-    IA-2 (1): {}
-    IA-2 (12): {}
+    IA-2: {}
+    IA-2  (1): {}
+    IA-2  (2): {}
+    IA-2  (8): {}
+    IA-2  (12): {}
     IA-4: {}
     IA-5 (1): {}
-    IA-5 (11): {}
     IA-6: {}
     IA-7: {}
     IA-8 (1): {}
     IA-8 (2): {}
-    IA-8 (3): {}
     IA-8 (4): {}
+    IA-11: {}
     IR-1: {}
     IR-2: {}
     IR-4: {}
@@ -95,6 +96,9 @@ standards:
     PL-1: {}
     PL-2: {}
     PL-4: {}
+    PL-4 (1): {}
+    PL-10: {}
+    PL-11: {}
     PS-1: {}
     PS-2: {}
     PS-3: {}
@@ -103,16 +107,24 @@ standards:
     PS-6: {}
     PS-7: {}
     PS-8: {}
+    PS-9: {}
     RA-1: {}
     RA-2: {}
     RA-3: {}
+    RA-3 (1): {}
     RA-5: {}
+    RA-5 (2): {}
+    RA-5 (11): {}
+    RA-7: {}
     SA-1: {}
     SA-2: {}
     SA-3: {}
-    SA-4 (10): {}
+    SA-4: {}
+    SA-4  (10): {}
     SA-5: {}
+    SA-8: {}
     SA-9: {}
+    SA-22: {}
     SC-1: {}
     SC-5: {}
     SC-7: {}
@@ -129,3 +141,14 @@ standards:
     SI-4: {}
     SI-5: {}
     SI-12: {}
+    SR-1: {}
+    SR-2: {}
+    SR-2 (1): {}
+    SR-3: {}
+    SR-5: {}
+    SR-8: {}
+    SR-10: {}
+    SR-11: {}
+    SR-11 (1): {}
+    SR-11 (2): {}
+    SR-12: {}

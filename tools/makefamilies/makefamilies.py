@@ -30,7 +30,7 @@ def get_controls(family_files: list, family: Family, standards: list) -> Family:
     base_path = Path()
     for component in family_files:
         component_file = base_path.joinpath(component)
-        with open(component_file, "r") as cfp:
+        with component_file.open() as cfp:
             comp_yaml = yaml.load(cfp, Loader=yaml.SafeLoader)
         parent = component_file.parents[0].name
         for s in comp_yaml.get("satisfies"):

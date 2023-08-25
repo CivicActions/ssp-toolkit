@@ -8,8 +8,6 @@ from collections import OrderedDict
 from pathlib import Path
 from typing import Optional
 
-import yaml
-
 from tools.helpers import ssptoolkit
 
 
@@ -46,54 +44,60 @@ def set_status(existing_status: str = "", component_status: str = "") -> Optiona
     return new_status
 
 
-def sort_data(components: dict, header: list):
-    """
-    Sort the component data into rows to be written to the CSV.
-
-    :param components: a dictionary containing all fo the data from the components.
-    :param header: a list containing the column headers.
-    """
-    try:
-        with open("keys/status.yaml", "r") as fp:
-            statuses = yaml.load(fp, Loader=yaml.SafeLoader)
-    except FileNotFoundError as error:
-        raise error
-
+def create_rows(controls: dict, header: list) -> list:
     baseline = ssptoolkit.get_certification_baseline()
-
+    empty_row: OrderedDict = OrderedDict.fromkeys(header)
     rows: list = []
+    for cid in baseline:
+        control_id = cid
+        row_data: OrderedDict = (
+            controls.get(control_id, OrderedDict())
+            if control_id in controls
+            else empty_row.copy()
+        )
+        row: dict = row_data
+        row["Control"] = control_id
+        rows.append(row)
+
+    return rows
+
+
+def get_component_data(
+    control_id: str, control: dict, statuses: dict, header: list
+) -> dict:
+    row: dict = OrderedDict.fromkeys(header)
+    row["Control"] = control_id
+    row["Status"] = None
+    for component in control:
+        for key, satisfies in component.items():
+            control_key = satisfies.get("control_key")
+            status = statuses.get(control_key)
+            if not status:
+                existing_status = row["Status"]
+                component_status = satisfies.get("implementation_status", None)
+                status = set_status(
+                    component_status=component_status,
+                    existing_status=existing_status,
+                )
+            row["Status"] = status
+
+            row[key] = satisfies.get("security_control_type", None)
+    return row
+
+
+def sort_data(components: dict, header: list) -> dict:
+    controls: dict = OrderedDict()
+    statuses = ssptoolkit.get_control_statuses()
     for cid, control in components.items():
-        row: dict = OrderedDict.fromkeys(header)
-        row["Control"] = cid
-        row["Status"] = None
-        check_key = None
-        for component in control:
-            for key, satisfies in component.items():
-                control_key = satisfies.get("control_key")
-                check_key = control_key if not check_key else check_key
-                status = statuses.get(control_key)
-                if not status:
-                    existing_status = row["Status"]
-                    component_status = satisfies.get("implementation_status", None)
-                    status = set_status(
-                        component_status=component_status,
-                        existing_status=existing_status,
-                    )
-                row["Status"] = status
-
-                row[key] = satisfies.get("security_control_type", None)
-        if check_key in baseline:
-            rows.append(row)
-
-    write_file(rows=rows)
+        row = get_component_data(
+            control_id=cid, control=control, statuses=statuses, header=header
+        )
+        control_id = ssptoolkit.to_oc_control_id(cid)
+        controls[control_id] = row
+    return controls
 
 
 def write_file(rows: list):
-    """
-    Write the rows of the CSV to the file.
-
-    :param rows: a list of dictionaries contain the data to write to each row of the CSV.
-    """
     output_to = Path("docs")
     if not output_to.is_dir():
         output_to.mkdir()
@@ -101,7 +105,7 @@ def write_file(rows: list):
     matrix = output_to.joinpath("responsibility_matrix.csv")
     print(f"Writing file to {matrix}")
     header = list(rows[0])
-    with open(matrix, "w+") as fp:
+    with matrix.open("w+") as fp:
         writer = csv.DictWriter(fp, fieldnames=header)
         writer.writeheader()
         writer.writerows(rows)
@@ -109,17 +113,14 @@ def write_file(rows: list):
 
 
 def main():
-    """
-    creatematrix creates a Responsibility Matrix spreadsheet showing which components
-    address which controls. The responsibility_matrix.csv is written to the docs
-    directory in the project root.
-    """
     project = ssptoolkit.load_project_data()
     components = project.get_components()
     header: list = ["Control", "Status"] + [Path(c).name for c in components]
     component_data = ssptoolkit.load_controls_by_id(component_list=components)
 
-    sort_data(components=component_data, header=header)
+    controls = sort_data(components=component_data, header=header)
+    rows = create_rows(controls=controls, header=header)
+    write_file(rows=rows)
 
 
 if __name__ == "__main__":
