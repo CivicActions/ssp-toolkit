@@ -1,8 +1,0 @@
-schema_version: "1.0.0"
-name: Ilias Learning Management System (LMS)
-metadata:
-  description: Ilias Learning Management System (LMS)
-  maintainers:
-    - CivicActions
-components:
-  - ../Ilias

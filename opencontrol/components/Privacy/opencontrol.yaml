@@ -1,8 +1,0 @@
-schema_version: "1.0.0"
-name: Privacy Overlay
-metadata:
-  description: Privacy Overlay
-  maintainers:
-    - CivicActions
-components:
-  - ../Privacy
