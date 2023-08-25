@@ -21,6 +21,7 @@ blinker = "^1.6.2"
 slugify = "^0.0.1"
 complianceio = {git = "https://github.com/CivicActions/compliance-io.git"}
 pytest = "^7.4.0"
+pypandoc = "^1.11"
 
 [build-system]
 requires = ["poetry-core"]
@@ -29,4 +30,5 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 createfiles = "tools.createfiles.createfiles:main"
 creatematrix = "tools.creatematrix.creatematrix:main"
+exportto = "tools.exportto.exportto:main"
 makefamilies = "tools.makefamilies.makefamilies:main"
