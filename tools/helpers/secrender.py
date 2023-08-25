@@ -1,6 +1,6 @@
 """
-Copyright 2019-2020 CivicActions, Inc. See the README file at the top-level
-directory of this distribution and at https://github.com/CivicActions/compliancetools#copyright.
+Copyright 2019-2023 CivicActions, Inc. See the README file at the top-level
+directory of this distribution and at https://github.com/CivicActions/ssp-toolkit#copyright.
 
 
 Example tool to render a template using data loaded from a YAML
