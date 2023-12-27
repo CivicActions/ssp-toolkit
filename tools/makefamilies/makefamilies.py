@@ -81,30 +81,37 @@ def create_toc(out_path: str, controls: dict):
     print(f"TOC written to {toc_file.as_posix()}")
 
 
-def create_family(families: dict, out_path: str):
+def create_family(families: dict, out_path: str, return_data: bool = False) -> dict:
     title, standards = ssptoolkit.get_standards()
     toc: dict = {}
+    families_data: dict = {}
     for key, family_files in families.items():
         fid = key[:2]
         family_name = ssptoolkit.get_standards_family_name(fid, standards)
-        family = Family(
-            title=title,
-            family_id=fid,
-            family_name=family_name,
-            controls={},
-        )
         family = get_controls(
-            family_files=family_files, family=family, standards=standards
+            family_files=family_files,
+            family=Family(
+                title=title,
+                family_id=fid,
+                family_name=family_name,
+                controls={},
+            ),
+            standards=standards,
         )
-        family.print_family_file(out_path=out_path)
-        toc[f"{fid}"] = {
-            "name": family_name,
-            "controls": [
-                f"{c.control_id.upper()}: {c.control_name.title()}"
-                for _, c in family.controls.items()
-            ],
-        }
-    create_toc(out_path=out_path, controls=toc)
+        if return_data:
+            families_data[key] = family
+        else:
+            family.print_family_file(out_path=out_path)
+            toc[f"{fid}"] = {
+                "name": family_name,
+                "controls": [
+                    f"{c.control_id.upper()}: {c.control_name.title()}"
+                    for _, c in family.controls.items()
+                ],
+            }
+    if not return_data:
+        create_toc(out_path=out_path, controls=toc)
+    return families_data
 
 
 @click.command()
