@@ -136,12 +136,7 @@ def aggregate_control_data(component_dir: Path) -> dict:
             families[family] = {}
 
         template_string = template.as_posix()
-        has_changes = (
-            True
-            if new_hashes.get(template_string) != hashes.get(template_string)
-            else False
-        )
-        if has_changes:
+        if new_hashes.get(template_string) != hashes.get(template_string):
             families[family]["has_changes"] = True
 
         with open(template, "r") as tmpy:
