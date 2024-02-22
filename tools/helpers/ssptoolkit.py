@@ -42,7 +42,10 @@ def to_oc_control_id(control_id: str) -> str:
 
 def get_project() -> OpenControl:
     oc_file = Path("opencontrol").with_suffix(".yaml")
-    project = OpenControl.load(oc_file.as_posix())
+    if oc_file.is_file():
+        project = OpenControl.load(oc_file.as_posix())
+    else:
+        raise FileNotFoundError("Could not find opencontrol.yaml file.")
     return project
 
 
