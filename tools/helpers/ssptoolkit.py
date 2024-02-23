@@ -3,9 +3,11 @@ Copyright 2019-2023 CivicActions, Inc. See the README file at the top-level
 directory of this distribution and at https://github.com/CivicActions/ssp-toolkit#copyright.
 """
 
+import mmap
 import re
 from pathlib import Path
 
+import md_toc
 import yaml
 from complianceio.opencontrol import OpenControl
 from yamlinclude import YamlIncludeConstructor
@@ -148,3 +150,20 @@ def get_control_statuses() -> dict:
     except FileNotFoundError as error:
         raise error
     return statuses
+
+
+def find_toc_tag(file: str, levels: int = 3):
+    with open(file, "rb", 0) as f, mmap.mmap(
+        f.fileno(), 0, access=mmap.ACCESS_READ
+    ) as s:
+        if s.find(b"<!--TOC-->") != -1:
+            write_toc(file, levels=levels)
+
+
+def write_toc(file: str, levels: int):
+    toc = md_toc.build_toc(filename=file, keep_header_levels=levels, skip_lines=5)
+    md_toc.write_string_on_file_between_markers(
+        filename=file,
+        string=toc,
+        marker="<!--TOC-->",
+    )
