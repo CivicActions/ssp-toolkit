@@ -40,7 +40,7 @@ def get_standards() -> list:
 
 def get_controls(control: Control) -> list:
     control_text: list = [
-        f"### {control.control_id}: {control.control_name}",
+        f"#### {control.control_id}: {control.control_name}",
         "```text",
         control.description,
         "```",
@@ -70,7 +70,7 @@ def write_ssp(ssp_data: Ssp, output_to: str):
     text_output.append("\n")
 
     for family in ssp_data.families:
-        text_output.append(f"## {family.family_id}: {family.family_name}\n\n")
+        text_output.append(f"### {family.family_id}: {family.family_name}\n\n")
         controls = dict(sorted(family.controls.items()))
         for _, control in controls.items():
             control_text = get_controls(control)
@@ -78,7 +78,7 @@ def write_ssp(ssp_data: Ssp, output_to: str):
     ssp_file = Path(output_to).joinpath("ssp").with_suffix(".md")
     with open(ssp_file, "w+") as fp:
         fp.writelines([f"{line}\n" for line in text_output])
-    find_toc_tag(file=str(ssp_file.as_posix()), levels=2)
+    find_toc_tag(file=str(ssp_file.as_posix()), levels=3)
     print(f"Wrote SSP to {ssp_file}")
 
 
