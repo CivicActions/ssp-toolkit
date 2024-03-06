@@ -1,13 +1,18 @@
-# From NIST the Cybersecurity and Privacy Reference Tool  (CPRT)
-# NIST 800-53 Rev. 5.1.0
-# https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_0/home
+# Based off Table D-2: SECURITY CONTROL BASELINES
+# in NIST 800-53
+# Current as of 2018-JUNE-2018
 #
-name: FISMA Low Impact
+# Found on Page D-2 of NIST 800-53 rev 4:
+# https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf
+#
+name: LINCS FISMA rev5 Low Impact
 standards:
-  NIST SP 800-53 Revision 4:
+
+  NIST SP 800-53 Revision 5:
     AC-1: {}
     AC-2: {}
     AC-3: {}
+    AC-3 (14): {}
     AC-7: {}
     AC-8: {}
     AC-14: {}
@@ -15,11 +20,13 @@ standards:
     AC-18: {}
     AC-19: {}
     AC-20: {}
+    AC-21: {}
     AC-22: {}
     AT-1: {}
     AT-2: {}
     AT-2 (2): {}
     AT-3: {}
+    AT-3 (5): {}
     AT-4: {}
     AU-1: {}
     AU-2: {}
@@ -56,14 +63,16 @@ standards:
     CP-10: {}
     IA-1: {}
     IA-2: {}
-    IA-2  (1): {}
-    IA-2  (2): {}
-    IA-2  (8): {}
-    IA-2  (12): {}
+    IA-2 (1): {}
+    IA-2 (2): {}
+    IA-2 (8): {}
+    IA-2 (12): {}
     IA-4: {}
+    IA-5: {}
     IA-5 (1): {}
     IA-6: {}
     IA-7: {}
+    IA-8: {}
     IA-8 (1): {}
     IA-8 (2): {}
     IA-8 (4): {}
@@ -99,6 +108,31 @@ standards:
     PL-4 (1): {}
     PL-10: {}
     PL-11: {}
+    PM-3: {}
+    PM-4: {}
+    PM-5: {}
+    PM-5 (1): {}
+    PM-6: {}
+    PM-7: {}
+    PM-8: {}
+    PM-9: {}
+    PM-10: {}
+    PM-11: {}
+    PM-13: {}
+    PM-14: {}
+    PM-17: {}
+    PM-18: {}
+    PM-19: {}
+    PM-20: {}
+    PM-20 (1): {}
+    PM-21: {}
+    PM-22: {}
+    PM-24: {}
+    PM-25: {}
+    PM-26: {}
+    PM-27: {}
+    PM-28: {}
+    PM-31: {}
     PS-1: {}
     PS-2: {}
     PS-3: {}
@@ -108,6 +142,19 @@ standards:
     PS-7: {}
     PS-8: {}
     PS-9: {}
+    PT-1: {}
+    PT-2: {}
+    PT-3: {}
+    PT-4: {}
+    PT-5: {}
+    PT-5 (2): {}
+    PT-6: {}
+    PT-6 (1): {}
+    PT-6 (2): {}
+    PT-7: {}
+    PT-7 (1): {}
+    PT-7 (2): {}
+    PT-8: {}
     RA-1: {}
     RA-2: {}
     RA-3: {}
@@ -120,11 +167,11 @@ standards:
     SA-2: {}
     SA-3: {}
     SA-4: {}
-    SA-4  (10): {}
+    SA-4 (10): {}
     SA-5: {}
     SA-8: {}
+    SA-8 (33): {}
     SA-9: {}
-    SA-22: {}
     SC-1: {}
     SC-5: {}
     SC-7: {}
@@ -141,6 +188,10 @@ standards:
     SI-4: {}
     SI-5: {}
     SI-12: {}
+    SI-12 (1): {}
+    SI-12 (2): {}
+    SI-12 (3): {}
+    SI-18: {}
     SR-1: {}
     SR-2: {}
     SR-2 (1): {}

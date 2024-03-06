@@ -1,5 +1,5 @@
 """
-Copyright 2019-2023 CivicActions, Inc. See the README file at the top-level
+Copyright 2019-2024 CivicActions, Inc. See the README file at the top-level
 directory of this distribution and at https://github.com/CivicActions/ssp-toolkit#copyright.
 
 Given a YAML file and path to directory of secrendered component files,
@@ -16,11 +16,11 @@ from io import StringIO
 from pathlib import Path
 
 import click
-from yaml import FullLoader, load  # type: ignore
-from yamlinclude import YamlIncludeConstructor
 
 # from createfiles.createfiles import write_toc
 import md_toc
+from yaml import FullLoader, load  # type: ignore
+from yamlinclude import YamlIncludeConstructor
 
 
 @dataclass

@@ -1,5 +1,5 @@
 """
-Copyright 2019-2023 CivicActions, Inc. See the README file at the top-level
+Copyright 2019-2024 CivicActions, Inc. See the README file at the top-level
 directory of this distribution and at https://github.com/CivicActions/ssp-toolkit#copyright.
 
 
@@ -9,15 +9,13 @@ directory. It uses the https://github.com/CivicActions/secrender tool for
 variable replacement.
 """
 
-import mmap
 from itertools import dropwhile, zip_longest
 from pathlib import Path
 
 import click
-import md_toc
 
 from tools.helpers import secrender
-from tools.helpers.ssptoolkit import load_template_args
+from tools.helpers.ssptoolkit import find_toc_tag, load_template_args
 
 
 @click.command()
@@ -87,23 +85,6 @@ def rewrite(template_file: Path, template_dir: Path, output_dir: Path) -> str:
         )
     ]
     return str(output_dir / Path(*sub_path))
-
-
-def find_toc_tag(file: str):
-    with open(file, "rb", 0) as f, mmap.mmap(
-        f.fileno(), 0, access=mmap.ACCESS_READ
-    ) as s:
-        if s.find(b"<!--TOC-->") != -1:
-            write_toc(file)
-
-
-def write_toc(file: str):
-    toc = md_toc.build_toc(filename=file, keep_header_levels=3, skip_lines=5)
-    md_toc.write_string_on_file_between_markers(
-        filename=file,
-        string=toc,
-        marker="<!--TOC-->",
-    )
 
 
 if __name__ == "__main__":

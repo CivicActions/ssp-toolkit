@@ -1,11 +1,13 @@
 """
-Copyright 2019-2023 CivicActions, Inc. See the README file at the top-level
+Copyright 2019-2024 CivicActions, Inc. See the README file at the top-level
 directory of this distribution and at https://github.com/CivicActions/ssp-toolkit#copyright.
 """
 
+import mmap
 import re
 from pathlib import Path
 
+import md_toc
 import yaml
 from complianceio.opencontrol import OpenControl
 from yamlinclude import YamlIncludeConstructor
@@ -42,7 +44,10 @@ def to_oc_control_id(control_id: str) -> str:
 
 def get_project() -> OpenControl:
     oc_file = Path("opencontrol").with_suffix(".yaml")
-    project = OpenControl.load(oc_file.as_posix())
+    if oc_file.is_file():
+        project = OpenControl.load(oc_file.as_posix())
+    else:
+        raise FileNotFoundError("Could not find opencontrol.yaml file.")
     return project
 
 
@@ -105,7 +110,7 @@ def get_component_files(components: list) -> dict:
                 component_files[family_name] = []
             component_files[family_name].append(component_file.as_posix())
 
-    return component_files
+    return dict(sorted(component_files.items()))
 
 
 def load_controls_by_id(component_list: list) -> dict:
@@ -145,3 +150,20 @@ def get_control_statuses() -> dict:
     except FileNotFoundError as error:
         raise error
     return statuses
+
+
+def find_toc_tag(file: str, levels: int = 3):
+    with open(file, "rb", 0) as f, mmap.mmap(
+        f.fileno(), 0, access=mmap.ACCESS_READ
+    ) as s:
+        if s.find(b"<!--TOC-->") != -1:
+            write_toc(file, levels=levels)
+
+
+def write_toc(file: str, levels: int):
+    toc = md_toc.build_toc(filename=file, keep_header_levels=levels, skip_lines=5)
+    md_toc.write_string_on_file_between_markers(
+        filename=file,
+        string=toc,
+        marker="<!--TOC-->",
+    )

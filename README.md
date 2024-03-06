@@ -89,7 +89,7 @@ exportto -c docs/controls
     ```
 
 6. Generate a reponsiblity matrix with:
-    
+
 
 ```bash
 creatematrix
@@ -120,4 +120,4 @@ GNU General Public License v3.0 or later. Some portions of this work were produc
 
 SPDX-License-Identifier: `GPL-3.0-or-later`
 
-Copyright 2019-2023 CivicActions, Inc.
+Copyright 2019-2024 CivicActions, Inc.
