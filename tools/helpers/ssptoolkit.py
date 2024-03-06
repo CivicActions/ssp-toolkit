@@ -110,7 +110,7 @@ def get_component_files(components: list) -> dict:
                 component_files[family_name] = []
             component_files[family_name].append(component_file.as_posix())
 
-    return component_files
+    return dict(sorted(component_files.items()))
 
 
 def load_controls_by_id(component_list: list) -> dict:

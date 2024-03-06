@@ -2,7 +2,9 @@
 
 - [NIST SP 800-53 Revision 5](#nist-sp-800-53-revision-5)
   - [AC: Access Control](#ac-access-control)
+  - [AT: Awareness and Training](#at-awareness-and-training)
   - [AU: Audit and Accountability](#au-audit-and-accountability)
+  - [CA: Assessment Authorization and Monitoring](#ca-assessment-authorization-and-monitoring)
   - [CM: Configuration Management](#cm-configuration-management)
   - [CP: Contingency Planning](#cp-contingency-planning)
   - [IA: Identification and Authentication](#ia-identification-and-authentication)
@@ -15,8 +17,6 @@
   - [RA: Risk Assessment](#ra-risk-assessment)
   - [SA: System and Services Acquisition](#sa-system-and-services-acquisition)
   - [SC: System and Communications Protection](#sc-system-and-communications-protection)
-  - [AT: Awareness and Training](#at-awareness-and-training)
-  - [CA: Assessment Authorization and Monitoring](#ca-assessment-authorization-and-monitoring)
   - [SI: System and Information Integrity](#si-system-and-information-integrity)
 
 <!--TOC-->
@@ -365,6 +365,113 @@ Project Users have been authorized for creation of publicly accessible content w
 #### d
 ##### Project
 Authorized Project individuals review the content on the publicly accessible information system for nonpublic information at least every 365 days and removes such information.
+
+### AT: Awareness and Training
+
+
+#### AT-1: SECURITY AWARENESS AND TRAINING POLICY AND PROCEDURES
+```text
+ - a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]:
+   - 1. [Selection (one or more): organization-level, mission/business process-level, system-level] awareness and training policy that:
+     - (a) Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
+     - (b) Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and
+   - 2. Procedures to facilitate the implementation of the awareness and training policy and the associated awareness and training controls;
+ - b. Designate an [Assignment: organization-defined official] to manage the development, documentation, and dissemination of the awareness and training policy and procedures; and
+ - c. Review and update the current awareness and training:
+   - 1. Policy [Assignment: organization-defined frequency] and following [Assignment: organization-defined events]; and
+   - 2. Procedures [Assignment: organization-defined frequency] and following [Assignment: organization-defined events].
+
+```
+**Status:** complete
+##### Contractor
+CivicActions has developed, documented and disseminated to personnel awareness and training policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Awareness and Training (AT) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+
+##### Project
+Security awareness and training policy and procedures are formally documented in None, which provides the roles and responsibilities as it pertains to security awareness and training. The Department will ensure all users, including managers and senior executives, are exposed to basic information system security awareness materials before authorizing access to the system and at least annually thereafter. Client documents and monitors all individual information system security training activities including basic security awareness training. OMB reviews and updates the policy as necessary.
+
+#### AT-2: SECURITY AWARENESS TRAINING
+```text
+ - a. Provide security and privacy literacy training to system users (including managers, senior executives, and contractors):
+   - 1. As part of initial training for new users and [Assignment: organization-defined frequency] thereafter; and
+   - 2. When required by system changes or following [Assignment: organization-defined events];
+ - b. Employ the following techniques to increase the security and privacy awareness of system users [Assignment: organization-defined awareness techniques];
+ - c. Update literacy training and awareness content [Assignment: organization-defined frequency] and following [Assignment: organization-defined events]; and
+ - d. Incorporate lessons learned from internal or external security or privacy incidents into literacy training and awareness techniques.
+
+```
+**Status:** complete
+#### a
+##### Contractor
+Both regular and ad hoc training to all CivicActions personnel, including those who support the system infrastructure and applications, is provided. All employees and contractors must complete Security Awareness training upon being hired and at least annually thereafter. CivicActions Operations staff will not create accounts for individuals until they have successfully completed the trainings. Additional training will be provided as required by system changes. Training takes the following forms:
+
+Annual Knowledge Survey (i.e., Security Awareness Training): All employees are required to review trainings covering Security Awareness. After the training, a survey-style security awareness test is taken by employees. All CivicActions personnel are required to complete and pass the survey, and new employees are required to pass before being granted access to the Information System. In order to successfully pass the test, a score of 80% is required. This survey tests CivicActions personnel’s knowledge of critical security subjects, policies and procedures. Results from this survey are compiled by the Office of Human Resources and used to refine future training efforts.
+
+Ad Hoc Security Awareness: The CivicActions' Security Office oversees the approximately bi-monthly distribution of security awareness tips and articles to all CivicActions employees. This can include general tips as well as articles tailored to the specific requirements of CivicActions users.
+
+#### b
+##### Contractor
+In the event of a major system change, the Project Manager is responsible for delivering additional training to impacted personnel. Specific training types, mediums, and delivery methods are dependent upon the nature of the system change.
+
+#### c
+##### Contractor
+CivicActions provides annual security awareness training to its personnel.
+
+##### Project
+Client personnel and contractor employees involved with the management, operation, programming, maintenance, or use of Project system receive training in acceptable computer security practices prior to system access. All Client employees and contractors are required to complete annual IT security awareness training. This security awareness training covers issues and policies associated with information security, including end user security roles and responsibilities and rules of behavior. Some topics addressed in the training are:
+
+- Password protection
+- System rules of behavior
+- Protection of hardware, software, and data
+- Proper handling of copyrighted materials
+- Reporting of security breaches and violations
+- Proper procedures for software installation, uploading, and use on
+  workstations.
+
+#### AT-3: ROLE-BASED SECURITY TRAINING
+```text
+ - a. Provide role-based security and privacy training to personnel with the following roles and responsibilities: [Assignment: organization-defined roles and responsibilities]:
+   - 1. Before authorizing access to the system, information, or performing assigned duties, and [Assignment: organization-defined frequency] thereafter; and
+   - 2. When required by system changes;
+ - b. Update role-based training content [Assignment: organization-defined frequency] and following [Assignment: organization-defined events]; and
+ - c. Incorporate lessons learned from internal or external security or privacy incidents into role-based training.
+
+```
+**Status:** complete
+#### a
+##### Contractor
+CivicActions personnel with security responsibilities are required to complete role-based security training before being provided with access to the information system. The CivicActions' Security Office is responsible for creating the content of the training. The role-based training is provided and tracked by the CivicActions Security Office.
+
+#### b
+##### Contractor
+The Project Manager in collaboration with CivicActions Security Office determines whether a change to the information system requires any modifications and updates to the security awareness training program and if so, works with the CivicActions' Security Office to implement the change.
+
+#### c
+##### Contractor
+CivicActions Security Office provides users with security responsibilities role-based security training on an annual basis. The training is provided and tracked by the CivicActions Security Office.
+
+##### Project
+Completion of role-based training is an annual requirement for personnel in roles with significant information security responsibilities that require specialized role-based training. Role-based cybersecurity training is developed and implemented to meet identified training needs and competencies associated with the various target audiences/functional roles (federal and contractor employees) that comprise the Client workforce, as is identified in and required by the FISMA and OMB A-130, Appendix III. The appropriate content of security training is determined based on the assigned roles and responsibilities of individuals and the specific security requirements of the Department, PO and the information systems to which personnel have authorized access. Annual training requirements may be met by completing one or more course(s) within the Department’s learning management systems, participating in instructor-led training provided by the OCIO, or completing an external role-based course or courses offered within their specific functional area of expertise.
+
+#### AT-4: SECURITY TRAINING RECORDS
+```text
+ - a. Document and monitor information security and privacy training activities, including security and privacy awareness training and specific role-based security and privacy training; and
+ - b. Retain individual training records for [Assignment: organization-defined time period].
+
+```
+**Status:** complete
+#### a
+##### Contractor
+The CivicActions' Security Office tracks all security awareness training within the organization and ensures that all employees have successfully completed training when required. The training records are stored and tracked in a spreadsheet maintained by the CivicActions Security Office.
+
+##### Project
+Client documents and monitors all individual information system security training activities including basic security awareness training. New users are required to take security training within 30 days of hire. This information is kept in the appropriate personnel files to verify users have met the training requirements. Training requirement notifications are sent to individuals as deadline for re-training approaches.
+
+#### b
+##### Contractor
+Training records are tracked and maintained by the CivicActions Security Office. Records are maintained permanently.
+
+##### Project
+Client maintains training certifications for the specified period.
 
 ### AU: Audit and Accountability
 
@@ -719,6 +826,198 @@ AWS logging information:
 ##### Contractor
 CivicActions maintained applications generate audit records for their web and event logs as described in AU-2 and AU-3.
 
+### CA: Assessment Authorization and Monitoring
+
+
+#### CA-1: SECURITY ASSESSMENT AND AUTHORIZATION POLICIES AND PROCEDURES
+```text
+ - a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]:
+   - 1. [Selection (one or more): organization-level, mission/business process-level, system-level] assessment, authorization, and monitoring policy that:
+     - (a) Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
+     - (b) Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and
+   - 2. Procedures to facilitate the implementation of the assessment, authorization, and monitoring policy and the associated assessment, authorization, and monitoring controls;
+ - b. Designate an [Assignment: organization-defined official] to manage the development, documentation, and dissemination of the assessment, authorization, and monitoring policy and procedures; and
+ - c. Review and update the current assessment, authorization, and monitoring:
+   - 1. Policy [Assignment: organization-defined frequency] and following [Assignment: organization-defined events]; and
+   - 2. Procedures [Assignment: organization-defined frequency] and following [Assignment: organization-defined events].
+
+```
+**Status:** complete
+##### Contractor
+CivicActions has developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Security Assessment and Authorization Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
+
+##### Project
+Project follows the None. The Project System Security Policy (SSP) provides guidance on all aspects of security for the protection of Project information technology resources.
+
+Project will periodically review and update the SSP when there is a significant change to the regulatory, operational, or technical environment.
+
+#### CA-2: SECURITY ASSESSMENTS
+```text
+ - a. Select the appropriate assessor or assessment team for the type of assessment to be conducted;
+ - b. Develop a control assessment plan that describes the scope of the assessment including:
+   - 1. Controls and control enhancements under assessment;
+   - 2. Assessment procedures to be used to determine control effectiveness; and
+   - 3. Assessment environment, assessment team, and assessment roles and responsibilities;
+ - c. Ensure the control assessment plan is reviewed and approved by the authorizing official or designated representative prior to conducting the assessment;
+ - d. Assess the controls in the system and its environment of operation [Assignment: organization-defined frequency] to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security and privacy requirements;
+ - e. Produce a control assessment report that document the results of the assessment; and
+ - f. Provide the results of the control assessment to [Assignment: organization-defined individuals or roles].
+
+```
+**Status:** Planned
+#### a
+##### Contractor
+CivicActions will develop a security assessment plan (SAP) that describes the security controls and control enhancements under assessment, assessment procedures used to determine effectiveness, the assessment environment, the assessment team, and the assessment roles and responsibilities.
+
+##### Project
+The Project Full Name follows the None. The Project Full Name will conduct annual security assessments to comply with FISMA and NIST regulations. Project will draw on NIST Special Publications 800-53A security controls to complete the assessment. All controls and sub-set security controls will be evaluated and a risk assessment will be conducted. The scope of the assessment includes:
+
+1. Security controls and control enhancements under assessment
+2. Assessment procedures to be used to determine security control effectiveness
+3. Assessment environment, assessment team, and assessment roles and responsibilities
+
+#### b
+##### Contractor
+CivicActions will assess the security controls in their system and its environment of operation to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security requirements.
+
+All controls assigned and documented in this System Security Plan (SSP) will be tested at least annually or when there is a major change to the system.
+
+#### c
+##### Contractor
+CivicActions will produce a security assessment report that documents the results of the assessment. The Security Assessment Report must contain the results of the assessment, and may also contain recommendations and suggestions for plans of actions and milestones (POA&Ms).
+
+##### Project
+The Project Authorizing Official or Designated Representative will create a Security Assessment Report (SAR). A full assessment shall be conducted by an independent third party assessor at least every three years.
+
+#### d
+##### Contractor
+CivicActions will provide the results of the security control assessment to the System Owner, Project Manager, CivicActions Security, and the Authorization Official (AO)). The security control assessment package includes the following:
+
+- Security Control Matrix
+- Privacy Impact Assessment
+- E-Authentication
+- Contingency Plan
+- Configuration Management Plan
+- Rules of Behavior
+- Incident Response Plan
+
+#### CA-3: SYSTEM INTERCONNECTIONS
+```text
+ - a. Approve and manage the exchange of information between the system and other systems using [Selection (one or more): interconnection security agreements, information exchange security agreements, memoranda of understanding or agreement, service level agreements, user agreements, nondisclosure agreements, [Assignment: organization-defined type of agreement]];
+ - b. Document, as part of each exchange agreement, the interface characteristics, security and privacy requirements, controls, and responsibilities for each system, and the impact level of the information communicated; and
+ - c. Review and update the agreements [Assignment: organization-defined frequency].
+
+```
+**Status:** none
+##### Contractor
+This control is not applicable. CivicActions systems do not have system interconnections. The only communication conducted to CivicActions' systems is through the Internet.
+
+#### CA-5: PLAN OF ACTION AND MILESTONES
+```text
+ - a. Develop a plan of action and milestones for the system to document the planned remediation actions of the organization to correct weaknesses or deficiencies noted during the assessment of the controls and to reduce or eliminate known vulnerabilities in the system; and
+ - b. Update existing plan of action and milestones [Assignment: organization-defined frequency] based on the findings from control assessments, independent audits or reviews, and continuous monitoring activities.
+
+```
+**Status:** complete
+##### Contractor
+CivicActions documents all deficiencies and vulnerabilities identified during the security certification and/or continuous monitoring phase (via security assessment, vulnerability scanning, risk assessment, etc.) within the Plan of Action and Milestones (POA&M).
+
+The POA&M document provides a platform for CivicActions to monitor and track the deficiency and its mitigation strategy. POA&M items will include:
+
+- The description of the deficiency,
+- Dedicated point of contact for this deficiency.
+- Cost of the mitigation strategy
+- Associated risk and NIST control
+- Recommended mitigation strategy
+
+POA&Ms are tracked throughout the lifecycle of the system until its mitigation. All POA&Ms are reviewed on a monthly basis by CivicActions Information System Security Officer to ensure all mitigation strategies are continuing as documented.
+
+##### Project
+The Project follows the None procedures in managing POA&Ms.
+
+#### CA-6: SECURITY AUTHORIZATION
+```text
+ - a. Assign a senior official as the authorizing official for the system;
+ - b. Assign a senior official as the authorizing official for common controls available for inheritance by organizational systems;
+ - c. Ensure that the authorizing official for the system, before commencing operations:
+   - 1. Accepts the use of common controls inherited by the system; and
+   - 2. Authorizes the system to operate;
+ - d. Ensure that the authorizing official for common controls authorizes the use of those controls for inheritance by organizational systems;
+ - e. Update the authorizations [Assignment: organization-defined frequency].
+
+```
+**Status:** partial
+##### Project
+The Project follows the None. The Project system received its first three-year security accreditation on March 3, 2009, and most recently received an ATO on February 5, 2016.
+
+ATO re-assessment will be performed every three years or when there is a major change to the application, in which a senior organizational official will sign and approve the security accreditation.
+
+#### CA-7: CONTINUOUS MONITORING
+```text
+Develop a system-level continuous monitoring strategy and implement continuous monitoring in accordance with the organization-level continuous monitoring strategy that includes:
+ - a. Establishing the following system-level metrics to be monitored: [Assignment: organization-defined system-level metrics];
+ - b. Establishing [Assignment: organization-defined frequencies] for monitoring and [Assignment: organization-defined frequencies] for assessment of control effectiveness;
+ - c. Ongoing control assessments in accordance with the continuous monitoring strategy;
+ - d. Ongoing monitoring of system and organization-defined metrics in accordance with the continuous monitoring strategy;
+ - e. Correlation and analysis of information generated by control assessments and monitoring;
+ - f. Response actions to address results of the analysis of control assessment and monitoring information; and
+ - g. Reporting the security and privacy status of the system to [Assignment: organization-defined personnel or roles]
+                  [Assignment: organization-defined frequency].
+
+```
+**Status:** partial
+#### a
+##### Contractor
+CivicActions implements a continuous monitoring strategy that incorporates configuration management, system scanning and log analysis processes:
+
+- Configuration management includes the assessment of security impact analyses of proposed and implemented changes.
+- System scanning is managed by running the OpenSCAP vulnerability scanner using the DISA STIG profile.
+- Log analysis is managed by feeding logs to a Graylog dashboard for analysis.
+
+##### Drupal
+CivicActions follows recommendations and best practices developed by the Drupal community for monitoring. Examples of specific logs and metrics are included in AU-2 and AU-3.
+
+##### Ilias
+CivicActions follows recommendations and best practices developed by the Ilias community for monitoring. Examples of specific logs and metrics are included in AU-2 and AU-3.
+#### b
+##### Contractor
+Configuration management and log analysis is carried out in real time. OpenSCAP security scans are performed and reviewed monthly. See also: RA-5 and SI-4.
+
+Quarterly review of the control assessments supporting the monitoring is conducted by CivicActions Operations in collaboration with the CivicActions Security Office.
+
+#### d
+##### Contractor
+CivicActions conducts or oversees continuous system security monitoring.
+
+#### e
+##### Contractor
+CivicActions Security reviews the results of the security scans and security assessments with associated JIRA and/or GitLab Issue tickets created to correlate and analyze security-related information generated from the monitoring tools becoming POA&M items for tracking.
+
+#### f
+##### Contractor
+POA&M items are tracked by CivicActions Security through JIRA tickets with a security categorization assigned. The information included in the POA&M item include the severity, the due date, the weakness source identifier, and the plugin ID that identified the vulnerability.
+
+#### g
+##### Contractor
+The security status of the system is reported up to the System Owner and Project Manager via the CivicActions Security Office to be reviewed alongside other security issues relating to the system.
+
+#### c
+##### Drupal
+CivicActions works closely with the Drupal security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed.
+
+##### Ilias
+CivicActions works closely with the Ilias security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed.
+#### CA-9: INTERNAL SYSTEM CONNECTIONS
+```text
+ - a. Authorize internal connections of [Assignment: organization-defined system components or classes of components] to the system;
+ - b. Document, for each internal connection, the interface characteristics, security and privacy requirements, and the nature of the information communicated;
+ - c. Terminate internal system connections after [Assignment: organization-defined conditions]; and
+ - d. Review [Assignment: organization-defined frequency] the continued need for each internal connection.
+
+```
+**Status:** none
+##### Contractor
+Not applicable.
 ### CM: Configuration Management
 
 
@@ -2912,305 +3211,6 @@ AWS built-in features of the hypervisors that support the infrastructure maintai
 ##### Contractor
 Process isolation is maintained on the Linux platform. Linux is the only operating system that is part of the boundary.
 
-### AT: Awareness and Training
-
-
-#### AT-1: SECURITY AWARENESS AND TRAINING POLICY AND PROCEDURES
-```text
- - a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]:
-   - 1. [Selection (one or more): organization-level, mission/business process-level, system-level] awareness and training policy that:
-     - (a) Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
-     - (b) Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and
-   - 2. Procedures to facilitate the implementation of the awareness and training policy and the associated awareness and training controls;
- - b. Designate an [Assignment: organization-defined official] to manage the development, documentation, and dissemination of the awareness and training policy and procedures; and
- - c. Review and update the current awareness and training:
-   - 1. Policy [Assignment: organization-defined frequency] and following [Assignment: organization-defined events]; and
-   - 2. Procedures [Assignment: organization-defined frequency] and following [Assignment: organization-defined events].
-
-```
-**Status:** complete
-##### Contractor
-CivicActions has developed, documented and disseminated to personnel awareness and training policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Awareness and Training (AT) Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
-
-##### Project
-Security awareness and training policy and procedures are formally documented in None, which provides the roles and responsibilities as it pertains to security awareness and training. The Department will ensure all users, including managers and senior executives, are exposed to basic information system security awareness materials before authorizing access to the system and at least annually thereafter. Client documents and monitors all individual information system security training activities including basic security awareness training. OMB reviews and updates the policy as necessary.
-
-#### AT-2: SECURITY AWARENESS TRAINING
-```text
- - a. Provide security and privacy literacy training to system users (including managers, senior executives, and contractors):
-   - 1. As part of initial training for new users and [Assignment: organization-defined frequency] thereafter; and
-   - 2. When required by system changes or following [Assignment: organization-defined events];
- - b. Employ the following techniques to increase the security and privacy awareness of system users [Assignment: organization-defined awareness techniques];
- - c. Update literacy training and awareness content [Assignment: organization-defined frequency] and following [Assignment: organization-defined events]; and
- - d. Incorporate lessons learned from internal or external security or privacy incidents into literacy training and awareness techniques.
-
-```
-**Status:** complete
-#### a
-##### Contractor
-Both regular and ad hoc training to all CivicActions personnel, including those who support the system infrastructure and applications, is provided. All employees and contractors must complete Security Awareness training upon being hired and at least annually thereafter. CivicActions Operations staff will not create accounts for individuals until they have successfully completed the trainings. Additional training will be provided as required by system changes. Training takes the following forms:
-
-Annual Knowledge Survey (i.e., Security Awareness Training): All employees are required to review trainings covering Security Awareness. After the training, a survey-style security awareness test is taken by employees. All CivicActions personnel are required to complete and pass the survey, and new employees are required to pass before being granted access to the Information System. In order to successfully pass the test, a score of 80% is required. This survey tests CivicActions personnel’s knowledge of critical security subjects, policies and procedures. Results from this survey are compiled by the Office of Human Resources and used to refine future training efforts.
-
-Ad Hoc Security Awareness: The CivicActions' Security Office oversees the approximately bi-monthly distribution of security awareness tips and articles to all CivicActions employees. This can include general tips as well as articles tailored to the specific requirements of CivicActions users.
-
-#### b
-##### Contractor
-In the event of a major system change, the Project Manager is responsible for delivering additional training to impacted personnel. Specific training types, mediums, and delivery methods are dependent upon the nature of the system change.
-
-#### c
-##### Contractor
-CivicActions provides annual security awareness training to its personnel.
-
-##### Project
-Client personnel and contractor employees involved with the management, operation, programming, maintenance, or use of Project system receive training in acceptable computer security practices prior to system access. All Client employees and contractors are required to complete annual IT security awareness training. This security awareness training covers issues and policies associated with information security, including end user security roles and responsibilities and rules of behavior. Some topics addressed in the training are:
-
-- Password protection
-- System rules of behavior
-- Protection of hardware, software, and data
-- Proper handling of copyrighted materials
-- Reporting of security breaches and violations
-- Proper procedures for software installation, uploading, and use on
-  workstations.
-
-#### AT-3: ROLE-BASED SECURITY TRAINING
-```text
- - a. Provide role-based security and privacy training to personnel with the following roles and responsibilities: [Assignment: organization-defined roles and responsibilities]:
-   - 1. Before authorizing access to the system, information, or performing assigned duties, and [Assignment: organization-defined frequency] thereafter; and
-   - 2. When required by system changes;
- - b. Update role-based training content [Assignment: organization-defined frequency] and following [Assignment: organization-defined events]; and
- - c. Incorporate lessons learned from internal or external security or privacy incidents into role-based training.
-
-```
-**Status:** complete
-#### a
-##### Contractor
-CivicActions personnel with security responsibilities are required to complete role-based security training before being provided with access to the information system. The CivicActions' Security Office is responsible for creating the content of the training. The role-based training is provided and tracked by the CivicActions Security Office.
-
-#### b
-##### Contractor
-The Project Manager in collaboration with CivicActions Security Office determines whether a change to the information system requires any modifications and updates to the security awareness training program and if so, works with the CivicActions' Security Office to implement the change.
-
-#### c
-##### Contractor
-CivicActions Security Office provides users with security responsibilities role-based security training on an annual basis. The training is provided and tracked by the CivicActions Security Office.
-
-##### Project
-Completion of role-based training is an annual requirement for personnel in roles with significant information security responsibilities that require specialized role-based training. Role-based cybersecurity training is developed and implemented to meet identified training needs and competencies associated with the various target audiences/functional roles (federal and contractor employees) that comprise the Client workforce, as is identified in and required by the FISMA and OMB A-130, Appendix III. The appropriate content of security training is determined based on the assigned roles and responsibilities of individuals and the specific security requirements of the Department, PO and the information systems to which personnel have authorized access. Annual training requirements may be met by completing one or more course(s) within the Department’s learning management systems, participating in instructor-led training provided by the OCIO, or completing an external role-based course or courses offered within their specific functional area of expertise.
-
-#### AT-4: SECURITY TRAINING RECORDS
-```text
- - a. Document and monitor information security and privacy training activities, including security and privacy awareness training and specific role-based security and privacy training; and
- - b. Retain individual training records for [Assignment: organization-defined time period].
-
-```
-**Status:** complete
-#### a
-##### Contractor
-The CivicActions' Security Office tracks all security awareness training within the organization and ensures that all employees have successfully completed training when required. The training records are stored and tracked in a spreadsheet maintained by the CivicActions Security Office.
-
-##### Project
-Client documents and monitors all individual information system security training activities including basic security awareness training. New users are required to take security training within 30 days of hire. This information is kept in the appropriate personnel files to verify users have met the training requirements. Training requirement notifications are sent to individuals as deadline for re-training approaches.
-
-#### b
-##### Contractor
-Training records are tracked and maintained by the CivicActions Security Office. Records are maintained permanently.
-
-##### Project
-Client maintains training certifications for the specified period.
-
-### CA: Assessment Authorization and Monitoring
-
-
-#### CA-1: SECURITY ASSESSMENT AND AUTHORIZATION POLICIES AND PROCEDURES
-```text
- - a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]:
-   - 1. [Selection (one or more): organization-level, mission/business process-level, system-level] assessment, authorization, and monitoring policy that:
-     - (a) Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
-     - (b) Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and
-   - 2. Procedures to facilitate the implementation of the assessment, authorization, and monitoring policy and the associated assessment, authorization, and monitoring controls;
- - b. Designate an [Assignment: organization-defined official] to manage the development, documentation, and dissemination of the assessment, authorization, and monitoring policy and procedures; and
- - c. Review and update the current assessment, authorization, and monitoring:
-   - 1. Policy [Assignment: organization-defined frequency] and following [Assignment: organization-defined events]; and
-   - 2. Procedures [Assignment: organization-defined frequency] and following [Assignment: organization-defined events].
-
-```
-**Status:** complete
-##### Contractor
-CivicActions has developed, documented and disseminated to personnel a certification, accreditation, and security assessment policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and procedures to facilitate the implementation of the policy and associated controls. This information is maintained in the CivicActions Security Assessment and Authorization Policy. This document can be found in the CivicActions Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
-
-##### Project
-Project follows the None. The Project System Security Policy (SSP) provides guidance on all aspects of security for the protection of Project information technology resources.
-
-Project will periodically review and update the SSP when there is a significant change to the regulatory, operational, or technical environment.
-
-#### CA-2: SECURITY ASSESSMENTS
-```text
- - a. Select the appropriate assessor or assessment team for the type of assessment to be conducted;
- - b. Develop a control assessment plan that describes the scope of the assessment including:
-   - 1. Controls and control enhancements under assessment;
-   - 2. Assessment procedures to be used to determine control effectiveness; and
-   - 3. Assessment environment, assessment team, and assessment roles and responsibilities;
- - c. Ensure the control assessment plan is reviewed and approved by the authorizing official or designated representative prior to conducting the assessment;
- - d. Assess the controls in the system and its environment of operation [Assignment: organization-defined frequency] to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security and privacy requirements;
- - e. Produce a control assessment report that document the results of the assessment; and
- - f. Provide the results of the control assessment to [Assignment: organization-defined individuals or roles].
-
-```
-**Status:** Planned
-#### a
-##### Contractor
-CivicActions will develop a security assessment plan (SAP) that describes the security controls and control enhancements under assessment, assessment procedures used to determine effectiveness, the assessment environment, the assessment team, and the assessment roles and responsibilities.
-
-##### Project
-The Project Full Name follows the None. The Project Full Name will conduct annual security assessments to comply with FISMA and NIST regulations. Project will draw on NIST Special Publications 800-53A security controls to complete the assessment. All controls and sub-set security controls will be evaluated and a risk assessment will be conducted. The scope of the assessment includes:
-
-1. Security controls and control enhancements under assessment
-2. Assessment procedures to be used to determine security control effectiveness
-3. Assessment environment, assessment team, and assessment roles and responsibilities
-
-#### b
-##### Contractor
-CivicActions will assess the security controls in their system and its environment of operation to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security requirements.
-
-All controls assigned and documented in this System Security Plan (SSP) will be tested at least annually or when there is a major change to the system.
-
-#### c
-##### Contractor
-CivicActions will produce a security assessment report that documents the results of the assessment. The Security Assessment Report must contain the results of the assessment, and may also contain recommendations and suggestions for plans of actions and milestones (POA&Ms).
-
-##### Project
-The Project Authorizing Official or Designated Representative will create a Security Assessment Report (SAR). A full assessment shall be conducted by an independent third party assessor at least every three years.
-
-#### d
-##### Contractor
-CivicActions will provide the results of the security control assessment to the System Owner, Project Manager, CivicActions Security, and the Authorization Official (AO)). The security control assessment package includes the following:
-
-- Security Control Matrix
-- Privacy Impact Assessment
-- E-Authentication
-- Contingency Plan
-- Configuration Management Plan
-- Rules of Behavior
-- Incident Response Plan
-
-#### CA-3: SYSTEM INTERCONNECTIONS
-```text
- - a. Approve and manage the exchange of information between the system and other systems using [Selection (one or more): interconnection security agreements, information exchange security agreements, memoranda of understanding or agreement, service level agreements, user agreements, nondisclosure agreements, [Assignment: organization-defined type of agreement]];
- - b. Document, as part of each exchange agreement, the interface characteristics, security and privacy requirements, controls, and responsibilities for each system, and the impact level of the information communicated; and
- - c. Review and update the agreements [Assignment: organization-defined frequency].
-
-```
-**Status:** none
-##### Contractor
-This control is not applicable. CivicActions systems do not have system interconnections. The only communication conducted to CivicActions' systems is through the Internet.
-
-#### CA-5: PLAN OF ACTION AND MILESTONES
-```text
- - a. Develop a plan of action and milestones for the system to document the planned remediation actions of the organization to correct weaknesses or deficiencies noted during the assessment of the controls and to reduce or eliminate known vulnerabilities in the system; and
- - b. Update existing plan of action and milestones [Assignment: organization-defined frequency] based on the findings from control assessments, independent audits or reviews, and continuous monitoring activities.
-
-```
-**Status:** complete
-##### Contractor
-CivicActions documents all deficiencies and vulnerabilities identified during the security certification and/or continuous monitoring phase (via security assessment, vulnerability scanning, risk assessment, etc.) within the Plan of Action and Milestones (POA&M).
-
-The POA&M document provides a platform for CivicActions to monitor and track the deficiency and its mitigation strategy. POA&M items will include:
-
-- The description of the deficiency,
-- Dedicated point of contact for this deficiency.
-- Cost of the mitigation strategy
-- Associated risk and NIST control
-- Recommended mitigation strategy
-
-POA&Ms are tracked throughout the lifecycle of the system until its mitigation. All POA&Ms are reviewed on a monthly basis by CivicActions Information System Security Officer to ensure all mitigation strategies are continuing as documented.
-
-##### Project
-The Project follows the None procedures in managing POA&Ms.
-
-#### CA-6: SECURITY AUTHORIZATION
-```text
- - a. Assign a senior official as the authorizing official for the system;
- - b. Assign a senior official as the authorizing official for common controls available for inheritance by organizational systems;
- - c. Ensure that the authorizing official for the system, before commencing operations:
-   - 1. Accepts the use of common controls inherited by the system; and
-   - 2. Authorizes the system to operate;
- - d. Ensure that the authorizing official for common controls authorizes the use of those controls for inheritance by organizational systems;
- - e. Update the authorizations [Assignment: organization-defined frequency].
-
-```
-**Status:** partial
-##### Project
-The Project follows the None. The Project system received its first three-year security accreditation on March 3, 2009, and most recently received an ATO on February 5, 2016.
-
-ATO re-assessment will be performed every three years or when there is a major change to the application, in which a senior organizational official will sign and approve the security accreditation.
-
-#### CA-7: CONTINUOUS MONITORING
-```text
-Develop a system-level continuous monitoring strategy and implement continuous monitoring in accordance with the organization-level continuous monitoring strategy that includes:
- - a. Establishing the following system-level metrics to be monitored: [Assignment: organization-defined system-level metrics];
- - b. Establishing [Assignment: organization-defined frequencies] for monitoring and [Assignment: organization-defined frequencies] for assessment of control effectiveness;
- - c. Ongoing control assessments in accordance with the continuous monitoring strategy;
- - d. Ongoing monitoring of system and organization-defined metrics in accordance with the continuous monitoring strategy;
- - e. Correlation and analysis of information generated by control assessments and monitoring;
- - f. Response actions to address results of the analysis of control assessment and monitoring information; and
- - g. Reporting the security and privacy status of the system to [Assignment: organization-defined personnel or roles]
-                  [Assignment: organization-defined frequency].
-
-```
-**Status:** partial
-#### a
-##### Contractor
-CivicActions implements a continuous monitoring strategy that incorporates configuration management, system scanning and log analysis processes:
-
-- Configuration management includes the assessment of security impact analyses of proposed and implemented changes.
-- System scanning is managed by running the OpenSCAP vulnerability scanner using the DISA STIG profile.
-- Log analysis is managed by feeding logs to a Graylog dashboard for analysis.
-
-##### Drupal
-CivicActions follows recommendations and best practices developed by the Drupal community for monitoring. Examples of specific logs and metrics are included in AU-2 and AU-3.
-
-##### Ilias
-CivicActions follows recommendations and best practices developed by the Ilias community for monitoring. Examples of specific logs and metrics are included in AU-2 and AU-3.
-#### b
-##### Contractor
-Configuration management and log analysis is carried out in real time. OpenSCAP security scans are performed and reviewed monthly. See also: RA-5 and SI-4.
-
-Quarterly review of the control assessments supporting the monitoring is conducted by CivicActions Operations in collaboration with the CivicActions Security Office.
-
-#### d
-##### Contractor
-CivicActions conducts or oversees continuous system security monitoring.
-
-#### e
-##### Contractor
-CivicActions Security reviews the results of the security scans and security assessments with associated JIRA and/or GitLab Issue tickets created to correlate and analyze security-related information generated from the monitoring tools becoming POA&M items for tracking.
-
-#### f
-##### Contractor
-POA&M items are tracked by CivicActions Security through JIRA tickets with a security categorization assigned. The information included in the POA&M item include the severity, the due date, the weakness source identifier, and the plugin ID that identified the vulnerability.
-
-#### g
-##### Contractor
-The security status of the system is reported up to the System Owner and Project Manager via the CivicActions Security Office to be reviewed alongside other security issues relating to the system.
-
-#### c
-##### Drupal
-CivicActions works closely with the Drupal security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed.
-
-##### Ilias
-CivicActions works closely with the Ilias security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed.
-#### CA-9: INTERNAL SYSTEM CONNECTIONS
-```text
- - a. Authorize internal connections of [Assignment: organization-defined system components or classes of components] to the system;
- - b. Document, for each internal connection, the interface characteristics, security and privacy requirements, and the nature of the information communicated;
- - c. Terminate internal system connections after [Assignment: organization-defined conditions]; and
- - d. Review [Assignment: organization-defined frequency] the continued need for each internal connection.
-
-```
-**Status:** none
-##### Contractor
-Not applicable.
 ### SI: System and Information Integrity
 
 
