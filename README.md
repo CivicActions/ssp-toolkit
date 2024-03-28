@@ -6,7 +6,6 @@
          * [System Security Plan sections](#system-security-plan-sections)
          * [Disclaimer](#disclaimer)
       * [Prerequisites](#prerequisites)
-         * [Activate your environment](#activate-your-environment)
       * [Generating the documentation](#generating-the-documentation)
       * [OpenControl and OSCAL](#opencontrol-and-oscal)
       * [License](#license)
@@ -19,9 +18,9 @@
 
 This repository contains documents and scripts that can be used to create and maintain a System Security Plan (SSP) as required by the [Risk Management Framework (RMF) version 1](https://csrc.nist.gov/publications/detail/sp/800-37/rev-1/archive/2014-06-05). Included are examples of SSP "front matter", control implementation statements (as defined in [NIST SP 800-53r4](https://nvd.nist.gov/800-53/Rev4/) along with the Privacy Overlay), and a collection of appendices.
 
-We understand that version 2 of the [Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy (RMFv2)](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final) has been released and we are planning to update this repository to include the controls as defined in [NIST SP 800-53r5 (draft)](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/draft) as this is finalized.
+We understand that version 2 of the [Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy (RMFv2)](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final) has been released, and we are planning to update this repository to include the controls as defined in [NIST SP 800-53r5 (draft)](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/draft) as this is finalized.
 
-Control templates are in machine readable ([OpenControl](https://github.com/opencontrol/)) YAML files. The intention is to enable these files to be updated automatically by gathering evidence on the state of the running system.
+Control templates are in machine-readable ([OpenControl](https://github.com/opencontrol/)) YAML files. The intention is to enable these files to be updated automatically by gathering evidence on the state of the running system.
 
 ### System Security Plan sections
 
@@ -31,79 +30,121 @@ A current version can be viewed in Git Markdown from this repository:
 * [Control implementation statements](docs/controls.md)
 * [Appendices](appendices) (incident response, configuration management, regulations, ...)
 
-### Disclaimer
+## Disclaimer
 
-The contents of these pages are provided as an information guide only. They are intended to enhance compliance understanding and are not intended to be used directly as a System Security Plan without agency-specific review.
+The contents of these pages are provided as an information guide only. They are
+intended to enhance compliance understanding and are not intended to be used
+directly as a System Security Plan without agency-specific review
 
 ## Prerequisites
 
-You will need `docker` and `docker-compose` running locally in a `bash` compatible shell. These can be obtained by installing the [Docker Desktop](https://www.docker.com/products/docker-desktop).
+You will need [Python Poetry](https://python-poetry.org/docs/) to run the
+SSP Toolkit in a Python virtual environment. Once you have Poetry
+installed you will be able to run all the commands using the
+format `poetry run [COMMAND]`.
 
-```bash
-docker --version
-docker-compose --version
-```
-
-### Activate your environment
-
-We use the [bowline](https://github.com/CivicActions/bowline/) docker sandbox helper to instantiate local containers with [compliancetools](https://github.com/CivicActions/compliancetools) and [secrender](https://github.com/CivicActions/secrender). The following two commands will ***activate*** your local environment, setting up local aliases for the bowline-exposed commands which are described below.
-
-```bash
-docker-compose pull
-source activate
-```
 
 ## Generating the documentation
 
 To update the local Markdown and or to create new exportable files, perform the following steps:
 
-1. Create/update the frontmatter, components and appendices using [templates](templates) and [keys](keys)
+### createfiles
+
+Create/update the frontmatter, components and appendices using [templates](templates) and [keys](keys)
+
+#### Example
 
 ```bash
-createfiles -i configuration.yaml -t templates
+poetry run createfiles -i configuration.yaml -t templates
 ```
 
-2. Generate markdown versions of the RMF control implementation family files in the `/docs/controls/` directory:
+#### Usage
 
 ```bash
-mkdir -p docs/controls
-makefamilies
+Usage: createfiles [OPTIONS]
+
+Options:
+  -t, --templates DIRECTORY  Template directory
+  -o, --out PATH             Output directory (default: current directory)
+  --help                     Show this message and exit.
 ```
 
-3. Generate Standard Operating Procedure (SOP) docs (from `components/` and `keys/sop.yaml`) in the `docs/sop` directory
+### makefamilies
 
-    ```bash
-    sop -i configuration.yaml -c components -o docs
-    ```
+Generate markdown versions of the RMF control implementation family files in the `docs/controls/` directory:
 
-4. Generate Microsoft Word (.docx) versions of the control family files (see the `docx/` directory):
-
+#### Example
 ```bash
-exportto -c docs/controls
+poetry run makefamilies
 ```
 
-5. Generate Microsoft Word (.docx) versions of the appendices and front matter (also in `docx/` directory):
+### sop
 
-    ```bash
-    ./makeDocx.sh
-    ```
+Generate Standard Operating Procedure (SOP) docs (from `components/` and `keys/sop.yaml`) in the `docs/sop` directory
 
-6. Generate a reponsiblity matrix with:
-
-
+#### Example
 ```bash
-creatematrix
+poetry run sop -c components
 ```
 
-7. Optional (and temporary) hack to add a Table of Contents (requires <https://github.com/ekalinin/github-markdown-toc> v0.5+ with `gh-md-toc` in your shell search path):
-
+#### Usage
 ```bash
-./makeDocsTOC.sh
+Usage: sop [OPTIONS]
+
+Options:
+  -c, --components DIRECTORY  Rendered components directory
+  -o, --out PATH              Output directory (default: docs/)
+  --help                      Show this message and exit.
+
+```
+
+### makessp
+
+Generate System Security Plan (SSP)
+
+#### Example
+```bash
+poetry run makessp
+```
+
+### exportto
+
+Generate Microsoft Word (.docx) versions of the control family, appendices, and frontmatter files (see the `docx/` directory):
+
+#### Example
+```bash
+poetry run exportto -c docs/controls
+```
+
+#### Usage
+```bash
+Usage: exportto [OPTIONS]
+
+Options:
+  -r, --render_file PATH  The directory containing the files, or a file, to
+                          render.
+  -t, --type TEXT         The file type to create using Pandoc (default: docx)
+  -o, --out PATH          Output directory (default: docx)
+  --help                  Show this message and exit.
+```
+
+### creatematrix
+
+Generate a spreadsheet showing which, if any, components are responsible
+for addressing a given control.
+
+#### Example
+```bash
+poetry run creatematrix
 ```
 
 ## OpenControl and OSCAL
 
 The SSP-Toolkit is currently in an extended format of OpenControl in which each component represents its controls in separate [RMF Control Family](https://nvd.nist.gov/800-53/Rev4) files. Use the [compliance-io](https://github.com/CivicActions/compliance-io) tools to convert the SSP-Toolkit to a [compliance-masonry](https://github.com/opencontrol/compliance-masonry)-friendly OpenControl directory and from that generate an [OSCAL component definition](https://pages.nist.gov/OSCAL/documentation/schema/implementation-layer/component/):
+
+
+See the [compliance-io/README.md](https://github.com/CivicActions/compliance-io/blob/main/README.md) for more information.
+
 ```
 # You may want to create a python virtual environment for the pip install
 pip install git+https://github.com/civicactions/compliance-io.git@main#egg=complianceio
@@ -112,7 +153,6 @@ python library/defenestrate.py opencontrol.yaml opencontrol
 python library/oc_to_oscal_components.py opencontrol/opencontrol.yaml > oscal/ssp-toolkit.json
 ```
 
-See the [compliance-io/README.md](https://github.com/CivicActions/compliance-io/blob/main/README.md) for more information.
 
 ## License
 
