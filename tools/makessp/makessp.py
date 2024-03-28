@@ -4,7 +4,6 @@ directory of this distribution and at https://github.com/CivicActions/compliance
 """
 from pathlib import Path
 
-import click
 import yaml
 
 from tools.helpers import ssptoolkit
@@ -14,13 +13,13 @@ from tools.makefamilies.family import Control
 from tools.makefamilies.makefamilies import create_family
 
 project = ssptoolkit.get_project()
+write_to = Path("docs")
 
 
-def get_family_data(output_to: str, family_data: dict) -> Ssp:
-    output = Path(output_to)
-    if not output.exists():
-        print(f"Creating output directory {output.as_posix()}")
-        output.mkdir(exist_ok=False)
+def get_family_data(family_data: dict) -> Ssp:
+    if not write_to.exists():
+        print(f"Creating output directory {write_to.as_posix()}")
+        write_to.mkdir(exist_ok=False)
     families = [family for _, family in family_data.items()]
     return Ssp(
         name=project.name,
@@ -56,7 +55,7 @@ def get_controls(control: Control) -> list:
     return control_text
 
 
-def write_ssp(ssp_data: Ssp, output_to: str):
+def write_ssp(ssp_data: Ssp):
     text_output: list = [
         "<!--TOC-->",
         "<!--TOC-->",
@@ -75,29 +74,17 @@ def write_ssp(ssp_data: Ssp, output_to: str):
         for _, control in controls.items():
             control_text = get_controls(control)
             text_output.extend(control_text)
-    ssp_file = Path(output_to).joinpath("ssp").with_suffix(".md")
+    ssp_file = Path(write_to).joinpath("ssp").with_suffix(".md")
     with open(ssp_file, "w+") as fp:
         fp.writelines([f"{line}\n" for line in text_output])
     find_toc_tag(file=str(ssp_file.as_posix()), levels=3)
     print(f"Wrote SSP to {ssp_file}")
 
 
-@click.command()
-@click.option(
-    "--out",
-    "-o",
-    "output_dir",
-    type=click.Path(exists=False, dir_okay=True, readable=True),
-    default="docs",
-    help="Output directory (default: ./docs)",
-)
-def main(output_dir: str):
-    family_files = ssptoolkit.get_component_files(project.get_components())
-    families = create_family(
-        families=family_files, out_path=output_dir, return_data=True
-    )
-    ssp_data = get_family_data(output_to=output_dir, family_data=families)
-    write_ssp(ssp_data=ssp_data, output_to=output_dir)
+def main():
+    families = create_family(return_data=True)
+    ssp_data = get_family_data(family_data=families)
+    write_ssp(ssp_data=ssp_data)
 
 
 if __name__ == "__main__":

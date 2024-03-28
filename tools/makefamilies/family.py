@@ -27,12 +27,12 @@ class Control(BaseModel):
     control_id: str
     control_name: str
     description: str
-    control_type: str
-    status: str
+    control_type: str | None
+    status: str | None
     parts: Dict[str, List[Part]]
 
     def header(self) -> str:
-        return f"### {self.control_id}: {self.control_name.title()}\n\n"
+        return f"### {self.control_id}: {self.control_name}\n\n"
 
     def control_description(self) -> str:
         return f"```text\n{self.description}\n```\n"
@@ -78,7 +78,7 @@ class Family(BaseModel):
             text = text + str(control)
         return text
 
-    def print_family_file(self, out_path: str):
+    def print_family_file(self, out_path: str | Path):
         self.controls = sort_by_keys(self.controls)
         content = self.header() + self.get_controls()
         output = Path(out_path).joinpath(self.family_id).with_suffix(".md")

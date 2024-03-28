@@ -3,7 +3,7 @@ Copyright 2019-2024 CivicActions, Inc. See the README file at the top-level
 directory of this distribution and at https://github.com/CivicActions/ssp-toolkit#copyright.
 
 Given a YAML file and path to directory of secrendered component files,
-this tool generates Standard Operating Procdure (SOP) policy markdown files.
+this tool generates Standard Operating Procedure (SOP) policy markdown files.
 """
 
 import hashlib
@@ -17,10 +17,7 @@ from pathlib import Path
 
 import click
 
-# from createfiles.createfiles import write_toc
-import md_toc
-from yaml import FullLoader, load  # type: ignore
-from yamlinclude import YamlIncludeConstructor
+from tools.helpers.ssptoolkit import load_template_args, load_yaml_files, write_toc
 
 
 @dataclass
@@ -52,7 +49,7 @@ class SopWriter:
         print(f"Writing file to {self.filepath}")
         with open(self.filepath, "w+") as md:
             print(self.output_file.getvalue(), file=md)
-        write_toc(self.filepath)
+        write_toc(self.filepath, levels=3)
 
     def __write_header(self):
         """
@@ -91,7 +88,7 @@ class SopWriter:
 
         :param control: a dictionary of control narratives.
         """
-        text = control.get("text", None)
+        text = control.get("text", [])
         if text:
             prose = "\n\n".join(text)
             self.output_file.write(f"{prose}\n\n")
@@ -139,8 +136,7 @@ def aggregate_control_data(component_dir: Path) -> dict:
         if new_hashes.get(template_string) != hashes.get(template_string):
             families[family]["has_changes"] = True
 
-        with open(template, "r") as tmpy:
-            component = load(tmpy, Loader=FullLoader)
+        component = load_yaml_files(template)
         satisfies = component.get("satisfies")
         for control in satisfies:
             control_id = control.get("control_key")
@@ -195,8 +191,7 @@ def get_file_hashes(file_path: Path) -> dict:
     """
     file_hashes = file_path.joinpath("file_hashes").with_suffix(".json")
     if file_hashes.is_file():
-        with open(file_hashes, "r+") as h:
-            old_hashes = load(h, Loader=FullLoader)
+        old_hashes = load_yaml_files(file_hashes)
         hashes = old_hashes if old_hashes else {}
     else:
         hashes = {}
@@ -251,29 +246,13 @@ def write_files(families: dict, out_dir: Path, config: dict):
         text.create_file()
 
 
-def write_toc(file: str):
-    toc = md_toc.build_toc(filename=file, keep_header_levels=3, skip_lines=5)
-    md_toc.write_string_on_file_between_markers(
-        filename=file,
-        string=toc,
-        marker="<!--TOC-->",
-    )
-
-
 @click.command()
-@click.option(
-    "--in",
-    "-i",
-    "input_file",
-    required=True,
-    type=click.Path(exists=True, dir_okay=False, readable=True),
-    help="Replacement data values (YAML)",
-)
 @click.option(
     "--components",
     "-c",
     "components_dir",
-    required=True,
+    required=False,
+    default="components/",
     type=click.Path(exists=True, dir_okay=True, file_okay=False),
     help="Rendered components directory",
 )
@@ -282,17 +261,12 @@ def write_toc(file: str):
     "-o",
     "output_dir",
     type=click.Path(exists=False, dir_okay=True, readable=True),
-    default=".",
-    help="Output directory (default: current directory)",
+    default="docs/",
+    help="Output directory (default: docs/)",
 )
-def main(input_file: str, components_dir: str, output_dir: str):
+def main(components_dir: str, output_dir: str):
     out_dir = Path(output_dir).joinpath("sop")
-    YamlIncludeConstructor.add_to_loader_class(loader_class=FullLoader)
-    with open(Path(input_file), "r") as conf:
-        config = load(conf, Loader=FullLoader)
-
-    if not out_dir.is_dir():
-        out_dir.mkdir(parents=True, exist_ok=True)
+    config = load_template_args()
 
     rendered_components = Path(components_dir)
 

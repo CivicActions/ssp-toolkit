@@ -20,18 +20,11 @@ from tools.helpers.ssptoolkit import find_toc_tag, load_template_args
 
 @click.command()
 @click.option(
-    "--in",
-    "-i",
-    "config_file",
-    required=True,
-    type=click.Path(exists=True, dir_okay=False, readable=True),
-    help="Replacement data values (YAML)",
-)
-@click.option(
     "--templates",
     "-t",
     "templates",
-    required=True,
+    required=False,
+    default="templates/",
     type=click.Path(exists=True, dir_okay=True, file_okay=False),
     help="Template directory",
 )
@@ -41,10 +34,11 @@ from tools.helpers.ssptoolkit import find_toc_tag, load_template_args
     "output_dir",
     type=click.Path(exists=False, dir_okay=True, readable=True),
     default=".",
+    required=False,
     help="Output directory (default: current directory)",
 )
-def main(config_file: str, templates: str, output_dir: str):
-    template_args = load_template_args(config_file)
+def main(templates: str, output_dir: str):
+    template_args = load_template_args()
     output_to = Path(output_dir)
     template_dir = Path(templates)
     if not output_to.is_dir():
