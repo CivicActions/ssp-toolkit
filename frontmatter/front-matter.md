@@ -54,7 +54,7 @@ applicable laws, regulations, agency policies, procedures, and practices.
 Table 1‑1. **Information System Identifier, Name, and Abbreviation**
 
 | **Unique Identifier** | **Information System Name** | **Information System Abbreviation** |
-| --- | ---| --- |
+|-----------------------|-----------------------------|-------------------------------------|
 | None | Project Full Name | Project |
 
 ## 2. Information System Categorization
@@ -66,8 +66,8 @@ Security Categorization.
 
 Table 2‑1. **System Security Categorization**
 
-|     |     |
-| --- | --- |
+|                               |      |
+|-------------------------------|------|
 | **System Sensitivity Level:** | Low Impact |
 
 ### 2.1. Information Types
@@ -93,19 +93,19 @@ can specify the type(s) of information that will reside in FISMA Low Impact
 applications/systems.
 
 To be considered a FISMA Low Impact cloud application/service, the
-answer to all of the following questions must be “yes:”
+answer to all the following questions must be “yes:”
 
 1. Does the service operate in a cloud environment?
-1. Is the cloud service fully operational?
-1. Is the cloud service a Software as a Service (SaaS), as defined by
+2. Is the cloud service fully operational?
+3. Is the cloud service a Software as a Service (SaaS), as defined by
    NIST SP 800-145, The NIST Definition of Cloud Computing?
-1. Does the cloud service contain no personally identifiable
+4. Does the cloud service contain no personally identifiable
    information (PII), except as needed to provide a login capability
    (username, password and email address)?
-1. Is the cloud service low-security-impact, as defined by FIPS PUB
+5. Is the cloud service low-security-impact, as defined by FIPS PUB
    199, Standards for Security Categorization of Federal Information
    and Information Systems?
-1. Is the cloud service hosted within a FedRAMP-authorized Platform as
+6. Is the cloud service hosted within a FedRAMP-authorized Platform as
    a Service (PaaS) or Infrastructure as a Service (IaaS), or is the
    CSP providing the underlying cloud infrastructure?
 
@@ -113,7 +113,7 @@ Table 2‑2. **Sensitivity Categorization of Information Types for the
 _Project_ System**
 
 | **Information Type** | **NIST SP 800-60 V2 R1 Recommended Confidentiality Impact Level** | **NIST SP 800-60 V2 R1 Recommended Integrity Impact Level** | **NIST SP 800-60 V2 R1 Recommended Availability Impact Level** | **CSP Selected Confidentiality Impact Level** | **CSP Selected Integrity Impact Level** | **CSP Selected Availability Impact Level** | **Statement for Impact Adjustment Justification** |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+|----------------------|-------------------------------------------------------------------|-------------------------------------------------------------|----------------------------------------------------------------|-----------------------------------------------|-----------------------------------------|--------------------------------------------|---------------------------------------------------|
 | Training Materials | Low | Low | Low | Low | Low | Low | Training materials is not classified, or FOUO. Users only have access to the training if the instructor grants access to the Training content. All students are vetted prior to coming to the training class and are granted access control to all training material within his/her course |
 | Profile Information | Low | Low | Low | Low | Low | Low | Users have the option of sharing his/her profile information. Information is considered business rolodex information and doesn’t contain financial information or highly sensitive information. User account information is encrypted with 256 bit encryption using FIPS 140-2 compliant security requirements and requires multi-factor authentication and privileged user access to access user accounts. |
 
@@ -133,11 +133,11 @@ requirement documentation.
 
 Table 2‑4. **Security Impact Level**
 
-| **Security Objective**  | **Low, Moderate or High** |
-| ----------------------- | ------------------------- |
-| **Confidentiality**     | Low |
-| **Integrity**           | Low |
-| **Availability**        | Low |
+| **Security Objective**   | **Low, Moderate or High**  |
+|--------------------------|----------------------------|
+| **Confidentiality**      | Low |
+| **Integrity**            | Low |
+| **Availability**         | Low |
 
 Through careful review and analysis, the baseline security categorization for
 the _Project_ system has been determined and is listed in
@@ -145,9 +145,9 @@ Table 2.5, Baseline Security Configuration, which follows.
 
 Table 2‑5. **Baseline Security Configuration**
 
-|     |     |
-| --- | --- |
-| _Project_ Security Categorization | Low |
+|                         |      |
+|-------------------------|------|
+| Project| Security Categorization |      | Low |
 
 Using this categorization, in conjunction with the risk assessment and any
 unique security requirements, the security controls for this system have been
@@ -161,14 +161,14 @@ proponent/advocate for this system.
 
 Table 3‑1. **Information System Owner**
 
-| **Information System Owner Information** |                                 |
-| ---------------------------------------- | ------------------------------  |
-| **Name**                                 | John Manager     |
-| **Title**                                | Program Manager, System Owner    |
-| **Company / Organization**               | Client Full Name |
-| **Address**                              | None  |
-| **Phone Number**                         | 555.555.1234    |
-| **Email Address**                        | john.manager@example.com    |
+| **Information System Owner Information**  |                                  |
+|-------------------------------------------|----------------------------------|
+| **Name**                                  | John Manager     |
+| **Title**                                 | Program Manager, System Owner    |
+| **Company / Organization**                | Client Full Name |
+| **Address**                               | None  |
+| **Phone Number**                          | 555.555.1234    |
+| **Email Address**                         | john.manager@example.com    |
 
 ## 4. Independent Assessor
 
@@ -177,14 +177,14 @@ this system.
 
 Table 4‑1. **Independent Assessor**
 
-| **Independent Assessor Information** |                            |
-| ------------------------------------ | -------------------------- |
-| **Name**                             | Jane Assessor     |
-| **Title**                            | System Assessor    |
-| **Company / Organization**           | Client Full Name |
-| **Address**                          | None  |
-| **Phone Number**                     | 555.555.2345    |
-| **Email Address**                    | jane.assessor@example.com    |
+| **Independent Assessor Information**  |                             |
+|---------------------------------------|-----------------------------|
+| **Name**                              | Jane Assessor     |
+| **Title**                             | System Assessor    |
+| **Company / Organization**            | Client Full Name |
+| **Address**                           | None  |
+| **Phone Number**                      | 555.555.2345    |
+| **Email Address**                     | jane.assessor@example.com    |
 
 ## 5. Authorizing Official
 
@@ -206,14 +206,14 @@ system and/or its functions and operation.
 
 Table 6‑1. **Information System AO Management Point of Contact**
 
-| **Information System AO Management Point of Contact** | |
-| -------------------------- | ----------------------------------- |
-| **Name**                   | Jan Poc     |
-| **Title**                  | Authorizing Official    |
-| **Company / Organization** | Client Full Name |
-| **Address**                | None  |
-| **Phone Number**           | 555.555.3456    |
-| **Email Address**          | jan.poc@example.com    |
+| **Information System AO Management Point of Contact** |                                      |
+|-------------------------------------------------------|--------------------------------------|
+| **Name**                                              | Jan Poc     |
+| **Title**                                             | Authorizing Official    |
+| **Company / Organization**                            | Client Full Name |
+| **Address**                                           | None  |
+| **Phone Number**                                      | 555.555.3456    |
+| **Email Address**                                     | jan.poc@example.com    |
 
 ## 7. Assignment of Security Responsibility
 
@@ -224,25 +224,25 @@ responsibilities.
 
 Table 7‑1. **Internal ISSO (or Equivalent) Point of Contact**
 
-| **Internal ISSO (or Equivalent) Point of Contact** |  |
-| -------------------------- | ------------------------------ |
-| **Name**                   | AWS East/West     |
-| **Title**                  | Information Systems Security Officer (ISSO)    |
-| **Company / Organization** | Amazon Web Services |
-| **Address**                | None  |
-| **Phone Number**           | 555.555.5678    |
-| **Email Address**          | staff@amazon.com    |
+| **Internal ISSO (or Equivalent) Point of Contact** |                                 |
+|----------------------------------------------------|---------------------------------|
+| **Name**                                           | AWS East/West     |
+| **Title**                                          | Information Systems Security Officer (ISSO)    |
+| **Company / Organization**                         | Amazon Web Services |
+| **Address**                                        | None  |
+| **Phone Number**                                   | 555.555.5678    |
+| **Email Address**                                  | staff@amazon.com    |
 
 Table 7‑2. **AO ISSO Point of Contact**
 
-| **AO ISSO Point of Contact** |  |
-| ---------------------------- | ----------------------------- |
-| **Name**                     | Jim Issopoc     |
-| **Title**                    | Information Systems Security Manager (ISSM)    |
-| **Company / Organization**   | Client Full Name |
-| **Address**                  | None  |
-| **Phone Number**             | 555.555.6789    |
-| **Email Address**            | jim.issopoc@example.com    |
+| **AO ISSO Point of Contact**  |                                |
+|-------------------------------|--------------------------------|
+| **Name**                      | Jim Issopoc     |
+| **Title**                     | Information Systems Security Manager (ISSM)    |
+| **Company / Organization**    | Client Full Name |
+| **Address**                   | None  |
+| **Phone Number**              | 555.555.6789    |
+| **Email Address**             | jim.issopoc@example.com    |
 
 ## 8. Information System Operational Status
 
@@ -252,8 +252,8 @@ Authority to Operate (ATO).
 
 Table 8‑1. **System Status**
 
-| **System Status** | |
-| ----------------- | ---  |
+| **System Status**  |     |
+|--------------------|-----|
 | Major Modification | The system is undergoing a major change, development, or transition. |
 
 ## 9. Information System Type
@@ -270,14 +270,14 @@ questions to help system owners determine the type of cloud.
 
 Table 9‑1. **Determining a Cloud System**
 
-| **Question (Yes/No)** | **Conclusion** |
-| --------------------- | -------------- |
-| Does the system use virtual machines (VM)? | A no response means that system is most likely not a cloud. |
-| Does the system have the ability to expand its capacity to meet customer demand? | A no response means that the system is most likely not a cloud. |
-| Does the system allow the customer to build anything other than servers? | A no response means that the system is an Infrastructure as a Service (IaaS). A yes response means that the system is either a Platform as a Service (PaaS) or a SaaS. |
-| Does the system offer the ability to create databases? | A yes response means that the system is a PaaS. |
-| Does the system offer various developer toolkits and Application Programming Interfaces (APIs)? | A yes response means that the system is a PaaS. |
-| Does the system offer only applications that are available by obtaining a login? | A yes response means that system is a SaaS. A no response means that the system is either a PaaS or an IaaS. |
+| **Question (Yes/No)**                                                                           | **Conclusion**                                                                                                                                                         |
+|-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Does the system use virtual machines (VM)?                                                      | A no response means that system is most likely not a cloud.                                                                                                            |
+| Does the system have the ability to expand its capacity to meet customer demand?                | A no response means that the system is most likely not a cloud.                                                                                                        |
+| Does the system allow the customer to build anything other than servers?                        | A no response means that the system is an Infrastructure as a Service (IaaS). A yes response means that the system is either a Platform as a Service (PaaS) or a SaaS. |
+| Does the system offer the ability to create databases?                                          | A yes response means that the system is a PaaS.                                                                                                                        |
+| Does the system offer various developer toolkits and Application Programming Interfaces (APIs)? | A yes response means that the system is a PaaS.                                                                                                                        |
+| Does the system offer only applications that are available by obtaining a login?                | A yes response means that system is a SaaS. A no response means that the system is either a PaaS or an IaaS.                                                           |
 
 The layers of the _Project_ defined in this
 FISMA Low Impact Framework are indicated in Table
@@ -285,9 +285,9 @@ FISMA Low Impact Framework are indicated in Table
 
 Table 9‑2. **Service Layers Represented in this FISMA Low Impact Framework**
 
-| **Service Provider Architecture Layers** | |
-| --- | --- |
-| Software as a Service (SaaS) | Major Application |
+| **Service Provider Architecture Layers** |                   |
+|------------------------------------------|-------------------|
+| Software as a Service (SaaS)             | Major Application |
 
 ### 9.2. Cloud Deployment Models
 
@@ -300,8 +300,8 @@ Framework, which follows.
 
 Table 9‑3. **Cloud Deployment Model Represented in this FISMA Low Impact Framework**
 
-| **Service Provider Cloud Deployment Model** | |
-| --- | --- |
+| **Service Provider Cloud Deployment Model** |      |
+|---------------------------------------------|------|
 | Public | Cloud services and infrastructure supporting multiple organizations and agency clients. |
 
 ### 9.3. Leveraged Authorizations
@@ -314,7 +314,7 @@ which follows.
 Table 9‑4. **Leveraged Authorizations**
 
 | **Leveraged Information System Name** | **Leveraged Service Provider Owner** | **Date Granted** |
-| --- | --- | --- |
+|---------------------------------------|--------------------------------------|------------------|
 | | | |
 
 ## 10. General System Description
@@ -347,8 +347,8 @@ and Privileges, which follows.
 
 Table 10‑1. **Personnel Roles and Privileges**
 
-| **Role** | **Internal or External** | **Privileged (P), Non-Privileged (NP), or No Logical Access (NLA)** | **Sensitivity Level** | **Authorized Privileges**  | **Functions Performed** |
-| --- | --- | --- | --- | --- | --- |
+| **Role** | **Internal or External** | **Privileged (P), Non-Privileged (NP), or No Logical Access (NLA)** | **Sensitivity Level** | **Authorized Privileges** | **Functions Performed** |
+|----------|--------------------------|---------------------------------------------------------------------|-----------------------|---------------------------|-------------------------|
 | AWS Dashboard Administrator | Internal | P | Moderate | AWS Dashboard access | Add/remove virtual hardware, manage backup and restore server |
 | UNIX System Administrator | Internal | P | Moderate | Full administrative access (root) | Add/remove system users, install and configure software, OS updates, patches and hotfixes |
 | Site Administrator | Internal | P | Limited | Full Application Access | Application configuration, external user permissions, and content management |
@@ -419,8 +419,8 @@ Table 11.1, Ports, Protocols, and Services, lists the ports, protocols, and serv
 
 Table 11‑1. **Ports, Protocols, and Services**
 
-| **Ports (TCP/UDP)** | **Protocols** | **Services**  | **Purpose** | **Used By**  |
-| --- | --- | --- | --- | --- |
+| **Ports (TCP/UDP)** | **Protocols** | **Services** | **Purpose** | **Used By** |
+|---------------------|---------------|--------------|-------------|-------------|
 | 22 | TCP | SSH Bastion | SSH acces to server | System Administrator |
 | 53 | TCP/UDP | AWS DNS | DNS service within AWS | None |
 | 123 | UDP | AWS NTP | Network time protocol | None |

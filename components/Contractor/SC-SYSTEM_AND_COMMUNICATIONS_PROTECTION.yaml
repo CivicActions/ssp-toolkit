@@ -28,7 +28,8 @@ satisfies:
       The information system implements:
 
 
-      - Cryptographic modules through Secure Shell (SSH) to allow administrators to securely logon to the various system components
+      - Cryptographic modules through Secure Shell (SSH) to allow administrators to securely logon to the
+        various system components
 
       - HTTPS/SSL (TLS) for connection to web-based services
 
@@ -46,7 +47,7 @@ satisfies:
       The system inherits this control from the FedRAMP Provisional ATO granted to
       the AWS Cloud dated 1 May 2013 for the following: secure name / address
       resolution service (authoritative source)
-  implementation_status: 
+  implementation_status:
 - control_key: SC-21
   control_name: SECURE NAME / ADDRESS RESOLUTION SERVICE
   standard_key: NIST SP 800-53 Revision 4
@@ -57,7 +58,7 @@ satisfies:
       The system inherits this control from the FedRAMP Provisional ATO granted to
       the AWS Cloud dated 1 May 2013 for the following: secure name / address
       resolution service (recursive or caching resolver)
-  implementation_status: 
+  implementation_status:
 - control_key: SC-22
   control_name: ARCHITECTURE AND PROVISIONING FOR NAME / ADDRESS RESOLUTION SERVICE
   standard_key: NIST SP 800-53 Revision 4

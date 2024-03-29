@@ -61,21 +61,49 @@ satisfies:
       through the following SDLC methodology:
 
 
-      - Code release planning: A code release ticket is created in the Change Request project of the CivicActions ticketing system which describes the overall goals of the code release. The code release ticket is linked to other tickets in the ticketing system which describe issues to be addressed by the planned code release. Those issues may include bug fixes and feature enhancements as well as upgrades to newer versions of the software packages that have been used to build the website.
+      - Code release planning: A code release ticket is created in the Change Request project of the
+        CivicActions ticketing system which describes the overall goals of the code release.
+        The code release ticket is linked to other tickets in the ticketing system which describe issues to
+        be addressed by the planned code release. Those issues may include bug fixes and feature enhancements
+        as well as upgrades to newer versions of the software packages that have been used to build the
+        website.
 
-      - Sprints: The tickets covered by the planned code release are then implemented through a series of planned sprints, each of which typically lasts two weeks. Each sprint begins with a sprint planning session at which the CCB selects a list of tickets to be implemented. CivicActions Development holds daily coordination meetings throughout the sprint to share information and resolve any problems that may be blocking progress toward completion. At the end of the sprint, a retrospective is performed in which progress is reviewed to determine which issues have been resolved and which need further work.
+      - Sprints: The tickets covered by the planned code release are then implemented through a series of
+        planned sprints, each of which typically lasts two weeks. Each sprint begins with a sprint planning
+        session at which the CCB selects a list of tickets to be implemented. CivicActions
+        Development holds daily coordination meetings throughout the sprint to share information and resolve
+        any problems that may be blocking progress toward completion. At the end of the sprint, a
+        retrospective is performed in which progress is reviewed to determine which issues have been
+        resolved and which need further work.
 
-      - Development/unit testing: Work on each ticket is performed within a separate code branch within the CivicActions Git repository, and tested using the GitLab Runner continuous integration platform. Developers also write unit tests to prove their code behaves as expected and address security considerations such as information leakage, bounds checking, and input validation. Once work on a ticket is completed, the developer creates a merge request, and the changes are submitted to at least one other developer for review to ensure they meet functional requirements and address security considerations before the pull request is merged into the Git repository's development branch for the planned code release.
+      - Development/unit testing: Work on each ticket is performed within a separate code branch within the
+        CivicActions Git repository, and tested using the GitLab Runner continuous integration
+        platform. Developers also write unit tests to prove their code behaves as expected and address security
+        considerations such as information leakage, bounds checking, and input validation. Once work on a
+        ticket is completed, the developer creates a merge request, and the changes are submitted to at least
+        one other developer for review to ensure they meet functional requirements and address security
+        considerations before the pull request is merged into the Git repository's development branch for the
+        planned code release.
 
-      - Integration testing: Once all work tickets have been completed, the code and configuration necessary to implement the changes are merged into the website's staging server, where it undergoes additional testing to ensure there are no conflicts between the work that has been done on individual tickets.
+      - Integration testing: Once all work tickets have been completed, the code and configuration necessary
+        to implement the changes are merged into the website's staging server, where it undergoes additional
+        testing to ensure there are no conflicts between the work that has been done on individual tickets.
 
-      - User acceptance testing (UAT): The code release undergoes manual testing against a checklist of expected site behaviors and options each of the website's defined user roles to further verify that the functional changes work as expected and to identify any changes in user experience that need to be documented in release notes to be shared with the customer.
+      - User acceptance testing (UAT): The code release undergoes manual testing against a checklist of
+        expected site behaviors and options each of the website's defined user roles to further verify that
+        the functional changes work as expected and to identify any changes in user experience that need to
+        be documented in release notes to be shared with the customer.
 
-      - Approval for deployment: After all the planned code release has passed all of the above tests, the code release is scheduled for deployment to production and presented to CivicActions' Change Control Board (CCB) for review and approval.
+      - Approval for deployment: After all the planned code release has passed all of the above tests, the
+        code release is scheduled for deployment to production and presented to CivicActions'
+        Change
+        Control Board (CCB) for review and approval.
 
-      - Deployment to production: A full backup of the website is performed immediately prior to the deployment.
+      - Deployment to production: A full backup of the website is performed immediately prior to the
+        deployment.
 
-      - Security scan: After the deployment to production, the website undergoes a security scan using a web vulnerability scanner.
+      - Security scan: After the deployment to production, the website undergoes a security scan using a web
+        vulnerability scanner.
 
         Security issues to be addressed in the planned code release may come from a variety of sources:
 
@@ -83,11 +111,14 @@ satisfies:
 
       - Security concerns, incidents, and site performance issues reported by users
 
-      - Security incident reports, including server log analysis and root cause analysis of those incidents performed by the CivicActions Security Office and Operations staff
+      - Security incident reports, including server log analysis and root cause analysis of those incidents
+        performed by the CivicActions Security Office and Operations staff
 
-      - Security notifications received by the CivicActions Security Office from external security teams and other software vendors
+      - Security notifications received by the CivicActions Security Office from external
+        security teams and other software vendors
 
-      - Vulnerabilities detected during security scans of the website performed by the CivicActions Security Office
+      - Vulnerabilities detected during security scans of the website performed by the
+        CivicActions Security Office
 
       - Issues reported by the CivicActions Security Office, Operations staff and Development
 
@@ -101,21 +132,29 @@ satisfies:
 
       - Customer Support: Files tickets when incidents are reported and shares incident reports with customers
 
-      - The CivicActions Security Office: Receives security notifications from the Drupal security team and other software vendors; performs security scans; uses CivicActions JIRA ticketing system to request mitigation of all reported vulnerabilities
+      - The CivicActions Security Office: Receives security notifications from the Drupal security
+        team and other software vendors; performs security scans; uses CivicActions JIRA ticketing
+        system to request mitigation of all reported vulnerabilities
 
-      - CivicActions Development: Performs server log analysis when security incidents are reported; assists in root cause analysis
+      - CivicActions Development: Performs server log analysis when security incidents are
+        reported; assists in root cause analysis
 
-      - Change Control Board: Meets weekly to review and approve upcoming planned code changes to the website, include security-related code releases.
+      - Change Control Board: Meets weekly to review and approve upcoming planned code changes to the website,
+        include security-related code releases.
 
-      - AWS Cloud: Monitors server and application events; proactively respond to security incidents, and reports incidents to CivicActions
+      - AWS Cloud: Monitors server and application events; proactively respond to security incidents, and
+        reports incidents to CivicActions
 
-      - Users: Communicates customer security requirements and expectations, and alerts the CivicActions customer support team whenever it detects a security or site performance issue
+      - Users: Communicates customer security requirements and expectations, and alerts the
+        CivicActions customer support team whenever it detects a security or site performance
+        issue
 
 
       Security responsibilities performed by these teams include the following:
 
 
-      - Perform configuration management during information system design, development, implementation, and operation;
+      - Perform configuration management during information system design, development, implementation, and
+        operation;
 
       - Implement only organization-approved changes;
 
@@ -123,11 +162,13 @@ satisfies:
 
       - Manage and control changes to the system;
 
-      - Fully test all changes, taking into account security considerations as well as other functional requirements;
+      - Fully test all changes, taking into account security considerations as well as other functional
+        requirements;
 
       - Track security flaws and flaw resolution; and
 
-      - Employ code analysis tools to examine software for common flaws and document the results of the analysis.
+      - Employ code analysis tools to examine software for common flaws and document the results of the
+        analysis.
   - key: c
     text: >
       Each of the CivicActions teams described in SA-3(b) has a

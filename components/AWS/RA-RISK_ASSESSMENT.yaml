@@ -7,8 +7,9 @@ satisfies:
   covered_by: []
   security_control_type: Hybrid
   narrative:
-  - text: |
-      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud
+      Service Provider dated 1 May 2013.
   implementation_status: In Place
 - control_key: RA-5
   control_name: VULNERABILITY SCANNING
