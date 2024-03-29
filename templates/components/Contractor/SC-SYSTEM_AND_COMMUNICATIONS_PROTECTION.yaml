@@ -28,7 +28,8 @@ satisfies:
       The information system implements:
 
 
-      - Cryptographic modules through Secure Shell (SSH) to allow administrators to securely logon to the various system components
+      - Cryptographic modules through Secure Shell (SSH) to allow administrators to securely logon to the
+        various system components
 
       - HTTPS/SSL (TLS) for connection to web-based services
 

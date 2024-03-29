@@ -43,7 +43,8 @@ satisfies:
       modifying the website's source code to insert additional Ilias logging hooks.
   - key: d
     text: |
-      Information captured in the transaction logs includes, but is not limited to, the following auditable events:
+      Information captured in the transaction logs includes, but is not limited to, the following auditable
+      events:
       - Failed login attempts
       - Successful login attempts
       - New user account creation

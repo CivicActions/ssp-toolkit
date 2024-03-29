@@ -98,7 +98,8 @@ satisfies:
 
       - Not listing passwords in tickets
 
-      - Not writing down or storing passwords in a readable form in any physical or logical location where they may be discoverable by unauthorized persons.
+      - Not writing down or storing passwords in a readable form in any physical or logical
+        location where they may be discoverable by unauthorized persons.
   implementation_status: {{status.IA_5.contractor}}
   summary: >
     {{contractor.name_short}} required to take appropriate password handling

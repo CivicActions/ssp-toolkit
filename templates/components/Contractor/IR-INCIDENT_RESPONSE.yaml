@@ -100,7 +100,8 @@ satisfies:
 
       - Through continuous monitoring tools (StatusCake, OSSEC, others).
 
-      - As a result of application notifications where {{contractor.name_short}} Security receives notifications (AIDE, OpsGenie, others).
+      - As a result of application notifications where {{contractor.name_short}} Security
+        receives notifications (AIDE, OpsGenie, others).
 
       - Event logging described in AC-2
 
@@ -144,17 +145,20 @@ satisfies:
 
       2. Describes the structure and organization of the incident response capability;
 
-      3. Provides a high-level approach for how the incident response capability fits into {{contractor.name_short}} and the systems it maintains;
+      3. Provides a high-level approach for how the incident response capability fits into
+        {{contractor.name_short}} and the systems it maintains;
 
       4. Meets the mission, size, structure, and functions of {{contractor.name_short}};
 
       5. Defines reportable incidents;
 
-      6. Provides metrics for measuring the incident response capability and details categorization of incidents in accordance with NIST 800-61;
+      6. Provides metrics for measuring the incident response capability and details categorization
+        of incidents in accordance with NIST 800-61;
 
       7. Defines the roles and responsibilities of {{contractor.name_short}} IR Team;
 
-      8. Is reviewed annually and updated as needed by the {{contractor.name_short}} Security Office, with the assistance of the Incident Response Team.
+      8. Is reviewed annually and updated as needed by the {{contractor.name_short}} Security Office,
+        with the assistance of the Incident Response Team.
   - key: b
     text: >
       The {{contractor.name_short}} Incident Response Plan is distributed to

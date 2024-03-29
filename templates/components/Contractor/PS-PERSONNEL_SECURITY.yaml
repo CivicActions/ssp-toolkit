@@ -62,7 +62,7 @@ satisfies:
       before granting access to the information system.
   - key: b
     text: >
-      Rescreening is conducted as required by the individual’s job duties, the
+      Re screening is conducted as required by the individual’s job duties, the
       classification of the information they will access, and the risks
       associated with the role. A basic background check is performed for all
       {{contractor.name_short}} employees.
@@ -82,9 +82,9 @@ satisfies:
       {{contractor.name_short}} infrastructure.
 
       In the case of voluntary departure, employees are permitted access to
-      the information system for the duration of their offboarding period. The
+      the information system for the duration of their off-boarding period. The
       departing employee’s manager is responsible for informing the Information
-      Technology department when the employee offboarding period concludes. At
+      Technology department when the employee off-boarding period concludes. At
       this time system and facility, access is terminated.
   - key: b
     text: >
