@@ -27,16 +27,23 @@
 
 ## Overview
 
-This Contingency Plan provides guidance for the CivicActions Team on delivering our essential mission and business functions follwing a disruption, compromise, or failure of any Project component.
+This Contingency Plan provides guidance for the CivicActions Team on delivering our essential
+mission and business functions following a disruption, compromise, or failure of any Project
+component.
 
 "Disruption" means unexpected downtime or significantly reduced service lasting longer than:
 
 - 30 minutes during standard U.S. business hours (0900-2100 EST, Monday through Friday)
 - 90 minutes at other times
 
-Disruption can include unexpected downtime of key services, data loss, or improper privilege escalation. In many cases, the robust contingency management capabilities of [AWS Cloud Security](https://aws.amazon.com/security/) coupled with [N2WS CPM backups and disaster recovery](https://n2ws.com/product/aws-disaster-recovery) will resolve/remediate event occurrences.
+Disruption can include unexpected downtime of key services, data loss, or improper privilege escalation. In
+many cases, the robust contingency management capabilities of
+[AWS Cloud Security](https://aws.amazon.com/security/) coupled with
+[N2WS CPM backups and disaster recovery](https://n2ws.com/product/aws-disaster-recovery) will resolve/remediate
+event occurrences.
 
-For a security incident and most events, the [Security Incident Response Plan](security-irp.md) provides guidance for the responding team.
+For a security incident and most events, the [Security Incident Response Plan](security-irp.md) provides
+guidance for the responding team.
 
 ### Preparedness
 
@@ -71,8 +78,8 @@ Short-term disruptions lasting less than 30 minutes are outside the scope of thi
 ## Incident Response Team information Contact information
 
 To maintain current and accurate contact information, the contact list is maintained as a
-[private spreadsheet](None) and linked to the the Project
-Contingency Plan. If you require access to the source document, contact the ISO.
+[private spreadsheet](None) and linked to the Project Contingency Plan. If you
+require access to the source document, contact the ISO.
 
 
 
@@ -80,11 +87,16 @@ Contingency Plan. If you require access to the source document, contact the ISO.
 
 ### Activation and notification
 
-The first Incident Response Team member who notices or reports a potential contingency-plan-level problem becomes the **Incident Commander** (IC) until recovery efforts are complete, or until the Incident Commander role is explicitly reassigned.
+The first Incident Response Team member who notices or reports a potential contingency-plan-level problem
+becomes the **Incident Commander** (IC) until recovery efforts are complete, or until the Incident Commander
+role is explicitly reassigned.
 
-If the problem is identified as part of a [security incident response situation](security-irp.md) (or becomes a security incident response situation), the same Incident Commander (IC) should handle the overall situation since these response processes must be coordinated.
+If the problem is identified as part of a [security incident response situation](security-irp.md) (or becomes
+a security incident response situation), the same Incident Commander (IC) should handle the overall situation
+since these response processes must be coordinated.
 
-The IC first notifies and coordinates with the people who are authorized to decide that Project is in a contingency plan situation:
+The IC first notifies and coordinates with the people who are authorized to decide that Project
+is in a contingency plan situation:
 
 - From CivicActions:
   - Incident Commander
@@ -94,19 +106,28 @@ The IC first notifies and coordinates with the people who are authorized to deci
   - Product Owner
   - Project users, when applicable
 
-The IC keeps a log of the situation in a JIRA Incident ticket; if this is also a security incident, the IC also follows the [security incident communications process](security-irp.md#initiate) which includes updating the CivicActions Slack channel None Slack channel. The IC should delegate assistant ICs for aspects of the situation as necessary.
+The IC keeps a log of the situation in a JIRA Incident ticket; if this is also a security incident, the IC
+also follows the [security incident communications process](security-irp.md#initiate) which includes updating
+the CivicActions Slack channel None Slack channel. The IC should delegate
+assistant ICs for aspects of the situation as necessary.
 
 ## Recovery
 
-The Incident Response Team assesses the situation and works to recover the system. See the list of [external dependencies](#external-dependencies) for procedures for recovery from problems with external services.
+The Incident Response Team assesses the situation and works to recover the system. See the list of
+[external dependencies](#external-dependencies) for procedures for recovery from problems with external
+services.
 
-If this is also a security incident, the IC also follows the [security incident assessment](security-irp.md#assess) and [remediation](security-irp.md#remediate) processes.
+If this is also a security incident, the IC also follows the
+[security incident assessment](security-irp.md#assess) and [remediation](security-irp.md#remediate) processes.
 
-If the IC assesses that the overall response process is likely to last longer than 3 hours, the IC should organize shifts so that each responder works on response for no longer than 3 hours at a time, including handing off their own responsibility to a new IC after 3 hours.
+If the IC assesses that the overall response process is likely to last longer than 3 hours, the IC should
+organize shifts so that each responder works on response for no longer than 3 hours at a time, including
+handing off their own responsibility to a new IC after 3 hours.
 
 ### Backup and restore
 
-Hourly and daily [snapshots](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Snapshots) are created using the [Cloud Protection Manager (CPM) or other backup system](https://cpm.project.com/signin/)
+Hourly and daily [snapshots](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Snapshots) are
+created using the [Cloud Protection Manager (CPM) or other backup system](https://cpm.project.com/signin/)
 
 - First determine how far back in time to go to obtain a clean backup for restore
 - Restore by using the `Recover` tab for the instance needing restoration
@@ -117,18 +138,15 @@ Note: _Volumes should not be deleted by default. If you terminate the old instan
 you begin, CPM will attempt the re-use the internal "backnet" (172.x.x.x) addresses_
 
 1. Log in to CPM at: <https://cpm.project.com/signin/>
-
-   - Determine how far back in time to go to obtain a clean backup for restore.
-   - Click **Recover** on the most recent hourly snapshots previous to issue occurrence.
-   - Click **Instance** of the instance to be recovered.
-   - Click **Recover Instance**.
-
+    - Determine how far back in time to go to obtain a clean backup for restore.
+    - Click **Recover** on the most recent hourly snapshots previous to issue occurrence.
+    - Click **Instance** of the instance to be recovered.
+    - Click **Recover Instance**.
 2. Reset: _(this part needs additional documentation)_
-
-   - Elastic IPs
-   - Internal backnet addresses (in .ssh/config files) _(unnecessary if backnet preserved)_
-   - System name tags of instances and volumes
-   - Monitoring alarms _(if they had been disabled)_
+    - Elastic IPs
+    - Internal backnet addresses (in .ssh/config files) _(unnecessary if backnet preserved)_
+    - System name tags of instances and volumes
+    - Monitoring alarms _(if they had been disabled)_
 
 #### Disaster recovery (DR)
 
@@ -150,7 +168,8 @@ For reconstitution:
 
 ## External dependencies
 
-Project depends on several external services. In the event one or more of these services has a long-term disruption, the team will mitigate impact by following this plan.
+Project depends on several external services. In the event one or more of these services
+has a long-term disruption, the team will mitigate impact by following this plan.
 
 ### GitLab
 

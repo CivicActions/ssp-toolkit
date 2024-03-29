@@ -2,14 +2,14 @@
 
 ## Client Project Full Name
 
-August 2023
+March 2024
 Version 3.4
 
 CivicActions, Inc
 Lafayette, CA
 www.civicactions.com
 
-2023 CivicActions, Inc
+2024 CivicActions, Inc
 All rights reserved.
 
 Information contained in this document is proprietary,
@@ -52,17 +52,37 @@ The system is available to users over a traditional web interface using a deskto
 
 ### 1.1 Introduction
 
-The purpose of the System Continuity Plan (COOP) is to prepare for and address the elements necessary to sustain Project mission essential functions (MEF) at an alternate site and performing those functions for up to 30 days before returning to normal operations. Once a particular emergency is resolved, a synopsis of the problem and the resolution process in the form of a “lessons learned” document is generated and disseminated to all concerned. The COOP is intended to serve as the centralized repository for the information, tasks, and procedures that would be necessary to facilitate the Project management’s decision-making process and its timely response to any disruptive or extended interruption of normal business operations and services. This is especially important if the cause of the interruption is such that a prompt resumption of operations cannot be accomplished by employing only normal daily operating procedures. In terms of personnel and financial resources, the information tasks and procedures detailed in this plan represent Project management’s demonstrated commitment to response, resumption, recovery, and restoration planning.
+The purpose of the System Continuity Plan (COOP) is to prepare for and address the elements
+necessary to sustain Project mission essential functions (MEF) at an alternate site and
+performing those functions for up to 30 days before returning to normal operations. Once a particular
+emergency is resolved, a synopsis of the problem and the resolution process in the form of a “lessons learned”
+document is generated and disseminated to all concerned. The COOP is intended to serve as
+the centralized repository for the information, tasks, and procedures that would be necessary to facilitate
+the Project management’s decision-making process and its timely response to any disruptive or
+extended interruption of normal business operations and services. This is especially important if the cause of
+the interruption is such that a prompt resumption of operations cannot be accomplished by employing only normal
+daily operating procedures. In terms of personnel and financial resources, the information tasks and procedures
+detailed in this plan represent Project management’s demonstrated commitment to response,
+resumption, recovery, and restoration planning.
 
 ### 1.2 Plan Information
 
-The COOP is comprised of dynamic action plans to manage information system operational continuity objectives, and generally static policy that is managed by organizational processes. For Project, the majority of the COOP is contained in the action plan, which is captured in the [Project Contingency Plan](https://guidebook.civicactions.com/en/latest/common-practices-tools/security/contingency-plan/) documentation.
+The COOP consists of dynamic action plans to manage information system operational continuity
+objectives, and generally static policy that is managed by organizational processes. For Project,
+the majority of the COOP is contained in the action plan, which is captured in the
+[Project Contingency Plan](https://guidebook.civicactions.com/en/latest/common-practices-tools/security/contingency-plan/) documentation.
 
 ## 2 Continuity of Operations Plan Overview
 
 ### 2.1 Applicable Provisions and Directives
 
-The development of the Project COOP is required by both executive decision and regulatory mandates. The Project management must maintain an information assurance (IA) infrastructure that will ensure that its information resources maintain confidentiality, integrity and availability of its data and resources. Furthermore, Project management must ensure their strategic information resources management capabilities. Therefore, the Project COOP is developed in accordance with the following executive decisions, regulatory mandates, provisions, and directives as required by:
+The development of the Project COOP is required by both executive decision
+and regulatory mandates. The Project management must maintain an information assurance (IA)
+infrastructure that will ensure that its information resources maintain confidentiality, integrity and
+availability of its data and resources. Furthermore, Project management must ensure their
+strategic information resources management capabilities. Therefore, the Project
+COOP is developed in accordance with the following executive decisions, regulatory mandates,
+provisions, and directives as required by:
 
 - Federal Information Security Management Act (FISMA 2002)
 - Federal Information Security Modernization Act (FISMA 2014)
@@ -93,7 +113,9 @@ In the event of a disaster or other circumstances that may bring about the need 
 
 ### 2.4 Assumptions
 
-System recovery time of 24 hours has been determined to provide a cost of recovery consummate with the value of the functionality provided by Project. In light of this schedule, full system recovery can occur within the time frame, sparing the cost of a “hot” or “warm” site.
+System recovery time of 24 hours has been determined to provide a cost of recovery consummate with the value
+of the functionality provided by Project. In light of this schedule, full system recovery can
+occur within the time frame, sparing the cost of a “hot” or “warm” site.
 
 ### 2.5 Critical Success Factors and Issues
 
@@ -109,10 +131,11 @@ This section addresses the factors and issues that specifically apply to the Pro
   Memoranda of Understanding (MOUs), and Service Level Agreements (SLAs).
 ### 2.6 Mission-Critical Systems/Applications/Services
 
-The following mission-critical systems/applications/services must be recovered at the time of disaster in the following order, due to interdependencies.
+The following mission-critical systems/applications/services must be recovered at the time of disaster in the
+following order, due to interdependencies.
 
 | System Identifier | System Description | Priority | Rationale |
-| ---- | ---- | ---- | ---- |
+|-------------------|--------------------|----------|-----------|
 | cpm | Backup management server (Cloud Protection Manager) | 1 | Expedites restore process |
 | prod-db | the Project database | 2 | Required for the site to function |
 | prod-web | the Project website | 2 | Required for the site to function |
@@ -140,7 +163,10 @@ The Project COOP, Contingency Plan and Security Incident Response team members a
 
 ### 3.2 Vital Records/Documentation
 
-Vital records and important documentation are backed up and stored offsite and include any documents or documentation that is essential to the operations of an organization, such as personnel records, software documentation, legal documentation, legislative documentation, benefits documentation, etc. The following documentation will be available:
+Vital records and important documentation are backed up and stored offsite and include any documents or
+documentation that is essential to the operations of an organization, such as personnel records, software
+documentation, legal documentation, legislative documentation, benefits documentation, etc. The following
+documentation will be available:
 
 - Security related Information Technology (IT) policy & procedure memoranda, circulars, publications
 - Complete hardware and software listings
@@ -158,11 +184,14 @@ The COOP Coordinator, Contingency System Coordinators, and Team Leaders, togethe
 
 ## 5 Recommended Strategies
 
-The following information represents potential strategies for execution and is considered as solutions that potentially may assist in the continued development of recovery capabilities in a post-disaster situation.
+The following information represents potential strategies for execution and is considered as solutions that
+potentially may assist in the continued development of recovery capabilities in a post-disaster situation.
 
 ### 5.1 Basic Emergency Response Procedures
 
-The actions set forth as responses to disasters are basic procedures that will be followed immediately prior to or during an actual contingency event. These procedures are designed to protect life; minimize damage, injury or disruption; and contribute to timely restart and recovery of the Project System.
+The actions set forth as responses to disasters are basic procedures that will be followed immediately prior
+to or during an actual contingency event. These procedures are designed to protect life; minimize damage,
+injury or disruption; and contribute to timely restart and recovery of the Project System.
 
 #### 5.1.1 Procedures Inherited from the Cloud Service Provider (AWS) COOP
 
@@ -190,7 +219,8 @@ Project inherits its hardware from the infrastructure COOP.
 
 ### 6.2 Backup Procedures
 
-Backup procedures are vital to ensure that any interruption of service is minimized as far as is possible. Backup Log.
+Backup procedures are vital to ensure that any interruption of service is minimized as far as is possible.
+Backup Log.
 
 The backup schedule is as follows:
 
@@ -235,5 +265,5 @@ incident notification and system and network personnel are available 24x7.
 ### Contact List
 
 To maintain current and accurate contact information, the contact list is maintained as a
-[private spreadsheet](None) and linked to the the Project
+[private spreadsheet](None) and linked to the Project
 Contingency Plan. If you require access to the source document, contact the ISO.
