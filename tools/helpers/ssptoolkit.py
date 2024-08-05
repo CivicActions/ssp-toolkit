@@ -138,7 +138,7 @@ def load_controls_by_id(component_list: list) -> dict:
 def load_template_args() -> dict:
     YamlIncludeConstructor.add_to_loader_class(loader_class=yaml.FullLoader)
     config = load_yaml_files("configuration.yaml")
-    return secrender.get_template_args(yaml=config, set_={}, root=None)
+    return secrender.get_template_args(yaml=config, set_={}, root="")
 
 
 def get_control_statuses() -> dict:
@@ -160,8 +160,8 @@ def find_toc_tag(file: str, levels: int = 3):
 
 
 def write_toc(file: str | Path, levels: int):
-    toc = md_toc.build_toc(filename=file, keep_header_levels=levels, skip_lines=5)
-    md_toc.write_string_on_file_between_markers(
+    toc = md_toc.api.build_toc(filename=file, keep_header_levels=levels, skip_lines=5)
+    md_toc.api.write_string_on_file_between_markers(
         filename=file,
         string=toc,
         marker="<!--TOC-->",

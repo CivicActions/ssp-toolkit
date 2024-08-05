@@ -46,7 +46,7 @@ def get_controls(family: Family, standards: list) -> Family:
         )
         if key in component_controls:
             for parent, narrative, status, control_type in get_control_narratives(
-                component_controls.get(key)
+                component_controls.get(key, {})
             ):
                 get_control_parts(parts=narrative, control=control, parent=parent)
                 update_status(control=control, status=status)

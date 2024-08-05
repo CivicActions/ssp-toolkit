@@ -105,6 +105,19 @@ class SopWriter:
                 self.output_file.write(f"**{part}.**\t{prose}\n")
 
 
+def get_new_hashes(templates: list) -> dict:
+    hashes: dict = {}
+    for file_name in templates:
+        hashes[file_name.as_posix()] = hash_bytestr_iter(
+            file_as_blockiter(open(file_name, "rb")), hashlib.sha256()
+        )
+    return hashes
+
+
+def hash_has_changed(hashes: dict, template: str) -> bool:
+    return hashes["old"].get(template) != hashes["new"].get(template)
+
+
 def aggregate_control_data(component_dir: Path) -> dict:
     """
     Collect all the rendered Components YAML files and aggregate them by family.
@@ -112,7 +125,6 @@ def aggregate_control_data(component_dir: Path) -> dict:
     :param component_dir: a pathlib object file path object.
     :return: a dictionary with all the Controls sorted by Family.
     """
-    hashes = get_file_hashes(component_dir)
 
     families: dict = {}
     components = component_dir.rglob("*")
@@ -121,23 +133,24 @@ def aggregate_control_data(component_dir: Path) -> dict:
         for cfile in components
         if cfile.is_file() and cfile.name not in ["component.yaml", "file_hashes.json"]
     ]
-    new_hashes: dict = {}
-    for file_name in templates:
-        new_hashes[file_name.as_posix()] = hash_bytestr_iter(
-            file_as_blockiter(open(file_name, "rb")), hashlib.sha256()
-        )
+
+    hashes: dict = {
+        "old": get_file_hashes(component_dir),
+        "new": get_new_hashes(templates),
+    }
 
     for template in templates:
         family = template.stem.lower().replace("_", "-")
         if family not in families:
-            families[family] = {}
+            families[family] = {"has_changes": False}
 
-        template_string = template.as_posix()
-        if new_hashes.get(template_string) != hashes.get(template_string):
-            families[family]["has_changes"] = True
+        if not families[family]["has_changes"]:
+            families[family]["has_changes"] = hash_has_changed(
+                hashes=hashes, template=template.as_posix()
+            )
 
         component = load_yaml_files(template)
-        satisfies = component.get("satisfies")
+        satisfies = component.get("satisfies", {})
         for control in satisfies:
             control_id = control.get("control_key")
             if "(" in control_id:
@@ -161,7 +174,7 @@ def aggregate_control_data(component_dir: Path) -> dict:
         if v.get("has_changes"):
             del v["has_changes"]
             write_families[f] = v
-    write_file_hashes(file_path=component_dir, hashes=new_hashes)
+    write_file_hashes(file_path=component_dir, hashes=hashes["new"])
     sort_controls(write_families)
     sort_parts(write_families)
     return write_families
@@ -236,6 +249,7 @@ def write_files(families: dict, out_dir: Path, config: dict):
         family_name = family[3:].replace("-", " ").title()
         filename = out_dir.joinpath(f"sop-{family}").with_suffix(".md")
         title = f"{family_name} ({family[:2].upper()}) Standard (SOP)"
+        print(filename)
         text = SopWriter(
             filepath=filename,
             family=family[:2].upper(),
