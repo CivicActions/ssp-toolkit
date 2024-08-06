@@ -18,6 +18,10 @@ from pathlib import Path
 import click
 
 from tools.helpers.ssptoolkit import load_template_args, load_yaml_files, write_toc
+from tools.helpers.hash_checker.hash_checker import FileChecker
+
+
+hashes = FileChecker()
 
 
 @dataclass
@@ -105,19 +109,6 @@ class SopWriter:
                 self.output_file.write(f"**{part}.**\t{prose}\n")
 
 
-def get_new_hashes(templates: list) -> dict:
-    hashes: dict = {}
-    for file_name in templates:
-        hashes[file_name.as_posix()] = hash_bytestr_iter(
-            file_as_blockiter(open(file_name, "rb")), hashlib.sha256()
-        )
-    return hashes
-
-
-def hash_has_changed(hashes: dict, template: str) -> bool:
-    return hashes["old"].get(template) != hashes["new"].get(template)
-
-
 def aggregate_control_data(component_dir: Path) -> dict:
     """
     Collect all the rendered Components YAML files and aggregate them by family.
@@ -134,20 +125,13 @@ def aggregate_control_data(component_dir: Path) -> dict:
         if cfile.is_file() and cfile.name not in ["component.yaml", "file_hashes.json"]
     ]
 
-    hashes: dict = {
-        "old": get_file_hashes(component_dir),
-        "new": get_new_hashes(templates),
-    }
-
     for template in templates:
-        family = template.stem.lower().replace("_", "-")
+        family = template.stem.replace("_", "-")
         if family not in families:
             families[family] = {"has_changes": False}
 
         if not families[family]["has_changes"]:
-            families[family]["has_changes"] = hash_has_changed(
-                hashes=hashes, template=template.as_posix()
-            )
+            families[family]["has_changes"] = hashes.has_changed(template.as_posix())
 
         component = load_yaml_files(template)
         satisfies = component.get("satisfies", {})
@@ -171,57 +155,12 @@ def aggregate_control_data(component_dir: Path) -> dict:
 
     write_families: dict = {}
     for f, v in families.items():
-        if v.get("has_changes"):
+        if v.get("has_changes", False):
             del v["has_changes"]
             write_families[f] = v
-    write_file_hashes(file_path=component_dir, hashes=hashes["new"])
     sort_controls(write_families)
     sort_parts(write_families)
     return write_families
-
-
-def hash_bytestr_iter(bytesiter, hasher, ashexstr: bool = False) -> bytes:
-    for block in bytesiter:
-        hasher.update(block)
-    return hasher.hexdigest() if ashexstr else hasher.hexdigest()
-
-
-def file_as_blockiter(afile: io.BufferedReader, blocksize: int = 65536):
-    with afile:
-        block = afile.read(blocksize)
-        while len(block) > 0:
-            yield block
-            block = afile.read(blocksize)
-
-
-def get_file_hashes(file_path: Path) -> dict:
-    """
-    Return the file containing the file hashes from the last time the script
-    was run.
-
-    :param file_path: pathlib Path object
-    :return: dict of file hashes or an empty dict.
-    """
-    file_hashes = file_path.joinpath("file_hashes").with_suffix(".json")
-    if file_hashes.is_file():
-        old_hashes = load_yaml_files(file_hashes)
-        hashes = old_hashes if old_hashes else {}
-    else:
-        hashes = {}
-    return hashes
-
-
-def write_file_hashes(file_path: Path, hashes: dict):
-    """
-    Return the file containing the file hashes from the last time the script
-    was run.
-
-    :param file_path: pathlib Path object
-    :param hashes: dict containing the file hashes
-    """
-    file_hashes = file_path.joinpath("file_hashes").with_suffix(".json")
-    with open(file_hashes, "w+", encoding="utf-8") as h:
-        json.dump(hashes, h, ensure_ascii=False, indent=4)
 
 
 def create_sortable_id(control_id, control_type: str = "simple"):
@@ -260,35 +199,6 @@ def write_files(families: dict, out_dir: Path, config: dict):
         text.create_file()
 
 
-@click.command()
-@click.option(
-    "--components",
-    "-c",
-    "components_dir",
-    required=False,
-    default="components/",
-    type=click.Path(exists=True, dir_okay=True, file_okay=False),
-    help="Rendered components directory",
-)
-@click.option(
-    "--out",
-    "-o",
-    "output_dir",
-    type=click.Path(exists=False, dir_okay=True, readable=True),
-    default="docs/",
-    help="Output directory (default: docs/)",
-)
-def main(components_dir: str, output_dir: str):
-    out_dir = Path(output_dir).joinpath("sop")
-    config = load_template_args()
-
-    rendered_components = Path(components_dir)
-
-    families = aggregate_control_data(rendered_components)
-
-    write_files(families, out_dir, config)
-
-
 def sort_parts(families: dict) -> dict:
     """
     Sort the Control Parts so that they are ordered alphabetically.
@@ -317,6 +227,36 @@ def sort_controls(families: dict) -> dict:
         families[family] = {key: value for key, value in sorted(control.items())}
 
     return families
+
+
+@click.command()
+@click.option(
+    "--components",
+    "-c",
+    "components_dir",
+    required=False,
+    default="components/",
+    type=click.Path(exists=True, dir_okay=True, file_okay=False),
+    help="Rendered components directory",
+)
+@click.option(
+    "--out",
+    "-o",
+    "output_dir",
+    type=click.Path(exists=False, dir_okay=True, readable=True),
+    default="docs/",
+    help="Output directory (default: docs/)",
+)
+def main(components_dir: str, output_dir: str):
+    out_dir = Path(output_dir).joinpath("sop")
+    config = load_template_args()
+
+    rendered_components = Path(components_dir)
+
+    families = aggregate_control_data(rendered_components)
+
+    write_files(families, out_dir, config)
+    hashes.write_changes()
 
 
 if __name__ == "__main__":
