@@ -5,10 +5,6 @@ directory of this distribution and at https://github.com/CivicActions/ssp-toolki
 Given a YAML file and path to directory of secrendered component files,
 this tool generates Standard Operating Procedure (SOP) policy markdown files.
 """
-
-import hashlib
-import io
-import json
 import re
 from dataclasses import dataclass
 from datetime import date
@@ -116,22 +112,22 @@ def aggregate_control_data(component_dir: Path) -> dict:
     :param component_dir: a pathlib object file path object.
     :return: a dictionary with all the Controls sorted by Family.
     """
-
     families: dict = {}
     components = component_dir.rglob("*")
     templates = [
-        cfile
-        for cfile in components
-        if cfile.is_file() and cfile.name not in ["component.yaml", "file_hashes.json"]
+        comp_file
+        for comp_file in components
+        if comp_file.is_file() and comp_file.name not in ["component.yaml", "file_hashes.json"]
     ]
 
     for template in templates:
-        family = template.stem.replace("_", "-")
+        family = template.stem.lower().replace("_", "-")
         if family not in families:
             families[family] = {"has_changes": False}
 
-        if not families[family]["has_changes"]:
-            families[family]["has_changes"] = hashes.has_changed(template.as_posix())
+        has_changes = hashes.has_changed(template.as_posix())
+        if not families[family]["has_changes"] and has_changes:
+            families[family]["has_changes"] = True
 
         component = load_yaml_files(template)
         satisfies = component.get("satisfies", {})
@@ -163,7 +159,7 @@ def aggregate_control_data(component_dir: Path) -> dict:
     return write_families
 
 
-def create_sortable_id(control_id, control_type: str = "simple"):
+def create_sortable_id(control_id: str, control_type: str = "simple") -> str:
     if control_type == "simple":
         match = re.match(r"^([a-z]{2})-(\d+)$", control_id)
     else:
@@ -183,12 +179,10 @@ def write_files(families: dict, out_dir: Path, config: dict):
     :param out_dir: a pathlib file path object where to write the files.
     :param config: a dictionary containing the configuration key values.
     """
-
     for family, controls in families.items():
         family_name = family[3:].replace("-", " ").title()
         filename = out_dir.joinpath(f"sop-{family}").with_suffix(".md")
         title = f"{family_name} ({family[:2].upper()}) Standard (SOP)"
-        print(filename)
         text = SopWriter(
             filepath=filename,
             family=family[:2].upper(),
@@ -257,6 +251,7 @@ def main(components_dir: str, output_dir: str):
 
     write_files(families, out_dir, config)
     hashes.write_changes()
+    print(f"Detected changes in {hashes.changed_files} files.")
 
 
 if __name__ == "__main__":
