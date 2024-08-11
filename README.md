@@ -43,6 +43,8 @@ SSP Toolkit in a Python virtual environment. Once you have Poetry
 installed you will be able to run all the commands using the
 format `poetry run [COMMAND]`.
 
+To install all the Python dependencies, run `poetry install`.
+
 
 ## Generating the documentation
 
@@ -55,7 +57,7 @@ Create/update the frontmatter, components and appendices using [templates](templ
 #### Example
 
 ```bash
-poetry run createfiles -i configuration.yaml -t templates
+poetry run createfiles -t templates
 ```
 
 #### Usage
