@@ -95,5 +95,3 @@ CivicActions reviews the CivicActions Security Policy at least annually and upda
 
 
 CivicActions requires individuals who have signed a previous version of the CivicActions Security Policy to read and re-sign when any part of it, including the Acceptable Use Policy/Rules of Behavior, is revised/updated.
-
-

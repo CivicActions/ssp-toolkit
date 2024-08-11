@@ -101,6 +101,3 @@ Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Sum
 
 
 Maintenance of the system and applications can only be performed by personnel designated as having internal administrator privileges and responsibilities. Access rights for the internal administrators are assigned and granted access to perform their specific job responsibilities. All physical maintenance requirements are inherited from AWS.
-
-
-

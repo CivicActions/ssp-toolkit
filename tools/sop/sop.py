@@ -5,6 +5,7 @@ directory of this distribution and at https://github.com/CivicActions/ssp-toolki
 Given a YAML file and path to directory of secrendered component files,
 this tool generates Standard Operating Procedure (SOP) policy markdown files.
 """
+
 import re
 from dataclasses import dataclass
 from datetime import date
@@ -13,9 +14,8 @@ from pathlib import Path
 
 import click
 
-from tools.helpers.ssptoolkit import load_template_args, load_yaml_files, write_toc
 from tools.helpers.hash_checker.hash_checker import FileChecker
-
+from tools.helpers.ssptoolkit import load_template_args, load_yaml_files, write_toc
 
 hashes = FileChecker()
 
@@ -117,7 +117,8 @@ def aggregate_control_data(component_dir: Path) -> dict:
     templates = [
         comp_file
         for comp_file in components
-        if comp_file.is_file() and comp_file.name not in ["component.yaml", "file_hashes.json"]
+        if comp_file.is_file()
+        and comp_file.name not in ["component.yaml", "file_hashes.json"]
     ]
 
     for template in templates:
@@ -159,7 +160,8 @@ def aggregate_control_data(component_dir: Path) -> dict:
     return write_families
 
 
-def create_sortable_id(control_id: str, control_type: str = "simple") -> str:
+def create_sortable_id(control_id: str, control_type: str = "simple") -> str | None:
+    control: str = ""
     if control_type == "simple":
         match = re.match(r"^([a-z]{2})-(\d+)$", control_id)
     else:
@@ -168,7 +170,8 @@ def create_sortable_id(control_id: str, control_type: str = "simple") -> str:
         family = match.group(1)
         number = int(match.group(2))
         extension = f"({int(match.group(3))})" if control_type == "extended" else ""
-        return f"{family.upper()}-{str(number).zfill(2)}{extension}"
+        control = f"{family.upper()}-{str(number).zfill(2)}{extension}"
+    return control
 
 
 def write_files(families: dict, out_dir: Path, config: dict):

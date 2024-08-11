@@ -18,7 +18,7 @@ satisfies:
 
       - Authenticated user - All non-anonymous users inherit the "authenticated user role"
         that supports personal account management capabilities.
-      
+
       - Administrator - This role has all permissions enabled by default.
   - key: b
     text: >

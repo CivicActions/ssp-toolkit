@@ -153,5 +153,3 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 **e.**	Modifications to the IR Plan are conducted by the IR team the (CivicActions Security Office, Operations staff and Engineering teams) and communicated to the CivicActions team.
 
 **f.**	The IR Plan is available in the CivicActions Handbook and is maintained in the CivicActions GitHub repository. GitHub provides the configuration management capabilities for the IR Plan to be protected from unauthorized disclosure and modification.
-
-

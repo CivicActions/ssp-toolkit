@@ -104,5 +104,3 @@ CivicActions Operations has automated the process to perform the scans on a mont
 - Low - Within 180 days of discovery
 
 **e.**	Results of the vulnerability scans and security assessments are shared with all appropriate CivicActions personnel supporting continuous monitoring requirements. CivicActions Security assigns each vulnerability an impact rating and response time through JIRA or the Git issue tool for tracking to the established remediation deadlines listed in RA-5(d).
-
-

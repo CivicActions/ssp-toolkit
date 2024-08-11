@@ -137,5 +137,3 @@ CivicActions works closely with the Drupal security community and reviews securi
 ### CA-09 Internal System Connections
 
 Not applicable.
-
-

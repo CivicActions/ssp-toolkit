@@ -124,6 +124,3 @@ AWS built-in features of the hypervisors that support the infrastructure maintai
 
 
 Process isolation is maintained on the Linux platform. Linux is the only operating system that is part of the boundary.
-
-
-

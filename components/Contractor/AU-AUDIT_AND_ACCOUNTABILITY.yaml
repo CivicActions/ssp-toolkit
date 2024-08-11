@@ -16,7 +16,7 @@ satisfies:
       maintained in the CivicActions Audit and Accountability (AU)
       Policy. This document can be found in the CivicActions
       Compliance Docs GitHub repository at <https://github.com/CivicActions/compliance-docs>.
-  implementation_status: 
+  implementation_status:
 - control_key: AU-2
   control_name: AUDITABLE EVENTS
   standard_key: NIST SP 800-53 Revision 4

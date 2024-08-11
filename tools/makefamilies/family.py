@@ -46,7 +46,6 @@ class Control(BaseModel):
         self.parts[pid].append(part)
 
     def get_parts(self):
-        parts: str = ""
         self.parts = sort_by_keys(self.parts)
         parts = ""
         for key, part in self.parts.items():
