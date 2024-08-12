@@ -10,10 +10,11 @@ class Config:
     keys: Path = Path("keys")
     config_files: list[()] = []
     default_keys: dict = {
-        "responsibility.yaml": "status",
-        "info_system.yaml": "information_system",
+        "artifacts.yaml": "artifact",
         "config-management.yaml": "cm",
+        "info_system.yaml": "information_system",
         "justifications.yaml": "justify",
+        "responsibility.yaml": "status",
     }
 
     def __init__(self):
