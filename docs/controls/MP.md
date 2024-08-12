@@ -2,7 +2,7 @@
 
 ## MP: Media Protection
 
-### MP-1: Media Protection Policy And Procedures
+### MP-1: Policy and Procedures
 
 ```text
  - a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]:
@@ -16,7 +16,7 @@
    - 2. Procedures [Assignment: organization-defined frequency] and following [Assignment: organization-defined events].
 
 ```
-**Status:** complete
+**Status:** None
 
 
 ##### AWS
@@ -25,7 +25,8 @@ This Media Protection control associated with hardware components within AWS is 
 
 For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
 
-Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. <https://aws.amazon.com/compliance/fedramp/>
+
 
 
 
@@ -37,9 +38,11 @@ CivicActions has developed, documented and disseminated to personnel a media pro
 
 
 
+
 ##### Project
 
 This is Agency common control. More data about implementation can be obtained from the Agency common control catalog. Media protection policy and procedures are fully inherited from AWS Cloud.
+
 
 
 ### MP-2: Media Access
@@ -57,7 +60,8 @@ This Media Protection control associated with hardware components within AWS is 
 
 For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
 
-Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. <https://aws.amazon.com/compliance/fedramp/>
+
 
 
 ### MP-6: Media Sanitization
@@ -76,7 +80,8 @@ This Media Protection control associated with hardware components within AWS is 
 
 For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
 
-Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. <https://aws.amazon.com/compliance/fedramp/>
+
 
 
 ### MP-7: Media Use
@@ -95,4 +100,4 @@ This Media Protection control associated with hardware components within AWS is 
 
 For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
 
-Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. <https://aws.amazon.com/compliance/fedramp/>
