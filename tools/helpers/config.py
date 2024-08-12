@@ -73,6 +73,7 @@ def get_value(ctx, file: str, key: str = ""):
 @check_config.command()
 @click.pass_context
 def list_files(ctx):
+    """List all the files loaded from the keys directory"""
     config = ctx.obj
     click.echo("Key files and configuration keys:")
     click.echo("---------------------------------")

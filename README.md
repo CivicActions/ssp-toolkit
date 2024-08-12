@@ -56,13 +56,13 @@ Create/update the frontmatter, components and appendices using [templates](templ
 
 #### Example
 
-```bash
+```shell
 poetry run createfiles -t templates
 ```
 
 #### Usage
 
-```bash
+```shell
 Usage: createfiles [OPTIONS]
 
 Options:
@@ -76,7 +76,7 @@ Options:
 Generate markdown versions of the RMF control implementation family files in the `docs/controls/` directory:
 
 #### Example
-```bash
+```shell
 poetry run makefamilies
 ```
 
@@ -85,12 +85,12 @@ poetry run makefamilies
 Generate Standard Operating Procedure (SOP) docs (from `components/` and `keys/sop.yaml`) in the `docs/sop` directory
 
 #### Example
-```bash
+```shell
 poetry run sop -c components
 ```
 
 #### Usage
-```bash
+```shell
 Usage: sop [OPTIONS]
 
 Options:
@@ -105,7 +105,7 @@ Options:
 Generate System Security Plan (SSP)
 
 #### Example
-```bash
+```shell
 poetry run makessp
 ```
 
@@ -118,12 +118,12 @@ Generate Microsoft Word (.docx) versions of the control family, appendices, and 
 [install Pandoc](https://pandoc.org/installing.html) page to learn how to install Pandoc locally.
 
 #### Example
-```bash
+```shell
 poetry run exportto -c docs/controls
 ```
 
 #### Usage
-```bash
+```shell
 Usage: exportto [OPTIONS]
 
 Options:
@@ -140,8 +140,92 @@ Generate a spreadsheet showing which, if any, components are responsible
 for addressing a given control.
 
 #### Example
-```bash
+```shell
 poetry run creatematrix
+```
+
+### getconfig
+
+The `getconfig` command lets you read configuration data. There are two commands
+that can be used with `getconfig`; `get-value` and `list-files`.
+
+#### Usage
+```shell
+Usage: getconfig [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  get-value
+  list-files
+```
+
+#### get-value
+
+`get-value` is used to get the value of a given key in the configuration dictionary.
+For instance if you wanted to know the value of the `name_short` parameter in the
+`Contractor` key file, you would run `poetry run getconfig get-value -f contractor -k name_short`.
+If you omit the `--key/-k` parameter, for instance `poetry run getconfig get-value -f contractor`
+this will output the entire contents of the key file formatted as YAML.
+
+#### Example
+
+Get a value for a given key in the `contractor.yaml` file:
+```shell
+poetry run getconfig get-value -f contractor -k name_short
+```
+
+Get the entire contents of the `contractor.yaml` file
+```shell
+poetry run getconfig get-value -f contractor
+```
+
+##### Usage
+```shell
+Usage: getconfig get-value [OPTIONS]
+
+Options:
+  -f, --file TEXT  [required]
+  -k, --key TEXT   The name of the configuration key whose value should be
+                   shown.
+  --help           Show this message and exit.
+```
+
+#### list-files
+
+The `list-files` command will list all the files loaded from the keys directory.
+Most files are keyed using in the filename, for instance the values in the `contractor.yaml`
+file would be accessible using the Jinja2 variable `{{ contractor.some_variable }}`, but a few
+files have aliases which are used for their key, for instance `configuration-management.yaml`
+is aliased to `cm`, so would be available as `{{ cm.some_variable }}`. `list-files` will show a
+list of the files and their alias.
+
+##### Example
+
+```shell
+poetry run getconfig list-files
+```
+
+##### Usage
+
+```shell
+Usage: getconfig list-files [OPTIONS]
+
+  List all the files loaded from the keys directory
+
+Options:
+  --help  Show this message and exit.
+```
+
+##### Example results
+
+```shell
+Key files and configuration keys:
+---------------------------------
+contractor.yaml using alias contractor
+regulations.yaml using alias regulations
+justifications.yaml using alias justify
 ```
 
 ## OpenControl and OSCAL
