@@ -34,6 +34,7 @@ exportto = "tools.exportto.exportto:main"
 makefamilies = "tools.makefamilies.makefamilies:main"
 sop = "tools.sop.sop:main"
 makessp = "tools.makessp.makessp:main"
+getconfig = "tools.helpers.config:check_config"
 
 [[tool.mypy.overrides]]
 module = "yaml"
