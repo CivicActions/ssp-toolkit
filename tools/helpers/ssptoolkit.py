@@ -14,6 +14,8 @@ from complianceio.opencontrol import OpenControl
 from tools.helpers import secrender
 from tools.helpers.config import Config
 
+config = Config()
+
 
 class ControlRegExps:
     oc_simple = re.compile(r"^([A-Z]{2})-(0\d+)$")
@@ -136,17 +138,11 @@ def load_controls_by_id(component_list: list) -> dict:
 
 
 def load_template_args() -> dict:
-    config = Config()
     return secrender.get_template_args(yaml=config.config, set_={}, root="")
 
 
 def get_control_statuses() -> dict:
-    p = Path("keys/status.yaml")
-    try:
-        with p.open("r") as fp:
-            statuses = yaml.load(fp, Loader=yaml.SafeLoader)
-    except FileNotFoundError as error:
-        raise error
+    statuses = config.config.get("status", {})
     return statuses
 
 
