@@ -2,7 +2,7 @@
 
 ## PE: Physical and Environmental Protection
 
-### PE-1: Physical And Environmental Protection Policy And Procedures
+### PE-1: Policy and Procedures
 
 ```text
  - a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]:
@@ -25,7 +25,8 @@ This Physical Environment control associated with hardware components within AWS
 
 For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
 
-Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. <https://aws.amazon.com/compliance/fedramp/>
+
 
 
 ### PE-2: Physical Access Authorizations
@@ -46,7 +47,8 @@ This Physical Environment control associated with hardware components within AWS
 
 For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
 
-Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. <https://aws.amazon.com/compliance/fedramp/>
+
 
 
 ### PE-3: Physical Access Control
@@ -72,7 +74,8 @@ This Physical Environment control associated with hardware components within AWS
 
 For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
 
-Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. <https://aws.amazon.com/compliance/fedramp/>
+
 
 
 ### PE-6: Monitoring Physical Access
@@ -92,7 +95,8 @@ This Physical Environment control associated with hardware components within AWS
 
 For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
 
-Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. <https://aws.amazon.com/compliance/fedramp/>
+
 
 
 ### PE-8: Visitor Access Records
@@ -112,7 +116,8 @@ This Physical Environment control associated with hardware components within AWS
 
 For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
 
-Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. <https://aws.amazon.com/compliance/fedramp/>
+
 
 
 ### PE-12: Emergency Lighting
@@ -130,7 +135,8 @@ This Physical Environment control associated with hardware components within AWS
 
 For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
 
-Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. <https://aws.amazon.com/compliance/fedramp/>
+
 
 
 ### PE-13: Fire Protection
@@ -148,10 +154,11 @@ This Physical Environment control associated with hardware components within AWS
 
 For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
 
-Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. <https://aws.amazon.com/compliance/fedramp/>
 
 
-### PE-14: Temperature And Humidity Controls
+
+### PE-14: Environmental Controls
 
 ```text
  - a. Maintain [Selection (one or more): temperature, humidity, pressure, radiation, [Assignment: organization-defined environmental control]] levels within the facility where the system resides at [Assignment: organization-defined acceptable levels]; and
@@ -167,7 +174,8 @@ This Physical Environment control associated with hardware components within AWS
 
 For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
 
-Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. <https://aws.amazon.com/compliance/fedramp/>
+
 
 
 ### PE-15: Water Damage Protection
@@ -185,10 +193,11 @@ This Physical Environment control associated with hardware components within AWS
 
 For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
 
-Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. <https://aws.amazon.com/compliance/fedramp/>
 
 
-### PE-16: Delivery And Removal
+
+### PE-16: Delivery and Removal
 
 ```text
  - a. Authorize and control [Assignment: organization-defined types of system components] entering and exiting the facility; and
@@ -204,4 +213,4 @@ This Physical Environment control associated with hardware components within AWS
 
 For the U.S. East, U.S. West, and GovCloud regions, this control is inherited from pre-existing Agency Authority to Operate (ATO) or JAB provisional Authority to Operate under the Federal Risk and Authorization Management Program (FedRAMP).
 
-Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/"
+Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary and Customer Responsibility Matrix, available from the AWS Compliance Team. <https://aws.amazon.com/compliance/fedramp/>

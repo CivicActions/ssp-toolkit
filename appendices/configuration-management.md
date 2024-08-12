@@ -289,6 +289,7 @@ For many of the common configuration tasks, Hook Update Deploy Tools methods mak
 
 Records of these events are output to the terminal of the engineer deploying the code, and to Drupal Watchdog.
 
+
 ## GitLab contribution guidelines
 
 Project is built and maintained by CivicActions, and the

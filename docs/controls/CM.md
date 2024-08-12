@@ -2,7 +2,7 @@
 
 ## CM: Configuration Management
 
-### CM-1: Configuration Management Policy And Procedures
+### CM-1: Policy and Procedures
 
 ```text
  - a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]:
@@ -27,9 +27,11 @@ Configuration changes are overseen by the Change Control Board (CCB) consisting 
 
 
 
+
 ##### Project
 
 The configuration management policy and procedures are formally documented in the Project Configuration Management Plan (CMP), which provides the roles and responsibilities as it pertains to physical and environmental protection. It defines responsibilities for the implementation and oversight of the guidance contained herein. Client reviews and updates the policy as necessary.
+
 
 
 ### CM-2: Baseline Configuration
@@ -42,7 +44,7 @@ The configuration management policy and procedures are formally documented in th
    - 3. When system components are installed or upgraded.
 
 ```
-**Status:** partial
+**Status:** complete
 
 
 ##### AWS
@@ -54,9 +56,11 @@ All hardware is maintained by the AWS cloud. The system inherits hardware config
 
 
 
+
 ##### Contractor
 
 A current baseline configuration is always available - stored as a tag in the Git repository - such that the site can be regenerated or rolled back should unauthorized or failing changes be applied.
+
 
 
 
@@ -69,12 +73,14 @@ The features for the system are maintained in the website's source code, which i
 
 
 
+
 ##### Project
 
 A CM process has been established and documented in the Project CMP. All updates are made in accordance with the procedures outlined in the CMP. The CM process establishes a baseline of hardware, software, firmware and documentation, as well as changes thereto, throughout the development and life cycle of the information system. CM ensures the control of the information system through its life cycle. It assures that additions, deletions, or changes made to the Project system do not unintentionally or unknowingly diminish security. If the change is major, the security of the system must be re-analyzed.
 
 
-### CM-4: Security Impact Analysis
+
+### CM-4: Impact Analyses
 
 ```text
 Analyze changes to the system to determine potential security and privacy impacts prior to change implementation.
@@ -90,11 +96,20 @@ Security impact analysis is conducted and documented within the Change Request (
 
 
 
+
 ##### Project
 
 An Information Security Program is in place to ensure all security-centric impacts to the Project are properly analyzed and conducted by personnel with information security responsibilities (i.e., Project SSO, IT Security Officer, etc.). These individuals have the appropriate skills and technical expertise to analyze the changes to the Project and their associated security ramifications. In support of continuous monitoring and to ensure the Project system lifecycle is fully sustained, a risk assessment process, be it formal or informal, is performed when changes are occur. This ensures that Client Full Name understands the security impacts and can determine if additional security controls are required.
 
 
+
+### CM-5: Access Restrictions for Change
+
+```text
+Define, document, approve, and enforce physical and logical access restrictions associated with changes to the system.
+
+```
+**Status:** incomplete
 ### CM-6: Configuration Settings
 
 ```text
@@ -104,12 +119,13 @@ An Information Security Program is in place to ensure all security-centric impac
  - d. Monitor and control changes to the configuration settings in accordance with organizational policies and procedures.
 
 ```
-**Status:** complete
+**Status:** partial
 #### a
 
 ##### Project
 
 The Project is configured in compliance with the applicable baseline security standards. The Department and its technical support staff configure the security settings of all IT products to the most restrictive mode consistent with information system operational requirements. Project utilizes the NIST Special Publication 800-70 for guidance on configuration settings (checklists) for information technology products. When security setting checklist are not available from NIST for a particular device, good security engineering practices along with manufacture guidelines is used to develop the security settings. The CM Manager conducts configuration audits to ensure baseline compliance and documentation of hardware/software configurations throughout the system lifecycle.
+
 
 
 #### b
@@ -119,11 +135,13 @@ The Project is configured in compliance with the applicable baseline security st
 CivicActions developers follow security best practices according to the guidelines set by the CivicActions Security Office.
 
 
-#### b
+
+
 
 ##### Project
 
 Configuration settings are implemented, monitored, and controlled in accordance with the organizational Configuration Management Plan for the security configuration management processes and tools.
+
 
 
 #### c
@@ -134,11 +152,13 @@ Currently, deviations do not exist for established configuration settings. In th
 The CivicActions CCB, identifies, approves, and documents exceptions to mandatory configuration settings for individual components within its cloud offering only when operationally necessary. All variances identified during the monthly and annual system testing scans that must be accepted for operational purposes are tracked.
 
 
+
 #### d
 
 ##### Contractor
 
 All changes to the configuration settings are logged in the Git source code version control system, which records the identity of the developer who committed each change. Version control is enforced, with previous tagged code releases kept for rollback purposes.
+
 
 
 ### CM-7: Least Functionality
@@ -148,7 +168,7 @@ All changes to the configuration settings are logged in the Git source code vers
  - b. Prohibit or restrict the use of the following functions, ports, protocols, software, and/or services: [Assignment: organization-defined prohibited or restricted functions, system ports, protocols, software, and/or services].
 
 ```
-**Status:** partial
+**Status:** complete
 #### a
 
 ##### AWS
@@ -156,11 +176,13 @@ All changes to the configuration settings are logged in the Git source code vers
 In this architecture, only essential capabilities for a multi-tiered web service are configured. AWS Identity and Access Management (IAM) baseline Groups and Roles are configured to support restricted access to AWS resources by privileged users and non-person entities (Amazon EC2 systems operating with a role) authorized and assigned by the organization.
 
 
-#### a
+
+
 
 ##### Project
 
 Services are limited to provide only essential capabilities.
+
 
 
 #### b
@@ -170,14 +192,16 @@ Services are limited to provide only essential capabilities.
 In this architecture, ports, protocols, and services are restricted to those that are required for a multi-tiered web service, via AWS security group rules.
 
 
-#### b
+
+
 
 ##### Project
 
 The Project maintains strict default deny policy with access controls at the firewall, and on individual systems. Inbound access across the system boundary is only allowed on ports 22 (ssh), 80 (http) and 443 (https), with an additional port, 25 (smtp) open on the mail server.
 
 
-### CM-8: Information System Component Inventory
+
+### CM-8: System Component Inventory
 
 ```text
  - a. Develop and document an inventory of system components that:
@@ -189,7 +213,7 @@ The Project maintains strict default deny policy with access controls at the fir
  - b. Review and update the system component inventory [Assignment: organization-defined frequency].
 
 ```
-**Status:** partial
+**Status:** None
 
 
 ##### Ilias
@@ -200,6 +224,7 @@ The software inventory for the application is maintained in the codebase stored 
 - Custom code written by CivicActions' developers
 The inventory is reviewed monthly by CivicActions Product Engineering teams in accordance with the Configuration Management Plan.
 Website content is backed up daily using CPM snapshots. This allows CivicActions to build an inventory of the system on demand.
+
 
 
 #### a
@@ -214,11 +239,13 @@ AWS built-in features dynamically build and maintain an inventory of system comp
 4. AWS built-in features provide all available information about all infrastructure system and network components to achieve effective component accountability.
 
 
+
 #### b
 
 ##### AWS
 
 AWS built-in features provides a dynamically updated inventory of all infrastructure system and network components within the customer account. The AWS management console and AWS API calls support the capability for the organization to review the inventory.
+
 
 
 ### CM-10: Software Usage Restrictions
@@ -229,7 +256,7 @@ AWS built-in features provides a dynamically updated inventory of all infrastruc
  - c. Control and document the use of peer-to-peer file sharing technology to ensure that this capability is not used for the unauthorized distribution, display, performance, or reproduction of copyrighted work.
 
 ```
-**Status:** none
+**Status:** None
 
 
 ##### Contractor
@@ -239,11 +266,13 @@ Drupal is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These are a
 
 
 
+
 ##### Ilias
 
 Ilias is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These are all compatible with the Free Software Foundation's General Public License (GPL) version 2 or later and are freely available for use under copyright law.
 
-### CM-11: User-Installed Software
+
+### CM-11: User-installed Software
 
 ```text
  - a. Establish [Assignment: organization-defined policies] governing the installation of software by users;
@@ -259,11 +288,13 @@ Ilias is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These are al
 All software installed in the system environment must be first approved via the CCB resulting in a Change Request (CR) being initiated and executed. Software installation on the computing nodes within the authorization boundary is restricted to administrators. All CivicActions internal administrators are informed of this during their initial training and as part of the rules of behavior document.
 
 
+
 #### b
 
 ##### Contractor
 
 CivicActions enforces software installation policies through required acknowledgment and sign-off on acceptable use policy by CivicActions personnel. CivicActions Development is responsible for enforcing compliance with the acceptable use policy.
+
 
 
 #### c
