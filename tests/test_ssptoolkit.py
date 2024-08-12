@@ -1,6 +1,7 @@
 from complianceio.opencontrol import OpenControl
 
 from tools.helpers import ssptoolkit
+from tools.helpers.config import Config
 
 
 def test_sortable_control_id():
@@ -31,7 +32,7 @@ def test_get_standards():
 
 def test_get_certification_baseline():
     baseline = ssptoolkit.get_certification_baseline()
-    assert len(baseline) == 147
+    assert len(baseline) == 194
 
 
 def test_get_standards_control_data():
@@ -60,4 +61,17 @@ def test_get_component_files():
 def test_load_controls_by_id():
     project = ssptoolkit.get_project()
     controls = ssptoolkit.load_controls_by_id(project.get_components())
-    assert "AC-01" in controls
+    assert "AC-1" in controls
+
+
+def test_config_keys():
+    config = Config()
+
+    assert len(config.config_files) == 15
+    assert "sop" in config.config
+
+
+def test_config_values():
+    config = Config()
+    contractor = config.check_config_values(file="contractor", key="name_short")
+    assert contractor == "CivicActions"

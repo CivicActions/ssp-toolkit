@@ -34,11 +34,12 @@ class Config:
             with open(filename, "r") as fp:
                 self.config[key] = yaml.load(fp, Loader=yaml.FullLoader)
 
-    def check_config_values(self, file: str, key: str = ""):
+    def check_config_values(self, file: str, key: str = "") -> str | dict:
         if key:
-            click.echo(self.config.get(file, {}).get(key, ""))
+            values = self.config.get(file, {}).get(key, "")
         else:
-            click.echo(yaml.dump(self.config.get(file, {}), indent=4, width=80))
+            values = self.config.get(file, {})
+        return values
 
 
 @click.group()
@@ -62,7 +63,10 @@ def check_config(ctx):
 @click.pass_context
 def get_value(ctx, file: str, key: str = ""):
     config = ctx.obj
-    config.check_config_values(file, key)
+    if key:
+        click.echo(config.check_config_values(file, key))
+    else:
+        click.echo(yaml.dump(config.check_config_values(file), indent=4, width=80))
 
 
 @check_config.command()
