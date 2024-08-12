@@ -1372,23 +1372,6 @@ files = [
 ]
 
 [[package]]
-name = "pyyaml-include"
-version = "1.4.1"
-description = "Extending PyYAML with a custom constructor for including YAML files within YAML files"
-optional = false
-python-versions = ">=3.6"
-files = [
-    {file = "pyyaml-include-1.4.1.tar.gz", hash = "sha256:1a96e33a99a3e56235f5221273832464025f02ff3d8539309a3bf00dec624471"},
-    {file = "pyyaml_include-1.4.1-py3-none-any.whl", hash = "sha256:323c7f3a19c82fbc4d73abbaab7ef4f793e146a13383866831631b26ccc7fb00"},
-]
-
-[package.dependencies]
-PyYAML = ">=6.0,<7.0"
-
-[package.extras]
-toml = ["toml"]
-
-[[package]]
 name = "requests"
 version = "2.32.3"
 description = "Python HTTP for Humans."
@@ -1607,4 +1590,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "5e023db282184c5d8d3138ac2a75f5d8e71ab69ef14e9201128df1188fab8750"
+content-hash = "c7aae94528fddddaea2fcf85a9939b60e1830d63a00012865df235f1fe6c9e0d"

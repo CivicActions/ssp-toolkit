@@ -10,9 +10,9 @@ from pathlib import Path
 import md_toc
 import yaml
 from complianceio.opencontrol import OpenControl
-from yamlinclude import YamlIncludeConstructor
 
 from tools.helpers import secrender
+from tools.helpers.config import Config
 
 
 class ControlRegExps:
@@ -136,9 +136,8 @@ def load_controls_by_id(component_list: list) -> dict:
 
 
 def load_template_args() -> dict:
-    YamlIncludeConstructor.add_to_loader_class(loader_class=yaml.FullLoader)
-    config = load_yaml_files("configuration.yaml")
-    return secrender.get_template_args(yaml=config, set_={}, root="")
+    config = Config()
+    return secrender.get_template_args(yaml=config.config, set_={}, root="")
 
 
 def get_control_statuses() -> dict:
