@@ -25,17 +25,37 @@ and the indicated client organization only.
 
 ### 1.1 Introduction
 
-The purpose of the {{ coop.title }} ({{ coop.title_short }}) is to prepare for and address the elements necessary to sustain {{ project.name_short }} mission essential functions (MEF) at an alternate site and performing those functions for up to 30 days before returning to normal operations. Once a particular emergency is resolved, a synopsis of the problem and the resolution process in the form of a “lessons learned” document is generated and disseminated to all concerned. The {{ coop.title_short }} is intended to serve as the centralized repository for the information, tasks, and procedures that would be necessary to facilitate the {{ project.name_short }} management’s decision-making process and its timely response to any disruptive or extended interruption of normal business operations and services. This is especially important if the cause of the interruption is such that a prompt resumption of operations cannot be accomplished by employing only normal daily operating procedures. In terms of personnel and financial resources, the information tasks and procedures detailed in this plan represent {{ project.name_short }} management’s demonstrated commitment to response, resumption, recovery, and restoration planning.
+The purpose of the {{ coop.title }} ({{ coop.title_short }}) is to prepare for and address the elements
+necessary to sustain {{ project.name_short }} mission essential functions (MEF) at an alternate site and
+performing those functions for up to 30 days before returning to normal operations. Once a particular
+emergency is resolved, a synopsis of the problem and the resolution process in the form of a “lessons learned”
+document is generated and disseminated to all concerned. The {{ coop.title_short }} is intended to serve as
+the centralized repository for the information, tasks, and procedures that would be necessary to facilitate
+the {{ project.name_short }} management’s decision-making process and its timely response to any disruptive or
+extended interruption of normal business operations and services. This is especially important if the cause of
+the interruption is such that a prompt resumption of operations cannot be accomplished by employing only normal
+daily operating procedures. In terms of personnel and financial resources, the information tasks and procedures
+detailed in this plan represent {{ project.name_short }} management’s demonstrated commitment to response,
+resumption, recovery, and restoration planning.
 
 ### 1.2 Plan Information
 
-The {{ coop.title_short }} is comprised of dynamic action plans to manage information system operational continuity objectives, and generally static policy that is managed by organizational processes. For {{ project.name_short }}, the majority of the {{ coop.title_short }} is contained in the action plan, which is captured in the [{{ project.name_short }} Contingency Plan]({{ project.contingency_plan_url }}) documentation.
+The {{ coop.title_short }} consists of dynamic action plans to manage information system operational continuity
+objectives, and generally static policy that is managed by organizational processes. For {{ project.name_short }},
+the majority of the {{ coop.title_short }} is contained in the action plan, which is captured in the
+[{{ project.name_short }} Contingency Plan]({{ project.contingency_plan_url }}) documentation.
 
 ## 2 Continuity of Operations Plan Overview
 
 ### 2.1 Applicable Provisions and Directives
 
-The development of the {{ project.name_short }} {{ coop.title_short }} is required by both executive decision and regulatory mandates. The {{ project.name_short }} management must maintain an information assurance (IA) infrastructure that will ensure that its information resources maintain confidentiality, integrity and availability of its data and resources. Furthermore, {{ project.name_short }} management must ensure their strategic information resources management capabilities. Therefore, the {{ project.name_short }} {{ coop.title_short }} is developed in accordance with the following executive decisions, regulatory mandates, provisions, and directives as required by:
+The development of the {{ project.name_short }} {{ coop.title_short }} is required by both executive decision
+and regulatory mandates. The {{ project.name_short }} management must maintain an information assurance (IA)
+infrastructure that will ensure that its information resources maintain confidentiality, integrity and
+availability of its data and resources. Furthermore, {{ project.name_short }} management must ensure their
+strategic information resources management capabilities. Therefore, the {{ project.name_short }}
+{{ coop.title_short }} is developed in accordance with the following executive decisions, regulatory mandates,
+provisions, and directives as required by:
 
 {% for item in coop.sections.continuity_of_ops.provisions_directives -%}
 - {{item}}
@@ -53,18 +73,21 @@ The development of the {{ project.name_short }} {{ coop.title_short }} is requir
 {% endfor %}
 ### 2.4 Assumptions
 
-System recovery time of 24 hours has been determined to provide a cost of recovery consummate with the value of the functionality provided by {{ project.name_short }}. In light of this schedule, full system recovery can occur within the time frame, sparing the cost of a “hot” or “warm” site.
+System recovery time of 24 hours has been determined to provide a cost of recovery consummate with the value
+of the functionality provided by {{ project.name_short }}. In light of this schedule, full system recovery can
+occur within the time frame, sparing the cost of a “hot” or “warm” site.
 
 ### 2.5 Critical Success Factors and Issues
 
 {{ coop.sections.continuity_of_ops.success_factors }}
 ### 2.6 Mission-Critical Systems/Applications/Services
 
-The following mission-critical systems/applications/services must be recovered at the time of disaster in the following order, due to interdependencies.
+The following mission-critical systems/applications/services must be recovered at the time of disaster in the
+following order, due to interdependencies.
 
 {% if coop.sections.continuity_of_ops.mission_critical_services is defined -%}
 | System Identifier | System Description | Priority | Rationale |
-| ---- | ---- | ---- | ---- |
+|-------------------|--------------------|----------|-----------|
 {% for item in coop.sections.continuity_of_ops.mission_critical_services -%}
 | {{ item.system_id }} | {{ item.description }} | {{ item.priority }} | {{ item.rationale }} |
 {% endfor %}
@@ -84,7 +107,10 @@ The following mission-critical systems/applications/services must be recovered a
 
 ### 3.2 Vital Records/Documentation
 
-Vital records and important documentation are backed up and stored offsite and include any documents or documentation that is essential to the operations of an organization, such as personnel records, software documentation, legal documentation, legislative documentation, benefits documentation, etc. The following documentation will be available:
+Vital records and important documentation are backed up and stored offsite and include any documents or
+documentation that is essential to the operations of an organization, such as personnel records, software
+documentation, legal documentation, legislative documentation, benefits documentation, etc. The following
+documentation will be available:
 
 - Security related Information Technology (IT) policy & procedure memoranda, circulars, publications
 - Complete hardware and software listings
@@ -98,11 +124,14 @@ Vital records and important documentation are backed up and stored offsite and i
 
 ## 5 Recommended Strategies
 
-The following information represents potential strategies for execution and is considered as solutions that potentially may assist in the continued development of recovery capabilities in a post-disaster situation.
+The following information represents potential strategies for execution and is considered as solutions that
+potentially may assist in the continued development of recovery capabilities in a post-disaster situation.
 
 ### 5.1 Basic Emergency Response Procedures
 
-The actions set forth as responses to disasters are basic procedures that will be followed immediately prior to or during an actual contingency event. These procedures are designed to protect life; minimize damage, injury or disruption; and contribute to timely restart and recovery of the {{project.name_short}} System.
+The actions set forth as responses to disasters are basic procedures that will be followed immediately prior
+to or during an actual contingency event. These procedures are designed to protect life; minimize damage,
+injury or disruption; and contribute to timely restart and recovery of the {{project.name_short}} System.
 
 #### 5.1.1 {{ sections.recommended_strategies.emergency_response.inherited_procedures.title }}
 
@@ -112,7 +141,9 @@ The actions set forth as responses to disasters are basic procedures that will b
 ### 5.2 Diversification of Connectivity
 
 {{ coop.sections.recommended_strategies.diversification_of_connectivity.description }}
+{% if coop.sections.recommended_strategies.diversification_of_connectivity.image is defined and variable|length %}
 ![{{ coop.sections.recommended_strategies.diversification_of_connectivity.image.alt }}]({{ coop.sections.recommended_strategies.diversification_of_connectivity.image.path }})
+{% endif %}
 
 ## 6 Backup, Restore, and Recovery Procedures
 
@@ -126,7 +157,8 @@ The actions set forth as responses to disasters are basic procedures that will b
 
 ### 6.2 Backup Procedures
 
-Backup procedures are vital to ensure that any interruption of service is minimized as far as is possible. Backup Log.
+Backup procedures are vital to ensure that any interruption of service is minimized as far as is possible.
+Backup Log.
 
 The backup schedule is as follows:
 
@@ -159,7 +191,7 @@ incident notification and system and network personnel are available 24x7.
 ### Contact List
 
 To maintain current and accurate contact information, the contact list is maintained as a
-[private spreadsheet]({{ project.contact_sheet.url }}) and linked to the the Project
+[private spreadsheet]({{ project.contact_sheet.url }}) and linked to the Project
 Contingency Plan. If you require access to the source document, contact the ISO.
 
 {% if project.contact_sheet.image.path is not none -%}

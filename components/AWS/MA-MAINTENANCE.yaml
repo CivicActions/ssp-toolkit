@@ -22,7 +22,8 @@ satisfies:
 
 
       Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary
-      and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+      and Customer Responsibility Matrix, available from the AWS Compliance Team.
+      <https://aws.amazon.com/compliance/fedramp/>
   implementation_status: complete
 - control_key: MA-2
   control_name: CONTROLLED MAINTENANCE
@@ -45,7 +46,8 @@ satisfies:
 
 
       Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary
-      and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+      and Customer Responsibility Matrix, available from the AWS Compliance Team.
+      <https://aws.amazon.com/compliance/fedramp/>
   implementation_status: complete
 - control_key: MA-4
   control_name: NON-LOCAL MAINTENANCE
@@ -68,7 +70,8 @@ satisfies:
 
 
       Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary
-      and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+      and Customer Responsibility Matrix, available from the AWS Compliance Team.
+      <https://aws.amazon.com/compliance/fedramp/>
   implementation_status: complete
 - control_key: MA-5
   control_name: MAINTENANCE PERSONNEL
@@ -91,5 +94,6 @@ satisfies:
 
 
       Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary
-      and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+      and Customer Responsibility Matrix, available from the AWS Compliance Team.
+      <https://aws.amazon.com/compliance/fedramp/>
   implementation_status: complete

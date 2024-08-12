@@ -219,6 +219,3 @@ Project is hosted on the AWS Cloud platform, which was approved under the FedRAM
 
 
 CivicActions does not have any dedicated interconnections between information system components within the authorization boundary and external third-party vendor information systems for the purposes of storing, processing or transmitting federal agency data.
-
-
-

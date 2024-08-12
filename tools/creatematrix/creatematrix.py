@@ -92,8 +92,7 @@ def sort_data(components: dict, header: list) -> dict:
         row = get_component_data(
             control_id=cid, control=control, statuses=statuses, header=header
         )
-        control_id = ssptoolkit.to_oc_control_id(cid)
-        controls[control_id] = row
+        controls[cid] = row
     return controls
 
 

@@ -104,6 +104,3 @@ CivicActions employees must authenticate prior to being granted access to the Gi
 ### CP-10 Information System Recovery And Reconstitution
 
 The Contingency Plan documents the mechanisms with supporting procedures that allow all system components to be recovered and reconstituted to the system’s original state after a disruption or failure. This original state means that all system parameters (either default or organization- established) are reset, patches are reinstalled, system and security configuration settings are reestablished, system documentation and operating procedures are available, application and system software is reinstalled, information from the most recent backups is available and the system is fully tested.
-
-
-

@@ -119,7 +119,7 @@ def make_output_path(output_file: str, output_dir: str) -> str:
         return os.path.join(output_dir, output_file)
 
 
-def get_template_args(yaml: dict, set_: dict, root: str = None) -> dict:
+def get_template_args(yaml: dict, set_: dict, root: str = "") -> dict:
     """
     Return a dictionary of arguments to pass to the template from the YAML file.
 
@@ -140,7 +140,7 @@ def get_template_args(yaml: dict, set_: dict, root: str = None) -> dict:
         target[key] = value
 
     if set_:
-        for (key, value) in set_.items():
+        for key, value in set_.items():
             template_args[key] = value
 
     template_args["current_date"] = datetime.datetime.today()

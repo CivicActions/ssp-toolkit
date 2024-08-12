@@ -85,5 +85,3 @@ The CivicActions' Security Office tracks all security awareness training within 
 
 
 Training records are tracked and maintained by the CivicActions Security Office. Records are maintained permanently.
-
-

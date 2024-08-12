@@ -98,7 +98,8 @@ satisfies:
 
       - Not listing passwords in tickets
 
-      - Not writing down or storing passwords in a readable form in any physical or logical location where they may be discoverable by unauthorized persons.
+      - Not writing down or storing passwords in a readable form in any physical or logical
+        location where they may be discoverable by unauthorized persons.
   implementation_status: complete
   summary: >
     CivicActions required to take appropriate password handling

@@ -43,4 +43,3 @@
 
 - Rule ID: _xccdf_org.ssgproject.content_rule_accounts_password_pam_maxrepeat_
 - Passwords are only used after SSH key login by administrators to achieve root access. Only administrators have accounts; two-factor authentication is used and the accounts are audited monthly.
-

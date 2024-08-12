@@ -298,5 +298,3 @@ AWS logging information:
 
 
 CivicActions maintained applications generate audit records for their web and event logs as described in AU-2 and AU-3.
-
-

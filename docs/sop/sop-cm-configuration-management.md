@@ -129,5 +129,3 @@ Drupal is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These are a
 **b.**	CivicActions enforces software installation policies through required acknowledgment and sign-off on acceptable use policy by CivicActions personnel. CivicActions Development is responsible for enforcing compliance with the acceptable use policy.
 
 **c.**	CivicActions monitors policy compliance continuously via the code release planning and quality control systems built into the System Development Life Cycle described in control SA-3.
-
-

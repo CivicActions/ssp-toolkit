@@ -9,11 +9,12 @@ None
 _This PIA is for the IT system listed in the table below._
 
 | Name of System | Social Security Numbers? | Other Personally Identifiable Information (PII)? | Business Identifiable Information? |
-| --- | --- | --- | --- |
+|----------------|--------------------------|--------------------------------------------------|------------------------------------|
 | The Project | No | Yes | No |
 
 **OMB Control Numbers:** Most of the information in these systems does not
-involve the collection of information from the public; therefore, approval from the Office of Management and Budget is not required, except for the following:
+involve the collection of information from the public; therefore, approval from the Office of Management and
+Budget is not required, except for the following:
 
 
 ### How will the information be secured?
@@ -28,5 +29,3 @@ The Project implements the controls defined for low impact systems in the Risk M
 
 
 ## Point of contact
-
-

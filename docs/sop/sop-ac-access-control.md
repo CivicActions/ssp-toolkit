@@ -241,5 +241,3 @@ This control is not applicable. The system does not connect with external inform
 Project Users have been authorized for creation of publicly accessible content with publishing authority from an Administrator role. The publishing authority ensures the information being published does not contain nonpublic information.
 
 **d.**	Authorized Project individuals review the content on the publicly accessible information system for nonpublic information at least every 365 days and removes such information.
-
-

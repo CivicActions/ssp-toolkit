@@ -305,6 +305,3 @@ Project does not utilize FICAM approved products.
 ### IA-08(4) Use Of Ficam-Issued Profiles
 
 CivicActions does not utilize FICAM approved products or profiles.
-
-
-

@@ -127,7 +127,7 @@ def load_controls_by_id(component_list: list) -> dict:
             parent = component_path.parents[0].name
             for satisfies in component_data.get("satisfies"):
                 control_id = satisfies.get("control_key")
-                cid = sortable_control_id(control_id=control_id)
+                cid = control_id
                 if cid not in controls:
                     controls[cid] = []
                 controls[cid].append({parent: satisfies})
@@ -135,11 +135,10 @@ def load_controls_by_id(component_list: list) -> dict:
     return dict(sorted(controls.items()))
 
 
-def load_template_args(config_file: str) -> dict:
+def load_template_args() -> dict:
     YamlIncludeConstructor.add_to_loader_class(loader_class=yaml.FullLoader)
-    with open(config_file, "r", newline="") as fp:
-        config = yaml.load(fp, Loader=yaml.FullLoader)
-    return secrender.get_template_args(yaml=config, set_={}, root=None)
+    config = load_yaml_files("configuration.yaml")
+    return secrender.get_template_args(yaml=config, set_={}, root="")
 
 
 def get_control_statuses() -> dict:
@@ -160,10 +159,22 @@ def find_toc_tag(file: str, levels: int = 3):
             write_toc(file, levels=levels)
 
 
-def write_toc(file: str, levels: int):
-    toc = md_toc.build_toc(filename=file, keep_header_levels=levels, skip_lines=5)
-    md_toc.write_string_on_file_between_markers(
+def write_toc(file: str | Path, levels: int):
+    toc = md_toc.api.build_toc(filename=file, keep_header_levels=levels, skip_lines=5)
+    md_toc.api.write_string_on_file_between_markers(
         filename=file,
         string=toc,
         marker="<!--TOC-->",
     )
+
+
+def load_yaml_files(file_path: str | Path) -> dict:
+    load_file = Path(file_path) if isinstance(file_path, str) else file_path
+    try:
+        with open(load_file, "r") as fp:
+            project = yaml.load(fp, Loader=yaml.FullLoader)
+            return project
+    except FileNotFoundError:
+        raise FileNotFoundError(
+            f"No {load_file.name} found in {load_file.parent.as_posix()}."
+        )

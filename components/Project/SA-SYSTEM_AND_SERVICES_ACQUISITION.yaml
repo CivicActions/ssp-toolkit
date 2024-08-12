@@ -105,7 +105,7 @@ satisfies:
 
       It is the responsibility of CivicActions for implementation
       of PIV capability for authentication as required.
-  implementation_status: 
+  implementation_status:
 - control_key: SA-5
   control_name: INFORMATION SYSTEM DOCUMENTATION
   standard_key: NIST SP 800-53 Revision 4

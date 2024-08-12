@@ -22,7 +22,8 @@ satisfies:
 
 
       Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary
-      and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+      and Customer Responsibility Matrix, available from the AWS Compliance Team.
+      <https://aws.amazon.com/compliance/fedramp/>
   implementation_status: complete
 - control_key: MP-2
   control_name: MEDIA ACCESS
@@ -45,7 +46,8 @@ satisfies:
 
 
       Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary
-      and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+      and Customer Responsibility Matrix, available from the AWS Compliance Team.
+      <https://aws.amazon.com/compliance/fedramp/>
   implementation_status: complete
 - control_key: MP-6
   control_name: MEDIA SANITIZATION
@@ -68,7 +70,8 @@ satisfies:
 
 
       Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary
-      and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+      and Customer Responsibility Matrix, available from the AWS Compliance Team.
+      <https://aws.amazon.com/compliance/fedramp/>
   implementation_status: complete
 - control_key: MP-7
   control_name: MEDIA USE
@@ -91,5 +94,6 @@ satisfies:
 
 
       Refer to the AWS FedRAMP SSP artifacts, including the Control Implementation Summary
-      and Customer Responsibility Matrix, available from the AWS Compliance Team. http://aws.amazon.com/compliance/fedramp/
+      and Customer Responsibility Matrix, available from the AWS Compliance Team.
+      <https://aws.amazon.com/compliance/fedramp/>
   implementation_status: complete

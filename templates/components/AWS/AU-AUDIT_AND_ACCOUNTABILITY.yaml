@@ -219,7 +219,7 @@ satisfies:
   - key: a
     text: >
       In this architecture, AWS CloudTrail, Amazon S3 bucket logging, Elastic
-      Load Balancing (ELB) logging, and Amazon RDS MySQL error logging are 
+      Load Balancing (ELB) logging, and Amazon RDS MySQL error logging are
       enabled, but initial Amazon EC2 instances launched by this deployment
       (bastion host, application servers, proxy servers, and any Amazon EC2-based
       NAT servers) do not have auditing enabled within the OS, as these are for
@@ -270,5 +270,5 @@ satisfies:
           http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/access-log-collection.html
 
       - Amazon RDS logs: http://docs.aws.amazon.com/amazonrds/latest/UserGuide/USER_LogAccess.html
-      
+
   implementation_status: partial

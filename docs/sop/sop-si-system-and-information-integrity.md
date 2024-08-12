@@ -130,6 +130,3 @@ Project representatives and systems administrators receive annual training from 
 ### SI-12 Information Output Handling And Retention
 
 The CivicActions organization retains all information, system-related information, incident-related information, and system output in accordance with customers’ requirements retention periods and other NIST guidance and standards, Federal policies, procedures, federal laws, and executive orders. Audit records are retained for 365 days.
-
-
-

@@ -9,7 +9,7 @@ satisfies:
   narrative:
   - text: Ilias contains built-in security status monitoring of the core application
       and contributed modules.
-  implementation_status: 
+  implementation_status:
 - control_key: SI-5
   control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
   standard_key: NIST SP 800-53 Revision 4
@@ -18,4 +18,4 @@ satisfies:
   narrative:
   - text: 'CivicActions Security and Operations receive Ilias Security Advisories
       on a regular basis.'
-  implementation_status: 
+  implementation_status:

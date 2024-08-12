@@ -43,7 +43,8 @@ satisfies:
       modifying the website's source code to insert additional Ilias logging hooks.
   - key: d
     text: |
-      Information captured in the transaction logs includes, but is not limited to, the following auditable events:
+      Information captured in the transaction logs includes, but is not limited to, the following auditable
+      events:
       - Failed login attempts
       - Successful login attempts
       - New user account creation
@@ -57,7 +58,7 @@ satisfies:
       - Slow query logs.
       - PHP error logs: Captures any errors logged during execution of the PHP programming
         language.
-  implementation_status: 
+  implementation_status:
 - control_key: AU-3
   control_name: CONTENT OF AUDIT RECORDS
   standard_key: NIST SP 800-53 Revision 4
@@ -84,4 +85,4 @@ satisfies:
       Log sources are sorted, filtered and reviewed. Application logs are maintained
       primarily for an after-the-fact investigation of critical systems or security
       events.
-  implementation_status: 
+  implementation_status:

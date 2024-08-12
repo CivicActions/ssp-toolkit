@@ -13,21 +13,27 @@ satisfies:
       events as defined by {{project.client_name_short}}
 
 
-      - Apache access log: Contains a list of requests for your website that have bypassed Varnish. These requests include pages, theme files, and static media files.
+      - Apache access log: Contains a list of requests for your website that have bypassed Varnish. These
+        requests include pages, theme files, and static media files.
 
-      - Apache error log: Records any Apache-level issues. The issues reported here are usually caused by general server issues, including capacity problems, .htaccess problems, and missing files.
+      - Apache error log: Records any Apache-level issues. The issues reported here are usually caused by
+        general server issues, including capacity problems, .htaccess problems, and missing files.
 
       - Drupal page request log: Records all Drupal page loads on your website.
 
-      - Drupal Watchdog log: Records Drupal-related actions on your website. The Watchdog log is recorded on your database if you have enabled the syslog module.
+      - Drupal Watchdog log: Records Drupal-related actions on your website. The Watchdog log is recorded on
+        your database if you have enabled the syslog module.
 
-      - MySQL slow query log: Contains a list of MySQL queries that have taken longer than one second to complete.
+      - MySQL slow query log: Contains a list of MySQL queries that have taken longer than one second to
+        complete.
 
-      - PHP error log: Records any issues that occur during the PHP processing portion of a page load. Issues reported here are usually caused by a website’s code, configuration, or content.
+      - PHP error log: Records any issues that occur during the PHP processing portion of a page load. Issues
+        reported here are usually caused by a website’s code, configuration, or content.
 
   - key: d
     text: >
-      Information captured in the transaction logs includes, but is not limited to, the following auditable events:
+      Information captured in the transaction logs includes, but is not limited to, the following auditable
+      events:
 
 
       - Failed login attempts
@@ -95,7 +101,8 @@ satisfies:
 
       - Drupal Watchdog message (if applicable)
 
-      - Unique numerical ID of the content being modified (for content creation, modification and deletion events)
+      - Unique numerical ID of the content being modified (for content creation, modification and deletion
+        events)
 
       When auditing a Drupal incident, the {{contractor.name_short}} developers aggregate log
       sources from multiple servers into the Graylog dashboard so that all log entries

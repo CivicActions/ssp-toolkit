@@ -9,7 +9,7 @@
 _This PIA is for the IT {{ 'systems' if pia.system|length > 1 else 'system' }} listed in the table below._
 
 | Name of System | Social Security Numbers? | Other Personally Identifiable Information (PII)? | Business Identifiable Information? |
-| --- | --- | --- | --- |
+|----------------|--------------------------|--------------------------------------------------|------------------------------------|
 {% for item in pia.systems -%}
 {% if item.name is not none -%}
 | {{ item.name }} | {{ item.ssns }} | {{ item.other_pii }} | {{ item.bii }} |
@@ -19,7 +19,8 @@ _This PIA is for the IT {{ 'systems' if pia.system|length > 1 else 'system' }} l
 {% endfor -%}
 
 **OMB Control Numbers:** Most of the information in these systems does not
-involve the collection of information from the public; therefore, approval from the Office of Management and Budget is not required, except for the following:
+involve the collection of information from the public; therefore, approval from the Office of Management and
+Budget is not required, except for the following:
 
 {% if pia.omb_ctr_nums is defined and pia.omb_ctr_nums is not none -%}
 OMB NO: {{ pia.omb_ctr_nums }}
@@ -50,7 +51,9 @@ OMB NO: {{ pia.omb_ctr_nums }}
 {% endif %}
 
 {%- if pia.opt_out is defined and pia.opt_out is not none %}
-### What opportunities do individuals or businesses have to decline to provide information (i.e., where providing information is voluntary), or to consent to particular uses of the information and how can they grant such consent?
+### What opportunities do individuals or businesses have to decline to provide information (i.e., where
+providing information is voluntary), or to consent to particular uses of the information and how can they
+grant such consent?
 
 {{ pia.opt_out }}
 {% endif %}
