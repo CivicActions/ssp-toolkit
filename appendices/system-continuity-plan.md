@@ -2,7 +2,7 @@
 
 ## Client Project Full Name
 
-March 2024
+August 2024
 Version 3.4
 
 CivicActions, Inc
@@ -204,7 +204,7 @@ injury or disruption; and contribute to timely restart and recovery of the Proje
 ### 5.2 Diversification of Connectivity
 
 Amazon EC2 Region US-East is the primary the Project Cloud data center infrastructure with US-West as the secondary/contingency site.
-![None](None)
+
 
 ## 6 Backup, Restore, and Recovery Procedures
 

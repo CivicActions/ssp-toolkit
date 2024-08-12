@@ -111,7 +111,11 @@ poetry run makessp
 
 ### exportto
 
-Generate Microsoft Word (.docx) versions of the control family, appendices, and frontmatter files (see the `docx/` directory):
+Generate Microsoft Word (.docx) versions of the control family, appendices, and frontmatter files
+(see the `docx/` directory):
+
+`exportto` uses the Pandoc file generation library. Go to the
+[install Pandoc](https://pandoc.org/installing.html) page to learn how to install Pandoc locally.
 
 #### Example
 ```bash
