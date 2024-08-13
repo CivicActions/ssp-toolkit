@@ -23,7 +23,7 @@ satisfies:
 
       This is Agency common control. More data about implementation can be
       obtained from the Agency common control catalog.
-  implementation_status: {{status.SI_1.project}}
+  implementation_status: {{responsibility.SI_1.project}}
 - control_key: SI-5
   control_name: SECURITY ALERTS, ADVISORIES, AND DIRECTIVES
   standard_key: NIST SP 800-53 Revision 4
@@ -34,7 +34,7 @@ satisfies:
       {{project.name_short}} representatives and system administrators receive
       alerts from US-CERT on a regular basis. Support personnel take appropriate
       action in response to relevant areas of concern.
-  implementation_status: {{status.SI_5.project}}
+  implementation_status: {{responsibility.SI_5.project}}
 - control_key: SI-12
   control_name: INFORMATION HANDLING AND RETENTION
   standard_key: NIST SP 800-53 Revision 4
@@ -48,4 +48,4 @@ satisfies:
       required to operate the system and handle system data and output in
       accordance with legal requirements. Personnel training and system
       guidelines ensure that data and programs are handled appropriately.
-  implementation_status: {{status.SI_12.project}}
+  implementation_status: {{responsibility.SI_12.project}}

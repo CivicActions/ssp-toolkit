@@ -17,7 +17,7 @@ satisfies:
       Identification and Authentication (IA) Policy. This document can be found
       in the {{contractor.name_short}} GitHub repository at
       <{{contractor.compliance_docs_url}}>.
-  implementation_status: {{status.IA_1.contractor}}
+  implementation_status: {{responsibility.IA_1.contractor}}
   summary: >
     {{contractor.name_short}} has developed, documented and disseminated to
     personnel an identification and authentication policy.
@@ -39,7 +39,7 @@ satisfies:
       passwords are maintained in encrypted form in the Ansible inventory file.
       The mechanism to enable select users to use a password to obtain root
       access can be viewed in artifact: {{artifact.admin_sudo}}
-  implementation_status: {{status.IA_2_1.contractor}}
+  implementation_status: {{responsibility.IA_2_1.contractor}}
 - control_key: IA-4
   control_name: IDENTIFIER MANAGEMENT
   standard_key: NIST SP 800-53 Revision 4
@@ -76,7 +76,7 @@ satisfies:
       change their password within that time period, after which the account
       may only be unblocked by a website Administrator or
       {{contractor.name_short}} Operations staff.
-  implementation_status: {{status.IA_4.contractor}}
+  implementation_status: {{responsibility.IA_4.contractor}}
   summary: >
     Access to the system is authorized by the System Owner or Project Manager
     for each role.
@@ -100,7 +100,7 @@ satisfies:
 
       - Not writing down or storing passwords in a readable form in any physical or logical
         location where they may be discoverable by unauthorized persons.
-  implementation_status: {{status.IA_5.contractor}}
+  implementation_status: {{responsibility.IA_5.contractor}}
   summary: >
     {{contractor.name_short}} required to take appropriate password handling
     measures.
@@ -120,7 +120,7 @@ satisfies:
       password) between the remote user and the server. Where Transport Layer
       Security (TLS, aka SSL) is used, cryptographic modules will be configured
       in accordance with FIPS 140-2.
-  implementation_status: {{status.IA_7.contractor}}
+  implementation_status: {{responsibility.IA_7.contractor}}
   summary: >
     {{contractor.name_short}} systems employ authentication methods consistent
     with NIST FIPS 140-2 requirements.

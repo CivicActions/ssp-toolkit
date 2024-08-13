@@ -2,7 +2,7 @@
 
 ## AC: Access Control
 
-### AC-1: Access Control Policy And Procedures
+### AC-1: Policy and Procedures
 
 ```text
 - a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]:
@@ -24,11 +24,13 @@ CivicActions has developed, documented and disseminated to personnel an access c
 
 
 
+
 ##### Project
 
 This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
 
 Access control policy and procedures are documented in the Project Full Name SSP. Access to Project operational information or system resources is limited to only authorized users, programs or processes. The Department enforces access control policies to protect the integrity of the Project Full Name. This Department reviews and updates this policy as necessary and it has been being updated, as necessary, since April 2008.
+
 
 
 ### AC-2: Account Management
@@ -57,12 +59,13 @@ Access control policy and procedures are documented in the Project Full Name SSP
  - l. Align account management processes with personnel termination and transfer processes.
 
 ```
-**Status:** partial
+**Status:** None
 
 
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud dated 1 May 2013 for the following: AWS account management.
+
 
 
 #### a
@@ -72,7 +75,8 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 In this architecture, the baseline AWS Identity and Access Management (IAM) groups and roles are associated with access policies to align user accounts with personnel functions related to infrastructure/platform management (e.g. Billing, Amazon EC2/VPC/Amazon RDS systems administration, I.T. auditing, etc.)
 
 
-#### a
+
+
 
 ##### Drupal
 
@@ -87,7 +91,8 @@ Drupal provides the following information system account types to support organi
 - Administrator - This role has all permissions enabled by default.
 
 
-#### a
+
+
 
 ##### Ilias
 
@@ -98,7 +103,8 @@ Ilias provides user accounts for individuals who participate in visiting, contri
 - Administrator - This role has all permissions enabled by default.
 
 
-#### a
+
+
 
 ##### Project
 
@@ -110,13 +116,15 @@ The Project has implemented user account procedures to disable inactive user acc
 The Project system does not have guest or anonymous accounts.
 
 
-#### a
+
+
 
 ##### SSH
 
 Operations, in collaboration with the Security Office, will set up privileged accounts accounts for the following roles:
 - Developer - user level account that has access to application features and sanitized databases
 - System Administrator - user accounts that enjoy full system administrator (`sudo`) access
+
 
 
 #### b
@@ -126,18 +134,21 @@ Operations, in collaboration with the Security Office, will set up privileged ac
 The CivicActions Project Manager assigns the "administrator" role for the management of all accounts issued to internal admin roles supporting the information system.  Account requests are initiated by the Project Manager by completing a ticket request and the CivicActions Operation staff manages the account creation process.
 
 
-#### b
+
+
 
 ##### Drupal
 
 Drupal defines a default set of roles; Anonymous, Authenticated, and Administrator, as well as providing for the creation of additional organizational-defined roles identified by Project Full Name
 
 
-#### b
+
+
 
 ##### Project
 
 The system Owner has oversight over all permissions that the Project Manager and Operations Staff manages.
+
 
 
 #### c
@@ -147,6 +158,7 @@ The system Owner has oversight over all permissions that the Project Manager and
 In accordance with Project Access Control Policy, Project group membership is determined according to the individual's position and role within the organization. A ticket request is used to request accounts and group membership. The request is authorized by the appropriate manager.
 
 
+
 #### d
 
 ##### Contractor
@@ -154,23 +166,27 @@ In accordance with Project Access Control Policy, Project group membership is de
 All accounts issued for application administrators and SSH are documented in CivicActions' ticketing system. Account request tickets contain details that explain the attributes for the account including authorized users of Drupal, system infrastructure, group and role membership, and access authorizations.
 
 
-#### d
+
+
 
 ##### Drupal
 
 Drupal has a sophisticated permissions and role-based access control built-in. Each role within Drupal can only access the documents and controls for which their privilege allows.
 
-#### d
+
+
 
 ##### Ilias
 
 Ilias' permissions and role-based access controls are built-in. Each role within Ilias can only access the pages and controls for which their privilege allows.
 
-#### d
+
+
 
 ##### Project
 
 Project user privileges vary depending on the type of user role assigned. Only users with the role of Administrator have the ability to create and modify user roles for other users.
+
 
 
 #### e
@@ -179,11 +195,13 @@ Project user privileges vary depending on the type of user role assigned. Only u
 
 All accounts issued for the admin management of Application or SSH access must be approved by the System Owner or Project Manager who must create an account request. The CivicActions Operations staff applies appropriate account permissions and settings based on the job role and function documented within the request ticket using processes defined by the CivicActions' Security Office.
 
-#### e
+
+
 
 ##### Project
 
 The System Owner approves, and CivicActions Operations set up the initial Administrator account for Project. Subsequent client access and related approvals are managed by CivicActions Operations in collaboration with the System Owner.
+
 
 
 #### f
@@ -200,6 +218,7 @@ CivicActions Operations staff is responsible for the following account managemen
 - Removing accounts
 
 
+
 #### g
 
 ##### AWS
@@ -213,29 +232,34 @@ In this architecture, AWS CloudTrail and Amazon S3 Bucket logging are enabled, w
   - changes to the CloudTrail log configuration are detected
 
 
-#### g
+
+
 
 ##### Contractor
 
 All CivicActions systems log the usage of information accounts.
 
-#### g
+
+
 
 ##### Drupal
 
 Drupal monitors the usage of information accounts in the Watchdog log.
 
-#### g
+
+
 
 ##### Ilias
 
 Ilias monitors the usage of information accounts in a log on the server.
+
 
 #### h
 
 ##### Contractor
 
 In accordance with the CivicActions Access Control (AC-01) Policy when an account is no longer required, the Project Manager notifies the Operations Team to immediately disable all access. Users upon reassignment, change in roles, termination, or leaving employment are initially removed from all roles and groups, effectively denying them all access to privileged accounts.
+
 
 
 #### i
@@ -245,13 +269,15 @@ In accordance with the CivicActions Access Control (AC-01) Policy when an accoun
 System accounts require access authorizations prior to accounts being created. The Project Manager must initiate an access request for an account to be created. CivicActions Operations staff reviews the request to ensure accuracy, including intended system usage and other attributes of the user access being requested.
 
 
-#### i
+
+
 
 ##### Project
 
 Project governs their own administrative access. Users with
 the Administrator roles are empowered to designate and approve
 Administrators.
+
 
 
 #### j
@@ -261,11 +287,13 @@ Administrators.
 All privileged accounts are reviewed by CivicActions Operations staff every 180 days.
 
 
-#### j
+
+
 
 ##### Project
 
 Administrators are empowered to and responsible for reviewing their own accounts and determining whether the accounts should still be authorized.
+
 
 
 #### k
@@ -275,18 +303,20 @@ Administrators are empowered to and responsible for reviewing their own accounts
 In accordance with standard security best practices and CivicActions policy, shared and reissued accounts for internal accounts of any kind are not created nor used for any purpose in any system.
 
 
+
 ### AC-3: Access Enforcement
 
 ```text
 Enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.
 
 ```
-**Status:** partial
+**Status:** complete
 
 
 ##### AWS
 
 In this architecture, AWS Identify and Access Management (IAM) and Amazon Amazon S3 enforce access to the AWS infrastructure and data in Amazon S3 buckets. The baseline IAM groups and roles are associated with access policies to align user accounts with personnel functions related to infrastructure/platform management (e.g. Billing, Amazon EC2/VPC/Amazon RDS systems administration, I.T. auditing, etc.) Login/API access is restricted to those users for whom the organization has authorized and created, or federated, IAM user accounts, and assigned the appropriate IAM group and/or role memberships. Amazon S3 buckets have specific access control policies assigned to restrict access to those IAM users who are assigned the appropriate IAM roles/groups.
+
 
 
 
@@ -299,10 +329,12 @@ The anonymous user role has the least access to the site of all roles. The websi
 
 
 
+
 ##### Ilias
 
 Access control in Ilias is enforced by authentication via Shibboleth single sing on (SSO) for every type of user except Anonymous user. The user’s privileges, permissions, and access are provided on the principle of least privilege.
 The anonymous user role has the least access to the site of all roles. The website does not allow anonymous users to register an account for themselves. Project Administrators, HR Managers, and Org Managers are the only roles that can create new user accounts.
+
 
 
 
@@ -312,36 +344,15 @@ The anonymous user role has the least access to the site of all roles. The websi
 The Project Full Name ensures that assigned authorizations for controlling access to the system is enforced in accordance with the user definitions noted in Section 1.1.1 of the Project SSP. The technical support staff ensures that access to security functions and protected information is restricted to authorized personnel. Access will be controlled with access control list used on each instance. Members of one group cannot access resources defined for other groups unless explicitly permitted.
 
 
-### AC-3 (9): Controlled Release
+
+### AC-3 (14): Individual Access
 
 ```text
-Release information outside of the system only if:
- - (a) The receiving [Assignment: organization-defined system or system component] provides [Assignment: organization-defined controls]; and
- - (b) [Assignment: organization-defined controls] are used to validate the appropriateness of the information designated for release.
-
-```
-**Status:** complete
-
-
-##### Project
-
-The Project information system does not release information outside of the established system boundary.
-
-
-### AC-6: Least Privilege
-
-```text
-Employ the principle of least privilege, allowing only authorized accesses for users (or processes acting on behalf of users) that are necessary to accomplish assigned organizational tasks.
+Provide [Assignment: organization-defined mechanisms] to enable individuals to have access to the following elements of their personally identifiable information: [Assignment: organization-defined elements].
 
 ```
 **Status:** incomplete
-
-
-##### SSH
-
-SSH access is provided on a least privilege basis and analyzed on an ongoing basis, at least quarterly. Findings related to these audits of accounts are reported and reviewed by the Security Office and evaluated to determine roles that need to be revoked.
-
-### AC-7: Unsuccessful Login Attempts
+### AC-7: Unsuccessful Logon Attempts
 
 ```text
  - a. Enforce a limit of [Assignment: organization-defined number] consecutive invalid logon attempts by a user during a [Assignment: organization-defined time period]; and
@@ -356,17 +367,20 @@ SSH access is provided on a least privilege basis and analyzed on an ongoing bas
 The Project system locks out users after three unsuccessful login attempts. The information system automatically locks the account permanently, unless an administrator unlocks the account before then, when the maximum number of unsuccessful attempts (3) is exceeded.
 
 
+
 #### a
 
 ##### Drupal
 
 Drupal can be configured to lock an account after a specified number of invalid login attempts within a specified time period. The default for Drupal is 5 failed login attempts within six hours.
 
+
 #### b
 
 ##### Drupal
 
 Lockdown following unsuccessful attempts is configurable by Drupal administrators to conform to defined requirements. When a user exceeds the limit of invalid login attempts, their account is automatically locked for a specified time and requires administrator action to unlock the account before the lockout period expires.
+
 
 ### AC-8: System Use Notification
 
@@ -383,12 +397,13 @@ Lockdown following unsuccessful attempts is configurable by Drupal administrator
    - 3. Include a description of the authorized uses of the system.
 
 ```
-**Status:** incomplete
+**Status:** partial
 
 
 ##### Ilias
 
 System Use Notification is inherited from the Project.
+
 
 
 
@@ -405,7 +420,8 @@ A warning banner ensures that all persons attempting to gain access to the syste
 - Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
 
 
-### AC-14: Permitted Actions Without Identification Or Authentication
+
+### AC-14: Permitted Actions Without Identification or Authentication
 
 ```text
  - a. Identify [Assignment: organization-defined user actions] that can be performed on the system without identification or authentication consistent with organizational mission and business functions; and
@@ -421,9 +437,11 @@ The anonymous user role has the least access to the site of all roles. The websi
 
 
 
+
 ##### Project
 
 The Project Full Name allows the general public user to read the web pages, do searches on the resource database and to review online forum information without identification and authentication for the public web site. Program and Privilege users cannot access the Project system without identification or authentication.
+
 
 
 #### a
@@ -431,6 +449,7 @@ The Project Full Name allows the general public user to read the web pages, do s
 ##### Drupal
 
 The anonymous user role has the least access to the site of all roles. Drupal sites can be configured to allow actions identified by Project Full Name
+
 
 
 ### AC-17: Remote Access
@@ -450,9 +469,11 @@ The CivicActions Access Control (AC) policy defines policy for remote usage rest
 
 
 
+
 ##### Project
 
 The Project Full Name permits remote access for privileged functions to support operational needs. The technical staff documents, monitors, and controls all methods of remote access to the information system including remote access for privileged functions. Privileged user access is only permitted through the use of Secure Shell (SSH) where the user will authenticate to the device through this secure channel. Virtual Private Networking (VPN) is not enabled in any form within the Project accreditation boundary.
+
 
 
 ### AC-18: Wireless Access
@@ -470,7 +491,8 @@ The Project Full Name permits remote access for privileged functions to support 
 This control is not applicable. The system does not provide wireless access points.
 
 
-### AC-19: Access Control For Mobile Devices
+
+### AC-19: Access Control for Mobile Devices
 
 ```text
  - a. Establish configuration requirements, connection requirements, and implementation guidance for organization-controlled mobile devices, to include when such devices are outside of controlled areas; and
@@ -485,7 +507,8 @@ This control is not applicable. The system does not provide wireless access poin
 This control is not applicable. The system does not maintain a facility in which mobile device access limitations are required.
 
 
-### AC-20: Use Of External Information Systems
+
+### AC-20: Use of External Systems
 
 ```text
  - a. [Selection (one or more): Establish [Assignment: organization-defined terms and conditions], Identify [Assignment: organization-defined controls asserted to be implemented on external systems]], consistent with the trust relationships established with other organizations owning, operating, and/or maintaining external systems, allowing authorized individuals to:
@@ -502,6 +525,15 @@ This control is not applicable. The system does not maintain a facility in which
 This control is not applicable. The system does not connect with external information systems.
 
 
+
+### AC-21: Information Sharing
+
+```text
+ - a. Enable authorized users to determine whether access authorizations assigned to a sharing partner match the information’s access and use restrictions for [Assignment: organization-defined information sharing circumstances where user discretion is required]; and
+ - b. Employ [Assignment: organization-defined automated mechanisms or manual processes] to assist users in making information sharing and collaboration decisions.
+
+```
+**Status:** incomplete
 ### AC-22: Publicly Accessible Content
 
 ```text
@@ -519,11 +551,13 @@ This control is not applicable. The system does not connect with external inform
 The Client Full Name grants certain Project support staff members the authority to post publicly accessible content. These individuals must complete Project system security training before being granted access to the Project and before they can post publicly accessible content within the Project Full Name. Furthermore, each authorized individual must follow the procedures delineated within the “Using Drupal” Instruction to ensure they are following a verifiable procedure throughout the entire process. This covers the Project Discussion Lists administration areas, Project Quarterly Reporting and training tools, and Drupal Content Management systems. Public content is only edited via the Drupal Content Management System. All other content is only viewable by Project system users and protected by hardened access controls.
 
 
+
 #### b
 
 ##### Project
 
 It is the Project responsibility to train authorized Project individuals ensuring publicly accessible information does not contain nonpublic information.
+
 
 
 #### c
@@ -533,6 +567,7 @@ It is the Project responsibility to train authorized Project individuals ensurin
 Authorized Project individuals review the proposed content of information prior to posting onto the publicly accessible information system to ensure that nonpublic information is not included.
 
 Project Users have been authorized for creation of publicly accessible content with publishing authority from an Administrator role. The publishing authority ensures the information being published does not contain nonpublic information.
+
 
 
 #### d

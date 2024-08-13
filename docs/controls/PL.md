@@ -2,7 +2,7 @@
 
 ## PL: Planning
 
-### PL-1: Security Planning Policy And Procedures
+### PL-1: Policy and Procedures
 
 ```text
  - a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]:
@@ -16,12 +16,13 @@
    - 2. Procedures [Assignment: organization-defined frequency] and following [Assignment: organization-defined events].
 
 ```
-**Status:** In Place
+**Status:** complete
 
 
 ##### AWS
 
 The system partially inherits this control from the FedRAMP Provisional ATO granted to the AWS Cloud Service Provider dated 1 May 2013.
+
 
 
 
@@ -33,6 +34,7 @@ CivicActions has developed, documented and disseminated to personnel a system pl
 
 
 
+
 ##### Project
 
 This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
@@ -40,7 +42,8 @@ This is Agency common control. More data about implementation can be obtained fr
 The Project developed its security policy planning and procedures based on None, guidance from NIST, the Office of Management and Budget and industry best practices. Security policies and procedures are formally documented within the Project SSP, which provides the roles and responsibilities as it pertains to security planning. It provides guidance on all aspects of security for the protection of Project information technology resources. It defines responsibilities for the implementation and oversight of the guidance contained herein. The plan was last updated in December, 2015.
 
 
-### PL-2: System Security Plan
+
+### PL-2: System Security and Privacy Plans
 
 ```text
  - a. Develop security and privacy plans for the system that:
@@ -65,7 +68,7 @@ The Project developed its security policy planning and procedures based on None,
  - e. Protect the plans from unauthorized disclosure and modification.
 
 ```
-**Status:** In Place
+**Status:** complete
 
 
 ##### AWS
@@ -75,9 +78,11 @@ The system partially inherits this control from the FedRAMP Provisional ATO gran
 
 
 
+
 ##### Project
 
 The System Security Plan (SSP) was developed and implemented for Project system in accordance with None, NIST SP 800-18 and NIST SP 800-37. The SSP includes a description of the management, operational, and technical controls in place or planned for the application. The SSP is included as a key document in an application’s C&A package and is reviewed and approved by designated officials. The SSP identifies the system owner and responsible parties for managing system access and the overall security of the system. The Chief Information Security Officer reviews and approves the SSP. The SSP will be reviewed at least annually and updated to account for any changes to the Project system and to address any changes in security controls.
+
 
 
 #### a
@@ -88,13 +93,21 @@ CivicActions has developed this system security plan (SSP) for the information s
 
 1. Is consistent with the organization’s enterprise architecture
 2. Explicitly defines the authorization boundary for the system
-3. Describes the operational context of the information system in terms of missions and business processes
+3. Describes the operational context of the information system in terms of missions and business
+  processes
+
 4. Provides the security categorization of the information system including supporting rationale
-5. Describes the operational environment for the information system and relationships with or connections to other information systems
+5. Describes the operational environment for the information system and relationships with or
+  connections to other information systems
+
 6. Provides an overview of the security requirements for the system
 7. Identifies any relevant overlays, if applicable
-8. Describes the security controls in place or planned for meeting those requirements including a rationale for the tailoring decisions
-9. Is reviewed and approved by the authorizing official or designated representative prior to plan implementation
+8. Describes the security controls in place or planned for meeting those requirements including a
+  rationale for the tailoring decisions
+
+9. Is reviewed and approved by the authorizing official or designated representative prior to plan
+  implementation
+
 
 
 #### b
@@ -104,11 +117,13 @@ CivicActions has developed this system security plan (SSP) for the information s
 The SSP is reviewed and approved by the authorizing official prior to plan implementation. A copy of the SSP is provided to authorized CivicActions and assessing personnel including the System Owner, Authorizing Official, Information System Security Officer, System/Network Administrator, and the CivicActions Operations staff. The SSP is maintained by the CivicActions Security Office.
 
 
+
 #### c
 
 ##### Contractor
 
 The SSP is reviewed at least annually by the System Owner and the CivicActions Operations staff in collaboration with the CivicActions Security Office.
+
 
 
 #### d
@@ -118,6 +133,7 @@ The SSP is reviewed at least annually by the System Owner and the CivicActions O
 The CivicActions Operations staff in collaboration with the CivicActions Security Office updates the system description and control descriptions within the SSP as needed to verify the SSP is an accurate description of the system.
 
 
+
 #### e
 
 ##### Contractor
@@ -125,7 +141,8 @@ The CivicActions Operations staff in collaboration with the CivicActions Securit
 The SSP is currently available to authorized users on GitLab. Per the Acceptable Use Policy, all entities granted access to CivicActions information assets are required to complete a non-disclosure agreement (NDA) to uphold information confidentiality. GitLab provides the configuration management capabilities for the SSP to be protected from unauthorized disclosure and modification.
 
 
-### PL-4: Rules Of Behavior
+
+### PL-4: Rules of Behavior
 
 ```text
  - a. Establish and provide to individuals requiring access to the system, the rules that describe their responsibilities and expected behavior for information and system usage, security, and privacy;
@@ -142,13 +159,15 @@ The SSP is currently available to authorized users on GitLab. Per the Acceptable
 CivicActions has created and made readily available to individuals requiring access to the information system the rules that describe their responsibilities and expected behavior with regard to information and information system usage. These rules, defined as the Acceptable Use Policy, are included in the CivicActions Security Policy accessible here: <https://guidebook.civicactions.com/en/latest/company-policies/security/#acceptable-use-policy> which has also been uploaded to CSAM as ''Appendix J1 - System Rules of Behavior - Privileged User'' (CivicActions Security Policy 20190226.docx).'
 
 
-#### a
+
+
 
 ##### Project
 
 Project has created and made readily available to individuals requiring access to the information system the rules that describes their responsibilities and expected behavior with regard to information and information system usage. These rules are captured in ‘Appendix J2 - System Rules of Behavior - General User’ (ProjectSystemRoB2019-template.docx).
 
 Project has reviewed and accepted as a superset alternative the CivicActions Acceptable Use Policy.
+
 
 
 #### b
@@ -158,11 +177,13 @@ Project has reviewed and accepted as a superset alternative the CivicActions Acc
 CivicActions HR receives a signed acknowledgment from all employees, indicating that they have read, understand, and agree to abide by the rules of behavior, before authorizing access to information and the information system. The text of the electronically signed (via DocuSign) acknowledgment document has been uploaded to CSAM as artifact: ''CivicActions Security Policy Acknowledgement.docx''
 
 
-#### b
+
+
 
 ##### Project
 
 The Project System Owner receives a signed acknowledgment from such individuals that are not CivicActions employees, indicating that they have read, understand, and agree to abide by the rules of behavior, before authorizing access to information and the information system.
+
 
 
 #### c
@@ -172,11 +193,13 @@ The Project System Owner receives a signed acknowledgment from such individuals 
 CivicActions reviews the CivicActions Security Policy at least annually and updates as required.
 
 
-#### c
+
+
 
 ##### Project
 
 Project reviews the Rules of Behavior at least annually and updates it as required.
+
 
 
 #### d
@@ -186,8 +209,36 @@ Project reviews the Rules of Behavior at least annually and updates it as requir
 CivicActions requires individuals who have signed a previous version of the CivicActions Security Policy to read and re-sign when any part of it, including the Acceptable Use Policy/Rules of Behavior, is revised/updated.
 
 
-#### d
+
+
 
 ##### Project
 
 Project requires individuals who have signed a previous version of the rules of behavior to read and re-sign when the Rules of Behavior are revised/updated.
+
+
+
+### PL-4 (1): Social Media and External Site/application Usage Restrictions
+
+```text
+Include in the rules of behavior, restrictions on:
+ - (a) Use of social media, social networking sites, and external sites/applications;
+ - (b) Posting organizational information on public websites; and
+ - (c) Use of organization-provided identifiers (e.g., email addresses) and authentication secrets (e.g., passwords) for creating accounts on external sites/applications.
+
+```
+**Status:** incomplete
+### PL-10: Baseline Selection
+
+```text
+Select a control baseline for the system.
+
+```
+**Status:** incomplete
+### PL-11: Baseline Tailoring
+
+```text
+Tailor the selected control baseline by applying specified tailoring actions.
+
+```
+**Status:** incomplete

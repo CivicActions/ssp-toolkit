@@ -2,7 +2,7 @@
 
 ## SI: System and Information Integrity
 
-### SI-1: System And Information Integrity Policy And Procedures
+### SI-1: Policy and Procedures
 
 ```text
  - a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]:
@@ -26,6 +26,7 @@ CivicActions has developed, documented and disseminated to personnel a system an
 
 
 
+
 ##### Project
 
 System and information integrity policy and procedures for the Project system are formally documented in the Project SSP, which provides the roles and responsibilities as it pertains to physical and environmental protection systems. The Project system support staff monitors the network on a daily basis and employs up-to-date patches to protect the integrity of the system.
@@ -33,6 +34,7 @@ System and information integrity policy and procedures for the Project system ar
 Additional information is contained within the None.
 
 This is Agency common control. More data about implementation can be obtained from the Agency common control catalog.
+
 
 
 ### SI-2: Flaw Remediation
@@ -44,12 +46,13 @@ This is Agency common control. More data about implementation can be obtained fr
  - d. Incorporate flaw remediation into the organizational configuration management process.
 
 ```
-**Status:** complete
+**Status:** None
 
 
 ##### Ilias
 
 Ilias contains built-in security status monitoring of the core application and contributed modules.
+
 
 #### a
 
@@ -66,11 +69,13 @@ Identification of information system security flaws are detected as early as pos
 Any security issues found are ticketed through JIRA and/or the Git issue queue. CivicActions Operations staff prioritizes high findings. Changes made to correct the information system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB as implemented in CM-3.
 
 
+
 #### b
 
 ##### Contractor
 
 CivicActions testing of the system as a result of security flaw remediation is done through a development environment through the use of internal software and automated testing that ensures the system is working as intended. When a change is made by a developer, testing though a peer review is conducted as part of the Change Request process to ensure the correct analysis is completed. Then the changed code is tested in an automatic test environment as described in the Configuration Management Plan (CMP). Tracking of the testing is documented in JIRA and/or the Git issue queue.
+
 
 
 #### c
@@ -80,11 +85,13 @@ CivicActions testing of the system as a result of security flaw remediation is d
 CivicActions security-software updates are tested prior to implementation on production. The CivicActions Security framework for installation requires updates to be made within 30 days for high vulnerabilities, 90 days for moderate vulnerabilities, and 240 for low vulnerabilities. An issue ticket is created to track any updates made to the system.
 
 
+
 #### d
 
 ##### Contractor
 
 Flaw remediation is part of the CivicActions configuration management process. Any security issues found are ticketed through JIRA or the Git issue queue. The CivicActions Security Office prioritizes the high findings within the application. Changes made to correct the system as a result of the system flaws are scheduled and coordinated through the CCB Change Request Process and appropriate approvals required from the CCB Chair as implemented in CM-3.
+
 
 
 ### SI-3: Malicious Code Protection
@@ -106,11 +113,13 @@ Flaw remediation is part of the CivicActions configuration management process. A
 Virus scans are performed by ClamAV, a server-hosted tool protecting the application from Trojans, Viruses and other malicious cyber-threats. Real-time scans are conducted whenever files are uploaded from any external source and malicious code is blocked or quarantined when detected. All file-based traffic traversing the server is sanitized before being delivered. All input form text is validated and sanitized.
 
 
+
 #### b
 
 ##### Contractor
 
 Anti-virus definitions and malicious code protection mechanisms are configured and updated automatically on a nightly basis.
+
 
 
 #### c
@@ -120,6 +129,7 @@ Anti-virus definitions and malicious code protection mechanisms are configured a
 CivicActions Operations staff receives information system security alerts, advisories, and notifications in response to malicious code detection. These messages are sent to group email distribution lists to ensure all members of the team receive the proper information in a timely manner.
 
 
+
 #### d
 
 ##### Contractor
@@ -127,7 +137,8 @@ CivicActions Operations staff receives information system security alerts, advis
 False positives during malicious code detection and eradication are dealt with on a case by case basis. Potential impacts on the availability of the information system are detailed in a false positive report depending on if the report is for the OS, database or web application.
 
 
-### SI-4: Information System Monitoring
+
+### SI-4: System Monitoring
 
 ```text
  - a. Monitor the system to detect:
@@ -162,11 +173,13 @@ CivicActions systems use a collection of monitoring systems, including:
 - OpsGenie - a slack/email/text/phone incident escalation tool
 
 
+
 #### b
 
 ##### Contractor
 
 Logs from the systems described in SI-4(a) are sent to the CivicActions SIEM tool for analysis. These logs can identify unauthorized use of the information system.
+
 
 
 #### c
@@ -175,11 +188,13 @@ Logs from the systems described in SI-4(a) are sent to the CivicActions SIEM too
 
 Monitoring and log collection occur throughout the system.
 
+
 #### d
 
 ##### Contractor
 
 The Configuration Management process, remote log gathering, and SELinux MAC protects information obtained from intrusion-monitoring tools from unauthorized access, modification, and deletion.
+
 
 
 #### e
@@ -189,11 +204,13 @@ The Configuration Management process, remote log gathering, and SELinux MAC prot
 In the event of a performance score lower than CivicActions standards, a notification is sent to the CivicActions Security Office. CivicActions subscribes to security mailing lists in the event the monitoring activity is required based on law enforcement information, intelligence information, or other credible sources of information.
 
 
+
 #### f
 
 ##### Contractor
 
 Internal legal counsel is utilized as required when system notifications indicate such action based on user and/or malicious activity. Legal counsel is engaged for any actions that may necessitate increased user monitoring or evidence/forensic actions.
+
 
 
 #### g
@@ -203,7 +220,8 @@ Internal legal counsel is utilized as required when system notifications indicat
 System alerts generated by CivicActions internal monitors (StatusCake, OSSEC, ClamAV, others) are sent to the Incident Response team via OpsGenie.
 
 
-### SI-5: Security Alerts, Advisories, And Directives
+
+### SI-5: Security Alerts, Advisories, and Directives
 
 ```text
  - a. Receive system security alerts, advisories, and directives from [Assignment: organization-defined external organizations] on an ongoing basis;
@@ -221,9 +239,11 @@ CivicActions Security and Operations receive Ilias Security Advisories on a regu
 
 
 
+
 ##### Project
 
 Project representatives and system administrators receive alerts from US-CERT on a regular basis. Support personnel take appropriate action in response to relevant areas of concern.
+
 
 
 #### a
@@ -238,11 +258,13 @@ The CivicActions Security Office and Operations staff receive the following secu
 - Drupal Security Advisories
 
 
+
 #### b
 
 ##### Contractor
 
 CivicActions utilizes StatusCake for front line monitoring for real time system status and events of the application. StatusCake can feed to the OpsGenie incident escalation system.
+
 
 
 #### c
@@ -252,6 +274,7 @@ CivicActions utilizes StatusCake for front line monitoring for real time system 
 The CivicActions Security Office disseminates security alerts, advisories, and directives to all CivicActions internal personnel and client personnel as directed.
 
 
+
 #### d
 
 ##### Contractor
@@ -259,7 +282,8 @@ The CivicActions Security Office disseminates security alerts, advisories, and d
 The CivicActions Security Office is responsible for ensuring the dissemination and implementation of relevant security alerts and advisories.
 
 
-### SI-12: Information Output Handling And Retention
+
+### SI-12: Information Management and Retention
 
 ```text
 Manage and retain information within the system and information output from the system in accordance with applicable laws, executive orders, directives, regulations, policies, standards, guidelines and operational requirements.
@@ -275,6 +299,39 @@ The CivicActions organization retains all information, system-related informatio
 
 
 
+
 ##### Project
 
 Project representatives and systems administrators receive annual training from Client regarding information assurance and information handling requirements. These personnel are required to operate the system and handle system data and output in accordance with legal requirements. Personnel training and system guidelines ensure that data and programs are handled appropriately.
+
+
+
+### SI-12 (1): Limit Personally Identifiable Information Elements
+
+```text
+Limit personally identifiable information being processed in the information life cycle to the following elements of PII: [Assignment: organization-defined elements of personally identifiable information].
+
+```
+**Status:** incomplete
+### SI-12 (2): Minimize Personally Identifiable Information in Testing, Training, and Research
+
+```text
+Use the following techniques to minimize the use of personally identifiable information for research, testing, or training: [Assignment: organization-defined techniques].
+
+```
+**Status:** incomplete
+### SI-12 (3): Information Disposal
+
+```text
+Use the following techniques to dispose of, destroy, or erase information following the retention period: [Assignment: organization-defined techniques].
+
+```
+**Status:** incomplete
+### SI-18: Personally Identifiable Information Quality Operations
+
+```text
+ - a. Check the accuracy, relevance, timeliness, and completeness of personally identifiable information across the information life cycle [Assignment: organization-defined frequency]; and
+ - b. Correct or delete inaccurate or outdated personally identifiable information.
+
+```
+**Status:** incomplete

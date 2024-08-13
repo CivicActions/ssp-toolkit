@@ -20,7 +20,7 @@ satisfies:
       Configuration changes are overseen by the Change Control Board (CCB)
       consisting of the System Owner, Project Manager, {{contractor.name_short}}
       Operations staff and the engineering team.
-  implementation_status: {{status.CM_1.contractor}}
+  implementation_status: {{responsibility.CM_1.contractor}}
 - control_key: CM-2
   control_name: BASELINE CONFIGURATION
   standard_key: NIST SP 800-53 Revision 4
@@ -31,7 +31,7 @@ satisfies:
       A current baseline configuration is always available - stored as a tag in
       the Git repository - such that the site can be regenerated or rolled back
       should unauthorized or failing changes be applied.
-  implementation_status: {{status.CM_2.contractor}}
+  implementation_status: {{responsibility.CM_2.contractor}}
 - control_key: CM-4
   control_name: SECURITY IMPACT ANALYSIS
   standard_key: NIST SP 800-53 Revision 4
@@ -45,7 +45,7 @@ satisfies:
       development environment before being pushed to a staging environment to
       be tested by another developer and by the Engineering team prior to final
       approval from CCB to move changes to the production environment.
-  implementation_status: {{status.CM_4.contractor}}
+  implementation_status: {{responsibility.CM_4.contractor}}
   summary: >
     {{contractor.name_short}} tests and validates changes to the system before
     implementing the changes in production.
@@ -66,7 +66,7 @@ satisfies:
       code version control system, which records the identity of the developer
       who committed each change. Version control is enforced, with previous
       tagged code releases kept for rollback purposes.
-  implementation_status: {{status.CM_6.contractor}}
+  implementation_status: {{responsibility.CM_6.contractor}}
 - control_key: CM-10
   control_name: SOFTWARE USAGE RESTRICTIONS
   standard_key: NIST SP 800-53 Revision 4
@@ -77,7 +77,7 @@ satisfies:
       Drupal is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These are
       all compatible with the Free Software Foundation's General Public License (GPL)
       version 2 or later and are freely available for use under copyright law.
-  implementation_status: {{status.CM_10.contractor}}
+  implementation_status: {{responsibility.CM_10.contractor}}
 - control_key: CM-11
   control_name: USER-INSTALLED SOFTWARE
   standard_key: NIST SP 800-53 Revision 4
@@ -105,7 +105,7 @@ satisfies:
       {{contractor.name_short}} monitors policy compliance continuously via
       the code release planning and quality control systems built into the
       System Development Life Cycle described in control SA-3.
-  implementation_status: {{status.CM_11.contractor}}
+  implementation_status: {{responsibility.CM_11.contractor}}
   summary: >
     All software installed in the system environment must be first approved via
     the CCB resulting in a Change Request.

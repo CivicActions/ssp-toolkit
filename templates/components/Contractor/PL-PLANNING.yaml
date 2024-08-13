@@ -16,7 +16,7 @@ satisfies:
       maintained in the {{contractor.name_short}} Planning (PL) Policy and
       Procedure document that can be found in the {{contractor.name_short}}
       GitHub repository at <{{contractor.compliance_docs_url}}/>.
-  implementation_status: {{status.PL_1.contractor}}
+  implementation_status: {{responsibility.PL_1.contractor}}
 - control_key: PL-2
   control_name: SYSTEM SECURITY PLAN
   standard_key: NIST SP 800-53 Revision 4
@@ -81,7 +81,7 @@ satisfies:
       non-disclosure agreement (NDA) to uphold information confidentiality.
       GitLab provides the configuration management capabilities for the SSP to
       be protected from unauthorized disclosure and modification.
-  implementation_status: {{status.PL_2.contractor}}
+  implementation_status: {{responsibility.PL_2.contractor}}
 - control_key: PL-4
   control_name: RULES OF BEHAVIOR
   standard_key: NIST SP 800-53 Revision 4
@@ -117,4 +117,4 @@ satisfies:
       version of the {{contractor.name_short}} Security Policy to read and
       re-sign when any part of it, including the Acceptable Use Policy/Rules of
       Behavior, is revised/updated.
-  implementation_status: {{status.PL_4.contractor}}
+  implementation_status: {{responsibility.PL_4.contractor}}

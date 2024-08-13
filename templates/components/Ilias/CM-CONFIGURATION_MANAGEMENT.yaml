@@ -22,7 +22,7 @@ satisfies:
       Git repository as the new baseline. All code prior to it being staged is documented,
       tested and approved by {{contractor.name_short}} Development, which is described in control
       SA-3. The production environment is configured to take database snapshots daily.
-  implementation_status: {{status.CM_2.ilias}}
+  implementation_status: {{responsibility.CM_2.ilias}}
 - control_key: CM-8
   control_name: INFORMATION SYSTEM COMPONENT INVENTORY
   standard_key: NIST SP 800-53 Revision 4
@@ -46,7 +46,7 @@ satisfies:
 
       Website content is backed up daily using CPM snapshots. This allows {{contractor.name_short}}
       to build an inventory of the system on demand.
-  implementation_status: {{status.CM_8.ilias}}
+  implementation_status: {{responsibility.CM_8.ilias}}
 - control_key: CM-10
   control_name: SOFTWARE USAGE RESTRICTIONS
   standard_key: NIST SP 800-53 Revision 4
@@ -56,4 +56,4 @@ satisfies:
   - text: Ilias is hosted on a LAMP platform (Linux, Apache, MySQL, and PHP). These
       are all compatible with the Free Software Foundation's General Public License
       (GPL) version 2 or later and are freely available for use under copyright law.
-  implementation_status: {{status.CM_10.ilias}}
+  implementation_status: {{responsibility.CM_10.ilias}}
