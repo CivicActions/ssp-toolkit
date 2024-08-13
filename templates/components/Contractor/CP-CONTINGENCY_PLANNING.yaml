@@ -16,7 +16,7 @@ satisfies:
       maintained in Contingency Planning (CP) Policy and Procedure that can be
       found in the {{contractor.name_short}} Compliance Docs GitHub repository
       at <{{contractor.compliance_docs_url}}>.
-  implementation_status: {{status.CP_1.contractor}}
+  implementation_status: {{responsibility.CP_1.contractor}}
 - control_key: CP-2
   control_name: CONTINGENCY PLAN
   standard_key: NIST SP 800-53 Revision 4
@@ -71,7 +71,7 @@ satisfies:
       The ISCP is available on {{contractor.name_short}} GitHub repository.
       This repository provides the configuration management capabilities for
       the ISCP to be protected from unauthorized disclosure and modification.
-  implementation_status: {{status.CP_2.contractor}}
+  implementation_status: {{responsibility.CP_2.contractor}}
 - control_key: CP-3
   control_name: CONTINGENCY TRAINING
   standard_key: NIST SP 800-53 Revision 4
@@ -85,7 +85,7 @@ satisfies:
       thereafter or when changes are required. {{contractor.name_short}} uses
       the Contingency Plan as described in controls CP-1 and CP-2 as a basis
       for personnel contingency training.
-  implementation_status: {{status.CP_3.contractor}}
+  implementation_status: {{responsibility.CP_3.contractor}}
 - control_key: CP-4
   control_name: CONTINGENCY PLAN TESTING
   standard_key: NIST SP 800-53 Revision 4
@@ -99,7 +99,7 @@ satisfies:
       testing exercises. The testing process for the ISCP includes a review of
       the ISCP, exercise, and identification of corrective actions and other
       improvements.
-  implementation_status: {{status.CP_4.contractor}}
+  implementation_status: {{responsibility.CP_4.contractor}}
 - control_key: CP-9
   control_name: INFORMATION SYSTEM BACKUP
   standard_key: NIST SP 800-53 Revision 4
@@ -128,7 +128,7 @@ satisfies:
       being accessed. The folder structure of GitHub protects though
       permissions and ownership prohibiting users from accessing unauthorized
       documentation.
-  implementation_status: {{status.CP_9.contractor}}
+  implementation_status: {{responsibility.CP_9.contractor}}
 - control_key: CP-10
   control_name: INFORMATION SYSTEM RECOVERY AND RECONSTITUTION
   standard_key: NIST SP 800-53 Revision 4
@@ -145,4 +145,4 @@ satisfies:
       operating procedures are available, application and system software is
       reinstalled, information from the most recent backups is available and
       the system is fully tested.
-  implementation_status: {{status.CP_10.contractor}}
+  implementation_status: {{responsibility.CP_10.contractor}}

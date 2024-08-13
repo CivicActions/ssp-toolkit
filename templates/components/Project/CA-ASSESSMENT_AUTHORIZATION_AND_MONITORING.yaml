@@ -17,7 +17,7 @@ satisfies:
       {{project.name_short}} will periodically review and update the SSP when
       there is a significant change to the regulatory, operational, or technical
       environment.
-  implementation_status: {{status.CA_1.project}}
+  implementation_status: {{responsibility.CA_1.project}}
   summary: >
     {{project.name_short}} follows the {{project.info_security_policy}}.
 - control_key: CA-2
@@ -47,7 +47,7 @@ satisfies:
       Representative will create a Security Assessment Report (SAR). A full
       assessment shall be conducted by an independent third party assessor at
       least every three years.
-  implementation_status: {{status.CA_2.project}}
+  implementation_status: {{responsibility.CA_2.project}}
   summary: >
     The {{project.name_short}} will conduct annual security assessments to
     comply with FISMA and NIST regulations.
@@ -60,7 +60,7 @@ satisfies:
   - text: >
       The {{project.name_short}} follows the {{project.info_security_policy}}
       procedures in managing POA&Ms.
-  implementation_status: {{status.CA_5.project}}
+  implementation_status: {{responsibility.CA_5.project}}
   summary: >
     The {{project.name_short}} follows the {{project.info_security_policy}}
     procedures in managing POA&Ms.
@@ -79,7 +79,7 @@ satisfies:
       ATO re-assessment will be performed every three years or when there is a
       major change to the application, in which a senior organizational
       official will sign and approve the security accreditation.
-  implementation_status: {{status.CA_6.project}}
+  implementation_status: {{responsibility.CA_6.project}}
   summary: >
     The {{project.name_short}} follows the {{project.info_security_policy}}
     procedures.

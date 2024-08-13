@@ -17,7 +17,7 @@ satisfies:
       thereafter. {{project.client_name_short}} documents and monitors all
       individual information system security training activities including basic security awareness training. {{project.info_security_policy_agency}} reviews
       and updates the policy as necessary.
-  implementation_status: {{status.AT_1.project}}
+  implementation_status: {{responsibility.AT_1.project}}
   summary: >
     This is an Agency Common Control. Security awareness and training policy
     and procedures documented in Handbook OCIO-01.
@@ -51,7 +51,7 @@ satisfies:
 
       - Proper procedures for software installation, uploading, and use on
         workstations.
-  implementation_status: {{status.AT_2.project}}
+  implementation_status: {{responsibility.AT_2.project}}
   summary: >
     This is an Agency Common Control. Department personnel and contractors
     receive security awareness training.
@@ -78,7 +78,7 @@ satisfies:
       participating in instructor-led training provided by the OCIO, or
       completing an external role-based course or courses offered within their
       specific functional area of expertise.
-  implementation_status: {{status.AT_3.project}}
+  implementation_status: {{responsibility.AT_3.project}}
   summary: >
     Role-based training is a requirement for personnel with significant
     information security responsibilities.
@@ -101,7 +101,7 @@ satisfies:
     text: >
       {{project.client_name_short}} maintains training certifications for the
       specified period.
-  implementation_status: {{status.AT_4.project}}
+  implementation_status: {{responsibility.AT_4.project}}
   summary: |
     {{project.client_name_short}} documents and monitors all individual
     information system security training activities

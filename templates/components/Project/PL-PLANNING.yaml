@@ -22,7 +22,7 @@ satisfies:
       technology resources. It defines responsibilities for the implementation
       and oversight of the guidance contained herein. The plan was last updated
       in December, 2015.
-  implementation_status: {{status.PL_1.project}}
+  implementation_status: {{responsibility.PL_1.project}}
 - control_key: PL-2
   control_name: SYSTEM SECURITY PLAN
   standard_key: NIST SP 800-53 Revision 4
@@ -42,7 +42,7 @@ satisfies:
       the SSP. The SSP will be reviewed at least annually and updated to account
       for any changes to the {{project.name_short}} system and to address any
       changes in security controls.
-  implementation_status: {{status.PL_2.project}}
+  implementation_status: {{responsibility.PL_2.project}}
 - control_key: PL-4
   control_name: RULES OF BEHAVIOR
   standard_key: NIST SP 800-53 Revision 4
@@ -77,4 +77,4 @@ satisfies:
       {{project.name_short}} requires individuals who have signed a previous
       version of the rules of behavior to read and re-sign when the Rules of
       Behavior are revised/updated.
-  implementation_status: {{status.PL_4.project}}
+  implementation_status: {{responsibility.PL_4.project}}

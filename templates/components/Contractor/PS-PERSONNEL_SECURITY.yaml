@@ -16,7 +16,7 @@ satisfies:
       maintained in {{contractor.name_short}} Personnel Security (PS) Policy
       document that can be found in the {{contractor.name_short}} GitHub
       repository at <{{contractor.compliance_docs_url}}>.
-  implementation_status: {{status.PS_1.contractor}}
+  implementation_status: {{responsibility.PS_1.contractor}}
 - control_key: PS-2
   control_name: POSITION RISK DESIGNATION
   standard_key: NIST SP 800-53 Revision 4
@@ -42,7 +42,7 @@ satisfies:
       made to the position risk descriptions the Office of Human Resources works
       in coordination with the {{contractor.name_short}} Security Office to
       implement changes as required.
-  implementation_status: {{status.PS_2.contractor}}
+  implementation_status: {{responsibility.PS_2.contractor}}
 - control_key: PS-3
   control_name: PERSONNEL SCREENING
   standard_key: NIST SP 800-53 Revision 4
@@ -66,7 +66,7 @@ satisfies:
       classification of the information they will access, and the risks
       associated with the role. A basic background check is performed for all
       {{contractor.name_short}} employees.
-  implementation_status: {{status.PS_3.contractor}}
+  implementation_status: {{responsibility.PS_3.contractor}}
 - control_key: PS-4
   control_name: PERSONNEL TERMINATION
   standard_key: NIST SP 800-53 Revision 4
@@ -123,7 +123,7 @@ satisfies:
       deactivation of access upon termination. Deactivation is a manual process
       that is tracked via a Trello card in order to meet the four hour
       turnaround time before termination.
-  implementation_status: {{status.PS_4.contractor}}
+  implementation_status: {{responsibility.PS_4.contractor}}
 - control_key: PS-5
   control_name: PERSONNEL TRANSFER
   standard_key: NIST SP 800-53 Revision 4
@@ -156,7 +156,7 @@ satisfies:
       {{contractor.name_short}} Operations staff is informed of transfers that
       require access authorization modifications within five business days by
       the Project Manager, System Owner or Office of Human Resources.
-  implementation_status: {{status.PS_5.contractor}}
+  implementation_status: {{responsibility.PS_5.contractor}}
 - control_key: PS-8
   control_name: PERSONNEL SANCTIONS
   standard_key: NIST SP 800-53 Revision 4
@@ -176,4 +176,4 @@ satisfies:
       When employee sanctions processes are initiated, the Office of Human
       Resources notifies the respective Project Manager(s) and
       {{contractor.name_short}}' Security Office within five business days.
-  implementation_status: {{status.PS_8.contractor}}
+  implementation_status: {{responsibility.PS_8.contractor}}

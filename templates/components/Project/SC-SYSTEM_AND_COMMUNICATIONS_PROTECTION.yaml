@@ -15,7 +15,7 @@ satisfies:
 
       This is Agency common control. More data about implementation can be
       obtained from the Agency common control catalog.
-  implementation_status: {{status.SC_1.project}}
+  implementation_status: {{responsibility.SC_1.project}}
 - control_key: SC-5
   control_name: DENIAL OF SERVICE PROTECTION
   standard_key: NIST SP 800-53 Revision 4
@@ -30,7 +30,7 @@ satisfies:
       The {{project.name_short}} support staff ensures the system is protected
       against or limits the effect of DoS attacks as specified in the
       {{project.info_security_policy}}.
-  implementation_status: {{status.SC_5.project}}
+  implementation_status: {{responsibility.SC_5.project}}
 - control_key: SC-7
   control_name: BOUNDARY PROTECTION
   standard_key: NIST SP 800-53 Revision 4
@@ -45,7 +45,7 @@ satisfies:
       components (e.g., public web servers) specific IP address and port
       combinations. Public access into the organization’s internal networks is
       prevented except as appropriately mediated.
-  implementation_status: {{status.SC_7.project}}
+  implementation_status: {{responsibility.SC_7.project}}
 - control_key: SC-12
   control_name: CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT
   standard_key: NIST SP 800-53 Revision 4
@@ -60,7 +60,7 @@ satisfies:
       Access enforcement and authentication requirements for
       {{project.name_short}} are described in AC-2 & IA-2. AWS platform does
       not utilize or manage cryptographic keys within the ACE boundary.
-  implementation_status: {{status.SC_12.project}}
+  implementation_status: {{responsibility.SC_12.project}}
 - control_key: SC-15
   control_name: COLLABORATIVE COMPUTING DEVICES
   standard_key: NIST SP 800-53 Revision 4
@@ -70,4 +70,4 @@ satisfies:
   - text: |
       This control is not applicable, as the {{project.name_short}} system does
       employ any collaborative computing devices.
-  implementation_status: {{status.SC_15.project}}
+  implementation_status: {{responsibility.SC_15.project}}

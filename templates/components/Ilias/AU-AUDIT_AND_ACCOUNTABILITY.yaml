@@ -58,7 +58,7 @@ satisfies:
       - Slow query logs.
       - PHP error logs: Captures any errors logged during execution of the PHP programming
         language.
-  implementation_status: {{status.AU_2.ilias}}
+  implementation_status: {{responsibility.AU_2.ilias}}
 - control_key: AU-3
   control_name: CONTENT OF AUDIT RECORDS
   standard_key: NIST SP 800-53 Revision 4
@@ -85,4 +85,4 @@ satisfies:
       Log sources are sorted, filtered and reviewed. Application logs are maintained
       primarily for an after-the-fact investigation of critical systems or security
       events.
-  implementation_status: {{status.AU_3.ilias}}
+  implementation_status: {{responsibility.AU_3.ilias}}
