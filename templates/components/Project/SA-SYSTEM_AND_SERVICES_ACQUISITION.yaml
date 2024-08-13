@@ -16,7 +16,7 @@ satisfies:
 
       This is Agency common control. More data about implementation can be
       obtained from the Agency common control catalog.
-  implementation_status: {{status.SA_1.project}}
+  implementation_status: {{responsibility.SA_1.project}}
 - control_key: SA-2
   control_name: ALLOCATION OF RESOURCES
   standard_key: NIST SP 800-53 Revision 4
@@ -49,7 +49,7 @@ satisfies:
       desktop processing, the network environment, and web capability. Since
       the Exhibit 53 includes projections for multiple fiscal years, its
       intention is to identify and anticipate security resources required.
-  implementation_status: {{status.SA_2.project}}
+  implementation_status: {{responsibility.SA_2.project}}
 - control_key: SA-3
   control_name: SYSTEM DEVELOPMENT LIFE CYCLE
   standard_key: NIST SP 800-53 Revision 4
@@ -62,7 +62,7 @@ satisfies:
       security requirements are incorporated during each phase of the life
       cycle. This helps to ensure the development of secure systems and
       effective risk management.
-  implementation_status: {{status.SA_3.project}}
+  implementation_status: {{responsibility.SA_3.project}}
 - control_key: SA-4
   control_name: ACQUISITIONS
   standard_key: NIST SP 800-53 Revision 4
@@ -86,7 +86,7 @@ satisfies:
       acquisition contracts in accordance with applicable federal laws, Executive
       Orders, directives, policies, regulations, standards, guidelines, and
       organizational mission/business needs.
-  implementation_status: {{status.SA_4.project}}
+  implementation_status: {{responsibility.SA_4.project}}
 - control_key: SA-4 (10)
   control_name: USE OF APPROVED PIV PRODUCTS
   standard_key: NIST SP 800-53 Revision 4
@@ -105,7 +105,7 @@ satisfies:
 
       It is the responsibility of {{contractor.name_short}} for implementation
       of PIV capability for authentication as required.
-  implementation_status: {{status.SA_4_10.project}}
+  implementation_status: {{responsibility.SA_4_10.project}}
 - control_key: SA-5
   control_name: INFORMATION SYSTEM DOCUMENTATION
   standard_key: NIST SP 800-53 Revision 4
@@ -133,7 +133,7 @@ satisfies:
 
       - FOSS Reference Manuals (Drupal, GNU/Linux, Apache, MySQL, PHP, Postfix,
         etc.)
-  implementation_status: {{status.SA_5.project}}
+  implementation_status: {{responsibility.SA_5.project}}
 - control_key: SA-9
   control_name: EXTERNAL INFORMATION SYSTEM SERVICES
   standard_key: NIST SP 800-53 Revision 4
@@ -150,4 +150,4 @@ satisfies:
       {{project.name_short}} is hosted on the AWS Cloud platform, which was
       approved under the FedRAMP Provisional ATO granted to the AWS Cloud dated
       1 May 2013.
-  implementation_status: {{status.SA_9.project}}
+  implementation_status: {{responsibility.SA_9.project}}

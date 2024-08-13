@@ -14,7 +14,6 @@ class Config:
         "config-management.yaml": "cm",
         "info_system.yaml": "information_system",
         "justifications.yaml": "justify",
-        "responsibility.yaml": "status",
     }
 
     def __init__(self):

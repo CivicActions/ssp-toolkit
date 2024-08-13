@@ -15,7 +15,7 @@ satisfies:
       controls. This information is maintained in the {{contractor.name_short}} Awareness and Training
       (AT) Policy. This document can be found in the {{contractor.name_short}} Compliance Docs
       GitHub repository at <{{contractor.compliance_docs_url}}>.
-  implementation_status: {{status.AT_1.contractor}}
+  implementation_status: {{responsibility.AT_1.contractor}}
   summary: |
     {{contractor.name_short}} develops, documents, and disseminates Security Awareness Training policy and procedures.
 - control_key: AT-2
@@ -62,7 +62,7 @@ satisfies:
   - key: c
     text: |
       {{contractor.name_short}} provides annual security awareness training to its personnel.
-  implementation_status: {{status.AT_2.contractor}}
+  implementation_status: {{responsibility.AT_2.contractor}}
   summary: Initial security awareness training provided to all staff.
 - control_key: AT-3
   control_name: ROLE-BASED SECURITY TRAINING
@@ -91,7 +91,7 @@ satisfies:
       responsibilities role-based security training on an annual basis. The
       training is provided and tracked by the {{contractor.name_short}}
       Security Office.
-  implementation_status: {{status.AT_3.contractor}}
+  implementation_status: {{responsibility.AT_3.contractor}}
   summary: Role-based training provided prior to access to systems.
 - control_key: AT-4
   control_name: SECURITY TRAINING RECORDS
@@ -110,7 +110,7 @@ satisfies:
     text: >
       Training records are tracked and maintained by the {{contractor.name_short}}
       Security Office. Records are maintained permanently.
-  implementation_status: {{status.AT_4.contractor}}
+  implementation_status: {{responsibility.AT_4.contractor}}
   summary: >
     {{contractor.name_short}} Information Security Office tracks all security
     awareness training.

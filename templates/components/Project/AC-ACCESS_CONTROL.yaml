@@ -19,7 +19,7 @@ satisfies:
       to protect the integrity of the {{project.name}}. This Department reviews
       and updates this policy as necessary and it has been being updated, as
       necessary, since April 2008.
-  implementation_status: {{status.AC_1.project}}
+  implementation_status: {{responsibility.AC_1.project}}
 - control_key: AC-2
   control_name: ACCOUNT MANAGEMENT
   standard_key: NIST SP 800-53 Revision 4
@@ -87,7 +87,7 @@ satisfies:
     text: >
       Administrators are empowered to and responsible for reviewing their own
       accounts and determining whether the accounts should still be authorized.
-  implementation_status: {{status.AC_2.project}}
+  implementation_status: {{responsibility.AC_2.project}}
 - control_key: AC-3
   control_name: ACCESS ENFORCEMENT
   standard_key: NIST SP 800-53 Revision 4
@@ -103,7 +103,7 @@ satisfies:
       controlled with access control list used on each instance. Members of one
       group cannot access resources defined for other groups unless explicitly
       permitted.
-  implementation_status: {{status.AC_3.project}}
+  implementation_status: {{responsibility.AC_3.project}}
   summary: >
     {{project.name_short}} ensures access authorizations enforced in accordance
     with user definitions.
@@ -116,7 +116,7 @@ satisfies:
   - text: >
       The {{project.name_short}} information system does not release information outside
       of the established system boundary.
-  implementation_status: {{status.AC_3.project}}
+  implementation_status: {{responsibility.AC_3.project}}
 - control_key: AC-7
   control_name: UNSUCCESSFUL LOGIN ATTEMPTS
   standard_key: NIST SP 800-53 Revision 4
@@ -129,7 +129,7 @@ satisfies:
       the account permanently, unless an administrator unlocks the account
       before then, when the maximum number of unsuccessful attempts (3) is
       exceeded.
-  implementation_status: {{status.AC_7.project}}
+  implementation_status: {{responsibility.AC_7.project}}
   summary: >
     The {{project.name_short}} system locks out users after three unsuccessful
     login attempts.
@@ -167,7 +167,7 @@ satisfies:
       - This IS includes security measures (e.g., authentication and access controls) to protect USG interests -- not for your personal benefit or privacy.
 
       - Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
-  implementation_status: {{status.AC_8.project}}
+  implementation_status: {{responsibility.AC_8.project}}
   summary: >
     {{project.name_short}} shows all persons who log into system "Authorized
     User Only" warning banner.
@@ -183,7 +183,7 @@ satisfies:
       information without identification and authentication for the public web
       site. Program and Privilege users cannot access the {{project.name_short}}
       system without identification or authentication.
-  implementation_status: {{status.AC_14.project}}
+  implementation_status: {{responsibility.AC_14.project}}
   summary: >
     General public can read web pages without authentication; privileged users
     require identification and authentication to log in.
@@ -202,7 +202,7 @@ satisfies:
       authenticate to the device through this secure channel. Virtual Private
       Networking (VPN) is not enabled in any form within the
       {{project.name_short}} accreditation boundary.
-  implementation_status: {{status.AC_17.project}}
+  implementation_status: {{responsibility.AC_17.project}}
   summary: >
     {{project.name_short}} permits remote access for privileged functions to
     support operational needs.
@@ -249,7 +249,7 @@ satisfies:
       Authorized {{project.name_short}} individuals review the content on the
       publicly accessible information system for nonpublic information at least
       every 365 days and removes such information.
-  implementation_status: {{status.AC_22.project}}
+  implementation_status: {{responsibility.AC_22.project}}
   summary: >
     {{project.client_name_short}} grants certain {{project.name_short}} support
     staff members the authority to post publicly accessible content.
