@@ -12,7 +12,6 @@ packages = [
 python = "^3.10"
 click = "^8.1.6"
 pyyaml = "^6.0.1"
-pyyaml-include = "^1.3.1"
 jinja2 = "^3.1.2"
 md-toc = "^9.0.0"
 rtyaml = "^1.0.0"
@@ -34,6 +33,7 @@ exportto = "tools.exportto.exportto:main"
 makefamilies = "tools.makefamilies.makefamilies:main"
 sop = "tools.sop.sop:main"
 makessp = "tools.makessp.makessp:main"
+getconfig = "tools.helpers.config:check_config"
 
 [[tool.mypy.overrides]]
 module = "yaml"

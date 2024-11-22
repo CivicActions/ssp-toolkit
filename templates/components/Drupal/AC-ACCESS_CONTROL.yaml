@@ -31,7 +31,7 @@ satisfies:
       controls for which their privilege allows.
   - key: g
     text: Drupal monitors the usage of information accounts in the Watchdog log.
-  implementation_status: {{status.AC_2.drupal}}
+  implementation_status: {{responsibility.AC_2.drupal}}
 - control_key: AC-3
   control_name: ACCESS ENFORCEMENT
   standard_key: NIST SP 800-53 Revision 4
@@ -46,7 +46,7 @@ satisfies:
       The anonymous user role has the least access to the site of all roles. The website
       does not allow anonymous users to register an account for themselves. Drupal
       Administrators are the only user roles that can create new user accounts.
-  implementation_status: {{status.AC_3.drupal}}
+  implementation_status: {{responsibility.AC_3.drupal}}
 - control_key: AC-7
   control_name: UNSUCCESSFUL LOGIN ATTEMPTS
   standard_key: NIST SP 800-53 Revision 4
@@ -63,7 +63,7 @@ satisfies:
       login attempts, their account is automatically locked for a specified time and
       requires administrator action to unlock the account before the lockout period
       expires.
-  implementation_status: {{status.AC_7.drupal}}
+  implementation_status: {{responsibility.AC_7.drupal}}
 - control_key: AC-14
   control_name: PERMITTED ACTIONS WITHOUT IDENTIFICATION OR AUTHENTICATION
   standard_key: NIST SP 800-53 Revision 4
@@ -75,4 +75,4 @@ satisfies:
       The anonymous user role has the least access to the site of all roles.
       Drupal sites can be configured to allow actions identified by
       {{project.name}}
-  implementation_status: {{status.AC_14.drupal}}
+  implementation_status: {{responsibility.AC_14.drupal}}

@@ -24,7 +24,6 @@ import os
 import click
 import jinja2
 from yaml import FullLoader, load
-from yamlinclude import YamlIncludeConstructor
 
 
 @click.command()
@@ -81,7 +80,6 @@ def main(
     output_file: str,
     output_dir: str,
 ):
-    YamlIncludeConstructor.add_to_loader_class(loader_class=FullLoader)
 
     with open(in_, "r") as stream:
         yaml = load(stream, Loader=FullLoader)
