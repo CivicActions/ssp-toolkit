@@ -16,7 +16,7 @@ satisfies:
       maintained by the {{contractor.name_short}} System and Services Acquisition
       (SA) Policy document that can be found in the {{contractor.name_short}}
       GitHub repository at <{{contractor.compliance_docs_url}}/>.
-  implementation_status: {{status.SA_1.contractor}}
+  implementation_status: {{responsibility.SA_1.contractor}}
 - control_key: SA-2
   control_name: ALLOCATION OF RESOURCES
   standard_key: NIST SP 800-53 Revision 4
@@ -42,7 +42,7 @@ satisfies:
       security-related expenditures that fall outside of explicit compliance
       requirements are addressed in sub-lines under the {{contractor.name_short}}
       Information Technology budget.
-  implementation_status: {{status.SA_2.contractor}}
+  implementation_status: {{responsibility.SA_2.contractor}}
 - control_key: SA-3
   control_name: SYSTEM DEVELOPMENT LIFE CYCLE
   standard_key: NIST SP 800-53 Revision 4
@@ -183,7 +183,7 @@ satisfies:
       cycle activities by requiring that the processes defined in SA-3(a) and
       (b) above are adhered to by all information system developers and
       associated security personnel.
-  implementation_status: {{status.SA_3.contractor}}
+  implementation_status: {{responsibility.SA_3.contractor}}
 - control_key: SA-4
   control_name: ACQUISITION PROCESS
   standard_key: NIST SP 800-53 Revision 4
@@ -216,7 +216,7 @@ satisfies:
       in accordance with applicable federal laws, Executive Orders, directives,
       policies, regulations, standards, guidelines, and organizational
       mission/business needs.
-  implementation_status: {{status.SA_4.contractor}}
+  implementation_status: {{responsibility.SA_4.contractor}}
 - control_key: SA-5
   control_name: INFORMATION SYSTEM DOCUMENTATION
   standard_key: NIST SP 800-53 Revision 4
@@ -263,7 +263,7 @@ satisfies:
       As needed and approved by the {{contractor.name_short}} Security Office,
       documentation is available to appropriate personnel by granting access to
       the private Git repository.
-  implementation_status: {{status.SA_5.contractor}}
+  implementation_status: {{responsibility.SA_5.contractor}}
 - control_key: SA-9
   control_name: EXTERNAL INFORMATION SYSTEM SERVICES
   standard_key: NIST SP 800-53 Revision 4
@@ -275,4 +275,4 @@ satisfies:
       between information system components within the authorization boundary
       and external third-party vendor information systems for the purposes of
       storing, processing or transmitting federal agency data.
-  implementation_status: {{status.SA_9.contractor}}
+  implementation_status: {{responsibility.SA_9.contractor}}

@@ -2,7 +2,7 @@
 
 ## CA: Assessment Authorization and Monitoring
 
-### CA-1: Security Assessment And Authorization Policies And Procedures
+### CA-1: Policy and Procedures
 
 ```text
  - a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]:
@@ -26,6 +26,7 @@ CivicActions has developed, documented and disseminated to personnel a certifica
 
 
 
+
 ##### Project
 
 Project follows the None. The Project System Security Policy (SSP) provides guidance on all aspects of security for the protection of Project information technology resources.
@@ -33,7 +34,8 @@ Project follows the None. The Project System Security Policy (SSP) provides guid
 Project will periodically review and update the SSP when there is a significant change to the regulatory, operational, or technical environment.
 
 
-### CA-2: Security Assessments
+
+### CA-2: Control Assessments
 
 ```text
  - a. Select the appropriate assessor or assessment team for the type of assessment to be conducted;
@@ -55,7 +57,8 @@ Project will periodically review and update the SSP when there is a significant 
 CivicActions will develop a security assessment plan (SAP) that describes the security controls and control enhancements under assessment, assessment procedures used to determine effectiveness, the assessment environment, the assessment team, and the assessment roles and responsibilities.
 
 
-#### a
+
+
 
 ##### Project
 
@@ -64,6 +67,7 @@ The Project Full Name follows the None. The Project Full Name will conduct annua
 1. Security controls and control enhancements under assessment
 2. Assessment procedures to be used to determine security control effectiveness
 3. Assessment environment, assessment team, and assessment roles and responsibilities
+
 
 
 #### b
@@ -75,6 +79,7 @@ CivicActions will assess the security controls in their system and its environme
 All controls assigned and documented in this System Security Plan (SSP) will be tested at least annually or when there is a major change to the system.
 
 
+
 #### c
 
 ##### Contractor
@@ -82,11 +87,13 @@ All controls assigned and documented in this System Security Plan (SSP) will be 
 CivicActions will produce a security assessment report that documents the results of the assessment. The Security Assessment Report must contain the results of the assessment, and may also contain recommendations and suggestions for plans of actions and milestones (POA&Ms).
 
 
-#### c
+
+
 
 ##### Project
 
 The Project Authorizing Official or Designated Representative will create a Security Assessment Report (SAR). A full assessment shall be conducted by an independent third party assessor at least every three years.
+
 
 
 #### d
@@ -104,7 +111,8 @@ CivicActions will provide the results of the security control assessment to the 
 - Incident Response Plan
 
 
-### CA-3: System Interconnections
+
+### CA-3: Information Exchange
 
 ```text
  - a. Approve and manage the exchange of information between the system and other systems using [Selection (one or more): interconnection security agreements, information exchange security agreements, memoranda of understanding or agreement, service level agreements, user agreements, nondisclosure agreements, [Assignment: organization-defined type of agreement]];
@@ -120,7 +128,8 @@ CivicActions will provide the results of the security control assessment to the 
 This control is not applicable. CivicActions systems do not have system interconnections. The only communication conducted to CivicActions' systems is through the Internet.
 
 
-### CA-5: Plan Of Action And Milestones
+
+### CA-5: Plan of Action and Milestones
 
 ```text
  - a. Develop a plan of action and milestones for the system to document the planned remediation actions of the organization to correct weaknesses or deficiencies noted during the assessment of the controls and to reduce or eliminate known vulnerabilities in the system; and
@@ -147,12 +156,14 @@ POA&Ms are tracked throughout the lifecycle of the system until its mitigation. 
 
 
 
+
 ##### Project
 
 The Project follows the None procedures in managing POA&Ms.
 
 
-### CA-6: Security Authorization
+
+### CA-6: Authorization
 
 ```text
  - a. Assign a senior official as the authorizing official for the system;
@@ -174,6 +185,7 @@ The Project follows the None. The Project system received its first three-year s
 ATO re-assessment will be performed every three years or when there is a major change to the application, in which a senior organizational official will sign and approve the security accreditation.
 
 
+
 ### CA-7: Continuous Monitoring
 
 ```text
@@ -188,7 +200,7 @@ Develop a system-level continuous monitoring strategy and implement continuous m
                   [Assignment: organization-defined frequency].
 
 ```
-**Status:** partial
+**Status:** None
 #### a
 
 ##### Contractor
@@ -200,18 +212,21 @@ CivicActions implements a continuous monitoring strategy that incorporates confi
 - Log analysis is managed by feeding logs to a Graylog dashboard for analysis.
 
 
-#### a
+
+
 
 ##### Drupal
 
 CivicActions follows recommendations and best practices developed by the Drupal community for monitoring. Examples of specific logs and metrics are included in AU-2 and AU-3.
 
 
-#### a
+
+
 
 ##### Ilias
 
 CivicActions follows recommendations and best practices developed by the Ilias community for monitoring. Examples of specific logs and metrics are included in AU-2 and AU-3.
+
 
 #### b
 
@@ -222,6 +237,7 @@ Configuration management and log analysis is carried out in real time. OpenSCAP 
 Quarterly review of the control assessments supporting the monitoring is conducted by CivicActions Operations in collaboration with the CivicActions Security Office.
 
 
+
 #### c
 
 ##### Drupal
@@ -229,17 +245,20 @@ Quarterly review of the control assessments supporting the monitoring is conduct
 CivicActions works closely with the Drupal security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed.
 
 
-#### c
+
+
 
 ##### Ilias
 
 CivicActions works closely with the Ilias security community and reviews security announcements as part of the continuous monitoring strategy. Items found to require immediate remediation will be addressed.
+
 
 #### d
 
 ##### Contractor
 
 CivicActions conducts or oversees continuous system security monitoring.
+
 
 
 #### e
@@ -249,11 +268,13 @@ CivicActions conducts or oversees continuous system security monitoring.
 CivicActions Security reviews the results of the security scans and security assessments with associated JIRA and/or GitLab Issue tickets created to correlate and analyze security-related information generated from the monitoring tools becoming POA&M items for tracking.
 
 
+
 #### f
 
 ##### Contractor
 
 POA&M items are tracked by CivicActions Security through JIRA tickets with a security categorization assigned. The information included in the POA&M item include the severity, the due date, the weakness source identifier, and the plugin ID that identified the vulnerability.
+
 
 
 #### g
@@ -263,6 +284,17 @@ POA&M items are tracked by CivicActions Security through JIRA tickets with a sec
 The security status of the system is reported up to the System Owner and Project Manager via the CivicActions Security Office to be reviewed alongside other security issues relating to the system.
 
 
+
+### CA-7 (4): Risk Monitoring
+
+```text
+Ensure risk monitoring is an integral part of the continuous monitoring strategy that includes the following:
+ - (a) Effectiveness monitoring;
+ - (b) Compliance monitoring; and
+ - (c) Change monitoring.
+
+```
+**Status:** incomplete
 ### CA-9: Internal System Connections
 
 ```text

@@ -27,7 +27,7 @@ satisfies:
 
       This is Agency common control. More data about implementation can be
       obtained from the Agency common control catalog.
-  implementation_status: {{status.RA_1.project}}
+  implementation_status: {{responsibility.RA_1.project}}
 - control_key: RA-2
   control_name: SECURITY CATEGORIZATION
   standard_key: NIST SP 800-53 Revision 4
@@ -52,7 +52,7 @@ satisfies:
       application POCs, were approved during the C&A effort. The formal security
       categorization document is available upon request. The system inventory
       for the {{project.name_short}} Project is revalidated semiannually.
-  implementation_status: {{status.RA_2.project}}
+  implementation_status: {{responsibility.RA_2.project}}
 - control_key: RA-3
   control_name: RISK ASSESSMENT
   standard_key: NIST SP 800-53 Revision 4
@@ -103,7 +103,7 @@ satisfies:
       - Adding new interconnections to an outside service provide.
 
 
-  implementation_status: {{status.RA_3.project}}
+  implementation_status: {{responsibility.RA_3.project}}
 - control_key: RA-5
   control_name: VULNERABILITY SCANNING
   standard_key: NIST SP 800-53 Revision 4
@@ -116,4 +116,4 @@ satisfies:
       these scans are being used to inform changes to the system and verify that security
       controls are working correctly. These scans are used to document the current state
       of the system, and to analyze security trends as changes are made over time.
-  implementation_status: {{status.RA_5.project}}
+  implementation_status: {{responsibility.RA_5.project}}

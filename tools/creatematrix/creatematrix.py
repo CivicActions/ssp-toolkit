@@ -62,6 +62,10 @@ def create_rows(controls: dict, header: list) -> list:
     return rows
 
 
+# def get_status(control_id: str) -> str:
+#
+
+
 def get_component_data(
     control_id: str, control: dict, statuses: dict, header: list
 ) -> dict:

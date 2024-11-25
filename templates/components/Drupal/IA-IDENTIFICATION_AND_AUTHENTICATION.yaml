@@ -11,7 +11,7 @@ satisfies:
       Drupal administrators and other roles with unrestricted access to live content
       and/or user accounts are required to use two-factor authentication. See artifact
       {{artifact.two_factor_auth}}
-  implementation_status: {{status.IA_2_1.drupal}}
+  implementation_status: {{responsibility.IA_2_1.drupal}}
 - control_key: IA-4
   control_name: IDENTIFIER MANAGEMENT
   standard_key: NIST SP 800-53 Revision 4
@@ -37,7 +37,7 @@ satisfies:
       by the admin group when it approves the creation of the user account.
   - key: d
     text: Drupal user's unique identifier (the numeric user ID, or UID) is never reused.
-  implementation_status: {{status.IA_4.drupal}}
+  implementation_status: {{responsibility.IA_4.drupal}}
 - control_key: IA-5
   control_name: AUTHENTICATOR MANAGEMENT
   standard_key: NIST SP 800-53 Revision 4
@@ -98,7 +98,7 @@ satisfies:
   - key: j
     text: This control is not applicable due to the fact that group accounts are not
       created within the Drupal application per IA Policy.
-  implementation_status: {{status.IA_5.drupal}}
+  implementation_status: {{responsibility.IA_5.drupal}}
 - control_key: IA-5 (1)
   control_name: PASSWORD-BASED AUTHENTICATION
   standard_key: NIST SP 800-53 Revision 4
@@ -137,7 +137,7 @@ satisfies:
       login link to the email address associated with their user account. After a
       user logs in via the temporary login link, the website requires the user to
       enter a new password before proceeding further.
-  implementation_status: {{status.IA_5_1.drupal}}
+  implementation_status: {{responsibility.IA_5_1.drupal}}
 - control_key: IA-6
   control_name: AUTHENTICATOR FEEDBACK
   standard_key: NIST SP 800-53 Revision 4
@@ -149,7 +149,7 @@ satisfies:
       process into the Drupal application by displaying “dots” in the place of a password,
       as is standard for web-based applications. In transmission, passwords are encrypted
       using SSL via HTTPS.
-  implementation_status: {{status.IA_6.drupal}}
+  implementation_status: {{responsibility.IA_6.drupal}}
 - control_key: IA-7
   control_name: CRYPTOGRAPHIC MODULE AUTHENTICATION
   standard_key: NIST SP 800-53 Revision 4
@@ -161,4 +161,4 @@ satisfies:
       algorithm with a salt. SHA-512 is an approved security function under FIPS PUB
       140-2. The hash function is performed repeatedly to further obfuscate the password
       via key stretching. In transmission, passwords are encrypted using SSL via HTTPS.
-  implementation_status: {{status.IA_7.drupal}}
+  implementation_status: {{responsibility.IA_7.drupal}}

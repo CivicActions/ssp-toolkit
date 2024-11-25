@@ -29,7 +29,7 @@ satisfies:
       The {{project.name_short}} Incident Response Plan can be found in the
       {{contractor.name_short}} GitHub repository at
       <{{project.incident_response_plan_url}}>
-  implementation_status: {{status.IR_1.project}}
+  implementation_status: {{responsibility.IR_1.project}}
 - control_key: IR-2
   control_name: INCIDENT RESPONSE TRAINING
   standard_key: NIST SP 800-53 Revision 4
@@ -46,7 +46,7 @@ satisfies:
       and the incident response workflow created by the Security team. Upon a
       review of past incidents, the training is updated to ensure processes and
       workflows are updated.
-  implementation_status: {{status.IR_2.project}}
+  implementation_status: {{responsibility.IR_2.project}}
 - control_key: IR-4
   control_name: INCIDENT HANDLING
   standard_key: NIST SP 800-53 Revision 4
@@ -73,7 +73,7 @@ satisfies:
       eradication and recovery activities include AWS and LAMP-stack inherited
       fixes and {{project.name_short}} system administrators adjusting IP port
       blocking security groups and SELinux policies.
-  implementation_status: {{status.IR_4.project}}
+  implementation_status: {{responsibility.IR_4.project}}
 - control_key: IR-5
   control_name: INCIDENT MONITORING
   standard_key: NIST SP 800-53 Revision 4
@@ -85,7 +85,7 @@ satisfies:
       detection systems, monitoring the system and application logs for
       anomalous events. Incidents are tracked using the same ticketing system
       that is used to track all system-related changes and events.
-  implementation_status: {{status.IR_5.project}}
+  implementation_status: {{responsibility.IR_5.project}}
 - control_key: IR-6
   control_name: INCIDENT REPORTING
   standard_key: NIST SP 800-53 Revision 4
@@ -101,7 +101,7 @@ satisfies:
       The {{contractor.name_short}} Computer Security Officer (CSO) handles all
       incidents for the {{project.name_short}}. The CSO is prepared to report
       all incidents to the {{project.client_name}}.
-  implementation_status: {{status.IR_6.project}}
+  implementation_status: {{responsibility.IR_6.project}}
 - control_key: IR-8
   control_name: INCIDENT RESPONSE PLAN
   standard_key: NIST SP 800-53 Revision 4
@@ -121,4 +121,4 @@ satisfies:
       categorization of incidents in accordance with NIST 800-61 and accordingly
       documents and reports incidents. The IRP is reviewed annually and updated
       as needed by ISSO, with the assistance of the Incident Response Team.
-  implementation_status: {{status.IR_8.project}}
+  implementation_status: {{responsibility.IR_8.project}}

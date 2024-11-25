@@ -17,4 +17,4 @@ satisfies:
       {{contractor.name_short}} works closely with the Drupal security community and reviews
       security announcements as part of the continuous monitoring strategy. Items
       found to require immediate remediation will be addressed.
-  implementation_status: {{status.CA_7.drupal}}
+  implementation_status: {{responsibility.CA_7.drupal}}

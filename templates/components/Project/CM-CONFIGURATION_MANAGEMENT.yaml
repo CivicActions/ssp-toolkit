@@ -14,7 +14,7 @@ satisfies:
       physical and environmental protection. It defines responsibilities for
       the implementation and oversight of the guidance contained herein.
       {{project.client_name_short}} reviews and updates the policy as necessary.
-  implementation_status: {{status.CM_1.project}}
+  implementation_status: {{responsibility.CM_1.project}}
   summary: >
     Configuration management policy and procedures documented in the
     {{project.name_short}} Configuration Management Plan
@@ -35,7 +35,7 @@ satisfies:
       {{project.name_short}} system do not unintentionally or unknowingly
       diminish security. If the change is major, the security of the system
       must be re-analyzed.
-  implementation_status: {{status.CM_2.project}}
+  implementation_status: {{responsibility.CM_2.project}}
   summary: >
     A CM process has been established and documented in the
     {{project.name_short}} CMP.
@@ -57,7 +57,7 @@ satisfies:
       formal or informal, is performed when changes are occur. This ensures
       that {{project.client_name}} understands the security impacts and can
       determine if additional security controls are required.
-  implementation_status: {{status.CM_4.project}}
+  implementation_status: {{responsibility.CM_4.project}}
 - control_key: CM-6
   control_name: CONFIGURATION SETTINGS
   standard_key: NIST SP 800-53 Revision 4
@@ -93,7 +93,7 @@ satisfies:
       exceptions to mandatory configuration settings for individual components
       within its cloud offering only when operationally necessary. All variances
       identified during the monthly and annual system testing scans that must be accepted for operational purposes are tracked.
-  implementation_status: {{status.CM_6.project}}
+  implementation_status: {{responsibility.CM_6.project}}
 - control_key: CM-7
   control_name: LEAST FUNCTIONALITY
   standard_key: NIST SP 800-53 Revision 4
@@ -110,4 +110,4 @@ satisfies:
       access across the system boundary is only allowed on ports 22 (ssh), 80
       (http) and 443 (https), with an additional port, 25 (smtp) open on the
       mail server.
-  implementation_status: {{status.CM_7.project}}
+  implementation_status: {{responsibility.CM_7.project}}
