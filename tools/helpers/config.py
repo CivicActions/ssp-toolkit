@@ -20,7 +20,7 @@ class Config:
         if self.configuration.exists():
             try:
                 with open(self.configuration, "r") as fp:
-                    self.config = yaml.load(fp, Loader=yaml.FullLoader)
+                    self.config = yaml.safe_load(fp)
             except IOError:
                 print(f"Error loading {self.configuration.as_posix}.")
         else:
@@ -32,7 +32,7 @@ class Config:
             key = self.default_keys.get(filename.name, filename.stem)
             self.config_files.append((filename.name, key))
             with open(filename, "r") as fp:
-                self.config[key] = yaml.load(fp, Loader=yaml.FullLoader)
+                self.config[key] = yaml.safe_load(fp)
 
     def check_config_values(self, file: str, key: str = "") -> str | dict:
         if key:
