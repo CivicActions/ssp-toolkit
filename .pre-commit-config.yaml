@@ -29,3 +29,13 @@ repos:
     hooks:
       - id: mypy
         args: ["--install-types", "--non-interactive", "--ignore-missing-imports"]
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.7.10
+    hooks:
+    - id: bandit
+      args: [ "--skip", "B101" ]
+      exclude: |
+        (?x)^(
+            .*/.*_test\.py|
+            .*/.*test_.*\.py
+        )$
