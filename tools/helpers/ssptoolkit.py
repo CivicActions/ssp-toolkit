@@ -167,7 +167,7 @@ def load_yaml_files(file_path: str | Path) -> dict:
     load_file = Path(file_path) if isinstance(file_path, str) else file_path
     try:
         with open(load_file, "r") as fp:
-            project = yaml.load(fp, Loader=yaml.FullLoader)
+            project = yaml.safe_load(fp)
             return project
     except FileNotFoundError:
         raise FileNotFoundError(

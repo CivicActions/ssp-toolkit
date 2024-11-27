@@ -1,5 +1,7 @@
 # Auto-generated System Security Plan (SSP)
 
+[![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
+
 <!--ts-->
    * [Auto-generated System Security Plan (SSP)](#auto-generated-system-security-plan-ssp)
       * [Overview](#overview)
