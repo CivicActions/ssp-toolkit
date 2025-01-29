@@ -21,6 +21,7 @@ slugify = "^0.0.1"
 complianceio = {git = "https://github.com/CivicActions/compliance-io.git"}
 pytest = "^7.4.0"
 pypandoc = "^1.11"
+poetry-core = "^2.0.1"
 
 [build-system]
 requires = ["poetry-core"]
@@ -35,6 +36,6 @@ sop = "tools.sop.sop:main"
 makessp = "tools.makessp.makessp:main"
 getconfig = "tools.helpers.config:check_config"
 
-[[tool.mypy.overrides]]
+[tool.mypy.overrides]
 module = "yaml"
 ignore_missing_imports = true
