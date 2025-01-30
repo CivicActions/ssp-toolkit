@@ -1,0 +1,10 @@
+services:
+  file_watcher:
+    user: 1000:1000
+    environment:
+      - UID=${UID}
+      - GID=${GID}
+    build: .
+    volumes:
+      - .:/app
+    command: python tools/watcher.py

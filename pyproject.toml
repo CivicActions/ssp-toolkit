@@ -22,6 +22,7 @@ complianceio = {git = "https://github.com/CivicActions/compliance-io.git"}
 pytest = "^7.4.0"
 pypandoc = "^1.11"
 poetry-core = "^2.0.1"
+watchdog = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]
