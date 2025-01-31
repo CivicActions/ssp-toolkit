@@ -11,7 +11,7 @@ from tools.helpers.project import Project
 from tools.makefamilies.family import Control, Family, Part
 
 project = Project()
-controls_dir = Path("docs/controls")
+controls_dir = Path("results/docs/controls")
 
 
 def get_control_parts(parts: list, control, parent: str) -> Control:
@@ -139,7 +139,7 @@ def create_family(return_data: bool = False) -> dict:
     return families_data
 
 
-def main():
+def make_families():
     if not controls_dir.exists():
         print(f"Creating output directory {controls_dir.resolve(strict=False)}")
         controls_dir.mkdir(parents=True, exist_ok=False)
@@ -148,4 +148,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    make_families()

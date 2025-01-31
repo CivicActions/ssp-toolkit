@@ -232,7 +232,7 @@ def sort_controls(families: dict) -> dict:
     "-c",
     "components_dir",
     required=False,
-    default="components/",
+    default="results/components/",
     type=click.Path(exists=True, dir_okay=True, file_okay=False),
     help="Rendered components directory",
 )
@@ -241,11 +241,14 @@ def sort_controls(families: dict) -> dict:
     "-o",
     "output_dir",
     type=click.Path(exists=False, dir_okay=True, readable=True),
-    default="docs/",
+    default="results/docs/",
     help="Output directory (default: docs/)",
 )
-def main(components_dir: str, output_dir: str):
+def sop(components_dir: str, output_dir: str):
     out_dir = Path(output_dir).joinpath("sop")
+    if not out_dir.is_dir():
+        out_dir.mkdir(parents=True)
+
     config = load_template_args()
 
     rendered_components = Path(components_dir)
@@ -258,4 +261,4 @@ def main(components_dir: str, output_dir: str):
 
 
 if __name__ == "__main__":
-    main()
+    sop()

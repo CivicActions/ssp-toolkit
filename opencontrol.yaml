@@ -5,12 +5,12 @@ metadata:
   maintainers:
     - CivicActions
 components:
-  - ./components/AWS
-  - ./components/Contractor
-  - ./components/Drupal
-  - ./components/Ilias
-  - ./components/Project
-  - ./components/SSH
+  - ./results/components/AWS
+  - ./results/components/Contractor
+  - ./results/components/Drupal
+  - ./results/components/Ilias
+  - ./results/components/Project
+  - ./results/components/SSH
 standards:
   - ./standards/nist-sp-800-53-rev5.yaml
 certifications:

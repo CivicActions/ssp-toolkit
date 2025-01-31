@@ -22,17 +22,18 @@ complianceio = {git = "https://github.com/CivicActions/compliance-io.git"}
 pytest = "^7.4.0"
 pypandoc = "^1.11"
 poetry-core = "^2.0.1"
+watchdog = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-createfiles = "tools.createfiles.createfiles:main"
+createfiles = "tools.createfiles.createfiles:create_files"
 creatematrix = "tools.creatematrix.creatematrix:main"
 exportto = "tools.exportto.exportto:main"
-makefamilies = "tools.makefamilies.makefamilies:main"
-sop = "tools.sop.sop:main"
+makefamilies = "tools.makefamilies.makefamilies:make_families"
+sop = "tools.sop.sop:sop"
 makessp = "tools.makessp.makessp:main"
 getconfig = "tools.helpers.config:check_config"
 

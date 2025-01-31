@@ -15,7 +15,7 @@ satisfies:
       In this architecture, the baseline AWS Identity and Access Management (IAM)
       groups and roles are associated with access policies to align user
       accounts with personnel functions related to infrastructure/platform
-      management (e.g. Billing, Amazon EC2/VPC/Amazon RDS systems administration, I.T. auditing,
+      management (e.g. Billing, S3 storage, Amazon EC2/VPC/Amazon RDS systems administration, I.T. auditing,
       etc.)
   - key: g
     text: >
