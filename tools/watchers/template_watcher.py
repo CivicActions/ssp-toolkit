@@ -1,7 +1,7 @@
 import asyncio
 from pathlib import Path
 
-from watchdog.events import FileCreatedEvent, FileModifiedEvent, FileSystemEventHandler
+from watchdog.events import FileClosedEvent, FileSystemEventHandler
 from watchdog.observers import Observer
 
 
@@ -12,16 +12,13 @@ class WatchTemplatesHandler(FileSystemEventHandler):
         self.queue: asyncio.Queue = asyncio.Queue()
         self.loop = loop
 
-    def on_modified(self, event: FileModifiedEvent) -> None:
-        asyncio.run_coroutine_threadsafe(self.queue.put(event), self.loop)
-
-    def on_created(self, event: FileCreatedEvent) -> None:
+    def on_modified(self, event: FileClosedEvent) -> None:
         asyncio.run_coroutine_threadsafe(self.queue.put(event), self.loop)
 
     async def process_events(self):
         while True:
             event = await self.queue.get()
-            if isinstance(event, (FileModifiedEvent, FileCreatedEvent)):
+            if isinstance(event, FileClosedEvent):
                 self.file_path = event.src_path
                 if self.debounce_task and not self.debounce_task.done():
                     self.debounce_task.cancel()

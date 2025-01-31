@@ -33,7 +33,7 @@ createfiles = "tools.createfiles.createfiles:create_files"
 creatematrix = "tools.creatematrix.creatematrix:main"
 exportto = "tools.exportto.exportto:main"
 makefamilies = "tools.makefamilies.makefamilies:make_families"
-sop = "tools.sop.sop:main"
+sop = "tools.sop.sop:sop"
 makessp = "tools.makessp.makessp:main"
 getconfig = "tools.helpers.config:check_config"
 
