@@ -1,0 +1,51 @@
+family: ACCESS CONTROL
+documentation_complete: false
+satisfies:
+- control_key: AC-2
+  control_name: ACCOUNT MANAGEMENT
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Shared
+  narrative:
+  - text: >
+      The system partially inherits this control from the FedRAMP Provisional ATO granted
+      to the AWS Cloud dated 1 May 2013 for the following: AWS account management.
+  - key: a
+    text: >
+      In this architecture, the baseline AWS Identity and Access Management (IAM)
+      groups and roles are associated with access policies to align user
+      accounts with personnel functions related to infrastructure/platform
+      management (e.g. Billing, S3 storage, Amazon EC2/VPC/Amazon RDS systems administration, I.T. auditing,
+      etc.)
+  - key: g
+    text: >
+      In this architecture, AWS CloudTrail and Amazon S3 Bucket logging are enabled, which
+      provide the audit trail capability for the organization to monitor the use of AWS
+      Identity and Access Management (IAM) accounts. An Amazon S3 bucket centrally contains
+      the CloudTrail audit logs. Amazon CloudWatch Alarm is configured to send an
+      alert when any of the following happen:
+        - an API call is made to create, update, or delete a Network ACL/Security Group
+        - AWS account *root user* activity is detected
+        - multiple API actions or login attempts fail
+        - IAM Configuration changes are detected
+        - new IAM access key was created
+        - changes to the CloudTrail log configuration are detected
+  implementation_status: partial
+- control_key: AC-3
+  control_name: ACCESS ENFORCEMENT
+  standard_key: NIST SP 800-53 Revision 4
+  covered_by: []
+  security_control_type: Shared
+  narrative:
+  - text: >
+      In this architecture, AWS Identify and Access Management (IAM) and Amazon
+      Amazon S3 enforce access to the AWS infrastructure and data in Amazon S3 buckets. The
+      baseline IAM groups and roles are associated with access policies to
+      align user accounts with personnel functions related to infrastructure/platform
+      management (e.g. Billing, Amazon EC2/VPC/Amazon RDS systems administration, I.T.
+      auditing, etc.) Login/API access is restricted to those users for whom the
+      organization has authorized and created, or federated, IAM user accounts,
+      and assigned the appropriate IAM group and/or role memberships. Amazon S3
+      buckets have specific access control policies assigned to restrict access
+      to those IAM users who are assigned the appropriate IAM roles/groups.
+  implementation_status: partial

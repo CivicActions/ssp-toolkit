@@ -6,7 +6,7 @@ from watchdog.observers import Observer
 
 class WatchComponentsHandler(FileSystemEventHandler):
     def __init__(self, loop: asyncio.AbstractEventLoop):
-        self.processed_files: set[str] = set()
+        self.debounce_task = None
         self.queue: asyncio.Queue = asyncio.Queue()
         self.loop = loop
 
@@ -20,13 +20,14 @@ class WatchComponentsHandler(FileSystemEventHandler):
         while True:
             event = await self.queue.get()
             if isinstance(event, (FileModifiedEvent, FileCreatedEvent)):
-                file_path = event.src_path
-                if file_path not in self.processed_files:
-                    self.processed_files.add(file_path)
-                    await self.make_families()
+                if self.debounce_task and not self.debounce_task.done():
+                    self.debounce_task.cancel()
 
-                    await asyncio.sleep(1)
-                    self.processed_files.remove(file_path)
+                self.debounce_task = asyncio.create_task(self._debounce())
+
+    async def _debounce(self):
+        await asyncio.sleep(0.5)
+        await self.make_families()
 
     @staticmethod
     async def make_families():

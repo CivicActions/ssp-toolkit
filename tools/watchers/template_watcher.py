@@ -1,18 +1,14 @@
 import asyncio
 from pathlib import Path
 
-from watchdog.events import (
-    DirDeletedEvent,
-    FileCreatedEvent,
-    FileDeletedEvent,
-    FileModifiedEvent,
-    FileSystemEventHandler,
-)
+from watchdog.events import FileCreatedEvent, FileModifiedEvent, FileSystemEventHandler
 from watchdog.observers import Observer
 
 
 class WatchTemplatesHandler(FileSystemEventHandler):
     def __init__(self, loop: asyncio.AbstractEventLoop):
+        self.debounce_task = None
+        self.file_path: str = ""
         self.queue: asyncio.Queue = asyncio.Queue()
         self.loop = loop
 
@@ -22,16 +18,19 @@ class WatchTemplatesHandler(FileSystemEventHandler):
     def on_created(self, event: FileCreatedEvent) -> None:
         asyncio.run_coroutine_threadsafe(self.queue.put(event), self.loop)
 
-    def on_deleted(self, event: DirDeletedEvent | FileDeletedEvent) -> None:
-        asyncio.run_coroutine_threadsafe(self.queue.put(event), self.loop)
-
     async def process_events(self):
         while True:
             event = await self.queue.get()
-            if isinstance(event, (DirDeletedEvent, FileDeletedEvent)):
-                await self.delete_file(file_path=event.src_path)
-            elif isinstance(event, (FileCreatedEvent, FileModifiedEvent)):
-                await self.create_files(file_path=event.src_path)
+            if isinstance(event, (FileModifiedEvent, FileCreatedEvent)):
+                self.file_path = event.src_path
+                if self.debounce_task and not self.debounce_task.done():
+                    self.debounce_task.cancel()
+
+                self.debounce_task = asyncio.create_task(self._debounce())
+
+    async def _debounce(self):
+        await asyncio.sleep(0.5)
+        await self.create_files(file_path=self.file_path)
 
     @staticmethod
     async def create_files(file_path: str):
