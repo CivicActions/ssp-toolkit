@@ -1,12 +1,13 @@
 import asyncio
 
-from tools.watchers.templates import watch_templates
+from tools.watchers.component_watcher import watch_components
+from tools.watchers.template_watcher import watch_templates
 
 
 async def main():
     await asyncio.gather(
         watch_templates("./templates", loop=loop),
-        # Add other async tasks here
+        watch_components("./results/components", loop=loop),
     )
 
 

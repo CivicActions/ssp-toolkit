@@ -36,7 +36,7 @@ from tools.helpers.ssptoolkit import find_toc_tag, load_template_args
     required=False,
     help="Output directory (default: current directory)",
 )
-def main(input_template: str, output_dir: str):
+def create_files(input_template: str, output_dir: str):
     template_args = load_template_args()
     output_to = Path(output_dir)
     templates = Path(input_template)
@@ -73,4 +73,4 @@ def main(input_template: str, output_dir: str):
 
 
 if __name__ == "__main__":
-    main()
+    create_files()
