@@ -35,15 +35,13 @@ def copy_project_files(new_project_directory: Path) -> None:
         click.echo(f"New Project created in {new_project_directory.as_posix()}")
         logger.info(f"New Project created in {new_project_directory.as_posix()}")
     except FileExistsError as fee:
-        click.echo(
-            f"""
+        click.echo(f"""
 PROJECT CREATION ERROR
 ----------------------
 Project {new_project_directory.name} already exists.
 Try opening the project using `uv run open-project --directory {new_project_directory.as_posix()}` or
 create a new project with a different name.
-"""
-        )
+""")
         logger.error(f"Project {new_project_directory.name} already exists: {fee}")
     except shutil.Error as err:
         click.echo(

@@ -8,9 +8,9 @@ OpenControl repositories.
 
 from enum import Enum
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
-import rtyaml
+import rtyaml  # type: ignore[import-untyped]
 from blinker import signal
 from pydantic import BaseModel, Field, PrivateAttr, ValidationError
 from slugify import slugify
@@ -172,10 +172,10 @@ class OpenControl(OpenControlElement):
 
     schema_version: str = OPENCONTROL_SCHEMA_VERSION
     name: str
-    metadata: Metadata
-    components: list[str] = Field(default=[])
-    standards: list[str] = Field(default=[])
-    certifications: list[str] = Field(default=[])
+    metadata: Metadata | None = None
+    components: list[str | Component] = Field(default=[])
+    standards: list[str] | dict[str, Standard] = Field(default=[])
+    certifications: list[str | Certification] = Field(default=[])
     dependencies: Dependencies | None = None
 
     _root_dir: str = PrivateAttr()
@@ -215,54 +215,82 @@ class OpenControl(OpenControlElement):
     def save(self):
         """Write back an OpenControl repo to where it was loaded"""
         root_dir = self._root_dir
-        root = self.model_dump(exclude={"standards", "components", "systems"})
+        root = self.model_dump(exclude={"standards", "components"})
+        certifications = cast(
+            list[Certification],
+            [cert for cert in self.certifications if isinstance(cert, Certification)],
+        )
+        standards = (
+            cast(dict[str, Standard], self.standards).values()
+            if isinstance(self.standards, dict)
+            else []
+        )
+        components = cast(
+            list[Component],
+            [
+                component
+                for component in self.components
+                if isinstance(component, Component)
+            ],
+        )
         root["certifications"] = [
-            str(cert.storage_path(root_dir)) for cert in self.certifications  # type: ignore[attr-defined]
+            str(cert.storage_path(root_dir)) for cert in certifications
         ]
-        root["standards"] = [
-            str(std.storage_path(root_dir))  # type: ignore[attr-defined]
-            for std in self.standards.values()  # type: ignore[attr-defined]
-        ]
-        root["components"] = [
-            str(c.storage_path(root_dir))  # type: ignore[attr-defined]
-            for c in self.components
-        ]
+        root["standards"] = [str(std.storage_path(root_dir)) for std in standards]
+        root["components"] = [str(c.storage_path(root_dir)) for c in components]
         print(rtyaml.dump(root))
 
     def save_as(self, base_dir):
         """Save an OpenControl repo in a new location"""
-        root = self.model_dump(exclude={"standards", "components", "systems"})
+        root = self.model_dump(exclude={"standards", "components"})
+        certifications = cast(
+            list[Certification],
+            [cert for cert in self.certifications if isinstance(cert, Certification)],
+        )
+        standards = (
+            list(cast(dict[str, Standard], self.standards).values())
+            if isinstance(self.standards, dict)
+            else []
+        )
+        components = cast(
+            list[Component],
+            [
+                component
+                for component in self.components
+                if isinstance(component, Component)
+            ],
+        )
         root["certifications"] = []
-        for cert in self.certifications:
-            cert_storage = cert.storage_path(base_dir)  # type: ignore[attr-defined]
+        for cert in certifications:
+            cert_storage = cert.storage_path(base_dir)
             cert_storage.parent.mkdir(parents=True, exist_ok=True)
             with cert_storage.open("w") as cert_file:
-                cert_file.write(rtyaml.dump(cert.dict()))  # type: ignore[attr-defined]
+                cert_file.write(rtyaml.dump(cert.dict()))
                 FILE_SIGNAL.send(self, operation="write", path=cert_storage)
-                root["certifications"].append(str(cert.storage_path()))  # type: ignore[attr-defined]
+                root["certifications"].append(str(cert.storage_path()))
 
         root["standards"] = []
-        for std in self.standards.values():  # type: ignore[attr-defined]
-            std_storage = std.storage_path(base_dir)  # type: ignore[attr-defined]
+        for std in standards:
+            std_storage = std.storage_path(base_dir)
             std_storage.parent.mkdir(parents=True, exist_ok=True)
             with std_storage.open("w") as std_file:
                 std_file.write(rtyaml.dump(std.dict()))
                 FILE_SIGNAL.send(self, operation="write", path=std_storage)
-                root["standards"].append(str(std.storage_path()))  # type: ignore[attr-defined]
+                root["standards"].append(str(std.storage_path()))
 
-        root["components"] = [str(c.storage_path()) for c in self.components]  # type: ignore[attr-defined]
+        root["components"] = [str(c.storage_path()) for c in components]
 
         root_storage = self.storage_path(base_dir)
         with root_storage.open("w") as root_file:
             root_file.write(rtyaml.dump(root))
             FILE_SIGNAL.send(self, operation="write", path=root_storage)
 
-        for c in self.components:
-            component_path = c.storage_path(base_dir)  # type: ignore[attr-defined]
+        for c in components:
+            component_path = c.storage_path(base_dir)
             component_path.parent.mkdir(parents=True, exist_ok=True)
 
             with component_path.open("w") as component_file:
-                component_file.write(rtyaml.dump(c.dict()))  # type: ignore[attr-defined]
+                component_file.write(rtyaml.dump(c.dict()))
             FILE_SIGNAL.send(self, operation="write", path=component_path)
 
 
@@ -299,13 +327,15 @@ class OpenControlYaml(BaseModel):
         resolved_components = self.resolve_components(relative_to)
         resolved_certifications = self.resolve_certifications(relative_to)
         resolved_standards = self.resolve_standards(relative_to)
-        obj = OpenControl(
-            schema_version=self.schema_version,
-            name=self.name,
-            metadata=self.metadata,
-            components=resolved_components,
-            certifications=resolved_certifications,
-            standards=resolved_standards,
+        obj = OpenControl.model_validate(
+            {
+                "schema_version": self.schema_version,
+                "name": self.name,
+                "metadata": self.metadata,
+                "components": resolved_components,
+                "certifications": resolved_certifications,
+                "standards": resolved_standards,
+            }
         )
         return obj
 
@@ -332,7 +362,7 @@ class OpenControlYaml(BaseModel):
     def resolve_fen_component(self, obj, component_path):
         fc = FenComponent.model_validate(obj)
         resolved_satisfiers = []
-        for satisfier in fc.satisfies:
+        for satisfier in fc.satisfies or []:
             satisfier_path = component_path.parent / satisfier
             if satisfier_path.is_file():
                 FILE_SIGNAL.send(self, operation="read", path=satisfier_path)

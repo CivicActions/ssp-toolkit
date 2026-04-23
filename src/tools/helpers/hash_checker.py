@@ -21,7 +21,7 @@ class FileChecker:
     sha_hash = hashlib.sha256()
     changed_files: int = 0
 
-    def __init__(self):
+    def __init__(self) -> None:
         project_path = get_project_path()
         self.hash_file: Path = project_path / "file_hashes.json"
         if not self.hash_file.exists():

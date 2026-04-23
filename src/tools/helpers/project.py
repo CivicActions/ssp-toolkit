@@ -26,18 +26,22 @@ class Project:
             raise FileNotFoundError("configuration.yaml not found in project root.")
         self._sort_standard_controls()
 
-    def _sort_standard_controls(self):
-        controls: dict = {}
+    def _sort_standard_controls(self) -> None:
+        controls: dict[str, dict[str, str]] = {}
         for certification in self.project.certifications:
+            if not isinstance(certification, str):
+                continue
             cert_path = self.project_path.joinpath(certification)
             cert = load_yaml_files(cert_path)
 
             for control in self._get_certification_controls(cert):
                 family = control[:2]
                 if family not in controls:
-                    controls[family]: dict = {}
+                    controls[family] = {}
                 controls[family][sortable_control_id(control)] = control
-                dict(sorted(controls[family].items()))
+                controls[family] = {
+                    key: value for key, value in sorted(controls[family].items())
+                }
         self.controls = dict(sorted(controls.items()))
 
     @staticmethod
@@ -53,12 +57,18 @@ class Project:
             standards_list = load_yaml_files(self.project_path / standard)
             standards.append(standards_list)
 
-        title = self.project.metadata.description
+        title = (
+            self.project.metadata.description
+            if self.project.metadata and self.project.metadata.description
+            else ""
+        )
         return title, standards
 
     def sort_component_controls(self, component_name: str) -> dict:
         controls: dict = {}
         for component_dir in self.project.components:
+            if not isinstance(component_dir, str):
+                continue
             component_path = (
                 Path(component_dir).joinpath(component_name).with_suffix(".yaml")
             )

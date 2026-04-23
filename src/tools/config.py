@@ -68,7 +68,9 @@ def check_config():
 def get_value(file: str, key: str = ""):
     """Get the value of a specific configuration key from a file"""
     config = Config()
-    click.echo(yaml.dump(config.check_config_values(file=file, key=key), indent=4, width=80))
+    click.echo(
+        yaml.dump(config.check_config_values(file=file, key=key), indent=4, width=80)
+    )
 
 
 @check_config.command("list-files")

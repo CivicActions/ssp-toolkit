@@ -41,8 +41,8 @@ def get_controls(family: Family, standards: list, project: Project) -> Family:
         )
         control = Control(
             control_id=control_id,
-            control_name=standard.get("name"),
-            description=standard.get("description"),
+            control_name=standard.get("name", ""),
+            description=standard.get("description", ""),
             status=standard.get("implementation_status", "incomplete"),
             parts={},
             control_type=standard.get("security_control_type", "N/A"),
@@ -62,8 +62,11 @@ def get_control_narratives(narratives: dict) -> Generator[tuple, None, None]:
     for narrative in narratives:
         key = list(narrative.keys())[0]
         text = narrative[key]
-        yield key, text.get("narrative"), text.get("implementation_status"), text.get(
-            "security_control_type"
+        yield (
+            key,
+            text.get("narrative"),
+            text.get("implementation_status"),
+            text.get("security_control_type"),
         )
 
 
@@ -114,7 +117,6 @@ def create_toc(out_path: str | Path, controls: dict):
 def create_family(
     controls_dir: Path, project: Project, return_data: bool = False
 ) -> dict:
-
     title, standards = project.get_standards()
     families = ssptoolkit.get_component_files(project.project.get_components())
     toc: dict = {}

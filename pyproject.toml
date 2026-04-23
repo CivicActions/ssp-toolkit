@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ssp-toolkit"
-version = "0.1.0"
+version = "3.0.1"
 description = "Scripts for managing the creation of an SSP"
 readme = "README.md"
 requires-python = ">=3.14"
@@ -27,7 +27,7 @@ dependencies = [
     "python-dotenv>=1.2.1",
     "rtyaml>=1.0.0",
     "ruamel-yaml>=0.19.1",
-    "slugify>=0.0.1",
+    "python-slugify>=8.0.0",
 ]
 
 [project.optional-dependencies]
@@ -35,6 +35,7 @@ dev = [
     "pytest>=9.0.2",
     "pytest-cov>=7.0.0",
     "mypy>=1.5.1",
+    "types-PyYAML",
     "black>=24.11.0",
     "isort>=6.0.0",
     "flake8>=6.1.0",
@@ -46,16 +47,25 @@ Source = "https://github.com/CivicActions/ssp-toolkit"
 
 [project.scripts]
 cli = "tools.cli:cli"
-createfiles = "tools.create_files:create_files_cmd"
-creatematrix = "tools.create_matrix:create_matrix_cmd"
-createproject = "tools.create_project:create_project_cmd"
-loadproject = "tools.load_project:load_project_cmd"
-exportto = "tools.export_to:export_to_cmd"
-makefamilies = "tools.makefamilies:make_families_cmd"
-sop = "tools.sop:sop_cmd"
-makessp = "tools.make_ssp:make_ssp_cmd"
-check-config = "tools.config:check_config"
 
-[tool.mypy.overrides]
-module = "yaml"
+[[tool.mypy.overrides]]
+module = ["yaml"]
 ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["tools.export_to"]
+disable_error_code = ["import-untyped"]
+
+[tool.isort]
+profile = "black"
+line_length = 109
+
+[tool.black]
+line-length = 109
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "pytest-cov>=7.0.0",
+    "types-PyYAML",
+]

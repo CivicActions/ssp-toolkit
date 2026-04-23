@@ -23,9 +23,14 @@ def get_family_data(family_data: dict, write_to: Path, project: OpenControl) -> 
         print(f"Creating output directory {write_to.as_posix()}")
         write_to.mkdir(exist_ok=False)
     families = [family for _, family in family_data.items()]
+    standards = (
+        list(project.standards.keys())
+        if isinstance(project.standards, dict)
+        else [standard for standard in project.standards if isinstance(standard, str)]
+    )
     return Ssp(
         name=project.name,
-        standards=project.standards,
+        standards=standards,
         families=families,
     )
 

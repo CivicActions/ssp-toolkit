@@ -7,7 +7,7 @@ import mmap
 import re
 from pathlib import Path
 
-import md_toc
+import md_toc  # type: ignore[import-untyped]
 import yaml
 from loguru import logger
 
@@ -63,7 +63,8 @@ def get_certification_baseline() -> list:
     project_path = get_project_path()
     certifications: list = []
     for certs in project.certifications:
-        certifications.append(load_yaml_files(project_path / certs))
+        if isinstance(certs, str):
+            certifications.append(load_yaml_files(project_path / certs))
 
     controls: list = []
     for standards in certifications:
@@ -77,14 +78,19 @@ def get_standards() -> tuple:
     project = get_project()
     standards: list = []
     for standard in project.standards:
-        try:
-            with open(standard, "r") as s:
-                standards_list = yaml.load(s, Loader=yaml.SafeLoader)
-        except FileNotFoundError as error:
-            raise error
-        standards.append(standards_list)
+        if isinstance(standard, str):
+            try:
+                with open(standard, "r") as s:
+                    standards_list = yaml.load(s, Loader=yaml.SafeLoader)
+            except FileNotFoundError as error:
+                raise error
+            standards.append(standards_list)
 
-    title = project.metadata.description
+    title = (
+        project.metadata.description
+        if project.metadata and project.metadata.description
+        else ""
+    )
     return title, standards
 
 
@@ -152,17 +158,21 @@ def get_control_statuses() -> dict:
 
 
 def find_toc_tag(file: str, levels: int = 3):
-    with open(file, "rb", 0) as f, mmap.mmap(
-        f.fileno(), 0, access=mmap.ACCESS_READ
-    ) as s:
+    with (
+        open(file, "rb", 0) as f,
+        mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ) as s,
+    ):
         if s.find(b"<!--TOC-->") != -1:
             write_toc(file, levels=levels)
 
 
 def write_toc(file: str | Path, levels: int):
-    toc = md_toc.api.build_toc(filename=file, keep_header_levels=levels, skip_lines=5)
+    filename = str(file)
+    toc = md_toc.api.build_toc(
+        filename=filename, keep_header_levels=levels, skip_lines=5
+    )
     md_toc.api.write_string_on_file_between_markers(
-        filename=file,
+        filename=filename,
         string=toc,
         marker="<!--TOC-->",
     )
