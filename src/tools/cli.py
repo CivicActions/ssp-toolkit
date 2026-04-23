@@ -6,6 +6,7 @@ directory of this distribution and at https://github.com/CivicActions/ssp-toolki
 import click
 from loguru import logger
 
+from tools.config import check_config
 from tools.create_files import create_files_cmd
 from tools.create_matrix import create_matrix_cmd
 from tools.create_project import create_project_cmd
@@ -34,6 +35,7 @@ cli.add_command(export_to_cmd)
 cli.add_command(make_families_cmd)
 cli.add_command(make_ssp_cmd)
 cli.add_command(sop_cmd)
+cli.add_command(check_config)
 
 
 if __name__ == "__main__":

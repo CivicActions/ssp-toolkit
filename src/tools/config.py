@@ -40,14 +40,14 @@ class Config:
             self.config[key] = load_yaml_files(file_path=filename)
 
     def check_config_values(self, file: str, key: str = "") -> str | dict:
-        if key:
-            values = self.config.get(file, {}).get(key, "")
-        else:
-            values = self.config.get(file, {})
+        file_values = self.config.get(file, {})
+        values: str | dict = file_values
+        if key and file_values:
+            values = file_values.get(key, "")
         return values
 
 
-@click.group()
+@click.group("get-config")
 def check_config():
     """Check configuration files and keys in the project"""
     pass
@@ -68,7 +68,7 @@ def check_config():
 def get_value(file: str, key: str = ""):
     """Get the value of a specific configuration key from a file"""
     config = Config()
-    yaml.dump(config.check_config_values(file), indent=4, width=80)
+    click.echo(yaml.dump(config.check_config_values(file=file, key=key), indent=4, width=80))
 
 
 @check_config.command("list-files")

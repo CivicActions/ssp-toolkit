@@ -179,7 +179,7 @@ Generate Standard Operating Procedure (SOP) docs (from `components/` and `keys/s
 #### Example
 
 ```shell
-uv run cli sop -c components
+uv run cli sop
 ```
 
 #### Usage
@@ -221,6 +221,7 @@ Generate Microsoft Word (.docx) versions of the control family, appendices, and 
 
 `exportto` uses the Pandoc file generation library. Go to the
 [install Pandoc page](https://pandoc.org/installing.html) to learn how to install Pandoc locally.
+
 On macOS you can use Homebrew:
 
 ```shell
@@ -275,8 +276,8 @@ Options:
 
 ## check-config commands
 
-The `getconfig` command lets you read configuration data. There are two commands
-that can be used with `getconfig`; `get-value` and `list-files`.
+The `get-config` command lets you read configuration data. There are two commands
+that can be used with `get-config`; `get-value` and `list-files`.
 
 ### Usage
 
@@ -297,8 +298,8 @@ Commands:
 
 `get-value` is used to get the value of a given key in the configuration dictionary.
 For instance if you wanted to know the value of the `name_short` parameter in the
-`Contractor` key file, you would run `uv run cli getconfig get-value -f contractor -k name_short`.
-If you omit the `--key/-k` parameter, for instance `uv run cli getconfig get-value -f contractor`
+`Contractor` key file, you would run `uv run cli get-config get-value -f contractor -k name_short`.
+If you omit the `--key/-k` parameter, for instance `uv run cli get-config get-value -f contractor`
 this will output the entire contents of the key file formatted as YAML.
 
 #### Example
@@ -306,13 +307,13 @@ this will output the entire contents of the key file formatted as YAML.
 Get a value for a given key in the `contractor.yaml` file:
 
 ```shell
-uv run cli getconfig get-value -f contractor -k name_short
+uv run cli get-config get-value -f contractor -k name_short
 ```
 
 Get the entire contents of the `contractor.yaml` file
 
 ```shell
-uv run cli getconfig get-value -f contractor
+uv run cli get-config get-value -f contractor
 ```
 
 #### Usage
@@ -341,7 +342,7 @@ list of the files and their alias.
 #### Example
 
 ```shell
-uv run cli getconfig list-files
+uv run cli get-config list-files
 ```
 
 #### Usage
