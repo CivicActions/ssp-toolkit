@@ -1,0 +1,102 @@
+# Complete Security Scanning for GitHub Enterprise Server
+#
+# This workflow runs all available security scanners using composite actions.
+# Copy this file to your repository's .github/workflows/ directory.
+#
+# For air-gapped GHES instances, update action references to your internal mirror:
+#   huntridge-labs/argus -> your-org/argus
+
+name: Security Scan (All Scanners)
+
+on:
+  push:
+    branches: [main, master, develop]
+  pull_request:
+    branches: [main, master, develop]
+  schedule:
+    - cron: '0 6 * * 1' # Weekly Monday 6 AM UTC
+
+permissions:
+  contents: read
+  security-events: write
+  pull-requests: write
+  actions: read
+
+jobs:
+  # ============================================
+  # SAST Scanners (Static Application Security Testing)
+  # ============================================
+  sast-scanning:
+    name: SAST Scanners
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Run Bandit (Python)
+        uses: huntridge-labs/argus/.github/actions/scanner-bandit@0.4.0
+        with:
+          post_pr_comment: 'true'
+          enable_code_security: 'true'
+          fail_on_severity: 'high'
+
+      - name: Run OpenGrep
+        uses: huntridge-labs/argus/.github/actions/scanner-opengrep@0.4.0
+        with:
+          enable_code_security: 'true'
+          fail_on_severity: 'high'
+
+      - name: Run Gitleaks (Secrets Detection)
+        uses: huntridge-labs/argus/.github/actions/scanner-gitleaks@0.4.0
+        env:
+          # Optional: For organizations, add your license
+          # GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          post_pr_comment: 'true'
+          enable_code_security: 'true'
+          fail_on_severity: 'high'
+
+  # ============================================
+  # SBOM Generation
+  # ============================================
+  sbom-generation:
+    name: Generate SBOM
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Generate SBOM
+        uses: huntridge-labs/argus/.github/actions/scanner-syft@0.4.0
+        with:
+          scan_path: '.'
+          output_format: 'cyclonedx-json'
+          enable_code_security: 'true'
+
+  # ============================================
+  # Security Summary
+  # ============================================
+  security-summary:
+    name: Security Summary
+    runs-on: ubuntu-latest
+    needs:
+      - sast-scanning
+      - sbom-generation
+    if: always()
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Download all scanner summaries
+        uses: actions/download-artifact@v4
+        with:
+          pattern: scanner-summary-*
+          path: scanner-summaries/
+        continue-on-error: true
+
+      - name: Generate combined summary
+        uses: huntridge-labs/argus/.github/actions/security-summary@0.4.0
+        with:
+          post_pr_comment: 'true'
+        continue-on-error: true

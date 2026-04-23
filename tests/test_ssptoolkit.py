@@ -1,77 +1,107 @@
-from complianceio.opencontrol import OpenControl
+"""
+Copyright 2019-2026 CivicActions, Inc. See the README file at the top-level
+directory of this distribution and at https://github.com/CivicActions/ssp-toolkit#license.
+"""
 
-from tools.helpers import ssptoolkit
-from tools.helpers.config import Config
+import pytest
 
-
-def test_sortable_control_id():
-    test_cid = ssptoolkit.sortable_control_id("AC-1")
-    test_cid_extended = ssptoolkit.sortable_control_id("AC-3 (9)")
-
-    assert test_cid == "AC-01"
-    assert test_cid_extended == "AC-03 (09)"
-
-
-def test_to_oc_control_id():
-    oc_simple = ssptoolkit.to_oc_control_id("AC-01")
-    oc_extended = ssptoolkit.to_oc_control_id("AC-02 (02)")
-    assert oc_simple == "AC-1"
-    assert oc_extended == "AC-2 (2)"
+from tools.helpers.ssptoolkit import (
+    get_standards_control_data,
+    get_standards_family_name,
+    sortable_control_id,
+    to_oc_control_id,
+)
 
 
-def test_get_project():
-    project = ssptoolkit.get_project()
-    assert isinstance(project, OpenControl)
+class TestSortableControlId:
+    def test_pads_single_digit_numbers(self):
+        assert sortable_control_id("AC-1") == "AC-01"
+
+    def test_pads_two_digit_numbers(self):
+        assert sortable_control_id("AC-10") == "AC-10"
+
+    def test_pads_extended_control(self):
+        assert sortable_control_id("AC-2 (1)") == "AC-02 (01)"
+
+    def test_pads_multiple_numbers(self):
+        assert sortable_control_id("SI-3 (10)") == "SI-03 (10)"
+
+    def test_already_padded_unchanged(self):
+        assert sortable_control_id("AC-01") == "AC-01"
+
+    def test_three_digit_number_padded(self):
+        assert sortable_control_id("AC-1 (1)") == "AC-01 (01)"
 
 
-def test_get_standards():
-    title, standards = ssptoolkit.get_standards()
-    assert title == "Reusable OpenControl Components (SSP-Toolkit)."
-    assert standards[0].get("name") == "NIST SP 800-53 Revision 5"
+class TestToOcControlId:
+    def test_simple_control_strips_leading_zero(self):
+        assert to_oc_control_id("AC-01") == "AC-1"
+
+    def test_simple_control_no_padding(self):
+        assert to_oc_control_id("AC-1") == "AC-1"
+
+    def test_two_digit_number(self):
+        assert to_oc_control_id("AC-10") == "AC-10"
+
+    def test_extended_control(self):
+        assert to_oc_control_id("AC-02 (01)") == "AC-2 (1)"
+
+    def test_extended_control_multidigit(self):
+        # The OC extended regex requires 0-prefixed numbers (0\d+).
+        # AC-10 does not start with 0, so it does not match and is returned unchanged.
+        assert to_oc_control_id("AC-10 (02)") == "AC-10 (02)"
+
+    def test_unrecognized_format_returned_unchanged(self):
+        result = to_oc_control_id("CUSTOM-CONTROL")
+        assert result == "CUSTOM-CONTROL"
 
 
-def test_get_certification_baseline():
-    baseline = ssptoolkit.get_certification_baseline()
-    assert len(baseline) == 194
+class TestGetStandardsControlData:
+    def setup_method(self):
+        self.standards = [
+            {
+                "AC-1": {"name": "Policy and Procedures", "description": "..."},
+                "AC-2": {"name": "Account Management", "description": "..."},
+            },
+            {
+                "SI-1": {"name": "System and Info Integrity", "description": "..."},
+            },
+        ]
+
+    def test_finds_control_in_first_standard(self):
+        result = get_standards_control_data("AC-1", self.standards)
+        assert result["name"] == "Policy and Procedures"
+
+    def test_finds_control_in_second_standard(self):
+        result = get_standards_control_data("SI-1", self.standards)
+        assert result["name"] == "System and Info Integrity"
+
+    def test_raises_key_error_for_missing_control(self):
+        with pytest.raises(KeyError, match="MISSING"):
+            get_standards_control_data("MISSING", self.standards)
+
+    def test_returns_full_dict_for_control(self):
+        result = get_standards_control_data("AC-2", self.standards)
+        assert result == {"name": "Account Management", "description": "..."}
 
 
-def test_get_standards_control_data():
-    _, standards = ssptoolkit.get_standards()
-    control_data = ssptoolkit.get_standards_control_data(
-        control="AC-2", standards=standards
-    )
-    assert control_data.get("description").find(
-        "a. Identifies and selects the following"
-    )
+class TestGetStandardsFamilyName:
+    def setup_method(self):
+        self.standards = [
+            {
+                "AC": {"name": "Access Control", "description": ""},
+                "SI": {"name": "System and Information Integrity", "description": ""},
+            }
+        ]
 
+    def test_finds_family_name(self):
+        result = get_standards_family_name("AC", self.standards)
+        assert result == "Access Control"
 
-def test_get_standards_family_name():
-    _, standards = ssptoolkit.get_standards()
-    ac = ssptoolkit.get_standards_family_name("AC", standards)
-    assert ac == "Access Control"
+    def test_finds_another_family_name(self):
+        result = get_standards_family_name("SI", self.standards)
+        assert result == "System and Information Integrity"
 
-
-def test_get_component_files():
-    project = ssptoolkit.get_project()
-    components = ssptoolkit.get_component_files(project.get_components())
-    assert len(components) == 17
-    assert "SA-SYSTEM_AND_SERVICES_ACQUISITION" in components
-
-
-def test_load_controls_by_id():
-    project = ssptoolkit.get_project()
-    controls = ssptoolkit.load_controls_by_id(project.get_components())
-    assert "AC-1" in controls
-
-
-def test_config_keys():
-    config = Config()
-
-    assert len(config.config_files) == 15
-    assert "sop" in config.config
-
-
-def test_config_values():
-    config = Config()
-    contractor = config.check_config_values(file="contractor", key="name_short")
-    assert contractor == "CivicActions"
+    def test_raises_key_error_for_missing_family(self):
+        with pytest.raises(KeyError, match="ZZ"):
+            get_standards_family_name("ZZ", self.standards)

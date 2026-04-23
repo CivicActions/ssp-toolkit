@@ -1,41 +1,66 @@
-[tool.poetry]
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
 name = "ssp-toolkit"
-version = "0.1.0"
-description = ""
-authors = ["Tom Camp <tom.camp@civicactions.com>"]
+version = "3.0.1"
+description = "Scripts for managing the creation of an SSP"
 readme = "README.md"
-packages = [
-    {include = "tools"}
+requires-python = ">=3.14"
+license = "GPL-3.0 AND CC0-1.0"
+keywords = ["ssp", "security", "compliance", "automation"]
+authors = [
+    {name = "Tom Camp", email = "tom.camp@civicactions.com"},
+    {name = "Fen Lebalme", email = "fen@civicactions.com"},
+    {name = "Alanna Blinn", email = "alanna.blinn@civicactions.com"},
+]
+dependencies = [
+    "blinker>=1.9.0",
+    "click>=8.3.1",
+    "jinja2>=3.1.6",
+    "loguru>=0.7.3",
+    "markdown>=3.10",
+    "md-toc>=9.0.0",
+    "pydantic>=2.12.5",
+    "pypandoc>=1.16.2",
+    "python-dotenv>=1.2.1",
+    "ruamel-yaml>=0.19.1",
+    "python-slugify>=8.0.0",
 ]
 
-[tool.poetry.dependencies]
-python = "^3.10"
-click = "^8.1.6"
-pyyaml = "^6.0.1"
-jinja2 = "^3.1.6"
-md-toc = "^9.0.0"
-rtyaml = "^1.0.0"
-pydantic = "^1.10.12"
-blinker = "^1.6.2"
-slugify = "^0.0.1"
-complianceio = {git = "https://github.com/CivicActions/compliance-io.git"}
-pytest = "^7.4.0"
-pypandoc = "^1.11"
-poetry-core = "^2.0.1"
+[project.optional-dependencies]
+dev = [
+    "mypy>=1.18.2",
+    "pytest>=9.0.2",
+    "pytest-cov>=7.0.0",
+]
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[project.urls]
+Source = "https://github.com/CivicActions/ssp-toolkit"
 
-[tool.poetry.scripts]
-createfiles = "tools.createfiles.createfiles:main"
-creatematrix = "tools.creatematrix.creatematrix:main"
-exportto = "tools.exportto.exportto:main"
-makefamilies = "tools.makefamilies.makefamilies:main"
-sop = "tools.sop.sop:main"
-makessp = "tools.makessp.makessp:main"
-getconfig = "tools.helpers.config:check_config"
+[project.scripts]
+cli = "tools.cli:cli"
 
-[tool.mypy.overrides]
-module = "yaml"
+[[tool.mypy.overrides]]
+module = ["yaml"]
 ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["tools.export_to"]
+disable_error_code = ["import-untyped"]
+
+[tool.isort]
+profile = "black"
+line_length = 109
+
+[tool.black]
+line-length = 109
+
+[dependency-groups]
+dev = [
+    "mypy>=1.18.2",
+    "pytest>=9.0.2",
+    "pytest-cov>=7.0.0",
+    "types-PyYAML",
+]
