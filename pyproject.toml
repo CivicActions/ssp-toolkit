@@ -25,21 +25,15 @@ dependencies = [
     "pydantic>=2.12.5",
     "pypandoc>=1.16.2",
     "python-dotenv>=1.2.1",
-    "rtyaml>=1.0.0",
     "ruamel-yaml>=0.19.1",
     "python-slugify>=8.0.0",
 ]
 
 [project.optional-dependencies]
 dev = [
+    "mypy>=1.18.2",
     "pytest>=9.0.2",
     "pytest-cov>=7.0.0",
-    "mypy>=1.5.1",
-    "types-PyYAML",
-    "black>=24.11.0",
-    "isort>=6.0.0",
-    "flake8>=6.1.0",
-    "pre-commit>=3.4.0",
 ]
 
 [project.urls]
@@ -65,6 +59,7 @@ line-length = 109
 
 [dependency-groups]
 dev = [
+    "mypy>=1.18.2",
     "pytest>=9.0.2",
     "pytest-cov>=7.0.0",
     "types-PyYAML",

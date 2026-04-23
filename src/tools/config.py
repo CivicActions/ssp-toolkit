@@ -3,12 +3,17 @@ Copyright 2019-2026 CivicActions, Inc. See the README file at the top-level
 directory of this distribution and at https://github.com/CivicActions/ssp-toolkit#license.
 """
 
+from io import StringIO
+
 import click
-import yaml
 from loguru import logger
+from ruamel.yaml import YAML
 
 from tools.helpers.helpers import get_project_path, load_yaml_files
 from tools.logging_config import setup_logging  # noqa: F401
+
+yaml = YAML()
+yaml.width = 80
 
 
 class Config:
@@ -68,9 +73,9 @@ def check_config():
 def get_value(file: str, key: str = ""):
     """Get the value of a specific configuration key from a file"""
     config = Config()
-    click.echo(
-        yaml.dump(config.check_config_values(file=file, key=key), indent=4, width=80)
-    )
+    output = StringIO()
+    yaml.dump(config.check_config_values(file=file, key=key), output)
+    click.echo(output.getvalue().rstrip())
 
 
 @check_config.command("list-files")

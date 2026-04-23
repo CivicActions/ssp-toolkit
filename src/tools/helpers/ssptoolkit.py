@@ -8,14 +8,16 @@ import re
 from pathlib import Path
 
 import md_toc  # type: ignore[import-untyped]
-import yaml
 from loguru import logger
+from ruamel.yaml import YAML
 
 from tools.config import Config
 from tools.helpers import secrender
 from tools.helpers.helpers import get_project_path, load_yaml_files
 from tools.helpers.opencontrol import OpenControl
 from tools.logging_config import setup_logging  # noqa: F401
+
+yaml = YAML(typ="safe", pure=True)
 
 
 class ControlRegExps:
@@ -81,7 +83,7 @@ def get_standards() -> tuple:
         if isinstance(standard, str):
             try:
                 with open(standard, "r") as s:
-                    standards_list = yaml.load(s, Loader=yaml.SafeLoader)
+                    standards_list = yaml.load(s)
             except FileNotFoundError as error:
                 raise error
             standards.append(standards_list)
