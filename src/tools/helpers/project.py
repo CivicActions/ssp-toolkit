@@ -66,12 +66,11 @@ class Project:
 
     def sort_component_controls(self, component_name: str) -> dict:
         controls: dict = {}
-        for component_dir in self.project.components:
-            if not isinstance(component_dir, str):
+        for comp_dir in self.project.components:
+            if not isinstance(comp_dir, str):
                 continue
-            component_path = (
-                Path(component_dir).joinpath(component_name).with_suffix(".yaml")
-            )
+            file_path: Path = self.project_path / "rendered" / comp_dir
+            component_path = file_path.joinpath(component_name).with_suffix(".yaml")
 
             if component_path.exists():
                 component_data = load_yaml_files(component_path)

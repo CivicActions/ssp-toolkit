@@ -150,8 +150,7 @@ def create_family(
     return families_data
 
 
-@click.command("make-families")
-def make_families_cmd():
+def make_families():
     """Create control family files from project data."""
     project = Project()
     project_path = get_project_path()
@@ -162,3 +161,8 @@ def make_families_cmd():
     create_family(controls_dir=controls_dir, project=project)
     logger.info(f"Families created at {controls_dir.as_posix()}")
     print("Process complete.")
+
+
+@click.command("make-families")
+def make_families_cmd():
+    make_families()

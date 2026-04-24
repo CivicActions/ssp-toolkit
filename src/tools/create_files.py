@@ -21,17 +21,7 @@ from tools.helpers.ssptoolkit import find_toc_tag, load_template_args
 from tools.logging_config import setup_logging  # noqa: F401
 
 
-@click.command("create-files")
-@click.option(
-    "--templates",
-    "-t",
-    "templates",
-    required=False,
-    default="templates/",
-    type=click.Path(exists=False, dir_okay=True, file_okay=False),
-    help="Template directory",
-)
-def create_files_cmd(templates: str):
+def create_files(templates: str | Path):
     """
     Render files from templates using secrender.
 
@@ -70,6 +60,20 @@ def create_files_cmd(templates: str):
         )
 
         find_toc_tag(file=str(new_file))
+
+
+@click.command("create-files")
+@click.option(
+    "--templates",
+    "-t",
+    "templates",
+    required=False,
+    default="templates/",
+    type=click.Path(exists=False, dir_okay=True, file_okay=False),
+    help="Template directory",
+)
+def create_files_cmd(templates: str):
+    create_files(templates)
 
 
 def rewrite(template_file: Path, template_dir: Path, output_dir: Path) -> str:
