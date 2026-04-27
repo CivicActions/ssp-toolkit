@@ -69,8 +69,9 @@ class Project:
         for comp_dir in self.project.components:
             if not isinstance(comp_dir, str):
                 continue
-            file_path: Path = self.project_path / "rendered" / comp_dir
-            component_path = file_path.joinpath(component_name).with_suffix(".yaml")
+            component_path = (
+                self.project_path / "rendered" / comp_dir / component_name
+            ).with_suffix(".yaml")
 
             if component_path.exists():
                 component_data = load_yaml_files(component_path)
