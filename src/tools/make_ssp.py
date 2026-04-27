@@ -15,7 +15,8 @@ from tools.helpers.project import Project
 from tools.helpers.ssp import Ssp
 from tools.helpers.ssptoolkit import find_toc_tag
 from tools.logging_config import setup_logging  # noqa: F401
-from tools.make_families import create_family
+from tools.create_files import create_files
+from tools.make_families import make_families, create_family
 
 
 def get_family_data(family_data: dict, write_to: Path, project: OpenControl) -> Ssp:
@@ -89,13 +90,13 @@ def write_ssp(ssp_data: Ssp, write_to: Path, project: OpenControl):
     print(f"Wrote SSP to {ssp_file}")
 
 
-@click.command("make-ssp")
-def make_ssp_cmd():
-    """Generate a System Security Plan (SSP) from the control families."""
+def make_ssp():
     project_path = get_project_path()
     project = Project()
     write_to = project_path / "rendered" / "docs"
-    controls_dir = project_path / "rendered" / "controls"
+    controls_dir = write_to / "controls"
+    create_files(templates="templates")
+    make_families()
     families = create_family(
         controls_dir=controls_dir, project=project, return_data=True
     )
@@ -103,3 +104,9 @@ def make_ssp_cmd():
         family_data=families, write_to=write_to, project=project.project
     )
     write_ssp(ssp_data=ssp_data, write_to=write_to, project=project.project)
+
+
+@click.command("make-ssp")
+def make_ssp_cmd():
+    """Generate a System Security Plan (SSP) from the control families."""
+    make_ssp()
