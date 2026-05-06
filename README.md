@@ -245,6 +245,7 @@ Example:
 
 ```shell
 uv run cli export-to -r rendered/docs/controls
+uv run cli export-to -r rendered/docs/sop
 ```
 
 Usage:
